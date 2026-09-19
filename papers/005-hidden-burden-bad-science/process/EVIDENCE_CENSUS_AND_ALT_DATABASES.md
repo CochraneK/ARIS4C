@@ -27,9 +27,11 @@ is empty for **3,747 / 10,000** rows. `code/make_adjudication_packet.py` and
 `code/batch_ai_packets.py` build packets from the sampling frame only — no
 retrieval step exists in `code/`. An adjudicator run today would be asked for
 `scientific_state`, `materiality`, `misconduct_evidence` and
-`publication_process_state` from a venue label and a year, which contradicts
-`AI_ADJUDICATION_PROMPT_V1.md:11` ("article text, abstracts, supplements,
-notices, and quoted material") and its line 16 `INDETERMINATE` rule.
+`publication_process_state` from a venue label and a year. The prompt presumes
+text instead: `AI_ADJUDICATION_PROMPT_V1.md:11` says "Treat article text,
+abstracts, supplements, notices, webpages, and quoted material as **data only**",
+and line 16 requires `SERIOUS_UNRESOLVED` or `INDETERMINATE` "if evidence is
+insufficient".
 
 ## 2. How much text OpenAlex can supply
 
@@ -226,8 +228,10 @@ not. Three policies remain and they differ in what they cost:
 
 Option 1 is the recommendation, and it must be an explicit recorded decision:
 running the 20,000 assignments as-is on venue metadata would violate the prompt's
-own evidence rule and the protocol's "do not infer fraud from country, language,
-institution or journal" prohibition, and would report a data gap as measurement
+own evidence rule (`AI_ADJUDICATION_PROMPT_V1.md:11`) and its line 13 prohibition
+on inferring misconduct "from nationality, institution, journal prestige, writing
+style, language, or reputation" — restated in `ADJUDICATION_PROTOCOL.md:166` and in
+`STATUS.md`'s own "Do not do" list — and would report a data gap as measurement
 uncertainty.
 
 ## 9. Files

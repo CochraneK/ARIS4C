@@ -225,11 +225,11 @@ Measured 2026-09-19/20 on all 10,000 sampled works
   a DOI for 99.8% of queries but only 3.1% of returned records match the title.
 
 Consequence: `AI-ADJ-V1` cannot be run on the full 20,000 assignments without
-either judging from metadata (prohibited by the prompt and by the
-"do not infer fraud from country, language, institution or journal" rule) or
-silently substituting a biomedical-weighted sample for a cross-domain probability
-sample. An evidence policy must be recorded first — retrieve-then-abstain with a
-stratified missingness table, a full-text pipeline, or a narrowed estimand.
+either judging from metadata (barred by `AI_ADJUDICATION_PROMPT_V1.md:13` and by
+the "Do not do" list below) or silently substituting a biomedical-weighted sample
+for a cross-domain probability sample. An evidence policy must be recorded first —
+retrieve-then-abstain with a stratified missingness table, a full-text pipeline, or
+a narrowed estimand.
 
 AI may provide most labels, but its measurement error must be calibrated or sensitivity-tested. Dual-model agreement is not gold-standard truth.
 
