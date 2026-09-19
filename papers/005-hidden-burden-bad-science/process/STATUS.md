@@ -1,7 +1,7 @@
 # STATUS — ARIS4C005
 
-**Last updated:** 2026-09-19  
-**State:** `AI_EXECUTION_READY / CALIBRATION_PIPELINE_READY / LATENT_MODEL_VALIDATED / IMPACT_SCAFFOLDS_READY`  
+**Last updated:** 2026-09-20  
+**State:** `AI_EXECUTION_BLOCKED_ON_EVIDENCE_LAYER / CALIBRATION_PIPELINE_READY / LATENT_MODEL_VALIDATED / IMPACT_SCAFFOLDS_READY`  
 **ARIS provenance:** v0.4.26 @ `951654847b015585385b2448c5667dcd04e7b56b`
 
 ## Canonical research identity
@@ -190,7 +190,7 @@ Completed real 2015–2020 seed frame:
 
 See `process/PILOT_B_SEED_RESULTS.md` and `data/pilot/pilot_b_seed_summary.json`.
 
-## GATE B2 — calibrated adjudication — INPUTS COMPLETE / AI EXECUTION PENDING
+## GATE B2 — calibrated adjudication — EVIDENCE LAYER MEASURED / EVIDENCE POLICY DECISION REQUIRED
 
 Confirmatory random audit now supersedes the 600-work engineering random component for final prevalence estimation.
 
@@ -204,6 +204,32 @@ Confirmatory random audit now supersedes the 600-work engineering random compone
 Earlier Pilot A denominator was 137,445,874. The -9,765 difference (~-0.0071%) is retained as live-database snapshot drift.
 
 See `process/SCALED_AUDIT_RESULTS.md` and `process/AI_ADJUDICATION_HANDOFF.md`.
+
+### The packets cannot yet be executed, and it is not an idle AI surface
+
+Measured 2026-09-19/20 on all 10,000 sampled works
+(`process/EVIDENCE_CENSUS_AND_ALT_DATABASES.md`):
+
+- the frozen batch schema carries **no title, abstract or full text**, and only
+  retrieves OpenAlex venue labels plus a year;
+- 6,242/10,000 works have an OpenAlex abstract, but only **4,410 (44.1%)** have
+  one of ≥100 words, and **3,506 (35.1%)** have neither an abstract nor an OA PDF;
+- free researcher-facing databases (Crossref, Europe PMC, Unpaywall, probed on all
+  3,506) add a verified abstract for **408 works, 11.6% of the gap**: 393 of them
+  among the DOI-bearing gap works (Europe PMC 384, Crossref 10) and 15 on verified
+  title matches. The recovery is domain-tilted — 40.3% of the Health and 51.0% of
+  the Life Sciences DOI gap, against 10.4% Physical and 5.1% Social;
+- reading OpenAlex's full `locations` array instead of `best_oa_location` adds
+  16 works, so the gap is not a field-selection artifact;
+- the title-only route (1,879 works) is unusable: Crossref's fuzzy search returns
+  a DOI for 99.8% of queries but only 3.1% of returned records match the title.
+
+Consequence: `AI-ADJ-V1` cannot be run on the full 20,000 assignments without
+either judging from metadata (prohibited by the prompt and by the
+"do not infer fraud from country, language, institution or journal" rule) or
+silently substituting a biomedical-weighted sample for a cross-domain probability
+sample. An evidence policy must be recorded first — retrieve-then-abstain with a
+stratified missingness table, a full-text pipeline, or a narrowed estimand.
 
 AI may provide most labels, but its measurement error must be calibrated or sensitivity-tested. Dual-model agreement is not gold-standard truth.
 
