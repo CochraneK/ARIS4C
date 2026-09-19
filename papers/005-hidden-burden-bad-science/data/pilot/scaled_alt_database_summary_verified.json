@@ -1,0 +1,60 @@
+{
+  "title_route_acceptance_rule": "title_exact_match or similarity >= 0.9",
+  "europepmc_fulltext_source": "em_fulltext_recheck.jsonl",
+  "europepmc_recheck_coverage": {
+    "re_queried_by_own_doi": 472,
+    "no_doi_to_re_query": 86
+  },
+  "rows_probed": 3506,
+  "rows_rechecked_for_fulltext": 558,
+  "routes": {
+    "doi": {
+      "n": 1627,
+      "verified": 1627,
+      "crossref_resolved": 1496,
+      "europepmc_hit": 472,
+      "europepmc_abstract": 384,
+      "europepmc_fulltext_in_epmc": 35,
+      "any_abstract": 393,
+      "any_text": 395,
+      "crossref_abstract": 10,
+      "unpaywall_pdf": 2,
+      "rates": {
+        "verified": 1.0,
+        "crossref_resolved": 0.9195,
+        "europepmc_hit": 0.2901,
+        "europepmc_abstract": 0.236,
+        "europepmc_fulltext_in_epmc": 0.0215,
+        "any_abstract": 0.2415,
+        "any_text": 0.2428,
+        "crossref_abstract": 0.0061,
+        "unpaywall_pdf": 0.0012
+      }
+    },
+    "title_search": {
+      "n": 1879,
+      "verified": 59,
+      "crossref_resolved": 59,
+      "unpaywall_pdf": 22,
+      "any_text": 29,
+      "europepmc_hit_unverified": 76,
+      "crossref_abstract": 9,
+      "any_abstract": 15,
+      "europepmc_hit": 10,
+      "europepmc_abstract": 8,
+      "europepmc_fulltext_unrechecked": 10,
+      "rates": {
+        "verified": 0.0314,
+        "crossref_resolved": 0.0314,
+        "unpaywall_pdf": 0.0117,
+        "any_text": 0.0154,
+        "europepmc_hit_unverified": 0.0404,
+        "crossref_abstract": 0.0048,
+        "any_abstract": 0.008,
+        "europepmc_hit": 0.0053,
+        "europepmc_abstract": 0.0043,
+        "europepmc_fulltext_unrechecked": 0.0053
+      }
+    }
+  }
+}

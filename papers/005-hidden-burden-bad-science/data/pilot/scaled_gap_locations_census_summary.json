@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-09-19T17:11:50Z",
+  "population": "gap works = no OpenAlex abstract and no best_oa_location PDF URL",
+  "definitions": {
+    "any_pdf_url": "at least one entry in the full OpenAlex locations array has a pdf_url",
+    "on_arxiv": "a location URL points at arxiv.org or its source name mentions arXiv",
+    "preprint": "a location source matches a known preprint server"
+  },
+  "by_domain": {
+    "ALL": {
+      "gap": 3506,
+      "resolved": 3506,
+      "any_pdf_url": 16,
+      "on_arxiv": 1,
+      "preprint": 2,
+      "no_location_at_all": 0,
+      "two_or_more_locations": 696
+    },
+    "Health Sciences": {
+      "gap": 664,
+      "resolved": 664,
+      "any_pdf_url": 4,
+      "on_arxiv": 0,
+      "preprint": 0,
+      "no_location_at_all": 0,
+      "two_or_more_locations": 285
+    },
+    "Life Sciences": {
+      "gap": 358,
+      "resolved": 358,
+      "any_pdf_url": 2,
+      "on_arxiv": 0,
+      "preprint": 0,
+      "no_location_at_all": 0,
+      "two_or_more_locations": 137
+    },
+    "Physical Sciences": {
+      "gap": 1525,
+      "resolved": 1525,
+      "any_pdf_url": 8,
+      "on_arxiv": 1,
+      "preprint": 2,
+      "no_location_at_all": 0,
+      "two_or_more_locations": 158
+    },
+    "Social Sciences": {
+      "gap": 883,
+      "resolved": 883,
+      "any_pdf_url": 2,
+      "on_arxiv": 0,
+      "preprint": 0,
+      "no_location_at_all": 0,
+      "two_or_more_locations": 114
+    },
+    "unknown": {
+      "gap": 76,
+      "resolved": 76,
+      "any_pdf_url": 0,
+      "on_arxiv": 0,
+      "preprint": 0,
+      "no_location_at_all": 0,
+      "two_or_more_locations": 2
+    }
+  },
+  "rates": {
+    "ALL": {
+      "any_pdf_url": 0.0046,
+      "on_arxiv": 0.0003,
+      "preprint": 0.0006,
+      "no_location_at_all": 0.0,
+      "two_or_more_locations": 0.1985
+    },
+    "Health Sciences": {
+      "any_pdf_url": 0.006,
+      "on_arxiv": 0.0,
+      "preprint": 0.0,
+      "no_location_at_all": 0.0,
+      "two_or_more_locations": 0.4292
+    },
+    "Life Sciences": {
+      "any_pdf_url": 0.0056,
+      "on_arxiv": 0.0,
+      "preprint": 0.0,
+      "no_location_at_all": 0.0,
+      "two_or_more_locations": 0.3827
+    },
+    "Physical Sciences": {
+      "any_pdf_url": 0.0052,
+      "on_arxiv": 0.0007,
+      "preprint": 0.0013,
+      "no_location_at_all": 0.0,
+      "two_or_more_locations": 0.1036
+    },
+    "Social Sciences": {
+      "any_pdf_url": 0.0023,
+      "on_arxiv": 0.0,
+      "preprint": 0.0,
+      "no_location_at_all": 0.0,
+      "two_or_more_locations": 0.1291
+    },
+    "unknown": {
+      "any_pdf_url": 0.0,
+      "on_arxiv": 0.0,
+      "preprint": 0.0,
+      "no_location_at_all": 0.0,
+      "two_or_more_locations": 0.0263
+    }
+  }
+}

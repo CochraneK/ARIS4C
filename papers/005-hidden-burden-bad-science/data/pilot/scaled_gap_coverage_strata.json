@@ -1,0 +1,572 @@
+{
+  "generated_from": [
+    "evidence_census.jsonl",
+    "alt_databases_probe.jsonl",
+    "em_fulltext_recheck.jsonl"
+  ],
+  "adjudication_options": {
+    "ALL": {
+      "sampled_works": 10000,
+      "any_text_any_length": {
+        "works": 6918,
+        "share": 0.6918
+      },
+      "ge100w_plus_alt": {
+        "works": 4818,
+        "share": 0.4818
+      },
+      "openalex_abstract": {
+        "works": 6242,
+        "share": 0.6242
+      },
+      "openalex_abstract_ge100w": {
+        "works": 4410,
+        "share": 0.441
+      },
+      "plus_alt_abstract": {
+        "works": 6650,
+        "share": 0.665
+      }
+    },
+    "Health Sciences": {
+      "sampled_works": 2140,
+      "any_text_any_length": {
+        "works": 1676,
+        "share": 0.7832
+      },
+      "ge100w_plus_alt": {
+        "works": 1339,
+        "share": 0.6257
+      },
+      "openalex_abstract": {
+        "works": 1398,
+        "share": 0.6533
+      },
+      "openalex_abstract_ge100w": {
+        "works": 1140,
+        "share": 0.5327
+      },
+      "plus_alt_abstract": {
+        "works": 1597,
+        "share": 0.7463
+      }
+    },
+    "Life Sciences": {
+      "sampled_works": 1208,
+      "any_text_any_length": {
+        "works": 977,
+        "share": 0.8088
+      },
+      "ge100w_plus_alt": {
+        "works": 784,
+        "share": 0.649
+      },
+      "openalex_abstract": {
+        "works": 816,
+        "share": 0.6755
+      },
+      "openalex_abstract_ge100w": {
+        "works": 658,
+        "share": 0.5447
+      },
+      "plus_alt_abstract": {
+        "works": 942,
+        "share": 0.7798
+      }
+    },
+    "Physical Sciences": {
+      "sampled_works": 3862,
+      "any_text_any_length": {
+        "works": 2411,
+        "share": 0.6243
+      },
+      "ge100w_plus_alt": {
+        "works": 1493,
+        "share": 0.3866
+      },
+      "openalex_abstract": {
+        "works": 2264,
+        "share": 0.5862
+      },
+      "openalex_abstract_ge100w": {
+        "works": 1427,
+        "share": 0.3695
+      },
+      "plus_alt_abstract": {
+        "works": 2330,
+        "share": 0.6033
+      }
+    },
+    "Social Sciences": {
+      "sampled_works": 2692,
+      "any_text_any_length": {
+        "works": 1831,
+        "share": 0.6802
+      },
+      "ge100w_plus_alt": {
+        "works": 1201,
+        "share": 0.4461
+      },
+      "openalex_abstract": {
+        "works": 1759,
+        "share": 0.6534
+      },
+      "openalex_abstract_ge100w": {
+        "works": 1184,
+        "share": 0.4398
+      },
+      "plus_alt_abstract": {
+        "works": 1776,
+        "share": 0.6597
+      }
+    },
+    "unknown": {
+      "sampled_works": 98,
+      "any_text_any_length": {
+        "works": 23,
+        "share": 0.2347
+      },
+      "ge100w_plus_alt": {
+        "works": 1,
+        "share": 0.0102
+      },
+      "openalex_abstract": {
+        "works": 5,
+        "share": 0.051
+      },
+      "openalex_abstract_ge100w": {
+        "works": 1,
+        "share": 0.0102
+      },
+      "plus_alt_abstract": {
+        "works": 5,
+        "share": 0.051
+      }
+    }
+  },
+  "definitions": {
+    "gap": "no OpenAlex abstract and no OpenAlex OA PDF URL",
+    "gap_with_doi": "gap works whose batch row carries a DOI",
+    "europepmc_verified": "Europe PMC returned a record; on the title route only when the Crossref hit's title matched",
+    "abstract_recovered": "Crossref or Europe PMC returned abstract text (verified)",
+    "*_doi": "restricted to works with a DOI of their own, i.e. the same population gap_with_doi counts",
+    "title_route_acceptance_rule": "title_exact_match or similarity >= 0.9"
+  },
+  "gap_total": 3506,
+  "strata": {
+    "domain": {
+      "Health Sciences": {
+        "sample": 2140,
+        "gap": 664,
+        "gap_with_doi": 487,
+        "europepmc_verified": 255,
+        "europepmc_verified_doi": 252,
+        "abstract_recovered": 199,
+        "abstract_recovered_doi": 196,
+        "any_text_recovered": 200,
+        "recovery_rate_of_doi_gap": 0.4025,
+        "europepmc_rate_of_doi_gap": 0.5175
+      },
+      "Life Sciences": {
+        "sample": 1208,
+        "gap": 358,
+        "gap_with_doi": 241,
+        "europepmc_verified": 140,
+        "europepmc_verified_doi": 139,
+        "abstract_recovered": 126,
+        "abstract_recovered_doi": 123,
+        "any_text_recovered": 127,
+        "recovery_rate_of_doi_gap": 0.5104,
+        "europepmc_rate_of_doi_gap": 0.5768
+      },
+      "Physical Sciences": {
+        "sample": 3862,
+        "gap": 1525,
+        "gap_with_doi": 568,
+        "europepmc_verified": 65,
+        "europepmc_verified_doi": 61,
+        "abstract_recovered": 66,
+        "abstract_recovered_doi": 59,
+        "any_text_recovered": 74,
+        "recovery_rate_of_doi_gap": 0.1039,
+        "europepmc_rate_of_doi_gap": 0.1074
+      },
+      "Social Sciences": {
+        "sample": 2692,
+        "gap": 883,
+        "gap_with_doi": 295,
+        "europepmc_verified": 21,
+        "europepmc_verified_doi": 19,
+        "abstract_recovered": 17,
+        "abstract_recovered_doi": 15,
+        "any_text_recovered": 22,
+        "recovery_rate_of_doi_gap": 0.0508,
+        "europepmc_rate_of_doi_gap": 0.0644
+      },
+      "unknown": {
+        "sample": 98,
+        "gap": 76,
+        "gap_with_doi": 36,
+        "europepmc_verified": 1,
+        "europepmc_verified_doi": 1,
+        "any_text_recovered": 1,
+        "recovery_rate_of_doi_gap": 0.0,
+        "europepmc_rate_of_doi_gap": 0.0278
+      }
+    },
+    "field": {
+      "Agricultural and Biological Sciences": {
+        "sample": 465,
+        "gap": 138,
+        "gap_with_doi": 67,
+        "europepmc_verified": 32,
+        "europepmc_verified_doi": 32,
+        "abstract_recovered": 29,
+        "abstract_recovered_doi": 28,
+        "any_text_recovered": 29,
+        "recovery_rate_of_doi_gap": 0.4179,
+        "europepmc_rate_of_doi_gap": 0.4776
+      },
+      "Arts and Humanities": {
+        "sample": 525,
+        "gap": 231,
+        "gap_with_doi": 66,
+        "abstract_recovered": 3,
+        "abstract_recovered_doi": 3,
+        "any_text_recovered": 4,
+        "europepmc_verified": 1,
+        "europepmc_verified_doi": 1,
+        "recovery_rate_of_doi_gap": 0.0455,
+        "europepmc_rate_of_doi_gap": 0.0152
+      },
+      "Biochemistry, Genetics and Molecular Biology": {
+        "sample": 474,
+        "gap": 132,
+        "gap_with_doi": 104,
+        "europepmc_verified": 59,
+        "europepmc_verified_doi": 58,
+        "abstract_recovered": 53,
+        "abstract_recovered_doi": 51,
+        "any_text_recovered": 53,
+        "recovery_rate_of_doi_gap": 0.4904,
+        "europepmc_rate_of_doi_gap": 0.5577
+      },
+      "Business, Management and Accounting": {
+        "sample": 272,
+        "gap": 84,
+        "gap_with_doi": 36,
+        "any_text_recovered": 1,
+        "recovery_rate_of_doi_gap": 0.0,
+        "europepmc_rate_of_doi_gap": 0.0
+      },
+      "Chemical Engineering": {
+        "sample": 22,
+        "gap": 7,
+        "gap_with_doi": 4,
+        "europepmc_verified": 1,
+        "europepmc_verified_doi": 1,
+        "abstract_recovered": 1,
+        "abstract_recovered_doi": 1,
+        "any_text_recovered": 1,
+        "recovery_rate_of_doi_gap": 0.25,
+        "europepmc_rate_of_doi_gap": 0.25
+      },
+      "Chemistry": {
+        "sample": 141,
+        "gap": 46,
+        "gap_with_doi": 37,
+        "europepmc_verified": 8,
+        "europepmc_verified_doi": 8,
+        "abstract_recovered": 5,
+        "abstract_recovered_doi": 5,
+        "any_text_recovered": 5,
+        "recovery_rate_of_doi_gap": 0.1351,
+        "europepmc_rate_of_doi_gap": 0.2162
+      },
+      "Computer Science": {
+        "sample": 494,
+        "gap": 113,
+        "gap_with_doi": 56,
+        "europepmc_verified": 2,
+        "europepmc_verified_doi": 2,
+        "abstract_recovered": 2,
+        "abstract_recovered_doi": 2,
+        "any_text_recovered": 3,
+        "recovery_rate_of_doi_gap": 0.0357,
+        "europepmc_rate_of_doi_gap": 0.0357
+      },
+      "Decision Sciences": {
+        "sample": 73,
+        "gap": 22,
+        "gap_with_doi": 12,
+        "europepmc_verified": 2,
+        "europepmc_verified_doi": 2,
+        "abstract_recovered": 1,
+        "abstract_recovered_doi": 1,
+        "any_text_recovered": 1,
+        "recovery_rate_of_doi_gap": 0.0833,
+        "europepmc_rate_of_doi_gap": 0.1667
+      },
+      "Dentistry": {
+        "sample": 33,
+        "gap": 9,
+        "gap_with_doi": 3,
+        "europepmc_verified": 2,
+        "europepmc_verified_doi": 2,
+        "abstract_recovered": 2,
+        "abstract_recovered_doi": 2,
+        "any_text_recovered": 2,
+        "recovery_rate_of_doi_gap": 0.6667,
+        "europepmc_rate_of_doi_gap": 0.6667
+      },
+      "Earth and Planetary Sciences": {
+        "sample": 115,
+        "gap": 41,
+        "gap_with_doi": 27,
+        "europepmc_verified": 4,
+        "europepmc_verified_doi": 4,
+        "abstract_recovered": 4,
+        "abstract_recovered_doi": 3,
+        "any_text_recovered": 4,
+        "recovery_rate_of_doi_gap": 0.1111,
+        "europepmc_rate_of_doi_gap": 0.1481
+      },
+      "Economics, Econometrics and Finance": {
+        "sample": 255,
+        "gap": 73,
+        "gap_with_doi": 27,
+        "europepmc_verified": 3,
+        "europepmc_verified_doi": 3,
+        "abstract_recovered": 2,
+        "abstract_recovered_doi": 2,
+        "any_text_recovered": 3,
+        "recovery_rate_of_doi_gap": 0.0741,
+        "europepmc_rate_of_doi_gap": 0.1111
+      },
+      "Energy": {
+        "sample": 55,
+        "gap": 17,
+        "gap_with_doi": 11,
+        "europepmc_verified": 1,
+        "europepmc_verified_doi": 1,
+        "abstract_recovered": 1,
+        "abstract_recovered_doi": 1,
+        "any_text_recovered": 1,
+        "recovery_rate_of_doi_gap": 0.0909,
+        "europepmc_rate_of_doi_gap": 0.0909
+      },
+      "Engineering": {
+        "sample": 1964,
+        "gap": 973,
+        "gap_with_doi": 242,
+        "abstract_recovered": 14,
+        "abstract_recovered_doi": 13,
+        "any_text_recovered": 16,
+        "europepmc_verified": 11,
+        "europepmc_verified_doi": 11,
+        "recovery_rate_of_doi_gap": 0.0537,
+        "europepmc_rate_of_doi_gap": 0.0455
+      },
+      "Environmental Science": {
+        "sample": 416,
+        "gap": 132,
+        "gap_with_doi": 78,
+        "europepmc_verified": 26,
+        "europepmc_verified_doi": 25,
+        "abstract_recovered": 26,
+        "abstract_recovered_doi": 25,
+        "any_text_recovered": 26,
+        "recovery_rate_of_doi_gap": 0.3205,
+        "europepmc_rate_of_doi_gap": 0.3205
+      },
+      "Health Professions": {
+        "sample": 254,
+        "gap": 79,
+        "gap_with_doi": 47,
+        "europepmc_verified": 16,
+        "europepmc_verified_doi": 15,
+        "abstract_recovered": 11,
+        "abstract_recovered_doi": 9,
+        "any_text_recovered": 11,
+        "recovery_rate_of_doi_gap": 0.1915,
+        "europepmc_rate_of_doi_gap": 0.3191
+      },
+      "Immunology and Microbiology": {
+        "sample": 90,
+        "gap": 25,
+        "gap_with_doi": 21,
+        "europepmc_verified": 13,
+        "europepmc_verified_doi": 13,
+        "abstract_recovered": 11,
+        "abstract_recovered_doi": 11,
+        "any_text_recovered": 12,
+        "recovery_rate_of_doi_gap": 0.5238,
+        "europepmc_rate_of_doi_gap": 0.619
+      },
+      "Materials Science": {
+        "sample": 284,
+        "gap": 104,
+        "gap_with_doi": 72,
+        "europepmc_verified": 9,
+        "europepmc_verified_doi": 8,
+        "abstract_recovered": 10,
+        "abstract_recovered_doi": 8,
+        "any_text_recovered": 10,
+        "recovery_rate_of_doi_gap": 0.1111,
+        "europepmc_rate_of_doi_gap": 0.1111
+      },
+      "Mathematics": {
+        "sample": 106,
+        "gap": 18,
+        "gap_with_doi": 10,
+        "any_text_recovered": 1,
+        "recovery_rate_of_doi_gap": 0.0,
+        "europepmc_rate_of_doi_gap": 0.0
+      },
+      "Medicine": {
+        "sample": 1775,
+        "gap": 552,
+        "gap_with_doi": 421,
+        "europepmc_verified": 228,
+        "europepmc_verified_doi": 226,
+        "abstract_recovered": 178,
+        "abstract_recovered_doi": 177,
+        "any_text_recovered": 179,
+        "recovery_rate_of_doi_gap": 0.4204,
+        "europepmc_rate_of_doi_gap": 0.5368
+      },
+      "Neuroscience": {
+        "sample": 140,
+        "gap": 50,
+        "gap_with_doi": 44,
+        "europepmc_verified": 34,
+        "europepmc_verified_doi": 34,
+        "abstract_recovered": 31,
+        "abstract_recovered_doi": 31,
+        "any_text_recovered": 31,
+        "recovery_rate_of_doi_gap": 0.7045,
+        "europepmc_rate_of_doi_gap": 0.7727
+      },
+      "Nursing": {
+        "sample": 60,
+        "gap": 17,
+        "gap_with_doi": 10,
+        "europepmc_verified": 6,
+        "europepmc_verified_doi": 6,
+        "abstract_recovered": 6,
+        "abstract_recovered_doi": 6,
+        "any_text_recovered": 6,
+        "recovery_rate_of_doi_gap": 0.6,
+        "europepmc_rate_of_doi_gap": 0.6
+      },
+      "Pharmacology, Toxicology and Pharmaceutics": {
+        "sample": 39,
+        "gap": 13,
+        "gap_with_doi": 5,
+        "europepmc_verified": 2,
+        "europepmc_verified_doi": 2,
+        "abstract_recovered": 2,
+        "abstract_recovered_doi": 2,
+        "any_text_recovered": 2,
+        "recovery_rate_of_doi_gap": 0.4,
+        "europepmc_rate_of_doi_gap": 0.4
+      },
+      "Physics and Astronomy": {
+        "sample": 265,
+        "gap": 74,
+        "gap_with_doi": 31,
+        "any_text_recovered": 7,
+        "abstract_recovered": 3,
+        "abstract_recovered_doi": 1,
+        "europepmc_verified": 3,
+        "europepmc_verified_doi": 1,
+        "recovery_rate_of_doi_gap": 0.0323,
+        "europepmc_rate_of_doi_gap": 0.0323
+      },
+      "Psychology": {
+        "sample": 267,
+        "gap": 81,
+        "gap_with_doi": 41,
+        "europepmc_verified": 11,
+        "europepmc_verified_doi": 9,
+        "abstract_recovered": 7,
+        "abstract_recovered_doi": 6,
+        "any_text_recovered": 7,
+        "recovery_rate_of_doi_gap": 0.1463,
+        "europepmc_rate_of_doi_gap": 0.2195
+      },
+      "Social Sciences": {
+        "sample": 1300,
+        "gap": 392,
+        "gap_with_doi": 113,
+        "europepmc_verified": 4,
+        "europepmc_verified_doi": 4,
+        "abstract_recovered": 4,
+        "abstract_recovered_doi": 3,
+        "any_text_recovered": 6,
+        "recovery_rate_of_doi_gap": 0.0265,
+        "europepmc_rate_of_doi_gap": 0.0354
+      },
+      "Veterinary": {
+        "sample": 18,
+        "gap": 7,
+        "gap_with_doi": 6,
+        "europepmc_verified": 3,
+        "europepmc_verified_doi": 3,
+        "abstract_recovered": 2,
+        "abstract_recovered_doi": 2,
+        "any_text_recovered": 2,
+        "recovery_rate_of_doi_gap": 0.3333,
+        "europepmc_rate_of_doi_gap": 0.5
+      },
+      "unknown": {
+        "sample": 98,
+        "gap": 76,
+        "gap_with_doi": 36,
+        "europepmc_verified": 1,
+        "europepmc_verified_doi": 1,
+        "any_text_recovered": 1,
+        "recovery_rate_of_doi_gap": 0.0,
+        "europepmc_rate_of_doi_gap": 0.0278
+      }
+    },
+    "decade": {
+      "2000s": {
+        "sample": 3115,
+        "gap": 1428,
+        "gap_with_doi": 529,
+        "europepmc_verified": 165,
+        "europepmc_verified_doi": 160,
+        "abstract_recovered": 139,
+        "abstract_recovered_doi": 133,
+        "any_text_recovered": 145,
+        "recovery_rate_of_doi_gap": 0.2514,
+        "europepmc_rate_of_doi_gap": 0.3025
+      },
+      "2010s": {
+        "sample": 3796,
+        "gap": 1422,
+        "gap_with_doi": 560,
+        "europepmc_verified": 172,
+        "europepmc_verified_doi": 167,
+        "abstract_recovered": 155,
+        "abstract_recovered_doi": 148,
+        "any_text_recovered": 163,
+        "recovery_rate_of_doi_gap": 0.2643,
+        "europepmc_rate_of_doi_gap": 0.2982
+      },
+      "2020s": {
+        "sample": 3089,
+        "gap": 656,
+        "gap_with_doi": 538,
+        "europepmc_verified": 145,
+        "europepmc_verified_doi": 145,
+        "abstract_recovered": 114,
+        "abstract_recovered_doi": 112,
+        "any_text_recovered": 116,
+        "recovery_rate_of_doi_gap": 0.2082,
+        "europepmc_rate_of_doi_gap": 0.2695
+      }
+    }
+  }
+}
