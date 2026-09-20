@@ -30,3 +30,14 @@
 - [ ] Add a null/control mapping before testing an effect.
 - [ ] Synchronize neural-state and behaviour traces in the two-panel viewer.
 - [ ] Keep whole-brain Brian2/FlyWire reproduction as a higher-cost comparison track, not the default MVP.
+
+## Pilot 2 · Official advanced vision
+
+- [x] Reproduce legacy RealisticVisionFly with real retinal rendering + pretrained flyvis + embodied body state.
+- [x] Verify 2 × 45,669 neural activity state and named T4/T5 outputs in clean CI.
+- [x] Record and repair the headless EGL requirement.
+- [ ] Reproduce baseline-response calibration for a bounded single condition.
+- [ ] Reproduce the official z-score -> object mask -> turning bias -> 2-D descending-drive decoder.
+- [ ] Run a bounded real closed-loop following trial.
+- [ ] Export synchronized behaviour / retinal / neural / decoder traces.
+- [ ] Compare the legacy implementation against FlyGym 2.x migration cost.
