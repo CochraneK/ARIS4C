@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
-"""ARIS4C018 Pilot 2A: legacy RealisticVisionFly embodied-neural interface smoke.
+"""ARIS4C018 Pilot 2A: official legacy RealisticVisionFly interface smoke.
 
-This uses the official FlyGym 1.x + pretrained flyvis integration. To keep the
-clean CPU CI gate tractable, only the initial steady-state fade-in duration is
-shortened. The neural model, pretrained weights, retinal rendering, body model,
-and FlyGym<->flyvis mapping remain the upstream implementation.
-
-PASS here is an engineering interface gate, not reproduction of the paper's
-full-duration baseline or closed-loop behavioural result.
+This exercises the published FlyGym 1.x + pretrained flyvis integration with
+the upstream default 1 s neural fade-in, real retinal rendering, and an
+embodied FlyGym simulation. It is a reproduction/engineering gate, not a new
+biological experiment.
 """
 
 import numpy as np
-import flyvis
-from torch import Tensor
 
 from flygym_gymnasium import SingleFlySimulation
 from flygym_gymnasium.arena import FlatTerrain
@@ -26,33 +21,8 @@ CONTACTS = [
 ]
 
 
-class FastSmokeRealisticVisionFly(RealisticVisionFly):
-    """Official interface with a short CI-only neural fade-in."""
-
-    smoke_fade_in_s = 0.02
-
-    def _initialize_vision_network(self, vision_obs):
-        vision_obs_grayscale = vision_obs.max(axis=-1)
-        visual_input = self.retina_mapper.flygym_to_flyvis(vision_obs_grayscale)
-        visual_input = Tensor(visual_input).to(flyvis.device)
-
-        initial_state = self.vision_network.fade_in_state(
-            t_fade_in=self.smoke_fade_in_s,
-            dt=1 / self.vision_refresh_rate,
-            initial_frames=visual_input.unsqueeze(1),
-        )
-        self.vision_network.setup_step_by_step_simulation(
-            dt=1 / self.vision_refresh_rate,
-            initial_state=initial_state,
-            as_states=False,
-            num_samples=2,
-        )
-        self._initial_state = initial_state
-        self._vision_network_initialized = True
-
-
 def main():
-    fly = FastSmokeRealisticVisionFly(
+    fly = RealisticVisionFly(
         contact_sensor_placements=CONTACTS,
         enable_adhesion=True,
         vision_refresh_rate=500,
@@ -72,7 +42,7 @@ def main():
     pos0 = np.asarray(obs["fly"])[0, :3].copy()
 
     vision_updates = 0
-    for _ in range(40):
+    for _ in range(100):
         obs, _, _, _, info = sim.step(action=np.array([1.0, 1.0]))
         vision_updates += int(bool(info.get("vision_updated", False)))
 
@@ -92,8 +62,7 @@ def main():
     assert vision_updates >= 1
 
     print("ARIS4C018 legacy RealisticVisionFly smoke PASS")
-    print("smoke_fade_in_s=0.02")
-    print("official_full_fade_in_s=1.0")
+    print("official_fade_in_s=1.0")
     print(f"neural_shape={tuple(neural1.shape)}")
     print(f"vision_updates={vision_updates}")
     print(f"body_position_start={pos0.tolist()}")
