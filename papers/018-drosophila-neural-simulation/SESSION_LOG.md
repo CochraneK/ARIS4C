@@ -19,3 +19,15 @@
 - Verified that root STATUS, paper metadata, Pilot 0 code/results/prototype, and CI remained intact.
 - Reconciled the portfolio dashboard back to the evidence-backed Pilot 0 state.
 - Added an explicit continuity rule so future agents do not treat stale dashboard metadata as stronger than newer substantive artifacts.
+
+## 2026-09-21 · Pilot 1 published-model reproduction
+
+- Pinned flyvis at commit 92b3845cc426dd309a1a0e1b3890156c42e14021 and FlyGym at 38c8ec61034cd59bc5ba0de20688d4a3c0000d60.
+- Built clean CI smoke jobs on Python 3.11 and 3.12 respectively.
+- FlyGym first attempt failed on an ARIS-added EGL constraint; removed the unnecessary rendering backend setting and re-ran.
+- FlyGym PASS: 70 bodies, 127 joints, nq=133, nv=132, nu=42.
+- flyvis PASS: extent=1 connectome produced 443 nodes, 8,174 edges and 65 cell types.
+- Full Pilot 1 workflow run 35528006159 completed successfully.
+- Recorded clean-install/runtime burden; flyvis default dependency resolution pulled a large CUDA-capable stack despite the CPU-only smoke.
+- Added ShunyaResearch/drosophila-connectome-experiments and philshiu/Drosophila_brain_model as comparison/reference implementations for the higher-cost whole-brain route.
+- Next gate shifted from repository discovery to explicit neural-state ↔ embodied-behaviour interface design.
