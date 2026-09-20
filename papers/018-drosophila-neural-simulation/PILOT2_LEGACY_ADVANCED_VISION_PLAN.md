@@ -87,12 +87,21 @@ This should be a scientifically traceable version of the “left side fly moves,
 
 ## Research gate after reproduction
 
-Only after the official path is reproducible should 018 ask a new question. Candidate families:
+Only after the official path is reproducible should 018 ask a new question. Novelty audit already rules out several naive candidates as "new": the NeuroMechFly v2 paper itself compared broad visual-cell sets versus LC9/LC10-input subsets, head stabilization conditions, and flat versus blocks terrain in the fly-following experiment. The flyvis paper also contains model/connectome ablation studies.
 
-- neural-population ablation / dropout robustness;
-- compare full selected cell set against LC9/LC10-input subset;
-- head-stabilization × visual-neural perturbation interaction;
-- terrain × visual representation robustness;
-- connectome-constrained representation versus structure-destroyed/null controls.
+Therefore the current **research-question pool**, not yet hypotheses, is narrower:
 
-No candidate is promoted to a formal ARIS hypothesis until novelty and falsifiability are audited.
+- **closed-loop behavioural sensitivity to targeted cell-type perturbations** while holding the published decoder/controller fixed;
+- **decoder-artifact auditing**: distinguish true neural-information loss from failures or biases introduced by the neural-readout-to-motor mapping;
+- **matched structure-destroying controls in closed loop**, with degree/sign/activity-scale controls where feasible rather than naive random rewiring;
+- **representation-to-behaviour sufficiency**: which neural population summaries preserve behaviour under controlled compression or perturbation;
+- **failure-boundary mapping** across the neural model -> algorithmic decoder -> descending drive -> body chain.
+
+These directions remain provisional because current 2026 community projects already explore some whole-connectome ablations and closed-loop readout failures.
+
+No candidate is promoted to a formal ARIS hypothesis until a dedicated novelty/falsifiability audit is frozen.
+
+Relevant published anchors:
+
+- Lappalainen et al. 2024, Nature, doi:10.1038/s41586-024-07939-3
+- Wang-Chen et al. 2024, Nature Methods, doi:10.1038/s41592-024-02497-y
