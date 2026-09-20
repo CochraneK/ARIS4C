@@ -11,6 +11,7 @@
 - Freeze-eligible legal events (verified timing + WHR coverage): **10**.
 - Tier A, additionally corroborated by the World Bank panel: **9**.
 - Tier B, legally verified but not corroborated by the World Bank historical panel: **1**.
+- All World Bank annual-leave jumps discovered: **44**; unregistered jumps with usable WHR coverage awaiting legal verification: **11**.
 
 ## Interpretation
 
