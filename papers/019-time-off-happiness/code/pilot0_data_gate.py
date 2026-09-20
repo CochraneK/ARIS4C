@@ -103,12 +103,28 @@ def event_coverage(events, whr):
         names = aliases.get(country, [country])
         matched = next((name for name in names if name in available_names), None)
         effective_year = pd.to_numeric(e.get("effective_year"), errors="coerce")
+        effective_date = str(e.get("effective_date", "") or "").strip()
+        transition_year = pd.NA
         if pd.isna(effective_year):
             candidate_year = int(e["ew_report_year"]) - 1
             timing_quality = "provisional_ew_report_minus_1"
         else:
-            candidate_year = int(effective_year)
-            timing_quality = "verified_year"
+            legal_year = int(effective_year)
+            # With annual aggregate well-being and no interview month, avoid
+            # classifying a partly exposed reform year as fully post-treatment.
+            # Only a Jan-01 reform treats that calendar year as the first full year.
+            if effective_date and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", effective_date):
+                month_day = effective_date[5:]
+                if month_day == "01-01":
+                    candidate_year = legal_year
+                else:
+                    transition_year = legal_year
+                    candidate_year = legal_year + 1
+            else:
+                # Verified year but not exact day: conservative one-year lag.
+                transition_year = legal_year
+                candidate_year = legal_year + 1
+            timing_quality = "verified_first_full_year"
         years = [] if matched is None else sorted(
             whr.loc[whr["country"].eq(matched), "year"].dropna().astype(int).unique().tolist()
         )
@@ -117,6 +133,8 @@ def event_coverage(events, whr):
         row = e.to_dict()
         row.update({
             "whr_country": matched or "",
+            "legal_effective_year": "" if pd.isna(effective_year) else int(effective_year),
+            "transition_year_excluded": transition_year,
             "candidate_treatment_year": candidate_year,
             "timing_quality": timing_quality,
             "whr_years_all": ";".join(map(str, years)),
@@ -302,7 +320,8 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
                 "panel_note": "No World Bank economy-name match",
             })
             rows.append({**base, **{k: cov.get(k) for k in [
-                "whr_country", "candidate_treatment_year", "n_pre", "n_post",
+                "whr_country", "legal_effective_year", "transition_year_excluded",
+                "candidate_treatment_year", "n_pre", "n_post",
                 "pilot0_coverage_pass", "confirmatory_timing_pass"
             ]}})
             continue
@@ -324,7 +343,8 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
                 "panel_note": f"No EW row for report year {report_year}",
             })
             rows.append({**base, **{k: cov.get(k) for k in [
-                "whr_country", "candidate_treatment_year", "n_pre", "n_post",
+                "whr_country", "legal_effective_year", "transition_year_excluded",
+                "candidate_treatment_year", "n_pre", "n_post",
                 "pilot0_coverage_pass", "confirmatory_timing_pass"
             ]}})
             continue
@@ -385,7 +405,7 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
             "pilot0_structural_pass": bool(coverage_pass and direction_match),
             "legal_timing_coverage_pass": timing_pass,
             "event_tier": event_tier,
-            "primary_pool": event_tier == "A_corroborated",
+            "primary_pool": event_tier == "A_corroborated" and direction in {"increase", "introduced", "decrease"},
             "freeze_eligible": timing_pass,
             "macro_window_flags": ";".join(macro_window_flags),
             "scope_flags": ";".join(scope_flags),
