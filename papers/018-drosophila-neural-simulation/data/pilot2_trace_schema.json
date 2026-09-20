@@ -6,6 +6,7 @@
   "required": [
     "schema_version",
     "provenance",
+    "cell_order",
     "frames"
   ],
   "properties": {
@@ -112,6 +113,9 @@
               },
               "object_fraction_right": {
                 "type": "number"
+              },
+              "mean_zscore_max": {
+                "type": "number"
               }
             }
           },
@@ -132,12 +136,50 @@
                   "BODY",
                   "CONTROL"
                 ]
+              },
+              "cell_mean_left": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              },
+              "cell_mean_right": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
               }
             },
-            "additionalProperties": true
+            "additionalProperties": true,
+            "required": [
+              "source_layer",
+              "summary",
+              "cell_mean_left",
+              "cell_mean_right"
+            ]
           }
         }
       }
+    },
+    "cell_order": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      },
+      "description": "Stable ordering for per-frame cell_mean_left/right arrays."
+    },
+    "configuration": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "zero_std_positions_encountered": {
+      "type": "integer",
+      "minimum": 0
     }
   }
 }
