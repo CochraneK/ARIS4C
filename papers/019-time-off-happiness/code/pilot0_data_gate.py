@@ -134,7 +134,7 @@ def normalize_wb_leave_panel(wb_bytes: bytes) -> pd.DataFrame:
     df = pd.read_excel(
         io.BytesIO(wb_bytes),
         sheet_name="EW04-EW20",
-        header=1,
+        header=2,
         engine="openpyxl",
     )
     lookup = {norm(c): c for c in df.columns}
