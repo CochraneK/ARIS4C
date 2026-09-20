@@ -28,19 +28,38 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: python -m pip install --upgrade pandas requests openpyxl xlrd
-      - name: Inspect official sources and compute coverage
-        run: python papers/019-time-off-happiness/code/pilot0_data_gate.py
-      - name: Commit generated gate artifacts
+      - name: Regenerate from latest main and publish atomically
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add papers/019-time-off-happiness/data papers/019-time-off-happiness/process/PILOT0_DATA_GATE.md papers/019-time-off-happiness/process/PILOT0_EVENT_FREEZE.csv papers/019-time-off-happiness/process/LEGAL_VERIFICATION_QUEUE.csv
-          if git diff --cached --quiet; then
-            echo "No generated changes"
-            exit 0
-          fi
-          git commit -m "data(019): refresh Pilot-0 source coverage"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          for attempt in 1 2 3; do
+            echo "019 data-gate attempt $attempt"
+            git fetch origin main
+            git reset --hard origin/main
+
+            python papers/019-time-off-happiness/code/pilot0_data_gate.py
+
+            git add \
+              papers/019-time-off-happiness/data \
+              papers/019-time-off-happiness/process/PILOT0_DATA_GATE.md \
+              papers/019-time-off-happiness/process/PILOT0_EVENT_FREEZE.csv \
+              papers/019-time-off-happiness/process/LEGAL_VERIFICATION_QUEUE.csv
+
+            if git diff --cached --quiet; then
+              echo "No generated changes"
+              exit 0
+            fi
+
+            git commit -m "data(019): refresh Pilot-0 source coverage"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Concurrent update detected; regenerating from newest main."
+          done
+
+          echo "Failed to publish 019 data-gate artifacts after 3 attempts." >&2
+          exit 1
