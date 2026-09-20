@@ -18,15 +18,14 @@ def main() -> None:
     jumps = pd.read_csv(DATA / "worldbank_leave_jumps.csv")
 
     calendar["year"] = pd.to_numeric(calendar["year"], errors="coerce").astype("Int64")
-    freeze["candidate_treatment_year"] = pd.to_numeric(
-        freeze["candidate_treatment_year"], errors="coerce"
-    ).astype("Int64")
+    for col in ["candidate_treatment_year", "legal_effective_year", "transition_year_excluded"]:
+        freeze[col] = pd.to_numeric(freeze[col], errors="coerce").astype("Int64")
     freeze["primary_pool"] = as_bool(freeze["primary_pool"])
 
     treated_by_country: dict[str, list[int]] = {}
-    for _, r in freeze.dropna(subset=["whr_country", "candidate_treatment_year"]).iterrows():
+    for _, r in freeze.dropna(subset=["whr_country", "legal_effective_year"]).iterrows():
         treated_by_country.setdefault(str(r["whr_country"]), []).append(
-            int(r["candidate_treatment_year"])
+            int(r["legal_effective_year"])
         )
 
     jump_years: dict[str, list[int]] = {}
@@ -41,10 +40,12 @@ def main() -> None:
 
     for _, e in freeze.iterrows():
         ty = int(e["candidate_treatment_year"])
+        clock = int(e["legal_effective_year"])
         focal = str(e["whr_country"])
-        pre_years = set(range(ty - 4, ty))
-        post_years = set(range(ty, ty + 5))
-        full_window = set(range(ty - 4, ty + 5))
+        pre_years = set(range(clock - 4, clock))
+        transition = pd.notna(e["transition_year_excluded"])
+        post_years = set(range(clock + 1, clock + 5)) if transition else set(range(clock, clock + 5))
+        full_window = set(range(clock - 4, clock + 5))
 
         raw_donors = []
         clean_donors = []
@@ -65,7 +66,7 @@ def main() -> None:
             # EW reporting may lag legal effective dates. Screen one extra year
             # on either side so a nearby statutory discontinuity cannot quietly
             # contaminate the donor pool.
-            has_jump = any((ty - 5) <= jy <= (ty + 5) for jy in jump_years.get(country, []))
+            has_jump = any((clock - 5) <= jy <= (clock + 5) for jy in jump_years.get(country, []))
             has_verified_treatment = any(
                 other_ty in full_window for other_ty in treated_by_country.get(country, [])
             )
@@ -84,6 +85,8 @@ def main() -> None:
             "whr_country": focal,
             "event_tier": e["event_tier"],
             "primary_pool": bool(e["primary_pool"]),
+            "legal_effective_year": clock,
+            "transition_year_excluded": "" if pd.isna(e["transition_year_excluded"]) else int(e["transition_year_excluded"]),
             "first_full_post_year": ty,
             "n_pre_observed": int(e["n_pre"]),
             "n_post_observed": int(e["n_post"]),
@@ -115,12 +118,12 @@ def main() -> None:
         "",
         "## Event support",
         "",
-        "| Event | First full post | Tier | Primary | Pre obs | Post obs | Raw donors | Clean donors |",
-        "|---|---:|---|---:|---:|---:|---:|---:|",
+        "| Event | Legal year | First full post | Tier | Primary | Pre obs | Post obs | Raw donors | Clean donors |",
+        "|---|---:|---:|---|---:|---:|---:|---:|---:|",
     ]
     for _, r in out.iterrows():
         lines.append(
-            f"| {r['country']} | {int(r['first_full_post_year'])} | {r['event_tier']} | "
+            f"| {r['country']} | {int(r['legal_effective_year'])} | {int(r['first_full_post_year'])} | {r['event_tier']} | "
             f"{bool(r['primary_pool'])} | {int(r['n_pre_observed'])} | {int(r['n_post_observed'])} | "
             f"{int(r['raw_donor_count'])} | {int(r['clean_donor_count'])} |"
         )
