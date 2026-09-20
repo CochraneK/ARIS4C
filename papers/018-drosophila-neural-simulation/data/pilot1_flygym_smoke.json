@@ -1,0 +1,28 @@
+{
+  "track": "FlyGym / NeuroMechFly v2 minimal compile",
+  "status": "PASS",
+  "upstream_repository": "https://github.com/NeLy-EPFL/flygym",
+  "upstream_commit": "38c8ec61034cd59bc5ba0de20688d4a3c0000d60",
+  "flygym_version": "2.1.0",
+  "runner": "GitHub-hosted Ubuntu 24.04",
+  "python": "3.12.14",
+  "workflow_run_id": 35528006159,
+  "job_id": 106123459751,
+  "install_start_utc": "2026-09-20T18:06:56.6563849Z",
+  "install_complete_utc": "2026-09-20T18:07:25.0038726Z",
+  "smoke_start_utc": "2026-09-20T18:07:25.1621461Z",
+  "smoke_pass_utc": "2026-09-20T18:07:26.9236759Z",
+  "install_elapsed_seconds": 28.347,
+  "smoke_elapsed_seconds": 1.762,
+  "display_required": false,
+  "gpu_required": false,
+  "runtime_network_download_observed": false,
+  "compiled_model": {
+    "nbody": 70,
+    "njnt": 127,
+    "nq": 133,
+    "nv": 132,
+    "nu": 42
+  },
+  "note": "Initial attempt failed because ARIS forced MUJOCO_GL=egl in a non-rendering smoke. Removing the unnecessary rendering backend constraint allowed model compilation to pass. This is an engineering reproduction, not a biological claim."
+}
