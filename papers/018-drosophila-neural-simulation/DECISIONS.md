@@ -56,3 +56,24 @@ The repaired headless EGL run completed the upstream default 1.0 s flyvis fade-i
 The next CI gate keeps the official LC9/LC10-input cell selection, z-score threshold=5, tracking gain=6 and two-dimensional descending-drive equations, but uses short baseline and closed-loop windows to make clean CI practical.
 
 Zero baseline-SD positions, if encountered because of the shortened calibration window, are excluded from bounded-smoke z-score aggregation and are counted explicitly. This is a CI accommodation and must not be silently treated as exact reproduction of the paper's 3 s baseline.
+
+## 2026-09-21 · Pilot 2B bounded closed loop passes
+
+A clean CI run executed the official legacy moving-target visual-neural-decoder-body chain for a bounded 0.20 s baseline plus 0.20 s closed loop.
+
+Observed:
+- 100 baseline visual updates;
+- 100 closed-loop decoder updates;
+- nonempty object mask on 100/100 decoder frames;
+- finite nonzero turning bias throughout;
+- asymmetric descending drive throughout.
+
+**Decision:** call this an active end-to-end closed-loop reproduction, not "successful following." The target-observer distance increased during the short interval.
+
+**Baseline caveat:** the shortened baseline produced ~0.17% zero-SD positions. The bounded smoke excludes those positions from z-score aggregation and counts them. Scientific comparisons require a full baseline or validated upstream baseline artefact.
+
+## 2026-09-21 · Separate decoder correctness from closed-loop success
+
+The official decoder equations now have independent pure-math unit tests.
+
+**Decision:** future failures must be localized to neural representation, decoder/interface, or body/controller layers. Do not infer the failing layer from trajectory alone.
