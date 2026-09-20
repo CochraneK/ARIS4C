@@ -1,7 +1,7 @@
 # ARIS4C018 · Current status
 
 - **Title:** Drosophila Open Science & Neural Simulation
-- **Project status:** exploration-pilot1-reproduction-pass
+- **Project status:** exploration-pilot2a-pass
 - **Activity:** active
 - **Portfolio progress:** 40%
 - **Current stage:** Pilot 1 reproduction PASS · neural-state ↔ behaviour bridge design

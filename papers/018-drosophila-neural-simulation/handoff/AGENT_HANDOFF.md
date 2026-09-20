@@ -4,7 +4,7 @@
 
 **Drosophila Open Science & Neural Simulation**
 
-An exploration project mapping the open Drosophila neuroscience ecosystem and developing a behaviour-neural dual-view sandbox. Toy Pilot 0 validates the perturb-simulate-visualize-measure loop; Pilot 1 now cleanly reproduces pinned flyvis connectome construction and FlyGym/NeuroMechFly compilation. The next gate is an explicit, biologically defensible neural-state-to-behaviour bridge before any new biological claim.
+Drosophila open-science and neural-simulation exploration. Pilot 0 validated the perturb/simulation UX; Pilot 1 reproduced pinned flyvis and FlyGym components; Pilot 2A now reproduces the official legacy RealisticVisionFly interface with real retinal rendering, pretrained connectome-constrained visual dynamics, 2×45,669 neural activity state, and embodied FlyGym state in one clean run. Pilot 2B targets the published engineered decoder and bounded closed-loop fly following before any new hypothesis.
 
 ## Current state
 
