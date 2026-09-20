@@ -31,3 +31,14 @@
 - Recorded clean-install/runtime burden; flyvis default dependency resolution pulled a large CUDA-capable stack despite the CPU-only smoke.
 - Added ShunyaResearch/drosophila-connectome-experiments and philshiu/Drosophila_brain_model as comparison/reference implementations for the higher-cost whole-brain route.
 - Next gate shifted from repository discovery to explicit neural-state ↔ embodied-behaviour interface design.
+
+## 2026-09-21 · Pilot 2A official advanced-vision interface
+
+- First legacy run installed the examples stack and downloaded pretrained flyvis models with upstream checksum verification, but failed at retinal rendering because the headless runner lacked an OpenGL context.
+- Added the legacy FlyGym documented headless configuration: libegl1-mesa-dev, MUJOCO_GL=egl, PYOPENGL_PLATFORM=egl.
+- Full upstream-default run PASS at workflow 35528654776.
+- Observed neural state shape: 2 × 45,669.
+- Observed 5 real visual updates in the bounded 100-step post-reset interval.
+- Named T4a/b/c/d and T5a/b/c/d activities were all finite.
+- Body state advanced in the same simulation; measured bounded displacement 0.472824.
+- Pilot 2B was then implemented to reproduce a short real moving-fly closed loop using the official LC9/LC10-input decoder equations.
