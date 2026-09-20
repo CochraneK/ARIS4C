@@ -1,0 +1,38 @@
+name: ARIS4C018 Pilot1 Reproduction
+
+on:
+  push:
+    paths:
+      - "papers/018-drosophila-neural-simulation/code/pilot1_*.py"
+      - "papers/018-drosophila-neural-simulation/PILOT1_REPRODUCTION_PLAN.md"
+      - ".github/workflows/aris4c018-pilot1-reproduction.yml"
+  workflow_dispatch:
+
+jobs:
+  flyvis-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned flyvis
+        run: python -m pip install "git+https://github.com/TuragaLab/flyvis.git@92b3845cc426dd309a1a0e1b3890156c42e14021"
+      - name: Compile minimal flyvis connectome
+        run: python papers/018-drosophila-neural-simulation/code/pilot1_flyvis_smoke.py
+
+  flygym-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned FlyGym
+        run: python -m pip install "git+https://github.com/NeLy-EPFL/flygym.git@38c8ec61034cd59bc5ba0de20688d4a3c0000d60"
+      - name: Compile minimal NeuroMechFly world
+        env:
+          MUJOCO_GL: egl
+        run: python papers/018-drosophila-neural-simulation/code/pilot1_flygym_smoke.py
