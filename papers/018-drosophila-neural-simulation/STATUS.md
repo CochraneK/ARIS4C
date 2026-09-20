@@ -2,21 +2,37 @@
 
 ## Current
 
-- Progress: 8%
+- Progress: 15%
 - Activity: active
-- Stage: Open-source ecosystem mapping · research space initialization
+- Stage: Open-source ecosystem mapping · candidate stack evaluation
 
 ## Completed
 
 - Defined project boundary: exploration stays in ARIS4C; mature simulation tools or paper directions can fork independently.
 - Added initial ecosystem map covering connectome resources, simulation frameworks, and candidate experiment directions.
 - Added research question pool.
+- Completed first GitHub repository survey and separated infrastructure candidates from possible MVP simulation targets.
+
+## Current findings
+
+The first runnable target should not be whole-brain simulation. Priority is a small circuit with:
+
+- public data;
+- interpretable behaviour;
+- reproducible code;
+- low computational barrier.
+
+Current leading directions:
+
+1. central complex navigation
+2. mushroom body learning
+3. connectome-constrained small circuit models
 
 ## Next gates
 
-1. Expand GitHub/public-resource inventory.
-2. Evaluate runnable simulation stacks.
-3. Select the smallest scientifically meaningful reproducible model.
+1. Inspect FlyWire/hemibrain workflows in detail.
+2. Select one circuit-level MVP.
+3. Build minimal reproducible environment.
 4. Run first simulation.
 
 ## Decision rule
