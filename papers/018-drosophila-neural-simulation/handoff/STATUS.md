@@ -2,12 +2,12 @@
 
 - **Title:** Drosophila Open Science & Neural Simulation
 - **Project status:** exploration-pilot0
-- **Activity:** unclassified
-- **Portfolio progress:** 0%
-- **Current stage:** Not yet recorded
-- **Evidence established:** Not yet recorded
-- **Next gate:** Not yet recorded
-- **Blocker:** Not yet recorded
+- **Activity:** wait
+- **Portfolio progress:** 12%
+- **Current stage:** Concept registered · open-toolchain atlas and reproduction gate
+- **Evidence established:** User-approved scope covering open Drosophila repository survey, real reproduction/simulation, downstream-user applications, and synchronized fly-motion × neural-activity visualization; canonical scaffold restored to Git
+- **Next gate:** Freeze the repository-atlas schema and reproduce the first two complementary toolchains
+- **Blocker:** None; queued behind higher-progress completion-first work
 
 ## Source of truth
 

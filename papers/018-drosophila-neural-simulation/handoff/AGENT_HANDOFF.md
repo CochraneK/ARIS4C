@@ -8,18 +8,18 @@ An exploration project mapping the open Drosophila neuroscience ecosystem and de
 
 ## Current state
 
-- Activity: **unclassified**
-- Progress: **0%**
-- Stage: **Not yet recorded**
-- Evidence: Not yet recorded
+- Activity: **wait**
+- Progress: **12%**
+- Stage: **Concept registered · open-toolchain atlas and reproduction gate**
+- Evidence: User-approved scope covering open Drosophila repository survey, real reproduction/simulation, downstream-user applications, and synchronized fly-motion × neural-activity visualization; canonical scaffold restored to Git
 
 ## Immediate next action
 
-**Review TODO.md and the project process files to establish the next gate.**
+**Freeze the repository-atlas schema and reproduce the first two complementary toolchains**
 
 ## Current blocker / gate
 
-No blocker recorded.
+None; queued behind higher-progress completion-first work
 
 ## Canonical files / entry points
 
