@@ -5,8 +5,17 @@
       "resolved_url": "https://www.worldbank.org/content/dam/misc/employing-workers/EW04-20_Panel_Dataset_Regulations-of-Employment_2003-2019.xlsx",
       "bytes": 597212,
       "sha256": "02e5f405d1c17b21273a4eb570dda1f12d0f7eb65349f657a919c9d05760ecdb",
-      "selected_sheet": "Questions",
-      "annual_leave_columns": [],
+      "selected_sheet": "EW04-EW20",
+      "annual_leave_columns": [
+        "leave_1y",
+        "leave_5y",
+        "leave_10y",
+        "leave_avg"
+      ],
+      "panel_rows": 3434,
+      "panel_economies": 202,
+      "panel_first_ew_year": 2004,
+      "panel_last_ew_year": 2020,
       "workbook": [
         {
           "sheet": "Questions",
@@ -275,6 +284,9 @@
   "events": {
     "candidate_rows": 30,
     "coverage_pass": 17,
-    "confirmatory_timing_pass": 4
+    "confirmatory_timing_pass": 4,
+    "panel_direction_match": 17,
+    "pilot0_structural_pass": 11,
+    "freeze_eligible": 2
   }
 }

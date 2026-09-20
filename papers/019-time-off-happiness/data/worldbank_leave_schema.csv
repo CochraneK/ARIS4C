@@ -1,1 +1,8 @@
-
+sheet,column,normalized
+EW04-EW20,Economy,economy
+EW04-EW20,Economy Code,economy code
+EW04-EW20,EW Year,ew year
+EW04-EW20,Paid annual leave for a worker with 1 year of tenure (in working days),leave_1y
+EW04-EW20,Paid annual leave for a worker with 5 years of tenure (in working days),leave_5y
+EW04-EW20,Paid annual leave for a worker with 10 years of tenure (in working days),leave_10y
+EW04-EW20,"Paid annual leave (working days), average for workers with 1, 5 and 10 years of tenure",leave_avg
