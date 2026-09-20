@@ -113,7 +113,7 @@ def event_coverage(events, whr):
             # With annual aggregate well-being and no interview month, avoid
             # classifying a partly exposed reform year as fully post-treatment.
             # Only a Jan-01 reform treats that calendar year as the first full year.
-            if effective_date and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", effective_date):
+            if effective_date and re.fullmatch(r"\d{4}-\d{2}-\d{2}", effective_date):
                 month_day = effective_date[5:]
                 if month_day == "01-01":
                     candidate_year = legal_year
@@ -143,7 +143,7 @@ def event_coverage(events, whr):
             "n_pre": len(pre),
             "n_post": len(post),
             "pilot0_coverage_pass": bool(len(pre) >= 2 and len(post) >= 2),
-            "confirmatory_timing_pass": bool(len(pre) >= 2 and len(post) >= 2 and timing_quality == "verified_year"),
+            "confirmatory_timing_pass": bool(len(pre) >= 2 and len(post) >= 2 and timing_quality.startswith("verified_")),
         })
         rows.append(row)
     return pd.DataFrame(rows)
