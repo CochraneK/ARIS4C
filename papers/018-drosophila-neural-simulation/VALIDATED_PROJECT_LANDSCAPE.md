@@ -85,3 +85,51 @@ Reference implementation associated with the whole-brain LIF modelling line late
 
 Source:
 - https://github.com/philshiu/Drosophila_brain_model
+
+## 2026 community closed-loop projects worth treating as serious comparators
+
+### nishkarsh1215/flywire-neuromechfly
+
+A user-built FlyWire brain -> NeuroMechFly project that is unusually useful because it labels **REAL / ENGINEERED / FAILED** components separately and preserves negative results.
+
+Reported directions include:
+
+- full FlyWire LIF brain simulation;
+- optomotor steering;
+- sugar/feeding cascade;
+- body coupling through NeuroMechFly;
+- split-screen body + live brain visualization;
+- failed grooming and olfactory-navigation attempts.
+
+The README explicitly distinguishes connectome-derived signals from engineered CPG/motor mappings and documents model-fidelity failures. This makes it a high-value reproducibility/claim-boundary comparator rather than merely a visual demo.
+
+Source:
+- https://github.com/nishkarsh1215/flywire-neuromechfly
+
+### ZeroXClem/closed-loop-fly
+
+A browser-based closed-loop MaleCNS project combining an optic-lobe model with a whole-CNS simulation and body. It includes:
+
+- rendered image -> eye -> optic lobe -> descending-neuron -> body loop;
+- WebGPU/browser execution;
+- committed benchmark outputs;
+- ablation runs;
+- explicit follow-up documentation correcting earlier interpretations when a readout artifact was discovered.
+
+This project is especially relevant to ARIS4C018 because it demonstrates why a compelling left-behaviour/right-neural visualization must be accompanied by controls against readout artefacts.
+
+Source:
+- https://github.com/ZeroXClem/closed-loop-fly
+
+## Updated community-project rule
+
+Projects are ranked higher when they expose:
+
+1. exact provenance;
+2. real vs engineered interfaces;
+3. failed experiments;
+4. ablation/null controls;
+5. reproducible numerical outputs;
+6. visualization synchronized to real logged model state.
+
+A beautiful video without those properties remains UX inspiration only.
