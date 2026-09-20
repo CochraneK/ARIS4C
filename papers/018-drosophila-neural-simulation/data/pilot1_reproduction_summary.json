@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "project": "ARIS4C018",
+  "pilot": "Pilot 1 published-model smoke reproduction",
+  "status": "PASS",
+  "workflow": {
+    "run_id": 35528006159,
+    "conclusion": "success",
+    "url": "https://github.com/CochraneK/ARIS4C/actions/runs/35528006159",
+    "completed_at": "2026-09-20T18:09:13Z"
+  },
+  "tracks": {
+    "flyvis": {
+      "status": "PASS",
+      "upstream_repository": "https://github.com/TuragaLab/flyvis",
+      "upstream_commit": "92b3845cc426dd309a1a0e1b3890156c42e14021",
+      "installed_version": "1.2.0",
+      "runner": "GitHub-hosted Ubuntu 24.04",
+      "python": "3.11",
+      "install_elapsed_seconds": 117.973,
+      "smoke_elapsed_seconds": 12.101,
+      "gpu_required_for_smoke": false,
+      "display_required": false,
+      "runtime_network_download_observed": false,
+      "model": {
+        "connectome_file": "fib25-fib19_v2.2.json",
+        "extent": 1,
+        "nodes": 443,
+        "edges": 8174,
+        "cell_types": 65
+      },
+      "usability_note": "Clean pip installation pulled a very large PyTorch/CUDA dependency stack even though the smoke ran without a GPU. This is a real newcomer-installation cost to address in the eventual user-facing path."
+    },
+    "flygym": {
+      "status": "PASS",
+      "upstream_repository": "https://github.com/NeLy-EPFL/flygym",
+      "upstream_commit": "38c8ec61034cd59bc5ba0de20688d4a3c0000d60",
+      "installed_version": "2.1.0",
+      "runner": "GitHub-hosted Ubuntu 24.04",
+      "python": "3.12.14",
+      "install_elapsed_seconds": 28.347,
+      "smoke_elapsed_seconds": 1.762,
+      "gpu_required_for_smoke": false,
+      "display_required": false,
+      "runtime_network_download_observed": false,
+      "compiled_model": {
+        "nbody": 70,
+        "njnt": 127,
+        "nq": 133,
+        "nv": 132,
+        "nu": 42
+      },
+      "first_attempt_note": "The first CI attempt failed because the ARIS workflow unnecessarily forced MUJOCO_GL=egl in a non-rendering smoke. Removing that environment constraint fixed the run without changing the FlyGym model/API."
+    }
+  },
+  "scientific_boundary": "These are engineering reproductions of maintained upstream components. No flyvis neural state has yet been coupled causally to FlyGym behaviour, and no new biological claim is made."
+}
