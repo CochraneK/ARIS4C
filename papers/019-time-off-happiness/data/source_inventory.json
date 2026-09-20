@@ -284,12 +284,12 @@
   "events": {
     "candidate_rows": 30,
     "coverage_pass": 17,
-    "confirmatory_timing_pass": 10,
+    "confirmatory_timing_pass": 0,
     "panel_direction_match": 19,
-    "pilot0_structural_pass": 13,
-    "tier_A_corroborated": 9,
-    "tier_B_legal_only": 1,
-    "freeze_eligible": 10,
+    "pilot0_structural_pass": 12,
+    "tier_A_corroborated": 0,
+    "tier_B_legal_only": 0,
+    "freeze_eligible": 0,
     "world_bank_all_leave_jumps": 44,
     "unregistered_whr_covered_jump_queue": 11
   }
