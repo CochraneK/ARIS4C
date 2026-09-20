@@ -2,12 +2,12 @@
 
 - **Title:** Drosophila Open Science & Neural Simulation
 - **Project status:** exploration-pilot0
-- **Activity:** wait
-- **Portfolio progress:** 12%
-- **Current stage:** Concept registered · open-toolchain atlas and reproduction gate
-- **Evidence established:** User-approved scope covering open Drosophila repository survey, real reproduction/simulation, downstream-user applications, and synchronized fly-motion × neural-activity visualization; canonical scaffold restored to Git
-- **Next gate:** Freeze the repository-atlas schema and reproduce the first two complementary toolchains
-- **Blocker:** None; queued behind higher-progress completion-first work
+- **Activity:** active
+- **Portfolio progress:** 32%
+- **Current stage:** Pilot 0 toy sandbox · behaviour-neural dual-view prototype
+- **Evidence established:** Validated Drosophila open-source landscape separated research/model infrastructure from community demos; deterministic toy ring-attractor Pilot 0 completed across 50 seeds × 5 lesion levels; two-panel browser prototype links simulated behaviour with neural population activity; ARIS4C018 Pilot0 CI PASS.
+- **Next gate:** Reproduce one small maintained published-model path in flyvis and one minimal FlyGym behaviour path; measure install/runtime/data burden, then select the smallest scientifically defensible neural-state↔behaviour bridge before freezing a biological hypothesis.
+- **Blocker:** No immediate engineering blocker. Biological inference remains intentionally blocked until Pilot 1 replaces toy assumptions with a published validated model/data path.
 
 ## Source of truth
 
