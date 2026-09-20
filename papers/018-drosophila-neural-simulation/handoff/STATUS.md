@@ -1,7 +1,7 @@
 # ARIS4C018 · Current status
 
 - **Title:** Drosophila Open Science & Neural Simulation
-- **Project status:** exploration-pilot0
+- **Project status:** exploration-pilot1-reproduction-pass
 - **Activity:** active
 - **Portfolio progress:** 32%
 - **Current stage:** Pilot 0 toy sandbox · behaviour-neural dual-view prototype
