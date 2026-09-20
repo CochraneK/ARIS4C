@@ -3,11 +3,11 @@
 - **Title:** Drosophila Open Science & Neural Simulation
 - **Project status:** exploration-pilot2b-pass
 - **Activity:** active
-- **Portfolio progress:** 46%
-- **Current stage:** Pilot 2A embodied-neural interface PASS · Pilot 2B closed-loop reproduction running
-- **Evidence established:** Pilot1 pinned clean-CI dual reproduction PASS; Pilot2A full official legacy RealisticVisionFly path PASS with checksum-verified pretrained flyvis, EGL retinal rendering, upstream 1.0 s neural fade-in, 2×45,669 neural state, named T4/T5 activities and FlyGym body state in one run (workflow 35528654776).
-- **Next gate:** Complete bounded official LC9/LC10-input baseline→z-score→object-mask→turning-bias→2-D descending-drive closed loop against MovingFlyArena, then freeze synchronized neural/decoder/behaviour traces.
-- **Blocker:** No current environment blocker. Scientific interpretation remains gated because the visual neural model is connectome-constrained but the object-mask/turning-bias/descending-drive mapping is an engineered decoder, not a reconstructed biological visual-to-motor pathway.
+- **Portfolio progress:** 55%
+- **Current stage:** Pilot 2B bounded official closed loop PASS · synchronized-trace/full-condition gate
+- **Evidence established:** Pilot0 toy sandbox PASS; Pilot1 flyvis+FlyGym clean reproductions PASS; Pilot2A full official legacy RealisticVisionFly PASS; Pilot2B 0.20s baseline + 0.20s moving-target closed loop PASS with 100/100 decoder frames producing object masks, finite turning bias and asymmetric 2-D descending drive. Decoder math has independent unit CI PASS.
+- **Next gate:** Freeze full synchronized neural→decoder→body→target trace, then resolve the short-baseline zero-SD issue with a full-duration calibration or validated upstream baseline and determine whether one full 3s published condition is required before FlyGym 2.x migration.
+- **Blocker:** No immediate engineering blocker. Scientific claims remain gated by the engineered decoder boundary and by short-baseline zero-SD positions (~0.17%); the bounded run is not labeled successful following.
 
 ## Source of truth
 
