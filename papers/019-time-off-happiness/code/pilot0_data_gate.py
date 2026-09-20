@@ -93,6 +93,8 @@ def event_coverage(events, whr):
         "Taiwan, China": ["Taiwan Province of China", "Taiwan, China", "Taiwan"],
         "Cabo Verde": ["Cabo Verde", "Cape Verde"],
         "North Macedonia": ["North Macedonia", "Macedonia, FYR", "Macedonia"],
+        "China": ["China Shanghai", "China Beijing", "China"],
+        "India": ["India Mumbai", "India Delhi", "India"],
     }
     available_names = set(whr["country"].astype(str))
     rows = []
@@ -186,7 +188,13 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
                 "wb_economy": "", "wb_current_year": pd.NA, "wb_previous_year": pd.NA,
                 "leave_avg_previous": pd.NA, "leave_avg_current": pd.NA, "leave_avg_delta": pd.NA,
                 "panel_change_detected": False, "panel_direction_match": False,
-                "pilot0_structural_pass": False, "freeze_eligible": False,
+                "pilot0_structural_pass": False,
+                "legal_timing_coverage_pass": bool(cov.get("confirmatory_timing_pass", False)),
+                "event_tier": "B_legal_only" if bool(cov.get("confirmatory_timing_pass", False)) else "C_provisional",
+                "primary_pool": False,
+                "freeze_eligible": bool(cov.get("confirmatory_timing_pass", False)),
+                "macro_window_flags": "",
+                "scope_flags": "world_bank_name_match_missing",
                 "panel_note": "No World Bank economy-name match",
             })
             rows.append({**base, **{k: cov.get(k) for k in [
@@ -202,7 +210,13 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
                 "wb_economy": matched, "wb_current_year": pd.NA, "wb_previous_year": pd.NA,
                 "leave_avg_previous": pd.NA, "leave_avg_current": pd.NA, "leave_avg_delta": pd.NA,
                 "panel_change_detected": False, "panel_direction_match": False,
-                "pilot0_structural_pass": False, "freeze_eligible": False,
+                "pilot0_structural_pass": False,
+                "legal_timing_coverage_pass": bool(cov.get("confirmatory_timing_pass", False)),
+                "event_tier": "B_legal_only" if bool(cov.get("confirmatory_timing_pass", False)) else "C_provisional",
+                "primary_pool": False,
+                "freeze_eligible": bool(cov.get("confirmatory_timing_pass", False)),
+                "macro_window_flags": "",
+                "scope_flags": "world_bank_report_year_missing",
                 "panel_note": f"No EW row for report year {report_year}",
             })
             rows.append({**base, **{k: cov.get(k) for k in [
@@ -230,6 +244,25 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
 
         coverage_pass = bool(cov.get("pilot0_coverage_pass", False))
         timing_pass = bool(cov.get("confirmatory_timing_pass", False))
+        if timing_pass and direction_match:
+            event_tier = "A_corroborated"
+        elif timing_pass:
+            event_tier = "B_legal_only"
+        else:
+            event_tier = "C_provisional"
+        treatment_year = int(cov.get("candidate_treatment_year")) if cov.get("candidate_treatment_year") not in (None, "") else None
+        macro_window_flags = []
+        if treatment_year is not None and 2008 <= treatment_year <= 2010:
+            macro_window_flags.append("global_financial_crisis_window")
+        if treatment_year is not None and 2019 <= treatment_year <= 2021:
+            macro_window_flags.append("covid_overlap_post_window")
+        scope_flags = []
+        if str(e["event_id"]) == "CAN_EW2019":
+            scope_flags.append("federal_jurisdiction_only")
+        if str(e["event_id"]) == "LTU_EW2019":
+            scope_flags.append("broad_labour_code_package")
+        if str(e["event_id"]).startswith("GBR_STAGE"):
+            scope_flags.append("multi_stage_reform")
         base.update({
             "wb_economy": matched,
             "wb_current_year": int(cur["ew_year"]),
@@ -246,7 +279,12 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
             "panel_change_detected": changed,
             "panel_direction_match": direction_match,
             "pilot0_structural_pass": bool(coverage_pass and direction_match),
-            "freeze_eligible": bool(timing_pass and direction_match),
+            "legal_timing_coverage_pass": timing_pass,
+            "event_tier": event_tier,
+            "primary_pool": event_tier == "A_corroborated",
+            "freeze_eligible": timing_pass,
+            "macro_window_flags": ";".join(macro_window_flags),
+            "scope_flags": ";".join(scope_flags),
             "panel_note": "",
         })
         rows.append({**base, **{k: cov.get(k) for k in [
@@ -331,6 +369,8 @@ def main():
             "confirmatory_timing_pass": int(evcov["confirmatory_timing_pass"].sum()),
             "panel_direction_match": int(validation["panel_direction_match"].sum()),
             "pilot0_structural_pass": int(validation["pilot0_structural_pass"].sum()),
+            "tier_A_corroborated": int((validation["event_tier"] == "A_corroborated").sum()),
+            "tier_B_legal_only": int((validation["event_tier"] == "B_legal_only").sum()),
             "freeze_eligible": int(validation["freeze_eligible"].sum()),
         },
     }
@@ -342,7 +382,10 @@ def main():
     pass_rows = evcov.loc[evcov["pilot0_coverage_pass"]]
     exact_rows = evcov.loc[evcov["confirmatory_timing_pass"]]
     structurally_valid = validation.loc[validation["pilot0_structural_pass"]]
-    freeze_rows = validation.loc[validation["freeze_eligible"]]
+    freeze_rows = validation.loc[validation["freeze_eligible"]].copy()
+    freeze_rows.to_csv(PROCESS_DIR / "PILOT0_EVENT_FREEZE.csv", index=False)
+    tier_a = freeze_rows.loc[freeze_rows["event_tier"].eq("A_corroborated")]
+    tier_b = freeze_rows.loc[freeze_rows["event_tier"].eq("B_legal_only")]
     lines = [
         "# ARIS4C019 · Pilot-0 Data Gate", "",
         "> Auto-generated from official source downloads. This reports feasibility only; it does not estimate a treatment effect.", "",
@@ -352,24 +395,28 @@ def main():
         f"- Of those, candidates whose treatment year is already verified: **{len(exact_rows)}**.",
         f"- World Bank statutory-leave panel: **{len(wb_panel)} rows**, **{wb_panel['economy'].nunique()} economies**, EW{int(wb_panel['ew_year'].min())}–EW{int(wb_panel['ew_year'].max())}.",
         f"- Reform candidates whose World Bank panel change matches the registered direction and WHR coverage passes: **{len(structurally_valid)}**.",
-        f"- Candidates passing WHR coverage + verified timing + World Bank direction validation: **{len(freeze_rows)}**.", "",
+        f"- Freeze-eligible legal events (verified timing + WHR coverage): **{len(freeze_rows)}**.",
+        f"- Tier A, additionally corroborated by the World Bank panel: **{len(tier_a)}**.",
+        f"- Tier B, legally verified but not corroborated by the World Bank historical panel: **{len(tier_b)}**.", "",
         "## Interpretation", "",
         "Coverage PASS means an event is empirically inspectable. It does **not** establish parallel trends, no anticipation, clean treatment isolation, or causality.", "",
         "## Verified-year candidates that pass coverage", "",
     ]
     if freeze_rows.empty:
-        lines.append("None yet. Verify exact legal effective dates and panel changes before causal estimation.")
+        lines.append("None yet. Verify exact legal effective dates before causal estimation.")
     else:
-        lines += ["| Country | Effective year | Direction | WB Δ avg leave | n pre | n post |", "|---|---:|---|---:|---:|---:|"]
-        for _, row in freeze_rows.sort_values(["candidate_treatment_year", "country"]).iterrows():
+        lines += ["| Tier | Country | Effective year | Direction | WB Δ avg leave | n pre | n post | Flags |", "|---|---|---:|---|---:|---:|---:|---|"]
+        for _, row in freeze_rows.sort_values(["event_tier", "candidate_treatment_year", "country"]).iterrows():
+            delta = "" if pd.isna(row.get("leave_avg_delta")) else f"{float(row['leave_avg_delta']):.2f}"
+            flags = ";".join([x for x in [str(row.get("macro_window_flags", "")), str(row.get("scope_flags", ""))] if x and x != "nan"])
             lines.append(
-                f"| {row['country']} | {int(row['candidate_treatment_year'])} | {row['direction']} | "
-                f"{float(row['leave_avg_delta']):.2f} | {int(row['n_pre'])} | {int(row['n_post'])} |"
+                f"| {row['event_tier']} | {row['country']} | {int(row['candidate_treatment_year'])} | {row['direction']} | "
+                f"{delta} | {int(row['n_pre'])} | {int(row['n_post'])} | {flags} |"
             )
     lines += ["", "## Next gate", "",
-              "1. verify exact legal effective dates for structurally valid events still marked provisional;",
-              "2. freeze event inclusion and crisis/scope flags without reference to post-treatment happiness changes;",
-              "3. create the no-outcome-look event-study design manifest;",
+              "1. continue exact-date verification for Tier-C candidates with good WHR coverage;",
+              "2. keep Tier A as the primary candidate pool and Tier B as legally verified sensitivity evidence;",
+              "3. freeze estimator/control rules without inspecting post-treatment Life Ladder changes;",
               "4. only then run event-study / staggered-DiD diagnostics.", ""]
     (PROCESS_DIR / "PILOT0_DATA_GATE.md").write_text("\n".join(lines), encoding="utf-8")
 
