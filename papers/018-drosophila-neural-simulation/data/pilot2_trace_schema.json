@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/CochraneK/ARIS4C/papers/018-drosophila-neural-simulation/data/pilot2_trace_schema.json",
+  "title": "ARIS4C018 synchronized neural-decoder-body trace",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "provenance",
+    "frames"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "model_stack",
+        "source",
+        "scientific_boundary"
+      ],
+      "properties": {
+        "model_stack": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "scientific_boundary": {
+          "type": "string"
+        },
+        "upstream_commit": {
+          "type": "string"
+        },
+        "aris_commit": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "t_s",
+          "body",
+          "target",
+          "decoder",
+          "neural"
+        ],
+        "properties": {
+          "t_s": {
+            "type": "number",
+            "minimum": 0
+          },
+          "body": {
+            "type": "object",
+            "required": [
+              "x",
+              "y"
+            ],
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "heading": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          },
+          "target": {
+            "type": "object",
+            "required": [
+              "x",
+              "y"
+            ],
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              }
+            }
+          },
+          "decoder": {
+            "type": "object",
+            "required": [
+              "turning_bias",
+              "dn_left",
+              "dn_right"
+            ],
+            "properties": {
+              "turning_bias": {
+                "type": "number"
+              },
+              "dn_left": {
+                "type": "number"
+              },
+              "dn_right": {
+                "type": "number"
+              },
+              "object_fraction_left": {
+                "type": "number"
+              },
+              "object_fraction_right": {
+                "type": "number"
+              }
+            }
+          },
+          "neural": {
+            "type": "object",
+            "properties": {
+              "summary": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number"
+                }
+              },
+              "source_layer": {
+                "type": "string",
+                "enum": [
+                  "BIO",
+                  "DECODER",
+                  "BODY",
+                  "CONTROL"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  }
+}
