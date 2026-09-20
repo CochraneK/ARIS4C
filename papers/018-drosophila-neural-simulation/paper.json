@@ -1,0 +1,26 @@
+{
+  "id": "018",
+  "slug": "drosophila-neural-simulation",
+  "title": "Drosophila Open Science & Neural Simulation",
+  "short_title": "Fly Neuro Playground",
+  "year": 2026,
+  "status": "exploration-pilot0",
+  "domain": "computational neuroscience / Drosophila / connectomics / embodied simulation / open science",
+  "summary": "An exploration project mapping the open Drosophila neuroscience ecosystem and developing a behaviour-neural dual-view sandbox. Pilot 0 validates the perturb-simulate-visualize-measure pipeline with an explicitly non-biological toy ring-attractor model; Pilot 1 will reproduce maintained published components such as FlyGym or flyvis before biological claims.",
+  "authors": ["Cochrane Kang"],
+  "aris": {
+    "provenance": "ARIS4C exploration layer; formal research protocol deferred until a falsifiable biological question and published model/data path are selected",
+    "version": "v0.1.0",
+    "commit": ""
+  },
+  "links": {
+    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/018-drosophila-neural-simulation",
+    "status": "STATUS.md",
+    "landscape": "VALIDATED_PROJECT_LANDSCAPE.md",
+    "pilot0_protocol": "PILOT0_PROTOCOL.md",
+    "pilot0_code": "code/pilot0_ring_attractor.py",
+    "pilot0_result": "data/pilot0_summary.csv",
+    "prototype": "prototype/index.html"
+  },
+  "tags": ["ARIS4C", "Drosophila", "connectome", "FlyGym", "flyvis", "FlyBrainLab", "neural simulation", "open science", "embodied neuroscience"]
+}
