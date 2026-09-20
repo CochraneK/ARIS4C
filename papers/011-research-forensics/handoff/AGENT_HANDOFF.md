@@ -11,7 +11,7 @@ An auditable multi-evidence research-forensics framework with six time-safe pre-
 - Activity: **active**
 - Progress: **87%**
 - Stage: **Confirmatory transition · 80-record blinded feasibility frame frozen · exposure firewall expanded**
-- Evidence: Six time-safe pre-outcome development FLAG evaluations across five papers; one 10-PASS/0-FLAG formatting control; four hashed development comparators; and a detector-output-blind feasibility frame with 80/80 unique target DOIs and event keys across 20 balanced 2016–2025 × correction/retraction strata. All 42 development-exposed DOIs are excluded. Crossref workload signals are 79/80 full-text links, 37/80 abstracts, 28/80 current-title status markers, and target types 79 journal-article + 1 proceedings-article. These are acquisition/leakage observations, not detector-performance results.
+- Evidence: Enriched development cycle closed at six time-safe pre-outcome FLAG evaluations across five target papers plus one SAFE_EXACT formatting/honest-error non-escalation control and four hashed development comparators. A detector-output-blind confirmatory-feasibility frame is frozen at 80 unique target works across all 20 year×update-type strata (2016–2025 × correction/retraction; 4/stratum), excluding 42 development-exposed DOIs. The deduplication gate enforces 80 unique target DOIs / event keys. Crossref workload fields show 79/80 full-text links, 37/80 abstracts, 28/80 current-title status markers, and work types 79 journal-article + 1 proceedings-article; no detector performance has been inspected.
 
 ## Immediate next action
 
