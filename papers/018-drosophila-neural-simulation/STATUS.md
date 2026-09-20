@@ -2,55 +2,60 @@
 
 ## Current
 
-- Progress: 40%
+- Progress: 46%
 - Activity: active
-- Stage: Pilot 1 reproduction PASS · neural-state ↔ behaviour bridge design
+- Stage: Pilot 2A embodied-neural interface PASS · Pilot 2B official closed-loop reproduction
 
 ## Completed
 
-- Defined 018 as an ARIS4C exploration mother project rather than prematurely freezing a paper question.
 - Mapped research/model infrastructure and user/community projects separately.
-- Implemented the preferred behaviour-left / neural-activity-right Fly Neuro Playground interaction.
-- Completed deterministic toy Pilot 0 with perturbation sweeps and CI.
-- Reproduced two maintained upstream model components from clean pinned CI environments:
+- Built and tested the behaviour-left / neural-activity-right Pilot 0 sandbox.
+- Completed deterministic toy perturbation sweeps.
+- Pilot 1 clean-CI reproduction PASS:
   - flyvis connectome construction: 443 nodes / 8,174 edges / 65 cell types at extent=1;
   - FlyGym 2.1.0 NeuroMechFly compilation: 70 bodies / 127 joints / 42 controls.
-- Pilot 1 workflow PASS: https://github.com/CochraneK/ARIS4C/actions/runs/35528006159
+- Pilot 2A official legacy advanced-vision interface PASS:
+  - pretrained flyvis weights downloaded with upstream checksum verification;
+  - headless retinal rendering operational through EGL;
+  - upstream 1.0 s neural fade-in completed;
+  - same run exposed FlyGym body state plus a **2 × 45,669** neural activity array;
+  - five real vision updates observed in the bounded smoke;
+  - named T4/T5 activity outputs were finite.
 
-## Practical reproducibility findings
+Pilot 2A workflow:
 
-- FlyGym clean install + headless compile is relatively light for the smoke path (~28 s install + ~1.8 s compile on the observed hosted runner).
-- flyvis is runnable without GPU for the smoke, but its default dependency resolution pulled a heavy PyTorch/CUDA stack (~118 s clean install on the observed hosted runner).
-- The first FlyGym failure was caused by our unnecessary forced EGL setting, not by the upstream model; the repaired workflow passed.
+https://github.com/CochraneK/ARIS4C/actions/runs/35528654776
 
-## Current architecture hypothesis
+## Key conceptual correction
+
+The published legacy FlyGym path already implements most of the visual-to-behaviour integration we initially considered building ourselves.
+
+Its chain must be split into:
 
 ```
-visual/sensory input
-        ↓
-flyvis or another biologically grounded neural component
-        ↓
-explicit low-dimensional bridge
-        ↓
-FlyGym / NeuroMechFly body + environment
-        ↓
-behaviour
+BIOLOGICALLY CONSTRAINED
+retina -> pretrained flyvis -> named visual neural activity
+
+ENGINEERED
+neural activity -> baseline z-score -> object mask
+-> turning bias -> 2-D descending drive -> hybrid locomotor controller
 ```
 
-The bridge is **not yet validated**.
+018 must not collapse those layers into one "brain controls body" claim.
 
-## Third-party comparison
+## Community comparators
 
-A separate public project, `ShunyaResearch/drosophila-connectome-experiments`, independently explores a FlyWire/Brian2 whole-brain model -> NeuroMechFly coupling route and highlights the brain-to-VNC/descending-neuron interface problem. It is tracked as a useful comparison, not as evidence that our bridge works.
+The landscape now includes recent closed-loop community projects that expose real/engineered boundaries, negative results, ablations and readout artefacts. These are treated as scientific comparators and failure-mode sources, not merely UI inspiration.
 
 ## Next gates
 
-1. Audit the smallest biologically defensible neural-state -> behaviour interface.
-2. Prefer a narrow first behaviour (candidate: visually driven turning) over whole-brain whole-body coupling.
-3. Define a null/control bridge before running effect tests.
-4. Extend the dual-view prototype to replay real model neural state synchronized with FlyGym behaviour.
-5. Freeze a falsifiable biological question only after that bridge is technically and conceptually defensible.
+1. Reproduce a bounded official baseline-response calibration.
+2. Reproduce the exact official z-score/object-mask/turning-bias decoder.
+3. Run one bounded real closed-loop fly-following trial.
+4. Export synchronized body, retina, neural-state and decoder traces.
+5. Audit whether a new question remains after published and 2026 community work.
+6. Only then freeze an ARIS hypothesis.
 
 ## Scientific boundary
 
-Pilot 0 remains a toy model. Pilot 1 establishes reproducible upstream components, not a causal neural-to-behaviour model.
+Pilot 2A demonstrates a real embodied-neural software interface. It does not yet reproduce closed-loop following and does not establish a biological visual-to-descending-neuron circuit.
