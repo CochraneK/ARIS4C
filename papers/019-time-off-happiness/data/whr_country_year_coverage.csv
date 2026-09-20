@@ -1,0 +1,166 @@
+country,first_year,last_year,n_years,n_obs
+Argentina,2006,2022,17,17
+Bangladesh,2006,2022,17,17
+Bolivia,2006,2022,17,17
+Brazil,2005,2022,17,17
+Cambodia,2006,2022,17,17
+Cameroon,2006,2022,17,17
+Canada,2005,2022,17,17
+Chile,2006,2022,17,17
+Colombia,2006,2022,17,17
+Costa Rica,2006,2022,17,17
+Denmark,2005,2022,17,17
+Dominican Republic,2006,2022,17,17
+Ecuador,2006,2022,17,17
+Egypt,2005,2022,17,17
+El Salvador,2006,2022,17,17
+France,2005,2022,17,17
+Georgia,2006,2022,17,17
+Germany,2005,2022,17,17
+Ghana,2006,2022,17,17
+India,2006,2022,17,17
+Indonesia,2006,2022,17,17
+Israel,2006,2022,17,17
+Italy,2005,2022,17,17
+Japan,2005,2022,17,17
+Jordan,2005,2022,17,17
+Kazakhstan,2006,2022,17,17
+Kenya,2006,2022,17,17
+Kyrgyzstan,2006,2022,17,17
+Lebanon,2005,2022,17,17
+Lithuania,2006,2022,17,17
+Mexico,2005,2022,17,17
+Moldova,2006,2022,17,17
+Nepal,2006,2022,17,17
+Nicaragua,2006,2022,17,17
+Peru,2006,2022,17,17
+Russia,2006,2022,17,17
+Saudi Arabia,2005,2022,17,17
+Senegal,2006,2022,17,17
+South Korea,2006,2022,17,17
+Spain,2005,2022,17,17
+Sweden,2005,2022,17,17
+Tanzania,2006,2022,17,17
+Thailand,2006,2022,17,17
+Ukraine,2006,2022,17,17
+United Kingdom,2005,2022,17,17
+United States,2006,2022,17,17
+Uruguay,2006,2022,17,17
+Venezuela,2005,2022,17,17
+Vietnam,2006,2022,17,17
+Zimbabwe,2006,2022,17,17
+Armenia,2006,2022,16,16
+Australia,2005,2022,16,16
+Belgium,2005,2022,16,16
+China,2006,2021,16,16
+Estonia,2006,2022,16,16
+Greece,2005,2022,16,16
+Honduras,2006,2022,16,16
+Hungary,2005,2022,16,16
+Ireland,2006,2022,16,16
+Kosovo,2007,2022,16,16
+Latvia,2006,2022,16,16
+Mali,2006,2022,16,16
+Netherlands,2005,2022,16,16
+New Zealand,2006,2022,16,16
+Pakistan,2005,2021,16,16
+Panama,2006,2022,16,16
+Paraguay,2006,2022,16,16
+Philippines,2006,2021,16,16
+Poland,2005,2022,16,16
+Romania,2005,2022,16,16
+South Africa,2006,2021,16,16
+Tajikistan,2006,2021,16,16
+Turkiye,2005,2021,16,16
+Uganda,2006,2021,16,16
+Uzbekistan,2006,2022,16,16
+Albania,2007,2022,15,15
+Austria,2006,2022,15,15
+Burkina Faso,2006,2021,15,15
+Chad,2006,2022,15,15
+Croatia,2007,2022,15,15
+Cyprus,2006,2022,15,15
+Finland,2006,2022,15,15
+Guatemala,2006,2022,15,15
+Iran,2005,2022,15,15
+Mongolia,2007,2022,15,15
+Niger,2006,2022,15,15
+North Macedonia,2007,2022,15,15
+Portugal,2006,2022,15,15
+Slovenia,2006,2022,15,15
+Sri Lanka,2006,2021,15,15
+State of Palestine,2006,2022,15,15
+Taiwan Province of China,2006,2022,15,15
+United Arab Emirates,2006,2022,15,15
+Zambia,2006,2021,15,15
+Afghanistan,2008,2022,14,14
+Azerbaijan,2006,2019,14,14
+Belarus,2006,2019,14,14
+Benin,2006,2022,14,14
+Bosnia and Herzegovina,2007,2021,14,14
+Bulgaria,2007,2022,14,14
+Czechia,2005,2022,14,14
+Malawi,2006,2022,14,14
+Malaysia,2006,2021,14,14
+Malta,2009,2022,14,14
+Mauritania,2007,2022,14,14
+Nigeria,2006,2021,14,14
+Serbia,2007,2021,14,14
+Sierra Leone,2006,2022,14,14
+Singapore,2006,2021,14,14
+Tunisia,2009,2022,14,14
+Botswana,2006,2022,13,13
+Congo (Brazzaville),2008,2022,13,13
+Iraq,2008,2021,13,13
+Montenegro,2007,2020,13,13
+Slovakia,2006,2021,13,13
+Gabon,2011,2022,12,12
+Guinea,2011,2022,12,12
+Hong Kong S.A.R. of China,2006,2021,12,12
+Luxembourg,2009,2022,12,12
+Madagascar,2006,2022,12,12
+Morocco,2010,2022,12,12
+Norway,2006,2022,12,12
+Rwanda,2006,2019,12,12
+Switzerland,2006,2022,12,12
+Yemen,2007,2019,12,12
+Bahrain,2009,2020,11,11
+Haiti,2006,2018,11,11
+Ivory Coast,2009,2022,11,11
+Kuwait,2006,2019,11,11
+Togo,2006,2022,11,11
+Algeria,2010,2021,10,10
+Ethiopia,2012,2022,10,10
+Iceland,2008,2022,10,10
+Laos,2006,2021,10,10
+Liberia,2007,2022,10,10
+Mozambique,2006,2022,10,10
+Myanmar,2012,2021,10,10
+Turkmenistan,2009,2019,10,10
+Congo (Kinshasa),2009,2022,9,9
+Jamaica,2006,2022,9,9
+Mauritius,2011,2022,9,9
+Namibia,2007,2022,8,8
+Comoros,2009,2022,7,7
+Syria,2008,2015,7,7
+Libya,2012,2019,6,6
+Burundi,2008,2018,5,5
+Central African Republic,2007,2017,5,5
+Qatar,2009,2015,5,5
+Sudan,2009,2014,5,5
+Trinidad and Tobago,2006,2017,5,5
+Angola,2011,2014,4,4
+Djibouti,2008,2011,4,4
+Gambia,2017,2022,4,4
+Lesotho,2011,2019,4,4
+Somaliland region,2009,2012,4,4
+South Sudan,2014,2017,4,4
+Bhutan,2013,2015,3,3
+Eswatini,2011,2019,3,3
+Somalia,2014,2016,3,3
+Belize,2007,2014,2,2
+Cuba,2006,2006,1,1
+Guyana,2007,2007,1,1
+Maldives,2018,2018,1,1
+Oman,2011,2011,1,1
+Suriname,2012,2012,1,1
