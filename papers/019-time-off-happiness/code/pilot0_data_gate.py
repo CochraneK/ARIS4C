@@ -34,7 +34,7 @@ def download(url: str, fallbacks: list[str] | None = None) -> tuple[bytes, str]:
 
 
 def norm(s: object) -> str:
-    return re.sub(r"\\s+", " ", str(s).strip()).lower()
+    return re.sub(r"\s+", " ", str(s).strip()).lower()
 
 
 def workbook_inventory(content: bytes, engine: str | None = None):
@@ -129,6 +129,133 @@ def event_coverage(events, whr):
     return pd.DataFrame(rows)
 
 
+def normalize_wb_leave_panel(wb_bytes: bytes) -> pd.DataFrame:
+    """Read the real two-row-header World Bank panel into a tidy leave panel."""
+    df = pd.read_excel(
+        io.BytesIO(wb_bytes),
+        sheet_name="EW04-EW20",
+        header=1,
+        engine="openpyxl",
+    )
+    lookup = {norm(c): c for c in df.columns}
+    required = {
+        "economy": "economy",
+        "economy_code": "economy code",
+        "ew_year": "ew year",
+        "leave_1y": "paid annual leave for a worker with 1 year of tenure (in working days)",
+        "leave_5y": "paid annual leave for a worker with 5 years of tenure (in working days)",
+        "leave_10y": "paid annual leave for a worker with 10 years of tenure (in working days)",
+        "leave_avg": "paid annual leave (working days), average for workers with 1, 5 and 10 years of tenure",
+    }
+    missing = [label for label in required.values() if label not in lookup]
+    if missing:
+        raise RuntimeError(f"World Bank leave fields not found: {missing}; columns={list(df.columns)}")
+
+    out = df[[lookup[label] for label in required.values()]].copy()
+    out.columns = list(required.keys())
+    out["economy"] = out["economy"].astype(str).str.strip()
+    out["economy_code"] = out["economy_code"].astype(str).str.strip()
+    out["ew_year"] = pd.to_numeric(out["ew_year"], errors="coerce").astype("Int64")
+    for col in ["leave_1y", "leave_5y", "leave_10y", "leave_avg"]:
+        out[col] = pd.to_numeric(out[col], errors="coerce")
+    out = out.dropna(subset=["economy", "ew_year"]).copy()
+    out = out.loc[~out["economy"].str.lower().eq("nan")]
+    return out.sort_values(["economy", "ew_year"]).reset_index(drop=True)
+
+
+def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: pd.DataFrame) -> pd.DataFrame:
+    aliases = {
+        "Taiwan, China": ["Taiwan, China", "Taiwan (China)", "Taiwan"],
+        "Cabo Verde": ["Cabo Verde", "Cape Verde"],
+        "North Macedonia": ["North Macedonia", "Macedonia, FYR", "Macedonia"],
+        "Brunei Darussalam": ["Brunei Darussalam", "Brunei"],
+    }
+    available = set(wb["economy"].astype(str))
+    coverage_by_id = evcov.set_index("event_id").to_dict(orient="index")
+    rows = []
+
+    for _, e in events.iterrows():
+        country = str(e["country"])
+        matched = next((x for x in aliases.get(country, [country]) if x in available), None)
+        report_year = int(e["ew_report_year"])
+        base = e.to_dict()
+        cov = coverage_by_id.get(e["event_id"], {})
+
+        if matched is None:
+            base.update({
+                "wb_economy": "", "wb_current_year": pd.NA, "wb_previous_year": pd.NA,
+                "leave_avg_previous": pd.NA, "leave_avg_current": pd.NA, "leave_avg_delta": pd.NA,
+                "panel_change_detected": False, "panel_direction_match": False,
+                "pilot0_structural_pass": False, "freeze_eligible": False,
+                "panel_note": "No World Bank economy-name match",
+            })
+            rows.append({**base, **{k: cov.get(k) for k in [
+                "whr_country", "candidate_treatment_year", "n_pre", "n_post",
+                "pilot0_coverage_pass", "confirmatory_timing_pass"
+            ]}})
+            continue
+
+        econ = wb.loc[wb["economy"].eq(matched)].sort_values("ew_year")
+        cur = econ.loc[econ["ew_year"].eq(report_year)]
+        if cur.empty:
+            base.update({
+                "wb_economy": matched, "wb_current_year": pd.NA, "wb_previous_year": pd.NA,
+                "leave_avg_previous": pd.NA, "leave_avg_current": pd.NA, "leave_avg_delta": pd.NA,
+                "panel_change_detected": False, "panel_direction_match": False,
+                "pilot0_structural_pass": False, "freeze_eligible": False,
+                "panel_note": f"No EW row for report year {report_year}",
+            })
+            rows.append({**base, **{k: cov.get(k) for k in [
+                "whr_country", "candidate_treatment_year", "n_pre", "n_post",
+                "pilot0_coverage_pass", "confirmatory_timing_pass"
+            ]}})
+            continue
+
+        cur = cur.iloc[-1]
+        prevs = econ.loc[econ["ew_year"] < report_year]
+        prev = prevs.iloc[-1] if not prevs.empty else None
+        prev_avg = float(prev["leave_avg"]) if prev is not None and pd.notna(prev["leave_avg"]) else float("nan")
+        cur_avg = float(cur["leave_avg"]) if pd.notna(cur["leave_avg"]) else float("nan")
+        delta = cur_avg - prev_avg if pd.notna(prev_avg) and pd.notna(cur_avg) else float("nan")
+        changed = bool(pd.notna(delta) and abs(delta) > 1e-9)
+        direction = str(e["direction"])
+        if direction in {"increase", "introduced"}:
+            direction_match = bool(pd.notna(delta) and delta > 1e-9)
+        elif direction == "decrease":
+            direction_match = bool(pd.notna(delta) and delta < -1e-9)
+        elif direction == "changed_unspecified":
+            direction_match = changed
+        else:
+            direction_match = False
+
+        coverage_pass = bool(cov.get("pilot0_coverage_pass", False))
+        timing_pass = bool(cov.get("confirmatory_timing_pass", False))
+        base.update({
+            "wb_economy": matched,
+            "wb_current_year": int(cur["ew_year"]),
+            "wb_previous_year": int(prev["ew_year"]) if prev is not None else pd.NA,
+            "leave_1y_previous": prev["leave_1y"] if prev is not None else pd.NA,
+            "leave_1y_current": cur["leave_1y"],
+            "leave_5y_previous": prev["leave_5y"] if prev is not None else pd.NA,
+            "leave_5y_current": cur["leave_5y"],
+            "leave_10y_previous": prev["leave_10y"] if prev is not None else pd.NA,
+            "leave_10y_current": cur["leave_10y"],
+            "leave_avg_previous": prev_avg,
+            "leave_avg_current": cur_avg,
+            "leave_avg_delta": delta,
+            "panel_change_detected": changed,
+            "panel_direction_match": direction_match,
+            "pilot0_structural_pass": bool(coverage_pass and direction_match),
+            "freeze_eligible": bool(timing_pass and direction_match),
+            "panel_note": "",
+        })
+        rows.append({**base, **{k: cov.get(k) for k in [
+            "whr_country", "candidate_treatment_year", "n_pre", "n_post",
+            "pilot0_coverage_pass", "confirmatory_timing_pass"
+        ]}})
+    return pd.DataFrame(rows)
+
+
 def main():
     events = pd.read_csv(PROCESS_DIR / "REFORM_CANDIDATES.csv")
     wb_bytes, wb_resolved_url = download(WB_URL)
@@ -157,22 +284,35 @@ def main():
     evcov = event_coverage(events, whr)
     evcov.to_csv(DATA_DIR / "pilot0_event_coverage.csv", index=False)
 
-    wb_sheet, wb_df, leave_cols = choose_wb_sheet(wb_frames)
-    schema = []
-    if wb_df is not None:
-        for c in wb_df.columns:
-            nc = norm(c)
-            if ("annual leave" in nc or "annual vacation" in nc or
-                    nc in {"economy", "country", "year", "db year", "db_year", "report year"}):
-                schema.append({"sheet": wb_sheet, "column": str(c), "normalized": nc})
-    pd.DataFrame(schema).to_csv(DATA_DIR / "worldbank_leave_schema.csv", index=False)
+    # The World Bank workbook has a broad category row followed by the real header.
+    # Read the known panel sheet with header=1 instead of trusting the inventory's default header.
+    wb_panel = normalize_wb_leave_panel(wb_bytes)
+    wb_panel.to_csv(DATA_DIR / "worldbank_statutory_leave_panel.csv", index=False)
+
+    leave_cols = ["leave_1y", "leave_5y", "leave_10y", "leave_avg"]
+    schema = pd.DataFrame([
+        {"sheet": "EW04-EW20", "column": "Economy", "normalized": "economy"},
+        {"sheet": "EW04-EW20", "column": "Economy Code", "normalized": "economy code"},
+        {"sheet": "EW04-EW20", "column": "EW Year", "normalized": "ew year"},
+        {"sheet": "EW04-EW20", "column": "Paid annual leave for a worker with 1 year of tenure (in working days)", "normalized": "leave_1y"},
+        {"sheet": "EW04-EW20", "column": "Paid annual leave for a worker with 5 years of tenure (in working days)", "normalized": "leave_5y"},
+        {"sheet": "EW04-EW20", "column": "Paid annual leave for a worker with 10 years of tenure (in working days)", "normalized": "leave_10y"},
+        {"sheet": "EW04-EW20", "column": "Paid annual leave (working days), average for workers with 1, 5 and 10 years of tenure", "normalized": "leave_avg"},
+    ])
+    schema.to_csv(DATA_DIR / "worldbank_leave_schema.csv", index=False)
+
+    validation = validate_reforms_against_wb(events, evcov, wb_panel)
+    validation.to_csv(DATA_DIR / "reform_panel_validation.csv", index=False)
 
     inventory = {
         "sources": {
             "world_bank": {
                 "official_url": WB_URL, "resolved_url": wb_resolved_url,
                 "bytes": len(wb_bytes), "sha256": hashlib.sha256(wb_bytes).hexdigest(),
-                "selected_sheet": wb_sheet, "annual_leave_columns": leave_cols, "workbook": wb_inventory,
+                "selected_sheet": "EW04-EW20", "annual_leave_columns": leave_cols,
+                "panel_rows": int(len(wb_panel)), "panel_economies": int(wb_panel["economy"].nunique()),
+                "panel_first_ew_year": int(wb_panel["ew_year"].min()), "panel_last_ew_year": int(wb_panel["ew_year"].max()),
+                "workbook": wb_inventory,
             },
             "whr": {
                 "official_url": WHR_URL, "resolved_url": whr_resolved_url,
@@ -189,6 +329,9 @@ def main():
             "candidate_rows": int(len(events)),
             "coverage_pass": int(evcov["pilot0_coverage_pass"].sum()),
             "confirmatory_timing_pass": int(evcov["confirmatory_timing_pass"].sum()),
+            "panel_direction_match": int(validation["panel_direction_match"].sum()),
+            "pilot0_structural_pass": int(validation["pilot0_structural_pass"].sum()),
+            "freeze_eligible": int(validation["freeze_eligible"].sum()),
         },
     }
     (DATA_DIR / "source_inventory.json").write_text(
@@ -198,27 +341,35 @@ def main():
 
     pass_rows = evcov.loc[evcov["pilot0_coverage_pass"]]
     exact_rows = evcov.loc[evcov["confirmatory_timing_pass"]]
+    structurally_valid = validation.loc[validation["pilot0_structural_pass"]]
+    freeze_rows = validation.loc[validation["freeze_eligible"]]
     lines = [
         "# ARIS4C019 · Pilot-0 Data Gate", "",
         "> Auto-generated from official source downloads. This reports feasibility only; it does not estimate a treatment effect.", "",
         f"- WHR annual panel: **{inventory['whr']['rows']} country-year observations**, **{inventory['whr']['countries']} countries/territories**, {inventory['whr']['first_year']}–{inventory['whr']['last_year']}.",
         f"- Leave-reform candidates registered: **{len(events)}**.",
         f"- Candidates with >=2 observed pre and >=2 observed post WHR years in a ±4-year window: **{len(pass_rows)}**.",
-        f"- Of those, candidates whose treatment year is already verified: **{len(exact_rows)}**.", "",
+        f"- Of those, candidates whose treatment year is already verified: **{len(exact_rows)}**.",
+        f"- World Bank statutory-leave panel: **{len(wb_panel)} rows**, **{wb_panel['economy'].nunique()} economies**, EW{int(wb_panel['ew_year'].min())}–EW{int(wb_panel['ew_year'].max())}.",
+        f"- Reform candidates whose World Bank panel change matches the registered direction and WHR coverage passes: **{len(structurally_valid)}**.",
+        f"- Candidates passing WHR coverage + verified timing + World Bank direction validation: **{len(freeze_rows)}**.", "",
         "## Interpretation", "",
         "Coverage PASS means an event is empirically inspectable. It does **not** establish parallel trends, no anticipation, clean treatment isolation, or causality.", "",
         "## Verified-year candidates that pass coverage", "",
     ]
-    if exact_rows.empty:
-        lines.append("None yet. Verify exact legal effective dates before causal estimation.")
+    if freeze_rows.empty:
+        lines.append("None yet. Verify exact legal effective dates and panel changes before causal estimation.")
     else:
-        lines += ["| Country | Effective year | Direction | n pre | n post |", "|---|---:|---|---:|---:|"]
-        for _, row in exact_rows.sort_values(["candidate_treatment_year", "country"]).iterrows():
-            lines.append(f"| {row['country']} | {int(row['candidate_treatment_year'])} | {row['direction']} | {int(row['n_pre'])} | {int(row['n_post'])} |")
+        lines += ["| Country | Effective year | Direction | WB Δ avg leave | n pre | n post |", "|---|---:|---|---:|---:|---:|"]
+        for _, row in freeze_rows.sort_values(["candidate_treatment_year", "country"]).iterrows():
+            lines.append(
+                f"| {row['country']} | {int(row['candidate_treatment_year'])} | {row['direction']} | "
+                f"{float(row['leave_avg_delta']):.2f} | {int(row['n_pre'])} | {int(row['n_post'])} |"
+            )
     lines += ["", "## Next gate", "",
-              "1. materialize World Bank annual-leave country-year values;",
-              "2. verify exact legal effective dates for every retained event;",
-              "3. freeze event inclusion without reference to post-treatment happiness changes;",
+              "1. verify exact legal effective dates for structurally valid events still marked provisional;",
+              "2. freeze event inclusion and crisis/scope flags without reference to post-treatment happiness changes;",
+              "3. create the no-outcome-look event-study design manifest;",
               "4. only then run event-study / staggered-DiD diagnostics.", ""]
     (PROCESS_DIR / "PILOT0_DATA_GATE.md").write_text("\n".join(lines), encoding="utf-8")
 
