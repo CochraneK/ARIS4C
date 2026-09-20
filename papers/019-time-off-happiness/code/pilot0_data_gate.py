@@ -171,6 +171,8 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
         "Cabo Verde": ["Cabo Verde", "Cape Verde"],
         "North Macedonia": ["North Macedonia", "Macedonia, FYR", "Macedonia"],
         "Brunei Darussalam": ["Brunei Darussalam", "Brunei"],
+        "China": ["China Shanghai", "China Beijing", "China"],
+        "India": ["India Mumbai", "India Delhi", "India"],
     }
     available = set(wb["economy"].astype(str))
     coverage_by_id = evcov.set_index("event_id").to_dict(orient="index")
