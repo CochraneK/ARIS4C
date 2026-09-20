@@ -56,3 +56,17 @@ A package import alone does not count as a reproduction.
 ## After the gate
 
 If both tracks pass, design the smallest bridge between neural state and embodied behaviour. Do not yet claim that flyvis activity causally controls FlyGym behaviour.
+
+## Practical usability fields
+
+For each track, record alongside PASS/FAIL:
+
+- Python version;
+- pinned upstream commit;
+- clean-install time on GitHub-hosted Ubuntu;
+- whether GPU/display is required for the smoke path;
+- whether network downloads beyond package installation are required at runtime;
+- model/object size indicators produced by the smoke script;
+- whether a newcomer can reach the same state from one documented command.
+
+The point is not only "can ARIS run it?" but also "can another user reasonably reproduce it?"
