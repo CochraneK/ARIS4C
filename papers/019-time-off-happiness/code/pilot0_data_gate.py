@@ -17,7 +17,7 @@ PROCESS_DIR.mkdir(parents=True, exist_ok=True)
 
 WB_URL = "https://www.worldbank.org/content/dam/misc/employing-workers/EW04-20_Panel_Dataset_Regulations-of-Employment_2003-2019.xlsx"
 WHR_URL = "https://happiness-report.s3.amazonaws.com/2023/DataForTable2.1WHR2023.xls"
-WHR_MIRROR_URL = "https://raw.githubusercontent.com/dgbrizan/2024-01-cs663-a1/f417ea329f55ae21cf8537e1b5bb67905fda5fde/DataForTable2.1WHR2023.xls"
+WHR_MIRROR_URL = "https://raw.githubusercontent.com/dgbrizan/2024-01-cs663-a1/d7d7255fe00108aa15335286599658ab5365c2b3/DataForTable2.1WHR2023.xls"
 HEADERS = {"User-Agent": "ARIS4C019-research/0.1 (+https://github.com/CochraneK/ARIS4C)"}
 
 
