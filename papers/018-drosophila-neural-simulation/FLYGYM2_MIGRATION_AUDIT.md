@@ -67,3 +67,20 @@ The port should expose layer provenance:
 Only begin the 2.x port after Pilot 2B proves the legacy closed loop can be reproduced in our own clean CI.
 
 This prevents debugging an API migration and a scientific reproduction at the same time.
+
+## Direct compatibility finding
+
+Current FlyGym 2.x `HybridTurningController.step(descending_signal, obs)` explicitly requires a two-element descending signal. It maps the absolute left/right values to side-specific CPG amplitudes and uses signal sign for forward/reverse intrinsic-frequency direction.
+
+Therefore the legacy decoder's final two-number output has a natural current-API landing point.
+
+The migration problem is primarily:
+
+```
+current Retina / eye rendering
+ -> flyvis mapping
+ -> stepwise pretrained neural dynamics
+ -> neural-state exposure / logging
+```
+
+rather than redesigning the final locomotor-control interface.
