@@ -2,7 +2,7 @@
 
 ## Outcome
 
-**PASS.**
+**PASS.** The canonical full-path script was re-run after restoration and passed again.
 
 The official legacy `RealisticVisionFly` path was reproduced in a clean GitHub-hosted Ubuntu environment with:
 
@@ -16,7 +16,7 @@ The official legacy `RealisticVisionFly` path was reproduced in a clean GitHub-h
 
 Workflow:
 
-https://github.com/CochraneK/ARIS4C/actions/runs/35528654776
+https://github.com/CochraneK/ARIS4C/actions/runs/35528929770
 
 ## Observed interface
 
