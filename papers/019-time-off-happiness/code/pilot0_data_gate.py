@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import io
 import json
 import re
@@ -16,13 +17,20 @@ PROCESS_DIR.mkdir(parents=True, exist_ok=True)
 
 WB_URL = "https://www.worldbank.org/content/dam/misc/employing-workers/EW04-20_Panel_Dataset_Regulations-of-Employment_2003-2019.xlsx"
 WHR_URL = "https://happiness-report.s3.amazonaws.com/2023/DataForTable2.1WHR2023.xls"
+WHR_MIRROR_URL = "https://raw.githubusercontent.com/dgbrizan/2024-01-cs663-a1/f417ea329f55ae21cf8537e1b5bb67905fda5fde/DataForTable2.1WHR2023.xls"
 HEADERS = {"User-Agent": "ARIS4C019-research/0.1 (+https://github.com/CochraneK/ARIS4C)"}
 
 
-def download(url: str) -> bytes:
-    r = requests.get(url, headers=HEADERS, timeout=120)
-    r.raise_for_status()
-    return r.content
+def download(url: str, fallbacks: list[str] | None = None) -> tuple[bytes, str]:
+    errors = []
+    for candidate in [url] + list(fallbacks or []):
+        try:
+            r = requests.get(candidate, headers=HEADERS, timeout=120)
+            r.raise_for_status()
+            return r.content, candidate
+        except Exception as exc:
+            errors.append(f"{candidate}: {exc!r}")
+    raise RuntimeError("All download routes failed:\n" + "\n".join(errors))
 
 
 def norm(s: object) -> str:
@@ -123,7 +131,8 @@ def event_coverage(events, whr):
 
 def main():
     events = pd.read_csv(PROCESS_DIR / "REFORM_CANDIDATES.csv")
-    wb_bytes, whr_bytes = download(WB_URL), download(WHR_URL)
+    wb_bytes, wb_resolved_url = download(WB_URL)
+    whr_bytes, whr_resolved_url = download(WHR_URL, [WHR_MIRROR_URL])
 
     wb_inventory, wb_frames = workbook_inventory(wb_bytes, engine="openpyxl")
     whr_inventory, whr_frames = workbook_inventory(whr_bytes, engine="xlrd")
@@ -161,12 +170,15 @@ def main():
     inventory = {
         "sources": {
             "world_bank": {
-                "url": WB_URL, "bytes": len(wb_bytes), "selected_sheet": wb_sheet,
-                "annual_leave_columns": leave_cols, "workbook": wb_inventory,
+                "official_url": WB_URL, "resolved_url": wb_resolved_url,
+                "bytes": len(wb_bytes), "sha256": hashlib.sha256(wb_bytes).hexdigest(),
+                "selected_sheet": wb_sheet, "annual_leave_columns": leave_cols, "workbook": wb_inventory,
             },
             "whr": {
-                "url": WHR_URL, "bytes": len(whr_bytes), "selected_sheet": whr_sheet,
-                "workbook": whr_inventory,
+                "official_url": WHR_URL, "resolved_url": whr_resolved_url,
+                "transport_note": "If the official WHR S3 object rejects automated retrieval, a commit-pinned public mirror of the same WHR 2023 workbook is used only as a transport fallback.",
+                "bytes": len(whr_bytes), "sha256": hashlib.sha256(whr_bytes).hexdigest(),
+                "selected_sheet": whr_sheet, "workbook": whr_inventory,
             },
         },
         "whr": {
