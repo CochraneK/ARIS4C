@@ -96,3 +96,13 @@ Only the **Today's progress time curve** is filtered:
 - Preserve a minimum visible vertical span of 20 percentage points to avoid visually exaggerating tiny changes.
 - If the visible range omits 0% or 100%, disclose the truncation with axis-break marks and a summary such as `Y 55–85%`.
 - Underlying progress values are never transformed.
+
+## 2026-09-21 · "Today" follows the Beijing calendar, not the last dashboard commit
+
+**Decision:** The public daily progress curve is keyed to `Asia/Shanghai` calendar days.
+
+- The displayed day is the current Beijing date even when no dashboard commit occurred that day.
+- The page is rebuilt automatically shortly after Beijing midnight via GitHub Actions.
+- If progress changes for the first time today, the previous day's last dashboard state is carried forward to 00:00 as a baseline so the first same-day movement is detectable.
+- If nothing changes today, the chart correctly shows no changed-today projects rather than continuing to display yesterday's curve.
+- CI fails if the generated Today payload is stale or lacks the explicit `Asia/Shanghai` timezone.
