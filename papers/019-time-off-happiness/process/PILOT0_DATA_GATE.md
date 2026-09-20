@@ -17,21 +17,21 @@
 
 Coverage PASS means an event is empirically inspectable. It does **not** establish parallel trends, no anticipation, clean treatment isolation, or causality.
 
-## Verified-year candidates that pass coverage
+## Verified legal events that pass coverage
 
-| Tier | Country | Effective year | Direction | WB Δ avg leave | n pre | n post | Flags |
-|---|---|---:|---|---:|---:|---:|---|
-| A_corroborated | China | 2008 | introduced | 6.67 | 2 | 5 | global_financial_crisis_window |
-| A_corroborated | Croatia | 2010 | increase | 2.00 | 2 | 5 | global_financial_crisis_window |
-| A_corroborated | Kosovo | 2011 | increase | 5.00 | 4 | 5 |  |
-| A_corroborated | Kuwait | 2011 | increase | 11.33 | 2 | 5 |  |
-| A_corroborated | Bahrain | 2013 | increase | 11.67 | 4 | 5 |  |
-| A_corroborated | Taiwan, China | 2017 | increase | 0.67 | 4 | 5 |  |
-| A_corroborated | Lithuania | 2018 | changed_unspecified | 0.33 | 4 | 5 | broad_labour_code_package |
-| A_corroborated | Luxembourg | 2019 | increase | 1.00 | 4 | 2 | covid_overlap_post_window |
-| A_corroborated | Canada | 2020 | increase | 3.33 | 4 | 3 | covid_overlap_post_window;federal_jurisdiction_only |
-| B_legal_only | United Kingdom | 2008 | increase | 0.00 | 2 | 5 | global_financial_crisis_window;multi_stage_reform |
-| B_legal_only | United Kingdom | 2010 | increase | 0.00 | 3 | 5 | global_financial_crisis_window;multi_stage_reform |
+| Tier | Country | Legal effective date | First full post year | Direction | WB Δ avg leave | n pre | n post | Primary | Flags |
+|---|---|---|---:|---|---:|---:|---:|---|---|
+| A_corroborated | China | 2008-01-01 | 2008 | introduced | 6.67 | 2 | 5 | True | global_financial_crisis_window |
+| A_corroborated | Croatia | 2010-01-01 | 2010 | increase | 2.00 | 2 | 5 | True | global_financial_crisis_window |
+| A_corroborated | Kosovo | 2010-12-16 | 2011 | increase | 5.00 | 4 | 5 | True |  |
+| A_corroborated | Kuwait | 2010-02-21 | 2011 | increase | 11.33 | 2 | 5 | True |  |
+| A_corroborated | Bahrain | 2012-09-02 | 2013 | increase | 11.67 | 4 | 5 | True |  |
+| A_corroborated | Taiwan, China | 2017-01-01 | 2017 | increase | 0.67 | 4 | 5 | True |  |
+| A_corroborated | Lithuania | 2017-07-01 | 2018 | changed_unspecified | 0.33 | 4 | 5 | False | broad_labour_code_package |
+| A_corroborated | Luxembourg | 2019-01-01 | 2019 | increase | 1.00 | 4 | 2 | True | covid_overlap_post_window |
+| A_corroborated | Canada | 2019-09-01 | 2020 | increase | 3.33 | 4 | 3 | True | covid_overlap_post_window;federal_jurisdiction_only |
+| B_legal_only | United Kingdom | 2007-10-01 | 2008 | increase | 0.00 | 2 | 5 | False | global_financial_crisis_window;multi_stage_reform |
+| B_legal_only | United Kingdom | 2009-04-01 | 2010 | increase | 0.00 | 3 | 5 | False | global_financial_crisis_window;multi_stage_reform |
 
 ## Next gate
 
