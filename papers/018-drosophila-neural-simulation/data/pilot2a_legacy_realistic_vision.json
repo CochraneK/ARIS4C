@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "project": "ARIS4C018",
+  "pilot": "Pilot 2A official legacy RealisticVisionFly interface reproduction",
+  "status": "PASS",
+  "upstream": {
+    "repository": "https://github.com/NeLy-EPFL/flygym-gymnasium",
+    "commit": "d285260a1c8a7b3494150cd1590f2c9fe4b5e06b",
+    "package_version": "1.3.2",
+    "flyvis_version": "1.1.2"
+  },
+  "workflow": {
+    "run_id": 35528654776,
+    "job_id": 106125195917,
+    "conclusion": "success",
+    "url": "https://github.com/CochraneK/ARIS4C/actions/runs/35528654776",
+    "runner": "GitHub-hosted Ubuntu 24.04",
+    "python": "3.11.16",
+    "headless_rendering": "EGL",
+    "pretrained_download_checksum_verified": true
+  },
+  "interface_result": {
+    "official_fade_in_seconds": 1,
+    "neural_shape": [
+      2,
+      45669
+    ],
+    "vision_updates": 5,
+    "body_position_start": [
+      0.01634914241731167,
+      0.0073094856925308704,
+      1.781416416168213
+    ],
+    "body_position_end": [
+      0.015816805884242058,
+      0.006923352368175983,
+      1.3085931539535522
+    ],
+    "body_displacement": 0.47282370924949646,
+    "mean_activity": {
+      "T4a": 0.100400284,
+      "T4b": 0.0287869573,
+      "T4c": 0.00510033499,
+      "T4d": -0.0783643275,
+      "T5a": 0.0644776672,
+      "T5b": -0.0110355346,
+      "T5c": 0.00849954877,
+      "T5d": -0.0115842735
+    }
+  },
+  "failed_attempts": [
+    {
+      "reason": "headless retinal rendering failed without a valid OpenGL context",
+      "repair": "install libegl1-mesa-dev and set MUJOCO_GL=egl plus PYOPENGL_PLATFORM=egl for the embodied-neural step"
+    }
+  ],
+  "scientific_boundary": "PASS establishes that the official legacy embodied FlyGym simulation and pretrained connectome-constrained flyvis visual network can coexist and advance in one clean run. It does not reproduce the full fly-following behavioural result or establish a biological visual-to-motor pathway."
+}
