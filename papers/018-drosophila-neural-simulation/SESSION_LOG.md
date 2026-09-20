@@ -42,3 +42,17 @@
 - Named T4a/b/c/d and T5a/b/c/d activities were all finite.
 - Body state advanced in the same simulation; measured bounded displacement 0.472824.
 - Pilot 2B was then implemented to reproduce a short real moving-fly closed loop using the official LC9/LC10-input decoder equations.
+
+## 2026-09-21 · Pilot 2B bounded official closed loop
+
+- Implemented a clean-CI bounded reproduction of the official legacy LC9/LC10-input decoder.
+- Frozen bounded conditions: 0.20 s baseline + 0.20 s closed loop, 500 Hz vision, z-score threshold 5, tracking gain 6.
+- Workflow 35529083978 PASS.
+- Baseline: 2,000 physics steps, 100 visual updates, zero-SD fraction 0.0017198.
+- Closed loop: 2,000 steps, 100 decoder updates, object mask present 100/100 frames.
+- Mean absolute turning bias 0.1658; max 0.2020.
+- Mean absolute right-left drive difference 0.7473; max 0.8000.
+- Observer displacement 1.3996; target moved farther away, so this is not labeled successful following.
+- Extracted official decoder math to a standalone pure module and added independent unit CI; PASS.
+- Added a claim-boundary matrix and FlyGym 2.x migration audit.
+- Next gate: freeze synchronized neural/decoder/body/target trace, then resolve full-duration baseline/condition reproduction before new biological claims.
