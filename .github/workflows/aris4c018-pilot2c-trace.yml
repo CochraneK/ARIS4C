@@ -1,0 +1,65 @@
+name: ARIS4C018 Pilot2C Trace
+
+on:
+  push:
+    paths:
+      - "papers/018-drosophila-neural-simulation/code/pilot2c_trace_capture.py"
+      - ".github/workflows/aris4c018-pilot2c-trace.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install EGL runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1-mesa-dev
+      - name: Install pinned legacy FlyGym examples stack
+        run: |
+          python -m pip install "flygym-gymnasium[examples] @ git+https://github.com/NeLy-EPFL/flygym-gymnasium.git@d285260a1c8a7b3494150cd1590f2c9fe4b5e06b"
+      - name: Download flyvis pretrained models
+        run: flyvis download-pretrained --skip_large_files
+      - name: Capture synchronized trace
+        env:
+          MUJOCO_GL: egl
+          PYOPENGL_PLATFORM: egl
+        run: |
+          python papers/018-drosophila-neural-simulation/code/pilot2c_trace_capture.py
+      - name: Validate trace shape
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("papers/018-drosophila-neural-simulation/data/pilot2c_synchronized_trace.json")
+          x = json.loads(p.read_text())
+          assert x["schema_version"] == 1
+          assert len(x["frames"]) == 100
+          assert len(x["cell_order"]) == 25
+          assert all(len(f["neural"]["cell_mean_left"]) == 25 for f in x["frames"])
+          assert all(len(f["neural"]["cell_mean_right"]) == 25 for f in x["frames"])
+          print("ARIS4C018 trace validation PASS")
+          PY
+      - name: Commit deterministic trace
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/018-drosophila-neural-simulation/data/pilot2c_synchronized_trace.json
+          if git diff --cached --quiet; then
+            echo "Trace unchanged"
+            exit 0
+          fi
+          git commit -m "ARIS4C018 freeze Pilot2C synchronized trace"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
