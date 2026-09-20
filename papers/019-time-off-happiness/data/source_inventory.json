@@ -287,6 +287,8 @@
     "confirmatory_timing_pass": 10,
     "panel_direction_match": 17,
     "pilot0_structural_pass": 11,
-    "freeze_eligible": 8
+    "tier_A_corroborated": 8,
+    "tier_B_legal_only": 2,
+    "freeze_eligible": 10
   }
 }

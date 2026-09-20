@@ -8,7 +8,9 @@
 - Of those, candidates whose treatment year is already verified: **10**.
 - World Bank statutory-leave panel: **3434 rows**, **202 economies**, EW2004–EW2020.
 - Reform candidates whose World Bank panel change matches the registered direction and WHR coverage passes: **11**.
-- Candidates passing WHR coverage + verified timing + World Bank direction validation: **8**.
+- Freeze-eligible legal events (verified timing + WHR coverage): **10**.
+- Tier A, additionally corroborated by the World Bank panel: **8**.
+- Tier B, legally verified but not corroborated by the World Bank historical panel: **2**.
 
 ## Interpretation
 
@@ -16,20 +18,22 @@ Coverage PASS means an event is empirically inspectable. It does **not** establi
 
 ## Verified-year candidates that pass coverage
 
-| Country | Effective year | Direction | WB Δ avg leave | n pre | n post |
-|---|---:|---|---:|---:|---:|
-| Croatia | 2010 | increase | 2.00 | 2 | 5 |
-| Kosovo | 2010 | increase | 5.00 | 3 | 5 |
-| Kuwait | 2010 | increase | 11.33 | 2 | 5 |
-| Bahrain | 2012 | increase | 11.67 | 3 | 5 |
-| Lithuania | 2017 | changed_unspecified | 0.33 | 4 | 5 |
-| Taiwan, China | 2017 | increase | 0.67 | 4 | 5 |
-| Canada | 2019 | increase | 3.33 | 4 | 4 |
-| Luxembourg | 2019 | increase | 1.00 | 4 | 2 |
+| Tier | Country | Effective year | Direction | WB Δ avg leave | n pre | n post | Flags |
+|---|---|---:|---|---:|---:|---:|---|
+| A_corroborated | Croatia | 2010 | increase | 2.00 | 2 | 5 | global_financial_crisis_window |
+| A_corroborated | Kosovo | 2010 | increase | 5.00 | 3 | 5 | global_financial_crisis_window |
+| A_corroborated | Kuwait | 2010 | increase | 11.33 | 2 | 5 | global_financial_crisis_window |
+| A_corroborated | Bahrain | 2012 | increase | 11.67 | 3 | 5 |  |
+| A_corroborated | Lithuania | 2017 | changed_unspecified | 0.33 | 4 | 5 | broad_labour_code_package |
+| A_corroborated | Taiwan, China | 2017 | increase | 0.67 | 4 | 5 |  |
+| A_corroborated | Canada | 2019 | increase | 3.33 | 4 | 4 | covid_overlap_post_window;federal_jurisdiction_only |
+| A_corroborated | Luxembourg | 2019 | increase | 1.00 | 4 | 2 | covid_overlap_post_window |
+| B_legal_only | China | 2008 | introduced |  | 2 | 5 | world_bank_name_match_missing |
+| B_legal_only | United Kingdom | 2009 | increase | 0.00 | 3 | 5 | global_financial_crisis_window;multi_stage_reform |
 
 ## Next gate
 
-1. verify exact legal effective dates for structurally valid events still marked provisional;
-2. freeze event inclusion and crisis/scope flags without reference to post-treatment happiness changes;
-3. create the no-outcome-look event-study design manifest;
+1. continue exact-date verification for Tier-C candidates with good WHR coverage;
+2. keep Tier A as the primary candidate pool and Tier B as legally verified sensitivity evidence;
+3. freeze estimator/control rules without inspecting post-treatment Life Ladder changes;
 4. only then run event-study / staggered-DiD diagnostics.
