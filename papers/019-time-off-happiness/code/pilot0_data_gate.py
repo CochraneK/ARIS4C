@@ -128,18 +128,29 @@ def event_coverage(events, whr):
         years = [] if matched is None else sorted(
             whr.loc[whr["country"].eq(matched), "year"].dropna().astype(int).unique().tolist()
         )
-        pre = [y for y in years if candidate_year - 4 <= y <= candidate_year - 1]
-        post = [y for y in years if candidate_year <= y <= candidate_year + 4]
+        if pd.isna(effective_year):
+            event_clock_year = candidate_year
+            pre = [y for y in years if event_clock_year - 4 <= y <= event_clock_year - 1]
+            post = [y for y in years if event_clock_year <= y <= event_clock_year + 4]
+        else:
+            event_clock_year = int(effective_year)
+            pre = [y for y in years if event_clock_year - 4 <= y <= event_clock_year - 1]
+            if pd.isna(transition_year):
+                post = [y for y in years if event_clock_year <= y <= event_clock_year + 4]
+            else:
+                post = [y for y in years if event_clock_year + 1 <= y <= event_clock_year + 4]
         row = e.to_dict()
         row.update({
             "whr_country": matched or "",
             "legal_effective_year": "" if pd.isna(effective_year) else int(effective_year),
+            "event_clock_year": event_clock_year,
+            "reference_year": event_clock_year - 1,
             "transition_year_excluded": transition_year,
             "candidate_treatment_year": candidate_year,
             "timing_quality": timing_quality,
             "whr_years_all": ";".join(map(str, years)),
             "pre_years_-4_-1": ";".join(map(str, pre)),
-            "post_years_0_4": ";".join(map(str, post)),
+            "post_full_exposure_years": ";".join(map(str, post)),
             "n_pre": len(pre),
             "n_post": len(post),
             "pilot0_coverage_pass": bool(len(pre) >= 2 and len(post) >= 2),
@@ -320,8 +331,8 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
                 "panel_note": "No World Bank economy-name match",
             })
             rows.append({**base, **{k: cov.get(k) for k in [
-                "whr_country", "legal_effective_year", "transition_year_excluded",
-                "candidate_treatment_year", "n_pre", "n_post",
+                "whr_country", "legal_effective_year", "event_clock_year", "reference_year",
+                "transition_year_excluded", "candidate_treatment_year", "n_pre", "n_post",
                 "pilot0_coverage_pass", "confirmatory_timing_pass"
             ]}})
             continue
@@ -343,8 +354,8 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
                 "panel_note": f"No EW row for report year {report_year}",
             })
             rows.append({**base, **{k: cov.get(k) for k in [
-                "whr_country", "legal_effective_year", "transition_year_excluded",
-                "candidate_treatment_year", "n_pre", "n_post",
+                "whr_country", "legal_effective_year", "event_clock_year", "reference_year",
+                "transition_year_excluded", "candidate_treatment_year", "n_pre", "n_post",
                 "pilot0_coverage_pass", "confirmatory_timing_pass"
             ]}})
             continue
@@ -412,8 +423,8 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
             "panel_note": "",
         })
         rows.append({**base, **{k: cov.get(k) for k in [
-            "whr_country", "legal_effective_year", "transition_year_excluded",
-            "candidate_treatment_year", "n_pre", "n_post",
+            "whr_country", "legal_effective_year", "event_clock_year", "reference_year",
+            "transition_year_excluded", "candidate_treatment_year", "n_pre", "n_post",
             "pilot0_coverage_pass", "confirmatory_timing_pass"
         ]}})
     return pd.DataFrame(rows)
