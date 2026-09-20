@@ -44,3 +44,17 @@
 - Kept at least a 20-point visible range as an anti-exaggeration guard.
 - Added Y-axis break marks plus an explicit visible Y-range in the chart summary whenever 0–100% is truncated.
 - Extended command-center CI audit to require the adaptive-axis safeguards.
+
+## 2026-09-21 · Fixed stale daily progress date
+
+Root cause:
+- Build workflow had no scheduled trigger.
+- The command center derived "Today" from the latest dashboard commit date, so an idle day could keep showing yesterday.
+- A first progress change after midnight could not be identified with only one same-day checkpoint.
+
+Fix:
+- Added a daily GitHub Actions schedule at 16:05 UTC (00:05 Beijing).
+- Bound the daily chart to the real current `Asia/Shanghai` date.
+- Added a prior-state midnight baseline only when today's first checkpoint exists.
+- Added CI freshness/timezone assertions.
+- Verified generated public payload now reports `2026-09-21`.
