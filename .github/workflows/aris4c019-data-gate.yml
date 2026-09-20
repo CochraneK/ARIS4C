@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'papers/019-time-off-happiness/code/pilot0_data_gate.py'
+      - 'papers/019-time-off-happiness/code/pilot0_design_diagnostics.py'
       - 'papers/019-time-off-happiness/process/REFORM_CANDIDATES.csv'
       - '.github/workflows/aris4c019-data-gate.yml'
 
@@ -41,12 +42,14 @@ jobs:
             git reset --hard origin/main
 
             python papers/019-time-off-happiness/code/pilot0_data_gate.py
+            python papers/019-time-off-happiness/code/pilot0_design_diagnostics.py
 
             git add \
               papers/019-time-off-happiness/data \
               papers/019-time-off-happiness/process/PILOT0_DATA_GATE.md \
               papers/019-time-off-happiness/process/PILOT0_EVENT_FREEZE.csv \
-              papers/019-time-off-happiness/process/LEGAL_VERIFICATION_QUEUE.csv
+              papers/019-time-off-happiness/process/LEGAL_VERIFICATION_QUEUE.csv \
+              papers/019-time-off-happiness/process/PILOT0_DESIGN_DIAGNOSTICS.md
 
             if git diff --cached --quiet; then
               echo "No generated changes"
