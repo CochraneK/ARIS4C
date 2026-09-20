@@ -1,0 +1,58 @@
+{
+  "id": "018",
+  "portfolio_id": "ARIS4C-018",
+  "slug": "drosophila-open-simulation",
+  "title": "Drosophila Open Simulation Atlas: Reproducible Behavioral-Neural Models and Discovery-Driven Questions",
+  "short_title": "Drosophila Open Simulation",
+  "year": 2026,
+  "status": "concept-scaffold",
+  "domain": "computational neuroscience / connectomics / computational ethology / open science / simulation",
+  "summary": "A discovery-driven project that audits and reproduces open Drosophila simulation, connectome, behavior and visualization toolchains, including downstream community applications, then uses reproducible coupled behavioral-neural systems to generate and pilot falsifiable scientific questions.",
+  "authors": [
+    "Cochrane Kang"
+  ],
+  "aris": {
+    "provenance": "ARIS4C user-requested project registered 2026-09-19; canonical scaffold restored 2026-09-21",
+    "version": "v0.4.26"
+  },
+  "links": {
+    "paper_en": "",
+    "paper_zh": "",
+    "pipeline": "process/RESEARCH_PLAN.md",
+    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/018-drosophila-open-simulation"
+  },
+  "tags": [
+    "ARIS",
+    "ARIS4C",
+    "Drosophila",
+    "simulation",
+    "connectome",
+    "computational ethology",
+    "open source",
+    "reproducibility",
+    "neural visualization"
+  ],
+  "bilingual_delivery": {
+    "english": false,
+    "chinese": false
+  },
+  "outputs": {
+    "paper_en": "not-started",
+    "paper_zh": "not-started",
+    "figures": {
+      "status": "not-started",
+      "count": 0,
+      "strategy": "adaptive after first reproducible pilot"
+    },
+    "tables": {
+      "status": "not-started",
+      "count": 0
+    },
+    "exception": "Concept scaffold; no empirical claim yet.",
+    "pdf": {
+      "status": "not-started",
+      "english": false,
+      "chinese": false
+    }
+  }
+}
