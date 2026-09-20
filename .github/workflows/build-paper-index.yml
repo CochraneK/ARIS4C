@@ -1,6 +1,9 @@
 name: Build ARIS4C paper index
 
 on:
+  schedule:
+    # Refresh the public "Today" view shortly after midnight in Beijing.
+    - cron: '5 16 * * *'
   push:
     branches: [main]
     paths:
