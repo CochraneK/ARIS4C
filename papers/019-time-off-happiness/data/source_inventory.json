@@ -284,9 +284,9 @@
   "events": {
     "candidate_rows": 30,
     "coverage_pass": 17,
-    "confirmatory_timing_pass": 4,
+    "confirmatory_timing_pass": 10,
     "panel_direction_match": 17,
     "pilot0_structural_pass": 11,
-    "freeze_eligible": 2
+    "freeze_eligible": 8
   }
 }
