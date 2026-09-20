@@ -20,3 +20,15 @@ For every future material conversation, append:
 - important user correction/constraint;
 - decision/result;
 - affected files/commits where known.
+
+## 2026-09-21 · Pilot 2B closed-loop milestone
+
+User requested continued GO-mode execution on ARIS4C018.
+
+Public-safe summary:
+- reproduced the official legacy embodied visual-neural interface;
+- reproduced a bounded moving-target closed loop using the published engineered decoder equations;
+- explicitly separated biological/connectome-constrained neural activity from the engineered neural-to-control decoder;
+- did not label the bounded run as successful following because target separation increased;
+- added independent decoder tests, claim-boundary documentation, modern FlyGym migration audit, and a synchronized trace schema;
+- next work is full trace capture and stronger baseline/full-condition reproduction.
