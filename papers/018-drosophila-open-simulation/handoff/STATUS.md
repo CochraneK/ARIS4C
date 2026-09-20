@@ -3,11 +3,11 @@
 - **Title:** Drosophila Open Simulation Atlas: Reproducible Behavioral-Neural Models and Discovery-Driven Questions
 - **Project status:** concept-scaffold
 - **Activity:** active
-- **Portfolio progress:** 32%
-- **Current stage:** Pilot 0 toy sandbox · behaviour-neural dual-view prototype
-- **Evidence established:** Validated Drosophila open-source landscape separated research/model infrastructure from community demos; deterministic toy ring-attractor Pilot 0 completed across 50 seeds × 5 lesion levels; two-panel browser prototype links simulated behaviour with neural population activity; ARIS4C018 Pilot0 CI PASS.
-- **Next gate:** Reproduce one small maintained published-model path in flyvis and one minimal FlyGym behaviour path; measure install/runtime/data burden, then select the smallest scientifically defensible neural-state↔behaviour bridge before freezing a biological hypothesis.
-- **Blocker:** No immediate engineering blocker. Biological inference remains intentionally blocked until Pilot 1 replaces toy assumptions with a published validated model/data path.
+- **Portfolio progress:** 40%
+- **Current stage:** Pilot 1 reproduction PASS · neural-state ↔ behaviour bridge design
+- **Evidence established:** Pilot0 dual-view toy sandbox + deterministic perturbation sweep; pinned clean-CI Pilot1 PASS for flyvis extent-1 connectome (443 nodes, 8,174 edges, 65 cell types) and FlyGym 2.1.0 NeuroMechFly compilation (70 bodies, 127 joints, 42 controls). Workflow run 35528006159 PASS.
+- **Next gate:** Audit and freeze the smallest biologically defensible neural-state→behaviour bridge with an explicit null/control mapping, then synchronize real model neural state with FlyGym behaviour in the two-panel viewer.
+- **Blocker:** No immediate engineering blocker. Scientific inference remains gated on a validated cross-component interface; two runnable components alone do not establish a biologically valid causal bridge.
 
 ## Source of truth
 
