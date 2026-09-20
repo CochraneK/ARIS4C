@@ -140,12 +140,20 @@
       "blocker": "None; queued behind higher-progress completion-first work"
     },
     "018": {
-      "progress": 32,
-      "stage": "Pilot 0 toy sandbox · behaviour-neural dual-view prototype",
-      "activity": "active",
-      "evidence": "Validated Drosophila open-source landscape separated research/model infrastructure from community demos; deterministic toy ring-attractor Pilot 0 completed across 50 seeds × 5 lesion levels; two-panel browser prototype now links simulated behaviour with neural population activity; smoke CI added.",
-      "next_gate": "Reproduce a small maintained published-model path in flyvis and FlyGym, measure install/runtime/data burden, then select the smallest scientifically defensible neural-state↔behaviour bridge before freezing a biological hypothesis.",
-      "blocker": "No immediate engineering blocker. Biological inference is intentionally blocked until Pilot 1 replaces toy assumptions with a published validated model/data path."
+      "progress": 12,
+      "stage": "Concept registered · open-toolchain atlas and reproduction gate",
+      "activity": "wait",
+      "evidence": "User-approved scope covering open Drosophila repository survey, real reproduction/simulation, downstream-user applications, and synchronized fly-motion × neural-activity visualization; canonical scaffold restored to Git",
+      "next_gate": "Freeze the repository-atlas schema and reproduce the first two complementary toolchains",
+      "blocker": "None; queued behind higher-progress completion-first work"
+    },
+    "019": {
+      "progress": 15,
+      "stage": "Construct separation · source coverage audit",
+      "activity": "wait",
+      "evidence": "Official source families identified for statutory paid leave, actual working time and subjective well-being; design prioritizes within-country change and policy reforms rather than static country rankings",
+      "next_gate": "Freeze the exposure taxonomy and build the country-year coverage/reform matrix; verify annual happiness coverage before treatment-effect estimation",
+      "blocker": "Dense annual global happiness data may require institutional Gallup access; historical legal-leave series require harmonization"
     }
   },
   "scheduling": {
