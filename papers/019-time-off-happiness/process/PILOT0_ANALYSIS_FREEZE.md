@@ -100,11 +100,13 @@ These exclusions are not chosen using effect sizes.
 
 ## 9. Covariates
 
-Preferred pre-specified macro controls, subject to source/coverage freeze before effect estimation:
+Preferred pre-specified macro covariates, subject to source/coverage freeze before effect estimation:
 
 - log GDP per capita;
 - unemployment rate;
 - inflation.
+
+Use **pre-treatment / lagged baseline summaries for adjustment or donor construction**. Do not condition the headline effect on contemporaneous post-treatment macro variables that could themselves respond to the reform.
 
 Do not add controls because they improve statistical significance.
 
