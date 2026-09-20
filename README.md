@@ -61,7 +61,7 @@ ARIS 是研究引擎；**ARIS4C 是围绕论文建立的完整研究系统**：�
 - **001 · 蜜蜂 GCA × 不确定性** — [English PDF](https://cochranek.github.io/ARIS4C/paper/001/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/001/zh/main.pdf)
 - **002 · LING-01 · 语言周期性检验** — [English PDF](https://cochranek.github.io/ARIS4C/paper/002/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/002/zh/main.pdf)
 
-## 17 个 Paper
+## 20 个 Paper
 
 | ID | 项目 | 状态 | 进度 | 接管入口 | 一图读懂 |
 |---|---|---:|---:|---|---:|
@@ -82,6 +82,9 @@ ARIS 是研究引擎；**ARIS4C 是围绕论文建立的完整研究系统**：�
 | **015** | [Sleeping Beauty Miner](papers/015-sleeping-beauty-miner/) | 🔴 阻塞 | 88% | [handoff](papers/015-sleeping-beauty-miner/handoff/AGENT_HANDOFF.md) | — |
 | **016** | [全球脏话 / 禁忌语言语法](papers/016-global-grammar-of-swearing/) | 🔴 阻塞 | 68% | [handoff](papers/016-global-grammar-of-swearing/handoff/AGENT_HANDOFF.md) | — |
 | **017** | [LING-02 · 预测性语言空间](papers/017-predictive-language-space/) | 🟡 待推进 | 20% | [handoff](papers/017-predictive-language-space/handoff/AGENT_HANDOFF.md) | — |
+| **018** | [Fly Neuro Playground](papers/018-drosophila-neural-simulation/) | 🟡 待推进 | 12% | [handoff](papers/018-drosophila-neural-simulation/handoff/AGENT_HANDOFF.md) | — |
+| **018** | [Drosophila Open Simulation](papers/018-drosophila-open-simulation/) | 🟡 待推进 | 12% | [handoff](papers/018-drosophila-open-simulation/handoff/AGENT_HANDOFF.md) | — |
+| **019** | [Time Off × Happiness](papers/019-time-off-happiness/) | 🟡 待推进 | 15% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
 
 ## ARIS4C 如何运作
 
