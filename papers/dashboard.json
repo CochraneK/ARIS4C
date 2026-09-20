@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-09-19",
+  "as_of": "2026-09-21",
   "note": "Portfolio-management estimates for ARIS4C 000. Progress is not a scientific result; 100 means the current repository-level final output contract is satisfied. Activity is a live execution state with exactly four values: finish, active, wait, or block. Finish means the current final/output contract is complete. Active means meaningful research work is running now or has produced a recent substantive paper-folder update. Wait means the next meaningful step is executable but is not currently being advanced. Block means meaningful progress depends on an external/human/independent-review/data-transfer/permission or similar dependency. Metadata-only, README, Pages, and handoff-sync commits do not make a project Active.",
   "projects": {
     "001": {
@@ -138,6 +138,14 @@
       "evidence": "Distinct LING-02 prediction ladder, comparator families, hypotheses/falsifiers, and explicit claim boundary inherited from completed LING-01 negative global-circle result",
       "next_gate": "Inventory reusable 002 data/code and freeze leakage-safe Pilot-0 prediction targets plus random/family/macroarea split manifests",
       "blocker": "None; queued behind higher-progress completion-first work"
+    },
+    "018": {
+      "progress": 32,
+      "stage": "Pilot 0 toy sandbox · behaviour-neural dual-view prototype",
+      "activity": "active",
+      "evidence": "Validated Drosophila open-source landscape separated research/model infrastructure from community demos; deterministic toy ring-attractor Pilot 0 completed across 50 seeds × 5 lesion levels; two-panel browser prototype now links simulated behaviour with neural population activity; smoke CI added.",
+      "next_gate": "Reproduce a small maintained published-model path in flyvis and FlyGym, measure install/runtime/data burden, then select the smallest scientifically defensible neural-state↔behaviour bridge before freezing a biological hypothesis.",
+      "blocker": "No immediate engineering blocker. Biological inference is intentionally blocked until Pilot 1 replaces toy assumptions with a published validated model/data path."
     }
   },
   "scheduling": {
@@ -153,5 +161,5 @@
     "checkpoint_rule": "commit each bounded substantive work unit and sync handoff before intentionally switching papers",
     "active_recency_default_hours": 2
   },
-  "updated": "2026-09-19"
+  "updated": "2026-09-21"
 }
