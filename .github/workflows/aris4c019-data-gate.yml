@@ -36,7 +36,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add papers/019-time-off-happiness/data papers/019-time-off-happiness/process/PILOT0_DATA_GATE.md papers/019-time-off-happiness/process/PILOT0_EVENT_FREEZE.csv
+          git add papers/019-time-off-happiness/data papers/019-time-off-happiness/process/PILOT0_DATA_GATE.md papers/019-time-off-happiness/process/PILOT0_EVENT_FREEZE.csv papers/019-time-off-happiness/process/LEGAL_VERIFICATION_QUEUE.csv
           if git diff --cached --quiet; then
             echo "No generated changes"
             exit 0
