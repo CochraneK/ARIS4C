@@ -7,7 +7,9 @@ import hashlib
 import html
 import json
 import subprocess
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS = ROOT / "papers"
@@ -15,6 +17,7 @@ OUT = ROOT / "docs" / "index.html"
 DASHBOARD = PAPERS / "dashboard.json"
 PROGRESS_HISTORY = PAPERS / "progress_history.json"
 REPO_URL = "https://github.com/CochraneK/ARIS4C"
+DISPLAY_TZ = ZoneInfo("Asia/Shanghai")
 
 
 def asset_version(path: Path) -> str:
@@ -59,18 +62,51 @@ def load_progress_history() -> dict:
     return json.loads(PROGRESS_HISTORY.read_text(encoding="utf-8"))
 
 
+def _timestamp_in_display_tz(value: object) -> datetime | None:
+    """Parse an ISO Git timestamp and normalize it to the command-center timezone."""
+    raw = str(value or "").strip()
+    if not raw:
+        return None
+    try:
+        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=DISPLAY_TZ)
+    return parsed.astimezone(DISPLAY_TZ)
+
+
 def latest_day_history(history: dict) -> dict:
-    """Return only checkpoints from the local date encoded by the latest Git timestamp."""
+    """Return today's Beijing-time checkpoints plus the prior state as a midnight baseline."""
     points = list(history.get("points", []) or [])
-    if not points:
-        return {"schema_version": history.get("schema_version", 1), "date": "", "points": []}
-    latest = str(points[-1].get("timestamp", ""))
-    day = latest[:10]
+    today = datetime.now(DISPLAY_TZ).date()
+    day = today.isoformat()
+
+    parsed: list[tuple[datetime, dict]] = []
+    for point in points:
+        ts = _timestamp_in_display_tz(point.get("timestamp"))
+        if ts is not None:
+            parsed.append((ts, point))
+    parsed.sort(key=lambda row: row[0])
+
+    today_points = [point for ts, point in parsed if ts.date() == today]
+    previous = next((point for ts, point in reversed(parsed) if ts.date() < today), None)
+
+    visible_points: list[dict] = []
+    if today_points and previous:
+        baseline = dict(previous)
+        baseline["timestamp"] = f"{day}T00:00:00+08:00"
+        baseline["commit"] = "carry-forward"
+        baseline["baseline"] = True
+        visible_points.append(baseline)
+    visible_points.extend(today_points)
+
     return {
         "schema_version": history.get("schema_version", 1),
         "source": history.get("source", ""),
         "date": day,
-        "points": [p for p in points if str(p.get("timestamp", ""))[:10] == day],
+        "timezone": "Asia/Shanghai",
+        "points": visible_points,
     }
 
 
