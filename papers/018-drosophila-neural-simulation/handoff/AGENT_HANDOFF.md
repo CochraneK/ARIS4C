@@ -4,7 +4,7 @@
 
 **Drosophila Open Science & Neural Simulation**
 
-Drosophila open-science and neural-simulation exploration. Pilot 0 validated the perturb/simulation UX; Pilot 1 reproduced pinned flyvis and FlyGym components; Pilot 2A now reproduces the official legacy RealisticVisionFly interface with real retinal rendering, pretrained connectome-constrained visual dynamics, 2×45,669 neural activity state, and embodied FlyGym state in one clean run. Pilot 2B targets the published engineered decoder and bounded closed-loop fly following before any new hypothesis.
+Drosophila open-science and embodied neural-simulation exploration. Pilot 0 validated the perturb/visualization UX; Pilot 1 reproduced maintained flyvis and FlyGym components; Pilot 2A reproduced the official legacy embodied-neural interface; Pilot 2B now executes the official moving-target retinal→flyvis→z-score/object-mask→turning-bias→2-D-drive→body loop end to end in clean CI. The bounded run proves an active closed loop but not successful following or a biological neural-to-motor decoder.
 
 ## Current state
 
