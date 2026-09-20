@@ -3,7 +3,7 @@ name: ARIS4C018 Pilot2 Legacy Vision
 on:
   push:
     paths:
-      - "papers/018-drosophila-neural-simulation/code/pilot2_*.py"
+      - "papers/018-drosophila-neural-simulation/code/pilot2_legacy_realistic_vision_smoke.py"
       - "papers/018-drosophila-neural-simulation/PILOT2_LEGACY_ADVANCED_VISION_PLAN.md"
       - ".github/workflows/aris4c018-pilot2-legacy-vision.yml"
   workflow_dispatch:
