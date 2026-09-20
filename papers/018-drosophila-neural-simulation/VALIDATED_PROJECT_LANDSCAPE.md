@@ -58,3 +58,30 @@ community demos    -> interaction and visualization ideas only
 ```
 
 Pilot 0 remains deliberately model-agnostic and toy-sized. Pilot 1 should reproduce one published/maintained component before making biological claims.
+
+## Third-party user/research projects discovered after v1
+
+### ShunyaResearch/drosophila-connectome-experiments
+
+A particularly relevant independent project currently implements a Brian2 LIF model over FlyWire materializations and reproduces a sugar-sensory -> MN9 feeding-motor milestone before attempting body coupling.
+
+Why it matters for 018:
+
+- it independently converges on a connectome -> neural dynamics -> NeuroMechFly body pipeline;
+- it explicitly proposes flyvis as a possible visual front-end;
+- it exposes a major interface problem: the FlyWire brain does not include the VNC/leg motor system, so embodied coupling must terminate at descending neurons and then bridge to a motor controller or VNC model;
+- its README reports a concrete full-brain CPU resource profile, useful as an external feasibility reference but not yet reproduced by ARIS4C018.
+
+Relationship to 018:
+
+**comparison / prior implementation, not a dependency and not evidence that our future bridge works.**
+
+Source:
+- https://github.com/ShunyaResearch/drosophila-connectome-experiments
+
+### philshiu/Drosophila_brain_model
+
+Reference implementation associated with the whole-brain LIF modelling line later published as Shiu et al. (2024). This is now tracked as a higher-cost, biologically richer future reproduction candidate after the lightweight flyvis/FlyGym smoke gate.
+
+Source:
+- https://github.com/philshiu/Drosophila_brain_model
