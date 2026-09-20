@@ -165,6 +165,108 @@ def normalize_wb_leave_panel(wb_bytes: bytes) -> pd.DataFrame:
     return out.sort_values(["economy", "ew_year"]).reset_index(drop=True)
 
 
+def wb_economy_to_whr_country(economy: str, whr_names: set[str]) -> str:
+    if economy in whr_names:
+        return economy
+    explicit = {
+        "China Shanghai": "China",
+        "China Beijing": "China",
+        "India Mumbai": "India",
+        "India Delhi": "India",
+        "Bangladesh Dhaka": "Bangladesh",
+        "Brazil São Paulo": "Brazil",
+        "Brazil Rio de Janeiro": "Brazil",
+        "Indonesia Jakarta": "Indonesia",
+        "Indonesia Surabaya": "Indonesia",
+        "Nigeria Lagos": "Nigeria",
+        "Nigeria Kano": "Nigeria",
+        "Pakistan Karachi": "Pakistan",
+        "Pakistan Lahore": "Pakistan",
+        "Russian Federation Moscow": "Russia",
+        "Russian Federation St. Petersburg": "Russia",
+    }
+    candidate = explicit.get(economy, "")
+    return candidate if candidate in whr_names else ""
+
+
+def count_whr_window(whr: pd.DataFrame, country: str, treatment_year: int) -> tuple[int, int]:
+    if not country:
+        return 0, 0
+    years = set(
+        whr.loc[whr["country"].eq(country), "year"]
+        .dropna().astype(int).tolist()
+    )
+    n_pre = sum((treatment_year - 4) <= y <= (treatment_year - 1) for y in years)
+    n_post = sum(treatment_year <= y <= (treatment_year + 4) for y in years)
+    return int(n_pre), int(n_post)
+
+
+def discover_wb_leave_jumps(wb: pd.DataFrame, whr: pd.DataFrame, events: pd.DataFrame) -> pd.DataFrame:
+    """Discover observed statutory-leave discontinuities for legal verification.
+
+    A World Bank jump is not itself a legal reform. It only enters a queue
+    whose treatment date and legal meaning must be confirmed from official law.
+    """
+    whr_names = set(whr["country"].astype(str))
+    registered = events[["event_id", "country", "ew_report_year"]].copy()
+    registered["ew_report_year"] = pd.to_numeric(registered["ew_report_year"], errors="coerce")
+
+    rows = []
+    for economy, g in wb.groupby("economy", sort=True):
+        g = g.sort_values("ew_year").copy()
+        g["prev_ew_year"] = g["ew_year"].shift(1)
+        for col in ["leave_1y", "leave_5y", "leave_10y", "leave_avg"]:
+            g[f"prev_{col}"] = g[col].shift(1)
+        g["delta_avg"] = g["leave_avg"] - g["prev_leave_avg"]
+        changed = g.loc[g["delta_avg"].notna() & g["delta_avg"].abs().gt(1e-9)]
+        if changed.empty:
+            continue
+
+        whr_country = wb_economy_to_whr_country(str(economy), whr_names)
+        for _, row in changed.iterrows():
+            ew_year = int(row["ew_year"])
+            npre0, npost0 = count_whr_window(whr, whr_country, ew_year)
+            npre1, npost1 = count_whr_window(whr, whr_country, ew_year - 1)
+            score0 = min(npre0, npost0)
+            score1 = min(npre1, npost1)
+            if score1 > score0:
+                coverage_hint_year, n_pre, n_post = ew_year - 1, npre1, npost1
+            else:
+                coverage_hint_year, n_pre, n_post = ew_year, npre0, npost0
+
+            reg = registered.loc[
+                registered["country"].eq(whr_country) &
+                registered["ew_report_year"].sub(ew_year).abs().le(1)
+            ] if whr_country else registered.iloc[0:0]
+            rows.append({
+                "economy": economy,
+                "economy_code": row["economy_code"],
+                "whr_country": whr_country,
+                "ew_year": ew_year,
+                "previous_ew_year": int(row["prev_ew_year"]),
+                "leave_avg_previous": row["prev_leave_avg"],
+                "leave_avg_current": row["leave_avg"],
+                "leave_avg_delta": row["delta_avg"],
+                "leave_1y_delta": row["leave_1y"] - row["prev_leave_1y"],
+                "leave_5y_delta": row["leave_5y"] - row["prev_leave_5y"],
+                "leave_10y_delta": row["leave_10y"] - row["prev_leave_10y"],
+                "coverage_hint_year_not_treatment": coverage_hint_year,
+                "n_pre_hint": n_pre,
+                "n_post_hint": n_post,
+                "whr_coverage_pass_hint": bool(n_pre >= 2 and n_post >= 2),
+                "already_registered": not reg.empty,
+                "registered_event_ids": ";".join(reg["event_id"].astype(str).tolist()),
+                "legal_verification_required": True,
+            })
+    out = pd.DataFrame(rows)
+    if out.empty:
+        return out
+    return out.sort_values(
+        ["whr_coverage_pass_hint", "already_registered", "leave_avg_delta"],
+        ascending=[False, True, False],
+    ).reset_index(drop=True)
+
+
 def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: pd.DataFrame) -> pd.DataFrame:
     aliases = {
         "Taiwan, China": ["Taiwan, China", "Taiwan (China)", "Taiwan"],
@@ -344,6 +446,19 @@ def main():
     validation = validate_reforms_against_wb(events, evcov, wb_panel)
     validation.to_csv(DATA_DIR / "reform_panel_validation.csv", index=False)
 
+    jumps = discover_wb_leave_jumps(wb_panel, whr, events)
+    jumps.to_csv(DATA_DIR / "worldbank_leave_jumps.csv", index=False)
+    verification_queue = jumps.loc[
+        jumps["whr_coverage_pass_hint"].eq(True) & jumps["already_registered"].eq(False)
+    ].copy() if not jumps.empty else jumps.copy()
+    if not verification_queue.empty:
+        verification_queue["abs_delta"] = verification_queue["leave_avg_delta"].abs()
+        verification_queue = verification_queue.sort_values(
+            ["abs_delta", "n_pre_hint", "n_post_hint"],
+            ascending=[False, False, False]
+        ).drop(columns=["abs_delta"])
+    verification_queue.to_csv(PROCESS_DIR / "LEGAL_VERIFICATION_QUEUE.csv", index=False)
+
     inventory = {
         "sources": {
             "world_bank": {
@@ -374,6 +489,8 @@ def main():
             "tier_A_corroborated": int((validation["event_tier"] == "A_corroborated").sum()),
             "tier_B_legal_only": int((validation["event_tier"] == "B_legal_only").sum()),
             "freeze_eligible": int(validation["freeze_eligible"].sum()),
+            "world_bank_all_leave_jumps": int(len(jumps)),
+            "unregistered_whr_covered_jump_queue": int(len(verification_queue)),
         },
     }
     (DATA_DIR / "source_inventory.json").write_text(
@@ -399,7 +516,8 @@ def main():
         f"- Reform candidates whose World Bank panel change matches the registered direction and WHR coverage passes: **{len(structurally_valid)}**.",
         f"- Freeze-eligible legal events (verified timing + WHR coverage): **{len(freeze_rows)}**.",
         f"- Tier A, additionally corroborated by the World Bank panel: **{len(tier_a)}**.",
-        f"- Tier B, legally verified but not corroborated by the World Bank historical panel: **{len(tier_b)}**.", "",
+        f"- Tier B, legally verified but not corroborated by the World Bank historical panel: **{len(tier_b)}**.",
+        f"- All World Bank annual-leave jumps discovered: **{len(jumps)}**; unregistered jumps with usable WHR coverage awaiting legal verification: **{len(verification_queue)}**.", "",
         "## Interpretation", "",
         "Coverage PASS means an event is empirically inspectable. It does **not** establish parallel trends, no anticipation, clean treatment isolation, or causality.", "",
         "## Verified-year candidates that pass coverage", "",
