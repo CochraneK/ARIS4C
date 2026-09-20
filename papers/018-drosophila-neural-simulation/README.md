@@ -11,55 +11,137 @@ left: fly behaviour / body / trajectory
 right: neural activity / circuit state
 ```
 
-018 is currently an **exploration project**, not yet a formal hypothesis-locked ARIS paper.
+018 is still an **exploration project**. A new biological hypothesis is intentionally not frozen yet.
 
-## Current architecture
+## Current state
 
-### Research/model layer
+### Pilot 0 · transparent toy sandbox — PASS
 
-- FlyGym / NeuroMechFly v2 — embodied behaviour and environment.
-- flyvis — connectome-constrained visual-system dynamics.
-- FlyBrainLab — executable neural circuits and interactive connectome exploration.
-- navis / fafbseg — morphology/connectome analysis and data access.
-
-### User-facing inspiration
-
-We also study interactive/community projects and experimental systems such as browser fly-brain demos, Flyception and BABAM.
-
-These may influence UX, but scientific claims are never inherited from a demo without validation.
-
-## Pilot 0
-
-A transparent toy circular neural network now validates the full loop:
+A small ring-rate network validated the basic loop:
 
 ```
-perturb
-  -> simulate
-  -> observe behaviour
-  -> observe neural state
-  -> quantify
+perturb -> simulate -> behaviour -> neural state -> quantify
 ```
 
-Files:
+This remains explicitly non-biological.
 
+### Pilot 1 · maintained upstream components — PASS
+
+Clean pinned CI reproduced:
+
+- **flyvis** connectome construction: 443 nodes, 8,174 edges, 65 cell types at extent=1.
+- **FlyGym 2.1.0 / NeuroMechFly** compilation: 70 bodies, 127 joints, 42 controls.
+
+### Pilot 2A · official embodied-neural interface — PASS
+
+The official legacy NeuroMechFly v2 advanced-vision stack now runs in our own clean CI with:
+
+- real headless retinal rendering;
+- checksum-verified pretrained flyvis models;
+- upstream default 1.0 s neural fade-in;
+- FlyGym body state;
+- a **2 × 45,669** neural activity state;
+- named T4/T5 cell activities.
+
+Canonical full-path workflow:
+
+https://github.com/CochraneK/ARIS4C/actions/runs/35528929770
+
+### Pilot 2B · official closed-loop decoder — RUNNING
+
+Current gate:
+
+```
+moving fly
+ -> compound-eye rendering
+ -> pretrained flyvis activity
+ -> baseline z-scores
+ -> object mask
+ -> turning bias
+ -> two-value descending drive
+ -> observer body
+```
+
+The decoder math is separately unit-tested and PASS.
+
+## Critical claim boundary
+
+The advanced-vision chain is not uniformly biological.
+
+### BIO
+
+```
+retinal rendering -> pretrained connectome-constrained flyvis activity
+```
+
+### DECODER
+
+```
+neural activity
+ -> baseline z-score
+ -> thresholded object mask
+ -> geometric center
+ -> turning bias
+ -> 2-D descending drive
+```
+
+The second chain is engineered. A successful trajectory must not be described as if the full visual-to-descending-neuron pathway had been reconstructed.
+
+See:
+
+- `OFFICIAL_LEGACY_DECODER_SPEC.md`
+- `CLAIM_BOUNDARY_MATRIX.md`
+- `RESEARCH_QUESTION_GATE.md`
+
+## Current stack
+
+Research/model infrastructure:
+
+- FlyGym / NeuroMechFly
+- flyvis
+- FlyBrainLab
+- navis / fafbseg
+
+Serious community comparators now include projects that expose real-vs-engineered interfaces, failures, ablations, and readout artefacts—not only visually impressive demos.
+
+See `VALIDATED_PROJECT_LANDSCAPE.md`.
+
+## FlyGym 2.x
+
+The modern stack still has Retina, CPU vision and a two-value `HybridTurningController`, but the legacy packaged `RealisticVisionFly` + flyvis + fly-following example is not present in the same form.
+
+Current rule:
+
+**reproduce legacy first; migrate only after the legacy closed loop is independently working.**
+
+See `FLYGYM2_MIGRATION_AUDIT.md`.
+
+## Files
+
+- `STATUS.md`
+- `TODO.md`
+- `DECISIONS.md`
+- `VALIDATED_PROJECT_LANDSCAPE.md`
 - `PILOT0_PROTOCOL.md`
-- `code/pilot0_ring_attractor.py`
-- `data/pilot0_summary.csv`
+- `PILOT1_REPRODUCTION_PLAN.md`
+- `PILOT1_RESULT.md`
+- `PILOT2_LEGACY_ADVANCED_VISION_PLAN.md`
+- `PILOT2A_RESULT.md`
+- `PILOT2B_PROTOCOL.md`
+- `OFFICIAL_LEGACY_DECODER_SPEC.md`
+- `CLAIM_BOUNDARY_MATRIX.md`
+- `RESEARCH_QUESTION_GATE.md`
+- `FLYGYM2_MIGRATION_AUDIT.md`
 - `prototype/index.html`
-
-The browser prototype already implements the preferred two-panel interaction.
-
-**Boundary:** Pilot 0 is not a biological Drosophila model.
-
-## Next
-
-Pilot 1 will reproduce a maintained published model path, prioritizing flyvis and FlyGym. A formal biological hypothesis will be frozen only after practical reproduction and model-boundary review.
 
 ## Project split rule
 
-Keep ecosystem mapping and question discovery in ARIS4C018. Fork a dedicated repository or paper project when a direction has:
+Keep ecosystem mapping, reproduction and question discovery in ARIS4C018.
 
-- a clear falsifiable question;
-- a defined data/model source;
-- a reproducible analysis or simulation pipeline;
+Fork a dedicated repository/paper only when a direction has:
+
+- a falsifiable question;
+- a frozen data/model source;
+- explicit biological-vs-engineered interface provenance;
+- a reproducible simulation/analysis pipeline;
 - a meaningful independent output.
