@@ -5,7 +5,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'papers/019-time-off-happiness/**'
+      - 'papers/019-time-off-happiness/code/pilot0_data_gate.py'
+      - 'papers/019-time-off-happiness/process/REFORM_CANDIDATES.csv'
       - '.github/workflows/aris4c019-data-gate.yml'
 
 permissions:
