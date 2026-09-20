@@ -285,10 +285,10 @@
     "candidate_rows": 30,
     "coverage_pass": 17,
     "confirmatory_timing_pass": 10,
-    "panel_direction_match": 17,
-    "pilot0_structural_pass": 11,
-    "tier_A_corroborated": 8,
-    "tier_B_legal_only": 2,
+    "panel_direction_match": 19,
+    "pilot0_structural_pass": 13,
+    "tier_A_corroborated": 9,
+    "tier_B_legal_only": 1,
     "freeze_eligible": 10
   }
 }
