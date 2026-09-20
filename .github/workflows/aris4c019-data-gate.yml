@@ -1,0 +1,45 @@
+name: ARIS4C019 Pilot-0 data gate
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/019-time-off-happiness/**'
+      - '.github/workflows/aris4c019-data-gate.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aris4c019-data-gate
+  cancel-in-progress: true
+
+jobs:
+  data-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pandas requests openpyxl xlrd
+      - name: Inspect official sources and compute coverage
+        run: python papers/019-time-off-happiness/code/pilot0_data_gate.py
+      - name: Commit generated gate artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/019-time-off-happiness/data papers/019-time-off-happiness/process/PILOT0_DATA_GATE.md
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+            exit 0
+          fi
+          git commit -m "data(019): refresh Pilot-0 source coverage"
+          git pull --rebase origin main
+          git push origin HEAD:main
