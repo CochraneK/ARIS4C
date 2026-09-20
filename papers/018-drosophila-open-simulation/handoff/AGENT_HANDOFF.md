@@ -9,17 +9,17 @@ A discovery-driven project that audits and reproduces open Drosophila simulation
 ## Current state
 
 - Activity: **active**
-- Progress: **40%**
-- Stage: **Pilot 1 reproduction PASS · neural-state ↔ behaviour bridge design**
-- Evidence: Pilot0 dual-view toy sandbox + deterministic perturbation sweep; pinned clean-CI Pilot1 PASS for flyvis extent-1 connectome (443 nodes, 8,174 edges, 65 cell types) and FlyGym 2.1.0 NeuroMechFly compilation (70 bodies, 127 joints, 42 controls). Workflow run 35528006159 PASS.
+- Progress: **46%**
+- Stage: **Pilot 2A embodied-neural interface PASS · Pilot 2B closed-loop reproduction running**
+- Evidence: Pilot1 pinned clean-CI dual reproduction PASS; Pilot2A full official legacy RealisticVisionFly path PASS with checksum-verified pretrained flyvis, EGL retinal rendering, upstream 1.0 s neural fade-in, 2×45,669 neural state, named T4/T5 activities and FlyGym body state in one run (workflow 35528654776).
 
 ## Immediate next action
 
-**Audit and freeze the smallest biologically defensible neural-state→behaviour bridge with an explicit null/control mapping, then synchronize real model neural state with FlyGym behaviour in the two-panel viewer.**
+**Complete bounded official LC9/LC10-input baseline→z-score→object-mask→turning-bias→2-D descending-drive closed loop against MovingFlyArena, then freeze synchronized neural/decoder/behaviour traces.**
 
 ## Current blocker / gate
 
-No immediate engineering blocker. Scientific inference remains gated on a validated cross-component interface; two runnable components alone do not establish a biologically valid causal bridge.
+No current environment blocker. Scientific interpretation remains gated because the visual neural model is connectome-constrained but the object-mask/turning-bias/descending-drive mapping is an engineered decoder, not a reconstructed biological visual-to-motor pathway.
 
 ## Canonical files / entry points
 
