@@ -2,64 +2,64 @@
 
 ## Purpose
 
-Explore open-source Drosophila neuroscience resources and build reproducible simulations to investigate interesting biological questions.
+Explore open Drosophila neuroscience resources, reproduce usable models, and develop a low-barrier scientific sandbox linking **behaviour** to **neural activity**.
 
-The project starts from existing public data, connectomes, neuron models, and simulation frameworks rather than immediately proposing a hypothesis.
-
-## Research direction
-
-### Phase 0 · Open-source ecosystem mapping
-
-Inventory:
-
-- Drosophila connectome resources
-- neural activity datasets
-- behavioural datasets
-- single neuron models
-- circuit simulation frameworks
-- reproducible GitHub repositories
-
-### Phase 1 · Minimal runnable simulation
-
-Build a small end-to-end pipeline:
+Preferred visual language:
 
 ```
-data/model
-   ↓
-neural circuit
-   ↓
-stimulation
-   ↓
-activity dynamics
-   ↓
-computational phenotype or behaviour
+left: fly behaviour / body / trajectory
+right: neural activity / circuit state
 ```
 
-Candidate systems:
+018 is currently an **exploration project**, not yet a formal hypothesis-locked ARIS paper.
 
-- central complex navigation
-- mushroom body learning
-- sleep/wake regulation
-- social behaviour circuits
-- ageing/neurodegeneration models
+## Current architecture
 
-### Phase 2 · Scientific question generation
+### Research/model layer
 
-Potential questions:
+- FlyGym / NeuroMechFly v2 — embodied behaviour and environment.
+- flyvis — connectome-constrained visual-system dynamics.
+- FlyBrainLab — executable neural circuits and interactive connectome exploration.
+- navis / fafbseg — morphology/connectome analysis and data access.
 
-- How can small neural circuits generate complex behaviour?
-- How does biological redundancy create robustness?
-- Which circuit motifs produce emergent computation?
-- How do biological neural systems differ from artificial neural networks?
+### User-facing inspiration
 
-## Principles
+We also study interactive/community projects and experimental systems such as browser fly-brain demos, Flyception and BABAM.
 
-- reproducibility first
-- open-source first
-- simulation before speculation
-- separate tool building from scientific claims
-- preserve provenance of datasets and models
+These may influence UX, but scientific claims are never inherited from a demo without validation.
 
-## Status
+## Pilot 0
 
-Concept exploration stage.
+A transparent toy circular neural network now validates the full loop:
+
+```
+perturb
+  -> simulate
+  -> observe behaviour
+  -> observe neural state
+  -> quantify
+```
+
+Files:
+
+- `PILOT0_PROTOCOL.md`
+- `code/pilot0_ring_attractor.py`
+- `data/pilot0_summary.csv`
+- `prototype/index.html`
+
+The browser prototype already implements the preferred two-panel interaction.
+
+**Boundary:** Pilot 0 is not a biological Drosophila model.
+
+## Next
+
+Pilot 1 will reproduce a maintained published model path, prioritizing flyvis and FlyGym. A formal biological hypothesis will be frozen only after practical reproduction and model-boundary review.
+
+## Project split rule
+
+Keep ecosystem mapping and question discovery in ARIS4C018. Fork a dedicated repository or paper project when a direction has:
+
+- a clear falsifiable question;
+- a defined data/model source;
+- a reproducible analysis or simulation pipeline;
+- a meaningful independent output.
