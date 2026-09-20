@@ -2,66 +2,48 @@
 
 ## Current
 
-- Progress: 22%
+- Progress: 32%
 - Activity: active
-- Stage: Open-source ecosystem mapping · Fly Neuro Playground direction
+- Stage: Pilot 0 toy sandbox · behaviour-neural dual-view prototype
 
 ## Completed
 
-- Defined project boundary: exploration stays in ARIS4C; mature simulation tools or paper directions can fork independently.
-- Added ecosystem map covering connectome resources, simulation frameworks, and candidate experiment directions.
-- Added research question pool.
-- Completed first GitHub repository survey and separated infrastructure candidates from possible MVP simulation targets.
-- Added a user-facing perspective: prioritize projects that connect behaviour and neural activity visualization.
+- Defined 018 as an ARIS4C exploration mother project rather than prematurely freezing a paper question.
+- Mapped scientific infrastructure, modelling tools, connectome-analysis tools and user-facing/community projects.
+- Validated a current project landscape and separated research/model infrastructure from community demos.
+- Made the preferred interface explicit: behaviour/body/trajectory on the left, neural activity/circuit state on the right.
+- Implemented a deterministic toy ring-attractor perturbation simulator.
+- Ran and committed a 50-seed × 5-lesion-level Pilot 0 summary.
+- Added a self-contained browser prototype with synchronized behaviour and neural activity.
+- Added a smoke test and GitHub Actions CI.
 
-## Key design insight
+## Pilot 0 result
 
-The target is not only a fruit-fly simulation. A preferred future interface is:
+Toy-model mean heading error:
 
-```
-left: fly behaviour / trajectory / environment
-right: neuron activity / circuit state / connectivity
-```
+- 0% lesion: 0.144°
+- 10% lesion: 3.857°
+- 20% lesion: 5.254°
+- 30% lesion: 7.664°
+- 40% lesion: 8.739°
 
-The project should favour systems that allow:
+This validates the experiment pipeline only. It is not evidence about biological Drosophila robustness.
 
-- behaviour-neural activity coupling;
-- replay and visualization;
-- perturbation experiments;
-- transition from demonstration to scientific hypothesis.
+## Leading published/model candidates
 
-## Current leading directions
-
-1. Central complex navigation
-2. Mushroom body learning
-3. Connectome-constrained small circuit models
-4. Interactive Fly Neuro Playground
-
-## Current candidate experiment
-
-A first computational sandbox may test:
-
-"How robust is a simplified Drosophila navigation circuit under neural perturbation?"
-
-Possible perturbations:
-
-- neuron removal;
-- connection noise;
-- synaptic weight changes.
-
-Outputs:
-
-- navigation error;
-- stability;
-- recovery/compensation.
+1. FlyGym / NeuroMechFly v2 — body, environment, sensorimotor behaviour.
+2. flyvis — connectome-constrained visual neural dynamics with pretrained/tutorial workflows.
+3. FlyBrainLab — executable-circuit exploration and connectome interaction.
+4. navis / fafbseg — analysis and data-access support.
 
 ## Next gates
 
-1. Inspect behaviour+neural visualization projects in detail.
-2. Select one runnable MVP stack.
-3. Build minimal reproducible environment.
-4. Run first simulation.
+1. Reproduce one small flyvis pretrained/tutorial inference path.
+2. Reproduce one minimal FlyGym behaviour path.
+3. Record installation, runtime, hardware and data burden.
+4. Choose the smallest scientifically defensible neural-state ↔ behaviour bridge.
+5. Only then freeze a falsifiable biological question and enter formal ARIS research flow.
 
-## Decision rule
+## Scientific boundary
 
-If exploration reveals a focused research question with a clear hypothesis, data source, and simulation/analysis pipeline, create a dedicated subproject or paper project rather than expanding this repository indefinitely.
+Community browser whole-brain demos are useful interaction references, not inherited biological validation. Pilot 0 is explicitly a toy model.
