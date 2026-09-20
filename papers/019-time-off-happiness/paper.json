@@ -1,0 +1,59 @@
+{
+  "id": "019",
+  "portfolio_id": "ARIS4C-019",
+  "slug": "time-off-happiness",
+  "title": "Time Off and Happiness Across Countries: Longitudinal Changes in Paid Leave, Working Time, and Subjective Well-Being",
+  "short_title": "Time Off × Happiness",
+  "year": 2026,
+  "status": "concept-scaffold",
+  "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
+  "summary": "A longitudinal cross-country study of whether changes in statutory paid annual leave and realized working time are followed by changes in subjective well-being. The design separates paid annual leave, public holidays, actual work hours and leave utilization, prioritizing policy reforms and within-country variation over static country rankings.",
+  "authors": [
+    "Cochrane Kang"
+  ],
+  "aris": {
+    "provenance": "ARIS4C user-requested project registered 2026-09-21; initial official-source and literature feasibility scan completed",
+    "version": "v0.4.26"
+  },
+  "links": {
+    "paper_en": "",
+    "paper_zh": "",
+    "pipeline": "process/RESEARCH_PLAN.md",
+    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/019-time-off-happiness"
+  },
+  "tags": [
+    "ARIS",
+    "ARIS4C",
+    "paid annual leave",
+    "vacation",
+    "working hours",
+    "happiness",
+    "life satisfaction",
+    "subjective well-being",
+    "difference-in-differences",
+    "event study"
+  ],
+  "bilingual_delivery": {
+    "english": false,
+    "chinese": false
+  },
+  "outputs": {
+    "paper_en": "not-started",
+    "paper_zh": "not-started",
+    "figures": {
+      "status": "not-started",
+      "count": 0,
+      "strategy": "coverage/reform map, event-study plots and robustness visuals after measurement freeze"
+    },
+    "tables": {
+      "status": "not-started",
+      "count": 0
+    },
+    "exception": "Concept scaffold; source coverage and identification are not yet frozen.",
+    "pdf": {
+      "status": "not-started",
+      "english": false,
+      "chinese": false
+    }
+  }
+}
