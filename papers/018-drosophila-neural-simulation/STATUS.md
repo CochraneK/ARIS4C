@@ -2,16 +2,22 @@
 
 ## Current
 
-- Progress: 0%
-- Activity: wait
-- Stage: Concept exploration · open-source ecosystem mapping
+- Progress: 8%
+- Activity: active
+- Stage: Open-source ecosystem mapping · research space initialization
+
+## Completed
+
+- Defined project boundary: exploration stays in ARIS4C; mature simulation tools or paper directions can fork independently.
+- Added initial ecosystem map covering connectome resources, simulation frameworks, and candidate experiment directions.
+- Added research question pool.
 
 ## Next gates
 
-1. Map major open-source Drosophila neuroscience repositories.
-2. Select one reproducible simulation stack.
-3. Run a minimal model.
-4. Identify a scientifically interesting computational question.
+1. Expand GitHub/public-resource inventory.
+2. Evaluate runnable simulation stacks.
+3. Select the smallest scientifically meaningful reproducible model.
+4. Run first simulation.
 
 ## Decision rule
 
