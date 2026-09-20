@@ -10,14 +10,15 @@
     "flyvis_version": "1.1.2"
   },
   "workflow": {
-    "run_id": 35528654776,
-    "job_id": 106125195917,
+    "run_id": 35528929770,
+    "job_id": 106125939879,
     "conclusion": "success",
-    "url": "https://github.com/CochraneK/ARIS4C/actions/runs/35528654776",
+    "url": "https://github.com/CochraneK/ARIS4C/actions/runs/35528929770",
     "runner": "GitHub-hosted Ubuntu 24.04",
     "python": "3.11.16",
     "headless_rendering": "EGL",
-    "pretrained_download_checksum_verified": true
+    "pretrained_download_checksum_verified": true,
+    "canonical_code_reverification": true
   },
   "interface_result": {
     "official_fade_in_seconds": 1,
