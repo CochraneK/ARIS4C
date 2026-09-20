@@ -32,3 +32,13 @@ Pilot 1 must adopt a published, maintained biological model component, with FlyG
 A concurrent scaffold commit temporarily downgraded the portfolio dashboard to 12% / wait after Pilot 0 had already been implemented and validated. That dashboard entry was stale relative to committed artifacts.
 
 **Decision:** substantive committed evidence governs progress. For 018, root `STATUS.md`, `paper.json`, Pilot artifacts/results, and CI are checked before accepting a dashboard downgrade. The portfolio entry is reconciled to 32% / active at the Pilot 0 checkpoint.
+
+## 2026-09-21 · Pilot 1 passes as two independent building blocks
+
+Pinned clean-CI reproduction passed for both flyvis connectome construction and FlyGym/NeuroMechFly compilation.
+
+**Decision:** do not jump from this to a whole-brain claim. The next object of study is the interface itself: a small explicit neural-state -> behaviour bridge with a null/control mapping.
+
+**Reason:** independently runnable components are necessary but do not establish that their composition is biologically valid.
+
+**Usability consequence:** keep the user-facing path lightweight; flyvis default installation pulled a large CUDA-capable dependency stack despite the CPU-only smoke, so eventual packaging may need a lighter execution path or hosted mode.
