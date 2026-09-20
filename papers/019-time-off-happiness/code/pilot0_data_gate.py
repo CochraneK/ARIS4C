@@ -412,7 +412,8 @@ def validate_reforms_against_wb(events: pd.DataFrame, evcov: pd.DataFrame, wb: p
             "panel_note": "",
         })
         rows.append({**base, **{k: cov.get(k) for k in [
-            "whr_country", "candidate_treatment_year", "n_pre", "n_post",
+            "whr_country", "legal_effective_year", "transition_year_excluded",
+            "candidate_treatment_year", "n_pre", "n_post",
             "pilot0_coverage_pass", "confirmatory_timing_pass"
         ]}})
     return pd.DataFrame(rows)
@@ -442,6 +443,9 @@ def main():
         .sort_values(["n_years", "country"], ascending=[False, True])
     )
     coverage.to_csv(DATA_DIR / "whr_country_year_coverage.csv", index=False)
+    whr[["country", "year"]].drop_duplicates().sort_values(["country", "year"]).to_csv(
+        DATA_DIR / "whr_observation_calendar.csv", index=False
+    )
 
     evcov = event_coverage(events, whr)
     evcov.to_csv(DATA_DIR / "pilot0_event_coverage.csv", index=False)
@@ -508,6 +512,7 @@ def main():
             "pilot0_structural_pass": int(validation["pilot0_structural_pass"].sum()),
             "tier_A_corroborated": int((validation["event_tier"] == "A_corroborated").sum()),
             "tier_B_legal_only": int((validation["event_tier"] == "B_legal_only").sum()),
+            "primary_pool": int(validation["primary_pool"].sum()),
             "freeze_eligible": int(validation["freeze_eligible"].sum()),
             "world_bank_all_leave_jumps": int(len(jumps)),
             "unregistered_whr_covered_jump_queue": int(len(verification_queue)),
@@ -540,18 +545,18 @@ def main():
         f"- All World Bank annual-leave jumps discovered: **{len(jumps)}**; unregistered jumps with usable WHR coverage awaiting legal verification: **{len(verification_queue)}**.", "",
         "## Interpretation", "",
         "Coverage PASS means an event is empirically inspectable. It does **not** establish parallel trends, no anticipation, clean treatment isolation, or causality.", "",
-        "## Verified-year candidates that pass coverage", "",
+        "## Verified legal events that pass coverage", "",
     ]
     if freeze_rows.empty:
         lines.append("None yet. Verify exact legal effective dates before causal estimation.")
     else:
-        lines += ["| Tier | Country | Effective year | Direction | WB Δ avg leave | n pre | n post | Flags |", "|---|---|---:|---|---:|---:|---:|---|"]
+        lines += ["| Tier | Country | Legal effective date | First full post year | Direction | WB Δ avg leave | n pre | n post | Primary | Flags |", "|---|---|---|---:|---|---:|---:|---:|---|---|"]
         for _, row in freeze_rows.sort_values(["event_tier", "candidate_treatment_year", "country"]).iterrows():
             delta = "" if pd.isna(row.get("leave_avg_delta")) else f"{float(row['leave_avg_delta']):.2f}"
             flags = ";".join([x for x in [str(row.get("macro_window_flags", "")), str(row.get("scope_flags", ""))] if x and x != "nan"])
             lines.append(
-                f"| {row['event_tier']} | {row['country']} | {int(row['candidate_treatment_year'])} | {row['direction']} | "
-                f"{delta} | {int(row['n_pre'])} | {int(row['n_post'])} | {flags} |"
+                f"| {row['event_tier']} | {row['country']} | {row['effective_date']} | {int(row['candidate_treatment_year'])} | {row['direction']} | "
+                f"{delta} | {int(row['n_pre'])} | {int(row['n_post'])} | {bool(row['primary_pool'])} | {flags} |"
             )
     lines += ["", "## Next gate", "",
               "1. continue exact-date verification for Tier-C candidates with good WHR coverage;",
