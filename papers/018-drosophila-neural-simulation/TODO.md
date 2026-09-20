@@ -36,8 +36,16 @@
 - [x] Reproduce legacy RealisticVisionFly with real retinal rendering + pretrained flyvis + embodied body state.
 - [x] Verify 2 × 45,669 neural activity state and named T4/T5 outputs in clean CI.
 - [x] Record and repair the headless EGL requirement.
-- [ ] Reproduce baseline-response calibration for a bounded single condition.
-- [ ] Reproduce the official z-score -> object mask -> turning bias -> 2-D descending-drive decoder.
-- [ ] Run a bounded real closed-loop following trial.
+- [x] Reproduce baseline-response calibration for a bounded single condition.
+- [x] Reproduce the official z-score -> object mask -> turning bias -> 2-D descending-drive decoder.
+- [x] Run a bounded real closed-loop moving-target trial (loop active; not claimed as successful following).
 - [ ] Export synchronized behaviour / retinal / neural / decoder traces.
 - [ ] Compare the legacy implementation against FlyGym 2.x migration cost.
+
+## Pilot 2C · Trace + full-condition gate
+
+- [ ] Freeze the full synchronized neural / decoder / body / target trace under the v1 trace schema.
+- [ ] Re-run one official-duration baseline/condition or validate reuse of upstream full baseline artefacts.
+- [ ] Quantify decoder saturation and zero-SD dependence under the full baseline.
+- [ ] Decide whether successful-following replication is necessary before the 2.x port.
+- [ ] Port the minimal visual-neural interface to current FlyGym 2.x only after the reproduction gate is satisfied.
