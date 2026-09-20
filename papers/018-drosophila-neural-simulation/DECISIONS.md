@@ -42,3 +42,17 @@ Pinned clean-CI reproduction passed for both flyvis connectome construction and 
 **Reason:** independently runnable components are necessary but do not establish that their composition is biologically valid.
 
 **Usability consequence:** keep the user-facing path lightweight; flyvis default installation pulled a large CUDA-capable dependency stack despite the CPU-only smoke, so eventual packaging may need a lighter execution path or hosted mode.
+
+## 2026-09-21 · Pilot 2A passes on the full official fade-in
+
+The repaired headless EGL run completed the upstream default 1.0 s flyvis fade-in, real retinal rendering, pretrained neural dynamics and embodied FlyGym state in one clean CI run.
+
+**Decision:** use this full-path PASS as the canonical Pilot 2A evidence. A temporary short-fade-in smoke experiment is not needed as primary evidence and the canonical script remains on the official 1.0 s path.
+
+**Boundary:** this validates the embodied-neural interface, not the later engineered neural-readout-to-turning decoder.
+
+## 2026-09-21 · Pilot 2B uses the official decoder equations but bounded durations
+
+The next CI gate keeps the official LC9/LC10-input cell selection, z-score threshold=5, tracking gain=6 and two-dimensional descending-drive equations, but uses short baseline and closed-loop windows to make clean CI practical.
+
+Zero baseline-SD positions, if encountered because of the shortened calibration window, are excluded from bounded-smoke z-score aggregation and are counted explicitly. This is a CI accommodation and must not be silently treated as exact reproduction of the paper's 3 s baseline.
