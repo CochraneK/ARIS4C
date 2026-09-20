@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT=Path(__file__).resolve().parents[1]
 INDEX=ROOT/"docs"/"index.html"
@@ -65,6 +67,11 @@ def main()->None:
     if not m:
         fail("progressHistoryData payload missing")
     history=json.loads(m.group(1))
+    expected_today=datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+    if history.get("date") != expected_today:
+        fail(f"today curve is stale: expected {expected_today}, got {history.get('date')}")
+    if history.get("timezone") != "Asia/Shanghai":
+        fail(f"today curve timezone is not explicit Asia/Shanghai: {history.get('timezone')}")
     points=history.get("points",[]) or []
     chart_ids=set(map(str,history.get("chart_project_ids",[]) or []))
     finish_ids={
