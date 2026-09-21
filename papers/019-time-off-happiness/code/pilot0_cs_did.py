@@ -75,14 +75,14 @@ def main() -> None:
     whr = read_whr()
     panel = whr.loc[whr["country"].isin(controls | treated)].copy()
 
+    # The treatment cohort is the verified legal effective year. With a
+    # universal base period, every post-treatment ATT is anchored to T-1,
+    # while a partial-exposure transition year T can be excluded cleanly.
     cohort_map = {
-        str(row.whr_country): int(row.candidate_treatment_year)
-        for row in events.itertuples(index=False)
-    }
-    legal_year_map = {
         str(row.whr_country): int(row.legal_effective_year)
         for row in events.itertuples(index=False)
     }
+    legal_year_map = dict(cohort_map)
     transition_map = {
         str(row.whr_country): (
             None if pd.isna(row.transition_year_excluded)
@@ -101,8 +101,8 @@ def main() -> None:
         )
     panel = panel.loc[keep_mask].copy()
 
-    # The package cohort is first full-post year. differences>=0.3 requires
-    # never-treated controls to have a missing cohort rather than cohort 0.
+    # differences>=0.3 requires never-treated controls to have a missing
+    # cohort rather than cohort 0.
     panel["cohort"] = pd.to_numeric(panel["country"].map(cohort_map), errors="coerce")
 
     # A mid-year legal reform year is partially exposed. Drop that treated-country
@@ -125,7 +125,8 @@ def main() -> None:
             "country": row.country,
             "whr_country": country,
             "legal_effective_year": legal_year,
-            "package_cohort_first_full_post": int(row.candidate_treatment_year),
+            "package_cohort_legal_year": legal_year,
+            "first_full_post_year": int(row.candidate_treatment_year),
             "transition_year_excluded": (
                 "" if pd.isna(row.transition_year_excluded)
                 else int(row.transition_year_excluded)
@@ -142,7 +143,7 @@ def main() -> None:
     panel = panel.sort_values(["country", "year"])
     indexed = panel.set_index(["country", "year"])
 
-    model = ATTgt(data=indexed, cohort_column="cohort", base_period="varying")
+    model = ATTgt(data=indexed, cohort_column="cohort", base_period="universal")
     result = model.fit(
         formula="life_ladder",
         est_method="reg",
@@ -172,7 +173,7 @@ def main() -> None:
     simple_agg.to_csv(DATA / "pilot0_cs_simple_aggregate.csv", index=False)
 
     cohort_counts = (
-        events.groupby("candidate_treatment_year")["event_id"]
+        events.groupby("legal_effective_year")["event_id"]
         .count()
         .sort_index()
         .to_dict()
@@ -188,7 +189,7 @@ def main() -> None:
         f"- Common clean control universe: **{len(controls)} countries**.",
         f"- Panel rows supplied to estimator: **{len(panel)}**.",
         "- Treated observations are hard-trimmed to the frozen legal-year window **T-4 through T+4**; mid-year transition T is excluded.",
-        f"- Treatment cohorts (first full-post year -> treated-country count): **{cohort_counts}**.",
+        f"- Treatment cohorts (legal effective year -> treated-country count): **{cohort_counts}**.",
         "- Control group: **not_yet_treated**.",
         "- Estimation method: **outcome-regression group-time ATT**, without post-treatment covariates.",
         "- Bootstrap: **499**, seed **20260921**.",
@@ -209,7 +210,7 @@ def main() -> None:
         "",
         "- Cohorts contain only one or two treated countries, so country-level inference is intrinsically fragile.",
         "- The common-control universe is deliberately conservative: a country must appear in every frozen event's clean donor pool.",
-        "- Mid-year legal reform years are removed for treated countries; package cohort timing is first full-post year.",
+        "- Cohort timing is the legal effective year and the universal base is T-1. Mid-year transition year T is removed, so post estimates begin at legal event time +1 without contaminating the reference period.",
         "- This estimator does not rescue incompatible pre-trends; the first-outcome placebo diagnostics remain binding evidence.",
         "- Positive/negative affect remain locked.",
         "",
