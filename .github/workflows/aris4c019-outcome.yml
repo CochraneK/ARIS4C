@@ -1,0 +1,67 @@
+name: ARIS4C019 Pilot-0 outcome diagnostic
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/019-time-off-happiness/code/pilot0_first_outcome.py'
+      - 'papers/019-time-off-happiness/process/PILOT0_UNLOCK.md'
+      - '.github/workflows/aris4c019-outcome.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aris4c019-outcome
+  cancel-in-progress: true
+
+jobs:
+  outcome-diagnostic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pandas requests xlrd matplotlib
+      - name: Run guarded first outcome diagnostic and publish atomically
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            echo "019 outcome attempt $attempt"
+            git fetch origin main
+            git reset --hard origin/main
+
+            test -f papers/019-time-off-happiness/process/PILOT0_UNLOCK.md
+            python papers/019-time-off-happiness/code/pilot0_first_outcome.py
+
+            git add \
+              papers/019-time-off-happiness/data/pilot0_life_ladder_event_time.csv \
+              papers/019-time-off-happiness/data/pilot0_life_ladder_event_summary.csv \
+              papers/019-time-off-happiness/data/pilot0_life_ladder_pooled_event_time.csv \
+              papers/019-time-off-happiness/process/PILOT0_FIRST_OUTCOME_LOOK.md \
+              papers/019-time-off-happiness/figures/pilot0_life_ladder_event_time.png
+
+            if git diff --cached --quiet; then
+              echo "No generated changes"
+              exit 0
+            fi
+
+            git commit -m "analysis(019): publish first Life Ladder outcome diagnostic"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Concurrent update detected; regenerating from newest main."
+          done
+
+          echo "Failed to publish 019 outcome artifacts after 3 attempts." >&2
+          exit 1
