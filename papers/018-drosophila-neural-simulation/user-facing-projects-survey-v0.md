@@ -53,3 +53,55 @@ Search separately for:
 3. Mushroom body learning simulations.
 4. Browser/Unity/WebGL neuroscience applications.
 5. AI-agent assisted neuroscience workflows.
+
+
+## Official FlyGym 2.x browser apps
+
+### WebAssembly interactive viewer
+
+Current FlyGym includes a self-contained browser viewer that:
+
+- runs the same NeuroMechFly model as the native viewer;
+- uses MuJoCo compiled to WebAssembly;
+- renders with Three.js;
+- advances real physics with `mj_step`;
+- requires no Python installation for the end user.
+
+Source:
+- `NeLy-EPFL/flygym/wasm/viewer`
+
+### NeuroMechFly browser game
+
+Current FlyGym also includes an in-browser slalom game with three neural-control abstraction levels:
+
+- CPG;
+- tripod gait;
+- individual legs.
+
+It uses the same MuJoCo-WASM + Three.js plumbing and real NeuroMechFly dynamics.
+
+Source:
+- `NeLy-EPFL/flygym/wasm/game`
+
+## Product implication for 018
+
+The old assumption that a scientifically grounded Fly Neuro Playground must be a Python-only desktop tool is no longer valid.
+
+A realistic architecture is:
+
+```
+browser
+  ├─ real NeuroMechFly body physics (WASM)
+  ├─ behaviour / trajectory UI
+  └─ neural panel
+       ├─ precomputed real trace first
+       └─ live neural compute later
+```
+
+This suggests a two-stage product path:
+
+1. **Replay product:** browser body visualization synchronized to validated neural traces.
+2. **Live product:** current FlyGym/WASM body + remotely or locally computed flyvis neural dynamics.
+
+The user-facing priority remains:
+scientific provenance × low installation friction × visual immediacy.
