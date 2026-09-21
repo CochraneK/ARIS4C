@@ -1,0 +1,78 @@
+name: ARIS4C018 Pilot3C Current Trace
+
+on:
+  push:
+    paths:
+      - "papers/018-drosophila-neural-simulation/code/pilot3c_current_trace.py"
+      - "papers/018-drosophila-neural-simulation/code/pilot3b_flygym2_closed_loop.py"
+      - "papers/018-drosophila-neural-simulation/code/flygym2_flyvis_adapter.py"
+      - "papers/018-drosophila-neural-simulation/code/official_legacy_decoder.py"
+      - ".github/workflows/aris4c018-pilot3c-current-trace.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  capture-current-trace:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install EGL runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1-mesa-dev
+      - name: Install pinned current stacks
+        run: |
+          python -m pip install "git+https://github.com/NeLy-EPFL/flygym.git@38c8ec61034cd59bc5ba0de20688d4a3c0000d60"
+          python -m pip install "git+https://github.com/TuragaLab/flyvis.git@92b3845cc426dd309a1a0e1b3890156c42e14021"
+      - name: Download flyvis pretrained models
+        run: flyvis download-pretrained --skip_large_files
+      - name: Capture current synchronized trace
+        env:
+          MUJOCO_GL: egl
+          PYOPENGL_PLATFORM: egl
+        run: |
+          python papers/018-drosophila-neural-simulation/code/pilot3c_current_trace.py
+      - name: Validate semantic trace contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("papers/018-drosophila-neural-simulation/data/pilot3c_current_synchronized_trace.json")
+          x = json.loads(p.read_text())
+          assert x["schema_version"] == 1
+          assert len(x["frames"]) == 40
+          assert len(x["cell_order"]) == 25
+          assert all(len(f["neural"]["cell_mean_left"]) == 25 for f in x["frames"])
+          assert all(len(f["neural"]["cell_mean_right"]) == 25 for f in x["frames"])
+          assert all({"body","target","decoder","neural"} <= set(f) for f in x["frames"])
+          assert sum(
+              (f["decoder"]["object_fraction_left"] + f["decoder"]["object_fraction_right"]) > 0
+              for f in x["frames"]
+          ) >= 1
+          assert max(
+              abs(f["decoder"]["dn_right"] - f["decoder"]["dn_left"])
+              for f in x["frames"]
+          ) > 1e-6
+          print("ARIS4C018 Pilot3C trace validation PASS")
+          PY
+      - name: Commit deterministic current trace
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/018-drosophila-neural-simulation/data/pilot3c_current_synchronized_trace.json
+          if git diff --cached --quiet; then
+            echo "Trace unchanged"
+            exit 0
+          fi
+          git commit -m "ARIS4C018 freeze Pilot3C current synchronized trace"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
