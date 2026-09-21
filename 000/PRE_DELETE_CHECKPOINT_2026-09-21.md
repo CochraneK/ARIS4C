@@ -1,6 +1,6 @@
 # ARIS4C 000 · Pre-delete checkpoint · 2026-09-21
 
-**Purpose:** deletion-safe recovery point for the 000 chat.  
+**Purpose:** deletion-safe recovery point for the saturated controller chat **`000ARIS4C001`**.  
 **Canonical rule:** Git is the source of truth. This file is an index of decisions and entry points, not a duplicate scientific truth store.
 
 ## 1. Portfolio controller / continuity
@@ -127,7 +127,7 @@ Canonical implementation:
 
 ## 7. Safe deletion of the chat
 
-This chat is not required for project recovery once this checkpoint and the associated canonical files are on `main`.
+Retiring chat: **`000ARIS4C001`**.\n\nThis chat is not required for project recovery once this checkpoint and the associated canonical files are on `main`.
 
 A new executor should:
 
