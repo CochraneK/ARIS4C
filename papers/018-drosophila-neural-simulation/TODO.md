@@ -44,8 +44,18 @@
 
 ## Pilot 2C · Trace + full-condition gate
 
-- [ ] Freeze the full synchronized neural / decoder / body / target trace under the v1 trace schema.
+- [x] Freeze the full synchronized neural / decoder / body / target trace under the v1 trace schema.
 - [ ] Re-run one official-duration baseline/condition or validate reuse of upstream full baseline artefacts.
 - [ ] Quantify decoder saturation and zero-SD dependence under the full baseline.
 - [ ] Decide whether successful-following replication is necessary before the 2.x port.
 - [ ] Port the minimal visual-neural interface to current FlyGym 2.x only after the reproduction gate is satisfied.
+
+## Pilot 3 · FlyGym 2.x migration
+
+- [x] Audit current Retina and HybridTurningController APIs.
+- [x] Extract a reusable FlyGym2 Retina ↔ flyvis adapter.
+- [ ] PASS current FlyGym 2.x retinal rendering -> pretrained flyvis neural-state smoke.
+- [ ] Benchmark current-stack interface against legacy wall-clock cost.
+- [ ] Reattach the explicit decoder.
+- [ ] Reattach current HybridTurningController.
+- [ ] Emit the same synchronized trace schema from the current stack.
