@@ -2,9 +2,9 @@
 
 ## What this project is
 
-**Time Off and Happiness Across Countries: Longitudinal Changes in Paid Leave, Working Time, and Subjective Well-Being**
+**Statutory Paid Annual Leave and National Life Evaluation: A Global Legal-Event Audit and Falsification-First Holdout Study**
 
-A longitudinal cross-country study of whether changes in statutory paid annual leave and realized working time are followed by changes in subjective well-being. The design separates paid annual leave, public holidays, actual work hours and leave utilization, prioritizing policy reforms and within-country variation over static country rankings.
+A falsification-first cross-national legal-event study of statutory paid annual-leave reforms and annual population Life Ladder. The original eight-event panel is retained as a broader labour/time-off stress test; a cleaner, independently frozen Israel 2016 holdout is analyzed separately. Current evidence is fragile and directionally unstable rather than a robust positive or negative annual-leave effect.
 
 ## Current state
 
@@ -25,6 +25,8 @@ Scientific identification: openly reproducible annual Life Ladder reaches 2023, 
 
 - **paper.json:** paper.json
 - **process/status or plan:** process/RESEARCH_PLAN.md
+- **English paper:** manuscript/WORKING_PAPER_EN.md
+- **Chinese paper:** manuscript/WORKING_PAPER_ZH.md
 - **source:** https://github.com/CochraneK/ARIS4C/tree/main/papers/019-time-off-happiness
 
 ## Before changing anything

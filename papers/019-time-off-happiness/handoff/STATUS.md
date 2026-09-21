@@ -1,7 +1,7 @@
 # ARIS4C019 · Current status
 
-- **Title:** Time Off and Happiness Across Countries: Longitudinal Changes in Paid Leave, Working Time, and Subjective Well-Being
-- **Project status:** pilot0-analysis
+- **Title:** Statutory Paid Annual Leave and National Life Evaluation: A Global Legal-Event Audit and Falsification-First Holdout Study
+- **Project status:** working-paper
 - **Activity:** active
 - **Portfolio progress:** 56%
 - **Current stage:** Identification-feasibility lock · annual-leave-specific track underidentified
