@@ -2,9 +2,9 @@
 
 ## Current
 
-- Progress: 86%
+- Progress: 88%
 - Activity: active
-- Stage: Pilot 4 matched cross-version diagnostic COMPLETE · R1 Retina localization running
+- Stage: Pilot 4 matched diagnostic COMPLETE · R1 Retina identity PASS · R2 frozen-retinal localization running
 
 ## Completed
 
@@ -79,7 +79,7 @@ Already excluded as simple explanations:
 
 ## Active localization
 
-R1 Retina geometry/order is running under the frozen `PILOT4_LOCALIZATION_PROTOCOL.md`.
+R1 Retina geometry/order has completed with exact legacy/current SHA-256 identity for the ID map, pale/yellow mask and 721-index FlyGym→flyvis mapping. R1 is excluded as the first divergence. R2 frozen-retinal localization is now running.
 
 R1 compares:
 
@@ -95,9 +95,9 @@ If R1 matches, proceed immediately to R2 frozen retinal-vector→flyvis.
 
 ## Next gates
 
-1. Complete R1.
-2. If R1 differs, localize Retina geometry/order.
-3. If R1 matches, run R2 mapping-only and neural-model-inclusive frozen stimuli.
+1. Complete R2a exact mapped-vector comparison.
+2. Complete R2b frozen-vector neural response comparison.
+3. If R2b differs with R2a identity, localize flyvis version/model dynamics before returning to renderer/body.
 4. Continue only to R3/R4/R5 as needed.
 5. Use the earliest divergent layer—not final trajectory magnitude—to select the first formal research hypothesis.
 
