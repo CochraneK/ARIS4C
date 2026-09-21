@@ -23,3 +23,13 @@
 - Bahrain is the most influential event: leaving it out changes the remaining-event mean to -0.091, while Bahrain itself has a large pre-placebo RMS gap of 1.023.
 - Therefore the project must not claim that statutory leave increases national Life Ladder from this diagnostic.
 - Proceed to modern staggered-adoption and heterogeneous event-study estimators while retaining all frozen events and prespecified sensitivities.
+
+## 2026-09-21 · Post-unlock treatment-isolation audit
+
+- This audit is explicitly post-outcome and does not rewrite the pre-outcome freeze.
+- The frozen eight-event panel is retained unchanged for transparent stress testing, but most events are legally bundled with broader labour, working-time or time-off reforms.
+- Therefore the existing panel must not be described as identifying an annual-leave-specific causal effect.
+- China 2008 is currently the cleanest leave-specific legal intervention in the frozen pool, with the separate caveat that its post window overlaps the global financial crisis.
+- Bahrain 2012 is especially weak for annual-leave-specific identification because the legal change is a broad Labour Law and T-1=2011 coincides with domestic unrest followed by a broad 2012 rebound; its large positive gap must not anchor the substantive claim.
+- Positive/negative affect remain locked.
+- Next scientific gate is a bounded search for additional stand-alone statutory annual-leave reforms with exact dates, WHR coverage, acceptable donor support and no obvious bundled policy or reference-year shock.
