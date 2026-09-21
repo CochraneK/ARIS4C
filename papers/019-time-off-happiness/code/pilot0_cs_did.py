@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import io
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -154,6 +155,16 @@ def main() -> None:
         progress_bar=False,
     )
 
+    try:
+        pretrend_test = model.wald_pre_test
+    except Exception as exc:
+        pretrend_test = {"error": repr(exc)}
+
+    (DATA / "pilot0_cs_pretrend_test.json").write_text(
+        json.dumps(pretrend_test, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
     group_time = result.to_pandas().reset_index()
     event_agg = result.aggregate(
         "event",
@@ -193,6 +204,7 @@ def main() -> None:
         "- Control group: **not_yet_treated**.",
         "- Estimation method: **outcome-regression group-time ATT**, without post-treatment covariates.",
         "- Bootstrap: **499**, seed **20260921**.",
+        f"- Joint pre-treatment Wald diagnostic: **{pretrend_test}**.",
         "",
         "## Simple aggregate output",
         "",
