@@ -1,0 +1,35 @@
+name: ARIS4C018 Pilot3 FlyGym2 Flyvis
+
+on:
+  push:
+    paths:
+      - "papers/018-drosophila-neural-simulation/code/flygym2_flyvis_adapter.py"
+      - "papers/018-drosophila-neural-simulation/code/pilot3_flygym2_flyvis_smoke.py"
+      - ".github/workflows/aris4c018-pilot3-flygym2-flyvis.yml"
+  workflow_dispatch:
+
+jobs:
+  migrate-interface:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install EGL runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1-mesa-dev
+      - name: Install pinned FlyGym 2.x and current flyvis
+        run: |
+          python -m pip install "git+https://github.com/NeLy-EPFL/flygym.git@38c8ec61034cd59bc5ba0de20688d4a3c0000d60"
+          python -m pip install "git+https://github.com/TuragaLab/flyvis.git@92b3845cc426dd309a1a0e1b3890156c42e14021"
+      - name: Download flyvis pretrained models
+        run: flyvis download-pretrained --skip_large_files
+      - name: Run current-stack neural interface smoke
+        env:
+          MUJOCO_GL: egl
+          PYOPENGL_PLATFORM: egl
+        run: |
+          python papers/018-drosophila-neural-simulation/code/pilot3_flygym2_flyvis_smoke.py
