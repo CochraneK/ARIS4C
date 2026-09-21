@@ -9,17 +9,17 @@ A discovery-driven project that audits and reproduces open Drosophila simulation
 ## Current state
 
 - Activity: **active**
-- Progress: **86%**
-- Stage: **Pilot 4 matched cross-version diagnostic COMPLETE · R1 Retina localization running**
-- Evidence: Pilot4 workflow 35559767189 PASS under the pre-frozen matched static-target condition. Legacy/current mask rate 1.00 vs 0.75; mean |bias| 0.2586 vs 0.1659; mean |R-L drive| 0.8000 vs 0.5696; displacement 0.7018 vs 1.0510; runtime 228.1s vs 220.5s; baseline zero-SD fraction identical at 0.0017198. First-frame decoder divergence occurs before body trajectory. Pure decoder is identical; top-level positive descending→CPG semantics are preserved.
+- Progress: **88%**
+- Stage: **Pilot 4 matched diagnostic COMPLETE · R1 Retina exact identity PASS · R2 frozen-retinal localization running**
+- Evidence: Pilot4 matched diagnostic shows upstream decoder divergence under matched target conditions. R1 workflow 35560206659 PASS: legacy/current Retina are byte-identical at ID-map SHA-256, pale/yellow-mask SHA-256 and 721-index FlyGym→flyvis mapper SHA-256; both are exact bijections. R1 geometry/order is excluded as the first divergence.
 
 ## Immediate next action
 
-**Complete R1 deterministic Retina geometry/order/index signature comparison. If R1 matches, immediately run R2 frozen retinal-vector mapping and neural-response localization before interpreting any embodied difference.**
+**Complete R2a deterministic frozen-retinal mapped-vector equality and R2b pinned flyvis neural-response comparison. If R2a is identical but R2b diverges, localize the difference to flyvis version/model dynamics or numerical execution before investigating rendering/body.**
 
 ## Current blocker / gate
 
-No current blocker. R1 legacy/current jobs are executing. First Pilot4 run is diagnostic only; no post-hoc equivalence threshold or version-quality ranking is permitted.
+No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference.
 
 ## Canonical files / entry points
 
