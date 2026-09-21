@@ -4,7 +4,7 @@
 
 **Drosophila Open Science & Neural Simulation**
 
-Drosophila embodied-neural simulation project. Legacy Pilots 2A–2C reproduce and trace the official advanced-vision loop. Pilot 3A migrated current FlyGym 2.x Retina to current pretrained flyvis. Strict Pilot 3B now passes the full current Retina→flyvis→audited decoder→HybridTurningController→body chain with real target detection and asymmetric embodied control. Pilot 3C is the data-contract gate: emit the same synchronized trace schema from the maintained current stack.
+Drosophila embodied-neural simulation project. Legacy Pilots 2A–2C reproduce and trace the official advanced-vision loop. Pilots 3A–3C migrate Retina→flyvis→audited decoder→current HybridTurningController→body to FlyGym 2.x, freeze a current synchronized trace, and pass legacy/current semantic trace parity. Migration engineering is now closed; Pilot 4 runs a matched static-target cross-version diagnostic before any formal biological hypothesis is frozen.
 
 ## Current state
 
