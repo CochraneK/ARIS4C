@@ -39,8 +39,8 @@
 - [x] Reproduce baseline-response calibration for a bounded single condition.
 - [x] Reproduce the official z-score -> object mask -> turning bias -> 2-D descending-drive decoder.
 - [x] Run a bounded real closed-loop moving-target trial (loop active; not claimed as successful following).
-- [ ] Export synchronized behaviour / retinal / neural / decoder traces.
-- [ ] Compare the legacy implementation against FlyGym 2.x migration cost.
+- [x] Export synchronized behaviour / retinal / neural / decoder traces.
+- [x] Compare the legacy implementation against FlyGym 2.x migration cost.
 
 ## Pilot 2C · Trace + full-condition gate
 
@@ -48,7 +48,7 @@
 - [ ] Re-run one official-duration baseline/condition or validate reuse of upstream full baseline artefacts.
 - [ ] Quantify decoder saturation and zero-SD dependence under the full baseline.
 - [ ] Decide whether successful-following replication is necessary before the 2.x port.
-- [ ] Port the minimal visual-neural interface to current FlyGym 2.x only after the reproduction gate is satisfied.
+- [x] Port the minimal visual-neural interface to current FlyGym 2.x after bounded legacy reproduction.
 
 ## Pilot 3 · FlyGym 2.x migration
 
@@ -58,12 +58,24 @@
 - [x] Benchmark current-stack interface against legacy wall-clock cost (~23.1s vs ~47.0s on matched smoke class).
 - [x] Reattach the explicit decoder.
 - [x] Reattach current HybridTurningController.
-- [ ] Emit the same synchronized trace schema from the current stack.
+- [x] Emit the same synchronized trace schema from the current stack.
 
 ## Pilot 3C · current-stack trace
 
-- [ ] Emit the same synchronized trace schema from current FlyGym 2.x + current flyvis.
-- [ ] Include target/body/decoder/neural provenance per visual update.
-- [ ] Validate trace shape automatically.
-- [ ] Add current-stack replay selector without forking the viewer implementation.
-- [ ] Compare legacy/current traces only descriptively until matched conditions are built.
+- [x] Emit the same synchronized trace schema from current FlyGym 2.x + current flyvis.
+- [x] Include target/body/decoder/neural provenance per visual update.
+- [x] Validate trace shape automatically.
+- [x] Add current-stack replay selector without forking the viewer implementation.
+- [x] Keep unmatched traces provenance-separated; start a separate matched-condition regression.
+
+
+## Pilot 4 · matched cross-version regression
+
+- [x] Freeze matched target geometry, spawn, duration, visual rate, decoder and cell set before result inspection.
+- [x] Implement isolated legacy and current jobs.
+- [x] Freeze comparison metrics without a post-hoc equivalence threshold.
+- [ ] Complete matched legacy condition.
+- [ ] Complete matched current condition.
+- [ ] Commit first diagnostic comparison.
+- [ ] Localize material mismatch through R1→R5 if needed.
+- [ ] Use the localization result to select the first formal scientific hypothesis.
