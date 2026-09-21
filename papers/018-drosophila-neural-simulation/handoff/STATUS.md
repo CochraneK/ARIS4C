@@ -1,7 +1,7 @@
 # ARIS4C018 · Current status
 
 - **Title:** Drosophila Open Science & Neural Simulation
-- **Project status:** exploration-migration-closed-pilot4-running
+- **Project status:** exploration-pilot4-diagnostic-complete-r1-running
 - **Activity:** active
 - **Portfolio progress:** 82%
 - **Current stage:** FlyGym 1.x→2.x migration CLOSED · Pilot 4 matched cross-version regression running
