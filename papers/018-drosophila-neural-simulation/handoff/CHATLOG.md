@@ -32,3 +32,12 @@ Public-safe summary:
 - did not label the bounded run as successful following because target separation increased;
 - added independent decoder tests, claim-boundary documentation, modern FlyGym migration audit, and a synchronized trace schema;
 - next work is full trace capture and stronger baseline/full-condition reproduction.
+
+## 2026-09-21 · Pilot 2C synchronized trace milestone
+
+- Pilot 2C workflow completed successfully.
+- CI generated, shape-validated, and committed a deterministic 100-frame real-model trace.
+- Trace contains 25 selected visual cell types per eye plus decoder/body/target state.
+- Replay UI now consumes committed scientific trace rather than toy fallback data.
+- Trace computation cost (~9m16s for 0.20s baseline + 0.20s loop) makes naive legacy 3s CI expansion unattractive.
+- Work moved to a reusable FlyGym 2.x Retina -> current flyvis adapter before spending full-duration legacy compute.
