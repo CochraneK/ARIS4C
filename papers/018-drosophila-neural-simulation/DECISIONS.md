@@ -99,3 +99,16 @@ A working closed loop is not enough for product/research continuity.
 **Decision:** Pilot 3C must emit the same semantic neural/decoder/body/target trace contract as legacy Pilot 2C. The browser replay should consume either provenance without separate viewer implementations.
 
 This trace-contract parity is the final migration engineering gate before longer current-stack experiments and formal hypothesis selection.
+
+
+## 2026-09-21 · Pilot 4 is diagnostic, not an equivalence verdict
+
+The first matched static-target cross-version run produced reproducible legacy/current differences in decoder activation and embodied displacement.
+
+**Decision:** do not introduce an equivalence threshold after seeing these differences and do not rank versions.
+
+The earliest visible divergence is already present at the first decoder frame, before body trajectory can explain it. Baseline zero-SD fraction is identical, the pure decoder module is identical, and the immediate positive descending-signal→CPG mapping is semantically preserved.
+
+**Decision:** activate the pre-frozen R1→R5 localization protocol and identify the earliest divergent layer before choosing a formal hypothesis or attributing the effect.
+
+Scientific direction selection remains outcome-constrained by `QUESTION_CANDIDATES_PRE_PILOT4.md`, which was frozen before Pilot4 results were inspected.
