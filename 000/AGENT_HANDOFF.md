@@ -66,3 +66,7 @@ When modifying the public dashboard, preserve these user-approved rules unless e
 - Backend figures/tables/pipeline/source metadata and CI/output gates remain valid and should not be deleted merely because they are hidden from the public cards.
 
 Before changing this UI, inspect the latest `tools/build_papers_index.py`, `docs/command-center.js`, and `docs/command-center.css`; do not reconstruct behavior from an older chat.
+
+## Latest deletion-safe recovery point
+
+Before relying on any retired chat context, read `PRE_DELETE_CHECKPOINT_2026-09-21.md`. It records the controller, language-series, daily progress-chart, one-page visual, cache-busting, and README/Page decisions from the chat that was about to be deleted. Live project state still comes from `papers/dashboard.json` and per-paper canonical files.
