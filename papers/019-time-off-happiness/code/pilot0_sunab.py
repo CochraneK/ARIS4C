@@ -44,9 +44,11 @@ def read_whr() -> pd.DataFrame:
     frame = pd.read_excel(io.BytesIO(content), sheet_name="Sheet1", engine="xlrd")
     out = frame[["Country name", "year", "Life Ladder"]].copy()
     out.columns = ["country", "year", "life_ladder"]
-    out["year"] = pd.to_numeric(out["year"], errors="coerce").astype("Int64")
+    out["year"] = pd.to_numeric(out["year"], errors="coerce")
     out["life_ladder"] = pd.to_numeric(out["life_ladder"], errors="coerce")
-    return out.dropna(subset=["country", "year", "life_ladder"]).copy()
+    out = out.dropna(subset=["country", "year", "life_ladder"]).copy()
+    out["year"] = out["year"].astype("int64")
+    return out
 
 
 def common_clean_controls(donors: pd.DataFrame, event_ids: list[str]) -> set[str]:
