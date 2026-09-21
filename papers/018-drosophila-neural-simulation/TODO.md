@@ -74,8 +74,20 @@
 - [x] Freeze matched target geometry, spawn, duration, visual rate, decoder and cell set before result inspection.
 - [x] Implement isolated legacy and current jobs.
 - [x] Freeze comparison metrics without a post-hoc equivalence threshold.
-- [ ] Complete matched legacy condition.
-- [ ] Complete matched current condition.
-- [ ] Commit first diagnostic comparison.
+- [x] Complete matched legacy condition.
+- [x] Complete matched current condition.
+- [x] Commit first diagnostic comparison.
 - [ ] Localize material mismatch through R1→R5 if needed.
 - [ ] Use the localization result to select the first formal scientific hypothesis.
+
+
+## Pilot 4 localization
+
+- [x] Freeze R1–R5 localization protocol before inspecting matched outputs.
+- [x] Audit immediate legacy/current descending-signal → CPG semantics.
+- [ ] R1: compare Retina geometry/order/index hashes.
+- [ ] R2a: compare frozen retinal vectors after FlyGym→flyvis mapping.
+- [ ] R2b: compare pinned neural-model responses to frozen retinal vectors.
+- [ ] R3: retain pure decoder identity gate.
+- [ ] R4: deepen controller comparison only if upstream layers do not explain divergence.
+- [ ] R5: compare body trajectories only after R1–R4 localization.
