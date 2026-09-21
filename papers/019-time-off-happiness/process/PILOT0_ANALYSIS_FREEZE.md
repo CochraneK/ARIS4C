@@ -33,15 +33,17 @@ The World Bank Employing Workers panel is a corroborating measurement source, no
 
 ## 4. Event-time rule
 
-Because the outcome is annual and interview month is not available:
+Because the outcome is annual and interview month is not available, the **event clock is the verified legal effective year**, not the first full post year.
 
-- reform effective on **January 1** → that calendar year is the first full post year;
-- reform effective after January 1 → the reform calendar year is a transition year and is excluded from event-time estimation; the following year is the first full post year;
-- verified year without exact day → conservatively exclude that year and use the following year as the first full post year.
+- Pre-period: legal effective year **−4 through −1**.
+- Reference period: **k = −1**, always the last full untreated calendar year.
+- Reform effective on **January 1** → legal effective year is fully exposed and enters post-treatment at **k = 0**.
+- Reform effective after January 1 → legal effective year is a **transition year (k = 0) and is excluded** from event estimation; the following calendar year is the first full post year (**k = +1**).
+- Verified year without an exact day → conservatively treat that legal year as a transition year and begin full post exposure at **k = +1**.
+- Post window ends at legal effective year **+4**.
+- Missing survey years remain missing; no outcome interpolation is permitted.
 
-Event window: **k = -4 … +4** around the first full post year.  
-Reference period: **k = -1**.  
-Missing survey years remain missing.
+This rule prevents a partly exposed reform year from being misclassified as a pre-treatment observation and keeps event time anchored to the legal intervention itself.
 
 ## 5. Event tiers
 
