@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'papers/019-time-off-happiness/code/pilot0_first_outcome.py'
+      - 'papers/019-time-off-happiness/code/pilot0_robustness.py'
       - 'papers/019-time-off-happiness/process/PILOT0_UNLOCK.md'
       - '.github/workflows/aris4c019-outcome.yml'
 
@@ -42,12 +43,16 @@ jobs:
 
             test -f papers/019-time-off-happiness/process/PILOT0_UNLOCK.md
             python papers/019-time-off-happiness/code/pilot0_first_outcome.py
+            python papers/019-time-off-happiness/code/pilot0_robustness.py
 
             git add \
               papers/019-time-off-happiness/data/pilot0_life_ladder_event_time.csv \
               papers/019-time-off-happiness/data/pilot0_life_ladder_event_summary.csv \
               papers/019-time-off-happiness/data/pilot0_life_ladder_pooled_event_time.csv \
               papers/019-time-off-happiness/process/PILOT0_FIRST_OUTCOME_LOOK.md \
+              papers/019-time-off-happiness/process/PILOT0_ROBUSTNESS_DIAGNOSTICS.md \
+              papers/019-time-off-happiness/data/pilot0_leave_one_event_out.csv \
+              papers/019-time-off-happiness/data/pilot0_prespecified_sensitivities.csv \
               papers/019-time-off-happiness/figures/pilot0_life_ladder_event_time.png
 
             if git diff --cached --quiet; then
