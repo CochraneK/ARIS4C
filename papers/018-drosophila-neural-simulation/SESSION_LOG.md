@@ -67,3 +67,19 @@
 - Measured ~9m16s wall-clock for the 0.20s baseline + 0.20s capture computation.
 - Confirmed official legacy baseline script uses 3.0s runs; chose not to blindly expand slow legacy CI.
 - Implemented reusable current FlyGym 2.x Retina -> current flyvis adapter and launched Pilot 3 migration CI.
+
+## 2026-09-21 · Strict Pilot 3B current full chain
+
+- Current FlyGym 2.x Retina -> current pretrained flyvis Pilot 3A passed: retinal shape 2×721×2, neural shape 2×45,669, 23.116 s smoke runtime.
+- Measured comparable legacy interface smoke at ~47.0 s; current path was ~2× faster for this ARIS smoke only.
+- Implemented current locomotion baseline + visible static target + flyvis + frozen decoder + current HybridTurningController.
+- Strengthened the canonical PASS gate before result inspection: target mask required and asymmetric descending drive required.
+- Strict workflow 35556093444 PASS.
+- Baseline produced 40 neural updates.
+- Target condition produced 40 decoder updates; 30/40 frames contained a nonempty object mask.
+- Mean |turning bias| 0.1659; max 0.2806.
+- Mean |R-L drive difference| 0.5696; max 0.8.
+- Current body displacement 1.0510.
+- Added current FlyGym official WASM viewer/game to user-facing survey and froze a reuse decision: use upstream browser body/physics rather than rewriting MuJoCo browser infrastructure.
+- Novelty gate tightened because multiple 2026 community projects now occupy generic whole-brain/body/ablation territory.
+- Next gate: Pilot 3C current-stack synchronized trace with semantic parity to Pilot 2C.
