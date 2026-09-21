@@ -4,15 +4,15 @@
   "title": "Drosophila Open Science & Neural Simulation",
   "short_title": "Fly Neuro Playground",
   "year": 2026,
-  "status": "exploration-pilot2b-pass",
+  "status": "exploration-pilot2c-pass-pilot3-running",
   "domain": "computational neuroscience / Drosophila / connectomics / embodied simulation / open science",
-  "summary": "Drosophila open-science and embodied neural-simulation exploration. Pilot 0 validated the perturb/visualization UX; Pilot 1 reproduced maintained flyvis and FlyGym components; Pilot 2A reproduced the official legacy embodied-neural interface; Pilot 2B now executes the official moving-target retinal→flyvis→z-score/object-mask→turning-bias→2-D-drive→body loop end to end in clean CI. The bounded run proves an active closed loop but not successful following or a biological neural-to-motor decoder.",
+  "summary": "Drosophila embodied-neural simulation exploration. Legacy Pilots 2A/2B reproduce the real retinal→pretrained flyvis→engineered decoder→body chain; Pilot 2C freezes a canonical 100-frame neural/decoder/body/target trace and real-model replay. Current work migrates the retinal-to-neural interface to FlyGym 2.x for performance and maintainability before any new biological hypothesis is frozen.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
     "provenance": "ARIS4C exploration layer; formal research protocol deferred until a falsifiable biological question and published model/data path are selected",
-    "version": "v0.4.0",
+    "version": "v0.5.0",
     "commit": ""
   },
   "links": {
@@ -36,7 +36,11 @@
     "pilot2b_data": "data/pilot2b_bounded_closed_loop.json",
     "claim_boundary": "CLAIM_BOUNDARY_MATRIX.md",
     "flygym2_migration": "FLYGYM2_MIGRATION_AUDIT.md",
-    "trace_schema": "data/pilot2_trace_schema.json"
+    "trace_schema": "data/pilot2_trace_schema.json",
+    "pilot2c_result": "PILOT2C_RESULT.md",
+    "pilot2c_trace": "data/pilot2c_synchronized_trace.json",
+    "trace_analysis": "TRACE_ANALYSIS.md",
+    "real_replay": "prototype/replay.html"
   },
   "tags": [
     "ARIS4C",
