@@ -1,7 +1,7 @@
 # ARIS4C019 · Current status
 
 - **Title:** Time Off and Happiness Across Countries: Longitudinal Changes in Paid Leave, Working Time, and Subjective Well-Being
-- **Project status:** concept-scaffold
+- **Project status:** pilot0-analysis
 - **Activity:** active
 - **Portfolio progress:** 42%
 - **Current stage:** Pilot-0 Life Ladder unlocked · identification stress test
