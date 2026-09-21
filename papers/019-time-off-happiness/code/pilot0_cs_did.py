@@ -156,7 +156,13 @@ def main() -> None:
     )
 
     try:
-        pretrend_test = model.wald_pre_test
+        # differences 0.3.0 exposes a broken convenience property that calls
+        # results(sample_name=...), while results() no longer accepts that
+        # argument. Use the package's own underlying Wald implementation on
+        # the full-sample ATTgt namedtuples instead.
+        from differences.models.attgt.utility_ntl import wald_pre_test
+        raw_results = model.results(to_dataframe=False)
+        pretrend_test = wald_pre_test(raw_results["full_sample"])
     except Exception as exc:
         pretrend_test = {"error": repr(exc)}
 
@@ -220,7 +226,7 @@ def main() -> None:
         "",
         "## Interpretation boundary",
         "",
-        "- Cohorts contain only one or two treated countries, so country-level inference is intrinsically fragile.",
+        "- Cohorts contain only one to three treated countries, so country-level inference is intrinsically fragile.",
         "- The common-control universe is deliberately conservative: a country must appear in every frozen event's clean donor pool.",
         "- Cohort timing is the legal effective year and the universal base is T-1. Mid-year transition year T is removed, so post estimates begin at legal event time +1 without contaminating the reference period.",
         "- This estimator does not rescue incompatible pre-trends; the first-outcome placebo diagnostics remain binding evidence.",
