@@ -9,17 +9,17 @@ A longitudinal cross-country study of whether changes in statutory paid annual l
 ## Current state
 
 - Activity: **active**
-- Progress: **48%**
-- Stage: **Post-unlock treatment-isolation audit · standalone-reform expansion**
-- Evidence: 8-event Life Ladder Pilot-0 + LOO/crisis/scope robustness + Callaway–Sant'Anna-style and Sun–Abraham-style diagnostics are reproducible. Pooled findings are fragile: simple mean +0.110 vs median -0.099, 5/8 negative, Bahrain omission flips mean to -0.091; pooled modern DiD fails pretrend diagnostics. Post-unlock legal audit shows most events are bundled labour/time-off packages rather than leave-only reforms.
+- Progress: **56%**
+- Stage: **Identification-feasibility lock · annual-leave-specific track underidentified**
+- Evidence: Frozen 8-event Life Ladder analysis + modern staggered diagnostics + legal isolation audit + validated WHR2024 annual refresh through 2023. Refreshed mean +0.088, median -0.099, 6/8 event means negative; Luxembourg flips negative; excluding Bahrain gives -0.117 with 6/7 negative. Bounded audit of all 11 remaining World Bank leave jumps admits 0 new clean holdouts.
 
 ## Immediate next action
 
-**Legally verify additional stand-alone annual-leave reforms with WHR coverage and clean reference windows; rerun the frozen identification stack on the leave-specific subset before any manuscript-level annual-leave claim.**
+**Freeze Pilot-0 interpretation and manuscript framing around legal-event identification feasibility/robustness; preserve the 8-event panel as broader labour/time-off stress test and Mexico 2023 as a future leave-specific holdout pending >=2 annual post years.**
 
 ## Current blocker / gate
 
-Scientific identification, not engineering: the current eight-event set is small, heterogeneous and mostly policy-bundled; Bahrain also has a severe 2011 shock/rebound reference-year problem.
+Scientific identification: openly reproducible annual Life Ladder reaches 2023, while the cleanest newer reform (Mexico 2023) has only one post year; the historical event pool is mostly policy-bundled and Bahrain is highly influential.
 
 ## Canonical files / entry points
 
