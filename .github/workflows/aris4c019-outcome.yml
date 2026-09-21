@@ -55,6 +55,7 @@ jobs:
               papers/019-time-off-happiness/process/PILOT0_ROBUSTNESS_DIAGNOSTICS.md \
               papers/019-time-off-happiness/data/pilot0_leave_one_event_out.csv \
               papers/019-time-off-happiness/data/pilot0_prespecified_sensitivities.csv \
+              papers/019-time-off-happiness/data/pilot0_cs_panel_manifest.csv \
               papers/019-time-off-happiness/data/pilot0_cs_attgt.csv \
               papers/019-time-off-happiness/data/pilot0_cs_event_aggregate.csv \
               papers/019-time-off-happiness/data/pilot0_cs_simple_aggregate.csv \
