@@ -15,5 +15,7 @@
 
 ## P2 · Public/control surfaces
 
+- [ ] Resolve duplicate ARIS4C018 directories (`018-drosophila-neural-simulation` vs `018-drosophila-open-simulation`) via explicit archive/redirect/migration while preserving provenance; current live evidence/stage is on the neural-simulation line.
+
 - [ ] Keep README and Research Command Center synchronized with canonical states.
 - [ ] Keep 000 handoff current enough for a new agent/account/computer to resume safely.
