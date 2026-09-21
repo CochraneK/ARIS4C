@@ -79,6 +79,10 @@ def main() -> None:
         str(row.whr_country): int(row.candidate_treatment_year)
         for row in events.itertuples(index=False)
     }
+    legal_year_map = {
+        str(row.whr_country): int(row.legal_effective_year)
+        for row in events.itertuples(index=False)
+    }
     transition_map = {
         str(row.whr_country): (
             None if pd.isna(row.transition_year_excluded)
@@ -86,6 +90,16 @@ def main() -> None:
         )
         for row in events.itertuples(index=False)
     }
+
+    # Enforce the frozen event window on treated units. The estimator must not
+    # silently turn post years beyond legal T+4 into additional treatment evidence.
+    keep_mask = panel["country"].isin(controls)
+    for country, legal_year in legal_year_map.items():
+        keep_mask |= (
+            panel["country"].eq(country)
+            & panel["year"].between(legal_year - 4, legal_year + 4)
+        )
+    panel = panel.loc[keep_mask].copy()
 
     # The package cohort is first full-post year. differences>=0.3 requires
     # never-treated controls to have a missing cohort rather than cohort 0.
@@ -98,6 +112,32 @@ def main() -> None:
         if transition_year is not None:
             drop_mask |= panel["country"].eq(country) & panel["year"].eq(transition_year)
     panel = panel.loc[~drop_mask].copy()
+
+    manifest_rows = []
+    for row in events.itertuples(index=False):
+        country = str(row.whr_country)
+        legal_year = int(row.legal_effective_year)
+        observed = sorted(
+            panel.loc[panel["country"].eq(country), "year"].dropna().astype(int).tolist()
+        )
+        manifest_rows.append({
+            "event_id": row.event_id,
+            "country": row.country,
+            "whr_country": country,
+            "legal_effective_year": legal_year,
+            "package_cohort_first_full_post": int(row.candidate_treatment_year),
+            "transition_year_excluded": (
+                "" if pd.isna(row.transition_year_excluded)
+                else int(row.transition_year_excluded)
+            ),
+            "frozen_window_start": legal_year - 4,
+            "frozen_window_end": legal_year + 4,
+            "n_observed_treated_rows": len(observed),
+            "observed_years": ";".join(map(str, observed)),
+        })
+    pd.DataFrame(manifest_rows).to_csv(
+        DATA / "pilot0_cs_panel_manifest.csv", index=False
+    )
 
     panel = panel.sort_values(["country", "year"])
     indexed = panel.set_index(["country", "year"])
@@ -147,6 +187,7 @@ def main() -> None:
         f"- Frozen treated countries: **{len(treated)}**.",
         f"- Common clean control universe: **{len(controls)} countries**.",
         f"- Panel rows supplied to estimator: **{len(panel)}**.",
+        "- Treated observations are hard-trimmed to the frozen legal-year window **T-4 through T+4**; mid-year transition T is excluded.",
         f"- Treatment cohorts (first full-post year -> treated-country count): **{cohort_counts}**.",
         "- Control group: **not_yet_treated**.",
         "- Estimation method: **outcome-regression group-time ATT**, without post-treatment covariates.",
