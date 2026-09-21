@@ -2,22 +2,22 @@
   "id": "019",
   "portfolio_id": "ARIS4C-019",
   "slug": "time-off-happiness",
-  "title": "Time Off and Happiness Across Countries: Longitudinal Changes in Paid Leave, Working Time, and Subjective Well-Being",
-  "short_title": "Time Off × Happiness",
+  "title": "Statutory Paid Annual Leave and National Life Evaluation: A Global Legal-Event Audit and Falsification-First Holdout Study",
+  "short_title": "Annual Leave × Life Evaluation",
   "year": 2026,
-  "status": "pilot0-analysis",
+  "status": "working-paper",
   "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
-  "summary": "A longitudinal cross-country study of whether changes in statutory paid annual leave and realized working time are followed by changes in subjective well-being. The design separates paid annual leave, public holidays, actual work hours and leave utilization, prioritizing policy reforms and within-country variation over static country rankings.",
+  "summary": "A falsification-first cross-national legal-event study of statutory paid annual-leave reforms and annual population Life Ladder. The original eight-event panel is retained as a broader labour/time-off stress test; a cleaner, independently frozen Israel 2016 holdout is analyzed separately. Current evidence is fragile and directionally unstable rather than a robust positive or negative annual-leave effect.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
-    "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder outcome gates frozen and executed",
-    "version": "v0.4.26"
+    "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder gates frozen and executed; WHR2024 source refresh, bounded legal queue, modern snapshot audit and independently frozen Israel holdout completed",
+    "version": "v0.5.0"
   },
   "links": {
-    "paper_en": "",
-    "paper_zh": "",
+    "paper_en": "manuscript/WORKING_PAPER_EN.md",
+    "paper_zh": "manuscript/WORKING_PAPER_ZH.md",
     "pipeline": "process/RESEARCH_PLAN.md",
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/019-time-off-happiness"
   },
@@ -31,25 +31,29 @@
     "life satisfaction",
     "subjective well-being",
     "difference-in-differences",
-    "event study"
+    "event study",
+    "legal epidemiology",
+    "falsification-first",
+    "holdout",
+    "treatment isolation"
   ],
   "bilingual_delivery": {
-    "english": false,
-    "chinese": false
+    "english": true,
+    "chinese": true
   },
   "outputs": {
-    "paper_en": "not-started",
-    "paper_zh": "not-started",
+    "paper_en": "working-draft",
+    "paper_zh": "working-draft",
     "figures": {
-      "status": "pilot0-generated",
+      "status": "pilot0-generated; manuscript figure package pending",
       "count": 1,
-      "strategy": "frozen event-time Life Ladder diagnostic followed by modern staggered-DiD and prespecified robustness visuals"
+      "strategy": "eight-event fragility overview + independently frozen Israel holdout event-time and reference-sensitivity visuals"
     },
     "tables": {
-      "status": "pilot0-generated",
-      "count": 3
+      "status": "analysis-csv + manuscript-inline working tables",
+      "count": 5
     },
-    "exception": "Pilot-0 Life Ladder analysis is unlocked after design freeze; the first donor-adjusted pooled mean is fragile and not a causal claim. Positive/negative affect remain locked.",
+    "exception": "Life Ladder interpretation is locked: no robust positive or negative population effect is established. Israel's pre-frozen 2015-reference holdout is near zero but post-outcome baseline diagnostics are materially negative. Positive/negative affect remain locked.",
     "pdf": {
       "status": "not-started",
       "english": false,
