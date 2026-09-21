@@ -117,3 +117,54 @@ A candidate becomes a formal ARIS hypothesis only if all are true:
 Finish Pilot 2 official advanced-vision reproduction first.
 
 Then choose the smallest candidate question that can be tested without pretending an engineered decoder is a biological descending circuit.
+
+
+## 2026 novelty-pressure update
+
+The public ecosystem now includes multiple independent projects attempting whole-brain or whole-CNS closed loops, body coupling, ablation and behavior generation.
+
+Examples tracked in the landscape include:
+
+- ShunyaResearch/drosophila-connectome-experiments
+- nishkarsh1215/flywire-neuromechfly
+- ZeroXClem/closed-loop-fly
+- neilt93/Fly-Brain-AI
+- visionbyangelic/ConnectomeToBehaviour
+
+Their claims vary greatly in maturity and are **not automatically accepted as validated results**.
+
+However, their existence changes the novelty prior.
+
+### De-prioritized as generic novelty claims
+
+- “connect a fly connectome to a body”;
+- “ablate neurons and behavior changes”;
+- “simulate the whole brain”;
+- “show brain activity next to fly motion”;
+- “use FlyWire with FlyGym”.
+
+These may remain useful engineering milestones, but integration alone is not enough for a distinctive paper.
+
+### Higher-priority question space after Pilot 3
+
+1. **Decoder artefact audit**
+   - Can an engineered readout create apparently meaningful lateralization or behavioral effects from weak/non-causal neural differences?
+   - Which guardrails detect this?
+
+2. **Representation sufficiency**
+   - Which subsets/statistics of the connectome-constrained visual representation retain closed-loop behavior under a frozen decoder?
+   - Compare biologically defined subsets to matched controls.
+
+3. **Cross-version reproducibility**
+   - When the same retinal→flyvis→decoder concept is migrated from FlyGym 1.x to 2.x, which outputs are invariant and which differ?
+   - Can differences be localized to rendering, neural mapping, decoder, controller or physics?
+
+4. **Failure-boundary mapping**
+   - Decompose final behavioral failure across BIO / DECODER / BODY layers rather than treating trajectory error as one scalar.
+
+5. **Provenance-aware interactive experimentation**
+   - Can an interactive tool make scientific provenance visible enough that users distinguish biological model state from engineered control logic?
+
+## Promotion preference
+
+A future formal ARIS hypothesis should ideally require the infrastructure created in Pilots 2–3 but **not be equivalent to the infrastructure itself**.
