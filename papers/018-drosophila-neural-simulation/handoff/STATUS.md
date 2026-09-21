@@ -1,7 +1,7 @@
 # ARIS4C018 · Current status
 
 - **Title:** Drosophila Open Science & Neural Simulation
-- **Project status:** exploration-pilot2b-pass
+- **Project status:** exploration-pilot2c-pass-pilot3-running
 - **Activity:** active
 - **Portfolio progress:** 55%
 - **Current stage:** Pilot 2B bounded official closed loop PASS · synchronized-trace/full-condition gate
