@@ -22,3 +22,14 @@ Public-safe summaries of material portfolio-control decisions. This is not hidde
 - Current implementation on `main`: All = marquee; Finish/Active/Wait/Block = detailed cards; search = detailed cards; Hero summary = All only.
 - Before deleting the chat, the live repository and representative project handoffs were re-read; the canonical portfolio contains 17 papers and current state is recoverable from Git.
 - Recovery checkpoint: `000/PRE_DELETE_CHECKPOINT_2026-09-19.md`.
+
+## 2026-09-21 · Chat retirement / Git completeness pass
+
+- User planned to delete/archive the saturated 000 chat and required all material information to be recoverable from Git first.
+- Confirmed `000/` is the cross-agent controller entry and created `PRE_DELETE_CHECKPOINT_2026-09-21.md`.
+- Confirmed the repository has grown to 19 numbered projects; current live counts remain canonical in `papers/dashboard.json`, not in chat.
+- Preserved the completion-first, checkpoint-before-switch, adaptive-WIP, and Finish/Active/Wait/Block controller rules.
+- Preserved language-series lineage: 002 = LING-01, 017 = LING-02.
+- Homepage layout preference: portfolio hero summary on the left and today's progress curve on the right, instead of a full-width chart.
+- Finish-paper README preview preference: reuse the original one-page visual at 80 px with lazy/async loading; click opens the full image; no separately redesigned mini-thumbnail.
+- Daily progress chart must not stick on a Loading placeholder; generated HTML has a static summary and hashed JS/CSS references.
