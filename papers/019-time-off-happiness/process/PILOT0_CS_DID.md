@@ -11,7 +11,7 @@
 - Control group: **not_yet_treated**.
 - Estimation method: **outcome-regression group-time ATT**, without post-treatment covariates.
 - Bootstrap: **499**, seed **20260921**.
-- Joint pre-treatment Wald diagnostic: **{'error': 'TypeError("ATTgt.results() got an unexpected keyword argument \'sample_name\'")'}**.
+- Joint pre-treatment Wald diagnostic: **{'W': np.float64(610.858637), 'p_value': np.float64(0.0)}**.
 
 ## Simple aggregate output
 
@@ -41,7 +41,7 @@ relative_period EventAggregation
 
 ## Interpretation boundary
 
-- Cohorts contain only one or two treated countries, so country-level inference is intrinsically fragile.
+- Cohorts contain only one to three treated countries, so country-level inference is intrinsically fragile.
 - The common-control universe is deliberately conservative: a country must appear in every frozen event's clean donor pool.
 - Cohort timing is the legal effective year and the universal base is T-1. Mid-year transition year T is removed, so post estimates begin at legal event time +1 without contaminating the reference period.
 - This estimator does not rescue incompatible pre-trends; the first-outcome placebo diagnostics remain binding evidence.
