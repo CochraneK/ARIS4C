@@ -83,3 +83,17 @@
 - Added current FlyGym official WASM viewer/game to user-facing survey and froze a reuse decision: use upstream browser body/physics rather than rewriting MuJoCo browser infrastructure.
 - Novelty gate tightened because multiple 2026 community projects now occupy generic whole-brain/body/ablation territory.
 - Next gate: Pilot 3C current-stack synchronized trace with semantic parity to Pilot 2C.
+
+
+## 2026-09-21 · Pilot 3C trace parity and migration closure
+
+- Pilot 3C workflow 35556733779 PASS.
+- Current FlyGym 2.x + current flyvis produced 40 synchronized real-model frames with BODY/TARGET/DECODER/BIO fields and 25 selected visual cell types per eye.
+- Target mask was nonempty on 30/40 current frames.
+- CI validated the current trace contract and committed the deterministic trace to Git.
+- GitHub GITHUB_TOKEN bot pushes do not trigger downstream workflows, so trace parity did not auto-run from the bot commit.
+- Made the parity workflow self-triggerable and ran it explicitly.
+- Trace parity workflow 35559603116 PASS: legacy 100-frame and current 40-frame traces satisfy the same semantic contract.
+- Unified replay now selects either real trace through one implementation with explicit provenance; no toy fallback.
+- Migration engineering was formally closed at bounded scope.
+- Pilot 4 matched cross-version regression launched with pre-frozen static target/spawn/duration/decoder/cell conditions and no post-hoc equivalence threshold.
