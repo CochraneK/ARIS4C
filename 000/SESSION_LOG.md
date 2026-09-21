@@ -58,3 +58,14 @@ Fix:
 - Added a prior-state midnight baseline only when today's first checkpoint exists.
 - Added CI freshness/timezone assertions.
 - Verified generated public payload now reports `2026-09-21`.
+
+## 2026-09-21 · Deletion-safe chat checkpoint
+
+- Re-read the live 000 controller files, dashboard, output standard, README/Page generators, chart JavaScript/CSS, and 001/002 visual metadata before retiring the chat.
+- Verified the canonical dashboard currently contains 19 projects (001–019).
+- Verified the approved compact homepage layout is already implemented: hero left = portfolio summary, hero right = today's progress chart, responsive stack on smaller screens.
+- Verified Finish-paper README previews now reuse the original one-page WebP at 80 px with `loading="lazy"` and `decoding="async"`.
+- Verified the temporary custom SVG mini-thumbnails are no longer present.
+- Verified Finish output audit requires the one-page visual but not a separate thumbnail.
+- Added `PRE_DELETE_CHECKPOINT_2026-09-21.md` and linked it from 000 README/agent handoff.
+- No scientific paper state was rewritten from chat memory; current paper state remains owned by dashboard + per-paper canonical files.
