@@ -1,0 +1,11 @@
+event_id,country,whr_country,event_tier,primary_pool,legal_effective_year,pre_window_start,pre_window_end,log_gdp_per_capita_n,log_gdp_per_capita_mean_pre,log_gdp_per_capita_pass2,unemployment_pct_n,unemployment_pct_mean_pre,unemployment_pct_pass2,inflation_pct_n,inflation_pct_mean_pre,inflation_pct_pass2,all_three_covariates_pass2
+BHR_EW2014,Bahrain,Bahrain,A_corroborated,True,2012,2008,2011,3,10.730024655659994,True,3,1.1366666666666667,True,3,1.4524522737874233,True,True
+CAN_EW2019,Canada,Canada,A_corroborated,True,2019,2015,2018,4,10.780223846435547,True,4,6.5615,True,4,1.604777677241105,True,True
+CHN_EW2009,China,China,A_corroborated,True,2008,2004,2007,2,8.760053634643555,True,2,4.39,True,2,3.2330993341734704,True,True
+HRV_EW2011,Croatia,Croatia,A_corroborated,True,2010,2006,2009,2,10.146992683410645,True,2,9.5555,True,2,2.6389056074403,True,True
+KWT_EW2011,Kuwait,Kuwait,A_corroborated,True,2010,2006,2009,2,11.153250694274902,True,2,1.47,True,2,3.833304438072545,True,True
+LUX_EW2020,Luxembourg,Luxembourg,A_corroborated,True,2019,2015,2018,4,11.64962649345398,True,4,6.1442499999999995,True,4,1.006142832258439,True,True
+TWN_EW2018,"Taiwan, China",Taiwan Province of China,A_corroborated,True,2017,2013,2016,4,10.754937410354614,True,0,,False,0,,False,False
+XKX_EW2012,Kosovo,Kosovo,A_corroborated,True,2010,2006,2009,2,8.878836154937744,True,0,,False,3,3.766216861084393,True,False
+GBR_STAGE2,United Kingdom,United Kingdom,B_legal_only,False,2009,2005,2008,3,10.685150146484375,True,3,5.3436666666666675,True,3,2.665702187136453,True,True
+LTU_EW2019,Lithuania,Lithuania,A_corroborated,False,2017,2013,2016,4,10.317417621612549,True,4,9.8625,True,4,0.2931662625117235,True,True
