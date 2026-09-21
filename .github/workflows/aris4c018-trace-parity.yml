@@ -5,6 +5,7 @@ on:
     paths:
       - "papers/018-drosophila-neural-simulation/data/pilot2c_synchronized_trace.json"
       - "papers/018-drosophila-neural-simulation/data/pilot3c_current_synchronized_trace.json"
+      - ".github/workflows/aris4c018-trace-parity.yml"
   pull_request:
     paths:
       - "papers/018-drosophila-neural-simulation/data/pilot2c_synchronized_trace.json"
