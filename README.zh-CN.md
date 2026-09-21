@@ -84,7 +84,7 @@ ARIS 是研究引擎；**ARIS4C 是围绕论文建立的完整研究系统**：�
 | **017** | [LING-02 · 预测性语言空间](papers/017-predictive-language-space/) | 🟡 待推进 | 20% | [handoff](papers/017-predictive-language-space/handoff/AGENT_HANDOFF.md) | — |
 | **018** | [Fly Neuro Playground](papers/018-drosophila-neural-simulation/) | 🟢 正在推进 | 76% | [handoff](papers/018-drosophila-neural-simulation/handoff/AGENT_HANDOFF.md) | — |
 | **018** | [Drosophila Open Simulation](papers/018-drosophila-open-simulation/) | 🟢 正在推进 | 76% | [handoff](papers/018-drosophila-open-simulation/handoff/AGENT_HANDOFF.md) | — |
-| **019** | [Time Off × Happiness](papers/019-time-off-happiness/) | 🟢 正在推进 | 42% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
+| **019** | [Time Off × Happiness](papers/019-time-off-happiness/) | 🟢 正在推进 | 48% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
 
 ## ARIS4C 如何运作
 
