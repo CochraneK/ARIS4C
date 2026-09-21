@@ -2,9 +2,9 @@
 
 ## Current
 
-- Progress: 76%
+- Progress: 82%
 - Activity: active
-- Stage: Strict Pilot 3B current full chain PASS · Pilot 3C current synchronized trace
+- Stage: FlyGym 1.x→2.x migration CLOSED · Pilot 4 matched cross-version regression running
 
 ## Completed
 
@@ -15,76 +15,102 @@
 - Pilot 2B bounded legacy moving-target closed loop PASS.
 - Pilot 2C deterministic legacy 100-frame synchronized trace PASS.
 - Pilot 3A current FlyGym 2.x Retina → current flyvis PASS.
-- **Strict Pilot 3B current full-chain migration PASS.**
+- Strict Pilot 3B current full-chain migration PASS.
+- Pilot 3C current 40-frame synchronized trace PASS.
+- Legacy/current semantic trace parity CI PASS.
+- One replay implementation now loads both validated real-trace provenances.
 
-## Strict Pilot 3B
+## Pilot 3C
 
 Canonical workflow:
 
-https://github.com/CochraneK/ARIS4C/actions/runs/35556093444
+https://github.com/CochraneK/ARIS4C/actions/runs/35556733779
 
-The current maintained stack now executes:
+Result:
 
-```
-current FlyGym body
- -> current Retina
- -> current pretrained flyvis
- -> frozen audited decoder
- -> current HybridTurningController
- -> current body
-```
+- 40 current-stack frames;
+- 25 selected cell types per eye;
+- 30/40 frames with a nonempty target mask;
+- synchronized BODY / TARGET / DECODER / BIO state;
+- current trace validated and committed automatically by CI.
 
-Strict gate results:
+Current trace:
 
-- baseline: 0.08 s / 40 neural updates;
-- target closed loop: 0.08 s / 40 decoder updates;
-- target detected on **30 / 40** frames;
-- mean |turning bias|: **0.1659**;
-- max |turning bias|: **0.2806**;
-- mean |R-L descending-drive difference|: **0.5696**;
-- max |R-L drive difference|: **0.8000**;
-- current body displacement: **1.0510**;
-- full script wall-clock: **221.3 s**.
+`data/pilot3c_current_synchronized_trace.json`
 
-The first decoder frame was symmetric because the target had not crossed threshold. By the final frame:
+## Trace parity
 
-```
-object left  = 0.0971
-object right = 0.0361
-turning bias = -0.1211
-drive left   = 0.5642
-drive right  = 1.1453
-max z        = 161.58
-```
+Canonical workflow:
 
-The strict gate was frozen before this result and required both a nonempty target mask and asymmetric drive.
+https://github.com/CochraneK/ARIS4C/actions/runs/35559603116
+
+Result:
+
+- legacy frames: 100;
+- current frames: 40;
+- semantic contract: PASS;
+- finite displayed values: PASS;
+- explicit provenance/scientific-boundary fields: PASS.
+
+This is data-contract parity, not numerical model equivalence.
 
 ## Migration state
 
-BIO, DECODER and BODY are now all executable on the current maintained stack.
+**CLOSED / PASS at the bounded engineering scope.**
 
-What remains before migration closure is data-contract parity:
+Current stack now supports:
 
 ```
-current full chain
- -> current synchronized trace
- -> same semantic schema as legacy Pilot 2C
- -> one replay implementation
+Retina
+ -> current pretrained flyvis
+ -> audited engineered decoder
+ -> current HybridTurningController
+ -> current body
+ -> synchronized real trace
+ -> shared replay
 ```
 
-## Product consequence
+See `MIGRATION_CLOSURE.md`.
 
-The scientific body layer does not need to be rebuilt from scratch for a future standalone product. Current FlyGym already provides real MuJoCo-WASM browser viewer/game infrastructure; 018 can focus on the neural/provenance/research layer while preserving upstream attribution and licenses.
+## Current Pilot 4
+
+Pilot 4 freezes one matched engineering condition on legacy and current stacks:
+
+- static black sphere at [5.0, 2.2, 1.5];
+- radius 1.25;
+- observer spawn [0, 0, 1.0];
+- baseline 0.08 s;
+- closed loop 0.08 s;
+- 500 Hz visual updates;
+- z-score threshold 5;
+- tracking gain 6;
+- identical 25 tracking-cell set;
+- identical pure decoder math.
+
+Two isolated CI jobs run the incompatible dependency stacks in parallel. A third compare job reports only the pre-frozen engineering metrics:
+
+1. mask-detection rate;
+2. mean absolute turning bias;
+3. mean absolute left/right drive difference;
+4. body displacement;
+5. runtime;
+6. baseline zero-SD fraction.
+
+No post-hoc equivalence threshold or winner is allowed.
 
 ## Next gates
 
-1. Pilot 3C: emit and CI-freeze current-stack synchronized trace.
-2. Make `prototype/replay.html` select legacy vs current trace without duplicating viewer code.
-3. Compare legacy/current only under clearly labeled non-matched conditions first.
-4. Build a matched-condition cross-version regression before scientific interpretation of version differences.
-5. Revisit longer/full-duration runs on the faster current stack.
-6. Freeze a new ARIS hypothesis only after the migration/reproducibility gate closes.
+1. Complete Pilot 4 matched legacy/current runs.
+2. Freeze the diagnostic comparison from the pre-specified metrics.
+3. If large differences appear, localize them in order:
+   - R1 Retina geometry/order;
+   - R2 frozen retinal stimulus → flyvis;
+   - R3 decoder pure function;
+   - R4 controller semantics;
+   - R5 embodied trajectory.
+4. Decide whether the strongest scientific direction is decoder artefact, representation sufficiency, failure-boundary mapping, or a provenance-aware research product.
+5. Freeze a formal falsifiable ARIS question only after that localization.
 
 ## Scientific boundary
 
-Pilot 3B proves a migrated current-stack visual-neural-decoder-body loop with a synthetic visible target. It is not the published moving-fly condition, and the neural-to-control decoder remains engineered.
+018 has a functioning, auditable embodied-neural simulation stack. It still does not claim that the engineered decoder is a biological visual-to-motor pathway, that current and legacy stacks are equivalent, or that a novel biological effect has been established.
