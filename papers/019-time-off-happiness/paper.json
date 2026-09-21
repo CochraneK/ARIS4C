@@ -5,14 +5,14 @@
   "title": "Time Off and Happiness Across Countries: Longitudinal Changes in Paid Leave, Working Time, and Subjective Well-Being",
   "short_title": "Time Off × Happiness",
   "year": 2026,
-  "status": "concept-scaffold",
+  "status": "pilot0-analysis",
   "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
   "summary": "A longitudinal cross-country study of whether changes in statutory paid annual leave and realized working time are followed by changes in subjective well-being. The design separates paid annual leave, public holidays, actual work hours and leave utilization, prioritizing policy reforms and within-country variation over static country rankings.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
-    "provenance": "ARIS4C user-requested project registered 2026-09-21; initial official-source and literature feasibility scan completed",
+    "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder outcome gates frozen and executed",
     "version": "v0.4.26"
   },
   "links": {
@@ -41,15 +41,15 @@
     "paper_en": "not-started",
     "paper_zh": "not-started",
     "figures": {
-      "status": "not-started",
-      "count": 0,
-      "strategy": "coverage/reform map, event-study plots and robustness visuals after measurement freeze"
+      "status": "pilot0-generated",
+      "count": 1,
+      "strategy": "frozen event-time Life Ladder diagnostic followed by modern staggered-DiD and prespecified robustness visuals"
     },
     "tables": {
-      "status": "not-started",
-      "count": 0
+      "status": "pilot0-generated",
+      "count": 3
     },
-    "exception": "Concept scaffold; source coverage and identification are not yet frozen.",
+    "exception": "Pilot-0 Life Ladder analysis is unlocked after design freeze; the first donor-adjusted pooled mean is fragile and not a causal claim. Positive/negative affect remain locked.",
     "pdf": {
       "status": "not-started",
       "english": false,
