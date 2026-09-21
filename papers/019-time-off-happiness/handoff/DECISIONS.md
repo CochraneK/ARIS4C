@@ -33,3 +33,21 @@
 - Bahrain 2012 is especially weak for annual-leave-specific identification because the legal change is a broad Labour Law and T-1=2011 coincides with domestic unrest followed by a broad 2012 rebound; its large positive gap must not anchor the substantive claim.
 - Positive/negative affect remain locked.
 - Next scientific gate is a bounded search for additional stand-alone statutory annual-leave reforms with exact dates, WHR coverage, acceptable donor support and no obvious bundled policy or reference-year shock.
+
+## 2026-09-21 · WHR2024 source refresh does not rescue identification
+
+- A pinned WHR2024 annual mirror was independently cross-checked against official WHR2024 published summary statistics and the WHR2023 annual transcription.
+- All 2,199 overlapping WHR2023 country-year Life Ladder values are identical at the published three-decimal precision; WHR2024 adds 26 previously absent 2022 observations and 138 observations in 2023.
+- Under the pre-written A/B/C source-refresh freeze, adding 2022 coverage shifts the pooled donor-adjusted mean only slightly; adding 2023 lowers the mean to +0.088 while the median remains -0.099, with 6/8 event means negative. Luxembourg changes from positive to negative.
+- Removing Bahrain from the refreshed C panel yields a mean of -0.117 and 6/7 negative event means. This remains a fragility diagnostic, not a post-hoc preferred estimator.
+- WHR2025/WHR2026 Figure 2.1 public downloads are three-year-average series. Do not substitute them for annual Life Ladder and do not reverse-engineer annual values from rolling averages.
+
+## 2026-09-21 · Bounded legal queue closed with zero new clean holdouts
+
+- The pre-existing 11 World Bank leave discontinuities were audited and the search was deliberately stopped after the bounded queue.
+- Zero of 11 qualifies as a new clean annual-leave-specific holdout under the frozen legal-isolation rules.
+- Several jumps correspond to broad labour/employment codes; several do not match the legal effective year; Tajikistan/Ecuador/Montenegro small shifts are not backed by a verified national leave entitlement change and are treated as likely unit/profile/coding changes rather than promoted into treatments.
+- The absence of a usable clean historical holdout is itself an identification-feasibility result; event-count rules will not be relaxed to manufacture a causal sample.
+- Mexico 2023 remains a future holdout only. It stays behind the firewall until a verifiable annual outcome panel provides at least two full post-treatment observations.
+- The next deliverable should separate two estimands: (A) annual-leave-specific causal identification, currently underidentified; and (B) exploratory broader labour/time-off policy-package effects, represented by the frozen eight-event stress-test panel.
+
