@@ -1,90 +1,95 @@
-# ARIS4C019 · Outcome Source Freshness Audit v0.1
+# ARIS4C019 · Outcome Source Freshness Audit v0.2
 
 **Audit date:** 2026-09-21  
 **Stage:** post-unlock source audit
 
-> This audit evaluates whether the annual Life Ladder panel can be extended beyond the frozen WHR 2023 historical workbook without silently changing provenance. Any newer outcome source is a post-unlock data update and must be reported as such.
+> Any newer outcome source is a post-unlock robustness update. It may not silently replace the frozen WHR2023 first-look source.
 
-## 1. Frozen source used for the first outcome look
+## 1. Frozen first-look source
 
-Current frozen Pilot-0 source:
-
-- World Happiness Report 2023 historical annual workbook
-- file name: `DataForTable2.1WHR2023.xls`
-- coverage in the current pipeline: 2005–2022
+- World Happiness Report 2023 historical annual workbook: `DataForTable2.1WHR2023.xls`
+- annual national mean Life Ladder
+- 2005–2022
 - 2,199 country-year observations
 - 165 countries/territories
-- primary outcome: annual national mean Life Ladder
-- transport: official WHR URL first; commit-pinned public mirror only if automated retrieval of the official object fails
-- SHA256 is recorded in `data/source_inventory.json`
+- frozen SHA256 recorded in `data/source_inventory.json`
 
-The first outcome look, robustness diagnostics, Callaway–Sant'Anna-style analysis, and Sun–Abraham-style robustness remain tied to this frozen source.
+The first outcome look and its initial robustness layers remain tied to this source.
 
-## 2. WHR 2024 annual panel
+## 2. WHR2024 annual panel · validated post-unlock refresh
 
-World Happiness Report 2024 explicitly states that:
+A pinned public transport mirror of the WHR2024 annual panel was validated before refreshed treatment estimates were produced:
 
-- its Gallup World Poll release covers 2005/06 through 2023;
-- Table 2.1 uses annual national average Life Ladder observations;
-- actual average values for each survey year were available in an online data file accompanying the chapter.
+- repository: `ahmedlubis/world-happiness-panel-analysis`
+- pinned commit: `ba44f791215334b43e99b16bf6b83ac38de213bb`
+- Git blob: `8440054da65290bbe318be8c3bd28892ba7e128c`
+- 2,363 Life Ladder country-years
+- 2005–2023
+- published WHR2024 rounded summary statistics reproduced
+- Israel 2023 cross-check reproduced
 
-The official 2024 statistical appendix reports **2,363** country-year observations with valid Life Ladder values.
+An independent WHR2023 CSV transcription contains 2,199 rows. All **2,199/2,199** overlapping WHR2023 country-year Life Ladder values equal the WHR2024 mirror at published three-decimal precision.
 
-A public GitHub mirror named `World-happiness-report-updated_2024.csv` contains:
+WHR2024 adds:
 
-- 2,363 data rows plus header;
-- years 2005–2023;
-- the same variable family used by the WHR annual panel: Country name, year, Life Ladder, Log GDP per capita, Social support, Healthy life expectancy, Freedom, Generosity, Corruption, Positive affect, Negative affect.
+- **26** observations dated 2022 that were absent from the WHR2023 release;
+- **138** observations dated 2023.
 
-The mirror's row count and published summary statistics match the official WHR 2024 statistical appendix. It is therefore a strong transport candidate, but it is still a **mirror**, not the current official download endpoint.
+See:
 
-### Decision
+- `process/WHR2024_MIRROR_VALIDATION.md`
+- `process/WHR2024_OVERLAP_CROSSCHECK.md`
+- `process/WHR2024_SOURCE_REFRESH_FREEZE.md`
+- `process/WHR2024_SOURCE_REFRESH_RESULTS.md`
+- `process/WHR2024_SOURCE_REFRESH_ROBUSTNESS.md`
 
-Do **not** silently replace the frozen WHR 2023 source.
+## 3. Source-refresh result
 
-Treat WHR 2024 annual data as a **post-unlock source-refresh robustness layer** only after:
+The pre-written comparison separated:
 
-1. the mirror is pinned to an immutable Git commit/blob;
-2. SHA256 is recorded;
-3. official WHR 2024 appendix summary statistics are reproduced exactly or within published rounding;
-4. known published annual values (for example Israel 2023) are cross-checked;
-5. the original WHR 2023 results remain preserved and reported.
+- A-proxy: WHR2024 values restricted to the original WHR2023 country-year keys;
+- B: WHR2024 through 2022, adding newly available 2022 observations;
+- C: WHR2024 through 2023.
 
-## 3. WHR 2025 and WHR 2026
+Pooled donor-adjusted event means:
 
-Official statistical appendices document annual GWP coverage through:
+- frozen exact-float WHR2023: **+0.110**, median **-0.099**;
+- A-proxy: **+0.110**, median **-0.099**;
+- B: **+0.108**, median **-0.099**;
+- C: **+0.088**, median **-0.099**.
 
-- WHR 2025: 2005/06–2024;
-- WHR 2026: 2005/06–2025.
+The 2023 extension does not stabilize a positive finding: Luxembourg flips negative and the C panel has 2 positive versus 6 negative event means. Leaving Bahrain out gives **-0.117**.
 
-However, the current WHR Data Sharing page states that the freely downloadable Figure 2.1 data contain **three-year averages** of life evaluation, confidence intervals, and explanatory-factor contributions. Additional Gallup World Poll data require institutional request, journalist request, or Gallup Analytics access.
+## 4. WHR2025 / WHR2026 boundary
+
+The underlying Gallup World Poll research releases extend through 2024/2025, but the currently public Figure 2.1 downloads are **three-year-average life-evaluation series**, not annual country-year national means.
+
+The WHR2025 Figure 2.1 workbook explicitly labels the outcome `Life evaluation (3-year average)`. Current Our World in Data Cantril-Ladder redistribution follows the same rolling three-year semantics for these newer rankings.
 
 Therefore:
 
-- do not treat WHR 2025/2026 Figure 2.1 downloads as annual country-year Life Ladder observations;
-- do not reverse-engineer annual values from rolling three-year averages;
-- do not use an unaudited Kaggle/third-party 2025/2026 file as the primary outcome source;
-- a later annual extension to 2024/2025 is permitted only if an official or verifiably exact historical annual file is recovered.
+- do not treat WHR2025/WHR2026 Figure 2.1 rows as annual Life Ladder observations;
+- do not algebraically invert overlapping three-year averages to manufacture annual 2024/2025 values;
+- do not mix annual WHR2024 and rolling-average WHR2025/2026 observations in the event study;
+- an annual extension through 2024/2025 requires an official or verifiably exact annual panel / Gallup access.
 
-## 4. Scientific consequence
+## 5. Scientific consequence
 
-The currently reproducible public annual panel can be safely extended to **2023 only as a post-unlock robustness update**, using the WHR 2024 annual-data mirror after exact validation.
+The openly reproducible annual panel is currently defensible through **2023**.
 
-This matters because:
+This is enough to lengthen Canada/Luxembourg follow-up, but not enough to admit Mexico 2023 under the frozen requirement of at least two full post-treatment annual observations.
 
-- Luxembourg 2019 and Canada 2019 gain their legal-event-year +4 observation in 2023 if surveyed;
-- newer reforms such as Mexico 2023 still have only one post-treatment year in a panel ending in 2023, so they do not pass the frozen >=2-post-years gate;
-- an annual panel through 2024 or 2025 would materially expand the clean-reform holdout candidate set.
+Mexico remains a future holdout rather than an analyzed event.
 
-## 5. Source anchors
+## 6. Source anchors
 
-- WHR data-sharing page: https://www.worldhappiness.report/data-sharing/
-- WHR 2024 Chapter 2: https://www.worldhappiness.report/ed/2024/happiness-of-the-younger-the-older-and-those-in-between/
-- WHR 2024 statistical appendix: https://files.worldhappiness.report/WHR24_Statistical_Appendix.pdf
-- WHR 2025 statistical appendix: https://files.worldhappiness.report/WHR25_Ch02_Appendix_B.pdf
-- WHR 2026 statistical appendix: https://files.worldhappiness.report/WHR26_Statistical_Appendix.pdf
-- candidate 2024 annual-data mirror: https://github.com/ahmedlubis/world-happiness-panel-analysis/blob/main/World-happiness-report-updated_2024.csv
+- WHR Data Sharing: https://www.worldhappiness.report/data-sharing/
+- WHR2024 chapter / appendix: https://www.worldhappiness.report/ed/2024/happiness-of-the-younger-the-older-and-those-in-between/
+- WHR2024 statistical appendix: https://files.worldhappiness.report/WHR24_Statistical_Appendix.pdf
+- WHR2025 Figure 2.1 workbook: https://files.worldhappiness.report/WHR25_Data_Figure_2.1v3.xlsx
+- WHR2025 statistical appendix: https://files.worldhappiness.report/WHR25_Ch02_Appendix_B.pdf
+- WHR2026 statistical appendix: https://files.worldhappiness.report/WHR26_Statistical_Appendix.pdf
 
-## 6. Next gate
+## 7. Next source gate
 
-Build a deterministic validator for the WHR 2024 mirror. The validator must compare row count, year range, variable names, published summary statistics, and selected published annual values before any refreshed outcome estimate is run.
+Do not spend further effort searching unaudited mirrors unless they contain genuine annual 2024/2025 observations and can be independently validated against an official release. Source expansion is no longer the immediate bottleneck; legal-treatment isolation is.
