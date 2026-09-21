@@ -223,13 +223,21 @@ def run_target(baseline):
     assert np.isfinite(bias).all()
     assert np.isfinite(dd).all()
 
+    frames_with_object_mask = int(np.count_nonzero(masks > 0))
+    drive_diff_max_abs = float(np.max(np.abs(dd)))
+
+    # A full-chain migration PASS requires a real visual target to survive the
+    # neural readout and decoder, not merely finite values.
+    assert frames_with_object_mask >= 1, "No decoder object mask detected"
+    assert drive_diff_max_abs > 1e-6, "Decoder never produced asymmetric drive"
+
     return {
         "decoder_updates": len(traces),
-        "frames_with_object_mask": int(np.count_nonzero(masks > 0)),
+        "frames_with_object_mask": frames_with_object_mask,
         "turning_bias_mean_abs": float(np.mean(np.abs(bias))),
         "turning_bias_max_abs": float(np.max(np.abs(bias))),
         "drive_diff_mean_abs": float(np.mean(np.abs(dd))),
-        "drive_diff_max_abs": float(np.max(np.abs(dd))),
+        "drive_diff_max_abs": drive_diff_max_abs,
         "start_xy": start_xy.tolist(),
         "end_xy": end_xy.tolist(),
         "displacement": float(np.linalg.norm(end_xy - start_xy)),
