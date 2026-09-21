@@ -7,6 +7,7 @@
 - Positive / negative event means: **2 / 6**.
 - Most influential event remains **Bahrain**.
 - Leaving Bahrain out gives mean **-0.117** and median **-0.147**.
+- The covariate-complete subset remains **6/8 events**, as frozen before the first outcome look.
 - Excluding Bahrain plus all GFC/COVID-overlap events leaves **3** events with mean **-0.263**.
 
 ## Prespecified / diagnostic subsets
@@ -18,7 +19,7 @@
 | exclude_covid_overlap | 6 | 0.158 | -0.099 | 2 | 4 |
 | exclude_jurisdiction_limited | 7 | 0.133 | -0.051 | 2 | 5 |
 | exclude_gfc_and_covid | 4 | 0.183 | -0.180 | 1 | 3 |
-| covariate_complete_only | 0 | NaN | NaN | 0 | 0 |
+| covariate_complete_only | 6 | 0.213 | -0.035 | 2 | 4 |
 | exclude_bahrain | 7 | -0.117 | -0.147 | 1 | 6 |
 | exclude_bahrain_gfc_covid | 3 | -0.263 | -0.214 | 0 | 3 |
 
@@ -40,5 +41,6 @@
 - The extra 2023 follow-up does not stabilize a positive pooled result. It reduces the full mean and changes Luxembourg from positive to negative.
 - Bahrain remains sufficiently influential that omitting it reverses the pooled mean.
 - The subset excluding Bahrain and crisis-overlap events is entirely negative in the surviving events; because this subset is post-unlock and very small, it is a fragility diagnostic, **not** a preferred causal estimate.
+- The 6-event covariate-complete sensitivity remains positive in its mean but is still Bahrain-sensitive; covariate completeness therefore does not resolve treatment isolation or pretrend failures.
 - These diagnostics reinforce the treatment-isolation audit: the current eight events do not support a robust annual-leave-specific causal claim.
 - Positive and negative affect remain locked.
