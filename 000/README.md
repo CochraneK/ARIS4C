@@ -12,6 +12,7 @@ This is the Git-resident entry point for the ARIS4C portfolio controller.
 4. [DECISIONS.md](DECISIONS.md) — portfolio operating decisions
 5. [CONTEXT.md](CONTEXT.md) — role and canonical boundaries
 6. [SESSION_LOG.md](SESSION_LOG.md) — controller execution history
+7. [PRE_DELETE_CHECKPOINT_2026-09-21.md](PRE_DELETE_CHECKPOINT_2026-09-21.md) — latest chat-retirement recovery checkpoint
 
 Then read:
 
