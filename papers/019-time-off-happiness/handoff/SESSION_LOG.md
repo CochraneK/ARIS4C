@@ -23,4 +23,14 @@
 - Confirmed that current WHR2025/WHR2026 Figure 2.1 public files are three-year averages, not annual country-year Life Ladder; annual 2024/2025 values will not be reconstructed from rolling averages.
 - Completed the bounded 11-row World Bank legal-jump audit and admitted 0 new clean annual-leave holdouts. Added machine-readable and narrative legal isolation audit files.
 - Scientific direction now shifts from searching for a positive leave effect to documenting the identification-feasibility boundary and preserving Mexico 2023 as a future holdout pending >=2 verifiable annual post years.
+- Added a modern legal discovery route using the WORLD 2015/16 and Equal Futures 2026 annual-leave snapshots without treating snapshot differences as treatments.
+- Identified Israel Annual Leave Law Amendment No.15 as a cleaner leave-specific national reform; legally verified staged implementation (2016-07-01, 2017-01-01).
+- Froze Israel's outcome-blind design before viewing Life Ladder: T=2016, reference=2015, transition year excluded, full post 2017–2020, 115-country strict donor pool.
+- Opened only Life Ladder after the freeze. Strict-115 full-post mean = +0.002; 120-donor sensitivity +0.010; donor-median sensitivity +0.008; frozen pretrend warning thresholds not triggered.
+- Completed standardized leave-one-region-out robustness after resolving all donor-region aliases; post means remain near zero across omitted regions.
+- Added post-outcome reference-year fragility audit. Earlier/multi-year baselines produce negative estimates, demonstrating baseline sensitivity; none is promoted over the pre-frozen 2015 reference.
+- Verified official Knesset staged implementation and Bank of Israel documentation of 2014/late-2015 security disturbances relevant to reference-year interpretation.
+- Updated literature position with ILO 2026 global annual-leave brief and Equal Futures 2026 193-country legal data.
+- Created and locked Pilot-0 interpretation: no robust positive or negative population Life Ladder effect is established.
+- Started bilingual English/Chinese working-paper drafts and reframed the manuscript around legal-event identification, source robustness and independent holdout logic.
 
