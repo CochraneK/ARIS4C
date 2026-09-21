@@ -109,7 +109,7 @@ def main() -> None:
         control_group="not_yet_treated",
         boot_iterations=499,
         random_state=20260921,
-        n_jobs=-1,
+        n_jobs=1,
         progress_bar=False,
     )
 
@@ -118,13 +118,13 @@ def main() -> None:
         "event",
         boot_iterations=499,
         random_state=20260921,
-        n_jobs=-1,
+        n_jobs=1,
     ).reset_index()
     simple_agg = result.aggregate(
         "simple",
         boot_iterations=499,
         random_state=20260921,
-        n_jobs=-1,
+        n_jobs=1,
     ).reset_index()
 
     group_time.to_csv(DATA / "pilot0_cs_attgt.csv", index=False)
