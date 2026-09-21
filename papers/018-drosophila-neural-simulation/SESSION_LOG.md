@@ -56,3 +56,14 @@
 - Extracted official decoder math to a standalone pure module and added independent unit CI; PASS.
 - Added a claim-boundary matrix and FlyGym 2.x migration audit.
 - Next gate: freeze synchronized neural/decoder/body/target trace, then resolve full-duration baseline/condition reproduction before new biological claims.
+
+## 2026-09-21 · Pilot 2C synchronized real trace
+
+- Workflow 35529944362 PASS.
+- Generated 100 synchronized visual-update frames and committed them from CI.
+- Each frame stores body/target position, engineered decoder state, and left/right mean activity for 25 official tracking cell types.
+- Added a schema-aligned real-model replay page.
+- Descriptive trace analysis explicitly treats frames as time-dependent, not independent replicates.
+- Measured ~9m16s wall-clock for the 0.20s baseline + 0.20s capture computation.
+- Confirmed official legacy baseline script uses 3.0s runs; chose not to blindly expand slow legacy CI.
+- Implemented reusable current FlyGym 2.x Retina -> current flyvis adapter and launched Pilot 3 migration CI.
