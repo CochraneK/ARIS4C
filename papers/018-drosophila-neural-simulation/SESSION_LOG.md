@@ -97,3 +97,20 @@
 - Unified replay now selects either real trace through one implementation with explicit provenance; no toy fallback.
 - Migration engineering was formally closed at bounded scope.
 - Pilot 4 matched cross-version regression launched with pre-frozen static target/spawn/duration/decoder/cell conditions and no post-hoc equivalence threshold.
+
+
+## 2026-09-21 · Pilot 4 matched cross-version diagnostic
+
+- Froze matched legacy/current static-target condition before result inspection.
+- Ran incompatible legacy/current dependency stacks in isolated CI jobs and compared them in a third job.
+- Workflow 35559767189 PASS and committed all three diagnostic JSON files.
+- Matched condition: target [5.0,2.2,1.5], radius 1.25; spawn [0,0,1.0]; 0.08s baseline + 0.08s target; 500Hz; z=5; gain=6; same 25 cells; same decoder.
+- Legacy/current mask detection rate: 1.00 / 0.75.
+- Mean |turning bias|: 0.2586 / 0.1659.
+- Mean |R-L drive difference|: 0.8000 / 0.5696.
+- Body displacement: 0.7018 / 1.0510.
+- Runtime: 228.1s / 220.5s.
+- Baseline zero-SD fraction was exactly identical at 0.00171983356.
+- Legacy first target frame was already strongly detected and drive-saturated; current first frame was below z=5 with symmetric drive.
+- Pure decoder identity and positive-domain descending→CPG semantics make the earliest unresolved divergence upstream of final body motion.
+- Activated the pre-frozen R1→R5 localization protocol; R1 Retina/index signature CI launched.
