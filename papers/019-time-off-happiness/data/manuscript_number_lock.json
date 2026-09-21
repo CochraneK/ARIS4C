@@ -1,0 +1,42 @@
+{
+  "generated": "2026-09-21",
+  "sources": {
+    "papers/019-time-off-happiness/data/whr2024_refresh_pooled.csv": {
+      "blob_sha": "36f067fc0dfdfe0d6c5f74b7d9c0db11316fda5a"
+    },
+    "papers/019-time-off-happiness/data/whr2024_refresh_sensitivities.csv": {
+      "blob_sha": "d0b9ff707499bd8b4359611ad5782055ac72452c"
+    },
+    "papers/019-time-off-happiness/data/israel_holdout_summary.csv": {
+      "blob_sha": "1959f4b1cf5a493acbff24ea4c361258195911e8"
+    },
+    "papers/019-time-off-happiness/data/israel_reference_sensitivity.csv": {
+      "blob_sha": "f2398550d7a90e9a209153d7cd6f2baa325c7cd2"
+    },
+    "papers/019-time-off-happiness/data/israel_holdout_event_time.csv": {
+      "blob_sha": "7104de3e93c06bd39614bc722667e9ca14aabf26"
+    }
+  },
+  "values": {
+    "refreshed_8_mean": 0.08782209331077381,
+    "refreshed_8_median": -0.09891030394378572,
+    "refreshed_8_positive": 2,
+    "refreshed_8_negative": 6,
+    "exclude_bahrain_mean": -0.11695239616789209,
+    "israel_primary_mean": 0.0020718331968335307,
+    "israel_original120_mean": 0.010366098200899888,
+    "israel_donor_median_mean": 0.008375000000000354,
+    "israel_pre_mean_abs": 0.22115123456790128,
+    "israel_pre_max_abs": 0.3422870370370371,
+    "israel_reference_2013": -0.3057482153894503,
+    "israel_reference_2014": -0.3374183594353317,
+    "israel_reference_mean_2013_2015": -0.2190161152418393,
+    "israel_reference_mean_2012_2015": -0.17546257219471922,
+    "israel_post_event_time": {
+      "k1": 0.17683783783783857,
+      "k2": -0.2650909090909091,
+      "k3": 0.11421818181818194,
+      "k4": -0.017677777777777293
+    }
+  }
+}
