@@ -45,6 +45,9 @@ REQUIRED = [
     "Negative affect",
 ]
 
+# Official comparison anchors: WHR24 Statistical Appendix Table 6
+# (N=2363; mean=5.48; SD=1.13; min=1.28; max=8.02) and
+# WHR24 Chapter 2 note reporting Israel 2023 annual ladder ~= 6.78.
 OFFICIAL_2024 = {
     "life_ladder_n": 2363,
     "life_ladder_mean_2dp": 5.48,
