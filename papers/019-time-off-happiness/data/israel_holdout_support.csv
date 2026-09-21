@@ -1,0 +1,2 @@
+event_id,country,legal_amendment,event_clock_year,reference_year,transition_year_excluded,first_full_post_year,pre_window,post_window,n_pre_observed,n_post_observed,raw_donor_count,clean_original_rule_count,strict_snapshot_clean_count,clean_donor_pass_20,outcome_inspected_at_freeze
+ISR_AL15_2016,Israel,"Annual Leave Law (Amendment No. 15 and Temporary Provision), 2016",2016,2015,2016,2017,"2012;2013;2014;2015","2017;2018;2019;2020",4,4,137,120,115,True,False
