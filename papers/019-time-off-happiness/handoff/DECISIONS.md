@@ -8,3 +8,18 @@
 - Primary outcome is harmonized life evaluation / life satisfaction.
 - First gate is data coverage and reform-event feasibility; do not estimate headline effects before that freeze.
 - If annual global happiness coverage is insufficient, narrow the geography/time window instead of manufacturing a balanced panel.
+
+## 2026-09-21 · Pre-outcome design freeze and unlock
+
+- The event clock is the verified legal effective year. T-1 is the last full untreated reference year; mid-year reform year T is excluded as a transition year and full post exposure begins at T+1.
+- Headline Pilot-0 pool is frozen at eight Tier-A reforms; events cannot be promoted/demoted using observed happiness effects.
+- Primary outcome is annual WHR/Gallup Life Ladder. Positive and negative affect remain locked secondary outcomes.
+- Macro covariates are frozen to pre-treatment Log GDP per capita, WDI unemployment and WDI CPI inflation; post-treatment contemporaneous controls are not used in the headline specification.
+- The outcome firewall was formally unlocked only after timing, donor-support and covariate-source gates were committed.
+
+## 2026-09-21 · First outcome diagnostic is fragile, not a positive finding
+
+- The first equal-weight clean-donor diagnostic produced an 8-event mean full-post gap of +0.110 Life Ladder points but a median of -0.099; five of eight event means are negative.
+- Bahrain is the most influential event: leaving it out changes the remaining-event mean to -0.091, while Bahrain itself has a large pre-placebo RMS gap of 1.023.
+- Therefore the project must not claim that statutory leave increases national Life Ladder from this diagnostic.
+- Proceed to modern staggered-adoption and heterogeneous event-study estimators while retaining all frozen events and prespecified sensitivities.
