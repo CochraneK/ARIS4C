@@ -54,8 +54,8 @@
 
 - [x] Audit current Retina and HybridTurningController APIs.
 - [x] Extract a reusable FlyGym2 Retina ↔ flyvis adapter.
-- [ ] PASS current FlyGym 2.x retinal rendering -> pretrained flyvis neural-state smoke.
-- [ ] Benchmark current-stack interface against legacy wall-clock cost.
+- [x] PASS current FlyGym 2.x retinal rendering -> pretrained flyvis neural-state smoke.
+- [x] Benchmark current-stack interface against legacy wall-clock cost (~23.1s vs ~47.0s on matched smoke class).
 - [ ] Reattach the explicit decoder.
 - [ ] Reattach current HybridTurningController.
 - [ ] Emit the same synchronized trace schema from the current stack.
