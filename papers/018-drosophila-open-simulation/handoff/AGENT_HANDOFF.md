@@ -9,17 +9,17 @@ A discovery-driven project that audits and reproduces open Drosophila simulation
 ## Current state
 
 - Activity: **active**
-- Progress: **68%**
-- Stage: **Pilot 3A current FlyGym2→flyvis PASS · strict Pilot 3B current full-chain closed loop running**
-- Evidence: Legacy Pilots 2A–2C PASS with real synchronized trace. Pilot3A current FlyGym2 Retina→current pretrained flyvis PASS: retinal shape (2,721,2), neural shape (2,45669), finite activity, 23.116s script wall-clock versus ~47.0s comparable legacy smoke. Reusable adapter committed.
+- Progress: **76%**
+- Stage: **Strict Pilot 3B current full chain PASS · Pilot 3C current synchronized trace running**
+- Evidence: Legacy Pilots 2A–2C PASS. Pilot3A current FlyGym2 Retina→current pretrained flyvis PASS. Strict Pilot3B workflow 35556093444 PASS under pre-frozen hard criteria: 30/40 decoder frames detected the visible target, max |R-L drive difference| 0.8, current body displacement 1.051. BIO, audited DECODER and current BODY are now executable on the maintained stack.
 
 ## Immediate next action
 
-**Strict Pilot3B must detect a real visible target through current Retina/flyvis, produce a nonempty decoder object mask and asymmetric 2-D descending drive, and advance the current HybridTurningController body. Then emit current-stack synchronized trace.**
+**Pilot3C must compute, validate and Git-freeze a current-stack synchronized trace under the same semantic schema as legacy Pilot2C; then use one replay UI for both provenances and begin matched cross-version regression.**
 
 ## Current blocker / gate
 
-No current environment blocker. Strict Pilot3B is still executing; finite values alone will not count as PASS without target detection and asymmetric control.
+No current scientific-code blocker. Pilot3C is executing; current and legacy existing traces use different target conditions, so they must not yet be interpreted as matched version effects.
 
 ## Canonical files / entry points
 
