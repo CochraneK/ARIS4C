@@ -2,73 +2,79 @@
 
 ## Current
 
-- Progress: 55%
+- Progress: 62%
 - Activity: active
-- Stage: Pilot 2B bounded official closed loop PASS · synchronized-trace/full-condition gate
+- Stage: Pilot 2C real synchronized trace PASS · Pilot 3 FlyGym 2.x neural-interface migration running
 
 ## Completed
 
-- Mapped scientific infrastructure, current tooling, official published examples and user/community projects separately.
-- Pilot 0 toy perturbation/visualization sandbox PASS.
-- Pilot 1 maintained-component reproduction PASS:
-  - flyvis extent-1 connectome: 443 nodes / 8,174 edges / 65 cell types;
-  - FlyGym 2.1.0 NeuroMechFly compile: 70 bodies / 127 joints / 42 controls.
-- Pilot 2A official legacy embodied-neural interface PASS:
-  - checksum-verified pretrained flyvis;
-  - EGL retinal rendering;
-  - upstream 1.0 s fade-in;
-  - 2 × 45,669 neural state + named T4/T5 activity + body state in one clean run.
-- Pilot 2B bounded official moving-target closed loop PASS:
-  - 0.20 s baseline, 2,000 steps, 100 vision updates;
-  - 0.20 s closed loop, 2,000 steps, 100 decoder updates;
-  - nonempty object mask on 100/100 decoder frames;
-  - mean |turning bias| 0.1658;
-  - mean |right-left descending-drive difference| 0.7473;
-  - decoder unit tests PASS independently.
+- Open-source / user-facing ecosystem mapping.
+- Pilot 0 toy perturbation + dual-view sandbox PASS.
+- Pilot 1 maintained-component reproduction PASS.
+- Pilot 2A official legacy embodied-neural interface PASS.
+- Pilot 2B bounded official moving-target closed loop PASS.
+- Pilot 2C real synchronized trace PASS and committed automatically by CI:
+  - 100 frames;
+  - 25 tracked visual cell types;
+  - neural / decoder / body / target state synchronized under one schema;
+  - real-model replay UI now has canonical data.
 
-Pilot 2B workflow:
+Pilot 2C workflow:
 
-https://github.com/CochraneK/ARIS4C/actions/runs/35529083978
+https://github.com/CochraneK/ARIS4C/actions/runs/35529944362
 
-## Important non-result
+## Trace interpretation
 
-The observer-target separation increased from 4.9837 to 6.5512 during the 0.20 s bounded run.
+The trace is an engineering/replay artifact, not an inferential dataset.
 
-Therefore Pilot 2B is **not** labeled as successful target following. It proves an active, executable end-to-end loop.
+Descriptive single-trace associations include:
 
-## Baseline diagnostic
+- aggregate selected-neural R-L difference vs turning bias: r=-0.612;
+- object-mask R-L difference vs turning bias: r=0.742;
+- turning bias vs descending-drive R-L difference: r=-0.907.
 
-The short baseline had a zero-SD fraction of about 0.17%. Those positions were explicitly excluded from bounded-smoke z-score aggregation.
+Frames are temporally dependent. Cell-level correlations are exploratory only and cannot be treated as independent evidence.
 
-This accommodation is not acceptable as the final scientific baseline. A full-duration calibration or validated upstream baseline is required before effect comparisons.
+## Performance finding
 
-## Current architecture boundary
+The real Pilot 2C calculation took about 9 min 16 s for:
+
+- 0.20 s baseline;
+- 0.20 s closed-loop trace.
+
+The official legacy baseline script uses 3.0 s conditions. A naive current-CPU CI expansion is therefore not the preferred next step.
+
+## Current migration hypothesis
+
+Current FlyGym 2.x already exposes:
 
 ```
-BIO
-retinal rendering -> pretrained connectome-constrained flyvis activity
-
-DECODER
-activity -> z-score -> object mask -> geometry -> turning bias -> 2-D drive
-
-BODY
-2-D drive -> HybridTurning / embodied dynamics
+Simulation.get_ommatidia_readouts()
+ -> (2, 721, 2)
 ```
 
-Success at BODY level does not by itself validate the DECODER as a biological circuit.
+and current FlyGym retains a two-value HybridTurningController.
 
-## FlyGym 2.x migration
+A reusable adapter has now been added to bridge:
 
-Current 2.x retains Retina and a HybridTurningController whose `step()` takes the same two-value descending-signal form. The main migration work is therefore the vision/flyvis neural interface and provenance/logging layer, not the final locomotor command shape.
+```
+FlyGym 2.x Retina
+ -> FlyGym2RetinaMapper
+ -> current pretrained flyvis
+ -> 2 × 45,669 neural state
+```
+
+Pilot 3 CI is currently testing this path with the current pinned stacks.
 
 ## Next gates
 
-1. Freeze a complete synchronized neural / decoder / body / target trace.
-2. Resolve the short-baseline zero-SD issue with a full-duration calibration or validated upstream artefact.
-3. Determine whether one full 3 s official following condition must be reproduced before migration.
-4. Port the minimal advanced-vision interface to FlyGym 2.x.
-5. Only then freeze a genuinely new ARIS hypothesis.
+1. PASS the current FlyGym 2.x -> current flyvis neural-interface smoke.
+2. Benchmark its wall-clock cost against the legacy implementation.
+3. Reattach the audited decoder.
+4. Reattach current HybridTurningController.
+5. Emit the same synchronized trace schema from the modern stack.
+6. Reconsider full-duration reproduction using the faster stack before freezing a novel hypothesis.
 
 ## Scientific boundary
 
-018 has now reproduced a real published embodied neural loop. It has not yet demonstrated successful following under our bounded run and has not established a novel biological effect.
+018 has reproduced the legacy loop and frozen a real trace. No new biological hypothesis has yet been registered.
