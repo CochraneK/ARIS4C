@@ -9,17 +9,17 @@ Drosophila embodied-neural simulation project. Migration to current FlyGym 2.x i
 ## Current state
 
 - Activity: **active**
-- Progress: **82%**
-- Stage: **FlyGym 1.x→2.x migration CLOSED · Pilot 4 matched cross-version regression running**
-- Evidence: Pilot3C workflow 35556733779 PASS: current-stack 40-frame synchronized BODY/TARGET/DECODER/BIO trace computed, validated and committed by CI. Trace parity workflow 35559603116 PASS against the legacy 100-frame trace. Shared replay now loads both provenances. Migration engineering is closed at bounded scope.
+- Progress: **86%**
+- Stage: **Pilot 4 matched cross-version diagnostic COMPLETE · R1 Retina localization running**
+- Evidence: Pilot4 workflow 35559767189 PASS under the pre-frozen matched static-target condition. Legacy/current mask rate 1.00 vs 0.75; mean |bias| 0.2586 vs 0.1659; mean |R-L drive| 0.8000 vs 0.5696; displacement 0.7018 vs 1.0510; runtime 228.1s vs 220.5s; baseline zero-SD fraction identical at 0.0017198. First-frame decoder divergence occurs before body trajectory. Pure decoder is identical; top-level positive descending→CPG semantics are preserved.
 
 ## Immediate next action
 
-**Complete the pre-frozen matched static-target legacy/current Pilot4 jobs and commit the first diagnostic comparison using mask rate, mean |bias|, mean |R-L drive|, displacement, runtime and zero-SD fraction. If differences are material, localize R1 Retina → R2 frozen stimulus/flyvis → R3 decoder → R4 controller → R5 body.**
+**Complete R1 deterministic Retina geometry/order/index signature comparison. If R1 matches, immediately run R2 frozen retinal-vector mapping and neural-response localization before interpreting any embodied difference.**
 
 ## Current blocker / gate
 
-No current blocker. Pilot4 legacy/current jobs are executing in isolated dependency stacks. No equivalence or biological claim is allowed from the first diagnostic run.
+No current blocker. R1 legacy/current jobs are executing. First Pilot4 run is diagnostic only; no post-hoc equivalence threshold or version-quality ranking is permitted.
 
 ## Canonical files / entry points
 
