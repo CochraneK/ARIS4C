@@ -1,0 +1,35 @@
+{
+  "status": "PASS_CONNECTOR_REPRODUCED",
+  "validation_date": "2026-09-21",
+  "transport": {
+    "whr2023_csv_repository": "jamesinjune/Epidemiology_of_Suicide",
+    "whr2023_csv_git_blob_sha": "4d12b77068fe3c084318c9d6c600d3ced794e18b",
+    "whr2024_repository": "ahmedlubis/world-happiness-panel-analysis",
+    "whr2024_commit": "ba44f791215334b43e99b16bf6b83ac38de213bb",
+    "whr2024_git_blob_sha": "8440054da65290bbe318be8c3bd28892ba7e128c"
+  },
+  "official_2024_checks": {
+    "life_ladder_n_2363": true,
+    "year_2005_2023": true,
+    "mean_matches_official_2dp": true,
+    "sd_matches_official_2dp": true,
+    "min_matches_official_2dp": true,
+    "max_matches_official_2dp": true,
+    "israel_2023_matches_report": true
+  },
+  "official_2024_stats": {
+    "life_ladder_n": 2363,
+    "mean": 5.483565806178579,
+    "sd": 1.1255215132391931,
+    "min": 1.281,
+    "max": 8.019,
+    "israel_2023": 6.783
+  },
+  "overlap_with_whr2023": {
+    "whr2023_rows": 2199,
+    "matched_country_years": 2199,
+    "whr2023_keys_missing_from_whr2024": 0,
+    "new_pre2023_keys_not_in_whr2023": 26,
+    "note": "All 2,199 overlapping published Life Ladder values are identical at 3 decimal places; cross-check documented separately."
+  }
+}
