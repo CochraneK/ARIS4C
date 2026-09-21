@@ -133,3 +133,59 @@ Projects are ranked higher when they expose:
 6. visualization synchronized to real logged model state.
 
 A beautiful video without those properties remains UX inspiration only.
+
+
+## Additional 2026 whole-brain / closed-loop community projects
+
+### neilt93/Fly-Brain-AI
+
+Public repository combining:
+
+- FlyWire-scale brain simulation;
+- FlyGym body coupling;
+- ablation experiments;
+- odor / looming tasks;
+- VNC modelling;
+- Unity visualization.
+
+Its README reports multiple causal-ablation and behavior results.
+
+**ARIS treatment:** high-priority novelty comparator, not validated evidence. The repository's numerical/result claims must be independently reproduced before scientific reuse.
+
+Implication for 018:
+
+Generic questions of the form “does whole-brain connectome ablation change simulated behavior?” are now a crowded contribution space.
+
+Source:
+- https://github.com/neilt93/Fly-Brain-AI
+
+### visionbyangelic/ConnectomeToBehaviour
+
+A newer independent project explicitly targeting:
+
+```
+connectome
+ -> neuron model
+ -> body
+ -> closed loop
+```
+
+At the inspected state, its README describes the work as ongoing and focused on environment setup, reproduction and interface construction.
+
+**ARIS treatment:** useful ecosystem signal and architecture comparator, not evidence of completed behavior.
+
+Source:
+- https://github.com/visionbyangelic/ConnectomeToBehaviour
+
+## Updated novelty pressure
+
+Because multiple 2026 projects now target full-brain/VNC/body coupling, ARIS4C018 should avoid claiming novelty from integration alone.
+
+More defensible contribution spaces include:
+
+- auditability of BIO vs engineered decoder layers;
+- reproducible migration across simulator versions;
+- representation sufficiency under matched controls;
+- decoder artefact detection;
+- provenance-aware interactive research tooling;
+- controlled failure-boundary mapping.
