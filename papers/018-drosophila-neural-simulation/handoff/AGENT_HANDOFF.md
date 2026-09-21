@@ -4,7 +4,7 @@
 
 **Drosophila Open Science & Neural Simulation**
 
-Drosophila embodied-neural simulation exploration. Legacy Pilots 2A/2B reproduce the real retinal→pretrained flyvis→engineered decoder→body chain; Pilot 2C freezes a canonical 100-frame neural/decoder/body/target trace and real-model replay. Current work migrates the retinal-to-neural interface to FlyGym 2.x for performance and maintainability before any new biological hypothesis is frozen.
+Drosophila embodied-neural simulation project. Legacy Pilots 2A–2C reproduce and trace the official advanced-vision loop. Pilot 3A now migrates the biological retinal→pretrained flyvis interface to current FlyGym 2.x with a measured ~2× speed improvement on the ARIS smoke path. Pilot 3B is running the current Retina→flyvis→audited decoder→HybridTurningController→body chain.
 
 ## Current state
 

@@ -8,18 +8,18 @@ A longitudinal cross-country study of whether changes in statutory paid annual l
 
 ## Current state
 
-- Activity: **wait**
-- Progress: **15%**
-- Stage: **Construct separation · source coverage audit**
-- Evidence: Official source families identified for statutory paid leave, actual working time and subjective well-being; design prioritizes within-country change and policy reforms rather than static country rankings
+- Activity: **active**
+- Progress: **42%**
+- Stage: **Pilot-0 Life Ladder unlocked · identification stress test**
+- Evidence: 8 frozen Tier-A headline reforms are estimable with >=20 clean donors each; legal-year/transition timing, macro covariates and outcome firewall are frozen; first Life Ladder diagnostic + LOO/crisis/scope sensitivities are CI-reproducible. Simple mean +0.110, median -0.099, 5/8 negative; excluding Bahrain flips mean to -0.091 and Bahrain has pre-placebo RMS 1.023.
 
 ## Immediate next action
 
-**Freeze the exposure taxonomy and build the country-year coverage/reform matrix; verify annual happiness coverage before treatment-effect estimation**
+**Complete modern staggered-adoption group-time ATT and heterogeneous event-study robustness; assess pre-trends/common support and one-event dominance before any manuscript-level causal interpretation.**
 
 ## Current blocker / gate
 
-Dense annual global happiness data may require institutional Gallup access; historical legal-leave series require harmonization
+No engineering blocker. Scientific identification is currently fragile because the treated set is small/heterogeneous and the simple pooled result is event-sensitive.
 
 ## Canonical files / entry points
 
