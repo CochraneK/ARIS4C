@@ -7,10 +7,11 @@
 - Common clean control universe: **66 countries**.
 - Panel rows supplied to estimator: **1144**.
 - Treated observations are hard-trimmed to the frozen legal-year window **T-4 through T+4**; mid-year transition T is excluded.
-- Treatment cohorts (first full-post year -> treated-country count): **{2008: 1, 2010: 1, 2011: 2, 2013: 1, 2017: 1, 2019: 1, 2020: 1}**.
+- Treatment cohorts (legal effective year -> treated-country count): **{2008: 1, 2010: 3, 2012: 1, 2017: 1, 2019: 2}**.
 - Control group: **not_yet_treated**.
 - Estimation method: **outcome-regression group-time ATT**, without post-treatment covariates.
 - Bootstrap: **499**, seed **20260921**.
+- Joint pre-treatment Wald diagnostic: **{'error': 'TypeError("ATTgt.results() got an unexpected keyword argument \'sample_name\'")'}**.
 
 ## Simple aggregate output
 
@@ -18,30 +19,30 @@
 index SimpleAggregation                                                        
                         bootstrap simult. conf. band                           
                     ATT std_error              lower    upper zero_not_in_cband
-    0         -0.001163  0.085873          -0.141566 0.139241                  
+    0          0.000466  0.251554          -0.350962 0.351894                  
 ~~~
 
 ## Dynamic/event aggregate output
 
 ~~~text
-relative_period EventAggregation                                                         
-                                 bootstrap simult. conf. band                            
-                             ATT std_error              lower     upper zero_not_in_cband
-             -4        -1.011815  0.408540          -1.853757 -0.169873                 *
-             -3         0.226032  0.089931           0.040698  0.411366                 *
-             -2         0.031643  0.294240          -0.574743  0.638028                  
-             -1         0.038744  0.086299          -0.139105  0.216593                  
-              0         0.005807  0.085551          -0.170502  0.182116                  
-              1        -0.219404  0.108052          -0.442085  0.003277                  
-              2         0.066435  0.359747          -0.674952  0.807822                  
-              3         0.147106  0.127546          -0.115748  0.409960                  
-              4        -0.057503  0.130803          -0.327069  0.212063                  
+relative_period EventAggregation                                                     
+                                 bootstrap simult. conf. band                        
+                             ATT std_error              lower upper zero_not_in_cband
+             -4         0.235033  0.236071                NaN   NaN                  
+             -3        -0.113755  0.320899                NaN   NaN                  
+             -2        -0.004368  0.221969                NaN   NaN                  
+             -1         0.000000       NaN                NaN   NaN                  
+              0        -0.192150  0.201662                NaN   NaN                  
+              1        -0.053626  0.434704                NaN   NaN                  
+              2         0.059607  0.252639                NaN   NaN                  
+              3         0.193917  0.194793                NaN   NaN                  
+              4        -0.039482  0.395303                NaN   NaN                  
 ~~~
 
 ## Interpretation boundary
 
 - Cohorts contain only one or two treated countries, so country-level inference is intrinsically fragile.
 - The common-control universe is deliberately conservative: a country must appear in every frozen event's clean donor pool.
-- Mid-year legal reform years are removed for treated countries; package cohort timing is first full-post year.
+- Cohort timing is the legal effective year and the universal base is T-1. Mid-year transition year T is removed, so post estimates begin at legal event time +1 without contaminating the reference period.
 - This estimator does not rescue incompatible pre-trends; the first-outcome placebo diagnostics remain binding evidence.
 - Positive/negative affect remain locked.
