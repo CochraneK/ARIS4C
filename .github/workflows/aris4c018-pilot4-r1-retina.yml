@@ -1,0 +1,105 @@
+name: ARIS4C018 Pilot4 R1 Retina Signature
+
+on:
+  push:
+    paths:
+      - "papers/018-drosophila-neural-simulation/code/pilot4_r1_retina_signature.py"
+      - ".github/workflows/aris4c018-pilot4-r1-retina.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  legacy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install legacy stack
+        run: |
+          python -m pip install "flygym-gymnasium[examples] @ git+https://github.com/NeLy-EPFL/flygym-gymnasium.git@d285260a1c8a7b3494150cd1590f2c9fe4b5e06b"
+      - name: Signature
+        run: |
+          python papers/018-drosophila-neural-simulation/code/pilot4_r1_retina_signature.py \
+            --stack legacy --output /tmp/r1/legacy.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r1-legacy
+          path: /tmp/r1/legacy.json
+
+  current:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install current stacks
+        run: |
+          python -m pip install "git+https://github.com/NeLy-EPFL/flygym.git@38c8ec61034cd59bc5ba0de20688d4a3c0000d60"
+          python -m pip install "git+https://github.com/TuragaLab/flyvis.git@92b3845cc426dd309a1a0e1b3890156c42e14021"
+      - name: Signature
+        run: |
+          python papers/018-drosophila-neural-simulation/code/pilot4_r1_retina_signature.py \
+            --stack current --output /tmp/r1/current.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r1-current
+          path: /tmp/r1/current.json
+
+  compare:
+    needs: [legacy, current]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: r1-legacy
+          path: /tmp/r1/legacy
+      - uses: actions/download-artifact@v4
+        with:
+          name: r1-current
+          path: /tmp/r1/current
+      - name: Compare R1 signatures
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path('/tmp/r1/legacy/legacy.json').read_text())
+          b=json.loads(Path('/tmp/r1/current/current.json').read_text())
+          fields=[
+            ('nrows',a['retina']['nrows'],b['retina']['nrows']),
+            ('ncols',a['retina']['ncols'],b['retina']['ncols']),
+            ('num_ommatidia_per_eye',a['retina']['num_ommatidia_per_eye'],b['retina']['num_ommatidia_per_eye']),
+            ('unique_nonzero_ids',a['retina']['unique_nonzero_ids'],b['retina']['unique_nonzero_ids']),
+            ('covered_pixels',a['retina']['covered_pixels'],b['retina']['covered_pixels']),
+            ('id_map_sha256',a['retina']['id_map_sha256'],b['retina']['id_map_sha256']),
+            ('mapper_sha256',a['mapper']['flyvis_to_flygym_sha256'],b['mapper']['flyvis_to_flygym_sha256']),
+          ]
+          out={
+            'schema_version':1,
+            'status':'DIAGNOSTIC_COMPLETE',
+            'legacy':a,
+            'current':b,
+            'comparisons':{k:{'legacy':x,'current':y,'equal':x==y} for k,x,y in fields},
+            'earliest_layer':'R1 Retina geometry/order',
+            'interpretation_rule':'Equality here localizes or excludes geometry/indexing differences only; it does not test rendered intensity or neural dynamics.'
+          }
+          p=Path('papers/018-drosophila-neural-simulation/data/pilot4_r1_retina_signature.json')
+          p.write_text(json.dumps(out,indent=2)+'\n')
+          print(json.dumps(out['comparisons'],indent=2))
+          PY
+      - name: Commit R1 diagnostic
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/018-drosophila-neural-simulation/data/pilot4_r1_retina_signature.json
+          git commit -m "ARIS4C018 freeze Pilot4 R1 retina diagnostic"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
