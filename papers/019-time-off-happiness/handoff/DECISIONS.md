@@ -51,3 +51,26 @@
 - Mexico 2023 remains a future holdout only. It stays behind the firewall until a verifiable annual outcome panel provides at least two full post-treatment observations.
 - The next deliverable should separate two estimands: (A) annual-leave-specific causal identification, currently underidentified; and (B) exploratory broader labour/time-off policy-package effects, represented by the frozen eight-event stress-test panel.
 
+## 2026-09-21 · Independent Israel holdout admitted before outcome inspection
+
+- A two-snapshot WORLD 2015/16 → Equal Futures 2026 legal screen was used only for candidate discovery.
+- Israel's 2016 Annual Leave Law Amendment No.15 was admitted as a cleaner leave-specific event because it directly amended the annual-leave statute, used staged implementation (2016-07-01 and 2017-01-01), and had sufficient annual WHR coverage.
+- Before opening Israel's outcome, the design froze T=2016, 2015 as reference, exclusion of the partial-exposure 2016 transition year, 2017–2020 full post, and a strict 115-country donor pool.
+- The Israel holdout is independent of the original eight-event primary pool and cannot retroactively repair that panel.
+
+## 2026-09-21 · Israel holdout interpretation
+
+- Frozen strict-115 2015-reference full-post mean gap is +0.002; original-rule 120-donor and donor-median specifications are also near zero.
+- Frozen pretrend warning thresholds are not triggered and leave-one-region-out diagnostics remain close to zero.
+- Post-outcome baseline diagnostics are materially negative when earlier or multi-year pre baselines are substituted; these are fragility diagnostics only and cannot replace the pre-frozen 2015-reference estimate.
+- Because both 2014 and late 2015 include documented security disturbances, no single alternative pre year may be promoted after viewing the outcome.
+- Final interpretation is therefore **directional instability / no robust aggregate population shift**, not “precisely zero effect.”
+
+## 2026-09-21 · Manuscript framing locked
+
+- The current paper is reframed as a global legal-event audit and falsification-first holdout study, not a search for a positive annual-leave coefficient.
+- The original eight-event panel is retained as a broader labour/time-off stress test.
+- Israel is reported as a separate leave-specific holdout.
+- Positive and negative affect remain locked for this Pilot-0 manuscript.
+- Future source expansion should prioritize true annual 2024/2025 Life Ladder data and prospectively frozen leave-specific reforms such as Mexico 2023.
+
