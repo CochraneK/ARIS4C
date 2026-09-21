@@ -85,7 +85,7 @@
 
 - [x] Freeze R1–R5 localization protocol before inspecting matched outputs.
 - [x] Audit immediate legacy/current descending-signal → CPG semantics.
-- [ ] R1: compare Retina geometry/order/index hashes.
+- [x] R1: compare Retina geometry/order/index hashes — exact SHA-256 identity.
 - [ ] R2a: compare frozen retinal vectors after FlyGym→flyvis mapping.
 - [ ] R2b: compare pinned neural-model responses to frozen retinal vectors.
 - [ ] R3: retain pure decoder identity gate.
