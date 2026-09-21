@@ -127,7 +127,9 @@ Canonical implementation:
 
 ## 7. Safe deletion of the chat
 
-Retiring chat: **`000ARIS4C001`**.\n\nThis chat is not required for project recovery once this checkpoint and the associated canonical files are on `main`.
+Retiring chat: **`000ARIS4C001`**.
+
+This chat is not required for project recovery once this checkpoint and the associated canonical files are on `main`.
 
 A new executor should:
 
@@ -139,3 +141,13 @@ A new executor should:
 6. enter that paper through its `handoff/README.md`.
 
 Do not reconstruct current scientific state from this checkpoint when a newer per-paper canonical file exists.
+
+
+## 8. Successor-chat verification
+
+A follow-up audit in the successor controller chat re-read the live 000 continuity files, dashboard, 018/019 handoffs, and recent GitHub Actions handoff/index runs.
+
+- The deletion-safe conclusion for `000ARIS4C001` remains valid.
+- The follow-up chat contains no unique scientific state required for recovery after the notes below are committed.
+- A repository-structure ambiguity was discovered: both `papers/018-drosophila-neural-simulation/` and `papers/018-drosophila-open-simulation/` exist with ID 018. The live dashboard evidence/stage corresponds to the advanced neural-simulation line. Do not delete either directory merely to tidy the tree; resolve the duplicate explicitly by archival/redirect/migration so provenance is preserved.
+- This duplicate-ID issue is a repository hygiene task, not a chat-continuity blocker.
