@@ -1,8 +1,9 @@
 # ARIS4C019 · Process status
 
-- Stage: Pilot-0 Life Ladder unlocked · identification stress test
+- Stage: Post-unlock treatment-isolation audit · standalone-reform expansion
 - Activity: active
-- Immediate target: modern staggered-adoption group-time ATT, pre-trend/common-support diagnostics and prespecified robustness
-- Evidence: 8 frozen Tier-A headline reforms are estimable; all 8 retain >=20 clean donors; macro-covariate baseline coverage passes all three frozen covariates for 6/8; first donor-adjusted outcome and leave-one-event-out diagnostics are committed
-- Claim boundary: no robust causal effect is established. The simple 8-event mean full-post gap is +0.110 Life Ladder points but the median is -0.099; 5/8 event means are negative; removing Bahrain flips the mean to -0.091, and Bahrain has a large pre-placebo RMS gap (1.023)
-- Secondary outcomes: positive/negative affect remain locked until the primary Life Ladder analysis is complete
+- Immediate target: identify and legally verify additional stand-alone annual-leave reforms with WHR coverage; preserve the existing 8-event panel as a broader labour/time-off-package stress test
+- Evidence: 8 frozen Tier-A headline reforms remain reproducible; simple donor-adjusted mean +0.110 and median -0.099 with 5/8 negative; leaving out Bahrain flips the mean to -0.091; Callaway–Sant'Anna-style pooled ATT is approximately 0 with a failed joint pretrend diagnostic; Sun–Abraham-style robustness contains a non-zero pre-treatment lead; treatment-isolation audit shows most headline events are bundled labour/time-off reforms rather than leave-only interventions
+- Claim boundary: no robust causal effect of statutory annual leave on Life Ladder is established. The existing panel cannot cleanly isolate annual leave specifically; China is currently the cleanest leave-specific legal event but overlaps the GFC window
+- Key fragility: Bahrain combines a broad Labour Law with a 2011 shock/rebound reference-year problem and is the dominant positive event in the simple pooled mean
+- Secondary outcomes: positive/negative affect remain locked until the primary Life Ladder identification question is resolved or explicitly reframed
