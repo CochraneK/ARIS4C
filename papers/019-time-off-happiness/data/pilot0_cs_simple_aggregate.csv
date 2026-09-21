@@ -1,0 +1,4 @@
+index,SimpleAggregation,SimpleAggregation,SimpleAggregation,SimpleAggregation,SimpleAggregation
+,,bootstrap,simult. conf. band,simult. conf. band,simult. conf. band
+,ATT,std_error,lower,upper,zero_not_in_cband
+0,0.1521990142998624,0.07290963685324377,0.013606870498400703,0.2907911581013241,*
