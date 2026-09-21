@@ -41,3 +41,18 @@ Public-safe summary:
 - Replay UI now consumes committed scientific trace rather than toy fallback data.
 - Trace computation cost (~9m16s for 0.20s baseline + 0.20s loop) makes naive legacy 3s CI expansion unattractive.
 - Work moved to a reusable FlyGym 2.x Retina -> current flyvis adapter before spending full-duration legacy compute.
+
+
+## 2026-09-21 · Pilot 3 migration closure and Pilot 4 launch
+
+User continued GO-mode execution.
+
+Public-safe summary:
+- current-stack synchronized trace generation and semantic validation passed;
+- current trace was committed by CI and contains 40 real visual/neural updates;
+- legacy/current semantic trace parity passed;
+- one replay implementation now handles both provenance-labeled real traces;
+- FlyGym 1.x→2.x migration was closed at the bounded engineering scope;
+- a matched static-target cross-version diagnostic was frozen before inspecting results;
+- legacy/current dependency stacks run in isolated CI jobs and a third job compares only pre-specified engineering metrics;
+- no post-hoc equivalence threshold, version winner, or biological interpretation is permitted from the first matched diagnostic.
