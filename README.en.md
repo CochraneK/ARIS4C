@@ -84,7 +84,7 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 | **017** | [LING-02 · Predictive Language Space](papers/017-predictive-language-space/) | 🟡 Wait | 20% | [handoff](papers/017-predictive-language-space/handoff/AGENT_HANDOFF.md) | — |
 | **018** | [Fly Neuro Playground](papers/018-drosophila-neural-simulation/) | 🟢 Active | 88% | [handoff](papers/018-drosophila-neural-simulation/handoff/AGENT_HANDOFF.md) | — |
 | **018** | [Drosophila Open Simulation](papers/018-drosophila-open-simulation/) | 🟢 Active | 88% | [handoff](papers/018-drosophila-open-simulation/handoff/AGENT_HANDOFF.md) | — |
-| **019** | [Time Off × Happiness](papers/019-time-off-happiness/) | 🟢 Active | 48% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
+| **019** | [Time Off × Happiness](papers/019-time-off-happiness/) | 🟢 Active | 56% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
 
 ## How ARIS4C works
 
