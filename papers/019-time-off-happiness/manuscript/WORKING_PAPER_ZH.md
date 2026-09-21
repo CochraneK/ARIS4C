@@ -64,6 +64,10 @@ WHR2024 刷新后：
 
 因此，不能把最初的正均值解释为稳定的“年休假提高幸福感”。
 
+![图1：WHR2024 刷新后的八事件异质性](../figures/fig1_eight_event_refresh.svg)
+
+*图1。八个事件的 donor-adjusted full-post gap。Bahrain 的大幅正值使 pooled mean 对单一事件高度敏感。*
+
 ## 5. 法律事件隔离
 
 对 11 个剩余 World Bank 年休假跳点逐一核验后，**0/11** 成为新的干净 leave-specific holdout。
@@ -74,6 +78,10 @@ WHR2024 刷新后：
 - 数据跳点年份与法律生效年份不一致；
 - 只覆盖特定地区/司法辖区；
 - 没有找到实际法定 entitlement 变化，提示可能是单位、工龄结构或数据库编码变化。
+
+![图4：法律 treatment 隔离漏斗](../figures/fig4_legal_isolation_funnel.svg)
+
+*图4。数据库跳点或法律快照差异只用于生成候选，必须在查看候选结局前完成独立法律核验。*
 
 ## 6. Israel 独立 holdout
 
@@ -101,7 +109,11 @@ Israel 2016 年修法直接修改《Annual Leave Law》，不是综合劳动法�
 | +3 | 2019 | +0.114 |
 | +4 | 2020 | −0.018 |
 
-平均为 **+0.002**。
+平均为 **+0.002**。原始 120-donor 规则敏感性为 **+0.010**，donor-median counterfactual 为 **+0.008**；标准化 leave-one-region-out 结果也仍围绕零附近。
+
+![图2：Israel 独立 holdout 的 event-time 结果](../figures/fig2_israel_event_time.svg)
+
+*图2。严格 115 donor、预先冻结 2015 reference 下的 Israel donor-adjusted event-time gaps。*
 
 但事后 reference sensitivity 显示：
 
@@ -113,6 +125,10 @@ Israel 2016 年修法直接修改《Annual Leave Law》，不是综合劳动法�
 因此，最合理的表述不是“零效应”，而是：
 
 > **没有观察到对基线选择稳定的国家人口层面变化。**
+
+![图3：Israel reference-year sensitivity](../figures/fig3_israel_reference_sensitivity.svg)
+
+*图3。替代 reference 是看过结局后的脆弱性诊断，不得替换预先冻结的 2015 主规格。*
 
 ## 7. 讨论
 
