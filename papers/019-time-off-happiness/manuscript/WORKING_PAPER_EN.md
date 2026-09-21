@@ -132,11 +132,19 @@ Using the same frozen event definitions and donors with the WHR2024 annual panel
 
 Luxembourg changes from positive to negative. Leaving Bahrain out gives **−0.117**.
 
+![Figure 1. Refreshed eight-event heterogeneity](../figures/fig1_eight_event_refresh.svg)
+
+*Figure 1. Event-level WHR2024-refreshed donor-adjusted gaps. The large Bahrain estimate makes the pooled mean highly influence-sensitive.*
+
 ### 5.3 Legal treatment-isolation audit
 
 Most original reforms alter more than annual leave. A bounded review of all 11 remaining unregistered World Bank annual-leave discontinuities produces **zero** new clean leave-specific holdouts.
 
 This audit prevents database discontinuities or broad labour-code changes from being promoted into treatments merely to increase sample size.
+
+![Figure 4. Legal treatment-isolation funnel](../figures/fig4_legal_isolation_funnel.svg)
+
+*Figure 4. Candidate discovery is deliberately separated from treatment admission. The historical World Bank queue produced no new clean holdout; the modern legal-snapshot screen produced Israel as a current holdout and Mexico as a future one.*
 
 ### 5.4 Israel holdout
 
@@ -153,6 +161,10 @@ The equal-weight full-post mean is **+0.002**.
 
 The frozen pretrend warning thresholds are not triggered. Using the original 120-donor contamination rule gives +0.010; using a donor-median counterfactual gives +0.008. Leave-one-region-out estimates remain close to zero.
 
+![Figure 2. Israel holdout event time](../figures/fig2_israel_event_time.svg)
+
+*Figure 2. Israel donor-adjusted event-time gaps under the pre-frozen strict-115 design.*
+
 ### 5.5 Reference-year fragility
 
 The near-zero result depends on the pre-frozen last-pre-year normalization. Post-outcome diagnostics using earlier or multi-year baselines are negative:
@@ -163,6 +175,10 @@ The near-zero result depends on the pre-frozen last-pre-year normalization. Post
 - 2012–2015 mean baseline: approximately **−0.175**.
 
 These are not alternative preferred estimates. They show that a modest statutory treatment is difficult to distinguish from year-to-year national Life Ladder variation.
+
+![Figure 3. Israel reference sensitivity](../figures/fig3_israel_reference_sensitivity.svg)
+
+*Figure 3. Reference-year sensitivity is a post-outcome fragility diagnostic. The 2015 specification remains primary because it was frozen before the holdout outcome was opened.*
 
 ## 6. Discussion
 
