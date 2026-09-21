@@ -77,3 +77,25 @@ Observed:
 The official decoder equations now have independent pure-math unit tests.
 
 **Decision:** future failures must be localized to neural representation, decoder/interface, or body/controller layers. Do not infer the failing layer from trajectory alone.
+
+## 2026-09-21 · Strict Pilot 3B closes the current full-chain migration gate
+
+The strict current-stack run passed after the PASS criteria had been strengthened *before result inspection* to require:
+
+- a real nonempty neural-derived target mask;
+- asymmetric two-value descending drive;
+- current FlyGym body motion.
+
+Observed target detection occurred on 30/40 decoder frames, maximum left/right drive separation reached 0.8, and the current body moved 1.051 model-distance units.
+
+**Decision:** BIO, DECODER and BODY execution are now considered migrated to the maintained current stack.
+
+**Boundary:** this is a migration result with a synthetic static target, not a replication of the legacy moving-fly paper condition and not evidence that the engineered decoder is a biological visual-to-motor pathway.
+
+## 2026-09-21 · Migration closes only after trace-contract parity
+
+A working closed loop is not enough for product/research continuity.
+
+**Decision:** Pilot 3C must emit the same semantic neural/decoder/body/target trace contract as legacy Pilot 2C. The browser replay should consume either provenance without separate viewer implementations.
+
+This trace-contract parity is the final migration engineering gate before longer current-stack experiments and formal hypothesis selection.
