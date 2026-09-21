@@ -9,17 +9,17 @@ A discovery-driven project that audits and reproduces open Drosophila simulation
 ## Current state
 
 - Activity: **active**
-- Progress: **62%**
-- Stage: **Pilot 2C synchronized real trace PASS · Pilot 3 FlyGym 2.x neural-interface migration running**
-- Evidence: Legacy Pilot2A embodied-neural interface PASS; Pilot2B bounded moving-target closed loop PASS; Pilot2C CI computed, validated and committed a deterministic 100-frame synchronized trace with 25 visual cell types plus neural/decoder/body/target state. Real-model replay now reads this canonical trace. Current reusable FlyGym2 Retina→flyvis adapter and migration smoke are in CI.
+- Progress: **68%**
+- Stage: **Pilot 3A current FlyGym2→flyvis PASS · strict Pilot 3B current full-chain closed loop running**
+- Evidence: Legacy Pilots 2A–2C PASS with real synchronized trace. Pilot3A current FlyGym2 Retina→current pretrained flyvis PASS: retinal shape (2,721,2), neural shape (2,45669), finite activity, 23.116s script wall-clock versus ~47.0s comparable legacy smoke. Reusable adapter committed.
 
 ## Immediate next action
 
-**PASS current FlyGym 2.x retinal rendering→pretrained flyvis 2×45,669 neural-state smoke, benchmark it against legacy cost, then reattach the audited decoder and current HybridTurningController while preserving the same trace schema.**
+**Strict Pilot3B must detect a real visible target through current Retina/flyvis, produce a nonempty decoder object mask and asymmetric 2-D descending drive, and advance the current HybridTurningController body. Then emit current-stack synchronized trace.**
 
 ## Current blocker / gate
 
-No immediate scientific-code blocker. Full legacy 3s conditions are computationally expensive on the current CPU CI path; modern-stack migration is being tested before spending that cost.
+No current environment blocker. Strict Pilot3B is still executing; finite values alone will not count as PASS without target detection and asymmetric control.
 
 ## Canonical files / entry points
 

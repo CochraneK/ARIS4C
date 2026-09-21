@@ -3,11 +3,11 @@
 - **Title:** Drosophila Open Science & Neural Simulation
 - **Project status:** exploration-pilot3a-pass-pilot3b-running
 - **Activity:** active
-- **Portfolio progress:** 62%
-- **Current stage:** Pilot 2C synchronized real trace PASS · Pilot 3 FlyGym 2.x neural-interface migration running
-- **Evidence established:** Legacy Pilot2A embodied-neural interface PASS; Pilot2B bounded moving-target closed loop PASS; Pilot2C CI computed, validated and committed a deterministic 100-frame synchronized trace with 25 visual cell types plus neural/decoder/body/target state. Real-model replay now reads this canonical trace. Current reusable FlyGym2 Retina→flyvis adapter and migration smoke are in CI.
-- **Next gate:** PASS current FlyGym 2.x retinal rendering→pretrained flyvis 2×45,669 neural-state smoke, benchmark it against legacy cost, then reattach the audited decoder and current HybridTurningController while preserving the same trace schema.
-- **Blocker:** No immediate scientific-code blocker. Full legacy 3s conditions are computationally expensive on the current CPU CI path; modern-stack migration is being tested before spending that cost.
+- **Portfolio progress:** 68%
+- **Current stage:** Pilot 3A current FlyGym2→flyvis PASS · strict Pilot 3B current full-chain closed loop running
+- **Evidence established:** Legacy Pilots 2A–2C PASS with real synchronized trace. Pilot3A current FlyGym2 Retina→current pretrained flyvis PASS: retinal shape (2,721,2), neural shape (2,45669), finite activity, 23.116s script wall-clock versus ~47.0s comparable legacy smoke. Reusable adapter committed.
+- **Next gate:** Strict Pilot3B must detect a real visible target through current Retina/flyvis, produce a nonempty decoder object mask and asymmetric 2-D descending drive, and advance the current HybridTurningController body. Then emit current-stack synchronized trace.
+- **Blocker:** No current environment blocker. Strict Pilot3B is still executing; finite values alone will not count as PASS without target detection and asymmetric control.
 
 ## Source of truth
 
