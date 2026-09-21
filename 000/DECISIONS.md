@@ -106,3 +106,15 @@ Only the **Today's progress time curve** is filtered:
 - If progress changes for the first time today, the previous day's last dashboard state is carried forward to 00:00 as a baseline so the first same-day movement is detectable.
 - If nothing changes today, the chart correctly shows no changed-today projects rather than continuing to display yesterday's curve.
 - CI fails if the generated Today payload is stale or lacks the explicit `Asia/Shanghai` timezone.
+
+## 2026-09-21 · Retiring-chat continuity and homepage visual rules
+
+**Decision:** Treat Git as sufficient recovery state before deleting the 000 chat. Add a dated pre-delete checkpoint and make it part of the 000 cold-start path.
+
+**Decision:** Keep the homepage hero as a two-column desktop component: portfolio summary on the left, today's progress chart on the right; stack responsively on narrow screens.
+
+**Decision:** Finish-paper portfolio previews reuse the original one-page visual itself at compact size with lazy loading. Do not maintain a separately redesigned thumbnail unless a future accessibility requirement justifies it.
+
+**Decision:** The daily progress chart remains a same-day, multi-paper operational view with the existing noise-reduction rules (Finish hidden from the curve only, unchanged-today hidden, idle-gap compression and disclosed adaptive Y window). Static HTML must contain a real summary rather than a loading-only placeholder, and JS/CSS references must be cache-busted.
+
+**Why:** The retiring chat must not be a hidden dependency. Public visuals should remain compact without creating parallel visual truth or stale browser-state failure modes.
