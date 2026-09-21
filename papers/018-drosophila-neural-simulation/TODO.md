@@ -56,6 +56,14 @@
 - [x] Extract a reusable FlyGym2 Retina ↔ flyvis adapter.
 - [x] PASS current FlyGym 2.x retinal rendering -> pretrained flyvis neural-state smoke.
 - [x] Benchmark current-stack interface against legacy wall-clock cost (~23.1s vs ~47.0s on matched smoke class).
-- [ ] Reattach the explicit decoder.
-- [ ] Reattach current HybridTurningController.
+- [x] Reattach the explicit decoder.
+- [x] Reattach current HybridTurningController.
 - [ ] Emit the same synchronized trace schema from the current stack.
+
+## Pilot 3C · current-stack trace
+
+- [ ] Emit the same synchronized trace schema from current FlyGym 2.x + current flyvis.
+- [ ] Include target/body/decoder/neural provenance per visual update.
+- [ ] Validate trace shape automatically.
+- [ ] Add current-stack replay selector without forking the viewer implementation.
+- [ ] Compare legacy/current traces only descriptively until matched conditions are built.
