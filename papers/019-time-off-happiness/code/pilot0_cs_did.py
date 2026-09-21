@@ -87,8 +87,9 @@ def main() -> None:
         for row in events.itertuples(index=False)
     }
 
-    # The package cohort is first full-post year. Never-treated controls are cohort 0.
-    panel["cohort"] = panel["country"].map(cohort_map).fillna(0).astype(int)
+    # The package cohort is first full-post year. differences>=0.3 requires
+    # never-treated controls to have a missing cohort rather than cohort 0.
+    panel["cohort"] = pd.to_numeric(panel["country"].map(cohort_map), errors="coerce")
 
     # A mid-year legal reform year is partially exposed. Drop that treated-country
     # row instead of letting the estimator call it an untreated pre-period.
