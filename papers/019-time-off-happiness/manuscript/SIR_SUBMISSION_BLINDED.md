@@ -202,7 +202,7 @@ The second discovery exercise compared the 2015/16 and 2026 legal snapshots. Cro
 
 ### 4.11 AI-assisted research workflow
 
-Generative AI tools were used under human supervision to assist with code generation and debugging, structured source discovery, comparison of legal and methodological documents, manuscript drafting, and language editing. AI outputs were not treated as independent evidence or authorship. Numerical claims were checked against committed machine-readable outputs; legal claims used primary or official sources where available; and the final interpretation was constrained by pre-existing frozen analysis and claim-boundary files. The human author retains responsibility for source verification, analysis decisions, and the final manuscript.
+OpenAI ChatGPT and related OpenAI coding assistance were used under human supervision to support code generation and debugging, structured source discovery, comparison of legal and methodological documents, manuscript drafting, consistency checking, and language editing. Model versions varied across logged project sessions. AI outputs were not treated as independent evidence, legal authority, statistical output, or authorship. Numerical claims were checked against committed machine-readable analysis outputs; legal and policy claims were verified against cited primary or official sources where available; and the final interpretation was constrained by pre-existing frozen analysis and claim-boundary files. No identifiable participant data or confidential peer-review material were supplied to the AI tools. The human author retains responsibility for source verification, analysis decisions, interpretation, citations, and the final manuscript.
 
 ## 5. Results
 
@@ -408,11 +408,11 @@ Code for outcome-blind support checks, event-time construction, source-refresh d
 
 ### Competing interests
 
-[To be completed by the author at submission.]
+Provided separately through the journal submission interface/title-page materials and omitted from this blinded manuscript to preserve double-anonymous review.
 
 ### Funding
 
-[To be completed by the author at submission.]
+Provided separately through the journal submission interface/title-page materials and omitted from this blinded manuscript to preserve double-anonymous review.
 
 ### Ethics
 
