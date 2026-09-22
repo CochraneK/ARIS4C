@@ -216,7 +216,7 @@ The policy context reinforced the statistical warning. Bahrain’s reform was pa
 
 Figure 1 shows the event-level WHR 2024-refreshed gaps discussed below, which make the heterogeneity visually clear.
 
-![Fig. 1](../figures/fig1_eight_event_refresh.svg)
+![](../figures/fig1_eight_event_refresh.svg)
 
 **Fig. 1** WHR 2024-refreshed event-level donor-adjusted full-post Life Ladder gaps for the original eight-event stress-test panel. The Bahrain estimate is a large positive outlier relative to the other events.
 
@@ -246,7 +246,7 @@ The result of this audit was therefore zero new events, but that zero is informa
 
 A modern legal-snapshot screen generated a second candidate path. Comparing the older WORLD and 2026 Equal Futures snapshots produced 13 cross-category candidates for legal investigation. Most either lacked adequate annual WHR coverage, represented broad labour-law changes, occurred too recently for post-treatment follow-up, or failed the leave-specific isolation criterion. Two candidates remained especially important: Israel 2016 as an analyzable current holdout, and Mexico 2023 as a future holdout pending additional annual outcome years.
 
-![Fig. 2](../figures/fig2_legal_isolation_funnel.svg)
+![](../figures/fig2_legal_isolation_funnel.svg)
 
 **Fig. 2** Legal treatment-isolation funnel. Numerical database changes and cross-snapshot differences generate candidates, but independent legal verification is required before treatment admission. The original eight-event panel is preserved separately rather than retroactively rewritten.
 
@@ -262,7 +262,7 @@ Under this frozen design, the donor-adjusted post gaps were +0.177 in 2017, −0
 
 Two prespecified donor-construction sensitivities remained close to zero. Using the original 120-donor contamination rule yielded +0.010, while a donor-median counterfactual yielded +0.008. Leave-one-region-out diagnostics also remained near zero; no broad donor region generated the result.
 
-![Fig. 3](../figures/fig3_israel_event_time.svg)
+![](../figures/fig3_israel_event_time.svg)
 
 **Fig. 3** Israel donor-adjusted event-time gaps under the strict 115-country donor pool and prospectively frozen 2015 reference. Year 2016 is excluded as a staged partial-exposure transition year.
 
@@ -278,7 +278,7 @@ The sensitivity reflects the fact that Israel’s Life Ladder was higher in 2013
 
 Country context also provides no objective basis for declaring a single earlier year uniquely correct. Bank of Israel material documents a security conflict in 2014 that affected economic activity and a wave of violent incidents beginning late in 2015. The bank reported limited broad macroeconomic slowdown from the late-2015 wave but did note sectoral effects, while separately estimating an economic impact from the 2014 conflict. These circumstances reinforce the decision to treat reference sensitivity as a fragility result rather than search for a preferred baseline ex post.
 
-![Fig. 4](../figures/fig4_israel_reference_sensitivity.svg)
+![](../figures/fig4_israel_reference_sensitivity.svg)
 
 **Fig. 4** Post-outcome Israel reference-baseline sensitivity. The 2015 baseline remains primary because it was frozen before the holdout outcome was opened; all other baselines are fragility diagnostics.
 
