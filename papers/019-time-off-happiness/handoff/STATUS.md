@@ -1,7 +1,7 @@
 # ARIS4C019 · Current status
 
 - **Title:** Statutory Paid Annual Leave and National Life Evaluation: A Global Legal-Event Audit and Falsification-First Holdout Study
-- **Project status:** working-paper
+- **Project status:** submission-prep
 - **Activity:** active
 - **Portfolio progress:** 68%
 - **Current stage:** Phase 1 bilingual working paper · interpretation lock + Israel holdout
