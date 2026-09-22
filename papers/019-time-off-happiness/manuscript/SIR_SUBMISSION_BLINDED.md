@@ -148,9 +148,9 @@ Not-yet-treated countries could serve as donors outside their own treatment wind
 
 For a treated event i at calendar year t, the transparent diagnostic is
 
-[
-Gap_{it} = (Y_{it} - Y_{i,ref}) - rac{1}{N_{it}}sum_{d in D_i}(Y_{dt} - Y_{d,ref}),
-]
+$
+\\mathrm{Gap}_{it} = (Y_{it} - Y_{i,ref}) - \\frac{1}{N_{it}}\\sum_{d \\in D_i}(Y_{dt} - Y_{d,ref}),
+$
 
 where (Y) is annual Life Ladder and (D_i) is the event-specific clean donor set. The event-level full-post summary is the equal-weight mean of available post-event gaps.
 
