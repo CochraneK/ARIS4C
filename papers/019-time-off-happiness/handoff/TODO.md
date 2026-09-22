@@ -29,21 +29,25 @@
 - [x] Run post-outcome Israel reference-year/concurrent-shock fragility audit.
 - [x] Freeze Pilot-0 interpretation.
 
-## P2 · Current manuscript package
+## P2 · Manuscript and SIR submission package
 
 - [x] Update literature position with ILO 2026 and Equal Futures 2026 legal sources.
 - [x] Draft English working paper.
 - [x] Draft Chinese working paper.
-- [ ] Build publication-quality figure package:
-  - Figure 1: legal-event discovery / isolation funnel;
-  - Figure 2: eight-event refreshed effect distribution + Bahrain influence;
-  - Figure 3: Israel event-time holdout;
-  - Figure 4: Israel reference-year sensitivity.
-- [ ] Freeze manuscript result tables from machine-readable CSVs.
-- [ ] Run end-to-end reproducibility/claim QA: manuscript numbers must match committed CSVs.
-- [ ] Add compact methods appendix describing source versioning, donor rules and legal-isolation workflow.
-- [ ] Decide target journal / article format after figure+table QA, not before.
-- [ ] Build bilingual PDFs only after working-paper QA passes.
+- [x] Build four-figure manuscript package.
+- [x] Freeze manuscript result tables from machine-readable CSVs.
+- [x] Run bilingual number / claim / figure-link QA.
+- [x] Add methods and reproducibility appendix.
+- [x] Freeze Social Indicators Research as primary target.
+- [x] Build double-anonymous SIR Markdown submission draft.
+- [x] Verify SIR Markdown gate: ~8.15k words, 218-word abstract, 6 keywords, ordered figures, no author/repository identity leakage.
+- [x] Document substantive OpenAI/LLM assistance in Methods and keep AI out of authorship/evidence roles.
+- [x] Remove duplicate partial legal-audit artifacts; retain the complete 11-row legal audit as the sole canonical audit.
+- [ ] Build and QA editable SIR DOCX source from the blinded manuscript.
+- [ ] Build reviewer PDF from the same frozen source and visually inspect pagination, equations, references and figure rendering.
+- [ ] Establish a genuinely anonymous reviewer data/code access path; do not expose the identifying repository in the blinded file.
+- [ ] Fill author-side submission metadata separately: affiliation, corresponding email, ORCID if applicable, funding, competing interests, and any institution-specific ethics/exemption determination.
+- [ ] Freeze final submission manifest linking manuscript, figures, tables, number lock, QA results and anonymous review package.
 
 ## P3 · Deferred / future confirmation
 
