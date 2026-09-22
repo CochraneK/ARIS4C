@@ -9,17 +9,17 @@ A falsification-first cross-national legal-event study of statutory paid annual-
 ## Current state
 
 - Activity: **active**
-- Progress: **68%**
-- Stage: **Phase 1 bilingual working paper · interpretation lock + Israel holdout**
-- Evidence: Bilingual EN/ZH working drafts + interpretation lock. Original 8-event panel remains fragile (WHR2024 refresh mean +0.088, median -0.099, 6/8 negative; excluding Bahrain -> -0.117). Bounded 11-jump legal audit adds 0 clean holdouts. Independently frozen Israel 2016 leave-specific holdout uses 115 strict donors and 4 pre + 4 full-post years: frozen 2015-reference mean +0.002; donor-rule/median/region diagnostics remain near zero, while alternative post-outcome baselines are materially negative.
+- Progress: **82%**
+- Stage: **SIR submission prep · blinded Markdown gate PASS · DOCX / anonymous-review gate**
+- Evidence: SIR double-anonymous Markdown draft (~8.15k words; 218-word abstract; 6 keywords) passes identity/format scan; bilingual number/claim QA PASS; 4 canonical figures + 4 frozen tables; complete 11-jump legal audit yields 0 new clean holdouts; independently frozen Israel holdout mean +0.002 remains reference-sensitive. Original refreshed 8-event panel mean +0.088, median -0.099, 6/8 negative; excluding Bahrain -> -0.117.
 
 ## Immediate next action
 
-**Build 4-figure + frozen-table manuscript package from committed machine-readable results; run end-to-end number/claim reproducibility QA, then tighten EN/ZH drafts and prepare PDFs.**
+**Generate and visually QA editable SIR DOCX + reviewer PDF from the frozen blinded source; establish anonymous reviewer data/code access; freeze final submission manifest.**
 
 ## Current blocker / gate
 
-No engineering blocker. Scientific claim strength is limited by historical policy bundling, treatment dilution, annual national outcome noise and Israel reference-year sensitivity; reproducible open annual Life Ladder currently ends in 2023.
+No scientific or analysis blocker. Remaining external/author-only inputs are anonymous review hosting/link plus affiliation/contact/ORCID/funding/competing-interest and institution-specific ethics/exemption metadata.
 
 ## Canonical files / entry points
 
