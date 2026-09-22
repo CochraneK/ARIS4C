@@ -1,0 +1,71 @@
+name: ARIS4C019 SIR blinded submission package
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/019-time-off-happiness/manuscript/SIR_SUBMISSION_BLINDED.md'
+      - 'papers/019-time-off-happiness/figures/fig1_eight_event_refresh.svg'
+      - 'papers/019-time-off-happiness/figures/fig2_legal_isolation_funnel.svg'
+      - 'papers/019-time-off-happiness/figures/fig3_israel_event_time.svg'
+      - 'papers/019-time-off-happiness/figures/fig4_israel_reference_sensitivity.svg'
+      - 'papers/019-time-off-happiness/code/build_sir_submission.py'
+      - '.github/workflows/aris4c019-sir-submission.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aris4c019-sir-submission
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install document toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc libreoffice-writer inkscape poppler-utils fonts-croscore
+          python -m pip install --upgrade python-docx
+
+      - name: Build and publish atomically
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            echo "019 SIR package attempt $attempt"
+            git fetch origin main
+            git reset --hard origin/main
+
+            python papers/019-time-off-happiness/code/build_sir_submission.py
+
+            git add               papers/019-time-off-happiness/submission/SIR_SUBMISSION_BLINDED.docx               papers/019-time-off-happiness/submission/SIR_REVIEWER_MANUSCRIPT_BLINDED.pdf               papers/019-time-off-happiness/submission/SIR_SUBMISSION_QA.md               papers/019-time-off-happiness/submission/SIR_SUBMISSION_PACKAGE_MANIFEST.md               papers/019-time-off-happiness/submission/ANONYMOUS_REVIEW_PACKAGE_MANIFEST.md
+
+            if git diff --cached --quiet; then
+              echo "No generated changes"
+              exit 0
+            fi
+
+            git commit -m "paper(019): build blinded SIR DOCX and reviewer PDF"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Concurrent update detected; regenerating from newest main."
+          done
+
+          echo "Failed to publish SIR document package after 3 attempts." >&2
+          exit 1
