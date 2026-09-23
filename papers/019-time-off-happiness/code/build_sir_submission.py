@@ -106,12 +106,12 @@ def build_reference_docx(path: Path):
 def prepare_markdown(src: str, png_dir: Path) -> str:
     src = src.replace("\n---\n", "\n", 1)
     pat = re.compile(
-        r"\n\$\s*\n\\operatorname\{Gap\}_\{it\}\s*=\s*\(Y_\{it\}\s*-\s*Y_\{i,ref\}\)\s*-\s*"
-        r"\\frac\{1\}\{N_\{it\}\}\\sum_\{d\s*\\in\s*D_i\}\(Y_\{dt\}\s*-\s*Y_\{d,ref\}\),?\s*\n\$\s*\n"
+        r"\n\$\s*\n\\{1,2}operatorname\{Gap\}_\{it\}\s*=\s*\(Y_\{it\}\s*-\s*Y_\{i,ref\}\)\s*-\s*"
+        r"\\{1,2}frac\{1\}\{N_\{it\}\}\\{1,2}sum_\{d\s*\\{1,2}in\s*D_i\}\(Y_\{dt\}\s*-\s*Y_\{d,ref\}\),?\s*\n\$\s*\n"
     )
     src, n = pat.subn("\n\nEQGAPPLACEHOLDER\n\n", src, count=1)
     if n != 1:
-        pat2 = re.compile(r"\n\$\$.*?\\operatorname\{Gap\}_\{it\}.*?\$\$\s*\n", re.S)
+        pat2 = re.compile(r"\n\$\$.*?\\{1,2}operatorname\{Gap\}_\{it\}.*?\$\$\s*\n", re.S)
         src, n = pat2.subn("\n\nEQGAPPLACEHOLDER\n\n", src, count=1)
     if n != 1:
         raise RuntimeError("Estimator equation block not found exactly once")
