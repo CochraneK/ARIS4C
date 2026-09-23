@@ -61,7 +61,7 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 - **001 · Bee GCA × Uncertainty** — [English PDF](https://cochranek.github.io/ARIS4C/paper/001/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/001/zh/main.pdf)
 - **002 · Testing linguistic periodicity** — [English PDF](https://cochranek.github.io/ARIS4C/paper/002/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/002/zh/main.pdf)
 
-## The 20-paper portfolio
+## The 19-paper portfolio
 
 | ID | Project | State | Progress | Continue from | At a glance |
 |---|---|---:|---:|---|---:|
@@ -83,7 +83,6 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 | **016** | [Global Grammar of Swearing](papers/016-global-grammar-of-swearing/) | 🔴 Block | 68% | [handoff](papers/016-global-grammar-of-swearing/handoff/AGENT_HANDOFF.md) | — |
 | **017** | [LING-02 · Predictive Language Space](papers/017-predictive-language-space/) | 🟡 Wait | 20% | [handoff](papers/017-predictive-language-space/handoff/AGENT_HANDOFF.md) | — |
 | **018** | [Fly Neuro Playground](papers/018-drosophila-neural-simulation/) | 🟢 Active | 88% | [handoff](papers/018-drosophila-neural-simulation/handoff/AGENT_HANDOFF.md) | — |
-| **018** | [Drosophila Open Simulation](papers/018-drosophila-open-simulation/) | 🟢 Active | 88% | [handoff](papers/018-drosophila-open-simulation/handoff/AGENT_HANDOFF.md) | — |
 | **019** | [Annual Leave × Life Evaluation](papers/019-time-off-happiness/) | 🟢 Active | 82% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
 
 ## How ARIS4C works
