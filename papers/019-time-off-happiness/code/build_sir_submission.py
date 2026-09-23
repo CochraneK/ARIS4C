@@ -210,9 +210,21 @@ def postprocess_docx(path: Path):
     nodes = doc._element.xpath(".//wp:docPr")
     if len(nodes) != len(FIGS):
         raise RuntimeError(f"Expected {len(FIGS)} images, found {len(nodes)}")
-    for node, (_, alt) in zip(nodes, FIGS):
+    for idx, (node, (_, alt)) in enumerate(zip(nodes, FIGS), start=1):
         node.set("descr", alt)
         node.set("title", alt.split(";")[0])
+        node.set("name", f"Figure {idx}")
+
+    # Pandoc writes the absolute temporary image path into pic:cNvPr/@descr.
+    # That path can expose the local project/workspace name even when the
+    # manuscript text and core properties are blinded. Scrub the picture-level
+    # non-visual properties as well as wp:docPr before saving.
+    pic_nodes = doc._element.xpath(".//pic:cNvPr")
+    if len(pic_nodes) != len(FIGS):
+        raise RuntimeError(f"Expected {len(FIGS)} picture metadata nodes, found {len(pic_nodes)}")
+    for idx, (node, (_, alt)) in enumerate(zip(pic_nodes, FIGS), start=1):
+        node.set("descr", alt)
+        node.set("name", f"Figure {idx}")
 
     doc.save(path)
 
