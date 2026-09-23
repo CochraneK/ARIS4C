@@ -1,56 +1,61 @@
-# ARIS4C019 · SIR Visual QA
+# SIR final blinded document visual QA
 
-**Checked:** 2026-09-23  
-**Canonical builder fix:** `5428fe3158970f12294ad8bd2800edbf9dbc2160`
+**QA date:** 2026-09-23  
+**Status:** **PASS**
 
-## Scope
+## Canonical input lock
 
-The canonical blinded Markdown source and four canonical SVG figures were reconstructed byte-for-byte from GitHub, then built with the canonical SIR document builder after fixing its escaped-estimator-equation parser.
+- Blinded manuscript Git blob: `d15ee7b66b2c994fad33a4d759114aaeaa1d189b`
+- Blinded manuscript SHA-256: `e9441bcb7ffa1a1c822f12ea00606be1b5c0e913240d3a6c498acb1f9b5c1b90`
+- Figure 1 Git blob: `ed5d4ffe1f7a8f13f837af00a509213a067b702b`
+- Figure 2 Git blob: `c6975c1a0c822a82f0d82202a7b1006b062af2cb`
+- Figure 3 Git blob: `93136ffc70bc3508eeb7ff5bf57c946e36873dac`
+- Figure 4 Git blob: `b84bcf530e74574c62542167c49bb1b580afe656`
 
-The resulting editable DOCX and reviewer PDF were inspected before treating the submission-document gate as complete.
+The final binaries were rebuilt after the latest Data and Code Availability edit. Scientific results, event admission, outcome definitions, and interpretation were not reopened during packaging.
 
-## Build QA
+## Machine QA
 
-- Builder execution: **PASS**
-- DOCX generated: **PASS**
-- Reviewer PDF generated: **PASS**
-- PDF pages: **35**
+- PDF pages: **34**
 - Embedded figures: **4/4**
 - Figure-caption references: **4/4**
-- Estimator equation: **rendered; no LaTeX control-string leakage**
-- Blinded identity scan: **0 hits**
+- Estimator equation: **PASS**; no raw LaTeX placeholder/control-string leakage
+- Blinded identity scan across DOCX XML and extracted PDF text: **PASS / 0 hits**
 - DOCX accessibility audit: **0 high / 0 medium / 0 low findings**
+- DOCX-rendered PDF versus reviewer PDF: **34/34 pages pixel-identical at 100 dpi; changed pages = 0**
+- Final DOCX SHA-256: `bc8469ac22fd1a5bd8e92e099ba2f94aed25d4568ae13efa14aa95494549b4ed`
+- Final reviewer PDF SHA-256: `e074201092e78961aaf8285e2e11cd58e1329b9c53eddaf6b8f2b62e919714ab`
 
-## Page-by-page visual QA
+## Page-by-page visual inspection
 
-All **35 DOCX-rendered pages** were inspected individually.
+All **34 pages** of the latest DOCX rendering were inspected after the anonymity-metadata fix.
 
-Checked for:
+PASS checks:
 
-- text clipping or overflow;
-- overlapping paragraphs/figures;
-- broken page numbering;
-- orphaned figure captions;
-- equation rendering;
-- figure legibility;
-- section-heading breaks;
-- reference truncation;
-- identifying author/repository information.
+- no clipping or off-page text;
+- no overlapping paragraphs, figures, captions, or footer page numbers;
+- no blank or duplicate pages;
+- title, abstract, headings, references, Data and Code Availability, and Online Resource 1 are readable;
+- all four figures are legible and paired with the correct caption;
+- Fig. 1 Bahrain outlier annotation is visible;
+- Fig. 2 legal-isolation funnel is legible;
+- Fig. 3 Israel event-time panel and transition band are visible;
+- Fig. 4 reference-year sensitivity bars and labels are visible;
+- the centered estimator equation renders correctly;
+- references fit within page boundaries.
 
-Result: **PASS — no blocking visual defect found.**
+Nonblocking formatting note: Markdown bullet lists render as separated list lines without bullet glyphs in the current Pandoc/Word style. This is consistent, readable, and does not alter content.
 
-Observed non-blocking style note: several Markdown item lists render as semicolon-separated / line-separated prose without visible bullet glyphs. Their logical order remains clear and no content is lost; this was not treated as a release blocker because changing list styling at this stage would create avoidable pagination risk.
+## Anonymity fix recorded
 
-## DOCX ↔ reviewer PDF equivalence
+The first final-source rebuild exposed a temporary local project path in `pic:cNvPr/@descr` inside DOCX image metadata. The visible manuscript and PDF text were already anonymous, but the hidden DOCX metadata failed the identity scan. The canonical builder now overwrites both `wp:docPr` and `pic:cNvPr` picture metadata with neutral figure names/alt text. The rebuilt package passes the full identity scan.
 
-The DOCX was converted to PDF independently through the document render QA path. Both that PDF and the builder-generated reviewer PDF were rendered at 160 DPI.
+## Online Resource 1 lock
 
-- pages compared: **35/35**
-- pages with any pixel difference: **0**
-- maximum channel difference: **0**
+- Artifact commit: `c0492aab9bcb508a58d9cd745af3f4ef6b2354b9`
+- ZIP: `SIR_Online_Resource_1_Anonymous_Replication.zip`
+- SHA-256: `8463e216e4c49dea30ee47773a55326e6830ed8a0735295770eeff3239f5ad07`
+- Identity scan: **PASS**
+- Headline number-lock reproduction: **PASS**
 
-Thus the visually inspected DOCX rendering and reviewer PDF are page-for-page pixel-identical under the QA render.
-
-## Gate interpretation
-
-This visual QA validates document packaging only. It does not reopen outcomes, event selection, estimator choice, or scientific interpretation. Positive/negative affect remain outside this manuscript.
+Reviewers should receive the ZIP uploaded through the journal portal, not a repository/branch URL.
