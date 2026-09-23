@@ -7,13 +7,13 @@
 <text x="800.0" y="112" text-anchor="middle" class="s">Papers · evidence · bilingual outputs · review gates · cross-agent continuity</text>
 <path d="M0 370 C320 300 520 510 820 390 S1320 260 1600 360 V500 H0 Z" fill="#0b2748"/>
 <rect x="70" y="205" width="255" height="110" rx="20" fill="#0d2442" stroke="#245d95"/>
-<text x="92" y="255" class="metric">20</text>
+<text x="92" y="255" class="metric">19</text>
 <text x="92" y="288" class="b">tracked papers</text>
 <rect x="370" y="205" width="255" height="110" rx="20" fill="#0d2442" stroke="#245d95"/>
 <text x="392" y="255" class="metric">2</text>
 <text x="392" y="288" class="b">Finish</text>
 <rect x="670" y="205" width="255" height="110" rx="20" fill="#0d2442" stroke="#245d95"/>
-<text x="692" y="255" class="metric">7</text>
+<text x="692" y="255" class="metric">6</text>
 <text x="692" y="288" class="b">Active</text>
 <rect x="970" y="205" width="255" height="110" rx="20" fill="#0d2442" stroke="#245d95"/>
 <text x="992" y="255" class="metric">4</text>
@@ -21,5 +21,5 @@
 <rect x="1270" y="205" width="255" height="110" rx="20" fill="#0d2442" stroke="#245d95"/>
 <text x="1292" y="255" class="metric">7</text>
 <text x="1292" y="288" class="b">Block</text>
-<text x="70" y="455" class="m">2 project(s) expose EN + ZH PDFs · continuity 20/20</text>
+<text x="70" y="455" class="m">2 project(s) expose EN + ZH PDFs · continuity 19/19</text>
 </svg>
