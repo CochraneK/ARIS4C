@@ -20,15 +20,23 @@ ZH_TITLES={
 "007":"跨物种年龄等价","008":"人类高级智力演化","009":"现象学保持型计算精神病学",
 "010":"Universal Concept Identification","011":"Research Forensics","012":"Oppositional Causal Inversion",
 "013":"出生—死亡时间耦合","014":"Public Integrity Forensics","015":"Sleeping Beauty Miner",
-"016":"全球脏话 / 禁忌语言语法","017":"LING-02 · 预测性语言空间"}
+"016":"全球脏话 / 禁忌语言语法","017":"LING-02 · 预测性语言空间",
+"018":"Fly Neuro Playground","019":"Annual Leave × Life Evaluation"}
 
 def esc(x): return html.escape(str(x),quote=True)
 
 def load():
     dash=json.loads((PAPERS/"dashboard.json").read_text(encoding="utf-8"))
     rows=[]
+    seen=set()
     for mf in sorted(PAPERS.glob("[0-9][0-9][0-9]-*/paper.json")):
-        p=json.loads(mf.read_text(encoding="utf-8")); d=dash["projects"].get(p["id"],{})
+        p=json.loads(mf.read_text(encoding="utf-8"))
+        if p.get("portfolio_visible", True) is False or p["id"] not in dash["projects"]:
+            continue
+        if p["id"] in seen:
+            raise ValueError(f"duplicate visible portfolio id: {p['id']} ({mf.parent.name})")
+        seen.add(p["id"])
+        d=dash["projects"].get(p["id"],{})
         handoff=mf.parent/"handoff"
         rows.append({"id":p["id"],"short":p.get("short_title") or p["title"],"progress":int(d.get("progress",0)),
                      "activity":d.get("activity","active"),"handoff":handoff.is_dir() and len(list(handoff.glob("*.md")))>=8,
@@ -78,9 +86,12 @@ def status(rows,lang):
 def maturity(rows,lang):
     zh=lang=="zh"; title=f"{len(rows)} 个 Paper 的成熟度" if zh else "Portfolio maturity by paper"
     subtitle="项目管理估计，不是科学结果；100% 表示仓库层最终输出契约满足" if zh else "Management estimate, not a scientific result; 100% means the repository-level final output contract is satisfied"
-    colors={"finish":FINISH,"active":ACTIVE,"wait":WAIT,"block":BLOCK}; s=head(title,subtitle,1600,880)
+    colors={"finish":FINISH,"active":ACTIVE,"wait":WAIT,"block":BLOCK}
+    rows_per_col=max(1,(len(rows)+1)//2)
+    height=max(880,205+rows_per_col*82)
+    s=head(title,subtitle,1600,height)
     for i,r in enumerate(rows):
-        col=0 if i<8 else 1; row=i if i<8 else i-8; x=70+col*785; y=165+row*82
+        col=0 if i<rows_per_col else 1; row=i if i<rows_per_col else i-rows_per_col; x=70+col*785; y=165+row*82
         name=ZH_TITLES.get(r["id"],r["short"]) if zh else r["short"]; label=f'{r["id"]} · {name}'
         if len(label)>38: label=label[:36]+"…"
         s += [f'<text x="{x}" y="{y}" class="h" font-size="20">{esc(label)}</text>',

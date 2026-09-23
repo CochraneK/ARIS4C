@@ -54,5 +54,8 @@
       "english": false,
       "chinese": false
     }
-  }
+  },
+  "portfolio_visible": false,
+  "superseded_by": "papers/018-drosophila-neural-simulation",
+  "portfolio_note": "Legacy concept scaffold retained for provenance; excluded from canonical portfolio surfaces to avoid duplicate ID 018."
 }

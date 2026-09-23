@@ -42,8 +42,15 @@ def last_commit_iso(folder: Path) -> str:
 
 def load_papers() -> list[dict]:
     items = []
+    seen: set[str] = set()
     for manifest in sorted(PAPERS.glob("[0-9][0-9][0-9]-*/paper.json")):
         data = json.loads(manifest.read_text(encoding="utf-8"))
+        if data.get("portfolio_visible", True) is False:
+            continue
+        paper_id = str(data.get("id", ""))
+        if paper_id in seen:
+            raise ValueError(f"duplicate visible portfolio id: {paper_id} ({manifest.parent.name})")
+        seen.add(paper_id)
         data["_folder"] = manifest.parent.name
         data["_last_commit"] = last_commit_iso(manifest.parent)
         items.append(data)

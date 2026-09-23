@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -83,8 +84,19 @@ def audit_readme(path: Path, lang: str, project_ids: list[str], errors: list[str
 
 def main() -> int:
     manifests = sorted(PAPERS.glob("[0-9][0-9][0-9]-*/paper.json"))
-    project_ids = [p.parent.name[:3] for p in manifests]
+    project_ids: list[str] = []
+    seen: set[str] = set()
     errors: list[str] = []
+    for path in manifests:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if data.get("portfolio_visible", True) is False:
+            continue
+        paper_id = str(data.get("id", ""))
+        if paper_id in seen:
+            fail(f"duplicate visible portfolio id: {paper_id} ({path.parent.name})", errors)
+            continue
+        seen.add(paper_id)
+        project_ids.append(paper_id)
 
     zh = ROOT / "README.md"
     en = ROOT / "README.en.md"

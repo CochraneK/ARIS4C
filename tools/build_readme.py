@@ -28,6 +28,8 @@ ZH_TITLES = {
     "015": "Sleeping Beauty Miner",
     "016": "全球脏话 / 禁忌语言语法",
     "017": "LING-02 · 预测性语言空间",
+    "018": "Fly Neuro Playground",
+    "019": "Annual Leave × Life Evaluation",
 }
 
 STATE = {
@@ -41,8 +43,14 @@ STATE = {
 def load():
     dashboard = json.loads(DASHBOARD.read_text(encoding="utf-8"))
     rows = []
+    seen = set()
     for manifest in sorted(PAPERS.glob("[0-9][0-9][0-9]-*/paper.json")):
         p = json.loads(manifest.read_text(encoding="utf-8"))
+        if p.get("portfolio_visible", True) is False or p["id"] not in dashboard["projects"]:
+            continue
+        if p["id"] in seen:
+            raise ValueError(f"duplicate visible portfolio id: {p['id']} ({manifest.parent.name})")
+        seen.add(p["id"])
         d = dashboard["projects"].get(p["id"], {})
         links = p.get("links", {})
         rows.append({
