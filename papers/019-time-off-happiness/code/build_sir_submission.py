@@ -331,27 +331,28 @@ No author name, repository owner, project identifier, or identifying repository 
 
     review_manifest = """# Anonymous reviewer package manifest
 
-**Status:** de-identified document package prepared; **anonymous hosting URL still pending author action**.
+**Status:** reviewer-facing delivery is defined as **Online Resource 1**, a de-identified replication ZIP uploaded directly through the journal submission system.
 
-The reviewer-facing reproducibility materials must be uploaded to a genuinely anonymous review location before submission. The identifying Git repository must not be linked from the blinded manuscript.
+The identifying development repository must not be linked from the blinded manuscript or reviewer files.
+
+## Online Resource 1
+
+Expected file: `SIR_Online_Resource_1_Anonymous_Replication.zip`
+
+The archive is built separately by `build_sir_anonymous_review_bundle.py` and must pass its identity scan and number-lock reproduction gate before portal submission.
 
 ## Include
 
-- blinded reviewer manuscript PDF;
-- editable blinded manuscript DOCX if permitted;
-- derived event registries and result tables needed to audit reported numbers;
-- analysis scripts after stripping identifying repository URLs/project identifiers;
-- a reviewer README describing provenance, licensing boundaries, and reproduction commands.
+- frozen event and donor registries;
+- author-derived machine-readable result tables;
+- one-command reproduction code;
+- source-provenance and licensing notes.
 
 ## Do not redistribute
 
 - raw Gallup / World Happiness Report files where source terms prohibit redistribution;
 - Equal Futures raw data where source terms restrict redistribution;
 - author identity, affiliation, email, ORCID, private notes, chat logs, or identifying repository URLs.
-
-## External field
-
-ANONYMOUS_REVIEW_URL: PENDING_AUTHOR_ACTION
 """
     (OUT / REVIEW_NAME).write_text(review_manifest, encoding="utf-8")
 
@@ -360,7 +361,7 @@ ANONYMOUS_REVIEW_URL: PENDING_AUTHOR_ACTION
     )
     manifest = f"""# SIR submission package manifest
 
-**Package state:** document generation and machine QA {"PASS" if qa_pass else "FAIL"}; portal submission remains blocked on anonymous review hosting and author-side metadata/declarations.
+**Package state:** document generation and machine QA {"PASS" if qa_pass else "FAIL"}; portal submission additionally requires a PASS Online Resource 1 anonymous replication bundle and author-side metadata/declarations.
 
 ## Frozen manuscript inputs
 
@@ -381,7 +382,7 @@ Packaging does not reopen outcomes, event admission, estimator selection, or the
 
 ## Pending external/author-only fields
 
-- anonymous reviewer data/code hosting URL;
+- PASS `SIR_Online_Resource_1_Anonymous_Replication.zip` reviewer bundle;
 - affiliation and corresponding-author email;
 - ORCID if used;
 - funding declaration;
