@@ -1,0 +1,75 @@
+name: SIR anonymous reviewer replication bundle
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/019-time-off-happiness/code/reviewer_reproduce_key_results.py'
+      - 'papers/019-time-off-happiness/code/build_sir_anonymous_review_bundle.py'
+      - 'papers/019-time-off-happiness/process/PILOT0_EVENT_FREEZE.csv'
+      - 'papers/019-time-off-happiness/data/pilot0_donor_diagnostics.csv'
+      - 'papers/019-time-off-happiness/data/israel_holdout_donors.csv'
+      - 'papers/019-time-off-happiness/data/israel_holdout_donors_original120.csv'
+      - 'papers/019-time-off-happiness/data/manuscript_number_lock.json'
+      - '.github/workflows/aris4c019-anonymous-review-bundle.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sir-anonymous-review-bundle
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install reproduction dependencies
+        run: python -m pip install --upgrade pandas requests xlrd
+
+      - name: Reproduce key results, build anonymous bundle and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            echo "SIR anonymous review bundle attempt $attempt"
+            git fetch origin main
+            git reset --hard origin/main
+            rm -rf papers/019-time-off-happiness/reproduced
+
+            python papers/019-time-off-happiness/code/reviewer_reproduce_key_results.py
+            python papers/019-time-off-happiness/code/build_sir_anonymous_review_bundle.py
+
+            git add \
+              papers/019-time-off-happiness/submission/SIR_Online_Resource_1_Anonymous_Replication.zip \
+              papers/019-time-off-happiness/submission/SIR_Online_Resource_1_Anonymous_Replication.zip.sha256 \
+              papers/019-time-off-happiness/submission/SIR_ANONYMOUS_REVIEW_BUNDLE_QA.md \
+              papers/019-time-off-happiness/submission/SIR_ONLINE_RESOURCE_1_MANIFEST.md
+
+            if git diff --cached --quiet; then
+              echo "No generated changes"
+              exit 0
+            fi
+
+            git commit -m "paper(019): build anonymous reviewer replication bundle"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Concurrent update detected; regenerating from newest main."
+          done
+
+          echo "Failed to publish anonymous reviewer bundle after 3 attempts." >&2
+          exit 1
