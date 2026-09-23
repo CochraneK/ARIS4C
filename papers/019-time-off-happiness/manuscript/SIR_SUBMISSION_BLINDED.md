@@ -396,27 +396,15 @@ The most defensible conclusion is therefore that current annual national Life La
 
 More broadly, the study argues for a sequencing rule in cross-national social-indicator research: define and isolate the legal treatment before applying increasingly sophisticated causal estimators. Transparent failures of that isolation process are themselves valuable evidence.
 
-## Statements and Declarations
+## Data and Code Availability
 
-### Data availability
+The analyses rely on publicly documented legal sources and secondary well-being/policy data subject to their original access and licensing terms. An anonymized reviewer replication bundle is supplied with the submission as **Online Resource 1**. It contains the frozen event and donor definitions, author-derived machine-readable result tables, source-version identifiers, the manuscript number lock, and a one-command reproduction script for the headline numerical results.
 
-The analyses rely on publicly documented legal sources and secondary well-being/policy data subject to their original access and licensing terms. Derived event registries, frozen analysis specifications, machine-readable result tables, and analysis code required to reproduce the reported figures and numerical summaries are maintained in an anonymized review repository and are intended for public release with the final article. Raw Gallup/World Happiness Report data and the Equal Futures public-use dataset are not redistributed where source terms do not permit redistribution. The manuscript reports source versions, immutable transport identifiers where available, and derived outputs sufficient to audit the analysis workflow. Official legal documents are accessible from the cited public sources.
+Raw Gallup/World Happiness Report files and the Equal Futures public-use dataset are not redistributed where source terms do not permit redistribution. The reproduction script retrieves the pinned public WHR transport copies used in the analysis, verifies the expected source structure, and recomputes the headline eight-event and Israel holdout results. Official legal documents remain accessible from the cited public sources. A non-anonymized archival code/data location is intended for public release with the final publication package.
 
-### Code availability
+### Online Resource 1
 
-Code for outcome-blind support checks, event-time construction, source-refresh diagnostics, holdout estimation, and manuscript number/claim verification is maintained with the reproducibility materials. An anonymized access path will be provided for peer review and a non-anonymized archival location will be provided with the final publication package.
-
-### Competing interests
-
-Provided separately through the journal submission interface/title-page materials and omitted from this blinded manuscript to preserve double-anonymous review.
-
-### Funding
-
-Provided separately through the journal submission interface/title-page materials and omitted from this blinded manuscript to preserve double-anonymous review.
-
-### Ethics
-
-This study analyzes country-year aggregate secondary data and public legal documents and does not recruit participants or access identifiable individual-level records. Any institution-specific determination about ethics review or exemption will be reported by the author at submission.
+**Anonymized reviewer replication bundle.** The ZIP archive contains frozen design registries, derived result tables, source-provenance notes, and reproduction code for the principal numerical claims. It contains no author name, affiliation, email address, repository-owner identifier, ORCID, funding information, competing-interest statement, or institution-specific ethics metadata, and it does not redistribute restricted third-party raw datasets.
 
 ## References
 
