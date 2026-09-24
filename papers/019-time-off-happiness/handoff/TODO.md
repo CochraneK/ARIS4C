@@ -6,7 +6,7 @@
 - [x] Freeze multi-resolution historical design: legal/institutional history -> country-wave well-being -> annual Gallup-era panel.
 - [x] Add historical source matrix spanning ILO C052/C132, national laws, WORLD/Equal Futures, OECD historical hours, WDH, Cantril, Eurobarometer, WVS/EVS and Gallup/WHR.
 - [~] Build country × source × year/wave coverage inventory for 1900–2026 exposures and 1945–2026 subjective well-being. Modern WB×WHR 161-country/1,934-year overlap, WVS 295 country-wave rows/107 codes, Cantril seed, Eurobarometer registry summary and WDH acquisition gate are complete; full historical country-year reconstruction remains.
-- [ ] Ingest ILO C052/C132 ratification/denunciation histories as institutional anchors; do not equate ratification with national entitlement adoption.
+- [~] Ingest ILO C052/C132 ratification/denunciation histories as institutional anchors; do not equate ratification with national entitlement adoption. C132 closed 39-country seed + decade diffusion are materialized; 13 exact NORMLEX dates are primary-verified; remaining C132 dates and full C052 rows remain.
 - [ ] Build national paid-leave legal chronology with primary-law effective dates and entitlement levels, prioritizing earliest adoption and major upgrades.
 - [ ] Build historical actual-working-hours panel, retaining source/sector comparability flags.
 - [ ] Build World Database of Happiness historical outcome table with question-family metadata and comparable-subset flags.
