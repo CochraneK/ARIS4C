@@ -1,0 +1,100 @@
+case_id,country,event_type,start,end,outcome_genocide,source_basis,reconstruction_status
+ALBANIA_1996,Albania,Complex,5/1996,5/1997,0,PITF Consolidated Case List 2018,candidate_count_parity
+ALGERIA_1991,Algeria,Complex,5/1991,12/2004,0,PITF Consolidated Case List 2018,candidate_count_parity
+ARGENTINA_1966,Argentina,Regime Change,6/1966,6/1966,0,PITF Consolidated Case List 2018,candidate_count_parity
+ARMENIA_1995,Armenia,Regime Change,7/1995,9/1996,0,PITF Consolidated Case List 2018,candidate_count_parity
+AZERBAIJAN_1991,Azerbaijan,Complex,8/1991,6/1997,0,PITF Consolidated Case List 2018,candidate_count_parity
+BANGLADESH_1974,Bangladesh,Complex,12/1974,6/1991,0,PITF Consolidated Case List 2018,candidate_count_parity
+BELARUS_1995,Belarus,Regime Change,4/1995,11/1996,0,PITF Consolidated Case List 2018,candidate_count_parity
+BENIN_1963,Benin,Regime Change,10/1963,12/1965,0,PITF Consolidated Case List 2018,candidate_count_parity
+BENIN_1972,Benin,Regime Change,10/1972,10/1972,0,PITF Consolidated Case List 2018,candidate_count_parity
+BRAZIL_1961,Brazil,Regime Change,9/1961,10/1965,0,PITF Consolidated Case List 2018,candidate_count_parity
+BURKINA_FASO_1980,Burkina Faso,Regime Change,11/1980,11/1980,0,PITF Consolidated Case List 2018,candidate_count_parity
+CAMBODIA_1997,Cambodia,Regime Change,7/1997,7/1997,0,PITF Consolidated Case List 2018,candidate_count_parity
+CHAD_1965,Chad,Complex,10/1965,10/1994,0,PITF Consolidated Case List 2018,candidate_count_parity
+CHINA_1988,China,Complex,7/1988,12/1998,0,PITF Consolidated Case List 2018,candidate_count_parity
+COLOMBIA_1975,Colombia,Revolutionary War,6/1975,ongoing,0,PITF Consolidated Case List 2018,candidate_count_parity
+COMOROS_1976,Comoros,Regime Change,1/1976,1/1976,0,PITF Consolidated Case List 2018,candidate_count_parity
+COMOROS_1995,Comoros,Complex,9/1995,4/1999,0,PITF Consolidated Case List 2018,candidate_count_parity
+CONGO_BRAZZAVILLE_1963,Congo-Brazzaville,Regime Change,12/1963,12/1963,0,PITF Consolidated Case List 2018,candidate_count_parity
+CONGO_BRAZZAVILLE_1997,Congo-Brazzaville,Complex,6/1997,12/1999,0,PITF Consolidated Case List 2018,candidate_count_parity
+CONGO_KINSHASA_1992,Congo-Kinshasa,Complex,3/1992,ongoing,0,PITF Consolidated Case List 2018,candidate_count_parity
+CROATIA_1991,Croatia,Ethnic War,6/1991,12/1995,0,PITF Consolidated Case List 2018,candidate_count_parity
+CYPRUS_1963,Cyprus,Complex,12/1963,4/1968,0,PITF Consolidated Case List 2018,candidate_count_parity
+CYPRUS_1974,Cyprus,Complex,7/1974,8/1974,0,PITF Consolidated Case List 2018,candidate_count_parity
+CZECHOSLOVAKIA_1968,Czechoslovakia,Regime Change,8/1968,9/1969,0,PITF Consolidated Case List 2018,candidate_count_parity
+DJIBOUTI_1991,Djibouti,Ethnic War,11/1991,6/1994,0,PITF Consolidated Case List 2018,candidate_count_parity
+DOMINICAN_REPUBLIC_1963,Dominican Republic,Complex,9/1963,7/1966,0,PITF Consolidated Case List 2018,candidate_count_parity
+ECUADOR_1970,Ecuador,Regime Change,6/1970,2/1972,0,PITF Consolidated Case List 2018,candidate_count_parity
+EGYPT_1992,Egypt,Revolutionary War,2/1992,3/1999,0,PITF Consolidated Case List 2018,candidate_count_parity
+FIJI_1987,Fiji,Regime Change,12/1987,12/1987,0,PITF Consolidated Case List 2018,candidate_count_parity
+FRANCE_1958,France,Regime Change,6/1958,6/1958,0,PITF Consolidated Case List 2018,candidate_count_parity
+THE_GAMBIA_1994,The Gambia,Regime Change,7/1994,7/1994,0,PITF Consolidated Case List 2018,candidate_count_parity
+GEORGIA_1991,Georgia,Complex,6/1991,12/1993,0,PITF Consolidated Case List 2018,candidate_count_parity
+GHANA_1972,Ghana,Regime Change,1/1972,1/1972,0,PITF Consolidated Case List 2018,candidate_count_parity
+GHANA_1981,Ghana,Regime Change,12/1981,12/1981,0,PITF Consolidated Case List 2018,candidate_count_parity
+GREECE_1967,Greece,Regime Change,4/1967,4/1967,0,PITF Consolidated Case List 2018,candidate_count_parity
+GUINEA_BISSAU_1998,Guinea-Bissau,Complex,6/1998,9/2003,0,PITF Consolidated Case List 2018,candidate_count_parity
+GUYANA_1978,Guyana,Regime Change,4/1978,10/1980,0,PITF Consolidated Case List 2018,candidate_count_parity
+HAITI_1991,Haiti,Regime Change,9/1991,9/1991,0,PITF Consolidated Case List 2018,candidate_count_parity
+HUNGARY_1956,Hungary,Complex,10/1956,5/1957,0,PITF Consolidated Case List 2018,candidate_count_parity
+INDIA_1956,India,Ethnic War,5/1956,10/1958,0,PITF Consolidated Case List 2018,candidate_count_parity
+INDIA_1967,India,Ethnic War,5/1967,12/1971,0,PITF Consolidated Case List 2018,candidate_count_parity
+INDIA_1983,India,Complex,4/1983,ongoing,0,PITF Consolidated Case List 2018,candidate_count_parity
+ISRAEL_1987,Israel,Ethnic War,12/1987,ongoing,0,PITF Consolidated Case List 2018,candidate_count_parity
+JORDAN_1957,Jordan,Regime Change,4/1957,4/1957,0,PITF Consolidated Case List 2018,candidate_count_parity
+JORDAN_1970,Jordan,Revolutionary War,2/1970,7/1971,0,PITF Consolidated Case List 2018,candidate_count_parity
+KENYA_1964,Kenya,Complex,1/1964,10/1969,0,PITF Consolidated Case List 2018,candidate_count_parity
+KENYA_1991,Kenya,Ethnic War,10/1991,9/1993,0,PITF Consolidated Case List 2018,candidate_count_parity
+KOREA_SOUTH_1961,"Korea, South",Regime Change,5/1961,5/1961,0,PITF Consolidated Case List 2018,candidate_count_parity
+KOREA_SOUTH_1972,"Korea, South",Regime Change,10/1972,10/1972,0,PITF Consolidated Case List 2018,candidate_count_parity
+LAOS_1960,Laos,Complex,1/1960,6/1979,0,PITF Consolidated Case List 2018,candidate_count_parity
+LEBANON_1958,Lebanon,Revolutionary War,5/1958,7/1958,0,PITF Consolidated Case List 2018,candidate_count_parity
+LEBANON_1975,Lebanon,Complex,4/1975,7/1991,0,PITF Consolidated Case List 2018,candidate_count_parity
+LESOTHO_1970,Lesotho,Regime Change,1/1970,1/1970,0,PITF Consolidated Case List 2018,candidate_count_parity
+LESOTHO_1998,Lesotho,Regime Change,5/1998,1/1999,0,PITF Consolidated Case List 2018,candidate_count_parity
+LIBERIA_1985,Liberia,Complex,11/1985,8/2003,0,PITF Consolidated Case List 2018,candidate_count_parity
+MALAYSIA_1969,Malaysia,Regime Change,5/1969,5/1969,0,PITF Consolidated Case List 2018,candidate_count_parity
+MALI_1990,Mali,Ethnic War,6/1990,1/1995,0,PITF Consolidated Case List 2018,candidate_count_parity
+MOLDOVA_1992,Moldova,Ethnic War,3/1992,12/1992,0,PITF Consolidated Case List 2018,candidate_count_parity
+MOROCCO_1965,Morocco,Regime Change,6/1965,6/1965,0,PITF Consolidated Case List 2018,candidate_count_parity
+MOROCCO_1975,Morocco,Ethnic War,10/1975,11/1989,0,PITF Consolidated Case List 2018,candidate_count_parity
+MOZAMBIQUE_1976,Mozambique,Revolutionary War,7/1976,10/1992,0,PITF Consolidated Case List 2018,candidate_count_parity
+NEPAL_1960,Nepal,Regime Change,12/1960,12/1960,0,PITF Consolidated Case List 2018,candidate_count_parity
+NEPAL_1996,Nepal,Complex,2/1996,4/2006,0,PITF Consolidated Case List 2018,candidate_count_parity
+NICARAGUA_1978,Nicaragua,Complex,2/1978,3/1988,0,PITF Consolidated Case List 2018,candidate_count_parity
+NIGER_1996,Niger,Regime Change,1/1996,1/1996,0,PITF Consolidated Case List 2018,candidate_count_parity
+NIGERIA_1980,Nigeria,Complex,12/1980,4/1985,0,PITF Consolidated Case List 2018,candidate_count_parity
+OMAN_1970,Oman,Revolutionary War,6/1970,3/1976,0,PITF Consolidated Case List 2018,candidate_count_parity
+PAKISTAN_1958,Pakistan,Regime Change,10/1958,10/1958,0,PITF Consolidated Case List 2018,candidate_count_parity
+PAKISTAN_1983,Pakistan,Complex,8/1983,ongoing,0,PITF Consolidated Case List 2018,candidate_count_parity
+PANAMA_1968,Panama,Regime Change,10/1968,10/1968,0,PITF Consolidated Case List 2018,candidate_count_parity
+PAPUA_NEW_GUINEA_1989,Papua New Guinea,Ethnic War,5/1989,5/1997,0,PITF Consolidated Case List 2018,candidate_count_parity
+PERU_1962,Peru,Regime Change,7/1962,7/1962,0,PITF Consolidated Case List 2018,candidate_count_parity
+PERU_1968,Peru,Regime Change,10/1968,10/1968,0,PITF Consolidated Case List 2018,candidate_count_parity
+PERU_1982,Peru,Complex,3/1982,4/1997,0,PITF Consolidated Case List 2018,candidate_count_parity
+ROMANIA_1989,Romania,Revolutionary War,12/1989,12/1989,0,PITF Consolidated Case List 2018,candidate_count_parity
+RUSSIA_1994,Russia,Complex,8/1994,ongoing,0,PITF Consolidated Case List 2018,candidate_count_parity
+SENEGAL_1962,Senegal,Regime Change,12/1962,3/1963,0,PITF Consolidated Case List 2018,candidate_count_parity
+SENEGAL_1992,Senegal,Ethnic War,9/1992,12/1999,0,PITF Consolidated Case List 2018,candidate_count_parity
+SIERRA_LEONE_1967,Sierra Leone,Complex,3/1967,4/1971,0,PITF Consolidated Case List 2018,candidate_count_parity
+SIERRA_LEONE_1991,Sierra Leone,Complex,3/1991,3/2002,0,PITF Consolidated Case List 2018,candidate_count_parity
+SINGAPORE_1963,Singapore,Regime Change,9/1963,8/1965,0,PITF Consolidated Case List 2018,candidate_count_parity
+SOUTH_AFRICA_1984,South Africa,Complex,8/1984,6/1996,0,PITF Consolidated Case List 2018,candidate_count_parity
+SURINAME_1980,Suriname,Regime Change,2/1980,3/1982,0,PITF Consolidated Case List 2018,candidate_count_parity
+SWAZILAND_1973,Swaziland,Regime Change,4/1973,4/1973,0,PITF Consolidated Case List 2018,candidate_count_parity
+SYRIA_1961,Syria,Regime Change,9/1961,2/1966,0,PITF Consolidated Case List 2018,candidate_count_parity
+TAJIKISTAN_1992,Tajikistan,Revolutionary War,4/1992,12/1998,0,PITF Consolidated Case List 2018,candidate_count_parity
+THAILAND_1965,Thailand,Complex,11/1965,12/1983,0,PITF Consolidated Case List 2018,candidate_count_parity
+TURKEY_1971,Turkey,Regime Change,4/1971,4/1971,0,PITF Consolidated Case List 2018,candidate_count_parity
+TURKEY_1980,Turkey,Complex,9/1980,ongoing,0,PITF Consolidated Case List 2018,candidate_count_parity
+UNITED_KINGDOM_1971,United Kingdom,Ethnic War,1/1971,10/1982,0,PITF Consolidated Case List 2018,candidate_count_parity
+URUGUAY_1971,Uruguay,Regime Change,11/1971,2/1973,0,PITF Consolidated Case List 2018,candidate_count_parity
+USSR_SOVIET_UNION_1991,USSR (Soviet Union),Regime Change,8/1991,12/1991,0,PITF Consolidated Case List 2018,candidate_count_parity
+YEMEN_NORTH_1962,"Yemen, North",Revolutionary War,9/1962,1/1970,0,PITF Consolidated Case List 2018,candidate_count_parity
+YEMEN_SOUTH_1986,"Yemen, South",Revolutionary War,1/1986,2/1986,0,PITF Consolidated Case List 2018,candidate_count_parity
+YEMEN_1994,Yemen,Revolutionary War,4/1994,7/1994,0,PITF Consolidated Case List 2018,candidate_count_parity
+YUGOSLAVIA_1991,Yugoslavia,Complex,6/1991,1/1992,0,PITF Consolidated Case List 2018,candidate_count_parity
+ZAMBIA_1964,Zambia,Complex,7/1964,12/1972,0,PITF Consolidated Case List 2018,candidate_count_parity
+ZAMBIA_1996,Zambia,Regime Change,11/1996,11/1996,0,PITF Consolidated Case List 2018,candidate_count_parity
+ZIMBABWE_1972,Zimbabwe,Complex,12/1972,12/1987,0,PITF Consolidated Case List 2018,candidate_count_parity
