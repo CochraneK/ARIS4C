@@ -39,6 +39,16 @@ Core historical candidates:
 
 The goal is not to improve the model in this stage. Any mismatch is documented before extension.
 
+### Stage A2 · Functional-form replication
+
+Recover the Hainmueller/Hazlett N=126 Harff replication data if possible and test whether the six structural conditions survive:
+- original logit/LPM-style functional form;
+- continuous-variable representations where available;
+- preregistered skew-aware transforms;
+- flexible nonlinear benchmark.
+
+This layer is kept separate from the Williams 139-case crisp-set reconstruction.
+
 ### Stage B · Williams QCA replication
 
 Reconstruct the 139-case genocide/non-genocide QCA frame and test the published sufficient configuration:
