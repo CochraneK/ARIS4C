@@ -160,3 +160,14 @@
 - Froze claim_evidence_map_v0.2.csv linking C1-C7 to support/boundary evidence.
 - Froze LITERATURE_SEARCH_LOG_v0.2.md and G2_LITERATURE_GATE.md.
 - G2 PASS; progress advanced to 48%. Next active gate is G3 Tier-A case-universe freeze.
+
+## 2026-09-24 · G3 case-universe gate PASS
+- Froze 16 Tier-A primary tradition-time/source-layer cases before expanded similarity inspection.
+- Tagged Ovid as a positive-control literary-network case rather than pristine independent evidence.
+- Kept Kojiki/Edda/Popol Vuh as Tier-B external-validation cases due later observation windows.
+- Added explicit dependence clusters for repeated Akkadian, Egyptian, Vedic, Old Chinese layers and the Hurrian-Hittite transmission cluster.
+- Locked canonical source/edition infrastructure for all Tier-A cases: ETCSL; Lambert/Millard; George 2003; hethiter.net/Güterbock/Hoffner; Smith; UCL/ISAC/Chester Beatty; Jamison-Brereton; Shatapatha/Eggeling; Perseus/Loeb; BHS; Huainanzi Major et al.; Avestan Yima infrastructure.
+- Froze a bounded omitted-case log including indirect Phoenician, Second-Temple Jewish, later Indian/Iranian and Tier-B/Tier-C observation routes.
+- Amended PAPER_PLAN wording so case count is never interpreted as IID sample size.
+- Added gate_register_v0.2.csv. Current weighted credit = 52/100.
+- G3 PASS; G4 corpus/ontology expansion is now active.

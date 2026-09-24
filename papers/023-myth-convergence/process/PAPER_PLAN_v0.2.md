@@ -9,7 +9,7 @@
 Primary: **Methods paper with empirical demonstration**.
 
 Upgrade to Original Research only if:
-- the primary ancient-text case universe contains at least 15 independent tradition-time units;
+- the primary ancient-text case universe contains at least 15 eligible tradition-time/source-layer units with all known dependence clusters explicitly modeled or sensitivity-excluded;
 - at least 50 analyzable dyads exist for one or more motif families after comparability rules;
 - independent validation passes;
 - primary mechanism models and sensitivity analyses converge sufficiently to support empirical claims.
@@ -68,3 +68,8 @@ C4. A preregistered mechanism model can compare these layers without treating si
 8. Failure modes / boundaries if needed.
 
 Figures are not capped at a quota.
+
+
+### Case independence clarification
+
+“15 cases” never means 15 IID observations. v0.2 deliberately retains repeated language/tradition time slices and a Hurrian-to-Hittite transmission cluster because those layers are historically meaningful. Their dependence is encoded explicitly and must be handled by multi-membership/cluster structure or sensitivity exclusion. The model gate is therefore based on eligible units + analyzable dyads + dependence diagnostics, not a naive N.

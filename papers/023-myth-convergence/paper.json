@@ -44,7 +44,12 @@
     "claim_evidence_map": "data/claim_evidence_map_v0.2.csv",
     "citation_chain_audit": "process/CITATION_CHAIN_AUDIT_v0.2.md",
     "literature_search_log": "process/LITERATURE_SEARCH_LOG_v0.2.md",
-    "g2_literature_gate": "process/G2_LITERATURE_GATE.md"
+    "g2_literature_gate": "process/G2_LITERATURE_GATE.md",
+    "case_universe_frozen": "data/case_universe_v0.2.csv",
+    "case_source_locks": "data/case_source_locks_v0.2.csv",
+    "case_search_log": "data/case_search_log_v0.2.csv",
+    "g3_case_gate": "process/G3_CASE_UNIVERSE_GATE.md",
+    "gate_register": "data/gate_register_v0.2.csv"
   },
   "tags": [
     "ARIS4C",
@@ -87,7 +92,7 @@
     "finish_ready": false
   },
   "v0_2_submission_grade": {
-    "progress": 48,
+    "progress": 52,
     "article_route": "methods + empirical demonstration",
     "original_research_upgrade": "conditional",
     "gates": [
@@ -105,6 +110,9 @@
     "literature_screened": 58,
     "literature_retained": 45,
     "case_candidates": 21,
-    "g2_literature": "PASS"
+    "g2_literature": "PASS",
+    "g3_case_universe": "PASS",
+    "tier_A_primary_cases": 16,
+    "tier_A_positive_controls": 1
   }
 }

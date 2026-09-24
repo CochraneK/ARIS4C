@@ -180,12 +180,12 @@
       "blocker": "Single dominant blocker: live JPL SBDB object payload acquisition for the 16 small/boundary cases. No calibration/truth table/QCA solution may be opened before readiness passes."
     },
     "023": {
-      "progress": 48,
-      "stage": "v0.2 submission-grade ARIS · G2 literature PASS · G3 case-universe freeze",
+      "progress": 52,
+      "stage": "v0.2 submission-grade ARIS · G2/G3 PASS · G4 corpus/ontology active",
       "activity": "active",
-      "evidence": "G2 PASS: 58 screened, 45 retained/relevant, citation-chain audit completed with coverage caveats, and C1–C7 claim-to-evidence map frozen. G3 remains open with 21 candidate cases and 20 source-registry rows.",
-      "next_gate": "Freeze Tier-A case universe after omitted-case search, canonical edition/translation locks, source-layer splits and explicit inclusion/exclusion decisions; do not inspect expanded similarity ranks before freeze.",
-      "blocker": "No immediate blocker. G5 clean human/domain-informed validation remains a later hard gate."
+      "evidence": "G2 literature gate and G3 case-universe gate are frozen. Tier A = 16 primary source/time-layer cases plus Ovid positive control; dependence clusters are explicit and every Tier-A case has a canonical source/edition infrastructure lock. Expanded similarity remains uninspected.",
+      "next_gate": "G4: re-review 56-motif ontology; freeze primary/alternate source bundles and coverage; generate blind expanded coder packets before any expanded similarity inspection.",
+      "blocker": "No immediate blocker. Clean human/domain-informed validation is mandatory at G5."
     }
   },
   "scheduling": {

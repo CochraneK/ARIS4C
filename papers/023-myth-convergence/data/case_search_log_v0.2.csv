@@ -1,0 +1,17 @@
+search_id,region_or_cluster,candidate_material,decision,reason
+NEAR_EAST_DIRECT,Mesopotamia/Levant/Anatolia,Sumerian; Akkadian OB/SB; Ugaritic; Hurrian; Hittite,include_primary,Direct ancient textual witnesses and critical corpora exist; source/time layers split.
+EGYPT_DIRECT,Egypt,Old Kingdom; Middle Kingdom; New Kingdom,include_primary,Separate textual strata; no timeless Egypt case.
+SOUTH_ASIA_DIRECT,South Asia,Rigveda; Shatapatha Brahmana,include_primary,Rigvedic and later-Vedic Manu flood must be separate time/source layers.
+IRAN_DIRECT,Iranian,Videvdad Fargard 2 Yima,include_primary_high_uncertainty,Ancient Avestan tradition but composite/redaction chronology is uncertain; sensitivity flag required.
+GREEK_DIRECT,Aegean,Archaic Greek Hesiod,include_primary,Direct early literary witness.
+HEBREW_DIRECT,Levant/Babylonia context,Genesis primeval history,include_primary,Direct Hebrew textual corpus; composition-layer uncertainty explicit.
+CHINA_DIRECT,China,Canon of Yao layer; Huainanzi layer,include_primary,Split received classical/Han layers; no CHN_WS_HAN composite in v0.2 inference.
+ROME_CONTROL,Mediterranean,Ovid Deucalion/Pyrrha,include_positive_control,Useful known literary-network comparator; not counted as pristine independent evidence.
+PHOENICIAN_INDIRECT,Phoenician/Sanchuniathon via Philo/Eusebius,Indirect Greek/late quotation witness,exclude_primary_tierB_candidate,"Second-order transmission and uncertain authenticity/source relation; could enter later sensitivity, not primary panel."
+SECOND_TEMPLE_JEWISH,1 Enoch / related Jewish texts,Dependent Jewish/Hebrew literary network,exclude_as_independent_case,"Potential source-bundle sensitivity within Hebrew/Jewish tradition, not an independent tradition node."
+LATER_INDIAN,Mahabharata/Puranic Matsya flood,Composite/later Sanskrit traditions,tierB_or_within_lineage_sensitivity,"Shatapatha provides earlier direct Manu flood; later versions useful for within-lineage change, not added as independent primary nodes now."
+LATER_IRANIAN,Bundahishn and Middle Persian compilations,Sasanian/post-Sasanian textual witnesses,tierB,Later witness outside primary date rule; can validate continuity.
+JAPAN,Kojiki,712 CE,tierB,"Post-500 CE, retained as external-validation comparator."
+NORTH_EUROPE,Eddic corpus,medieval witnesses,tierB,Later manuscript/oral tradition; external validation only.
+MESOAMERICA,Popol Vuh,early colonial manuscript,tierB,Important indigenous tradition but observation process/date differs from ancient-text Tier A.
+AMERICAS_AFRICA_OCEANIA_NO_EARLY_TEXT,Other traditions without comparable <=500 CE mythic text witnesses,database/ethnographic route,tierC_not_absence,Not excluded as cultures; evaluated through Tier C comparative databases rather than pretending observation process matches ancient texts.

@@ -87,7 +87,7 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 | **020** | [Global Retraction Ecology](papers/020-global-retraction-ecology/) | 🟢 Active | 75% | [handoff](papers/020-global-retraction-ecology/handoff/AGENT_HANDOFF.md) | — |
 | **021** | [Mass Atrocity Conditions](papers/021-mass-atrocity-configurations/) | 🟢 Active | 38% | [handoff](papers/021-mass-atrocity-configurations/handoff/AGENT_HANDOFF.md) | — |
 | **022** | [Planetary Taxonomy × fsQCA](papers/022-configurational-planetary-taxonomy/) | 🟢 Active | 59% | [handoff](papers/022-configurational-planetary-taxonomy/handoff/AGENT_HANDOFF.md) | — |
-| **023** | [Ancient Myth Convergence](papers/023-myth-convergence/) | 🟢 Active | 48% | [handoff](papers/023-myth-convergence/handoff/AGENT_HANDOFF.md) | <a href="./docs/assets/paper-at-a-glance/023.svg"><img src="./docs/assets/paper-at-a-glance/023.svg" height="80" loading="lazy" decoding="async" alt="Pilot-0 visual 023" title="Pilot-0 visual; v0.2 active"></a> |
+| **023** | [Ancient Myth Convergence](papers/023-myth-convergence/) | 🟢 Active | 52% | [handoff](papers/023-myth-convergence/handoff/AGENT_HANDOFF.md) | <a href="./docs/assets/paper-at-a-glance/023.svg"><img src="./docs/assets/paper-at-a-glance/023.svg" height="80" loading="lazy" decoding="async" alt="Pilot-0 visual 023" title="Pilot-0 visual; v0.2 active"></a> |
 
 
 ## How ARIS4C works
