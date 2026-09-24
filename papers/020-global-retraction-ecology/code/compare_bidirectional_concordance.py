@@ -33,27 +33,43 @@ def main():
             if d: original.add(d)
             if n: notice.add(n)
 
-    oa=[]; oa_doi=set(); oa_no_doi=0
+    oa=[]; oa_by_doi={}; oa_no_doi=0
     with args.openalex_retracted_jsonl.open("r",encoding="utf-8") as fh:
         for line in fh:
             if not line.strip(): continue
             w=json.loads(line); d=norm(w.get("doi",""))
             if d:
-                oa_doi.add(d); oa.append((d,w))
+                oa.append((d,w))
+                oa_by_doi.setdefault(d,[]).append(w)
             else:
                 oa_no_doi+=1
 
-    cls=Counter(); unmatched=[]
-    for d,w in oa:
+    def classify(d):
         if d in original:
-            cls["matches_rwdb_original_doi"]+=1
-        elif d in notice:
-            cls["matches_rwdb_notice_doi_only"]+=1
-            unmatched.append({"class":"notice_doi_only","doi":d,"openalex_id":w.get("id"),"type":w.get("type"),"publication_year":w.get("publication_year"),"display_name":w.get("display_name")})
-        else:
-            cls["absent_from_rwdb_original_and_notice_doi"]+=1
-            unmatched.append({"class":"absent_both","doi":d,"openalex_id":w.get("id"),"type":w.get("type"),"publication_year":w.get("publication_year"),"display_name":w.get("display_name")})
+            return "matches_rwdb_original_doi"
+        if d in notice:
+            return "matches_rwdb_notice_doi_only"
+        return "absent_from_rwdb_original_and_notice_doi"
 
+    row_cls=Counter(classify(d) for d,_ in oa)
+    unique_cls=Counter(classify(d) for d in oa_by_doi)
+    unmatched=[]
+    for d,works in sorted(oa_by_doi.items()):
+        cls=classify(d)
+        if cls=="matches_rwdb_original_doi":
+            continue
+        exemplar=sorted(works,key=lambda w:w.get("id",""))[0]
+        unmatched.append({
+            "class":"notice_doi_only" if cls=="matches_rwdb_notice_doi_only" else "absent_both",
+            "doi":d,
+            "openalex_candidate_count":len(works),
+            "openalex_id":exemplar.get("id"),
+            "type":exemplar.get("type"),
+            "publication_year":exemplar.get("publication_year"),
+            "display_name":exemplar.get("display_name")
+        })
+
+    oa_doi=set(oa_by_doi)
     rwdb_missing=sorted(original-oa_doi)
     payload={
         "schema_version":1,
@@ -62,7 +78,9 @@ def main():
         "openalex_core_is_retracted_works_with_doi_rows":len(oa),
         "openalex_core_unique_is_retracted_doi":len(oa_doi),
         "openalex_core_is_retracted_without_doi":oa_no_doi,
-        "openalex_to_rwdb_classification":dict(cls),
+        "openalex_to_rwdb_classification_unique_doi":dict(unique_cls),
+        "openalex_to_rwdb_classification_work_rows":dict(row_cls),
+        "duplicate_doi_work_rows":len(oa)-len(oa_doi),
         "rwdb_original_doi_absent_from_openalex_is_retracted_doi":len(rwdb_missing),
         "rwdb_original_absent_examples":rwdb_missing[:100],
         "interpretation":[
@@ -74,10 +92,10 @@ def main():
     }
     args.out.parent.mkdir(parents=True,exist_ok=True)
     args.out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    fields=["class","doi","openalex_id","type","publication_year","display_name"]
+    fields=["class","doi","openalex_candidate_count","openalex_id","type","publication_year","display_name"]
     with args.openalex_unmatched_csv.open("w",encoding="utf-8",newline="") as fh:
         w=csv.DictWriter(fh,fieldnames=fields); w.writeheader(); w.writerows(unmatched)
-    print(json.dumps({k:v for k,v in payload.items() if isinstance(v,(int,str)) or k=="openalex_to_rwdb_classification"},indent=2))
+    print(json.dumps({k:v for k,v in payload.items() if isinstance(v,(int,str)) or k.startswith("openalex_to_rwdb_classification")},indent=2))
 
 if __name__=="__main__":
     main()
