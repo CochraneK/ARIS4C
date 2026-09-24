@@ -5,35 +5,38 @@
   "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title": "Planetary Taxonomy × fsQCA",
   "year": 2026,
-  "status": "pilot1-data-spine-built",
+  "status": "pilot1-source-hardened",
   "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary": "A falsification-first configurational taxonomy of Solar System bodies. The frozen 50-body frame now has a raw physical layer, a separate orbital-geometry layer, and a reproducible derived-physics layer. JPL physical/orbital information covers 34 cases; the remaining 16 small bodies remain explicitly un-ingested behind a frozen SBDB snapshot route. Calibration and QCA solutions remain unopened.",
+  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. The physical/orbital/derived data spine now distinguishes JPL source values, fitted approximate planetary elements, satellite mean elements, explicit proxies and derived values. Eight planet orbits are source-hardened, five dwarf-planet heliocentric a values remain visibly provisional, and a 50-case geophysical evidence matrix/protocol is frozen before coding or QCA inspection.",
   "authors": ["Cochrane Kang"],
   "aris": {
-    "provenance": "ARIS4C user-requested project registered 2026-09-24. Pilot-0 froze the 50-body frame and anti-circularity model ladder. Physical-core v0.1 ingested JPL values for 34 cases and source-faithful Margot/Soter code. Pilot-1 then added JPL satellite mean elements for 21 satellites, explicitly derived temporary heliocentric semimajor axes for the 13 direct-Sun planet/dwarf rows from JPL periods, generated derived physics for all 34 currently complete cases, and froze a missingness/provenance audit without inspecting QCA solutions.",
-    "version": "v0.4.0"
+    "provenance": "ARIS4C022 was registered 2026-09-24. Pilot-0 froze the 50-body frame and anti-circularity model ladder. Physical-core v0.1 ingested JPL values for 34 cases and source-faithful Margot/Soter code. Pilot-1 built separate orbit and derived-physics layers. Source-hardening v0.2 replaced all eight planet period-derived semimajor axes with JPL approximate J2000 elements (Earth explicitly as EMB proxy), quantified the <0.05% shifts, and froze an unexposed 50-case geophysical evidence-state matrix and operational coding protocol before calibration or QCA solution inspection.",
+    "version": "v0.5.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
     "pipeline": "process/RESEARCH_PLAN.md",
     "calibration": "process/VARIABLES_AND_CALIBRATION.md",
+    "evidence_protocol": "process/EVIDENCE_STATE_PROTOCOL.md",
     "sources": "data/SOURCE_REGISTRY.md",
     "model_ladder": "process/MODEL_LADDER.md",
     "case_frame": "data/case_frame_v0.1.csv",
     "data_dictionary": "data/DATA_DICTIONARY.md",
     "physical_core": "data/raw_physical_core_v0.1.csv",
-    "orbital_geometry": "data/orbital_geometry_v0.1.csv",
-    "derived_physics": "data/derived_physics_v0.1.csv",
+    "orbital_geometry": "data/orbital_geometry_v0.2.csv",
+    "derived_physics": "data/derived_physics_v0.2.csv",
+    "evidence_state": "data/evidence_state_v0.1.csv",
+    "orbit_hardening_audit": "data/ORBIT_SOURCE_HARDENING_AUDIT.md",
     "missingness_audit": "data/MISSINGNESS_AUDIT.md",
     "dynamics_code": "code/dynamics_metrics.py"
   },
-  "tags": ["ARIS","ARIS4C","planetary science","planet definition","planetary taxonomy","QCA","fsQCA","set theory","dynamical dominance","orbital hierarchy","Mars","dwarf planets","natural satellites","Solar System","JPL SBDB","JPL mean elements"],
+  "tags": ["ARIS","ARIS4C","planetary science","planet definition","planetary taxonomy","QCA","fsQCA","set theory","dynamical dominance","orbital hierarchy","Mars","dwarf planets","natural satellites","Solar System","JPL SBDB","JPL mean elements","evidence-state coding"],
   "bilingual_delivery": {"english": true,"chinese": true},
   "outputs": {
     "paper_en": "not-started",
     "paper_zh": "not-started",
     "figures": {"status": "planned","count": 0},
-    "tables": {"status": "case frame + physical core + orbit geometry + derived physics","count": 4},
+    "tables": {"status": "case frame + physical + orbit v0.2 + derived v0.2 + evidence-state skeleton","count": 5},
     "pdf": {"status": "not-started","english": false,"chinese": false}
   }
 }

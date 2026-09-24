@@ -9,29 +9,25 @@
 
 ## 2026-09-24 · Pilot-0 case-frame freeze
 - Froze 50 cases: 8 planets, 5 dwarf planets, 21 satellites, 16 small/boundary bodies.
-- Added large-moon, irregular-moon, candidate-dwarf, rubble-pile and distant-object contrasts.
-- Froze raw-variable schema and separate heliocentric vs primary-centric orbit variables.
-- Froze M0 definitional benchmark, M1 dynamical audit, M2 non-definitional physical-signature model, M3 satellite boundary analysis, and exploratory M4 geophysical similarity set.
-- Limited primary QCA to roughly 4–6 condition families to avoid truth-table explosion.
-- Added deterministic frame validator.
-- No numerical QCA solutions were inspected before this freeze.
+- Froze raw-variable schema, M0–M4 model ladder, and anti-circularity constraints before numerical solutions.
 
 ## 2026-09-24 · Physical-core ingestion v0.1
-- Materialized `raw_physical_core_v0.1.csv` with all 50 frozen cases.
-- Ingested authoritative JPL physical-core values for 34/50 cases.
-- Preserved satellite GM, uncertainty and ephemeris reference; derived satellite mass from GM with CODATA-2018 G and labeled it as derived.
-- Left all 16 small-body numeric cells explicitly un-ingested.
-- Added JPL SBDB snapshotter, Margot/Soter implementations, and raw-matrix QA.
-- No fsQCA calibration anchors or solutions were inspected.
+- Materialized 50 physical rows and ingested authoritative JPL physical-core values for 34/50 cases.
+- Added JPL SBDB snapshotter, source-faithful Margot/Soter code, and deterministic no-fabrication QA.
 
 ## 2026-09-24 · Pilot-1 orbit + derived spine
-- Verified JPL's current Planetary Satellite Mean Elements table and its explicit high-fidelity warning.
-- Added `orbital_geometry_v0.1.csv` for all 50 frozen rows:
-  - 21 selected satellites populated from JPL mean elements with frame, epoch and ephemeris provenance.
-  - 13 direct-Sun planet/dwarf semimajor axes explicitly derived from JPL sidereal periods as a temporary Pilot-1 layer.
-  - 16 small bodies remain explicit `NA_NOT_INGESTED`.
-- Added `derived_physics_v0.1.csv`: 34 gravity, escape-speed, density-diagnostic and stellar-environment rows; Margot Pi for 13 direct-Sun bodies only.
-- Added reproducible derivation and Pilot-1 validation scripts.
-- Added `MISSINGNESS_AUDIT.md`; evidence-coded composition/atmosphere/geology variables remain gated.
-- Firecrawl credits and the current control runtime could not retrieve the live 16-case SBDB JSON snapshot, so no substitute values were fabricated.
+- Added 50-row orbital v0.1 and 50-row derived-physics v0.1.
+- 21 satellites use JPL mean elements; 13 direct-Sun rows initially used explicitly derived period→a values.
+- 34 rows gained gravity / escape / density diagnostics / stellar-environment derivatives; 13 gained Margot Pi.
 - No QCA calibration or solution inspection occurred.
+
+## 2026-09-24 · Pilot-1 source hardening
+- Replaced the period-derived semimajor axes for all eight planets with JPL Approximate Positions Table-1 J2000 elements.
+- Earth is explicitly retained as an Earth-Moon-barycenter proxy because JPL's approximate table supplies EMB rather than an Earth-center element.
+- Quantified v0.1→v0.2 semimajor-axis changes; all eight are <0.05%.
+- Kept the five dwarf planets on clearly labeled period-derived a pending live SBDB/Horizons acquisition rather than using stale/sample rows as if current.
+- Verified JPL's current SBDB documentation, small-body element schema, and requirement to inspect the API signature/version.
+- Added `EVIDENCE_STATE_PROTOCOL.md` before any evidence coding.
+- Initialized all 50 evidence rows to `PENDING_REVIEW` with `UNEXPOSED_TO_QCA_RESULT`, preserving a clean anti-circularity firewall.
+- Added source-hardening audit and validator.
+- No fsQCA calibration or solution terms were inspected.

@@ -9,16 +9,18 @@
    - [x] Ingest 8 planets + 5 dwarf planets from JPL Planetary Physical Parameters.
    - [x] Ingest 21 satellites from JPL Satellite Physical Parameters.
    - [x] Ingest 21 selected satellite orbit descriptors from JPL Mean Elements.
-   - [x] Build explicitly derived Pilot-1 heliocentric-a layer for 13 direct-Sun planet/dwarf rows.
-   - [ ] Replace/validate those 13 derived a values with pinned raw catalog/Horizons/SBDB orbit elements.
+   - [x] Replace all 8 planet period-derived a values with JPL approximate J2000 elements; retain Earth as an explicit EMB proxy.
+   - [ ] Replace 5 dwarf-planet derived a values with pinned live SBDB/Horizons elements.
    - [ ] Run frozen JPL SBDB raw snapshot for 16 small/boundary bodies.
 6. [x] Implement published Margot/Soter dynamical metrics from source equations and pin regression tests.
 7. [~] Build missingness/uncertainty audit.
    - [x] Physical/orbital provenance and missingness audit.
-   - [ ] Composition evidence state.
-   - [ ] Atmosphere evidence state.
-   - [ ] Differentiation / geology / ocean / tidal-heating evidence state.
-   - [ ] Source-conflict audit.
+   - [x] Freeze evidence-state vocabulary and operational definitions before coding.
+   - [x] Initialize 50-case evidence matrix as PENDING_REVIEW / UNEXPOSED_TO_QCA_RESULT.
+   - [ ] Code composition evidence state.
+   - [ ] Code atmosphere evidence state.
+   - [ ] Code differentiation / geology / ocean / tidal-heating evidence state.
+   - [ ] Source-conflict audit and adjudication.
 8. [x] Build reproducible Pilot-1 derived physics for all currently complete cases.
 9. [ ] Freeze fsQCA calibration anchors before inspecting solutions.
 10. [ ] Run PLANET / DWARF_PLANET / SATELLITE outcomes separately.
