@@ -15,7 +15,7 @@ CSS_PATH = ROOT / "tools" / "pdf_publication.css"
 
 # No-op revision marker: changing this intentionally triggers the canonical
 # public-PDF workflow when a newly added paper still lacks committed outputs.
-PUBLIC_PDF_BUILD_REVISION = "2026-09-24-019-final-gate"
+PUBLIC_PDF_BUILD_REVISION = "2026-09-24-019-final-gate-r2"
 
 BUILDS = [
     ("001", ROOT / "papers/001-gca-bees/manuscript/MAIN.md", ROOT / "docs/paper/001/en/main.pdf", "en"),
