@@ -172,12 +172,12 @@
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
-      "progress": 34,
-      "stage": "Physical core v0.1 ingested · SBDB + orbital-geometry gate",
+      "progress": 42,
+      "stage": "Pilot-1 data spine built · small-body + evidence-state gate",
       "activity": "active",
-      "evidence": "50-row raw physical matrix materialized. Authoritative JPL core values cover 34/50 cases (8 planets, 5 dwarf planets, 21 satellites); 16 small bodies remain explicit NA_NOT_INGESTED behind a frozen SBDB snapshotter. Margot (2015) Eq. 8/9/10 and Soter (2006) mu are implemented with regression tests and a deterministic no-fabrication validator.",
-      "next_gate": "Run the 16-case JPL SBDB snapshot; ingest heliocentric versus primary-centric orbital geometry with frame/epoch provenance; then complete the field-level missingness/conflict audit before fsQCA calibration.",
-      "blocker": "None scientific. If GitHub Actions remains pre-runner, automated SBDB ingestion needs another ordinary networked execution surface."
+      "evidence": "50-row physical/orbit/derived spine is materialized. JPL physical values cover 34 cases; JPL mean elements cover all 21 selected satellites; 13 direct-Sun heliocentric semimajor axes are explicitly derived from JPL sidereal periods for Pilot-1; 34 cases have reproducible gravity/escape/density/insolation derivatives and 13 direct-Sun cases have Margot Pi. Missingness/provenance audit and validators are committed; no fsQCA solution has been inspected.",
+      "next_gate": "Execute the frozen 16-case JPL SBDB raw snapshot; replace/validate the 13 provisional Kepler-derived heliocentric a values with pinned raw orbital elements; then freeze evidence-state coding for composition, atmosphere, differentiation, ocean and current activity before calibration.",
+      "blocker": "Partial acquisition blocker only: the current control runtime could not retrieve the live 16-case SBDB JSON snapshot. Scientific design is not blocked; those rows remain explicit NA_NOT_INGESTED."
     },
     "023": {
       "progress": 42,
