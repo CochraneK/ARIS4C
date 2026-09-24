@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "snapshot_sha256": "da61a30cd4b01b681d1b42ad43cae7ae9eca2213a4f33ff7e762b7942c93f663",
+  "sample_method": "1000 unique Retraction original DOIs ranked by SHA256('aris4c020:'+doi), first 1000",
+  "sample_n": 1000,
+  "matched_n": 996,
+  "match_rate": 0.996,
+  "api_errors": [],
+  "openalex_domains": {"Physical Sciences":385,"Health Sciences":235,"Life Sciences":213,"Social Sciences":155},
+  "work_types": {"article":755,"conference-paper":176,"retraction":33,"review":11,"reference-entry":10,"book-chapter":5,"preprint":3,"letter":1,"editorial":1,"book-review":1},
+  "oa_status": {"closed":445,"hybrid":201,"gold":180,"bronze":70,"diamond":68,"green":32},
+  "cited_by_count": {"median":4,"mean":14.79},
+  "interpretation": "Coverage is high enough to justify a full deterministic DOI join. OpenAlex work_type is not used to define RWDB RetractionNature."
+}
