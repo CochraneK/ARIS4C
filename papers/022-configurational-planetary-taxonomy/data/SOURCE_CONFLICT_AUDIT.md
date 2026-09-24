@@ -24,3 +24,13 @@ Use `NA_SOURCE_CONFLICT` only when credible sources remain materially incompatib
 4. operational definition.
 
 Do not manufacture a conflict when newer evidence merely tightens a bound or when two sources describe different layers of the same body.
+
+## Readiness-targeted scan · Batch 06
+
+| ID | Body | Variable | Sources | Type | Adjudication | Status |
+|---|---|---|---|---|---|---|
+| C005 | Haumea | differentiation | HAUMEA_OCCULTATION_2017 vs HAUMEA_STRUCTURE_APJ_2019 | observation vs model refinement | The occultation rules out a simple homogeneous hydrostatic interpretation; the later ApJ model shows a differentiated triaxial solution can fit the shape. Code MODEL_INFERRED / DIFFERENTIATED, not direct measurement. | RESOLVED_BY_EVIDENCE_LEVEL |
+| C006 | Enceladus | atmosphere | plume descriptions vs NASA_ENCELADUS_LOCAL_ATMOSPHERE | construct clarification | Earlier protocol intentionally avoided equating a plume with an atmosphere. Cassini UVIS stellar occultation independently detected localized water-vapor atmosphere; code DIRECT_MEASURED / EXOSPHERE_TRACE. | RESOLVED_BY_DIRECT_DETECTION |
+| C007 | Tethys | differentiation | TETHYS_SHAPE_1991 | model ambiguity | Shape analysis permits differentiation with a small rocky core but also discusses historical mass uncertainty. Keep MODEL_INFERRED / DIFFERENTIATED rather than STRONGLY_CONSTRAINED. | RESOLVED_BY_EVIDENCE_LEVEL |
+
+Unresolved source conflicts requiring `NA_SOURCE_CONFLICT`: **0**.
