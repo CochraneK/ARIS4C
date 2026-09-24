@@ -30,9 +30,11 @@ This will:
 7. run local regression/ontology QA;
 8. rerun **all four** OpenAlex DOI shards in the candidate-safe 0/1/N format;
 9. summarize full DOI match coverage;
-10. materialize anomalous OpenAlex work-type QA cases;
-11. create year×field and year×type denominator tables;
-12. build the compact cohort×field×age hazard panel from grouped denominators.
+10. quantify RWDB→OpenAlex `is_retracted` concordance;
+11. snapshot OpenAlex core `is_retracted=true` works with timestamp + SHA-256 and classify original-DOI / notice-DOI / absent-both concordance;
+12. materialize anomalous OpenAlex work-type QA cases;
+13. create year×field and year×type denominator tables;
+14. build the compact cohort×field×age hazard panel from grouped denominators.
 
 ## Offline/local-only validation
 
