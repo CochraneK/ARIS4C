@@ -36,9 +36,9 @@ Threshold crossings are only screening candidates; primary national law controls
 | Nicaragua | 21 | 10 | -11 · **REJECT source conflict** |
 | United Kingdom | 20 | 28 | +8 |
 | Slovakia | 15 | 20 | +5 |
-| Algeria | 25 | 21 | -4 |
-| Mali | 25 | 21 | -4 |
-| Namibia | 17 | 20 | +3 |
+| Algeria | 21 corrected | 21 | 0 · **REJECT harmonization artifact** |
+| Mali | 21 corrected | 21 | 0 · **REJECT harmonization artifact** |
+| Namibia | 17 | 20 | +3 · **VERIFIED reform, effective 2008-11-01** |
 
 These are a **primary-law verification queue**. They are not outcome-tested selections.
 
@@ -63,3 +63,15 @@ Canonical file: `data/ilo_2000_2012_leave_bridge.csv`.
 - **Nicaragua:** rejected as a source inconsistency rather than a reform. citeturn121965search1turn121965search0
 
 See `process/HISTORICAL_REFORM_VERIFICATION_GATE_V1.md`.
+
+
+## Algeria/Mali approximation correction
+
+The original screening bridge incorrectly converted both 30-day rules as if they were six-day-workweek working days.
+
+- Algeria's underlying law specifies up to **30 calendar days**; five-day equivalent ≈21.
+- Mali L.151 specifies **30 days including non-working days**; five-day equivalent ≈21.
+
+The machine bridge has been corrected from 25→21 for both. Their apparent -4-day changes are deleted from the reform queue.
+
+Namibia remains a true legal change: 24 consecutive days under the 1992 Act → four consecutive weeks under the 2007 Act, effective 1 Nov 2008.
