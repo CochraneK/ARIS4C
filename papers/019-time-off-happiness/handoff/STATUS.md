@@ -1,23 +1,13 @@
 # ARIS4C019 · Current status
 
-- **Title:** Statutory Paid Annual Leave and National Life Evaluation: A Global Legal-Event Audit and Falsification-First Holdout Study
-- **Project status:** final-public-delivery-blocked-on-canonical-pdf-publish
-- **Activity:** block
-- **Portfolio progress:** 98%
-- **Current stage:** Final public-delivery gate · local public-PDF QA PASS · canonical Git binary publish blocked
-- **Scientific package:** PASS / interpretation locked.
-- **Submission package:** PASS. Blinded SIR DOCX + reviewer PDF + anonymous replication resource are complete and QA-passed.
-- **Public manuscript sources:** PASS. English/Chinese repository-final Markdown, four canonical SVG figures, and one-page portfolio visual are complete.
-- **Public PDF local reproduction:** PASS. English 12 pages; Chinese 7 pages; extractable text and render-first visual QA pass, including CJK rendering and figure clipping.
-- **Canonical PDF paths still missing on main:** `docs/paper/019/en/main.pdf` and `docs/paper/019/zh/main.pdf`.
-- **Runner diagnosis:** workflow run `35965678753` and its failed-job re-run both fail before build steps execute; latest job `107530128521` has no executed steps. Treat this as a GitHub Actions runner/startup blocker, not an ARIS4C019 science/build-code failure.
-- **Fallback QA:** exact current GitHub manuscript/figure/CSS sources were rendered locally again; optimized EN = 11 pages / 100,363 bytes and ZH = 7 pages / 207,347 bytes, with extractable text and visual QA PASS. Canonical Git publication remains required.
-- **Scientific interpretation:** WHR2024-refresh eight-event mean +0.088, median -0.099, 6/8 negative; Bahrain omission -0.117. Independently frozen Israel holdout mean +0.002 is reference-sensitive. No robust positive or negative population Life Ladder effect is established.
-- **Secondary outcomes:** Positive/negative affect remain locked for this paper.
-- **Next gate:** publish both canonical PDFs to GitHub main, verify Git blobs/readability, mark PDF outputs complete, then promote dashboard to Finish / 100%.
-- **Blocker:** repository engineering only. Do **not** reopen event selection, Life Ladder analysis, Israel holdout interpretation, or legal-event discovery to fill this delivery gap.
-- **Author-only future submission metadata:** affiliation, corresponding email, ORCID if applicable, funding, competing interests, and institution-specific ethics/exemption determination remain separate from the public-delivery blocker.
-
-## Source of truth
-
-This snapshot is synchronized from `paper.json`, `papers/dashboard.json`, and `process/FINAL_PUBLIC_DELIVERY_AUDIT.md`. Study-specific frozen design/results remain authoritative over this summary.
+- **Project status:** scope-reopened-historical-expansion
+- **Activity:** active
+- **Portfolio progress:** 60%
+- **Current stage:** Historical expansion · source/coverage reconstruction
+- **Why reopened:** the completed Pilot-0 was methodologically careful but too narrow to answer the original project question. It used a small verified reform set and mainly modern annual Life Ladder data, so it underrepresented twentieth-century history, country breadth and the intended statistical analysis.
+- **Pilot-0:** complete and frozen as a causal-identification sub-study; do not delete it or reinterpret its null/fragile result.
+- **Expanded time frame:** early-20th-century institutional history with systematic ILO anchors from 1936; happiness evidence from 1945; Eurobarometer 1973+; WVS/EVS 1981+; Gallup/WHR modern annual era.
+- **Expanded geography:** modern legal target = 193 UN member states; historical coverage is source/provenance driven rather than artificially balanced.
+- **Expanded statistics:** historical atlas, diffusion/event-history, FE/within-between, nonlinear/lag models, instrument bridge, multilevel/meta-analysis, modern causal event studies/synthetic controls, event-level meta-analysis and heterogeneity.
+- **Next gate:** build source × country × year/wave coverage and ingest historical exposure/outcome series without inspecting new effects.
+- **Canonical entry points:** `process/HISTORICAL_EXPANSION_PLAN.md`, `process/HISTORICAL_SOURCE_MATRIX.md`, `process/RESEARCH_PLAN.md`, `handoff/TODO.md`, `paper.json`.
