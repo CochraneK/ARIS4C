@@ -5,7 +5,21 @@
 
 ### 摘要
 
-既有撤稿研究常用国家、期刊、出版商或撤稿原因的绝对数量进行描述，但这些数量同时受到论文产量、学科构成、问题发现机制、出版商清理政策、大规模撤稿事件以及论文获得“被撤稿机会”的时间影响。本研究建立一个全学科、可复现的分析框架：以 Retraction Watch 全量数据作为撤稿事件主表，以 Crossref/OpenAlex 补充作品元数据、论文母体分母和引用网络。2026-09-23 快照共 72,606 条记录，其中 67,197 条为 Retraction；可获得 61,155 个唯一且可用的原论文 DOI。发表至撤稿的中位时滞为 490 天（1.34 年；P25=153，P75=1,061）。撤稿 Reason 呈显著多标签结构，平均每条 Retraction 含 3.96 个 Reason。确定性的 OpenAlex 1,000 DOI pilot 匹配 996 条（99.6%），首个全量分片匹配 15,146/15,255（99.29%），无 API 错误。当前结果证明全量作品级分析可行，但国家/学科/出版商风险比较仍锁定，直至完整 DOI 匹配、论文母体分母、右删失规则、Reason ontology 审查、mass-event 敏感性和 work-type 一致性门全部通过。
+既有撤稿研究常用国家、期刊、出版商或撤稿原因的绝对数量进行描述，但这些数量同时受到论文产量、学科构成、问题发现机制、出版商清理政策、大规模撤稿事件以及论文获得“被撤稿机会”的时间影响。本研究建立一个全学科、可复现的分析框架：以 Retraction Watch 全量数据作为撤稿事件主表，以 Crossref/OpenAlex 补充作品元数据、论文母体分母和引用网络。2026-09-23 快照共 72,606 条记录，其中 67,197 条为 Retraction；可获得 61,155 个唯一且可用的原论文 DOI。发表至撤稿的中位时滞为 490 天（1.34 年；P25=153，P75=1,061）。撤稿 Reason 呈显著多标签结构，平均每条 Retraction 含 3.96 个 Reason。确定性的 OpenAlex 1,000 DOI pilot 匹配 996 条（99.6%），首个全量分片匹配 15,146/15,255（99.29%），无 API 错误。当前结果证明“事件→作品”重建与跨库 enrichment 管线可行，但国家/学科/出版商风险比较仍锁定，直至完整 DOI 匹配、论文母体分母、右删失规则、Reason ontology 审查、mass-event 敏感性和 work-type 一致性门全部通过。
+
+### 与最接近研究的边界
+
+2026 年 Venturini、Urbinati 与 Gallo 的预印本 *The Retraction Epidemic in Science Across Publishers, Fields, and Countries* 已经使用超过 1.07 亿条 OpenAlex works，对 1992–2021 发表 cohort 进行每论文/每作者撤稿 incidence、学科/国家/出版商比较、fractional country weighting、负二项 exposure model、撤稿时滞和集中度/Gini 分析。Oppenlaender（2026）也已对十大出版商的撤稿率、原因、时间与地域模式进行分析。
+
+因此，020 **不再把“全球分母校正”“国家/学科/出版商撤稿率”“研究撤稿时滞”单独作为创新点**。020 必须向更深一层推进：
+
+- 直接以完整 RWDB 事件表定义撤稿总体，而不是以 OpenAlex `is_retracted` 标记定义病例；
+- 将重复 notice/event 追溯并合并为唯一 scholarly work；
+- 显式报告 RWDB × OpenAlex 的误标、漏标、一 DOI 多 Work candidate；
+- 保留 110 个实际观察 Reason 的多标签共现结构，并做正交 facet；
+- 对 paper mill / publisher cleanup / mass-retraction cluster 做 leave-cluster-out 敏感性；
+- 建立真正包含未撤稿论文右删失的 time-to-event 分析，而非只通过截断近期 cohort 处理；
+- 在同一 work spine 上分析撤稿后的 citation afterlife。
 
 ### 一、核心研究问题
 
