@@ -129,3 +129,9 @@ This file is the **current canonical key → source map**. Historical revisions 
 - `TETHYS_SHAPE_1991` — Thomas & Dermott, Icarus 94; shape/mass analysis allows a differentiated Tethys with a small rocky core, retained at MODEL_INFERRED level. https://doi.org/10.1016/0019-1035(91)90236-M
 - `NASA_PERSEPHONE_CHARON_INTERIOR` — NASA Persephone study science objectives; New Horizons geology permits partial/full Charon differentiation but does not uniquely determine it. https://science.nasa.gov/wp-content/uploads/2023/05/PlutoPersephoneStudy.pdf
 
+## Evidence batch 07 · moon atmosphere + Uranian interiors
+
+- `NASA_PHOBOS_AIRLESS` — NASA Phobos facts explicitly state Phobos has no atmosphere. https://science.nasa.gov/mars/moons/phobos/
+- `NASA_MARS_MOONS_AIRLESS` — NASA Goddard describes both Phobos and Deimos as small airless bodies. https://science.nasa.gov/resource/electric-charging-on-martian-moon-phobos/
+- `NASA_IAPETUS_NO_ATMOSPHERE` — Cassini/NASA explicitly notes the absence of an atmosphere on Iapetus. https://science.nasa.gov/photojournal/dark-stained-iapetus/
+- `URANUS_MOONS_INTERIORS_2023` — Castillo-Rogez et al., JGR: Planets 128; coupled thermal/geochemical models for Ariel, Umbriel, Titania and Oberon imply layered ice/ocean/rock interiors. https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022JE007432
