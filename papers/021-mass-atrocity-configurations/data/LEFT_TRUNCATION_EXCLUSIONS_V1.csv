@@ -1,0 +1,4 @@
+case_id,sftgcode,panel_start_year,historical_start_year,reason,source
+NEG2014_015,COL,1955,1948,left_truncation_pre1955_case,GMU consolidated state failure events
+NEG2014_022,CUB,1955,1952,left_truncation_pre1955_case,GMU consolidated state failure events
+NEG2014_044,IRN,1955,1953,left_truncation_pre1955_case,GMU consolidated state failure events
