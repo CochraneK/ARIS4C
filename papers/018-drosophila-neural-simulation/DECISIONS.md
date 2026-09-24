@@ -112,3 +112,34 @@ The earliest visible divergence is already present at the first decoder frame, b
 **Decision:** activate the pre-frozen R1→R5 localization protocol and identify the earliest divergent layer before choosing a formal hypothesis or attributing the effect.
 
 Scientific direction selection remains outcome-constrained by `QUESTION_CANDIDATES_PRE_PILOT4.md`, which was frozen before Pilot4 results were inspected.
+
+## 2026-09-24 · R1 and R2 are excluded as the first matched divergence
+
+Pilot 4 localization completed two upstream checks.
+
+### R1
+
+Legacy/current Retina geometry, ommatidium IDs, pale/yellow mask and FlyGym→flyvis index mapping are byte-identical.
+
+### R2
+
+Six frozen deterministic retinal vectors produce identical legacy/current:
+
+- retinal hashes;
+- mapped-input hashes;
+- pinned flyvis neural hashes;
+- selected tracking-cell means.
+
+**Decision:** do not attribute the matched first-frame decoder divergence to Retina geometry/order, mapping order, or static flyvis transfer on identical input.
+
+The earliest unresolved layer moves to the actual rendered initial scene / camera / body-reset sensory vector or later temporal neural-state initialization.
+
+## 2026-09-24 · R2.5 is the canonical next gate; current failure is infrastructure-level
+
+R2.5 was frozen and implemented before its outputs were available.
+
+The first R2.5 Actions run and multiple repository-wide index/handoff runs fail before executing any job step.
+
+**Decision:** classify the current blocker as GitHub Actions / runner infrastructure. Do not mark R2.5 scientifically failed and do not alter the frozen gate merely to obtain a runnable result.
+
+When an execution surface is restored, run the committed R2.5 workflow unchanged first.
