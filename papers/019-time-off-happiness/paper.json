@@ -5,15 +5,15 @@
   "title": "Time Off and Happiness Across Countries: Long-Run Institutional Change, Comparative Well-Being Panels, and Policy-Reform Evidence",
   "short_title": "Time Off × Happiness · Long Run",
   "year": 2026,
-  "status": "expanded-modern-and-published-historical-trend-modules-locked-raw-historical-reconstruction-active",
+  "status": "modern-historical-trend-and-ilo-institutional-modules-locked-annual-historical-reconstruction-active",
   "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
-  "summary": "Long-run cross-national study of statutory paid annual leave, realized working time and subjective well-being. Pilot-0 remains frozen. The expanded modern annual module is interpretation-locked, and the complete published WDH Table-2 historical trend layer is now materialized and aligned to same-window working-hours trajectories. Neither layer establishes a stable one-direction aggregate relationship; raw yearly historical outcomes and national legal chronology remain active reconstruction targets.",
+  "summary": "Long-run cross-national study of statutory paid annual leave, realized working time and subjective well-being. Pilot-0 remains frozen. The expanded modern annual module, full published WDH historical trend bridge, and complete ILO C052/C132 institutional diffusion history are now materialized. Official WDH HTML year-level reconstruction has been independently validated on two long-run series, while full annual HTML execution, national legal chronology, and additional survey outcome panels remain active.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder gates frozen and executed; WHR2024 source refresh, complete bounded 11-jump legal audit, independently frozen Israel holdout, bilingual manuscripts, four manuscript figures/tables, SIR double-anonymous DOCX/PDF package, anonymous replication bundle, final visual/identity QA, and one-page portfolio explainer completed; scope reopened 2026-09-24 after adequacy audit to add long-run institutional history, post-1945 multi-source well-being panels, broad country coverage and a full statistical synthesis",
-    "version": "v0.11.0"
+    "version": "v0.12.0"
   },
   "links": {
     "paper_en": "manuscript/WORKING_PAPER_EN.md",
@@ -43,7 +43,11 @@
     "historical_trend_lock": "process/HISTORICAL_TREND_INTERPRETATION_LOCK.md",
     "wdh_table2_audit": "process/WDH_TABLE2_MATERIALIZATION_AUDIT.md",
     "historical_hours_wellbeing_bridge": "process/HISTORICAL_HAPPINESS_HOURS_TREND_BRIDGE_FULL.md",
-    "a0_a1_decomposition": "process/A0_A1_SAMPLE_CONTROL_DECOMPOSITION.md"
+    "a0_a1_decomposition": "process/A0_A1_SAMPLE_CONTROL_DECOMPOSITION.md",
+    "ilo_history": "process/ILO_PAID_HOLIDAY_HISTORY_GATE.md",
+    "ilo_c132_harmonization": "process/ILO_C132_DECLARATION_HARMONIZATION.md",
+    "wdh_html_validation": "process/WDH_HTML_RECONSTRUCTION_VALIDATION.md",
+    "wdh_html_builder": "code/rebuild_wdh_html_annual_panel.py"
   },
   "tags": [
     "ARIS",
@@ -209,6 +213,48 @@
         "one_longest_series_per_country_spearman": -0.044735143289211445,
         "interpretation": "no stable monotonic ecological relationship; earlier pre-1990-start negative association is subset-selection sensitive and superseded for overall inference",
         "lock": "process/HISTORICAL_TREND_INTERPRETATION_LOCK.md"
+      },
+      "ilo": {
+        "c052": {
+          "ratifications": 54,
+          "exact_primary_dates": 54,
+          "current_in_force": 37,
+          "current_not_in_force": 17,
+          "status": "complete-primary-register"
+        },
+        "c132": {
+          "ratifications": 39,
+          "exact_primary_dates": 39,
+          "current_in_force": 39,
+          "denunciations": 0,
+          "status": "complete-primary-register"
+        },
+        "c052_c132_overlap_countries": 18,
+        "mean_years_between_ratifications": 27.767548652987777,
+        "median_years_between_ratifications": 26.383840872844754,
+        "interpretation": "institutional diffusion only; national legal effective dates remain required for causal treatment clocks"
+      },
+      "wdh_html_reconstruction": {
+        "status": "validated-execution-pending-network-runner",
+        "validation_cases": [
+          {
+            "country": "United States of America",
+            "measure_type": "111C",
+            "table2_measure": "hl4",
+            "window": "1946-2017",
+            "reconstructed_slope": 0.001732,
+            "published_slope": 0.001
+          },
+          {
+            "country": "Japan",
+            "measure_type": "121C",
+            "table2_measure": "ls4",
+            "window": "1958-2013",
+            "reconstructed_slope": 0.004793,
+            "published_slope": 0.004
+          }
+        ],
+        "decision": "official WDH HTML accepted as raw-year reconstruction source; preserve finding_measure_code and within-year finding multiplicity"
       }
     },
     "expanded_modern": {
