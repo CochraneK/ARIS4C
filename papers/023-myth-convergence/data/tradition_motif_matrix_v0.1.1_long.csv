@@ -1,0 +1,265 @@
+tradition_id,motif_id,motif_state,source_ids,positive_source_count,assessed_source_count,absence_closed,matrix_version,notes
+SUM_OB,FLOOD_DSTR_INUNDATION,present,SRC_SUM_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+SUM_OB,FLOOD_EXTERMINATORY,present,SRC_SUM_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+SUM_OB,FLOOD_WARNING,present,SRC_SUM_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+SUM_OB,FLOOD_SELECTED_SURVIVOR,present,SRC_SUM_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+SUM_OB,FLOOD_VESSEL,present,SRC_SUM_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+SUM_OB,FLOOD_HIGH_REFUGE,not_observed,SRC_SUM_FLOOD,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+SUM_OB,FLOOD_POST_RITUAL,present,SRC_SUM_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+SUM_OB,FLOOD_REPOPULATION,not_observed,SRC_SUM_FLOOD,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+SUM_OB,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+SUM_OB,DIV_FATHER_SON,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+SUM_OB,DIV_STORM_SERPENT,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+SUM_OB,DIV_STORM_SEA,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+SUM_OB,DIV_BODY_TO_COSMOS,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+SUM_OB,DIV_COUNCIL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+SUM_OB,DIV_KINGSHIP_TRANSFER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+SUM_OB,DIV_PRIMORDIAL_REBELLION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+SUM_OB,ANTH_EARTH_DUST,not_observed,SRC_SUM_ENKI_NINMAH,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+SUM_OB,ANTH_CLAY_MUD,present,SRC_SUM_ENKI_NINMAH,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+SUM_OB,ANTH_POTTER_FORMING,present,SRC_SUM_ENKI_NINMAH,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+SUM_OB,ANTH_DIVINE_BLOOD_FLESH,not_observed,SRC_SUM_ENKI_NINMAH,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+SUM_OB,ANTH_BREATH_ANIMATION,not_observed,SRC_SUM_ENKI_NINMAH,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+SUM_OB,ANTH_CREATED_FOR_SERVICE,present,SRC_SUM_ENKI_NINMAH,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+SUM_OB,ANTH_BODY_SACRIFICE,not_observed,SRC_SUM_ENKI_NINMAH,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+SUM_OB,ANTH_FIRST_PAIR,not_observed,SRC_SUM_ENKI_NINMAH,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+AKK_OB,FLOOD_DSTR_INUNDATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,FLOOD_EXTERMINATORY,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,FLOOD_WARNING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,FLOOD_SELECTED_SURVIVOR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,FLOOD_VESSEL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,FLOOD_HIGH_REFUGE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,FLOOD_POST_RITUAL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,FLOOD_REPOPULATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,DIV_FATHER_SON,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,DIV_STORM_SERPENT,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,DIV_STORM_SEA,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,DIV_BODY_TO_COSMOS,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,DIV_COUNCIL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,DIV_KINGSHIP_TRANSFER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,DIV_PRIMORDIAL_REBELLION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_OB,ANTH_EARTH_DUST,not_observed,SRC_AKK_ATRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+AKK_OB,ANTH_CLAY_MUD,present,SRC_AKK_ATRA,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+AKK_OB,ANTH_POTTER_FORMING,not_observed,SRC_AKK_ATRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+AKK_OB,ANTH_DIVINE_BLOOD_FLESH,present,SRC_AKK_ATRA,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+AKK_OB,ANTH_BREATH_ANIMATION,not_observed,SRC_AKK_ATRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+AKK_OB,ANTH_CREATED_FOR_SERVICE,present,SRC_AKK_ATRA,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+AKK_OB,ANTH_BODY_SACRIFICE,not_observed,SRC_AKK_ATRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+AKK_OB,ANTH_FIRST_PAIR,not_observed,SRC_AKK_ATRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+AKK_MB_SB,FLOOD_DSTR_INUNDATION,present,SRC_AKK_GILG_TXT,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+AKK_MB_SB,FLOOD_EXTERMINATORY,present,SRC_AKK_GILG_TXT,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+AKK_MB_SB,FLOOD_WARNING,present,SRC_AKK_GILG_TXT,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+AKK_MB_SB,FLOOD_SELECTED_SURVIVOR,present,SRC_AKK_GILG_TXT,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+AKK_MB_SB,FLOOD_VESSEL,present,SRC_AKK_GILG_TXT,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+AKK_MB_SB,FLOOD_HIGH_REFUGE,not_observed,SRC_AKK_GILG_TXT,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+AKK_MB_SB,FLOOD_POST_RITUAL,present,SRC_AKK_GILG_TXT,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+AKK_MB_SB,FLOOD_REPOPULATION,not_observed,SRC_AKK_GILG_TXT,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+AKK_MB_SB,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,DIV_FATHER_SON,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,DIV_STORM_SERPENT,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,DIV_STORM_SEA,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,DIV_BODY_TO_COSMOS,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,DIV_COUNCIL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,DIV_KINGSHIP_TRANSFER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,DIV_PRIMORDIAL_REBELLION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,ANTH_EARTH_DUST,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,ANTH_CLAY_MUD,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,ANTH_POTTER_FORMING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,ANTH_DIVINE_BLOOD_FLESH,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,ANTH_BREATH_ANIMATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,ANTH_CREATED_FOR_SERVICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,ANTH_BODY_SACRIFICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+AKK_MB_SB,ANTH_FIRST_PAIR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,FLOOD_DSTR_INUNDATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,FLOOD_EXTERMINATORY,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,FLOOD_WARNING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,FLOOD_SELECTED_SURVIVOR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,FLOOD_VESSEL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,FLOOD_HIGH_REFUGE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,FLOOD_POST_RITUAL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,FLOOD_REPOPULATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,SRC_HIT_ULLI,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HUR_HIT_LBA,DIV_FATHER_SON,not_observed,SRC_HIT_ULLI,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HUR_HIT_LBA,DIV_STORM_SERPENT,not_observed,SRC_HIT_ULLI,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HUR_HIT_LBA,DIV_STORM_SEA,not_observed,SRC_HIT_ULLI,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HUR_HIT_LBA,DIV_BODY_TO_COSMOS,not_observed,SRC_HIT_ULLI,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HUR_HIT_LBA,DIV_COUNCIL,not_observed,SRC_HIT_ULLI,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HUR_HIT_LBA,DIV_KINGSHIP_TRANSFER,not_observed,SRC_HIT_ULLI,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HUR_HIT_LBA,DIV_PRIMORDIAL_REBELLION,uncertain,SRC_HIT_ULLI,0,1,false,0.1.1-seed,Eligible source evidence is uncertain and no positive passage is available.
+HUR_HIT_LBA,ANTH_EARTH_DUST,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,ANTH_CLAY_MUD,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,ANTH_POTTER_FORMING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,ANTH_DIVINE_BLOOD_FLESH,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,ANTH_BREATH_ANIMATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,ANTH_CREATED_FOR_SERVICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,ANTH_BODY_SACRIFICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HUR_HIT_LBA,ANTH_FIRST_PAIR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,FLOOD_DSTR_INUNDATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,FLOOD_EXTERMINATORY,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,FLOOD_WARNING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,FLOOD_SELECTED_SURVIVOR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,FLOOD_VESSEL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,FLOOD_HIGH_REFUGE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,FLOOD_POST_RITUAL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,FLOOD_REPOPULATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,SRC_UGAR_BAAL,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+UGARIT_LBA,DIV_FATHER_SON,not_observed,SRC_UGAR_BAAL,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+UGARIT_LBA,DIV_STORM_SERPENT,not_observed,SRC_UGAR_BAAL,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+UGARIT_LBA,DIV_STORM_SEA,present,SRC_UGAR_BAAL,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+UGARIT_LBA,DIV_BODY_TO_COSMOS,not_observed,SRC_UGAR_BAAL,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+UGARIT_LBA,DIV_COUNCIL,not_observed,SRC_UGAR_BAAL,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+UGARIT_LBA,DIV_KINGSHIP_TRANSFER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,DIV_PRIMORDIAL_REBELLION,not_observed,SRC_UGAR_BAAL,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+UGARIT_LBA,ANTH_EARTH_DUST,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,ANTH_CLAY_MUD,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,ANTH_POTTER_FORMING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,ANTH_DIVINE_BLOOD_FLESH,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,ANTH_BREATH_ANIMATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,ANTH_CREATED_FOR_SERVICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,ANTH_BODY_SACRIFICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+UGARIT_LBA,ANTH_FIRST_PAIR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,FLOOD_DSTR_INUNDATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,FLOOD_EXTERMINATORY,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,FLOOD_WARNING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,FLOOD_SELECTED_SURVIVOR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,FLOOD_VESSEL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,FLOOD_HIGH_REFUGE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,FLOOD_POST_RITUAL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,FLOOD_REPOPULATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,DIV_FATHER_SON,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,DIV_STORM_SERPENT,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,DIV_STORM_SEA,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,DIV_BODY_TO_COSMOS,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,DIV_COUNCIL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,DIV_KINGSHIP_TRANSFER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,DIV_PRIMORDIAL_REBELLION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,ANTH_EARTH_DUST,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,ANTH_CLAY_MUD,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,ANTH_POTTER_FORMING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,ANTH_DIVINE_BLOOD_FLESH,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,ANTH_BREATH_ANIMATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,ANTH_CREATED_FOR_SERVICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,ANTH_BODY_SACRIFICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_MK,ANTH_FIRST_PAIR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,FLOOD_DSTR_INUNDATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,FLOOD_EXTERMINATORY,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,FLOOD_WARNING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,FLOOD_SELECTED_SURVIVOR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,FLOOD_VESSEL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,FLOOD_HIGH_REFUGE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,FLOOD_POST_RITUAL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,FLOOD_REPOPULATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,DIV_FATHER_SON,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,DIV_STORM_SERPENT,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,DIV_STORM_SEA,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,DIV_BODY_TO_COSMOS,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,DIV_COUNCIL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,DIV_KINGSHIP_TRANSFER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,DIV_PRIMORDIAL_REBELLION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,ANTH_EARTH_DUST,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,ANTH_CLAY_MUD,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,ANTH_POTTER_FORMING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,ANTH_DIVINE_BLOOD_FLESH,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,ANTH_BREATH_ANIMATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,ANTH_CREATED_FOR_SERVICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,ANTH_BODY_SACRIFICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+EGY_NK,ANTH_FIRST_PAIR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+VED_RV,FLOOD_DSTR_INUNDATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+VED_RV,FLOOD_EXTERMINATORY,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+VED_RV,FLOOD_WARNING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+VED_RV,FLOOD_SELECTED_SURVIVOR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+VED_RV,FLOOD_VESSEL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+VED_RV,FLOOD_HIGH_REFUGE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+VED_RV,FLOOD_POST_RITUAL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+VED_RV,FLOOD_REPOPULATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+VED_RV,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,SRC_VED_INDRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,DIV_FATHER_SON,not_observed,SRC_VED_INDRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,DIV_STORM_SERPENT,present,SRC_VED_INDRA,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+VED_RV,DIV_STORM_SEA,not_observed,SRC_VED_INDRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,DIV_BODY_TO_COSMOS,not_observed,SRC_VED_INDRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,DIV_COUNCIL,not_observed,SRC_VED_INDRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,DIV_KINGSHIP_TRANSFER,not_observed,SRC_VED_INDRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,DIV_PRIMORDIAL_REBELLION,not_observed,SRC_VED_INDRA,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,ANTH_EARTH_DUST,not_observed,SRC_VED_RV,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,ANTH_CLAY_MUD,not_observed,SRC_VED_RV,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,ANTH_POTTER_FORMING,not_observed,SRC_VED_RV,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,ANTH_DIVINE_BLOOD_FLESH,not_observed,SRC_VED_RV,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,ANTH_BREATH_ANIMATION,not_observed,SRC_VED_RV,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,ANTH_CREATED_FOR_SERVICE,not_observed,SRC_VED_RV,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+VED_RV,ANTH_BODY_SACRIFICE,present,SRC_VED_RV,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+VED_RV,ANTH_FIRST_PAIR,not_observed,SRC_VED_RV,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+GRC_ARCH,FLOOD_DSTR_INUNDATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,FLOOD_EXTERMINATORY,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,FLOOD_WARNING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,FLOOD_SELECTED_SURVIVOR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,FLOOD_VESSEL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,FLOOD_HIGH_REFUGE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,FLOOD_POST_RITUAL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,FLOOD_REPOPULATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,SRC_GRC_THEO,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+GRC_ARCH,DIV_FATHER_SON,present,SRC_GRC_THEO,1,2,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+GRC_ARCH,DIV_STORM_SERPENT,present,SRC_GRC_THEO,1,2,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+GRC_ARCH,DIV_STORM_SEA,not_observed,SRC_GRC_THEO,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+GRC_ARCH,DIV_BODY_TO_COSMOS,not_observed,SRC_GRC_THEO,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+GRC_ARCH,DIV_COUNCIL,not_observed,SRC_GRC_THEO,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+GRC_ARCH,DIV_KINGSHIP_TRANSFER,not_observed,SRC_GRC_THEO,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+GRC_ARCH,DIV_PRIMORDIAL_REBELLION,not_observed,SRC_GRC_THEO,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+GRC_ARCH,ANTH_EARTH_DUST,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,ANTH_CLAY_MUD,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,ANTH_POTTER_FORMING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,ANTH_DIVINE_BLOOD_FLESH,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,ANTH_BREATH_ANIMATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,ANTH_CREATED_FOR_SERVICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,ANTH_BODY_SACRIFICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+GRC_ARCH,ANTH_FIRST_PAIR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HEB_GEN,FLOOD_DSTR_INUNDATION,present,SRC_HEB_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+HEB_GEN,FLOOD_EXTERMINATORY,present,SRC_HEB_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+HEB_GEN,FLOOD_WARNING,present,SRC_HEB_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+HEB_GEN,FLOOD_SELECTED_SURVIVOR,present,SRC_HEB_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+HEB_GEN,FLOOD_VESSEL,present,SRC_HEB_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+HEB_GEN,FLOOD_HIGH_REFUGE,not_observed,SRC_HEB_FLOOD,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HEB_GEN,FLOOD_POST_RITUAL,present,SRC_HEB_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+HEB_GEN,FLOOD_REPOPULATION,present,SRC_HEB_FLOOD,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+HEB_GEN,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HEB_GEN,DIV_FATHER_SON,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HEB_GEN,DIV_STORM_SERPENT,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HEB_GEN,DIV_STORM_SEA,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HEB_GEN,DIV_BODY_TO_COSMOS,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HEB_GEN,DIV_COUNCIL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HEB_GEN,DIV_KINGSHIP_TRANSFER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HEB_GEN,DIV_PRIMORDIAL_REBELLION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+HEB_GEN,ANTH_EARTH_DUST,present,SRC_HEB_GEN2,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+HEB_GEN,ANTH_CLAY_MUD,not_observed,SRC_HEB_GEN2,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HEB_GEN,ANTH_POTTER_FORMING,not_observed,SRC_HEB_GEN2,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HEB_GEN,ANTH_DIVINE_BLOOD_FLESH,not_observed,SRC_HEB_GEN2,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HEB_GEN,ANTH_BREATH_ANIMATION,present,SRC_HEB_GEN2,1,1,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+HEB_GEN,ANTH_CREATED_FOR_SERVICE,not_observed,SRC_HEB_GEN2,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HEB_GEN,ANTH_BODY_SACRIFICE,not_observed,SRC_HEB_GEN2,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+HEB_GEN,ANTH_FIRST_PAIR,not_observed,SRC_HEB_GEN2,0,1,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+CHN_WS_HAN,FLOOD_DSTR_INUNDATION,present,SRC_CHN_YAO;SRC_CHN_NUWA,2,2,false,0.1.1-seed,At least one eligible frozen source passage provides positive evidence.
+CHN_WS_HAN,FLOOD_EXTERMINATORY,not_observed,SRC_CHN_YAO;SRC_CHN_NUWA,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+CHN_WS_HAN,FLOOD_WARNING,not_observed,SRC_CHN_YAO;SRC_CHN_NUWA,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+CHN_WS_HAN,FLOOD_SELECTED_SURVIVOR,not_observed,SRC_CHN_YAO;SRC_CHN_NUWA,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+CHN_WS_HAN,FLOOD_VESSEL,not_observed,SRC_CHN_YAO;SRC_CHN_NUWA,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+CHN_WS_HAN,FLOOD_HIGH_REFUGE,not_observed,SRC_CHN_YAO;SRC_CHN_NUWA,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+CHN_WS_HAN,FLOOD_POST_RITUAL,not_observed,SRC_CHN_YAO;SRC_CHN_NUWA,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+CHN_WS_HAN,FLOOD_REPOPULATION,not_observed,SRC_CHN_YAO;SRC_CHN_NUWA,0,2,false,0.1.1-seed,"Passage-level absence exists, but tradition-level absence coverage is not yet closed; conservatively retained as not_observed."
+CHN_WS_HAN,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,DIV_FATHER_SON,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,DIV_STORM_SERPENT,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,DIV_STORM_SEA,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,DIV_BODY_TO_COSMOS,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,DIV_COUNCIL,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,DIV_KINGSHIP_TRANSFER,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,DIV_PRIMORDIAL_REBELLION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,ANTH_EARTH_DUST,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,ANTH_CLAY_MUD,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,ANTH_POTTER_FORMING,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,ANTH_DIVINE_BLOOD_FLESH,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,ANTH_BREATH_ANIMATION,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,ANTH_CREATED_FOR_SERVICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,ANTH_BODY_SACRIFICE,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.
+CHN_WS_HAN,ANTH_FIRST_PAIR,not_observed,,0,0,false,0.1.1-seed,No closed tradition-level negative evidence.

@@ -51,3 +51,11 @@
 - Wrote `../process/RELIABILITY_DECISION.md` — v0.1 **freezes** with a mandatory six-rule **v0.1.1** amendment layer before expansion to 56 motifs; v0.2 recalibration not triggered now; exposure-contaminated cell `P_DIV_BAAL × DIV_KINGSHIP_TRANSFER` excised from confirmatory use (headline reported with 0.825 / without 0.824); `P_ANTH_SUM` (`ETCSL 1.7.4 Segment A 10-14`) **withdrawn** as a confirmatory witness.
 - Refreshed `AGENT_HANDOFF.md` from "blocked on coding independence" to the post-gate state (Immediate next action = the v0.1.1 amendment layer, the replacement Sumerian witness, the regression check, then the first tradition × motif matrix), and updated `STATUS.md` / `TODO.md` / `DECISIONS.md`.
 - Canonical portfolio state corrected from **Block · 55 %** to **Wait · 70 %** in `papers/dashboard.json`: the remaining block is unbuilt downstream data, not coding.
+
+## 2026-09-24 · v0.1.1 regression + first matrix
+- Materialized motifs_v0.1.1.csv and global coding rules without altering frozen coder packets.
+- Regression-checked all 21 documented disagreements: 15 deterministically resolved, 6 defective P_ANTH_SUM cells withdrawn/replaced, 0 unresolved.
+- Replaced P_ANTH_SUM with ETCSL Enki and Ninmah c.1.1.2 lines 24-37.
+- Built passage-level adjudicated evidence; exposure-contaminated Baal kingship-transfer remains excluded.
+- Froze conservative 11 × 24 seed matrix; passage-level absence does not become tradition-level absence without explicit source coverage.
+- Project advanced to 76%; next limiting task is negative-evidence closure.

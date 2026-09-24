@@ -1,0 +1,22 @@
+packet_id,motif_id,coder_A,coder_B,v0_1_1_resolution,mechanism,note
+P_DIV_HES_SUCC,DIV_SUCCESSION_YOUNGER_OLDER,uncertain,present,absent,effected_direction_rule,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_DIV_HES_SUCC,DIV_COUNCIL,absent,present,absent,council_scope,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_DIV_HES_SUCC,DIV_KINGSHIP_TRANSFER,absent,present,absent,effected_direction_rule,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_DIV_HES_SUCC,DIV_PRIMORDIAL_REBELLION,absent,uncertain,absent,rebellion_scope,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_DIV_HES_TYPH,DIV_PRIMORDIAL_REBELLION,present,absent,absent,rebellion_scope,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_DIV_BAAL,DIV_PRIMORDIAL_REBELLION,present,uncertain,absent,rebellion_scope,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_DIV_ULLI,DIV_SUCCESSION_YOUNGER_OLDER,uncertain,absent,absent,effected_direction_rule,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_DIV_ULLI,DIV_FATHER_SON,absent,uncertain,absent,father_son_scope,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_DIV_ULLI,DIV_COUNCIL,not_observed,absent,absent,council_scope,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_ANTH_SUM,ANTH_EARTH_DUST,not_observed,absent,withdrawn_replaced,source_replacement,Old Flood Story anthropogony locator withdrawn; replaced by Enki and Ninmah 24-37.
+P_ANTH_SUM,ANTH_CLAY_MUD,not_observed,absent,withdrawn_replaced,source_replacement,Old Flood Story anthropogony locator withdrawn; replaced by Enki and Ninmah 24-37.
+P_ANTH_SUM,ANTH_POTTER_FORMING,not_observed,absent,withdrawn_replaced,source_replacement,Old Flood Story anthropogony locator withdrawn; replaced by Enki and Ninmah 24-37.
+P_ANTH_SUM,ANTH_DIVINE_BLOOD_FLESH,not_observed,absent,withdrawn_replaced,source_replacement,Old Flood Story anthropogony locator withdrawn; replaced by Enki and Ninmah 24-37.
+P_ANTH_SUM,ANTH_BREATH_ANIMATION,not_observed,absent,withdrawn_replaced,source_replacement,Old Flood Story anthropogony locator withdrawn; replaced by Enki and Ninmah 24-37.
+P_ANTH_SUM,ANTH_BODY_SACRIFICE,not_observed,absent,withdrawn_replaced,source_replacement,Old Flood Story anthropogony locator withdrawn; replaced by Enki and Ninmah 24-37.
+P_ANTH_GEN,ANTH_POTTER_FORMING,uncertain,present,absent,craft_forming_clarification,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_ANTH_ATRA,ANTH_EARTH_DUST,absent,present,absent,sibling_disjunction,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_ANTH_ATRA,ANTH_POTTER_FORMING,absent,uncertain,absent,craft_forming_clarification,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_ANTH_ATRA,ANTH_BREATH_ANIMATION,absent,uncertain,absent,sibling_disjunction,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_ANTH_ATRA,ANTH_BODY_SACRIFICE,uncertain,absent,absent,sibling_disjunction,Deterministic adjudication under v0.1.1; not a new independent recode.
+P_ANTH_NUWA,ANTH_EARTH_DUST,absent,present,absent,sibling_disjunction,Deterministic adjudication under v0.1.1; not a new independent recode.
