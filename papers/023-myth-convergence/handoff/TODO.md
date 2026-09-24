@@ -1,15 +1,21 @@
 # TODO
 
-- [x] Freeze Pilot-0 sample of 8–12 tradition-time units.
-- [x] Create 40–80 provisional motif entries.
-- [x] Separate missing/not-observed from explicit absence.
-- [ ] Audit source coverage for all 10 pilot traditions.
-- [ ] Validate each provisional date window against specialist references.
-- [ ] Crosswalk motif seeds to Berezkin/Thompson/ATU only where conceptually valid.
-- [ ] Select a balanced dual-coding calibration subset.
-- [ ] Quantify agreement and record motif-specific disagreements.
-- [ ] Revise ontology to v0.1 and freeze it.
-- [ ] Build first tradition × motif matrix from source-backed coding.
+- [x] Freeze initial Pilot-0 sample.
+- [x] Create provisional 56-feature motif ontology.
+- [x] Audit seed source infrastructure across pilot traditions.
+- [x] Correct Chinese temporal scope and split Egyptian temporal strata.
+- [x] Select three first reliability families: flood, divine conflict, anthropogony.
+- [x] Run controller-only seed coding to expose ontology defects.
+- [ ] Split destructive inundation / exterminatory deluge / flood-management concepts.
+- [ ] Split storm-vs-serpent from storm-vs-sea.
+- [ ] Split earth/dust from clay/mud and explicit potter technology.
+- [ ] Add witness-scope field (in-window / inherited-earlier / later-comparator).
+- [ ] Freeze 24-motif calibration ontology v0.1.
+- [ ] Generate blinded coder-A / coder-B packet templates.
+- [ ] Obtain genuinely independent second coding.
+- [ ] Quantify agreement and disagreement types.
+- [ ] Freeze full ontology v0.1 only after reliability review.
+- [ ] Build first source-backed tradition × motif matrix.
 - [ ] Build historical contact-edge table.
 - [ ] Run descriptive similarity + clustering.
 - [ ] Pilot ancestry-vs-contact separation.

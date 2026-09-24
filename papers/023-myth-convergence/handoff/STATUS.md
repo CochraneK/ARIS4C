@@ -1,19 +1,20 @@
 # Status
 
 ## State
-Active · 24%
+Active · 31%
 
 ## Current stage
-Pilot-0 sample and provisional 56-feature motif ontology frozen for reliability testing.
+Pilot-0 source audit complete at seed level; case windows corrected; calibration packet design ready.
 
 ## Evidence
-- Core design separates vertical inheritance, horizontal diffusion, ecological convergence and cognitive/social convergence.
-- Pilot contains a contact-rich Near Eastern core, repeated Mesopotamian time slices, Indo-European anchors and a distal East Asian comparison.
-- Seven motif families now have operational seed definitions; known Berezkin crosswalks are recorded only where verified.
-- Pairwise similarity remains relational; QCA remains disabled during Pilot-0 coding.
+- 11 bounded tradition-time units now separate Egyptian Middle/New Kingdom strata and use a late-Warring-States–Early-Han Chinese window.
+- Source audit links each pilot tradition to primary/critical/institutional text infrastructure with chronology-risk flags.
+- First calibration families are flood, divine conflict/succession and anthropogony.
+- Controller seed coding exposed ontology problems before dual coding: destructive flood vs exterminatory deluge vs flood-control; serpent vs sea opponent; dust/earth vs clay/potter anthropogony.
+- QCA remains disabled until source-backed reliability and case calibration are demonstrated.
 
 ## Next gate
-Audit source availability for the 10 tradition-time units, dual-code a calibration subset, revise ambiguous motif definitions, and freeze ontology v0.1 before any large-scale extraction.
+Revise the affected motif ontology, generate a 24-motif blinded calibration form, and freeze ontology v0.1. Then independent dual coding can begin.
 
 ## Blocker
-No technical blocker. Source dating/composition uncertainty and cross-tradition coding equivalence are the immediate scientific risks.
+Independent coder B will eventually be needed for the reliability gate. No blocker for ontology refinement, packet generation, or single-controller source audit.

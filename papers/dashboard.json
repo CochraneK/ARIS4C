@@ -180,12 +180,12 @@
       "blocker": "None; methodological caution only—official class-label QCA is a taxonomy audit, not causal discovery."
     },
     "023": {
-      "progress": 24,
-      "stage": "Pilot-0 frozen · source audit and dual-coding gate",
+      "progress": 31,
+      "stage": "Pilot-0 source audit · ontology refinement and blinded calibration gate",
       "activity": "active",
-      "evidence": "Ten bounded tradition-time units and a 56-feature provisional motif ontology across seven families are now frozen for Pilot-0. Limited verified Berezkin crosswalk seeds are recorded; QCA remains off until source-backed coding reliability is demonstrated.",
-      "next_gate": "Audit source coverage/date windows, dual-code a calibration subset, resolve motif-definition disagreements, then freeze ontology v0.1 and build the first source-backed tradition × motif matrix.",
-      "blocker": "No technical blocker. Immediate scientific risks are source/composition dating uncertainty, survivorship bias and cross-tradition coding equivalence."
+      "evidence": "11 tradition-time units with source/chronology audit; China window corrected to late Warring States–Early Han and Egypt split into Middle/New Kingdom strata. Flood, divine-conflict and anthropogony selected for first 24-motif reliability packet; controller seed coding exposed ontology splits before confirmatory coding.",
+      "next_gate": "Refine three ambiguous motif families, add witness-scope coding, freeze 24-motif ontology v0.1 and generate blinded A/B calibration packets.",
+      "blocker": "No blocker for ontology/source work. A genuinely independent second coder will be required later to pass the reliability gate."
     }
   },
   "scheduling": {
