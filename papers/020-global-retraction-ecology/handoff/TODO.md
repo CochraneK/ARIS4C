@@ -7,7 +7,7 @@
 - [x] Freeze multi-valued parsing rules for Subject/Country/Author/Institution/Reason.
 - [x] Join DOI-linked records to OpenAlex: candidate-safe shards 0–3 executed 2026-09-24 (60,773/61,155 = 99.375% match; 30 ambiguous; 382 unmatched).
 - [x] Build publication denominators by year × field (and × type): executed for 1990–2025.
-- [x] Freeze retraction-reason ontology and co-occurrence representation: 110 observed labels reconciled against 111 reference labels (1 observed-only label `Miscommunication with/by Third Party` remains unmapped — document or extend ontology).
+- [x] Freeze observed retraction-reason machine mapping: 110/110 observed labels classified after mapping `Miscommunication with/by Third Party`; manual scientific facet audit remains before headline facet claims.
 - [x] Design lag/survival models.
 - [x] Design post-retraction citation afterlife analysis.
 - [x] Stress-test mass-retraction/paper-mill episode sensitivity: screen + leave-cluster-out executed on full data (152 publisher clusters, 566 reason clusters, 58 years).
@@ -22,3 +22,7 @@ Remaining:
 - [ ] Decide the 1 unmapped reason label (`Miscommunication with/by Third Party`): extend ontology or map.
 - [ ] Unlock comparative country/field/publisher risk results; refresh EN/ZH manuscript + figures with frozen numbers.
 - [ ] Optional: citation-afterlife run (`run_pipeline.py --with-citations`) — large edge set, opt-in.
+
+- [ ] Rerun corrected hazard coverage sidecar (schema v2; same-year-basis coverage).
+- [ ] Rerun bidirectional concordance with separate unique-DOI vs Work-row classifications.
+- [ ] Commit tracked OpenAlex is_retracted snapshot manifest with full SHA-256/bytes/retrieval timestamp.
