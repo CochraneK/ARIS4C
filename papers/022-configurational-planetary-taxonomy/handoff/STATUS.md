@@ -1,23 +1,30 @@
 # STATUS · ARIS4C022
 
-- State: M2 five-condition specification frozen / readiness FAIL / targeted acquisition gate
+- State: M2 frozen / dwarf + satellite strata PASS / small-body numeric gate
 - Portfolio activity: active
-- Progress estimate: 82%
+- Progress estimate: 85%
 - Frozen case frame: 50 bodies
-- Raw physical matrix: 34/50 authoritative JPL core physical values
-- Orbit v0.2: 8 JPL planet elements + 5 derived dwarf a + 21 JPL satellite mean elements + 16 pending small bodies
-- Evidence v0.6: 188/300 non-pending states; composition evidence-state 50/50
-- Source-conflict audit v0.2: 4 adjudicated cases, 0 unresolved conflicts
-- M2 primary specification frozen before result inspection:
+- M2 primary specification remains frozen:
   - SCALE = escape velocity
   - BULK_MATERIAL = density proxy
   - ATMOSPHERE_RETENTION = atmosphere evidence
   - INTERNAL_ORGANIZATION = differentiation evidence
   - SOLAR_ENERGY = relative insolation
-- Pilot-0 INTERNAL_ACTIVITY moved to sensitivity before QCA because geology is not measurement-equivalent across gas giants and solid bodies
-- Current primary-condition substantive coverage: 34 / 34 / 25 / 32 / 34
-- Complete on all five: 19/50 = 8 planets + 2 dwarfs + 9 satellites + 0 small bodies
+- Evidence v0.7 adds readiness-targeted updates for Haumea, Eris, Mimas, Enceladus, Tethys and Charon
+- Current M2 substantive coverage:
+  - SCALE 34/50
+  - BULK_MATERIAL 34/50
+  - ATMOSPHERE_RETENTION 28/50
+  - INTERNAL_ORGANIZATION 36/50
+  - SOLAR_ENERGY 34/50
+- Complete on all five: **25/50**
+- Complete strata:
+  - planets 8/8 — PASS
+  - dwarf planets 4/5 — PASS
+  - satellites 13/21 — PASS
+  - small/boundary bodies 0/16 — FAIL
 - Calibration status: CLOSED_NOT_READY
-- Required gate: >=40/50 per condition, >=35/50 complete cases, and complete strata >=8 planets / 4 dwarfs / 12 satellites / 10 small bodies
-- Main numeric blocker: live JPL SBDB snapshot for 16 small/boundary bodies
+- Dominant blocker: the 16 small/boundary cases still lack canonical JPL SBDB numeric SCALE/BULK_MATERIAL/SOLAR_ENERGY inputs
+- Secondary gaps: atmosphere needs 12 additional substantive cases to reach 40; internal organization needs 4
+- Source-conflict audit: 7 adjudications / clarifications, 0 unresolved conflicts requiring NA_SOURCE_CONFLICT
 - Anti-circularity: no calibration anchor, truth table, consistency/PRI/coverage statistic or QCA solution inspected
