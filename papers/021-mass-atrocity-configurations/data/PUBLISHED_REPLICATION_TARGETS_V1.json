@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "project": "ARIS4C021",
+  "frozen_at": "2026-09-24",
+  "purpose": "Machine-readable published replication targets. These are validation targets, not newly estimated results.",
+  "sources": {
+    "harff_2003": {
+      "title": "No Lessons Learned from the Holocaust? Assessing Risks of Genocide and Political Mass Murder since 1955",
+      "doi": "10.1017/S0003055403000522",
+      "url": "https://www.cambridge.org/core/journals/american-political-science-review/article/no-lessons-learned-from-the-holocaust-assessing-risks-of-genocide-and-political-mass-murder-since-1955/FBA37FA563AC35E1CB6F7B57F8140F2C"
+    },
+    "williams_2016": {
+      "title": "More Lessons Learned from the Holocaust - Towards a Complexity-Embracing Approach to Why Genocide Occurs",
+      "doi": "10.5038/1911-9933.9.3.1306",
+      "url": "https://digitalcommons.usf.edu/gsp/vol9/iss3/11/"
+    }
+  },
+  "harff_2003": {
+    "analysis_universe": {
+      "problems": 35,
+      "controls": 91,
+      "total": 126,
+      "period_start": 1955,
+      "period_end": 1997
+    },
+    "final_model": {
+      "c_statistic": 0.83,
+      "classification_threshold": 0.25,
+      "genocides_correct_n": 26,
+      "genocides_correct_pct": 0.74,
+      "nongenocides_correct_n": 66,
+      "nongenocides_correct_pct": 0.73,
+      "no_risk_probability": 0.028,
+      "variables": {
+        "political_upheaval": {"odds_ratio": 1.70, "coefficient": 0.048, "p_value_text": ".05"},
+        "prior_genocide": {"odds_ratio": 3.39, "coefficient": 1.220, "p_value_text": ".09"},
+        "exclusionary_ideology": {"odds_ratio": 2.55, "coefficient": 0.937, "p_value_text": ".07"},
+        "autocracy": {"odds_ratio": 3.50, "coefficient": 1.223, "p_value_text": ".03"},
+        "minority_elite": {"odds_ratio": 2.56, "coefficient": 0.939, "p_value_text": ".09"},
+        "trade_openness": {"odds_ratio_low_vs_high": 2.58, "coefficient": -1.242, "p_value_text": "<.01"}
+      },
+      "misclassified_genocides": [
+        "Afghanistan 1978",
+        "El Salvador 1980",
+        "Chile 1973",
+        "Uganda 1972",
+        "Iraq 1963",
+        "Yugoslavia 1992",
+        "Sudan 1956",
+        "Philippines 1972",
+        "Sri Lanka 1989"
+      ],
+      "highest_risk_nongenocides": [
+        "Pakistan 1983",
+        "Brazil 1961",
+        "Algeria 1991",
+        "China 1988",
+        "Mozambique 1976",
+        "Bangladesh 1974",
+        "Indonesia 1997"
+      ]
+    }
+  },
+  "williams_2016": {
+    "analysis_universe": {
+      "genocide": 40,
+      "non_genocide": 99,
+      "total": 139,
+      "period_start": 1955,
+      "period_end": 1998
+    },
+    "conditions": {
+      "A_autocracy": {"genocide_present": 38, "non_genocide_present": 69, "total_present": 107},
+      "P_political_upheaval": {"genocide_present": 25, "non_genocide_present": 31, "total_present": 56},
+      "W_war": {"genocide_present": 26, "non_genocide_present": 54, "total_present": 80},
+      "I_exclusionary_ideology": {"genocide_present": 25, "non_genocide_present": 22, "total_present": 47},
+      "S_elite_ethnicity_salient": {"genocide_present": 32, "non_genocide_present": 45, "total_present": 77},
+      "E_economic_autarky": {"genocide_present": 18, "non_genocide_present": 22, "total_present": 40}
+    },
+    "coding_notes": {
+      "autocracy": "Polity IV with Freedom House reassessment.",
+      "political_upheaval": "High if polity range >=10 or Harff upheaval maximum >=30; <15 coded absent; intermediate 15-30 qualitatively assessed.",
+      "war": "Present if UCDP/PRIO armed conflict dataset labels any year of the case as war.",
+      "exclusionary_ideology": "Harff coding supplemented by Williams qualitative coding where unavailable.",
+      "elite_ethnicity_salient": "Dichotomized as ethnicity salient vs not salient; does not distinguish majority/minority elite.",
+      "economic_autarky": "Trade as % GDP below world average 33% for relevant 1960-1998 frame."
+    },
+    "published_intermediate_solution": {
+      "formula": "A*S*I + A*S*P + A*I*E*P*~W + A*I*E*~P*W + S*~I*E*P*W",
+      "solution_coverage": 0.750,
+      "solution_consistency": 0.769,
+      "predicted_genocide_total": 39,
+      "true_positive": 30,
+      "false_positive": 9,
+      "paths": [
+        {"formula": "A*S*I", "raw_coverage": 0.475, "unique_coverage": 0.125, "consistency": 0.826},
+        {"formula": "A*S*P", "raw_coverage": 0.500, "unique_coverage": 0.125, "consistency": 0.741},
+        {"formula": "A*I*E*P*~W", "raw_coverage": 0.075, "unique_coverage": 0.025, "consistency": 1.000},
+        {"formula": "A*I*E*~P*W", "raw_coverage": 0.075, "unique_coverage": 0.050, "consistency": 1.000},
+        {"formula": "S*~I*E*P*W", "raw_coverage": 0.075, "unique_coverage": 0.025, "consistency": 1.000}
+      ]
+    },
+    "published_false_negatives": [
+      "Argentina 1976-80",
+      "Burundi 1988",
+      "Chile 1973-76",
+      "DR Congo 1977-79",
+      "El Salvador 1980-89",
+      "Pakistan/Bangladesh 1971",
+      "Philippines 1972-76",
+      "Sri Lanka 1989-90",
+      "Uganda 1971-79",
+      "Vietnam South 1965-75"
+    ],
+    "published_false_positives_named_subset": [
+      "Algeria 1991",
+      "Cambodia 1997",
+      "DR Congo 1992",
+      "Pakistan 1983",
+      "Turkey 1971"
+    ]
+  }
+}
