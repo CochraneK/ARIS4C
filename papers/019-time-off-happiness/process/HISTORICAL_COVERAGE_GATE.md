@@ -75,3 +75,12 @@ NORMLEX currently reports **54 C052 ratifications (17 denounced/not in force)** 
 7. create an instrument bridge manifest before harmonizing subjective-well-being scales.
 
 Until these are satisfied, the expanded statistical ladder remains locked.
+
+## Modern WB × WHR overlap
+
+A separate frozen coverage gate now links **161 countries / 1,934 country-years** between statutory annual-leave exposure and annual WHR observation availability. Median linked support is 14 years; 127 countries have >=10 years and 57 have >=15 years. See `MODERN_PANEL_OVERLAP_GATE.md`.
+
+## Additional long-run outcome anchors
+
+- Eurobarometer general life satisfaction: indexed repeatedly from 1973 through 2026; Mannheim harmonized file covers 86 waves / >1,000,000 cases through 2002.
+- WDH Trends in Nations: official open-source XLSX pinned; long-term inclusion requires >=20 years and >=10 comparable points; published use reports 200 time series / 70 nations over 1945–2021. Binary transfer is pending in the current runtime, but source availability is verified.
