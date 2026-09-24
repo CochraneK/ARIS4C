@@ -1,0 +1,41 @@
+{
+  "version": "0.1",
+  "frozen_at": "2026-09-24",
+  "qca_results_exposed": false,
+  "transport_issue": "live_JPL_SBDB_payload_unavailable_in_current_execution_surfaces",
+  "scientific_gate_changed": false,
+  "accepted_tiers": [
+    "MISSION_DIRECT",
+    "PEER_REVIEWED_DYNAMICS",
+    "OFFICIAL_STATIC_ORBIT",
+    "PEER_REVIEWED_ORBIT",
+    "SOURCE_DERIVED"
+  ],
+  "priority_ten": [
+    "Vesta",
+    "Pallas",
+    "Hygiea",
+    "Interamnia",
+    "Eros",
+    "Bennu",
+    "Ryugu",
+    "Itokawa",
+    "Quaoar",
+    "Orcus"
+  ],
+  "target_if_all_ten_complete": {
+    "scale": 44,
+    "bulk_material": 44,
+    "atmosphere_min": 40,
+    "internal_organization_min": 40,
+    "solar_energy": 44,
+    "complete_cases": 37,
+    "small_body_complete": 10
+  },
+  "prohibitions": [
+    "community_values_as_canonical",
+    "silent_system_mass_as_primary_mass",
+    "memory_only_numeric_entry",
+    "post_result_gate_relaxation"
+  ]
+}
