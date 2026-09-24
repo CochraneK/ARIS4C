@@ -15,6 +15,10 @@ Advance a falsification-first set-theoretic study of mass-atrocity onset.
 - analyze outcome absence separately;
 - do not convert risk configurations into deterministic or operational perpetration guidance.
 
+## Immediate next action
+
+Acquire and hash the PITF 2018 replication files, reconstruct the historical Harff/Williams case universe and six-condition matrix, and freeze the matrix before running QCA.
+
 ## Next bounded unit
 
 Acquire PITF 2018 replication files, hash them, reconstruct the classic case universe and six-condition matrix, and freeze the matrix before running QCA.
