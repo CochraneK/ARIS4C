@@ -23,3 +23,13 @@
 - Small/boundary complete stratum remains **0/16** because its numeric layer is still blocked by live SBDB acquisition.
 - Source-conflict/construct audit expanded without any unresolved conflict.
 - No calibration anchor, truth table, consistency, PRI, coverage or QCA solution was inspected.
+
+## Readiness-targeted evidence Batch 07
+- Added explicit airless-atmosphere evidence for Phobos and Deimos from NASA.
+- Added Cassini/NASA explicit no-atmosphere evidence for Iapetus.
+- Added model-level differentiated internal structures for Ariel, Umbriel, Titania and Oberon from the 2023 JGR/JPL Uranian-moon interior models.
+- INTERNAL_ORGANIZATION substantive coverage advanced 36 → **40/50**, passing its pre-frozen gate.
+- ATMOSPHERE_RETENTION advanced 28 → **31/50**.
+- Complete cases remain 25/50 because newly closed atmosphere and organization gaps occur on different cases.
+- No Uranian-moon atmosphere state was inferred from absence of mention.
+- Calibration remains CLOSED_NOT_READY; no QCA result inspected.
