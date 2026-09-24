@@ -2,7 +2,7 @@
 
 ## 2026-09-24 current canonical state
 
-The former near-finish Pilot-0 state is **not** the current project-level state. ARIS4C019 was reopened after an adequacy audit and now stands at **75% / active**.
+The former near-finish Pilot-0 state is **not** the current project-level state. ARIS4C019 was reopened after an adequacy audit and now stands at **78% / active**.
 
 ### Read first
 
@@ -34,6 +34,19 @@ The strongest reason is the timing falsification:
 - neither sign is causal; the sign flip demonstrates timing sensitivity.
 
 Do not describe positive lag-2/lag-3 WB coefficients as delayed happiness benefits.
+
+### New historical trend lock
+
+The published WDH Table-2 layer is now complete:
+- **200 displayed rows**, **199 exact unique rows** after one source duplicate;
+- **190** unique trends align to same-window annual-hours trajectories;
+- **46 countries** enter the matched historical bridge;
+- full unique-series Pearson/Spearman = **+0.101 / +0.094**;
+- one-longest-series-per-country Pearson/Spearman = **-0.057 / -0.045**.
+
+Therefore the earlier pre-1990-start negative historical correlation is superseded for overall inference. Read `process/HISTORICAL_TREND_INTERPRETATION_LOCK.md` before interpreting any historical hours result.
+
+Reproducibility note: `Taiwan` -> `Taiwan Province of China` was missing from one hours join and has been fixed. Canonical A0 hours sample is **2,015 / 130 countries**. The independent statsmodels validator is committed, but GitHub Actions run `35977496016` / job `107561331580` failed before any step, so independent execution remains pending.
 
 ### Next scientific gate
 
