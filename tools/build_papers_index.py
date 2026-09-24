@@ -40,20 +40,26 @@ def last_commit_iso(folder: Path) -> str:
         return ""
 
 
-def load_papers() -> list[dict]:
+def load_papers(dashboard: dict) -> list[dict]:
+    """Load exactly one visible manifest for every canonical dashboard project."""
     items = []
     seen: set[str] = set()
+    dashboard_ids = set(map(str, dashboard.get("projects", {}).keys()))
     for manifest in sorted(PAPERS.glob("[0-9][0-9][0-9]-*/paper.json")):
         data = json.loads(manifest.read_text(encoding="utf-8"))
-        if data.get("portfolio_visible", True) is False:
-            continue
         paper_id = str(data.get("id", ""))
+        if data.get("portfolio_visible", True) is False or paper_id not in dashboard_ids:
+            continue
         if paper_id in seen:
             raise ValueError(f"duplicate visible portfolio id: {paper_id} ({manifest.parent.name})")
         seen.add(paper_id)
         data["_folder"] = manifest.parent.name
         data["_last_commit"] = last_commit_iso(manifest.parent)
         items.append(data)
+
+    missing = sorted(dashboard_ids - seen)
+    if missing:
+        raise ValueError(f"dashboard project(s) missing visible paper manifest: {', '.join(missing)}")
     return items
 
 
@@ -452,8 +458,8 @@ def build(papers: list[dict], dashboard: dict, history: dict) -> str:
 
 
 def main() -> None:
-    papers = load_papers()
     dashboard = load_dashboard()
+    papers = load_papers(dashboard)
     history = load_progress_history()
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(build(papers, dashboard, history), encoding="utf-8")
