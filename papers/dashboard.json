@@ -148,12 +148,12 @@
       "blocker": "No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference."
     },
     "019": {
-      "progress": 60,
-      "stage": "Historical expansion · source/coverage reconstruction",
+      "progress": 68,
+      "stage": "Historical expansion · coverage gates PASS · acquisition/harmonization",
       "activity": "active",
-      "evidence": "Pilot-0 causal study is complete/frozen, but adequacy audit reopened the project: historical design now spans early-20th-century/ILO-era time-off institutions, post-1945 multi-source well-being, modern 193-country legal coverage, historical working time and a full statistical synthesis.",
-      "next_gate": "Build no-effect-inspection country × source × year/wave coverage inventory; ingest historical legal/working-time and WDH/Cantril/Eurobarometer/WVS-EVS/Gallup outcome layers; then run the expanded prespecified statistical ladder.",
-      "blocker": "No immediate scientific blocker. Main work is historical data reconstruction and measurement harmonization; the GitHub Actions PDF runner issue affects only the frozen Pilot-0 publication snapshot."
+      "evidence": "Pilot-0 remains frozen. Expanded project now has 161 countries / 1,934 WB×WHR country-years; WVS Waves1–7 registry = 295 country-wave rows / 107 codes; Eurobarometer life-satisfaction chain 1973–2026 with 86-wave Mannheim harmonized file; WDH long-run XLSX source pinned (published use 200 series / 70 nations / 1945–2021). Expanded statistical hierarchy frozen before new effect inspection.",
+      "next_gate": "Acquire/materialize WDH, EVS/WVS and Eurobarometer long-run outcome files plus full ILO C052/C132 ratification/legal histories; build historical overlap panels; then run frozen FE/nonlinear/lag/meta/causal analyses.",
+      "blocker": "No design blocker. Some historical datasets require binary transfer or free registered access on a suitable execution surface; source identities and acquisition contracts are pinned."
     },
     "020": {
       "progress": 45,
