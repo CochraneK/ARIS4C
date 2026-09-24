@@ -172,12 +172,12 @@
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
-      "progress": 82,
-      "stage": "M2 five-condition specification frozen · readiness FAIL / targeted acquisition gate",
+      "progress": 85,
+      "stage": "M2 readiness 25/50 · planet/dwarf/satellite strata PASS · small-body numeric gate",
       "activity": "active",
-      "evidence": "Primary anti-circularity M2 is frozen before any calibration/result inspection: SCALE=escape velocity, BULK_MATERIAL=density proxy, ATMOSPHERE_RETENTION=atmosphere evidence, INTERNAL_ORGANIZATION=differentiation evidence, SOLAR_ENERGY=relative insolation. Composition evidence-state remains 50/50 and overall evidence 188/300. Current M2 substantive coverage is 34/34/25/32/34 with only 19/50 complete cases (8 planets, 2 dwarfs, 9 satellites, 0 small bodies). Calibration is CLOSED_NOT_READY.",
-      "next_gate": "Target readiness-critical gaps only: capture live JPL SBDB numerics for the 16 small/boundary bodies, replace five dwarf-planet derived semimajor axes, raise atmosphere and differentiation substantive coverage to >=40, and reach >=35 five-condition complete cases with required non-planet strata before freezing calibration anchors.",
-      "blocker": "Primary blocker is numeric acquisition from live JPL SBDB object payloads in the current execution surfaces. Methodological work remains unblocked; no QCA result may be inspected before the readiness gates pass."
+      "evidence": "Primary M2 remains frozen and calibration closed. Readiness-targeted Batch 06 advances substantive condition coverage to 34/34/28/36/34 and complete cases to 25/50. Pre-frozen strata now pass for planets (8/8), dwarf planets (4/5) and satellites (13/21); small/boundary bodies remain 0/16 because their canonical JPL SBDB numeric SCALE/BULK_MATERIAL/SOLAR_ENERGY inputs are still absent. A case-level readiness gap map and v0.2 audit are committed.",
+      "next_gate": "Concentrate only on the remaining bottlenecks: capture the 16-case live JPL SBDB numeric snapshot, raise small-body atmosphere evidence enough to support >=10 complete small-body cases after numerics land, raise internal organization 36→>=40, then recompute the >=35/50 complete-case gate before calibration freeze.",
+      "blocker": "Live JPL SBDB object payload acquisition remains the dominant blocker. Calibration/truth tables/QCA solutions remain closed by the frozen readiness rules."
     },
     "023": {
       "progress": 83,
