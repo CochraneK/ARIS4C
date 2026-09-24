@@ -175,9 +175,9 @@
       "progress": 26,
       "stage": "Pilot-0 case frame frozen · raw-data ingestion gate",
       "activity": "active",
-      "evidence": "Frozen 50-body Solar-System frame (8 planets, 5 dwarf planets, 21 satellites, 16 small/boundary bodies), raw-variable dictionary, anti-circularity M0–M4 model ladder, and deterministic frame validator. Internal validation passes with 50 unique IDs/names and consistent orbital hierarchy.",
-      "next_gate": "Populate the 50-body raw physical/orbital matrix with field-level IAU/NASA/JPL provenance and uncertainty; then implement published Margot/Soter dynamical discriminants before calibration or QCA solution inspection.",
-      "blocker": "None. Methodological guard remains: definitional benchmark and non-definitional physical-signature models must stay separate."
+      "evidence": "Frozen 50-body Solar-System frame: 8 planets, 5 dwarf planets, 21 satellites, 16 small/boundary bodies. Raw-variable dictionary, anti-circularity model ladder, case-frame freeze note, deterministic validator, and updated continuity metadata are committed before QCA solution inspection.",
+      "next_gate": "Populate the 50-case raw physical/orbital matrix with field-level provenance and uncertainty; then implement the published Margot/Soter dynamical metrics before calibrating fuzzy sets.",
+      "blocker": "None. Methodological constraint: keep the definitional IAU benchmark separate from the non-definitional physical-signature model."
     },
     "023": {
       "progress": 42,
