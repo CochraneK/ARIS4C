@@ -1,0 +1,1320 @@
+{
+  "schema_version": 1,
+  "mapping_version": "v1-rule-based-reference",
+  "source": "Retraction Watch Appendix B reason names retrieved 2026-09-24",
+  "source_url": "https://retractionwatch.com/retraction-watch-database-user-guide/retraction-watch-database-user-guide-appendix-b-reasons/",
+  "reference_label_count": 111,
+  "unclassified_count": 0,
+  "unclassified_labels": [],
+  "note": "Reference ontology only. Snapshot prevalence uses only labels actually observed in the frozen RWDB data. Manual audit is still required before confirmatory facet claims.",
+  "rows": [
+    {
+      "reason_raw": "Author Unresponsive",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "author_unresponsive"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Bias Issues or Lack of Balance",
+      "affected_object": [],
+      "mechanism": [
+        "bias_balance"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Breach of Policy by Author",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "policy_breach"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "broad_integrity_statement"
+    },
+    {
+      "reason_raw": "Cites Retracted Work",
+      "affected_object": [
+        "references_attributions"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "citation_of_retracted_work"
+      ],
+      "evidence_specificity": "mixed_procedural_and_substantive"
+    },
+    {
+      "reason_raw": "Civil Proceedings",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "legal"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Complaints about Author",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "complaint_author"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Complaints about Company/Institution",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "complaint_institution"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Complaints about Third Party",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "complaint_third_party"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Compromised Peer Review",
+      "affected_object": [
+        "peer_review"
+      ],
+      "mechanism": [
+        "peer_review_compromise"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Concerns/Issues about Animal Welfare",
+      "affected_object": [
+        "animal_subjects"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [
+        "welfare"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Concerns/Issues about Article",
+      "affected_object": [
+        "article_general"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Concerns/Issues About Authorship/Affiliation",
+      "affected_object": [
+        "authorship_affiliation"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Concerns/Issues About Data",
+      "affected_object": [
+        "data"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Concerns/Issues about Human Subject Welfare",
+      "affected_object": [
+        "human_subjects"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [
+        "welfare"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Concerns/Issues About Image",
+      "affected_object": [
+        "image"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Concerns/Issues about Referencing/Attributions",
+      "affected_object": [
+        "references_attributions"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Concerns/Issues about Results and/or Conclusions",
+      "affected_object": [
+        "results_conclusions"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Concerns/Issues about Third Party Involvement",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "third_party_involvement"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Concerns/Issues with Peer Review",
+      "affected_object": [
+        "peer_review"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Conflict of Interest",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "conflict_of_interest"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Contamination of Cell Lines/Tissues",
+      "affected_object": [
+        "materials"
+      ],
+      "mechanism": [
+        "contamination"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Contamination of Materials",
+      "affected_object": [
+        "materials"
+      ],
+      "mechanism": [
+        "contamination"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Copyright Claims",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "copyright_ownership"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Criminal Proceedings",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "legal"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Date of Article and/or Notice Unknown",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "date_unknown"
+      ],
+      "evidence_specificity": "limited_or_unknown"
+    },
+    {
+      "reason_raw": "Doing the Right Thing",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "commendable_response"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Duplication of/in Article",
+      "affected_object": [
+        "article_general"
+      ],
+      "mechanism": [
+        "duplication"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Duplication of Data",
+      "affected_object": [
+        "data"
+      ],
+      "mechanism": [
+        "duplication"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Duplication of/in Image",
+      "affected_object": [
+        "image"
+      ],
+      "mechanism": [
+        "duplication"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Duplication of Text",
+      "affected_object": [
+        "text"
+      ],
+      "mechanism": [
+        "duplication"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Duplication of Content through Error by Journal/Publisher",
+      "affected_object": [],
+      "mechanism": [
+        "error",
+        "duplication"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [
+        "publisher_error"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "mixed_procedural_and_substantive"
+    },
+    {
+      "reason_raw": "EOC Lifted",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "eoc_lifted"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Error by Journal/Publisher",
+      "affected_object": [],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [
+        "publisher_error"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "mixed_procedural_and_substantive"
+    },
+    {
+      "reason_raw": "Error by Third Party",
+      "affected_object": [],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [
+        "third_party_error"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "mixed_procedural_and_substantive"
+    },
+    {
+      "reason_raw": "Error in Analyses",
+      "affected_object": [
+        "methods_analysis"
+      ],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Error in Cell Lines/Tissues",
+      "affected_object": [
+        "materials"
+      ],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Error in Data",
+      "affected_object": [
+        "data"
+      ],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Error in Image",
+      "affected_object": [
+        "image"
+      ],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Error in Materials",
+      "affected_object": [
+        "materials"
+      ],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Error in Methods",
+      "affected_object": [
+        "methods_analysis"
+      ],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Error in Results and/or Conclusions",
+      "affected_object": [
+        "results_conclusions"
+      ],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Error in Text",
+      "affected_object": [
+        "text"
+      ],
+      "mechanism": [
+        "error"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Ethical Violations by Author",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "ethical_violation"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "broad_integrity_statement"
+    },
+    {
+      "reason_raw": "Ethical Violations by Company/Institution/Third Party",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "ethical_violation"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "broad_integrity_statement"
+    },
+    {
+      "reason_raw": "Euphemisms for Duplication",
+      "affected_object": [],
+      "mechanism": [
+        "duplication"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Euphemisms for Misconduct",
+      "affected_object": [],
+      "mechanism": [
+        "misconduct_explicit"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "broad_integrity_statement"
+    },
+    {
+      "reason_raw": "Euphemisms for Plagiarism",
+      "affected_object": [],
+      "mechanism": [
+        "plagiarism"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "False/Forged Affiliation",
+      "affected_object": [
+        "authorship_affiliation"
+      ],
+      "mechanism": [
+        "false_identity"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Falsification/Fabrication of Data",
+      "affected_object": [
+        "data"
+      ],
+      "mechanism": [
+        "falsification_fabrication"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Falsification/Fabrication of Image",
+      "affected_object": [
+        "image"
+      ],
+      "mechanism": [
+        "falsification_fabrication"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Falsification/Fabrication of Results",
+      "affected_object": [
+        "results_conclusions"
+      ],
+      "mechanism": [
+        "falsification_fabrication"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "False/Forged Authorship",
+      "affected_object": [
+        "authorship_affiliation"
+      ],
+      "mechanism": [
+        "false_identity"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Hoax Paper",
+      "affected_object": [],
+      "mechanism": [
+        "hoax"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Informed/Patient Consent – None/Withdrawn",
+      "affected_object": [
+        "human_subjects"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [
+        "consent"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Investigation by Company/Institution",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "institution_company_investigation"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Investigation by Journal/Publisher",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "journal_publisher_investigation"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Investigation by ORI",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "ori_investigation"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Investigation by Third Party",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "third_party_investigation"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Lack of Approval from Author",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "approval"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Lack of Approval from Company/Institution",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "approval"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Lack of Approval from Third Party",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "approval"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Lack of IRB/IACUC Approval and/or Compliance",
+      "affected_object": [
+        "animal_subjects"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [
+        "irb_iacuc"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Legal Reasons and/or Threats",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "legal"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Manipulation of Data.",
+      "affected_object": [
+        "data"
+      ],
+      "mechanism": [
+        "manipulation"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Manipulation of Images",
+      "affected_object": [
+        "image"
+      ],
+      "mechanism": [
+        "manipulation"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Manipulation of Results",
+      "affected_object": [
+        "results_conclusions"
+      ],
+      "mechanism": [
+        "manipulation"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Miscommunication with/by Author",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "miscommunication_author"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Miscommunication with/by Company/Institution",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "miscommunication_institution"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Miscommunication with/by Journal/Publisher",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "miscommunication_publisher"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Miscommunication by Third Party",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "miscommunication_third_party"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Misconduct – Official Investigation/Finding",
+      "affected_object": [],
+      "mechanism": [
+        "misconduct_explicit"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "broad_integrity_statement"
+    },
+    {
+      "reason_raw": "Misconduct by Author",
+      "affected_object": [],
+      "mechanism": [
+        "misconduct_explicit"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "broad_integrity_statement"
+    },
+    {
+      "reason_raw": "Misconduct by Company/Institution",
+      "affected_object": [],
+      "mechanism": [
+        "misconduct_explicit"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "broad_integrity_statement"
+    },
+    {
+      "reason_raw": "Misconduct by Third Party",
+      "affected_object": [],
+      "mechanism": [
+        "misconduct_explicit"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "broad_integrity_statement"
+    },
+    {
+      "reason_raw": "No Further Action",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "no_further_action"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Nonpayment of Fees and/or Refusal to Pay",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "fees"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Not Presented at Conference",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "conference_nonpresentation"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Notice – Lack of",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "notice_absent"
+      ],
+      "evidence_specificity": "limited_or_unknown"
+    },
+    {
+      "reason_raw": "Notice – Limited or No Information",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "notice_limited"
+      ],
+      "evidence_specificity": "limited_or_unknown"
+    },
+    {
+      "reason_raw": "Notice – Unable to Access via current resources",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "notice_inaccessible"
+      ],
+      "evidence_specificity": "limited_or_unknown"
+    },
+    {
+      "reason_raw": "Objections by Author(s)",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "author_objection"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Objections by Company/Institution",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "institution_objection"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Objections by Third Party",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "third_party_objection"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Original Data and/or Images not Provided and/or not Available",
+      "affected_object": [
+        "data",
+        "image"
+      ],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Paper Mill",
+      "affected_object": [],
+      "mechanism": [
+        "paper_mill"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Plagiarism of/in Article",
+      "affected_object": [
+        "article_general"
+      ],
+      "mechanism": [
+        "plagiarism"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Plagiarism of Data",
+      "affected_object": [
+        "data"
+      ],
+      "mechanism": [
+        "plagiarism"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Plagiarism of Image",
+      "affected_object": [
+        "image"
+      ],
+      "mechanism": [
+        "plagiarism"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Plagiarism of Text",
+      "affected_object": [
+        "text"
+      ],
+      "mechanism": [
+        "plagiarism"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Publishing Ban",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "publishing_ban"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Computer-Aided Content or Computer-Generated Content",
+      "affected_object": [],
+      "mechanism": [
+        "computer_generated"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Results Not Reproducible",
+      "affected_object": [
+        "results_conclusions"
+      ],
+      "mechanism": [
+        "nonreproducibility"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Retract and Replace",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "retract_replace"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Rogue Editor",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [
+        "rogue_editor"
+      ],
+      "notice_lifecycle": [],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Sabotage of Materials/Methods",
+      "affected_object": [
+        "methods_analysis",
+        "materials"
+      ],
+      "mechanism": [
+        "sabotage"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Salami Slicing",
+      "affected_object": [],
+      "mechanism": [
+        "salami_slicing"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Taken from Dissertation/Thesis",
+      "affected_object": [],
+      "mechanism": [
+        "plagiarism"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Taken via Peer Review",
+      "affected_object": [
+        "peer_review"
+      ],
+      "mechanism": [
+        "plagiarism"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Taken via Translation",
+      "affected_object": [],
+      "mechanism": [
+        "plagiarism"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Temporary Removal",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "temporary_removal"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Transfer of Copyright and/or Ownership",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [
+        "copyright_ownership"
+      ],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "transfer_ownership"
+      ],
+      "evidence_specificity": "mixed_procedural_and_substantive"
+    },
+    {
+      "reason_raw": "Unreliable Data",
+      "affected_object": [
+        "data"
+      ],
+      "mechanism": [
+        "unreliability"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Unreliable Image",
+      "affected_object": [
+        "image"
+      ],
+      "mechanism": [
+        "unreliability"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Unreliable Results and/or Conclusions",
+      "affected_object": [
+        "results_conclusions"
+      ],
+      "mechanism": [
+        "unreliability"
+      ],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [],
+      "evidence_specificity": "specific_or_domain_issue"
+    },
+    {
+      "reason_raw": "Updated to Correction",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "updated_correction"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Updated to Expression of Concern",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "updated_eoc"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Updated to Retraction",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "updated_retraction"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Upgrade/Update of Prior Notice(s)",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "prior_notice_update"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Removed",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "removed"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Withdrawn as Out of Date",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "withdrawn_outdated"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    },
+    {
+      "reason_raw": "Withdrawn to Publish in Different Journal",
+      "affected_object": [],
+      "mechanism": [],
+      "ethics_compliance": [],
+      "process_actor": [],
+      "notice_lifecycle": [
+        "withdrawn_republish"
+      ],
+      "evidence_specificity": "procedural_or_lifecycle"
+    }
+  ]
+}
