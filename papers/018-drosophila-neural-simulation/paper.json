@@ -59,7 +59,11 @@
     "question_candidates": "QUESTION_CANDIDATES_PRE_PILOT4.md",
     "pilot4_r1_result": "PILOT4_R1_RESULT.md",
     "pilot4_r2_data": "data/pilot4_r2_frozen_retinal.json",
-    "pilot4_r2_5_gate": "PILOT4_R2_5_RENDERER_GATE.md"
+    "pilot4_r2_5_gate": "PILOT4_R2_5_RENDERER_GATE.md",
+    "pilot4_r2_result": "PILOT4_R2_RESULT.md",
+    "pilot4_r2_5_code": "code/pilot4_r2_5_initial_scene.py",
+    "pilot4_r2_5_compare": "code/pilot4_r2_5_compare.py",
+    "handoff": "handoff/README.md"
   },
   "tags": [
     "ARIS4C",
