@@ -1,0 +1,32 @@
+{
+  "id": "020",
+  "portfolio_id": "ARIS4C-020",
+  "slug": "global-retraction-ecology",
+  "title": "The Global Ecology of Scientific Retractions: A Full-Database, Field-Normalized Study of Retraction Dynamics, Causes, and Citation Afterlife",
+  "short_title": "Global Retraction Ecology",
+  "year": 2026,
+  "status": "data-acquisition-design",
+  "domain": "research integrity / metascience / scientometrics / bibliometrics / scholarly communication",
+  "summary": "A full-Retraction-Watch, all-discipline study that separates counts from rates, models publication-to-retraction lag, maps reason co-occurrence and heterogeneity, and quantifies post-retraction citation persistence using Crossref/OpenAlex enrichment.",
+  "authors": ["Cochrane Kang"],
+  "portfolio_visible": true,
+  "aris": {
+    "provenance": "ARIS4C user-requested project registered 2026-09-24",
+    "version": "v0.4.26"
+  },
+  "links": {
+    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/020-global-retraction-ecology",
+    "research_plan": "process/RESEARCH_PLAN.md",
+    "data": "data/README.md",
+    "acquisition": "code/acquire_rwdb.py"
+  },
+  "tags": ["ARIS4C","Retraction Watch","research integrity","metascience","bibliometrics","OpenAlex","Crossref","retractions"],
+  "bilingual_delivery": {"english": false, "chinese": false},
+  "outputs": {
+    "paper_en": "not-started",
+    "paper_zh": "not-started",
+    "figures": {"status":"not-started","count":0,"strategy":"adaptive to inferential structure"},
+    "tables": {"status":"not-started","count":0},
+    "pdf": {"status":"not-started","english":false,"chinese":false}
+  }
+}

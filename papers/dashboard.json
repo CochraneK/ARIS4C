@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-09-23",
+  "as_of": "2026-09-24",
   "note": "Portfolio-management estimates for ARIS4C 000. Progress is not a scientific result; 100 means the current repository-level final output contract is satisfied. Activity is a live execution state with exactly four values: finish, active, wait, or block. Finish means the current final/output contract is complete. Active means meaningful research work is running now or has produced a recent substantive paper-folder update. Wait means the next meaningful step is executable but is not currently being advanced. Block means meaningful progress depends on an external/human/independent-review/data-transfer/permission or similar dependency. Metadata-only, README, Pages, and handoff-sync commits do not make a project Active.",
   "projects": {
     "001": {
@@ -154,6 +154,14 @@
       "evidence": "SIR double-anonymous Markdown draft (~8.15k words; 218-word abstract; 6 keywords) passes identity/format scan; bilingual number/claim QA PASS; 4 canonical figures + 4 frozen tables; complete 11-jump legal audit yields 0 new clean holdouts; independently frozen Israel holdout mean +0.002 remains reference-sensitive. Original refreshed 8-event panel mean +0.088, median -0.099, 6/8 negative; excluding Bahrain -> -0.117.",
       "next_gate": "Generate and visually QA editable SIR DOCX + reviewer PDF from the frozen blinded source; establish anonymous reviewer data/code access; freeze final submission manifest.",
       "blocker": "No scientific or analysis blocker. Remaining external/author-only inputs are anonymous review hosting/link plus affiliation/contact/ORCID/funding/competing-interest and institution-specific ethics/exemption metadata."
+    },
+    "020": {
+      "progress": 15,
+      "stage": "Data source verified · full-RWDB acquisition and denominator design",
+      "activity": "active",
+      "evidence": "Crossref production documentation confirms the full Retraction Watch dataset is publicly downloadable as CSV and updated each working day. The official schema includes article, venue, publisher, country, author, dates, notice nature, controlled retraction reasons, identifiers and notes.",
+      "next_gate": "Acquire and hash a full RWDB snapshot; freeze Retraction-only inclusion rules; profile DOI/PMID/field/affiliation/reason missingness; then join Crossref/OpenAlex denominators before any country/field risk comparison.",
+      "blocker": "No acquisition blocker. Methodological boundary: RWDB is intended to be comprehensive for retractions, not for expressions of concern or corrections; raw retraction counts cannot be interpreted as rates without a publication denominator."
     }
   },
   "scheduling": {
@@ -169,5 +177,5 @@
     "checkpoint_rule": "commit each bounded substantive work unit and sync handoff before intentionally switching papers",
     "active_recency_default_hours": 2
   },
-  "updated": "2026-09-23"
+  "updated": "2026-09-24"
 }
