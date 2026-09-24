@@ -1,0 +1,46 @@
+country,role,year,wdh_121c_mean_0_10,phase,source_url
+Slovakia,treated,2001,5.1,reference,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Slovakia,treated,2002,5.26,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Slovakia,treated,2003,5.09,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Slovakia,treated,2004,5.37,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Slovakia,treated,2005,5.525,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Czech Republic,donor,2001,6.12,reference,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Czech Republic,donor,2002,6.11,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Czech Republic,donor,2003,5.82,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Czech Republic,donor,2004,6.01,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Czech Republic,donor,2005,6.3,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Hungary,donor,2001,5.29,reference,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Hungary,donor,2002,5.53,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Hungary,donor,2003,5.25,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Hungary,donor,2004,5,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Hungary,donor,2005,5.215,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Poland,donor,2001,5.59,reference,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Poland,donor,2002,5.77,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Poland,donor,2003,5.66,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Poland,donor,2004,5.99,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Poland,donor,2005,5.875,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Slovenia,donor,2001,6.7,reference,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Slovenia,donor,2002,6.68,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Slovenia,donor,2003,6.7,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Slovenia,donor,2004,6.98,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Slovenia,donor,2005,6.785,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Estonia,donor,2001,5,reference,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Estonia,donor,2002,5.19,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Estonia,donor,2003,5.13,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Estonia,donor,2004,5.79,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Estonia,donor,2005,5.73,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Latvia,donor,2001,5.26,reference,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Latvia,donor,2002,5.09,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Latvia,donor,2003,5.27,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Latvia,donor,2004,5.19,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Latvia,donor,2005,5.45,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Lithuania,donor,2001,4.59,reference,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Lithuania,donor,2002,5.07,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Lithuania,donor,2003,5.22,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Lithuania,donor,2004,5.29,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Lithuania,donor,2005,5.29,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Donor equal-weight mean,synthetic_donor,2001,5.507142857142857,reference,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Donor equal-weight mean,synthetic_donor,2002,5.634285714285715,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Donor equal-weight mean,synthetic_donor,2003,5.578571428571428,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Donor equal-weight mean,synthetic_donor,2004,5.75,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Donor equal-weight mean,synthetic_donor,2005,5.8064285714285715,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
