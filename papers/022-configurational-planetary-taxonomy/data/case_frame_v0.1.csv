@@ -1,0 +1,51 @@
+case_id,name,official_class,primary_body,direct_sun_orbit,is_satellite,boundary_tag,inclusion_reason
+P01,Mercury,planet,Sun,1,0,benchmark_planet,inner terrestrial planet
+P02,Venus,planet,Sun,1,0,benchmark_planet,inner terrestrial planet
+P03,Earth,planet,Sun,1,0,benchmark_planet,terrestrial planet and moon-host anchor
+P04,Mars,planet,Sun,1,0,positive_control,motivating positive-control planet
+P05,Jupiter,planet,Sun,1,0,benchmark_planet,gas-giant scale anchor
+P06,Saturn,planet,Sun,1,0,benchmark_planet,gas-giant scale anchor
+P07,Uranus,planet,Sun,1,0,benchmark_planet,ice-giant scale anchor
+P08,Neptune,planet,Sun,1,0,benchmark_planet,ice-giant scale anchor
+D01,Ceres,dwarf_planet,Sun,1,0,boundary_class,official dwarf planet; asteroid-belt contrast
+D02,Pluto,dwarf_planet,Sun,1,0,boundary_class,official dwarf planet; historical classification boundary
+D03,Haumea,dwarf_planet,Sun,1,0,boundary_class,official dwarf planet; rapid-rotation/shape contrast
+D04,Makemake,dwarf_planet,Sun,1,0,boundary_class,official dwarf planet; trans-Neptunian contrast
+D05,Eris,dwarf_planet,Sun,1,0,boundary_class,official dwarf planet; mass/size challenge to simple size rules
+M01,Moon,satellite,Earth,0,1,large_moon,large differentiated moon; larger than some dwarf planets
+M02,Phobos,satellite,Mars,0,1,small_moon,small irregular satellite anchor
+M03,Deimos,satellite,Mars,0,1,small_moon,small irregular satellite anchor
+M04,Io,satellite,Jupiter,0,1,active_moon,extreme tidal/geological activity
+M05,Europa,satellite,Jupiter,0,1,ocean_world,ice/ocean-world contrast
+M06,Ganymede,satellite,Jupiter,0,1,large_moon,largest Solar-System moon; size counterexample
+M07,Callisto,satellite,Jupiter,0,1,large_moon,large icy satellite with different activity history
+M08,Mimas,satellite,Saturn,0,1,mid_moon,small round/near-round satellite contrast
+M09,Enceladus,satellite,Saturn,0,1,active_moon,small but geologically active ocean-world contrast
+M10,Tethys,satellite,Saturn,0,1,mid_moon,low-density icy satellite
+M11,Dione,satellite,Saturn,0,1,mid_moon,icy satellite comparison
+M12,Rhea,satellite,Saturn,0,1,mid_moon,large icy satellite comparison
+M13,Titan,satellite,Saturn,0,1,atmosphere_moon,dense atmosphere; strong non-planet counterexample
+M14,Iapetus,satellite,Saturn,0,1,mid_moon,shape/composition contrast
+M15,Miranda,satellite,Uranus,0,1,mid_moon,small geologically complex satellite
+M16,Ariel,satellite,Uranus,0,1,mid_moon,ice-rich satellite
+M17,Umbriel,satellite,Uranus,0,1,mid_moon,ice-rich satellite
+M18,Titania,satellite,Uranus,0,1,large_moon,largest Uranian moon
+M19,Oberon,satellite,Uranus,0,1,large_moon,large Uranian moon
+M20,Triton,satellite,Neptune,0,1,captured_large_moon,large retrograde/captured-moon boundary case
+M21,Charon,satellite,Pluto,0,1,binary_boundary,large moon with unusually high primary mass ratio
+S01,Vesta,small_body,Sun,1,0,large_asteroid,differentiated large asteroid; near-roundness boundary
+S02,Pallas,small_body,Sun,1,0,large_asteroid,large asteroid; shape/self-gravity boundary
+S03,Hygiea,small_body,Sun,1,0,candidate_dwarf,near-spherical large asteroid and candidate-dwarf boundary
+S04,Interamnia,small_body,Sun,1,0,large_asteroid,large main-belt object
+S05,Eros,small_body,Sun,1,0,near_earth_object,elongated near-Earth asteroid contrast
+S06,Bennu,small_body,Sun,1,0,sample_return,well-characterized rubble-pile asteroid
+S07,Ryugu,small_body,Sun,1,0,sample_return,well-characterized rubble-pile asteroid
+S08,Itokawa,small_body,Sun,1,0,sample_return,small rubble-pile asteroid scale anchor
+S09,Quaoar,small_body,Sun,1,0,candidate_dwarf,large trans-Neptunian candidate-dwarf boundary
+S10,Orcus,small_body,Sun,1,0,candidate_dwarf,large trans-Neptunian candidate-dwarf boundary
+S11,Sedna,small_body,Sun,1,0,detached_object,extreme distant-object environment anchor
+S12,Gonggong,small_body,Sun,1,0,candidate_dwarf,large trans-Neptunian candidate-dwarf boundary
+S13,Salacia,small_body,Sun,1,0,candidate_dwarf,large trans-Neptunian candidate-dwarf boundary
+S14,Varda,small_body,Sun,1,0,candidate_dwarf,large trans-Neptunian candidate-dwarf boundary
+S15,Ixion,small_body,Sun,1,0,trans_neptunian,Plutino/trans-Neptunian comparison
+S16,Varuna,small_body,Sun,1,0,candidate_dwarf,rapid-rotation/shape and candidate-dwarf boundary
