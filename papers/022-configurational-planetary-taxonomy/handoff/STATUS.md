@@ -1,24 +1,23 @@
 # STATUS · ARIS4C022
 
-- State: Pilot-1 composition evidence closed / numeric acquisition + calibration-prep gate
+- State: M2 five-condition specification frozen / readiness FAIL / targeted acquisition gate
 - Portfolio activity: active
-- Progress estimate: 79%
+- Progress estimate: 82%
 - Frozen case frame: 50 bodies
 - Raw physical matrix: 34/50 authoritative JPL core physical values
 - Orbit v0.2: 8 JPL planet elements + 5 derived dwarf a + 21 JPL satellite mean elements + 16 pending small bodies
-- Evidence protocol v0.4 frozen before QCA
-- Evidence v0.6 coverage:
-  - composition **50/50**
-  - atmosphere 26/50
-  - differentiation 37/50
-  - geology 24/50
-  - present/persistent ocean 15/50
-  - tidal heating 36/50
-  - total **188/300** non-pending cells
-- Batch 05: Pallas, Hygiea, Interamnia, Quaoar, Orcus, Sedna, Gonggong, Salacia, Varda, Ixion, Varuna
-- Composition closure is evidence-state closure, not forced certainty: uncertain/unmeasured bulk composition remains explicitly NA_UNCERTAIN/NA_NOT_MEASURED
-- Source registry is again fully canonical: all evidence source keys through Batch 05 resolve in the current file
-- Source-conflict audit v0.2: 4 adjudicated cases, 0 unresolved conflicts requiring NA_SOURCE_CONFLICT
-- Small-body numeric gate: live JPL SBDB raw JSON still required for 16 small/boundary rows
-- Dwarf-orbit gate: 5 derived semimajor axes still await live SBDB/Horizons replacement
-- Anti-circularity: all 50 rows remain UNEXPOSED_TO_QCA_RESULT; no fsQCA calibration/truth table/solution inspected
+- Evidence v0.6: 188/300 non-pending states; composition evidence-state 50/50
+- Source-conflict audit v0.2: 4 adjudicated cases, 0 unresolved conflicts
+- M2 primary specification frozen before result inspection:
+  - SCALE = escape velocity
+  - BULK_MATERIAL = density proxy
+  - ATMOSPHERE_RETENTION = atmosphere evidence
+  - INTERNAL_ORGANIZATION = differentiation evidence
+  - SOLAR_ENERGY = relative insolation
+- Pilot-0 INTERNAL_ACTIVITY moved to sensitivity before QCA because geology is not measurement-equivalent across gas giants and solid bodies
+- Current primary-condition substantive coverage: 34 / 34 / 25 / 32 / 34
+- Complete on all five: 19/50 = 8 planets + 2 dwarfs + 9 satellites + 0 small bodies
+- Calibration status: CLOSED_NOT_READY
+- Required gate: >=40/50 per condition, >=35/50 complete cases, and complete strata >=8 planets / 4 dwarfs / 12 satellites / 10 small bodies
+- Main numeric blocker: live JPL SBDB snapshot for 16 small/boundary bodies
+- Anti-circularity: no calibration anchor, truth table, consistency/PRI/coverage statistic or QCA solution inspected
