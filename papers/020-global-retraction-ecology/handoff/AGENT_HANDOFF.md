@@ -1,44 +1,46 @@
-# Agent Handoff
+# ARIS4C020 · Agent takeover brief
 
-## Cold start
+## What this project is
 
-Read in this order:
+**The Global Ecology of Scientific Retractions: Event-to-Work Reconstruction, Reason Ecology, Timing, and Citation Afterlife**
 
-1. `STATUS.md`
-2. `TODO.md`
-3. `../RUNBOOK.md`
-4. `../process/EXECUTION_PACKAGE_QA_2026-09-24.md`
-5. `../process/ANALYSIS_FREEZE_V1.md`
+WB completed the formerly blocked network run and produced real full-match, denominator, concordance and hazard artifacts. Post-run controller QA gives a conditional pass: two bounded summary/coverage contract defects were identified and fixed in code, their pre-fix derived outputs are marked provisional pending rerun, and 158 anomalous OpenAlex work-type rows remain to be adjudicated before confirmatory comparative results unlock.
 
-Do not redesign the study before reading these files.
+## Current state
 
-
-Continue ARIS4C-020 without re-planning from scratch.
-
-1. Read `papers/020-global-retraction-ecology/process/RESEARCH_PLAN.md`.
-2. Run `python papers/020-global-retraction-ecology/code/acquire_rwdb.py`.
-3. Verify the generated provenance manifest and never commit the raw CSV.
-4. Build a deterministic data-audit script before producing substantive rankings.
-5. Freeze Retraction-only inclusion criteria and multi-valued parsing rules.
-6. Do not compare fields/countries on raw counts as if they were risks; construct Crossref/OpenAlex denominators first.
-7. Keep reason labels multi-label and preserve uncertainty around author/institution identity.
-8. Commit each bounded analysis unit and update this handoff plus `papers/dashboard.json`.
-
-
-## Runtime gate order · 2026-09-24
-
-Before any network-dependent execution:
-
-```bash
-python papers/020-global-retraction-ecology/code/smoke_offline.py
-```
-
-Required transition:
-
-`PASS_STATIC_CONTRACT → PASS_OFFLINE_SMOKE → PASS_NETWORK_MATCH → PASS_DENOMINATOR`
-
-Do not skip directly from static QA to scientific interpretation.
+- Activity: **active**
+- Progress: **75%**
+- Stage: **WB network run CONDITIONAL PASS · post-run QA rerun + work-type adjudication**
+- Evidence: Network execution is real: PASS_OFFLINE_SMOKE; 61,155 DOI queried, 60,773 matched (99.375%); RWDB→OpenAlex is_retracted concordance 99.12%; 1990–2025 field/type denominators, mass-event outputs and a 12,246-row hazard panel exist. Controller post-run audit found two bounded QA contract defects: hazard coverage sidecar mixed RWDB/OpenAlex publication-year bases, and bidirectional concordance described Work-row class counts as unique-DOI counts. Both scripts are fixed; pre-fix derived files are explicitly marked provisional/invalid pending rerun. The single observed unmapped Reason label is now mapped. 158 anomalous work-type rows remain unadjudicated.
 
 ## Immediate next action
 
-Adjudicate the 158 anomalous rows in `data/derived/openalex_work_type_qa.csv` using the six allowed buckets, freeze the eligible work-type list and the right-censoring/mature-cohort rule, then unlock comparative country/field/publisher risk results and refresh the EN/ZH manuscript with the frozen numbers. The networked chain — PASS_OFFLINE_SMOKE, candidate-safe shards 0–3, bidirectional concordance, core `is_retracted` snapshot, year×field/type denominators and the censoring-aware hazard panel — was executed and frozen 2026-09-24 (see STATUS.md and `data/derived/pipeline_run_manifest.json`).
+**Rerun corrected hazard coverage and bidirectional concordance, commit a tracked full OpenAlex snapshot manifest, adjudicate the 158 work-type QA rows, freeze eligible types + censoring rule, then unlock comparative models/manuscript refresh.**
+
+## Current blocker / gate
+
+No design blocker. A small network/local rerun is required for two corrected QA summaries; the ignored OpenAlex/RWDB intermediates are not in Git, so rerun needs the WB/local checkout or another networked executor.
+
+## Canonical files / entry points
+
+- **paper.json:** paper.json
+- **English paper:** manuscript/working_paper_en.md
+- **Chinese paper:** manuscript/working_paper_zh.md
+- **source:** https://github.com/CochraneK/ARIS4C/tree/main/papers/020-global-retraction-ecology
+
+## Before changing anything
+
+1. Read `TODO.md`, `DECISIONS.md`, and the newest entries in `CHATLOG.md` and `SESSION_LOG.md`.
+2. Preserve frozen/preregistered design decisions unless the repository explicitly records an authorized amendment.
+3. Do not broaden claims beyond the evidence state recorded in the manuscript/process files.
+4. Use **Cochrane Kang** for visible author naming.
+5. Do not commit secrets, private credentials, hidden chain-of-thought, or unnecessary sensitive personal data.
+6. After a material change, update canonical research files first, then continuity files.
+
+## Handoff completion rule
+
+Before ending a substantial session:
+- update `TODO.md`;
+- append any material research decision to `DECISIONS.md`;
+- append a public-safe conversation summary to `CHATLOG.md`;
+- append what was executed/validated to `SESSION_LOG.md`.

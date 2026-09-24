@@ -1,24 +1,23 @@
-# ARIS4C-023 Handoff
+# ARIS4C023 · Continuity / handoff
 
-## Cold-start rule
+This directory is the cold-start entry point for a new ChatGPT account, computer, coding/research agent, or human collaborator.
 
-A new Agent should be able to continue **without this chat**.
+## Read in this order
 
-Read in this order:
+1. [AGENT_HANDOFF.md](AGENT_HANDOFF.md) — immediate takeover brief
+2. [STATUS.md](STATUS.md) — current state/gate/blocker
+3. [TODO.md](TODO.md) — actionable queue
+4. [DECISIONS.md](DECISIONS.md) — important choices and rejected alternatives
+5. [CONTEXT.md](CONTEXT.md) — compact research context
+6. [CHATLOG.md](CHATLOG.md) — public-safe record of material conversations
+7. [SESSION_LOG.md](SESSION_LOG.md) — execution history
 
-1. `STATUS.md`
-2. `TODO.md`
-3. `DECISIONS.md`
-4. `AGENT_HANDOFF.md`
-5. `../data/calibration/README.md`
-6. `../process/CALIBRATION_PLAN.md`
-7. `../process/CALIBRATION_PACKET_QA.md`
-8. `../process/ANALYSIS_CONTRACT.md`
-9. `CONTEXT.md`
-10. `../process/RESEARCH_PLAN.md`
-11. `../process/METHOD_MATRIX.md`
-12. `../data/README.md`
+## Canonical rule
 
-Canonical portfolio state: `papers/dashboard.json`.
+The handoff package summarizes the project; it does not replace canonical scientific files. If a handoff statement conflicts with `paper.json`, `papers/dashboard.json`, a frozen preregistration/design file, or machine-readable results, resolve the conflict in favor of the canonical scientific artifact and then update the handoff.
 
-If these files disagree, use the newest Git commit and treat `STATUS.md` + `AGENT_HANDOFF.md` as the operational checkpoint, while `DECISIONS.md` controls frozen scientific decisions.
+## Maintenance
+
+`README.md`, `STATUS.md`, and `AGENT_HANDOFF.md` are synchronized from canonical metadata. The other files are append-oriented and should preserve meaningful history.
+
+See repository-level `ARIS4C_CONTINUITY_STANDARD.md`.

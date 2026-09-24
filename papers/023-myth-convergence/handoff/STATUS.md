@@ -1,23 +1,14 @@
-# Status
+# ARIS4C023 · Current status
 
-## State
-Block · 65%
+- **Title:** Why Do Ancient Traditions Tell Similar Stories? A Comparative Cultural-Evolution Study of Mythic Motifs, Inheritance, Diffusion, Ecology, and Convergence
+- **Project status:** active-v0.2-submission-grade
+- **Activity:** block
+- **Portfolio progress:** 65%
+- **Current stage:** v0.2 ARIS · G2/G3/G4 PASS · G5 independent validation gate
+- **Evidence established:** G4 PASS: 29 primary motifs, 20 frozen source bundles, 48-row coverage manifest and 190-judgment blinded H/M validation packet. Pre-coding source coverage yields only 12/16 primary cases with >=1 bundle and max family dyads 15/10/28; Original-Research gate was not relaxed.
+- **Next gate:** Independent human/domain-informed H + fresh external-model M complete the frozen 190-row packet; freeze, score reliability, domain-audit high-risk disagreements, adjudicate, and issue G5 PASS/FAIL.
+- **Blocker:** External independence: current controller cannot provide the required human/domain-informed coder or impersonate an independent external model.
 
-## Current stage
-v0.2 submission-grade ARIS · G2/G3/G4 PASS · G5 independent validation gate.
+## Source of truth
 
-## Evidence
-- G2 literature PASS and G3 case-universe PASS remain frozen.
-- G4 PASS: 29 primary confirmatory motifs across flood/anthropogony/divine-conflict.
-- 20 source bundles frozen: 7 flood including Ovid control, 5 anthropogony, 8 divine-conflict.
-- 48-row 16-case × 3-family coverage manifest explicitly distinguishes no-defensible-bundle from motif absence.
-- 190-judgment blinded coder packet frozen; human and external-model CSVs are identical blank copies.
-- Source-packet, validation, alternate-bundle and reliability contracts are frozen.
-- Pre-coding model-gate forecast does not support the preregistered Original-Research upgrade; thresholds were not relaxed.
-- No expanded v0.2 similarity has been calculated.
-
-## Next gate
-G5: obtain a genuinely independent human/domain-informed coder and a genuinely separate external-model coder on the frozen 190-judgment packet; score reliability; domain-audit source-dependent disagreements; adjudicate only after both files freeze.
-
-## Blocker
-External independence. This controller cannot supply the required human/domain-informed coder or impersonate an independent external model. Submission-grade empirical claims remain blocked until G5 is completed.
+This snapshot is synchronized from `paper.json` and `papers/dashboard.json`. Study-specific `process/` files may contain finer-grained status and frozen design details.

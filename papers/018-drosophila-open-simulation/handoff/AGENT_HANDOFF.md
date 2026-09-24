@@ -9,17 +9,17 @@ A discovery-driven project that audits and reproduces open Drosophila simulation
 ## Current state
 
 - Activity: **active**
-- Progress: **88%**
-- Stage: **Pilot 4 matched diagnostic COMPLETE · R1 Retina exact identity PASS · R2 frozen-retinal localization running**
-- Evidence: Pilot4 matched diagnostic shows upstream decoder divergence under matched target conditions. R1 workflow 35560206659 PASS: legacy/current Retina are byte-identical at ID-map SHA-256, pale/yellow-mask SHA-256 and 721-index FlyGym→flyvis mapper SHA-256; both are exact bijections. R1 geometry/order is excluded as the first divergence.
+- Progress: **90%**
+- Stage: **Pilot 4 matched diagnostic COMPLETE · R1/R2 excluded · R2.5 implemented, Actions runner blocked before execution**
+- Evidence: Pilot4 first-frame decoder divergence is reproducible. R1 Retina geometry/order is byte-identical. R2 frozen-retinal diagnostic is complete: all six deterministic retinal vectors, mapped inputs and pinned flyvis neural hashes match across legacy/current; tracking-cell mean differences are zero.
 
 ## Immediate next action
 
-**Complete R2a deterministic frozen-retinal mapped-vector equality and R2b pinned flyvis neural-response comparison. If R2a is identical but R2b diverges, localize the difference to flyvis version/model dynamics or numerical execution before investigating rendering/body.**
+**Restore GitHub Actions job execution, then run the already-committed R2.5 reset/first-frame sensory capture and compare actual 2×721×2 ommatidia hashes plus body-root pose.**
 
 ## Current blocker / gate
 
-No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference.
+Repository-wide GitHub Actions jobs are currently failing before any workflow step starts (also affecting portfolio-index and handoff workflows). R2.5 code has not yet executed, so this is classified as Actions/runner infrastructure rather than a scientific-code failure.
 
 ## Canonical files / entry points
 

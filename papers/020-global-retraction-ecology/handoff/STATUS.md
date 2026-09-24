@@ -1,24 +1,14 @@
-# Status
+# ARIS4C020 · Current status
 
-## State
-Active · 75%
+- **Title:** The Global Ecology of Scientific Retractions: Event-to-Work Reconstruction, Reason Ecology, Timing, and Citation Afterlife
+- **Project status:** wb-network-run-conditional-pass-postrun-qa
+- **Activity:** active
+- **Portfolio progress:** 75%
+- **Current stage:** WB network run CONDITIONAL PASS · post-run QA rerun + work-type adjudication
+- **Evidence established:** Network execution is real: PASS_OFFLINE_SMOKE; 61,155 DOI queried, 60,773 matched (99.375%); RWDB→OpenAlex is_retracted concordance 99.12%; 1990–2025 field/type denominators, mass-event outputs and a 12,246-row hazard panel exist. Controller post-run audit found two bounded QA contract defects: hazard coverage sidecar mixed RWDB/OpenAlex publication-year bases, and bidirectional concordance described Work-row class counts as unique-DOI counts. Both scripts are fixed; pre-fix derived files are explicitly marked provisional/invalid pending rerun. The single observed unmapped Reason label is now mapped. 158 anomalous work-type rows remain unadjudicated.
+- **Next gate:** Rerun corrected hazard coverage and bidirectional concordance, commit a tracked full OpenAlex snapshot manifest, adjudicate the 158 work-type QA rows, freeze eligible types + censoring rule, then unlock comparative models/manuscript refresh.
+- **Blocker:** No design blocker. A small network/local rerun is required for two corrected QA summaries; the ignored OpenAlex/RWDB intermediates are not in Git, so rerun needs the WB/local checkout or another networked executor.
 
-## Current stage
-WB network run CONDITIONAL PASS · post-run QA rerun + work-type adjudication.
+## Source of truth
 
-## Evidence
-- Networked RUNBOOK execution is real and substantially successful: PASS_OFFLINE_SMOKE; 61,155 DOI queried; 60,773 matched (99.375%); 30 ambiguous; 382 unmatched.
-- RWDB→OpenAlex single-candidate `is_retracted` concordance remains valid: 60,208 true / 535 false = 99.12%.
-- OpenAlex core snapshot contained 136,000 Work rows; field/type denominators 1990–2025 and the 12,246-row hazard panel were produced.
-- Post-run controller QA found two bounded reporting/diagnostic contract defects:
-  1. pre-fix hazard coverage sidecar mixed RWDB-year and OpenAlex-year bases, allowing impossible coverage >1;
-  2. pre-fix bidirectional class counts were Work-row counts (n=134,923), but STATUS described them as unique-DOI classification (n=134,890).
-- Both scripts are fixed; the old derived files are explicitly marked invalid/provisional pending rerun.
-- Observed Reason ontology gap is closed: `Miscommunication with/by Third Party` now maps to `miscommunication_third_party`; observed unmapped count = 0.
-- Work-type QA is not complete: 158 rows are sampled but adjudication cells remain blank.
-
-## Next gate
-Rerun the corrected hazard coverage sidecar and bidirectional concordance summary; commit a tracked full OpenAlex snapshot manifest; adjudicate the 158 work-type QA rows; freeze eligible work types and the mature/right-censoring rule; then unlock comparative country/field/publisher models and refresh the EN/ZH manuscript.
-
-## Blocker
-No design blocker. A small network/local rerun is required because the corrected summaries depend on ignored raw/interim files that are not committed to Git. Use the WB/local checkout if its interim files remain; otherwise rerun the network acquisition chain.
+This snapshot is synchronized from `paper.json` and `papers/dashboard.json`. Study-specific `process/` files may contain finer-grained status and frozen design details.

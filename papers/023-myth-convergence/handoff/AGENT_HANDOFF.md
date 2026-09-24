@@ -1,58 +1,46 @@
-# Agent Handoff · ARIS4C-023 v0.2
+# ARIS4C023 · Agent takeover brief
 
-## One-line state
+## What this project is
 
-**Block · 65%. G2 literature, G3 case universe and G4 corpus/bundle/packet gates PASS. The next scientific gate is genuinely independent G5 validation; do not compute expanded similarity or impersonate the external coders.**
+**Why Do Ancient Traditions Tell Similar Stories? A Comparative Cultural-Evolution Study of Mythic Motifs, Inheritance, Diffusion, Ecology, and Convergence**
 
-## Read first
-1. STATUS.md
-2. TODO.md
-3. ../process/G4_BUNDLE_PACKET_FREEZE.md
-4. ../process/G5_VALIDATION_PROTOCOL_v0.2.md
-5. ../process/SOURCE_PACKET_CONTRACT_v0.2.md
-6. ../process/MODEL_GATE_FORECAST_v0.2.md
-7. ../data/bundle_registry_v0.2.csv
-8. ../data/bundle_coverage_manifest_v0.2.csv
-9. ../data/validation_v0.2/README.md
-10. ../process/PREREGISTRATION_v0.2.md
+Pilot-0 v0.1.1 is frozen and publicly readable, but the canonical project has reopened as a submission-grade ARIS v0.2 methods + empirical-demonstration study. Current work focuses on systematic literature, case-universe freeze, corpus expansion, clean validation, preregistered dyadic mechanism models, robustness and adversarial review.
 
-## Frozen v0.2 packet
-- primary motifs: 29
-- bundles: 20
-- judgments: 190
-- H file: blank/frozen
-- M file: blank/frozen
+## Current state
 
-Never show either coder:
-- Pilot coder answers;
-- Pilot/v0.1 similarity outputs;
-- contact hypotheses;
-- ancestry/environment variables;
-- process-tracing conclusions;
-- Ovid's positive-control label;
-- the other v0.2 coder's file.
+- Activity: **block**
+- Progress: **65%**
+- Stage: **v0.2 ARIS · G2/G3/G4 PASS · G5 independent validation gate**
+- Evidence: G4 PASS: 29 primary motifs, 20 frozen source bundles, 48-row coverage manifest and 190-judgment blinded H/M validation packet. Pre-coding source coverage yields only 12/16 primary cases with >=1 bundle and max family dyads 15/10/28; Original-Research gate was not relaxed.
 
-## External handoff options
+## Immediate next action
 
-### Human H
-Give the human coder:
-- motif codebook rows in the packet;
-- frozen source bundle boundaries;
-- lawful access to exact source/translation editions per SOURCE_PACKET_CONTRACT.
+**Independent human/domain-informed H + fresh external-model M complete the frozen 190-row packet; freeze, score reliability, domain-audit high-risk disagreements, adjudicate, and issue G5 PASS/FAIL.**
 
-They fill only state/confidence/rationale/ambiguity_flag.
+## Current blocker / gate
 
-### External model M
-Use a fresh provider/model/session with no ARIS4C project memory. Give exactly the same evidence boundary and definitions. It fills the separate M file.
+External independence: current controller cannot provide the required human/domain-informed coder or impersonate an independent external model.
 
-## Controller work allowed while blocked
-Only work that cannot contaminate coding:
-- tooling tests;
-- reference normalization;
-- manuscript methods scaffolding;
-- reviewer protocol refinement.
+## Canonical files / entry points
 
-Do **not** inspect or generate expanded motif similarity until H and M are frozen/adjudicated.
+- **paper.json:** paper.json
+- **English paper:** manuscript/working_paper_en.md
+- **Chinese paper:** manuscript/working_paper_zh.md
+- **source:** https://github.com/CochraneK/ARIS4C/tree/main/papers/023-myth-convergence
 
-## Model route
-The pre-coding coverage forecast does not meet the Original-Research upgrade threshold. Do not lower it. Default manuscript route remains Methods + empirical demonstration.
+## Before changing anything
+
+1. Read `TODO.md`, `DECISIONS.md`, and the newest entries in `CHATLOG.md` and `SESSION_LOG.md`.
+2. Preserve frozen/preregistered design decisions unless the repository explicitly records an authorized amendment.
+3. Do not broaden claims beyond the evidence state recorded in the manuscript/process files.
+4. Use **Cochrane Kang** for visible author naming.
+5. Do not commit secrets, private credentials, hidden chain-of-thought, or unnecessary sensitive personal data.
+6. After a material change, update canonical research files first, then continuity files.
+
+## Handoff completion rule
+
+Before ending a substantial session:
+- update `TODO.md`;
+- append any material research decision to `DECISIONS.md`;
+- append a public-safe conversation summary to `CHATLOG.md`;
+- append what was executed/validated to `SESSION_LOG.md`.

@@ -11,7 +11,6 @@ This directory is the cold-start entry point for a new ChatGPT account, computer
 5. [CONTEXT.md](CONTEXT.md) — compact research context
 6. [CHATLOG.md](CHATLOG.md) — public-safe record of material conversations
 7. [SESSION_LOG.md](SESSION_LOG.md) — execution history
-8. [CHECKPOINT_2026-09-24.md](CHECKPOINT_2026-09-24.md) — deletion-ready continuity audit
 
 ## Canonical rule
 
@@ -22,11 +21,3 @@ The handoff package summarizes the project; it does not replace canonical scient
 `README.md`, `STATUS.md`, and `AGENT_HANDOFF.md` are synchronized from canonical metadata. The other files are append-oriented and should preserve meaningful history.
 
 See repository-level `ARIS4C_CONTINUITY_STANDARD.md`.
-
-## Deletion-ready audit · 2026-09-24
-
-This handoff package was manually reconciled against the latest canonical ARIS4C018 state before deletion of the source ChatGPT conversation.
-
-Current continuation point: **Pilot 4 R2.5 initial-scene sensory localization**, blocked only by repository-wide GitHub Actions jobs failing before step execution.
-
-No recovery from the deleted chat should be necessary.
