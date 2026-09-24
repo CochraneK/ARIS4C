@@ -190,7 +190,8 @@
       "Cambodia 1997",
       "DR Congo 1992",
       "Pakistan 1983",
-      "Turkey 1971"
+      "Turkey 1971",
+      "Romania 1989"
     ],
     "known_internal_discrepancies": {
       "economic_autarky_total": {
@@ -208,6 +209,13 @@
         "P_political_upheaval",
         "W_war"
       ]
+    },
+    "control_frame_reconstruction": {
+      "published_non_genocide_controls": 99,
+      "pitf2018_mechanical_non_gen_candidates": 103,
+      "unresolved_difference": 4,
+      "status": "source-version-drift-unresolved",
+      "rule": "Do not remove cases to improve model fit. Resolve the four-case difference through source/version/case-definition provenance before calling the frame an exact Williams reconstruction."
     }
   }
 }
