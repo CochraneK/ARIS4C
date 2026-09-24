@@ -43,3 +43,13 @@ Unresolved source conflicts requiring `NA_SOURCE_CONFLICT`: **0**.
 | C009 | Ariel/Umbriel/Titania/Oberon | differentiation | URANUS_MOONS_INTERIORS_2023 | model-based interior layering | Ocean + ice-shell + rocky-layer models imply internal differentiation, but remain model inference rather than direct gravity-field measurement. | RESOLVED_BY_EVIDENCE_LEVEL |
 
 Unresolved source conflicts requiring `NA_SOURCE_CONFLICT`: **0**.
+
+## Readiness-targeted scan · Batch 08
+
+| ID | Body | Variable | Sources | Type | Adjudication | Status |
+|---|---|---|---|---|---|---|
+| C010 | Vesta/Pallas/Hygiea/Interamnia | atmosphere | NASA_ASTEROIDS_AIRLESS | class-level agency evidence | NASA explicitly characterizes asteroids as airless remnants; use only for cases retained as asteroid-class bodies, not for TNOs or dwarf planets. | RESOLVED_BY_SCOPE |
+| C011 | Umbriel | atmosphere | UMBRIEL_OCCULTATION_2023 | direct upper-limit observation | No atmosphere detected; retain `EVIDENCE_OF_ABSENCE / NONE_OR_NEGLIGIBLE` while noting local/transient atmosphere is not absolutely excluded. | RESOLVED_BY_UPPER_LIMIT |
+| C012 | Titania | atmosphere | TITANIA_OCCULTATION_2009 | direct upper-limit observation | No atmospheric refraction; nbar-level upper limits justify negligible-atmosphere coding, not an absolute physical zero. | RESOLVED_BY_UPPER_LIMIT |
+
+Unresolved source conflicts requiring `NA_SOURCE_CONFLICT`: **0**.
