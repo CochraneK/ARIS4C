@@ -136,6 +136,7 @@ def build_panels() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 
     hour_alias = {
         "turkey": "turkiye",
+        "taiwan": "taiwan province of china",
         "cote d ivoire": "ivory coast",
         "democratic republic of congo": "congo kinshasa",
         "congo": "congo brazzaville",
@@ -322,6 +323,9 @@ def main() -> int:
     # Reproducibility contracts for the current source snapshots.
     assert len(leave) == 1934
     assert leave["country"].nunique() == 161
+    assert (len(work), work["country"].nunique()) == (2015, 130)
+    assert (len(joint), joint["country"].nunique()) == (1663, 129)
+    assert "Taiwan Province of China" in set(work["country"])
 
     leave_a1 = leave.dropna(subset=["life", "leave5", *controls])
     work_a1 = work.dropna(subset=["life", "hours100", *controls])
