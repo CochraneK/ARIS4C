@@ -1,0 +1,161 @@
+country,n_overlap_years,first_overlap_year,last_overlap_year
+Argentina,15,2006,2020
+Bangladesh,15,2006,2020
+Bolivia,15,2006,2020
+Brazil,15,2005,2020
+Cambodia,15,2006,2020
+Cameroon,15,2006,2020
+Canada,15,2005,2020
+Chile,15,2006,2020
+China,15,2006,2020
+Colombia,15,2006,2020
+Costa Rica,15,2006,2020
+Denmark,15,2005,2020
+Dominican Republic,15,2006,2020
+Ecuador,15,2006,2020
+Egypt,15,2005,2020
+El Salvador,15,2006,2020
+France,15,2005,2020
+Georgia,15,2006,2020
+Germany,15,2005,2020
+Ghana,15,2006,2020
+India,15,2006,2020
+Indonesia,15,2006,2020
+Israel,15,2006,2020
+Italy,15,2005,2020
+Japan,15,2005,2020
+Jordan,15,2005,2020
+Kazakhstan,15,2006,2020
+Kenya,15,2006,2020
+Kyrgyzstan,15,2006,2020
+Lebanon,15,2005,2020
+Lithuania,15,2006,2020
+Mexico,15,2005,2020
+Moldova,15,2006,2020
+Nepal,15,2006,2020
+Nicaragua,15,2006,2020
+Pakistan,15,2005,2020
+Peru,15,2006,2020
+Philippines,15,2006,2020
+Russia,15,2006,2020
+Saudi Arabia,15,2005,2020
+Senegal,15,2006,2020
+South Africa,15,2006,2020
+South Korea,15,2006,2020
+Spain,15,2005,2020
+Sweden,15,2005,2020
+Tajikistan,15,2006,2020
+Tanzania,15,2006,2020
+Thailand,15,2006,2020
+Turkiye,15,2005,2020
+Uganda,15,2006,2020
+Ukraine,15,2006,2020
+United Kingdom,15,2005,2020
+United States,15,2006,2020
+Uruguay,15,2006,2020
+Venezuela,15,2005,2020
+Vietnam,15,2006,2020
+Zimbabwe,15,2006,2020
+Armenia,14,2006,2019
+Australia,14,2005,2020
+Azerbaijan,14,2006,2019
+Belarus,14,2006,2019
+Belgium,14,2005,2020
+Burkina Faso,14,2006,2020
+Chad,14,2006,2019
+Estonia,14,2006,2020
+Greece,14,2005,2020
+Guatemala,14,2006,2019
+Honduras,14,2006,2019
+Hungary,14,2005,2020
+Ireland,14,2006,2020
+Kosovo,14,2007,2020
+Latvia,14,2006,2020
+Mali,14,2006,2020
+Netherlands,14,2005,2020
+New Zealand,14,2006,2020
+Niger,14,2006,2019
+Panama,14,2006,2019
+Paraguay,14,2006,2020
+Poland,14,2005,2020
+Romania,14,2005,2020
+Sri Lanka,14,2006,2020
+Uzbekistan,14,2006,2020
+Zambia,14,2006,2020
+Albania,13,2007,2020
+Austria,13,2006,2020
+Bosnia and Herzegovina,13,2007,2020
+Croatia,13,2007,2020
+Cyprus,13,2006,2020
+Finland,13,2006,2020
+Iran,13,2005,2020
+Malaysia,13,2006,2020
+Mauritania,13,2007,2019
+Mongolia,13,2007,2020
+Montenegro,13,2007,2020
+Nigeria,13,2006,2020
+North Macedonia,13,2007,2020
+Portugal,13,2006,2020
+Serbia,13,2007,2020
+Singapore,13,2006,2019
+Slovenia,13,2006,2020
+Taiwan Province of China,13,2006,2020
+United Arab Emirates,13,2006,2020
+Afghanistan,12,2008,2019
+Benin,12,2006,2020
+Botswana,12,2006,2019
+Bulgaria,12,2007,2020
+Czechia,12,2005,2020
+Iraq,12,2008,2020
+Malawi,12,2006,2019
+Malta,12,2009,2020
+Rwanda,12,2006,2019
+Sierra Leone,12,2006,2019
+Slovakia,12,2006,2020
+Tunisia,12,2009,2020
+Yemen,12,2007,2019
+Bahrain,11,2009,2020
+Congo (Brazzaville),11,2008,2020
+Haiti,11,2006,2018
+Hong Kong S.A.R. of China,11,2006,2020
+Kuwait,11,2006,2019
+Luxembourg,11,2009,2019
+Madagascar,11,2006,2019
+Gabon,10,2011,2020
+Guinea,10,2011,2020
+Morocco,10,2010,2020
+Norway,10,2006,2020
+Switzerland,10,2006,2020
+Algeria,9,2010,2020
+Ethiopia,9,2012,2020
+Ivory Coast,9,2009,2020
+Laos,9,2006,2020
+Liberia,9,2007,2019
+Myanmar,9,2012,2020
+Togo,9,2006,2019
+Iceland,8,2008,2020
+Mozambique,8,2006,2019
+Jamaica,7,2006,2020
+Mauritius,7,2011,2020
+Syria,7,2008,2015
+Comoros,6,2009,2019
+Libya,6,2012,2019
+Namibia,6,2007,2020
+Burundi,5,2008,2018
+Central African Republic,5,2007,2017
+Qatar,5,2009,2015
+Sudan,5,2009,2014
+Trinidad and Tobago,5,2006,2017
+Angola,4,2011,2014
+Djibouti,4,2008,2011
+Lesotho,4,2011,2019
+South Sudan,4,2014,2017
+Bhutan,3,2013,2015
+Eswatini,3,2011,2019
+Gambia,3,2017,2019
+Somalia,3,2014,2016
+Belize,2,2007,2014
+Guyana,1,2007,2007
+Maldives,1,2018,2018
+Oman,1,2011,2011
+Suriname,1,2012,2012
