@@ -4,7 +4,7 @@
 
 ## Current state · 2026-09-24
 
-**Active · 55%**
+**Active · 75%**
 
 - full RWDB snapshot frozen: 72,606 rows / 67,197 Retractions / 61,155 unique usable original-paper DOI;
 - deterministic OpenAlex pilot: 996/1,000 = 99.6%; historical shard-0 feasibility: 15,146/15,255 = 99.2855%;
@@ -17,6 +17,8 @@
 - current network gate: full candidate-safe matching + bidirectional concordance + denominators + work-type QA.
 
 Static execution contract: **PASS**. Runtime smoke is still pending on a canonical checkout. See [execution QA](process/EXECUTION_PACKAGE_QA_2026-09-24.md) and [OpenAlex API contract](process/OPENALEX_API_CONTRACT_2026-09-24.md).
+
+Post-WB audit: **CONDITIONAL PASS** — network execution is real, but two corrected QA summaries require rerun and work-type adjudication remains open. See [post-WB audit](process/POST_WB_AUDIT_2026-09-24.md).
 
 Key gates: [first data audit](process/FIRST_DATA_AUDIT.md) · [OpenAlex match](process/OPENALEX_MATCH_GATE.md) · [closest competitor gap](process/CLOSEST_COMPETITOR_GAP.md) · [denominator spec](process/DENOMINATOR_SPEC.md) · [aggregated survival](process/AGGREGATED_SURVIVAL_STRATEGY.md) · [reason ontology](process/REASON_ONTOLOGY_SPEC.md) · [citation afterlife](process/CITATION_AFTERLIFE_SPEC.md) · [runbook](RUNBOOK.md)
 
