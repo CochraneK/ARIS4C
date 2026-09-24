@@ -12,37 +12,37 @@
     "1951": {
       "rwdb_unique_doi_works_with_publication_date": 1,
       "unique_openalex_matched_with_field": 1,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1959": {
       "rwdb_unique_doi_works_with_publication_date": 1,
       "unique_openalex_matched_with_field": 1,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1962": {
       "rwdb_unique_doi_works_with_publication_date": 1,
       "unique_openalex_matched_with_field": 1,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1963": {
       "rwdb_unique_doi_works_with_publication_date": 1,
       "unique_openalex_matched_with_field": 1,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1966": {
       "rwdb_unique_doi_works_with_publication_date": 1,
       "unique_openalex_matched_with_field": 18,
-      "match_field_coverage_among_rwdb_doi_works": 18.0
+      "match_field_coverage_among_rwdb_doi_works": 18
     },
     "1967": {
       "rwdb_unique_doi_works_with_publication_date": 3,
       "unique_openalex_matched_with_field": 3,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1968": {
       "rwdb_unique_doi_works_with_publication_date": 1,
       "unique_openalex_matched_with_field": 1,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1970": {
       "rwdb_unique_doi_works_with_publication_date": 6,
@@ -57,7 +57,7 @@
     "1974": {
       "rwdb_unique_doi_works_with_publication_date": 1,
       "unique_openalex_matched_with_field": 1,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1975": {
       "rwdb_unique_doi_works_with_publication_date": 7,
@@ -67,7 +67,7 @@
     "1976": {
       "rwdb_unique_doi_works_with_publication_date": 3,
       "unique_openalex_matched_with_field": 3,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1977": {
       "rwdb_unique_doi_works_with_publication_date": 25,
@@ -97,7 +97,7 @@
     "1982": {
       "rwdb_unique_doi_works_with_publication_date": 5,
       "unique_openalex_matched_with_field": 5,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1983": {
       "rwdb_unique_doi_works_with_publication_date": 12,
@@ -112,12 +112,12 @@
     "1985": {
       "rwdb_unique_doi_works_with_publication_date": 10,
       "unique_openalex_matched_with_field": 10,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1986": {
       "rwdb_unique_doi_works_with_publication_date": 25,
       "unique_openalex_matched_with_field": 25,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1987": {
       "rwdb_unique_doi_works_with_publication_date": 13,
@@ -127,12 +127,12 @@
     "1988": {
       "rwdb_unique_doi_works_with_publication_date": 15,
       "unique_openalex_matched_with_field": 15,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1989": {
       "rwdb_unique_doi_works_with_publication_date": 35,
       "unique_openalex_matched_with_field": 35,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1990": {
       "rwdb_unique_doi_works_with_publication_date": 46,
@@ -172,7 +172,7 @@
     "1997": {
       "rwdb_unique_doi_works_with_publication_date": 75,
       "unique_openalex_matched_with_field": 75,
-      "match_field_coverage_among_rwdb_doi_works": 1.0
+      "match_field_coverage_among_rwdb_doi_works": 1
     },
     "1998": {
       "rwdb_unique_doi_works_with_publication_date": 114,
@@ -320,5 +320,8 @@
       "match_field_coverage_among_rwdb_doi_works": 0.8857142857142857
     }
   },
-  "gate": "Do not present as full-population hazard until no-DOI/unmatched sensitivity and eligible work-type gates pass."
+  "gate": "Do not present as full-population hazard until no-DOI/unmatched sensitivity and eligible work-type gates pass.",
+  "validation_status": "INVALID_PRE_RERUN",
+  "known_issue": "Coverage numerator was grouped by OpenAlex publication_year while its denominator diagnostic was grouped by RWDB earliest publication year; ratios can exceed 1. The hazard event panel itself uses OpenAlex publication_year aligned to the OpenAlex denominator, but this coverage sidecar must be regenerated with build_discrete_hazard_panel.py schema v2.",
+  "requires_rerun": true
 }
