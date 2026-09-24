@@ -1,0 +1,96 @@
+name: ARIS4C018 Pilot4 R2.5 Initial Scene
+
+on:
+  push:
+    paths:
+      - "papers/018-drosophila-neural-simulation/code/pilot4_r2_5_initial_scene.py"
+      - "papers/018-drosophila-neural-simulation/code/pilot4_r2_5_compare.py"
+      - ".github/workflows/aris4c018-pilot4-r2-5-initial-scene.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  legacy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install EGL runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1-mesa-dev
+      - name: Install pinned legacy stack
+        run: |
+          python -m pip install "flygym-gymnasium[examples] @ git+https://github.com/NeLy-EPFL/flygym-gymnasium.git@d285260a1c8a7b3494150cd1590f2c9fe4b5e06b"
+      - name: Capture initial sensory input
+        env:
+          MUJOCO_GL: egl
+          PYOPENGL_PLATFORM: egl
+        run: |
+          python papers/018-drosophila-neural-simulation/code/pilot4_r2_5_initial_scene.py             --stack legacy --output /tmp/r25/legacy.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r25-legacy
+          path: /tmp/r25/legacy.json
+
+  current:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install EGL runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1-mesa-dev
+      - name: Install pinned current FlyGym
+        run: |
+          python -m pip install "git+https://github.com/NeLy-EPFL/flygym.git@38c8ec61034cd59bc5ba0de20688d4a3c0000d60"
+      - name: Capture initial sensory input
+        env:
+          MUJOCO_GL: egl
+          PYOPENGL_PLATFORM: egl
+        run: |
+          python papers/018-drosophila-neural-simulation/code/pilot4_r2_5_initial_scene.py             --stack current --output /tmp/r25/current.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r25-current
+          path: /tmp/r25/current.json
+
+  compare:
+    needs: [legacy, current]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          name: r25-legacy
+          path: /tmp/r25/legacy
+      - uses: actions/download-artifact@v4
+        with:
+          name: r25-current
+          path: /tmp/r25/current
+      - name: Compare initial sensory captures
+        run: |
+          python papers/018-drosophila-neural-simulation/code/pilot4_r2_5_compare.py             --legacy /tmp/r25/legacy/legacy.json             --current /tmp/r25/current/current.json             --output papers/018-drosophila-neural-simulation/data/pilot4_r2_5_initial_scene.json
+      - name: Commit R2.5 diagnostic
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/018-drosophila-neural-simulation/data/pilot4_r2_5_initial_scene.json
+          git commit -m "ARIS4C018 freeze Pilot4 R2.5 initial-scene diagnostic"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
