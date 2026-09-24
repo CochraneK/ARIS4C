@@ -1,0 +1,28 @@
+country_1962,hours_country,leave_group,group_score,hours_year,annual_hours,year_distance,basis_1962
+Norway,Norway,three_weeks_or_more,2,1962,1994.79,0,national_general_legislation
+Sweden,Sweden,three_weeks_or_more,2,1962,1686.48,0,national_general_legislation
+Denmark,Denmark,three_weeks_or_more,2,1962,1933.45,0,national_general_legislation
+France,France,three_weeks_or_more,2,1962,2177.77,0,national_general_legislation
+Finland,Finland,three_weeks_or_more,2,1962,1989.34,0,national_general_legislation
+Australia,Australia,about_two_weeks,1,1962,1842.64,0,mixed_subnational_or_collective
+Austria,Austria,about_two_weeks,1,1962,1900.21,0,national_general_legislation
+Belgium,Belgium,about_two_weeks,1,1962,1998.85,0,national_general_legislation
+Brazil,Brazil,about_two_weeks,1,1962,2472.58,0,national_general_legislation
+Chile,Chile,about_two_weeks,1,1962,2438.25,0,national_general_legislation
+Colombia,Colombia,about_two_weeks,1,1962,2649.31,0,national_general_legislation
+"Germany, Federal Republic",Germany,about_two_weeks,1,1962,2117.37,0,mixed_subnational_or_collective
+Iceland,Iceland,about_two_weeks,1,1964,2139.42,2,national_general_legislation
+Italy,Italy,about_two_weeks,1,1962,2072.13,0,mixed_national_right_collective_duration
+Netherlands,Netherlands,about_two_weeks,1,1962,2005.8,0,mixed_subnational_or_collective
+Peru,Peru,about_two_weeks,1,1962,2367.28,0,national_general_legislation
+United Kingdom,United Kingdom,about_two_weeks,1,1962,1879.16,0,mixed_collective_and_wage_orders
+Venezuela,Venezuela,about_two_weeks,1,1962,2009.18,0,national_general_legislation
+Canada,Canada,less_than_two_weeks,0,1962,2094.65,0,mixed_federal_and_provincial
+Greece,Greece,less_than_two_weeks,0,1962,2224.11,0,national_category_specific
+Ireland,Ireland,less_than_two_weeks,0,1962,2334.36,0,national_general_legislation
+Japan,Japan,less_than_two_weeks,0,1962,2201.06,0,national_general_legislation
+Mexico,Mexico,less_than_two_weeks,0,1962,1799.31,0,national_general_legislation
+Portugal,Portugal,less_than_two_weeks,0,1962,1632.11,0,mixed_nonuniform
+Spain,Spain,less_than_two_weeks,0,1962,2090.92,0,national_general_legislation
+Switzerland,Switzerland,less_than_two_weeks,0,1962,1973.03,0,mixed_cantonal
+United States of America,United States,less_than_two_weeks,0,1962,1973.51,0,mixed_collective_or_sectoral
