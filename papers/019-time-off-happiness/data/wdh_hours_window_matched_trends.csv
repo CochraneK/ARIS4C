@@ -1,0 +1,96 @@
+cohort,country,hours_entity,measure,measure_family,start_year,end_year,happiness_slope,hours_n,hours_first_year,hours_last_year,hours_observed_span,hours_slope_per_year,hours_change_per_decade,eligible,source_url
+1940s,France,France,hl3,happiness,1946,1986,0.046,37,1950,1986,36,-20.959845898530112,-209.59845898530114,true,https://www.intechopen.com/chapters/86319
+1940s,USA,United States,hl3,happiness,1946,2010,0.002,61,1950,2010,60,-3.8913611845584355,-38.913611845584356,true,https://www.intechopen.com/chapters/86319
+1940s,USA,United States,hl4,happiness,1946,2017,0.001,68,1950,2017,67,-3.6421817383669897,-36.4218173836699,true,https://www.intechopen.com/chapters/86319
+1950s,Japan,Japan,ls4,life_satisfaction,1958,2013,0.004,56,1958,2013,55,-9.433795967190703,-94.33795967190703,true,https://www.intechopen.com/chapters/86319
+1950s,Philippines,Philippines,bw11,best_worst_life,1959,2020,0.014,51,1970,2020,50,-4.613707692307693,-46.137076923076926,true,https://www.intechopen.com/chapters/86319
+1950s,USA,United States,hl3,happiness,1952,2010,0.001,59,1952,2010,58,-3.7829906487434255,-37.82990648743426,true,https://www.intechopen.com/chapters/86319
+1950s,USA,United States,hl4,happiness,1952,2017,-0.001,66,1952,2017,65,-3.541086525414883,-35.41086525414883,true,https://www.intechopen.com/chapters/86319
+1950s,USA,United States,ls10+11,life_satisfaction,1959,2017,-0.011,59,1959,2017,58,-3.02562419637639,-30.256241963763898,true,https://www.intechopen.com/chapters/86319
+1950s,USA,United States,bw11,best_worst_life,1955,2021,0.013,67,1955,2021,66,-3.14189560220289,-31.4189560220289,true,https://www.intechopen.com/chapters/86319
+1960s,Brazil,Brazil,bw11,best_worst_life,1960,2020,0.028,61,1960,2020,60,-9.648867265996826,-96.48867265996826,true,https://www.intechopen.com/chapters/86319
+1960s,Egypt,Egypt,bw11,best_worst_life,1960,2020,-0.029,16,2005,2020,15,-5.580176470588238,-55.801764705882384,true,https://www.intechopen.com/chapters/86319
+1960s,India,India,bw11,best_worst_life,1962,2020,0.009,51,1970,2020,50,3.024485972850678,30.244859728506782,true,https://www.intechopen.com/chapters/86319
+1960s,Italy,Italy,hl3,happiness,1965,1986,0.02,22,1965,1986,21,-11.367718802936194,-113.67718802936194,true,https://www.intechopen.com/chapters/86319
+1960s,Japan,Japan,bw11,best_worst_life,1962,2020,0.01,59,1962,2020,58,-9.904808299240212,-99.04808299240213,true,https://www.intechopen.com/chapters/86319
+1960s,Japan,Japan,ls4,life_satisfaction,1961,2013,0.001,53,1961,2013,52,-9.907409288824383,-99.07409288824383,true,https://www.intechopen.com/chapters/86319
+1960s,Nigeria,Nigeria,bw11,best_worst_life,1963,2020,0.002,16,2005,2020,15,2.4685000000000046,24.685000000000045,true,https://www.intechopen.com/chapters/86319
+1960s,Panama,Panama,bw11,best_worst_life,1962,2019,0.029,0,,,0,NaN,,false,https://www.intechopen.com/chapters/86319
+1960s,Poland,Poland,bw11,best_worst_life,1962,2020,0.033,26,1995,2020,25,-2.9860102564102577,-29.860102564102576,true,https://www.intechopen.com/chapters/86319
+1960s,UK,United Kingdom,hl3,happiness,1965,1986,-0.031,22,1965,1986,21,-10.125364201016378,-101.25364201016379,true,https://www.intechopen.com/chapters/86319
+1960s,USA,United States,hl3,happiness,1963,2010,0.005,48,1963,2010,47,-2.961893182805038,-29.618931828050382,true,https://www.intechopen.com/chapters/86319
+1960s,USA,United States,bw11,best_worst_life,1964,2021,0.015,58,1964,2021,57,-2.667959641945307,-26.67959641945307,true,https://www.intechopen.com/chapters/86319
+1970s,Belgium,Belgium,ls4,life_satisfaction,1973,2021,-0.003,49,1973,2021,48,-5.047162244897958,-50.47162244897958,true,https://www.intechopen.com/chapters/86319
+1970s,Belgium,Belgium,ls11,life_satisfaction,1975,2018,-0.004,44,1975,2018,43,-4.687870331219168,-46.878703312191675,true,https://www.intechopen.com/chapters/86319
+1970s,Brazil,Brazil,bw11,best_worst_life,1975,2020,0.009,46,1975,2020,45,-8.874260869565214,-88.74260869565214,true,https://www.intechopen.com/chapters/86319
+1970s,Canada,Canada,bw11,best_worst_life,1975,2020,0.006,46,1975,2020,45,-3.4460388529139685,-34.460388529139685,true,https://www.intechopen.com/chapters/86319
+1970s,Denmark,Denmark,ls4,life_satisfaction,1973,2021,0.013,49,1973,2021,48,-4.930995918367346,-49.309959183673456,true,https://www.intechopen.com/chapters/86319
+1970s,Denmark,Denmark,ls11,life_satisfaction,1975,2018,0.011,44,1975,2018,43,-4.2787357293868915,-42.787357293868915,true,https://www.intechopen.com/chapters/86319
+1970s,Finland,Finland,ls11,life_satisfaction,1976,2018,0.011,43,1976,2018,42,-5.12101781938991,-51.2101781938991,true,https://www.intechopen.com/chapters/86319
+1970s,France,France,ls4,life_satisfaction,1973,2021,0.017,49,1973,2021,48,-7.976854081632651,-79.7685408163265,true,https://www.intechopen.com/chapters/86319
+1970s,France,France,ls11,life_satisfaction,1975,2018,0.014,44,1975,2018,43,-7.571116983791404,-75.71116983791404,true,https://www.intechopen.com/chapters/86319
+1970s,France,France,bw11,best_worst_life,1975,2020,0.015,46,1975,2020,45,-7.4752772124576,-74.752772124576,true,https://www.intechopen.com/chapters/86319
+1970s,India,India,bw11,best_worst_life,1975,2020,-0.001,46,1975,2020,45,3.6371205673758844,36.371205673758844,true,https://www.intechopen.com/chapters/86319
+1970s,Ireland,Ireland,ls4,life_satisfaction,1973,2021,0.007,49,1973,2021,48,-13.669986734693877,-136.69986734693876,true,https://www.intechopen.com/chapters/86319
+1970s,Ireland,Ireland,ls11,life_satisfaction,1975,2018,-0.012,44,1975,2018,43,-14.027262861169843,-140.27262861169842,true,https://www.intechopen.com/chapters/86319
+1970s,Italy,Italy,ls11,life_satisfaction,1975,2018,0.013,44,1975,2018,43,-3.863816067653277,-38.63816067653277,true,https://www.intechopen.com/chapters/86319
+1970s,Italy,Italy,ls4,life_satisfaction,1973,2021,0.003,49,1973,2021,48,-4.613813265306123,-46.138132653061234,true,https://www.intechopen.com/chapters/86319
+1970s,Italy,Italy,bw11,best_worst_life,1975,2020,0.008,46,1975,2020,45,-4.490854764107309,-44.908547641073085,true,https://www.intechopen.com/chapters/86319
+1970s,Japan,Japan,bw11,best_worst_life,1975,2020,0.001,46,1975,2020,45,-10.844916435399323,-108.44916435399324,true,https://www.intechopen.com/chapters/86319
+1970s,Japan,Japan,ls4,life_satisfaction,1970,2013,0.012,44,1970,2013,43,-10.950400281888653,-109.50400281888653,true,https://www.intechopen.com/chapters/86319
+1970s,Japan,Japan,ls5,life_satisfaction,1978,2005,-0.002,28,1978,2005,27,-14.232944718117132,-142.3294471811713,true,https://www.intechopen.com/chapters/86319
+1970s,Japan,Japan,ls10+11,life_satisfaction,1975,2019,0.012,45,1975,2019,44,-10.77287747035573,-107.7287747035573,true,https://www.intechopen.com/chapters/86319
+1970s,Luxembourg,Luxembourg,ls4,life_satisfaction,1973,2021,0.007,49,1973,2021,48,-4.859706122448979,-48.59706122448979,true,https://www.intechopen.com/chapters/86319
+1970s,Luxembourg,Luxembourg,hl3,happiness,1975,2008,-0.001,34,1975,2008,33,-3.977067990832696,-39.770679908326954,true,https://www.intechopen.com/chapters/86319
+1970s,Luxembourg,Luxembourg,ls10+11,life_satisfaction,1975,2018,0.003,44,1975,2018,43,-4.669908386187455,-46.69908386187455,true,https://www.intechopen.com/chapters/86319
+1970s,Mexico,Mexico,bw11,best_worst_life,1975,2020,0.008,46,1975,2020,45,-3.200306506321311,-32.00306506321311,true,https://www.intechopen.com/chapters/86319
+1970s,Netherlands,Netherlands,ls4,life_satisfaction,1973,2021,0.01,49,1973,2021,48,-5.142975510204082,-51.42975510204082,true,https://www.intechopen.com/chapters/86319
+1970s,Netherlands,Netherlands,ls5,life_satisfaction,1974,2012,0,39,1974,2012,38,-6.229929149797572,-62.299291497975716,true,https://www.intechopen.com/chapters/86319
+1970s,Netherlands,Netherlands,ls11,life_satisfaction,1974,2018,0.004,45,1974,2018,44,-5.108325428194995,-51.08325428194995,true,https://www.intechopen.com/chapters/86319
+1970s,Netherlands,Netherlands,hl5,happiness,1977,2019,-0.01,43,1977,2019,42,-4.006620356387798,-40.066203563877984,true,https://www.intechopen.com/chapters/86319
+1970s,Switzerland,Switzerland,ls11,life_satisfaction,1976,2018,0.001,43,1976,2018,42,-6.590582905466628,-65.90582905466628,true,https://www.intechopen.com/chapters/86319
+1970s,UK,United Kingdom,ls11,life_satisfaction,1971,2018,-0.006,48,1971,2018,47,-3.904591293964392,-39.04591293964392,true,https://www.intechopen.com/chapters/86319
+1970s,UK,United Kingdom,ls4,life_satisfaction,1973,2020,0.014,48,1973,2020,47,-3.9793774424663484,-39.79377442466348,true,https://www.intechopen.com/chapters/86319
+1970s,USA,United States,hl3,happiness,1970,2010,0.007,41,1970,2010,40,-1.4726445993031365,-14.726445993031366,true,https://www.intechopen.com/chapters/86319
+1970s,USA,United States,hl4,happiness,1974,2017,0.003,44,1974,2017,43,-1.2024989429175486,-12.024989429175486,true,https://www.intechopen.com/chapters/86319
+1970s,USA,United States,ls10+11,life_satisfaction,1974,2017,-0.013,44,1974,2017,43,-1.2024989429175486,-12.024989429175486,true,https://www.intechopen.com/chapters/86319
+1970s,USA,United States,bw11,best_worst_life,1971,2021,0.017,51,1971,2021,50,-1.6423140271493213,-16.423140271493214,true,https://www.intechopen.com/chapters/86319
+1980s,Belgium,Belgium,ls4,life_satisfaction,1980,2021,0.008,42,1980,2021,41,-3.639133781703266,-36.39133781703266,true,https://www.intechopen.com/chapters/86319
+1980s,Belgium,Belgium,ls11,life_satisfaction,1981,2018,-0.001,38,1981,2018,37,-3.3779013021118276,-33.779013021118274,true,https://www.intechopen.com/chapters/86319
+1980s,Denmark,Denmark,ls4,life_satisfaction,1980,2021,0.014,42,1980,2021,41,-3.5453528887448353,-35.45352888744836,true,https://www.intechopen.com/chapters/86319
+1980s,Denmark,Denmark,ls11,life_satisfaction,1983,2018,0.022,36,1983,2018,35,-2.7439665379665383,-27.439665379665385,true,https://www.intechopen.com/chapters/86319
+1980s,France,France,ls4,life_satisfaction,1980,2021,0.019,42,1980,2021,41,-5.6525151932582425,-56.525151932582425,true,https://www.intechopen.com/chapters/86319
+1980s,France,France,ls11,life_satisfaction,1983,2018,0.033,36,1983,2018,35,-4.677980694980693,-46.77980694980693,true,https://www.intechopen.com/chapters/86319
+1980s,Canada,Canada,ls10,life_satisfaction,1982,2020,0.003,39,1982,2020,38,-3.5189109311740903,-35.1891093117409,true,https://www.intechopen.com/chapters/86319
+1980s,Greece,Greece,ls4,life_satisfaction,1981,2021,-0.032,41,1981,2021,40,-5.029705574912891,-50.297055749128916,true,https://www.intechopen.com/chapters/86319
+1980s,Ireland,Ireland,ls4,life_satisfaction,1980,2021,0.015,42,1980,2021,41,-13.167887529373635,-131.67887529373635,true,https://www.intechopen.com/chapters/86319
+1980s,Ireland,Ireland,ls11,life_satisfaction,1980,2018,0.003,39,1980,2018,38,-13.771700404858299,-137.717004048583,true,https://www.intechopen.com/chapters/86319
+1980s,Italy,Italy,ls11,life_satisfaction,1983,2018,0.009,36,1983,2018,35,-5.03416344916345,-50.3416344916345,true,https://www.intechopen.com/chapters/86319
+1980s,Italy,Italy,ls4,life_satisfaction,1980,2021,-0.006,42,1980,2021,41,-5.214041001539584,-52.140410015395844,true,https://www.intechopen.com/chapters/86319
+1980s,Japan,Japan,ls4,life_satisfaction,1980,2013,-0.003,34,1980,2013,33,-12.690015278838809,-126.90015278838808,true,https://www.intechopen.com/chapters/86319
+1980s,Japan,Japan,ls5,life_satisfaction,1981,2005,-0.006,25,1981,2005,24,-15.518915384615385,-155.18915384615386,true,https://www.intechopen.com/chapters/86319
+1980s,Japan,Japan,ls10+11,life_satisfaction,1981,2019,0.029,39,1981,2019,38,-11.46290890688259,-114.62908906882589,true,https://www.intechopen.com/chapters/86319
+1980s,Korea (South),South Korea,bw11,best_worst_life,1981,2020,0.046,40,1981,2020,39,-26.744629455909948,-267.4462945590995,true,https://www.intechopen.com/chapters/86319
+1980s,Luxembourg,Luxembourg,ls4,life_satisfaction,1980,2021,0.003,42,1980,2021,41,-5.13804959079491,-51.380495907949104,true,https://www.intechopen.com/chapters/86319
+1980s,Luxembourg,Luxembourg,hl3,happiness,1982,2008,-0.013,27,1982,2008,26,-3.773382173382173,-37.73382173382173,true,https://www.intechopen.com/chapters/86319
+1980s,Luxembourg,Luxembourg,ls10+11,life_satisfaction,1983,2018,0.008,36,1983,2018,35,-4.894521235521236,-48.94521235521236,true,https://www.intechopen.com/chapters/86319
+1980s,Netherlands,Netherlands,ls10,life_satisfaction,1981,2019,0.002,39,1981,2019,38,-3.2150668016194346,-32.150668016194345,true,https://www.intechopen.com/chapters/86319
+1980s,Netherlands,Netherlands,ls4,life_satisfaction,1980,2021,0.011,42,1980,2021,41,-3.300562353131836,-33.00562353131836,true,https://www.intechopen.com/chapters/86319
+1980s,Netherlands,Netherlands,ls5,life_satisfaction,1980,2012,-0.005,33,1980,2012,32,-4.51817179144385,-45.181717914438494,true,https://www.intechopen.com/chapters/86319
+1980s,Netherlands,Netherlands,ls11,life_satisfaction,1983,2018,0.004,36,1983,2018,35,-2.945090090090092,-29.45090090090092,true,https://www.intechopen.com/chapters/86319
+1980s,Netherlands,Netherlands,hl5,happiness,1980,2019,-0.005,40,1980,2019,39,-3.4011125703564744,-34.011125703564744,true,https://www.intechopen.com/chapters/86319
+1980s,Norway,Norway,ls10+11,life_satisfaction,1981,2018,0.008,38,1981,2018,37,-3.7100798774482984,-37.10079877448298,true,https://www.intechopen.com/chapters/86319
+1980s,Norway,Norway,hl4,happiness,1981,2018,0,38,1981,2018,37,-3.7100798774482984,-37.10079877448298,true,https://www.intechopen.com/chapters/86319
+1980s,Portugal,Portugal,ls4,life_satisfaction,1985,2021,-0.016,37,1985,2021,36,0.1131958274063527,1.131958274063527,true,https://www.intechopen.com/chapters/86319
+1980s,South Africa,South Africa,hl5,happiness,1983,2015,-0.006,14,2001,2014,13,-14.44698901098901,-144.4698901098901,true,https://www.intechopen.com/chapters/86319
+1980s,South Africa,South Africa,ls5,life_satisfaction,1983,2015,-0.015,14,2001,2014,13,-14.44698901098901,-144.4698901098901,true,https://www.intechopen.com/chapters/86319
+1980s,South Africa,South Africa,ls10+11,life_satisfaction,1981,2013,0.009,13,2001,2013,12,-14.764340659340663,-147.64340659340664,true,https://www.intechopen.com/chapters/86319
+1980s,Spain,Spain,ls4,life_satisfaction,1985,2021,0.002,37,1985,2021,36,-3.107121858700807,-31.071218587008072,true,https://www.intechopen.com/chapters/86319
+1980s,Spain,Spain,ls10+11,life_satisfaction,1981,2018,0.024,38,1981,2018,37,-3.3478630047051112,-33.47863004705111,true,https://www.intechopen.com/chapters/86319
+1980s,Sweden,Sweden,ls10,life_satisfaction,1982,2017,0.001,36,1982,2017,35,2.59047232947233,25.9047232947233,true,https://www.intechopen.com/chapters/86319
+1980s,UK,United Kingdom,ls11,life_satisfaction,1983,2018,0.01,36,1983,2018,35,-3.024660231660231,-30.24660231660231,true,https://www.intechopen.com/chapters/86319
+1980s,UK,United Kingdom,ls4,life_satisfaction,1980,2020,0.016,41,1980,2020,40,-3.351571428571428,-33.51571428571428,true,https://www.intechopen.com/chapters/86319
+1980s,USA,United States,ls10+11,life_satisfaction,1981,2017,-0.018,37,1981,2017,36,-1.2298767188240882,-12.298767188240882,true,https://www.intechopen.com/chapters/86319
+1980s,USA,United States,bw11,best_worst_life,1980,2021,0.018,42,1980,2021,41,-1.3408013937282226,-13.408013937282226,true,https://www.intechopen.com/chapters/86319
+1980s,USA,United States,hl3,happiness,1980,2010,0.007,31,1980,2010,30,-0.3615443548387109,-3.615443548387109,true,https://www.intechopen.com/chapters/86319
+1980s,USA,United States,hl4,happiness,1981,2017,-0.004,37,1981,2017,36,-1.2298767188240882,-12.298767188240882,true,https://www.intechopen.com/chapters/86319
