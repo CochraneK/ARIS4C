@@ -61,7 +61,7 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 - **001 · Bee GCA × Uncertainty** — [English PDF](https://cochranek.github.io/ARIS4C/paper/001/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/001/zh/main.pdf)
 - **002 · Testing linguistic periodicity** — [English PDF](https://cochranek.github.io/ARIS4C/paper/002/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/002/zh/main.pdf)
 
-## The 19-paper portfolio
+## The 22-paper portfolio
 
 | ID | Project | State | Progress | Continue from | At a glance |
 |---|---|---:|---:|---|---:|
@@ -84,6 +84,9 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 | **017** | [LING-02 · Predictive Language Space](papers/017-predictive-language-space/) | 🟡 Wait | 20% | [handoff](papers/017-predictive-language-space/handoff/AGENT_HANDOFF.md) | — |
 | **018** | [Fly Neuro Playground](papers/018-drosophila-neural-simulation/) | 🟢 Active | 88% | [handoff](papers/018-drosophila-neural-simulation/handoff/AGENT_HANDOFF.md) | — |
 | **019** | [Annual Leave × Life Evaluation](papers/019-time-off-happiness/) | 🟢 Active | 82% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
+| **020** | [Global Retraction Ecology](papers/020-global-retraction-ecology/) | 🟢 Active | 28% | [handoff](papers/020-global-retraction-ecology/handoff/AGENT_HANDOFF.md) | — |
+| **021** | [Mass Atrocity Conditions · QCA](papers/021-mass-atrocity-configurations/) | 🟡 Wait | 18% | [handoff](papers/021-mass-atrocity-configurations/handoff/AGENT_HANDOFF.md) | — |
+| **022** | [Planetary Taxonomy × fsQCA](papers/022-configurational-planetary-taxonomy/) | 🟢 Active | 18% | [handoff](papers/022-configurational-planetary-taxonomy/handoff/AGENT_HANDOFF.md) | — |
 
 ## How ARIS4C works
 
