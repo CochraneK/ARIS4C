@@ -44,3 +44,41 @@ The remaining high-confidence cross-snapshot differences — Algeria, Mali and N
 ## Canonical file
 
 `data/historical_verified_leave_reform_registry_v1.csv`
+
+
+## Second audit wave: Algeria / Mali / Namibia
+
+### Algeria — reject as harmonization artifact
+
+Law 90-11 provides paid annual leave at 2.5 days per month, capped at **30 calendar days per year**. The ILO supervisory record explicitly describes the 30-day ceiling as calendar days. citeturn448988search0turn448988search1
+
+Under the 2012 ILO five-day-workweek method, 30 calendar days map to about **21 working days** (`30 × 5/7`). The prior 25-day screening value was a harmonization error. No 2000→2012 reform is accepted.
+
+### Mali — reject as harmonization artifact
+
+Labour Code Article L.151 provides 2.5 days per month, **30 days per year including non-working days**. citeturn448988search8turn242103search19
+
+Thus a five-day-workweek equivalent is about **21 days**, matching the 2012 ILO snapshot. The prior 25-day approximation was incorrect. No reform is accepted.
+
+### Namibia — verified B-tier reform, 1 November 2008
+
+The 1992 Labour Act §39 provided **24 consecutive days** of paid annual leave. citeturn997205search12
+
+The 2004 Labour Act proposed a different rule but **never came into force**; the 1992 Act remained operative until replaced. citeturn296718search0
+
+The 2007 Labour Act §23 provides **four consecutive weeks**; for a five-day workweek it explicitly equals **20 working days**. NATLEX records general entry into force on **1 November 2008**. citeturn588501search12turn588501search0
+
+**Freeze:** verified statutory annual-leave increase, but B-tier for causal isolation because it arrived in a comprehensive Labour Act that altered many employment conditions.
+
+## V1 reform inventory after two audit waves
+
+Accepted pre-outcome candidates:
+- **A-tier:** Bulgaria 2001; Slovakia 2002.
+- **B-tier / bundled or broad-code:** Great Britain 2007/2009 staged; Namibia 2008.
+
+Rejected:
+- Nicaragua — source conflict;
+- Algeria — unit-harmonization artifact;
+- Mali — unit-harmonization artifact.
+
+No happiness outcome was used in these adjudications.
