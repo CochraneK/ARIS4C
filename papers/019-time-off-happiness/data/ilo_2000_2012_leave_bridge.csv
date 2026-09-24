@@ -1,0 +1,38 @@
+country_2000,country_2012,raw_2000,category_2000,approx_2000_5day,approx_confidence,status_2012,days_2012_5day,bracket_2012,category_2012,approx_delta_2012_minus_2000,threshold_transition
+Algeria,Algeria,30 days (6-day working week),>=3weeks,25,high,exact_annex,21,20-23,>=3weeks,-4,>=3weeks->>=3weeks
+Austria,Austria,30 working days,>=3weeks,25,medium,exact_annex,25,24-25,>=3weeks,0,>=3weeks->>=3weeks
+Benin,Benin,2 working days per month up to 30 days per year,>=3weeks,20,medium,exact_annex,20,20-23,>=3weeks,0,>=3weeks->>=3weeks
+Bulgaria,Bulgaria,14 working days,<3weeks,12,medium,exact_annex,20,20-23,>=3weeks,8,<3weeks->>=3weeks
+Burundi,Burundi,1.6 working days per month,>=3weeks,16,medium,exact_annex,17,15-19,>=3weeks,1,>=3weeks->>=3weeks
+Chad,Chad,2 working days per month (6-day working week),>=3weeks,20,high,exact_annex,20,20-23,>=3weeks,0,>=3weeks->>=3weeks
+Chile,Chile,15 working days (5-day working week),>=3weeks,15,high,exact_annex,15,15-19,>=3weeks,0,>=3weeks->>=3weeks
+China,China,n.s.,not_specified,,none,exact_annex,5,<10,<3weeks,,not_specified-><3weeks
+Côte d'Ivoire,Ivory Coast,2 working days per month,>=3weeks,20,medium,interval_20_23,,20-23,>=3weeks,,>=3weeks->>=3weeks
+Denmark,Denmark,2.5 days per month,>=3weeks,,none,exact_annex,25,24-25,>=3weeks,,>=3weeks->>=3weeks
+Dominican Republic,Dominican Republic,2 weeks,<3weeks,10,high,exact_annex,12,10-14,<3weeks,2,<3weeks-><3weeks
+El Salvador,El Salvador,15 days,<3weeks,,none,exact_annex,15,15-19,>=3weeks,,<3weeks->>=3weeks
+Estonia,Estonia,28 calendar days,>=3weeks,20,high,exact_annex,20,20-23,>=3weeks,0,>=3weeks->>=3weeks
+Ethiopia,Ethiopia,14 working days (6.5-day working week),<3weeks,11,high,exact_annex,12,10-14,<3weeks,1,<3weeks-><3weeks
+Gabon,Gabon,2 working days per month (6-day working week),>=3weeks,20,high,exact_annex,20,20-23,>=3weeks,0,>=3weeks->>=3weeks
+Iran,Iran,1 month (including 4 Fridays),>=3weeks,,none,exact_annex,25,24-25,>=3weeks,,>=3weeks->>=3weeks
+Japan,Japan,10 working days,<3weeks,8,medium,exact_annex,8,<10,<3weeks,0,<3weeks-><3weeks
+Jordan,Jordan,14 days,<3weeks,,none,exact_annex,14,10-14,<3weeks,,<3weeks-><3weeks
+"Korea, Republic of",Republic of Korea,22 days,>=3weeks,,none,exact_annex,15,15-19,>=3weeks,,>=3weeks->>=3weeks
+Lao People's Democratic Republic,Lao People's Democratic Republic,15 working days,<3weeks,13,medium,exact_annex,13,10-14,<3weeks,0,<3weeks-><3weeks
+Lesotho,Lesotho,12 working days,<3weeks,10,medium,exact_annex,10,10-14,<3weeks,0,<3weeks-><3weeks
+Lithuania,Lithuania,28 calendar days,>=3weeks,20,high,exact_annex,20,20-23,>=3weeks,0,>=3weeks->>=3weeks
+Mali,Mali,2.5 days per month (30 days per year – 6-day working week),>=3weeks,25,high,exact_annex,21,20-23,>=3weeks,-4,>=3weeks->>=3weeks
+Mexico,Mexico,6 continuous working days per year,<3weeks,5,medium,exact_annex,6,<10,<3weeks,1,<3weeks-><3weeks
+Namibia,Namibia,24 consecutive days,>=3weeks,17,high,exact_annex,20,20-23,>=3weeks,3,>=3weeks->>=3weeks
+Nicaragua,Nicaragua,15 consecutive days every six months (30 days per year),>=3weeks,21,high,exact_annex,10,10-14,<3weeks,-11,>=3weeks-><3weeks
+Nepal,Nepal,1 day's leave for 20 working days,<3weeks,,none,exact_annex,12,10-14,<3weeks,,<3weeks-><3weeks
+Panama,Panama,30 days (1 day for 11 worked),>=3weeks,,none,exact_annex,21,20-23,>=3weeks,,>=3weeks->>=3weeks
+Paraguay,Paraguay,12 consecutive days,<3weeks,9,high,exact_annex,10,10-14,<3weeks,1,<3weeks-><3weeks
+Russian Federation,Russian Federation,24 working days (6-day working week),>=3weeks,20,high,exact_annex,20,20-23,>=3weeks,0,>=3weeks->>=3weeks
+Senegal,Senegal,2 working days per month,>=3weeks,20,medium,exact_annex,20,20-23,>=3weeks,0,>=3weeks->>=3weeks
+Seychelles,Seychelles,21 days,>=3weeks,15,medium,exact_annex,18,15-19,>=3weeks,3,>=3weeks->>=3weeks
+Slovakia,Slovakia,3 working weeks (7 working days),>=3weeks,15,high,exact_annex,20,20-23,>=3weeks,5,>=3weeks->>=3weeks
+Sudan,Sudan,20 days,<3weeks,,none,exact_annex,17,15-19,>=3weeks,,<3weeks->>=3weeks
+United Kingdom,United Kingdom,4 weeks,>=3weeks,20,high,exact_annex,28,26+,>=3weeks,8,>=3weeks->>=3weeks
+Venezuela,Venezuela,15 working days,<3weeks,13,medium,exact_annex,13,10-14,<3weeks,0,<3weeks-><3weeks
+Viet Nam,Vietnam,12 working days,<3weeks,10,medium,exact_annex,10,10-14,<3weeks,0,<3weeks-><3weeks
