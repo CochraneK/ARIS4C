@@ -1,0 +1,5 @@
+event_id,country,transition_year,whr_years,pre_n,post_n,near_pre_n,near_post_n,feasibility,isolation_tier
+HIST-BGR-2001-LEAVE,Bulgaria,2001,2007;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023,0,15,0,0,not_feasible_in_WHR,A
+HIST-SVK-2002-LEAVE,Slovakia,2002,2006;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023,0,15,0,0,not_feasible_in_WHR,A
+HIST-GBR-2007-2009-LEAVE,United Kingdom (Great Britain scope),2007;2009,2005;2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023,1,16,1,5,sparse_only_not_primary,B
+HIST-NAM-2008-LEAVE,Namibia,2008,2007;2014;2017;2018;2019;2020;2021;2022;2023,1,8,1,0,sparse_only_not_primary,B
