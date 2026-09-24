@@ -5,15 +5,15 @@
   "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title": "Planetary Taxonomy × fsQCA",
   "year": 2026,
-  "status": "pilot0-case-frame-frozen",
+  "status": "physical-core-v0.1-ingested",
   "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary": "A falsification-first configurational taxonomy of Solar System bodies. A frozen 50-body Pilot-0 frame now separates a definitional IAU benchmark from non-definitional physical-signature models, so QCA can audit set-theoretic classification without circularly rediscovering the official definition.",
+  "summary": "A falsification-first configurational taxonomy of Solar System bodies. The frozen 50-body frame now has a 50-row raw physical matrix, authoritative JPL core fields for 34 cases, an auditable JPL SBDB route for the remaining 16 small bodies, and source-faithful Margot/Soter dynamics code while definitional and non-definitional models remain separated.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
-    "provenance": "ARIS4C user-requested project registered 2026-09-24. Initial framing separates definitional classification from causal inference, identifies Mars as a positive control rather than an unresolved planet-vs-satellite case, and freezes a first-pass variable-family and source plan. Pilot-0 froze a 50-body stratified Solar-System case frame, canonical raw-variable dictionary, compact 4–6-condition model ladder, anti-circularity benchmark, and deterministic frame validator before numerical QCA solutions were inspected.",
-    "version": "v0.2.0"
+    "provenance": "ARIS4C user-requested project registered 2026-09-24. Initial framing separates definitional classification from causal inference and treats Mars as a positive control. Pilot-0 froze the 50-body stratified frame, raw-variable dictionary, compact 4–6-condition model ladder, anti-circularity benchmark, and deterministic frame validator before numerical QCA solutions were inspected. Physical-core v0.1 then materialized all 50 rows, ingested JPL values for 8 planets, 5 dwarf planets and 21 satellites, reserved 16 small-body rows for an auditable SBDB snapshot, and implemented Margot 2015 / Soter 2006 dynamical metrics from source equations.",
+    "version": "v0.3.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
@@ -22,7 +22,10 @@
     "sources": "data/SOURCE_REGISTRY.md",
     "model_ladder": "process/MODEL_LADDER.md",
     "case_frame": "data/case_frame_v0.1.csv",
-    "data_dictionary": "data/DATA_DICTIONARY.md"
+    "data_dictionary": "data/DATA_DICTIONARY.md",
+    "physical_core": "data/raw_physical_core_v0.1.csv",
+    "ingestion_audit": "data/INGESTION_AUDIT.md",
+    "dynamics_code": "code/dynamics_metrics.py"
   },
   "tags": [
     "ARIS",
@@ -38,7 +41,8 @@
     "Mars",
     "dwarf planets",
     "natural satellites",
-    "Solar System"
+    "Solar System",
+    "JPL SBDB"
   ],
   "bilingual_delivery": {
     "english": true,
@@ -52,8 +56,8 @@
       "count": 0
     },
     "tables": {
-      "status": "pilot-0 case frame frozen",
-      "count": 1
+      "status": "case frame + physical core v0.1",
+      "count": 2
     },
     "pdf": {
       "status": "not-started",
