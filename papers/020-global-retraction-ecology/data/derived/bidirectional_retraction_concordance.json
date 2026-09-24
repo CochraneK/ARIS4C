@@ -5,11 +5,6 @@
   "openalex_core_is_retracted_works_with_doi_rows": 134923,
   "openalex_core_unique_is_retracted_doi": 134890,
   "openalex_core_is_retracted_without_doi": 1077,
-  "openalex_to_rwdb_classification": {
-    "absent_from_rwdb_original_and_notice_doi": 33472,
-    "matches_rwdb_original_doi": 60299,
-    "matches_rwdb_notice_doi_only": 41152
-  },
   "rwdb_original_doi_absent_from_openalex_is_retracted_doi": 880,
   "rwdb_original_absent_examples": [
     "10.1002/(sici)1096-8628(19961230)66:4%3c403::aid-ajmg4%3e3.0.co;2-l",
@@ -118,5 +113,13 @@
     "OpenAlex matches to RWDB notice DOI but not original DOI may represent notice/original object confusion rather than independent false positives.",
     "Absent-both OpenAlex records require title/date/source audit before any false-positive label.",
     "RWDB original DOI absent from OpenAlex is_retracted may reflect metadata lag, missing works, or classification discordance."
-  ]
+  ],
+  "validation_status": "PROVISIONAL_ROW_LEVEL_CLASSIFICATION",
+  "known_issue": "openalex_to_rwdb_classification counts were computed over DOI-bearing OpenAlex Work rows (n=134,923), while openalex_core_unique_is_retracted_doi is 134,890. The current counts therefore must not be described as unique-DOI classification until rerun with the corrected script.",
+  "requires_rerun_for_unique_doi_classification": true,
+  "openalex_to_rwdb_classification_work_rows": {
+    "absent_from_rwdb_original_and_notice_doi": 33472,
+    "matches_rwdb_original_doi": 60299,
+    "matches_rwdb_notice_doi_only": 41152
+  }
 }
