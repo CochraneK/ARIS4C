@@ -1,21 +1,29 @@
 # SESSION LOG · ARIS4C022
 
 ## 2026-09-24
-- Registered ARIS4C022 and froze the 50-body case frame.
-- Froze M0–M4 model ladder and anti-circularity constraints before numerical results.
-- Built 50-row physical/orbit/derived data spine; JPL core physical data cover 34 cases.
-- Implemented source-faithful Margot/Soter metrics and deterministic validators.
-- Source-hardened all eight planet orbit rows with JPL approximate J2000 elements; Earth explicitly remains an EMB proxy.
-- Froze `EVIDENCE_STATE_PROTOCOL.md` and initialized the 50-case evidence matrix before any QCA exposure.
+- Registered ARIS4C022, froze 50 cases, raw-variable architecture and M0–M4 anti-circularity model ladder.
+- Built physical/orbit/derived spine and source-hardened all eight planet orbit rows.
+- Implemented Margot/Soter metrics and deterministic validators.
+- Froze evidence-state protocol before QCA exposure.
 
-## 2026-09-24 · Anchor evidence batch 01
-- Current SBDB object endpoints remain inaccessible from the available web execution surfaces; no fallback numeric values were fabricated.
-- Opened current NASA Science facts pages for Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Ceres and Pluto.
-- Created `evidence_state_v0.2.csv` with per-variable source keys.
-- Coded composition, atmosphere and differentiation for all 10 anchors.
-- Coded Mars geological activity as `PAST_ONLY` because the NASA facts page explicitly describes extinct volcanoes.
-- Applied the pre-frozen `NA_NOT_APPLICABLE` tidal-heating default to the 10 direct-Sun anchors.
-- Deferred ocean and other geological states where the operational meaning or evidence requires dedicated review rather than broad agency summaries.
-- Total evidence-state cells advanced from pending: 41/300.
-- Added `EVIDENCE_CODING_AUDIT.md` and `validate_evidence_state.py`.
-- All 50 rows remain `UNEXPOSED_TO_QCA_RESULT`; no calibration, truth table or solution term was inspected.
+## Anchor evidence batch 01
+- Coded 8 planets + Ceres + Pluto.
+- Advanced 41/300 evidence-state cells.
+- All rows remained UNEXPOSED_TO_QCA_RESULT.
+
+## Moon / boundary evidence batch 02
+- Reviewed current NASA mission/facts sources for Moon, Io, Europa, Ganymede, Callisto, Enceladus, Titan, Triton and Charon.
+- Identified and fixed a semantic issue before coding: current/persistent subsurface ocean evidence must not be collapsed with paleo-ocean evidence.
+- Advanced 41 additional cells; total evidence coverage now 82/300.
+- Key contrasts now represented:
+  - Io: current volcanism + dominant tidal heating.
+  - Europa: strong ocean evidence + important tidal heating; current activity remains uncertain.
+  - Ganymede: differentiated large moon + thin oxygen atmosphere + strong ocean evidence.
+  - Callisto: low current geology + uncertain candidate ocean.
+  - Enceladus: current jets + near-consensus global ocean + tidal heating.
+  - Titan: substantial atmosphere + model-inferred layered interior + strong ocean evidence.
+  - Triton: current geyser/volcanic activity + thin N2 atmosphere.
+  - Charon: no atmosphere and ancient tectonic/resurfacing history; paleo-ocean evidence not coded as current ocean.
+  - Moon: differentiated rocky satellite with exosphere and past volcanism.
+- SBDB live payload acquisition still failed in current execution surfaces; no substitute numeric values were fabricated.
+- No fsQCA calibration, truth table or solution inspection occurred.
