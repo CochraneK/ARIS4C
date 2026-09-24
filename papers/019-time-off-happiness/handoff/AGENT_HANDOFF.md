@@ -2,7 +2,7 @@
 
 ## 2026-09-24 current canonical state
 
-The former near-finish Pilot-0 state is **not** the current project-level state. ARIS4C019 was reopened after an adequacy audit and now stands at **78% / active**.
+The former near-finish Pilot-0 state is **not** the current project-level state. ARIS4C019 was reopened after an adequacy audit and now stands at **80% / active**.
 
 ### Read first
 
@@ -47,6 +47,20 @@ The published WDH Table-2 layer is now complete:
 Therefore the earlier pre-1990-start negative historical correlation is superseded for overall inference. Read `process/HISTORICAL_TREND_INTERPRETATION_LOCK.md` before interpreting any historical hours result.
 
 Reproducibility note: `Taiwan` -> `Taiwan Province of China` was missing from one hours join and has been fixed. Canonical A0 hours sample is **2,015 / 130 countries**. The independent statsmodels validator is committed, but GitHub Actions run `35977496016` / job `107561331580` failed before any step, so independent execution remains pending.
+
+### ILO history closed + WDH raw-year route validated
+
+- C052 NORMLEX register is complete: **54/54 exact primary dates**, 37 currently in force and 17 not in force.
+- C132 NORMLEX register is complete: **39/39 exact primary dates**, all currently in force.
+- **18 countries** occur in both registers; mean/median C052→C132 ratification gap = **27.8 / 26.4 years**.
+- C132 declaration wording is preserved by unit; never silently convert weeks/calendar days/months into working days.
+- Ratification remains an institutional diffusion marker, not a national-law treatment date.
+
+The raw WDH annual route is no longer conceptually blocked:
+- official HTML exposes year-level distributional findings and transformed 0–10 means;
+- USA 111C/hl4 and Japan 121C/ls4 reconstruction reproduces published Table-2 slopes to <0.001/year;
+- batch builder: `code/rebuild_wdh_html_annual_panel.py`;
+- full batch execution still needs a network-capable runner.
 
 ### Next scientific gate
 
