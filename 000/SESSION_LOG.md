@@ -69,3 +69,15 @@ Fix:
 - Verified Finish output audit requires the one-page visual but not a separate thumbnail.
 - Added `PRE_DELETE_CHECKPOINT_2026-09-21.md` and linked it from 000 README/agent handoff.
 - No scientific paper state was rewritten from chat memory; current paper state remains owned by dashboard + per-paper canonical files.
+
+## 2026-09-24 · Portfolio re-audit after 023 registration
+
+- Re-read canonical `papers/dashboard.json`, current manifests, controller snapshot, public Command Center, README and recent GitHub Actions.
+- Canonical dashboard contains 23 projects (001–023). All 23 canonical paper folders have the full 8-file handoff package.
+- Historical `018-drosophila-open-simulation` is intentionally retained for provenance with `portfolio_visible:false` and `superseded_by`; canonical 018 is `018-drosophila-neural-simulation`.
+- Hardened the Command Center generator so only dashboard-member visible manifests are loaded, with missing/duplicate visible IDs treated as errors.
+- Hardened the Command Center audit to use the same canonical visible-paper set.
+- Refreshed `000/STATUS.md` manually from the current dashboard because automated controller generation is not currently executing.
+- Public generated surfaces are stale: `docs/index.html` still shows 22 papers through 022 and Today's date 2026-09-23; README also still reports 22 papers. 023 is present in canonical Git but has not been regenerated onto those surfaces.
+- GitHub Actions are currently failing before runner steps begin across multiple independent workflows (paper index, handoff sync, public PDFs and 021 contract). A manual rerun reproduced the same zero-step failure. This localizes the immediate automation fault to runner/account/platform execution rather than a repository test failure, but the exact account-side cause is not exposed by the available connector.
+- 019 canonical public PDFs remain absent from `docs/paper/019/en/main.pdf` and `zh/main.pdf`; its scientific work is complete but publication remains engineering-blocked.
