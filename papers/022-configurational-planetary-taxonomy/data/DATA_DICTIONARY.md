@@ -1,6 +1,6 @@
 # Data Dictionary · Pilot-0
 
-Version: 0.1 · 2026-09-24
+Version: 0.2 · 2026-09-24
 
 One row is one named Solar-System body in the frozen Pilot-0 case frame. Raw/catalogued values stay separate from derived values. Every nontrivial numeric field requires source, retrieval date, unit, and uncertainty/provenance.
 
@@ -14,15 +14,35 @@ One row is one named Solar-System body in the frozen Pilot-0 case frame. Raw/cat
 - is_satellite: binary natural-satellite indicator
 - boundary_tag: why the case is scientifically useful near a classification boundary
 
+## Provenance / ingestion fields
+
+- source_key: controlled source route such as JPL_PLANET_PHYS / JPL_SAT_PHYS / JPL_SBDB_API
+- retrieved_date: retrieval date in YYYY-MM-DD
+- ingestion_status: INGESTED_CORE / NA_NOT_INGESTED / explicit scientific missingness state
+- mass_value_type: DIRECT_TABLE / DERIVED_FROM_GM_CODATA2018 / later controlled values
+- gm_ref: JPL ephemeris/reference identifier when GM is the source quantity
+- notes: deterministic conversion or source caveat, never a substitute for machine-readable source metadata
+
 ## Raw physical fields
 
+Canonical target fields:
 - mass_kg
+- mass_sigma_kg
+- gm_km3_s2
+- gm_sigma_km3_s2
 - mean_radius_km
+- radius_sigma_km
 - diameter_km
 - density_kg_m3
 - rotation_period_h
 - surface_pressure_pa
 - albedo_bond
+
+Current v0.1 physical snapshot preserves JPL-native `density_g_cm3` and `geometric_albedo`; the analysis matrix will normalize density to kg/m3 and must not silently relabel geometric albedo as Bond albedo.
+
+For satellites, JPL often supplies GM as the primary dynamical measurement. Where `mass_kg` is present with `mass_value_type=DERIVED_FROM_GM_CODATA2018`, it is deterministically derived using:
+
+`M = GM / G`, with `G = 6.67430e-20 km^3 kg^-1 s^-2`.
 
 ## Orbital hierarchy fields
 
@@ -60,6 +80,8 @@ Model-estimated interior fractions must be labeled as estimates, not direct meas
 - insolation_rel_earth = (L_star/L_sun) / a_AU^2
 - equilibrium_temperature_K only with explicit albedo and redistribution assumptions
 
+Raw source columns and normalized/derived columns must remain separable.
+
 ## Dynamical dominance
 
 Keep each published criterion separately:
@@ -68,7 +90,11 @@ Keep each published criterion separately:
 - margot_member
 - soter_mu
 
-Published equations and units must be implemented from source papers, never reconstructed from memory.
+Implementation is pinned in `code/dynamics_metrics.py`:
+- Margot (2015) Eq. 8, Eq. 9, Eq. 10
+- Soter (2006) mu = M / m
+
+Soter mu additionally requires an explicit orbital-zone mass census; it must not be synthesized from the focal body's own physical fields.
 
 ## Fuzzy-set calibration
 
@@ -81,5 +107,6 @@ Use explicit states:
 - NA_NOT_MEASURED
 - NA_UNCERTAIN
 - NA_SOURCE_CONFLICT
+- NA_NOT_INGESTED
 
 Never coerce these to zero.
