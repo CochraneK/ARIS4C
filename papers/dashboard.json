@@ -172,12 +172,12 @@
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
-      "progress": 85,
-      "stage": "M2 readiness 25/50 · planet/dwarf/satellite strata PASS · small-body numeric gate",
+      "progress": 90,
+      "stage": "M2 evidence-condition gates PASS · small-body numeric readiness gate only",
       "activity": "active",
-      "evidence": "Primary M2 remains frozen and calibration closed. Readiness-targeted Batch 06 advances substantive condition coverage to 34/34/28/36/34 and complete cases to 25/50. Pre-frozen strata now pass for planets (8/8), dwarf planets (4/5) and satellites (13/21); small/boundary bodies remain 0/16 because their canonical JPL SBDB numeric SCALE/BULK_MATERIAL/SOLAR_ENERGY inputs are still absent. A case-level readiness gap map and v0.2 audit are committed.",
-      "next_gate": "Concentrate only on the remaining bottlenecks: capture the 16-case live JPL SBDB numeric snapshot, raise small-body atmosphere evidence enough to support >=10 complete small-body cases after numerics land, raise internal organization 36→>=40, then recompute the >=35/50 complete-case gate before calibration freeze.",
-      "blocker": "Live JPL SBDB object payload acquisition remains the dominant blocker. Calibration/truth tables/QCA solutions remain closed by the frozen readiness rules."
+      "evidence": "Primary M2 remains frozen and calibration closed. Batch 08 raises ATMOSPHERE_RETENTION to 40/50 while INTERNAL_ORGANIZATION remains 40/50, so both evidence-condition gates now pass. SCALE/BULK_MATERIAL/SOLAR_ENERGY remain 34/50 solely because the 16 small/boundary numeric rows are absent. Complete cases are 27/50; complete strata are planets 8/8, dwarfs 4/5, satellites 15/21, small/boundary 0/16.",
+      "next_gate": "Capture and validate the 16-case live JPL SBDB physical/orbital numeric layer, derive escape velocity/density/relative insolation, reach >=10 complete small/boundary cases and >=35 complete cases overall, then freeze calibration anchors.",
+      "blocker": "Single dominant blocker: live JPL SBDB object payload acquisition for the 16 small/boundary cases. No calibration/truth table/QCA solution may be opened before readiness passes."
     },
     "023": {
       "progress": 98,
