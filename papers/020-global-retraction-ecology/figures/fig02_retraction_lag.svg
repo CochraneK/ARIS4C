@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img">
+<title>Publication-to-Retraction Lag Quantiles</title>
+<rect width="1200" height="520" fill="#fff"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#1f2937}.t{font-size:30px;font-weight:700}.s{font-size:15px;fill:#6b7280}.lab{font-size:14px}.big{font-size:28px;font-weight:700}.line{stroke:#667085;stroke-width:8;stroke-linecap:round}.dot{fill:#1f2937}.mid{fill:#667085}</style>
+<text x="70" y="55" class="t">Publication → Retraction Lag</text>
+<text x="70" y="82" class="s">67,197 Retraction records · descriptive among eventually retracted works</text>
+<line x1="130" y1="260" x2="1070" y2="260" class="line"/>
+<circle cx="130" cy="260" r="10" class="dot"/><text x="130" y="215" text-anchor="middle" class="big">38</text><text x="130" y="300" text-anchor="middle" class="lab">P10 days</text><circle cx="180.139146567718" cy="260" r="10" class="dot"/><text x="180.139146567718" y="215" text-anchor="middle" class="big">153</text><text x="180.139146567718" y="300" text-anchor="middle" class="lab">P25 days</text><circle cx="327.06864564007424" cy="260" r="14" class="mid"/><text x="327.06864564007424" y="215" text-anchor="middle" class="big">490</text><text x="327.06864564007424" y="300" text-anchor="middle" class="lab">Median days</text><circle cx="576.0204081632653" cy="260" r="10" class="dot"/><text x="576.0204081632653" y="215" text-anchor="middle" class="big">1,061</text><text x="576.0204081632653" y="300" text-anchor="middle" class="lab">P75 days</text><circle cx="1070" cy="260" r="10" class="dot"/><text x="1070" y="215" text-anchor="middle" class="big">2,194</text><text x="1070" y="300" text-anchor="middle" class="lab">P90 days</text>
+<text x="70" y="405" class="s">Median = 490 days ≈ 1.34 years. A true survival analysis requires the non-retracted publication universe and right-censoring.</text>
+</svg>
