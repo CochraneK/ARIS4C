@@ -44,3 +44,21 @@ Retrieval baseline: 2026-09-24.
 - Derived variables must identify formula version and source variables.
 - Model-estimated composition or interior variables must never be presented as directly measured.
 - A later extrasolar phase must use a separate source registry and a separate definition scope.
+
+## Machine-readable acquisition endpoints
+
+12. NASA/JPL SBDB API documentation — machine-readable identity, orbit and selected physical parameters for known asteroids/comets.
+    - https://ssd-api.jpl.nasa.gov/doc/sbdb.html
+    - API version documented: 1.3 (2021 September)
+    - Project fetcher: `code/fetch_jpl_sbdb.py`
+
+13. NASA/JPL Horizons API documentation — ephemeris/state-vector fallback for bodies that need Horizons rather than SBDB.
+    - https://ssd-api.jpl.nasa.gov/doc/horizons.html
+
+## Frozen source-definition notes
+
+- NASA NSSDC Planetary Fact Sheet was last updated 2025-03-18 at project retrieval and is used for the first 10-body seed.
+- The table's “Diameter” is equatorial diameter, not mean volumetric diameter.
+- Its gravity values are equatorial and include rotation; gas-giant gravity is reported at the 1-bar pressure level.
+- Moon distance/orbit fields in the compact comparison table are Earth-relative, not Sun-relative.
+- See `process/NASA_SEED_QC.md` before deriving density/gravity from compact fact-sheet fields.
