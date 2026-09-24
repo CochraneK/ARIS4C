@@ -13,6 +13,10 @@ from weasyprint import CSS, HTML
 ROOT = Path(__file__).resolve().parents[1]
 CSS_PATH = ROOT / "tools" / "pdf_publication.css"
 
+# No-op revision marker: changing this intentionally triggers the canonical
+# public-PDF workflow when a newly added paper still lacks committed outputs.
+PUBLIC_PDF_BUILD_REVISION = "2026-09-24-019-final-gate"
+
 BUILDS = [
     ("001", ROOT / "papers/001-gca-bees/manuscript/MAIN.md", ROOT / "docs/paper/001/en/main.pdf", "en"),
     ("001", ROOT / "papers/001-gca-bees/manuscript/MAIN.zh-CN.md", ROOT / "docs/paper/001/zh/main.pdf", "zh-CN"),
