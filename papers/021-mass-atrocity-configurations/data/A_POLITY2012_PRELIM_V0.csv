@@ -1,0 +1,140 @@
+case_id,country,outcome_genocide,start_year,polity_country,polity_start_raw,polity2_start_raw,democ_start_raw,autoc_start_raw,A_polity_only,A_status,source_ref
+AFG_1978_1992,Afghanistan,1,1978,Afghanistan,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+DZA_1962_1962,Algeria,1,1962,Algeria,-8,-8,0,8,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+AGO_1998_2002,Angola,1,1998,Angola,-3,-3,1,4,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+AGO_1975_1994,Angola,1,1975,Angola,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ARG_1976_1980,Argentina,1,1976,Argentina,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BIH_1992_1995,Bosnia,1,1992,Bosnia,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BDI_1993_1993,Burundi,1,1993,Burundi,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BDI_1988_1988,Burundi,1,1988,Burundi,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BDI_1965_1973,Burundi,1,1965,Burundi,-88,-5,-88,-88,,special_-88_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+KHM_1975_1979,Cambodia,1,1975,Cambodia,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+CHL_1973_1976,Chile,1,1973,Chile,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+CHN_1959_1959,China,1,1959,China,-8,-8,0,8,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+CHN_1966_1975,China,1,1966,China,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+COD_1964_1965,DR Congo,1,1964,Congo Kinshasa,-88,-6,-88,-88,,special_-88_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+COD_1977_1979,DR Congo,1,1977,Congo Kinshasa,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SLV_1980_1989,El Salvador,1,1980,El Salvador,-88,-2,-88,-88,,special_-88_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GNQ_1969_1979,Equatorial Guinea,1,1969,Equatorial Guinea,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ETH_1976_1979,Ethiopia,1,1976,Ethiopia,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GTM_1978_1990,Guatemala,1,1978,Guatemala,-5,-5,0,5,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+IDN_1965_1966,Indonesia,1,1965,Indonesia,-5,-5,0,5,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+IDN_1975_1992,Indonesia,1,1975,Indonesia,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+IRN_1981_1992,Iran,1,1981,Iran,-88,-4,-88,-88,,special_-88_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+IRQ_1988_1991,Iraq,1,1988,Iraq,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+IRQ_1963_1975,Iraq,1,1963,Iraq,-5,-5,0,5,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+MMR_1978_1978,Myanmar (Burma),1,1978,Myanmar (Burma),-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+NGA_1967_1970,Nigeria,1,1967,Nigeria,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PAK_1973_1977,Pakistan,1,1973,Pakistan,8,8,8,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PAKBGD_1971_1971,Pakistan (now Bangladesh),1,1971,Pakistan,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PHL_1972_1976,Philippines,1,1972,Philippines,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+RWA_1994_1994,Rwanda,1,1994,Rwanda,-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+RWA_1963_1964,Rwanda,1,1963,Rwanda,-5,-5,1,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SOM_1988_1991,Somalia,1,1988,Somalia,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+LKA_1989_1990,Sri Lanka,1,1989,Sri Lanka,5,5,6,1,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SDN_1983_2002,Sudan,1,1983,Sudan,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SDN_1956_1972,Sudan,1,1956,Sudan,8,8,8,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SYR_1981_1982,Syria,1,1981,Syria,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+UGA_1971_1979,Uganda,1,1971,Uganda,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+UGA_1980_1986,Uganda,1,1980,Uganda,3,3,4,1,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+VNM_S_1965_1975,Vietnam South,1,1965,Vietnam South,-66,,-66,-66,,special_-66_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+YUG_1998_1999,Yugoslavia,1,1998,Yugoslavia,-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ALB_1996,Albania,0,1996,Albania,0,0,3,3,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+DZA_1991,Algeria,0,1991,Algeria,-2,-2,1,3,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ARG_1966,Argentina,0,1966,Argentina,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ARM_1995,Armenia,0,1995,Armenia,3,3,4,1,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+AZE_1991,Azerbaijan,0,1991,Azerbaijan,-3,-3,1,4,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BGD_1974,Bangladesh,0,1974,Bangladesh,-2,-2,2,4,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BLR_1995,Belarus,0,1995,Belarus,0,0,3,3,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BEN_1963,Benin,0,1963,Benin,-88,-1,-88,-88,,special_-88_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BEN_1972,Benin,0,1972,Benin,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BRA_1961,Brazil,0,1961,Brazil,5,5,5,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+BFA_1980,Burkina Faso,0,1980,Burkina Faso,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+KHM_1997,Cambodia,0,1997,Cambodia,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+TCD_1965,Chad,0,1965,Chad,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+CHN_1988,China,0,1988,China,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+COL_1984,Colombia,0,1984,Colombia,8,8,8,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+COM_1976,Comoros,0,1976,Comoros,-4,-4,0,4,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+COM_1995,Comoros,0,1995,Comoros,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+COG_1963,Congo-Brazzaville,0,1963,Congo Brazzaville,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+COG_1997,Congo-Brazzaville,0,1997,Congo Brazzaville,-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+COD_1992,Congo-Kinshasa,0,1992,Congo Kinshasa,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+HRV_1991,Croatia,0,1991,Croatia,-3,-3,1,4,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+CYP_1963,Cyprus,0,1963,Cyprus,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+CYP_1974,Cyprus,0,1974,Cyprus,10,10,10,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+CSK_1968,Czechoslovakia,0,1968,Czechoslovakia,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+DJI_1991,Djibouti,0,1991,Djibouti,-8,-8,0,8,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+DOM_1963,Dominican Republic,0,1963,Dominican Rep,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ECU_1970,Ecuador,0,1970,Ecuador,0,0,4,4,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+EGY_1992,Egypt,0,1992,Egypt,-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+FJI_1987,Fiji,0,1987,Fiji,-3,-3,0,3,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+FRA_1958,France,0,1958,France,5,5,6,1,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GMB_1994,The Gambia,0,1994,Gambia,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GEO_1991,Georgia,0,1991,Georgia,4,4,5,1,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GHA_1972,Ghana,0,1972,Ghana,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GHA_1981,Ghana,0,1981,Ghana,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GRC_1967,Greece,0,1967,Greece,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GNB_1998,Guinea-Bissau,0,1998,Guinea-Bissau,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GUY_1978,Guyana,0,1978,Guyana,0,0,3,3,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+HTI_1991,Haiti,0,1991,Haiti,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+HUN_1956,Hungary,0,1956,Hungary,-66,,-66,-66,,special_-66_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+IND_1956,India,0,1956,India,9,9,9,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+IND_1967,India,0,1967,India,9,9,9,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+IND_1983,India,0,1983,India,8,8,8,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ISR_1987,Israel,0,1987,Israel,9,9,9,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+JOR_1957,Jordan,0,1957,Jordan,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+JOR_1970,Jordan,0,1970,Jordan,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+KEN_1964,Kenya,0,1964,Kenya,2,2,5,3,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+KEN_1991,Kenya,0,1991,Kenya,-5,-5,0,5,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+KOR_1961,"Korea, South",0,1961,Korea South,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+KOR_1972,"Korea, South",0,1972,Korea South,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+LAO_1960,Laos,0,1960,Laos,-1,-1,1,2,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+LBN_1958,Lebanon,0,1958,Lebanon,2,2,4,2,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+LBN_1975,Lebanon,0,1975,Lebanon,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+LSO_1970,Lesotho,0,1970,Lesotho,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+LSO_1998,Lesotho,0,1998,Lesotho,-77,0,-77,-77,,special_-77_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+LBR_1985,Liberia,0,1985,Liberia,-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+MYS_1969,Malaysia,0,1969,Malaysia,1,1,3,2,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+MLI_1990,Mali,0,1990,Mali,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+MDA_1992,Moldova,0,1992,Moldova,5,5,5,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+MAR_1965,Morocco,0,1965,Morocco,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+MAR_1975,Morocco,0,1975,Morocco,-9,-9,0,9,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+MOZ_1976,Mozambique,0,1976,Mozambique,-8,-8,0,8,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+NPL_1960,Nepal,0,1960,Nepal,-10,-10,0,10,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+NPL_1996,Nepal,0,1996,Nepal,5,5,5,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+NIC_1978,Nicaragua,0,1978,Nicaragua,-8,-8,0,8,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+NER_1996,Niger,0,1996,Niger,-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+NGA_1980,Nigeria,0,1980,Nigeria,7,7,8,1,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+OMN_1970,Oman,0,1970,Oman,-10,-10,0,10,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PAK_1958,Pakistan,0,1958,Pakistan,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PAK_1983,Pakistan,0,1983,Pakistan,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PAN_1968,Panama,0,1968,Panama,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PNG_1989,Papua New Guinea,0,1989,Papua New Guinea,4,4,4,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PER_1962,Peru,0,1962,Peru,-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PER_1968,Peru,0,1968,Peru,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+PER_1982,Peru,0,1982,Peru,7,7,7,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ROU_1989,Romania,0,1989,Romania,-88,-2,-88,-88,,special_-88_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+RUS_1994,Russia,0,1994,Russia,3,3,4,1,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SEN_1962,Senegal,0,1962,Senegal,-88,-4,-88,-88,,special_-88_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SEN_1992,Senegal,0,1992,Senegal,-1,-1,2,3,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SLE_1967,Sierra Leone,0,1967,Sierra Leone,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SLE_1991,Sierra Leone,0,1991,Sierra Leone,-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SGP_1963,Singapore,0,1963,Singapore,-66,,-66,-66,,special_-66_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SOM_1969,Somalia,0,1969,Somalia,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ZAF_1984,South Africa,0,1984,South Africa,4,4,7,3,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SWZ_1973,Swaziland,0,1973,Swaziland,-10,-10,0,10,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SYR_1961,Syria,0,1961,Syria,-2,-2,2,4,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+TJK_1992,Tajikistan,0,1992,Tajikistan,-6,-6,0,6,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+THA_1965,Thailand,0,1965,Thailand,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+TUR_1971,Turkey,0,1971,Turkey,-2,-2,2,4,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+TUR_1980,Turkey,0,1980,Turkey,-5,-5,2,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+GBR_1971,United Kingdom,0,1971,United Kingdom,10,10,10,0,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+URY_1971,Uruguay,0,1971,Uruguay,-88,3,-88,-88,,special_-88_requires_FH,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+SUN_1991,USSR (Soviet Union),0,1991,USSR,0,0,3,3,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+YMN_1962,"Yemen, North",0,1962,Yemen North,0,0,2,2,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+YMS_1986,"Yemen, South",0,1986,Yemen South,-7,-7,0,7,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+YEM_1994,Yemen,0,1994,Yemen,-2,-2,1,3,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+YUG_1991,Yugoslavia,0,1991,Yugoslavia,-5,-5,0,5,1,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ZMB_1964,Zambia,0,1964,Zambia,2,2,4,2,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ZMB_1996,Zambia,0,1996,Zambia,1,1,3,2,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
+ZWE_1972,Zimbabwe,0,1972,Zimbabwe,4,4,7,3,0,direct_polity,CommonEconomist/replications@1ad6a9cf:historical-conflict/raw_data/p4v2012.csv
