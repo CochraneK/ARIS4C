@@ -34,19 +34,19 @@ DATA = ROOT / "data"
 
 WHR_URL = (
     "https://raw.githubusercontent.com/brenoprato/working-hours-on-wellbeing/"
-    "main/datasets/base/world-happiness-report-2024.csv"
+    "a5aa864fd27a044b8ffc0a4432e6e18ab1532247/datasets/base/world-happiness-report-2024.csv"
 )
 HOURS_URL = (
     "https://raw.githubusercontent.com/brenoprato/working-hours-on-wellbeing/"
-    "main/datasets/base/annual-working-hours-per-worker.csv"
+    "a5aa864fd27a044b8ffc0a4432e6e18ab1532247/datasets/base/annual-working-hours-per-worker.csv"
 )
 WDI_INFLATION_URL = (
-    "https://raw.githubusercontent.com/MatthewTsang0213/Empirical-Project/main/"
-    "API_FP.CPI.TOTL.ZG_DS2_en_csv_v2_287.csv"
+    "https://raw.githubusercontent.com/MatthewTsang0213/Empirical-Project/"
+    "c6c27edc5f1359cc51def03e8d3514359f1c7d40/API_FP.CPI.TOTL.ZG_DS2_en_csv_v2_287.csv"
 )
 WDI_UNEMPLOYMENT_URL = (
-    "https://raw.githubusercontent.com/MatthewTsang0213/Empirical-Project/main/"
-    "API_SL.UEM.TOTL.ZS_DS2_en_csv_v2_36.csv"
+    "https://raw.githubusercontent.com/MatthewTsang0213/Empirical-Project/"
+    "c6c27edc5f1359cc51def03e8d3514359f1c7d40/API_SL.UEM.TOTL.ZS_DS2_en_csv_v2_36.csv"
 )
 HEADERS = {"User-Agent": "ARIS4C019-research/0.10 (+https://github.com/CochraneK/ARIS4C)"}
 
