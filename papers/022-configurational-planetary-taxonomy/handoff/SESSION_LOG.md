@@ -15,3 +15,11 @@
 - Limited primary QCA to roughly 4–6 condition families to avoid truth-table explosion.
 - Added deterministic frame validator.
 - No numerical QCA solutions were inspected before this freeze.
+
+## 2026-09-24 · Source-ingestion scaffold
+- Added a provenance-preserving NASA NSSDC 10-body empirical seed covering the eight planets, Moon and Pluto.
+- Preserved Moon distance/orbit values as Earth-relative rather than silently treating them as heliocentric.
+- Added NASA source manifest and JPL SBDB machine-readable fetcher.
+- Added a source-ingestion plan splitting small bodies, satellites/dwarf planets, and peer-reviewed composition/evolution evidence.
+- Ran spherical QC against NASA seed values. The diagnostic exposed large Jupiter/Saturn density/gravity mismatches if equatorial diameter is misused as mean volumetric radius.
+- Froze harmonization guard: catalogued density/gravity remain source values; derived values require physically appropriate radius and pressure/rotation conventions.
