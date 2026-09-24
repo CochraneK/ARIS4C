@@ -82,7 +82,7 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 | **015** | [Sleeping Beauty Miner](papers/015-sleeping-beauty-miner/) | 🔴 Block | 88% | [handoff](papers/015-sleeping-beauty-miner/handoff/AGENT_HANDOFF.md) | — |
 | **016** | [Global Grammar of Swearing](papers/016-global-grammar-of-swearing/) | 🔴 Block | 68% | [handoff](papers/016-global-grammar-of-swearing/handoff/AGENT_HANDOFF.md) | — |
 | **017** | [LING-02 · Predictive Language Space](papers/017-predictive-language-space/) | 🟡 Wait | 20% | [handoff](papers/017-predictive-language-space/handoff/AGENT_HANDOFF.md) | — |
-| **018** | [Fly Neuro Playground](papers/018-drosophila-neural-simulation/) | 🟢 Active | 88% | [handoff](papers/018-drosophila-neural-simulation/handoff/AGENT_HANDOFF.md) | — |
+| **018** | [Fly Neuro Playground](papers/018-drosophila-neural-simulation/) | 🟢 Active | 90% | [handoff](papers/018-drosophila-neural-simulation/handoff/AGENT_HANDOFF.md) | — |
 | **019** | [Time Off × Happiness · Long Run](papers/019-time-off-happiness/) | 🟢 Active | 78% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
 | **020** | [Global Retraction Ecology](papers/020-global-retraction-ecology/) | 🟢 Active | 55% | [handoff](papers/020-global-retraction-ecology/handoff/AGENT_HANDOFF.md) | — |
 | **021** | [Mass Atrocity Conditions](papers/021-mass-atrocity-configurations/) | 🟢 Active | 38% | [handoff](papers/021-mass-atrocity-configurations/handoff/AGENT_HANDOFF.md) | — |
