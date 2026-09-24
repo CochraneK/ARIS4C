@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">ARIS4C019 一页读懂：法定带薪年休假与国家生活评价</title>
+  <desc id="desc">研究问题、证据链、主要结果与证据边界的一页视觉摘要。</desc>
+  <rect width="1600" height="1000" fill="#f8fafc"/>
+  <rect x="70" y="70" width="1460" height="860" rx="28" fill="#ffffff" stroke="#dbe3ea" stroke-width="2"/>
+  <text x="120" y="145" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="54" font-weight="700" fill="#0f172a">法定带薪年休假 × 国家生活评价</text>
+  <text x="120" y="196" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="25" fill="#475569">全球法律事件审计 + 证伪优先的独立 holdout</text>
+
+  <line x1="120" y1="235" x2="1480" y2="235" stroke="#e2e8f0" stroke-width="2"/>
+
+  <text x="120" y="300" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#0f766e">研究问题</text>
+  <text x="120" y="347" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="650" fill="#0f172a">法律增加年休假后，国家年度 Life Ladder 会稳定改变吗？</text>
+  <text x="120" y="390" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" fill="#64748b">不是“休假多的国家是否更幸福”的静态排名。</text>
+
+  <rect x="120" y="445" width="405" height="275" rx="24" fill="#f8fafc" stroke="#dbe3ea"/>
+  <text x="155" y="495" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#334155">① 原始 8 事件压力测试</text>
+  <text x="155" y="548" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="38" font-weight="700" fill="#0f172a">均值 +0.088</text>
+  <text x="155" y="592" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="26" fill="#475569">中位数 −0.099</text>
+  <text x="155" y="632" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="26" fill="#475569">6 / 8 事件为负</text>
+  <text x="155" y="674" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" fill="#b45309">去掉 Bahrain → 均值 −0.117</text>
+
+  <rect x="598" y="445" width="405" height="275" rx="24" fill="#f8fafc" stroke="#dbe3ea"/>
+  <text x="633" y="495" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#334155">② 法律隔离审计</text>
+  <text x="633" y="548" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="38" font-weight="700" fill="#0f172a">11 → 0</text>
+  <text x="633" y="590" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="24" fill="#475569">剩余 World Bank 跳点</text>
+  <text x="633" y="628" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="24" fill="#475569">没有新增 clean holdout</text>
+  <text x="633" y="674" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" fill="#64748b">多数是综合劳动法 / 编码跳点</text>
+
+  <rect x="1076" y="445" width="404" height="275" rx="24" fill="#f0fdfa" stroke="#99f6e4"/>
+  <text x="1111" y="495" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#0f766e">③ Israel 独立 holdout</text>
+  <text x="1111" y="548" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="38" font-weight="700" fill="#0f172a">+0.002</text>
+  <text x="1111" y="590" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="24" fill="#475569">冻结主规格 full-post mean</text>
+  <text x="1111" y="630" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" fill="#475569">但替代基线约 −0.34 ～ 0</text>
+  <text x="1111" y="674" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" fill="#b45309">不能解释为“精确零效应”</text>
+
+  <rect x="120" y="770" width="1360" height="110" rx="22" fill="#0f172a"/>
+  <text x="155" y="815" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#5eead4">证据边界</text>
+  <text x="155" y="852" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="26" fill="#ffffff">当前逐年 Life Ladder 证据没有显示稳健、方向一致的人口层面效应。</text>
+
+  <text x="120" y="914" font-family="Inter, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" fill="#94a3b8">ARIS4C019 · Statutory Paid Annual Leave and National Life Evaluation · 2026</text>
+</svg>
