@@ -141,11 +141,11 @@
     },
     "018": {
       "progress": 90,
-      "stage": "Pilot 4 matched diagnostic COMPLETE · R1/R2 excluded · R2.5 initial-scene sensory localization running",
+      "stage": "Pilot 4 matched diagnostic COMPLETE · R1/R2 excluded · R2.5 implemented, Actions runner blocked before execution",
       "activity": "active",
       "evidence": "Pilot4 first-frame decoder divergence is reproducible. R1 Retina geometry/order is byte-identical. R2 frozen-retinal diagnostic is complete: all six deterministic retinal vectors, mapped inputs and pinned flyvis neural hashes match across legacy/current; tracking-cell mean differences are zero.",
-      "next_gate": "Run R2.5 matched reset/first-frame sensory capture without flyvis/decoder/controller stepping; compare actual 2×721×2 ommatidia hashes and body-root pose to determine whether divergence first enters through renderer/camera/body/scene-reset semantics.",
-      "blocker": "No current blocker. R2.5 CI has been implemented and triggered. No biological or version-quality interpretation is permitted."
+      "next_gate": "Restore GitHub Actions job execution, then run the already-committed R2.5 reset/first-frame sensory capture and compare actual 2×721×2 ommatidia hashes plus body-root pose.",
+      "blocker": "Repository-wide GitHub Actions jobs are currently failing before any workflow step starts (also affecting portfolio-index and handoff workflows). R2.5 code has not yet executed, so this is classified as Actions/runner infrastructure rather than a scientific-code failure."
     },
     "019": {
       "progress": 84,
