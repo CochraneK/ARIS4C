@@ -1,58 +1,57 @@
 # TODO · v0.2 submission-grade ARIS run
 
 ## G0–G1 · frozen
-- [x] Preserve v0.1.1 Pilot-0 as immutable provenance.
-- [x] Reset submission-grade progress denominator.
-- [x] Freeze article type, RQs, primary claims and non-claims.
-- [x] Freeze preregistration-style analysis contract.
+- [x] Preserve v0.1.1 Pilot-0.
+- [x] Submission-grade denominator reset.
+- [x] Paper plan / claims / preregistration freeze.
 
 ## G2 · systematic literature
-- [x] Build verified seed literature map.
-- [ ] Expand to >=50 screened records.
-- [ ] Retain >=25 high-relevance sources with reason.
-- [ ] Backward/forward citation pass on core methods papers.
-- [ ] Add skeptical/critical literature for each mechanism.
-- [ ] Freeze search log and evidence-to-claim map.
+- [x] Screen >=50 records (current: 52).
+- [x] Retain >=25 high-relevance/source-infrastructure records (current: 39).
+- [x] Include skeptical/critical method clusters.
+- [x] Exclude/document tertiary, duplicate and noncanonical records.
+- [ ] Backward/forward citation pass on core methods/comparison papers.
+- [ ] Normalize bibliography metadata.
+- [ ] Freeze claim-to-source evidence map.
+- [ ] Freeze final search log.
 
 ## G3 · case universe
-- [x] Freeze Tier A/B/C case rules.
-- [x] Seed 17 candidate tradition-time units.
+- [x] Tier A/B/C case rules.
+- [x] 17 candidate tradition-time units seeded.
+- [x] 14 case/source rows audited in source registry.
 - [ ] Search systematically for omitted eligible ancient-text traditions.
-- [ ] Split Hurrian/Hittite source layers fully.
-- [ ] Freeze all inclusion/exclusion reasons.
-- [ ] Freeze Tier-A universe before expanded similarity inspection.
+- [ ] Fully split Hurrian vs Hittite case/source layers.
+- [ ] Lock canonical critical editions/translations for Vedic/Greek/Hebrew/Chinese cases.
+- [ ] Design Egyptian bundles without manufacturing a unified narrative.
+- [ ] Freeze every Tier-A inclusion/exclusion before expanded similarity.
 
 ## G4 · corpus/ontology
-- [x] Freeze source-bundle and translation-sensitivity rules.
-- [ ] Re-review 56-motif candidate ontology.
-- [ ] Build primary + alternate source bundles.
-- [ ] Expand source provenance and coverage matrix.
-- [ ] Freeze expanded coder packets.
+- [x] Source-bundle and translation sensitivity rules frozen.
+- [ ] Re-review 56-motif ontology.
+- [ ] Primary + alternate bundle construction.
+- [ ] Expanded coverage matrix.
+- [ ] Frozen blind coder packets.
 
 ## G5 · validation
-- [ ] Clean independent human/domain-informed validation subset.
+- [ ] Human/domain-informed clean validation subset.
 - [ ] Clean external-model audit subset.
-- [ ] Predeclare adjudication.
-- [ ] Pass/fail reliability gate.
+- [ ] Reliability/adjudication gate.
 
 ## G6–G7 · analysis + robustness
-- [x] Freeze model/robustness plan.
-- [ ] Build ancestry/contact/time/geography/environment matrices independently.
-- [ ] Test model activation gate.
-- [ ] Fit primary dyadic model if gate passes.
-- [ ] MRQAP/permutation robustness.
-- [ ] Source/translation/ontology/missingness/case/coder sensitivity families.
+- [x] Analysis and robustness plans frozen.
+- [ ] Independent ancestry/contact/time/geography/environment matrices.
+- [ ] Model activation gate.
+- [ ] Primary dyadic model + permutation robustness.
+- [ ] Full sensitivity families.
 
 ## G8 · adversarial review
-- [ ] Reviewer A ancient-text/source audit.
-- [ ] Reviewer B cultural evolution/phylogenetics.
-- [ ] Reviewer C statistics/network/causal inference.
-- [ ] Reviewer D hostile reproduction.
-- [ ] Revision + re-review until no critical issues.
+- [ ] Reviewers A–D.
+- [ ] Revision/re-analysis.
+- [ ] Re-review until no critical issue.
 
-## G9 · paper improvement
-- [ ] Rewrite manuscript around frozen v0.2 claims.
-- [ ] Rebuild figures/tables from final outputs.
-- [ ] Run paper review/improvement loop.
-- [ ] Journal-target fit check.
-- [ ] Final bilingual PDF/public output only after scientific gates pass.
+## G9 · manuscript
+- [ ] v0.2 rewrite.
+- [ ] final evidence-derived figures/tables.
+- [ ] improvement loop.
+- [ ] target-journal fit.
+- [ ] final delivery only after scientific gates pass.

@@ -180,12 +180,12 @@
       "blocker": "Single dominant blocker: live JPL SBDB object payload acquisition for the 16 small/boundary cases. No calibration/truth table/QCA solution may be opened before readiness passes."
     },
     "023": {
-      "progress": 34,
-      "stage": "v0.2 submission-grade ARIS run · literature + case-universe gates",
+      "progress": 44,
+      "stage": "v0.2 submission-grade ARIS · literature threshold met; citation-chain + Tier-A universe freeze",
       "activity": "active",
-      "evidence": "Pilot-0 v0.1.1 remains frozen. Submission-grade scope reset now includes a frozen paper plan/claims register, preregistration-style analysis contract, Tier A/B/C case-universe protocol with 17 seeded candidates, corpus protocol, dyadic mechanism-analysis plan, robustness suite, four-role adversarial review loop and verified literature seed map.",
-      "next_gate": "Complete G2 systematic literature map and G3 Tier-A case-universe freeze before inspecting expanded similarity ranks; then expand ontology/source bundles under blind contamination controls.",
-      "blocker": "No immediate blocker. G5 will require a clean human/domain-informed independent validation subset before submission-grade empirical claims."
+      "evidence": "52 screened literature/resource records; 39 retained after documented exclusions. Critical clusters include Galton/non-independence, horizontal transmission/reticulation, ancient parallelomania and network diffusion. A 14-row case-source registry identifies verified source infrastructure and unresolved critical-edition locks.",
+      "next_gate": "Complete backward/forward citation chaining + claim-to-source map to close G2; systematically search omitted Tier-A ancient-text traditions and freeze the case universe before any expanded similarity inspection.",
+      "blocker": "No immediate blocker. Clean human/domain-informed validation is a future mandatory G5 gate."
     }
   },
   "scheduling": {

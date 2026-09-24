@@ -1,58 +1,42 @@
 # SYSTEMATIC LITERATURE MAP · v0.2
 
-## Current state
+## Screening checkpoint
 
-This is a **verified seed map**, not yet a completed systematic review.
+- **52 title/abstract/resource records screened**
+- **39 retained or retained-as-method/source-infrastructure records**
+- explicit excludes include tertiary pages, noncanonical copies and duplicates
+- critical/skeptical clusters are represented rather than filtered out
 
-Consensus search was unavailable because the account search quota was exhausted. Seed verification therefore used publisher/PubMed/D-PLACE sources. The final review must not rely on this seed alone.
+Canonical files:
+- `data/literature_screening_log_v0.2.csv`
+- `data/literature_map_v0.2.csv`
 
 ## Search families
 
-### A. Comparative mythology / folklore
-- comparative mythology AND transmission
-- folktale AND phylogenetic
-- myth motif AND diffusion
-- historic-geographic folklore method
-- ATU / motif index / Berezkin
+A. comparative mythology / folklore / motif indexing  
+B. cultural evolution / Galton's problem / phylogenetics  
+C. horizontal transmission / reticulation / network diffusion  
+D. dyadic/non-independence statistical methods  
+E. ancient Near Eastern / Greek / Egyptian / Iranian source criticism  
+F. digital-humanities text transmission
 
-### B. Cultural evolution / Galton problem
-- cultural phylogenetics
-- cross-cultural comparative method
-- vertical horizontal transmission
-- Galton's problem
-- cultural reticulation
+## Important methodological tensions retained
 
-### C. Dyadic / network methods
-- dyadic non-independence
-- MRQAP
-- network autocorrelation
-- multi-membership dyadic model
+The review deliberately keeps conflicting results:
+- Greenhill et al. (2009) show tree reconstruction can be robust to realistic borrowing;
+- Nunn et al. (2006) show common comparative methods can be sensitive to horizontal transfer;
+- Currie et al. (2010) show PCM robustness depends on transmission regime;
+- modern non-independence simulations show naive controls can still produce high false-positive rates;
+- ancient-text scholarship explicitly warns about parallelomania and requires contextual/historical borrowing criteria.
 
-### D. Ancient-text mechanism families
-- Mesopotamian flood Genesis Atrahasis Gilgamesh
-- Indo-European myth serpent slaying comparative poetics
-- Chinese flood Yu early texts geology
-- Sumerian Akkadian anthropogony scribal transmission
+This means v0.2 cannot treat either “phylogeny solves dependence” or “horizontal transfer invalidates trees” as an axiom.
 
-## Inclusion
+## Gate still open
 
-Peer-reviewed research, scholarly monographs/chapters, major scholarly databases, and critical corpus infrastructure directly relevant to:
-- case construction,
-- transmission mechanism,
-- motif coding,
-- phylogenetic/non-independence methods,
-- source criticism,
-- robustness.
+G2 is **not yet fully passed**. Remaining:
+1. backward/forward citation expansion around L001/L002/L005/L006/L007/L030;
+2. deduplicate and normalize bibliographic metadata;
+3. link retained sources to C1–C7 and to protocol decisions;
+4. freeze the final search log.
 
-## Exclusion
-
-Popular mythology summaries, unsourced motif lists, tertiary web pages used as evidence, or work included only because it supports the current Pilot interpretation.
-
-## Required completion before G2 passes
-
-- >=50 screened records;
-- >=25 retained high-relevance sources;
-- explicit search log with query/date/source;
-- backward/forward citation pass on the key methods papers;
-- at least one skeptical/critical literature cluster for each primary mechanism;
-- evidence map linking each retained source to C1–C7 or a methodological decision.
+The numerical threshold (>=50 screened; >=25 retained) is now met, but the citation-chain/evidence-map requirement remains.

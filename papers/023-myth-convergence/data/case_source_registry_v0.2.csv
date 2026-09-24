@@ -1,0 +1,15 @@
+case_id,family_scope,source_or_corpus,source_type,status,evidence_grade,url,notes
+SUM_OB,anthropogony,ETCSL Enki and Ninmah c.1.1.2,primary digital scholarly corpus,verified,A,https://etcsl.orinst.ox.ac.uk/section1/tr112.htm,Pilot replacement witness retained; full alternate-bundle search still needed
+AKK_OB,anthropogony/flood,Atrahasis Old Babylonian tradition,critical translation / museum witness trail,verified_partial,A/B,,Need one canonical edition/translation lock for v0.2 packet
+AKK_MB_SB,flood,Standard Babylonian Gilgamesh XI,critical text/translation,verified_partial,A/B,,Need canonical edition + witness-specific locator lock
+HUR_LBA,divine_conflict,Hurrian Kumarbi/Ullikummi source layer,Hittite-transmitted Hurrian material,needs_split,B,,Must separate Hurrian source tradition from Hittite transmission witness
+HIT_LBA,divine_conflict,Hittite Kumarbi-cycle reception/transmission layer,cuneiform Hittite witness,needs_split,B,,New v0.2 case split; source bundle not frozen
+UGARIT_LBA,divine_conflict,KTU 1.1-1.2 Baal Cycle,critical text/translation/commentary,verified,A,https://brill.com/display/title/1061,Mark S. Smith critical commentary anchors bundle
+EGY_MK,creation/afterlife candidate,Coffin Texts + Middle Kingdom Pyramid Text copies,critical corpus,verified_source_infrastructure,A,https://isac.uchicago.edu/research/publications/oip/egyptian-coffin-texts-volume-8-middle-kingdom-copies-pyramid-texts,Do not treat corpus as a single narrative; bundle design pending
+EGY_NK,divine_conflict,Contendings of Horus and Seth,primary papyrus + scholarly edition,pilot_exploratory,A,,Requires clean external recode if promoted
+VED_RV,anthropogony/divine_conflict,Rigveda 10.90 / 1.32,Vedic corpus,needs_critical_edition_lock,A/B,,Pilot locators retained but v0.2 must lock edition/translation
+GRC_ARCH,divine_conflict,Hesiod Theogony,Greek literary primary,needs_critical_edition_lock,A/B,,Need primary Greek/critical translation + alternate translation sensitivity
+HEB_GEN,flood/anthropogony,Genesis 2 / 6-9,Hebrew literary primary,needs_textual_edition_lock,A/B,,Source-critical layers retained; v0.2 edition/translation sensitivity required
+CHN_WS_HAN,flood/cosmogony,Shang Shu / Huainanzi selected layers,transmitted classical texts,needs_critical_edition_lock,B,,Composition/witness layers must remain separate
+AVE_EARLY,flood-like comparator,Yima's Vara,Avestan transmitted corpus + specialist scholarship,candidate_supported,B,https://researchportal.helsinki.fi/en/publications/its-a-craft-its-a-cavern-its-a-castle-yimas-vara-iranian-floods-a/,Useful because published comparison explicitly argues similarity without influence
+ROM_OVD,flood comparator,Ovid Metamorphoses Deucalion episode,Latin literary primary,candidate,B,,Potential positive-control / known literary network case; bundle not frozen

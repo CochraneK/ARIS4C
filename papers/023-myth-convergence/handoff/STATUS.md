@@ -1,27 +1,21 @@
 # Status
 
 ## State
-Active · 34%
+Active · 44%
 
 ## Current stage
-v0.1.1 Pilot-0 frozen · v0.2 submission-grade ARIS run opened.
+v0.2 submission-grade ARIS · literature threshold met; citation-chain + Tier-A universe freeze underway.
 
-## Why progress dropped from 100%
-The previous 100% measured completion of the Pilot/public-delivery contract. It did not represent completion of a submission-grade ARIS research cycle. The denominator has been explicitly reset in `process/V0.2_SCOPE_RESET.md`.
-
-## Completed in v0.2 opening
-- Article identity frozen as Methods + empirical demonstration by default.
-- Primary claims and failure conditions frozen.
-- Internal preregistration/analysis contract frozen before expanded-result inspection.
-- Case-universe protocol frozen and 17 candidate tradition-time units seeded.
-- Corpus/source-bundle protocol frozen.
-- Mechanism analysis plan frozen.
-- Robustness/sensitivity plan frozen.
-- Four-role adversarial review loop frozen.
-- Verified literature seed map created.
+## Evidence
+- Pilot-0 remains frozen and unchanged.
+- v0.2 paper plan, claims, preregistration, corpus, analysis, robustness and adversarial-review protocols are frozen.
+- Literature screening log now contains 52 records; 39 are retained/relevant after explicit duplicate/tertiary/noncanonical exclusions.
+- Skeptical method clusters are included: horizontal-transfer failure modes, reticulation, non-independence/false-positive risk and parallelomania.
+- Case-source registry now audits 14 core/candidate traditions and identifies exactly which critical-edition/source locks remain.
+- Tier-A candidate universe still contains unresolved Hurrian/Hittite split, Egypt bundle design, and several critical-edition locks.
 
 ## Next gate
-Finish G2 systematic literature map and G3 case-universe freeze in parallel, then expand the corpus/ontology without inspecting expanded similarity ranks.
+Complete backward/forward citation chaining and claim-to-source mapping (finish G2), then systematically search omitted Tier-A ancient-text traditions and freeze G3 before expanded similarity inspection.
 
 ## Blocker
-No hard blocker. A clean human/external validation stream will become mandatory at G5 before submission-grade empirical claims.
+No immediate blocker. G5 clean human/domain-informed validation remains a future hard gate for submission-grade empirical claims.

@@ -37,7 +37,9 @@
     "v0_2_analysis_plan": "process/ANALYSIS_PLAN_v0.2.md",
     "v0_2_review_loop": "process/REVIEW_LOOP_v0.2.md",
     "pilot_en_pdf": "dist/ARIS4C-023_EN.pdf",
-    "pilot_zh_pdf": "dist/ARIS4C-023_ZH.pdf"
+    "pilot_zh_pdf": "dist/ARIS4C-023_ZH.pdf",
+    "literature_screening_log": "data/literature_screening_log_v0.2.csv",
+    "case_source_registry": "data/case_source_registry_v0.2.csv"
   },
   "tags": [
     "ARIS4C",
@@ -80,7 +82,7 @@
     "finish_ready": false
   },
   "v0_2_submission_grade": {
-    "progress": 34,
+    "progress": 44,
     "article_route": "methods + empirical demonstration",
     "original_research_upgrade": "conditional",
     "gates": [
@@ -94,6 +96,8 @@
       "G7 robustness",
       "G8 adversarial review",
       "G9 manuscript improvement"
-    ]
+    ],
+    "literature_screened": 52,
+    "literature_retained": 39
   }
 }

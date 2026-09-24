@@ -1,0 +1,53 @@
+screen_id,query_family,title,year,decision,reason,url
+S001,comparative methods,The Comparative Method in Anthropology,1994,retain,foundational Galton problem,https://www.journals.uchicago.edu/doi/10.1086/204317
+S002,comparative methods,A phylogenetic approach to cultural evolution,2005,retain,foundational PCM review,https://pubmed.ncbi.nlm.nih.gov/16701354/
+S003,comparative methods,Comparative Methods for Studying Cultural Trait Evolution: A Simulation Study,2006,retain,method sensitivity under horizontal transfer,https://journals.sagepub.com/doi/10.1177/1069397105283401
+S004,comparative methods,Does horizontal transmission invalidate cultural phylogenies?,2009,retain,direct reticulation simulation,https://pubmed.ncbi.nlm.nih.gov/19324763/
+S005,comparative methods,Is horizontal transmission really a problem for phylogenetic comparative methods?,2010,retain,direct method sensitivity,https://pubmed.ncbi.nlm.nih.gov/21041214/
+S006,comparative methods,Simulating trait evolution for cross-cultural comparison,2010,retain,Galton/horizontal transmission simulation,https://pubmed.ncbi.nlm.nih.gov/21041206/
+S007,comparative methods,Testing for Divergent Transmission Histories among Cultural Characters,2011,retain,different character classes can transmit differently,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0014810
+S008,folktale phylogeny,The Phylogeny of Little Red Riding Hood,2013,retain,direct tale-phylogeny precedent,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078871
+S009,folktale phylogeny,Comparative phylogenetic analyses uncover the ancient roots of Indo-European folktales,2016,retain,vertical vs spatial transmission in tale data,https://pubmed.ncbi.nlm.nih.gov/26909191/
+S010,cross-cultural data,"D-PLACE: A Global Database of Cultural, Linguistic and Environmental Diversity",2016,retain,data architecture and phylogeny/environment integration,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0158391
+S011,comparative methods,Cross-cultural Comparative Methods for Testing Evolutionary Hypotheses,2023,retain,recent methods guide,https://academic.oup.com/edited-volume/45648/chapter-abstract/406029982
+S012,comparative methods,Cross-national analyses require additional controls to account for the non-independence of nations,2023,retain,modern false-positive warning,https://www.nature.com/articles/s41467-023-41486-1
+S013,field review,Cultural evolution: A review of theoretical challenges,2024,retain,recent conceptual/methodological review,https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/cultural-evolution-a-review-of-theoretical-challenges/F1DAA0367EBB4F7866F9B624DB2D9BEA
+S014,data resource,D-PLACE Data Sources,current,retain_resource,explicit source/provenance and tree caveats,https://d-place.org/source
+S015,data resource,D-PLACE Phylogenies,current,retain_resource,published tree registry,https://d-place.org/phylogenys
+S016,motif index,Stith Thompson Motif Index browser,current,discovery_only,"index resource, not evidence by itself",https://www.mythologydatabase.com/db_thompson.php
+S017,motif index,The Mythology and Folklore Database,current,discovery_only,aggregator useful for discovery/crosswalk only,https://www.mythologydatabase.com/resources.php
+S018,motif index,A Motif-Index of Traditional Polynesian Narratives,1971,retain,regional systematic motif-index precedent,https://www.jstor.org/stable/j.ctvp2n3hb
+S019,comparative mythology,Comparison and Theory,2013,retain,explicit large-scale myth comparison framework,https://academic.oup.com/book/33090/chapter-abstract/282125147
+S020,comparative mythology,The Comparative Approach,2017,retain,comparative mythology historiography/method,https://onlinelibrary.wiley.com/doi/10.1002/9781119072034.ch9
+S021,comparative archaeology,Cross-Cultural Comparative Approaches in Archaeology,2001,retain,grab-bag sample critique,https://www.annualreviews.org/content/journals/10.1146/annurev.anthro.30.1.1
+S022,ANE flood,Comparative Ancient Near Eastern Study: Genesis Flood Narrative,2013,retain,parallelomania + dependence criteria,https://academic.oup.com/book/35373/chapter-abstract/301258660
+S023,ANE flood,Precursors to the Flood Narrative,2020,retain,Genesis/Mesopotamian literary formation,https://academic.oup.com/book/32142/chapter/268104460
+S024,ANE flood,Flood Story,2026,retain,current scholarly synthesis,https://academic.oup.com/edited-volume/61673/chapter-abstract/567661368
+S025,ANE flood,The Primeval Flood Catastrophe,2013,retain,Mesopotamian flood source history,https://global.oup.com/academic/product/the-primeval-flood-catastrophe-9780199676200
+S026,Ugarit,The Ugaritic Baal Cycle Volume I,1994,retain,critical text/commentary,https://brill.com/display/title/1061
+S027,Egypt,The Egyptian Coffin Texts 1,1935,retain_source,critical source corpus,https://isac.uchicago.edu/publications/egyptian-coffin-texts-1-texts-spells-1-75
+S028,Egypt,The Egyptian Coffin Texts Volume 8,2006,retain_source,source transmission/layering,https://isac.uchicago.edu/research/publications/oip/egyptian-coffin-texts-volume-8-middle-kingdom-copies-pyramid-texts
+S029,Egypt,Pyramid Texts - UCL Digital Egypt,current,retain_resource,chronology/source infrastructure,https://www.ucl.ac.uk/museums-static/digitalegypt/literature/religious/pyramid.html
+S030,Egypt,Religious texts as a source of a contemporary study of Antiquity,2019,retain,interpretive caution,https://revistas.fcsh.unl.pt/res/article/view/661
+S031,Iranian flood,"Yima's Vara, Iranian Floods, and Jewish Apocalyptic Traditions",2013,retain,similarity without influence as explicit counterexample,https://researchportal.helsinki.fi/en/publications/its-a-craft-its-a-cavern-its-a-castle-yimas-vara-iranian-floods-a/
+S032,parallelomania,On Comparisons with Ancient Greek Traditions,2023,retain,skeptical comparative methodology,https://jhsonline.org/index.php/jhs/article/view/29633
+S033,Greek/Babylonian,Divine Assemblies in Early Greek and Babylonian Epic,2024,retain,systematic comparison and transmission/polygenesis discussion,https://academic.oup.com/book/58864
+S034,diffusion networks,Applying event history analysis to explain diffusion of innovations in archaeological networks,2019,retain,formal diffusion model analogue,https://www.sciencedirect.com/science/article/pii/S0305440318304758
+S035,diffusion networks,Social Boundaries and Networks in the Diffusion of Innovations,2018,retain,contact does not imply adoption,https://doi.org/10.1007/s10816-018-9395-x
+S036,text transmission,A network analytical framework for modeling the global transmission of classics through translation,2025,retain_method_analogue,modern text-network method analogue,https://www.nature.com/articles/s40494-025-01904-7
+S037,digital humanities,Evol project: quantitative analysis of ancient literature,2024,retain_method_analogue,text reuse networks for ancient literature,https://www.nature.com/articles/s41599-024-02763-6
+S038,borrowing methodology,Identifying Borrowings Between Eastern Mediterranean Cults,2021,retain,explicit borrowing criteria problem,https://research.vu.nl/en/publications/identifying-borrowings-between-eastern-mediterranean-cults-a-meth/
+S039,comparative myth methods,Creation and chaos: myth and ideology in the ancient Near East and the Bible,2022,retain_thesis,direct comparison of myth methodology and evolutionary anthropology,https://ora.ox.ac.uk/objects/uuid%3A55a722fe-b901-4554-804d-94429ddc58bd
+S040,human history,On the shape and fabric of human history,2010,retain,tree/network history background,https://www.jstor.org/stable/20789206
+S041,language phylogeny,Mapping origins and expansion of Indo-European language family,2012,retain_tree_source,candidate dated IE tree source,https://doi.org/10.1126/science.1219669
+S042,comparative method,Cross-cultural patterns of marriage and inheritance: A phylogenetic approach,1996,retain,early empirical Galton-control example,https://www.sciencedirect.com/science/article/pii/0162309595001271
+S043,comparative anthropology,The Comparative Method of Anthropology,1966,background_only,historical overview too broad for core evidence,https://www.cambridge.org/core/journals/comparative-studies-in-society-and-history/article/abs/comparative-method-of-anthropology/05B140393B89F424FA14E7A8931D3863
+S044,phylogenetics,Phylogenetic Comparative Methods: A User's Guide for Paleontologists,2021,exclude_domain,useful PCM tutorial but non-cultural and not needed in core,https://www.cambridge.org/core/elements/abs/phylogenetic-comparative-methods-a-users-guide-for-paleontologists/973B90CCB6F4B9E07CE23793F1E4D1AD
+S045,cultural macroevolution,Claude Levi-Strauss as a humanist forerunner of cultural macroevolution studies,2022,background_only,"conceptual background, not primary method/evidence",https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/claude-levistrauss-as-a-humanist-forerunner-of-cultural-macroevolution-studies/4EEE8494FD24459D0AC6151E4F94D38A
+S046,web tertiary,Baal Cycle - Wikipedia,current,exclude_tertiary,not canonical evidence,https://en.wikipedia.org/wiki/Baal_Cycle
+S047,web tertiary,Parallelomania - Wikipedia,current,exclude_tertiary,concept discovery only; scholarly sources preferred,https://en.wikipedia.org/wiki/Parallelomania
+S048,noncanonical copy,Religious Texts From Ugarit - Scribd,current,exclude_noncanonical,not suitable provenance for confirmatory coding,https://www.scribd.com/document/322973717/Religious-texts-from-Ugarit-whole
+S049,web tertiary,Ancient Egyptian mortuary texts - Smarthistory,2022,exclude_tertiary,educational summary; source corpus exists directly,https://smarthistory.org/ancient-egyptian-mortuary-texts/
+S050,duplicate,HRAF summary of Graça da Silva & Tehrani 2016,2016,exclude_duplicate,use publisher/PubMed paper instead,https://hraf.yale.edu/ehc/documents/1116
+S051,duplicate,ResearchGate copy of Greenhill et al. 2009,2009,exclude_duplicate,use PubMed/Royal Society record instead,https://www.researchgate.net/publication/24237499_Does_horizontal_transmission_invalidate_cultural_phylogenies
+S052,Egypt resource,Global Egyptian Museum - Pyramid Texts,current,discovery_only,use UCL/ISAC critical infrastructure instead,https://globalegyptianmuseum.org/glossary.aspx?id=306

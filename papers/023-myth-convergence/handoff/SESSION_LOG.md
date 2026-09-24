@@ -134,3 +134,11 @@
 - Seeded 17 case-universe candidates with Tier A/B status and inclusion rationale.
 - Created a verified literature seed map centered on cross-cultural non-independence, cultural phylogenetics, folktale phylogenetics, D-PLACE architecture and ancient Near Eastern flood source criticism.
 - Next work is G2 systematic literature + G3 case-universe completion before expanded similarity inspection.
+
+## 2026-09-24 · G2/G3 expansion checkpoint
+- Expanded literature screening to 52 records across comparative mythology, cultural phylogenetics, reticulation, non-independence, network diffusion, source criticism and digital humanities.
+- Retained 39 relevant records/resources after explicit exclusions; preserved skeptical results rather than only supportive literature.
+- Added recent cross-cultural methods guidance, horizontal-transmission simulations, parallelomania critiques, ancient diffusion-network methods, Baal/Egypt source infrastructure and Iranian Yima comparison.
+- Built a 14-row case-source registry showing verified vs still-unlocked source/edition status.
+- G2 numerical thresholds are met, but citation chaining/evidence-map freeze remains; G3 case-universe still open.
+- Progress advanced from 34% to 44% under the explicit v0.2 denominator.
