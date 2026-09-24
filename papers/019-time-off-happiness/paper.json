@@ -5,15 +5,15 @@
   "title": "Time Off and Happiness Across Countries: Long-Run Institutional Change, Comparative Well-Being Panels, and Policy-Reform Evidence",
   "short_title": "Time Off × Happiness · Long Run",
   "year": 2026,
-  "status": "historical-expansion-acquisition-and-harmonization",
+  "status": "expanded-modern-module-locked-historical-synthesis-active",
   "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
-  "summary": "Expanded cross-national study of how paid annual leave, weekly rest, public holidays and realized working time evolved over the long twentieth century and early twenty-first century, linked to multi-source subjective well-being evidence from the postwar era onward. The completed eight-event/Israel Life Ladder study is preserved as Pilot-0, a narrow causal-identification module rather than the whole project.",
+  "summary": "Long-run cross-national study of statutory paid annual leave, realized working time and subjective well-being. The project now combines institutional history, a 161-country modern statutory-leave × annual-Life-Ladder panel, a 130-country 1870–2023 working-hours source, postwar WDH/Eurobarometer/WVS coverage, and a separately frozen causal Pilot-0. The modern broad-panel module is interpretation-locked: no stable positive or negative aggregate response is established, with statutory-leave estimates highly sensitive to legal-vs-database timing.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder gates frozen and executed; WHR2024 source refresh, complete bounded 11-jump legal audit, independently frozen Israel holdout, bilingual manuscripts, four manuscript figures/tables, SIR double-anonymous DOCX/PDF package, anonymous replication bundle, final visual/identity QA, and one-page portfolio explainer completed; scope reopened 2026-09-24 after adequacy audit to add long-run institutional history, post-1945 multi-source well-being panels, broad country coverage and a full statistical synthesis",
-    "version": "v0.9.0"
+    "version": "v0.10.0"
   },
   "links": {
     "paper_en": "manuscript/WORKING_PAPER_EN.md",
@@ -33,7 +33,13 @@
     "historical_coverage": "process/HISTORICAL_COVERAGE_GATE.md",
     "modern_overlap": "process/MODERN_PANEL_OVERLAP_GATE.md",
     "statistical_freeze": "process/EXPANDED_STATISTICAL_FREEZE.md",
-    "acquisition_manifest": "data/historical_acquisition_manifest.csv"
+    "acquisition_manifest": "data/historical_acquisition_manifest.csv",
+    "expanded_modern_interpretation": "process/EXPANDED_MODERN_INTERPRETATION_LOCK.md",
+    "expanded_modern_A1": "process/EXPANDED_MODERN_PANEL_A1.md",
+    "legal_timing_audit": "process/LEGAL_WB_TIMING_AUDIT.md",
+    "legal_time_falsification": "process/LEGAL_TIME_ALIGNED_PANEL_FALSIFICATION.md",
+    "longrun_hours": "process/WORKING_HOURS_LONGRUN_COVERAGE_GATE.md",
+    "wdh_variable_coverage": "process/WDH_VARIABLE_COVERAGE_GATE.md"
   },
   "tags": [
     "ARIS",
@@ -126,7 +132,7 @@
       "submission_snapshot": "SIR package preserved but no longer treated as the complete ARIS4C019 final manuscript"
     },
     "historical_expansion": {
-      "status": "coverage-gates-pass-acquisition-pending",
+      "status": "modern-module-locked-historical-numeric-acquisition-and-synthesis-pending",
       "exposure_target": "early-20th-century/1936-2026 legal and working-time history",
       "wellbeing_target": "1945-present multi-source subjective well-being",
       "modern_country_target": 193,
@@ -168,7 +174,70 @@
         "published_period": "1945-2021",
         "binary_acquisition": "pending-current-runtime"
       },
-      "statistical_freeze": "process/EXPANDED_STATISTICAL_FREEZE.md"
+      "statistical_freeze": "process/EXPANDED_STATISTICAL_FREEZE.md",
+      "working_hours": {
+        "countries": 130,
+        "observations": 5063,
+        "period": "1870-2023",
+        "prewar_seed_countries": 14,
+        "prewar_seed_rows": 98,
+        "prewar_wdh_bridge": "14/14"
+      },
+      "wdh_public_mean_registry": {
+        "variable_series": 124,
+        "nation_labels": 61,
+        "earliest_start": 1946,
+        "numeric_observations": "pending"
+      },
+      "modern_module_lock": "process/EXPANDED_MODERN_INTERPRETATION_LOCK.md"
+    },
+    "expanded_modern": {
+      "status": "complete-interpretation-locked",
+      "availability": {
+        "countries": 161,
+        "country_years": 1934,
+        "median_linked_years": 14,
+        "countries_ge_10_years": 127,
+        "countries_ge_15_years": 57
+      },
+      "leave_A1_twfe_per_5_days": {
+        "beta": 0.04545506119030802,
+        "ci95": [
+          -0.06846183816405627,
+          0.15937196054467231
+        ]
+      },
+      "leave_A1_fd_per_5_days": {
+        "beta": -0.08086043494436361,
+        "ci95": [
+          -0.18415344701934516,
+          0.022432577130617956
+        ]
+      },
+      "hours_A1_twfe_per_100_hours": {
+        "beta": 0.012981865209984334,
+        "ci95": [
+          -0.037974335472342996,
+          0.06393806589231167
+        ]
+      },
+      "legal_vs_wb_timing": {
+        "verified_events": 9,
+        "mean_wb_minus_legal_years": 1.2222222222222223,
+        "median_years": 1,
+        "range": [
+          0,
+          2
+        ]
+      },
+      "timing_falsification": {
+        "wb_report_year_verified_changer_A1_fd_per_5_days": -0.2399463287445054,
+        "legal_effective_year_A1_fd_per_5_days": 0.09251910296634852,
+        "full_exposure_year_A1_fd_per_5_days": 0.24637895662072973,
+        "interpretation": "sign flips under legal-time realignment; neither sign is causal"
+      },
+      "nonlinearity": "no clear RCS dose-response; prespecified 12/20/26-day nonlinear term and contrasts are imprecise",
+      "interpretation": "Large-sample modern panel evidence does not establish a stable positive or negative aggregate Life Ladder response to statutory paid annual leave or annual working hours. Timing and measurement are central."
     }
   }
 }
