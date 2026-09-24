@@ -34,3 +34,12 @@ Do not manufacture a conflict when newer evidence merely tightens a bound or whe
 | C007 | Tethys | differentiation | TETHYS_SHAPE_1991 | model ambiguity | Shape analysis permits differentiation with a small rocky core but also discusses historical mass uncertainty. Keep MODEL_INFERRED / DIFFERENTIATED rather than STRONGLY_CONSTRAINED. | RESOLVED_BY_EVIDENCE_LEVEL |
 
 Unresolved source conflicts requiring `NA_SOURCE_CONFLICT`: **0**.
+
+## Readiness-targeted scan · Batch 07
+
+| ID | Body | Variable | Sources | Type | Adjudication | Status |
+|---|---|---|---|---|---|---|
+| C008 | Phobos/Deimos | atmosphere | NASA_PHOBOS_AIRLESS / NASA_MARS_MOONS_AIRLESS | direct agency synthesis | Airless-body statements support `EVIDENCE_OF_ABSENCE / NONE_OR_NEGLIGIBLE`; no atmosphere is inferred from size alone. | RESOLVED |
+| C009 | Ariel/Umbriel/Titania/Oberon | differentiation | URANUS_MOONS_INTERIORS_2023 | model-based interior layering | Ocean + ice-shell + rocky-layer models imply internal differentiation, but remain model inference rather than direct gravity-field measurement. | RESOLVED_BY_EVIDENCE_LEVEL |
+
+Unresolved source conflicts requiring `NA_SOURCE_CONFLICT`: **0**.
