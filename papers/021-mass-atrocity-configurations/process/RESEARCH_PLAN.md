@@ -4,7 +4,7 @@
 
 Which structural, elite-level, conflict, target-vulnerability and international conditions — alone or in combinations — are necessary or sufficient for the onset of genocide/politicide or intrastate mass killing?
 
-The phrase “necessary/sufficient” is used in the set-theoretic QCA sense, not as a deterministic universal law.
+The terms “necessary” and “sufficient” are method-specific formal claims, not deterministic universal laws. QCA/CNA, NCA, event-history models and process tracing answer different parts of the causal question and are not interchangeable.
 
 ## Claim hierarchy
 
@@ -60,7 +60,21 @@ Build a theory-constrained extension using modern public sources. Candidate fami
 
 Do not put every available variable into one truth table. QCA condition count is frozen by theory and sample size before outcome inspection.
 
-### Stage D · Predictive benchmark
+### Stage D · Cross-method triangulation
+
+On the same frozen historical and modern frames:
+
+- QCA tests set-theoretic configurations and causal asymmetry;
+- CNA searches redundancy-free minimally sufficient/necessary configurational structures;
+- NCA tests bottleneck-style necessity, especially for continuous modern indicators;
+- event-history models test timing, duration dependence and lagged onset risk;
+- rare-events / penalized regression provides a conventional inferential benchmark;
+- machine-learning models provide out-of-sample prediction benchmarks;
+- process tracing and comparative process tracing test mechanisms and condition sequence in selected typical/deviant cases.
+
+No method is treated as the adjudicator of all others. Disagreement is analyzed explicitly.
+
+### Stage E · Predictive benchmark
 
 Compare set-theoretic configurations with a conventional predictive baseline using lagged country-year covariates.
 
@@ -86,7 +100,7 @@ All explanatory conditions must be measured before the defined onset.
 - retrospectively coded predictors that may depend on knowing the outcome are flagged or excluded;
 - outcome and condition coding are versioned separately.
 
-## QCA workflow
+## Configurational workflow
 
 1. descriptive missingness and case-universe audit;
 2. calibration freeze;
@@ -167,5 +181,5 @@ This is a mass-atrocity prevention and explanation project.
 3. document coding mismatches;
 4. freeze CASE_UNIVERSE_V1.csv;
 5. freeze CONDITION_CALIBRATION_V1.md;
-6. run replication-only csQCA/fsQCA;
-7. do not add V-Dem/EWP extensions until the replication result is locked.
+6. run the historical replication suite: Harff-style baseline + QCA + CNA, with NCA only where measurement permits;
+7. lock the replication comparison before adding V-Dem/EWP modern extensions.
