@@ -1,0 +1,166 @@
+whr_country,wb_code,wb_economy_label,match_status,match_method
+Afghanistan,AFG,Afghanistan,matched,normalized_name
+Albania,ALB,Albania,matched,normalized_name
+Algeria,DZA,Algeria,matched,normalized_name
+Angola,AGO,Angola,matched,normalized_name
+Argentina,ARG,Argentina,matched,normalized_name
+Armenia,ARM,Armenia,matched,normalized_name
+Australia,AUS,Australia,matched,normalized_name
+Austria,AUT,Austria,matched,normalized_name
+Azerbaijan,AZE,Azerbaijan,matched,normalized_name
+Bahrain,BHR,Bahrain,matched,normalized_name
+Bangladesh,BGD,Bangladesh Dhaka,matched,curated_alias_or_base_code
+Belarus,BLR,Belarus,matched,normalized_name
+Belgium,BEL,Belgium,matched,normalized_name
+Belize,BLZ,Belize,matched,normalized_name
+Benin,BEN,Benin,matched,normalized_name
+Bhutan,BTN,Bhutan,matched,normalized_name
+Bolivia,BOL,Bolivia,matched,normalized_name
+Bosnia and Herzegovina,BIH,Bosnia and Herzegovina,matched,normalized_name
+Botswana,BWA,Botswana,matched,normalized_name
+Brazil,BRA,Brazil São Paulo,matched,curated_alias_or_base_code
+Bulgaria,BGR,Bulgaria,matched,normalized_name
+Burkina Faso,BFA,Burkina Faso,matched,normalized_name
+Burundi,BDI,Burundi,matched,normalized_name
+Cambodia,KHM,Cambodia,matched,normalized_name
+Cameroon,CMR,Cameroon,matched,normalized_name
+Canada,CAN,Canada,matched,normalized_name
+Central African Republic,CAF,Central African Republic,matched,normalized_name
+Chad,TCD,Chad,matched,normalized_name
+Chile,CHL,Chile,matched,normalized_name
+China,CHN,China Shanghai,matched,curated_alias_or_base_code
+Colombia,COL,Colombia,matched,normalized_name
+Comoros,COM,Comoros,matched,normalized_name
+Congo (Brazzaville),COG,"Congo, Rep.",matched,curated_alias_or_base_code
+Congo (Kinshasa),COD,,matched,curated_alias_or_base_code
+Costa Rica,CRI,Costa Rica,matched,normalized_name
+Croatia,HRV,Croatia,matched,normalized_name
+Cuba,,,unmatched,unmatched
+Cyprus,CYP,Cyprus,matched,normalized_name
+Czechia,CZE,Czech Republic,matched,curated_alias_or_base_code
+Denmark,DNK,Denmark,matched,normalized_name
+Djibouti,DJI,Djibouti,matched,normalized_name
+Dominican Republic,DOM,Dominican Republic,matched,normalized_name
+Ecuador,ECU,Ecuador,matched,normalized_name
+Egypt,EGY,"Egypt, Arab Rep.",matched,curated_alias_or_base_code
+El Salvador,SLV,El Salvador,matched,normalized_name
+Estonia,EST,Estonia,matched,normalized_name
+Eswatini,SWZ,Eswatini,matched,normalized_name
+Ethiopia,ETH,Ethiopia,matched,normalized_name
+Finland,FIN,Finland,matched,normalized_name
+France,FRA,France,matched,normalized_name
+Gabon,GAB,Gabon,matched,normalized_name
+Gambia,GMB,"Gambia, The",matched,curated_alias_or_base_code
+Georgia,GEO,Georgia,matched,normalized_name
+Germany,DEU,Germany,matched,normalized_name
+Ghana,GHA,Ghana,matched,normalized_name
+Greece,GRC,Greece,matched,normalized_name
+Guatemala,GTM,Guatemala,matched,normalized_name
+Guinea,GIN,Guinea,matched,normalized_name
+Guyana,GUY,Guyana,matched,normalized_name
+Haiti,HTI,Haiti,matched,normalized_name
+Honduras,HND,Honduras,matched,normalized_name
+Hong Kong S.A.R. of China,HKG,"Hong Kong SAR, China",matched,curated_alias_or_base_code
+Hungary,HUN,Hungary,matched,normalized_name
+Iceland,ISL,Iceland,matched,normalized_name
+India,IND,India Mumbai,matched,curated_alias_or_base_code
+Indonesia,IDN,Indonesia Jakarta,matched,curated_alias_or_base_code
+Iran,IRN,"Iran, Islamic Rep.",matched,curated_alias_or_base_code
+Iraq,IRQ,Iraq,matched,normalized_name
+Ireland,IRL,Ireland,matched,normalized_name
+Israel,ISR,Israel,matched,normalized_name
+Italy,ITA,Italy,matched,normalized_name
+Ivory Coast,CIV,Côte d'Ivoire,matched,curated_alias_or_base_code
+Jamaica,JAM,Jamaica,matched,normalized_name
+Japan,JPN,Japan Tokyo,matched,curated_alias_or_base_code
+Jordan,JOR,Jordan,matched,normalized_name
+Kazakhstan,KAZ,Kazakhstan,matched,normalized_name
+Kenya,KEN,Kenya,matched,normalized_name
+Kosovo,KSV,Kosovo,matched,normalized_name
+Kuwait,KWT,Kuwait,matched,normalized_name
+Kyrgyzstan,KGZ,Kyrgyz Republic,matched,curated_alias_or_base_code
+Laos,LAO,Lao PDR,matched,curated_alias_or_base_code
+Latvia,LVA,Latvia,matched,normalized_name
+Lebanon,LBN,Lebanon,matched,normalized_name
+Lesotho,LSO,Lesotho,matched,normalized_name
+Liberia,LBR,Liberia,matched,normalized_name
+Libya,LBY,Libya,matched,normalized_name
+Lithuania,LTU,Lithuania,matched,normalized_name
+Luxembourg,LUX,Luxembourg,matched,normalized_name
+Madagascar,MDG,Madagascar,matched,normalized_name
+Malawi,MWI,Malawi,matched,normalized_name
+Malaysia,MYS,Malaysia,matched,normalized_name
+Maldives,MDV,Maldives,matched,normalized_name
+Mali,MLI,Mali,matched,normalized_name
+Malta,MLT,Malta,matched,normalized_name
+Mauritania,MRT,Mauritania,matched,normalized_name
+Mauritius,MUS,Mauritius,matched,normalized_name
+Mexico,MEX,Mexico Mexico City,matched,curated_alias_or_base_code
+Moldova,MDA,Moldova,matched,normalized_name
+Mongolia,MNG,Mongolia,matched,normalized_name
+Montenegro,MNE,Montenegro,matched,normalized_name
+Morocco,MAR,Morocco,matched,normalized_name
+Mozambique,MOZ,Mozambique,matched,normalized_name
+Myanmar,MMR,Myanmar,matched,normalized_name
+Namibia,NAM,Namibia,matched,normalized_name
+Nepal,NPL,Nepal,matched,normalized_name
+Netherlands,NLD,Netherlands,matched,normalized_name
+New Zealand,NZL,New Zealand,matched,normalized_name
+Nicaragua,NIC,Nicaragua,matched,normalized_name
+Niger,NER,Niger,matched,normalized_name
+Nigeria,NGA,Nigeria Lagos,matched,curated_alias_or_base_code
+North Macedonia,MKD,North Macedonia,matched,normalized_name
+Norway,NOR,Norway,matched,normalized_name
+Oman,OMN,Oman,matched,normalized_name
+Pakistan,PAK,Pakistan Karachi,matched,curated_alias_or_base_code
+Panama,PAN,Panama,matched,normalized_name
+Paraguay,PRY,Paraguay,matched,normalized_name
+Peru,PER,Peru,matched,normalized_name
+Philippines,PHL,Philippines,matched,normalized_name
+Poland,POL,Poland,matched,normalized_name
+Portugal,PRT,Portugal,matched,normalized_name
+Qatar,QAT,Qatar,matched,normalized_name
+Romania,ROM,Romania,matched,normalized_name
+Russia,RUS,Russian Federation Moscow,matched,curated_alias_or_base_code
+Rwanda,RWA,Rwanda,matched,normalized_name
+Saudi Arabia,SAU,Saudi Arabia,matched,normalized_name
+Senegal,SEN,Senegal,matched,normalized_name
+Serbia,SRB,Serbia,matched,normalized_name
+Sierra Leone,SLE,Sierra Leone,matched,normalized_name
+Singapore,SGP,Singapore,matched,normalized_name
+Slovakia,SVK,Slovak Republic,matched,curated_alias_or_base_code
+Slovenia,SVN,Slovenia,matched,normalized_name
+Somalia,SOM,Somalia,matched,normalized_name
+Somaliland region,,,unmatched,unmatched
+South Africa,ZAF,South Africa,matched,normalized_name
+South Korea,KOR,"Korea, Rep.",matched,curated_alias_or_base_code
+South Sudan,SSD,South Sudan,matched,normalized_name
+Spain,ESP,Spain,matched,normalized_name
+Sri Lanka,LKA,Sri Lanka,matched,normalized_name
+State of Palestine,,,unmatched,unmatched
+Sudan,SDN,Sudan,matched,normalized_name
+Suriname,SUR,Suriname,matched,normalized_name
+Sweden,SWE,Sweden,matched,normalized_name
+Switzerland,CHE,Switzerland,matched,normalized_name
+Syria,SYR,Syrian Arab Republic,matched,curated_alias_or_base_code
+Taiwan Province of China,TWN,"Taiwan, China",matched,curated_alias_or_base_code
+Tajikistan,TJK,Tajikistan,matched,normalized_name
+Tanzania,TZA,Tanzania,matched,normalized_name
+Thailand,THA,Thailand,matched,normalized_name
+Togo,TGO,Togo,matched,normalized_name
+Trinidad and Tobago,TTO,Trinidad and Tobago,matched,normalized_name
+Tunisia,TUN,Tunisia,matched,normalized_name
+Turkiye,TUR,Turkey,matched,curated_alias_or_base_code
+Turkmenistan,,,unmatched,unmatched
+Uganda,UGA,Uganda,matched,normalized_name
+Ukraine,UKR,Ukraine,matched,normalized_name
+United Arab Emirates,ARE,United Arab Emirates,matched,normalized_name
+United Kingdom,GBR,United Kingdom,matched,normalized_name
+United States,USA,United States New York City,matched,curated_alias_or_base_code
+Uruguay,URY,Uruguay,matched,normalized_name
+Uzbekistan,UZB,Uzbekistan,matched,normalized_name
+Venezuela,VEN,"Venezuela, RB",matched,curated_alias_or_base_code
+Vietnam,VNM,Vietnam,matched,normalized_name
+Yemen,YEM,"Yemen, Rep.",matched,curated_alias_or_base_code
+Zambia,ZMB,Zambia,matched,normalized_name
+Zimbabwe,ZWE,Zimbabwe,matched,normalized_name
