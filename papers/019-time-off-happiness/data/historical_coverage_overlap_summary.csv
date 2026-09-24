@@ -1,0 +1,6 @@
+pair,unit,overlap_n,coverage_a,coverage_b,status,effect_inspected
+WHR2024 annual × OWID hours,country-year,1951,2363 WHR country-years / 165 countries,5063 hours country-years / 130 countries,materialized coverage overlap,no
+WHR2024 annual × OWID hours,country,125,165 country labels,130 country labels,name-normalized coverage overlap,no
+WVS visible Waves 1-6 × OWID hours,country code,89,229 wave-country rows / 96 unique codes,130 country codes,code-based coverage overlap,no
+WDH comparable long-series seed × OWID hours,country,51,105 comparable series / 56 normalized country labels,130 country labels,name-normalized coverage overlap,no
+WDH comparable long-series seed × WHR2024 annual,country,55,56 WDH normalized country labels,165 WHR country labels,name-normalized instrument-bridge candidate overlap,no
