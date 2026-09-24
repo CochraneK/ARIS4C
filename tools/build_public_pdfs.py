@@ -18,6 +18,8 @@ BUILDS = [
     ("001", ROOT / "papers/001-gca-bees/manuscript/MAIN.zh-CN.md", ROOT / "docs/paper/001/zh/main.pdf", "zh-CN"),
     ("002", ROOT / "papers/002-language-geometry/manuscript/DRAFT.md", ROOT / "docs/paper/002/en/main.pdf", "en"),
     ("002", ROOT / "papers/002-language-geometry/manuscript/DRAFT.zh-CN.md", ROOT / "docs/paper/002/zh/main.pdf", "zh-CN"),
+    ("019", ROOT / "papers/019-time-off-happiness/manuscript/WORKING_PAPER_EN.md", ROOT / "docs/paper/019/en/main.pdf", "en"),
+    ("019", ROOT / "papers/019-time-off-happiness/manuscript/WORKING_PAPER_ZH.md", ROOT / "docs/paper/019/zh/main.pdf", "zh-CN"),
 ]
 
 EXTENSIONS = [
