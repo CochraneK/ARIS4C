@@ -1,24 +1,23 @@
 # STATUS · ARIS4C022
 
-- State: Pilot-1 evidence coding near small-body boundary / conflict audit active
+- State: Pilot-1 small-body evidence anchors active / SBDB acquisition gate
 - Portfolio activity: active
-- Progress estimate: 68%
+- Progress estimate: 72%
 - Frozen case frame: 50 bodies
 - Raw physical matrix: 34/50 authoritative JPL core physical values
 - Orbit v0.2: 8 JPL planet elements + 5 derived dwarf a + 21 JPL satellite mean elements + 16 pending small bodies
-- Evidence protocol v0.3: missingness and source-conflict semantics frozen before QCA
-- Evidence v0.4 coverage:
-  - composition 34/50
-  - atmosphere 24/50
-  - differentiation 24/50
-  - geology 23/50
-  - present/persistent ocean 14/50
-  - tidal heating 20/50
-  - total 139/300 non-pending cells
-- Batch 03 primary cases: Phobos, Deimos, Mimas, Tethys, Dione, Rhea, Iapetus, Miranda, Ariel, Umbriel, Titania, Oberon, Haumea, Makemake, Eris
-- Pluto/Triton receive additional NASA Ocean Worlds updates
-- Source-conflict audit started: Mimas historical frozen-solid framing vs 2024 Nature ocean result adjudicated as temporal supersession
-- Composition now has an evidence state for all 34 non-small-body cases; the remaining 16 composition gaps are exactly the SBDB small/boundary stratum
-- Small-body gate: live JPL SBDB raw JSON still required for 16 cases
+- Evidence protocol v0.4: adds CARBONACEOUS_HYDRATED and separates parent-body aqueous alteration from present ocean state
+- Evidence v0.5 coverage:
+  - composition 39/50
+  - atmosphere 25/50
+  - differentiation 29/50
+  - geology 24/50
+  - present/persistent ocean 15/50
+  - tidal heating 25/50
+  - total 157/300 non-pending cells
+- Batch 04: Vesta, Eros, Bennu, Ryugu, Itokawa
+- Five of 16 small/boundary cases now have mission/sample-return evidence states
+- Source-conflict audit active; Mimas temporal supersession remains adjudicated
+- Small-body numeric gate: live JPL SBDB raw JSON still required for all 16 small/boundary rows
 - Dwarf-orbit gate: 5 derived semimajor axes still await live SBDB/Horizons replacement
 - Anti-circularity: all 50 rows remain UNEXPOSED_TO_QCA_RESULT; no fsQCA calibration/truth table/solution inspected
