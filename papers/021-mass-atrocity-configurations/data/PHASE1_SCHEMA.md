@@ -75,3 +75,19 @@ The same frozen matrix feeds:
 3. CNA.
 
 Method-specific derived variables may be created downstream, but no method gets a privately recoded version of the cases without an explicit crosswalk.
+
+
+## Dual timing representation
+
+For Williams-derived conditions with retrospective coding risk, preserve two versions:
+
+- *_R: exact-replication coding following the published Williams procedure;
+- *_T: time-safe coding using only information observable at the frozen prediction date.
+
+At minimum:
+- P_R / P_T;
+- W_R / W_T.
+
+The canonical historical QCA replication uses *_R.
+The leakage-safe sensitivity uses *_T.
+Neither may overwrite the other.
