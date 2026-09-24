@@ -4,11 +4,15 @@
 - [x] Freeze 24-motif calibration ontology v0.1.
 - [x] Generate 120-judgment blinded A/B packet.
 - [x] QA passage locators.
+- [x] Audit whether each packet's passage text is retrievable as pinned (`code/passage_text_probe*.py`, `code/passage_text_recheck.py`, `code/build_text_release_audit.py` → `data/calibration/text_release_{probe.jsonl,summary.json}`, `process/CALIBRATION_TEXT_RELEASE_QA.md`).
 - [x] Implement reliability scorer.
 - [x] Implement coding validator.
 - [x] Implement missingness-safe pairwise Jaccard builder.
 - [x] Freeze historical-contact edge schema.
 - [x] Freeze downstream analysis contract and QCA trigger.
+- [ ] Record the witness-release decision the audit forces: re-pin to text-returning endpoints and release witnesses for the 96 retrievable judgments (packet v0.2), or restrict the run and log `EVIDENCE_UNAVAILABLE` for the rest.
+- [ ] Decide where witness text may live: every readable source asserts copyright or a non-commercial licence, so witness files may have to stay outside the repository with digests and locators committed.
+- [ ] Build the coder harness (012's `run_012_coders.py` shape: per-item checkpoint, served-model provenance, refuses any packet without a released witness).
 - [ ] Obtain genuinely independent coder-A/B responses.
 - [ ] Score reliability + disagreement taxonomy.
 - [ ] Revise/freeze full ontology v0.1 after reliability review.

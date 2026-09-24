@@ -1,0 +1,84 @@
+{
+  "population": "the 15 frozen calibration packets = 120 judgments",
+  "total_packets": 15,
+  "total_judgments": 120,
+  "class_meaning": {
+    "witness_text_released": "an automated coder can read the passage as pinned",
+    "witness_in_bulk_file_needs_extraction": "the passage exists in an open file but not at the pinned locator; the runner must be given an extracted witness",
+    "pinned_url_serves_no_text": "the pinned URL answers but carries no passage text (JS interstitial or frame shell)",
+    "host_unreachable": "the pinned host cannot be fetched at all",
+    "paywalled": "the locator points at a closed monograph/article"
+  },
+  "by_class": {
+    "witness_text_released": {
+      "packets": 5,
+      "judgments": 40
+    },
+    "pinned_url_serves_no_text": {
+      "packets": 5,
+      "judgments": 40
+    },
+    "witness_in_bulk_file_needs_extraction": {
+      "packets": 2,
+      "judgments": 16
+    },
+    "paywalled": {
+      "packets": 2,
+      "judgments": 16
+    },
+    "host_unreachable": {
+      "packets": 1,
+      "judgments": 8
+    }
+  },
+  "releasable_as_pinned": {
+    "packets": 5,
+    "judgments": 40
+  },
+  "releasable_as_pinned_share_of_judgments": 0.3333,
+  "needs_repin_or_browser": {
+    "pinned_url_serves_no_text": {
+      "packets": 5,
+      "judgments": 40
+    },
+    "witness_in_bulk_file_needs_extraction": {
+      "packets": 2,
+      "judgments": 16
+    }
+  },
+  "no_open_witness_located": {
+    "paywalled": {
+      "packets": 2,
+      "judgments": 16
+    },
+    "host_unreachable": {
+      "packets": 1,
+      "judgments": 8
+    }
+  },
+  "passage_recheck": {
+    "packets": 5,
+    "judgments": 40,
+    "basis": "sentence-level quotes in the per-packet passage_recheck field, from a fresh GET of each pinned URL (code/passage_text_recheck.py)"
+  },
+  "licence_of_releasable_witnesses": {
+    "all_rights_reserved": {
+      "packets": 1,
+      "judgments": 8
+    },
+    "non_commercial_licence": {
+      "packets": 2,
+      "judgments": 16
+    },
+    "copyright_notice_no_terms_stated": {
+      "packets": 2,
+      "judgments": 16
+    }
+  },
+  "releasable_with_open_licence": {
+    "packets": 0,
+    "judgments": 0
+  },
+  "licence_note": "Retrievable is not the same as redistributable. Every packet whose text could be read as pinned asserts copyright or a non-commercial licence on the serving page, so a witness file built from it may not belong in this repository even though a coder can be shown the passage at read time.",
+  "note": "CALIBRATION_PACKET_QA.md verified that every packet has a usable locator. This audit measures the different thing a coder needs: whether the passage text is actually retrievable from what the packet pins."
+}

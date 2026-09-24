@@ -181,11 +181,11 @@
     },
     "023": {
       "progress": 42,
-      "stage": "Reliability gate blocked · downstream analysis pipeline ready",
+      "stage": "Reliability gate blocked on witness release; downstream analysis pipeline ready",
       "activity": "block",
-      "evidence": "Calibration v0.1 and locator QA are complete. Coding validator, missingness-safe Jaccard dyad builder, contact-edge schema and downstream analysis contract are committed; contact evidence is structurally separated from myth similarity and QCA remains conditional.",
-      "next_gate": "Obtain independent dual coding; meanwhile populate historically sourced contact/genealogy/environment tables without looking at similarity results.",
-      "blocker": "Formal motif-reliability inference requires a genuinely independent second coder; controller-side analysis infrastructure is ready."
+      "evidence": "Calibration v0.1 and locator QA are complete. Coding validator, missingness-safe Jaccard dyad builder, contact-edge schema and downstream analysis contract are committed; contact evidence is structurally separated from myth similarity and QCA remains conditional. Text-release audit of the same 15 packets: passage text is readable for 5 packets / 40 of 120 judgments, and only 24 of those 40 from the pinned URL as plain prose; 80 judgments cannot be coded as pinned and 24 of those have no open witness located. None of the 5 readable sources states an open licence.",
+      "next_gate": "Record the witness-release decision the audit forces (re-pin and re-issue the packet as v0.2 for the 96 reachable judgments, or restrict the run and log EVIDENCE_UNAVAILABLE), then obtain independent dual coding; meanwhile populate historically sourced contact/genealogy/environment tables without looking at similarity results.",
+      "blocker": "Formal motif-reliability inference requires a genuinely independent second coder, and measured 2026-09-24 that is not the only missing input: two thirds of the 120 judgments have no coder-readable witness at the pinned locator, so a run today would score retrieval conditions as coder agreement. No coder harness is committed and the local multi-model gateway was not listening."
     }
   },
   "scheduling": {
