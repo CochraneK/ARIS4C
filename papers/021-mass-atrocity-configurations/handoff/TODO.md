@@ -1,40 +1,41 @@
 # ARIS4C021 · TODO
 
-## P0 · replication gate
+## P0 · historical replication gate
 
-- [x] Freeze published Harff/Williams result-level replication targets.
-- [x] Reconstruct and materialize candidate Williams case universe: 40 positive + 99 high-risk controls = 139.
-- [x] Cross-check all 40 positives against independent transformed PITF annual data.
-- [ ] Recover Hainmueller/Hazlett Political Analysis replication archive containing the Harff N=126 case-level matrix.
-- [ ] Acquire historical Polity IV 2012 and UCDP/PRIO v4-2012 binaries; hash/version them.
-- [ ] Reconstruct A_R and W_R/W_T and compare against Williams published margins.
-- [ ] Recover/verify Williams-era E_R; separately build current-WDI E_C sensitivity.
-- [ ] Recover P/I/S from Harff/Williams coding; do not proxy-code them silently.
+- [x] Freeze Harff/Williams published result-level targets.
+- [x] Freeze 40 Williams positive identities and independently cross-check 40/40.
+- [x] Reconstruct 102 PITF-2014 candidate controls.
+- [x] Resolve 102→99 exactly via three pre-1955 left-truncation artifacts.
+- [x] Freeze combined CASE_UNIVERSE_IDENTITY_V1.csv: 40 + 99 = 139.
+- [x] Freeze Williams A/P/W/I/S/E coding protocol.
+- [x] Freeze R-vs-M dual-track condition-matrix / anti-circularity contract.
+- [x] Materialize CONDITION_MATRIX_V0.csv with explicit UNRESOLVED states.
+- [ ] Crosswalk old-vintage negative-case timing where later PITF dates drift.
+- [ ] Recover A_R from Williams-era Polity IV + Freedom House reassessment evidence.
+- [ ] Recover W_R from UCDP/PRIO v4-2012 any-year-of-case coding.
+- [ ] Recover E_R from World Bank trade openness with the published 33% threshold; resolve Table=40 vs prose=41 discrepancy empirically.
+- [ ] Recover P_R using Williams's range/Harff-upheaval/manual-intermediate procedure.
+- [ ] Recover I_R from Harff + Williams's documented qualitative supplementation.
+- [ ] Recover S_R using Williams's elite-ethnicity salience rule and documented contentious cases.
+- [ ] Build M-track deterministic/pre-onset-safe counterparts.
+- [ ] Produce condition-cell provenance/missingness audit.
+- [ ] Compare six reconstructed margins against published 40/99 targets without tuning.
+- [ ] Freeze CONDITION_MATRIX_V1 only after the provenance gate passes.
+- [ ] Run Harff-style baseline + QCA + CNA on the identical frozen matrix.
+- [ ] Freeze CROSS_METHOD_REPLICATION_LOCK.md.
 
-- [ ] Download PITF State Failure / GenoPoliticide 2018 source files and codebook.
-- [ ] Record URLs, retrieval date, license/redistribution notes and SHA-256.
-- [ ] Reconstruct Harff/Williams case universe.
-- [ ] Reconstruct the six historical conditions without consulting new outcome results.
-- [ ] Freeze case IDs and calibration rules.
-- [ ] Implement Harff-style conventional replication baseline.
-- [ ] Implement QCA necessity/truth-table/sufficiency pipeline.
-- [ ] Implement CNA replication on the identical frozen case/condition matrix.
-- [ ] Freeze CROSS_METHOD_REPLICATION_LOCK.md comparing Harff/QCA/CNA.
-- [ ] Reproduce the published Williams configuration or document exact mismatch.
+## P1 · modern extension
 
-## P1 · extension
-
-- [ ] Pin V-Dem v16.
-- [ ] Pin Early Warning Project historical outcome/methodology bundle.
-- [ ] Map modern indicators to the condition ontology.
-- [ ] Add NCA for substantively continuous/ordinal bottleneck candidates.
+- [ ] Pin modern mass-killing outcome bundle separately from PITF geno-/politicide.
+- [ ] Pin V-Dem v16 and other modern institutional sources.
+- [ ] Add NCA only for substantively continuous/ordinal bottleneck candidates.
 - [ ] Add event-history / rare-event onset models.
-- [ ] Freeze extension QCA condition count.
-- [ ] Add predictive baseline.
+- [ ] Add held-out predictive baseline / nonlinear benchmark.
+- [ ] Select typical, deviant and high-risk non-onset cases for process tracing.
 - [ ] Run leave-one-case, leave-one-region and threshold sensitivity.
 
 ## P2 · output
 
-- [ ] Build periodic-table-like risk condition atlas.
-- [ ] Build configuration/pathway figure.
-- [ ] Draft EN/ZH manuscript only after first result lock.
+- [ ] Build periodic-table-like condition atlas only after evidence roles are locked.
+- [ ] Build pathway / sequence / timing figures.
+- [ ] Draft EN/ZH manuscript after first cross-method result lock.
