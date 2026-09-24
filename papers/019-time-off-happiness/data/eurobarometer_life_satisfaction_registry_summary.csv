@@ -1,0 +1,2 @@
+source_id,measure,first_measurement_year,last_indexed_year,indexed_measurement_entries,trend_file_start,trend_file_end,trend_file_waves,trend_file_cases,data_access,source_url,qa_note
+EUROBAROMETER_LIFE_SAT,"general life satisfaction",1973,2026,164,1970,2002,86,">1000000","GESIS registered free download","https://www.gesis.org/en/eurobarometer-data-service/overview/eb-trends-trend-files/list-of-trends/life-satisf","Life-satisfaction index lists repeated measures through EB105.2 (2026); some entries use changed wording or 10/11-point scales and require instrument flags"
