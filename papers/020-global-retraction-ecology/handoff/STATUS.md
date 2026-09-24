@@ -1,19 +1,21 @@
 # Status
 
 ## State
-Active · 28%
+Active · 36%
 
 ## Current stage
-Full 2026-09-23 Retraction Watch snapshot audited; denominator join design is next.
+RWDB audited · OpenAlex match gate PASS · denominator contract frozen.
 
 ## Evidence
-- Crossref publishes the full Retraction Watch CSV.
-- The dataset is updated on working days.
-- RWDB is suitable as the retraction-event spine.
-- Crossref/OpenAlex enrichment is required for publication denominators and citation-network analyses.
+- 72,606 RWDB rows; 67,197 primary Retraction records.
+- 61,155 unique usable original-paper DOIs.
+- Deterministic 1,000-DOI OpenAlex pilot: **996/1,000 = 99.6%** matched.
+- Full-match shard 0: **15,146/15,255 = 99.2855%** unique DOI matched; 0 API errors.
+- Event/work identity contract prevents multi-record DOI inflation.
+- RWDB semicolon-list parsing and OpenAlex denominator contracts are frozen.
 
 ## Next gate
-Freeze event-aware DOI deduplication, run Crossref/OpenAlex DOI matching, and build the first year × field publication denominators.
+Run deterministic OpenAlex shards 1–3, aggregate full match coverage, then generate year × field denominators and freeze eligible OpenAlex work types.
 
 ## Blocker
-None for acquisition. Expressions of concern and corrections are not population-complete in RWDB and must remain exploratory.
+No scientific blocker. Firecrawl credits were exhausted after shard 0; remaining shards are executable with the committed networked enrichment script. GitHub Actions are currently failing before runner steps start.
