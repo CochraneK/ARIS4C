@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "project": "ARIS4C021",
+  "artifact": "A_POLITY2012_PRELIM_V0",
+  "source": {
+    "repository": "CommonEconomist/replications",
+    "commit": "1ad6a9cf5086a29dc2ef84d6ad468fe969570813",
+    "path": "historical-conflict/raw_data/p4v2012.csv",
+    "git_blob_sha": "66acf371aa695b458e5a5a07464b200bf71a8743",
+    "role": "historical Polity IV 2012 mirror / replication precursor",
+    "canonical": false
+  },
+  "rules": {
+    "time": "case start year only; no nearest-year substitution in this artifact",
+    "direct_autocracy": "A_polity_only=1 iff raw POLITY is within [-10,0]",
+    "special_codes": "-66/-77/-88 are left unresolved and require Williams/Freedom House reassessment",
+    "target_blinding": "published 107/38/69 margins are validation targets only and were not used to fill rows"
+  },
+  "counts": {
+    "rows": 139,
+    "direct_polity": 115,
+    "special_requires_FH": 24,
+    "unresolved_other": 0,
+    "direct_A1_total": 87,
+    "direct_A1_genocide": 26,
+    "direct_A1_control": 61
+  },
+  "published_target_not_fitted": {
+    "A1_total": 107,
+    "A1_genocide": 38,
+    "A1_control": 69
+  },
+  "special_positive_case_ids": [
+    "AFG_1978_1992",
+    "BIH_1992_1995",
+    "BDI_1993_1993",
+    "BDI_1965_1973",
+    "KHM_1975_1979",
+    "COD_1964_1965",
+    "SLV_1980_1989",
+    "IRN_1981_1992",
+    "PAKBGD_1971_1971",
+    "VNM_S_1965_1975"
+  ],
+  "special_control_case_ids": [
+    "BEN_1963",
+    "COM_1995",
+    "COD_1992",
+    "CYP_1963",
+    "CSK_1968",
+    "DOM_1963",
+    "GNB_1998",
+    "HUN_1956",
+    "LBN_1975",
+    "LSO_1998",
+    "ROU_1989",
+    "SEN_1962",
+    "SGP_1963",
+    "URY_1971"
+  ]
+}
