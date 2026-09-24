@@ -30,6 +30,9 @@ ZH_TITLES = {
     "017": "LING-02 · 预测性语言空间",
     "018": "Fly Neuro Playground",
     "019": "Annual Leave × Life Evaluation",
+    "020": "全学科撤稿生态",
+    "021": "大规模暴行条件 · QCA",
+    "022": "行星天体分类 · fsQCA",
 }
 
 STATE = {
