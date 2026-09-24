@@ -1,11 +1,12 @@
 # STATUS · ARIS4C022
 
-- State: Pilot-0 case frame frozen / raw-data ingestion gate
+- State: Pilot-0 case frame frozen / first empirical source seed complete
 - Portfolio activity: active
-- Progress estimate: 26%
+- Progress estimate: 31%
 - Frozen case frame: 50 bodies = 8 planets + 5 dwarf planets + 21 satellites + 16 small/boundary bodies
-- Current gate: populate canonical raw physical/orbital matrix with field-level provenance and uncertainty
+- Empirical seed: NASA NSSDC 10-body major-body table committed with provenance manifest
+- Acquisition scaffold: JPL SBDB API fetcher + source-ingestion plan committed
+- QC finding: equatorial diameter cannot be silently treated as mean volumetric diameter; gas-giant gravity requires pressure-level/rotation conventions
+- Current gate: expand raw matrix from 10/50 to 50/50 with field-level provenance and uncertainty
 - Blocker: none
-- Scientific caution: official-label QCA is a taxonomy audit, not causal discovery
-- Anti-circularity: definitional benchmark and non-definitional physical-signature models are frozen separately
-- Positive control: Mars is a planet under the current IAU Solar-System definition
+- Scientific caution: definitional benchmark and non-definitional physical-signature models remain separate
