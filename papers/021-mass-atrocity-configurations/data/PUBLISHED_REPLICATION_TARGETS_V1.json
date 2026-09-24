@@ -32,12 +32,36 @@
       "nongenocides_correct_pct": 0.73,
       "no_risk_probability": 0.028,
       "variables": {
-        "political_upheaval": {"odds_ratio": 1.70, "coefficient": 0.048, "p_value_text": ".05"},
-        "prior_genocide": {"odds_ratio": 3.39, "coefficient": 1.220, "p_value_text": ".09"},
-        "exclusionary_ideology": {"odds_ratio": 2.55, "coefficient": 0.937, "p_value_text": ".07"},
-        "autocracy": {"odds_ratio": 3.50, "coefficient": 1.223, "p_value_text": ".03"},
-        "minority_elite": {"odds_ratio": 2.56, "coefficient": 0.939, "p_value_text": ".09"},
-        "trade_openness": {"odds_ratio_low_vs_high": 2.58, "coefficient": -1.242, "p_value_text": "<.01"}
+        "political_upheaval": {
+          "odds_ratio": 1.7,
+          "coefficient": 0.048,
+          "p_value_text": ".05"
+        },
+        "prior_genocide": {
+          "odds_ratio": 3.39,
+          "coefficient": 1.22,
+          "p_value_text": ".09"
+        },
+        "exclusionary_ideology": {
+          "odds_ratio": 2.55,
+          "coefficient": 0.937,
+          "p_value_text": ".07"
+        },
+        "autocracy": {
+          "odds_ratio": 3.5,
+          "coefficient": 1.223,
+          "p_value_text": ".03"
+        },
+        "minority_elite": {
+          "odds_ratio": 2.56,
+          "coefficient": 0.939,
+          "p_value_text": ".09"
+        },
+        "trade_openness": {
+          "odds_ratio_low_vs_high": 2.58,
+          "coefficient": -1.242,
+          "p_value_text": "<.01"
+        }
       },
       "misclassified_genocides": [
         "Afghanistan 1978",
@@ -70,12 +94,36 @@
       "period_end": 1998
     },
     "conditions": {
-      "A_autocracy": {"genocide_present": 38, "non_genocide_present": 69, "total_present": 107},
-      "P_political_upheaval": {"genocide_present": 25, "non_genocide_present": 31, "total_present": 56},
-      "W_war": {"genocide_present": 26, "non_genocide_present": 54, "total_present": 80},
-      "I_exclusionary_ideology": {"genocide_present": 25, "non_genocide_present": 22, "total_present": 47},
-      "S_elite_ethnicity_salient": {"genocide_present": 32, "non_genocide_present": 45, "total_present": 77},
-      "E_economic_autarky": {"genocide_present": 18, "non_genocide_present": 22, "total_present": 40}
+      "A_autocracy": {
+        "genocide_present": 38,
+        "non_genocide_present": 69,
+        "total_present": 107
+      },
+      "P_political_upheaval": {
+        "genocide_present": 25,
+        "non_genocide_present": 31,
+        "total_present": 56
+      },
+      "W_war": {
+        "genocide_present": 26,
+        "non_genocide_present": 54,
+        "total_present": 80
+      },
+      "I_exclusionary_ideology": {
+        "genocide_present": 25,
+        "non_genocide_present": 22,
+        "total_present": 47
+      },
+      "S_elite_ethnicity_salient": {
+        "genocide_present": 32,
+        "non_genocide_present": 45,
+        "total_present": 77
+      },
+      "E_economic_autarky": {
+        "genocide_present": 18,
+        "non_genocide_present": 22,
+        "total_present": 40
+      }
     },
     "coding_notes": {
       "autocracy": "Polity IV with Freedom House reassessment.",
@@ -87,17 +135,42 @@
     },
     "published_intermediate_solution": {
       "formula": "A*S*I + A*S*P + A*I*E*P*~W + A*I*E*~P*W + S*~I*E*P*W",
-      "solution_coverage": 0.750,
+      "solution_coverage": 0.75,
       "solution_consistency": 0.769,
       "predicted_genocide_total": 39,
       "true_positive": 30,
       "false_positive": 9,
       "paths": [
-        {"formula": "A*S*I", "raw_coverage": 0.475, "unique_coverage": 0.125, "consistency": 0.826},
-        {"formula": "A*S*P", "raw_coverage": 0.500, "unique_coverage": 0.125, "consistency": 0.741},
-        {"formula": "A*I*E*P*~W", "raw_coverage": 0.075, "unique_coverage": 0.025, "consistency": 1.000},
-        {"formula": "A*I*E*~P*W", "raw_coverage": 0.075, "unique_coverage": 0.050, "consistency": 1.000},
-        {"formula": "S*~I*E*P*W", "raw_coverage": 0.075, "unique_coverage": 0.025, "consistency": 1.000}
+        {
+          "formula": "A*S*I",
+          "raw_coverage": 0.475,
+          "unique_coverage": 0.125,
+          "consistency": 0.826
+        },
+        {
+          "formula": "A*S*P",
+          "raw_coverage": 0.5,
+          "unique_coverage": 0.125,
+          "consistency": 0.741
+        },
+        {
+          "formula": "A*I*E*P*~W",
+          "raw_coverage": 0.075,
+          "unique_coverage": 0.025,
+          "consistency": 1
+        },
+        {
+          "formula": "A*I*E*~P*W",
+          "raw_coverage": 0.075,
+          "unique_coverage": 0.05,
+          "consistency": 1
+        },
+        {
+          "formula": "S*~I*E*P*W",
+          "raw_coverage": 0.075,
+          "unique_coverage": 0.025,
+          "consistency": 1
+        }
       ]
     },
     "published_false_negatives": [
@@ -118,6 +191,23 @@
       "DR Congo 1992",
       "Pakistan 1983",
       "Turkey 1971"
-    ]
+    ],
+    "known_internal_discrepancies": {
+      "economic_autarky_total": {
+        "table_components_total": 40,
+        "prose_total": 41,
+        "rule": "Use table cell counts as primary validation target; retain prose 41 as unresolved source discrepancy until original matrix is recovered."
+      }
+    },
+    "interpretation_guardrails": {
+      "autocracy": "38/40 is quasi-/near-necessary, not perfect logical necessity.",
+      "headline_sufficiency_threshold_ar4c021": 0.8,
+      "published_solution_consistency": 0.769,
+      "published_ASP_consistency": 0.741,
+      "temporal_leakage_candidates": [
+        "P_political_upheaval",
+        "W_war"
+      ]
+    }
   }
 }
