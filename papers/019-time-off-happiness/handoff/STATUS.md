@@ -3,7 +3,7 @@
 - **Project status:** expanded-modern-module-locked-historical-synthesis-active
 - **Activity:** active
 - **Portfolio progress:** 75%
-- **Current stage:** Expanded modern statistics LOCKED · full WDH historical trend bridge LOCKED · legal/raw-outcome reconstruction active
+- **Current stage:** Modern + published historical trends LOCKED · ILO convention history CLOSED · raw annual WDH/national-law reconstruction active
 
 ## Complete / frozen
 
@@ -51,3 +51,12 @@ No current design blocker. Some source acquisition requires a binary-capable or 
 - Earlier stronger negative result from the pre-1990-start subset is superseded as sample-selection sensitive.
 - Taiwan working-hours join was repaired; A0 hours = **2,015 / 130**, joint = **1,663 / 129**.
 - Independent statsmodels validator is committed, but Actions run **35977496016** failed pre-runner with zero executed steps; do not call validation PASS yet.
+
+
+## New gates closed / advanced
+
+- ILO convention history is now closed at **C052 54/54** and **C132 39/39** exact primary NORMLEX dates.
+- C052→C132 overlap = **18 countries**; mean/median ratification gap = **27.8 / 26.4 years**.
+- C132 declaration units are explicitly classified without converting weeks/calendar days/months into fake working-day equivalents.
+- Official WDH HTML annual reconstruction has a validated extraction contract. USA hl4 and Japan ls4 reproduce published long-run slopes to <0.001/year from displayed HTML values.
+- Full WDH HTML batch builder is committed; execution awaits a network-capable runner.
