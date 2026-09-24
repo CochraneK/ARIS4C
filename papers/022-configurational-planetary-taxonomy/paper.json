@@ -1,40 +1,23 @@
 {
-  "id": "022",
-  "portfolio_id": "ARIS4C-022",
-  "slug": "configurational-planetary-taxonomy",
-  "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
-  "short_title": "Planetary Taxonomy × fsQCA",
-  "year": 2026,
-  "status": "m2-readiness-25of50-smallbody-gate",
-  "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. Primary M2 remains frozen to five non-definitional conditions. Readiness-targeted evidence raises complete cases from 19 to 25 and passes the pre-frozen dwarf and satellite strata, while the small-body stratum remains blocked by live JPL SBDB numeric acquisition. Calibration remains closed.",
-  "authors": ["Cochrane Kang"],
-  "aris": {
-    "provenance": "ARIS4C022 froze its sample, evidence ontology, M2 conditions and readiness gates before result inspection. Batch 06 targeted only predeclared readiness gaps, raising M2 substantive coverage to 34/34/28/36/34 and complete cases to 25/50. Dwarf and satellite stratum gates now pass; small bodies remain 0/16 complete because the numeric layer is unavailable. No calibration or QCA result has been inspected.",
-    "version": "v1.2.0"
+  "id":"022",
+  "portfolio_id":"ARIS4C-022",
+  "slug":"configurational-planetary-taxonomy",
+  "title":"Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
+  "short_title":"Planetary Taxonomy × fsQCA",
+  "year":2026,
+  "status":"m2-readiness-org-gate-pass",
+  "domain":"planetary science / comparative methods / set-theoretic analysis / taxonomy",
+  "summary":"Primary M2 remains frozen and calibration closed. Readiness Batch 07 raises atmosphere evidence to 31/50 and internal-organization evidence to 40/50, passing the frozen internal-organization gate. Complete cases remain 25/50; the dominant blocker is still the 16-case small-body JPL numeric layer.",
+  "authors":["Cochrane Kang"],
+  "aris":{"provenance":"All condition/evidence updates precede calibration or QCA inspection. Batch 07 uses explicit NASA airless-body statements and model-level Uranian-moon interior structure evidence; no absence was inferred from silence.","version":"v1.3.0"},
+  "links":{
+    "source":"https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
+    "m2_condition_freeze":"process/M2_CONDITION_FREEZE.md",
+    "m2_readiness_audit":"data/M2_READINESS_AUDIT_v0.3.md",
+    "evidence_state":"data/evidence_state_v0.8.csv",
+    "sources":"data/SOURCE_REGISTRY.md"
   },
-  "links": {
-    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
-    "m2_condition_freeze": "process/M2_CONDITION_FREEZE.md",
-    "m2_condition_manifest": "process/M2_CONDITION_FREEZE.json",
-    "m2_readiness_gap_map": "data/M2_READINESS_GAP_MAP_v0.2.csv",
-    "m2_readiness_audit": "data/M2_READINESS_AUDIT_v0.2.md",
-    "calibration": "process/VARIABLES_AND_CALIBRATION.md",
-    "evidence_protocol": "process/EVIDENCE_STATE_PROTOCOL.md",
-    "sources": "data/SOURCE_REGISTRY.md",
-    "physical_core": "data/raw_physical_core_v0.1.csv",
-    "orbital_geometry": "data/orbital_geometry_v0.2.csv",
-    "derived_physics": "data/derived_physics_v0.2.csv",
-    "evidence_state": "data/evidence_state_v0.7.csv",
-    "source_conflict_audit": "data/SOURCE_CONFLICT_AUDIT.md"
-  },
-  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","anti-circularity","readiness gate","small bodies","scientific missingness"],
-  "bilingual_delivery": {"english": true,"chinese": true},
-  "outputs": {
-    "paper_en": "not-started",
-    "paper_zh": "not-started",
-    "figures": {"status": "planned","count": 0},
-    "tables": {"status": "case frame + physical + orbit + derived + evidence + readiness gap map","count": 7},
-    "pdf": {"status": "not-started","english": false,"chinese": false}
-  }
+  "tags":["ARIS","ARIS4C","planetary science","QCA","fsQCA","readiness gate","Uranian moons","small bodies"],
+  "bilingual_delivery":{"english":true,"chinese":true},
+  "outputs":{"paper_en":"not-started","paper_zh":"not-started","figures":{"status":"planned","count":0},"tables":{"status":"evidence v0.8 + readiness v0.3","count":8},"pdf":{"status":"not-started","english":false,"chinese":false}}
 }
