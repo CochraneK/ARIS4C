@@ -1,4 +1,4 @@
-# ARIS4C021 · Mass Atrocity Conditions · QCA
+# ARIS4C021 · Mass Atrocity Conditions
 
 ## Question
 
@@ -8,10 +8,13 @@ The project is prevention-oriented. It studies risk configurations and resilienc
 
 ## Core idea
 
-Two outputs are deliberately separated:
+Three outputs are deliberately separated:
 
-1. Set-theoretic inference — test necessary conditions, sufficient configurations, equifinality and causal asymmetry using csQCA/fsQCA.
-2. Risk-condition atlas — a periodic-table-like visualization that groups candidate conditions by causal role and reports only evidence-supported status.
+1. Multimethod inference — QCA/CNA for configurations, NCA for bottleneck necessity, event-history/rare-event models for onset timing and risk, and process tracing for within-case mechanisms.
+2. Predictive validation — held-out prediction is evaluated separately from causal explanation.
+3. Risk-condition atlas — a periodic-table-like visualization that groups candidate conditions by causal role and reports only evidence-supported status.
+
+QCA is one method in the toolbox, not the identity of the project. See process/METHOD_LANDSCAPE.md.
 
 The atlas is not allowed to turn a correlation into a “law”. Every cell must link back to its outcome definition, case universe, calibration, consistency/coverage, robustness and provenance.
 
@@ -44,9 +47,9 @@ Before inspecting any new configuration result:
 1. freeze the case universe;
 2. freeze outcome onset rules and temporal lag;
 3. recreate the Harff/Williams core condition matrix;
-4. preregister calibration anchors and QCA thresholds;
+4. preregister method-specific calibration, threshold, timing and validation rules;
 5. create the negative/control case logic;
 6. hash the frozen matrix;
-7. only then run necessity and sufficiency analyses.
+7. only then run the frozen multimethod replication analyses.
 
 See Research Plan, Literature Position, Condition Ontology, and Source Inventory in this project folder.
