@@ -180,12 +180,12 @@
       "blocker": "Partial acquisition blocker: current web execution surfaces cannot retrieve live JPL SBDB object payloads. Evidence coding can proceed independently from agency/mission and peer-reviewed sources; affected numeric rows remain explicit pending."
     },
     "023": {
-      "progress": 42,
-      "stage": "Independent dual-AI coding gate · cold-start handoff hardened",
+      "progress": 55,
+      "stage": "Coder A complete · independent DeepSeek Coder B pending",
       "activity": "block",
-      "evidence": "Calibration and downstream tooling are complete. Handoff now explicitly records Qoder/Qwen as pending Coder A and fresh-session DeepSeek as pending Coder B, with exact blinding/file/scoring rules and a cold-start execution path.",
-      "next_gate": "Qoder/Qwen populates coder_A.csv; independent DeepSeek populates coder_B.csv; then run reliability/disagreement review and freeze or revise ontology.",
-      "blocker": "Both independent coding streams are still pending for ARIS4C-023; other Qoder repository work does not satisfy this gate."
+      "evidence": "Coder A is complete: GLM in a fresh WorkBuddy sandbox filled 120/120 judgments (36 present, 72 absent, 5 uncertain, 7 not_observed) as the recorded substitute for the originally intended Qoder/Qwen role. Coder B remains blank; no reliability result exists yet.",
+      "next_gate": "Independent fresh-session DeepSeek fills coder_B.csv without seeing A/seed/results; then run reliability, disagreement taxonomy, and ontology pass/revision decision.",
+      "blocker": "Coder B is still pending. Reliability cannot be scored until the independent DeepSeek packet is completed and committed."
     }
   },
   "scheduling": {

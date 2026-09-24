@@ -4,7 +4,7 @@
 
 **Pilot/calibration infrastructure is complete; the project is scientifically blocked on genuinely independent dual-AI coding. Do not redo the design.**
 
-Current canonical portfolio state: **Block · 42%**.
+Current canonical portfolio state: **Block · 55%**.
 
 ## Read first
 
@@ -36,18 +36,14 @@ Do **not** repeat these tasks:
 
 ## Current coder assignment
 
-The intended cross-model reliability design is:
+Current cross-model reliability state:
 
-- **Coder A: Qoder / Qwen**
-- **Coder B: DeepSeek in a separate fresh web conversation**
+- **Coder A: COMPLETE** — GLM in a fresh WorkBuddy sandbox session, recorded as the approved substitute for the originally intended Qoder/Qwen role. `data/calibration/coder_A.csv` contains 120/120 completed judgments.
+- **Coder B: PENDING** — DeepSeek in a separate fresh web conversation. `data/calibration/coder_B.csv` remains blank.
 
-Important status distinction:
+The original plan named Qoder/Qwen as Coder A, but that role was formally substituted before reliability scoring. The substitution and independence conditions are recorded in `DECISIONS.md` and `SESSION_LOG.md`.
 
-> **Qoder/Qwen has NOT yet completed the ARIS4C-023 120-judgment coder_A packet merely by having worked elsewhere in the repository.**
->
-> Until a populated `data/calibration/coder_A.csv` exists and is committed, Coder A is still pending.
-
-Likewise Coder B is pending until a populated `coder_B.csv` is returned and committed.
+Do not rerun Coder A unless the ontology is versioned and a full recalibration is explicitly started.
 
 If a different independent model replaces either role, record the exact model/provider/session independence in `DECISIONS.md` and `SESSION_LOG.md` before scoring.
 
@@ -72,14 +68,8 @@ Do not ask either model to imitate, critique, reconcile with, or predict the oth
 
 ## Exact next actions
 
-### Path A · when operating Qoder/Qwen
-1. Read this file and the calibration README.
-2. Populate **only** `data/calibration/coder_A.csv`.
-3. Use only: `present / absent / uncertain / not_observed`.
-4. Fill confidence, one-sentence rationale and ambiguity flag.
-5. Commit the completed file.
-6. Update `STATUS.md` / `TODO.md` to say **Coder A complete; Coder B pending**.
-7. Stop before looking at `coder_B.csv` or running reliability if B is not complete.
+### Path A · completed
+Coder A is already frozen. Do not edit `coder_A.csv` during the current calibration version.
 
 ### Path B · when operating DeepSeek
 1. Work in a fresh conversation with no ARIS4C-023 conclusions or other-coder answers.
@@ -122,7 +112,7 @@ Do not expose these inferred transmission hypotheses to coders before their pack
 
 This gate is complete only when Git contains:
 
-- populated `coder_A.csv`;
+- populated `coder_A.csv` — **already complete**;
 - populated `coder_B.csv`;
 - `reliability.json`;
 - disagreement review / adjudication record;

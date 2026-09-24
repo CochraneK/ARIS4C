@@ -28,3 +28,10 @@
 - Populated `data/calibration/coder_A.csv`: 120/120 judgments — 36 present, 72 absent, 5 uncertain, 7 not_observed; 27 rows ambiguity-flagged.
 - Four-state semantics convention recorded in `DECISIONS.md` for the future disagreement taxonomy.
 - STATUS/TODO updated: Coder A complete; Coder B (DeepSeek, fresh web conversation) pending. Reliability scoring deferred until B is committed.
+
+## 2026-09-24 · canonical state repair after coder A
+- Verified `coder_A.csv` has 120/120 completed judgments: 36 present, 72 absent, 5 uncertain, 7 not_observed; no blank state/confidence/rationale/ambiguity fields.
+- Verified `coder_B.csv` remains 0/120 filled and `reliability.json` is not yet present.
+- Found stale `AGENT_HANDOFF.md` / `papers/dashboard.json` still describing Coder A as pending at 42% after the GLM substitution commit.
+- Repaired canonical operational state to **Block · 55% — Coder A complete; Coder B pending**.
+- Noted that commit `38a07ae4` mixed 023 changes with unrelated 019/020 files; this does not invalidate the frozen Coder A packet, but future numbered-paper commits should remain paper-scoped when possible.
