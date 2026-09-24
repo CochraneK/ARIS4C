@@ -44,3 +44,23 @@
 - Complete cases advanced 25 → **27/50**, with satellites 13 → 15.
 - All remaining readiness failures now trace to the 16-case small-body numeric layer and consequent complete-case gate.
 - No calibration/QCA result inspected.
+
+## Numeric readiness gate · priority ten
+- Live JPL SBDB object/API payload transport remained unavailable in the execution surface.
+- Before entering alternate numeric values, froze `NUMERIC_ACQUISITION_ADDENDUM.md/.json`: mission, peer-reviewed dynamics, official static orbit and explicit source-derived values are allowed; community values, silent system-mass substitution and post-result gate relaxation are prohibited.
+- Predeclared the ten small/boundary cases needed by the already-frozen >=10/16 gate.
+- Ingested physical and orbital anchors for Vesta, Pallas, Hygiea, Interamnia, Eros, Bennu, Ryugu, Itokawa, Quaoar and Orcus.
+- Quaoar: reconstructed system mass from the 2026 occultation size/density and explicitly removed Weywot using published satellite-to-total q.
+- Orcus: converted the published Orcus–Vanth system mass to primary mass using the ALMA Vanth/Orcus mass ratio.
+- Added conservative MODEL_INFERRED atmosphere absence for Orcus from peer-reviewed volatile-retention synthesis.
+- Built `derived_physics_v0.3.csv` and a deterministic rebuild script.
+- Frozen readiness result:
+  - SCALE 44/50
+  - BULK_MATERIAL 44/50
+  - ATMOSPHERE_RETENTION 41/50
+  - INTERNAL_ORGANIZATION 40/50
+  - SOLAR_ENERGY 44/50
+  - complete 37/50
+  - small/boundary complete 10/16
+- **All pre-frozen M2 readiness gates PASS.**
+- This opens calibration freeze only; no truth table or QCA result has been inspected.

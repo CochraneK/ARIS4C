@@ -1,21 +1,30 @@
 # TODO · ARIS4C022
 
-1. [x] Freeze 50-case sample, evidence ontology and anti-circularity ladder.
+1. [x] Freeze sample, evidence ontology and anti-circularity ladder.
 2. [x] Freeze five-condition M2 before QCA exposure.
 3. [x] Composition evidence-state 50/50.
-4. [x] Planet / dwarf / satellite complete-stratum gates pass.
-5. [x] INTERNAL_ORGANIZATION 40/50 — PASS.
-6. [x] ATMOSPHERE_RETENTION 40/50 — PASS.
-7. [ ] **Single dominant readiness gate: small-body numerics**
-   - [ ] capture live JPL SBDB physical/orbital snapshot for 16 small/boundary bodies;
-   - [ ] populate mass/radius/orbit provenance without fabricated fallback;
-   - [ ] derive escape velocity, density proxy and relative insolation;
-   - [ ] replace five dwarf-planet derived semimajor axes with pinned live SBDB/Horizons values.
-8. [ ] Reach >=10 complete small/boundary cases.
-9. [ ] Reach >=35/50 complete five-condition cases (currently 27).
-10. [ ] Re-run readiness; only then freeze fsQCA calibration.
-11. [ ] Run PLANET / DWARF_PLANET / SATELLITE outcomes separately.
-12. [ ] Run M2 physical-signature model.
-13. [ ] Sensitivity + leave-one-out.
-14. [ ] Clustering/PCA companion.
-15. [ ] Periodic-table-like visual taxonomy.
+4. [x] ATMOSPHERE_RETENTION >=40.
+5. [x] INTERNAL_ORGANIZATION >=40.
+6. [x] Freeze numeric acquisition addendum before alternate-source ingestion.
+7. [x] Ingest priority-ten small/boundary physical/orbital anchors with explicit provenance.
+8. [x] Correct Quaoar/Orcus system mass to primary mass explicitly.
+9. [x] Derive v0.3 SCALE / BULK_MATERIAL / SOLAR_ENERGY.
+10. [x] **Pass every frozen M2 readiness gate:**
+   - [x] SCALE 44/50
+   - [x] BULK_MATERIAL 44/50
+   - [x] ATMOSPHERE_RETENTION 41/50
+   - [x] INTERNAL_ORGANIZATION 40/50
+   - [x] SOLAR_ENERGY 44/50
+   - [x] complete 37/50
+   - [x] planet 8/8
+   - [x] dwarf 4/5
+   - [x] satellite 15/21
+   - [x] small/boundary 10/16
+11. [ ] **Next bounded gate: freeze calibration anchors without viewing QCA results.**
+12. [ ] Generate calibrated M2 matrix.
+13. [ ] Only after calibration freeze: first truth table / necessity / sufficiency run.
+14. [ ] Separate PLANET / DWARF_PLANET / SATELLITE outcomes.
+15. [ ] Predeclared sensitivity substitutions + leave-one-out.
+16. [ ] Clustering/PCA companion.
+17. [ ] Periodic-table-like visual taxonomy.
+18. [ ] Later robustness: acquire the remaining six small/boundary numeric cases and live/uniform JPL/Horizons replacements where possible.

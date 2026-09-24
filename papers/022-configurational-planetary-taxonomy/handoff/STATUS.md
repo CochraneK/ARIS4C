@@ -1,22 +1,34 @@
 # STATUS · ARIS4C022
 
-- State: M2 frozen / both evidence-condition gates PASS / small-body numeric gate
+- State: **M2 READINESS PASS / calibration-freeze gate open**
 - Portfolio activity: active
-- Progress estimate: 90%
+- Progress estimate: 95%
 - Frozen case frame: 50 bodies
-- Evidence v0.9 closes the atmosphere readiness gate using explicit agency/occultation evidence
-- Current M2 substantive coverage:
-  - SCALE 34/50
-  - BULK_MATERIAL 34/50
-  - ATMOSPHERE_RETENTION **40/50 — PASS**
+- Primary M2 remains frozen to:
+  - SCALE = escape velocity
+  - BULK_MATERIAL = density proxy
+  - ATMOSPHERE_RETENTION = atmosphere evidence
+  - INTERNAL_ORGANIZATION = differentiation evidence
+  - SOLAR_ENERGY = relative insolation
+- Numeric acquisition addendum was frozen before ingestion; no readiness threshold or condition changed
+- Priority-ten small/boundary numeric anchors ingested: Vesta, Pallas, Hygiea, Interamnia, Eros, Bennu, Ryugu, Itokawa, Quaoar, Orcus
+- Canonical current layers:
+  - raw_physical_core_v0.2.csv
+  - orbital_geometry_v0.3.csv
+  - derived_physics_v0.3.csv
+  - evidence_state_v1.0.csv
+- Frozen-gate substantive coverage:
+  - SCALE **44/50 — PASS**
+  - BULK_MATERIAL **44/50 — PASS**
+  - ATMOSPHERE_RETENTION **41/50 — PASS**
   - INTERNAL_ORGANIZATION **40/50 — PASS**
-  - SOLAR_ENERGY 34/50
-- Complete on all five: **27/50**
-- Complete strata: planets 8/8 PASS; dwarfs 4/5 PASS; satellites 15/21 PASS; small/boundary 0/16 FAIL
-- Calibration status: CLOSED_NOT_READY
-- Remaining readiness failures are now numeric/complete-case only:
-  - SCALE/BULK_MATERIAL/SOLAR_ENERGY each 34/50 because all 16 small/boundary numeric rows remain absent;
-  - complete cases 27/50 <35;
-  - small/boundary complete cases 0/16 <10
-- Source-conflict audit: 12 adjudication/construct entries, 0 unresolved conflicts
-- Anti-circularity firewall remains intact: no calibration anchor, truth table, consistency/PRI/coverage statistic or QCA solution inspected
+  - SOLAR_ENERGY **44/50 — PASS**
+- Complete on all five: **37/50 — PASS**
+- Complete strata:
+  - planets 8/8 — PASS
+  - dwarfs 4/5 — PASS
+  - satellites 15/21 — PASS
+  - small/boundary **10/16 — PASS**
+- Source-conflict audit: system-vs-primary mass for Quaoar/Orcus explicitly adjudicated; no unresolved material conflict
+- Calibration status: **OPEN_FOR_FREEZE, NOT YET FROZEN**
+- Anti-circularity: calibration anchors / truth table / consistency / PRI / coverage / QCA solutions inspected = 0
