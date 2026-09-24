@@ -1,3 +1,18 @@
+## Explicit paper-target override
+
+**A user-named paper always overrides the automatic portfolio queue.**
+
+If the user says, for example, **“推进 023”**, **“继续 023”**, or otherwise names a specific numbered paper:
+
+1. set `CURRENT PAPER = 023` immediately;
+2. read `papers/023-*/handoff/README.md` and `AGENT_HANDOFF.md`;
+3. work only on that paper unless the requested task is explicitly cross-paper;
+4. do **not** substitute another Active/Wait paper merely because the named paper is currently `Block`;
+5. when a named paper is Block, distinguish the blocked scientific gate from any still-executable bounded work or explicitly assigned role (for example, completing one side of an independent coding packet);
+6. return to automatic completion-first scheduling only after the named-paper request is satisfied, explicitly released, or cannot be advanced further under the user's stated role/tool constraints.
+
+The automatic Active/Wait queue applies only when the user has **not** selected a paper.
+
 # ARIS4C 000 · Agent Takeover Brief
 
 ## Role
