@@ -1,64 +1,32 @@
-# ARIS4C019 · Expanded modern panel first statistics v1.0
+# ARIS4C019 · Expanded modern panel first statistics v1.1
 
-**Analysis date:** 2026-09-24  
-**Design status:** prespecified association layer; not causal.
+**Corrected:** 2026-09-24 after auditing the hours-country join.  
+**Join fix:** `Taiwan` (working-hours source) → `Taiwan Province of China` (WHR2024).  
+**Interpretation:** descriptive association layer; not causal.
 
-## Data
+## Corrected sample sizes
+- actual working hours × Life Ladder: **2015 country-years / 130 countries**
+- statutory leave × Life Ladder: **1934 / 161**
+- joint overlap: **1663 / 129**
 
-### Actual working hours × Life Ladder
-- 2015 country-years
-- 130 countries
-- 2005–2023
-- exposure unit in models: +100 annual working hours
+## Key exposure coefficients
+- TWFE_A0 / hours / hours_per_100: beta=0.0350, SE=0.0296, 95% CI [-0.0230, 0.0929], N=2015, countries=130
+- WITHIN_BETWEEN_YEARFE / hours / hours_per_100_within: beta=0.0422, SE=0.0314, 95% CI [-0.0193, 0.1037], N=2015, countries=130
+- WITHIN_BETWEEN_YEARFE / hours / hours_per_100_between: beta=-0.1411, SE=0.0301, 95% CI [-0.2002, -0.0821], N=2015, countries=130
+- FD_YEARFE / hours / delta_hours_per_100: beta=0.0615, SE=0.0350, 95% CI [-0.0070, 0.1301], N=1744, countries=128
+- TWFE_LAG1 / hours / hours_per_100_lag1: beta=0.0233, SE=0.0284, 95% CI [-0.0324, 0.0790], N=1744, countries=128
+- TWFE_LAG2 / hours / hours_per_100_lag2: beta=0.0278, SE=0.0286, 95% CI [-0.0283, 0.0839], N=1670, countries=129
+- TWFE_LAG3 / hours / hours_per_100_lag3: beta=0.0219, SE=0.0265, 95% CI [-0.0300, 0.0738], N=1564, countries=129
+- TWFE_A0 / leave / leave_per_5_days: beta=0.0420, SE=0.0605, 95% CI [-0.0766, 0.1606], N=1934, countries=161
+- WITHIN_BETWEEN_YEARFE / leave / leave_per_5_days_within: beta=0.0417, SE=0.0605, 95% CI [-0.0768, 0.1602], N=1934, countries=161
+- WITHIN_BETWEEN_YEARFE / leave / leave_per_5_days_between: beta=-0.0390, SE=0.0686, 95% CI [-0.1733, 0.0954], N=1934, countries=161
+- FD_YEARFE / leave / delta_leave_per_5_days: beta=-0.0941, SE=0.0400, 95% CI [-0.1724, -0.0158], N=1628, countries=155
+- TWFE_LAG1 / leave / leave_per_5_days_lag1: beta=0.0623, SE=0.0463, 95% CI [-0.0283, 0.1530], N=1628, countries=155
+- TWFE_LAG2 / leave / leave_per_5_days_lag2: beta=0.1020, SE=0.0492, 95% CI [0.0055, 0.1985], N=1540, countries=154
+- TWFE_LAG3 / leave / leave_per_5_days_lag3: beta=0.1107, SE=0.0500, 95% CI [0.0127, 0.2087], N=1409, countries=152
+- TWFE_JOINT / joint / hours_per_100: beta=0.0625, SE=0.0347, 95% CI [-0.0055, 0.1305], N=1663, countries=129
+- TWFE_JOINT / joint / leave_per_5_days: beta=0.0380, SE=0.0590, 95% CI [-0.0776, 0.1537], N=1663, countries=129
+- FD_JOINT / joint / delta_hours_per_100: beta=0.0622, SE=0.0367, 95% CI [-0.0097, 0.1341], N=1412, countries=127
+- FD_JOINT / joint / delta_leave_per_5_days: beta=-0.1111, SE=0.0462, 95% CI [-0.2015, -0.0206], N=1412, countries=127
 
-### Statutory leave × Life Ladder
-- 1919 country-years
-- 160 countries
-- 2005–2020
-- exposure unit in models: +5 statutory leave days
-
-### Joint overlap
-- 1648 country-years
-- 128 countries
-- 2005–2020
-
-## Estimator
-
-Two-way fixed effects models absorb country and year effects. Standard errors are clustered by country with a finite-sample cluster adjustment. First-difference models use exact consecutive-year pairs and year fixed effects. Within-between models separate within-country deviation from the country mean from between-country mean differences.
-
-These estimates are **associations**. They do not convert the broad panel into a natural experiment.
-
-## Main numerical results
-
-- TWFE_A0 / hours_per_100: beta=0.0350, cluster SE=0.0296, 95% CI [-0.0230, 0.0929], N=2015, countries=130
-- WITHIN_BETWEEN_YEARFE / hours_per_100_within: beta=0.0422, cluster SE=0.0314, 95% CI [-0.0193, 0.1037], N=2015, countries=130
-- WITHIN_BETWEEN_YEARFE / hours_per_100_between: beta=-0.1411, cluster SE=0.0301, 95% CI [-0.2002, -0.0821], N=2015, countries=130
-- FIRST_DIFF_YEARFE / delta_hours_per_100: beta=0.0615, cluster SE=0.0350, 95% CI [-0.0070, 0.1301], N=1744, countries=128
-- TWFE_A0 / leave_per_5_days: beta=0.0417, cluster SE=0.0605, 95% CI [-0.0770, 0.1603], N=1919, countries=160
-- WITHIN_BETWEEN_YEARFE / leave_per_5_days_within: beta=0.0415, cluster SE=0.0605, 95% CI [-0.0771, 0.1600], N=1919, countries=160
-- WITHIN_BETWEEN_YEARFE / leave_per_5_days_between: beta=-0.0396, cluster SE=0.0685, 95% CI [-0.1738, 0.0946], N=1919, countries=160
-- FIRST_DIFF_YEARFE / delta_leave_per_5_days: beta=-0.0941, cluster SE=0.0399, 95% CI [-0.1723, -0.0160], N=1615, countries=154
-- TWFE_SUPPORT_GE10 / leave_per_5_days: beta=0.0720, cluster SE=0.0558, 95% CI [-0.0373, 0.1814], N=1734, countries=126
-- TWFE_SUPPORT_GE15 / leave_per_5_days: beta=-0.0646, cluster SE=0.2281, 95% CI [-0.5117, 0.3825], N=840, countries=56
-- TWFE_EXCLUDE_LEAVE_GT40 / leave_per_5_days: beta=0.0417, cluster SE=0.0605, 95% CI [-0.0769, 0.1603], N=1916, countries=159
-- TWFE_JOINT / hours_per_100: beta=0.0617, cluster SE=0.0350, 95% CI [-0.0070, 0.1304], N=1648, countries=128
-- TWFE_JOINT / leave_per_5_days: beta=0.0377, cluster SE=0.0590, 95% CI [-0.0779, 0.1534], N=1648, countries=128
-- FIRST_DIFF_JOINT / delta_hours_per_100: beta=0.0610, cluster SE=0.0367, 95% CI [-0.0110, 0.1330], N=1399, countries=126
-- FIRST_DIFF_JOINT / delta_leave_per_5_days: beta=-0.1112, cluster SE=0.0461, 95% CI [-0.2016, -0.0209], N=1399, countries=126
-
-## Interpretation rule
-
-- Working-hours coefficients are Life Ladder points per +100 annual work hours.
-- Leave coefficients are Life Ladder points per +5 statutory leave days.
-- A negative hours coefficient means higher annual work time is associated with lower life evaluation within the specified model.
-- A positive leave coefficient means higher statutory entitlement is associated with higher life evaluation within the specified model.
-- The joint model asks whether each exposure retains a within-country association when both are included; it remains non-causal.
-
-## Lag models
-
-All prespecified lag 0–3 estimates are stored machine-readably in `data/expanded_modern_panel_first_statistics.csv`. No lag is selected post hoc as the preferred result.
-
-## Source caution
-
-Working-hours transport currently uses a public GitHub mirror whose 1870–2023 structure matches the current OWID indicator description. It is a transport fallback, not a replacement for an official OWID re-download. Statutory leave uses the repository's frozen World Bank Employing Workers panel. WHR2024 annual Life Ladder uses the already validated annual source mirror.
-
+The earlier 129-country hours outputs are superseded. No scientific claim should cite them.
