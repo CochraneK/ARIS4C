@@ -5,28 +5,64 @@
   "title": "The Global Ecology of Scientific Retractions: A Full-Database, Field-Normalized Study of Retraction Dynamics, Causes, and Citation Afterlife",
   "short_title": "Global Retraction Ecology",
   "year": 2026,
-  "status": "data-acquisition-design",
+  "status": "openalex-match-denominator-gate",
   "domain": "research integrity / metascience / scientometrics / bibliometrics / scholarly communication",
-  "summary": "A full-Retraction-Watch, all-discipline study that separates counts from rates, models publication-to-retraction lag, maps reason co-occurrence and heterogeneity, and quantifies post-retraction citation persistence using Crossref/OpenAlex enrichment.",
-  "authors": ["Cochrane Kang"],
+  "summary": "Full-Retraction-Watch, all-discipline retraction ecology study. The 2026-09-23 RWDB snapshot has been audited (72,606 rows; 67,197 Retractions), OpenAlex DOI matching passed a 99.6% deterministic pilot and 99.2855% shard-0 full-match gate, and event/work identity, denominator, reason-ontology and citation-afterlife contracts are frozen.",
+  "authors": [
+    "Cochrane Kang"
+  ],
   "portfolio_visible": true,
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-24",
-    "version": "v0.4.26"
+    "version": "v0.5.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/020-global-retraction-ecology",
     "research_plan": "process/RESEARCH_PLAN.md",
     "data": "data/README.md",
-    "acquisition": "code/acquire_rwdb.py"
+    "acquisition": "code/acquire_rwdb.py",
+    "first_data_audit": "process/FIRST_DATA_AUDIT.md",
+    "openalex_match_gate": "process/OPENALEX_MATCH_GATE.md",
+    "parsing_contract": "process/RWDB_PARSING_CONTRACT.md",
+    "identity_contract": "process/EVENT_WORK_IDENTITY_CONTRACT.md",
+    "denominator_spec": "process/DENOMINATOR_SPEC.md",
+    "reason_ontology": "process/REASON_ONTOLOGY_SPEC.md",
+    "work_type_gate": "process/OPENALEX_WORK_TYPE_GATE.md",
+    "citation_afterlife": "process/CITATION_AFTERLIFE_SPEC.md",
+    "literature_positioning": "process/LITERATURE_POSITIONING_2026-09-24.md",
+    "openalex_enrichment": "code/openalex_enrich.py",
+    "openalex_denominators": "code/openalex_denominators.py"
   },
-  "tags": ["ARIS4C","Retraction Watch","research integrity","metascience","bibliometrics","OpenAlex","Crossref","retractions"],
-  "bilingual_delivery": {"english": false, "chinese": false},
+  "tags": [
+    "ARIS4C",
+    "Retraction Watch",
+    "research integrity",
+    "metascience",
+    "bibliometrics",
+    "OpenAlex",
+    "Crossref",
+    "retractions"
+  ],
+  "bilingual_delivery": {
+    "english": false,
+    "chinese": false
+  },
   "outputs": {
     "paper_en": "not-started",
     "paper_zh": "not-started",
-    "figures": {"status":"not-started","count":0,"strategy":"adaptive to inferential structure"},
-    "tables": {"status":"not-started","count":0},
-    "pdf": {"status":"not-started","english":false,"chinese":false}
+    "figures": {
+      "status": "not-started",
+      "count": 0,
+      "strategy": "adaptive to inferential structure"
+    },
+    "tables": {
+      "status": "not-started",
+      "count": 0
+    },
+    "pdf": {
+      "status": "not-started",
+      "english": false,
+      "chinese": false
+    }
   }
 }
