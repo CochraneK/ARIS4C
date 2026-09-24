@@ -1,21 +1,20 @@
 # TODO
 
 ## Completed
-- [x] Calibration/reliability + v0.1.1 regression.
-- [x] Tradition seed matrix + source-bundle analysis layer.
-- [x] Contact + Glottolog ancestry layers.
-- [x] Restricted bundle-level similarity pilot.
-- [x] Audit shared-absence inflation and positive-union support.
-- [x] Freeze exploratory process-tracing candidate list with falsifiers.
+- [x] Dual-AI calibration and v0.1.1 ontology regression.
+- [x] Source-backed tradition and family-bundle layers.
+- [x] Similarity support audit.
+- [x] Historical contact + Glottolog ancestry layers.
+- [x] PT01 Mesopotamian↔Hebrew flood process tracing.
+- [x] PT02 Chinese water-catastrophe contrast + geoarchaeology controversy.
+- [x] PT03 Sumerian↔Akkadian anthropogony process tracing.
+- [x] PT04 Vedic↔Greek metric/genealogy negative-control synthesis.
+- [x] Freeze environmental evidence contract/registry.
+- [x] Register Egypt New Kingdom divine-conflict source without bypassing independence gate.
 
-## Current critical path
-- [ ] PT01: Mesopotamian ↔ Hebrew flood chronology/intermediary process tracing.
-- [ ] PT02: Chinese flood/water-catastrophe contrast + omitted-source sensitivity.
-- [ ] PT03: Sumerian ↔ Akkadian anthropogony transmission/inheritance tracing.
-- [ ] PT04: Vedic ↔ Greek divine-conflict negative-control expansion.
-- [ ] Expand/retain-open Sumerian flood and Hurrian-Hittite bundles.
-- [ ] Add defensible Egyptian bundles.
-- [ ] Freeze environmental covariates.
-- [ ] Expand dated historical contact/intermediary table.
-- [ ] Pre-freeze thresholds/design for expanded similarity model.
-- [ ] QCA remains OFF until trigger conditions are met.
+## Final bounded gates
+- [ ] Independent 8-cell spot-audit of FB_DIV_EGY_NK before confirmatory inclusion.
+- [ ] Draft paper Results/Discussion from frozen evidence with claim-strength labels.
+- [ ] Run final reproducibility/continuity audit and decide Finish vs next-version expansion.
+- [ ] Optional later v0.2: expand from 24 to 56 motifs / additional traditions.
+- [ ] QCA remains OFF unless a future expanded design satisfies the frozen trigger.

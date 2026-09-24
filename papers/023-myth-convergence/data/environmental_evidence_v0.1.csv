@@ -1,0 +1,6 @@
+env_id,case_id,region,variable,state,analysis_value,source_ref,notes
+ENV01,PT01,Mesopotamia,flood_event_anchor,historical/local-flood hypothesis exists,not_numeric,https://academic.oup.com/book/8443,Mesopotamian flood traditions are well documented textually; a unique geological event is not used as the causal predictor in current analysis.
+ENV02,PT02,Upper/Yellow River China,large_palaeoflood_candidate,contested,not_numeric,https://pubmed.ncbi.nlm.nih.gov/27493183/,2016 Jishi outburst-flood interpretation is retained together with counterevidence; no binary environment=1 coding.
+ENV03,PT02,Upper/Yellow River China,counterevidence,contested,not_numeric,https://www.sciencedirect.com/science/article/abs/pii/S0277379118308230,Later geological work disputes the proposed Jishi relation; environmental mechanism remains unresolved.
+ENV04,PT01,Hebrew/Levantine textual tradition,specific_palaeoflood_anchor,not_established_in_current_registry,missing,,Do not infer an environmental cause for Genesis merely from flood content.
+ENV05,all,all regions,modern_environment_proxy,prohibited,NA,,Modern rainfall/flood-risk values are not substituted for ancient exposure without palaeoenvironmental justification.

@@ -180,12 +180,12 @@
       "blocker": "Live JPL SBDB object payload acquisition remains the dominant blocker. Calibration/truth tables/QCA solutions remain closed by the frozen readiness rules."
     },
     "023": {
-      "progress": 91,
-      "stage": "Restricted bundle-similarity pilot audited · exploratory process-tracing cases frozen",
+      "progress": 96,
+      "stage": "Mechanism-level process tracing synthesized · Egypt conservatively registered · paper-freeze gate",
       "activity": "active",
-      "evidence": "All 12 same-family source-bundle similarities were audited for positive support and shared-absence inflation. Gilgamesh XI–Genesis 6-9 has 6 shared-present flood features (Jaccard 0.857) and is selected for process tracing; Vedic–Greek divine-conflict simple matching 0.875 is flagged as shared-absence inflated (only one shared present). Four exploratory process-tracing candidates include explicit falsifiers.",
-      "next_gate": "Process-trace flood and anthropogony candidates with chronology/intermediaries/disconfirming evidence; expand Egyptian/partial bundles; freeze environmental covariates; preregister expanded-stage support thresholds before further similarity modeling.",
-      "blocker": "No hard blocker. Remaining work is evidence depth and confirmatory design freeze rather than infrastructure."
+      "evidence": "PT01–PT04 process tracing now separates literary dependence, contact opportunity, language genealogy, environmental hypotheses, and metric artifacts. Egypt New Kingdom Horus/Seth is source-registered but its 8 post-calibration controller codes are excluded pending independent spot-audit. Environmental evidence is contextual/contested only; no pseudo-quantitative exposure score is used.",
+      "next_gate": "Independent spot-audit the 8 Egyptian cells; draft Results/Discussion from frozen evidence with claim-strength labels; final reproducibility/continuity audit; then decide Finish vs v0.2 expansion.",
+      "blocker": "Core Pilot-0 has no blocker. Egypt confirmatory inclusion requires one independent 8-cell spot-audit."
     }
   },
   "scheduling": {

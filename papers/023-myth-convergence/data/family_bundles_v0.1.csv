@@ -12,3 +12,4 @@ FB_ANTH_AKK,anthropogony,AKK_OB,P_ANTH_ATRA,closed_frozen_bundle,true,Atrahasis 
 FB_ANTH_HEB,anthropogony,HEB_GEN,P_ANTH_GEN,closed_frozen_bundle,true,Genesis 2:7 anthropogony bundle.
 FB_ANTH_VED,anthropogony,VED_RV,P_ANTH_RV1090,closed_frozen_bundle,true,Rigveda 10.90.6-16 anthropogony/social-order bundle.
 FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,P_ANTH_NUWA,later_comparator,false,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.
+FB_DIV_EGY_NK,divine_conflict,EGY_NK,P_DIV_EGY_HS,exploratory_closed_bundle_pending_independent_audit,false,Full Contendings of Horus and Seth is a bounded New Kingdom tale. Controller-coded after calibration; excluded from confirmatory similarity until independent spot-audit.

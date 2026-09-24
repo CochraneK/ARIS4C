@@ -1,20 +1,21 @@
 # Status
 
 ## State
-Active · 91%
+Active · 96%
 
 ## Current stage
-Restricted bundle-similarity pilot audited · process-tracing cases selected exploratorily.
+Mechanism-level process tracing synthesized · Egypt registered conservatively · environmental evidence contract frozen.
 
 ## Evidence
-- 13 source bundles and 12 same-family similarity dyads remain frozen.
-- Similarity support audit explicitly separates positive-overlap signal from shared-absence inflation.
-- Gilgamesh XI vs Genesis 6-9 shows 6 shared-present flood features and Jaccard 0.857 within the frozen bundles; this is flagged for process tracing, not treated as proof of borrowing.
-- Vedic vs Greek divine-conflict simple matching 0.875 is flagged as misleadingly high because it is dominated by 6 shared absences and only 1 shared positive.
-- Four exploratory process-tracing candidates are frozen with required disconfirming evidence, including a methodological negative control.
+- PT01 now separates strong scholarly evidence for Mesopotamian literary dependence from the unresolved exact transmission route; Judean presence in Babylonia establishes contact opportunity, not a named textual intermediary.
+- PT02 records both the 1920 BCE Jishi flood hypothesis and published counterevidence; Chinese water-control/cosmogonic function remains distinct from the Near Eastern ark-survival package.
+- PT03 supports a shared Mesopotamian clay/labor repertoire plus an Old Babylonian scribal transmission substrate, while withholding a direct Enki-and-Ninmah → Atrahasis copying claim.
+- PT04 combines the sparse bundle-level overlap with independent Indo-European comparative-poetics evidence, showing why Jaccard alone cannot decide ancestry.
+- Egyptian New Kingdom divine-conflict material is source-registered but excluded from confirmatory analysis pending an independent 8-cell spot-audit.
+- Environmental variables are frozen as an evidence registry only; no pseudo-quantitative ancient exposure score is invented.
 
 ## Next gate
-Deepen the selected process-tracing cases with chronology/intermediaries/disconfirming evidence, expand Egyptian and partial bundles, and freeze environmental covariates. Any confirmatory similarity support threshold must be preregistered before expanded analysis.
+Independent spot-audit the 8 Egyptian Horus/Seth cells; convert process-tracing synthesis into manuscript Results/Discussion with explicit claim strength; optionally expand source bundles/56-motif ontology in a later version. Decide whether 023 is ready for paper-level freeze rather than forcing remaining exploratory expansions.
 
 ## Blocker
-No hard blocker. Remaining progress is evidence depth rather than pipeline construction: process tracing, Egyptian/partial-bundle coverage, and environmental/contact chronology.
+One bounded external gate remains for adding Egypt to confirmatory bundle analysis: independent spot-audit of 8 cells. Core three-family Pilot-0 conclusions and process-tracing synthesis are otherwise executable.

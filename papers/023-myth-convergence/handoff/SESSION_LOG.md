@@ -88,3 +88,12 @@
 - Froze four exploratory process-tracing candidates with explicit alternative mechanisms and disconfirming evidence.
 - No post-hoc pilot cutoff is promoted to confirmatory status; future thresholds must be frozen before expanded analysis.
 - Project advanced to 91%.
+
+## 2026-09-24 · process tracing synthesis
+- PT01: froze chronology/literary/contact evidence distinguishing Mesopotamian literary-dependence scholarship from the unresolved exact Genesis transmission route.
+- PT02: recorded both the 1920 BCE Jishi flood hypothesis and counterevidence; retained Chinese flood-control/cosmogonic functional contrast.
+- PT03: froze Enki-and-Ninmah/Atrahasis clay+labor comparison and Old Babylonian scribal transmission substrate; direct textual copying remains unproven.
+- PT04: paired sparse bundle Jaccard with independent Indo-European comparative-poetics evidence, preserving the case as a metric negative control.
+- Registered Papyrus Chester Beatty I / Horus-Seth as an Egyptian New Kingdom divine-conflict candidate; 8 controller-coded cells are excluded pending independent spot-audit.
+- Froze environmental evidence as contextual/contested rather than inventing numeric ancient exposure scores.
+- Project advanced to 96%; remaining bounded gate is Egyptian spot-audit plus manuscript/reproducibility freeze.
