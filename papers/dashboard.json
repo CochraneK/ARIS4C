@@ -151,8 +151,8 @@
       "progress": 68,
       "stage": "Historical expansion · coverage gates PASS · acquisition/harmonization",
       "activity": "active",
-      "evidence": "Pilot-0 remains frozen. Expanded project now has 161 countries / 1,934 WB×WHR country-years; WVS Waves1–7 registry = 295 country-wave rows / 107 codes; Eurobarometer life-satisfaction chain 1973–2026 with 86-wave Mannheim harmonized file; WDH long-run XLSX source pinned (published use 200 series / 70 nations / 1945–2021). Expanded statistical hierarchy frozen before new effect inspection.",
-      "next_gate": "Acquire/materialize WDH, EVS/WVS and Eurobarometer long-run outcome files plus full ILO C052/C132 ratification/legal histories; build historical overlap panels; then run frozen FE/nonlinear/lag/meta/causal analyses.",
+      "evidence": "Pilot-0 frozen. Expanded coverage: modern WB×WHR = 161 countries / 1,934 country-years (127 countries >=10 years); WVS Waves1–7 = 295 country-wave rows / 107 codes; Eurobarometer life satisfaction indexed 1973–2026 with 86-wave Mannheim harmonized file; WDH TrendsInNations source pinned (published use 200 series / 70 nations / 1945–2021); C132 complete 39-country ratifier seed with 14 ratifications in the 1970s. Expanded statistical hierarchy frozen before new effect inspection.",
+      "next_gate": "Finish C132 primary-date verification + C052 full register, acquire WDH/EVS/WVS/Eurobarometer files, reconstruct national paid-leave law chronology, materialize historical hours, then build instrument-specific historical overlap panels and run frozen statistics.",
       "blocker": "No design blocker. Some historical datasets require binary transfer or free registered access on a suitable execution surface; source identities and acquisition contracts are pinned."
     },
     "020": {
