@@ -3,7 +3,7 @@
 - **Project status:** expanded-modern-module-locked-historical-synthesis-active
 - **Activity:** active
 - **Portfolio progress:** 75%
-- **Current stage:** Modern + published historical trends LOCKED · ILO convention history CLOSED · raw annual WDH/national-law reconstruction active
+- **Current stage:** Modern + historical trend layers LOCKED · century-scale legal spine active · historical reform registry v2 frozen
 
 ## Complete / frozen
 
@@ -60,3 +60,14 @@ No current design blocker. Some source acquisition requires a binary-capable or 
 - C132 declaration units are explicitly classified without converting weeks/calendar days/months into fake working-day equivalents.
 - Official WDH HTML annual reconstruction has a validated extraction contract. USA hl4 and Japan ls4 reproduce published long-run slopes to <0.001/year from displayed HTML values.
 - Full WDH HTML batch builder is committed; execution awaits a network-capable runner.
+
+
+## Century legal spine + 2012 global statistics
+
+- 1934 benchmark from ILO historical review: only **12 countries** had general statutory paid annual leave covering all workers.
+- 2000 ILO/NATLEX legal snapshot: **41-country** selected late-20th-century frame.
+- 2012 ILO/TRAVAIL snapshot: **155 rows / 147 exact values**.
+- 2012 ILO vs WB first-year legal-value crosscheck: **143 exact pairs, r=0.832, MAE=2.17 days**; large gaps are a legal QA queue, not values to average.
+- Historical reform registry v2: Bulgaria 2001 and Slovakia 2002 A-tier; Namibia 2008 and GB 2007/2009 B-tier; Nicaragua/Algeria/Mali rejected.
+- 2012 legal leave x WHR Life Ladder matched sample: **114 countries**. Adjusted +5-day coefficient = **+0.028 [95% CI -0.103, +0.160]**; nonlinearity/region/influence checks do not reveal a hidden robust effect.
+- WHR is not temporally adequate for the early historical reforms; next outcome route is official WDH annual HTML + EVS/WVS/Eurobarometer.
