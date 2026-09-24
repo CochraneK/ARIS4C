@@ -25,3 +25,12 @@
 - Comparative process tracing is used to test mechanisms and sequence in typical, deviant, and high-risk non-onset cases.
 - Cross-method disagreement is retained as a result rather than forced into one verdict.
 - Modern extension is locked until CROSS_METHOD_REPLICATION_LOCK.md exists.
+
+
+## 2026-09-24 · Case-universe and recovery strategy
+
+- Treat the materialized 40+99=139 frame as CASE_UNIVERSE_CANDIDATE_V0, not final V1, until the historical PITF list version used by Williams is reconciled.
+- Prioritize recovery of the Hainmueller/Hazlett N=126 Harff replication archive because it may directly restore PriorUpheaval, PriorGen, IdeologicalChar, Autoc, EthnicChar and TradeOpen.
+- Use independently reconstructed A/W/E as provenance checks and sensitivity routes, not as silent replacements for recovered historical coding.
+- Add functional-form robustness to the replication layer because later reanalysis shows the prior-upheaval finding is sensitive to skew/functional form.
+- Preserve exact-replication coding and time-safe coding as separate columns whenever published procedures use information from later in an episode.
