@@ -172,12 +172,12 @@
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
-      "progress": 42,
-      "stage": "Pilot-1 data spine built · small-body + evidence-state gate",
+      "progress": 47,
+      "stage": "Pilot-1 source hardened · small-body acquisition + evidence coding gate",
       "activity": "active",
-      "evidence": "50-row physical/orbit/derived spine is materialized. JPL physical values cover 34 cases; JPL mean elements cover all 21 selected satellites; 13 direct-Sun heliocentric semimajor axes are explicitly derived from JPL sidereal periods for Pilot-1; 34 cases have reproducible gravity/escape/density/insolation derivatives and 13 direct-Sun cases have Margot Pi. Missingness/provenance audit and validators are committed; no fsQCA solution has been inspected.",
-      "next_gate": "Execute the frozen 16-case JPL SBDB raw snapshot; replace/validate the 13 provisional Kepler-derived heliocentric a values with pinned raw orbital elements; then freeze evidence-state coding for composition, atmosphere, differentiation, ocean and current activity before calibration.",
-      "blocker": "Partial acquisition blocker only: the current control runtime could not retrieve the live 16-case SBDB JSON snapshot. Scientific design is not blocked; those rows remain explicit NA_NOT_INGESTED."
+      "evidence": "Eight planet orbit rows now use JPL approximate J2000 elements (Earth explicitly as an Earth-Moon-barycenter proxy), five dwarf-planet heliocentric a values remain visibly derived, 21 satellites retain JPL mean elements, and 16 small-body rows remain explicit pending. Derived physics v0.2 and an orbit-source hardening audit are committed. A 50-case geophysical evidence-state matrix and coding protocol are frozen entirely PENDING_REVIEW / UNEXPOSED_TO_QCA_RESULT before calibration or solution inspection.",
+      "next_gate": "Capture the 16-case live JPL SBDB raw JSON snapshot; replace the five dwarf-planet derived semimajor axes with pinned live SBDB/Horizons elements; then blind-code composition, atmosphere, differentiation, geological activity, ocean and tidal-heating evidence under the frozen protocol and adjudicate source conflicts.",
+      "blocker": "Partial acquisition blocker only: current control-thread network surfaces cannot retrieve live SBDB object payloads. No substitute values are fabricated; all affected rows remain explicit pending."
     },
     "023": {
       "progress": 42,
