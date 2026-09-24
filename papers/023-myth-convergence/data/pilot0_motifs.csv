@@ -1,0 +1,57 @@
+motif_id,family,label,operational_seed,external_crosswalk,status
+FLOOD_01,flood,Catastrophic inundation,"A flood/inundation destroys or threatens most humans or the inhabited world",,provisional
+FLOOD_02,flood,Supernatural warning,"A deity/spirit/animal/extraordinary agent warns a future survivor before the deluge",Berezkin C9,provisional
+FLOOD_03,flood,Selected survivor,"One person/family/small selected group survives while most humans perish",,provisional
+FLOOD_04,flood,Vessel refuge,"Survivors use a boat/ark/chest/gourd or comparable floating container",,provisional
+FLOOD_05,flood,High-place refuge,"Survivors escape to a mountain/tree/other elevated refuge",Berezkin c4a partly,provisional
+FLOOD_06,flood,Scout after flood,"Bird/animal/person is sent to test whether land has emerged or waters receded",Berezkin C5a,provisional
+FLOOD_07,flood,Post-survival ritual,"Survival is followed by sacrifice/ritual/offering directed to supernatural beings",,provisional
+FLOOD_08,flood,Human repopulation,"Narrative explicitly explains repopulation or renewed humanity after the flood",,provisional
+ANTH_01,anthropogony,Earth or clay humans,"Human bodies are formed from earth/clay/mud/dust or equivalent terrestrial material",,provisional
+ANTH_02,anthropogony,Divine flesh or blood,"Human creation incorporates flesh/blood/body material of a deity or supernatural being",,provisional
+ANTH_03,anthropogony,Breath speech animation,"Breath/wind/spoken word/name animates or creates humans",,provisional
+ANTH_04,anthropogony,Plant or wood humans,"Humans are made from wood/reeds/plants or plant-derived material",Berezkin E37 partly,provisional
+ANTH_05,anthropogony,Failed prior creations,"One or more unsuccessful human creations precede the successful form",Berezkin E2 partly,provisional
+ANTH_06,anthropogony,Humans created for service,"Humans are created explicitly to perform labor/service/ritual support for gods",,provisional
+ANTH_07,anthropogony,Mixed creation materials,"Human creation combines two or more ontologically distinct materials",,provisional
+ANTH_08,anthropogony,Primordial progenitor pair,"Human population descends from an explicit first pair/couple",,provisional
+COS_01,cosmogony,Primordial waters,"Cosmos/earth emerges from or begins with primordial waters",,provisional
+COS_02,cosmogony,Heaven earth separation,"Creation requires separation of previously joined heaven/sky and earth",,provisional
+COS_03,cosmogony,Cosmic egg,"World or major cosmic beings emerge from an egg-like primordial container",,provisional
+COS_04,cosmogony,World from body,"Parts of a primordial being/body become components of the cosmos",,provisional
+COS_05,cosmogony,Cosmic axis,"World tree/mountain/pillar/axis connects cosmic levels",,provisional
+COS_06,cosmogony,Order from chaos,"Creation is framed as ordering/forming a prior undifferentiated or chaotic state",,provisional
+COS_07,cosmogony,Creation by speech,"Speech/naming/decree is a direct creative mechanism",,provisional
+COS_08,cosmogony,Layered cosmos,"Narrative explicitly distinguishes sky/earth/underworld or multiple cosmic levels",,provisional
+DIV_01,divine_conflict,Younger gods overthrow older,"A younger divine generation defeats/displaces an older generation",,provisional
+DIV_02,divine_conflict,Father son succession conflict,"Divine succession is structured around father-son rivalry/displacement",,provisional
+DIV_03,divine_conflict,Storm god versus sea/serpent,"Storm/war deity battles sea/serpent/dragon/chaos-associated adversary",,provisional
+DIV_04,divine_conflict,Defeated body becomes cosmos,"Body of defeated primordial/divine adversary becomes cosmic material",,provisional
+DIV_05,divine_conflict,Divine council,"Multiple gods deliberate/assign roles/judge in an explicit council",,provisional
+DIV_06,divine_conflict,Stolen divine power,"Authority/power/tablets/attributes of divine rule are stolen or usurped",,provisional
+DIV_07,divine_conflict,Transferred divine kingship,"Legitimate divine kingship/authority transfers between deities or generations",,provisional
+DIV_08,divine_conflict,Primordial rebellion,"Early cosmic order includes rebellion by subordinate/younger supernatural beings",,provisional
+MORT_01,mortality,Lost immortality,"Humans once had or could have had immortality but lose it",,provisional
+MORT_02,mortality,Immortality intercepted,"An immortality-giving object/message/agent is stolen/diverted/intercepted",Berezkin H6d partly,provisional
+MORT_03,mortality,Snake renewal contrast,"Snake/reptile renewal or immortality is explicitly contrasted with human mortality",Berezkin H5 partly,provisional
+MORT_04,mortality,Forbidden act introduces death,"A prohibited action/transgression directly explains human mortality",,provisional
+MORT_05,mortality,First death etiological event,"Narrative explains the first human death/origin of dying",,provisional
+MORT_06,mortality,Failed immortality quest,"Hero/human explicitly seeks immortality and fails",,provisional
+MORT_07,mortality,Immortality substance,"Plant/food/drink/object can confer immortality or rejuvenation",,provisional
+MORT_08,mortality,Death chosen or substituted,"Mortality follows a choice/substitution/message error or equivalent decision structure",,provisional
+UND_01,underworld,Living descent,"A living hero/deity enters the realm of the dead",,provisional
+UND_02,underworld,Gate sequence,"Descent/entry requires passage through multiple gates/checkpoints",,provisional
+UND_03,underworld,Loss of attributes,"Entrant is stripped of clothing/power/status/items during descent",,provisional
+UND_04,underworld,Conditional return,"Return from death/underworld is impossible or depends on a stated condition",,provisional
+UND_05,underworld,Judgment of dead,"Dead are evaluated/judged according to conduct/status or a formal test",,provisional
+UND_06,underworld,River or barrier crossing,"Access to realm of dead requires crossing water/barrier/ferryman threshold",,provisional
+UND_07,underworld,Underworld food binds,"Eating/drinking in underworld constrains return or establishes belonging",,provisional
+UND_08,underworld,Cyclical return fertility,"Return from underworld is explicitly tied to seasonal/fertility cycle",,provisional
+CULT_01,culture_hero,Fire acquired,"First/essential fire is stolen/brought/transferred to humans",Berezkin D4l partly,provisional
+CULT_02,culture_hero,Writing or language gift,"Writing/language/names or comparable symbolic knowledge is given/brought to humans",,provisional
+CULT_03,culture_hero,Agriculture gift,"Cultivation/seeds/crops/agricultural knowledge is introduced by a culture hero/deity",,provisional
+CULT_04,culture_hero,Craft technology gift,"A key craft/technology is introduced by a culture hero/deity",,provisional
+CULT_05,culture_hero,Trickster mediation,"A trickster-like agent mediates acquisition of a major cultural good",,provisional
+CULT_06,culture_hero,Forbidden knowledge,"Knowledge/technology is initially forbidden/withheld from humans",,provisional
+CULT_07,culture_hero,Punished benefactor,"Agent who benefits humans is punished for the transfer",,provisional
+CULT_08,culture_hero,Nonhuman source of knowledge,"A deity/animal/ancestor/supernatural being is explicit source of a cultural skill",,provisional

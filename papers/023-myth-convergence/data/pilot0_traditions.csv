@@ -1,0 +1,11 @@
+tradition_id,label,working_start,working_end,macro_region,language_family,pilot_role,date_note
+SUM_OB,Sumerian literary corpus (Ur III / Old Babylonian transmission),-2100,-1600,Mesopotamia,Sumerian,contact_core,"working textual window; individual witnesses separately dated"
+AKK_OB,Old Babylonian Akkadian literary tradition,-2000,-1600,Mesopotamia,Afroasiatic_Semitic,contact_core,"working textual window"
+AKK_MB_SB,Middle/early Standard Babylonian Akkadian tradition,-1500,-900,Mesopotamia,Afroasiatic_Semitic,temporal_lineage_anchor,"broad pilot window; source-level dates mandatory"
+HUR_HIT_LBA,Hurrian-Hittite mythic corpus,-1500,-1200,Anatolia,IndoEuropean_Anatolian_plus_Hurrian,contact_phylo_anchor,"mixed-language transmission explicitly flagged"
+UGARIT_LBA,Ugaritic Late Bronze Age corpus,-1400,-1200,Levant,Afroasiatic_Semitic,contact_core,"tablet/witness dates separately retained"
+EGY_NK,New Kingdom Egyptian mythic/ritual corpus,-1550,-1070,Nile_Valley,Afroasiatic_Egyptian,contact_core,"genre heterogeneity flagged"
+VED_RV,Rigvedic Sanskrit tradition,-1500,-1000,South_Asia,IndoEuropean_IndoAryan,phylo_distal_anchor,"high date uncertainty; interval only"
+GRC_ARCH,Archaic Greek mythic tradition,-800,-500,Aegean,IndoEuropean_Hellenic,phylo_contact_anchor,"Homeric/Hesiodic and other sources separated"
+HEB_IA,Early Hebrew / Israelite-Judahite textual traditions,-1000,-400,Levant,Afroasiatic_Semitic,contact_core,"composition/redaction/witness uncertainty must be explicit"
+CHN_ZW,Zhou–Warring States Chinese transmitted/archaeological mythic traditions,-1045,-221,East_Asia,SinoTibetan,distal_outgroup,"texts and later transmitted witnesses separated"

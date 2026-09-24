@@ -1,16 +1,19 @@
 # Status
 
 ## State
-Active · 18%
+Active · 24%
 
 ## Current stage
-Research question and mechanism-competition design scaffolded; initial data infrastructure and method stack identified.
+Pilot-0 sample and provisional 56-feature motif ontology frozen for reliability testing.
 
 ## Evidence
-Comparative folklore literature supports phylogenetic and spatial analyses; Berezkin–Duvakin supplies motif-oriented cross-regional structure; eHRAF/D-PLACE provide complementary culture/source/environment data. Pairwise similarity is relational. QCA is optional and downstream of ontology calibration.
+- Core design separates vertical inheritance, horizontal diffusion, ecological convergence and cognitive/social convergence.
+- Pilot contains a contact-rich Near Eastern core, repeated Mesopotamian time slices, Indo-European anchors and a distal East Asian comparison.
+- Seven motif families now have operational seed definitions; known Berezkin crosswalks are recorded only where verified.
+- Pairwise similarity remains relational; QCA remains disabled during Pilot-0 coding.
 
 ## Next gate
-Freeze Pilot-0 traditions, motif granularity and source-quality rules; construct a small auditable coding set before large-scale extraction or NLP.
+Audit source availability for the 10 tradition-time units, dual-code a calibration subset, revise ambiguous motif definitions, and freeze ontology v0.1 before any large-scale extraction.
 
 ## Blocker
-No immediate technical blocker. Primary scientific risk is ontology/source comparability.
+No technical blocker. Source dating/composition uncertainty and cross-tradition coding equivalence are the immediate scientific risks.
