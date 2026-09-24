@@ -5,37 +5,36 @@
   "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title": "Planetary Taxonomy × fsQCA",
   "year": 2026,
-  "status": "m2-condition-freeze-readiness-fail",
+  "status": "m2-readiness-25of50-smallbody-gate",
   "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. Evidence-state composition is closed at 50/50, and the primary anti-circularity M2 model is now frozen to five non-definitional condition families. A pre-calibration readiness audit fails at 19/50 complete cases, so calibration and all QCA solutions remain closed pending targeted acquisition.",
+  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. Primary M2 remains frozen to five non-definitional conditions. Readiness-targeted evidence raises complete cases from 19 to 25 and passes the pre-frozen dwarf and satellite strata, while the small-body stratum remains blocked by live JPL SBDB numeric acquisition. Calibration remains closed.",
   "authors": ["Cochrane Kang"],
   "aris": {
-    "provenance": "ARIS4C022 froze the sample, evidence ontology and anti-circularity ladder before analysis. After five blinded evidence batches, M2 condition families were frozen before any result inspection. Measurement-equivalence review replaced provisional INTERNAL_ACTIVITY with INTERNAL_ORGANIZATION/differentiation in the primary model, while geology/ocean/tidal heating were frozen as sensitivity families. Current readiness fails at 19/50 complete cases; calibration remains CLOSED_NOT_READY.",
-    "version": "v1.1.0"
+    "provenance": "ARIS4C022 froze its sample, evidence ontology, M2 conditions and readiness gates before result inspection. Batch 06 targeted only predeclared readiness gaps, raising M2 substantive coverage to 34/34/28/36/34 and complete cases to 25/50. Dwarf and satellite stratum gates now pass; small bodies remain 0/16 complete because the numeric layer is unavailable. No calibration or QCA result has been inspected.",
+    "version": "v1.2.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
-    "pipeline": "process/RESEARCH_PLAN.md",
     "m2_condition_freeze": "process/M2_CONDITION_FREEZE.md",
     "m2_condition_manifest": "process/M2_CONDITION_FREEZE.json",
-    "m2_readiness_audit": "data/M2_READINESS_AUDIT.md",
+    "m2_readiness_gap_map": "data/M2_READINESS_GAP_MAP_v0.2.csv",
+    "m2_readiness_audit": "data/M2_READINESS_AUDIT_v0.2.md",
     "calibration": "process/VARIABLES_AND_CALIBRATION.md",
     "evidence_protocol": "process/EVIDENCE_STATE_PROTOCOL.md",
     "sources": "data/SOURCE_REGISTRY.md",
-    "case_frame": "data/case_frame_v0.1.csv",
     "physical_core": "data/raw_physical_core_v0.1.csv",
     "orbital_geometry": "data/orbital_geometry_v0.2.csv",
     "derived_physics": "data/derived_physics_v0.2.csv",
-    "evidence_state": "data/evidence_state_v0.6.csv",
+    "evidence_state": "data/evidence_state_v0.7.csv",
     "source_conflict_audit": "data/SOURCE_CONFLICT_AUDIT.md"
   },
-  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","anti-circularity","pre-calibration","small bodies","scientific missingness"],
+  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","anti-circularity","readiness gate","small bodies","scientific missingness"],
   "bilingual_delivery": {"english": true,"chinese": true},
   "outputs": {
     "paper_en": "not-started",
     "paper_zh": "not-started",
     "figures": {"status": "planned","count": 0},
-    "tables": {"status": "case frame + physical + orbit + derived + evidence + M2 readiness","count": 6},
+    "tables": {"status": "case frame + physical + orbit + derived + evidence + readiness gap map","count": 7},
     "pdf": {"status": "not-started","english": false,"chinese": false}
   }
 }

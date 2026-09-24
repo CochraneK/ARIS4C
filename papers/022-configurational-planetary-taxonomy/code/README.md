@@ -8,24 +8,28 @@ Implemented reproducible checks/builders:
 4. `dynamics_metrics.py` + `test_dynamics_metrics.py`
 5. `derive_pilot1_physics.py` + `validate_pilot1.py`
 6. `validate_source_hardening.py`
-7. evidence validators for batches 01–05
-8. `validate_evidence_state_v06.py` — 50/50 composition evidence-state closure
-9. `validate_m2_freeze.py` — validates the five-condition anti-circularity manifest and keeps calibration closed
+7. evidence validators through v0.6
+8. `validate_m2_freeze.py` — frozen five-condition anti-circularity manifest
+9. `validate_m2_readiness_v02.py` — evidence v0.7 + current condition coverage + stratum readiness
 
-Canonical analytical control files:
+Canonical analytical control:
 
-- `process/M2_CONDITION_FREEZE.md`
-- `process/M2_CONDITION_FREEZE.json`
-- `data/M2_READINESS_AUDIT.md`
+- `process/M2_CONDITION_FREEZE.md/.json`
+- `data/M2_READINESS_GAP_MAP_v0.2.csv`
+- `data/M2_READINESS_AUDIT_v0.2.md`
 - `process/VARIABLES_AND_CALIBRATION.md`
 
-Current readiness is deliberately **FAIL**: 19/50 cases complete on all five M2 primary conditions.
+Current readiness:
+- complete 25/50
+- planets 8/8 PASS
+- dwarfs 4/5 PASS
+- satellites 13/21 PASS
+- small/boundary 0/16 FAIL
+- calibration CLOSED_NOT_READY
 
 Still gated:
-
 - live 16-case SBDB numeric snapshot;
-- five dwarf-planet live orbit replacements;
-- targeted atmosphere/differentiation completion;
-- readiness re-audit;
+- small-body atmosphere/internal-organization evidence as needed;
+- >=35 complete cases and per-condition >=40;
 - calibration freeze;
 - QCA / sensitivity / clustering only afterward.

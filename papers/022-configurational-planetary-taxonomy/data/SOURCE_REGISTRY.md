@@ -118,3 +118,14 @@ This file is the **current canonical key → source map**. Historical revisions 
 - Parent-body aqueous alteration is not current-object ocean evidence.
 - Temporal supersession is distinct from unresolved source conflict.
 - No QCA result may be consulted while evidence-state coding is active.
+
+## Evidence batch 06 · readiness-targeted cases
+
+- `HAUMEA_OCCULTATION_2017` — Ortiz et al., Nature 550, 219–223; no global N2/CH4 atmosphere detected; occultation upper limit. https://doi.org/10.1038/nature24051
+- `HAUMEA_STRUCTURE_APJ_2019` — Dunham, Desch & Probst, ApJ 877; differentiated Haumea shape/interior model. https://doi.org/10.3847/1538-4357/ab13b3
+- `ERIS_INTERNAL_STRUCTURE_2023` — Francis & Nimmo, Science Advances 2023; spin/orbit dissipation requires differentiated ice-shell + rocky-core structure. https://pmc.ncbi.nlm.nih.gov/articles/PMC10651115/
+- `NASA_SATURN_MOON_ATMOSPHERES` — NASA Saturn moons synthesis; Titan is the only substantial-atmosphere moon, with thin atmospheres/exospheres separately identified around selected moons. https://science.nasa.gov/saturn/moons/facts/
+- `NASA_ENCELADUS_LOCAL_ATMOSPHERE` — Cassini UVIS stellar occultation directly detected a localized water-vapor atmosphere at Enceladus. https://science.nasa.gov/resource/enceladus-atmosphere-not-global/
+- `TETHYS_SHAPE_1991` — Thomas & Dermott, Icarus 94; shape/mass analysis allows a differentiated Tethys with a small rocky core, retained at MODEL_INFERRED level. https://doi.org/10.1016/0019-1035(91)90236-M
+- `NASA_PERSEPHONE_CHARON_INTERIOR` — NASA Persephone study science objectives; New Horizons geology permits partial/full Charon differentiation but does not uniquely determine it. https://science.nasa.gov/wp-content/uploads/2023/05/PlutoPersephoneStudy.pdf
+
