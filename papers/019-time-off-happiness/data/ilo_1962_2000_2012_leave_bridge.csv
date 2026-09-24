@@ -1,0 +1,78 @@
+country_1962,continuity_status,mapped_country,category_1962,raw_1962,basis_1962,category_2000,approx_days_2000,confidence_2000,raw_2000,category_2012,days_2012,status_2012,change_1962_2012,triple_comparable
+Norway,safe_one_to_one_or_rename,Norway,three_weeks_or_more,18 working days,national_general_legislation,,,,,three_weeks_or_more,21,exact_annex,0,false
+Sweden,safe_one_to_one_or_rename,Sweden,three_weeks_or_more,18 working days,national_general_legislation,,,,,three_weeks_or_more,25,exact_annex,0,false
+Cuba,safe_one_to_one_or_rename,Cuba,three_weeks_or_more,30 days or one month,national_general_legislation,,,,,three_weeks_or_more,21,exact_annex,0,false
+Nicaragua,safe_one_to_one_or_rename,Nicaragua,three_weeks_or_more,30 days or one month,national_general_legislation,three_weeks_or_more,21,high,15 consecutive days every six months (30 days per year),about_two_weeks,10,exact_annex,-1,true
+Panama,safe_one_to_one_or_rename,Panama,three_weeks_or_more,30 days or one month,national_general_legislation,,,none,30 days (1 day for 11 worked),three_weeks_or_more,21,exact_annex,0,false
+Denmark,safe_one_to_one_or_rename,Denmark,three_weeks_or_more,3 weeks,national_general_legislation,,,none,2.5 days per month,three_weeks_or_more,25,exact_annex,0,false
+France,safe_one_to_one_or_rename,France,three_weeks_or_more,3 weeks,national_general_legislation,,,,,three_weeks_or_more,25,exact_annex,0,false
+Monaco,safe_one_to_one_or_rename,Monaco,three_weeks_or_more,21 working days / 3 weeks,national_general_legislation,,,,,,,,,false
+Uruguay,safe_one_to_one_or_rename,Uruguay,three_weeks_or_more,20 paid days / about 3 weeks,national_general_legislation,,,,,three_weeks_or_more,20,exact_annex,0,false
+Republic of Togo,safe_one_to_one_or_rename,Togo,three_weeks_or_more,3 weeks,national_general_legislation,,,,,three_weeks_or_more,21,exact_annex,0,false
+Finland,safe_one_to_one_or_rename,Finland,three_weeks_or_more,3 weeks,national_general_legislation,,,,,three_weeks_or_more,20,exact_annex,0,false
+Malagasy Republic,safe_one_to_one_or_rename,Madagascar,three_weeks_or_more,3 weeks,national_general_legislation,,,,,three_weeks_or_more,25,exact_annex,0,false
+Albania,safe_one_to_one_or_rename,Albania,about_two_weeks,12 working days,national_general_legislation,three_weeks_or_more,15,high,3 calendar weeks,,,,,false
+Australia,safe_one_to_one_or_rename,Australia,about_two_weeks,2 weeks; 3 weeks in New South Wales,mixed_subnational_or_collective,,,,,three_weeks_or_more,20,exact_annex,1,false
+Austria,safe_one_to_one_or_rename,Austria,about_two_weeks,12 working days,national_general_legislation,three_weeks_or_more,25,medium,30 working days,three_weeks_or_more,25,exact_annex,1,true
+Belgium,safe_one_to_one_or_rename,Belgium,about_two_weeks,12 working days,national_general_legislation,,,,,three_weeks_or_more,20,exact_annex,1,false
+Bolivia,safe_one_to_one_or_rename,Bolivia,about_two_weeks,15 working days,national_general_legislation,,,,,three_weeks_or_more,15,exact_annex,1,false
+Brazil,safe_one_to_one_or_rename,Brazil,about_two_weeks,15 working days,national_general_legislation,,,,,three_weeks_or_more,21,exact_annex,1,false
+Bulgaria,safe_one_to_one_or_rename,Bulgaria,about_two_weeks,14 working days,national_general_legislation,about_two_weeks,12,medium,14 working days,three_weeks_or_more,20,exact_annex,1,true
+Byelorussia,unsafe_soviet_republic_to_belarus,,about_two_weeks,12 working days,national_general_legislation,,,,,,,,,false
+Cambodia,safe_one_to_one_or_rename,Cambodia,about_two_weeks,raw detail not recovered from current text extraction,national_general_legislation,,,,,three_weeks_or_more,15,exact_annex,1,false
+Ceylon,safe_one_to_one_or_rename,Sri Lanka,about_two_weeks,14 days shops/offices; 10-21 days Wage Board range for non-office workers,mixed_sectoral,,,,,less_than_two_weeks,,no_universal_minimum,-1,false
+Chile,safe_one_to_one_or_rename,Chile,about_two_weeks,15 days,national_general_legislation,three_weeks_or_more,15,high,15 working days (5-day working week),three_weeks_or_more,15,exact_annex,1,true
+Colombia,safe_one_to_one_or_rename,Colombia,about_two_weeks,15 consecutive working days,national_general_legislation,,,,,about_two_weeks,10,exact_annex,0,false
+Costa Rica,safe_one_to_one_or_rename,Costa Rica,about_two_weeks,2 weeks,national_general_legislation,,,,,about_two_weeks,10,exact_annex,0,false
+Czechoslovakia,unsafe_split_state,,about_two_weeks,2 calendar weeks,national_general_legislation,,,,,,,,,false
+Dominican Republic,safe_one_to_one_or_rename,Dominican Republic,about_two_weeks,2 weeks,national_general_legislation,about_two_weeks,10,high,2 weeks,about_two_weeks,12,exact_annex,0,true
+Ecuador,safe_one_to_one_or_rename,Ecuador,about_two_weeks,15 consecutive days,national_general_legislation,,,,,about_two_weeks,10,exact_annex,0,false
+"Germany, Democratic Republic",unsafe_reunification,,about_two_weeks,12 working days,national_general_legislation,,,,,,,,,false
+"Germany, Federal Republic",unsafe_reunification_territorial_change,,about_two_weeks,12 working days,mixed_subnational_or_collective,,,,,,,,,false
+Haiti,safe_one_to_one_or_rename,Haiti,about_two_weeks,15 consecutive days,national_general_legislation,,,,,about_two_weeks,11,exact_annex,0,false
+Hungary,safe_one_to_one_or_rename,Hungary,about_two_weeks,12 working days,national_general_legislation,,,,,three_weeks_or_more,20,exact_annex,1,false
+Iceland,safe_one_to_one_or_rename,Iceland,about_two_weeks,12 days,national_general_legislation,,,,,three_weeks_or_more,24,exact_annex,1,false
+India,safe_one_to_one_or_rename,India,about_two_weeks,1 day per 20 days worked; state laws/regulations assumed about 2 weeks,mixed_subnational_or_sectoral,,,,,less_than_two_weeks,,no_universal_minimum,-1,false
+Indonesia,safe_one_to_one_or_rename,Indonesia,about_two_weeks,2 weeks,national_general_legislation,,,,,about_two_weeks,12,exact_annex,0,false
+Iran,safe_one_to_one_or_rename,Iran,about_two_weeks,12 days,national_general_legislation,,,none,1 month (including 4 Fridays),three_weeks_or_more,25,exact_annex,1,false
+Iraq,safe_one_to_one_or_rename,Iraq,about_two_weeks,12 days,national_general_legislation,,,,,three_weeks_or_more,17,exact_annex,1,false
+Israel,safe_one_to_one_or_rename,Israel,about_two_weeks,14 days,national_general_legislation,,,,,,,,,false
+Italy,safe_one_to_one_or_rename,Italy,about_two_weeks,12 working days,mixed_national_right_collective_duration,,,,,three_weeks_or_more,20,exact_annex,1,false
+Jordan,safe_one_to_one_or_rename,Jordan,about_two_weeks,"3 weeks raw, but public holidays counted in vacation; source places in two-week group",national_general_legislation,,,none,14 days,about_two_weeks,14,exact_annex,0,false
+Libya,safe_one_to_one_or_rename,Libya,about_two_weeks,14 days,national_general_legislation,,,,,three_weeks_or_more,25,exact_annex,1,false
+Lebanon,safe_one_to_one_or_rename,Lebanon,about_two_weeks,15 days,national_general_legislation,,,,,three_weeks_or_more,15,exact_annex,1,false
+Morocco,safe_one_to_one_or_rename,Morocco,about_two_weeks,15 days including 12 working days,national_general_legislation,,,,,three_weeks_or_more,18,exact_annex,1,false
+Netherlands,safe_one_to_one_or_rename,Netherlands,about_two_weeks,15 working days,mixed_subnational_or_collective,,,,,three_weeks_or_more,20,exact_annex,1,false
+New Zealand,safe_one_to_one_or_rename,New Zealand,about_two_weeks,2 weeks,national_general_legislation,,,,,three_weeks_or_more,20,exact_annex,1,false
+Peru,safe_one_to_one_or_rename,Peru,about_two_weeks,15 consecutive days,national_general_legislation,,,,,three_weeks_or_more,21,exact_annex,1,false
+Poland,safe_one_to_one_or_rename,Poland,about_two_weeks,12 working days,national_general_legislation,three_weeks_or_more,15,high,18 working days (6-day working week),,,,,false
+Rumania,safe_one_to_one_or_rename,Romania,about_two_weeks,12 working days,national_general_legislation,,,,,three_weeks_or_more,20,exact_annex,1,false
+Republic of South Africa,safe_one_to_one_or_rename,South Africa,about_two_weeks,2 calendar weeks,mixed_sectoral_or_collective,,,,,three_weeks_or_more,15,exact_annex,1,false
+Syria,safe_one_to_one_or_rename,Syria,about_two_weeks,14 days,national_general_legislation,,,,,three_weeks_or_more,24,exact_annex,1,false
+Tunisia,safe_one_to_one_or_rename,Tunisia,about_two_weeks,15 days including 12 working days,national_general_legislation,,,,,about_two_weeks,12,exact_annex,0,false
+Turkey,safe_one_to_one_or_rename,Turkey,about_two_weeks,12 working days,national_general_legislation,,,,,about_two_weeks,12,exact_annex,0,false
+Ukraine,unsafe_soviet_republic_to_independent_ukraine,,about_two_weeks,12 working days,national_general_legislation,,,,,,,,,false
+United Arab Republic,unsafe_historical_state_identity,,about_two_weeks,14 days,national_general_legislation,,,,,,,,,false
+United Kingdom,safe_one_to_one_or_rename,United Kingdom,about_two_weeks,2 weeks,mixed_collective_and_wage_orders,three_weeks_or_more,20,high,4 weeks,three_weeks_or_more,28,exact_annex,1,true
+U.S.S.R.,unsafe_dissolved_state,,about_two_weeks,12 working days,national_general_legislation,,,,,,,,,false
+Venezuela,safe_one_to_one_or_rename,Venezuela,about_two_weeks,15 working days,national_general_legislation,about_two_weeks,13,medium,15 working days,about_two_weeks,13,exact_annex,0,true
+Viet-Nam,unsafe_partition_reunification,,about_two_weeks,15 days including 12 working days,national_general_legislation,,,,,,,,,false
+Yugoslavia,unsafe_dissolved_state,,about_two_weeks,12 working days,national_general_legislation,,,,,,,,,false
+Argentina,safe_one_to_one_or_rename,Argentina,less_than_two_weeks,10 days,national_general_legislation,,,,,about_two_weeks,10,exact_annex,1,false
+Burma,safe_one_to_one_or_rename,Myanmar,less_than_two_weeks,"7 consecutive days, including at least 6 working days",national_general_legislation,,,,,less_than_two_weeks,7,exact_annex,0,false
+Canada,safe_one_to_one_or_rename,Canada,less_than_two_weeks,1 week,mixed_federal_and_provincial,,,,,about_two_weeks,10,exact_annex,1,false
+Greece,safe_one_to_one_or_rename,Greece,less_than_two_weeks,6 or 8 consecutive working days,national_category_specific,,,,,,,,,false
+Guatemala,safe_one_to_one_or_rename,Guatemala,less_than_two_weeks,5 or 10 days,national_category_specific,,,,,about_two_weeks,13,exact_annex,1,false
+Honduras,safe_one_to_one_or_rename,Honduras,less_than_two_weeks,10 consecutive working days,national_general_legislation,,,,,less_than_two_weeks,8,exact_annex,0,false
+Ireland,safe_one_to_one_or_rename,Ireland,less_than_two_weeks,7 days,national_general_legislation,,,,,three_weeks_or_more,20,exact_annex,2,false
+Japan,safe_one_to_one_or_rename,Japan,less_than_two_weeks,6 days,national_general_legislation,less_than_two_weeks,8,medium,10 working days,less_than_two_weeks,8,exact_annex,0,true
+Luxembourg,safe_one_to_one_or_rename,Luxembourg,less_than_two_weeks,8 working days,national_general_legislation,,,,,three_weeks_or_more,25,exact_annex,2,false
+Mexico,safe_one_to_one_or_rename,Mexico,less_than_two_weeks,6 working days,national_general_legislation,less_than_two_weeks,5,medium,6 continuous working days per year,less_than_two_weeks,6,exact_annex,0,true
+Pakistan,safe_one_to_one_or_rename,Pakistan,less_than_two_weeks,10 consecutive days,mixed_nonuniform,,,,,less_than_two_weeks,,no_universal_minimum,0,false
+Paraguay,safe_one_to_one_or_rename,Paraguay,less_than_two_weeks,6 days,national_general_legislation,less_than_two_weeks,9,high,12 consecutive days,about_two_weeks,10,exact_annex,1,true
+Portugal,safe_one_to_one_or_rename,Portugal,less_than_two_weeks,3 to 12 working days,mixed_nonuniform,,,,,three_weeks_or_more,22,exact_annex,2,false
+El Salvador,safe_one_to_one_or_rename,El Salvador,less_than_two_weeks,6 or 10 days,national_category_specific,,,none,15 days,three_weeks_or_more,15,exact_annex,2,false
+San Marino,safe_one_to_one_or_rename,San Marino,less_than_two_weeks,1 week,national_category_specific,,,,,about_two_weeks,10,exact_annex,1,false
+Spain,safe_one_to_one_or_rename,Spain,less_than_two_weeks,7 consecutive working days,national_general_legislation,,,,,three_weeks_or_more,21,exact_annex,2,false
+Switzerland,safe_one_to_one_or_rename,Switzerland,less_than_two_weeks,6 working days,mixed_cantonal,,,,,three_weeks_or_more,20,exact_annex,2,false
+United States of America,safe_one_to_one_or_rename,United States,less_than_two_weeks,1 week,mixed_collective_or_sectoral,,,,,less_than_two_weeks,,no_universal_minimum,0,false
