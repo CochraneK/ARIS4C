@@ -2,18 +2,18 @@
   "id": "019",
   "portfolio_id": "ARIS4C-019",
   "slug": "time-off-happiness",
-  "title": "Statutory Paid Annual Leave and National Life Evaluation: A Global Legal-Event Audit and Falsification-First Holdout Study",
-  "short_title": "Annual Leave × Life Evaluation",
+  "title": "Time Off and Happiness Across Countries: Long-Run Institutional Change, Comparative Well-Being Panels, and Policy-Reform Evidence",
+  "short_title": "Time Off × Happiness · Long Run",
   "year": 2026,
-  "status": "final-public-delivery-blocked-on-canonical-pdf-publish",
+  "status": "scope-reopened-historical-expansion",
   "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
-  "summary": "A falsification-first cross-national legal-event study of statutory paid annual-leave reforms and annual population Life Ladder. The original eight-event panel is retained as a broader labour/time-off stress test; a cleaner, independently frozen Israel 2016 holdout is analyzed separately. Current evidence is fragile and directionally unstable rather than a robust positive or negative annual-leave effect.",
+  "summary": "Expanded cross-national study of how paid annual leave, weekly rest, public holidays and realized working time evolved over the long twentieth century and early twenty-first century, linked to multi-source subjective well-being evidence from the postwar era onward. The completed eight-event/Israel Life Ladder study is preserved as Pilot-0, a narrow causal-identification module rather than the whole project.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
-    "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder gates frozen and executed; WHR2024 source refresh, complete bounded 11-jump legal audit, independently frozen Israel holdout, bilingual manuscripts, four manuscript figures/tables, SIR double-anonymous DOCX/PDF package, anonymous replication bundle, final visual/identity QA, and one-page portfolio explainer completed",
-    "version": "v0.7.1"
+    "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder gates frozen and executed; WHR2024 source refresh, complete bounded 11-jump legal audit, independently frozen Israel holdout, bilingual manuscripts, four manuscript figures/tables, SIR double-anonymous DOCX/PDF package, anonymous replication bundle, final visual/identity QA, and one-page portfolio explainer completed; scope reopened 2026-09-24 after adequacy audit to add long-run institutional history, post-1945 multi-source well-being panels, broad country coverage and a full statistical synthesis",
+    "version": "v0.8.0"
   },
   "links": {
     "paper_en": "manuscript/WORKING_PAPER_EN.md",
@@ -27,7 +27,9 @@
     "paper_zh_full": "https://github.com/CochraneK/ARIS4C/blob/main/papers/019-time-off-happiness/manuscript/WORKING_PAPER_ZH.md",
     "paper_en_pdf": "paper/019/en/main.pdf",
     "paper_zh_pdf": "paper/019/zh/main.pdf",
-    "submission_manifest": "submission/SIR_SUBMISSION_PACKAGE_MANIFEST.md"
+    "submission_manifest": "submission/SIR_SUBMISSION_PACKAGE_MANIFEST.md",
+    "historical_expansion": "process/HISTORICAL_EXPANSION_PLAN.md",
+    "historical_sources": "process/HISTORICAL_SOURCE_MATRIX.md"
   },
   "tags": [
     "ARIS",
@@ -50,8 +52,8 @@
     "chinese": true
   },
   "outputs": {
-    "paper_en": "complete",
-    "paper_zh": "complete",
+    "paper_en": "pilot0-complete-expanded-manuscript-pending",
+    "paper_zh": "pilot0-complete-expanded-manuscript-pending",
     "figures": {
       "status": "manuscript-ready SVG masters",
       "count": 4,
@@ -113,6 +115,28 @@
       "repo_path": "docs/assets/paper-at-a-glance/019.svg",
       "language": "zh-CN",
       "purpose": "one-page visual explanation of the complete paper for the portfolio table"
+    },
+    "pilot0": {
+      "status": "complete-frozen-substudy",
+      "interpretation": "Interpretation locked: no robust positive or negative population Life Ladder effect of statutory annual leave is established. Israel's pre-frozen 2015-reference holdout is near zero but alternative post-outcome baselines are materially negative. Positive/negative affect remain locked.",
+      "submission_snapshot": "SIR package preserved but no longer treated as the complete ARIS4C019 final manuscript"
+    },
+    "historical_expansion": {
+      "status": "design-frozen-data-build-pending",
+      "exposure_target": "early-20th-century/1936-2026 legal and working-time history",
+      "wellbeing_target": "1945-present multi-source subjective well-being",
+      "modern_country_target": 193,
+      "statistical_ladder": [
+        "descriptive atlas",
+        "policy diffusion",
+        "fixed-effects/within-between",
+        "nonlinear/lag models",
+        "instrument bridge",
+        "multilevel/meta-analysis",
+        "modern causal event studies",
+        "event-effect meta-analysis",
+        "heterogeneity"
+      ]
     }
   }
 }
