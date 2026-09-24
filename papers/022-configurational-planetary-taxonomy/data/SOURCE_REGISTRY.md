@@ -2,45 +2,28 @@
 
 Retrieval baseline: 2026-09-24.
 
-## Classification / definitions
+## Core classification / physical / orbital sources
 
-1. International Astronomical Union — List of Resolutions; 2006 Resolutions B5 and B6, “Definition of a Planet in the Solar System” / “Pluto”.
+1. IAU 2006 Resolutions B5/B6.
    - https://iau.org/Iau/Publications/List-of-Resolutions
-
-## Planet / dwarf-planet physical and orbital data
-
-2. JPL Solar System Dynamics — Planetary Physical Parameters.
+2. JPL Planetary Physical Parameters.
    - https://ssd.jpl.nasa.gov/planets/phys_par.html
-3. JPL Solar System Dynamics — Approximate Positions of the Planets.
+3. JPL Approximate Positions of the Planets.
    - https://ssd.jpl.nasa.gov/planets/approx_pos.html
-   - Used in `orbital_geometry_v0.2.csv`; Earth remains an explicit Earth-Moon-barycenter proxy.
-4. NASA NSSDC Planetary Fact Sheet and notes.
-   - https://nssdc.gsfc.nasa.gov/planetary/factsheet/
-   - https://nssdc.gsfc.nasa.gov/planetary/factsheet/fact_notes.html
-
-## Satellite physical + orbital data
-
-5. JPL Solar System Dynamics — Planetary Satellite Physical Parameters.
+4. JPL Planetary Satellite Physical Parameters.
    - https://ssd.jpl.nasa.gov/sats/phys_par/
-6. JPL Solar System Dynamics — Planetary Satellite Mean Elements.
+5. JPL Planetary Satellite Mean Elements.
    - https://ssd.jpl.nasa.gov/sats/elem/
-7. JPL Solar System Dynamics — Astrodynamic Parameters.
+6. JPL Astrodynamic Parameters.
    - https://ssd.jpl.nasa.gov/astro_par.html
-
-## Small-body route
-
-8. JPL Small-Body Database API.
+7. JPL Small-Body Database API.
    - https://ssd-api.jpl.nasa.gov/doc/sbdb.html
    - https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html
-   - Canonical live route for the 16 frozen small/boundary cases; current control-thread network still cannot retrieve object payloads.
-9. JPL Solar System Dynamics — Small-Body Element Tables.
+8. JPL Small-Body Element Tables / Orbits.
    - https://ssd.jpl.nasa.gov/sb/elem_tables.html
-10. JPL Solar System Dynamics — Small-Body Orbits & Ephemerides.
-    - https://ssd.jpl.nasa.gov/sb/orbits.html
+   - https://ssd.jpl.nasa.gov/sb/orbits.html
 
 ## Evidence-state coding · Anchor batch 01
-
-Agency facts pages used for the first blinded coding batch in `evidence_state_v0.2.csv`:
 
 - `NASA_MERCURY_FACTS` — https://science.nasa.gov/mercury/facts/
 - `NASA_VENUS_FACTS` — https://science.nasa.gov/venus/venus-facts/
@@ -53,30 +36,43 @@ Agency facts pages used for the first blinded coding batch in `evidence_state_v0
 - `NASA_CERES_FACTS` — https://science.nasa.gov/dwarf-planets/ceres/facts/
 - `NASA_PLUTO_FACTS` — https://science.nasa.gov/dwarf-planets/pluto/facts/
 
-These sources support only the cells actually coded. Unresolved dimensions remain `PENDING_REVIEW`.
+## Evidence-state coding · Moon/boundary batch 02
+
+- `NASA_MOON_FACTS` — https://science.nasa.gov/moon/facts/
+- `NASA_IO_FACTS` — https://science.nasa.gov/jupiter/jupiter-moons/io/facts/
+- `NASA_EUROPA_FACTS` — https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/
+- `NASA_GANYMEDE_FACTS` — https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/
+- `NASA_CALLISTO_FACTS` — https://science.nasa.gov/jupiter/jupiter-moons/callisto/facts/
+- `NASA_ENCELADUS_OVERVIEW` — https://science.nasa.gov/saturn/moons/enceladus/
+- `NASA_TITAN_FACTS` — https://science.nasa.gov/saturn/moons/titan/facts/
+- `NASA_TRITON_OVERVIEW` — https://science.nasa.gov/neptune/moons/triton/
+- `NASA_NH_PLUTO_CHARON_BLOG` — https://science.nasa.gov/blogs/new-horizons/2016/01/15/studying-pluto-from-3-billion-miles-away/
+- `NASA_NTRS_PLUTO_CHARON_GEOLOGY` — https://ntrs.nasa.gov/citations/20170000011
+
+Batch-02 coding uses only claims directly supported by these agency/mission sources. Charon's paleo-ocean evidence is retained in notes rather than coded as a present-day ocean.
 
 ## Quantitative planet criteria
 
-11. Margot, J.-L. (2015). A Quantitative Criterion for Defining Planets. *The Astronomical Journal*, 150, 185.
-   - DOI: 10.1088/0004-6256/150/6/185
+9. Margot, J.-L. (2015). *A Quantitative Criterion for Defining Planets*. AJ 150:185.
    - https://arxiv.org/abs/1507.06300
-12. Margot, J.-L., Gladman, B., & Yang, T. (2024). Quantitative Criteria for Defining Planets.
+10. Margot, Gladman & Yang (2024). *Quantitative Criteria for Defining Planets*.
    - https://arxiv.org/abs/2407.07590
-13. Soter, S. (2006). What Is a Planet?
+11. Soter, S. (2006). *What Is a Planet?*
    - https://arxiv.org/abs/astro-ph/0608359
 
 ## QCA method
 
-14. Thiem, A., & Duşa, A. (2013). QCA: A Package for Qualitative Comparative Analysis. *The R Journal*.
+12. Thiem & Duşa (2013), R Journal QCA package.
    - https://journal.r-project.org/articles/RJ-2013-009/
-15. COMPASSS — QCA common-errors / good-practice materials.
+13. COMPASSS.
    - https://compasss.org/
 
 ## Provenance rules
 
 - Prefer IAU / NASA / JPL for labels and physical/orbital baseline.
 - Preserve source + retrieval date + unit + uncertainty for raw numeric values.
-- Keep source values, fitted approximate elements, descriptive satellite mean elements, proxies, derived physics, and evidence-coded qualitative states visibly distinct.
-- A coded evidence value requires a source key; `PENDING_REVIEW` carries no scientific value and never enters analysis.
+- Keep raw, approximate, proxy, derived and evidence-coded values visibly distinct.
+- A coded evidence value requires a source key.
+- `PENDING_REVIEW` has no scientific value and never enters analysis.
 - Missing/un-ingested values are never zero-filled.
-- No QCA result may be consulted while evidence-state coding is active.
+- No QCA result may be consulted while evidence-state coding remains active.
