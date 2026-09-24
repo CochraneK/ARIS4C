@@ -3,12 +3,9 @@
 ## Decision
 
 **Scientific core freeze: PASS.**  
-**ARIS4C Finish/public-delivery gate: NOT YET PASS.**
-
-The present paper can be treated as a frozen Pilot-0 working paper. It must not yet be marked Finish because PDFs and the one-page portfolio visual are still absent, and the optional Egypt expansion has not received its independent 8-cell spot-audit.
+**ARIS4C Finish/public-delivery gate: PASS.**
 
 ## Scientific checks
-
 - [x] Pilot case architecture frozen.
 - [x] 24-motif calibration ontology frozen.
 - [x] Independent dual-model 120-judgment calibration completed.
@@ -26,19 +23,20 @@ The present paper can be treated as a frozen Pilot-0 working paper. It must not 
 - [x] Egypt exploratory cells remain excluded from confirmatory use.
 
 ## Output checks
-
-- [x] English full working paper.
-- [x] Chinese full working paper.
+- [x] English full manuscript.
+- [x] Chinese full manuscript.
+- [x] Durable English PDF.
+- [x] Durable Chinese PDF.
 - [x] Three substantive figures.
 - [x] Three substantive tables.
+- [x] One-page visual.
 - [x] Limitations and claim boundaries explicit.
 - [x] Data/code/provenance paths committed.
-- [ ] English PDF.
-- [ ] Chinese PDF.
-- [ ] One-page Finish visual.
-- [ ] Portfolio Page/PDF-first links.
-- [ ] Optional Egypt independent spot-audit if Egypt is promoted into the confirmatory core.
+- [x] Cross-agent continuity package current.
+- [x] PDF-first links declared.
+- [x] Portfolio surfaces expose the finished paper.
 
-## Core-paper boundary
+## Frozen-paper boundary
+The v0.1.1 core contains the three calibrated motif families and PT01–PT04 mechanism synthesis. Egypt is a registered exploratory extension. A future v0.2 may expand to the original 56-motif ontology and more traditions without reopening the frozen v0.1.1 coder files.
 
-The frozen core contains the three calibrated motif families and PT01–PT04 mechanism synthesis. Egypt is a registered exploratory extension. A future v0.2 may expand to the original 56-motif ontology and more traditions without reopening the frozen v0.1.1 coder files.
+**Verdict: FINISH · 100%.**

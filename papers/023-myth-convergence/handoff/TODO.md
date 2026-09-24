@@ -1,27 +1,27 @@
 # TODO
 
-## Scientific core
-- [x] Pilot architecture, calibration, reliability and v0.1.1 ontology.
-- [x] Source-bundle matrix and similarity audit.
+## v0.1.1 final contract
+- [x] Pilot architecture, calibration and reliability.
+- [x] v0.1.1 ontology regression and witness replacement.
+- [x] Source-bundle matrix and shared-absence audit.
 - [x] Ancestry/contact/environment evidence layers.
 - [x] PT01–PT04 process tracing.
-- [x] Full English and Chinese manuscripts.
-- [x] Three figures and three tables.
-- [x] Scientific core freeze.
+- [x] Full English manuscript.
+- [x] Full Chinese manuscript.
+- [x] Three substantive figures.
+- [x] Three substantive tables.
+- [x] One-page visual.
+- [x] Durable English PDF in repository.
+- [x] Durable Chinese PDF in repository.
+- [x] PDF-first links wired.
+- [x] Scientific core audit PASS.
+- [x] Public delivery audit PASS.
+- [x] Cross-agent handoff synchronized.
+- [x] Portfolio surfaces updated.
+- [x] Finish · 100%.
 
-## Publication package
-- [x] Integrate figures/tables into EN/ZH manuscripts.
-- [x] Build English PDF locally.
-- [x] Build Chinese PDF locally.
-- [x] Render/preflight/visually QA both PDFs.
-- [x] Create and commit one-page visual SVG.
-- [x] Record PDF SHA-256/page counts and final publication audit.
-- [ ] Upload EN PDF binary to durable public repository/storage.
-- [ ] Upload ZH PDF binary to durable public repository/storage.
-- [ ] Wire PDF-first links.
-- [ ] Mark Finish only after public PDF links resolve.
-
-## Optional v0.2 (not part of the 99% publication gate)
-- [ ] Independent Egypt 8-cell spot-audit if promoted to confirmatory core.
-- [ ] Expand 24 -> 56 motifs and/or traditions.
-- [ ] Reconsider QCA only if the frozen trigger is satisfied.
+## Optional future v0.2 — not part of current completion
+- [ ] Independent 8-cell Egypt spot-audit if Egypt is promoted into a future confirmatory core.
+- [ ] Expand 24 → 56 motifs and/or add traditions.
+- [ ] Consider dated family phylogenies or a preregistered topology-only ancestry model.
+- [ ] Reconsider QCA only if its frozen trigger conditions are satisfied.

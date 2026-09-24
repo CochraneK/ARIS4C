@@ -96,3 +96,14 @@ Decisions taken:
 - **`P_ANTH_SUM` is withdrawn as a confirmatory witness.** `ETCSL 1.7.4 Segment A 10-14` is one surviving sentence inside a heavily lacunose text; it carries six of the eight Sumerian anthropogony judgments and produced 6 of the 21 disagreements. A widened locator or a clay-explicit replacement witness is required before the Sumerian anthropogony cell enters the tradition × motif matrix.
 - **The disagreement taxonomy** (`../process/DISAGREEMENT_TAXONOMY.md`) classifies all 21 disagreements: incomplete witness 7, definition 10, ontology overlap 3, translation 1, **chronology 0**. The transmission-sensitive flood family (all 8 motifs, 40 cells) and the storm-serpent / storm-sea separation reproduced perfectly across model families: no disagreement touched any of the distinctions the plan was built to test.
 - **Nothing downstream is promoted by this exercise.** Similarity still does not prove borrowing, the four mechanism families remain unselected, and the QCA trigger is unchanged and still OFF.
+
+
+## 2026-09-24 · v0.1.1 final freeze
+ARIS4C-023 v0.1.1 is declared **Finish** after the scientific core, bilingual manuscripts, figures/tables, one-page visual and durable repository PDFs all satisfied the current ARIS4C output contract.
+
+The final-state boundary is intentionally conservative:
+- PT01–PT04 and the three calibrated motif families constitute the frozen core.
+- Egypt remains an exploratory extension and is not required for v0.1.1 completion.
+- The original 56-motif expansion is deferred to a versioned v0.2.
+- QCA remains OFF because its trigger conditions were not met.
+- Future work must version forward rather than rewrite the frozen coder/reliability evidence.

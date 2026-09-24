@@ -60,8 +60,9 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 
 - **001 · Bee GCA × Uncertainty** — [English PDF](https://cochranek.github.io/ARIS4C/paper/001/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/001/zh/main.pdf)
 - **002 · Testing linguistic periodicity** — [English PDF](https://cochranek.github.io/ARIS4C/paper/002/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/002/zh/main.pdf)
+- **023 · Ancient Myth Convergence** — [English PDF](papers/023-myth-convergence/dist/ARIS4C-023_EN.pdf) · [中文 PDF](papers/023-myth-convergence/dist/ARIS4C-023_ZH.pdf)
 
-## The 22-paper portfolio
+## The 23-paper portfolio
 
 | ID | Project | State | Progress | Continue from | At a glance |
 |---|---|---:|---:|---|---:|
@@ -87,7 +88,7 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 | **020** | [Global Retraction Ecology](papers/020-global-retraction-ecology/) | 🟢 Active | 55% | [handoff](papers/020-global-retraction-ecology/handoff/AGENT_HANDOFF.md) | — |
 | **021** | [Mass Atrocity Conditions](papers/021-mass-atrocity-configurations/) | 🟢 Active | 38% | [handoff](papers/021-mass-atrocity-configurations/handoff/AGENT_HANDOFF.md) | — |
 | **022** | [Planetary Taxonomy × fsQCA](papers/022-configurational-planetary-taxonomy/) | 🟢 Active | 59% | [handoff](papers/022-configurational-planetary-taxonomy/handoff/AGENT_HANDOFF.md) | — |
-| **023** | [Ancient Myth Convergence](papers/023-myth-convergence/) | 🔴 Block | 55% | [handoff](papers/023-myth-convergence/handoff/AGENT_HANDOFF.md) | — |
+| **023** | [Ancient Myth Convergence](papers/023-myth-convergence/) | 🔵 Finish | 100% | [handoff](papers/023-myth-convergence/handoff/AGENT_HANDOFF.md) | <a href="./docs/assets/paper-at-a-glance/023.svg"><img src="./docs/assets/paper-at-a-glance/023.svg" height="80" loading="lazy" decoding="async" alt="One-page visual 023" title="Click to open the full one-page visual"></a> |
 
 
 ## How ARIS4C works

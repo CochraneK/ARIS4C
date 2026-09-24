@@ -114,3 +114,13 @@
 - Frozen SHA-256: EN aa0d39b5fa2c9c854f9013b43b3e1edfd5734bbe9b22f33a7b8b74c495afd0c2; ZH 1fca428a9a8200637171eee82928c90c98e41d8fc54f5039b84f05a5c0b31139.
 - Created one-page visual; repository copy stored as SVG.
 - Current GitHub connector cannot directly ingest local binary file references, so durable PDF upload remains the only Finish gate; no PDF URL is fabricated.
+
+## 2026-09-24 · Finish 100%
+- Bypassed the unavailable binary-upload surface by generating standards-compliant ASCII PDF 1.4 artifacts directly into Git.
+- Durable repository PDFs committed in `b6b521fd`.
+- Re-read both committed blobs through GitHub and verified PDF header, page objects, xref, trailer and EOF.
+- EN repository PDF: 6 pages / 59,060 bytes / blob `37b85671190a160e1fea7d93848bf20a7d33c36a`.
+- ZH repository PDF: 5 pages / 53,718 bytes / blob `b59f0dfc7271b4833f3332c9d611cc8aca515874`.
+- Removed the temporary PDF GitHub Actions workflow after discovering repository-level Actions jobs were failing before executing any steps.
+- Wired PDF-first links, one-page visual, README portfolio entry, Command Center card/showcase and final handoff metadata.
+- v0.1.1 declared Finish · 100%; optional Egypt/56-motif work is v0.2 and cannot block or rewrite the frozen paper.

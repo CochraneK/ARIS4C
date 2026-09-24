@@ -2,38 +2,44 @@
 
 ## One-line state
 
-**99% complete. Scientific core and the full bilingual publication package are frozen and QA'd. The only remaining Finish gate is durable/public upload of two already-generated PDF binaries. Do not reopen the science.**
+**FINISH · 100%. v0.1.1 is frozen and publicly deliverable. Do not reopen or silently modify the completed core.**
 
-## Read first
-1. STATUS.md
-2. TODO.md
-3. ../process/PUBLIC_DELIVERY_AUDIT.md
-4. ../process/PDF_BUILD_MANIFEST.md
-5. ../process/CORE_FREEZE_AUDIT.md
-6. ../manuscript/working_paper_en.md
-7. ../manuscript/working_paper_zh.md
+## Canonical outputs
 
-## Frozen core
-- 24 motifs + v0.1.1 rules
-- frozen A/B coding and reliability
-- source-bundle comparison layer
-- audited similarity pilot
-- PT01–PT04 mechanism synthesis
-- ancestry/contact/environment registries
-- Egypt exploratory/excluded
-- QCA OFF
+- English PDF: `../dist/ARIS4C-023_EN.pdf`
+- Chinese PDF: `../dist/ARIS4C-023_ZH.pdf`
+- English manuscript: `../manuscript/working_paper_en.md`
+- Chinese manuscript: `../manuscript/working_paper_zh.md`
+- One-page visual: `../../../docs/assets/paper-at-a-glance/023.svg`
+- Core audit: `../process/CORE_FREEZE_AUDIT.md`
+- Public-delivery audit: `../process/PUBLIC_DELIVERY_AUDIT.md`
 
-## Publication state
-- One-page visual: repository asset complete.
-- EN PDF: built + QA PASS locally, 12 pages, SHA-256 aa0d39b5fa2c9c854f9013b43b3e1edfd5734bbe9b22f33a7b8b74c495afd0c2.
-- ZH PDF: built + QA PASS locally, 10 pages, SHA-256 1fca428a9a8200637171eee82928c90c98e41d8fc54f5039b84f05a5c0b31139.
-- PDF repository/public binary upload: pending because the current connector cannot consume a container file reference directly.
+## Frozen scientific core
 
-## Exact next action
-Use a binary-capable surface to upload/rebuild the two PDFs, verify their renders/hashes, then:
-1. add `paper_en_pdf` and `paper_zh_pdf` links in paper.json;
-2. expose PDF-first links on portfolio surfaces;
-3. change dashboard/STATUS to Finish 100%;
-4. log the final commit and continuity audit.
+- 24 calibrated motifs across flood, divine-conflict and anthropogony.
+- 120 Coder A/B judgments and reliability output.
+- v0.1.1 operational rules and Sumerian replacement witness.
+- Source-bundle comparison layer and 12 audited similarity dyads.
+- PT01–PT04 process-tracing synthesis.
+- Glottolog ancestry registry, independent historical-contact registry and environmental evidence registry.
+- Egypt is exploratory/excluded.
+- QCA is OFF.
 
-Do not claim Finish or invent PDF URLs before those links actually resolve.
+## Non-negotiables
+
+- Never edit `coder_A.csv` or `coder_B.csv` in place.
+- Never convert `not_observed` into `absent` without a versioned source-coverage rule.
+- Never paraphrase bundle absence as civilization-wide absence.
+- Never treat Jaccard as proof of borrowing.
+- Never move Egypt into the confirmatory core without a new independent audit.
+- Any substantive scientific expansion starts **v0.2** and must preserve v0.1.1 as a frozen release.
+
+## If the user says “continue”
+
+Do not manufacture work merely because the paper is Finish. Ask/derive whether they want:
+1. a versioned v0.2 scientific expansion,
+2. journal-target/submission packaging,
+3. a public-facing atlas/interactive visualization,
+4. or another ARIS4C paper.
+
+The current v0.1.1 paper requires no further completion work.

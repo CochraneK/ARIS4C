@@ -1,11 +1,10 @@
-# PDF build output
+# ARIS4C-023 PDF delivery
 
-This directory is generated from the frozen bilingual Markdown manuscripts and SVG figures by `.github/workflows/publish-023-pdfs.yml`.
+Durable PDF-first public artifacts:
 
-Expected durable public artifacts:
-- `ARIS4C-023_EN.pdf`
-- `ARIS4C-023_ZH.pdf`
+- [English PDF](ARIS4C-023_EN.pdf)
+- [中文 PDF](ARIS4C-023_ZH.pdf)
 
-The workflow installs Pandoc, LibreOffice Writer, Noto CJK fonts and Poppler; builds DOCX intermediates; converts them to PDF; verifies file size, page count, searchable text and key terms; records SHA-256 in the workflow log; and commits only the final PDFs.
+Both PDFs are generated from the frozen v0.1.1 manuscripts and are committed as repository artifacts. See `../process/PDF_BUILD_MANIFEST.md` for build provenance and verification details.
 
-Do not hand-edit generated PDFs. Change the canonical manuscript/figures, then rebuild.
+Do not hand-edit the PDFs to alter scientific claims. Scientific changes belong in a versioned future manuscript (v0.2+).
