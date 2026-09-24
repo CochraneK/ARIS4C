@@ -4,7 +4,7 @@
 
 - Progress: 90%
 - Activity: active
-- Stage: Pilot 4 matched diagnostic COMPLETE · R1/R2 excluded · R2.5 initial-scene sensory localization running
+- Stage: Pilot 4 matched diagnostic COMPLETE · R1/R2 excluded · R2.5 implemented, Actions runner blocked before execution
 
 ## Completed
 
@@ -81,7 +81,7 @@ Therefore the matched Pilot 4 divergence is **not explained by**:
 
 ## Active localization · R2.5
 
-A new CI diagnostic is now running.
+A new CI diagnostic has been implemented and triggered, but the current GitHub Actions runner failed before executing any workflow step.
 
 It captures the initial matched static-target scene **before locomotion/controller stepping and without flyvis/decoder**:
 
@@ -105,7 +105,7 @@ If no, inspect neural initialization / temporal-state semantics rather than stat
 
 ## Next gates
 
-1. Complete R2.5 legacy/current initial-scene capture.
+1. Restore GitHub Actions execution, then run the already-implemented R2.5 legacy/current initial-scene capture.
 2. Compare full and grayscale ommatidia SHA-256 plus body-root pose.
 3. If sensory vectors differ, localize renderer/camera/spawn/occlusion.
 4. If sensory vectors match, inspect temporal neural initialization/state handling.
@@ -114,3 +114,17 @@ If no, inspect neural initialization / temporal-state semantics rather than stat
 ## Scientific boundary
 
 The matched stack difference remains a software/model-stack reproducibility diagnostic. It does not establish which stack is more biologically accurate or preferable.
+
+
+## Current infrastructure blocker
+
+The first R2.5 workflow run failed before any job step began:
+
+- workflow: `ARIS4C018 Pilot4 R2.5 Initial Scene`
+- run: https://github.com/CochraneK/ARIS4C/actions/runs/35988075468
+- both legacy and current jobs: failure with **zero executed steps**
+- compare job: skipped
+
+This pattern is not isolated to 018. Recent repository-wide `Build ARIS4C paper index` and `Sync ARIS4C paper handoffs` runs also fail with zero executed steps.
+
+Therefore the active blocker is currently classified as **GitHub Actions / runner-level infrastructure**, not an R2.5 code/test failure. The R2.5 code and workflow are already committed and ready to execute once Actions jobs can start.
