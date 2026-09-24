@@ -8,22 +8,28 @@
 - [~] Build country × source × year/wave coverage inventory for 1900–2026 exposures and 1945–2026 subjective well-being. Modern WB×WHR 161-country/1,934-year overlap, WVS 295 country-wave rows/107 codes, Cantril seed, Eurobarometer registry summary and WDH acquisition gate are complete; full historical country-year reconstruction remains.
 - [~] Ingest ILO C052/C132 ratification/denunciation histories as institutional anchors; do not equate ratification with national entitlement adoption. C132 closed 39-country seed + decade diffusion are materialized; 13 exact NORMLEX dates are primary-verified; remaining C132 dates and full C052 rows remain.
 - [ ] Build national paid-leave legal chronology with primary-law effective dates and entitlement levels, prioritizing earliest adoption and major upgrades.
-- [ ] Build historical actual-working-hours panel, retaining source/sector comparability flags.
-- [ ] Build World Database of Happiness historical outcome table with question-family metadata and comparable-subset flags.
+- [~] Build historical actual-working-hours panel, retaining source/sector comparability flags. Current transport-pinned source has 5,063 observations / 130 countries / 1870–2023; 14-country 1870–1938 seed and coverage/WDH bridge are materialized. Further source-version/comparability work remains.
+- [~] Build World Database of Happiness historical outcome table with question-family metadata and comparable-subset flags. Public long-run mean registry is materialized at 124 variable series / 61 nation labels / earliest 1946; numeric XLSX observations remain pending.
 - [~] Add Cantril 1957–1963, Eurobarometer 1973+, WVS/EVS 1981+ and Gallup-era outcome coverage manifests. Cantril/WVS/Eurobarometer/Gallup coverage scaffolds are materialized; WDH XLSX and full EVS country-wave expansion remain.
 - [x] Freeze no-effect-inspection coverage gates and expanded statistical plan before running new expanded association/causal models.
 
 ## P1H · Expanded statistics
 
+- [x] Execute and freeze the expanded modern WHR association module (TWFE / within-between / FD / A1 / support / trends / spline / lags / influence / joint hours+leave).
+- [x] Quantify legal-vs-WB timing error: verified WB jump timing averages +1.22 years relative to law.
+- [x] Run legal-time falsification; same verified-changer FD flips sign when re-timestamped from WB report year to legal effective year.
+- [x] Freeze modern interpretation in `process/EXPANDED_MODERN_INTERPRETATION_LOCK.md`.
+- [x] Add same-sample macro attenuation decomposition to separate complete-case selection from control adjustment.
+
 - [ ] Descriptive atlas: decade diffusion, regional trajectories, country timelines, exposure distributions, happiness trajectories and happiness inequality where available.
-- [ ] Country/time fixed-effects and within-between models for comparable panels. Model hierarchy frozen in `process/EXPANDED_STATISTICAL_FREEZE.md`.
-- [ ] Nonlinear dose-response and lag/distributed-lag models with explicit association-only interpretation unless stronger identification is met.
+- [~] Country/time fixed-effects and within-between models for comparable panels. Modern WHR leave/hours module executed and interpretation-locked; historical WDH/Eurobarometer/WVS-EVS instrument-specific panels remain.
+- [~] Nonlinear dose-response and lag/distributed-lag models with explicit association-only interpretation unless stronger identification is met. Modern RCS + lag stack executed; WB report-year lag interpretation is timing-falsified and historical instruments remain.
 - [ ] Instrument-specific outcome models plus overlap-country bridge diagnostics; do not pool raw happiness scales blindly.
 - [ ] Random-effects / multilevel synthesis across survey families.
 - [ ] Expand verified reform inventory beyond the original eight-event cap.
 - [ ] Run modern staggered DiD / stacked event study / synthetic-control family where assumptions permit.
 - [ ] Event-level meta-analysis and influence diagnostics.
-- [ ] Prespecified heterogeneity by reform size, baseline entitlement, region, income, hours, informality, labor-force exposure and welfare/labor institutions.
+- [ ] Prespecified heterogeneity by reform size, baseline entitlement, region, income, hours, informality, labor-force exposure and welfare/labor institutions. Do only after historical instrument materialization / sufficient event count.
 
 ## P0 · Measurement and legal-event gate
 
