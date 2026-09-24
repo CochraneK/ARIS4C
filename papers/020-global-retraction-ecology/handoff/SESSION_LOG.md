@@ -58,3 +58,13 @@
 - Denominators 1990-2025 (year x field, year x type) + censoring-aware hazard panel frozen (936 denominator cells, 4,664 event cells).
 - Dashboard 020: 55 -> 75 (active). Next gate: work-type QA adjudication -> freeze eligible types + censoring rule -> comparative risk results -> manuscript refresh.
 - Large regenerable intermediates (work_table.jsonl 63MB, openalex_retracted_not_rwdb_original.csv 15MB) added to .gitignore per RUNBOOK boundary.
+
+## 2026-09-24 · Controller post-WB audit
+- Verdict: CONDITIONAL PASS. WB network execution is real and valuable; no redesign required.
+- Verified 61,155 DOI queries, 60,773 matched (99.375%), 60,743 single-candidate, 30 ambiguous, 382 unmatched.
+- Verified RWDB→OpenAlex is_retracted concordance 60,208/60,743 = 99.12%.
+- Found hazard coverage diagnostic year-basis bug: RWDB-year denominator vs OpenAlex-year numerator; pre-fix sidecar can exceed 1. Fixed build_discrete_hazard_panel.py; old sidecar marked INVALID_PRE_RERUN.
+- Found bidirectional classification unit bug: class counts summed to 134,923 DOI-bearing Work rows while text called them 134,890 unique DOI. Fixed compare_bidirectional_concordance.py to emit both units; old output relabeled provisional row-level.
+- Closed observed Reason mapping gap for Miscommunication with/by Third Party.
+- Work-type QA remains sample-only: 158 adjudication cells blank. Comparative models remain locked.
+- OpenAlex snapshot local SHA sidecar was not committed as a tracked manifest; add on rerun.
