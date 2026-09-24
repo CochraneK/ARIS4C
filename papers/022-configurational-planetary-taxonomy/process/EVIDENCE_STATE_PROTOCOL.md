@@ -1,6 +1,6 @@
 # Evidence-state protocol · ARIS4C022
 
-Version 0.3 · 2026-09-24
+Version 0.4 · 2026-09-24
 
 Purpose: freeze how heterogeneous geophysical evidence is encoded **before** any fsQCA solution is inspected.
 
@@ -22,12 +22,12 @@ Purpose: freeze how heterogeneous geophysical evidence is encoded **before** any
 
 A missingness state is itself a scientific result and must not be disguised as a substantive value.
 
-- `NA_NOT_MEASURED`: source supports that the construct is inadequately known; the value may be blank.
-- `NA_SOURCE_CONFLICT`: credible sources remain materially incompatible after date/method/construct reconciliation; value may be blank and the conflict must be logged in `SOURCE_CONFLICT_AUDIT.md`.
+- `NA_NOT_MEASURED`: source supports inadequate knowledge; value may be blank.
+- `NA_SOURCE_CONFLICT`: credible sources remain materially incompatible after reconciliation; value may be blank and conflict must be logged.
 - `NA_NOT_APPLICABLE`: construct is not meaningful; value may be blank.
-- `NA_UNCERTAIN`: a plausible category may be carried when evidence points toward it but confidence is insufficient.
+- `NA_UNCERTAIN`: a plausible value may be carried when evidence points toward it but confidence is insufficient.
 
-Every non-pending state requires a source key even when the scientific value is blank.
+Every non-pending state requires a source key even when value is blank.
 
 ## Variables
 
@@ -36,7 +36,10 @@ Every non-pending state requires a source key even when the scientific value is 
 - ROCK_ICE_MIXED
 - ICE_VOLATILE_RICH
 - H_HE_ENVELOPE
+- CARBONACEOUS_HYDRATED
 - MIXED_UNCERTAIN
+
+`CARBONACEOUS_HYDRATED` is reserved for carbonaceous small bodies or returned material showing hydrated minerals / aqueous alteration. It is deliberately distinct from `ROCK_ICE_MIXED`: ancient parent-body aqueous alteration does not imply that the present object contains macroscopic ice layers or a current ocean.
 
 Do not infer bulk composition solely from density or surface color.
 
@@ -54,7 +57,7 @@ Transient plumes are not automatically atmospheres.
 - PARTIAL_OR_UNCERTAIN
 - DIFFERENTIATED
 
-Roundness is not proof of internal differentiation.
+The first category includes demonstrably undifferentiated solid bodies as well as rubble piles; notes/source evidence must distinguish those mechanisms. Roundness alone is not proof of differentiation.
 
 ### geologic_activity_value
 - NONE_DETECTED
@@ -70,7 +73,7 @@ This is endogenous or internally coupled activity; impacts alone do not count.
 - STRONG_EVIDENCE
 - CONFIRMED_OR_NEAR_CONSENSUS
 
-This refers to a present-day or plausibly persistent liquid subsurface ocean. Paleo-ocean evidence is retained in notes but does not populate this variable.
+This refers to a present-day or plausibly persistent liquid subsurface ocean. Paleo-ocean or parent-body aqueous-alteration evidence is retained in notes but does not populate this variable.
 
 ### tidal_heating_value
 - NEGLIGIBLE
@@ -82,14 +85,9 @@ For direct-Sun non-satellites this may be `NA_NOT_APPLICABLE`. Synchronous rotat
 
 ## Source-conflict adjudication
 
-Before using `NA_SOURCE_CONFLICT`, check whether disagreement is actually:
+Before using `NA_SOURCE_CONFLICT`, check whether disagreement is actually temporal supersession, different measurement targets, direct observation versus model inference, or a construct-definition difference.
 
-1. temporal supersession by newer data;
-2. different measurement targets;
-3. direct observation versus model inference;
-4. different definitions of the same construct.
-
-Only unresolved material disagreement remains a live conflict. Historical supersession is documented but does not force `NA_SOURCE_CONFLICT`.
+Only unresolved material disagreement remains a live conflict.
 
 ## Source hierarchy
 

@@ -10,23 +10,24 @@ Implemented reproducible checks/builders:
 6. `validate_source_hardening.py`
 7. `validate_evidence_state.py` — batch 01
 8. `validate_evidence_state_v03.py` — batch 02
-9. `validate_evidence_state_v04.py` — batch 03; validates scientific-missingness semantics and 139-cell coverage
+9. `validate_evidence_state_v04.py` — batch 03 / scientific-missingness semantics
+10. `validate_evidence_state_v05.py` — batch 04 / CARBONACEOUS_HYDRATED ontology / 157-cell coverage
 
 Canonical data products:
 
 - `raw_physical_core_v0.1.csv`
 - `orbital_geometry_v0.2.csv`
 - `derived_physics_v0.2.csv`
-- `evidence_state_v0.4.csv`
+- `evidence_state_v0.5.csv`
 - `SOURCE_CONFLICT_AUDIT.md`
-- `EVIDENCE_CODING_AUDIT_BATCH03.md`
+- `EVIDENCE_CODING_AUDIT_BATCH04.md`
 - `process/EVIDENCE_STATE_PROTOCOL.md`
 
 Still gated:
 
-- live 16-case SBDB snapshot;
+- remaining 11 small/boundary evidence cases;
+- live 16-case SBDB numeric snapshot;
 - five dwarf-planet live orbit replacements;
-- small-body evidence coding;
 - full conflict adjudication;
 - calibration freeze;
 - QCA / sensitivity / clustering only afterward.

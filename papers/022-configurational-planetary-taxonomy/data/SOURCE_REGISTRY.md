@@ -13,53 +13,28 @@ Retrieval baseline: 2026-09-24.
 7. JPL SBDB API — https://ssd-api.jpl.nasa.gov/doc/sbdb.html
 8. JPL SBDB query docs — https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html
 
-## Evidence batch 01
+## Evidence batches 01–03
 
-- NASA_MERCURY_FACTS — https://science.nasa.gov/mercury/facts/
-- NASA_VENUS_FACTS — https://science.nasa.gov/venus/venus-facts/
-- NASA_EARTH_FACTS — https://science.nasa.gov/earth/facts/
-- NASA_MARS_FACTS — https://science.nasa.gov/mars/facts/
-- NASA_JUPITER_FACTS — https://science.nasa.gov/jupiter/jupiter-facts/
-- NASA_SATURN_FACTS — https://science.nasa.gov/saturn/facts/
-- NASA_URANUS_FACTS — https://science.nasa.gov/uranus/facts/
-- NASA_NEPTUNE_FACTS — https://science.nasa.gov/neptune/neptune-facts/
-- NASA_CERES_FACTS — https://science.nasa.gov/dwarf-planets/ceres/facts/
-- NASA_PLUTO_FACTS — https://science.nasa.gov/dwarf-planets/pluto/facts/
+Existing NASA/JPL/peer-reviewed sources remain frozen as listed in prior revisions for:
+- 8 planets + Ceres + Pluto
+- Moon / Io / Europa / Ganymede / Callisto / Enceladus / Titan / Triton / Charon
+- remaining selected satellites + Haumea / Makemake / Eris
+- Mimas 2024 ocean update / source-conflict adjudication
 
-## Evidence batch 02
+## Evidence batch 04 · mission/sample-return small bodies
 
-- NASA_MOON_FACTS — https://science.nasa.gov/moon/facts/
-- NASA_IO_FACTS — https://science.nasa.gov/jupiter/jupiter-moons/io/facts/
-- NASA_EUROPA_FACTS — https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/
-- NASA_GANYMEDE_FACTS — https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/
-- NASA_CALLISTO_FACTS — https://science.nasa.gov/jupiter/jupiter-moons/callisto/facts/
-- NASA_ENCELADUS_OVERVIEW — https://science.nasa.gov/saturn/moons/enceladus/
-- NASA_TITAN_FACTS — https://science.nasa.gov/saturn/moons/titan/facts/
-- NASA_TRITON_OVERVIEW — https://science.nasa.gov/neptune/moons/triton/
-- NASA_NH_PLUTO_CHARON_BLOG — https://science.nasa.gov/blogs/new-horizons/2016/01/15/studying-pluto-from-3-billion-miles-away/
-- NASA_NTRS_PLUTO_CHARON_GEOLOGY — https://ntrs.nasa.gov/citations/20170000011
+- `NASA_VESTA_FACTS` — https://science.nasa.gov/solar-system/asteroids/4-vesta/
+- `NASA_DAWN_VESTA` — https://science.nasa.gov/mission/dawn/science/vesta/
+- `NASA_EROS_NEAR` — https://science.nasa.gov/mission/near-shoemaker/
+- `NASA_EROS_SOLID_UNIFORM` — https://science.nasa.gov/image-article/apod-2009-june-7-asteroid-eros-reconstructed/
+- `NASA_BENNU_FACTS` — https://science.nasa.gov/solar-system/asteroids/101955-bennu/facts/
+- `NASA_BENNU_RUBBLE` — https://www.nasa.gov/solar-system/cosmic-detective-work-why-we-care-about-space-rocks/
+- `NASA_BENNU_SAMPLE` — https://science.nasa.gov/missions/osiris-rex/nasas-bennu-samples-reveal-complex-origins-dramatic-transformation/
+- `NASA_RYUGU_SAMPLE` — https://www.nasa.gov/centers-and-facilities/goddard/first-look-at-ryugu-asteroid-sample-reveals-it-is-organic-rich/
+- `NASA_RYUGU_RUBBLE` — https://science.nasa.gov/blogs/osiris-rex/2023/06/28/long-history-and-bright-future-of-space-sample-deliveries/
+- `NASA_ITOKAWA_FACTS` — https://science.nasa.gov/solar-system/asteroids/25143-itokawa/
 
-## Evidence batch 03
-
-- NASA_MARS_MOONS_FACTS — https://science.nasa.gov/mars/moons/facts/
-- NASA_MIMAS_FACTS — https://science.nasa.gov/saturn/moons/mimas/
-- NATURE_MIMAS_OCEAN_2024 — https://doi.org/10.1038/s41586-023-06975-9
-- NASA_TETHYS_FACTS — https://science.nasa.gov/saturn/moons/tethys/
-- NASA_DIONE_FACTS — https://science.nasa.gov/saturn/moons/dione/
-- NASA_SATURN_MOONS_FACTS — https://science.nasa.gov/saturn/moons/facts/
-- NASA_DIONE_PUTATIVE_OCEAN — https://science.nasa.gov/wp-content/uploads/2023/05/NuggetDionesPutativeSubsurfaceOcean20170630.pdf
-- NASA_RHEA_FACTS — https://science.nasa.gov/saturn/moons/rhea/
-- NASA_IAPETUS_FACTS — https://science.nasa.gov/saturn/moons/iapetus/
-- NASA_URANUS_MOONS_FACTS — https://science.nasa.gov/uranus/moons/facts/
-- NASA_MIRANDA_FACTS — https://science.nasa.gov/uranus/moons/miranda/
-- NASA_ARIEL_FACTS — https://science.nasa.gov/uranus/moons/ariel/
-- NASA_UMBRIEL_FACTS — https://science.nasa.gov/uranus/moons/umbriel/
-- NASA_TITANIA_FACTS — https://science.nasa.gov/uranus/moons/titania/
-- JPL_URANUS_MOON_OCEANS_2023 — https://www.jpl.nasa.gov/news/new-study-of-uranus-large-moons-shows-4-may-hold-water/
-- NASA_HAUMEA_FACTS — https://science.nasa.gov/dwarf-planets/haumea/
-- NASA_MAKEMAKE_FACTS — https://science.nasa.gov/dwarf-planets/makemake/
-- NASA_ERIS_FACTS — https://science.nasa.gov/dwarf-planets/eris/
-- NASA_OCEAN_WORLDS — https://science.nasa.gov/solar-system/ocean-worlds/
+Returned-sample interpretation may describe aqueous alteration on a destroyed parent body. That evidence is not converted into a present-day ocean state for Bennu or Ryugu.
 
 ## Quantitative planet criteria
 
@@ -76,6 +51,7 @@ Retrieval baseline: 2026-09-24.
 
 - Raw, approximate, proxy, derived and evidence-coded values remain distinct.
 - Every non-pending evidence state requires a source key.
-- Missingness is never zero-filled.
-- Temporal supersession is recorded separately from unresolved source conflict.
+- Scientific missingness is never zero-filled.
+- Temporal supersession is distinct from unresolved conflict.
+- Parent-body alteration is distinct from current-object state.
 - No QCA result may be consulted while evidence-state coding is active.
