@@ -25,6 +25,7 @@ def main()->int:
     ap.add_argument("--skip-network",action="store_true")
     ap.add_argument("--from-year",type=int,default=1990)
     ap.add_argument("--to-year",type=int,default=2025)
+    ap.add_argument("--with-citations",action="store_true", help="Also fetch the potentially large citation-afterlife edge set.")
     args=ap.parse_args()
 
     py=sys.executable
@@ -80,11 +81,27 @@ def main()->int:
              "--group","type"],
             "Build work-type denominators")
 
+        field_denom=ROOT/"data/derived"/f"openalex_denominator_field_{args.from_year}_{args.to_year}.json"
+        run([py,str(CODE/"build_discrete_hazard_panel.py"),
+             str(ROOT/"data/derived/work_table.jsonl"),
+             str(field_denom),*shard_files],
+            "Build aggregated censoring-aware hazard panel")
+
+        if args.with_citations:
+            citation_dir=ROOT/"data/interim/openalex_citation_batches"
+            run([py,str(CODE/"openalex_citation_edges.py"),*shard_files,
+                 "--out-dir",str(citation_dir)],
+                "Fetch OpenAlex citation-afterlife edges")
+            run([py,str(CODE/"summarize_citation_afterlife.py"),
+                 str(ROOT/"data/derived/work_table.jsonl"),str(citation_dir)],
+                "Summarize citation afterlife")
+
     manifest={
         "pipeline":"ARIS4C-020",
         "rwdb":str(args.rwdb),
         "network_executed":not args.skip_network,
         "openalex_api_key_present":bool(os.getenv("OPENALEX_API_KEY","").strip()),
+        "citation_afterlife_executed":bool(args.with_citations and not args.skip_network),
         "status":"PASS",
     }
     path=ROOT/"data/derived/pipeline_run_manifest.json"
