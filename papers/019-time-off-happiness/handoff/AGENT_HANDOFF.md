@@ -1,5 +1,21 @@
 # ARIS4C019 · Agent takeover brief
 
+## 2026-09-24 scope reopening
+
+The user's adequacy review supersedes the prior assumption that ARIS4C019 was nearly finished. The previous 98% state described a narrow, publication-ready Pilot-0 only. Project-level progress is reset to **60% / active** because the original broad research question requires substantial historical and statistical expansion.
+
+Read first:
+- `process/HISTORICAL_EXPANSION_PLAN.md`
+- `process/HISTORICAL_SOURCE_MATRIX.md`
+- `process/RESEARCH_PLAN.md`
+- `handoff/TODO.md`
+
+Preserve the existing eight-event/Israel analysis as a frozen sub-study. Do not discard it and do not overwrite its interpretation. New work should expand chronology, country coverage, outcome sources and statistical models.
+
+---
+
+## Archived Pilot-0 takeover notes
+
 ## What this project is
 
 **Statutory Paid Annual Leave and National Life Evaluation: A Global Legal-Event Audit and Falsification-First Holdout Study**
