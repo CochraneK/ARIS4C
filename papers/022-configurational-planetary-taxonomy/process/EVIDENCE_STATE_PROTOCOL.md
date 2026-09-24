@@ -1,12 +1,10 @@
 # Evidence-state protocol · ARIS4C022
 
-Version 0.2 · 2026-09-24
+Version 0.3 · 2026-09-24
 
-Purpose: freeze how heterogeneous geophysical evidence will be encoded **before** any fsQCA solution is inspected.
+Purpose: freeze how heterogeneous geophysical evidence is encoded **before** any fsQCA solution is inspected.
 
 ## State vocabulary
-
-Every evidence-coded field uses exactly one state:
 
 - `DIRECT_MEASURED`
 - `STRONGLY_CONSTRAINED`
@@ -18,9 +16,20 @@ Every evidence-coded field uses exactly one state:
 - `NA_NOT_APPLICABLE`
 - `PENDING_REVIEW`
 
-`PENDING_REVIEW` is workflow state only and may never enter analysis.
+`PENDING_REVIEW` is workflow-only and never enters analysis.
 
-## Variables and operational boundaries
+## Missingness semantics
+
+A missingness state is itself a scientific result and must not be disguised as a substantive value.
+
+- `NA_NOT_MEASURED`: source supports that the construct is inadequately known; the value may be blank.
+- `NA_SOURCE_CONFLICT`: credible sources remain materially incompatible after date/method/construct reconciliation; value may be blank and the conflict must be logged in `SOURCE_CONFLICT_AUDIT.md`.
+- `NA_NOT_APPLICABLE`: construct is not meaningful; value may be blank.
+- `NA_UNCERTAIN`: a plausible category may be carried when evidence points toward it but confidence is insufficient.
+
+Every non-pending state requires a source key even when the scientific value is blank.
+
+## Variables
 
 ### composition_value
 - ROCK_METAL
@@ -38,14 +47,14 @@ Do not infer bulk composition solely from density or surface color.
 - SUBSTANTIAL
 - DEEP_ENVELOPE
 
-A transient plume or escaping gas cloud is **not automatically** a gravitationally bound atmosphere. This is why Enceladus can have directly observed jets while its atmosphere field remains pending until the atmospheric construct is specifically sourced.
+Transient plumes are not automatically atmospheres.
 
 ### differentiation_value
 - UNDIFFERENTIATED_OR_RUBBLE
 - PARTIAL_OR_UNCERTAIN
 - DIFFERENTIATED
 
-Shape/roundness alone is not proof of differentiation.
+Roundness is not proof of internal differentiation.
 
 ### geologic_activity_value
 - NONE_DETECTED
@@ -53,7 +62,7 @@ Shape/roundness alone is not proof of differentiation.
 - CURRENT_OR_RECENT
 - UNCERTAIN
 
-This refers to endogenous or internally coupled geological activity. Impact cratering alone does not count.
+This is endogenous or internally coupled activity; impacts alone do not count.
 
 ### ocean_value
 - NO_EVIDENCE
@@ -61,9 +70,7 @@ This refers to endogenous or internally coupled geological activity. Impact crat
 - STRONG_EVIDENCE
 - CONFIRMED_OR_NEAR_CONSENSUS
 
-**Temporal clarification:** this variable represents evidence for a **present-day or plausibly persistent subsurface liquid ocean**, not merely an ancient/paleo-ocean. Evidence for a past ocean is preserved in notes/provenance but does not populate the current-ocean value. Therefore Charon's inferred ancient ocean does not receive a current ocean code.
-
-Generic water ice or volatile richness is insufficient for an ocean code.
+This refers to a present-day or plausibly persistent liquid subsurface ocean. Paleo-ocean evidence is retained in notes but does not populate this variable.
 
 ### tidal_heating_value
 - NEGLIGIBLE
@@ -71,27 +78,30 @@ Generic water ice or volatile richness is insufficient for an ocean code.
 - IMPORTANT
 - DOMINANT
 
-For direct-Sun non-satellites this may be `NA_NOT_APPLICABLE`; for satellites, synchronous rotation alone does not establish important tidal heating.
+For direct-Sun non-satellites this may be `NA_NOT_APPLICABLE`. Synchronous rotation alone does not establish important tidal heating.
+
+## Source-conflict adjudication
+
+Before using `NA_SOURCE_CONFLICT`, check whether disagreement is actually:
+
+1. temporal supersession by newer data;
+2. different measurement targets;
+3. direct observation versus model inference;
+4. different definitions of the same construct.
+
+Only unresolved material disagreement remains a live conflict. Historical supersession is documented but does not force `NA_SOURCE_CONFLICT`.
 
 ## Source hierarchy
 
-1. Mission/instrument teams, NASA/JPL/ESA/USGS data products.
+1. Mission/instrument teams and NASA/JPL/ESA/USGS data products.
 2. Peer-reviewed synthesis/review papers.
 3. Peer-reviewed primary literature.
-4. Agency overview pages only when they explicitly summarize established findings.
-
-Wikipedia, popular summaries, and unsourced catalogues may be discovery aids but cannot be final evidence sources.
+4. Agency overview pages that explicitly summarize established findings.
 
 ## Anti-circularity
 
-Coders must not see QCA truth tables or solution terms while evidence states are assigned. Calibration is frozen only after evidence-state coding and source-conflict audit are complete.
+Coders must not inspect QCA truth tables, calibration performance or solution terms while evidence states are assigned. Calibration freezes only after evidence coding and source-conflict adjudication are complete.
 
 ## Audit requirements
 
-Each populated value needs:
-- source key / DOI or agency URL
-- retrieval date
-- evidence state
-- short rationale
-- direct / constrained / model-inferred status
-- reviewer/conflict flag where relevant
+Each populated state needs a source key, retrieval date, short rationale, evidence level and conflict/adjudication flag where relevant.

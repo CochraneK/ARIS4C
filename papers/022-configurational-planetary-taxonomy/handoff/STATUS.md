@@ -1,22 +1,24 @@
 # STATUS · ARIS4C022
 
-- State: Pilot-1 evidence coding expanded / small-body acquisition gate
+- State: Pilot-1 evidence coding near small-body boundary / conflict audit active
 - Portfolio activity: active
-- Progress estimate: 59%
+- Progress estimate: 68%
 - Frozen case frame: 50 bodies
 - Raw physical matrix: 34/50 authoritative JPL core physical values
-- Orbit v0.2: 8 JPL planet elements + 5 derived dwarf-planet a + 21 JPL satellite mean-element rows + 16 pending small bodies
-- Derived physics v0.2: 34/50 gravity/escape/density/insolation; Margot Pi for 13 direct-Sun bodies
-- Evidence protocol v0.2: frozen before QCA; current-ocean vs paleo-ocean semantics explicitly separated
-- Evidence v0.3 coverage:
-  - composition 19/50
-  - atmosphere 18/50
-  - differentiation 18/50
-  - geological activity 9/50
-  - present/persistent ocean evidence 5/50
-  - tidal heating 13/50
-  - total 82/300 non-pending cells
-- Batch 02: Moon, Io, Europa, Ganymede, Callisto, Enceladus, Titan, Triton, Charon
-- Small-body gate: live JPL SBDB raw JSON still required for 16 small/boundary cases
+- Orbit v0.2: 8 JPL planet elements + 5 derived dwarf a + 21 JPL satellite mean elements + 16 pending small bodies
+- Evidence protocol v0.3: missingness and source-conflict semantics frozen before QCA
+- Evidence v0.4 coverage:
+  - composition 34/50
+  - atmosphere 24/50
+  - differentiation 24/50
+  - geology 23/50
+  - present/persistent ocean 14/50
+  - tidal heating 20/50
+  - total 139/300 non-pending cells
+- Batch 03 primary cases: Phobos, Deimos, Mimas, Tethys, Dione, Rhea, Iapetus, Miranda, Ariel, Umbriel, Titania, Oberon, Haumea, Makemake, Eris
+- Pluto/Triton receive additional NASA Ocean Worlds updates
+- Source-conflict audit started: Mimas historical frozen-solid framing vs 2024 Nature ocean result adjudicated as temporal supersession
+- Composition now has an evidence state for all 34 non-small-body cases; the remaining 16 composition gaps are exactly the SBDB small/boundary stratum
+- Small-body gate: live JPL SBDB raw JSON still required for 16 cases
 - Dwarf-orbit gate: 5 derived semimajor axes still await live SBDB/Horizons replacement
-- Anti-circularity: all 50 rows remain UNEXPOSED_TO_QCA_RESULT; no calibration, truth table or solution inspected
+- Anti-circularity: all 50 rows remain UNEXPOSED_TO_QCA_RESULT; no fsQCA calibration/truth table/solution inspected
