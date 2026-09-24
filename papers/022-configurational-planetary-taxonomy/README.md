@@ -2,58 +2,54 @@
 
 把“什么算行星 / 矮行星 / 卫星 / 小天体”写成可检验的构型分类问题。火星仍是正对照，不是分类悬案。
 
-## 当前数据底座
+## 已冻结的 M2
+
+主 M2 在看任何结果前固定为：
+
+1. SCALE → escape velocity
+2. BULK_MATERIAL → density proxy
+3. ATMOSPHERE_RETENTION → atmosphere evidence
+4. INTERNAL_ORGANIZATION → differentiation evidence
+5. SOLAR_ENERGY → relative insolation
+
+定义性/轨道层级/动力学判据不能进入 M2 条件。Geology/ocean/tidal heating 只进入预声明 sensitivity。
+
+## 数据与证据
 
 - 50 个冻结案例。
-- `raw_physical_core_v0.1.csv`：34/50 有 JPL 核心物理数据。
-- `orbital_geometry_v0.2.csv`：8 行星 JPL approximate elements；5 矮行星 derived-a；21 卫星 JPL Mean Elements；16 小天体数值层待 SBDB。
-- `derived_physics_v0.2.csv`：34 个案例已有重力、逃逸速度、密度诊断和太阳环境。
-- `evidence_state_v0.6.csv`：188/300 个证据状态完成，composition evidence-state **50/50**。
-- `SOURCE_REGISTRY.md`：全部 evidence key 可在当前版本解析。
-- `SOURCE_CONFLICT_AUDIT.md`：4 个差异案例已 adjudicate，0 个 unresolved conflict。
+- physical / orbit / derived 数值层目前 34/50 完整到主量级。
+- composition evidence-state 50/50。
+- `evidence_state_v0.7.csv` 增加 readiness-targeted Batch 06。
+- `M2_READINESS_GAP_MAP_v0.2.csv` 给每一个案例标出五条件具体缺口。
 
-## M2 已经冻结，但还不能跑
+## Readiness：19 → 25
 
-在没有查看任何 QCA 结果的情况下，主 M2 固定为 5 个非定义性条件族：
+当前主条件 substantive coverage：
 
-1. **SCALE** → escape velocity
-2. **BULK_MATERIAL** → density（物质状态 proxy，不等于“真实组成”）
-3. **ATMOSPHERE_RETENTION** → atmosphere evidence
-4. **INTERNAL_ORGANIZATION** → differentiation evidence
-5. **SOLAR_ENERGY** → relative insolation
+- SCALE 34/50
+- BULK_MATERIAL 34/50
+- ATMOSPHERE_RETENTION **28/50**
+- INTERNAL_ORGANIZATION **36/50**
+- SOLAR_ENERGY 34/50
 
-Pilot-0 原来的 INTERNAL_ACTIVITY 被提前移到 sensitivity，因为“地质活动”对固态天体和气态巨行星并不具有同一测量语义。
+五条件完整：**25/50**。
 
-同时明确禁止把 direct-Sun orbit、satellite status、cleared neighborhood、Margot Π、Soter μ、roundness 等定义/动力学标签偷偷放回 M2。
+分层门槛：
+- planets 8/8：PASS
+- dwarf planets **4/5：PASS**
+- satellites **13/21：PASS**
+- small/boundary **0/16：FAIL**
 
-## Readiness audit
+因此现在已经不是“矮行星/卫星证据不足”在卡研究，真正主瓶颈是 **16 个 small/boundary 的 JPL SBDB numeric layer**。
 
-当前五条件完整案例只有 **19/50**：
+## 当前 gate
 
-- planets 8/8
-- dwarf planets 2/5
-- satellites 9/21
-- small/boundary bodies 0/16
+1. 取得 16-case live SBDB physical/orbit snapshot；
+2. 让至少 10 个 small/boundary 同时拥有五个主条件；
+3. atmosphere 28 → >=40；
+4. internal organization 36 → >=40；
+5. complete cases 25 → >=35；
+6. 然后冻结 calibration；
+7. **再第一次看 QCA。**
 
-所以当前结论是：**FAIL — not calibration-ready**。
-
-冻结的最低门槛是：
-- 每个主条件 >=40/50 substantive values；
-- 五条件完整案例 >=35/50；
-- 完整 strata 至少 8 planets / 4 dwarfs / 12 satellites / 10 small bodies。
-
-这一步的意义是防止后面看到结果不好再删变量、换阈值、缩样本。
-
-## 下一步
-
-只补 readiness-critical 缺口：
-
-1. live JPL SBDB 16-case numeric snapshot；
-2. 替换 5 个矮行星 derived-a；
-3. atmosphere 从 25 substantive cases 提到 >=40；
-4. differentiation 从 32 提到 >=40；
-5. 达到 complete-case / strata gate；
-6. 然后冻结 calibration anchors；
-7. **再第一次看 QCA 结果。**
-
-**目前 calibration、truth table、consistency、PRI、coverage、solution 全部仍未查看。**
+目前 calibration / truth table / consistency / PRI / coverage / solution 仍全部未查看。
