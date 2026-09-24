@@ -86,22 +86,31 @@ def main():
                 rw[w["key"]]=w
 
     events=Counter()
-    matched_by_pubyear=Counter()
-    all_doi_by_pubyear=Counter()
+    all_doi_by_rwdb_year=Counter()
+    matched_with_field_by_rwdb_year=Counter()
+    matched_event_by_openalex_year=Counter()
+    publication_year_discordance=Counter()
     for doi,w in rw.items():
         pd=parse_date(w.get("earliest_publication_date"))
         rd=parse_date(w.get("earliest_retraction_date"))
-        if pd: all_doi_by_pubyear[pd.year]+=1
+        if pd:
+            all_doi_by_rwdb_year[pd.year]+=1
         ow=matches.get(doi)
-        if not ow or not rd: continue
+        if not ow or not rd:
+            continue
         pubyear=ow.get("publication_year")
         fid,fname=field_from_work(ow)
-        if not pubyear or not fid: continue
+        if not pubyear or not fid:
+            continue
         pubyear=int(pubyear)
-        matched_by_pubyear[pubyear]+=1
+        if pd:
+            matched_with_field_by_rwdb_year[pd.year]+=1
+            publication_year_discordance[pubyear-pd.year]+=1
+        matched_event_by_openalex_year[pubyear]+=1
         age=max(0,rd.year-pubyear)
         events[(pubyear,fid,age)]+=1
-        if fname: names[fid]=fname
+        if fname:
+            names[fid]=fname
 
     args.out.parent.mkdir(parents=True,exist_ok=True)
     fields=[
@@ -136,22 +145,26 @@ def main():
                 })
                 cumulative=cumulative_after
 
-    years=sorted(set(all_doi_by_pubyear)|set(matched_by_pubyear))
+    years=sorted(set(all_doi_by_rwdb_year)|set(matched_with_field_by_rwdb_year))
     coverage={
-        "schema_version":1,
+        "schema_version":2,
         "analysis_cutoff":args.analysis_cutoff,
         "estimand_boundary":"RWDB DOI/OpenAlex-linkable recorded retractions among OpenAlex core publication denominators until no-DOI/unmatched identity coverage is resolved",
         "denominator_schema_version":denom_meta.get("schema_version"),
+        "coverage_year_basis":"RWDB earliest publication year for both numerator and denominator of the match-with-field coverage diagnostic",
+        "hazard_event_year_basis":"OpenAlex publication_year, aligned to the OpenAlex publication denominator",
         "years":{
             str(y):{
-                "rwdb_unique_doi_works_with_publication_date":all_doi_by_pubyear[y],
-                "unique_openalex_matched_with_field":matched_by_pubyear[y],
+                "rwdb_unique_doi_works_with_publication_date":all_doi_by_rwdb_year[y],
+                "unique_openalex_matched_with_field_same_rwdb_year_basis":matched_with_field_by_rwdb_year[y],
                 "match_field_coverage_among_rwdb_doi_works":(
-                    matched_by_pubyear[y]/all_doi_by_pubyear[y]
-                    if all_doi_by_pubyear[y] else None
+                    matched_with_field_by_rwdb_year[y]/all_doi_by_rwdb_year[y]
+                    if all_doi_by_rwdb_year[y] else None
                 )
             } for y in years
         },
+        "openalex_event_counts_by_publication_year":dict(sorted(matched_event_by_openalex_year.items())),
+        "openalex_minus_rwdb_publication_year_distribution":dict(sorted(publication_year_discordance.items())),
         "gate":"Do not present as full-population hazard until no-DOI/unmatched sensitivity and eligible work-type gates pass."
     }
     args.coverage_out.write_text(json.dumps(coverage,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
