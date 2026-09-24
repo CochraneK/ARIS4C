@@ -46,6 +46,14 @@ A watched no-op builder revision was committed to trigger the canonical workflow
 
 No GitHub Actions bot PDF commit has appeared yet.
 
+## Runner / publication diagnostics (2026-09-24)
+
+A second watched builder revision was committed as `f5070aa1b2f388627a51ee367124446988fc035f` (`ci(019): retrigger canonical public PDF publication`). The resulting workflow run `35965678753` failed before any build step executed. A direct re-run of failed jobs was accepted by GitHub, but attempt 2 reproduced the same failure; the latest build job is `107530128521` and exposes no executed steps. This narrows the remaining gate to GitHub Actions runner/startup availability rather than the ARIS4C019 Python/PDF build itself.
+
+A second local fallback reproduction was also completed from the exact current GitHub Markdown, four SVG figures and publication CSS using the available local rendering stack. After PDF optimization, English = **11 pages / 100,363 bytes** and Chinese = **7 pages / 207,347 bytes**. Both retain extractable text and passed full-page render inspection without broken CJK glyphs, figure clipping or overlap. This fallback QA is diagnostic only: it does **not** satisfy the canonical repository finish gate because the two Git binary paths are still absent.
+
+The earlier 12-page English / 7-page Chinese local reproduction above remains the closest reproduction of the repository's pinned canonical builder. The 11-page English fallback reflects the locally available Markdown-rendering stack and must not be treated as a scientific-content change.
+
 ## Decision
 
 Do **not** promote ARIS4C019 to Finish / 100% until the two canonical PDF paths exist on `main` and are re-read from GitHub.
