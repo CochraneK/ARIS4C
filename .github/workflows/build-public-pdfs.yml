@@ -13,6 +13,18 @@ on:
       - 'tools/build_public_pdfs.py'
       - 'tools/pdf_publication.css'
       - '.github/workflows/build-public-pdfs.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'papers/001-gca-bees/manuscript/**'
+      - 'papers/001-gca-bees/figures/**'
+      - 'papers/002-language-geometry/manuscript/**'
+      - 'papers/002-language-geometry/figures/**'
+      - 'papers/019-time-off-happiness/manuscript/**'
+      - 'papers/019-time-off-happiness/figures/**'
+      - 'tools/build_public_pdfs.py'
+      - 'tools/pdf_publication.css'
+      - '.github/workflows/build-public-pdfs.yml'
   workflow_dispatch:
 
 permissions:
@@ -64,6 +76,7 @@ jobs:
           PY
 
       - name: Commit refreshed PDFs
+        if: github.event_name != 'pull_request'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
