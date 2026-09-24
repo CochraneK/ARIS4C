@@ -59,3 +59,10 @@
 - Built passage-level adjudicated evidence; exposure-contaminated Baal kingship-transfer remains excluded.
 - Froze conservative 11 × 24 seed matrix; passage-level absence does not become tradition-level absence without explicit source coverage.
 - Project advanced to 76%; next limiting task is negative-evidence closure.
+
+## 2026-09-24 · genealogy/contact separation
+- Added categorical genealogy/language layers without invented numeric phylogenetic distances.
+- Marked HUR_HIT_LBA as composite Hittite/Hurrian and non-tree-ready until source-layer split.
+- Seeded four independently sourced historical-contact edges: Sumerian-Akkadian bilingual scribal; Hittite-Ugaritic imperial/scribal; Hittite-Egypt diplomatic/military; Ugarit-Egypt maritime/diplomatic.
+- Kept the proposed Hurro-Hittite → Greek reception relation in a separate hypothesis table rather than a confirmed contact edge.
+- Project advanced to 80%; absence closure and external phylogeny acquisition are next.

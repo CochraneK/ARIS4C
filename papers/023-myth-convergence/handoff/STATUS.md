@@ -1,21 +1,20 @@
 # Status
 
 ## State
-Active · 76%
+Active · 80%
 
 ## Current stage
-v0.1.1 rules/regression PASS · replacement Sumerian witness frozen · first conservative source-backed tradition × motif matrix frozen.
+v0.1.1 matrix spine frozen · genealogy/contact layers separated and seeded.
 
 ## Evidence
-- Frozen coder files remain untouched.
-- Versioned motifs_v0.1.1.csv contains the mandatory amendments plus regression clarifications.
-- All 21 documented disagreements are addressed: 15 by deterministic adjudication, 6 by source withdrawal/replacement, 0 unresolved.
-- Sumerian anthropogony now uses ETCSL Enki and Ninmah 24-37.
-- First 11 × 24 seed matrix is frozen conservatively; passage-level absences remain not_observed until negative-evidence coverage is closed.
-- Exposure-contaminated Baal kingship-transfer cell remains excluded.
+- Dual-AI calibration PASS and v0.1.1 regression remain frozen.
+- Conservative 11×24 seed matrix is frozen without manufacturing tradition-level absences.
+- genealogy_v0.1.csv records language layers and flags the Hurrian-Hittite composite case as non-tree-ready.
+- contact_edges_v0.1.csv contains four externally supported historical-contact edges sourced independently of motif similarity.
+- transmission_hypotheses_v0.1.csv keeps Hurro-Hittite → Greek reception outside the confirmed contact network.
 
 ## Next gate
-Build family-by-tradition source-coverage manifests and close defensible negative evidence for the 24 calibration motifs. Then validate the analysis-ready long matrix, run coverage/prevalence, and only after adequate comparable-N run pairwise Jaccard/clustering.
+Close negative-evidence/source-bundle coverage for the 24 calibration motifs; acquire an external language phylogeny/distance representation and expand dated contact/intermediary evidence. Then run coverage/prevalence and the first strictly descriptive similarity pilot.
 
 ## Blocker
-No hard blocker. Limiting task is negative-evidence closure: a selected passage lacking a motif is not enough to claim the bounded tradition lacks it.
+No hard blocker. Main scientific bottleneck remains source-bundle negative-evidence closure; phylogenetic modeling also waits on an external tree rather than hand-made distances.

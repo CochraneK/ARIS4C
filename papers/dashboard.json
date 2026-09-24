@@ -180,12 +180,12 @@
       "blocker": "Primary blocker is numeric acquisition from live JPL SBDB object payloads in the current execution surfaces. Methodological work remains unblocked; no QCA result may be inspected before the readiness gates pass."
     },
     "023": {
-      "progress": 76,
-      "stage": "v0.1.1 regression PASS · replacement Sumerian witness + conservative 11×24 source-backed matrix frozen",
+      "progress": 80,
+      "stage": "v0.1.1 matrix spine frozen · genealogy/contact evidence layers separated and seeded",
       "activity": "active",
-      "evidence": "v0.1.1 materialized; documented calibration disagreements addressed by explicit adjudication or Sumerian witness replacement. Enki and Ninmah 24-37 replaces the defective Sumerian anthropogony locator. Passage-level adjudicated evidence and conservative 11×24 seed matrix are frozen; passage-level negatives are not promoted to tradition-level absence.",
-      "next_gate": "Close negative-evidence coverage family-by-family with explicit source manifests; validate analysis-ready matrix; run coverage/prevalence; only then run Jaccard/clustering.",
-      "blocker": "No hard blocker. Scientific bottleneck is defensible tradition-level absence closure."
+      "evidence": "Calibration and v0.1.1 regression are frozen; conservative 11×24 matrix exists. Genealogy records explicit language strata without invented distances, HUR_HIT composite ancestry is flagged, four independently sourced historical-contact edges are frozen, and Hurro-Hittite→Greek reception is kept in a separate hypothesis table.",
+      "next_gate": "Close source-bundle negative evidence for the 24 calibration motifs; acquire an external language phylogeny/distance representation; expand dated contact/intermediary evidence; then run coverage/prevalence and first descriptive similarity pilot.",
+      "blocker": "No hard blocker. Main bottleneck is defensible negative-evidence closure; quantitative phylogenetic modeling also waits on an external tree/distance source."
     }
   },
   "scheduling": {

@@ -1,0 +1,13 @@
+tradition_id,language_layer,macrofamily,branch,phylogeny_eligible,tree_role,notes
+SUM_OB,Sumerian,Sumerian_isolate,Sumerian,true,isolate_outgroup,Do not force into Afroasiatic/Indo-European tree.
+AKK_OB,Akkadian,Afroasiatic,Semitic_East,true,Semitic,Same language lineage as AKK_MB_SB at a later time slice.
+AKK_MB_SB,Akkadian,Afroasiatic,Semitic_East,true,Semitic,Later Akkadian time slice; temporal dependence is separate from cross-sectional relatedness.
+HUR_HIT_LBA,Hittite,IndoEuropean,Anatolian,false,composite_layer,Tradition also contains Hurrian-source material; split layers before tree modeling.
+HUR_HIT_LBA,Hurrian,Hurrian_Urartian,Hurrian,false,composite_layer,Hurrian source layer adapted in Hittite transmission; do not collapse into Hittite ancestry.
+UGARIT_LBA,Ugaritic,Afroasiatic,Semitic_Northwest,true,Semitic,Northwest Semitic; no numeric distance assigned here.
+EGY_MK,Middle Egyptian,Afroasiatic,Egyptian,true,Egyptian,Separate temporal stratum from EGY_NK.
+EGY_NK,Egyptian ritual register,Afroasiatic,Egyptian,true,Egyptian,Temporal continuity with earlier Egyptian needs longitudinal handling.
+VED_RV,Vedic Sanskrit,IndoEuropean,IndoAryan,true,IndoEuropean,External dated Indo-European phylogeny required before quantitative distance.
+GRC_ARCH,Ancient Greek,IndoEuropean,Hellenic,true,IndoEuropean,External dated Indo-European phylogeny required before quantitative distance.
+HEB_GEN,Biblical Hebrew,Afroasiatic,Semitic_Northwest,true,Semitic,Composition history remains separate from language genealogy.
+CHN_WS_HAN,Old Chinese,SinoTibetan,Sinitic,true,SinoTibetan,Distal comparison; no numeric tree distance assigned at this stage.

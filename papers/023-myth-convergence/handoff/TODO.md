@@ -1,23 +1,23 @@
 # TODO
 
 ## Completed
-- [x] Dual-AI reliability gate PASS.
-- [x] Freeze ontology v0.1.
-- [x] Materialize v0.1.1 rule amendments.
-- [x] Replace withdrawn Sumerian anthropogony witness with Enki and Ninmah 24-37.
-- [x] Regression-check all 21 documented disagreements.
-- [x] Freeze passage-level adjudicated evidence.
-- [x] Freeze first conservative 11 tradition × 24 motif seed matrix.
+- [x] Dual-AI reliability PASS; ontology v0.1 + v0.1.1 rules frozen.
+- [x] Replace defective Sumerian anthropogony witness.
+- [x] Regression-check 21 disagreements.
+- [x] Freeze conservative 11×24 source-backed seed matrix.
+- [x] Freeze categorical language/genealogy layer.
+- [x] Seed independently sourced historical contact network.
+- [x] Separate transmission hypotheses from confirmed contact edges.
 
 ## Current critical path
-- [ ] Create source-coverage manifest for each tradition × calibration family.
-- [ ] Define explicit criteria for tradition-level absent.
-- [ ] Close flood-family negative evidence where source coverage is strongest.
-- [ ] Close divine-conflict negatives for Vedic / Greek / Ugaritic / Hurrian-Hittite units.
-- [ ] Close anthropogony negatives for Sumerian / Akkadian / Hebrew / Vedic units.
-- [ ] Add source-backed Egyptian calibration-family evidence or retain principled not_observed.
-- [ ] Validate analysis-ready matrix and run coverage/prevalence.
-- [ ] Run Jaccard + clustering only when comparable-N gate is met.
-- [ ] Populate historical contact edges independently of myth similarity.
-- [ ] Populate genealogy/language structure and environmental variables.
+- [ ] Build source-bundle coverage manifest for each tradition × calibration family.
+- [ ] Close defensible tradition/source-bundle negatives.
+- [ ] Add Egyptian evidence for calibration families or retain principled not_observed.
+- [ ] Acquire external language tree/distance source; do not invent numeric phylogenetic distance.
+- [ ] Expand dated contact edges and intermediary routes with independent historical sources.
+- [ ] Validate analysis-ready matrix.
+- [ ] Run coverage/prevalence diagnostics.
+- [ ] Run first descriptive Jaccard/clustering only after comparable-N gate.
+- [ ] Pilot ancestry-vs-contact separation.
+- [ ] Freeze environmental variables.
 - [ ] Decide whether QCA adds information; QCA remains OFF.
