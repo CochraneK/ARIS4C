@@ -26,3 +26,14 @@
 ## 下一 gate
 
 为 50 个案例建立带字段级 provenance 的 IAU/NASA/JPL 原始物理与轨道矩阵，并按论文原式实现 Margot/Soter 动力学指标。
+
+## 首批真实数据
+
+已把 NASA NSSDC 的 10 个主要天体比较表作为 provenance seed 落盘：八大行星 + Moon + Pluto。它不是最终 50-body 矩阵，而是先验证单位、轨道参照系和派生公式。
+
+这一小步已经抓出一个很重要的问题：NASA 紧凑表里的 Diameter 是**赤道直径**，不能默认当作平均体积半径去重算巨行星密度；Gravity 也包含自转效应，巨行星按 1-bar 层定义。因此 022 不会把“网页上几个数字”直接拼成看似精确的统一矩阵。
+
+见：
+- `data/raw/nasa_nssdc_planetary_fact_sheet_seed.csv`
+- `process/NASA_SEED_QC.md`
+- `process/SOURCE_INGESTION_PLAN.md`
