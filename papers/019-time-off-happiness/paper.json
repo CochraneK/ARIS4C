@@ -5,15 +5,15 @@
   "title": "Time Off and Happiness Across Countries: Long-Run Institutional Change, Comparative Well-Being Panels, and Policy-Reform Evidence",
   "short_title": "Time Off × Happiness · Long Run",
   "year": 2026,
-  "status": "modern-historical-trend-and-ilo-institutional-modules-locked-annual-historical-reconstruction-active",
+  "status": "modern-historical-trend-and-century-legal-modules-locked-historical-outcome-reconstruction-active",
   "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
-  "summary": "Long-run cross-national study of statutory paid annual leave, realized working time and subjective well-being. Pilot-0 remains frozen. The expanded modern annual module, full published WDH historical trend bridge, and complete ILO C052/C132 institutional diffusion history are now materialized. Official WDH HTML year-level reconstruction has been independently validated on two long-run series, while full annual HTML execution, national legal chronology, and additional survey outcome panels remain active.",
+  "summary": "Long-run cross-national study of statutory paid annual leave, realized working time and subjective well-being. The project now spans pre-war institutional diffusion, late-20th-century national-law snapshots, a 155-country 2012 statutory-leave cross-section, 1870-2023 actual working-hours history, published WDH long-run wellbeing trends from 1946 onward, and modern annual WHR panels. Outcome-blind primary-law review has frozen a first historical reform registry. Across modern within-country, full historical trend and 2012 global cross-sectional modules, no stable one-direction aggregate leave/hours-wellbeing relationship is established.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder gates frozen and executed; WHR2024 source refresh, complete bounded 11-jump legal audit, independently frozen Israel holdout, bilingual manuscripts, four manuscript figures/tables, SIR double-anonymous DOCX/PDF package, anonymous replication bundle, final visual/identity QA, and one-page portfolio explainer completed; scope reopened 2026-09-24 after adequacy audit to add long-run institutional history, post-1945 multi-source well-being panels, broad country coverage and a full statistical synthesis",
-    "version": "v0.12.0"
+    "version": "v0.13.0"
   },
   "links": {
     "paper_en": "manuscript/WORKING_PAPER_EN.md",
@@ -47,7 +47,14 @@
     "ilo_history": "process/ILO_PAID_HOLIDAY_HISTORY_GATE.md",
     "ilo_c132_harmonization": "process/ILO_C132_DECLARATION_HARMONIZATION.md",
     "wdh_html_validation": "process/WDH_HTML_RECONSTRUCTION_VALIDATION.md",
-    "wdh_html_builder": "code/rebuild_wdh_html_annual_panel.py"
+    "wdh_html_builder": "code/rebuild_wdh_html_annual_panel.py",
+    "historical_paid_leave_spine": "process/HISTORICAL_PAID_LEAVE_SPINE.md",
+    "ilo_natlex_2000_gate": "process/ILO_NATLEX_2000_LEAVE_GATE.md",
+    "ilo_travail_2012_gate": "process/ILO_TRAVAIL_2012_LEAVE_GATE.md",
+    "ilo_2000_2012_bridge": "process/ILO_2000_2012_LEAVE_BRIDGE.md",
+    "historical_reform_registry_v2": "process/HISTORICAL_REFORM_VERIFICATION_GATE_V2.md",
+    "cross_section_2012": "process/ILO2012_WHR2012_CROSS_SECTION.md",
+    "cross_section_2012_diagnostics": "process/ILO2012_WHR2012_DIAGNOSTICS.md"
   },
   "tags": [
     "ARIS",
@@ -255,6 +262,66 @@
           }
         ],
         "decision": "official WDH HTML accepted as raw-year reconstruction source; preserve finding_measure_code and within-year finding multiplicity"
+      },
+      "legal_snapshots": {
+        "natlex_2000": {
+          "countries": 41,
+          "selection": "C132 non-ratifiers with legislation adopted/amended in preceding decade",
+          "ge_3_weeks": 25,
+          "lt_3_weeks": 15,
+          "not_specified": 1,
+          "status": "materialized"
+        },
+        "travail_2012": {
+          "rows": 155,
+          "exact_values": 147,
+          "no_universal_minimum": 7,
+          "interval_only": 1,
+          "status": "materialized"
+        },
+        "ilo2012_wb2012_crosscheck": {
+          "exact_numeric_pairs": 143,
+          "pearson": 0.8318757216211505,
+          "mean_absolute_difference_days": 2.174825174825175,
+          "priority_review_ge5_days": 22
+        }
+      },
+      "reform_registry_v2": {
+        "status": "frozen-outcome-blind",
+        "a_tier": [
+          "Bulgaria 2001",
+          "Slovakia 2002"
+        ],
+        "b_tier": [
+          "Namibia 2008 broad-code",
+          "Great Britain 2007/2009 public-holiday-linked"
+        ],
+        "rejected": [
+          "Nicaragua source conflict",
+          "Algeria harmonization artifact",
+          "Mali harmonization artifact"
+        ]
+      },
+      "ilo2012_whr2012": {
+        "n": 114,
+        "pearson": 0.07930075543019524,
+        "spearman": 0.08540882180496064,
+        "bivariate_beta_per_5_days": 0.07274755986108694,
+        "bivariate_ci95": [
+          -0.10037048861748618,
+          0.24586560833966006
+        ],
+        "adjusted_beta_per_5_days": 0.02849600792096124,
+        "adjusted_ci95": [
+          -0.10348627747508082,
+          0.1604782933170033
+        ],
+        "leave_one_country_out_beta_range": [
+          0.00622552977778551,
+          0.061914739545570474
+        ],
+        "no_europe_beta": -0.014636326785606502,
+        "interpretation": "no robust linear, quadratic or region-general aggregate association"
       }
     },
     "expanded_modern": {
