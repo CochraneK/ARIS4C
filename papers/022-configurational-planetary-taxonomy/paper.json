@@ -1,0 +1,61 @@
+{
+  "id": "022",
+  "portfolio_id": "ARIS4C-022",
+  "slug": "configurational-planetary-taxonomy",
+  "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
+  "short_title": "Planetary Taxonomy × fsQCA",
+  "year": 2026,
+  "status": "registered",
+  "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
+  "summary": "A falsification-first configurational taxonomy of Solar System bodies. The project uses crisp-set and fuzzy-set QCA as a set-theoretic classification tool—not as a vote on established labels—to test which combinations of orbital hierarchy, dynamical dominance, self-gravity/roundness, mass-size structure, composition, atmosphere, thermal-geological state, and stellar environment distinguish planets, dwarf planets, natural satellites, and small bodies. Mars is treated as a positive-control planet under the current IAU definition.",
+  "authors": [
+    "Cochrane Kang"
+  ],
+  "aris": {
+    "provenance": "ARIS4C user-requested project registered 2026-09-24. Initial framing separates definitional classification from causal inference, identifies Mars as a positive control rather than an unresolved planet-vs-satellite case, and freezes a first-pass variable-family and source plan.",
+    "version": "v0.1.0"
+  },
+  "links": {
+    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
+    "pipeline": "process/RESEARCH_PLAN.md",
+    "calibration": "process/VARIABLES_AND_CALIBRATION.md",
+    "sources": "data/SOURCE_REGISTRY.md"
+  },
+  "tags": [
+    "ARIS",
+    "ARIS4C",
+    "planetary science",
+    "planet definition",
+    "planetary taxonomy",
+    "QCA",
+    "fsQCA",
+    "set theory",
+    "dynamical dominance",
+    "orbital hierarchy",
+    "Mars",
+    "dwarf planets",
+    "natural satellites",
+    "Solar System"
+  ],
+  "bilingual_delivery": {
+    "english": true,
+    "chinese": true
+  },
+  "outputs": {
+    "paper_en": "not-started",
+    "paper_zh": "not-started",
+    "figures": {
+      "status": "planned",
+      "count": 0
+    },
+    "tables": {
+      "status": "planned",
+      "count": 0
+    },
+    "pdf": {
+      "status": "not-started",
+      "english": false,
+      "chinese": false
+    }
+  }
+}
