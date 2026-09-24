@@ -8,13 +8,21 @@
    - [x] Materialize 50-row physical matrix.
    - [x] Ingest 8 planets + 5 dwarf planets from JPL Planetary Physical Parameters.
    - [x] Ingest 21 satellites from JPL Satellite Physical Parameters.
-   - [ ] Run the frozen JPL SBDB snapshot for 16 small/boundary bodies.
-   - [ ] Ingest orbit geometry with heliocentric vs primary-centric variables kept separate.
+   - [x] Ingest 21 selected satellite orbit descriptors from JPL Mean Elements.
+   - [x] Build explicitly derived Pilot-1 heliocentric-a layer for 13 direct-Sun planet/dwarf rows.
+   - [ ] Replace/validate those 13 derived a values with pinned raw catalog/Horizons/SBDB orbit elements.
+   - [ ] Run frozen JPL SBDB raw snapshot for 16 small/boundary bodies.
 6. [x] Implement published Margot/Soter dynamical metrics from source equations and pin regression tests.
-7. [ ] Build missingness/uncertainty audit for composition, atmosphere, geology, and source conflicts.
-8. [ ] Freeze fsQCA calibration anchors before inspecting solutions.
-9. [ ] Run PLANET / DWARF_PLANET / SATELLITE outcomes separately.
-10. [ ] Run M2 non-definitional physical-signature model.
-11. [ ] Run calibration perturbation and leave-one-case-out sensitivity.
-12. [ ] Run unsupervised clustering / PCA companion analysis.
-13. [ ] Produce periodic-table-like visual taxonomy after the scientific matrix is stable.
+7. [~] Build missingness/uncertainty audit.
+   - [x] Physical/orbital provenance and missingness audit.
+   - [ ] Composition evidence state.
+   - [ ] Atmosphere evidence state.
+   - [ ] Differentiation / geology / ocean / tidal-heating evidence state.
+   - [ ] Source-conflict audit.
+8. [x] Build reproducible Pilot-1 derived physics for all currently complete cases.
+9. [ ] Freeze fsQCA calibration anchors before inspecting solutions.
+10. [ ] Run PLANET / DWARF_PLANET / SATELLITE outcomes separately.
+11. [ ] Run M2 non-definitional physical-signature model.
+12. [ ] Run calibration perturbation and leave-one-case-out sensitivity.
+13. [ ] Run unsupervised clustering / PCA companion analysis.
+14. [ ] Produce periodic-table-like visual taxonomy after the scientific matrix is stable.
