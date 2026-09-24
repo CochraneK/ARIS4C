@@ -164,11 +164,11 @@
       "blocker": "No data-acquisition blocker. GitHub Actions are currently failing before runner steps start, so generated README/Page refresh may need manual or later workflow execution; this does not block scientific analysis."
     },
     "021": {
-      "progress": 18,
-      "stage": "Concept design · historical replication gate",
+      "progress": 20,
+      "stage": "Concept design · multimethod historical replication gate",
       "activity": "wait",
-      "evidence": "Harff 2003 structural-risk model and Williams 2016 139-case QCA are frozen as replication anchors; outcome hierarchy, seven-family condition ontology, temporal firewall, QCA thresholds, PITF/V-Dem/EWP source inventory and continuity package are committed before empirical outcome inspection.",
-      "next_gate": "Acquire/hash PITF 2018 source files; reconstruct the historical Harff/Williams case universe and six-condition matrix; freeze calibration and run replication-only necessity/sufficiency analyses before any modern extension.",
+      "evidence": "Harff 2003 and Williams 2016 are frozen as historical anchors; the design is now method-neutral across QCA, CNA, NCA, event-history/rare-event models, predictive benchmarks and process tracing, with separate outcome definitions and a seven-family condition ontology.",
+      "next_gate": "Acquire/hash PITF 2018 sources; reconstruct the historical Harff/Williams frame; freeze a cross-method replication protocol and run Harff-style baseline + QCA + CNA before modern extension.",
       "blocker": "None; executable but queued behind higher-progress active portfolio work."
     },
     "022": {
