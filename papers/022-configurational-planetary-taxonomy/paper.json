@@ -5,7 +5,7 @@
   "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title": "Planetary Taxonomy × fsQCA",
   "year": 2026,
-  "status": "pilot0-case-frame-frozen",
+  "status": "pilot0-source-ingestion",
   "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
   "summary": "A falsification-first configurational taxonomy of Solar System bodies. A frozen 50-body Pilot-0 frame now separates a definitional IAU benchmark from non-definitional physical-signature models, so QCA can audit set-theoretic classification without circularly rediscovering the official definition.",
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-24. Initial framing separates definitional classification from causal inference, identifies Mars as a positive control rather than an unresolved planet-vs-satellite case, and freezes a first-pass variable-family and source plan. Pilot-0 froze a 50-body stratified Solar-System case frame, canonical raw-variable dictionary, compact 4–6-condition model ladder, anti-circularity benchmark, and deterministic frame validator before numerical QCA solutions were inspected.",
-    "version": "v0.2.0"
+    "version": "v0.3.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
@@ -22,7 +22,9 @@
     "sources": "data/SOURCE_REGISTRY.md",
     "model_ladder": "process/MODEL_LADDER.md",
     "case_frame": "data/case_frame_v0.1.csv",
-    "data_dictionary": "data/DATA_DICTIONARY.md"
+    "data_dictionary": "data/DATA_DICTIONARY.md",
+    "source_ingestion": "process/SOURCE_INGESTION_PLAN.md",
+    "seed_qc": "process/NASA_SEED_QC.md"
   },
   "tags": [
     "ARIS",
@@ -52,8 +54,8 @@
       "count": 0
     },
     "tables": {
-      "status": "pilot-0 case frame frozen",
-      "count": 1
+      "status": "Pilot-0 case frame + 10-body empirical seed",
+      "count": 2
     },
     "pdf": {
       "status": "not-started",
