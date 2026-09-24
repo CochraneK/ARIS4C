@@ -180,12 +180,12 @@
       "blocker": "None. Methodological guard remains: definitional benchmark and non-definitional physical-signature models must stay separate."
     },
     "023": {
-      "progress": 38,
-      "stage": "Calibration packet QA PASS · independent dual-coding gate",
+      "progress": 42,
+      "stage": "Reliability gate blocked · downstream analysis pipeline ready",
       "activity": "block",
-      "evidence": "24-motif v0.1 ontology + 120-judgment byte-identical A/B packet + reliability scorer. All 15 source passages now have usable locators, including Atrahasis I.195-240 / key I.210-226; philological and chronology caveats remain explicit.",
-      "next_gate": "Run genuinely independent coder A/B, score agreement and disagreement taxonomy, then revise/freeze ontology before constructing the source-backed matrix.",
-      "blocker": "A genuinely independent second coder is now required. The current controller cannot generate both sides of a reliability test."
+      "evidence": "Calibration v0.1 and locator QA are complete. Coding validator, missingness-safe Jaccard dyad builder, contact-edge schema and downstream analysis contract are committed; contact evidence is structurally separated from myth similarity and QCA remains conditional.",
+      "next_gate": "Obtain independent dual coding; meanwhile populate historically sourced contact/genealogy/environment tables without looking at similarity results.",
+      "blocker": "Formal motif-reliability inference requires a genuinely independent second coder; controller-side analysis infrastructure is ready."
     }
   },
   "scheduling": {

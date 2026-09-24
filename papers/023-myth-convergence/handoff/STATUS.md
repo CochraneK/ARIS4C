@@ -1,20 +1,21 @@
 # Status
 
 ## State
-Block · 38%
+Block · 42%
 
 ## Current stage
-Calibration v0.1 packet QA complete; independent dual-coding gate reached.
+Independent coding gate reached; downstream analysis pipeline prebuilt.
 
 ## Evidence
-- 24 motifs across flood, divine-conflict and anthropogony have frozen inclusion/exclusion rules.
-- 15 passages produce 120 family-specific judgments in byte-identical A/B templates.
-- All passage units now have usable locators; Atrahasis is frozen at I.195-240 with key material at I.210-226.
-- Packet QA preserves philological cautions rather than treating locator precision as historical certainty.
-- Reliability scorer is implemented for raw agreement, Cohen kappa, Gwet AC1 and confusion matrices.
+- Calibration v0.1: 24 motifs, 15 source passages, 120 judgments, identical A/B packets and reliability scorer.
+- Passage locator QA complete.
+- Coding validator now enforces four-state missingness and witness-scope values.
+- Pairwise similarity builder computes presence-Jaccard only on mutually scorable motifs and reports comparable-N plus simple matching as a secondary diagnostic.
+- Contact-network schema and a pre-analysis contract now prevent myth similarity from being reused as evidence of historical contact.
+- Analysis order and the conditions under which QCA may be enabled are explicitly frozen.
 
 ## Next gate
-Obtain genuinely independent coder-A/B responses, score reliability, inspect disagreement taxonomy, and revise/freeze ontology v0.1 accordingly.
+Independent dual coding remains the scientific gate. In parallel, populate source-backed contact edges and genealogy/environment tables only from external evidence, never from observed motif similarity.
 
 ## Blocker
-Formal progress now requires at least one genuinely independent second coder. The controller must not fill both A and B and call that reliability.
+A genuinely independent second coder is required before empirical motif similarity is treated as reliable.

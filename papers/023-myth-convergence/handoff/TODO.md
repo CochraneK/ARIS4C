@@ -1,24 +1,21 @@
 # TODO
 
-- [x] Freeze initial Pilot-0 sample.
-- [x] Create provisional 56-feature ontology.
-- [x] Audit seed source infrastructure.
-- [x] Correct Chinese temporal scope and split Egyptian strata.
-- [x] Select flood / divine-conflict / anthropogony calibration families.
-- [x] Split destructive inundation / exterminatory deluge.
-- [x] Split storm-vs-serpent / storm-vs-sea.
-- [x] Split earth/dust / clay-mud / potter-forming.
-- [x] Add witness-scope field.
+- [x] Freeze Pilot-0 case architecture and source audit.
 - [x] Freeze 24-motif calibration ontology v0.1.
-- [x] Generate byte-identical coder-A / coder-B packet templates.
-- [x] Add dependency-free reliability scorer.
-- [x] Resolve Atrahasis anthropogony locator.
-- [x] QA all 15 passage locators and preserve chronology cautions.
+- [x] Generate 120-judgment blinded A/B packet.
+- [x] QA passage locators.
+- [x] Implement reliability scorer.
+- [x] Implement coding validator.
+- [x] Implement missingness-safe pairwise Jaccard builder.
+- [x] Freeze historical-contact edge schema.
+- [x] Freeze downstream analysis contract and QCA trigger.
 - [ ] Obtain genuinely independent coder-A/B responses.
-- [ ] Quantify agreement and disagreement taxonomy.
+- [ ] Score reliability + disagreement taxonomy.
 - [ ] Revise/freeze full ontology v0.1 after reliability review.
 - [ ] Build first source-backed tradition × motif matrix.
-- [ ] Build historical contact-edge table.
-- [ ] Run descriptive similarity + clustering.
+- [ ] Populate historical contact edges from independent historical evidence.
+- [ ] Populate genealogy/language structure.
+- [ ] Freeze preregistered environmental variables.
+- [ ] Run descriptive coverage/similarity/clustering.
 - [ ] Pilot ancestry-vs-contact separation.
 - [ ] Decide whether QCA adds information after Pilot-0.
