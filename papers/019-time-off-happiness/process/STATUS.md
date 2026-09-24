@@ -1,8 +1,8 @@
 # ARIS4C019 · Process status
 
-- Stage: **Expanded modern statistics LOCKED · historical outcome/legal reconstruction active**
+- Stage: **Expanded modern statistics LOCKED · full WDH historical trend bridge LOCKED · legal/raw-outcome reconstruction active**
 - Activity: **active**
-- Progress: **75%**
+- Progress: **78%**
 - Scope correction remains in force: the former 98% state described only the narrow Pilot-0 publication package, not the full original research question.
 
 ## Frozen sub-study
@@ -59,3 +59,22 @@ This is **not** the final whole-project conclusion.
 6. rewrite EN/ZH manuscripts for the expanded project.
 
 Existing Pilot-0 PDF Actions pre-runner failure remains an engineering issue only and is not the project-level scientific blocker.
+
+
+## Full WDH published-trend layer
+
+- IntechOpen/WDH Table 2 is now materialized at **200 displayed rows** spanning the 1940s–2000s start cohorts.
+- A source-side exact duplicate (UK ls4 1990–2020) is preserved in the verbatim table but removed deterministically for analysis, leaving **199 unique trend rows**.
+- Same-calendar-window actual-hours slopes are estimable under the >=10 observations / >=10-year gate for **190 unique trend rows / 46 countries**.
+- Full-frame all-series correlation: Pearson **+0.101**, Spearman **+0.094**.
+- One-longest-series-per-country: Pearson **-0.057**, Spearman **-0.045**.
+- The earlier pre-1990-start negative Pearson pattern is therefore subset-sensitive and superseded for overall historical inference.
+- Canonical historical interpretation is locked in `process/HISTORICAL_TREND_INTERPRETATION_LOCK.md`.
+- The raw yearly `TrendsInNations-2023e.xlsx` workbook is still identified but not transferable in the current runtime.
+
+## Reproducibility / QA update
+
+- Working-hours join audit found and fixed `Taiwan` -> `Taiwan Province of China`; corrected A0 hours coverage is **2,015 country-years / 130 countries**, joint A0 **1,663 / 129**.
+- A0→A1 decomposition shows hours attenuation is driven by macro adjustment rather than complete-case selection; leave-FD complete-case selection makes the negative A0 coefficient more negative, while macro adjustment moves it back across zero.
+- Independent statsmodels validation code is committed in `code/validate_expanded_modern_panel_statsmodels.py`.
+- GitHub Actions run **35977496016**, job **107561331580**, failed before any step executed (`steps=null`), matching the repository-wide pre-runner failure. Validator execution is therefore **pending**, not PASS.
