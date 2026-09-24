@@ -32,7 +32,7 @@ China,CHN,China Shanghai,matched,curated_alias_or_base_code
 Colombia,COL,Colombia,matched,normalized_name
 Comoros,COM,Comoros,matched,normalized_name
 Congo (Brazzaville),COG,"Congo, Rep.",matched,curated_alias_or_base_code
-Congo (Kinshasa),COD,,matched,curated_alias_or_base_code
+Congo (Kinshasa),ZAR,"Congo, Dem. Rep.",matched,curated_legacy_wb_code
 Costa Rica,CRI,Costa Rica,matched,normalized_name
 Croatia,HRV,Croatia,matched,normalized_name
 Cuba,,,unmatched,unmatched
