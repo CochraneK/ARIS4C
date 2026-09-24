@@ -148,12 +148,12 @@
       "blocker": "No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference."
     },
     "019": {
-      "progress": 78,
-      "stage": "Expanded modern LOCKED · full WDH Table-2 historical trend bridge LOCKED · raw historical reconstruction",
+      "progress": 80,
+      "stage": "Modern + published historical trends LOCKED · ILO C052/C132 history CLOSED · annual WDH/national-law reconstruction",
       "activity": "active",
-      "evidence": "Pilot-0 frozen. Modern leave×WHR module locked at 161 countries / 1,934 country-years; legal-time falsification prevents simple sign interpretation. Taiwan hours join fixed: A0 actual-hours = 2,015 country-years / 130 countries; joint = 1,663 / 129. Full WDH Table 2 now materialized at 200 displayed / 199 exact unique trends; 190 unique trends across 46 countries align to same-window annual-hours histories. Full-series Pearson/Spearman = +0.101/+0.094 and one-longest-series-per-country = -0.057/-0.045, so the earlier pre-1990 negative pattern is subset-sensitive and no stable historical monotonic relation is established.",
-      "next_gate": "Acquire raw yearly TrendsInNations workbook and Eurobarometer/EVS-WVS numeric outcomes; finish C052/C132 and national paid-leave legal chronology; run instrument-specific historical models/event synthesis; independently execute committed statsmodels validator once Actions runner recovers; then rebuild bilingual manuscript.",
-      "blocker": "No design blocker. Raw WDH workbook/binary or registered survey transfer remains an acquisition dependency; GitHub Actions also still fails pre-runner, so independent statsmodels CI is pending rather than passed."
+      "evidence": "Pilot-0 frozen; modern 161-country leave panel and full WDH 200-row historical trend bridge interpretation-locked. ILO institutional history now complete at C052 54/54 and C132 39/39 exact NORMLEX ratification dates, with 18-country succession table and declaration-unit guardrail. Official WDH HTML raw-year reconstruction is validated on USA hl4 and Japan ls4 to <0.001/year slope difference; full batch builder is committed.",
+      "next_gate": "Execute the WDH HTML annual builder on a network-capable runner; reconstruct national paid-leave legal effective dates/levels; acquire Eurobarometer + EVS/WVS numeric outcomes; run source-specific historical annual models and verified legal-event synthesis; then rebuild EN/ZH manuscript.",
+      "blocker": "No design blocker. Current execution blockers are network/binary or registered-data transfer for full historical annual outcomes and the repository-wide GitHub Actions pre-runner failure."
     },
     "020": {
       "progress": 55,
