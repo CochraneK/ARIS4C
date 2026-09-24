@@ -74,3 +74,14 @@
 - Positive and negative affect remain locked for this Pilot-0 manuscript.
 - Future source expansion should prioritize true annual 2024/2025 Life Ladder data and prospectively frozen leave-specific reforms such as Mexico 2023.
 
+## 2026-09-24 · Expanded modern interpretation lock
+
+- The reopened project now contains a broad modern association module in addition to Pilot-0: 161 countries / 1,934 statutory-leave × annual-WHR country-years plus an actual-hours source spanning 130 countries / 1870–2023.
+- Modern broad-panel coefficients are descriptive/associational unless a separate legal identification gate passes.
+- World Bank Employing Workers report year is not the legal treatment clock. Across nine verified events, the observed WB jump occurs on average 1.22 years after legal effective year (median 1; range 0–2).
+- This timing error is substantively decisive: in the verified-changer macro-adjusted sensitivity, the first-difference coefficient is negative under WB report-year coding but flips positive when the same exposure steps are aligned to verified legal time. Neither sign is promoted as causal.
+- Positive WB lag-2/lag-3 coefficients cannot be described as delayed happiness benefits because delayed WB coding can mechanically generate them.
+- Modern leave TWFE / macro-adjusted / country-trend / spline results do not establish a stable positive or negative dose-response.
+- The negative between-country working-hours association does not reproduce as a stable negative within-country annual relationship after FE / macro adjustment / country trends.
+- Canonical modern-layer conclusion: no stable positive or negative aggregate Life Ladder response is established; timing and measurement are central. This is not the final whole-project historical conclusion.
+- The next scientific priority is historical instrument materialization and cross-instrument synthesis, not additional post-hoc mining of the modern WHR panel.
