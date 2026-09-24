@@ -1,0 +1,30 @@
+name: Validate 019 Expanded Panel
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "papers/019-time-off-happiness/code/expanded_modern_panel_analysis.py"
+      - "papers/019-time-off-happiness/code/validate_expanded_modern_panel_statsmodels.py"
+      - "papers/019-time-off-happiness/data/worldbank_statutory_leave_panel.csv"
+      - "papers/019-time-off-happiness/data/modern_wb_whr_country_crosswalk.csv"
+      - "papers/019-time-off-happiness/data/expanded_modern_panel_first_statistics.csv"
+      - "papers/019-time-off-happiness/data/expanded_modern_panel_A1_macro.csv"
+      - ".github/workflows/validate-019-expanded-panel.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install validation dependencies
+        run: python -m pip install --disable-pip-version-check "numpy>=2,<3" "pandas>=2.2,<3" "requests>=2.32,<3" "statsmodels>=0.14,<0.15"
+      - name: Run independent statsmodels validator
+        run: python papers/019-time-off-happiness/code/validate_expanded_modern_panel_statsmodels.py
