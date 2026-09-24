@@ -5,13 +5,13 @@
   "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title": "Planetary Taxonomy × fsQCA",
   "year": 2026,
-  "status": "pilot1-evidence-v0.4-conflict-audit",
+  "status": "pilot1-evidence-v0.5-smallbody-anchors",
   "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. Blinded evidence coding now covers all 34 planet/dwarf/satellite cases at least at the composition layer and 139/300 total evidence-state cells. Missingness semantics and the first source-conflict adjudication are frozen before calibration or QCA inspection.",
+  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. Four blinded evidence batches now cover the full planet/dwarf/satellite stratum plus five spacecraft/sample-return small-body anchors, with 157/300 evidence states coded and the composition ontology expanded to distinguish hydrated carbonaceous rubble piles from rock-ice worlds.",
   "authors": ["Cochrane Kang"],
   "aris": {
-    "provenance": "ARIS4C022 froze the sample, raw-variable architecture, evidence protocol and anti-circularity ladder before analysis. Evidence batches 01-03 now cover all selected planets, dwarf planets and satellites. Protocol v0.3 explicitly treats scientific missingness as a valid state, and source-conflict audit v0.1 adjudicates the Mimas ocean update as temporal supersession. The 16 small/boundary cases remain gated by live SBDB acquisition. No QCA calibration or solution inspection has occurred.",
-    "version": "v0.8.0"
+    "provenance": "ARIS4C022 froze the sample, raw-variable architecture, evidence protocol and anti-circularity ladder before analysis. Evidence v0.5 adds Vesta, Eros, Bennu, Ryugu and Itokawa using mission/returned-sample evidence and adds CARBONACEOUS_HYDRATED before encoding Bennu/Ryugu. Current-object ocean state remains separated from ancient parent-body aqueous alteration. No QCA calibration or solution inspection has occurred.",
+    "version": "v0.9.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
@@ -23,18 +23,17 @@
     "physical_core": "data/raw_physical_core_v0.1.csv",
     "orbital_geometry": "data/orbital_geometry_v0.2.csv",
     "derived_physics": "data/derived_physics_v0.2.csv",
-    "evidence_state": "data/evidence_state_v0.4.csv",
-    "evidence_batch03_audit": "data/EVIDENCE_CODING_AUDIT_BATCH03.md",
-    "source_conflict_audit": "data/SOURCE_CONFLICT_AUDIT.md",
-    "dynamics_code": "code/dynamics_metrics.py"
+    "evidence_state": "data/evidence_state_v0.5.csv",
+    "evidence_batch04_audit": "data/EVIDENCE_CODING_AUDIT_BATCH04.md",
+    "source_conflict_audit": "data/SOURCE_CONFLICT_AUDIT.md"
   },
-  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","natural satellites","ocean worlds","source conflict","scientific missingness","JPL SBDB"],
+  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","asteroids","sample return","Bennu","Ryugu","Vesta","scientific missingness"],
   "bilingual_delivery": {"english": true,"chinese": true},
   "outputs": {
     "paper_en": "not-started",
     "paper_zh": "not-started",
     "figures": {"status": "planned","count": 0},
-    "tables": {"status": "case frame + physical + orbit + derived + evidence v0.4","count": 5},
+    "tables": {"status": "case frame + physical + orbit + derived + evidence v0.5","count": 5},
     "pdf": {"status": "not-started","english": false,"chinese": false}
   }
 }
