@@ -21,3 +21,12 @@
 - The stale handoff entry files were synchronized to the current 98% / repository-engineering-blocked state.
 - The standard handoff entry files now contain the deletion-safe cold-start state, so a new chat/agent can resume from Git without reconstructing this conversation.
 - Next action after chat deletion is repository delivery only: publish and verify the two canonical EN/ZH PDFs, then promote ARIS4C019 to Finish / 100%. No further scientific analysis should be invented to fill the remaining 2%.
+
+## 2026-09-24 · PDF publication recovery diagnosis
+
+- User asked to continue ARIS4C019 in GO mode.
+- The public-PDF workflow was retriggered and the failed workflow was explicitly re-run.
+- Workflow run `35965678753` failed before any build step in both attempts; the latest failed job is `107530128521`. The remaining blocker was therefore narrowed from an unspecified PDF failure to GitHub Actions runner/startup execution.
+- The exact current EN/ZH Markdown, four SVG figures and publication CSS were independently rendered again with the available local fallback stack. Optimized fallback PDFs passed text extraction and render-first visual QA (EN 11 pages / 100,363 bytes; ZH 7 pages / 207,347 bytes).
+- The project remains truthfully at 98% / block because `docs/paper/019/en/main.pdf` and `docs/paper/019/zh/main.pdf` are still absent from `main`.
+- Scientific claims remain frozen; no outcome/legal-event analysis was reopened to fill an engineering delivery gap.
