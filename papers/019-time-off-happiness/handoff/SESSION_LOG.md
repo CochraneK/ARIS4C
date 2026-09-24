@@ -54,3 +54,14 @@
 - Expanded WVS country registry to Waves 1–7: 295 country-wave rows / 107 distinct country-or-territory codes. WVS7 reconciled to current official 66-country/97,220-case release metadata.
 - Pinned Eurobarometer general-life-satisfaction chain (1973–2026) and Mannheim ZA3521 harmonized file (86 waves, >1M cases through 2002). Pinned WDH open-source TrendsInNations XLSX and documented the current runtime binary-transfer limitation.
 - Materialized full 39-country C132 ratifier seed and decade diffusion summary; 14/39 ratifications are in the 1970s. Ratification remains an institutional-diffusion variable, never a substitute for national implementation law.
+
+- 2026-09-24 expanded modern interpretation lock v1.0: completed the large-sample modern association module after the historical-scope reopening.
+- Modern leave × WHR panel = 161 countries / 1,934 country-years. A1 leave TWFE (+5 days) = +0.045 with CI crossing zero; A1 leave FD = -0.081 with CI crossing zero. Hours A1 TWFE (+100 h/year) = +0.013 with CI crossing zero.
+- Completed within-between, first-difference, support, macro, country-trend, nonlinear RCS, report-year lag, influence, joint hours+leave and legally restricted sensitivities.
+- Timing audit found nine verified WB panel jumps lag actual legal effective year by mean 1.22 years (median 1; range 0–2).
+- Critical falsification: verified-changer macro-adjusted FD is about -0.240 per +5 leave days under WB report-year timing but +0.093 when the same leave steps are aligned to verified legal effective year. Neither is causal; the sign flip locks the interpretation as timing-sensitive.
+- Macro attenuation decomposition shows complete-case selection alone does not explain FD attenuation; same-sample A0 FD = -0.118, GDP = -0.115, adding unemployment = -0.079, full A1 = -0.081.
+- Long-run hours source materialized at 5,063 observations / 130 countries / 1870–2023; 14/14 earliest 1870 countries also occur in WDH long-run registry.
+- WDH public long-run mean-variable registry materialized at 124 series / 61 nation labels / earliest 1946.
+- Project canonical state advanced to 75% / active. Next work is historical numeric outcomes/legal chronology/cross-instrument synthesis, not additional post-hoc modern WHR mining.
+
