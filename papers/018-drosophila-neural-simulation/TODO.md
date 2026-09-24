@@ -1,105 +1,82 @@
 # ARIS4C018 TODO
 
-## P0 · Exploration
+## Current P0 · R2.5 initial-scene sensory localization
 
-- [x] Map open-source ecosystem.
-- [x] Include user-facing/community applications.
-- [x] Separate research-grade infrastructure from experimental demos.
-- [x] Define left-behaviour/right-neural interaction target.
-- [x] Build deterministic toy Pilot 0.
-- [x] Add browser dual-view prototype.
-
-## P1 · Published-model reproduction
-
-- [x] Reproduce one small flyvis connectome construction path (pinned clean CI).
-- [x] Reproduce one minimal FlyGym/NeuroMechFly model compile path (pinned clean CI).
-- [x] Measure initial clean-install/runtime burden for both smoke paths.
-- [ ] Freeze and implement the smallest bridge between a neural-state model and embodied behaviour.
-
-## P2 · Scientific question gate
-
-- [ ] Replace toy assumptions with published biological components.
-- [ ] Freeze one falsifiable question before large parameter sweeps.
-- [ ] Define null/control model (including rewired or structure-destroying control where appropriate).
-- [ ] Decide whether the mature direction stays as 018 or forks to a dedicated repository/paper.
-
-## P1B · Bridge design
-
-- [ ] Audit the candidate visual-turning bridge against both upstream APIs and biological interfaces.
-- [ ] Define an explicit neural readout -> low-dimensional motor command contract.
-- [ ] Add a null/control mapping before testing an effect.
-- [ ] Synchronize neural-state and behaviour traces in the two-panel viewer.
-- [ ] Keep whole-brain Brian2/FlyWire reproduction as a higher-cost comparison track, not the default MVP.
-
-## Pilot 2 · Official advanced vision
-
-- [x] Reproduce legacy RealisticVisionFly with real retinal rendering + pretrained flyvis + embodied body state.
-- [x] Verify 2 × 45,669 neural activity state and named T4/T5 outputs in clean CI.
-- [x] Record and repair the headless EGL requirement.
-- [x] Reproduce baseline-response calibration for a bounded single condition.
-- [x] Reproduce the official z-score -> object mask -> turning bias -> 2-D descending-drive decoder.
-- [x] Run a bounded real closed-loop moving-target trial (loop active; not claimed as successful following).
-- [x] Export synchronized behaviour / retinal / neural / decoder traces.
-- [x] Compare the legacy implementation against FlyGym 2.x migration cost.
-
-## Pilot 2C · Trace + full-condition gate
-
-- [x] Freeze the full synchronized neural / decoder / body / target trace under the v1 trace schema.
-- [ ] Re-run one official-duration baseline/condition or validate reuse of upstream full baseline artefacts.
-- [ ] Quantify decoder saturation and zero-SD dependence under the full baseline.
-- [ ] Decide whether successful-following replication is necessary before the 2.x port.
-- [x] Port the minimal visual-neural interface to current FlyGym 2.x after bounded legacy reproduction.
-
-## Pilot 3 · FlyGym 2.x migration
-
-- [x] Audit current Retina and HybridTurningController APIs.
-- [x] Extract a reusable FlyGym2 Retina ↔ flyvis adapter.
-- [x] PASS current FlyGym 2.x retinal rendering -> pretrained flyvis neural-state smoke.
-- [x] Benchmark current-stack interface against legacy wall-clock cost (~23.1s vs ~47.0s on matched smoke class).
-- [x] Reattach the explicit decoder.
-- [x] Reattach current HybridTurningController.
-- [x] Emit the same synchronized trace schema from the current stack.
-
-## Pilot 3C · current-stack trace
-
-- [x] Emit the same synchronized trace schema from current FlyGym 2.x + current flyvis.
-- [x] Include target/body/decoder/neural provenance per visual update.
-- [x] Validate trace shape automatically.
-- [x] Add current-stack replay selector without forking the viewer implementation.
-- [x] Keep unmatched traces provenance-separated; start a separate matched-condition regression.
-
-
-## Pilot 4 · matched cross-version regression
-
-- [x] Freeze matched target geometry, spawn, duration, visual rate, decoder and cell set before result inspection.
-- [x] Implement isolated legacy and current jobs.
-- [x] Freeze comparison metrics without a post-hoc equivalence threshold.
-- [x] Complete matched legacy condition.
-- [x] Complete matched current condition.
-- [x] Commit first diagnostic comparison.
-- [ ] Localize material mismatch through R1→R5 if needed.
-- [ ] Use the localization result to select the first formal scientific hypothesis.
-
-
-## Pilot 4 localization
-
-- [x] Freeze R1–R5 localization protocol before inspecting matched outputs.
-- [x] Audit immediate legacy/current descending-signal → CPG semantics.
-- [x] R1: compare Retina geometry/order/index hashes — exact SHA-256 identity.
-- [x] R2a: compare frozen retinal vectors after FlyGym→flyvis mapping — exact equality.
-- [x] R2b: compare pinned neural-model responses to frozen retinal vectors — neural hashes equal.
-- [x] R3: retain pure decoder identity gate.
-- [ ] R4: deepen controller comparison only if upstream layers do not explain divergence.
-- [ ] R5: compare body trajectories only after R1–R4 localization.
-
-
-## Pilot 4 R2.5 · initial-scene sensory localization
-
-- [x] Freeze renderer/initial-scene gate before inspecting outputs.
+- [x] Freeze the R2.5 renderer / initial-scene gate before seeing outputs.
 - [x] Implement isolated legacy/current reset sensory-capture scripts.
 - [x] Implement ommatidia/body-pose comparator.
-- [x] Add CI workflow.
-- [ ] Restore repository-wide GitHub Actions job execution.
-- [ ] R2.5: capture matched reset/first-frame sensory vectors.
-- [ ] Compare full/grayscale 2×721×2 hashes and body-root pose.
-- [ ] Localize renderer/camera/body/scene-reset semantics if sensory vectors differ.
+- [x] Add the R2.5 GitHub Actions workflow.
+- [ ] Restore / regain a GitHub Actions execution surface where jobs actually start.
+- [ ] Run the already-committed R2.5 legacy/current initial-scene capture.
+- [ ] Compare full and grayscale `2 × 721 × 2` ommatidia SHA-256 plus body-root pose.
+- [ ] If sensory vectors differ: localize renderer / eye-camera / body self-occlusion / scene material-light / spawn-reset semantics.
+- [ ] If sensory vectors match: inspect flyvis temporal initialization / state-handling semantics.
+- [ ] Use the earliest localized divergent layer to choose the first formal biological/scientific hypothesis.
+
+## P1 · scientific transition after R2.5
+
+- [ ] Re-read `QUESTION_CANDIDATES_PRE_PILOT4.md` after localization.
+- [ ] Freeze one falsifiable question before any large perturbation sweep.
+- [ ] Freeze null/control design appropriate to the selected layer.
+- [ ] Decide whether the mature research direction remains ARIS4C018 or forks into a dedicated paper/software repository.
+- [ ] Keep the BIO / DECODER / BODY / CONTROL claim boundary explicit.
+
+## P2 · optional / product
+
+- [ ] Continue Fly Neuro Playground only when it serves the scientific workflow or becomes a justified independent product.
+- [ ] If productized, reuse FlyGym's licensed WASM/body infrastructure rather than rebuilding MuJoCo browser physics from scratch.
+- [ ] Preserve provenance labels and never fall back from real trace to toy data silently.
+
+## Completed history · exploration / reproduction
+
+- [x] Map the open-source Drosophila ecosystem.
+- [x] Include user-facing/community projects.
+- [x] Separate research-grade infrastructure from experimental/community demos.
+- [x] Define the left-behaviour / right-neural visual target.
+- [x] Build deterministic toy Pilot 0 and browser prototype.
+- [x] Reproduce pinned flyvis connectome construction.
+- [x] Reproduce pinned FlyGym / NeuroMechFly compilation.
+- [x] Measure initial installation/runtime burden.
+- [x] Replace toy-only infrastructure with published biological/model components.
+- [x] Audit the visual-neural-behaviour bridge and explicitly classify its engineered decoder.
+- [x] Freeze the low-dimensional decoder contract and independent pure-math tests.
+- [x] Synchronize neural / decoder / body traces in the two-panel replay.
+- [x] Keep whole-brain FlyWire/Brian2 routes as comparison tracks rather than default MVP.
+
+## Completed history · legacy advanced vision
+
+- [x] Reproduce legacy `RealisticVisionFly` with retinal rendering + pretrained flyvis + embodied state.
+- [x] Verify `2 × 45,669` neural state and named T4/T5 outputs.
+- [x] Repair and document headless EGL requirements.
+- [x] Reproduce bounded baseline calibration.
+- [x] Reproduce official z-score → object mask → turning-bias → 2-D drive decoder.
+- [x] Run bounded legacy moving-target closed loop.
+- [x] Freeze legacy synchronized trace.
+- [x] Decide that full 3 s legacy recomputation is not required before current-stack migration because bounded reproduction was already established and legacy CPU cost was high.
+
+## Completed history · FlyGym 2.x migration
+
+- [x] Audit current Retina and `HybridTurningController` APIs.
+- [x] Extract reusable FlyGym2 Retina ↔ flyvis adapter.
+- [x] PASS current FlyGym 2.x retinal rendering → pretrained flyvis neural state.
+- [x] Benchmark the bounded current path against comparable legacy smoke.
+- [x] Reattach audited decoder.
+- [x] Reattach current `HybridTurningController`.
+- [x] Freeze current synchronized trace.
+- [x] Validate legacy/current semantic trace parity.
+- [x] Close the bounded FlyGym 1.x → 2.x migration engineering gate.
+
+## Completed history · Pilot 4 matched cross-version diagnostic
+
+- [x] Freeze matched target geometry, spawn, duration, visual rate, decoder and tracking set before result inspection.
+- [x] Run isolated legacy/current jobs.
+- [x] Freeze comparison metrics without post-hoc equivalence threshold.
+- [x] Commit matched legacy/current outputs and comparison.
+- [x] Detect reproducible first-frame decoder divergence.
+- [x] Freeze R1→R5 localization protocol before interpreting the mismatch.
+- [x] Audit immediate descending-signal → CPG semantics.
+- [x] R1 Retina geometry/order/index hashes: exact identity.
+- [x] R2 frozen retinal mapping: exact equality.
+- [x] R2 pinned flyvis response to identical frozen vectors: exact equality.
+- [x] Preserve pure decoder identity gate.
+- [x] Implement R2.5 initial-scene sensory localization.
