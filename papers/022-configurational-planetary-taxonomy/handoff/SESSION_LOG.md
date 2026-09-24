@@ -1,33 +1,21 @@
 # SESSION LOG · ARIS4C022
 
 ## 2026-09-24
-- Registered ARIS4C022.
-- Verified current IAU planet-definition summary and NASA/JPL source surfaces.
-- Added Margot (2015/2024) and Soter (2006) quantitative-dynamics references.
-- Added QCA methodology / calibration guidance.
-- Built research-plan, variable/calibration, source-registry, code-plan and continuity scaffolds.
+- Registered ARIS4C022 and froze the 50-body case frame.
+- Froze M0–M4 model ladder and anti-circularity constraints before numerical results.
+- Built 50-row physical/orbit/derived data spine; JPL core physical data cover 34 cases.
+- Implemented source-faithful Margot/Soter metrics and deterministic validators.
+- Source-hardened all eight planet orbit rows with JPL approximate J2000 elements; Earth explicitly remains an EMB proxy.
+- Froze `EVIDENCE_STATE_PROTOCOL.md` and initialized the 50-case evidence matrix before any QCA exposure.
 
-## 2026-09-24 · Pilot-0 case-frame freeze
-- Froze 50 cases: 8 planets, 5 dwarf planets, 21 satellites, 16 small/boundary bodies.
-- Froze raw-variable schema, M0–M4 model ladder, and anti-circularity constraints before numerical solutions.
-
-## 2026-09-24 · Physical-core ingestion v0.1
-- Materialized 50 physical rows and ingested authoritative JPL physical-core values for 34/50 cases.
-- Added JPL SBDB snapshotter, source-faithful Margot/Soter code, and deterministic no-fabrication QA.
-
-## 2026-09-24 · Pilot-1 orbit + derived spine
-- Added 50-row orbital v0.1 and 50-row derived-physics v0.1.
-- 21 satellites use JPL mean elements; 13 direct-Sun rows initially used explicitly derived period→a values.
-- 34 rows gained gravity / escape / density diagnostics / stellar-environment derivatives; 13 gained Margot Pi.
-- No QCA calibration or solution inspection occurred.
-
-## 2026-09-24 · Pilot-1 source hardening
-- Replaced the period-derived semimajor axes for all eight planets with JPL Approximate Positions Table-1 J2000 elements.
-- Earth is explicitly retained as an Earth-Moon-barycenter proxy because JPL's approximate table supplies EMB rather than an Earth-center element.
-- Quantified v0.1→v0.2 semimajor-axis changes; all eight are <0.05%.
-- Kept the five dwarf planets on clearly labeled period-derived a pending live SBDB/Horizons acquisition rather than using stale/sample rows as if current.
-- Verified JPL's current SBDB documentation, small-body element schema, and requirement to inspect the API signature/version.
-- Added `EVIDENCE_STATE_PROTOCOL.md` before any evidence coding.
-- Initialized all 50 evidence rows to `PENDING_REVIEW` with `UNEXPOSED_TO_QCA_RESULT`, preserving a clean anti-circularity firewall.
-- Added source-hardening audit and validator.
-- No fsQCA calibration or solution terms were inspected.
+## 2026-09-24 · Anchor evidence batch 01
+- Current SBDB object endpoints remain inaccessible from the available web execution surfaces; no fallback numeric values were fabricated.
+- Opened current NASA Science facts pages for Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Ceres and Pluto.
+- Created `evidence_state_v0.2.csv` with per-variable source keys.
+- Coded composition, atmosphere and differentiation for all 10 anchors.
+- Coded Mars geological activity as `PAST_ONLY` because the NASA facts page explicitly describes extinct volcanoes.
+- Applied the pre-frozen `NA_NOT_APPLICABLE` tidal-heating default to the 10 direct-Sun anchors.
+- Deferred ocean and other geological states where the operational meaning or evidence requires dedicated review rather than broad agency summaries.
+- Total evidence-state cells advanced from pending: 41/300.
+- Added `EVIDENCE_CODING_AUDIT.md` and `validate_evidence_state.py`.
+- All 50 rows remain `UNEXPOSED_TO_QCA_RESULT`; no calibration, truth table or solution term was inspected.
