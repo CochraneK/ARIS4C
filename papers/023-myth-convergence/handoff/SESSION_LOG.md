@@ -20,3 +20,11 @@
 - Intended cross-model design recorded: **Qoder/Qwen = Coder A; independent fresh-session DeepSeek = Coder B**.
 - Explicitly recorded that neither coder has completed its 023 CSV yet merely by working elsewhere.
 - Added exact blinding, file, scoring, substitution and completion rules so another Agent can resume from Git alone.
+
+## 2026-09-24 · Coder A completed (GLM substitute)
+- Fresh-context GLM session (WorkBuddy sandbox) took over the Coder A role per `AGENT_HANDOFF.md` Path A, as the recorded substitute for Qoder/Qwen.
+- Blinding respected: read only handoff/calibration materials, motif definitions, blank packet, and the 15 frozen source passages; never opened `CONTROLLER_SEED_CODING.md`, `coder_B.csv`, or any similarity/expected-transmission material.
+- Source verification during coding: ETCSL 1.7.4 (full Segments A-E) and Atrahasis I.190-245 (ANET/Foster) fetched verbatim; KTU 1.2 IV kingship concession cross-checked via published translations; other passages coded from standard published translations.
+- Populated `data/calibration/coder_A.csv`: 120/120 judgments — 36 present, 72 absent, 5 uncertain, 7 not_observed; 27 rows ambiguity-flagged.
+- Four-state semantics convention recorded in `DECISIONS.md` for the future disagreement taxonomy.
+- STATUS/TODO updated: Coder A complete; Coder B (DeepSeek, fresh web conversation) pending. Reliability scoring deferred until B is committed.

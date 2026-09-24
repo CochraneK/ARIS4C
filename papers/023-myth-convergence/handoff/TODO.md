@@ -15,8 +15,8 @@
 
 ## Current critical path
 
-- [ ] **Qoder/Qwen:** populate and commit `data/calibration/coder_A.csv`.
-- [ ] Mark Coder A complete in STATUS only after the file is actually populated.
+- [x] **Coder A (GLM substitute for Qoder/Qwen, 2026-09-24):** populate and commit `data/calibration/coder_A.csv` — 120/120 judgments, committed with independence record in `DECISIONS.md`.
+- [x] Mark Coder A complete in STATUS only after the file is actually populated.
 - [ ] **DeepSeek:** independently populate `coder_B.csv` in a fresh conversation without seeing A/seed/results.
 - [ ] Commit Coder B verbatim.
 - [ ] Verify A/B packet keys and completeness.

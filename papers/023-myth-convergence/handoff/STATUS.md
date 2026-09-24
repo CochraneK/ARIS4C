@@ -1,17 +1,16 @@
 # Status
 
 ## State
-Block · 42%
+Block · 55% — Coder A complete; Coder B pending
 
 ## Current stage
 Independent dual-AI coding gate; downstream analysis infrastructure is ready.
 
 ## Coder state
 
-- **Coder A intended:** Qoder / Qwen — **PENDING for 023**.
+- **Coder A:** completed 2026-09-24 by **GLM (WorkBuddy sandbox, fresh independent session)** as the recorded substitute for Qoder/Qwen — `data/calibration/coder_A.csv` populated (120/120 judgments) and committed. See `DECISIONS.md` / `SESSION_LOG.md` for the substitution and independence record.
 - **Coder B intended:** DeepSeek in a fresh independent web conversation — **PENDING**.
-- Qoder/Qwen activity elsewhere in ARIS4C does **not** count as completion of the 023 coder-A packet.
-- The gate passes only after populated A + B packets are committed and reliability is scored.
+- The gate passes only after the populated B packet is committed and reliability is scored.
 
 ## Evidence
 - Calibration v0.1: 24 motifs, 15 source passages, 120 judgments, identical blank A/B packets and reliability scorer.
@@ -23,7 +22,7 @@ Independent dual-AI coding gate; downstream analysis infrastructure is ready.
 - Handoff now contains exact Qoder/Qwen → coder_A and independent DeepSeek → coder_B operating instructions.
 
 ## Next gate
-1. Qoder/Qwen completes and commits `data/calibration/coder_A.csv`.
+1. ~~Qoder/Qwen completes and commits `data/calibration/coder_A.csv`.~~ **DONE 2026-09-24 (GLM substitute; recorded in DECISIONS.md).**
 2. Independent DeepSeek completes `coder_B.csv` without seeing A/seed/results.
 3. Run reliability + disagreement taxonomy.
 4. Revise/freeze ontology v0.1 only after the reliability decision.
