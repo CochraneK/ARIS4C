@@ -162,6 +162,14 @@
       "evidence": "Crossref production documentation confirms the full Retraction Watch dataset is publicly downloadable as CSV and updated each working day. The official schema includes article, venue, publisher, country, author, dates, notice nature, controlled retraction reasons, identifiers and notes.",
       "next_gate": "Acquire and hash a full RWDB snapshot; freeze Retraction-only inclusion rules; profile DOI/PMID/field/affiliation/reason missingness; then join Crossref/OpenAlex denominators before any country/field risk comparison.",
       "blocker": "No acquisition blocker. Methodological boundary: RWDB is intended to be comprehensive for retractions, not for expressions of concern or corrections; raw retraction counts cannot be interpreted as rates without a publication denominator."
+    },
+    "021": {
+      "progress": 18,
+      "stage": "Concept design · historical replication gate",
+      "activity": "wait",
+      "evidence": "Harff 2003 structural-risk model and Williams 2016 139-case QCA are frozen as replication anchors; outcome hierarchy, seven-family condition ontology, temporal firewall, QCA thresholds, PITF/V-Dem/EWP source inventory and continuity package are committed before empirical outcome inspection.",
+      "next_gate": "Acquire/hash PITF 2018 source files; reconstruct the historical Harff/Williams case universe and six-condition matrix; freeze calibration and run replication-only necessity/sufficiency analyses before any modern extension.",
+      "blocker": "None; executable but queued behind higher-progress active portfolio work."
     }
   },
   "scheduling": {
