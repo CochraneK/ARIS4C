@@ -1,25 +1,27 @@
 # TODO · ARIS4C022
 
-1. [x] Freeze 50-case Solar-System sample and anti-circularity model ladder.
-2. [x] Build physical/orbit/derived data spine and source-harden eight planets.
+1. [x] Freeze 50-case sample, variable architecture and anti-circularity model ladder.
+2. [x] Build physical/orbit/derived data spine; source-harden all eight planets.
 3. [ ] Capture live JPL SBDB raw JSON for 16 small/boundary bodies.
 4. [ ] Replace five dwarf-planet derived semimajor axes with pinned live SBDB/Horizons values.
 5. [x] Implement and regression-test Margot/Soter equations.
-6. [~] Evidence-state coding under frozen protocol:
+6. [~] Evidence-state coding:
    - [x] Batch 01: 8 planets + Ceres + Pluto.
-   - [x] Batch 02: Moon, Io, Europa, Ganymede, Callisto, Enceladus, Titan, Triton, Charon.
-   - [x] Clarify present/persistent ocean vs paleo-ocean semantics.
-   - [x] Composition 19/50.
-   - [x] Atmosphere 18/50.
-   - [x] Differentiation 18/50.
-   - [~] Geological activity 9/50.
-   - [~] Ocean evidence 5/50.
-   - [~] Tidal heating 13/50.
-   - [ ] Remaining satellites/dwarf/small bodies.
-   - [ ] Source-conflict audit and adjudication.
-7. [ ] Freeze fsQCA calibration only after evidence/source-conflict freeze.
-8. [ ] Run PLANET / DWARF_PLANET / SATELLITE outcomes separately.
-9. [ ] Run M2 non-definitional physical-signature model.
-10. [ ] Sensitivity + leave-one-out.
-11. [ ] Clustering/PCA companion analysis.
-12. [ ] Periodic-table-like visual taxonomy.
+   - [x] Batch 02: Moon + 8 high-information moon/boundary cases.
+   - [x] Batch 03: remaining 12 selected satellites + Haumea/Makemake/Eris.
+   - [x] Composition 34/50.
+   - [~] Atmosphere 24/50.
+   - [~] Differentiation 24/50.
+   - [~] Geology 23/50.
+   - [~] Ocean 14/50.
+   - [~] Tidal heating 20/50.
+   - [ ] 16 small/boundary cases.
+7. [~] Source-conflict audit:
+   - [x] C001 Mimas temporal supersession adjudicated.
+   - [ ] Scan all coded cells for unresolved conflicts / outdated agency summaries.
+8. [ ] Freeze fsQCA calibration only after evidence + conflict freeze.
+9. [ ] Run PLANET / DWARF_PLANET / SATELLITE outcomes separately.
+10. [ ] Run M2 non-definitional physical-signature model.
+11. [ ] Sensitivity + leave-one-out.
+12. [ ] Clustering/PCA companion.
+13. [ ] Periodic-table-like visual taxonomy.
