@@ -5,21 +5,24 @@
   "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title": "Planetary Taxonomy × fsQCA",
   "year": 2026,
-  "status": "registered",
+  "status": "pilot0-case-frame-frozen",
   "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary": "A falsification-first configurational taxonomy of Solar System bodies. The project uses crisp-set and fuzzy-set QCA as a set-theoretic classification tool—not as a vote on established labels—to test which combinations of orbital hierarchy, dynamical dominance, self-gravity/roundness, mass-size structure, composition, atmosphere, thermal-geological state, and stellar environment distinguish planets, dwarf planets, natural satellites, and small bodies. Mars is treated as a positive-control planet under the current IAU definition.",
+  "summary": "A falsification-first configurational taxonomy of Solar System bodies. A frozen 50-body Pilot-0 frame now separates a definitional IAU benchmark from non-definitional physical-signature models, so QCA can audit set-theoretic classification without circularly rediscovering the official definition.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
-    "provenance": "ARIS4C user-requested project registered 2026-09-24. Initial framing separates definitional classification from causal inference, identifies Mars as a positive control rather than an unresolved planet-vs-satellite case, and freezes a first-pass variable-family and source plan.",
-    "version": "v0.1.0"
+    "provenance": "ARIS4C user-requested project registered 2026-09-24. Initial framing separates definitional classification from causal inference, identifies Mars as a positive control rather than an unresolved planet-vs-satellite case, and freezes a first-pass variable-family and source plan. Pilot-0 froze a 50-body stratified Solar-System case frame, canonical raw-variable dictionary, compact 4–6-condition model ladder, anti-circularity benchmark, and deterministic frame validator before numerical QCA solutions were inspected.",
+    "version": "v0.2.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
     "pipeline": "process/RESEARCH_PLAN.md",
     "calibration": "process/VARIABLES_AND_CALIBRATION.md",
-    "sources": "data/SOURCE_REGISTRY.md"
+    "sources": "data/SOURCE_REGISTRY.md",
+    "model_ladder": "process/MODEL_LADDER.md",
+    "case_frame": "data/case_frame_v0.1.csv",
+    "data_dictionary": "data/DATA_DICTIONARY.md"
   },
   "tags": [
     "ARIS",
@@ -49,8 +52,8 @@
       "count": 0
     },
     "tables": {
-      "status": "planned",
-      "count": 0
+      "status": "pilot-0 case frame frozen",
+      "count": 1
     },
     "pdf": {
       "status": "not-started",
