@@ -4,7 +4,8 @@
 The output is an interim JSONL source for bidirectional concordance QA.
 """
 from __future__ import annotations
-import argparse,json,os,time
+import argparse,hashlib,json,os,time
+from datetime import datetime,timezone
 from pathlib import Path
 from urllib.error import HTTPError,URLError
 from urllib.parse import urlencode
@@ -34,9 +35,15 @@ def main():
         "papers/020-global-retraction-ecology/data/interim/openalex_is_retracted_core.jsonl"
     ))
     ap.add_argument("--api-key-env",default="OPENALEX_API_KEY")
+    ap.add_argument("--force",action="store_true",help="Refetch even if the snapshot already exists.")
     args=ap.parse_args()
     args.out.parent.mkdir(parents=True,exist_ok=True)
+    meta_path=args.out.with_suffix(args.out.suffix+".meta.json")
+    if args.out.exists() and not args.force:
+        print(json.dumps({"status":"SKIP_EXISTING","out":str(args.out),"meta":str(meta_path)},indent=2))
+        return
     api_key=os.getenv(args.api_key_env,"").strip()
+    retrieved_at=datetime.now(timezone.utc).isoformat()
 
     cursor="*"; page=0; total=0
     tmp=args.out.with_suffix(".tmp")
@@ -58,7 +65,20 @@ def main():
             cursor=(obj.get("meta") or {}).get("next_cursor")
             print(f"page={page} total={total}")
     tmp.replace(args.out)
-    print(json.dumps({"works":total,"corpus":"core","out":str(args.out),"api_key_used":bool(api_key)},indent=2))
+    sha=hashlib.sha256(args.out.read_bytes()).hexdigest()
+    meta={
+        "schema_version":1,
+        "retrieved_at":retrieved_at,
+        "endpoint":"https://api.openalex.org/works",
+        "filter":"is_retracted:true",
+        "corpus":"core",
+        "works":total,
+        "bytes":args.out.stat().st_size,
+        "sha256":sha,
+        "api_key_used":bool(api_key),
+    }
+    meta_path.write_text(json.dumps(meta,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({**meta,"out":str(args.out),"meta":str(meta_path)},indent=2))
 
 if __name__=="__main__":
     main()
