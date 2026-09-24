@@ -10,6 +10,8 @@
 - **Public manuscript sources:** PASS. English/Chinese repository-final Markdown, four canonical SVG figures, and one-page portfolio visual are complete.
 - **Public PDF local reproduction:** PASS. English 12 pages; Chinese 7 pages; extractable text and render-first visual QA pass, including CJK rendering and figure clipping.
 - **Canonical PDF paths still missing on main:** `docs/paper/019/en/main.pdf` and `docs/paper/019/zh/main.pdf`.
+- **Runner diagnosis:** workflow run `35965678753` and its failed-job re-run both fail before build steps execute; latest job `107530128521` has no executed steps. Treat this as a GitHub Actions runner/startup blocker, not an ARIS4C019 science/build-code failure.
+- **Fallback QA:** exact current GitHub manuscript/figure/CSS sources were rendered locally again; optimized EN = 11 pages / 100,363 bytes and ZH = 7 pages / 207,347 bytes, with extractable text and visual QA PASS. Canonical Git publication remains required.
 - **Scientific interpretation:** WHR2024-refresh eight-event mean +0.088, median -0.099, 6/8 negative; Bahrain omission -0.117. Independently frozen Israel holdout mean +0.002 is reference-sensitive. No robust positive or negative population Life Ladder effect is established.
 - **Secondary outcomes:** Positive/negative affect remain locked for this paper.
 - **Next gate:** publish both canonical PDFs to GitHub main, verify Git blobs/readability, mark PDF outputs complete, then promote dashboard to Finish / 100%.
