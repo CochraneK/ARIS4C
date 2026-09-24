@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "direction": "RWDB primary Retraction work -> OpenAlex metadata concordance",
+  "queried_dois": 61155,
+  "unmatched_dois": 382,
+  "ambiguous_multi_candidate_dois": 30,
+  "unique_candidate_dois": 60743,
+  "openalex_is_retracted": {
+    "true": 60208,
+    "false": 535
+  },
+  "concordance_true_share": 0.9911924007704591,
+  "discordant_false_or_unknown": 535,
+  "by_openalex_type": {
+    "article": {
+      "true": 46061,
+      "false": 469
+    },
+    "book": {
+      "true": 9,
+      "false": 3
+    },
+    "book-chapter": {
+      "true": 452,
+      "false": 2
+    },
+    "book-review": {
+      "true": 31,
+      "false": 4
+    },
+    "conference-abstract": {
+      "true": 51
+    },
+    "conference-paper": {
+      "true": 10165,
+      "false": 25
+    },
+    "data-paper": {
+      "true": 1
+    },
+    "dissertation": {
+      "true": 1
+    },
+    "editorial": {
+      "true": 32,
+      "false": 1
+    },
+    "erratum": {
+      "true": 41,
+      "false": 1
+    },
+    "letter": {
+      "true": 28,
+      "false": 1
+    },
+    "other": {
+      "true": 5
+    },
+    "paratext": {
+      "true": 8
+    },
+    "preprint": {
+      "true": 80,
+      "false": 7
+    },
+    "reference-entry": {
+      "true": 541,
+      "false": 4
+    },
+    "retraction": {
+      "true": 2153,
+      "false": 18
+    },
+    "review": {
+      "true": 547
+    },
+    "supplementary-materials": {
+      "true": 2
+    }
+  },
+  "by_publication_year": {
+    "1922": {
+      "true": 1
+    },
+    "1951": {
+      "true": 1
+    },
+    "1959": {
+      "true": 1
+    },
+    "1962": {
+      "true": 1
+    },
+    "1963": {
+      "true": 1
+    },
+    "1966": {
+      "true": 18
+    },
+    "1967": {
+      "true": 3
+    },
+    "1968": {
+      "true": 1
+    },
+    "1970": {
+      "true": 6,
+      "false": 1
+    },
+    "1973": {
+      "true": 3
+    },
+    "1974": {
+      "true": 1
+    },
+    "1975": {
+      "true": 6
+    },
+    "1976": {
+      "true": 3
+    },
+    "1977": {
+      "true": 24
+    },
+    "1978": {
+      "true": 10
+    },
+    "1979": {
+      "true": 14
+    },
+    "1980": {
+      "true": 13
+    },
+    "1981": {
+      "true": 15
+    },
+    "1982": {
+      "true": 5
+    },
+    "1983": {
+      "true": 11
+    },
+    "1984": {
+      "true": 16
+    },
+    "1985": {
+      "true": 10
+    },
+    "1986": {
+      "true": 25
+    },
+    "1987": {
+      "true": 14
+    },
+    "1988": {
+      "true": 15
+    },
+    "1989": {
+      "true": 35
+    },
+    "1990": {
+      "true": 42
+    },
+    "1991": {
+      "true": 38
+    },
+    "1992": {
+      "true": 31
+    },
+    "1993": {
+      "true": 36
+    },
+    "1994": {
+      "true": 45
+    },
+    "1995": {
+      "true": 68
+    },
+    "1996": {
+      "true": 74
+    },
+    "1997": {
+      "true": 76
+    },
+    "1998": {
+      "true": 117,
+      "false": 1
+    },
+    "1999": {
+      "true": 133,
+      "false": 2
+    },
+    "2000": {
+      "true": 171,
+      "false": 3
+    },
+    "2001": {
+      "true": 232,
+      "false": 1
+    },
+    "2002": {
+      "true": 303
+    },
+    "2003": {
+      "true": 323
+    },
+    "2004": {
+      "true": 425,
+      "false": 3
+    },
+    "2005": {
+      "true": 484,
+      "false": 3
+    },
+    "2006": {
+      "true": 592,
+      "false": 2
+    },
+    "2007": {
+      "true": 818,
+      "false": 3
+    },
+    "2008": {
+      "true": 772,
+      "false": 4
+    },
+    "2009": {
+      "true": 1589,
+      "false": 10
+    },
+    "2010": {
+      "true": 3156,
+      "false": 25
+    },
+    "2011": {
+      "true": 5072,
+      "false": 22
+    },
+    "2012": {
+      "true": 1378,
+      "false": 12
+    },
+    "2013": {
+      "true": 1609,
+      "false": 24
+    },
+    "2014": {
+      "true": 1783,
+      "false": 19
+    },
+    "2015": {
+      "true": 1767,
+      "false": 82
+    },
+    "2016": {
+      "true": 1645,
+      "false": 111
+    },
+    "2017": {
+      "true": 2122,
+      "false": 43
+    },
+    "2018": {
+      "true": 2881,
+      "false": 29
+    },
+    "2019": {
+      "true": 3132,
+      "false": 32
+    },
+    "2020": {
+      "true": 4194,
+      "false": 38
+    },
+    "2021": {
+      "true": 7127,
+      "false": 8
+    },
+    "2022": {
+      "true": 11106,
+      "false": 47
+    },
+    "2023": {
+      "true": 3547,
+      "false": 4
+    },
+    "2024": {
+      "true": 2496,
+      "false": 5
+    },
+    "2025": {
+      "true": 541
+    },
+    "2026": {
+      "true": 30,
+      "false": 1
+    }
+  },
+  "malformed_jsonl_rows": 0,
+  "interpretation": "RWDB defines case membership; OpenAlex false/unknown is a metadata discordance signal, not an exclusion rule.",
+  "boundary": "This report estimates RWDB->OpenAlex concordance only. It does not estimate OpenAlex false positives among works absent from RWDB."
+}

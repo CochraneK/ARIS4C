@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "queried_unique_dois": 61155,
+  "matched_unique_dois": 60773,
+  "match_rate": 0.993753576976535,
+  "unique_single_candidate": 60743,
+  "ambiguous_multi_candidate": 30,
+  "unmatched": 382,
+  "malformed_jsonl_rows": 0,
+  "candidate_work_types": {
+    "article": 46590,
+    "conference-paper": 10198,
+    "retraction": 2175,
+    "review": 551,
+    "reference-entry": 545,
+    "book-chapter": 454,
+    "preprint": 88,
+    "conference-abstract": 52,
+    "erratum": 42,
+    "book-review": 35,
+    "editorial": 33,
+    "letter": 29,
+    "book": 12,
+    "paratext": 8,
+    "other": 6,
+    "supplementary-materials": 2,
+    "data-paper": 1,
+    "dissertation": 1
+  },
+  "candidate_is_retracted": {
+    "True": 60259,
+    "False": 563
+  },
+  "ambiguous_examples": [
+    {
+      "query_doi": "10.1007/s00125-014-3355-0",
+      "candidate_count": 9,
+      "candidate_ids": [
+        "https://openalex.org/W1853203307",
+        "https://openalex.org/W1903493295",
+        "https://openalex.org/W2478471663",
+        "https://openalex.org/W2511686328",
+        "https://openalex.org/W2611505666",
+        "https://openalex.org/W2619053431",
+        "https://openalex.org/W2789191796",
+        "https://openalex.org/W3070568175",
+        "https://openalex.org/W4292521646"
+      ]
+    },
+    {
+      "query_doi": "10.1007/s12639-016-0762-9",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2246604176",
+        "https://openalex.org/W2341479785"
+      ]
+    },
+    {
+      "query_doi": "10.1016/0003-4975(91)90116-8",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2088989547",
+        "https://openalex.org/W4299305995"
+      ]
+    },
+    {
+      "query_doi": "10.1016/j.jmsy.2018.05.004",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2806332247",
+        "https://openalex.org/W3022640100"
+      ]
+    },
+    {
+      "query_doi": "10.24926/iip.v10i3.1659",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2935589250",
+        "https://openalex.org/W2956236452"
+      ]
+    },
+    {
+      "query_doi": "10.4414/smw.2003.10007",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2410634280",
+        "https://openalex.org/W2886972545"
+      ]
+    },
+    {
+      "query_doi": "10.1001/archsurg.136.1.101",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W1492496565",
+        "https://openalex.org/W2078632491"
+      ]
+    },
+    {
+      "query_doi": "10.1007/s00259-013-2535-3",
+      "candidate_count": 5,
+      "candidate_ids": [
+        "https://openalex.org/W2240427448",
+        "https://openalex.org/W2241719414",
+        "https://openalex.org/W2242343227",
+        "https://openalex.org/W2247585691",
+        "https://openalex.org/W2531731655"
+      ]
+    },
+    {
+      "query_doi": "10.1007/s10790-015-9518-5",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W1923324694",
+        "https://openalex.org/W3125382666"
+      ]
+    },
+    {
+      "query_doi": "10.1016/j.ifacol.2021.04.187",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W3017648597",
+        "https://openalex.org/W3164121335"
+      ]
+    },
+    {
+      "query_doi": "10.1080/21691401.2019.1640708",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2962940591",
+        "https://openalex.org/W4323517698"
+      ]
+    },
+    {
+      "query_doi": "10.1080/25787489.2023.2270822",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W4388236970",
+        "https://openalex.org/W4403486004"
+      ]
+    },
+    {
+      "query_doi": "10.1093/bja/67.5.595",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W1721516",
+        "https://openalex.org/W1968468028"
+      ]
+    },
+    {
+      "query_doi": "10.1097/cmr.0000000000000684",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W3037832670",
+        "https://openalex.org/W4206148778"
+      ]
+    },
+    {
+      "query_doi": "10.1177/0962280208098666",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W292409466",
+        "https://openalex.org/W4255530422"
+      ]
+    },
+    {
+      "query_doi": "10.1590/1413-81232018234.13882016",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2911840245",
+        "https://openalex.org/W2913721771"
+      ]
+    },
+    {
+      "query_doi": "10.2147/ott.s215819",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2979364019",
+        "https://openalex.org/W4285784393"
+      ]
+    },
+    {
+      "query_doi": "10.1016/s0195-6663(03)00120-x",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2082452021",
+        "https://openalex.org/W3124760170"
+      ]
+    },
+    {
+      "query_doi": "10.1152/ajpendo.00702.2006",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W1849352432",
+        "https://openalex.org/W2134080607"
+      ]
+    },
+    {
+      "query_doi": "10.1177/0148607106030003222",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2054763957",
+        "https://openalex.org/W4321258660"
+      ]
+    },
+    {
+      "query_doi": "10.1348/014466609x476827",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W1523700959",
+        "https://openalex.org/W3123892696"
+      ]
+    },
+    {
+      "query_doi": "10.4314/jfas.v10i4s.81",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W3121247935",
+        "https://openalex.org/W3146697589"
+      ]
+    },
+    {
+      "query_doi": "10.1001/jama.293.9.1082",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W166573353",
+        "https://openalex.org/W2020231266"
+      ]
+    },
+    {
+      "query_doi": "10.1016/j.heliyon.2024.e33150",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W38994046",
+        "https://openalex.org/W4399696731"
+      ]
+    },
+    {
+      "query_doi": "10.1016/j.legalmed.2020.101792",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W3092173415",
+        "https://openalex.org/W3157474729"
+      ]
+    },
+    {
+      "query_doi": "10.1111/ceo.14045",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W35050519",
+        "https://openalex.org/W4205689516"
+      ]
+    },
+    {
+      "query_doi": "10.1111/j.1582-4934.2008.00370.x",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2065877637",
+        "https://openalex.org/W4206849280"
+      ]
+    },
+    {
+      "query_doi": "10.1364/boe.399547",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W2898658761",
+        "https://openalex.org/W3102366766"
+      ]
+    },
+    {
+      "query_doi": "10.1590/s0004-27302013000800002",
+      "candidate_count": 2,
+      "candidate_ids": [
+        "https://openalex.org/W1574660559",
+        "https://openalex.org/W2415408081"
+      ]
+    },
+    {
+      "query_doi": "10.3109/02699052.2016.1162060",
+      "candidate_count": 11,
+      "candidate_ids": [
+        "https://openalex.org/W2223672803",
+        "https://openalex.org/W2468874737",
+        "https://openalex.org/W2469707463",
+        "https://openalex.org/W2478406042",
+        "https://openalex.org/W2479061024",
+        "https://openalex.org/W2519278960",
+        "https://openalex.org/W2524218776",
+        "https://openalex.org/W2588058672",
+        "https://openalex.org/W2615761978",
+        "https://openalex.org/W2733823300",
+        "https://openalex.org/W4292679668"
+      ]
+    }
+  ],
+  "gate": "Ambiguous multi-candidate DOI matches require concordance QA before a single OpenAlex Work is selected."
+}

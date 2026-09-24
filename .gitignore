@@ -25,6 +25,10 @@ papers/*/data/cache/
 !papers/*/data/manifests/
 !papers/*/data/derived/
 
+# Large regenerable derived intermediates (020): rebuild via run_pipeline.py
+papers/020-global-retraction-ecology/data/derived/work_table.jsonl
+papers/020-global-retraction-ecology/data/derived/openalex_retracted_not_rwdb_original.csv
+
 # OS / editors
 .DS_Store
 Thumbs.db

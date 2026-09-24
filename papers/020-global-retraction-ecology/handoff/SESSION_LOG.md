@@ -41,3 +41,20 @@
 - Added smoke_offline.py and wired it as the first run_pipeline.py gate.
 - Static QA: all 21 runner-referenced scripts exist and their argparse interfaces align with runner calls.
 - Added EXECUTION_PACKAGE_QA_2026-09-24.md. Static contract PASS; actual offline/network execution still pending.
+
+
+## 2026-09-24 · Networked confirmatory chain EXECUTED (GLM sandbox agent)
+- Resolved the former execution-surface blocker: direct network access from the local sandbox reached both the GitLab RWDB source and api.openalex.org; OPENALEX_API_KEY picked up from env.
+- Full RUNBOOK run (run_pipeline.py) completed end-to-end in ~45 min; manifest PASS.
+- Offline smoke gate PASS (21/21 CLI help, 2/2 tests). Two bugs found and fixed during the run:
+  1. smoke_offline.py had no argparse, so `--help` recursively re-ran the entire suite; guard added.
+  2. audit_rwdb.py no longer emitted the `dates` block consumed by build_audit_figures.py (contract drift vs the committed 2026-09-23 audit JSON); block restored including recent_retraction_counts, year ranges, median lag years.
+- Fresh RWDB snapshot identical hash to 2026-09-23 freeze: 72,606 rows / 67,197 Retractions / 61,155 unique original DOIs (sha256 da61a30c...).
+- OpenAlex candidate-safe shards 0-3: 61,155 DOIs queried, 60,773 matched (99.375%), 30 ambiguous, 382 unmatched, 0 malformed.
+- RWDB-to-OpenAlex is_retracted concordance: 99.12% true (60,208/60,743 single-candidate).
+- OpenAlex core is_retracted=true snapshot: 136,000 works frozen with timestamp+sha256 sidecar (a7d20372...).
+- Bidirectional DOI concordance: 60,299 original-DOI matches, 41,152 notice-DOI-only, 33,472 absent from RWDB; only 880 RWDB original DOIs absent from OpenAlex.
+- Work-type QA: 158 anomalous rows materialized (reference-entry 50, retraction 50, erratum 42, paratext 8, other 6, supplementary 2).
+- Denominators 1990-2025 (year x field, year x type) + censoring-aware hazard panel frozen (936 denominator cells, 4,664 event cells).
+- Dashboard 020: 55 -> 75 (active). Next gate: work-type QA adjudication -> freeze eligible types + censoring rule -> comparative risk results -> manuscript refresh.
+- Large regenerable intermediates (work_table.jsonl 63MB, openalex_retracted_not_rwdb_original.csv 15MB) added to .gitignore per RUNBOOK boundary.

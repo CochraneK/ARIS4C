@@ -1,0 +1,4387 @@
+{
+  "schema_version": 2,
+  "corpus": "core",
+  "group": "type",
+  "openalex_group_by": "type:include_unknown",
+  "from_year": 1990,
+  "to_year": 2025,
+  "years": {
+    "1990": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 1586270
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 62863
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 132773
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 35012
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 14236
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 56767
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 4682
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 46131
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 8655
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 3540
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 8520
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 2
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 55426
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 43212
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 32
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 6257
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 560
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 22761
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 14
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 1967
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 5
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 2543
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 96
+      }
+    ],
+    "1991": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 1568937
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 62442
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 143219
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 35272
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 12235
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 61892
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 5468
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 47953
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 9594
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 3785
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 8541
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 49302
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 44293
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 42
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 6716
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 848
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 22914
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 18
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 2343
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 7
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 2632
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 82
+      }
+    ],
+    "1992": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 1639912
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 65195
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 140336
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 35159
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 16267
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 70267
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 5607
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 52197
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 10647
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 4024
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9266
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 46522
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 46717
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 49
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 8224
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 5712
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 26261
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 26
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 2654
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 21
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 2434
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 70
+      }
+    ],
+    "1993": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 1709609
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 65191
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 146636
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 36603
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 18895
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 75770
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 5089
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 55131
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 11481
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 4123
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9527
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 51496
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 47561
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 69
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 9827
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 2990
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 26317
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 15
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 2865
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 19
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 2690
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 81
+      }
+    ],
+    "1994": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 1811576
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 67747
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 151149
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 36450
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 19310
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 81188
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 5855
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 60775
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 11870
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 4240
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9427
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 50996
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 50835
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 53
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 12573
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 1029
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 27073
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 18
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 3013
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 18
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 2975
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 85
+      }
+    ],
+    "1995": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 1916357
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 71550
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 162706
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 37254
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 27064
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 85113
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 6866
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 66382
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 11712
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 4252
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9545
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 53585
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 53367
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 52
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 14828
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 1406
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 29121
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 17
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 3260
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 18
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 4832
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 101
+      }
+    ],
+    "1996": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 2087532
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 73856
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 165947
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 37360
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 33489
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 94271
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 9592
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 74583
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 12977
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 4604
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9884
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 2
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 55147
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 53763
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 32
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 17835
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 5210
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 27659
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 10
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 3994
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 27
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 4445
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 113
+      }
+    ],
+    "1997": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 2150823
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 74953
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 178642
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 38247
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 39513
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 98722
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 10563
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 79285
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 13370
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 4309
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 11147
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 2
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 53080
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 50451
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 45
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 21182
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 1589
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 28653
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 22
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 4506
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 33
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 4825
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 67
+      }
+    ],
+    "1998": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 2289576
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 76392
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 192647
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 39715
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 38468
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 105871
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 11664
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 82519
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 14214
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 4652
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 11136
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 3
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 55353
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 49888
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 45
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 27295
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 10152
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 28858
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 31
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 5058
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 31
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 5710
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 94
+      }
+    ],
+    "1999": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 2368635
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 78743
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 195920
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 40690
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 36255
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 118833
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 19647
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 87597
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 15537
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 4691
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 11282
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 69
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 59194
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 50177
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 23
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 29883
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 6033
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 30080
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 36
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 5272
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 47
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 5864
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 78
+      }
+    ],
+    "2000": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 2877984
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 90529
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 230089
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 39984
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 40112
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 128814
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 25988
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 95891
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 15588
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 4695
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10276
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 70822
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 56241
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 41
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 35331
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 49638
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 35887
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 26
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 5829
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 31
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 7021
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 149
+      }
+    ],
+    "2001": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 2832808
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 82903
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 247292
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 41373
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 43297
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 142864
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 30437
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 102465
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 15369
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 5176
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9691
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 3
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 66797
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 61196
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 2632
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 38782
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 54286
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 32242
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 31
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 6790
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 27
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 6821
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 104
+      }
+    ],
+    "2002": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 3064245
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 87350
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 272546
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 38697
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 46747
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 472801
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 33311
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 113918
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 16549
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 5414
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9852
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 76741
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 69337
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 7438
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 42633
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 27460
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 34784
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 55
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 7574
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 49
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 8011
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 136
+      }
+    ],
+    "2003": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 3346035
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 90133
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 306576
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 38668
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 56625
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 329804
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 40321
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 128211
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 17370
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 5991
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9578
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 95196
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 80479
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 7110
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 50528
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 62104
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 38213
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 97
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 8298
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 49
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 7716
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 142
+      }
+    ],
+    "2004": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 3615799
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 96017
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 321351
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 39402
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 71911
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 302234
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 45446
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 146404
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 18488
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 6573
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9737
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 118523
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 91624
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 7780
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 56319
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 118375
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 39202
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 100
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 9175
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 50
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 7700
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 235
+      }
+    ],
+    "2005": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 3862903
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 97596
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 374742
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 41056
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 66792
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 396251
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 49134
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 167077
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 20081
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 6808
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9775
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 6
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 102479
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 93942
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 8890
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 65191
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 51272
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 42087
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 129
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 9992
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 82
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 6929
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 250
+      }
+    ],
+    "2006": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 4177880
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 98271
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 430496
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 42616
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 85502
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 405128
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 2
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 56151
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 209926
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 22626
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 7413
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10090
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 6
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 118307
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 103220
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 12292
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 73210
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 46717
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 42570
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 170
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 10922
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 129
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 8472
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 303
+      }
+    ],
+    "2007": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 4437162
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 110271
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 486583
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 42509
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 71455
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 394679
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 73510
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 236106
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 24193
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 7604
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9957
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 6373
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 119910
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 110538
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 12198
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 77384
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 215223
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 42228
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 250
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 11886
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 94
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 8086
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 433
+      }
+    ],
+    "2008": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 4864306
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 113481
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 482892
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 44488
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 79928
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 416809
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 2
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 88060
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 277034
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 26755
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 8428
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10194
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 42020
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 126065
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 120841
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 13756
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 87799
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 113042
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 44253
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 289
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 13120
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 137
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 18809
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 501
+      }
+    ],
+    "2009": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 5148487
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 129074
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 535041
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 44989
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 97942
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 471717
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 2
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 88421
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 328037
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 27906
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 9519
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9671
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 81738
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 176440
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 139273
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 14036
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 96381
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 93505
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 48488
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 376
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 15251
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 113
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 7679
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 660
+      }
+    ],
+    "2010": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 5438147
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 151611
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 642018
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 46421
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 100078
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 513701
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 2
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 93919
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 375553
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 29229
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 10668
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9300
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 111291
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 157281
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 160288
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 14868
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 106878
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 67954
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 51314
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 402
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 17518
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 132
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 8251
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 975
+      }
+    ],
+    "2011": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 5736202
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 140485
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 623109
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 45797
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 102104
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 523945
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 3
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 104095
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 425004
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 30065
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 11143
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10430
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 124368
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 178699
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 139967
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 15549
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 117650
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 306962
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 56211
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 601
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 20386
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 156
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 2
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 9020
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 1268
+      }
+    ],
+    "2012": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 5954329
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 155409
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 705273
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 49168
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 116109
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 519085
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 5
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 100816
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 469707
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 32284
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 12415
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9982
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 133051
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 243987
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 154040
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 16957
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 126796
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 101284
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 58646
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 703
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 22873
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 234
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 3
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 8902
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 1845
+      }
+    ],
+    "2013": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6235849
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 161282
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 767995
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 50981
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 109194
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 514204
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 4
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 152543
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 508664
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 32559
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 14443
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10426
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 135373
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 201016
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 161581
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 18002
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 135287
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 138817
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 56950
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 803
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 26807
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 279
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 14
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 10452
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 2238
+      }
+    ],
+    "2014": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6439312
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 143634
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 784040
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 50076
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 115601
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 548777
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 91
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 220824
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 555256
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 33915
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 15677
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10318
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 138765
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 267692
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 174455
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 14539
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 137167
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 248616
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 56526
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 761
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 29798
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 1984
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 13
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 8258
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 2615
+      }
+    ],
+    "2015": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6528349
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 138366
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 771465
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 49294
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 118626
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 582232
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 488
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 256876
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 612349
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 35994
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 17412
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10898
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 160259
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 249224
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 189415
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 13228
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 146384
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 172774
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 60585
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 1117
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 32595
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 4171
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 37
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 61181
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 3514
+      }
+    ],
+    "2016": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6549441
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 145877
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 890193
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 44718
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 118942
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 682309
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 1012
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 386446
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 660657
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 37192
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 18506
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10897
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 160598
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 244872
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 210258
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 34363
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 173517
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 146137
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 57806
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 1207
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 35331
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 3729
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 132
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 10600
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 5150
+      }
+    ],
+    "2017": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6205232
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 170304
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 967218
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 42718
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 115976
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 681639
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 924
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 420862
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 681268
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 37319
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 20854
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10244
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 149430
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 238323
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 257677
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 37052
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 185926
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 143470
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 57695
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 1045
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 39811
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 2475
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 235
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 13004
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 6591
+      }
+    ],
+    "2018": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6052660
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 163580
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 1005346
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 42277
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 146920
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 739352
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 1921
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 436267
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 667980
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 36668
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 22747
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9840
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 140809
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 209837
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 263588
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 40178
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 224958
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 113531
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 56411
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 1412
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 42340
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 2449
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 198
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 12191
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 7522
+      }
+    ],
+    "2019": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6290627
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 146770
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 968100
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 36741
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 160116
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 778887
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 2027
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 523669
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 675192
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 37975
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 23798
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 10431
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 123444
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 216552
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 280100
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 53260
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 279227
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 74132
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 55301
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 1652
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 46745
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 3112
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 249
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 13219
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 8128
+      }
+    ],
+    "2020": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6608704
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 148265
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 1066381
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 34851
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 157027
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 659995
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 3172
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 633939
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 491492
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 41855
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 28152
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 11844
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 155423
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 245547
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 312473
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 103839
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 424101
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 214308
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 70634
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 3290
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 58292
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 5315
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 359
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 13244
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 10518
+      }
+    ],
+    "2021": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6104079
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 138186
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 931962
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 32201
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 120344
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 691575
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 1654
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 1042159
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 278602
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 40588
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 31177
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 11060
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 42190
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 225285
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 275438
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 109194
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 450578
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 92273
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 60303
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 4988
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 67470
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 4599
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 379
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 20488
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 12130
+      }
+    ],
+    "2022": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 5549028
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 127271
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 951782
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 27597
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 128784
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 667210
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 2006
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 1165550
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 229289
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 40107
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 28891
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 8819
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 208339
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 298164
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 109786
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 515982
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 65909
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 54710
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 4154
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 68095
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 541
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 434
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 20392
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 10782
+      }
+    ],
+    "2023": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 5704078
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 133275
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 947992
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 27581
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 154857
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 785344
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 2333
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 724115
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 260853
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 40974
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 29949
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 8333
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 1
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 322156
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 302243
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 145186
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 614505
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 375138
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 64318
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 4141
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 73604
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 728
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 616
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 13857
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 184477
+      }
+    ],
+    "2024": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 6034354
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 130582
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 928751
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 27210
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 163540
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 885786
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 2665
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 550666
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 299132
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 38693
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 35455
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 9368
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 250053
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 295578
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 194878
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 738378
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 90535
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 61344
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 7126
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 82702
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 1310
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 693
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 13399
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 31598
+      }
+    ],
+    "2025": [
+      {
+        "key": "https://openalex.org/types/article",
+        "key_display_name": "article",
+        "count": 7054774
+      },
+      {
+        "key": "https://openalex.org/types/book",
+        "key_display_name": "book",
+        "count": 157471
+      },
+      {
+        "key": "https://openalex.org/types/book-chapter",
+        "key_display_name": "book-chapter",
+        "count": 883321
+      },
+      {
+        "key": "https://openalex.org/types/book-review",
+        "key_display_name": "book-review",
+        "count": 27251
+      },
+      {
+        "key": "https://openalex.org/types/conference-abstract",
+        "key_display_name": "conference-abstract",
+        "count": 171233
+      },
+      {
+        "key": "https://openalex.org/types/conference-paper",
+        "key_display_name": "conference-paper",
+        "count": 978723
+      },
+      {
+        "key": "https://openalex.org/types/data-paper",
+        "key_display_name": "data-paper",
+        "count": 3410
+      },
+      {
+        "key": "https://openalex.org/types/dataset",
+        "key_display_name": "dataset",
+        "count": 1917204
+      },
+      {
+        "key": "https://openalex.org/types/dissertation",
+        "key_display_name": "dissertation",
+        "count": 451436
+      },
+      {
+        "key": "https://openalex.org/types/editorial",
+        "key_display_name": "editorial",
+        "count": 39190
+      },
+      {
+        "key": "https://openalex.org/types/erratum",
+        "key_display_name": "erratum",
+        "count": 41162
+      },
+      {
+        "key": "https://openalex.org/types/letter",
+        "key_display_name": "letter",
+        "count": 12106
+      },
+      {
+        "key": "https://openalex.org/types/libguides",
+        "key_display_name": "libguides",
+        "count": 2
+      },
+      {
+        "key": "https://openalex.org/types/other",
+        "key_display_name": "other",
+        "count": 1289120
+      },
+      {
+        "key": "https://openalex.org/types/paratext",
+        "key_display_name": "paratext",
+        "count": 277160
+      },
+      {
+        "key": "https://openalex.org/types/peer-review",
+        "key_display_name": "peer-review",
+        "count": 220771
+      },
+      {
+        "key": "https://openalex.org/types/preprint",
+        "key_display_name": "preprint",
+        "count": 809913
+      },
+      {
+        "key": "https://openalex.org/types/reference-entry",
+        "key_display_name": "reference-entry",
+        "count": 54615
+      },
+      {
+        "key": "https://openalex.org/types/report",
+        "key_display_name": "report",
+        "count": 97292
+      },
+      {
+        "key": "https://openalex.org/types/retraction",
+        "key_display_name": "retraction",
+        "count": 7128
+      },
+      {
+        "key": "https://openalex.org/types/review",
+        "key_display_name": "review",
+        "count": 106008
+      },
+      {
+        "key": "https://openalex.org/types/software",
+        "key_display_name": "software",
+        "count": 35285
+      },
+      {
+        "key": "https://openalex.org/types/software-paper",
+        "key_display_name": "software-paper",
+        "count": 956
+      },
+      {
+        "key": "https://openalex.org/types/standard",
+        "key_display_name": "standard",
+        "count": 15630
+      },
+      {
+        "key": "https://openalex.org/types/supplementary-materials",
+        "key_display_name": "supplementary-materials",
+        "count": 33114
+      }
+    ]
+  }
+}

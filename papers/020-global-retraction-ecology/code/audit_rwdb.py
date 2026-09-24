@@ -43,6 +43,17 @@ def main():
 
     lag_sorted=sorted(lags)
     def q(p): return lag_sorted[round((len(lag_sorted)-1)*p)] if lag_sorted else None
+
+    # Date/period audit block: retraction-year histogram and publication-year
+    # range, kept compatible with the committed 2026-09-23 audit JSON schema
+    # (consumed by build_audit_figures.py as d["dates"]["recent_retraction_counts"]).
+    retr_years=collections.Counter(); pub_years=set()
+    for r in primary:
+        b=parse_date(r.get("RetractionDate",""))
+        if b: retr_years[b.year]+=1
+        a=parse_date(r.get("OriginalPaperDate",""))
+        if a: pub_years.add(a.year)
+    recent_counts={str(y):retr_years[y] for y in sorted(retr_years) if y>=2012}
     out={
       "sha256":hashlib.sha256(raw).hexdigest(),
       "rows":len(rows),"nature_counts":dict(nature),"retraction_rows":len(primary),
@@ -54,7 +65,16 @@ def main():
       "reason_label_count_distribution":dict(sorted(reason_card.items())),
       "country_count_distribution":dict(sorted(country_card.items())),
       "subject_count_distribution":dict(sorted(subject_card.items())),
-      "unique_reason_labels":len(reasons),"top_reason_labels":reasons.most_common(30)
+      "unique_reason_labels":len(reasons),"top_reason_labels":reasons.most_common(30),
+      "dates":{
+        "parseable_publication_to_retraction_lags":len(lags),
+        "negative_lag_rows":sum(v<0 for v in lags),
+        "publication_year_range":[min(pub_years),max(pub_years)] if pub_years else None,
+        "retraction_year_range":[min(retr_years),max(retr_years)] if retr_years else None,
+        "lag_days":{"p10":q(.10),"p25":q(.25),"median":q(.50),"p75":q(.75),"p90":q(.90)},
+        "median_lag_years":round(statistics.median(lags)/365.25,2) if lags else None,
+        "recent_retraction_counts":recent_counts
+      }
     }
     args.out.parent.mkdir(parents=True,exist_ok=True)
     args.out.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

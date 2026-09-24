@@ -1,0 +1,234 @@
+{
+  "sha256": "da61a30cd4b01b681d1b42ad43cae7ae9eca2213a4f33ff7e762b7942c93f663",
+  "rows": 72606,
+  "nature_counts": {
+    "Retraction": 67197,
+    "Correction": 1530,
+    "Expression of concern": 3719,
+    "Reinstatement": 160
+  },
+  "retraction_rows": 67197,
+  "original_doi_available_rows": 61316,
+  "original_doi_unique": 61155,
+  "repeated_original_doi_unique": 14,
+  "original_doi_max_multiplicity": 145,
+  "notice_doi_available_rows": 62651,
+  "notice_doi_unique": 57609,
+  "parseable_lags": 67197,
+  "negative_lag_rows": 0,
+  "lag_days": {
+    "p10": 38,
+    "p25": 153,
+    "median": 490,
+    "p75": 1061,
+    "p90": 2194
+  },
+  "reason_label_count_distribution": {
+    "1": 11564,
+    "2": 11590,
+    "3": 14727,
+    "4": 6022,
+    "5": 7175,
+    "6": 4458,
+    "7": 2120,
+    "8": 2973,
+    "9": 5073,
+    "10": 325,
+    "11": 1121,
+    "12": 23,
+    "13": 10,
+    "14": 7,
+    "15": 3,
+    "16": 4,
+    "17": 2
+  },
+  "country_count_distribution": {
+    "1": 56705,
+    "2": 6954,
+    "3": 1995,
+    "4": 871,
+    "5": 344,
+    "6": 174,
+    "7": 84,
+    "8": 37,
+    "9": 15,
+    "10": 8,
+    "11": 4,
+    "12": 2,
+    "13": 1,
+    "15": 2,
+    "28": 1
+  },
+  "subject_count_distribution": {
+    "1": 9015,
+    "2": 21540,
+    "3": 21578,
+    "4": 10314,
+    "5": 3516,
+    "6": 986,
+    "7": 207,
+    "8": 34,
+    "9": 6,
+    "10": 1
+  },
+  "unique_reason_labels": 110,
+  "top_reason_labels": [
+    [
+      "Investigation by Journal/Publisher",
+      30278
+    ],
+    [
+      "Unreliable Results and/or Conclusions",
+      21970
+    ],
+    [
+      "Investigation by Third Party",
+      17554
+    ],
+    [
+      "Concerns/Issues about Referencing/Attributions",
+      15049
+    ],
+    [
+      "Concerns/Issues about Data",
+      14343
+    ],
+    [
+      "Notice - Limited or No Information",
+      11985
+    ],
+    [
+      "Paper Mill",
+      11712
+    ],
+    [
+      "Concerns/Issues about Peer Review",
+      11437
+    ],
+    [
+      "Compromised Peer Review",
+      11195
+    ],
+    [
+      "Computer-Aided Content or Computer-Generated Content",
+      9317
+    ],
+    [
+      "Concerns/Issues about Results and/or Conclusions",
+      9272
+    ],
+    [
+      "Date of Article and/or Notice Unknown",
+      6902
+    ],
+    [
+      "Duplication of/in Image",
+      5345
+    ],
+    [
+      "Breach of Policy by Author",
+      4786
+    ],
+    [
+      "Removed",
+      3988
+    ],
+    [
+      "Objections by Author(s)",
+      3889
+    ],
+    [
+      "Euphemisms for Plagiarism",
+      3793
+    ],
+    [
+      "Duplication of/in Article",
+      3666
+    ],
+    [
+      "Investigation by Company/Institution",
+      3269
+    ],
+    [
+      "Author Unresponsive",
+      3195
+    ],
+    [
+      "Concerns/Issues about Image",
+      3104
+    ],
+    [
+      "Rogue Editor",
+      2984
+    ],
+    [
+      "Concerns/Issues about Authorship/Affiliation",
+      2919
+    ],
+    [
+      "Plagiarism of/in Article",
+      2873
+    ],
+    [
+      "Lack of IRB/IACUC Approval and/or Compliance",
+      2636
+    ],
+    [
+      "Original Data and/or Images not Provided and/or not Available",
+      2430
+    ],
+    [
+      "Unreliable Data",
+      2348
+    ],
+    [
+      "Euphemisms for Duplication",
+      2250
+    ],
+    [
+      "Upgrade/Update of Prior Notice(s)",
+      2237
+    ],
+    [
+      "Plagiarism of Text",
+      2197
+    ]
+  ],
+  "dates": {
+    "parseable_publication_to_retraction_lags": 67197,
+    "negative_lag_rows": 0,
+    "publication_year_range": [
+      1753,
+      2026
+    ],
+    "retraction_year_range": [
+      1756,
+      2026
+    ],
+    "lag_days": {
+      "p10": 38,
+      "p25": 153,
+      "median": 490,
+      "p75": 1061,
+      "p90": 2194
+    },
+    "median_lag_years": 1.34,
+    "recent_retraction_counts": {
+      "2012": 1161,
+      "2013": 1449,
+      "2014": 1115,
+      "2015": 1545,
+      "2016": 1683,
+      "2017": 1712,
+      "2018": 2534,
+      "2019": 2907,
+      "2020": 3080,
+      "2021": 3908,
+      "2022": 5591,
+      "2023": 13227,
+      "2024": 6383,
+      "2025": 5945,
+      "2026": 1757
+    }
+  }
+}

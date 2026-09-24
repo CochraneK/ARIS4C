@@ -1,0 +1,536 @@
+query_doi,openalex_id,openalex_is_retracted,openalex_type,publication_year,display_name
+10.1002/14651858.cd002291.pub3,https://openalex.org/W4253656064,False,reference-entry,2004,Chinese herbal medicine for atopic eczema
+10.1002/14651858.cd003694.pub2,https://openalex.org/W4254152544,False,reference-entry,2009,Orthotic devices after stroke and other non-progressive brain lesions
+10.1002/14651858.cd005176,https://openalex.org/W4253479643,False,reference-entry,2005,Aerobic exercise training programmes for improving physical and psychosocial health in adults with Down syndrome
+10.1002/14651858.cd006384,https://openalex.org/W4252521776,False,reference-entry,2007,Ultrasonic versus hand instrumentation for orthograde root canal treatment of permanent teeth
+10.1002/ana.24658,https://openalex.org/W2440908154,False,article,2016,DNAJC6variants in Parkinson's disease and amyotrophic lateral sclerosis
+10.1002/ccr3.2825,https://openalex.org/W3014589977,False,article,2020,Identification of a novel RUNX2 gene mutation and early diagnosis of CCD in a cleidocranial dysplasia suspected Iranian family
+10.1002/eqe.2515,https://openalex.org/W4253783392,False,editorial,2014,"Discussion of paper ‘Development of a family of unconditionally stable explicit direct integration algorithms with controllable numerical energy dissipation’ by Chinmoy Kolay and James M. Ricles, Earthquake Engineering and Structural Dynamics 2014; 43:136"
+10.1002/hed.23756,https://openalex.org/W1662639089,False,article,2014,Retracted:18FDG-PET/CT computer-assisted biopsies for suspected persistent or recurrent malignant skull base disease
+10.1002/hep.23316,https://openalex.org/W2020473974,False,article,2009,Identification of connective tissue growth factor as a hepatic negative acute phase protein
+10.1007/978-3-030-00524-5_6,https://openalex.org/W2952139295,False,conference-paper,2019,RETRACTED CHAPTER: SiloMAS: A MAS for Smart Silos to Optimize Food and Water Consumption on Livestock Holdings
+10.1007/978-3-030-00524-5_7,https://openalex.org/W2949837874,False,conference-paper,2019,RETRACTED CHAPTER: Intelligent Livestock Feeding System by Means of Silos with IoT Technology
+10.1007/978-3-540-77901-8,https://openalex.org/W1677132657,False,book,2008,Fundamentals of Biochemical Engineering
+10.1007/978-981-10-7260-4,https://openalex.org/W2791495096,False,book,2017,Tropical Dry Deciduous Forest: Research Trends and Emerging Features
+10.1007/s12217-012-9321-x,https://openalex.org/W2286002975,False,article,2012,Effect of Short Duration Simulated Microgravity on Effectiveness of Local Anesthesia
+10.1016/j.ajcnut.2024.05.005,https://openalex.org/W4399084727,False,article,2024,Monitoring commercially available complementary foods for the infant and young child in Southeast Asia: accountability and the way forward
+10.1016/j.arbr.2021.10.019,https://openalex.org/W3170351840,False,letter,2021,Reply to “COVID-19 and smoking: An opportunity to quit...when vaccinated!”
+10.1016/j.nmni.2020.100707,https://openalex.org/W3033405514,False,article,2020,WITHDRAWN: Remdesivir investigational trials in coronavirus disease 2019: a critical reappraisal
+10.1016/j.urology.2018.12.013,https://openalex.org/W2906202542,False,article,2018,WITHDRAWN: EDITORIAL COMMENT
+10.1016/s0140-6736(20)30730-3,https://openalex.org/W3013498396,False,article,2020,Structural violence in the era of a new pandemic: the case of the Gaza Strip
+10.1017/chol9780521762168.040,https://openalex.org/W2494206206,False,book-chapter,2009,The care of souls and “practical ethics”
+10.1017/psrm.2014.25,https://openalex.org/W3124818719,False,article,2014,"Regular Voters, Marginal Voters and the Electoral Effects of Turnout"
+10.1021/jacs.6b08698,https://openalex.org/W2529880736,False,retraction,2016,"Retraction of “Few-Layer Antimonene: Large Yield Synthesis, Exact Atomical Structure, and Outstanding Optical Limiting”"
+10.1038/ncomms1932,https://openalex.org/W2154128850,False,article,2012,Cleavage and nuclear localization of the rice XA21 immune receptor
+10.1053/j.jvca.2018.11.036,https://openalex.org/W2905872089,False,article,2018,REMOVED: Plus Les Choses Changent Plus Elles Restent Les Mêmes
+10.1055/a-1951-1705,https://openalex.org/W4297231575,False,article,2022,TEMPORARY REMOVAL: Direct oral anticoagulants in antithrombin deficiency: initial experience in a single center
+10.1055/s-0035-1549037,https://openalex.org/W2435197113,False,article,2015,Notice of Retraction: Dynamic Muscle Transfer in Facial Nerve Palsy: The Use of Contralateral Orbicularis Oculi Muscle
+10.1055/s-0039-1688722,https://openalex.org/W2944175058,False,retraction,2019,Retraction: Antiepileptic Drug Adherence and Psychosocial Factors in Children: Is There a Connection?
+10.1055/s-0040-1703010,https://openalex.org/W3015944082,False,retraction,2020,Retraction: Complementary Cast Immobilization Is Not Necessary after Intramedullary Fixation of Unstable Tibial Shaft Fractures in Pediatric Patients
+10.1061/(asce)ae.1943-5568.0000120,https://openalex.org/W4251371162,False,article,2013,Airflow and Door Position: A Case Study on Aerosol Dispersion within a General Patient and Airborne Infectious Isolation Room
+10.1061/(asce)as.1943-5525.0000166,https://openalex.org/W2070838334,False,article,2011,Numerical and Experimental Investigation on Dual Shear Coaxial Gas‐Gas Injector
+10.1061/(asce)as.1943-5525.0000306,https://openalex.org/W2080617782,False,article,2012,A Hybrid Method for Calculating Residual Stress and Deformation in Space Hardware on Earth
+10.1061/(asce)be.1943-5592.0000308,https://openalex.org/W4210993641,False,article,2011,Effective Flange Width for Honeycomb FRP Sandwich Bridge Deck‐on‐Steel Girder System with a Mechanical Shear Connector Considering Degrees of Composite Action
+10.1061/(asce)be.1943-5592.0000465,https://openalex.org/W2065935340,False,article,2013,Parametric Simulation of Nonlinear Shear Key Behavior on the Seismic Response on Bridge Abutments
+10.1061/(asce)cf.1943-5509.0000076,https://openalex.org/W4234046345,False,retraction,2009,"Retraction: Pourazin, K., and Eshghi, S. (2009). “Experimental and Analytical Studies for Development of Capacity Curve in a Confined Masonry Wall.”J. Perform. Constr. Facil., 10.1061/(ASCE)CF.1943-5509.0000076 (Jul. 15, 2009)"
+10.1061/(asce)co.1943-7862.0000470,https://openalex.org/W4234301535,False,article,2011,Metodología para el Diagnóstico de la Sostenibilidad de Empresas de Servicios Públicos
+10.1061/(asce)gm.1943-5622.0000358,https://openalex.org/W2014727315,False,article,2013,Stress perturbation around a fault by hydraulic fracturing
+10.1061/(asce)gm.1943-5622.0000364,https://openalex.org/W2000337918,False,article,2013,An applied method for analysis of nonlinear seismic response of layered soil deposit
+10.1061/(asce)he.1943-5584.0000310,https://openalex.org/W4232082811,False,retraction,2010,"Retraction: Chen, J., Adams, B. J., and O’Connor, K. M. (2010). “Incorporation of Three-Layer Evapotranspiration and Percolation Processes in a Tank Model.”J. Hydrol. Eng., 10.1061/(ASCE)HE.1943-5584.0000310 (Aug. 31, 2010)"
+10.1061/(asce)hy.1943-7900.0000467,https://openalex.org/W4230297444,False,retraction,2011,"Retraction: Zhang, X., Lu, X., Dong, B., and Hu, C. (2011). “A Quasi-3D Mathematical Bend Flow Model in Non-Orthogonal Curvilinear Coordinate System.”J. Hydraul. Eng., 10.1061/(ASCE)HY.1943-7900.0000467 (Jun. 1, 2011)"
+10.1061/(asce)hz.2153-5515.0000120,https://openalex.org/W2053942025,False,article,2011,"Synthesis and Characterization of a New Ion Exchanger Tamarind 5‐Amino Salicylic Acid Hydroximate [TASAH] Resin and Its Application in Removal and Recovery of Toxic Metal Ions from Effluent of Karishma Textile, Jodhpur, India"
+10.1061/(asce)nh.1527-6996.0000049,https://openalex.org/W2087062481,False,article,2011,Aerodynamic Edge Devices for Reduction of Wind Loads on Roofs
+10.1061/(asce)ps.1949-1204.0000080,https://openalex.org/W4252074508,False,retraction,2011,"Retraction: Brkić, D. (2011). “Spreadsheet-Based Pipe Networks Analysis for Teaching and Learning Purpose.”J. Pipeline Syst. Eng. Pract., 10.1061/(ASCE)PS.1949-1204.0000080 (Mar. 4, 2011)"
+10.1061/(asce)ps.1949-1204.0000138,https://openalex.org/W4233099206,False,article,2013,ANOVA Analysis Applied on Factors Which Are Assumed To Be Related To Horizontal Directional Drilling Productivity
+10.1061/(asce)st.1943-541x.0000463,https://openalex.org/W2079469999,False,article,2011,Seismic Evaluation of Beam‐Column Joints in Older Concrete Exterior Frames
+10.1061/(asce)up.1943-5444.0000100,https://openalex.org/W2002311679,False,article,2011,Urban Microclimate Investigation of Major Squares in Athens
+10.1061/41007(331)29,https://openalex.org/W4235256316,False,retraction,2008,"Retraction: Clar, Michael (2007). ""Pembroke Woods: Lessons Learned in the Design and Construction of a LID Subdivision."" Low Impact Development: New and Continuing Applications, Proceedings of the 2nd National Low Impact Development Conference 2007. doi:http://dx.doi.org/10.1061/41007(331)29"
+10.1061/41039(345)373,https://openalex.org/W4235825391,False,retraction,2009,"Retraction: Liu, Xinquan, Ye, Huaizhen (2009). .A Random Regret.Minimization Model of Travel Choice Based on Information.. International Conference on Transportation Engineering 2009, Proceedings of the Second International Conference on Transportation Engineering. doi:http://dx.doi.org/10.1061/41039(345)373"
+10.1061/41139(387)82,https://openalex.org/W4243139189,False,retraction,2010,"Retraction: Fu, Jiangyue, Zhang, Jin Zhang, and Zang, Zheng (2010). ""Study on Integrated Green Logistics Management Model and Investment-Benefit Model of Logistics Enterprise."" ICLEM 2010: Logistics for Sustained Economic Development.Infrastructure, Information, Integration, Proceedings of the 2010 International Conference of Logistics Engineering and Management. doi:http://dx.doi.org/10.1061/41139(387)82"
+10.1074/jbc.m312310200,https://openalex.org/W2030601263,False,article,2004,Structural Basis for the Coordinated Regulation of Transglutaminase 3 by Guanine Nucleotides and Calcium/Magnesium
+10.1074/jbc.m403481200,https://openalex.org/W1997950387,False,article,2004,Crystal Structure of Transglutaminase 3 in Complex with GMP
+10.1080/00207543.2011.596846,https://openalex.org/W4206012203,False,article,2011,The analysis of heuristics for supplier selection and purchase problem under stochastic demand
+10.1080/01634372.2013.819826,https://openalex.org/W2958872908,False,article,2013,Depression in Dementia Caregivers: An Analysis of Meaning and Symptom Severity
+10.1080/0312407x.2012.754917,https://openalex.org/W2956565802,False,article,2013,The Changing Nature of Filial Piety: Meanings and Practices of Caring for Older Australian-Chinese in the Community
+10.1080/09503110.2014.878439,https://openalex.org/W2038868142,False,article,2014,Diplomatics in the Eastern Mediterranean 1000–1500: Aspects of Cross-Cultural Communication
+10.1080/09503110.2014.915123,https://openalex.org/W2132335021,False,book-review,2014,"Well Begun Is Only Half Done: Tracing Aristotle's Political Ideas in Medieval Arabic, Syriac, Byzantine, and Jewish Sources"
+10.1080/09503110.2014.915124,https://openalex.org/W2046912113,False,article,2014,The Latin Renovatio of Byzantium. The Empire of Constantinople (1204–1228)
+10.1080/09503110.2015.1100830,https://openalex.org/W2223733090,False,article,2015,"Byzantine Epirus: A Topography of Transformation. Settlement of the Seventh-Twelfth Centuries in Southern Epirus and Aetoloacarnania, Greece"
+10.1080/09503110.2015.1100831,https://openalex.org/W2229603723,False,book-review,2015,"The Military Orders, volume V: Politics and Power"
+10.1080/09503110.2015.1100832,https://openalex.org/W2226103934,False,article,2015,"Byzantines, Latins, and Turks in the Eastern Mediterranean World after 1150"
+10.1080/09503110.2016.1275635,https://openalex.org/W2625364788,False,article,2017,The Byzantine Turks: 1204–1461
+10.1080/10236198.2012.662968,https://openalex.org/W2025318517,False,article,2012,A note on the recursive sequence
+10.1080/10589759.2011.610796,https://openalex.org/W4251246595,False,article,2011,Investigation of the variation in surface magnetic field induced by cyclic tensile–compressive stress
+10.1080/14725886.2021.1875573,https://openalex.org/W4243582512,False,book-review,2021,Concrete boxes: Mizrahi women on Israel’s periphery
+10.1080/15287394.2018.1451176,https://openalex.org/W4230801661,False,article,2018,Advances in toxicological research and risk assessment
+10.1080/15287394.2019.1567972,https://openalex.org/W2911448318,False,article,2019,Perspectives on trace chemical safety and chemophobia: risk communication and risk management
+10.1080/1743873x.2017.1279389,https://openalex.org/W2569388077,False,book-review,2017,Managing and interpreting D-day’s sites of memory: guardians of remembrance
+10.1080/25785273.2022.2033400,https://openalex.org/W4224247114,False,article,2022,Vitalina’s (in)visibility: contemporary Portugal and the cinema of human mobility
+10.1093/eurheartj/eht397,https://openalex.org/W3009441911,False,article,2013,Publisher’s note
+10.1093/eurheartj/ehv354,https://openalex.org/W2417674508,False,article,2015,Publisher’s note
+10.1093/eurheartj/ehv431,https://openalex.org/W1868246698,False,article,2015,Publisher’s note
+10.1093/ips/olw019,https://openalex.org/W2564173654,False,article,2016,Blasts from the Past: War and Fracture in the International System
+10.1093/jogss/ogw014,https://openalex.org/W2516626020,False,article,2016,Historical Perspective on Public Support for the Draft: War Costs and Military Service
+10.1093/oso/9780198806035.003.0006,https://openalex.org/W3171953375,False,book,2017,Ockham on the Parts of the Continuum
+10.1093/sysbio/48.2.300a,https://openalex.org/W2167771950,False,article,1999,"“Lasciate ogni speranza voi ch′entrate [Abandon hope, all ye who enter]”"
+10.1095/biolreprod.105.046870,https://openalex.org/W2150185326,False,retraction,2005,Retractions
+10.1095/biolreprod.106.051946,https://openalex.org/W2512149220,False,retraction,2006,Retractions
+10.1096/fasebj.2022.36.s1.0i106,https://openalex.org/W4225323166,False,article,2022,Systematic analysis of membrane contact sites
+10.1096/fasebj.2022.36.s1.0i111,https://openalex.org/W4225421495,False,article,2022,CRISPR sensors for signaling
+10.1096/fasebj.2022.36.s1.0i116,https://openalex.org/W4225398690,False,article,2022,Catalytic degradation in pseudoenzymes
+10.1096/fasebj.2022.36.s1.0i128,https://openalex.org/W4225369993,False,article,2022,Cracking the Nucleus: Finding order in chaos
+10.1096/fasebj.2022.36.s1.0i130,https://openalex.org/W4225388939,False,article,2022,Visualization of human telomerase holoenzyme by cryo‐EM
+10.1096/fasebj.2022.36.s1.0i162,https://openalex.org/W4225416973,False,article,2022,m6A in the action of regulating the regulators
+10.1096/fasebj.2022.36.s1.0i171,https://openalex.org/W4225381895,False,article,2022,Mitochondrial‐Derived Compartments Protect Cells From Nutrient Stress
+10.1096/fasebj.2022.36.s1.0i172,https://openalex.org/W4225422248,False,article,2022,Spatiotemporal regulation of mitochondrial genome synthesis and segregation in the soma
+10.1096/fasebj.2022.36.s1.0i199,https://openalex.org/W4225408483,False,article,2022,3D in situ RNA sequencing
+10.1096/fasebj.2022.36.s1.0i200,https://openalex.org/W4225373825,False,article,2022,Engineering the repetitive 3D genome in human disease
+10.1096/fasebj.2022.36.s1.0i218,https://openalex.org/W4225403955,False,article,2022,The phase of fat: mechanisms and physiology of lipid storage
+10.1096/fasebj.2022.36.s1.0r268,https://openalex.org/W4225383473,False,article,2022,Examination of Endogenous CD147 during Enteropathogenic Escherichia coli and Salmonella enterica Serovar Typhimurium Cell Culture Infections
+10.1096/fasebj.2022.36.s1.0r272,https://openalex.org/W4225372965,False,article,2022,"Lighting up the Depths of the Ocean: Mechanisms of Light Emission in the Bioluminescent Deep‐Water Coral Anthoptilum murrayi Kölliker, 1880 (Anthoptilidae)"
+10.1096/fasebj.2022.36.s1.0r893,https://openalex.org/W4225378103,False,article,2022,Activation of Lysophosphatidic Acid Receptor 3 Promotes Mitochondrial Homeostasis in aged cells
+10.1096/fasebj.2022.36.s1.l7636,https://openalex.org/W4225380047,False,article,2022,The National Science Foundation Graduate Research Fellowship Program
+10.1096/fasebj.2022.36.s1.l7695,https://openalex.org/W4225372847,False,article,2022,Chlorine inhalation toxicology‐on‐a‐chip
+10.1096/fasebj.2022.36.s1.l7778,https://openalex.org/W4225380667,False,article,2022,Pharmacological Inhibition of NAPDH Oxidase NOX2 Improves Bladder Dysfunction in Murine Cyclophosphamide‐Induced Cystitis
+10.1096/fasebj.2022.36.s1.l8002,https://openalex.org/W4225390933,False,article,2022,A microengineered biomimetic model of the placental barrier to study environmental exposures during pregnancy
+10.1096/fasebj.2022.36.s1.r2323,https://openalex.org/W4225400520,False,article,2022,Selection of culture media for chicken PGC long‐term cultivation
+10.1096/fasebj.2022.36.s1.r2405,https://openalex.org/W4225292370,False,article,2022,Unravelling the Effects of Chronic Corticosterone Exposure in Brown Adipose Tissue Whitening
+10.1096/fasebj.2022.36.s1.r2481,https://openalex.org/W4225411437,False,article,2022,The Diencephalon Contributes to Hypoxia‐Induced Facilitation of Fictive Air Breathing in Pre‐Metamorphic Tadpoles
+10.1096/fasebj.2022.36.s1.r2775,https://openalex.org/W4225421294,False,article,2022,Sex‐Specific Effects of Neonatal Stress on Brainstem Expression of Orexin1‐Receptors
+10.1096/fasebj.2022.36.s1.r3009,https://openalex.org/W4225415232,False,article,2022,Genetic Variations in PTEN and their Potential Link to Breast Cancer
+10.1096/fasebj.2022.36.s1.r3101,https://openalex.org/W4225390827,False,article,2022,D4 dopamine receptors regulate Insulin sensitivity via activation of renal insulin receptors in mice
+10.1096/fasebj.2022.36.s1.r3321,https://openalex.org/W4225403804,False,article,2022,Junctional endocytosis senses luminal lipophilic signal and promotes lipoprotein cargo absorption through FCGR2B and occludin
+10.1096/fasebj.2022.36.s1.r3861,https://openalex.org/W4225414667,False,article,2022,Artificial Intelligence in Dermatopathology: a single institutional study
+10.1096/fasebj.2022.36.s1.r4212,https://openalex.org/W4225425600,False,article,2022,Seroreactivity to mucosa associated microbiota is associated with T cell gut‐homing in functional dyspepsia patients
+10.1096/fasebj.2022.36.s1.r4249,https://openalex.org/W4225371826,False,article,2022,Synthesis of Anthraquinone Derivatives for the Replacement of Cibacron Blue 3G‐A
+10.1096/fasebj.2022.36.s1.r4272,https://openalex.org/W4225422900,False,article,2022,Functional Dyspepsia Duodeum Mucosal Associated Microbiota: Comparison Between Fresh Biopsy and Historical Formalin‐fixed Paraffin‐embedded Biopsies Is Viable
+10.1096/fasebj.2022.36.s1.r4289,https://openalex.org/W4225400519,False,article,2022,Mucosal Immune Characterization of Colonic Spirochetosis
+10.1096/fasebj.2022.36.s1.r4338,https://openalex.org/W4225388831,False,article,2022,Neonatal Immune Challenge Influences Anxiety and the Gut Microbiome in a Sexually Dimorphic Manner
+10.1096/fasebj.2022.36.s1.r4347,https://openalex.org/W4225411476,False,article,2022,Magnetically Guided Theranostics: Enhancing the Contrast of Magnetic Resonance Imaging with Multiple‐Layer Montmorillonite‐Based Iron/Platinum Nanoparticles for the Treatment of Orthotopic Hepatocellular Carcinoma
+10.1096/fasebj.2022.36.s1.r4356,https://openalex.org/W4225370650,False,article,2022,"The Inorganic Nanoparticles Composed with Lanthanide Ions Inducing Lung Inflammatory, Immunologic and Pulmonary Injury in Vivo"
+10.1096/fasebj.2022.36.s1.r4552,https://openalex.org/W4225384746,False,article,2022,AXL/PLCγ1/PKCα as a Central Axis for PD‐L1 Regulation in Triple‐Negative Breast Cancer
+10.1096/fasebj.2022.36.s1.r4989,https://openalex.org/W4225381321,False,article,2022,Phox2b Mutation Mediated by Atoh1 Expression Impaired Respiratory Rhythm and Ventilatory Responses to Hypoxia and Hypercapnia
+10.1096/fasebj.2022.36.s1.r5121,https://openalex.org/W4225304587,False,article,2022,Tcf21 functions as a rate‐limiting factor during visceral adipose tissue development
+10.1096/fasebj.2022.36.s1.r5129,https://openalex.org/W4225378145,False,article,2022,Molecular Docking Analysis of the Binding Interactions Between Fenofibric Acid and Matrixmetalloproteinases and its Significance in Blood‐Brain Barrier Hyperpermeability
+10.1096/fasebj.2022.36.s1.r5164,https://openalex.org/W4225372974,False,article,2022,Comparative Genomics of Bdellovibrionota : Connecting Genotypes with Predation Phenotypes
+10.1096/fasebj.2022.36.s1.r5835,https://openalex.org/W4225396977,False,article,2022,RHY‐1 Promotes Hydrogen Sulfide Tolerance
+10.1096/fasebj.2022.36.s1.r6013,https://openalex.org/W4225379434,False,article,2022,miRNA and green tea catechins interactions in breast cancer: a bioinformatics approach
+10.1096/fasebj.2022.36.s1.r6151,https://openalex.org/W4225403098,False,article,2022,Preserved Cardio‐Inotropic Baroreflex Function Following Optimized Hemodynamic Management in High‐Thoracic Spinal Cord Injury
+10.1096/fasebj.2022.36.s1.r6206,https://openalex.org/W4225399783,False,article,2022,Biased agonism of Amylin receptor and its therapeutic implications in Alzheimer's disease
+10.1096/fasebj.2022.36.s1.r6217,https://openalex.org/W4225379987,False,article,2022,Comparative Analysis of online and face‐to‐face Human Anatomy and Physiology Courses as a Measure of Student Achievement in Bachelor of Science in Nursing Program
+10.1097/01.aog.0000263914.70071.60,https://openalex.org/W4246527881,False,article,2007,AGOG Committee Opinion No. 370: Institutional Responsibility to Provide Legal Representation
+10.1097/01.aog.0000461764.54910.a8,https://openalex.org/W4230137709,False,article,2015,Committee Opinion No. 626
+10.1109/apcip.2009.58,https://openalex.org/W2153117128,False,article,2000,10.1109/APCIP.2009.58
+10.1109/cctae.2010.5543570,https://openalex.org/W1972594808,False,conference-paper,2010,Performance analysis of communication system using AVOSET
+10.1109/daas.2018.8396067,https://openalex.org/W2810222027,False,conference-paper,2018,Microgrid primary control and continuous-time operation
+10.1109/dsde.2010.43,https://openalex.org/W2021868771,False,conference-paper,2010,A Novel Wavelet Image Compression Method Based on Zerotree Codec
+10.1109/esiat.2010.5567340,https://openalex.org/W2070610883,False,conference-paper,2010,Study on redundancy refinement in autonomous algorithms and cooperative methodologies based on evolutionary programming
+10.1109/icbnmt.2009.5347823,https://openalex.org/W2142647494,False,conference-paper,2009,Study of internet QoS
+10.1109/iccsn.2010.80,https://openalex.org/W2043936026,False,conference-paper,2010,Implementation of Embedded Mobile Database Based on Mobile Agent
+10.1109/iccsnt.2012.6526226,https://openalex.org/W2049366646,False,conference-paper,2012,Large-scale algorithms for red-black trees
+10.1109/icebeg.2011.5881696,https://openalex.org/W3022951887,False,conference-paper,2011,Research on customer relationship management for small and medium-sized enterprise based on implementation strategies
+10.1109/iceoe.2011.6013320,https://openalex.org/W2139310072,False,conference-paper,2011,A novel deployment of multicast applications
+10.1109/iceta.2011.6112609,https://openalex.org/W2019748864,False,conference-paper,2011,Using knowledge for data mining of software processes in knowledge based LMS
+10.1109/icime.2010.5477799,https://openalex.org/W2094556381,False,conference-paper,2010,Improving hash tables and multicast solutions using Kie
+10.1109/icime.2010.5478082,https://openalex.org/W2073316358,False,conference-paper,2010,Research and improvement for business delegate pattern in J2EE applications
+10.1109/icime.2010.5478115,https://openalex.org/W2080478983,False,conference-paper,2010,A methodology for the exploration of the partition table
+10.1109/icina.2010.5636687,https://openalex.org/W2068979467,False,conference-paper,2010,"Client-server, psychoacoustic communication for forward-error correction"
+10.1109/icinis.2008.115,https://openalex.org/W2125241836,False,article,2000,10.1109/ICINIS.2008.115
+10.1109/icnds.2010.5479345,https://openalex.org/W2022929444,False,conference-paper,2010,Application of classical methodologies in improving architecture
+10.1109/icnds.2010.5479348,https://openalex.org/W1997557412,False,conference-paper,2010,Application research for the investigation of RAID based on a methodology
+10.1109/icwamtip.2012.6413476,https://openalex.org/W1998261836,False,conference-paper,2012,An analysis of reinforcement learning using Norie
+10.1109/itaic.2011.6030284,https://openalex.org/W2127476848,False,conference-paper,2011,An extensive unification of lambda calculus and reinforcement learning
+10.1109/ithings/cpscom.2011.46,https://openalex.org/W2011531489,False,conference-paper,2011,"Symbiotic, Mobile Methodologies for Digital-to-Analog Converters"
+10.1109/kamw.2008.4810615,https://openalex.org/W2084529289,False,conference-paper,2008,Comparing Red-Black Trees and the Transistor Using GamyLax
+10.1109/qr2mse.2013.6626010,https://openalex.org/W2060329576,False,conference-paper,2013,TIC: A methodology for the construction of E-Commerce
+10.1109/qr2mse.2013.6626013,https://openalex.org/W2082849727,False,conference-paper,2013,Evaluation of the producer-consumer problem
+10.1111/1744-1633.12138,https://openalex.org/W2163624466,False,article,2015,Clinical outcome of patients with Type II gastroesophageal junction adenocarcinoma (GEJA) undergoing radical resection transthoracic or transhiatal
+10.1111/j.1365-2036.2008.03602.x,https://openalex.org/W4301142881,False,retraction,2008,"Retractions. Re: ""Ethics of administering gatifloxacin for H. pylori infection in asymptomatic veterans"" by D. Vaira, A. Zullo, V. de Francesco, G. Scaccianoce and ""Ethical issues regarding recent anti-H. pylori clinical studies"" by D. Y. Graham ."
+10.1130/g30584.1,https://openalex.org/W2316936446,False,article,2010,Evidence of former majoritic garnet in Himalayan eclogite points to 200-km-deep subduction of Indian continental crust
+10.1142/s0218927510001404,https://openalex.org/W1984965948,False,article,2010,Oman National Dairy Products: The Rise and Fall of a Well-known Company from the Arabian Gulf
+10.1148/radiol.2017161981,https://openalex.org/W2605971595,False,article,2017,Notice of retraction: Role of Cerebrospinal Fluid in Spaceflight-induced Ocular Changes and Visual Impairment in Astronauts
+10.1166/asem.2014.1544,https://openalex.org/W2312624986,False,article,2014,[ARTICLE WITHDRAWN] Synthesis and Characterization of Self-Organized Titania Nanotube Arrays by Electrochemical Anodization of Titanium Metal and Ti–6Al–4V Alloy
+10.1186/1743-422x-7-146,https://openalex.org/W2171226614,False,article,2010,A VLP-based vaccine targeting domain III of the West Nile virus E protein protects from lethal infection in mice
+10.1216/rmjm/1181069735,https://openalex.org/W2037428094,False,article,2005,"Extensions, Dilations and Functional Models of Singular Sturm-Liouville Operators"
+10.12660/joscmv9n2p49-59,https://openalex.org/W2587533296,False,article,2016,[retracted article] What is necessary to improve the Brazilian intermodal terminals? The shippers’ point of view from the stated preference approach
+10.12720/ijsps.3.2.106-111,https://openalex.org/W4251965219,False,article,2014,Classification of Asthmatic Breath Sounds by Using Wavelet Transforms and Neural Networks
+10.12731/2070-7568-2016-2-169-189,https://openalex.org/W2460838397,False,article,2016,AGRICULTURAL SECTOR IN THE VORONEZH REGION: MODERN SITUATION AND DEVELOPMENT PROSPECTS
+10.12731/2070-7568-2016-5-57-66,https://openalex.org/W2563189477,False,article,2016,THE MODERN WORLD-SYSTEM IN TERMS OF A CIVILIZATIONAL PARADIGM
+10.12731/2218-7405-2015-11-66,https://openalex.org/W2342003852,False,article,2016,"ACTUAL MEANING OF THE STATE, THE MILITARY AS A MECHANISM OF EXPERIENCING DIFFICULT LIFE SITUATIONS"
+10.12731/wsd-2016-1-24-35,https://openalex.org/W2309053499,False,article,2016,Allelic Polymorphism OF GENES OF FACTORS OF ANGIOGENESES in case of Genital Endometriosis
+10.12731/wsd-2016-1-36-52,https://openalex.org/W2327075653,False,article,2016,"CYP1A1, CYP1A2, SULT1A1 И SULT1E1 ALLELIC POLYMORPHISM IN CASE OF GENITAL ENDOMETRIOSIS"
+10.12731/wsd-2016-11-10-26,https://openalex.org/W2560613166,False,article,2016,THE RESULTS OF PROFOUND MEDICAL EXAMINATION OF 1ST YEAR STUDENTS OF THE KRASNOYARSK STATE MEDICAL UNIVERSITY
+10.12731/wsd-2016-4-1,https://openalex.org/W2407723897,False,article,2016,DIAGNOSIS OF GUNSHOT WOUNDS OF THE NECK AT THE CIVILIAN POPULATION IN THE CONDITIONS OF THE LOCAL MILITARY CONFLICT BY FORCES OF CIVIL HEALTH CARE
+10.12737/11594,https://openalex.org/W2564611235,False,article,2015,Industrial Policy Renaissance as a Condition for Russia´s National Security
+10.12737/11690,https://openalex.org/W2620717255,False,article,2015,ABOUT FINANCIAL INDEPENDENCE OF MUNICIPALITIES
+10.12737/11704,https://openalex.org/W2618068425,False,article,2015,Analysis of legal acts on combating corruption in Ukraine
+10.12737/14405,https://openalex.org/W2620352119,False,article,2015,On monitoring of enhancing the efficiency of rendering the state services
+10.12737/16819,https://openalex.org/W2322370854,False,article,2015,ABOUT THE ROLE OF THE STATE AND GOVERNMENT IN CONDITIONS OF POLITICIZED ECONOMY
+10.12737/18261,https://openalex.org/W2753177793,False,article,2016,"THEORETICAL DEFINITION FOR QUALITY PARAMETERS OF SURFACE LAYER IN PARTS, TOOL-ELECTRODE WEAR AND PROCESS PRODUCTIVITY AT ELECTROEROSION MACHINING"
+10.12737/18339,https://openalex.org/W2314756209,False,article,2016,Marketing Tools at the Service of Transnational Corporations: Global Branding As an Element of «Soft Power»
+10.12737/18340,https://openalex.org/W2315515119,False,article,2016,Factors of the Delegitimacy of the Modern Ukrainian Authority
+10.12737/18598,https://openalex.org/W2402847615,False,article,2016,Efficiency evaluation of the dimebon gel in experiment
+10.12737/19973,https://openalex.org/W2735591362,False,article,2017,Strategy and tactics of creation of objects of innovative infrastructure of support of startups in regions of Russia
+10.12737/20223,https://openalex.org/W2530299334,False,article,2016,Design process in footwear industry using the potential of universal CAD system
+10.12737/20290,https://openalex.org/W2473995094,False,article,2016,FUZZY COGNITIVE MODELING APPLICATION FOR CARRYING OUT OF INFORMATION SAFETY AUDIT OF INFORMATION PORTALS OF REGIONAL EXACUTIVE AUTHORITIE
+10.12737/20640,https://openalex.org/W2516339675,False,article,2016,QUALITY ASSESSMENT OF SOIL RIDGE FORMATION WHEN SOWING TILLED CROPS
+10.12737/22957,https://openalex.org/W2566500121,False,article,2016,Theory and Practice of the Western Europe Countries Integration: Topical Problems
+10.12737/7578,https://openalex.org/W2282872728,False,article,2015,The methodology of compliance in tourism and service
+10.12737/article_59c21391604168.79848908,https://openalex.org/W2754030846,False,article,2017,Using a Generalized Statistically Optimal Method of Solution for Minimum Weighted Cover Task
+10.14254/2071-8330.2021/14-3/11,https://openalex.org/W3202834688,False,article,2021,A lost chance for what? COVID-19 and its repercussions on global public opinion of China’s development model and international leadership
+10.14357/20718632200408,https://openalex.org/W4233864035,False,article,2020,МЕТОД АВТОМАТИЧЕСКОЙ ГЕНЕРАЦИИ РАЗМЫТЫХ ИЗОБРАЖЕНИЙ ДЛЯ ТЕСТИРОВАНИЯ АЛГОРИТМОВ ДЕТЕКТИРОВАНИЯ
+10.14529/met180211,https://openalex.org/W2883104110,False,article,2018,THERMAL CYCLES AND PECULIARITIES OF DECOMPOSITION OF AUSTENITE IN LASER-HYBRID WELDING OF STEELS OF STRENGTH CLASS K52 AND K60
+10.14529/ssh170403,https://openalex.org/W2768518909,False,article,2017,Features of N. S. Khruschshev’s visualization in the soviet periodical press (1953—1964)
+10.14531/ss2015.3.13-18,https://openalex.org/W2741357043,False,article,2015,THE MODERN CONCEPT OF EARLY DETECTION AND TREATMENT OF IDIOPATHIC SCOLIOSIS
+10.14710/jitaa.46.1.48-56,https://openalex.org/W3129034116,False,article,2021,"Crude palm stearin influences the performance, carcass quality and intestinal morphology of broiler chicks"
+10.1478/aapp.96s3a7,https://openalex.org/W4289330731,False,article,2018,Small nucleolar and Small Cajal Body-specific RNAs Expression Profile of oxidative stressed and normal RPE cells suggests unknown regulative aspects of Retinitis pigmentosa etiopathogenesis
+10.1484/j.llr.3.154,https://openalex.org/W2473705119,False,article,2007,Poétique de la fuite. Parcours rimbaldiens
+10.1484/j.llr.3.186,https://openalex.org/W2336781877,False,article,2009,Transpositions architecturale chez Bosco
+10.1524/zkri.2012.1495,https://openalex.org/W2330125484,False,article,2012,Hydrates of the Alkali Trioxidomonosulfidomolybdates and -tungstates: K2[(Mo/W)O3S] · 1.5H2O and (Rb/Cs)2[(Mo/W)O3S] · H2O
+10.1524/zkri.2012.1522,https://openalex.org/W2329275241,False,article,2012,The Solid Solution CeAg x Zn11–x (x ≤ 2.5)
+10.15372/hss20160107,https://openalex.org/W4256517682,False,article,2016,DEMOGRAPHIC DEVELOPMENT OF URBAN POPULATION OF WESTERN SIBERIA IN THE 1960s-1980s: SPECIFICS OF DYNAMICS OF THE AGE AND GENDER COMPOSITION
+10.15372/phe20160511,https://openalex.org/W4235073967,False,article,2016,THEORETICAL AND METHODOLOGICAL BASES OF THE ORGANIZATION OF PROFESSIONAL UPBRINGING FOR THE FORMATION OF THE VALUE RELATION TO WORK FOR THE AGRICULTURAL UNIVERSITY STUDENTS
+10.15382/sturiv201536.87-94,https://openalex.org/W2328011313,False,article,2015,Emergency of Russian Christian Psychology: Problems and Perspectives
+10.15382/sturiv201538.80-93,https://openalex.org/W2902368033,False,article,2015,"The ""cura sui"" idea in the Western educational concepts (℗αιδεĩα, humanitas, Bildung)"
+10.15382/sturv201727.69-88,https://openalex.org/W4243802157,False,article,2017,Wooden Chapels in the Russian North and the Arctic Orthodox Traditions
+10.15408/aiq.v10i1.5903,https://openalex.org/W2769535650,False,article,2017,Determinants of Credit and Financing Risk: Evidence of Dual Banking System in Indonesia
+10.15507/inted.078.019.201501.022,https://openalex.org/W2327559133,False,article,2015,THE CHOICE SITUATION AS A BASIS FOR THE SITUATIONAL DOMINANT IN THE NEW EDUCATIONAL STANDARD
+10.15507/inted.078.019.201501.044,https://openalex.org/W2323549513,False,article,2015,CRITERIА-ORIENTED PSYCHOLOGICAL TESTING IN THE EDUCATIONAL PROCESS: BARRIERS AND OPPORTUNITIES
+10.15593/2224-9826/2017.1.14,https://openalex.org/W2623029429,False,article,2017,TECHNICAL AND ECONOMIC COMPARISON OF BUILDING TEMPORARY ROADS ON WEAK SOILS
+10.15643/libartrus-2015.2.2,https://openalex.org/W2504929688,False,article,2015,Mission of the teacher in modern educational space
+10.15643/libartrus-2015.3.2,https://openalex.org/W2209975114,False,article,2015,“Union of Russian Royal People” in emigration and plans of organization of “spring trip” to USSR. Project of I. I. Sikorsky
+10.15643/libartrus-2016.5.5,https://openalex.org/W2557254060,False,article,2016,Problems of gifted children teaching and the phenomenon of dual exceptionality in the secondary school
+10.15688/jvolsu2.2016.2.1,https://openalex.org/W2499161078,False,article,2016,Text Linguistics in Diachrony and Synchrony
+10.15829/1728-8800-2019-4-129-136,https://openalex.org/W2971729063,False,article,2019,"Congress of the American College of Cardiology (New Orleans, 2019): Clinical Findings"
+10.15862/04rro415,https://openalex.org/W2559093802,False,article,2015,Organization of mass access to spatial information and its analysis for territorial development
+10.17059/2016-1-12,https://openalex.org/W2329009177,False,article,2016,Demographic Risks of the Pension Reform in the Russian Federation
+10.17059/2016-1-6,https://openalex.org/W2325168011,False,article,2016,Ecological Situation and Environmental Protection Policy in Russian Regions
+10.17072/1995-4190-2016-32-158-164,https://openalex.org/W2545694597,False,article,2016,CONSTITUTIONAL RIGHTS OF CITIZENS TO APPEAL WITHIN THE LEGAL AND REGULATORY REGIME FOR INTERACTION BETWEEN CITIZENS AND PUBLIC CONTROL AND ADMINISTRATION AUTHORITIES
+10.17072/1995-4190-2016-32-199-207,https://openalex.org/W2545120261,False,article,2016,LEGAL TOOLS FOR ORGANIZATION AND SELF-ORGANIZATION OF RELATIONS IN THE SPHERE OF MOTOR TRANSPORTATION: CIVIL ASPECT
+10.17072/1995-4190-2017-35-33-41,https://openalex.org/W2623459028,False,article,2017,Institutions of Civil Society in the Non-State System of Ensuring National Security of Modern Russia
+10.17072/1995-4190-2017-38-430-445,https://openalex.org/W2800108208,False,article,2017,Legal Regulation of Information in the Conditions of Information Economy
+10.17116/hirurgia2016855-60,https://openalex.org/W2520491282,False,article,2016,The consequences of cholecystectomy
+10.17116/jnevro20151155191-93,https://openalex.org/W2336088568,False,article,2015,A role of stress-induced neuroendocrine disorders and tissue hypoxia in the thanatogenesis of traumatic intracranial hematomas
+10.17116/jnevro20161162199-108,https://openalex.org/W2338200229,False,article,2016,Neurotrophic effects of lithium stimulate the reduction of ischemic and neurodegenerative brain damage
+10.17116/kardio2016969-14,https://openalex.org/W2567788466,False,article,2016,The outcomes of bioabsorbable vascular stents implantation in patients with coronary artery disease and concomitant diabetes mellitus type II
+10.17116/klinderma202019031271,https://openalex.org/W3042529399,False,article,2020,Clinical characteristics of skin manifestations with the novel coronavirus infection COVID-19 caused by SARS-CoV-2
+10.17116/onkolog20165411-16,https://openalex.org/W3082568501,False,article,2016,Possibilities of predicting and surgically preventing acute liver failure after major liver resections for primary and metastatic tumors
+10.17116/onkolog20165417-25,https://openalex.org/W2518937651,False,article,2016,Multivisceral resections in the surgical treatment of patients with pelvic tumors
+10.17116/patol201678210-18,https://openalex.org/W2315041694,False,article,2016,Rare hereditary syndromes associated with polyposis and the development of malignant tumors
+10.17116/patol201678420-26,https://openalex.org/W2513335231,False,article,2016,Pathological and molecular genetic characteristics in patients with extrabulbar growth of uveal melanoma
+10.17116/terarkh201688196-100,https://openalex.org/W2339988945,False,article,2016,Prevention of complications of colonic diverticular disease in outpatient practice
+10.17159/2312-3621/2016/v29n1a3,https://openalex.org/W2345962877,False,retraction,2016,Retraction Notice
+10.17213/2312-6469-2019-4-5-15,https://openalex.org/W4229815319,False,article,2019,POST-CRISIS REINDUSTRIALIZATION: FROM CONCEPT TO IMPLEMENTATION
+10.17217/2079-0333-2015-34-114-123,https://openalex.org/W2414667046,False,article,2015,Pricing analysis of in a competitive market of fish production in the fishery complex of Kamchatka region
+10.17217/2079-0333-2018-45-103-109,https://openalex.org/W2900912562,False,article,2018,SPECIES COMPOSITION AND ENVIRONMENTAL INTERACTIONS OF THE BACTERIAL COMMUNITY OF COPPER AND NICKEL DEPOSIT SHANUCH (KAMCHATKA)
+10.17223/1998863x/35/1,https://openalex.org/W2566539855,False,article,2016,The article examines the multiplicity of views of the phenomenon of organizational culture in the framework of modern socio-humanitarian knowledge
+10.17235/reed.2017.5109/2017,https://openalex.org/W2772910414,False,article,2017,Pancreatic neuroendocrine tumors. Prognostic factors
+10.17238/issn1998-5320.2016.24.190,https://openalex.org/W2517308170,False,article,2016,INVESTMENT ATTRACTION STARTUPS TRAVEL TODAY
+10.17277/pravo.2019.03.pp.048-053,https://openalex.org/W4255895583,False,article,2019,Humanization of Criminal Legislation as One of the Directions of the Russian Criminal Policy
+10.17323/1813-8918-2018-4-695-710,https://openalex.org/W2910110160,False,article,2018,Психологическое состояние современного российского общества: новые тенденции
+10.17513/fr.40558,https://openalex.org/W2542787691,False,article,2016,TO QUESTION ABOUT BASIC GOING NEAR ESTIMATION OF SOLVENCY OF BORROWER OF COMMERCIAL BANK
+10.17586/2220-8054-2020-11-4-424-433,https://openalex.org/W3083298266,False,article,2020,MoO3:In2O3 binary oxide thin films as CO gas sensor
+10.17586/2310-1172-2016-9-4-7-18,https://openalex.org/W2561955122,False,article,2016,"Questions of economy, efficiency of public administration The nature and main key towards effective state investment policy"
+10.17748/2075-9908-2015-7-7/2-64-67,https://openalex.org/W2490018995,False,article,2016,NOVGOROD TYSYATSKIYE IN 1410-1420-IES
+10.17748/2075-9908-2015-7-8-113-116,https://openalex.org/W2342992075,False,article,2016,SUBJECT FORMATION OF SOCIAL AND PHILOSOPHICAL ANTHROPOLOGY AT PERSON MISSION IN MODERN SOCIETY
+10.17748/2075-9908-2016-8-1/2-186-190,https://openalex.org/W2380917236,False,article,2016,PORTFOLIO INVOLVED INTO STUDENTS PERSONALLY-PROFESSIONAL DEVELOPMENT MONITORING
+10.17748/2075-9908-2016-8-1/2-28-33,https://openalex.org/W2404454430,False,article,2016,GEOCULTURAL TRANSFORMATION OF SLAVIC WORLD
+10.17748/2075-9908-2016-8-5/2-130-132,https://openalex.org/W2590117881,False,article,2016,LOCAL GOVERNMENTS’ ROLE IN CRIME PREVENTION
+10.17748/2075-9908.2015.7.3.093-102,https://openalex.org/W1255435311,False,article,2015,THE INTEGRATED APPROACH TO EVALUATING STRUCTURAL PERFORMANCE IN WELL- BALANCED MACRO-ECONOMIC FRAMEWORKS
+10.17748/2075-9908.2015.7.4.077-081,https://openalex.org/W772246785,False,article,2015,AESTHETICS OF CREATIVE IDEA IN ADVERTISING
+10.17803/1729-5920.2015.109.12.074-086,https://openalex.org/W4229655413,False,article,2015,"decriminalization of military and alternative service evasion (art. 328 of the Criminal code) Distance roundtable ""The New Criminal Code of Russia: conceptual framework and theoretical model"""
+10.17803/1729-5920.2016.111.2.062-080,https://openalex.org/W2788652129,False,article,2016,International law problems of the istablishment of marine protected areas
+10.17803/1729-5920.2016.114.5.217-224,https://openalex.org/W2781553151,False,article,2016,Complicity in negligent crime: myth or reality?
+10.17803/1729-5920.2016.115.6.048-060,https://openalex.org/W4234384313,False,article,2016,Legal regulation of environmental conflicts: some basic provisions
+10.17803/1994-1471.2015.59.10.168-172,https://openalex.org/W4243688706,False,article,2015,Harmonization of anticorruption legislation in Russia and Belarus
+10.17803/1994-1471.2015.60.11.118-124,https://openalex.org/W4231763367,False,article,2015,Subjects of the Electronic Document Flow
+10.17803/1994-1471.2015.60.11.125-130,https://openalex.org/W4249518508,False,article,2015,Damages and unjust enrichment in Tax Law (based on case materials)
+10.17803/1994-1471.2016.62.1.166-171,https://openalex.org/W4244337488,False,article,2016,The right of assembly and association in France and the right of assembly and conference in the Russian Federation: the relation and features of development
+10.17803/1994-1471.2016.62.1.205-212,https://openalex.org/W4239394397,False,article,2016,Common consolidated corporate tax base as an option for harmonization of direct taxes in the European Union
+10.17803/1994-1471.2016.63.2.146-152,https://openalex.org/W4251381268,False,article,2016,ON DIVIDING EVIDENCE INTO DIRECT AND INDIRECT
+10.17803/1994-1471.2018.90.5.105-111,https://openalex.org/W2937512703,False,article,2018,Grounds for Exemption from Contractual Liability in Civil Law
+10.17803/1994-1471.2018.91.6.226-230,https://openalex.org/W2887235895,False,article,2018,"THE STATE AS AN IMAGINARY REALITY: COMPLEX HISTORICAL AND PHILOSOPHICAL STUDY. REVIEW OF THE MONOGRAPH: I.A. ISAEV “IMAGINARY STATEHOOD. SPACE WITHOUT TERRITORY”. MOSCOW: RG-PRESS, 2018. 224 P."
+10.17803/2311-5998.2018.48.8.105-110,https://openalex.org/W4239315584,False,article,2018,«THE WOMAN IN SOVIETS!»: HISTORICAL AND LEGAL EXPERIENCE OF PARTICIPATION OF FEMALE POPULATION IN ELECTION CAMPAIGNS OF THE KURSK PROVINCE IN THE EARLY TWENTIES
+10.17816/pavlovj2015383-87,https://openalex.org/W2546370698,False,article,2015,RESULTS OF 5-YEAR OBSERVATION FOR PATIENTS WITH HEART DISEASE
+10.17816/pavlovj2015399-105,https://openalex.org/W2542094213,False,article,2015,EPITHELIAL AND STROMAL COMPONENTS IN DUCTAL BREAST CANCER
+10.17835/2078-5429.2016.7.2.124-132,https://openalex.org/W2465604236,False,article,2016,Cluster Policy As an Instrument of Public Management: Regional Aspect
+10.17835/2078-5429.2016.7.3.089-102,https://openalex.org/W2552955082,False,article,2016,Institutional Mechanism of the Management of Local Government Effectiveness
+10.17835/2078-5429.2016.7.3.143-152,https://openalex.org/W2978511071,False,article,2016,Methodology and Psychological Knowledge Issues in the Procedural Differentiation Sphere and the Evidence Doctrine: Problems of Theory and Legislation
+10.17853/1994-5639-2015-2-74-85,https://openalex.org/W2157747953,False,article,2015,THE FORMATION OF PROFESSIONAL COMPETENCE OF THE TEACHER OF PRESCHOOL EDUCATION IN THE SYSTEM OF ADDITIONAL EDUCATION
+10.17853/1994-5639-2015-3-62-70,https://openalex.org/W1949754806,False,article,2015,SECONDARY VOCATIONAL EDUCATION: CONTENT AND IMPLEMENTATION ISSUES
+10.17853/1994-5639-2015-8-81-96,https://openalex.org/W1891920348,False,article,2015,PERSONAL AND PROFESSIONAL MOBILITY: THE CONJUGACY PROBLEM
+10.17853/1994-5639-2016-1-133-144,https://openalex.org/W2268714199,False,article,2016,DIDACTICS: DEVELOPMENT OR STAGNATION?
+10.17853/1994-5639-2016-2-34-54,https://openalex.org/W2288873072,False,article,2016,PROFESSIONAL TEACHERS’ DEVELOPMENT OF EDUCATIONAL COMPLEXES IN THE CONDITIONS OF INTRODUCTION OF THE FEDERAL STATE EDUCATIONAL STANDARD
+10.17853/1994-5639-2016-2-4-18,https://openalex.org/W2292899739,False,article,2016,UNIFIED APPROACH TO THE INTERPRETATION OF COMPETENCE IN SOCIAL MANAGEMENT AND EDUCATION
+10.17853/1994-5639-2016-3-4-28,https://openalex.org/W2337452636,False,article,2016,REQUIREMENTS FORMED IN THE FIELD OF SOCIAL CONTROL IN THE FORM OF COMPETENCE: IMPLEMENTATION IN EDUCATION
+10.17853/1994-5639-2016-6-141-151,https://openalex.org/W2522787773,False,article,2016,ASSESSMENT OF THE ADULT’S PERSONAL DEVELOPMENT AS AN INDICATOR OF THE QUALITY OF FURTHER EDUCATION
+10.17922/2071-3665-2015-14-4-60-67,https://openalex.org/W4252537614,False,article,2015,Features of development of marketing strategies in services
+10.17922/2071-3665-2015-14-5-53-60,https://openalex.org/W4247255035,False,article,2015,Value Approach in the Study of the Demand and Setting Prices in the Sale of Services
+10.17925/eor.2014.08.02.152,https://openalex.org/W2477180828,False,article,2014,Aflibercept – Setting its Sights on Diabetic Macular Oedema
+10.18184/2079-4665.2015.6.4.206.212,https://openalex.org/W2473472669,False,article,2016,DEVELOPMENT AREAS IN THE ARCTIC REGION FORMATION OF A NEW INSTITUTIONAL SPACE
+10.18184/2079-4665.2015.6.4.347.350,https://openalex.org/W2465969913,False,article,2015,Scientific-theoretical principles of the functioning insurance and funded pension system models
+10.18184/2079-4665.2016.7.1.66.71,https://openalex.org/W2473461201,False,article,2016,PRACTICAL METHODS OF EVALUATING THE PERFORMANCE OF MANAGEMENT COMPANIES FOR NONGOVERNMENTAL PENSION FUNDS
+10.18286/1816-4501-2015-4-99-105,https://openalex.org/W4246382978,False,article,2015,Method of setting increasing reaction of bacteriophage titer Bacillus anthracis
+10.18288/1994-5124-2015-3-09,https://openalex.org/W4231262300,False,article,2015,Social and Economic Consequences of Increase of Pension Age in the Russian Federation
+10.18323/2221-5662-2016-1-93-98,https://openalex.org/W2321745941,False,article,2016,THE STUDY OF SPECIAL ASPECTS OF ETHNIC MENTAL REGULATION OF FORMATION OF PROJECT OF LIFE AT A YOUNG AGE
+10.18334/ce.10.2.34998,https://openalex.org/W2399994145,False,article,2016,"Взаимосвязь экономических течений, взглядов и ценностей"
+10.18334/ce.9.10.1961,https://openalex.org/W2271151264,False,article,2015,"Взаимодействие: понятие, виды и свойства"
+10.18334/ce.9.11.2086,https://openalex.org/W2282539275,False,article,2015,"Витально-ментальная экономика (экономика ценностей человека, семьи, общества и природы)"
+10.18334/lim.2.1.547,https://openalex.org/W1922317792,False,article,2015,Комплексный анализ ситуаций при принятии руководителем качественных управленческих решений
+10.18334/lim.2.2.600,https://openalex.org/W2222496001,False,article,2015,«Что делать сейчас» или «что является главным в данный момент»
+10.18334/lim.2.4.2096,https://openalex.org/W2463054347,False,article,2015,Универсальный образ аутентичного лидера
+10.18334/lim.3.4.36960,https://openalex.org/W2578716180,False,article,2016,Профессиональный портрет современного менеджера по персоналу
+10.18334/rp.16.19.1969,https://openalex.org/W2243793745,False,article,2015,Современные инновационные технологии в малоэтажном жилищном строительстве
+10.18334/rp.16.20.2013,https://openalex.org/W2217149179,False,article,2015,Инвестиционная безопасность России в условиях глобализации
+10.18384/2224-0209-2015-4-719,https://openalex.org/W2915446519,False,article,2015,THE VOCALIC CONTEXT INFLUENCE ON THE VOWEL SOUND IDENTIFICATION
+10.18384/2310-6646-2016-2-30-37,https://openalex.org/W2460036480,False,article,2016,AGRO-INDUSTRIAL COMPLEX OF RUSSIA UNDER SANCTIONS: MODERN STATE AND PROSPECTS OF DEVELOPMENT
+10.18411/emiip-03-2019-11,https://openalex.org/W2984880009,False,article,2019,METHODS OF SELECTION OF ENTERPRISES FOR FINANCIAL RECOVERY PROCEDURES WITH THE PARTICIPATION OF THE TAX AUTHORITY
+10.18433/j3388p,https://openalex.org/W2098609204,False,article,2010,Effects of One Year Treatment of Sibutramine on Insulin Resistance Parameters in Type 2 Diabetic Patients
+10.18454/irj.2016.46.004,https://openalex.org/W2760097243,False,article,2016,ПРЕДПОСЫЛКИ КОНСТИТУИРОВАНИЯ НЕЙРОПЕДАГОГИКИ В РОССИИ
+10.18454/irj.2016.50.123,https://openalex.org/W2992174339,False,article,2016,МЕТОДИКА ОПРЕДЕЛЕНИЯ БИОЛОГИЧЕСКОГО ВОЗРАСТА СТУДЕНТОВ
+10.18454/irj.2016.50.131,https://openalex.org/W2787867977,False,article,2016,ВЛИЯНИЕ ФИЗИЧЕСКИХ НАГРУЗОК НА БИОЛОГИЧЕСКИЙ ВОЗРАСТ
+10.18454/irj.2016.53.111,https://openalex.org/W2759028660,False,article,2016,РОЛЬ РЕГУЛЯТОРНЫХ СИСТЕМ ОРГАНИЗМА ТЕЛЯТ В УСЛОВИЯХ ПРИМЕНЕНИЯ БИОВЕСТИНА
+10.18454/irj.2016.53.162,https://openalex.org/W2584870874,False,article,2016,СРАВНИТЕЛЬНАЯ ОЦЕНКА АДАПТАЦИОННЫХ ВОЗМОЖНОСТЕЙ ПЛОДОВ И НОВОРОЖДЕННЫХ У БЕРЕМЕННЫХ С ОТСУТСТВИЕМ И НАЛИЧИЕМ ГИПЕРТЕНЗИОННЫХ РАССТРОЙСТВ ВО ВРЕМЯ БЕРЕМЕННОСТИ
+10.18470/1992-1098-2015-4-8-23,https://openalex.org/W2547174723,False,article,2016,HISTORY AND RESULTS OF HYDROACOUSTIC RESEARCHES IN THE NORTH CASPIAN
+10.18470/1992-1098-2016-1-8-20,https://openalex.org/W803004369,False,article,2016,SYSTEMATIC ANALYSIS OF PERSPECTIVE TRENDS IN ECOLOGICAL AND BIOLOGICAL STUDIES OF THE CASPIAN SEA
+10.18470/1992-1098-2016-2-152-159,https://openalex.org/W2519682363,False,article,2016,TAKING VARIOUS AGRO-TECHNICAL MEASURES FOR THE PRESERVATION AND ACCUMULATION OF MOISTURE
+10.18499/2070-478x-2015-8-1-45-51,https://openalex.org/W3015100661,False,article,2015,Еffectiveness of Methods of Clinical Biomechanics at the Diagnosis and Treatment of Patients with Combined Lesions of the Venous and Musculoskeletal Systems of the Lower Limb
+10.18499/2070-478x-2015-8-1-92-99,https://openalex.org/W2732603452,False,article,2015,Role of Magnetic Resonance Cholangiopancreatography in Preoperative Diagnostics of Choledocholithiasis in Patients Undergoing Laparoscopic Cholesyctectomy
+10.18499/2070-478x-2015-8-3-287-290,https://openalex.org/W4230307145,False,article,2015,The Role of Some Immune System Parameters in Forecasting Development Acute Mesenteric Ischemia Experiment
+10.18503/2309-7434-2017-1(9)-27-31,https://openalex.org/W2618618692,False,article,2017,Social and psychological characteristics of architectural design
+10.18565/aig.2020.7.129-134,https://openalex.org/W3044609759,False,article,2020,Prognostic significance of critical disorders of fetoplacental blood flow in pregnant women with fetal growth restriction
+10.18572/1812-3791-2020-3-8-15,https://openalex.org/W3023264897,False,article,2020,"The Principle of Good Faith in the Judicial Practice of the Review of Disputes Related to the Transportation of Cargo, Passengers and Baggage"
+10.18577/2307-6046-2018-0-3-3-11,https://openalex.org/W2794027763,False,article,2018,STUDY OF THE INFLUENCE OF DIFFERENT TYPES OF HEAT TREATMENT ON THE STRUCTURE AND STRENGTH PROPERTIES OF HIGH-STRENGTH MARTENSITIC AGING STEELS
+10.18611/2221-3279-2015-6-1(18)-65-77,https://openalex.org/W2528860925,False,article,2015,COMPARATIVE ANALYSIS OF RUSSIA’S AND CHINA’S PARTICIPATING IN GLOBAL GOVERNANCE INSTITUTIONS EXPERIENCE
+10.18611/2221-3279-2015-6-4(21)-10-19,https://openalex.org/W2253059566,False,article,2015,"Cultural Security: The Notion, Resources and the Instruments of Implimentation"
+10.18611/2221-3279-2017-8-1-33-43,https://openalex.org/W2559956425,False,article,2016,Right-wing radicalism and factors of xenophobic social practice in Hungary and Slovakia: comparative analysis
+10.18632/oncotarget.14078,https://openalex.org/W2561190353,False,article,2016,WITHDRAWN: Could some epigenetic modifications hold the key to opposing the metabolic syndrome?
+10.18699/vj17.270,https://openalex.org/W2766174840,False,article,2017,Ecological plant breeding: types and practice
+10.19073/2306-1340-2016-3-10-16,https://openalex.org/W2505189166,False,article,2016,Legal Mechanism of Redistribution of Municipal Powers – the End of the Russian Self-Administrative Illusions
+10.19193/0393-6384_2017_2s_191,https://openalex.org/W2784940521,False,article,2017,ANGER IN CHILDREN: A MINIREVIEW
+10.19193/0393-6384_2017_2s_192,https://openalex.org/W2915197255,False,article,2017,MOTION SICKNESS IN CHILDHOOD MIGRAINE
+10.19193/0393-6384_2017_2s_193,https://openalex.org/W2893072830,False,article,2017,NEUROSCIENCES AND ATTACHMENT THEORY: A BRIEF REVIEW
+10.19193/0393-6384_2017_2s_195,https://openalex.org/W2925514578,False,article,2017,THE DYNAMIC MATURATIVE MODEL FOR ATTACHMENT
+10.19193/0393-6384_2017_5_124,https://openalex.org/W2790746858,False,article,2017,EFFECT OF RADIOFREQUENCY ON SYMPATHETIC NERVOUS SYSTEM FUNCTIONING
+10.19193/0393-6384_2018_4_140,https://openalex.org/W2890822317,False,article,2018,"Technology, educational challenges: Serious game and rehabilitation"
+10.19193/0393-6384_2018_4_142,https://openalex.org/W2901809125,False,article,2018,Anxiety disorders in developmental age
+10.19193/0393-6384_2018_4_143,https://openalex.org/W2940205742,False,article,2018,Digital natives: Lucky or jellied?
+10.19193/0393-6384_2018_5_181,https://openalex.org/W2925040831,False,article,2018,AUGMENTATIVE AND ALTERNATIVE COMMUNICATION (AAC) IN NEURODEVELOPMENTAL DISORDERS: A MINIREVIEW
+10.19193/0393-6384_2018_5_182,https://openalex.org/W3120697893,False,article,2018,Executive functions rehabilitation proposal: A tailored intervention
+10.20310/1810-0201-2015-20-11(151)-135-145,https://openalex.org/W4236601246,False,article,2015,CATEGORY “CRIMINAL RESPONSIBILITY” AND ITS EFFECTIVE REALIZATION IN THE CONTEXT OF OPTIMAL DECISION OF RELEVANT PROBLEMS OF NATIVE CRIMINAL-RIGHT THEORY AND MODERN RIGHT-IMPLEMENTING PRACTICE
+10.20534/ejll-16-4-24-28,https://openalex.org/W2562320277,False,article,2016,Analysis of the nominal signs in the text of “Martesa e Halilit” song and in the translated version in german by M. Lambertz
+10.20861/2304-2338-2017-118-003,https://openalex.org/W2768832873,False,article,2017,GENETIC ALGORITHM OF STRUCTURAL SYNTHESIS METROPOLIS POWER NETWORK
+10.21202/1993-047x.09.2015.3.102-108,https://openalex.org/W3211469256,False,article,2015,CLASSIFICATION OF POSSIBILITY IN LAW
+10.21202/1993-047x.09.2015.3.164-171,https://openalex.org/W4389322242,False,article,2015,IMPLEMENTATION OF PRODUCTION FUNCTION OF LABOR LAW AS A MEANS OF ACHIEVING THE SOCIAL STABILITY IN RUSSIA
+10.21202/1993-047x.10.2016.1.48-61,https://openalex.org/W3212662050,False,article,2016,Russian machine-building: course to import substitution
+10.21202/1993-047x.10.2016.2.247-263,https://openalex.org/W2730250021,False,article,2016,"Court sentences in the aspect of theorems of validity, justice and certainty of bisectrixity"
+10.21202/1993-047x.10.2016.2.93-101,https://openalex.org/W3213726879,False,article,2016,Model of analyzing and forecasting the dynamics of industrial production and space sector of the Russian Federation
+10.21266/2079-4304.2018.223.249-259,https://openalex.org/W3085052921,False,article,2018,Electrode properties of halogenidchalkogenide glasses and amorphy films obtained by the method of chemical applic
+10.21275/mr241114172224,https://openalex.org/W4404461304,False,article,2024,From Forensics to Forensic Science
+10.21278/tof.43307,https://openalex.org/W2990791301,False,article,2019,Regenerative Hydraulic Shock Absorber: A Novel Prototype Design Solution and a Methodology for the Calculation of Dynamic Strength
+10.2139/ssrn.3377520,https://openalex.org/W4233680046,False,preprint,2019,Reduced LINC00540 Expression Inhibits Human Hepatocellular Carcinoma Progression and Metastasis via the NKD2-Dependent Wnt/β-Catenin Pathway
+10.2139/ssrn.3571484,https://openalex.org/W3016692264,False,preprint,2020,Vitamin D Supplementation Could Possibly Improve Clinical Outcomes of Patients Infected with Coronavirus-2019 (COVID-2019)
+10.2139/ssrn.3794262,https://openalex.org/W3135042181,False,preprint,2021,Effectiveness of ZYESAMI™ (Aviptadil) in Accelerating Recovery and Shortening Hospitalization in Critically-Ill Patients with COVID-19 Respiratory Failure: Interim Report from a Phase 2B/3 Multicenter Trial
+10.2140/gt.2012.16.1321,https://openalex.org/W2963106180,False,article,2012,On the nonexistence of certain branched covers
+10.2143/etl.75.4.504765,https://openalex.org/W1999615408,False,article,1999,Probabilism and Its Methods
+10.2143/rtpm.67.1.520,https://openalex.org/W2039120332,False,article,2000,The Origins of Probabilism in Late Scholastic Moral Thought
+10.21515/1990-4665-121-022,https://openalex.org/W2537680252,False,article,2016,ENHANCING THE ROLE OF THE STATE REGULATION IN MANAGING DEVELOPMENT OF AGRICULTURAL PRODUCTION
+10.21515/1990-4665-121-024,https://openalex.org/W2532763591,False,article,2016,ANALYSIS OF THE DEVELOPMENT OF VERTICAL COOPERATION IN SMALL AGRARIAN FARMING
+10.21515/1990-4665-127-020,https://openalex.org/W2621169372,False,article,2017,NEURAL NETWORK ALGORITHMS OF PATTERN RECOGNITION IN THE STOCK EXCHANGE RATE
+10.21518/2079-701x-2016-10-48-55,https://openalex.org/W2551468410,False,article,2016,TARGET THERAPY IN PATIENTS OF LIVER METASTATIC CANCER PATIENTS IN REAL CLINICAL PRACTICE
+10.2164/jandrol.110.012179,https://openalex.org/W2406357442,False,retraction,2010,Retraction
+10.21661/r-466115,https://openalex.org/W2772358378,False,conference-paper,2017,K voprosu o perechne avtorskikh prav po grazhdanskomu zakonodatel'stvu Rossiiskoi Federatsii
+10.21685/2072-3032-2017-2-11,https://openalex.org/W2769526984,False,article,2017,INTRAREGIONAL DIFFERENCES OF THE IMPACT OF ENVIRONMENTAL AND ECONOMIC DETERMINANTS ON PEDIATRIC ONCOLOGY IN RUSSIA
+10.21685/2072-3040-2020-4-7,https://openalex.org/W3139919664,False,article,2020,A METHOD FOR INCREASING THE DENSITY OF THE MIXER ELEMENTS WITH UNDERFREQUENCY AND THE EFFECT OF MATERIAL MODIFICATION ON THE TECHNOLOGICAL PROCESS
+10.21685/2307-4205-2021-1-5,https://openalex.org/W4212989904,False,article,2021,TESTING LARGE NEURAL NETWORKS ON SMALL SAMPLES
+10.21686/2500-3925-2016-2-22-26,https://openalex.org/W2533885621,False,article,2016,FUNCTIONAL SUPPORT FOR A REGIONAL PROGRAM OF INNOVATIVE DEVELOPMENT
+10.21686/2500-3925-2016-2-6-9,https://openalex.org/W2541634117,False,article,2016,FEATURES OF FORMATION OF REGIONAL CLUSTER STRUCTURES
+10.21686/2500-3925-2016-3-16-20,https://openalex.org/W2539016049,False,article,2016,ABOUT THE TYPES OF REGIONAL INNOVATION CLUSTERS
+10.21686/2500-3925-2016-3-21-25,https://openalex.org/W2536107292,False,article,2016,PROBLEMS OF THE LAND TAX IN THE REPUBLIC BURYATIA
+10.21686/2500-3925-2016-3-26-31,https://openalex.org/W2519796691,False,article,2016,FROM LABOUR ECONOMICS TO HUMAN RESOURCE MANAGEMENT: THE DEVELOPMENT OF SCIENCE AND DIRECTIONS OF TRAINING OF SPECIALISTS ON LABOR
+10.21686/2500-3925-2016-3-32-35,https://openalex.org/W2540046943,False,article,2016,TO THE QUESTION OF MANAGING VALUE COMPANY WITHIN THE CONCEPT OF SUSTAINABLE ECONOMIC DEVELOPMENT
+10.21686/2500-3925-2016-3-42-46,https://openalex.org/W2534046434,False,article,2016,MOTIVATIONAL FACTORS FOR THE FORMATION OF KEY SIDES OF COOPERATION BETWEEN NATIONAL OR REGIONAL AUTHORITIES AND ENTREPRENEURAL STRUCTURES
+10.21686/2500-3925-2016-3-64-69,https://openalex.org/W2547818526,False,article,2016,TOURISM MARKET: PRICING ISSUES
+10.21686/2500-3925-2016-4-39-43,https://openalex.org/W2520691139,False,article,2016,SOME PROPERTIES OF THE VARIATIONAL PROBLEMS OF OPTIMAL CONTROL OF CONSUMPTION
+10.21686/2500-3925-2016-5-29-35,https://openalex.org/W2537382802,False,article,2016,Problems of demographic security through the prism of an assessment of dynamics of natural and migration processes in Russia
+10.21686/2500-3925-2016-5-72-78,https://openalex.org/W2559310249,False,article,2016,The internal control of tax
+10.21686/2500-3925-2016-6-25-32,https://openalex.org/W2592540676,False,article,2016,Analysis of lifestyle and physical culture and sports of students
+10.21686/2500-3925-2016-6-71-78,https://openalex.org/W2565521637,False,article,2016,Key directions of the Russian economy innovative development with the innovative activity practice of the integrated corporate structures
+10.21686/2500-3925-2018-6-15-25,https://openalex.org/W2911005721,False,article,2019,The factors affecting accessibility to credit capital of small and medium enterprises in Vietnam
+10.21702/rpj.2015.1.8,https://openalex.org/W1535307746,False,article,2015,Особенности самоотношения и самоэффективности личности как предикторы ее образов Врага
+10.21702/rpj.2015.2.11,https://openalex.org/W2156866328,False,article,2015,"Социометрическая экспертная методика выявления сотрудников органов внутренних дел, склонных к искажению служебной информации"
+10.21702/rpj.2015.3.7,https://openalex.org/W2248634370,False,article,2015,Развитие и обучение: при каких условиях обучение может стать «развивающим»?
+10.21702/rpj.2018.4.2,https://openalex.org/W2918793414,False,article,2019,Диагностические возможности методики дихотического прослушивания в клинике локальных поражений головного мозга [Ретрагирована]
+10.21831/jptk.v23i3.13387,https://openalex.org/W2611606482,False,article,2017,Developing an Android Based Application as Balinese Shadow Puppet Educational Media
+10.21831/jptk.v23i3.13389,https://openalex.org/W2611242200,False,article,2017,Developing Project Based Learning E-Module for the Course of Video Editing
+10.22038/ebcj.2016.7982,https://openalex.org/W2575885986,False,article,2017,Effect of Bilineaster Drop on Neonatal Hyperbilirubinemia
+10.22363/2312-797x-2015-4-74-79,https://openalex.org/W2777496529,False,article,2015,Age-related dynamics of height of bone system of sapling of sheep of basic breeds of South Ural
+10.22363/2312-797x-2016-1-66-71,https://openalex.org/W2887544277,False,article,2016,Effect of various factors for anabolic efficiency of honey
+10.22363/2312-797x-2017-12-1-17-24,https://openalex.org/W2602155096,False,article,2017,Dynamics of the density of lawn grass and herbage on loamy and sandy soils
+10.22363/2312-8143-2017-18-1-149-156,https://openalex.org/W2613773771,False,article,2017,DIVERSIFICATION OF THE MINING PRODUCTION
+10.22363/2312-8313-2017-4-2-153-163,https://openalex.org/W2762204543,False,article,2017,SOCIAL DETERMINANTS OF PERSONNEL’S SELF-DEVELOPMENT IN THE ORGANIZATION
+10.22363/2312-8313-2020-7-1-70-82,https://openalex.org/W3034219152,False,article,2020,"Holding Together, Coming Together or Putting Together? A [Re]examination on the Formation of Ethiopia’s Federation"
+10.22363/2313-1438-2016-3-145-153,https://openalex.org/W2742927258,False,article,2016,The Concept “Trans-Regional Political Institution”
+10.22363/2313-2264-2017-15-2-175-188,https://openalex.org/W2622983987,False,article,2017,BASIC NOTIONS OF LINGUOCULTURAL ANALYSIS
+10.22394/2079-1690-2019-1-4-129-132,https://openalex.org/W2995846992,False,article,2019,RISK-MANAGEMENT AS A BASE OF FINANCIAL SECURITY SYSTEM OF ORGANIZATIONS OF SOUTH RUSSIA
+10.22405/2304-4772-2018-1-4-106-112,https://openalex.org/W4239724485,False,article,2018,RUSSIAN CULTURAL LINGUISTICS: MAIN FEATURES
+10.22405/2304-4772-2018-1-4-129-144,https://openalex.org/W4235441201,False,article,2018,FASHION OF THE TWENTIETH CENTURY AS A CULTURAL PHENOMENON (RETROSPECTIVE ANALYSIS)
+10.22405/2304-4772-2018-2-3-134-141,https://openalex.org/W4242984182,False,article,2018,FOLK ART AS ONE OF THE FACTORS TO FORM THE COLOUR CULTURE OF THE ARTIST-DESIGNER
+10.22412/1993-7768-11-2-5,https://openalex.org/W2731869573,False,article,2017,Problems and prospects of spatial development of the Russian Federation
+10.22412/1995-042x-11-2-3,https://openalex.org/W4255714635,False,article,2017,Problems and prospects of spatial development of the Russian Federation
+10.22452/jati.sp2018no1.7,https://openalex.org/W2951919380,False,article,2018,"Local Community Engagement In Conserving Marine Resources In Terengganu, Malaysia"
+10.2298/abs1302703p,https://openalex.org/W2037714783,False,article,2013,"Physcomitrium eurystomum and Pohlia proligera, new mosses in the bryophyte flora of Serbia"
+10.24069/2542-0267-2019-3-4-223-234,https://openalex.org/W3026019363,False,article,2019,On the Conference about the Conference! Round Table “Scientific conferences as the essential means of communication: development challenges”
+10.24158/pep.2017.3.17,https://openalex.org/W2597492790,False,article,2017,Нормативно-правовое регулирование отсрочки отбывания наказания больным наркоманией
+10.24294/jipd.v8i10.5939,https://openalex.org/W4402659526,False,article,2024,Exploring the impact of economic growth and sources of electricity production in India: New insights from sectoral analysis using NARDL approach
+10.24411/1728-323x-2018-13096,https://openalex.org/W3022816283,False,article,2018,Районирование территории Российской Федерации: внутренние и международные аспекты. Отозвана 25.03.2019
+10.24411/2413-046x-2019-10301,https://openalex.org/W3006636415,False,article,2019,"СУЩЕСТВУЮЩИЕ ПОДХОДЫ, ПОЗВОЛЯЮЩИЕ ОПРЕДЕЛИТЬ ЭКОНОМИКО-ПРАВОВУЮ ПРИРОДУ ДОГОВОРА ТЕХНОЛОГИЧЕСКОГО ПРИСОЕДИНЕНИЯ К ЭЛЕКТРИЧЕСКИМ СЕТЯМ"
+10.24411/2500-0225-2019-10037,https://openalex.org/W3031267643,False,article,2019,СОВЕТСКОЕ ПРОШЛОЕ КАК ЛАКУНА ПАМЯТИ: СПЕЦИФИКА ПОГРАНИЧНОГО РЕГИОНА
+10.24411/2520-6990-2020-11839,https://openalex.org/W3045574329,False,article,2020,СПОРТИВНО-ПРАВОВОЙ ПРОБЕЛ: ПРОБЛЕМЫ ДОГОВОРНОГО РЕГУЛИРОВАНИЯ ПРОФЕССИОНАЛЬНОГО СПОРТА В РОССИЙСКОЙ ФЕДЕРАЦИИ
+10.24425/bpasts.2020.133366,https://openalex.org/W4388423831,False,article,2020,Machining of microholes in Ti-6Al-4V by hybrid micro electrical discharge machining to improve process parameters and flushing properties
+10.24833/2071-8160-2015-1-40-193-208,https://openalex.org/W1463391031,False,article,2015,Implementation in Russia and the European Union of International Safety Standards of Identity Documents with Biometric Data: Legal Regulation and Perspectives
+10.24833/2071-8160-2015-1-40-29-34,https://openalex.org/W3172416581,False,article,2015,Tadzhikistan-Russia: Geopolitical Relations at the Turn of the Century
+10.24833/2071-8160-2015-2-41-45-54,https://openalex.org/W1905194401,False,article,2015,Little-Known Operations of the Soviet Troops in Liberation of Czechoslovakia
+10.24833/2071-8160-2015-3-42-157-161,https://openalex.org/W3170540422,False,article,2015,RETRACTED Defamation Strategy Implementation in the German Political Discourse
+10.24891/el.22.1.107,https://openalex.org/W4229933821,False,article,2017,Analyzing regional specifics of individual housing construction during the economic recession in the Russian Federation
+10.24965/gapp.vi20.247,https://openalex.org/W1595318290,False,article,2001,Conocimiento sociológico y planificación social: la relación teoría-praxis
+10.25005/2074-0581-2017-19-1-12-16,https://openalex.org/W2749902270,False,article,2017,DIFFERENTIATED APPROACH TO THE THERAPY OF DYSMENORRHEA IN TEENAGE GIRLS
+10.25005/2074-0581-2017-19-1-68-72,https://openalex.org/W2906407400,False,article,2017,MORPHOFUNCTIONAL AND CYTOCHEMICAL PARALLELS IN HEREDITARY HAEMOLYTIC ANAEMIA IN CHILDREN
+10.25005/2074-0581-2017-19-1-7-11,https://openalex.org/W2750440622,False,article,2017,SOMATIC AND GYNECOLOGICAL STATUS OF REPRODUCTIVE-AGE OF WOMEN WITH BENIGN TUMORS AND TUMOR-LIKE FORMATIONS OF THE OVARIES
+10.25005/2074-0581-2017-19-2-172-176,https://openalex.org/W2906387755,False,article,2017,FEATURES OF REMODELLING OF THE LEFT VENTRICULAR MYOCARDIUM IN PATIENTS WITH ARTERIAL HYPERTENSION OF ELDERLY AGE WITH COMORBID DEPRESSION
+10.25005/2074-0581-2017-19-4-471-475,https://openalex.org/W2906473339,False,article,2017,TOTAL CARDIOVASCULAR RISK – A NEW APPROACH FOR PREDICTING STROKE
+10.25005/2074-0581-2018-20-1-125-129,https://openalex.org/W2980520888,False,article,2018,RABSON-MENDENHALL SYNDROME IN TWINS
+10.25136/2409-8744.2020.1.31504,https://openalex.org/W3010751838,False,article,2020,Cultural inversion of the concept “social responsibility” on the example of activity of “Saratovneftegaz” branches during the 1950’s – 1980’s
+10.25136/2644-5522.2019.4.29966,https://openalex.org/W3004636322,False,article,2019,Наумкин А.Д. Пути цифровой трансформации процессов взаимодействия аэропортов и авиакомпаний
+10.25178/nit.2019.2.18,https://openalex.org/W2948143963,False,article,2019,Тувинский фольклор и землетрясение в урочище Джарга середины XVIII века
+10.25205/1818-7919-2020-19-1-148-152,https://openalex.org/W3006951740,False,article,2020,Review on the book: Nefyodov V. V. SUG and the Culture of DDR
+10.25298/2221-8785-2018-16-1-106-110,https://openalex.org/W2793782147,False,article,2018,"EXPERIENCE OF LARGE SAPHENOUS VEIN HARVESTING BY METHOD OF ""SKIN BRIDGES"" IN AORTO-CORONARY ARTERY BYPASS SURGERY"
+10.25789/ymj.2020.69.25,https://openalex.org/W3164520006,False,article,2020,Register of births as the most important tool for forecasting obstetric complications and reducing of perinatal loss level
+10.26102/2310-6018/2020.29.2.006,https://openalex.org/W4400658178,False,article,2020,An algorithm for identifying steganographic inserts of the LSB-replacement type based on the hierarchy analysis
+10.26102/2310-6018/2020.29.2.007,https://openalex.org/W4400658377,False,article,2020,Method of detection of hidden data using steganography method Koch-Zhao
+10.26140/anie-2020-0902-0004,https://openalex.org/W3133112154,False,article,2020,DEVELOPMENT OF AGRICULTURAL PRODUCTION COOPERATIVES ON THE EXAMPLE OF THE NIZHNY NOVGOROD REGION
+10.26262/jbrt.v29i0.8597,https://openalex.org/W4361183059,False,article,2022,Circ_0067835 acts as an oncogenic factor in colorectal cancer by increasing MAPK1 expression via sponging miR-873-5p
+10.26355/eurrev_202003_20509,https://openalex.org/W3012604343,False,article,2020,Clinical significance of a new oncogenic factor P5CR1 in gastric cancer.
+10.26355/eurrev_202101_24355,https://openalex.org/W3125981743,False,article,2021,Integrative analysis of the characteristics of lipid metabolism-related genes as prognostic prediction markers for hepatocellular carcinoma.
+10.26355/eurrev_202203_28203,https://openalex.org/W4220919640,False,article,2022,Regulation of miR-33b on endometriosis and expression of related factors.
+10.26425/1816-4277-2019-3-18-22,https://openalex.org/W2937771709,False,article,2019,The possibilities of using flexible methods in public administration
+10.2979/jmodelite.41.4.01,https://openalex.org/W3047048551,False,retraction,2018,RETRACTION: Wassily Kandinsky's The Yellow Sound as a Total Work of Art: Reception and Interpretation
+10.30714/j-ebr.2023.182,https://openalex.org/W4385694604,False,article,2023,Adrenal cortex regeneration in ethane dimethanesulfonate administered rat model
+10.30853/filnauki.2019.1.18,https://openalex.org/W2910899425,False,article,2019,STUDY OF URBAN ERGONYMS
+10.30853/manuscript.2019.11.55,https://openalex.org/W2987338192,False,article,2019,MUSICAL MATERIAL IN THE CHINESE TEXTBOOKS ON SOLFEGGIO
+10.30853/manuscript.2019.5.37,https://openalex.org/W2939025139,False,article,2019,MUSICAL EAR TRAINING AND SOLFEGGIO PRACTICE IN MODERN CHINA
+10.30853/manuscript.2019.7.28,https://openalex.org/W2949932538,False,article,2019,SORCERER’S STAFF AS AN ELEMENT OF SACRAL PARAPHERNALIA OF THE RUSSIAN PAGANISM OF THE XXI CENTURY
+10.31219/osf.io/v5rax,https://openalex.org/W4213097141,False,preprint,2020,"Materials World Congress on Business and Finance Management WCBFM - 2020 (05-07 January 2020 - Berlin, Germany)// OPEN EUROPEAN ACADEMY OF PUBLIC SCIENCES OU, Estonia: Editor Alexander Kudryashov - 84 P."
+10.3139/146.110497,https://openalex.org/W1969996220,False,article,2011,Optimization of ZnO2 nanoparticle content in binary blended concrete to enhance high strength concrete
+10.3139/146.110509,https://openalex.org/W2088505070,False,article,2011,Physical and mechanical behavior of high strength self-compacting concrete containing ZrO2 nanoparticles
+10.3139/146.110574,https://openalex.org/W1992877019,False,article,2011,The effects of curing medium on the flexural strength and water permeability of cementitious composites containing Fe2O3 nanofillers
+10.31549/2542-1174-2019-2-51-60,https://openalex.org/W2956149140,False,article,2019,Diethylaminoethylchitosan: synthesis and antibacterial activity
+10.31772/2587-6066-2018-19-3-497-503,https://openalex.org/W2898703968,False,article,2018,INCREASE RELIABILITY OF ULTRAHIGH-FREQUENCY CHANNELS OF THE ACTIVE PHASED ARRAY ANTENNA MODULES
+10.31857/s0514749220040011,https://openalex.org/W3015553419,False,article,2020,СИНТЕЗ МАКРОЦИКЛИЧЕСКИХ ДЕПСИПЕПТИДОВ НА ОСНОВЕ ПАССЕРИНИ - «СLICK» СТРАТЕГИИ
+10.3233/jifs-219041,https://openalex.org/W3177472328,False,article,2021,Psychological behavior signal analysis for sports person during their activity session
+10.32653/ch161145-156,https://openalex.org/W3023883488,False,article,2020,ON THE HISTORY OF EDUCATION DEVELOPMENT AMONG THE NOGAIS OF THE NORTH CAUCASUS (XVII–XX CENTURIES)
+10.32743/26586509.2019.1.10001,https://openalex.org/W2913294112,False,article,2018,APPLICATION OF THE RULE ABOUT UNILATERAL REFUSAL TO PERFORM THE OBLIGATIONS UNDER THE CONTRACT ACCORDING TO ARTICLES 717 AND 782 OF THE CIVIL CODE OF THE RUSSIAN FEDERATION TO STATE (MUNICIPAL) CONTRACT
+10.3275/7142,https://openalex.org/W2416794499,False,retraction,2010,Retraction: Expression of phosphodiesterase type 5A in human spermatozoa and influence of its inhibition on motility and functional sperm parameters.
+10.33263/briac94.979986,https://openalex.org/W4238124917,False,article,2019,Chitosan-based layered nanofibers loaded with herbal extract as wound-dressing materials on wound model studies
+10.33531/farplss.2018.6.08,https://openalex.org/W2927805066,False,article,2018,"The cultural syndrome ""individualism-collectivism"" and its psychological peculiarities including well-being of regional communities' representatives in Ukraine"
+10.3365/kjmm.2010.48.06.581,https://openalex.org/W4238335118,False,article,2010,Effect of Aspect ratio on percolation structure of Two-Phase composites with conductivity
+10.3365/kjmm.2010.48.09.825,https://openalex.org/W4238468534,False,article,2010,"Evaluation of Thermal Shock Resistance of Ti(C,N)-Mo2C-Ni Cermet by Infrared Radiation Heating Method"
+10.3365/kjmm.2010.48.09.867,https://openalex.org/W4231318469,False,article,2010,Percolation Threshold and Critical Exponent of the Conductivity of the Polyethylene Matrix Composites for Loading Carbon Black
+10.3365/kjmm.2011.49.10.805,https://openalex.org/W3166058422,False,article,2011,Temperature Dependence of Resistivity of Carbon Black Filled Polymer Matrix Composites Below and Above Percolation Threshold
+10.3365/kjmm.2012.50.5.407,https://openalex.org/W2508614978,False,article,2010,TiC Volume Fraction Dependence of the Electrical Resistivity and PTC Property for TiC Added PMC (polyethylene matrix composites)
+10.3365/kjmm.2013.51.1.083,https://openalex.org/W3152379108,False,article,2013,A Study of the Percolation Behavior for Fe3O4 and SiC Filled PMCs by Measurement of Electrical Resistivity and Relative Permittivity
+10.3365/kjmm.2013.51.12.921,https://openalex.org/W2332891752,False,article,2013,Deformation Behavior of TiC-Mo Composites at High Temperature by Compression Test
+10.3365/kjmm.2013.51.7.515,https://openalex.org/W2294580046,False,article,2013,The High Temperature Deformation Behavior of TiC0.98 Grown by the Floating Zone Technique
+10.3365/kjmm.2014.53.1.75,https://openalex.org/W2486861919,False,article,2015,Effect of Nb Addition on the Deformation Behavior of TiC Matrix Solid Solution at High Temperature
+10.33920/med-13-2002-06,https://openalex.org/W3081203330,False,article,2020,Study of phenolic and polyphenolic compounds from the bark and leaves of bird cherry (Padus avium Mill.) growing in the Moscow Oblast
+10.33920/pol-01-2008-03,https://openalex.org/W3180016193,False,article,2020,Information and psychological confrontation in the context of the formation of regional security of the post-Soviet space: content and main stages
+10.34076/2658-512x-2019-4-540-551,https://openalex.org/W3130506573,False,article,2019,"THE ISSUE OF THE MAJOR TRANSACTION DEFINITION IN THEORY, RUSSIAN LEGISLATION AND CASE LAW"
+10.34680/2411-7951.2020.5(30).16,https://openalex.org/W3124298138,False,article,2020,Высшая философская школа V—VI вв. в Александрии и комплекс ее зданий (Ком эль-Дикка)
+10.34755/irok.2020.88.50.004,https://openalex.org/W4406636652,False,article,2020,Синтетический учет незавершенного производства
+10.34925/eip.2020.115.2.164,https://openalex.org/W4400931716,False,article,2020,Analysis of economic and legal approaches to the contract for technological connection to electric networks
+10.35841/1836-1935.13.4.114-135,https://openalex.org/W3023048274,False,article,2020,"The Prevalence of Self-Perceived Sensitive Facial Skin Among Female Students at King Abdulaziz University, Jeddah, Saudi Arabia, 2018-2019"
+10.35940/ijeat.a2115.109119,https://openalex.org/W4243129892,False,article,2019,Withdrawn
+10.35940/ijeat.a2117.109119,https://openalex.org/W4238522123,False,article,2019,Model Minced Poultry Meat Biomodification with Starter Cultures
+10.36396/ms.2020.15.4.004,https://openalex.org/W3120538038,False,article,2020,Radioligand binding assay for the simultaneous determination of β1- and β2-adrenergic receptors in human blood cells
+10.36511/2078-5356-2019-3-87-94,https://openalex.org/W2979562934,False,article,2019,Tax liability of banks for non-fulfillment of tax authorities’ decisions: legislative regulation and law enforcement practice
+10.36809/2309-9380-2019-24-124-127,https://openalex.org/W2998844096,False,article,2019,PROFESSIONAL AND AXIOLOGICAL ORIENTATIONS OF APPLICANTS AS AN OBJECT OF PEDAGOGICAL AND MANAGERIAL INFLUENCES
+10.3740/mrsk.2009.19.11.588,https://openalex.org/W2022311258,False,article,2009,Computational and Experimental Study of Grain Growth in WC-Co and WC-VC-Co Cemented Carbides
+10.3740/mrsk.2009.19.12.644,https://openalex.org/W2006431349,False,article,2009,Effect of the Temperature on Resistivity of Carbon Black-Polyethylene Composites Below and Above Percolation Threshold
+10.3740/mrsk.2010.20.3.148,https://openalex.org/W1985601183,False,article,2010,Damage Monitoring of CP-GFRP/GFRP Composites by Measuring Electrical Resistance
+10.3740/mrsk.2010.20.5.271,https://openalex.org/W2035796938,False,article,2010,Electrical Conduction Property of the Carbon Black-Filled Polyethylene Matrix Composites Below the Percolation Threshold
+10.3740/mrsk.2011.21.4.196,https://openalex.org/W1965051947,False,article,2011,Dielectric Properties of Carbon Black-Filled Polyethylene Matrix Composites
+10.3740/mrsk.2011.21.9.477,https://openalex.org/W2070872788,False,article,2011,Percolation Threshold and Critical Exponent of Dielectric Breakdown Strength of Polyethylene Matrix Composites added Carbon Black
+10.3740/mrsk.2013.23.10.568,https://openalex.org/W2090082305,False,article,2013,Deformation Properties of TiC-Mo Eutectic Composite at High Temperature
+10.3740/mrsk.2014.24.1.13,https://openalex.org/W2083288064,False,article,2014,Ductile-Brittle Transition Property of Sintered TiC-Nb Composites
+10.3740/mrsk.2014.24.11.625,https://openalex.org/W2036333749,False,article,2014,Deformation Property of TiC-Mo Solid Solution Single Crystal at High Temperature by Compression Test
+10.3740/mrsk.2014.24.4.201,https://openalex.org/W2016779475,False,article,2014,Analysis of the Strength Property for TiC-Mo Composites at High Temperature
+10.3740/mrsk.2015.25.12.678,https://openalex.org/W2282962368,False,article,2015,The Electrical Property of Polymer Matrix Composites Added Carbon Powder
+10.3740/mrsk.2015.25.8.365,https://openalex.org/W2561714385,False,article,2015,Dependency of the Critical Carbon Content of Electrical Conductivity for Carbon Powder-Filled Polymer Matrix Composites
+10.37493/2307-907x.2020.1.11,https://openalex.org/W3153525091,False,article,2020,MONITORING MODEL OF EDUCATIONAL ORGANIZATIONS' INNOVATION ACTIVITY
+10.37493/2409-1030.2020.1.13,https://openalex.org/W3155132368,False,article,2020,AUDIT PROCUREMENT AS A TOOL TO IMPROVE THE EFFICIENCY OF SPENDING BUDGET FUNDS IN THE CONTRACT SYSTEM
+10.37882/2223-2966.2020.04.04,https://openalex.org/W3040899344,False,article,2020,Оценка влияния клинических аспектов течения сочетанной патологии ( ВИЧ-инфекция и туберкулез) на заболеваемость контактных в очагах
+10.37882/2223-2966.2020.04.05,https://openalex.org/W3041866154,False,article,2020,Сравнительные аспекты эффективности микробиологических методов определения массивности бактериовыделения у больных туберкулезом и сочетанной патологией (ВИЧ-инфекция и туберкулез)
+10.3866/pku.whxb201505251,https://openalex.org/W3028858424,False,article,2015,First-Principles Study on the Near-Edge X-ray Absorption Fine Structure Spectroscopy of the Fullerene-Derivative PCBM
+10.3906/sag-1402-5,https://openalex.org/W2016835520,False,article,2015,Quantitative study of epigenetic signature in head >and necksquamous cell carcinoma
+10.3944/aott.2011.2543err1,https://openalex.org/W1710514309,False,erratum,2012,Erratum to: Osteoporotic hip fracture costs in the elderly Turkish population
+10.4014/jmb.0906.06032,https://openalex.org/W2273297790,False,retraction,2010,Retraction: The Scenario of Norovirus Contamination in Food and Food Handlers
+10.4103/0301-4738.49404,https://openalex.org/W1999044526,False,article,2009,Scheimpflug imaging of pediatric posterior capsule rupture
+10.4103/0970-0218.173502,https://openalex.org/W2571738621,False,article,2016,"Hepatitis B Endemicity in Some Parts of Arunachal Pradesh, Northeast India"
+10.4119/unibi/seejph-2014-30,https://openalex.org/W2185194366,False,article,2015,Public health in Kosovo after five difficult years of independence
+10.4172/2157-7463.1000151,https://openalex.org/W2334670652,False,article,2013,Aerobic Degradation of 2-Hexanone by a Rhodococcus Sp. Strain MB-P1 via Novel Pathway
+10.4172/2157-7617.1000164,https://openalex.org/W2327246080,False,article,2013,Effects of Climate Change on Invasion Potential Distribution of Lantana camara
+10.4172/2327-5146.1000114,https://openalex.org/W2084534776,False,article,2013,Strategy for Prevention of Hip Fractures in Patients with Alzheimer\\\\\\\'s Disease
+10.4182/amt.2014.a1,https://openalex.org/W2918063227,False,article,2014,"CONTROL OF INTERNAL LEPIDOPTERA AND OTHER INSECT PESTS IN APPLE, 2013"
+10.4236/ojee.2013.21003,https://openalex.org/W2077627798,False,article,2013,Green Transport Infrastructure of Taiwan
+10.4314/mmj.v27i4.7,https://openalex.org/W2207255376,False,article,1970,"Semen profiles of young men involved as bicycle taxi cyclists in Mangochi District, Malawi: A case-control study"
+10.46548/21vek-2020-0950-0023,https://openalex.org/W3041646058,False,article,2020,ALGORITHM FOR SECURE PROCESSING OF BIG DATA BY CLOUD SERVICES USING BIG DATA TECHNOLOGIES
+10.48550/arxiv.2306.08997,https://openalex.org/W4381110793,False,preprint,2023,Exploring the MIT Mathematics and EECS Curriculum Using Large Language Models
+10.48550/arxiv.2402.08303,https://openalex.org/W4391835299,False,preprint,2024,ChatCell: Facilitating Single-Cell Analysis with Natural Language
+10.48550/arxiv.math/9810162,https://openalex.org/W1607827271,False,preprint,1998,"Lifting formulas, Moyal product, and Feigin spectral sequence"
+10.51847/x0y0hg9jqq,https://openalex.org/W4402497310,False,article,2024,Docking Study of Licensed Non-Viral Drugs to Obtain Ebola Virus Inhibitors
+10.5281/zenodo.3747229,https://openalex.org/W4287815925,False,article,2020,Corona Virus Killed by Sound Vibrations Produced by Thali or Ghanti: A Potential Hypothesis
+10.5376/jmr.2013.03.0004,https://openalex.org/W2328448284,False,article,2013,Cloning and Expression of the Recombinant Transferrin Protein from Culex quinquefasciatus Say (Diptera: Culicidae) and Study of Its Antimicrobial Activity
+10.5409/wjcp.v5.i3.251,https://openalex.org/W2509060275,False,article,2016,Critical evaluation of unscientific arguments disparaging affirmative infant male circumcision policy
+10.5455/ijmsph.2014.150220144,https://openalex.org/W111256955,False,article,2014,[RETRACTED ARTICLE] Post-amputation rehabilitation in an emergency crisis: from preoperative to the community
+10.5455/ijmsph.2014.160220143,https://openalex.org/W1586753540,False,article,2014,[RETRACTED ARTICLE] Fixation of basicervical and related fractures using DHS with DRS
+10.5455/ijmsph.2014.210220145,https://openalex.org/W33504476,False,article,2014,[RETRACTED ARTICLE] Post-traumatic flexion contractures of the elbow release via limited lateral approach
+10.5455/ijmsph.2016.28012016346,https://openalex.org/W2282597865,False,article,2016,"Prevalence of eye problems among primary schoolboys in Jeddah, Saudi Arabia: a survey study"
+10.5539/jpl.v12n4p1,https://openalex.org/W2982706811,False,article,2019,Can Non-Muslim Courts Bring Legal Change in Sharia Laws?
+10.55544/ijrah.6.1.11,https://openalex.org/W7124827881,False,article,2026,The Scientific Case Against Parental Alienation: A Critical Review
+10.5681/jarcm.2014.005,https://openalex.org/W4308502834,False,article,2014,"Association between inflammatory factor, lipid peroxidation and total-antioxidant in non-diabetic patients of coronary artery disease"
+10.5755/j01.eee.19.3.1441,https://openalex.org/W2012901308,False,article,2013,Methods of Improving Superconductive Fault Current Limiting Devices in Power Engineering
+10.5772/59124,https://openalex.org/W1594875325,False,book-chapter,2015,The Importance of Hot Corrosion and Its Effective Prevention for Enhanced Efficiency of Gas Turbines
+10.5815/ijisa.2016.05.03,https://openalex.org/W2342466376,False,article,2016,Global Solar Radiation Forecasting Based on SVM-Wavelet Transform Algorithm
+10.58209/neurolife.2023.09,https://openalex.org/W4389318940,False,article,2023,Evaluation of the neuroprotective activity of citral nanoemulsion on Alzheimer’s disease-type dementia in a preclinical model: The assessment of cognitive and neurobiochemical responses
+10.58209/neurolife.2023.31,https://openalex.org/W4389317333,False,article,2023,Therapeutic effects of quercetin-loaded phytosome nanoparticles in a preclinical model of Parkinson disease: The modulation by antioxidant pathways and BDNF expression
+10.5862/je.233.14,https://openalex.org/W3043687922,False,article,2016,On the specialization of small entrepreneurship subjects in Russia
+10.5862/je.256.3,https://openalex.org/W2594845576,False,article,2017,A comprehensive theoretically balanced and practically achievable model of a universal macroeconomic system
+10.5897/ajbm2017.8330,https://openalex.org/W2749343795,False,article,2017,Factors associated with young Taiwanese peoples preference of green tea
+10.5923/j.ajoc.20120201.02,https://openalex.org/W2118724415,False,article,2012,One Pot Three Component Synthesis of Indole with Fused Chromenes Using an Efficient Tricaprylmethyl Ammonium Thiosalicylate Based Task Specific Ionic Liquids
+10.5937/erpo1302056k,https://openalex.org/W2025403028,False,article,2013,Tim bar of non-material claim: Notion and disputable issues in the jurisprudence
+10.5937/megrev2001001l,https://openalex.org/W3105958682,False,article,2020,Critics and aspects of the European citizenship according to the CJEU: From Rottmann to Tjebbes and others
+10.6092/issn.1973-9494/4188,https://openalex.org/W2171752319,False,article,2014,"Heritage management of temple tanks in an urban scenario - a case study of Thirupporur, a traditional town in the state of Tamilnadu, India"
+10.7256/1812-8688.2015.1.12564,https://openalex.org/W4242367405,False,article,2015,"Оробинская И.В., Гашенко И.В. Теоретико-методическое обеспечение приоритетных направлений контроля за исполнением налоговой обязанности сельскохозяйственными товаропроизводителями"
+10.7256/1812-8688.2015.11.14654,https://openalex.org/W4244933605,False,article,2015,Кондрашова Н.А. Отражение участниками консолидированной группы налогоплательщиков результатов налогового контроля цен
+10.7256/1812-8688.2015.2.13073,https://openalex.org/W4252226878,False,article,2015,Оробинская И.В. Тенденции налогового регулирования и их влияние на экономку агропромышленного комплекса России
+10.7256/1812-8688.2015.3.13072,https://openalex.org/W2737911329,False,article,2015,"Оробинская И.В., Казьмин А.Г. Оценка влияния налоговой системы на экономку России"
+10.7256/1812-8688.2016.4.18291,https://openalex.org/W2795608480,False,article,2016,"Сазанов О.В., Ахметшин Э.М. Альтернативная форма налогового контроля – «горизонтальный» мониторинг в действии"
+10.7256/1999-2793.2016.1.13443,https://openalex.org/W2519426509,False,article,2016,Нилогов А.С. Что такое философия антиязыка?
+10.7256/1999-2807.2015.1.12753,https://openalex.org/W2809350857,False,article,2015,Адмиралова И.А. Правовое регулирование методов убеждения и принуждения в деятельно-сти полиции как средств обеспечения прав и свобод граждан
+10.7256/1999-2807.2015.11.15261,https://openalex.org/W4236733527,False,article,2015,Лаврентьева О.О. Принципы противодействия коррупционным правонарушениям в системе государственной гражданской службы
+10.7256/1999-2807.2016.1.15723,https://openalex.org/W4231739276,False,article,2016,"Сидоров Е.И. Проблемы квалификации административных правонарушений, связанных с недекларированием либо недостоверным декларированием товаров в условиях функционирования Таможенного союза в рамках ЕАЭС"
+10.7256/1999-2807.2016.1.15799,https://openalex.org/W4233750586,False,article,2016,Обыденова Т.В. К вопросу об использовании в России положительного опыта Германии в сфере профилактики правонарушений среди несовершеннолетних
+10.7256/1999-2807.2016.3.15728,https://openalex.org/W4241237584,False,article,2016,Саидов З.А. Государственная экономка как объект административно-правового воздействия
+10.7256/1999-2807.2016.4.15736,https://openalex.org/W2518436898,False,article,2016,Саидов З.А. Административно-правовые и экономические меры поддержки государственного сектора экономики
+10.7256/1999-2807.2016.7.18006,https://openalex.org/W2516169262,False,article,2016,Агеев В.Н. Комиссия по координации работы по противодействию коррупции в субъекте Российской Федерации: общие положения
+10.7256/2409-7810.2015.1.14256,https://openalex.org/W2492937501,False,article,2015,Куракин А.В. Принципы противодействия коррупции и их реализация в сфере внутренних дел
+10.7256/2409-868x.2015.6.16055,https://openalex.org/W2518229719,False,article,2015,Лиджиева И.В. Финансово-хозяйственная деятельность органов общественного управления Калмыцкой степи в XIX в.
+10.7256/2409-8728.2015.1.14316,https://openalex.org/W2255990347,False,article,2015,Гусев Д.А. Социальные предпосылки зарождения античного скептицизма и специфика стоической теории познания
+10.7256/2409-8728.2015.1.14361,https://openalex.org/W2515246045,False,article,2015,Музяков С.И. Аксиология античного скептицизма как эвдемонистическая модель
+10.7256/2409-8728.2015.1.14400,https://openalex.org/W2286509573,False,article,2015,Яковлев В.А. Информационные программы бытия
+10.7324/japs.2013.3808,https://openalex.org/W2182440884,False,article,2013,Comparison of antifungal activity of medicinal plant Tylophora indica Merr. with its in vitro raised plant and callus
+10.7498/aps.55.791,https://openalex.org/W1658562379,False,article,2006,Linear Stark effect of CdS/HgS/CdS spherical nanometric system
+10.7498/aps.61.186102,https://openalex.org/W3117340757,False,article,2012,Electron-beam induced abnormal expansion in a silica-shelled gallium microball-nanotube structure (Retracted Article)
+10.7498/aps.62.104701,https://openalex.org/W3116933529,False,article,2013,Wavelet analysis of passive temperature in a turbulent cylinder wake(Retracted Article)
+10.7759/cureus.155,https://openalex.org/W2317675375,False,article,2014,Novel determinants of tumour radiosensitivity post-large-scale compound library screening
+10.9734/jgeesi/2019/v20i230101,https://openalex.org/W2929597451,False,article,2019,Comparison of Wearable and Non-wearable Technologies on Global CO2 Levels

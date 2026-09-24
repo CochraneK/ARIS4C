@@ -1,0 +1,111 @@
+reason,n,share
+Investigation by Journal/Publisher,30275,0.45167691114161246
+Unreliable Results and/or Conclusions,21968,0.3277436295279585
+Investigation by Third Party,17551,0.26184579578683537
+Concerns/Issues about Referencing/Attributions,15049,0.22451811183386047
+Concerns/Issues about Data,14343,0.21398520021483558
+Notice - Limited or No Information,11983,0.17877603389628216
+Paper Mill,11712,0.17473294742495674
+Concerns/Issues about Peer Review,11437,0.17063018440054903
+Compromised Peer Review,11194,0.16700483380079967
+Computer-Aided Content or Computer-Generated Content,9317,0.13900161126693322
+Concerns/Issues about Results and/or Conclusions,9272,0.1383302500447574
+Date of Article and/or Notice Unknown,6901,0.10295697320522766
+Duplication of/in Image,5343,0.07971295577967416
+Breach of Policy by Author,4786,0.07140299576296473
+Removed,3983,0.05942292773169422
+Objections by Author(s),3888,0.058005609595989736
+Euphemisms for Plagiarism,3791,0.056558453183744105
+Duplication of/in Article,3661,0.054618965208569556
+Investigation by Company/Institution,3269,0.04877066300650475
+Author Unresponsive,3195,0.047666646774482305
+Concerns/Issues about Image,3104,0.04630900519186012
+Rogue Editor,2983,0.04450378946112073
+Concerns/Issues about Authorship/Affiliation,2919,0.04354896461180402
+Plagiarism of/in Article,2873,0.04286268425135764
+Lack of IRB/IACUC Approval and/or Compliance,2636,0.039326848481231726
+Original Data and/or Images not Provided and/or not Available,2429,0.03623858685922301
+Unreliable Data,2347,0.035015217521035986
+Euphemisms for Duplication,2250,0.033568061108790355
+Upgrade/Update of Prior Notice(s),2236,0.03335919317300233
+Plagiarism of Text,2194,0.03273258936563824
+Error in Data,1925,0.028719341170853972
+Misconduct by Author,1848,0.027570567524019814
+Concerns/Issues about Third Party Involvement,1830,0.02730202303514949
+Concerns/Issues about Article,1753,0.02615324938831533
+Falsification/Fabrication of Data,1704,0.02542221161305723
+Informed/Patient Consent - None/Withdrawn,1603,0.02391537864772931
+Misconduct - Official Investigation(s) and/or Finding(s),1541,0.02299039207495375
+Error in Results and/or Conclusions,1448,0.021602912215790415
+Error in Analyses,1391,0.020752521334367727
+Manipulation of Images,1337,0.01994688786775676
+Error in Methods,1245,0.018574327146863998
+Duplication of Data,1041,0.015530822939667005
+Error in Image,943,0.014068747389150803
+Results Not Reproducible,936,0.013964313421256789
+Retract and Replace,924,0.013785283762009907
+Error by Journal/Publisher,901,0.013442143581786716
+False/Forged Authorship,895,0.013352628752163274
+Plagiarism of Image,868,0.01294981201885779
+Conflict of Interest,807,0.012039744584352807
+Error in Text,766,0.011428059915259295
+Duplication of Content through Error by Journal/Publisher,742,0.011070000596765531
+Objections by Third Party,733,0.01093572835233037
+Copyright Claims,693,0.01033896282150743
+Ethical Violations by Author,645,0.009622844184519901
+Plagiarism of Data,643,0.009593005907978755
+Concerns/Issues about Human Subject Welfare,607,0.00905591693023811
+Lack of Approval from Author,572,0.008533747090768037
+Falsification/Fabrication of Image,542,0.008086172942650833
+Withdrawn to Publish in Different Journal,495,0.007384973443933879
+Duplication of Text,480,0.007161186369875276
+Lack of Approval from Third Party,450,0.006713612221758071
+Taken from Dissertation/Thesis,371,0.0055350002983827655
+Withdrawn as Out of Date,363,0.005415647192218177
+Notice - Lack of,354,0.005281374947783016
+Lack of Approval from Company/Institution,294,0.004386226651548607
+Investigation by ORI,286,0.004266873545384018
+Unreliable Image,267,0.003983409918243122
+Concerns/Issues about Methods,231,0.003446320940502477
+Cites Retracted Work,206,0.003073342483738139
+False/Forged Affiliation,195,0.0029092319627618307
+Error in Materials,195,0.0029092319627618307
+Notice - Unable to Access via current resources,181,0.002700364026973802
+Contamination of Cell Lines/Tissues,161,0.002401981261562332
+Doing the Right Thing,136,0.002029002804797995
+Falsification/Fabrication of Results,117,0.0017455391776570986
+Legal Reasons and/or Threats,113,0.0016858626245748046
+Miscommunication with/by Author,102,0.0015217521035984962
+Complaints about Author,100,0.0014919138270573491
+Bias Issues or Lack of Balance,99,0.0014769946887867756
+Error in Cell Lines/Tissues,94,0.0014023989974339083
+Publishing Ban,81,0.0012084501999164528
+Contamination of Materials,80,0.0011935310616458794
+Temporary Removal,77,0.0011487736468341588
+Criminal Proceedings,75,0.001118935370293012
+Concerns/Issues about Animal Welfare,55,0.000820552604881542
+Misconduct by Third Party,49,0.0007310377752581011
+Manipulation of Results,43,0.0006415229456346602
+Transfer of Copyright and/or Ownership,43,0.0006415229456346602
+Error by Third Party,42,0.0006266038073640866
+Not Presented at Conference,37,0.0005520081160112192
+Ethical Violations by Company/Institution/Third Party,29,0.00043265500984663127
+Civil Proceedings,28,0.00041773587157605777
+Manipulation of Data,28,0.00041773587157605777
+Salami Slicing,28,0.00041773587157605777
+Objections by Company/Institution,28,0.00041773587157605777
+Taken via Peer Review,23,0.0003431401802231903
+Updated to Retraction,22,0.0003282210419526168
+Miscommunication with/by Journal/Publisher,18,0.00026854448887032287
+Hoax Paper,15,0.00022378707405860238
+Miscommunication with/by Third Party,12,0.0001790296592468819
+Euphemisms for Misconduct,11,0.0001641105209763084
+Miscommunication with/by Company/Institution,11,0.0001641105209763084
+Nonpayment of Fees and/or Refusal to Pay,11,0.0001641105209763084
+Taken via Translation,10,0.00014919138270573493
+Complaints about Third Party,9,0.00013427224443516143
+Misconduct by Company/Institution,8,0.00011935310616458794
+No Further Action,6,8.951482962344095e-05
+Updated to Correction,6,8.951482962344095e-05
+Complaints about Company/Institution,5,7.459569135286746e-05
+Sabotage of Materials/Methods,1,1.4919138270573492e-05

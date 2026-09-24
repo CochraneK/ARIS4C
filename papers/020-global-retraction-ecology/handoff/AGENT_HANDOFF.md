@@ -38,3 +38,7 @@ Required transition:
 `PASS_STATIC_CONTRACT → PASS_OFFLINE_SMOKE → PASS_NETWORK_MATCH → PASS_DENOMINATOR`
 
 Do not skip directly from static QA to scientific interpretation.
+
+## Immediate next action
+
+Adjudicate the 158 anomalous rows in `data/derived/openalex_work_type_qa.csv` using the six allowed buckets, freeze the eligible work-type list and the right-censoring/mature-cohort rule, then unlock comparative country/field/publisher risk results and refresh the EN/ZH manuscript with the frozen numbers. The networked chain — PASS_OFFLINE_SMOKE, candidate-safe shards 0–3, bidirectional concordance, core `is_retracted` snapshot, year×field/type denominators and the censoring-aware hazard panel — was executed and frozen 2026-09-24 (see STATUS.md and `data/derived/pipeline_run_manifest.json`).

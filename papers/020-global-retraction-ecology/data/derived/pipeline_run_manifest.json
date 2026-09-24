@@ -1,0 +1,8 @@
+{
+  "pipeline": "ARIS4C-020",
+  "rwdb": "D:\\2026\\WB\u9879\u76ee\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\data\\raw\\retraction_watch.csv",
+  "network_executed": true,
+  "openalex_api_key_present": true,
+  "citation_afterlife_executed": false,
+  "status": "PASS"
+}

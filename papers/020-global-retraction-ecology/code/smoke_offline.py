@@ -30,6 +30,11 @@ def run(cmd,label):
     }
 
 def main()->int:
+    # Guard: without argparse, "--help" would recursively re-run the full
+    # smoke suite (each child spawning the next). Exit cleanly instead.
+    if "--help" in sys.argv[1:]:
+        print("usage: smoke_offline.py [--help]\n\nRuns the offline smoke gate: compile + CLI --help sweep + regression tests.")
+        return 0
     report={"schema_version":1,"compile":None,"help":[],"tests":[],"status":"PASS"}
 
     ok=compileall.compile_dir(str(CODE),quiet=1,force=True)

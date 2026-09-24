@@ -5,26 +5,20 @@
 - [x] Audit row count, identifiers, dates, duplicate DOI patterns and multi-label structure.
 - [x] Freeze Retraction-only primary inclusion criteria.
 - [x] Freeze multi-valued parsing rules for Subject/Country/Author/Institution/Reason.
-- [~] Join DOI-linked records to OpenAlex: feasibility PASS; production candidate-safe shards 0–3 pending network execution.
-- [~] Build publication denominators by year × field: denominator contract + executable grouped-count script frozen; execution pending full match coverage.
-- [~] Freeze retraction-reason ontology and co-occurrence representation: six-facet ontology rules cover 111/111 Appendix-B reference labels in local dry-run; observed 110-label snapshot reconciliation + manual audit pending.
+- [x] Join DOI-linked records to OpenAlex: candidate-safe shards 0–3 executed 2026-09-24 (60,773/61,155 = 99.375% match; 30 ambiguous; 382 unmatched).
+- [x] Build publication denominators by year × field (and × type): executed for 1990–2025.
+- [x] Freeze retraction-reason ontology and co-occurrence representation: 110 observed labels reconciled against 111 reference labels (1 observed-only label `Miscommunication with/by Third Party` remains unmapped — document or extend ontology).
 - [x] Design lag/survival models.
 - [x] Design post-retraction citation afterlife analysis.
-- [~] Stress-test mass-retraction/paper-mill episode sensitivity: screen + leave-cluster-out specification implemented; full-data execution pending.
+- [x] Stress-test mass-retraction/paper-mill episode sensitivity: screen + leave-cluster-out executed on full data (152 publisher clusters, 566 reason clusters, 58 years).
+- [x] Execute offline smoke on a canonical checkout and record PASS_OFFLINE_SMOKE (2026-09-24; smoke_offline.py --help recursion bug fixed during the run).
+- [x] Execute the full networked concordance/denominator/hazard chain and freeze results (pipeline manifest PASS 2026-09-24).
+- [x] Complete OpenAlex work-type concordance QA *sampling* — 158 anomalous rows materialized with adjudication buckets.
 
-- [ ] Complete OpenAlex work-type concordance QA before freezing denominator eligibility.
+Remaining:
 
-- [x] Create bilingual working paper and preliminary descriptive figures.
-- [x] Add core work-level dedup / fractional-counting / reason-network pipeline and regression tests.
-
-- [x] Implement RWDB→OpenAlex and bidirectional RWDB↔OpenAlex retraction-status concordance pipelines.
-- [x] Add OpenAlex is_retracted snapshot timestamp/SHA-256 provenance sidecar.
-- [x] Build aggregated cohort×field×age censoring-aware hazard pipeline.
-- [x] Implement batched OpenAlex citation-afterlife edge acquisition and summary.
-- [x] Freeze closest-competitor gap, analysis freeze, prior-art protocol and evidence matrix.
-- [ ] Execute the full networked concordance/denominator/hazard chain and freeze results.
-
-- [x] Static execution-package QA: runner dependencies + CLI contracts + current OpenAlex API contract.
-- [x] Add offline compile/CLI/synthetic smoke gate before full pipeline.
-- [x] Repair/sync 020 README, Command Center and EN/ZH maturity SVG public surfaces.
-- [ ] Execute offline smoke on a canonical checkout and record PASS_OFFLINE_SMOKE.
+- [ ] Adjudicate the 158 rows in `data/derived/openalex_work_type_qa.csv` and freeze the eligible work-type list.
+- [ ] Freeze the right-censoring / mature-cohort rule for hazard interpretation.
+- [ ] Decide the 1 unmapped reason label (`Miscommunication with/by Third Party`): extend ontology or map.
+- [ ] Unlock comparative country/field/publisher risk results; refresh EN/ZH manuscript + figures with frozen numbers.
+- [ ] Optional: citation-afterlife run (`run_pipeline.py --with-citations`) — large edge set, opt-in.

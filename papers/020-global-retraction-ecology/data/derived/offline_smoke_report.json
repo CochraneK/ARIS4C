@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "compile": {
+    "ok": true
+  },
+  "help": [
+    {
+      "label": "help:acquire_rwdb.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\acquire_rwdb.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: acquire_rwdb.py [-h] [--url URL] [--out OUT] [--manifest MANIFEST]\n\noptions:\n  -h, --help           show this help message and exit\n  --url URL\n  --out OUT\n  --manifest MANIFEST\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:audit_rwdb.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\audit_rwdb.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: audit_rwdb.py [-h] [--out OUT] csv_path\n\npositional arguments:\n  csv_path\n\noptions:\n  -h, --help  show this help message and exit\n  --out OUT\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:build_audit_figures.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\build_audit_figures.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: build_audit_figures.py [-h] [--out-dir OUT_DIR] audit_json\n\npositional arguments:\n  audit_json\n\noptions:\n  -h, --help         show this help message and exit\n  --out-dir OUT_DIR\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:build_discrete_hazard_panel.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\build_discrete_hazard_panel.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: build_discrete_hazard_panel.py [-h] [--analysis-cutoff ANALYSIS_CUTOFF]\n                                      [--max-age MAX_AGE] [--out OUT]\n                                      [--coverage-out COVERAGE_OUT]\n                                      work_jsonl denominator_field_json\n                                      match_jsonl [match_jsonl ...]\n\npositional arguments:\n  work_jsonl\n  denominator_field_json\n  match_jsonl\n\noptions:\n  -h, --help            show this help message and exit\n  --analysis-cutoff ANALYSIS_CUTOFF\n  --max-age MAX_AGE\n  --out OUT\n  --coverage-out COVERAGE_OUT\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:build_openalex_concordance.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\build_openalex_concordance.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: build_openalex_concordance.py [-h] [--out OUT]\n                                     [--discordant-csv DISCORDANT_CSV]\n                                     match_jsonl [match_jsonl ...]\n\npositional arguments:\n  match_jsonl\n\noptions:\n  -h, --help            show this help message and exit\n  --out OUT\n  --discordant-csv DISCORDANT_CSV\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:build_work_table.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\build_work_table.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: build_work_table.py [-h] [--out OUT] [--summary SUMMARY] rwdb_csv\n\npositional arguments:\n  rwdb_csv\n\noptions:\n  -h, --help         show this help message and exit\n  --out OUT\n  --summary SUMMARY\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:compare_bidirectional_concordance.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\compare_bidirectional_concordance.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: compare_bidirectional_concordance.py [-h] [--out OUT]\n                                            [--openalex-unmatched-csv OPENALEX_UNMATCHED_CSV]\n                                            rwdb_csv openalex_retracted_jsonl\n\npositional arguments:\n  rwdb_csv\n  openalex_retracted_jsonl\n\noptions:\n  -h, --help            show this help message and exit\n  --out OUT\n  --openalex-unmatched-csv OPENALEX_UNMATCHED_CSV\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:lag_profile.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\lag_profile.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: lag_profile.py [-h] [--out OUT] work_jsonl\n\npositional arguments:\n  work_jsonl\n\noptions:\n  -h, --help  show this help message and exit\n  --out OUT\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:mass_event_screen.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\mass_event_screen.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: mass_event_screen.py [-h] [--out OUT] [--min-count MIN_COUNT]\n                            [--min-year-share MIN_YEAR_SHARE]\n                            work_jsonl\n\npositional arguments:\n  work_jsonl\n\noptions:\n  -h, --help            show this help message and exit\n  --out OUT\n  --min-count MIN_COUNT\n  --min-year-share MIN_YEAR_SHARE\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:openalex_citation_edges.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\openalex_citation_edges.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: openalex_citation_edges.py [-h] [--out-dir OUT_DIR]\n                                  [--batch-size BATCH_SIZE]\n                                  [--api-key-env API_KEY_ENV] [--sleep SLEEP]\n                                  match_jsonl [match_jsonl ...]\n\npositional arguments:\n  match_jsonl\n\noptions:\n  -h, --help            show this help message and exit\n  --out-dir OUT_DIR\n  --batch-size BATCH_SIZE\n  --api-key-env API_KEY_ENV\n  --sleep SLEEP\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:openalex_denominators.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\openalex_denominators.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: openalex_denominators.py [-h] [--from-year FROM_YEAR]\n                                [--to-year TO_YEAR]\n                                [--group {country,field,source,type}]\n                                [--out OUT] [--api-key-env API_KEY_ENV]\n\noptions:\n  -h, --help            show this help message and exit\n  --from-year FROM_YEAR\n  --to-year TO_YEAR\n  --group {country,field,source,type}\n  --out OUT\n  --api-key-env API_KEY_ENV\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:openalex_enrich.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\openalex_enrich.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: openalex_enrich.py [-h] [--shard SHARD] [--shards SHARDS] [--out OUT]\n                          [--sleep SLEEP] [--retry-unmatched]\n                          [--api-key-env API_KEY_ENV]\n                          rwdb_csv\n\npositional arguments:\n  rwdb_csv\n\noptions:\n  -h, --help            show this help message and exit\n  --shard SHARD\n  --shards SHARDS\n  --out OUT\n  --sleep SLEEP\n  --retry-unmatched\n  --api-key-env API_KEY_ENV\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:openalex_work_type_qa.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\openalex_work_type_qa.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: openalex_work_type_qa.py [-h] [--per-type PER_TYPE] [--out OUT]\n                                work_jsonl match_jsonl [match_jsonl ...]\n\npositional arguments:\n  work_jsonl\n  match_jsonl\n\noptions:\n  -h, --help           show this help message and exit\n  --per-type PER_TYPE\n  --out OUT\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:reason_network.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\reason_network.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: reason_network.py [-h] [--nodes NODES] [--edges EDGES] work_jsonl\n\npositional arguments:\n  work_jsonl\n\noptions:\n  -h, --help     show this help message and exit\n  --nodes NODES\n  --edges EDGES\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:reason_ontology.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\reason_ontology.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: reason_ontology.py [-h] [--out OUT] reason_nodes_csv\n\npositional arguments:\n  reason_nodes_csv\n\noptions:\n  -h, --help        show this help message and exit\n  --out OUT\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:reconcile_reason_vocab.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\reconcile_reason_vocab.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: reconcile_reason_vocab.py [-h] [--out OUT]\n                                 reason_nodes_csv reference_json\n\npositional arguments:\n  reason_nodes_csv\n  reference_json\n\noptions:\n  -h, --help        show this help message and exit\n  --out OUT\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:run_pipeline.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\run_pipeline.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: run_pipeline.py [-h] [--rwdb RWDB] [--skip-download] [--skip-network]\n                       [--from-year FROM_YEAR] [--to-year TO_YEAR]\n                       [--with-citations]\n\noptions:\n  -h, --help            show this help message and exit\n  --rwdb RWDB\n  --skip-download\n  --skip-network\n  --from-year FROM_YEAR\n  --to-year TO_YEAR\n  --with-citations      Also fetch the potentially large citation-afterlife\n                        edge set.\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:smoke_offline.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\smoke_offline.py --help",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"compile_ok\": true,\n  \"help_pass\": 21,\n  \"help_total\": 21,\n  \"tests_pass\": 2,\n  \"tests_total\": 2,\n  \"report\": \"D:\\\\2026\\\\WB\\u9879\\u76ee\\\\ARIS4C-repo\\\\papers\\\\020-global-retraction-ecology\\\\data\\\\derived\\\\offline_smoke_report.json\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:snapshot_openalex_retracted.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\snapshot_openalex_retracted.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: snapshot_openalex_retracted.py [-h] [--out OUT]\n                                      [--api-key-env API_KEY_ENV] [--force]\n\noptions:\n  -h, --help            show this help message and exit\n  --out OUT\n  --api-key-env API_KEY_ENV\n  --force               Refetch even if the snapshot already exists.\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:summarize_citation_afterlife.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\summarize_citation_afterlife.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: summarize_citation_afterlife.py [-h] [--out OUT]\n                                       work_jsonl citation_batch_dir\n\npositional arguments:\n  work_jsonl\n  citation_batch_dir\n\noptions:\n  -h, --help          show this help message and exit\n  --out OUT\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "help:summarize_openalex_match.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\summarize_openalex_match.py --help",
+      "returncode": 0,
+      "stdout_tail": "usage: summarize_openalex_match.py [-h] [--out OUT] jsonl [jsonl ...]\n\npositional arguments:\n  jsonl\n\noptions:\n  -h, --help  show this help message and exit\n  --out OUT\n",
+      "stderr_tail": ""
+    }
+  ],
+  "tests": [
+    {
+      "label": "test:test_pipeline_core.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\test_pipeline_core.py",
+      "returncode": 0,
+      "stdout_tail": "ARIS4C-020 core regression tests: PASS\n",
+      "stderr_tail": ""
+    },
+    {
+      "label": "test:test_reason_ontology_reference.py",
+      "command": "C:\\Users\\cunyi\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe D:\\2026\\WB项目\\ARIS4C-repo\\papers\\020-global-retraction-ecology\\code\\test_reason_ontology_reference.py",
+      "returncode": 0,
+      "stdout_tail": "ARIS4C-020 reason ontology reference QA: PASS · 111/111 mapped\n",
+      "stderr_tail": ""
+    }
+  ],
+  "status": "PASS"
+}

@@ -156,12 +156,12 @@
       "blocker": "No design blocker. Main blockers are network-capable execution for full WDH HTML extraction, access/transfer of registered historical survey micro/aggregate data, and repository-wide GitHub Actions pre-runner failure."
     },
     "020": {
-      "progress": 55,
-      "stage": "Static execution contract PASS · networked confirmatory gate",
+      "progress": 75,
+      "stage": "Networked confirmatory chain executed · PASS_OFFLINE_SMOKE + PASS_DENOMINATOR",
       "activity": "active",
-      "evidence": "Frozen full-RWDB audit, bilingual drafts, 3 figures/2 tables, candidate-safe OpenAlex matching, bidirectional retraction concordance, work-type QA, grouped denominators, aggregated censoring-aware hazard, Reason ecology, mass-event sensitivity and citation-afterlife are scripted. Static package QA PASS: all 21 runner-referenced scripts exist, CLI contracts align, current OpenAlex API assumptions were re-verified, public surfaces were repaired, and an offline compile/--help/synthetic-test smoke gate now runs before the pipeline.",
-      "next_gate": "Obtain any normal networked execution surface and run RUNBOOK.md. First require PASS_OFFLINE_SMOKE, then candidate-safe OpenAlex shards 0–3, bidirectional concordance, anomalous work-type QA, year×field/type denominators, hazard panel and observed Reason reconciliation.",
-      "blocker": "No scientific-design or static-code-contract blocker. Actual execution remains blocked by the current surfaces: Firecrawl credits are exhausted and private-repo GitHub Actions fail before job steps start. No paid Railway runner was created."
+      "evidence": "2026-09-24 full RUNBOOK run on a networked checkout: offline smoke PASS (21/21 CLI --help, 2/2 test suites; smoke_offline recursion bug fixed); fresh RWDB snapshot 72,606 rows / 67,197 Retractions (sha256 da61a30c...); candidate-safe OpenAlex shards 0-3 done: 61,155 unique DOIs queried, 60,773 matched (99.375%), 30 ambiguous, 382 unmatched; RWDB-to-OpenAlex is_retracted concordance 99.12% (60,208/60,743 true); OpenAlex core is_retracted=true snapshot frozen: 136,000 works (sha256 a7d20372...); bidirectional DOI concordance: only 880 RWDB original DOIs absent from OpenAlex; work-type QA sample materialized (158 anomalous rows, 6 adjudication buckets); year x field and year x type denominators 1990-2025 built; censoring-aware hazard panel frozen (936 denominator cells, 4,664 event cells). Pipeline manifest PASS.",
+      "next_gate": "Adjudicate the 158 openalex_work_type_qa.csv rows (6 allowed buckets), freeze the eligible work-type list, freeze the right-censoring/mature-cohort rule, then unlock comparative country/field/publisher risk results and refresh the bilingual manuscript with the frozen numbers.",
+      "blocker": "None. The former network-execution blocker (no networked surface) is resolved: sandbox direct network access sufficed. Remaining work is self-executable analysis/QA."
     },
     "021": {
       "progress": 42,
