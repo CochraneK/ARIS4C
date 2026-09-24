@@ -17,14 +17,21 @@
 - No numerical QCA solutions were inspected before this freeze.
 
 ## 2026-09-24 · Physical-core ingestion v0.1
-- Re-checked latest main before writing because ARIS4C papers are advancing concurrently.
 - Materialized `raw_physical_core_v0.1.csv` with all 50 frozen cases.
-- Ingested authoritative JPL physical-core values for 34/50 cases:
-  - 8 planets + 5 dwarf planets from JPL Planetary Physical Parameters.
-  - 21 satellites from JPL Planetary Satellite Physical Parameters.
-- Preserved satellite GM, uncertainty and ephemeris reference; derived satellite mass from GM with CODATA-2018 G and labeled the result as derived.
-- Left all 16 small-body numeric cells explicitly un-ingested instead of guessing values.
-- Added a standard-library JPL SBDB snapshotter for those 16 small bodies.
-- Implemented Margot (2015) Eq. 8/9/10 and Soter (2006) mu directly from the source papers.
-- Added Earth/Mars regression checks against Margot's published discriminants and deterministic raw-matrix QA.
-- No fsQCA calibration anchors or numerical QCA solutions were inspected.
+- Ingested authoritative JPL physical-core values for 34/50 cases.
+- Preserved satellite GM, uncertainty and ephemeris reference; derived satellite mass from GM with CODATA-2018 G and labeled it as derived.
+- Left all 16 small-body numeric cells explicitly un-ingested.
+- Added JPL SBDB snapshotter, Margot/Soter implementations, and raw-matrix QA.
+- No fsQCA calibration anchors or solutions were inspected.
+
+## 2026-09-24 · Pilot-1 orbit + derived spine
+- Verified JPL's current Planetary Satellite Mean Elements table and its explicit high-fidelity warning.
+- Added `orbital_geometry_v0.1.csv` for all 50 frozen rows:
+  - 21 selected satellites populated from JPL mean elements with frame, epoch and ephemeris provenance.
+  - 13 direct-Sun planet/dwarf semimajor axes explicitly derived from JPL sidereal periods as a temporary Pilot-1 layer.
+  - 16 small bodies remain explicit `NA_NOT_INGESTED`.
+- Added `derived_physics_v0.1.csv`: 34 gravity, escape-speed, density-diagnostic and stellar-environment rows; Margot Pi for 13 direct-Sun bodies only.
+- Added reproducible derivation and Pilot-1 validation scripts.
+- Added `MISSINGNESS_AUDIT.md`; evidence-coded composition/atmosphere/geology variables remain gated.
+- Firecrawl credits and the current control runtime could not retrieve the live 16-case SBDB JSON snapshot, so no substitute values were fabricated.
+- No QCA calibration or solution inspection occurred.
