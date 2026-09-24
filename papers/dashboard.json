@@ -172,12 +172,12 @@
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
-      "progress": 47,
-      "stage": "Pilot-1 source hardened · small-body acquisition + evidence coding gate",
+      "progress": 51,
+      "stage": "Pilot-1 first blinded evidence batch coded · small-body acquisition + remaining evidence gate",
       "activity": "active",
-      "evidence": "Eight planet orbit rows now use JPL approximate J2000 elements (Earth explicitly as an Earth-Moon-barycenter proxy), five dwarf-planet heliocentric a values remain visibly derived, 21 satellites retain JPL mean elements, and 16 small-body rows remain explicit pending. Derived physics v0.2 and an orbit-source hardening audit are committed. A 50-case geophysical evidence-state matrix and coding protocol are frozen entirely PENDING_REVIEW / UNEXPOSED_TO_QCA_RESULT before calibration or solution inspection.",
-      "next_gate": "Capture the 16-case live JPL SBDB raw JSON snapshot; replace the five dwarf-planet derived semimajor axes with pinned live SBDB/Horizons elements; then blind-code composition, atmosphere, differentiation, geological activity, ocean and tidal-heating evidence under the frozen protocol and adjudicate source conflicts.",
-      "blocker": "Partial acquisition blocker only: current control-thread network surfaces cannot retrieve live SBDB object payloads. No substitute values are fabricated; all affected rows remain explicit pending."
+      "evidence": "Source-hardened physical/orbit/derived spine remains intact. Evidence-state v0.2 codes the first 10 anchor bodies (8 planets + Ceres + Pluto) under the pre-frozen protocol: composition 10/50, atmosphere 10/50, differentiation 10/50, Mars past-only geology 1/50, direct-Sun tidal-heating N/A 10/50. 41/300 evidence-state cells are non-pending; every row remains UNEXPOSED_TO_QCA_RESULT. Evidence audit and validator are committed.",
+      "next_gate": "Continue blinded evidence coding with large moons/boundary bodies; capture the 16-case live JPL SBDB raw snapshot and replace five dwarf-planet derived semimajor axes; then run source-conflict adjudication before freezing fsQCA calibration.",
+      "blocker": "Partial acquisition blocker: current web execution surfaces cannot retrieve live JPL SBDB object payloads. Evidence coding can proceed independently from agency/mission and peer-reviewed sources; affected numeric rows remain explicit pending."
     },
     "023": {
       "progress": 42,
