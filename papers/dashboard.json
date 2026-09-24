@@ -164,11 +164,11 @@
       "blocker": "No scientific blocker. External browser credits are exhausted; remaining matching/denominator jobs require another networked execution surface. GitHub Actions currently fail before job steps start."
     },
     "021": {
-      "progress": 36,
-      "stage": "139-case candidate universe reconstructed · six-condition matrix recovery",
+      "progress": 38,
+      "stage": "Candidate 139-case universe locked · historical condition-data recovery",
       "activity": "active",
-      "evidence": "Published Harff/Williams targets are machine-frozen; Williams positives cross-check 40/40 against transformed PITF annual data; 99 high-risk controls reconstructed with exact published count parity; CASE_UNIVERSE_CANDIDATE_V0 is materialized at N=139; A/W/E historical source routes and Harff-autocracy coding provenance are pinned.",
-      "next_gate": "Recover A/W/E from historical-vintage Polity/UCDP/WDI inputs; recover P/I/S from Harff/Williams source coding or auditable blinded recoding; build CONDITION_MATRIX_V1 and validate all published margins/QCA targets before CNA.",
+      "evidence": "N=139 candidate frame is materialized (40 published positives + 99 PITF high-risk controls with exact count parity); 40/40 positives independently overlap transformed PITF annual genocide data; Harff/Williams target contracts and validators are frozen; exact UCDP v4-2012 URL and Polity-2012/Harff-autocracy replication provenance are located; Hainmueller/Hazlett N=126 Harff reanalysis identified as priority case-level recovery route.",
+      "next_gate": "Recover Hainmueller/Hazlett Harff N=126 replication archive and historical Polity/UCDP files; reconstruct/validate A/W/E; then recover P/I/S and freeze CONDITION_MATRIX_V1.",
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
