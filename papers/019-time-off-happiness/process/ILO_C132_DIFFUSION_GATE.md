@@ -1,8 +1,17 @@
-# ARIS4C019 · ILO C132 diffusion seed gate
+# ARIS4C019 · ILO C132 diffusion gate v1.0
 
-**Date:** 2026-09-24
+**Date:** 2026-09-24  
+**Authority:** ILO NORMLEX  
+**Status:** **CLOSED / 39 of 39 primary-register rows materialized**
 
-ILO NORMLEX currently reports **39 ratifications** of C132 and zero denunciations. The project now has a 39-row country-level ratifier seed covering every ratifier listed in the current secondary table, with the primary NORMLEX convention register pinned as authority.
+C132 — Holidays with Pay Convention (Revised), 1970:
+
+- adopted: **24 Jun 1970**
+- entered into force: **30 Jun 1973**
+- current NORMLEX register: **39 ratifications**
+- current denunciations: **0**
+- exact ratification date: **39/39 primary verified**
+- declared holiday-length wording: **39/39 preserved from NORMLEX**
 
 ## Diffusion by ratification decade
 
@@ -15,21 +24,31 @@ ILO NORMLEX currently reports **39 ratifications** of C132 and zero denunciation
 | 2010s | 2 | 37 |
 | 2020s | 2 | 39 |
 
-This pattern shows that C132 is not merely a recent institution: **14/39 ratifications occurred in the 1970s**, with further waves in the 1990s and 2000s.
+The 1970s wave is substantial: **14/39** current ratifiers joined during that decade.
 
-## Evidence hierarchy
+## Declaration-unit guardrail
 
-- NORMLEX is authoritative for current ratification count/status and exact ratification notes.
-- The complete 39-country/year list is currently seeded from the secondary ratification table only to create a closed verification queue.
-- Exact primary NORMLEX dates have already been verified for Armenia, Azerbaijan, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Burkina Faso, Cameroon, Germany, Guinea, Sweden, Switzerland and Uruguay.
-- Remaining year-only rows must be promoted to primary-date-verified before any date-sensitive analysis.
-- Declared minimum holiday lengths are **not copied from the secondary table**, because spot checks reveal discrepancies with current NORMLEX wording/values.
+NORMLEX declaration units are heterogeneous:
+- working days: 17
+- calendar days: 6
+- weeks: 10
+- one calendar month: 2
+- unspecified days: 3
+- mixed worker/employee wording: 1
+
+No automatic conversion to one numeric day scale is allowed. See `process/ILO_C132_DECLARATION_HARMONIZATION.md`.
 
 ## Critical interpretation rule
 
-C132 ratification is an **international institutional diffusion event**, not automatically:
+C132 ratification is an international institutional diffusion event, not automatically:
 - first national paid-leave adoption;
 - a change in statutory leave days;
-- the effective date of implementing legislation.
+- the legal effective date for a causal treatment.
 
-Causal treatment clocks require the national legal source separately.
+National law remains the required treatment source.
+
+## Canonical data
+
+- `data/ilo_c132_ratification_seed.csv` — legacy filename; now the complete 39-row primary register.
+- `data/ilo_c132_ratification_harmonized.csv`
+- `data/ilo_c052_c132_succession.csv`
