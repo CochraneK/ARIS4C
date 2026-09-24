@@ -172,12 +172,12 @@
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
-      "progress": 59,
-      "stage": "Pilot-1 moon/boundary evidence batch complete · remaining evidence + SBDB gate",
+      "progress": 72,
+      "stage": "Pilot-1 small-body mission anchors coded · remaining boundary evidence + SBDB gate",
       "activity": "active",
-      "evidence": "Two blinded evidence batches now cover 19 high-information bodies. evidence_state_v0.3 has 82/300 non-pending cells: composition 19/50, atmosphere 18/50, differentiation 18/50, geology 9/50, present/persistent ocean evidence 5/50, tidal heating 13/50. Protocol v0.2 explicitly separates current/persistent oceans from paleo-ocean evidence. All 50 rows remain UNEXPOSED_TO_QCA_RESULT.",
-      "next_gate": "Continue blinded coding for the remaining satellites/dwarf/small bodies; capture live JPL SBDB raw JSON for 16 small/boundary bodies and replace five dwarf-planet derived semimajor axes; then complete source-conflict adjudication before freezing fsQCA calibration.",
-      "blocker": "Partial acquisition blocker only: live JPL SBDB object endpoints remain inaccessible from the current execution surfaces. Numeric affected rows stay explicit pending; evidence coding can continue independently."
+      "evidence": "Four blinded evidence batches now cover all planet/dwarf/satellite cases plus Vesta, Eros, Bennu, Ryugu and Itokawa. evidence_state_v0.5 has 157/300 non-pending cells: composition 39/50, atmosphere 25/50, differentiation 29/50, geology 24/50, present/persistent ocean 15/50, tidal heating 25/50. CARBONACEOUS_HYDRATED was added before coding Bennu/Ryugu so parent-body aqueous alteration is not conflated with rock-ice worlds or current oceans. All 50 rows remain UNEXPOSED_TO_QCA_RESULT.",
+      "next_gate": "Code the remaining 11 small/boundary cases from peer-reviewed or mission-grade evidence; continue source-conflict adjudication; capture the live 16-case JPL SBDB numeric snapshot and replace five dwarf-planet derived semimajor axes before calibration freeze.",
+      "blocker": "Partial numeric-acquisition blocker: current execution surfaces still cannot retrieve live JPL SBDB object payloads. Evidence coding proceeds independently; affected raw numeric rows remain explicit pending."
     },
     "023": {
       "progress": 70,
