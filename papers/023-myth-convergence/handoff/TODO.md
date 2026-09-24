@@ -10,10 +10,12 @@
 - [x] Retain >=25 high-relevance/source-infrastructure records (current: 39).
 - [x] Include skeptical/critical method clusters.
 - [x] Exclude/document tertiary, duplicate and noncanonical records.
-- [ ] Backward/forward citation pass on core methods/comparison papers.
-- [ ] Normalize bibliography metadata.
-- [ ] Freeze claim-to-source evidence map.
-- [ ] Freeze final search log.
+- [x] Backward/forward citation pass on core methods/comparison papers.
+- [x] Normalize core bibliography metadata to verified DOI/publisher records where available.
+- [x] Freeze claim-to-source evidence map.
+- [x] Freeze final search/tool log and access-limit caveats.
+
+**G2 PASS.**
 
 ## G3 · case universe
 - [x] Tier A/B/C case rules.

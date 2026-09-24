@@ -1,23 +1,21 @@
 # Status
 
 ## State
-Active · 46%
+Active · 48%
 
 ## Current stage
-v0.2 submission-grade ARIS · G2 near-close; case universe structurally corrected and expanded.
+v0.2 submission-grade ARIS · G2 literature PASS · G3 case-universe freeze active.
 
 ## Evidence
-- 52 literature/resource records screened; 39 retained/relevant with skeptical method clusters preserved.
-- Case-universe candidate registry now has 21 rows.
-- Hurrian/Hittite composite split into separate source-language layers.
-- Pilot Chinese composite deprecated for v0.2 and split into CHN_YAO + CHN_HUAI.
-- Later Vedic Shatapatha Brahmana Manu flood added as a separate time slice rather than being back-projected into Rigveda.
-- Old Kingdom Egypt added as its own textual stratum.
-- Avestan Yima and Roman Deucalion are retained as high-uncertainty / literary-network comparators, not assumed independent cases.
-- Case-source registry now has 20 rows.
+- 58 literature/resource records screened; 45 retained/relevant.
+- Backward/forward citation-chain audit completed around seven core method seeds with truncation/coverage limits explicitly recorded.
+- Claim-to-evidence map now links C1–C7 to supporting and boundary evidence.
+- New method anchors include tree-thinking best practices, relatedness/proximity/covariation controls, divergence-vs-transmission separation, contact-aware phylogenetics and hierarchical autocorrelation.
+- G2 search log is frozen; Consensus/Scite quota limitations are transparent and do not become evidence.
+- G3 universe remains open at 21 candidate rows / 20 source-registry rows.
 
 ## Next gate
-Finish G2 citation-chain/evidence-map freeze; continue omitted-case search and canonical edition locks until G3 Tier-A universe is frozen. Do not inspect expanded similarity ranks before that freeze.
+Freeze Tier-A case universe: finish omitted-case search, canonical edition/translation locks, source-layer splits and explicit inclusion/exclusion decisions before expanded similarity inspection.
 
 ## Blocker
 No immediate blocker. G5 clean human/domain-informed validation remains mandatory before submission-grade empirical claims.

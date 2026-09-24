@@ -1,0 +1,22 @@
+claim_id,source_id,source_type,relation,evidence_summary,boundary_or_use
+C1,L006,external_methods,supports,"D-PLACE keeps cultural, linguistic, spatial and environmental data linked but distinct; source/date metadata is explicit.",Primary methodological support for provenance-separated architecture.
+C1,L027,external_methods,supports,Cross-cultural archaeology warns against grab-bag samples and emphasizes defensible sampling universes.,Supports case-universe and source-bundle discipline.
+C1,L007,ancient_text_method,supports,Ancient Near Eastern comparison requires contextual borrowing criteria and warns against parallelomania.,Supports bounded source comparison rather than similarity-only claims.
+C1,PILOT_BUNDLE_AUDIT,project_generated,supports,Pilot bundle layer shows why passage/bundle absence cannot be expanded to timeless civilization absence.,Must be replicated under v0.2 expanded corpus.
+C2,PILOT_SIM_AUDIT,project_generated,supports,Pilot demonstrates simple matching can be inflated by shared absences while presence-Jaccard does not reward both-absent cells.,Requires planned simulation and expanded-corpus sensitivity before submission claim.
+C2,L043,external_methods,boundary,Cross-cultural correlations can be spurious when relatedness/proximity/covariation are ignored.,Metric validity is necessary but not sufficient; structural dependence remains.
+C3,L006,external_methods,supports,"D-PLACE architecture explicitly separates cultural traits, language phylogenies, geography and environment.",Direct architecture precedent.
+C3,L043,external_methods,supports,"Relatedness, proximity and covariation require separate treatment.",Directly supports separate predictor layers.
+C3,L044,external_methods,supports,Provides a method for contrasting historical divergence with inter-group transmission.,Close mechanism-separation analogue.
+C3,L045,external_methods,supports,Shows horizontal contact can bias tree inference and can be modeled explicitly.,Prevents ancestry layer from absorbing contact.
+C3,L042,external_review,boundary,Tree thinking is useful only when multiple lines of evidence and trait-specific histories are considered.,Supports conservative interpretation.
+C4,L003,external_methods,supports,Different cultural character classes can display divergent transmission histories.,Direct precedent for family heterogeneity.
+C4,L042,external_review,supports,Different cultural traits may have different evolutionary histories across space and time.,Supports family-specific effects.
+C4,L046,external_review,supports,Macro-level cultural transmission/adaptation literature shows multiple processes across trait classes.,Broad support; not myth-specific.
+C5,L007,ancient_text_scholarship,supports,Flood-comparison chapter weighs ancient Near Eastern dependence and warns against simplistic parallelism.,Primary source-critical support.
+C5,L008,ancient_text_scholarship,supports,Genesis flood layers are analyzed in relation to earlier Mesopotamian precursors.,"Supports literary-dependence family, not one-step copying."
+C5,L010,ancient_text_scholarship,supports,Mesopotamian flood development and chronology.,Chronology/source-history support.
+C5,PT01_REGISTRY,project_process_tracing,boundary,"Contact opportunity and chronology are documented, but a specific intermediary tablet/scribe is not.",Prevents overclaim to direct copying.
+C6,PT02_REGISTRY,project_process_tracing,supports,Current Chinese bundle differs from Near Eastern survival package; geoarchaeological event-link remains contested.,Must be retested with CHN_YAO/CHN_HUAI split and alternate bundles.
+C6,CASE_UNIVERSE_AUDIT,project_method,boundary,Pilot CHN_WS_HAN composite is deprecated and split in v0.2.,Pilot descriptive claim cannot be promoted unchanged.
+C7,PREREG_v0.2,project_method,boundary,"QCA remains off unless a non-tautological set-valued outcome, external calibration, adequate case independence and sensitivity plan exist.",No external QCA claim is made yet; this is a method-selection rule.

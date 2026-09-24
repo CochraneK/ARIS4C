@@ -180,12 +180,12 @@
       "blocker": "Single dominant blocker: live JPL SBDB object payload acquisition for the 16 small/boundary cases. No calibration/truth table/QCA solution may be opened before readiness passes."
     },
     "023": {
-      "progress": 46,
-      "stage": "v0.2 ARIS · literature near-close; case-universe structural corrections",
+      "progress": 48,
+      "stage": "v0.2 submission-grade ARIS · G2 literature PASS · G3 case-universe freeze",
       "activity": "active",
-      "evidence": "Case universe expanded to 21 candidate rows and 20 source-registry rows. Hurrian/Hittite and Chinese source layers are split; later-Vedic Manu flood and Old Kingdom Egypt are added; Avestan/Roman comparators carry explicit dependence/chronology cautions.",
-      "next_gate": "Finish G2 citation-chain/evidence map; complete omitted-case + canonical-edition search; freeze Tier-A universe before expanded similarity inspection.",
-      "blocker": "No immediate blocker; G5 clean human/domain validation remains a later hard gate."
+      "evidence": "G2 PASS: 58 screened, 45 retained/relevant, citation-chain audit completed with coverage caveats, and C1–C7 claim-to-evidence map frozen. G3 remains open with 21 candidate cases and 20 source-registry rows.",
+      "next_gate": "Freeze Tier-A case universe after omitted-case search, canonical edition/translation locks, source-layer splits and explicit inclusion/exclusion decisions; do not inspect expanded similarity ranks before freeze.",
+      "blocker": "No immediate blocker. G5 clean human/domain-informed validation remains a later hard gate."
     }
   },
   "scheduling": {

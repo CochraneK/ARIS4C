@@ -151,3 +151,12 @@
 - Retained Ovidian Deucalion as a late literary-network comparator/possible positive control, not an independent pristine tradition.
 - Candidate universe now 21 rows; source registry 20 rows.
 - Progress advanced to 46%; universe remains deliberately unfrozen until omitted-case and edition-lock searches finish.
+
+## 2026-09-24 · G2 literature gate PASS
+- Ran backward/forward Scite citation-graph audits around seven core method seeds.
+- Recorded severe seed-coverage imbalance/truncation; citation counts/topology are not used as importance scores.
+- Promoted six high-value method papers: Evans et al. tree-thinking best practices; Bromham et al. relatedness/proximity/covariation; von Cramon-Taubadel & Lycett divergence-vs-transmission; Neureiter et al. contact-aware phylogenetics; Mace & Jordan macroevolution review; Ané hierarchical autocorrelation.
+- Scite monthly MCP quota was exhausted at the end of the audit; Consensus had already been quota-blocked. These are documented access constraints, not evidence gaps.
+- Froze claim_evidence_map_v0.2.csv linking C1-C7 to support/boundary evidence.
+- Froze LITERATURE_SEARCH_LOG_v0.2.md and G2_LITERATURE_GATE.md.
+- G2 PASS; progress advanced to 48%. Next active gate is G3 Tier-A case-universe freeze.
