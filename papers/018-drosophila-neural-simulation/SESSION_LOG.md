@@ -114,3 +114,17 @@
 - Legacy first target frame was already strongly detected and drive-saturated; current first frame was below z=5 with symmetric drive.
 - Pure decoder identity and positive-domain descending→CPG semantics make the earliest unresolved divergence upstream of final body motion.
 - Activated the pre-frozen R1→R5 localization protocol; R1 Retina/index signature CI launched.
+
+## 2026-09-24 · deletion-ready continuity freeze
+
+- Re-audited ARIS4C018 against the repository continuity standard before the source chat is deleted.
+- Confirmed canonical state is ahead of the earlier conversation-visible checkpoint: project is 90% / Pilot 4 localization.
+- Confirmed Pilot 3C, semantic trace parity, migration closure, Pilot 4 matched diagnostic, R1 and R2 artifacts are present in Git.
+- Added a human-readable `PILOT4_R2_RESULT.md` summarizing exact frozen-retinal equality.
+- Refreshed project README to the current Pilot 4 / R2.5 state.
+- Reconciled root TODO so completed/superseded early-phase items no longer contradict the current gate.
+- Refreshed handoff CONTEXT and actionable P0/P1/P2 queue.
+- Verified latest R2.5 run 35988075468 failed before any step executed.
+- Verified repository-wide paper-index and handoff workflows show the same zero-step failure pattern on 2026-09-24.
+- No scientific-code failure is inferred from those runner failures.
+- Git remains the canonical continuation surface; the chat is no longer required for project recovery.
