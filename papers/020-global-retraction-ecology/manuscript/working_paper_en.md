@@ -1,5 +1,5 @@
 # The Global Ecology of Scientific Retractions
-## A Full-Database, Field-Normalized Study of Retraction Dynamics, Causes, and Citation Afterlife
+## Event-to-Work Reconstruction, Reason Ecology, Timing, and Citation Afterlife
 
 **ARIS4C-020 · Working paper · pre-confirmatory draft · 2026-09-24**
 
