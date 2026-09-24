@@ -1,0 +1,83 @@
+{
+  "version": "0.1",
+  "frozen_at": "2026-09-24",
+  "qca_results_exposed": false,
+  "outcome": {
+    "id": "PLANET",
+    "source": "official_class",
+    "role": "outcome_only"
+  },
+  "primary_conditions": [
+    {
+      "family": "SCALE",
+      "representative": "escape_velocity_m_s",
+      "source": "derived_physics_v0.2.csv",
+      "current_substantive_coverage": 34
+    },
+    {
+      "family": "BULK_MATERIAL",
+      "representative": "density_from_mass_radius_g_cm3",
+      "source": "derived_physics_v0.2.csv",
+      "current_substantive_coverage": 34,
+      "warning": "proxy_not_literal_composition"
+    },
+    {
+      "family": "ATMOSPHERE_RETENTION",
+      "representative": "atmosphere_value",
+      "source": "evidence_state_v0.6.csv",
+      "current_substantive_coverage": 25
+    },
+    {
+      "family": "INTERNAL_ORGANIZATION",
+      "representative": "differentiation_value",
+      "source": "evidence_state_v0.6.csv",
+      "current_substantive_coverage": 32
+    },
+    {
+      "family": "SOLAR_ENERGY",
+      "representative": "insolation_rel_earth",
+      "source": "derived_physics_v0.2.csv",
+      "current_substantive_coverage": 34
+    }
+  ],
+  "current_complete_cases": 19,
+  "current_complete_strata": {
+    "planet": 8,
+    "dwarf_planet": 2,
+    "satellite": 9,
+    "small_body": 0
+  },
+  "readiness_gate": {
+    "each_primary_substantive_coverage_min": 40,
+    "complete_cases_min": 35,
+    "required_complete_strata": {
+      "planet": 8,
+      "dwarf_planet": 4,
+      "satellite": 12,
+      "small_body": 10
+    }
+  },
+  "prohibited_conditions": [
+    "official_class_as_condition",
+    "direct_sun_orbit",
+    "is_satellite",
+    "primary_body",
+    "cleared_neighborhood_label",
+    "margot_pi",
+    "soter_mu",
+    "round_hydrostatic_label",
+    "boundary_tag",
+    "outcome_derived_variable"
+  ],
+  "sensitivity_families": [
+    "mass_or_radius",
+    "composition_mvQCA",
+    "surface_pressure",
+    "geologic_activity",
+    "ocean_evidence",
+    "tidal_heating",
+    "heliocentric_distance",
+    "equilibrium_temperature"
+  ],
+  "calibration_status": "CLOSED_NOT_READY"
+}
