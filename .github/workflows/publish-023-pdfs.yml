@@ -1,0 +1,95 @@
+name: Publish ARIS4C-023 PDFs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-023-pdfs.yml"
+      - "papers/023-myth-convergence/manuscript/**"
+      - "papers/023-myth-convergence/figures/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-aris4c-023-pdfs
+  cancel-in-progress: true
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install document toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc libreoffice-writer fonts-noto-cjk poppler-utils
+
+      - name: Build DOCX and PDF
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT="$GITHUB_WORKSPACE/papers/023-myth-convergence"
+          mkdir -p "$ROOT/dist"
+
+          (
+            cd "$ROOT/manuscript"
+            pandoc working_paper_en.md \
+              -f markdown+tex_math_dollars \
+              --resource-path=".:../figures" \
+              -o "$ROOT/dist/ARIS4C-023_EN.docx"
+            pandoc working_paper_zh.md \
+              -f markdown+tex_math_dollars \
+              --resource-path=".:../figures" \
+              -o "$ROOT/dist/ARIS4C-023_ZH.docx"
+          )
+
+          mkdir -p "$RUNNER_TEMP/lo-profile"
+          libreoffice -env:UserInstallation=file://"$RUNNER_TEMP/lo-profile" \
+            --headless --convert-to pdf --outdir "$ROOT/dist" "$ROOT/dist/ARIS4C-023_EN.docx"
+          libreoffice -env:UserInstallation=file://"$RUNNER_TEMP/lo-profile" \
+            --headless --convert-to pdf --outdir "$ROOT/dist" "$ROOT/dist/ARIS4C-023_ZH.docx"
+
+          rm -f "$ROOT/dist/"*.docx
+
+      - name: Automated PDF QA
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT="$GITHUB_WORKSPACE/papers/023-myth-convergence"
+          for f in ARIS4C-023_EN ARIS4C-023_ZH; do
+            pdf="$ROOT/dist/$f.pdf"
+            test -s "$pdf"
+            size=$(stat -c%s "$pdf")
+            test "$size" -gt 50000
+            pages=$(pdfinfo "$pdf" | awk '/^Pages:/ {print $2}')
+            test "$pages" -ge 8
+            test "$pages" -le 30
+            pdftotext "$pdf" "$RUNNER_TEMP/$f.txt"
+            chars=$(wc -c < "$RUNNER_TEMP/$f.txt")
+            test "$chars" -gt 8000
+            grep -q "Jaccard" "$RUNNER_TEMP/$f.txt"
+            grep -q "ARIS4C-023" "$RUNNER_TEMP/$f.txt"
+            echo "$f.pdf: $pages pages; $size bytes; $chars extracted-text bytes"
+            sha256sum "$pdf"
+          done
+
+      - name: Commit generated PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/023-myth-convergence/dist/ARIS4C-023_EN.pdf
+          git add papers/023-myth-convergence/dist/ARIS4C-023_ZH.pdf
+          if git diff --cached --quiet; then
+            echo "PDFs unchanged; nothing to commit."
+            exit 0
+          fi
+          git commit -m "publish(023): generate reproducible bilingual PDFs"
+          git push
