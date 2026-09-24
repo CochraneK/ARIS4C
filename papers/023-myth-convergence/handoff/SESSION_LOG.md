@@ -105,3 +105,12 @@
 - Added CORE_FREEZE_AUDIT.md: scientific core PASS; Finish/public-delivery NOT YET PASS because PDFs and one-page visual remain pending.
 - Reframed Egypt as an exploratory extension that cannot block the frozen core paper and cannot enter confirmatory results without independent spot-audit.
 - Project advanced to 98%; next gate is PDF-first public delivery and one-page visual, not further uncontrolled scientific expansion.
+
+## 2026-09-24 · local PDF publication QA
+- Integrated the three scientific figures and three tables inline in both manuscripts.
+- Built English PDF (12 pages) and Chinese PDF (10 pages) via Pandoc -> DOCX -> LibreOffice.
+- Rendered and visually inspected all DOCX pages; fixed a Unicode arrow that LibreOffice rendered as an emoji glyph and re-rendered.
+- Ran PDF-level render/preflight: both PDFs open, are unencrypted, non-scanned text PDFs, and pass visual QA.
+- Frozen SHA-256: EN aa0d39b5fa2c9c854f9013b43b3e1edfd5734bbe9b22f33a7b8b74c495afd0c2; ZH 1fca428a9a8200637171eee82928c90c98e41d8fc54f5039b84f05a5c0b31139.
+- Created one-page visual; repository copy stored as SVG.
+- Current GitHub connector cannot directly ingest local binary file references, so durable PDF upload remains the only Finish gate; no PDF URL is fabricated.

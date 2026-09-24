@@ -33,7 +33,7 @@ ARIS4C-023 因此把问题改写为：**什么证据能够区分垂直继承、�
 
 第三层非常重要。这里的 absent 只能解释为“冻结文本包中未出现”，不能写成“这个文明从来没有这个母题”。对于残缺或文献学不确定的文本包，positive 可以进入，但 negative 保持 not_observed。
 
-Pilot-0 包含 11 个 tradition-time units，包括不同时间层的 Sumerian/Akkadian、Hurrian-Hittite、Ugaritic、Middle/New Kingdom Egypt、Rigvedic、Archaic Greek、Genesis primeval-history 与 late Warring States–early Han Chinese material。
+Pilot-0 包含 11 个 tradition-time units，包括不同时间层的 Sumerian/Akkadian、Hurrian-Hittite、Ugaritic、Middle/New Kingdom Egypt、Rigvedic、Archaic Greek、Genesis primeval-history 与 late Warring States–early Han Chinese material。图 1 汇总了从文本证据到机制解释的完整路径。\n\n![图 1：证据到机制的分析管线。只有在保留来源、source-bundle 边界与独立机制证据后，才解释相似度。](../figures/fig1_pipeline.svg)
 
 ### 2.2 24 母题校准与信度
 
@@ -41,7 +41,7 @@ Pilot-0 包含 11 个 tradition-time units，包括不同时间层的 Sumerian/A
 
 Coder A 来自隔离的 GLM/WorkBuddy session；Coder B 来自独立 DeepSeek-V4.1-Flash session。项目如实记录一个残余限制：两次 session 使用了同一 orchestration harness，且 Coder B 的项目上下文曾暴露一个 A 的 item-level 判断以及 A 的聚合计数。该 cell 已从 confirmatory use 中排除；排除后不会改变信度门槛结论。
 
-四状态 agreement=0.825（99/120），κ=0.669，AC1=0.788。present/absent 子集 n=103，agreement=0.951，κ=0.894，AC1=0.911。21 个分歧被分类为 incomplete witness、definition、ontology overlap、translation 等问题，并据此冻结 v0.1.1 六条规则，包括 missingness 阈值、相邻概念互斥、预言 vs 已发生的继承、divine council 范围及 rebellion 范围等。
+四状态 agreement=0.825（99/120），κ=0.669，AC1=0.788。present/absent 子集 n=103，agreement=0.951，κ=0.894，AC1=0.911。21 个分歧被分类为 incomplete witness、definition、ontology overlap、translation 等问题，并据此冻结 v0.1.1 六条规则，包括 missingness 阈值、相邻概念互斥、预言 vs 已发生的继承、divine council 范围及 rebellion 范围等。表 1 给出信度统计。\n\n**表 1：双模型校准信度**\n\n| 指标 | 四状态全包 | present/absent 子集 |\n|---|---:|---:|\n| 成对判断 N | 120 | 103 |\n| Raw agreement | 0.825 | 0.951 |\n| Cohen κ | 0.669 | 0.894 |\n| Gwet AC1 | 0.788 | 0.911 |
 
 ### 2.3 更换有缺陷的 Sumerian 造人 witness
 
@@ -85,9 +85,9 @@ Rigveda 1.32 与选定的 Hesiodic divine-conflict bundle 是最清楚的例子�
 
 Vedic–Ugaritic 与 Greek–Ugaritic 的情况更极端：simple matching 仍不低，但 Jaccard=0，因为没有共同 positive。
 
-这说明在稀疏 motif data 中，shared absence 不能被当成 substantive similarity。
+这说明在稀疏 motif data 中，shared absence 不能被当成 substantive similarity。图 2 展示全部 12 组冻结 bundle 的 Jaccard，表 2 摘出最具有诊断价值的对照。\n\n![图 2：冻结 source-bundle 的 Jaccard 相似度。+N 表示共同 present 的母题数量。](../figures/fig2_bundle_jaccard.svg)\n\n**表 2：关键 source-bundle 相似度结果**\n\n| 家族 | Bundle 对照 | 共同 present | 共同 absent | Jaccard | Simple matching |\n|---|---|---:|---:|---:|---:|\n| 洪水 | Gilgamesh XI - Genesis 6–9 | 6 | 1 | 0.857 | 0.875 |\n| 洪水 | Gilgamesh XI - 中国 bundle | 1 | 2 | 0.167 | 0.375 |\n| 洪水 | Genesis 6–9 - 中国 bundle | 1 | 1 | 0.143 | 0.250 |\n| 神祇冲突 | Rigveda 1.32 - Hesiodic bundle | 1 | 6 | 0.500 | 0.875 |\n| 神祇冲突 | Rigveda 1.32 - Ugaritic bundle | 0 | 5 | 0.000 | 0.714 |\n| 造人 | Enki and Ninmah - Atrahasis | 2 | 4 | 0.500 | 0.750 |
 
-### 3.4 PT01：Mesopotamian ↔ Hebrew flood
+### 3.4 PT01：Mesopotamian <-> Hebrew flood
 
 过程追踪比数值相似度提供了更强的解释依据。
 
@@ -103,13 +103,13 @@ Vedic–Ugaritic 与 Greek–Ugaritic 的情况更极端：simple matching 仍�
 
 因此可以保留“危险水环境导致广义趋同”的假设，却没有理由把它直接并入 Near Eastern ark-survival tradition。
 
-### 3.6 PT03：Sumerian ↔ Akkadian anthropogony
+### 3.6 PT03：Sumerian <-> Akkadian anthropogony
 
 *Enki and Ninmah* 与 *Atrahasis* 的 bundle Jaccard=0.50，有 2 个共同 positive。但真正重要的是历史机制：ORACC 明确将两者都放在 clay-human creation 的 Mesopotamian 传统中讨论，而 Old Babylonian scribal education 本身持续教授 Sumerian 语言/文学并维护文化遗产。
 
 这支持“共享 Mesopotamian repertoire + 可行的 scribal transmission substrate”。但现有证据仍不足以写成 *Atrahasis* 直接复制现存 *Enki and Ninmah* 文本。
 
-### 3.7 PT04：Vedic ↔ Greek divine conflict
+### 3.7 PT04：Vedic <-> Greek divine conflict
 
 这个 case 是方法学 negative control。当前 8-feature bundle 的正特征重合很少，但 Indo-European comparative poetics independently reconstructs serpent/dragon-slaying formulae and themes across Vedic, Hittite, Greek 等传统。
 
@@ -132,7 +132,7 @@ Pilot 不支持“所有共同神话都有同一种原因”。
 - Sumerian–Akkadian anthropogony：处于高密度双语书吏环境中的文化连续性；
 - Vedic–Greek divine conflict：独立的谱系/比较诗学证据可能比一个小型 motif score 更有信息。
 
-因此“为什么神话相似”应该被理解为 mechanism-selection problem。
+因此“为什么神话相似”应该被理解为 mechanism-selection problem。图 3 与表 3 汇总四个过程追踪案例中的独立机制证据及仍未解决的边界。\n\n![图 3：四个过程追踪案例的机制证据图。格子表示证据状态，而非因果效应估计。](../figures/fig3_mechanism_map.svg)\n\n**表 3：过程追踪案例的机制证据**\n\n| 案例 | 主要观察 | 最强独立证据 | 当前解释 | 未解决边界 |\n|---|---|---|---|---|\n| PT01 近东洪水 | Jaccard 0.857；6 个共同正特征 | 更早 Mesopotamian 文本、文学依赖研究、Babylonia 中 Judean presence | 水平文学依赖/近东传播作为机制家族有较强支持 | 具体中介文本、书吏与时间 |\n| PT02 中国水灾 | survival package 重合低 | 治水/秩序恢复的文本功能；地质锚定有争议 | 广义环境/叙事趋同可保留 | 是否有单一史前洪水塑造传统 |\n| PT03 苏美尔-阿卡德造人 | Jaccard 0.50；clay + labor | Mesopotamian 比较材料；Old Babylonian 书吏课程 | 共享 repertoire + 可行书吏传播底座 | 是否存在一篇文本对另一篇的直接依赖 |\n| PT04 Vedic-Greek 神战 | 仅 1 个共同正特征；共同 absent 推高 matching | Indo-European 比较诗学 | 即便 bundle 重合稀疏，垂直继承仍可成立 | 当前 8 个母题覆盖了多少谱系信号 |
 
 ### 4.2 Negative evidence 必须有边界
 

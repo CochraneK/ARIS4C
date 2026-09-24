@@ -5,7 +5,7 @@
   "title": "Why Do Ancient Traditions Tell Similar Stories? A Comparative Cultural-Evolution Study of Mythic Motifs, Inheritance, Diffusion, Ecology, and Convergence",
   "short_title": "Ancient Myth Convergence",
   "year": 2026,
-  "status": "working-paper-core-frozen",
+  "status": "publication-package-qa-pass-binary-upload-pending",
   "domain": "comparative mythology / folklore / cultural evolution / historical anthropology / computational humanities",
   "summary": "A provenance-first comparative mythology pilot showing that motif similarity must be interpreted jointly with source boundaries, chronology, language genealogy, independent contact evidence, environmental uncertainty and process tracing. The frozen core contains a reliable 24-motif ontology, audited source-bundle similarities, and four mechanism-focused historical comparisons.",
   "authors": [
@@ -26,7 +26,10 @@
     "paper_zh_full": "manuscript/working_paper_zh.md",
     "figures": "figures/",
     "tables": "tables/",
-    "core_freeze_audit": "process/CORE_FREEZE_AUDIT.md"
+    "core_freeze_audit": "process/CORE_FREEZE_AUDIT.md",
+    "one_page_visual": "../../docs/assets/paper-at-a-glance/023.svg",
+    "pdf_build_manifest": "process/PDF_BUILD_MANIFEST.md",
+    "public_delivery_audit": "process/PUBLIC_DELIVERY_AUDIT.md"
   },
   "tags": [
     "ARIS4C",
@@ -44,8 +47,8 @@
     "chinese": true
   },
   "outputs": {
-    "paper_en": "complete-working-paper",
-    "paper_zh": "complete-working-paper",
+    "paper_en": "complete-with-inline-figures-tables",
+    "paper_zh": "complete-with-inline-figures-tables",
     "figures": {
       "status": "complete-working-core",
       "count": 3,
@@ -56,13 +59,25 @@
       "count": 3
     },
     "pdf": {
-      "status": "pending-public-delivery",
-      "english": false,
-      "chinese": false
+      "status": "built-and-qa-pass-local; durable-public-binary-upload-pending",
+      "english": {
+        "built": true,
+        "pages": 12,
+        "sha256": "aa0d39b5fa2c9c854f9013b43b3e1edfd5734bbe9b22f33a7b8b74c495afd0c2",
+        "public_url": null
+      },
+      "chinese": {
+        "built": true,
+        "pages": 10,
+        "sha256": "1fca428a9a8200637171eee82928c90c98e41d8fc54f5039b84f05a5c0b31139",
+        "public_url": null
+      }
     },
     "one_page_visual": {
-      "status": "pending",
-      "purpose": "required before Finish"
-    }
+      "status": "complete",
+      "repo_path": "docs/assets/paper-at-a-glance/023.svg",
+      "purpose": "Finish visual explainer"
+    },
+    "finish_ready": false
   }
 }

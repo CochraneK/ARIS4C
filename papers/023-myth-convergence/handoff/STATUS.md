@@ -1,21 +1,21 @@
 # Status
 
 ## State
-Active · 98%
+Block · 99%
 
 ## Current stage
-Scientific Pilot-0 core frozen · bilingual working papers + figure/table package complete · public-delivery gate pending.
+Scientific core + bilingual publication package complete locally · Git binary-publication gate.
 
 ## Evidence
-- English and Chinese full working papers are committed.
-- Three substantive figures cover the evidence pipeline, all 12 bundle Jaccard results, and the four-case mechanism map.
-- Three substantive tables cover reliability, selected similarities, and process-tracing mechanism evidence.
-- CORE_FREEZE_AUDIT passes the scientific core while explicitly withholding Finish.
-- Frozen core remains PT01–PT04 across the calibrated 24-motif families; Egypt is exploratory and excluded pending independent spot-audit.
-- QCA remains OFF.
+- English and Chinese manuscripts now include the three substantive figures and three core tables inline.
+- One-page visual is committed as a repository SVG.
+- English PDF built and QA passed: 12 pages, SHA-256 `aa0d39b5fa2c9c854f9013b43b3e1edfd5734bbe9b22f33a7b8b74c495afd0c2`.
+- Chinese PDF built and QA passed: 10 pages, SHA-256 `1fca428a9a8200637171eee82928c90c98e41d8fc54f5039b84f05a5c0b31139`.
+- Both PDFs pass preflight (openable, unencrypted, text PDFs) and render QA.
+- PUBLIC_DELIVERY_AUDIT records the only incomplete requirement: durable/public PDF binary publication.
 
 ## Next gate
-Compile English/Chinese PDFs, create the one-page Finish visual, wire PDF-first public links, run final continuity/output audit, then mark Finish if all ARIS4C Output Standard items pass.
+On any binary-capable GitHub/public-storage execution surface, upload the two already-QA'd PDFs (or reproducibly rebuild them), verify them, wire PDF-first links in `paper.json` and portfolio surfaces, and mark Finish.
 
 ## Blocker
-No scientific blocker for the frozen core. Final status is withheld only because the public-delivery package (PDFs + one-page visual + links) is incomplete.
+Current GitHub connector cannot directly ingest the generated container binary file reference; its blob writer requires the full binary as an in-memory base64 string. No scientific, manuscript, figure, or PDF-generation blocker remains.

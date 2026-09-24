@@ -180,12 +180,12 @@
       "blocker": "Single dominant blocker: live JPL SBDB object payload acquisition for the 16 small/boundary cases. No calibration/truth table/QCA solution may be opened before readiness passes."
     },
     "023": {
-      "progress": 98,
-      "stage": "Scientific core frozen · bilingual working papers + 3 figures + 3 tables complete · public-delivery gate",
-      "activity": "active",
-      "evidence": "Pilot-0 core is manuscript-frozen: EN/ZH full working papers, 3 substantive SVG figures, 3 tables, calibration/reliability, bundle similarity audit and PT01–PT04 mechanism synthesis are committed. CORE_FREEZE_AUDIT=PASS for science; Egypt remains exploratory/excluded.",
-      "next_gate": "Compile EN/ZH PDFs; create one-page Finish visual; wire PDF-first links; run final continuity/output audit; mark Finish only after output standard passes.",
-      "blocker": "No scientific blocker for the frozen core. Finish is withheld because PDFs and one-page visual are still missing."
+      "progress": 99,
+      "stage": "Scientific + bilingual publication package QA PASS · PDF binary publication gate",
+      "activity": "block",
+      "evidence": "EN/ZH manuscripts now embed 3 figures + 3 tables; one-page SVG is committed. EN PDF built/QA PASS (12 pp; SHA-256 aa0d39b...), ZH PDF built/QA PASS (10 pp; SHA-256 1fca428a...). Public-delivery audit passes everything except durable/public PDF binary upload.",
+      "next_gate": "Upload/rebuild the two verified PDFs on a binary-capable durable public surface; verify links; wire PDF-first portfolio links; mark Finish 100%.",
+      "blocker": "Execution-surface only: current GitHub connector cannot directly consume generated container binary file references. No scientific/content/PDF-generation blocker remains."
     }
   },
   "scheduling": {

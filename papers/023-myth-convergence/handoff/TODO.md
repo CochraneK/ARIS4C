@@ -1,25 +1,27 @@
 # TODO
 
-## Core science
+## Scientific core
 - [x] Pilot architecture, calibration, reliability and v0.1.1 ontology.
 - [x] Source-bundle matrix and similarity audit.
 - [x] Ancestry/contact/environment evidence layers.
 - [x] PT01–PT04 process tracing.
-- [x] English full working paper.
-- [x] Chinese full working paper.
-- [x] Three substantive figures.
-- [x] Three substantive tables.
-- [x] Scientific CORE_FREEZE_AUDIT PASS.
+- [x] Full English and Chinese manuscripts.
+- [x] Three figures and three tables.
+- [x] Scientific core freeze.
 
-## Final public-delivery gate
-- [ ] Compile English PDF.
-- [ ] Compile Chinese PDF.
-- [ ] Create one-page visual explainer.
-- [ ] Add PDF-first / visual links to paper.json and portfolio surfaces.
-- [ ] Run final output + continuity audit.
-- [ ] Mark Finish only if the ARIS4C Output Standard passes.
+## Publication package
+- [x] Integrate figures/tables into EN/ZH manuscripts.
+- [x] Build English PDF locally.
+- [x] Build Chinese PDF locally.
+- [x] Render/preflight/visually QA both PDFs.
+- [x] Create and commit one-page visual SVG.
+- [x] Record PDF SHA-256/page counts and final publication audit.
+- [ ] Upload EN PDF binary to durable public repository/storage.
+- [ ] Upload ZH PDF binary to durable public repository/storage.
+- [ ] Wire PDF-first links.
+- [ ] Mark Finish only after public PDF links resolve.
 
-## Optional v0.2, not required for core freeze
-- [ ] Independent 8-cell Egypt spot-audit if Egypt is promoted to confirmatory core.
-- [ ] Expand from 24 to 56 motifs / additional traditions.
-- [ ] Reconsider QCA only if the frozen trigger becomes satisfied.
+## Optional v0.2 (not part of the 99% publication gate)
+- [ ] Independent Egypt 8-cell spot-audit if promoted to confirmatory core.
+- [ ] Expand 24 -> 56 motifs and/or traditions.
+- [ ] Reconsider QCA only if the frozen trigger is satisfied.

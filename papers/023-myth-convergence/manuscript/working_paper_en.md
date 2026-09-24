@@ -31,7 +31,7 @@ Three levels are kept separate.
 
 The bundle layer is crucial. An "absent" code means absent from the frozen source bundle, not "this civilization never possessed the motif." Fragmentary or philologically uncertain bundles can provide positive evidence, but their negative states remain not-observed.
 
-The Pilot-0 architecture contains 11 tradition-time units, including separate Sumerian and Akkadian strata, Hurrian-Hittite transmission, Ugaritic, Middle and New Kingdom Egyptian strata, Rigvedic, Archaic Greek, Genesis primeval-history, and late Warring States–early Han Chinese material.
+The Pilot-0 architecture contains 11 tradition-time units, including separate Sumerian and Akkadian strata, Hurrian-Hittite transmission, Ugaritic, Middle and New Kingdom Egyptian strata, Rigvedic, Archaic Greek, Genesis primeval-history, and late Warring States–early Han Chinese material. Figure 1 summarizes the evidence-to-mechanism architecture.\n\n![Figure 1. Evidence-to-mechanism pipeline. Similarity is interpreted only after provenance, source-bundle boundaries, and independent mechanism evidence are preserved.](../figures/fig1_pipeline.svg)
 
 ### 2.2 Calibration ontology and reliability
 
@@ -39,7 +39,7 @@ The first calibration ontology contained 24 motifs: eight flood, eight divine-co
 
 Coder A was completed in an isolated GLM/WorkBuddy session; Coder B was completed in an independent DeepSeek-V4.1-Flash session. The project records a residual limitation: both sessions used one orchestration harness, and one Coder A cell plus aggregate counts reached Coder B's project context. That exposed cell was excluded from confirmatory use. Removing it did not change the reliability decision.
 
-Four-state agreement was 0.825 (99/120), kappa 0.669, and AC1 0.788. The binary present/absent subset contained 103 judgments with raw agreement 0.951, kappa 0.894, and AC1 0.911. Twenty-one disagreements were classified as incomplete-witness, definition, ontology-overlap, or translation problems. Six explicit v0.1.1 rules then froze the missingness threshold, sibling-motif disjunctions, effected-versus-foretold succession, council scope, and rebellion scope.
+Four-state agreement was 0.825 (99/120), kappa 0.669, and AC1 0.788. The binary present/absent subset contained 103 judgments with raw agreement 0.951, kappa 0.894, and AC1 0.911. Twenty-one disagreements were classified as incomplete-witness, definition, ontology-overlap, or translation problems. Six explicit v0.1.1 rules then froze the missingness threshold, sibling-motif disjunctions, effected-versus-foretold succession, council scope, and rebellion scope. Table 1 reports the reliability statistics.\n\n**Table 1. Dual-model calibration reliability**\n\n| Metric | Full four-state packet | Present/absent subset |\n|---|---:|---:|\n| N paired judgments | 120 | 103 |\n| Raw agreement | 0.825 | 0.951 |\n| Cohen's kappa | 0.669 | 0.894 |\n| Gwet AC1 | 0.788 | 0.911 |
 
 ### 2.3 Replacement of the defective Sumerian anthropogony witness
 
@@ -79,7 +79,7 @@ The important point is not that 0.857 "proves borrowing." Rather, the overlap id
 
 The Vedic–Greek divine-conflict comparison demonstrates the opposite failure mode. Simple matching was 0.875, but the pair shared only one positive motif; six of eight features were jointly absent. Jaccard was therefore 0.50. Vedic–Ugaritic and Greek–Ugaritic comparisons were even more revealing: simple matching remained moderate to high while Jaccard was 0 because the selected bundles had no shared positive motif.
 
-Thus, shared absence is not neutral. In sparse motif systems it can dominate conventional matching scores and produce a misleading impression of narrative resemblance.
+Thus, shared absence is not neutral. In sparse motif systems it can dominate conventional matching scores and produce a misleading impression of narrative resemblance. Figure 2 shows all 12 frozen within-family Jaccard comparisons, while Table 2 highlights the most diagnostic contrasts.\n\n![Figure 2. Frozen source-bundle Jaccard similarities. The +N annotation reports shared present motifs.](../figures/fig2_bundle_jaccard.svg)\n\n**Table 2. Selected source-bundle similarity results**\n\n| Family | Bundle comparison | Shared present | Shared absent | Jaccard | Simple matching |\n|---|---|---:|---:|---:|---:|\n| Flood | Gilgamesh XI - Genesis 6–9 | 6 | 1 | 0.857 | 0.875 |\n| Flood | Gilgamesh XI - Chinese bundle | 1 | 2 | 0.167 | 0.375 |\n| Flood | Genesis 6–9 - Chinese bundle | 1 | 1 | 0.143 | 0.250 |\n| Divine conflict | Rigveda 1.32 - Hesiodic bundle | 1 | 6 | 0.500 | 0.875 |\n| Divine conflict | Rigveda 1.32 - Ugaritic bundle | 0 | 5 | 0.000 | 0.714 |\n| Anthropogony | Enki and Ninmah - Atrahasis | 2 | 4 | 0.500 | 0.750 |
 
 ### 3.4 PT01: Mesopotamian and Hebrew flood traditions
 
@@ -126,7 +126,7 @@ The pilot rejects a one-size-fits-all story.
 - The Sumerian–Akkadian anthropogony case illustrates continuity inside a dense bilingual scribal environment.
 - The Vedic–Greek case shows that independent genealogical scholarship may carry information invisible to a small motif count.
 
-These cases make "why are myths similar?" a mechanism-selection problem rather than a cataloguing exercise.
+These cases make "why are myths similar?" a mechanism-selection problem rather than a cataloguing exercise. Figure 3 and Table 3 summarize the independent mechanism evidence and its unresolved boundaries.\n\n![Figure 3. Mechanism evidence map for the four process-tracing cases. Cells summarize evidence status rather than causal effect estimates.](../figures/fig3_mechanism_map.svg)\n\n**Table 3. Mechanism evidence by process-tracing case**\n\n| Case | Main observation | Strongest independent evidence | Current interpretation | Unresolved boundary |\n|---|---|---|---|---|\n| PT01 Mesopotamian <-> Hebrew flood | Jaccard 0.857; six shared positive flood motifs | Earlier Mesopotamian texts; literary-dependence scholarship; Judeans in Babylonia | Horizontal literary dependence / Near Eastern transmission strongly supported as a family | Exact intermediary text, scribe, and timing |\n| PT02 Chinese water catastrophe | Low survival-package overlap | Water-control/world-ordering textual function; geological link contested | Broad environmental/narrative convergence plausible | Whether one prehistoric flood materially shaped the tradition |\n| PT03 Sumerian <-> Akkadian anthropogony | Jaccard 0.50; clay + labor | Comparative Mesopotamian evidence; Old Babylonian scribal curriculum | Shared repertoire with plausible scribal transmission substrate | Direct dependence of one extant composition on the other |\n| PT04 Vedic <-> Greek conflict | One shared positive; shared absences inflate matching | Indo-European comparative poetics | Vertical inheritance remains plausible despite sparse bundle overlap | Coverage of the current eight motifs |
 
 ### 4.2 Negative evidence must be bounded
 
