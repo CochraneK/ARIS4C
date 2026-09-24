@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1025" viewBox="0 0 1600 1025" role="img">
-<title>19 个 Paper 的成熟度</title>
-<rect width="1600" height="1025" rx="28" fill="#07162b"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1189" viewBox="0 0 1600 1189" role="img">
+<title>23 个 Paper 的成熟度</title>
+<rect width="1600" height="1189" rx="28" fill="#07162b"/>
 <style>text{font-family:Inter,"Noto Sans SC","Microsoft YaHei","PingFang SC",system-ui,sans-serif}.t{font-size:48px;font-weight:800;fill:#f8fafc}.s{font-size:23px;fill:#a9bfe0}.h{font-size:25px;font-weight:750;fill:#f8fafc}.b{font-size:17px;fill:#c8d7ec}.m{font-size:14px;fill:#8da9ce}.k{font-size:16px;font-weight:700;fill:#66e7a4}.n{font-size:17px;font-weight:800;fill:#54a9ff}.metric{font-size:38px;font-weight:800;fill:#f8fafc}</style>
 <text x="58" y="62" class="n">ARIS<tspan fill="#f8fafc">4C</tspan></text>
-<text x="800.0" y="72" text-anchor="middle" class="t">19 个 Paper 的成熟度</text>
-<text x="800.0" y="112" text-anchor="middle" class="s">项目管理估计，不是科学结果；100% 表示仓库层最终输出契约满足</text>
+<text x="800" y="72" text-anchor="middle" class="t">23 个 Paper 的成熟度</text>
+<text x="800" y="112" text-anchor="middle" class="s">项目管理估计，不是科学结果；100% 表示仓库层最终输出契约满足</text>
 <text x="70" y="165" class="h" font-size="20">001 · 蜜蜂 GCA × 不确定性</text>
 <text x="730" y="165" text-anchor="end" class="b">100%</text>
 <rect x="70" y="183" width="660" height="16" rx="8" fill="#1b385a"/>
@@ -45,40 +45,56 @@
 <text x="730" y="903" text-anchor="end" class="b">72%</text>
 <rect x="70" y="921" width="660" height="16" rx="8" fill="#1b385a"/>
 <rect x="70" y="921" width="475.2" height="16" rx="8" fill="#ef6a6a"/>
-<text x="855" y="165" class="h" font-size="20">011 · Research Forensics</text>
-<text x="1515" y="165" text-anchor="end" class="b">87%</text>
+<text x="70" y="985" class="h" font-size="20">011 · Research Forensics</text>
+<text x="730" y="985" text-anchor="end" class="b">87%</text>
+<rect x="70" y="1003" width="660" height="16" rx="8" fill="#1b385a"/>
+<rect x="70" y="1003" width="574.1999999999999" height="16" rx="8" fill="#48e996"/>
+<text x="70" y="1067" class="h" font-size="20">012 · Oppositional Causal Inversion</text>
+<text x="730" y="1067" text-anchor="end" class="b">66%</text>
+<rect x="70" y="1085" width="660" height="16" rx="8" fill="#1b385a"/>
+<rect x="70" y="1085" width="435.59999999999997" height="16" rx="8" fill="#ef6a6a"/>
+<text x="855" y="165" class="h" font-size="20">013 · 出生—死亡时间耦合</text>
+<text x="1515" y="165" text-anchor="end" class="b">50%</text>
 <rect x="855" y="183" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="183" width="574.1999999999999" height="16" rx="8" fill="#48e996"/>
-<text x="855" y="247" class="h" font-size="20">012 · Oppositional Causal Inversion</text>
-<text x="1515" y="247" text-anchor="end" class="b">66%</text>
+<rect x="855" y="183" width="330" height="16" rx="8" fill="#ef6a6a"/>
+<text x="855" y="247" class="h" font-size="20">014 · Public Integrity Forensics</text>
+<text x="1515" y="247" text-anchor="end" class="b">71%</text>
 <rect x="855" y="265" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="265" width="435.59999999999997" height="16" rx="8" fill="#ef6a6a"/>
-<text x="855" y="329" class="h" font-size="20">013 · 出生—死亡时间耦合</text>
-<text x="1515" y="329" text-anchor="end" class="b">50%</text>
+<rect x="855" y="265" width="468.59999999999997" height="16" rx="8" fill="#48e996"/>
+<text x="855" y="329" class="h" font-size="20">015 · Sleeping Beauty Miner</text>
+<text x="1515" y="329" text-anchor="end" class="b">88%</text>
 <rect x="855" y="347" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="347" width="330" height="16" rx="8" fill="#ef6a6a"/>
-<text x="855" y="411" class="h" font-size="20">014 · Public Integrity Forensics</text>
-<text x="1515" y="411" text-anchor="end" class="b">71%</text>
+<rect x="855" y="347" width="580.8" height="16" rx="8" fill="#ef6a6a"/>
+<text x="855" y="411" class="h" font-size="20">016 · 全球脏话 / 禁忌语言语法</text>
+<text x="1515" y="411" text-anchor="end" class="b">68%</text>
 <rect x="855" y="429" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="429" width="468.59999999999997" height="16" rx="8" fill="#48e996"/>
-<text x="855" y="493" class="h" font-size="20">015 · Sleeping Beauty Miner</text>
-<text x="1515" y="493" text-anchor="end" class="b">88%</text>
+<rect x="855" y="429" width="448.79999999999995" height="16" rx="8" fill="#ef6a6a"/>
+<text x="855" y="493" class="h" font-size="20">017 · LING-02 · 预测性语言空间</text>
+<text x="1515" y="493" text-anchor="end" class="b">20%</text>
 <rect x="855" y="511" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="511" width="580.8" height="16" rx="8" fill="#ef6a6a"/>
-<text x="855" y="575" class="h" font-size="20">016 · 全球脏话 / 禁忌语言语法</text>
-<text x="1515" y="575" text-anchor="end" class="b">68%</text>
+<rect x="855" y="511" width="132" height="16" rx="8" fill="#f2c14e"/>
+<text x="855" y="575" class="h" font-size="20">018 · Fly Neuro Playground</text>
+<text x="1515" y="575" text-anchor="end" class="b">88%</text>
 <rect x="855" y="593" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="593" width="448.79999999999995" height="16" rx="8" fill="#ef6a6a"/>
-<text x="855" y="657" class="h" font-size="20">017 · LING-02 · 预测性语言空间</text>
-<text x="1515" y="657" text-anchor="end" class="b">20%</text>
+<rect x="855" y="593" width="580.8" height="16" rx="8" fill="#48e996"/>
+<text x="855" y="657" class="h" font-size="20">019 · Annual Leave × Life Evaluation</text>
+<text x="1515" y="657" text-anchor="end" class="b">96%</text>
 <rect x="855" y="675" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="675" width="132" height="16" rx="8" fill="#f2c14e"/>
-<text x="855" y="739" class="h" font-size="20">018 · Fly Neuro Playground</text>
-<text x="1515" y="739" text-anchor="end" class="b">88%</text>
+<rect x="855" y="675" width="633.5999999999999" height="16" rx="8" fill="#48e996"/>
+<text x="855" y="739" class="h" font-size="20">020 · 全学科撤稿生态</text>
+<text x="1515" y="739" text-anchor="end" class="b">28%</text>
 <rect x="855" y="757" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="757" width="580.8" height="16" rx="8" fill="#48e996"/>
-<text x="855" y="821" class="h" font-size="20">019 · Annual Leave × Life Evaluation</text>
-<text x="1515" y="821" text-anchor="end" class="b">82%</text>
+<rect x="855" y="757" width="184.79999999999998" height="16" rx="8" fill="#48e996"/>
+<text x="855" y="821" class="h" font-size="20">021 · 大规模暴行条件 · QCA</text>
+<text x="1515" y="821" text-anchor="end" class="b">20%</text>
 <rect x="855" y="839" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="839" width="541.1999999999999" height="16" rx="8" fill="#48e996"/>
+<rect x="855" y="839" width="132" height="16" rx="8" fill="#f2c14e"/>
+<text x="855" y="903" class="h" font-size="20">022 · 行星天体分类 · fsQCA</text>
+<text x="1515" y="903" text-anchor="end" class="b">18%</text>
+<rect x="855" y="921" width="660" height="16" rx="8" fill="#1b385a"/>
+<rect x="855" y="921" width="118.8" height="16" rx="8" fill="#48e996"/>
+<text x="855" y="985" class="h" font-size="20">023 · 023</text>
+<text x="1515" y="985" text-anchor="end" class="b">24%</text>
+<rect x="855" y="1003" width="660" height="16" rx="8" fill="#1b385a"/>
+<rect x="855" y="1003" width="158.39999999999998" height="16" rx="8" fill="#48e996"/>
 </svg>
