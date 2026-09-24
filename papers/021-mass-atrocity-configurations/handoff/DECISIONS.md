@@ -34,3 +34,10 @@
 - Use independently reconstructed A/W/E as provenance checks and sensitivity routes, not as silent replacements for recovered historical coding.
 - Add functional-form robustness to the replication layer because later reanalysis shows the prior-upheaval finding is sensitive to skew/functional form.
 - Preserve exact-replication coding and time-safe coding as separate columns whenever published procedures use information from later in an episode.
+
+
+## 2026-09-24 · Williams control-boundary resolution
+
+- Keep Djibouti 1991–1994 in the 99-control frame: an independent 2012 source explicitly reproduces it from PITF Consolidated Problem Set version 2010.
+- Exclude the Cuba consolidated episode beginning 3/1952 from the Williams 1955–1998 analytic frame, even though later PITF tables contain post-1955 subcomponents inside that consolidated episode.
+- This rule is fixed before condition reconstruction and may not be changed to improve published-margin or QCA fit.
