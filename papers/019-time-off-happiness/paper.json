@@ -81,7 +81,27 @@
       "trigger_commit": "dc857f638517a25b7cb5b3b70284dd4aa6955682",
       "final_audit": "process/FINAL_PUBLIC_DELIVERY_AUDIT.md",
       "builder": "tools/build_public_pdfs.py",
-      "finish_condition": "both canonical PDF paths exist on main and pass Git-side readability/blob verification"
+      "finish_condition": "both canonical PDF paths exist on main and pass Git-side readability/blob verification",
+      "runner_diagnostic": {
+        "checked_at": "2026-09-24",
+        "trigger_commit": "f5070aa1b2f388627a51ee367124446988fc035f",
+        "workflow_run_id": 35965678753,
+        "rerun_attempt": 2,
+        "latest_job_id": 107530128521,
+        "observation": "workflow and failed-job rerun both fail before build steps execute; canonical PDFs remain absent"
+      },
+      "fallback_local_qa": {
+        "purpose": "diagnostic only; not canonical publish",
+        "english_pages": 11,
+        "english_bytes": 100363,
+        "chinese_pages": 7,
+        "chinese_bytes": 207347,
+        "extractable_text": true,
+        "render_first_visual_qa": "pass",
+        "cjk_rendering": "pass",
+        "figure_clipping": "pass",
+        "note": "built from exact current GitHub Markdown/SVG/CSS with locally available fallback Markdown renderer; canonical pinned builder reproduction above remains 12/7"
+      }
     },
     "sir_blinded": "final-package-pass",
     "docx": {
