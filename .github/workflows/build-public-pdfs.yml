@@ -8,6 +8,8 @@ on:
       - 'papers/001-gca-bees/figures/**'
       - 'papers/002-language-geometry/manuscript/**'
       - 'papers/002-language-geometry/figures/**'
+      - 'papers/019-time-off-happiness/manuscript/**'
+      - 'papers/019-time-off-happiness/figures/**'
       - 'tools/build_public_pdfs.py'
       - 'tools/pdf_publication.css'
       - '.github/workflows/build-public-pdfs.yml'
@@ -48,6 +50,8 @@ jobs:
               Path('docs/paper/001/zh/main.pdf'),
               Path('docs/paper/002/en/main.pdf'),
               Path('docs/paper/002/zh/main.pdf'),
+              Path('docs/paper/019/en/main.pdf'),
+              Path('docs/paper/019/zh/main.pdf'),
           ]
           for p in paths:
               r = PdfReader(str(p))
@@ -64,7 +68,9 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/paper/001/en/main.pdf docs/paper/001/zh/main.pdf                   docs/paper/002/en/main.pdf docs/paper/002/zh/main.pdf
+          git add docs/paper/001/en/main.pdf docs/paper/001/zh/main.pdf \
+                  docs/paper/002/en/main.pdf docs/paper/002/zh/main.pdf \
+                  docs/paper/019/en/main.pdf docs/paper/019/zh/main.pdf
           if git diff --cached --quiet; then
             echo "PDFs already current"
             exit 0
