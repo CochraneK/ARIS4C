@@ -1,0 +1,152 @@
+country,region,ilo_2012_days_5day,ilo_status,ilo_bracket,wb_economy,wb_code,wb_2012_leave_1y,wb_2012_leave_avg,wb1_minus_ilo,abs_diff_1y,qa_class
+Algeria,Africa,21,exact_annex,20-23,Algeria,DZA,22,22,1,1,close_0_1
+Angola,Africa,18,exact_annex,15-19,Angola,AGO,22,22,4,4,review_2_5
+Benin,Africa,20,exact_annex,20-23,Benin,BEN,24,24,4,4,review_2_5
+Botswana,Africa,13,exact_annex,10-14,Botswana,BWA,15,15,2,2,moderate_1_2
+Burkina Faso,Africa,21,exact_annex,20-23,Burkina Faso,BFA,22,22,1,1,close_0_1
+Burundi,Africa,17,exact_annex,15-19,Burundi,BDI,20,21,3,3,review_2_5
+Cameroon,Africa,15,exact_annex,15-19,Cameroon,CMR,24,27,9,9,priority_review_ge5
+Central African Republic,Africa,20,exact_annex,20-23,Central African Republic,CAF,24,25.333333333333332,4,4,review_2_5
+Chad,Africa,20,exact_annex,20-23,Chad,TCD,24,24.666666666666668,4,4,review_2_5
+Comoros,Africa,25,exact_annex,24-25,Comoros,COM,22,22,-3,3,review_2_5
+Congo,Africa,22,exact_annex,20-23,"Congo, Rep.",COG,26,29.666666666666668,4,4,review_2_5
+Democratic Republic of Congo,Africa,12,exact_annex,10-14,"Congo, Dem. Rep.",ZAR,12,13,0,0,close_0_1
+Djibouti,Africa,25,exact_annex,24-25,Djibouti,DJI,30,30,5,5,priority_review_ge5
+Egypt,Africa,18,exact_annex,15-19,"Egypt, Arab Rep.",EGY,21,24,3,3,review_2_5
+Equatorial Guinea,Africa,21,exact_annex,20-23,Equatorial Guinea,GNQ,22,22,1,1,close_0_1
+Eritrea,Africa,12,exact_annex,10-14,Eritrea,ERI,14,19,2,2,moderate_1_2
+Ethiopia,Africa,12,exact_annex,10-14,Ethiopia,ETH,14,18.333333333333332,2,2,moderate_1_2
+Gabon,Africa,20,exact_annex,20-23,Gabon,GAB,24,24,4,4,review_2_5
+Gambia,Africa,,no_universal_minimum,no_universal_minimum,"Gambia, The",GMB,0,0,,,scope_noncomparable_no_universal_ilo
+Ghana,Africa,13,exact_annex,10-14,Ghana,GHA,15,15,2,2,moderate_1_2
+Guinea,Africa,21,exact_annex,20-23,Guinea,GIN,30,30,9,9,priority_review_ge5
+Guinea-Bissau,Africa,21,exact_annex,20-23,Guinea-Bissau,GNB,21,21,0,0,close_0_1
+Ivory Coast,Africa,,interval_20_23,20-23,Côte d'Ivoire,CIV,26.4,27.399999999999995,,,interval_only_ilo
+Kenya,Africa,18,exact_annex,15-19,Kenya,KEN,21,21,3,3,review_2_5
+Lesotho,Africa,10,exact_annex,10-14,Lesotho,LSO,12,12,2,2,moderate_1_2
+Libya,Africa,25,exact_annex,24-25,Libya,LBY,30,30,5,5,priority_review_ge5
+Madagascar,Africa,25,exact_annex,24-25,Madagascar,MDG,24,24,-1,1,close_0_1
+Malawi,Africa,15,exact_annex,15-19,Malawi,MWI,18,18,3,3,review_2_5
+Mali,Africa,21,exact_annex,20-23,Mali,MLI,22,22,1,1,close_0_1
+Mauritania,Africa,15,exact_annex,15-19,Mauritania,MRT,18,18,3,3,review_2_5
+Mauritius,Africa,17,exact_annex,15-19,Mauritius,MUS,17,17,0,0,close_0_1
+Morocco,Africa,18,exact_annex,15-19,Morocco,MAR,18,19.5,0,0,close_0_1
+Mozambique,Africa,12,exact_annex,10-14,Mozambique,MOZ,12,24,0,0,close_0_1
+Namibia,Africa,20,exact_annex,20-23,Namibia,NAM,20,20,0,0,close_0_1
+Niger,Africa,21,exact_annex,20-23,Niger,NER,22,22,1,1,close_0_1
+Nigeria,Africa,5,exact_annex,<10,Nigeria Lagos,NGA,6,6,1,1,close_0_1
+Rwanda,Africa,18,exact_annex,15-19,Rwanda,RWA,18,19.333333333333332,0,0,close_0_1
+Sao Tome and Principe,Africa,21,exact_annex,20-23,São Tomé and Príncipe,STP,26,26,5,5,priority_review_ge5
+Senegal,Africa,20,exact_annex,20-23,Senegal,SEN,24,24.333333333333332,4,4,review_2_5
+Seychelles,Africa,18,exact_annex,15-19,Seychelles,SYC,21,21,3,3,review_2_5
+Somalia,Africa,13,exact_annex,10-14,Somalia,SOM,15,80,2,2,moderate_1_2
+South Africa,Africa,15,exact_annex,15-19,South Africa,ZAF,15,18.3333333333333,0,0,close_0_1
+Sudan,Africa,17,exact_annex,15-19,Sudan,SDN,20,23.333333333333332,3,3,review_2_5
+United Republic of Tanzania,Africa,20,exact_annex,20-23,Tanzania,TZA,20,20,0,0,close_0_1
+Togo,Africa,21,exact_annex,20-23,Togo,TGO,30,30,9,9,priority_review_ge5
+Tunisia,Africa,12,exact_annex,10-14,Tunisia,TUN,18,19,6,6,priority_review_ge5
+Uganda,Africa,15,exact_annex,15-19,Uganda,UGA,21,21,6,6,priority_review_ge5
+Zambia,Africa,17,exact_annex,15-19,Zambia,ZMB,24,24,7,7,priority_review_ge5
+Zimbabwe,Africa,21,exact_annex,20-23,Zimbabwe,ZWE,22,22,1,1,close_0_1
+Afghanistan,Asia and Pacific,17,exact_annex,15-19,Afghanistan,AFG,20,20,3,3,review_2_5
+Australia,Asia and Pacific,20,exact_annex,20-23,Australia,AUS,20,20,0,0,close_0_1
+Bangladesh,Asia and Pacific,10,exact_annex,10-14,Bangladesh Dhaka,BGD,17,17,7,7,priority_review_ge5
+Brunei Darussalam,Asia and Pacific,7,exact_annex,<10,Brunei Darussalam,BRN,7,11.6666666666667,0,0,close_0_1
+Cambodia,Asia and Pacific,15,exact_annex,15-19,Cambodia,KHM,18,19.333333333333332,3,3,review_2_5
+China,Asia and Pacific,5,exact_annex,<10,China Shanghai,CHN,5,6.66666666666667,0,0,close_0_1
+Fiji,Asia and Pacific,10,exact_annex,10-14,Fiji,FJI,10,10,0,0,close_0_1
+India,Asia and Pacific,,no_universal_minimum,no_universal_minimum,India Mumbai,IND,21,21,,,scope_noncomparable_no_universal_ilo
+Indonesia,Asia and Pacific,12,exact_annex,10-14,Indonesia Jakarta,IDN,12,12,0,0,close_0_1
+Iran,Asia and Pacific,25,exact_annex,24-25,"Iran, Islamic Rep.",IRN,24,24,-1,1,close_0_1
+Japan,Asia and Pacific,8,exact_annex,<10,Japan Tokyo,JPN,10,15.333333333333334,2,2,moderate_1_2
+Kiribati,Asia and Pacific,,no_universal_minimum,no_universal_minimum,Kiribati,KIR,0,0,,,scope_noncomparable_no_universal_ilo
+Republic of Korea,Asia and Pacific,15,exact_annex,15-19,"Korea, Rep.",KOR,15,17,0,0,close_0_1
+Lao People's Democratic Republic,Asia and Pacific,13,exact_annex,10-14,Lao PDR,LAO,15,15,2,2,moderate_1_2
+Malaysia,Asia and Pacific,8,exact_annex,<10,Malaysia,MYS,8,13.333333333333334,0,0,close_0_1
+Mongolia,Asia and Pacific,15,exact_annex,15-19,Mongolia,MNG,15,16,0,0,close_0_1
+Myanmar,Asia and Pacific,7,exact_annex,<10,Myanmar,MMR,10,10,3,3,review_2_5
+Nepal,Asia and Pacific,12,exact_annex,10-14,Nepal,NPL,18,18,6,6,priority_review_ge5
+New Zealand,Asia and Pacific,20,exact_annex,20-23,New Zealand,NZL,20,20,0,0,close_0_1
+Pakistan,Asia and Pacific,,no_universal_minimum,no_universal_minimum,Pakistan Karachi,PAK,14,14,,,scope_noncomparable_no_universal_ilo
+Papua New Guinea,Asia and Pacific,10,exact_annex,10-14,Papua New Guinea,PNG,11,11,1,1,close_0_1
+Philippines,Asia and Pacific,,no_universal_minimum,no_universal_minimum,Philippines,PHL,5,5,,,scope_noncomparable_no_universal_ilo
+Singapore,Asia and Pacific,7,exact_annex,<10,Singapore,SGP,7,10.6666666666667,0,0,close_0_1
+Solomon Islands,Asia and Pacific,15,exact_annex,15-19,Solomon Islands,SLB,15,15,0,0,close_0_1
+Sri Lanka,Asia and Pacific,,no_universal_minimum,no_universal_minimum,Sri Lanka,LKA,14,14,,,scope_noncomparable_no_universal_ilo
+Thailand,Asia and Pacific,6,exact_annex,<10,Thailand,THA,6,6,0,0,close_0_1
+Vanuatu,Asia and Pacific,15,exact_annex,15-19,Vanuatu,VUT,15,17,0,0,close_0_1
+Vietnam,Asia and Pacific,10,exact_annex,10-14,Vietnam,VNM,12,13,2,2,moderate_1_2
+Armenia,Europe and CIS,20,exact_annex,20-23,Armenia,ARM,20,20,0,0,close_0_1
+Austria,Europe and CIS,25,exact_annex,24-25,Austria,AUT,25,25,0,0,close_0_1
+Belgium,Europe and CIS,20,exact_annex,20-23,Belgium,BEL,20,20,0,0,close_0_1
+Bulgaria,Europe and CIS,20,exact_annex,20-23,Bulgaria,BGR,20,20,0,0,close_0_1
+Croatia,Europe and CIS,20,exact_annex,20-23,Croatia,HRV,20,20,0,0,close_0_1
+Czech Republic,Europe and CIS,20,exact_annex,20-23,Czech Republic,CZE,20,20,0,0,close_0_1
+Denmark,Europe and CIS,25,exact_annex,24-25,Denmark,DNK,25,25,0,0,close_0_1
+Estonia,Europe and CIS,20,exact_annex,20-23,Estonia,EST,24,24,4,4,review_2_5
+Finland,Europe and CIS,20,exact_annex,20-23,Finland,FIN,30,30,10,10,priority_review_ge5
+France,Europe and CIS,25,exact_annex,24-25,France,FRA,30,30.3333333333333,5,5,priority_review_ge5
+Germany,Europe and CIS,20,exact_annex,20-23,Germany,DEU,24,24,4,4,review_2_5
+Hungary,Europe and CIS,20,exact_annex,20-23,Hungary,HUN,20,21.333333333333332,0,0,close_0_1
+Iceland,Europe and CIS,24,exact_annex,24-25,Iceland,ISL,24,24,0,0,close_0_1
+Ireland,Europe and CIS,20,exact_annex,20-23,Ireland,IRL,20,20,0,0,close_0_1
+Italy,Europe and CIS,20,exact_annex,20-23,Italy,ITA,26,26,6,6,priority_review_ge5
+Latvia,Europe and CIS,20,exact_annex,20-23,Latvia,LVA,20,20,0,0,close_0_1
+Lithuania,Europe and CIS,20,exact_annex,20-23,Lithuania,LTU,20,20.666666666666668,0,0,close_0_1
+Luxembourg,Europe and CIS,25,exact_annex,24-25,Luxembourg,LUX,25,25,0,0,close_0_1
+Malta,Europe and CIS,24,exact_annex,24-25,Malta,MLT,24,24,0,0,close_0_1
+Moldova,Europe and CIS,20,exact_annex,20-23,Moldova,MDA,20,20,0,0,close_0_1
+Netherlands,Europe and CIS,20,exact_annex,20-23,Netherlands,NLD,20,20,0,0,close_0_1
+Norway,Europe and CIS,21,exact_annex,20-23,Norway,NOR,21,21,0,0,close_0_1
+Portugal,Europe and CIS,22,exact_annex,20-23,Portugal,PRT,22,22,0,0,close_0_1
+Romania,Europe and CIS,20,exact_annex,20-23,Romania,ROM,20,20,0,0,close_0_1
+Russian Federation,Europe and CIS,20,exact_annex,20-23,Russian Federation Moscow,RUS,22,22,2,2,moderate_1_2
+San Marino,Europe and CIS,10,exact_annex,10-14,San Marino,SMR,26,26,16,16,priority_review_ge5
+Serbia,Europe and CIS,20,exact_annex,20-23,Serbia,SRB,20,20,0,0,close_0_1
+Slovenia,Europe and CIS,20,exact_annex,20-23,Slovenia,SVN,20,21,0,0,close_0_1
+Spain,Europe and CIS,21,exact_annex,20-23,Spain,ESP,22,22,1,1,close_0_1
+Sweden,Europe and CIS,25,exact_annex,24-25,Sweden,SWE,25,25,0,0,close_0_1
+Switzerland,Europe and CIS,20,exact_annex,20-23,Switzerland,CHE,20,20,0,0,close_0_1
+Turkey,Europe and CIS,12,exact_annex,10-14,Turkey,TUR,14,18,2,2,moderate_1_2
+United Kingdom,Europe and CIS,28,exact_annex,26+,United Kingdom,GBR,28,28,0,0,close_0_1
+Antigua and Barbuda,Americas and Caribbean,12,exact_annex,10-14,Antigua and Barbuda,ATG,12,12,0,0,close_0_1
+Argentina,Americas and Caribbean,10,exact_annex,10-14,Argentina,ARG,12,18,2,2,moderate_1_2
+Bahamas,Americas and Caribbean,10,exact_annex,10-14,"Bahamas, The",BHS,10,11.666666666666666,0,0,close_0_1
+Barbados,Americas and Caribbean,15,exact_annex,15-19,Barbados,BRB,17,20.333333333333332,2,2,moderate_1_2
+Belize,Americas and Caribbean,10,exact_annex,10-14,Belize,BLZ,12,12,2,2,moderate_1_2
+Bolivia,Americas and Caribbean,15,exact_annex,15-19,Bolivia,BOL,15,21.666666666666668,0,0,close_0_1
+Brazil,Americas and Caribbean,21,exact_annex,20-23,Brazil São Paulo,BRA,26,26,5,5,priority_review_ge5
+Canada,Americas and Caribbean,10,exact_annex,10-14,Canada,CAN,10,10,0,0,close_0_1
+Chile,Americas and Caribbean,15,exact_annex,15-19,Chile,CHL,15,15,0,0,close_0_1
+Colombia,Americas and Caribbean,10,exact_annex,10-14,Colombia,COL,15,15,5,5,priority_review_ge5
+Costa Rica,Americas and Caribbean,10,exact_annex,10-14,Costa Rica,CRI,12,12,2,2,moderate_1_2
+Dominica,Americas and Caribbean,10,exact_annex,10-14,Dominica,DMA,10,13.333333333333334,0,0,close_0_1
+Dominican Republic,Americas and Caribbean,12,exact_annex,10-14,Dominican Republic,DOM,14,16.6666666666667,2,2,moderate_1_2
+Ecuador,Americas and Caribbean,10,exact_annex,10-14,Ecuador,ECU,11,12.333333333333334,1,1,close_0_1
+El Salvador,Americas and Caribbean,15,exact_annex,15-19,El Salvador,SLV,11,11,-4,4,review_2_5
+Grenada,Americas and Caribbean,10,exact_annex,10-14,Grenada,GRD,10,13.333333333333334,0,0,close_0_1
+Guatemala,Americas and Caribbean,13,exact_annex,10-14,Guatemala,GTM,15,15,2,2,moderate_1_2
+Guyana,Americas and Caribbean,12,exact_annex,10-14,Guyana,GUY,12,12,0,0,close_0_1
+Haiti,Americas and Caribbean,11,exact_annex,10-14,Haiti,HTI,13,13,2,2,moderate_1_2
+Honduras,Americas and Caribbean,8,exact_annex,<10,Honduras,HND,10,16.666666666666668,2,2,moderate_1_2
+Jamaica,Americas and Caribbean,10,exact_annex,10-14,Jamaica,JAM,10,11.666666666666666,0,0,close_0_1
+Mexico,Americas and Caribbean,6,exact_annex,<10,Mexico Mexico City,MEX,6,12,0,0,close_0_1
+Nicaragua,Americas and Caribbean,10,exact_annex,10-14,Nicaragua,NIC,30,30,20,20,priority_review_ge5
+Panama,Americas and Caribbean,21,exact_annex,20-23,Panama,PAN,22,22,1,1,close_0_1
+Paraguay,Americas and Caribbean,10,exact_annex,10-14,Paraguay,PRY,12,20,2,2,moderate_1_2
+Peru,Americas and Caribbean,21,exact_annex,20-23,Peru,PER,13,13,-8,8,priority_review_ge5
+St. Kitts and Nevis,Americas and Caribbean,14,exact_annex,10-14,St. Kitts and Nevis,KNA,14,14,0,0,close_0_1
+Trinidad and Tobago,Americas and Caribbean,10,exact_annex,10-14,Trinidad and Tobago,TTO,10,10,0,0,close_0_1
+United States,Americas and Caribbean,,no_universal_minimum,no_universal_minimum,United States New York City,USA,0,0,,,scope_noncomparable_no_universal_ilo
+Uruguay,Americas and Caribbean,20,exact_annex,20-23,Uruguay,URY,20,21,0,0,close_0_1
+Venezuela,Americas and Caribbean,13,exact_annex,10-14,"Venezuela, RB",VEN,15,19.333333333333332,2,2,moderate_1_2
+Bahrain,Middle East (Arab States),21,exact_annex,20-23,Bahrain,BHR,15,18.333333333333332,-6,6,priority_review_ge5
+Iraq,Middle East (Arab States),17,exact_annex,15-19,Iraq,IRQ,20,22,3,3,review_2_5
+Jordan,Middle East (Arab States),14,exact_annex,10-14,Jordan,JOR,14,18.666666666666668,0,0,close_0_1
+Kuwait,Middle East (Arab States),25,exact_annex,24-25,Kuwait,KWT,30,30,5,5,priority_review_ge5
+Lebanon,Middle East (Arab States),15,exact_annex,15-19,Lebanon,LBN,15,15,0,0,close_0_1
+Qatar,Middle East (Arab States),15,exact_annex,15-19,Qatar,QAT,18,22,3,3,review_2_5
+Saudi Arabia,Middle East (Arab States),21,exact_annex,20-23,Saudi Arabia,SAU,18,23.3333333333333,-3,3,review_2_5
+Syria,Middle East (Arab States),24,exact_annex,24-25,Syrian Arab Republic,SYR,14,21.666666666666668,-10,10,priority_review_ge5
+United Arab Emirates,Middle East (Arab States),30,exact_annex,26+,United Arab Emirates,ARE,26,26,-4,4,review_2_5
+Yemen,Middle East (Arab States),30,exact_annex,26+,"Yemen, Rep.",YEM,30,30,0,0,close_0_1
