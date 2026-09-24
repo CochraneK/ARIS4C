@@ -2,9 +2,9 @@
 
 ## Current
 
-- Progress: 88%
+- Progress: 90%
 - Activity: active
-- Stage: Pilot 4 matched diagnostic COMPLETE · R1 Retina identity PASS · R2 frozen-retinal localization running
+- Stage: Pilot 4 matched diagnostic COMPLETE · R1/R2 excluded · R2.5 initial-scene sensory localization running
 
 ## Completed
 
@@ -16,40 +16,12 @@
 - Legacy/current semantic trace parity PASS.
 - FlyGym 1.x→2.x bounded migration engineering CLOSED.
 - Pilot 4 matched static-target cross-version diagnostic COMPLETE.
+- R1 Retina geometry/order EXACT MATCH.
+- R2 frozen retinal input / mapper / flyvis response DIAGNOSTIC COMPLETE.
 
 ## Pilot 4 matched result
 
-Canonical workflow:
-
-https://github.com/CochraneK/ARIS4C/actions/runs/35559767189
-
-Matched condition:
-
-- static target [5.0, 2.2, 1.5], radius 1.25;
-- observer spawn [0, 0, 1.0];
-- 0.08 s baseline + 0.08 s closed loop;
-- 500 Hz vision;
-- z threshold 5;
-- tracking gain 6;
-- same 25 tracking cells;
-- same pure decoder math.
-
-Pre-frozen metrics:
-
-| Metric | Legacy | Current |
-|---|---:|---:|
-| mask detection rate | 1.000 | 0.750 |
-| mean |turning bias| | 0.2586 | 0.1659 |
-| mean |R-L drive| | 0.8000 | 0.5696 |
-| body displacement | 0.7018 | 1.0510 |
-| runtime, s | 228.113 | 220.520 |
-| baseline zero-SD fraction | 0.0017198 | 0.0017198 |
-
-No post-hoc equivalence threshold or version ranking is allowed.
-
-## Earliest visible divergence
-
-At the first target frame:
+Matched legacy/current condition produced a reproducible first-frame decoder divergence:
 
 Legacy:
 
@@ -69,38 +41,76 @@ bias = 0
 drive = [1.0, 1.0]
 ```
 
-This divergence occurs before the body can explain it.
+This appears before body trajectory can explain the difference.
 
-Already excluded as simple explanations:
+## R1 result
 
-- baseline zero-SD fraction: identical;
-- pure decoder implementation: identical and unit-tested;
-- top-level positive descending-drive→CPG amplitude/sign semantics: preserved.
+Excluded as the first divergence:
 
-## Active localization
+- Retina dimensions identical;
+- 721 ommatidia identical;
+- ID map byte-identical;
+- pale/yellow mask byte-identical;
+- FlyGym→flyvis 721-index mapping byte-identical;
+- strict bijection on both stacks.
 
-R1 Retina geometry/order has completed with exact legacy/current SHA-256 identity for the ID map, pale/yellow mask and 721-index FlyGym→flyvis mapping. R1 is excluded as the first divergence. R2 frozen-retinal localization is now running.
+## R2 result
 
-R1 compares:
+R2a and R2b both match.
 
-- nrows/ncols;
-- 721-ommatidia count;
-- covered pixels;
-- full ID-map SHA-256;
-- FlyGym→flyvis index-vector SHA-256;
-- pale/yellow mask;
-- bijection.
+For all six frozen deterministic retinal stimuli:
 
-If R1 matches, proceed immediately to R2 frozen retinal-vector→flyvis.
+- retinal SHA equal;
+- mapped-input SHA equal;
+- neural SHA equal;
+- tracking-cell mean MAE = 0;
+- tracking-cell max absolute difference = 0.
+
+Test stimuli included:
+
+- uniform 0.5;
+- mirrored gradient;
+- deterministic random vector;
+- three mirrored impulses.
+
+Therefore the matched Pilot 4 divergence is **not explained by**:
+
+- Retina geometry/order;
+- FlyGym→flyvis mapping;
+- pinned flyvis response to identical frozen input vectors.
+
+## Active localization · R2.5
+
+A new CI diagnostic is now running.
+
+It captures the initial matched static-target scene **before locomotion/controller stepping and without flyvis/decoder**:
+
+```
+same requested spawn + same static sphere
+          ↓
+legacy/current renderer + eye cameras
+          ↓
+2 × 721 × 2 ommatidia readout
+          ↓
+hash/stat comparison
+```
+
+Primary question:
+
+**Are the actual sensory vectors already different at reset / first visual frame?**
+
+If yes, localize to renderer/camera/body/scene-reset semantics.
+
+If no, inspect neural initialization / temporal-state semantics rather than static flyvis transfer.
 
 ## Next gates
 
-1. Complete R2a exact mapped-vector comparison.
-2. Complete R2b frozen-vector neural response comparison.
-3. If R2b differs with R2a identity, localize flyvis version/model dynamics before returning to renderer/body.
-4. Continue only to R3/R4/R5 as needed.
-5. Use the earliest divergent layer—not final trajectory magnitude—to select the first formal research hypothesis.
+1. Complete R2.5 legacy/current initial-scene capture.
+2. Compare full and grayscale ommatidia SHA-256 plus body-root pose.
+3. If sensory vectors differ, localize renderer/camera/spawn/occlusion.
+4. If sensory vectors match, inspect temporal neural initialization/state handling.
+5. Use the earliest divergent layer to select the first formal scientific hypothesis.
 
 ## Scientific boundary
 
-The matched result shows a reproducible software/model-stack difference under the frozen synthetic condition. It does not establish which stack is more biologically accurate or which version is preferable.
+The matched stack difference remains a software/model-stack reproducibility diagnostic. It does not establish which stack is more biologically accurate or preferable.
