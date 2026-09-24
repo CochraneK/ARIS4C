@@ -180,12 +180,12 @@
       "blocker": "Live JPL SBDB object payload acquisition remains the dominant blocker. Calibration/truth tables/QCA solutions remain closed by the frozen readiness rules."
     },
     "023": {
-      "progress": 88,
-      "stage": "Motif-family source-bundle layer frozen · restricted descriptive similarity pilot generated",
+      "progress": 91,
+      "stage": "Restricted bundle-similarity pilot audited · exploratory process-tracing cases frozen",
       "activity": "active",
-      "evidence": "Source-bundle layer bounds absence to frozen texts rather than whole civilizations. 13 bundles are frozen across three motif families; 9 permit bounded negative closure. Bundle-level motif matrix and same-family descriptive Jaccard/simple-matching pilot are generated with partial/later bundles excluded from negative inference.",
-      "next_gate": "Audit bundle-similarity source-selection sensitivity; expand partial Sumerian/Hurrian-Hittite bundles or retain missingness; add defensible Egyptian bundles; then integrate ancestry/contact covariates exploratorily.",
-      "blocker": "No hard blocker. Partial Sumerian flood and Hurrian-Hittite conflict bundles cannot supply negatives; Egypt lacks calibration-family bundles."
+      "evidence": "All 12 same-family source-bundle similarities were audited for positive support and shared-absence inflation. Gilgamesh XI–Genesis 6-9 has 6 shared-present flood features (Jaccard 0.857) and is selected for process tracing; Vedic–Greek divine-conflict simple matching 0.875 is flagged as shared-absence inflated (only one shared present). Four exploratory process-tracing candidates include explicit falsifiers.",
+      "next_gate": "Process-trace flood and anthropogony candidates with chronology/intermediaries/disconfirming evidence; expand Egyptian/partial bundles; freeze environmental covariates; preregister expanded-stage support thresholds before further similarity modeling.",
+      "blocker": "No hard blocker. Remaining work is evidence depth and confirmatory design freeze rather than infrastructure."
     }
   },
   "scheduling": {

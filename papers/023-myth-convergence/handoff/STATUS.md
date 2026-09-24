@@ -1,20 +1,20 @@
 # Status
 
 ## State
-Active · 88%
+Active · 91%
 
 ## Current stage
-Motif-family source-bundle layer frozen · restricted descriptive similarity pilot generated.
+Restricted bundle-similarity pilot audited · process-tracing cases selected exploratorily.
 
 ## Evidence
-- Reliability/v0.1.1, conservative tradition matrix, contact and Glottolog ancestry layers remain frozen.
-- Source-bundle layer prevents selected-text absence from being misreported as civilization-wide absence.
-- 13 bundles across flood/divine-conflict/anthropogony are frozen; 10 have bounded negative closure.
-- Bundle matrix contains 104 cells: 35 present, 52 bundle-scoped absent, 1 uncertain, remainder not_observed.
-- 12 within-family bundle dyads have descriptive Jaccard/simple-matching output; no cross-family or civilization-level ranking is permitted.
+- 13 source bundles and 12 same-family similarity dyads remain frozen.
+- Similarity support audit explicitly separates positive-overlap signal from shared-absence inflation.
+- Gilgamesh XI vs Genesis 6-9 shows 6 shared-present flood features and Jaccard 0.857 within the frozen bundles; this is flagged for process tracing, not treated as proof of borrowing.
+- Vedic vs Greek divine-conflict simple matching 0.875 is flagged as misleadingly high because it is dominated by 6 shared absences and only 1 shared positive.
+- Four exploratory process-tracing candidates are frozen with required disconfirming evidence, including a methodological negative control.
 
 ## Next gate
-Audit restricted bundle similarity for source-selection artifacts, expand/repair partial bundles, add Egyptian bundles where defensible, then integrate ancestry/contact covariates without treating similarity as transmission evidence.
+Deepen the selected process-tracing cases with chronology/intermediaries/disconfirming evidence, expand Egyptian and partial bundles, and freeze environmental covariates. Any confirmatory similarity support threshold must be preregistered before expanded analysis.
 
 ## Blocker
-No hard blocker. Partial Sumerian flood and Hurrian-Hittite conflict bundles cannot supply negative evidence, and Egypt currently lacks calibration-family bundles.
+No hard blocker. Remaining progress is evidence depth rather than pipeline construction: process tracing, Egyptian/partial-bundle coverage, and environmental/contact chronology.

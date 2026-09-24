@@ -1,0 +1,13 @@
+family,bundle_a,bundle_b,tradition_a,tradition_b,n_comparable,positive_union,both_present,both_absent,jaccard_present,simple_matching,shared_absence_fraction,simple_minus_jaccard,diagnostic_flags,interpretation_status
+flood,FB_FLOOD_AKK,FB_FLOOD_HEB,AKK_MB_SB,HEB_GEN,8,7,6,1,0.8571428571428571,0.875,0.125,0.017857142857142905,high_positive_overlap,descriptive_only
+flood,FB_FLOOD_AKK,FB_FLOOD_CHN,AKK_MB_SB,CHN_WS_HAN,8,6,1,2,0.16666666666666666,0.375,0.25,0.20833333333333334,no_major_support_warning,descriptive_only
+flood,FB_FLOOD_HEB,FB_FLOOD_CHN,HEB_GEN,CHN_WS_HAN,8,7,1,1,0.14285714285714285,0.25,0.125,0.10714285714285715,no_major_support_warning,descriptive_only
+divine_conflict,FB_DIV_VED,FB_DIV_GRC,VED_RV,GRC_ARCH,8,2,1,6,0.5,0.875,0.75,0.375,sparse_positive_union;shared_absence_inflation,very_low_support_exploratory
+divine_conflict,FB_DIV_VED,FB_DIV_UGAR,VED_RV,UGARIT_LBA,7,2,0,5,0,0.7142857142857143,0.7142857142857143,0.7142857142857143,sparse_positive_union;shared_absence_inflation,very_low_support_exploratory
+divine_conflict,FB_DIV_GRC,FB_DIV_UGAR,GRC_ARCH,UGARIT_LBA,7,3,0,4,0,0.5714285714285714,0.5714285714285714,0.5714285714285714,shared_absence_inflation,descriptive_only
+anthropogony,FB_ANTH_SUM,FB_ANTH_AKK,SUM_OB,AKK_OB,8,4,2,4,0.5,0.75,0.5,0.25,no_major_support_warning,descriptive_only
+anthropogony,FB_ANTH_SUM,FB_ANTH_HEB,SUM_OB,HEB_GEN,8,5,0,3,0,0.375,0.375,0.375,shared_absence_inflation;no_shared_positive_despite_nontrivial_union,descriptive_only
+anthropogony,FB_ANTH_SUM,FB_ANTH_VED,SUM_OB,VED_RV,8,4,0,4,0,0.5,0.5,0.5,shared_absence_inflation;no_shared_positive_despite_nontrivial_union,descriptive_only
+anthropogony,FB_ANTH_AKK,FB_ANTH_HEB,AKK_OB,HEB_GEN,8,5,0,3,0,0.375,0.375,0.375,shared_absence_inflation;no_shared_positive_despite_nontrivial_union,descriptive_only
+anthropogony,FB_ANTH_AKK,FB_ANTH_VED,AKK_OB,VED_RV,8,4,0,4,0,0.5,0.5,0.5,shared_absence_inflation;no_shared_positive_despite_nontrivial_union,descriptive_only
+anthropogony,FB_ANTH_HEB,FB_ANTH_VED,HEB_GEN,VED_RV,8,3,0,5,0,0.625,0.625,0.625,shared_absence_inflation,descriptive_only

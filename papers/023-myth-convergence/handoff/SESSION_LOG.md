@@ -80,3 +80,11 @@
 - Generated 104 bundle × motif cells and 12 same-family descriptive similarity dyads.
 - Similarity output is bundle-level, descriptive and non-causal; it cannot be used as proof of borrowing or as a civilization leaderboard.
 - Project advanced to 88%; next work is source-selection audit, Egyptian coverage and covariate integration.
+
+## 2026-09-24 · similarity pilot audit
+- Audited all 12 within-family bundle similarities for positive-union support and shared-absence inflation.
+- Confirmed simple matching can be strongly misleading in sparse motif families: Vedic-Greek divine conflict is 0.875 simple matching but only 0.5 Jaccard with one shared positive and six shared absences.
+- Flagged Gilgamesh XI ↔ Genesis 6-9 as a high-information exploratory flood comparison (6 shared positives; Jaccard 0.857) without making a borrowing claim.
+- Froze four exploratory process-tracing candidates with explicit alternative mechanisms and disconfirming evidence.
+- No post-hoc pilot cutoff is promoted to confirmatory status; future thresholds must be frozen before expanded analysis.
+- Project advanced to 91%.

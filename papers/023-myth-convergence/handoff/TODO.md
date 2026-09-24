@@ -1,21 +1,21 @@
 # TODO
 
 ## Completed
-- [x] Dual-AI calibration + v0.1.1 regression.
-- [x] Conservative 11×24 tradition seed matrix.
-- [x] Historical contact + Glottolog ancestry layers.
-- [x] Freeze motif-family source-bundle contract.
-- [x] Freeze 13 family bundles with explicit negative-closure status.
-- [x] Generate bundle-level matrix and restricted within-family descriptive similarity pilot.
+- [x] Calibration/reliability + v0.1.1 regression.
+- [x] Tradition seed matrix + source-bundle analysis layer.
+- [x] Contact + Glottolog ancestry layers.
+- [x] Restricted bundle-level similarity pilot.
+- [x] Audit shared-absence inflation and positive-union support.
+- [x] Freeze exploratory process-tracing candidate list with falsifiers.
 
 ## Current critical path
-- [ ] Audit restricted similarity outputs for source-selection artifacts.
-- [ ] Expand or retain-open Sumerian flood bundle.
-- [ ] Expand or retain-open Hurrian-Hittite divine-conflict bundle.
-- [ ] Add defensible Egyptian calibration-family bundles.
-- [ ] Add/verify dated contact intermediaries.
-- [ ] Choose topology-only vs published dated phylogeny model.
-- [ ] Integrate bundle similarity with ancestry/contact exploratorily.
-- [ ] Freeze environmental variables.
-- [ ] Process-trace high-information motif families.
+- [ ] PT01: Mesopotamian ↔ Hebrew flood chronology/intermediary process tracing.
+- [ ] PT02: Chinese flood/water-catastrophe contrast + omitted-source sensitivity.
+- [ ] PT03: Sumerian ↔ Akkadian anthropogony transmission/inheritance tracing.
+- [ ] PT04: Vedic ↔ Greek divine-conflict negative-control expansion.
+- [ ] Expand/retain-open Sumerian flood and Hurrian-Hittite bundles.
+- [ ] Add defensible Egyptian bundles.
+- [ ] Freeze environmental covariates.
+- [ ] Expand dated historical contact/intermediary table.
+- [ ] Pre-freeze thresholds/design for expanded similarity model.
 - [ ] QCA remains OFF until trigger conditions are met.
