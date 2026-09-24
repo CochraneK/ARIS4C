@@ -42,7 +42,7 @@ RULES={
  ("miscommunication_author",r"miscommunication with/by author"),
  ("miscommunication_institution",r"miscommunication with/by company/institution"),
  ("miscommunication_publisher",r"miscommunication with/by journal/publisher"),
- ("miscommunication_third_party",r"miscommunication by third party"),
+ ("miscommunication_third_party",r"miscommunication (?:with/)?by third party|miscommunication with/by third party"),
  ("publisher_error",r"error by journal/publisher|duplication of content through error by journal/publisher"),
  ("third_party_error",r"error by third party"),("rogue_editor",r"rogue editor"),
  ("complaint_author",r"complaints about author"),("complaint_institution",r"complaints about company/institution"),
