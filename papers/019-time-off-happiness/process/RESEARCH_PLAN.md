@@ -1,4 +1,16 @@
-# ARIS4C019 · Research Plan v0.1
+# ARIS4C019 · Research Plan v0.2
+
+> **2026-09-24 scope correction:** Historical expansion supersedes the narrow Pilot-0 scope as the project-level research plan. The completed leave-specific Life Ladder study remains a frozen causal sub-study; it is not the whole ARIS4C019. Canonical expansion details: `HISTORICAL_EXPANSION_PLAN.md` and `HISTORICAL_SOURCE_MATRIX.md`.
+
+## Expanded project question
+
+How did statutory and realized time off evolve across countries over the long twentieth century and early twenty-first century, and how are those changes associated with — and, where quasi-experimental identification is credible, causally related to — subjective well-being?
+
+The project now targets: institutional/legal history from the early twentieth century with systematic ILO anchors from 1936 onward; subjective-well-being evidence from 1945 onward; Eurobarometer from 1973; WVS/EVS from 1981; and annual Gallup-era analysis from the mid-2000s onward. Modern cross-sectional legal coverage should target all 193 UN member states where source licenses/coverage permit.
+
+---
+
+## Preserved Pilot-0 plan
 
 ## Working question
 
