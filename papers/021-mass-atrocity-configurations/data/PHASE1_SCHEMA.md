@@ -91,3 +91,15 @@ At minimum:
 The canonical historical QCA replication uses *_R.
 The leakage-safe sensitivity uses *_T.
 Neither may overwrite the other.
+
+
+## Episode identity vs annual severity
+
+Case-episode boundaries and annual death-magnitude observations are separate objects.
+
+A published genocide/politicide episode may include calendar years where annual DEATHMAG is zero or absent in a transformed annual series.
+
+Therefore:
+- case membership is anchored to published case lists / episode dates;
+- annual DEATHMAG is supporting evidence and severity trajectory;
+- continuous positive DEATHMAG is not required to define a case interval.
