@@ -23,16 +23,17 @@
 - El Salvador: 15 days → 15 (2012 five-day-workweek basis)
 - Sudan: 20 days → 17 (2012 five-day-workweek basis)
 
-### Apparent downward threshold crossings
-- Nicaragua: 15 consecutive days every six months (30 days per year) → 10
+### Apparent downward threshold crossing — rejected after primary-law QA
+- Nicaragua: 15 consecutive days every six months (30 days/year) → ILO-2012 standardized value 10.
+- **Disposition: source_conflict_not_reform.** NORMLEX/CEACR documents Labour Code Article 76 as 15 paid days per six months in both 1998 and 2005, so no legal decrease is accepted. citeturn121965search1turn121965search0
 
-Any threshold crossing is a **candidate**, not yet an accepted reform. The two ILO snapshots differ in reference date and harmonization method; primary national law is required before treatment timing.
+Threshold crossings are only screening candidates; primary national law controls reform acceptance. The two ILO snapshots differ in reference date and harmonization method; primary national law is required before treatment timing.
 
 ## High-confidence approximate changes >=3 days
 
 | country | approx 2000 (5-day) | 2012 | delta |
 |---|---:|---:|---:|
-| Nicaragua | 21 | 10 | -11 |
+| Nicaragua | 21 | 10 | -11 · **REJECT source conflict** |
 | United Kingdom | 20 | 28 | +8 |
 | Slovakia | 15 | 20 | +5 |
 | Algeria | 25 | 21 | -4 |
@@ -52,3 +53,13 @@ This bridge is superior to comparing arbitrary cross-source numbers because:
 But it is still not a causal panel. A country enters the reform inventory only after the national statute/amendment and effective date confirm the entitlement change.
 
 Canonical file: `data/ilo_2000_2012_leave_bridge.csv`.
+
+
+## Primary-law adjudication
+
+- **Bulgaria 2001:** verified; 14 working days → minimum 20 working days, effective 31 Mar 2001. citeturn115033search1
+- **Slovakia 2002:** verified; basic minimum 3 weeks → at least 4 weeks, effective 1 Apr 2002. citeturn673653search1turn163090view0
+- **Great Britain 2007/2009:** verified staged increase 4 → 4.8 → 5.6 weeks / max 28 days, but explicitly public-holiday-linked. citeturn397223view1turn298580search1
+- **Nicaragua:** rejected as a source inconsistency rather than a reform. citeturn121965search1turn121965search0
+
+See `process/HISTORICAL_REFORM_VERIFICATION_GATE_V1.md`.
