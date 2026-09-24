@@ -65,3 +65,16 @@
 - WDH public long-run mean-variable registry materialized at 124 series / 61 nation labels / earliest 1946.
 - Project canonical state advanced to 75% / active. Next work is historical numeric outcomes/legal chronology/cross-instrument synthesis, not additional post-hoc modern WHR mining.
 
+## 2026-09-24 · Historical expansion execution
+
+Validation / execution facts:
+- WDH Table 2: 200 displayed / 199 exact unique / 190 same-window hours-matched / 46 countries.
+- Historical one-longest-series-per-country Pearson/Spearman: -0.0566 / -0.0447.
+- Corrected actual-hours A0: 2,015 country-years / 130 countries.
+- ILO C052: 54/54 exact primary NORMLEX dates.
+- ILO C132: 39/39 exact primary NORMLEX dates.
+- C052→C132 overlap: 18; mean/median gap 27.8/26.4 years.
+- WDH raw HTML reconstruction validation: USA 111C/hl4 +0.001732 vs +0.001 published; Japan 121C/ls4 +0.004793 vs +0.004.
+- Independent statsmodels CI remains pending because GitHub Actions run 35977496016 failed pre-runner with zero steps.
+- Firecrawl structured WDH extraction was unavailable due credits; no result was treated as obtained.
+
