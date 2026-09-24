@@ -72,3 +72,20 @@ Before CONDITION_MATRIX_V1 is frozen:
 - preserve exact-replication versus pre-onset/time-safe coding separately.
 
 No case may be removed or recoded because it improves model fit.
+
+
+## 2026-09-24 · Cuba vs Djibouti boundary audit
+
+This membership ambiguity is now resolved for the v1 identity frame.
+
+Evidence:
+- a 2012 publication explicitly cites the PITF Consolidated Problem Set **version 2010** and lists Djibouti as an Ethnic War from 11/1991 to 6/1994;
+- later official PITF tables list both Cuba (Complex, 3/1952–12/1961) and Djibouti (Ethnic War, 11/1991–6/1994);
+- Williams defines the analytic material as PITF cases in the 1955–1998 frame and states that independent-condition values are selected from the first year of the focal genocide/non-genocide conflict where possible.
+
+Decision:
+- retain DJI_1991;
+- exclude Cuba's 1952-start consolidated episode from the Williams v1 control identity universe;
+- do not treat Cuba's post-1955 subcomponents as a new standalone control unless an exact Williams-era row-level source proves that Williams split the consolidated episode.
+
+This decision is based on source-frame reconstruction, not on whether either choice improves QCA fit.
