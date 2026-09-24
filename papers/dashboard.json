@@ -148,12 +148,12 @@
       "blocker": "No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference."
     },
     "019": {
-      "progress": 80,
-      "stage": "Modern + published historical trends LOCKED · ILO C052/C132 history CLOSED · annual WDH/national-law reconstruction",
+      "progress": 84,
+      "stage": "Modern + historical trend LOCKED · century-scale legal spine + 2012 global cross-section complete · historical annual outcomes active",
       "activity": "active",
-      "evidence": "Pilot-0 frozen; modern 161-country leave panel and full WDH 200-row historical trend bridge interpretation-locked. ILO institutional history now complete at C052 54/54 and C132 39/39 exact NORMLEX ratification dates, with 18-country succession table and declaration-unit guardrail. Official WDH HTML raw-year reconstruction is validated on USA hl4 and Japan ls4 to <0.001/year slope difference; full batch builder is committed.",
-      "next_gate": "Execute the WDH HTML annual builder on a network-capable runner; reconstruct national paid-leave legal effective dates/levels; acquire Eurobarometer + EVS/WVS numeric outcomes; run source-specific historical annual models and verified legal-event synthesis; then rebuild EN/ZH manuscript.",
-      "blocker": "No design blocker. Current execution blockers are network/binary or registered-data transfer for full historical annual outcomes and the repository-wide GitHub Actions pre-runner failure."
+      "evidence": "019 now spans pre-war institutional diffusion, 2000 ILO/NATLEX national-law snapshot, 2012 ILO/TRAVAIL 155-country statutory-leave cross-section, 1870-2023 actual-hours history, 1946+ WDH published wellbeing trends and modern WHR. Historical reform registry v2 is outcome-blind: Bulgaria 2001/Slovakia 2002 A-tier; Namibia 2008 and GB 2007/2009 B-tier; Nicaragua/Algeria/Mali rejected. ILO2012×WHR2012 N=114 gives adjusted +0.028 Life Ladder per +5 days (95% CI -0.103,+0.160); nonlinear, regional and leave-one-out diagnostics remain non-robust.",
+      "next_gate": "Execute official WDH HTML annual builder; acquire EVS/WVS and Eurobarometer numeric historical outcomes; test verified historical reforms without WHR timing gaps; recover additional 1960s/1970s national-law snapshots from ILO revision reports/Legislative Series; rerun independent statsmodels CI when Actions runner recovers.",
+      "blocker": "No design blocker. Main blockers are network-capable execution for full WDH HTML extraction, access/transfer of registered historical survey micro/aggregate data, and repository-wide GitHub Actions pre-runner failure."
     },
     "020": {
       "progress": 55,
