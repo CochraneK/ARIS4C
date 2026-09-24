@@ -1,7 +1,7 @@
 # Status
 
 ## State
-Block · 70% — dual-AI calibration gate **CLOSED**; ontology v0.1 frozen with mandatory v0.1.1 rule amendments; next stage is the source-backed tradition × motif matrix
+Wait · 70% — dual-AI calibration gate **CLOSED**; ontology v0.1 frozen with mandatory v0.1.1 rule amendments; next stage is the source-backed tradition × motif matrix
 
 ## Current stage
 Calibration reliability is decided. Both coder packets are frozen in Git, `reliability.json` exists, the disagreement taxonomy and the reliability decision are written, and the ontology question is answered. The project is no longer blocked on coding independence.
