@@ -23,3 +23,12 @@
 - External browser credits were exhausted before shards 1–3. This is an execution-surface limitation, not a scientific/data blocker.
 - Added resumable OpenAlex enrichment and grouped denominator scripts.
 - Froze event-vs-work identity, RWDB semicolon parsing, and denominator contracts.
+
+## 2026-09-24 · Executable pre-confirmatory package
+- Added literature-positioning checks for Hauschke & Nazarovets (OpenAlex retraction-status discordance), Fletcher & Stevenson (RWDB×OpenAlex case-control pipeline), and Rawlins (RWDB×OpenAlex access-model work).
+- Upgraded production OpenAlex matching to rerun all four shards in 0/1/N candidate-safe format; historical shard 0 remains feasibility evidence only.
+- Pinned OpenAlex `corpus=core` for reproducibility after the expansion-corpus change.
+- Moved optional OpenAlex API-key authentication to Authorization Bearer headers and added exponential retry/backoff for 429/5xx.
+- Added deterministic anomalous work-type QA materializer and a one-command `RUNBOOK.md` / `run_pipeline.py`.
+- Frozen Appendix-B reference ontology now covers 111/111 labels with 0 unclassified; observed snapshot has 110 and remains under reconciliation/manual audit.
+- Added two preliminary audit tables. Current package is scientifically gated at networked full match + denominator execution, not at method design.
