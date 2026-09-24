@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "dataset_generated_on": "2026-09-23",
+  "dataset_sha256": "da61a30cd4b01b681d1b42ad43cae7ae9eca2213a4f33ff7e762b7942c93f663",
+  "all_rows": 72606,
+  "nature_counts": {
+    "Retraction": 67197,
+    "Expression of concern": 3719,
+    "Correction": 1530,
+    "Reinstatement": 160
+  },
+  "primary_population": {
+    "nature": "Retraction",
+    "rows": 67197,
+    "share_of_all_rows": 0.925502,
+    "original_doi_available_rows": 61316,
+    "original_doi_available_share": 0.912481,
+    "original_doi_unique": 61155,
+    "repeated_original_doi_unique": 14,
+    "original_doi_max_multiplicity": 145,
+    "notice_doi_available_rows": 62651,
+    "notice_doi_unique": 57609
+  },
+  "dates": {
+    "parseable_publication_to_retraction_lags": 67197,
+    "negative_lag_rows": 0,
+    "publication_year_range": [
+      1753,
+      2026
+    ],
+    "retraction_year_range": [
+      1756,
+      2026
+    ],
+    "lag_days": {
+      "p10": 38,
+      "p25": 153,
+      "median": 490,
+      "p75": 1061,
+      "p90": 2194
+    },
+    "median_lag_years": 1.342,
+    "recent_retraction_counts": {
+      "2012": 1161,
+      "2013": 1449,
+      "2014": 1115,
+      "2015": 1545,
+      "2016": 1683,
+      "2017": 1712,
+      "2018": 2534,
+      "2019": 2907,
+      "2020": 3080,
+      "2021": 3908,
+      "2022": 5591,
+      "2023": 13227,
+      "2024": 6383,
+      "2025": 5945,
+      "2026": 1757
+    }
+  },
+  "multi_label_structure": {
+    "unique_reason_labels": 110,
+    "mean_reason_labels_per_retraction": 3.960668,
+    "reason_label_count_distribution": {
+      "1": 11564,
+      "2": 11590,
+      "3": 14727,
+      "4": 6022,
+      "5": 7175,
+      "6": 4458,
+      "7": 2120,
+      "8": 2973,
+      "9": 5073,
+      "10": 325,
+      "11": 1121,
+      "12": 23,
+      "13": 10,
+      "14": 7,
+      "15": 3,
+      "16": 4,
+      "17": 2
+    },
+    "country_count_distribution": {
+      "1": 56705,
+      "2": 6954,
+      "3": 1995,
+      "4": 871,
+      "5": 344,
+      "6": 174,
+      "7": 84,
+      "8": 37,
+      "9": 15,
+      "10": 8,
+      "11": 4,
+      "12": 2,
+      "13": 1,
+      "15": 2,
+      "28": 1
+    },
+    "subject_count_distribution": {
+      "1": 9015,
+      "2": 21540,
+      "3": 21578,
+      "4": 10314,
+      "5": 3516,
+      "6": 986,
+      "7": 207,
+      "8": 34,
+      "9": 6,
+      "10": 1
+    }
+  },
+  "top_reason_labels": [
+    [
+      "Investigation by Journal/Publisher",
+      30278
+    ],
+    [
+      "Unreliable Results and/or Conclusions",
+      21970
+    ],
+    [
+      "Investigation by Third Party",
+      17554
+    ],
+    [
+      "Concerns/Issues about Referencing/Attributions",
+      15049
+    ],
+    [
+      "Concerns/Issues about Data",
+      14343
+    ],
+    [
+      "Notice - Limited or No Information",
+      11985
+    ],
+    [
+      "Paper Mill",
+      11712
+    ],
+    [
+      "Concerns/Issues about Peer Review",
+      11437
+    ],
+    [
+      "Compromised Peer Review",
+      11195
+    ],
+    [
+      "Computer-Aided Content or Computer-Generated Content",
+      9317
+    ],
+    [
+      "Concerns/Issues about Results and/or Conclusions",
+      9272
+    ],
+    [
+      "Date of Article and/or Notice Unknown",
+      6902
+    ],
+    [
+      "Duplication of/in Image",
+      5345
+    ],
+    [
+      "Breach of Policy by Author",
+      4786
+    ],
+    [
+      "Removed",
+      3988
+    ],
+    [
+      "Objections by Author(s)",
+      3889
+    ],
+    [
+      "Euphemisms for Plagiarism",
+      3793
+    ],
+    [
+      "Duplication of/in Article",
+      3666
+    ],
+    [
+      "Investigation by Company/Institution",
+      3269
+    ],
+    [
+      "Author Unresponsive",
+      3195
+    ]
+  ],
+  "top_subject_labels": [
+    [
+      "(B/T) Technology",
+      12402
+    ],
+    [
+      "(BLS) Biology - Cellular",
+      11287
+    ],
+    [
+      "(B/T) Computer Science",
+      9471
+    ],
+    [
+      "(BLS) Genetics",
+      8578
+    ],
+    [
+      "(BLS) Biochemistry",
+      7704
+    ],
+    [
+      "(BLS) Biology - Cancer",
+      6464
+    ],
+    [
+      "(B/T) Data Science",
+      5859
+    ],
+    [
+      "(SOC) Education",
+      5253
+    ],
+    [
+      "(BLS) Biology - Molecular",
+      4589
+    ],
+    [
+      "(B/T) Business - Economics",
+      4164
+    ],
+    [
+      "(PHY) Mathematics",
+      4094
+    ],
+    [
+      "(HSC) Medicine - Oncology",
+      3894
+    ],
+    [
+      "(ENV) Environmental Sciences",
+      3292
+    ],
+    [
+      "(PHY) Materials Science",
+      3186
+    ],
+    [
+      "(B/T) Business - Management",
+      3071
+    ]
+  ],
+  "top_country_labels": [
+    [
+      "China",
+      36603
+    ],
+    [
+      "United States",
+      6242
+    ],
+    [
+      "India",
+      6167
+    ],
+    [
+      "Russia",
+      3125
+    ],
+    [
+      "Saudi Arabia",
+      2319
+    ],
+    [
+      "Iran",
+      1995
+    ],
+    [
+      "United Kingdom",
+      1787
+    ],
+    [
+      "Japan",
+      1611
+    ],
+    [
+      "Pakistan",
+      1604
+    ],
+    [
+      "South Korea",
+      1450
+    ],
+    [
+      "Germany",
+      1353
+    ],
+    [
+      "Egypt",
+      1212
+    ],
+    [
+      "Italy",
+      1013
+    ],
+    [
+      "Malaysia",
+      987
+    ],
+    [
+      "Unknown",
+      940
+    ]
+  ],
+  "top_publishers": [
+    [
+      "Hindawi",
+      11486
+    ],
+    [
+      "IEEE: Institute of Electrical and Electronics Engineers",
+      10094
+    ],
+    [
+      "Elsevier",
+      6710
+    ],
+    [
+      "Springer",
+      4493
+    ],
+    [
+      "Wiley",
+      4113
+    ],
+    [
+      "Springer - Nature Publishing Group",
+      3324
+    ],
+    [
+      "Taylor and Francis",
+      1816
+    ],
+    [
+      "IOS Press (bought by Sage November 2023)",
+      1784
+    ],
+    [
+      "PLoS",
+      1461
+    ],
+    [
+      "IOP Publishing",
+      1285
+    ],
+    [
+      "SAGE Publications",
+      1237
+    ],
+    [
+      "Spandidos",
+      919
+    ],
+    [
+      "Elsevier - Cell Press",
+      902
+    ],
+    [
+      "EDP Sciences",
+      783
+    ],
+    [
+      "Frontiers",
+      689
+    ]
+  ],
+  "interpretation_guards": [
+    "Counts are not rates; publication denominators are required for comparative risk claims.",
+    "Retraction does not by itself establish misconduct or author responsibility.",
+    "Reason is multi-label and should not be collapsed to one cause without a frozen mapping.",
+    "Country and subject are multi-valued and require explicit full/fractional counting rules.",
+    "Mass retraction events can dominate calendar-year counts and require sensitivity analysis.",
+    "2026 is right-censored/incomplete in the 2026-09-23 snapshot."
+  ]
+}

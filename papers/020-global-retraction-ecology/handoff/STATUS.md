@@ -1,10 +1,10 @@
 # Status
 
 ## State
-Active · 15%
+Active · 28%
 
 ## Current stage
-Full Retraction Watch bulk access verified; acquisition and denominator design scaffolded.
+Full 2026-09-23 Retraction Watch snapshot audited; denominator join design is next.
 
 ## Evidence
 - Crossref publishes the full Retraction Watch CSV.
@@ -13,7 +13,7 @@ Full Retraction Watch bulk access verified; acquisition and denominator design s
 - Crossref/OpenAlex enrichment is required for publication denominators and citation-network analyses.
 
 ## Next gate
-Acquire + hash a complete snapshot, freeze Retraction-only inclusion rules, and run the pre-analysis data-quality audit.
+Freeze event-aware DOI deduplication, run Crossref/OpenAlex DOI matching, and build the first year × field publication denominators.
 
 ## Blocker
 None for acquisition. Expressions of concern and corrections are not population-complete in RWDB and must remain exploratory.

@@ -156,12 +156,12 @@
       "blocker": "No scientific or analysis blocker. Remaining external/author-only inputs are anonymous review hosting/link plus affiliation/contact/ORCID/funding/competing-interest and institution-specific ethics/exemption metadata."
     },
     "020": {
-      "progress": 15,
-      "stage": "Data source verified · full-RWDB acquisition and denominator design",
+      "progress": 28,
+      "stage": "Full RWDB snapshot audited · denominator join design",
       "activity": "active",
-      "evidence": "Crossref production documentation confirms the full Retraction Watch dataset is publicly downloadable as CSV and updated each working day. The official schema includes article, venue, publisher, country, author, dates, notice nature, controlled retraction reasons, identifiers and notes.",
-      "next_gate": "Acquire and hash a full RWDB snapshot; freeze Retraction-only inclusion rules; profile DOI/PMID/field/affiliation/reason missingness; then join Crossref/OpenAlex denominators before any country/field risk comparison.",
-      "blocker": "No acquisition blocker. Methodological boundary: RWDB is intended to be comprehensive for retractions, not for expressions of concern or corrections; raw retraction counts cannot be interpreted as rates without a publication denominator."
+      "evidence": "Official 2026-09-23 RWDB snapshot audited: 72,606 rows, 67,197 Retractions, 61,155 unique usable original DOIs, 110 reason labels, median publication-to-retraction lag 490 days; no negative lags. Multi-label reason/country/subject structure confirmed.",
+      "next_gate": "Freeze event-aware DOI deduplication and Crossref/OpenAlex matching; build year×field publication denominators and a match-coverage report before comparative risk models.",
+      "blocker": "No data-acquisition blocker. GitHub Actions are currently failing before runner steps start, so generated README/Page refresh may need manual or later workflow execution; this does not block scientific analysis."
     },
     "021": {
       "progress": 18,
