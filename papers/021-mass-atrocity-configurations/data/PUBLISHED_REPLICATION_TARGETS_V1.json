@@ -200,6 +200,13 @@
         "total_n": 139,
         "canonical_target": 99,
         "rule": "Use 99 controls because the case-selection section, Table 1, and total N=139 agree on 40+99. Preserve the intro value 100 as a source-internal typo."
+      },
+      "non_genocide_count": {
+        "introduction": 100,
+        "table_and_analysis": 99,
+        "total_cases_repeated": 139,
+        "aris4c_target": 99,
+        "rule": "Use 99 as analytic target because Table 1 and repeated total N=139 imply 40+99."
       }
     },
     "interpretation_guardrails": {
