@@ -1,0 +1,105 @@
+bundle_id,family,tradition_id,motif_id,motif_state,negative_closed,source_ids,packet_ids,basis,notes
+FB_FLOOD_SUM,flood,SUM_OB,FLOOD_DSTR_INUNDATION,present,false,SRC_SUM_FLOOD,P_FLOOD_SUM,positive_in_bundle,"Sumerian Flood Story surviving C/D passages; positives usable, negatives not closed."
+FB_FLOOD_SUM,flood,SUM_OB,FLOOD_EXTERMINATORY,present,false,SRC_SUM_FLOOD,P_FLOOD_SUM,positive_in_bundle,"Sumerian Flood Story surviving C/D passages; positives usable, negatives not closed."
+FB_FLOOD_SUM,flood,SUM_OB,FLOOD_WARNING,present,false,SRC_SUM_FLOOD,P_FLOOD_SUM,positive_in_bundle,"Sumerian Flood Story surviving C/D passages; positives usable, negatives not closed."
+FB_FLOOD_SUM,flood,SUM_OB,FLOOD_SELECTED_SURVIVOR,present,false,SRC_SUM_FLOOD,P_FLOOD_SUM,positive_in_bundle,"Sumerian Flood Story surviving C/D passages; positives usable, negatives not closed."
+FB_FLOOD_SUM,flood,SUM_OB,FLOOD_VESSEL,present,false,SRC_SUM_FLOOD,P_FLOOD_SUM,positive_in_bundle,"Sumerian Flood Story surviving C/D passages; positives usable, negatives not closed."
+FB_FLOOD_SUM,flood,SUM_OB,FLOOD_HIGH_REFUGE,not_observed,false,SRC_SUM_FLOOD,P_FLOOD_SUM,negative_not_closed_due_bundle_coverage,"Sumerian Flood Story surviving C/D passages; positives usable, negatives not closed."
+FB_FLOOD_SUM,flood,SUM_OB,FLOOD_POST_RITUAL,present,false,SRC_SUM_FLOOD,P_FLOOD_SUM,positive_in_bundle,"Sumerian Flood Story surviving C/D passages; positives usable, negatives not closed."
+FB_FLOOD_SUM,flood,SUM_OB,FLOOD_REPOPULATION,not_observed,false,SRC_SUM_FLOOD,P_FLOOD_SUM,negative_not_closed_due_bundle_coverage,"Sumerian Flood Story surviving C/D passages; positives usable, negatives not closed."
+FB_FLOOD_AKK,flood,AKK_MB_SB,FLOOD_DSTR_INUNDATION,present,true,SRC_AKK_GILG_TXT,P_FLOOD_GILG,positive_in_bundle,Gilgamesh XI flood account as the frozen Standard Babylonian flood bundle.
+FB_FLOOD_AKK,flood,AKK_MB_SB,FLOOD_EXTERMINATORY,present,true,SRC_AKK_GILG_TXT,P_FLOOD_GILG,positive_in_bundle,Gilgamesh XI flood account as the frozen Standard Babylonian flood bundle.
+FB_FLOOD_AKK,flood,AKK_MB_SB,FLOOD_WARNING,present,true,SRC_AKK_GILG_TXT,P_FLOOD_GILG,positive_in_bundle,Gilgamesh XI flood account as the frozen Standard Babylonian flood bundle.
+FB_FLOOD_AKK,flood,AKK_MB_SB,FLOOD_SELECTED_SURVIVOR,present,true,SRC_AKK_GILG_TXT,P_FLOOD_GILG,positive_in_bundle,Gilgamesh XI flood account as the frozen Standard Babylonian flood bundle.
+FB_FLOOD_AKK,flood,AKK_MB_SB,FLOOD_VESSEL,present,true,SRC_AKK_GILG_TXT,P_FLOOD_GILG,positive_in_bundle,Gilgamesh XI flood account as the frozen Standard Babylonian flood bundle.
+FB_FLOOD_AKK,flood,AKK_MB_SB,FLOOD_HIGH_REFUGE,absent,true,SRC_AKK_GILG_TXT,P_FLOOD_GILG,all_frozen_bundle_passages_absent,Gilgamesh XI flood account as the frozen Standard Babylonian flood bundle.
+FB_FLOOD_AKK,flood,AKK_MB_SB,FLOOD_POST_RITUAL,present,true,SRC_AKK_GILG_TXT,P_FLOOD_GILG,positive_in_bundle,Gilgamesh XI flood account as the frozen Standard Babylonian flood bundle.
+FB_FLOOD_AKK,flood,AKK_MB_SB,FLOOD_REPOPULATION,absent,true,SRC_AKK_GILG_TXT,P_FLOOD_GILG,all_frozen_bundle_passages_absent,Gilgamesh XI flood account as the frozen Standard Babylonian flood bundle.
+FB_FLOOD_HEB,flood,HEB_GEN,FLOOD_DSTR_INUNDATION,present,true,SRC_HEB_FLOOD,P_FLOOD_GEN,positive_in_bundle,Genesis 6-9 as the frozen primeval-history flood bundle.
+FB_FLOOD_HEB,flood,HEB_GEN,FLOOD_EXTERMINATORY,present,true,SRC_HEB_FLOOD,P_FLOOD_GEN,positive_in_bundle,Genesis 6-9 as the frozen primeval-history flood bundle.
+FB_FLOOD_HEB,flood,HEB_GEN,FLOOD_WARNING,present,true,SRC_HEB_FLOOD,P_FLOOD_GEN,positive_in_bundle,Genesis 6-9 as the frozen primeval-history flood bundle.
+FB_FLOOD_HEB,flood,HEB_GEN,FLOOD_SELECTED_SURVIVOR,present,true,SRC_HEB_FLOOD,P_FLOOD_GEN,positive_in_bundle,Genesis 6-9 as the frozen primeval-history flood bundle.
+FB_FLOOD_HEB,flood,HEB_GEN,FLOOD_VESSEL,present,true,SRC_HEB_FLOOD,P_FLOOD_GEN,positive_in_bundle,Genesis 6-9 as the frozen primeval-history flood bundle.
+FB_FLOOD_HEB,flood,HEB_GEN,FLOOD_HIGH_REFUGE,absent,true,SRC_HEB_FLOOD,P_FLOOD_GEN,all_frozen_bundle_passages_absent,Genesis 6-9 as the frozen primeval-history flood bundle.
+FB_FLOOD_HEB,flood,HEB_GEN,FLOOD_POST_RITUAL,present,true,SRC_HEB_FLOOD,P_FLOOD_GEN,positive_in_bundle,Genesis 6-9 as the frozen primeval-history flood bundle.
+FB_FLOOD_HEB,flood,HEB_GEN,FLOOD_REPOPULATION,present,true,SRC_HEB_FLOOD,P_FLOOD_GEN,positive_in_bundle,Genesis 6-9 as the frozen primeval-history flood bundle.
+FB_FLOOD_CHN,flood,CHN_WS_HAN,FLOOD_DSTR_INUNDATION,present,true,SRC_CHN_YAO;SRC_CHN_NUWA,P_FLOOD_YAO;P_FLOOD_NUWA,positive_in_bundle,Canon of Yao + Huainanzi Nüwa water-catastrophe bundle; absence means absent from this selection only.
+FB_FLOOD_CHN,flood,CHN_WS_HAN,FLOOD_EXTERMINATORY,absent,true,SRC_CHN_YAO;SRC_CHN_NUWA,P_FLOOD_YAO;P_FLOOD_NUWA,all_frozen_bundle_passages_absent,Canon of Yao + Huainanzi Nüwa water-catastrophe bundle; absence means absent from this selection only.
+FB_FLOOD_CHN,flood,CHN_WS_HAN,FLOOD_WARNING,absent,true,SRC_CHN_YAO;SRC_CHN_NUWA,P_FLOOD_YAO;P_FLOOD_NUWA,all_frozen_bundle_passages_absent,Canon of Yao + Huainanzi Nüwa water-catastrophe bundle; absence means absent from this selection only.
+FB_FLOOD_CHN,flood,CHN_WS_HAN,FLOOD_SELECTED_SURVIVOR,absent,true,SRC_CHN_YAO;SRC_CHN_NUWA,P_FLOOD_YAO;P_FLOOD_NUWA,all_frozen_bundle_passages_absent,Canon of Yao + Huainanzi Nüwa water-catastrophe bundle; absence means absent from this selection only.
+FB_FLOOD_CHN,flood,CHN_WS_HAN,FLOOD_VESSEL,absent,true,SRC_CHN_YAO;SRC_CHN_NUWA,P_FLOOD_YAO;P_FLOOD_NUWA,all_frozen_bundle_passages_absent,Canon of Yao + Huainanzi Nüwa water-catastrophe bundle; absence means absent from this selection only.
+FB_FLOOD_CHN,flood,CHN_WS_HAN,FLOOD_HIGH_REFUGE,absent,true,SRC_CHN_YAO;SRC_CHN_NUWA,P_FLOOD_YAO;P_FLOOD_NUWA,all_frozen_bundle_passages_absent,Canon of Yao + Huainanzi Nüwa water-catastrophe bundle; absence means absent from this selection only.
+FB_FLOOD_CHN,flood,CHN_WS_HAN,FLOOD_POST_RITUAL,absent,true,SRC_CHN_YAO;SRC_CHN_NUWA,P_FLOOD_YAO;P_FLOOD_NUWA,all_frozen_bundle_passages_absent,Canon of Yao + Huainanzi Nüwa water-catastrophe bundle; absence means absent from this selection only.
+FB_FLOOD_CHN,flood,CHN_WS_HAN,FLOOD_REPOPULATION,absent,true,SRC_CHN_YAO;SRC_CHN_NUWA,P_FLOOD_YAO;P_FLOOD_NUWA,all_frozen_bundle_passages_absent,Canon of Yao + Huainanzi Nüwa water-catastrophe bundle; absence means absent from this selection only.
+FB_DIV_VED,divine_conflict,VED_RV,DIV_SUCCESSION_YOUNGER_OLDER,absent,true,SRC_VED_INDRA,P_DIV_RV132,all_frozen_bundle_passages_absent,Rigveda 1.32 conflict bundle.
+FB_DIV_VED,divine_conflict,VED_RV,DIV_FATHER_SON,absent,true,SRC_VED_INDRA,P_DIV_RV132,all_frozen_bundle_passages_absent,Rigveda 1.32 conflict bundle.
+FB_DIV_VED,divine_conflict,VED_RV,DIV_STORM_SERPENT,present,true,SRC_VED_INDRA,P_DIV_RV132,positive_in_bundle,Rigveda 1.32 conflict bundle.
+FB_DIV_VED,divine_conflict,VED_RV,DIV_STORM_SEA,absent,true,SRC_VED_INDRA,P_DIV_RV132,all_frozen_bundle_passages_absent,Rigveda 1.32 conflict bundle.
+FB_DIV_VED,divine_conflict,VED_RV,DIV_BODY_TO_COSMOS,absent,true,SRC_VED_INDRA,P_DIV_RV132,all_frozen_bundle_passages_absent,Rigveda 1.32 conflict bundle.
+FB_DIV_VED,divine_conflict,VED_RV,DIV_COUNCIL,absent,true,SRC_VED_INDRA,P_DIV_RV132,all_frozen_bundle_passages_absent,Rigveda 1.32 conflict bundle.
+FB_DIV_VED,divine_conflict,VED_RV,DIV_KINGSHIP_TRANSFER,absent,true,SRC_VED_INDRA,P_DIV_RV132,all_frozen_bundle_passages_absent,Rigveda 1.32 conflict bundle.
+FB_DIV_VED,divine_conflict,VED_RV,DIV_PRIMORDIAL_REBELLION,absent,true,SRC_VED_INDRA,P_DIV_RV132,all_frozen_bundle_passages_absent,Rigveda 1.32 conflict bundle.
+FB_DIV_GRC,divine_conflict,GRC_ARCH,DIV_SUCCESSION_YOUNGER_OLDER,absent,true,SRC_GRC_THEO,P_DIV_HES_SUCC;P_DIV_HES_TYPH,all_frozen_bundle_passages_absent,Selected Hesiodic succession-birth + Typhon bundle.
+FB_DIV_GRC,divine_conflict,GRC_ARCH,DIV_FATHER_SON,present,true,SRC_GRC_THEO,P_DIV_HES_SUCC;P_DIV_HES_TYPH,positive_in_bundle,Selected Hesiodic succession-birth + Typhon bundle.
+FB_DIV_GRC,divine_conflict,GRC_ARCH,DIV_STORM_SERPENT,present,true,SRC_GRC_THEO,P_DIV_HES_SUCC;P_DIV_HES_TYPH,positive_in_bundle,Selected Hesiodic succession-birth + Typhon bundle.
+FB_DIV_GRC,divine_conflict,GRC_ARCH,DIV_STORM_SEA,absent,true,SRC_GRC_THEO,P_DIV_HES_SUCC;P_DIV_HES_TYPH,all_frozen_bundle_passages_absent,Selected Hesiodic succession-birth + Typhon bundle.
+FB_DIV_GRC,divine_conflict,GRC_ARCH,DIV_BODY_TO_COSMOS,absent,true,SRC_GRC_THEO,P_DIV_HES_SUCC;P_DIV_HES_TYPH,all_frozen_bundle_passages_absent,Selected Hesiodic succession-birth + Typhon bundle.
+FB_DIV_GRC,divine_conflict,GRC_ARCH,DIV_COUNCIL,absent,true,SRC_GRC_THEO,P_DIV_HES_SUCC;P_DIV_HES_TYPH,all_frozen_bundle_passages_absent,Selected Hesiodic succession-birth + Typhon bundle.
+FB_DIV_GRC,divine_conflict,GRC_ARCH,DIV_KINGSHIP_TRANSFER,absent,true,SRC_GRC_THEO,P_DIV_HES_SUCC;P_DIV_HES_TYPH,all_frozen_bundle_passages_absent,Selected Hesiodic succession-birth + Typhon bundle.
+FB_DIV_GRC,divine_conflict,GRC_ARCH,DIV_PRIMORDIAL_REBELLION,absent,true,SRC_GRC_THEO,P_DIV_HES_SUCC;P_DIV_HES_TYPH,all_frozen_bundle_passages_absent,Selected Hesiodic succession-birth + Typhon bundle.
+FB_DIV_UGAR,divine_conflict,UGARIT_LBA,DIV_SUCCESSION_YOUNGER_OLDER,absent,true,SRC_UGAR_BAAL,P_DIV_BAAL,all_frozen_bundle_passages_absent,KTU 1.2 IV Baal-Yam bundle; contaminated kingship cell excluded.
+FB_DIV_UGAR,divine_conflict,UGARIT_LBA,DIV_FATHER_SON,absent,true,SRC_UGAR_BAAL,P_DIV_BAAL,all_frozen_bundle_passages_absent,KTU 1.2 IV Baal-Yam bundle; contaminated kingship cell excluded.
+FB_DIV_UGAR,divine_conflict,UGARIT_LBA,DIV_STORM_SERPENT,absent,true,SRC_UGAR_BAAL,P_DIV_BAAL,all_frozen_bundle_passages_absent,KTU 1.2 IV Baal-Yam bundle; contaminated kingship cell excluded.
+FB_DIV_UGAR,divine_conflict,UGARIT_LBA,DIV_STORM_SEA,present,true,SRC_UGAR_BAAL,P_DIV_BAAL,positive_in_bundle,KTU 1.2 IV Baal-Yam bundle; contaminated kingship cell excluded.
+FB_DIV_UGAR,divine_conflict,UGARIT_LBA,DIV_BODY_TO_COSMOS,absent,true,SRC_UGAR_BAAL,P_DIV_BAAL,all_frozen_bundle_passages_absent,KTU 1.2 IV Baal-Yam bundle; contaminated kingship cell excluded.
+FB_DIV_UGAR,divine_conflict,UGARIT_LBA,DIV_COUNCIL,absent,true,SRC_UGAR_BAAL,P_DIV_BAAL,all_frozen_bundle_passages_absent,KTU 1.2 IV Baal-Yam bundle; contaminated kingship cell excluded.
+FB_DIV_UGAR,divine_conflict,UGARIT_LBA,DIV_KINGSHIP_TRANSFER,not_observed,true,,P_DIV_BAAL,no_eligible_evidence,KTU 1.2 IV Baal-Yam bundle; contaminated kingship cell excluded.
+FB_DIV_UGAR,divine_conflict,UGARIT_LBA,DIV_PRIMORDIAL_REBELLION,absent,true,SRC_UGAR_BAAL,P_DIV_BAAL,all_frozen_bundle_passages_absent,KTU 1.2 IV Baal-Yam bundle; contaminated kingship cell excluded.
+FB_DIV_HUR,divine_conflict,HUR_HIT_LBA,DIV_SUCCESSION_YOUNGER_OLDER,not_observed,false,SRC_HIT_ULLI,P_DIV_ULLI,negative_not_closed_due_bundle_coverage,Ullikummi passage; negatives remain open due reconstruction uncertainty.
+FB_DIV_HUR,divine_conflict,HUR_HIT_LBA,DIV_FATHER_SON,not_observed,false,SRC_HIT_ULLI,P_DIV_ULLI,negative_not_closed_due_bundle_coverage,Ullikummi passage; negatives remain open due reconstruction uncertainty.
+FB_DIV_HUR,divine_conflict,HUR_HIT_LBA,DIV_STORM_SERPENT,not_observed,false,SRC_HIT_ULLI,P_DIV_ULLI,negative_not_closed_due_bundle_coverage,Ullikummi passage; negatives remain open due reconstruction uncertainty.
+FB_DIV_HUR,divine_conflict,HUR_HIT_LBA,DIV_STORM_SEA,not_observed,false,SRC_HIT_ULLI,P_DIV_ULLI,negative_not_closed_due_bundle_coverage,Ullikummi passage; negatives remain open due reconstruction uncertainty.
+FB_DIV_HUR,divine_conflict,HUR_HIT_LBA,DIV_BODY_TO_COSMOS,not_observed,false,SRC_HIT_ULLI,P_DIV_ULLI,negative_not_closed_due_bundle_coverage,Ullikummi passage; negatives remain open due reconstruction uncertainty.
+FB_DIV_HUR,divine_conflict,HUR_HIT_LBA,DIV_COUNCIL,not_observed,false,SRC_HIT_ULLI,P_DIV_ULLI,negative_not_closed_due_bundle_coverage,Ullikummi passage; negatives remain open due reconstruction uncertainty.
+FB_DIV_HUR,divine_conflict,HUR_HIT_LBA,DIV_KINGSHIP_TRANSFER,not_observed,false,SRC_HIT_ULLI,P_DIV_ULLI,negative_not_closed_due_bundle_coverage,Ullikummi passage; negatives remain open due reconstruction uncertainty.
+FB_DIV_HUR,divine_conflict,HUR_HIT_LBA,DIV_PRIMORDIAL_REBELLION,uncertain,false,SRC_HIT_ULLI,P_DIV_ULLI,uncertain_in_bundle,Ullikummi passage; negatives remain open due reconstruction uncertainty.
+FB_ANTH_SUM,anthropogony,SUM_OB,ANTH_EARTH_DUST,absent,true,SRC_SUM_ENKI_NINMAH,P_ANTH_ENKI_NINMAH,all_frozen_bundle_passages_absent,Enki and Ninmah 24-37 replacement anthropogony bundle.
+FB_ANTH_SUM,anthropogony,SUM_OB,ANTH_CLAY_MUD,present,true,SRC_SUM_ENKI_NINMAH,P_ANTH_ENKI_NINMAH,positive_in_bundle,Enki and Ninmah 24-37 replacement anthropogony bundle.
+FB_ANTH_SUM,anthropogony,SUM_OB,ANTH_POTTER_FORMING,present,true,SRC_SUM_ENKI_NINMAH,P_ANTH_ENKI_NINMAH,positive_in_bundle,Enki and Ninmah 24-37 replacement anthropogony bundle.
+FB_ANTH_SUM,anthropogony,SUM_OB,ANTH_DIVINE_BLOOD_FLESH,absent,true,SRC_SUM_ENKI_NINMAH,P_ANTH_ENKI_NINMAH,all_frozen_bundle_passages_absent,Enki and Ninmah 24-37 replacement anthropogony bundle.
+FB_ANTH_SUM,anthropogony,SUM_OB,ANTH_BREATH_ANIMATION,absent,true,SRC_SUM_ENKI_NINMAH,P_ANTH_ENKI_NINMAH,all_frozen_bundle_passages_absent,Enki and Ninmah 24-37 replacement anthropogony bundle.
+FB_ANTH_SUM,anthropogony,SUM_OB,ANTH_CREATED_FOR_SERVICE,present,true,SRC_SUM_ENKI_NINMAH,P_ANTH_ENKI_NINMAH,positive_in_bundle,Enki and Ninmah 24-37 replacement anthropogony bundle.
+FB_ANTH_SUM,anthropogony,SUM_OB,ANTH_BODY_SACRIFICE,absent,true,SRC_SUM_ENKI_NINMAH,P_ANTH_ENKI_NINMAH,all_frozen_bundle_passages_absent,Enki and Ninmah 24-37 replacement anthropogony bundle.
+FB_ANTH_SUM,anthropogony,SUM_OB,ANTH_FIRST_PAIR,absent,true,SRC_SUM_ENKI_NINMAH,P_ANTH_ENKI_NINMAH,all_frozen_bundle_passages_absent,Enki and Ninmah 24-37 replacement anthropogony bundle.
+FB_ANTH_AKK,anthropogony,AKK_OB,ANTH_EARTH_DUST,absent,true,SRC_AKK_ATRA,P_ANTH_ATRA,all_frozen_bundle_passages_absent,Atrahasis I.195-240 creation bundle.
+FB_ANTH_AKK,anthropogony,AKK_OB,ANTH_CLAY_MUD,present,true,SRC_AKK_ATRA,P_ANTH_ATRA,positive_in_bundle,Atrahasis I.195-240 creation bundle.
+FB_ANTH_AKK,anthropogony,AKK_OB,ANTH_POTTER_FORMING,absent,true,SRC_AKK_ATRA,P_ANTH_ATRA,all_frozen_bundle_passages_absent,Atrahasis I.195-240 creation bundle.
+FB_ANTH_AKK,anthropogony,AKK_OB,ANTH_DIVINE_BLOOD_FLESH,present,true,SRC_AKK_ATRA,P_ANTH_ATRA,positive_in_bundle,Atrahasis I.195-240 creation bundle.
+FB_ANTH_AKK,anthropogony,AKK_OB,ANTH_BREATH_ANIMATION,absent,true,SRC_AKK_ATRA,P_ANTH_ATRA,all_frozen_bundle_passages_absent,Atrahasis I.195-240 creation bundle.
+FB_ANTH_AKK,anthropogony,AKK_OB,ANTH_CREATED_FOR_SERVICE,present,true,SRC_AKK_ATRA,P_ANTH_ATRA,positive_in_bundle,Atrahasis I.195-240 creation bundle.
+FB_ANTH_AKK,anthropogony,AKK_OB,ANTH_BODY_SACRIFICE,absent,true,SRC_AKK_ATRA,P_ANTH_ATRA,all_frozen_bundle_passages_absent,Atrahasis I.195-240 creation bundle.
+FB_ANTH_AKK,anthropogony,AKK_OB,ANTH_FIRST_PAIR,absent,true,SRC_AKK_ATRA,P_ANTH_ATRA,all_frozen_bundle_passages_absent,Atrahasis I.195-240 creation bundle.
+FB_ANTH_HEB,anthropogony,HEB_GEN,ANTH_EARTH_DUST,present,true,SRC_HEB_GEN2,P_ANTH_GEN,positive_in_bundle,Genesis 2:7 anthropogony bundle.
+FB_ANTH_HEB,anthropogony,HEB_GEN,ANTH_CLAY_MUD,absent,true,SRC_HEB_GEN2,P_ANTH_GEN,all_frozen_bundle_passages_absent,Genesis 2:7 anthropogony bundle.
+FB_ANTH_HEB,anthropogony,HEB_GEN,ANTH_POTTER_FORMING,absent,true,SRC_HEB_GEN2,P_ANTH_GEN,all_frozen_bundle_passages_absent,Genesis 2:7 anthropogony bundle.
+FB_ANTH_HEB,anthropogony,HEB_GEN,ANTH_DIVINE_BLOOD_FLESH,absent,true,SRC_HEB_GEN2,P_ANTH_GEN,all_frozen_bundle_passages_absent,Genesis 2:7 anthropogony bundle.
+FB_ANTH_HEB,anthropogony,HEB_GEN,ANTH_BREATH_ANIMATION,present,true,SRC_HEB_GEN2,P_ANTH_GEN,positive_in_bundle,Genesis 2:7 anthropogony bundle.
+FB_ANTH_HEB,anthropogony,HEB_GEN,ANTH_CREATED_FOR_SERVICE,absent,true,SRC_HEB_GEN2,P_ANTH_GEN,all_frozen_bundle_passages_absent,Genesis 2:7 anthropogony bundle.
+FB_ANTH_HEB,anthropogony,HEB_GEN,ANTH_BODY_SACRIFICE,absent,true,SRC_HEB_GEN2,P_ANTH_GEN,all_frozen_bundle_passages_absent,Genesis 2:7 anthropogony bundle.
+FB_ANTH_HEB,anthropogony,HEB_GEN,ANTH_FIRST_PAIR,absent,true,SRC_HEB_GEN2,P_ANTH_GEN,all_frozen_bundle_passages_absent,Genesis 2:7 anthropogony bundle.
+FB_ANTH_VED,anthropogony,VED_RV,ANTH_EARTH_DUST,absent,true,SRC_VED_RV,P_ANTH_RV1090,all_frozen_bundle_passages_absent,Rigveda 10.90.6-16 anthropogony/social-order bundle.
+FB_ANTH_VED,anthropogony,VED_RV,ANTH_CLAY_MUD,absent,true,SRC_VED_RV,P_ANTH_RV1090,all_frozen_bundle_passages_absent,Rigveda 10.90.6-16 anthropogony/social-order bundle.
+FB_ANTH_VED,anthropogony,VED_RV,ANTH_POTTER_FORMING,absent,true,SRC_VED_RV,P_ANTH_RV1090,all_frozen_bundle_passages_absent,Rigveda 10.90.6-16 anthropogony/social-order bundle.
+FB_ANTH_VED,anthropogony,VED_RV,ANTH_DIVINE_BLOOD_FLESH,absent,true,SRC_VED_RV,P_ANTH_RV1090,all_frozen_bundle_passages_absent,Rigveda 10.90.6-16 anthropogony/social-order bundle.
+FB_ANTH_VED,anthropogony,VED_RV,ANTH_BREATH_ANIMATION,absent,true,SRC_VED_RV,P_ANTH_RV1090,all_frozen_bundle_passages_absent,Rigveda 10.90.6-16 anthropogony/social-order bundle.
+FB_ANTH_VED,anthropogony,VED_RV,ANTH_CREATED_FOR_SERVICE,absent,true,SRC_VED_RV,P_ANTH_RV1090,all_frozen_bundle_passages_absent,Rigveda 10.90.6-16 anthropogony/social-order bundle.
+FB_ANTH_VED,anthropogony,VED_RV,ANTH_BODY_SACRIFICE,present,true,SRC_VED_RV,P_ANTH_RV1090,positive_in_bundle,Rigveda 10.90.6-16 anthropogony/social-order bundle.
+FB_ANTH_VED,anthropogony,VED_RV,ANTH_FIRST_PAIR,absent,true,SRC_VED_RV,P_ANTH_RV1090,all_frozen_bundle_passages_absent,Rigveda 10.90.6-16 anthropogony/social-order bundle.
+FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,ANTH_EARTH_DUST,not_observed,false,SRC_CHN_CLAY,P_ANTH_NUWA,negative_not_closed_due_bundle_coverage,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.
+FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,ANTH_CLAY_MUD,present,false,SRC_CHN_CLAY,P_ANTH_NUWA,positive_in_bundle,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.
+FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,ANTH_POTTER_FORMING,present,false,SRC_CHN_CLAY,P_ANTH_NUWA,positive_in_bundle,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.
+FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,ANTH_DIVINE_BLOOD_FLESH,not_observed,false,SRC_CHN_CLAY,P_ANTH_NUWA,negative_not_closed_due_bundle_coverage,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.
+FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,ANTH_BREATH_ANIMATION,not_observed,false,SRC_CHN_CLAY,P_ANTH_NUWA,negative_not_closed_due_bundle_coverage,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.
+FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,ANTH_CREATED_FOR_SERVICE,not_observed,false,SRC_CHN_CLAY,P_ANTH_NUWA,negative_not_closed_due_bundle_coverage,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.
+FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,ANTH_BODY_SACRIFICE,not_observed,false,SRC_CHN_CLAY,P_ANTH_NUWA,negative_not_closed_due_bundle_coverage,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.
+FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,ANTH_FIRST_PAIR,not_observed,false,SRC_CHN_CLAY,P_ANTH_NUWA,negative_not_closed_due_bundle_coverage,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.

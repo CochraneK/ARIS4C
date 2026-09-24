@@ -1,0 +1,14 @@
+bundle_id,family,tradition_id,packet_ids,coverage_status,negative_closed,notes
+FB_FLOOD_SUM,flood,SUM_OB,P_FLOOD_SUM,partial_fragmentary,false,"Sumerian Flood Story surviving C/D passages; positives usable, negatives not closed."
+FB_FLOOD_AKK,flood,AKK_MB_SB,P_FLOOD_GILG,closed_frozen_bundle,true,Gilgamesh XI flood account as the frozen Standard Babylonian flood bundle.
+FB_FLOOD_HEB,flood,HEB_GEN,P_FLOOD_GEN,closed_frozen_bundle,true,Genesis 6-9 as the frozen primeval-history flood bundle.
+FB_FLOOD_CHN,flood,CHN_WS_HAN,P_FLOOD_YAO;P_FLOOD_NUWA,closed_selected_bundle,true,Canon of Yao + Huainanzi Nüwa water-catastrophe bundle; absence means absent from this selection only.
+FB_DIV_VED,divine_conflict,VED_RV,P_DIV_RV132,closed_frozen_bundle,true,Rigveda 1.32 conflict bundle.
+FB_DIV_GRC,divine_conflict,GRC_ARCH,P_DIV_HES_SUCC;P_DIV_HES_TYPH,closed_selected_bundle,true,Selected Hesiodic succession-birth + Typhon bundle.
+FB_DIV_UGAR,divine_conflict,UGARIT_LBA,P_DIV_BAAL,closed_frozen_bundle,true,KTU 1.2 IV Baal-Yam bundle; contaminated kingship cell excluded.
+FB_DIV_HUR,divine_conflict,HUR_HIT_LBA,P_DIV_ULLI,partial_philological,false,Ullikummi passage; negatives remain open due reconstruction uncertainty.
+FB_ANTH_SUM,anthropogony,SUM_OB,P_ANTH_ENKI_NINMAH,closed_frozen_bundle,true,Enki and Ninmah 24-37 replacement anthropogony bundle.
+FB_ANTH_AKK,anthropogony,AKK_OB,P_ANTH_ATRA,closed_frozen_bundle,true,Atrahasis I.195-240 creation bundle.
+FB_ANTH_HEB,anthropogony,HEB_GEN,P_ANTH_GEN,closed_frozen_bundle,true,Genesis 2:7 anthropogony bundle.
+FB_ANTH_VED,anthropogony,VED_RV,P_ANTH_RV1090,closed_frozen_bundle,true,Rigveda 10.90.6-16 anthropogony/social-order bundle.
+FB_ANTH_CHN_LATE,anthropogony,CHN_WS_HAN,P_ANTH_NUWA,later_comparator,false,Fengsu Tongyi/Taiping Yulan Nüwa clay-human passage is out-of-window and excluded from confirmatory bundle analysis.

@@ -73,3 +73,10 @@
 - Generated 55 topology-only tradition dyads with same-language / same-branch / same-macrofamily classes; composite dyads are non-quantitative-ready.
 - Explicitly prohibited interpreting Glottolog topology/branch lengths as divergence time or inventing cross-family numeric distances.
 - Project advanced to 83%; negative-evidence closure remains the main similarity gate.
+
+## 2026-09-24 · motif-family bundle layer
+- Added a subordinate frozen source-bundle unit so absence claims are bounded to selected texts rather than universalized to civilizations.
+- Froze 13 flood/divine-conflict/anthropogony bundles; 10 permit bundle-scoped negative coding, while fragmentary/philologically partial bundles keep negatives not_observed.
+- Generated 104 bundle × motif cells and 12 same-family descriptive similarity dyads.
+- Similarity output is bundle-level, descriptive and non-causal; it cannot be used as proof of borrowing or as a civilization leaderboard.
+- Project advanced to 88%; next work is source-selection audit, Egyptian coverage and covariate integration.

@@ -1,21 +1,20 @@
 # Status
 
 ## State
-Active · 83%
+Active · 88%
 
 ## Current stage
-Source-backed matrix + contact layer + released Glottolog ancestry registry frozen; negative-evidence closure remains.
+Motif-family source-bundle layer frozen · restricted descriptive similarity pilot generated.
 
 ## Evidence
-- Dual-AI calibration and v0.1.1 regression PASS.
-- Conservative 11×24 matrix frozen.
-- Four independently sourced historical contact edges frozen separately from transmission hypotheses.
-- Glottolog 5.3 mappings are frozen for all Pilot-0 language layers, including separate Hittite and Hurrian components.
-- 55 tradition dyads now have topology-only ancestry classes; dyads involving the composite HUR_HIT unit are explicitly non-quantitative-ready.
-- No pseudo phylogenetic distances or branch-time claims were introduced.
+- Reliability/v0.1.1, conservative tradition matrix, contact and Glottolog ancestry layers remain frozen.
+- Source-bundle layer prevents selected-text absence from being misreported as civilization-wide absence.
+- 13 bundles across flood/divine-conflict/anthropogony are frozen; 10 have bounded negative closure.
+- Bundle matrix contains 104 cells: 35 present, 52 bundle-scoped absent, 1 uncertain, remainder not_observed.
+- 12 within-family bundle dyads have descriptive Jaccard/simple-matching output; no cross-family or civilization-level ranking is permitted.
 
 ## Next gate
-Close source-bundle negative evidence for the 24 motifs and choose a defensible quantitative ancestry strategy: published dated family phylogenies where available, or preregistered topology-only categorical ancestry. Then run coverage/prevalence and a restricted descriptive similarity pilot.
+Audit restricted bundle similarity for source-selection artifacts, expand/repair partial bundles, add Egyptian bundles where defensible, then integrate ancestry/contact covariates without treating similarity as transmission evidence.
 
 ## Blocker
-No hard blocker. Headline similarity remains gated by negative-evidence closure; quantitative ancestry-vs-contact modeling remains gated by a defensible distance/tree strategy across heterogeneous language families.
+No hard blocker. Partial Sumerian flood and Hurrian-Hittite conflict bundles cannot supply negative evidence, and Egypt currently lacks calibration-family bundles.

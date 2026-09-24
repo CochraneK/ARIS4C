@@ -1,0 +1,13 @@
+family,bundle_a,bundle_b,tradition_a,tradition_b,n_comparable,both_present,a_present_b_absent,a_absent_b_present,both_absent,jaccard_present,simple_matching,analysis_scope
+flood,FB_FLOOD_AKK,FB_FLOOD_HEB,AKK_MB_SB,HEB_GEN,8,6,0,1,1,0.8571428571428571,0.875,descriptive_frozen_bundle_only
+flood,FB_FLOOD_AKK,FB_FLOOD_CHN,AKK_MB_SB,CHN_WS_HAN,8,1,5,0,2,0.16666666666666666,0.375,descriptive_frozen_bundle_only
+flood,FB_FLOOD_HEB,FB_FLOOD_CHN,HEB_GEN,CHN_WS_HAN,8,1,6,0,1,0.14285714285714285,0.25,descriptive_frozen_bundle_only
+divine_conflict,FB_DIV_VED,FB_DIV_GRC,VED_RV,GRC_ARCH,8,1,0,1,6,0.5,0.875,descriptive_frozen_bundle_only
+divine_conflict,FB_DIV_VED,FB_DIV_UGAR,VED_RV,UGARIT_LBA,7,0,1,1,5,0,0.7142857142857143,descriptive_frozen_bundle_only
+divine_conflict,FB_DIV_GRC,FB_DIV_UGAR,GRC_ARCH,UGARIT_LBA,7,0,2,1,4,0,0.5714285714285714,descriptive_frozen_bundle_only
+anthropogony,FB_ANTH_SUM,FB_ANTH_AKK,SUM_OB,AKK_OB,8,2,1,1,4,0.5,0.75,descriptive_frozen_bundle_only
+anthropogony,FB_ANTH_SUM,FB_ANTH_HEB,SUM_OB,HEB_GEN,8,0,3,2,3,0,0.375,descriptive_frozen_bundle_only
+anthropogony,FB_ANTH_SUM,FB_ANTH_VED,SUM_OB,VED_RV,8,0,3,1,4,0,0.5,descriptive_frozen_bundle_only
+anthropogony,FB_ANTH_AKK,FB_ANTH_HEB,AKK_OB,HEB_GEN,8,0,3,2,3,0,0.375,descriptive_frozen_bundle_only
+anthropogony,FB_ANTH_AKK,FB_ANTH_VED,AKK_OB,VED_RV,8,0,3,1,4,0,0.5,descriptive_frozen_bundle_only
+anthropogony,FB_ANTH_HEB,FB_ANTH_VED,HEB_GEN,VED_RV,8,0,2,1,5,0,0.625,descriptive_frozen_bundle_only

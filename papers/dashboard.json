@@ -180,12 +180,12 @@
       "blocker": "Live JPL SBDB object payload acquisition remains the dominant blocker. Calibration/truth tables/QCA solutions remain closed by the frozen readiness rules."
     },
     "023": {
-      "progress": 83,
-      "stage": "Source-backed matrix + contact layer + Glottolog 5.3 ancestry registry frozen",
+      "progress": 88,
+      "stage": "Motif-family source-bundle layer frozen · restricted descriptive similarity pilot generated",
       "activity": "active",
-      "evidence": "v0.1.1 matrix and contact layers remain frozen. Glottolog 5.3 mappings now cover all Pilot-0 language layers, with Hittite/Hurrian separated inside the composite case. All 55 tradition dyads have topology-only ancestry classes; no arbitrary phylogenetic distances are used.",
-      "next_gate": "Close source-bundle negative evidence; choose published dated phylogenies or a preregistered topology-only ancestry model; then run coverage/prevalence and restricted descriptive similarity.",
-      "blocker": "No hard blocker. Headline similarity is still gated by negative-evidence closure; quantitative ancestry-vs-contact modeling needs a defensible distance/tree strategy."
+      "evidence": "Source-bundle layer bounds absence to frozen texts rather than whole civilizations. 13 bundles are frozen across three motif families; 9 permit bounded negative closure. Bundle-level motif matrix and same-family descriptive Jaccard/simple-matching pilot are generated with partial/later bundles excluded from negative inference.",
+      "next_gate": "Audit bundle-similarity source-selection sensitivity; expand partial Sumerian/Hurrian-Hittite bundles or retain missingness; add defensible Egyptian bundles; then integrate ancestry/contact covariates exploratorily.",
+      "blocker": "No hard blocker. Partial Sumerian flood and Hurrian-Hittite conflict bundles cannot supply negatives; Egypt lacks calibration-family bundles."
     }
   },
   "scheduling": {
