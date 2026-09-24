@@ -5,15 +5,15 @@
   "title": "Time Off and Happiness Across Countries: Long-Run Institutional Change, Comparative Well-Being Panels, and Policy-Reform Evidence",
   "short_title": "Time Off × Happiness · Long Run",
   "year": 2026,
-  "status": "expanded-modern-module-locked-historical-synthesis-active",
+  "status": "expanded-modern-and-published-historical-trend-modules-locked-raw-historical-reconstruction-active",
   "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
-  "summary": "Long-run cross-national study of statutory paid annual leave, realized working time and subjective well-being. The project now combines institutional history, a 161-country modern statutory-leave × annual-Life-Ladder panel, a 130-country 1870–2023 working-hours source, postwar WDH/Eurobarometer/WVS coverage, and a separately frozen causal Pilot-0. The modern broad-panel module is interpretation-locked: no stable positive or negative aggregate response is established, with statutory-leave estimates highly sensitive to legal-vs-database timing.",
+  "summary": "Long-run cross-national study of statutory paid annual leave, realized working time and subjective well-being. Pilot-0 remains frozen. The expanded modern annual module is interpretation-locked, and the complete published WDH Table-2 historical trend layer is now materialized and aligned to same-window working-hours trajectories. Neither layer establishes a stable one-direction aggregate relationship; raw yearly historical outcomes and national legal chronology remain active reconstruction targets.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder gates frozen and executed; WHR2024 source refresh, complete bounded 11-jump legal audit, independently frozen Israel holdout, bilingual manuscripts, four manuscript figures/tables, SIR double-anonymous DOCX/PDF package, anonymous replication bundle, final visual/identity QA, and one-page portfolio explainer completed; scope reopened 2026-09-24 after adequacy audit to add long-run institutional history, post-1945 multi-source well-being panels, broad country coverage and a full statistical synthesis",
-    "version": "v0.10.0"
+    "version": "v0.11.0"
   },
   "links": {
     "paper_en": "manuscript/WORKING_PAPER_EN.md",
@@ -39,7 +39,11 @@
     "legal_timing_audit": "process/LEGAL_WB_TIMING_AUDIT.md",
     "legal_time_falsification": "process/LEGAL_TIME_ALIGNED_PANEL_FALSIFICATION.md",
     "longrun_hours": "process/WORKING_HOURS_LONGRUN_COVERAGE_GATE.md",
-    "wdh_variable_coverage": "process/WDH_VARIABLE_COVERAGE_GATE.md"
+    "wdh_variable_coverage": "process/WDH_VARIABLE_COVERAGE_GATE.md",
+    "historical_trend_lock": "process/HISTORICAL_TREND_INTERPRETATION_LOCK.md",
+    "wdh_table2_audit": "process/WDH_TABLE2_MATERIALIZATION_AUDIT.md",
+    "historical_hours_wellbeing_bridge": "process/HISTORICAL_HAPPINESS_HOURS_TREND_BRIDGE_FULL.md",
+    "a0_a1_decomposition": "process/A0_A1_SAMPLE_CONTROL_DECOMPOSITION.md"
   },
   "tags": [
     "ARIS",
@@ -132,7 +136,7 @@
       "submission_snapshot": "SIR package preserved but no longer treated as the complete ARIS4C019 final manuscript"
     },
     "historical_expansion": {
-      "status": "modern-module-locked-historical-numeric-acquisition-and-synthesis-pending",
+      "status": "published-wdh-trend-module-locked-raw-yearly-acquisition-and-legal-synthesis-pending",
       "exposure_target": "early-20th-century/1936-2026 legal and working-time history",
       "wellbeing_target": "1945-present multi-source subjective well-being",
       "modern_country_target": 193,
@@ -172,7 +176,13 @@
         "published_long_series": 200,
         "published_nations": 70,
         "published_period": "1945-2021",
-        "binary_acquisition": "pending-current-runtime"
+        "binary_acquisition": "pending-current-runtime",
+        "published_table2_display_rows": 200,
+        "published_table2_exact_unique_rows": 199,
+        "published_table2_hours_matched_rows": 190,
+        "published_table2_hours_matched_countries": 46,
+        "published_table2_source_duplicate": "UK ls4 1990-2020 appears twice in HTML table; verbatim 200-row transcription preserves it, analyses deduplicate it",
+        "raw_yearly_observations": "pending-current-runtime-binary-transfer"
       },
       "statistical_freeze": "process/EXPANDED_STATISTICAL_FREEZE.md",
       "working_hours": {
@@ -189,7 +199,17 @@
         "earliest_start": 1946,
         "numeric_observations": "pending"
       },
-      "modern_module_lock": "process/EXPANDED_MODERN_INTERPRETATION_LOCK.md"
+      "modern_module_lock": "process/EXPANDED_MODERN_INTERPRETATION_LOCK.md",
+      "historical_trend_bridge": {
+        "status": "complete-interpretation-locked",
+        "full_unique_series_pearson": 0.10091233236216399,
+        "full_unique_series_spearman": 0.09448913272032905,
+        "one_longest_series_per_country_n": 46,
+        "one_longest_series_per_country_pearson": -0.056609393797385055,
+        "one_longest_series_per_country_spearman": -0.044735143289211445,
+        "interpretation": "no stable monotonic ecological relationship; earlier pre-1990-start negative association is subset-selection sensitive and superseded for overall inference",
+        "lock": "process/HISTORICAL_TREND_INTERPRETATION_LOCK.md"
+      }
     },
     "expanded_modern": {
       "status": "complete-interpretation-locked",
@@ -237,7 +257,24 @@
         "interpretation": "sign flips under legal-time realignment; neither sign is causal"
       },
       "nonlinearity": "no clear RCS dose-response; prespecified 12/20/26-day nonlinear term and contrasts are imprecise",
-      "interpretation": "Large-sample modern panel evidence does not establish a stable positive or negative aggregate Life Ladder response to statutory paid annual leave or annual working hours. Timing and measurement are central."
+      "interpretation": "Large-sample modern panel evidence does not establish a stable positive or negative aggregate Life Ladder response to statutory paid annual leave or annual working hours. Timing and measurement are central.",
+      "corrected_hours_A0": {
+        "country_years": 2015,
+        "countries": 130,
+        "taiwan_join_fix": true
+      },
+      "corrected_joint_A0": {
+        "country_years": 1663,
+        "countries": 129
+      },
+      "independent_validation": {
+        "implementation": "code/validate_expanded_modern_panel_statsmodels.py",
+        "workflow": ".github/workflows/validate-019-expanded-panel.yml",
+        "run_id": 35977496016,
+        "job_id": 107561331580,
+        "status": "pending-platform-runner",
+        "observation": "workflow failed before any job step executed; steps=null; do not call PASS"
+      }
     }
   }
 }
