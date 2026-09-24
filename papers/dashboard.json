@@ -172,12 +172,12 @@
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
-      "progress": 72,
-      "stage": "Pilot-1 small-body mission anchors coded · remaining boundary evidence + SBDB gate",
+      "progress": 79,
+      "stage": "Composition evidence closed 50/50 · M2 condition-family freeze + numeric acquisition gate",
       "activity": "active",
-      "evidence": "Four blinded evidence batches now cover all planet/dwarf/satellite cases plus Vesta, Eros, Bennu, Ryugu and Itokawa. evidence_state_v0.5 has 157/300 non-pending cells: composition 39/50, atmosphere 25/50, differentiation 29/50, geology 24/50, present/persistent ocean 15/50, tidal heating 25/50. CARBONACEOUS_HYDRATED was added before coding Bennu/Ryugu so parent-body aqueous alteration is not conflated with rock-ice worlds or current oceans. All 50 rows remain UNEXPOSED_TO_QCA_RESULT.",
-      "next_gate": "Code the remaining 11 small/boundary cases from peer-reviewed or mission-grade evidence; continue source-conflict adjudication; capture the live 16-case JPL SBDB numeric snapshot and replace five dwarf-planet derived semimajor axes before calibration freeze.",
-      "blocker": "Partial numeric-acquisition blocker: current execution surfaces still cannot retrieve live JPL SBDB object payloads. Evidence coding proceeds independently; affected raw numeric rows remain explicit pending."
+      "evidence": "Five blinded evidence batches cover all 50 cases. evidence_state_v0.6 has 188/300 non-pending cells and composition evidence-state coverage is 50/50 without forced certainty. Current canonical source registry resolves all evidence keys; source-conflict audit v0.2 contains four adjudicated cases and no unresolved conflict requiring NA_SOURCE_CONFLICT. All cases remain UNEXPOSED_TO_QCA_RESULT.",
+      "next_gate": "Freeze primary M2 condition-family representatives before calibration; use that freeze to target only necessary evidence gaps. In parallel, capture the live 16-case JPL SBDB numeric snapshot and replace five dwarf-planet derived semimajor axes. Calibration remains closed until those gates pass.",
+      "blocker": "Partial numeric-acquisition blocker: live JPL SBDB object payloads remain inaccessible in the current execution surfaces. Methodological freezing and targeted evidence work can continue without inspecting QCA results."
     },
     "023": {
       "progress": 70,
