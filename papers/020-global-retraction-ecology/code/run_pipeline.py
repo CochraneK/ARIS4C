@@ -69,6 +69,15 @@ def main()->int:
         ]
         run([py,str(CODE/"summarize_openalex_match.py"),*shard_files],
             "Summarize full OpenAlex match")
+        run([py,str(CODE/"build_openalex_concordance.py"),*shard_files],
+            "Build RWDB→OpenAlex retraction concordance")
+        openalex_retracted=ROOT/"data/interim/openalex_is_retracted_core.jsonl"
+        run([py,str(CODE/"snapshot_openalex_retracted.py"),
+             "--out",str(openalex_retracted)],
+            "Snapshot OpenAlex core is_retracted=true works")
+        run([py,str(CODE/"compare_bidirectional_concordance.py"),
+             str(args.rwdb),str(openalex_retracted)],
+            "Build bidirectional RWDB↔OpenAlex DOI concordance")
         run([py,str(CODE/"openalex_work_type_qa.py"),
              str(ROOT/"data/derived/work_table.jsonl"),*shard_files],
             "Build OpenAlex work-type QA sample")
