@@ -1,0 +1,115 @@
+country,region,ilo_2012_leave_days,life_ladder_2012,log_gdp_per_capita_2012
+Algeria,Africa,21,5.605,9.33
+Angola,Africa,18,4.36,8.989
+Benin,Africa,20,3.193,7.894
+Botswana,Africa,13,4.836,9.471
+Burkina Faso,Africa,21,3.955,7.482
+Cameroon,Africa,15,4.245,8.123
+Chad,Africa,20,4.033,7.478
+Comoros,Africa,25,3.956,8.044
+Egypt,Africa,18,4.204,9.238
+Ethiopia,Africa,12,4.561,7.252
+Gabon,Africa,20,3.972,9.573
+Ghana,Africa,13,5.057,8.39
+Guinea,Africa,21,3.652,7.589
+Kenya,Africa,18,4.547,8.269
+Libya,Africa,25,5.754,10.38
+Madagascar,Africa,25,3.551,7.311
+Malawi,Africa,15,4.279,7.221
+Mali,Africa,21,4.313,7.572
+Mauritania,Africa,15,4.673,8.494
+Morocco,Africa,18,4.97,8.877
+Niger,Africa,21,3.798,6.98
+Nigeria,Africa,5,5.493,8.526
+Rwanda,Africa,18,3.333,7.401
+Senegal,Africa,20,3.669,7.946
+South Africa,Africa,15,5.134,9.537
+Sudan,Africa,17,4.55,8.458
+United Republic of Tanzania,Africa,20,4.007,7.647
+Tunisia,Africa,12,4.464,9.252
+Uganda,Africa,15,4.309,7.608
+Zambia,Africa,17,5.013,8.094
+Zimbabwe,Africa,21,4.955,7.745
+Afghanistan,Asia and Pacific,17,3.783,7.661
+Australia,Asia and Pacific,20,7.196,10.744
+Bangladesh,Asia and Pacific,10,4.724,8.231
+Cambodia,Asia and Pacific,15,3.899,8.013
+China,Asia and Pacific,5,5.095,9.247
+India,Asia and Pacific,0,4.72,8.423
+Indonesia,Asia and Pacific,12,5.368,9.107
+Iran,Asia and Pacific,25,4.609,9.585
+Japan,Asia and Pacific,8,5.968,10.565
+Republic of Korea,Asia and Pacific,15,6.003,10.493
+Malaysia,Asia and Pacific,8,5.914,9.985
+Mongolia,Asia and Pacific,15,4.885,9.168
+Myanmar,Asia and Pacific,7,4.439,8.067
+Nepal,Asia and Pacific,12,4.233,7.968
+New Zealand,Asia and Pacific,20,7.25,10.565
+Pakistan,Asia and Pacific,0,5.132,8.331
+Philippines,Asia and Pacific,0,5.002,8.748
+Sri Lanka,Asia and Pacific,0,4.225,9.282
+Thailand,Asia and Pacific,6,6.3,9.624
+Vietnam,Asia and Pacific,10,5.535,8.847
+Armenia,Europe and CIS,20,4.32,9.239
+Austria,Europe and CIS,25,7.401,10.884
+Belgium,Europe and CIS,20,6.935,10.783
+Bulgaria,Europe and CIS,20,4.222,9.848
+Croatia,Europe and CIS,20,6.028,10.092
+Denmark,Europe and CIS,25,7.52,10.844
+Estonia,Europe and CIS,20,5.364,10.275
+Finland,Europe and CIS,20,7.42,10.735
+France,Europe and CIS,25,6.649,10.664
+Germany,Europe and CIS,20,6.702,10.817
+Hungary,Europe and CIS,20,4.683,10.119
+Iceland,Europe and CIS,24,7.591,10.788
+Ireland,Europe and CIS,20,6.965,10.89
+Italy,Europe and CIS,20,5.839,10.633
+Latvia,Europe and CIS,20,5.125,10.085
+Lithuania,Europe and CIS,20,5.771,10.216
+Luxembourg,Europe and CIS,25,6.964,11.627
+Malta,Europe and CIS,24,5.963,10.433
+Moldova,Europe and CIS,20,5.996,9.091
+Netherlands,Europe and CIS,20,7.471,10.856
+Norway,Europe and CIS,21,7.678,11.041
+Portugal,Europe and CIS,22,4.994,10.314
+Romania,Europe and CIS,20,5.167,9.997
+Russian Federation,Europe and CIS,20,5.621,10.163
+Serbia,Europe and CIS,20,5.155,9.609
+Slovakia,Europe and CIS,20,5.911,10.188
+Slovenia,Europe and CIS,20,6.063,10.392
+Spain,Europe and CIS,21,6.291,10.485
+Sweden,Europe and CIS,25,7.56,10.785
+Switzerland,Europe and CIS,20,7.776,11.094
+Turkey,Europe and CIS,12,5.309,10.018
+United Kingdom,Europe and CIS,28,6.881,10.656
+Argentina,Americas and Caribbean,10,6.468,10.091
+Bolivia,Americas and Caribbean,15,6.019,8.847
+Brazil,Americas and Caribbean,21,6.66,9.644
+Canada,Americas and Caribbean,10,7.415,10.739
+Chile,Americas and Caribbean,15,6.599,10.063
+Colombia,Americas and Caribbean,10,6.375,9.468
+Costa Rica,Americas and Caribbean,10,7.272,9.788
+Dominican Republic,Americas and Caribbean,12,4.753,9.479
+Ecuador,Americas and Caribbean,10,5.961,9.343
+El Salvador,Americas and Caribbean,15,5.934,8.968
+Guatemala,Americas and Caribbean,13,5.856,8.935
+Haiti,Americas and Caribbean,11,4.413,8.015
+Honduras,Americas and Caribbean,8,4.602,8.513
+Mexico,Americas and Caribbean,6,7.32,9.844
+Nicaragua,Americas and Caribbean,10,5.448,8.526
+Panama,Americas and Caribbean,21,6.86,10.174
+Paraguay,Americas and Caribbean,10,5.82,9.339
+Peru,Americas and Caribbean,21,5.825,9.313
+United States,Americas and Caribbean,0,7.026,10.929
+Uruguay,Americas and Caribbean,20,6.45,9.96
+Venezuela,Americas and Caribbean,13,7.067,9.862
+Bahrain,Middle East (Arab States),21,5.027,10.775
+Iraq,Middle East (Arab States),17,4.66,9.133
+Jordan,Middle East (Arab States),14,5.132,9.393
+Kuwait,Middle East (Arab States),25,6.221,11.012
+Lebanon,Middle East (Arab States),15,4.573,9.862
+Qatar,Middle East (Arab States),15,6.611,11.617
+Saudi Arabia,Middle East (Arab States),21,6.396,10.737
+Syria,Middle East (Arab States),24,3.164,8.578
+United Arab Emirates,Middle East (Arab States),30,7.218,11.001
+Yemen,Middle East (Arab States),30,4.061,8.179
