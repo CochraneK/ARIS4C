@@ -156,12 +156,12 @@
       "blocker": "No design blocker. Raw WDH workbook/binary or registered survey transfer remains an acquisition dependency; GitHub Actions also still fails pre-runner, so independent statsmodels CI is pending rather than passed."
     },
     "020": {
-      "progress": 52,
-      "stage": "Executable event-to-work / concordance package · networked confirmatory gate",
+      "progress": 55,
+      "stage": "Static execution contract PASS · networked confirmatory gate",
       "activity": "active",
-      "evidence": "Frozen full-RWDB audit + bilingual working draft + 3 figures/2 tables. Production 0/1/N OpenAlex matching, RWDB→OpenAlex and bidirectional retraction-status concordance, anomalous work-type QA, grouped denominators, aggregated censoring-aware hazard, multi-label Reason ecology, mass-event sensitivity and citation-afterlife acquisition are all scripted. Closest 2026 global-incidence competitor is now explicitly treated as prior art; 020 novelty is repositioned to event-spine reconstruction + concordance + Reason ecology + mass-event sensitivity + true censoring + citation afterlife.",
-      "next_gate": "Run RUNBOOK.md on a networked executor: shards 0–3, bidirectional concordance snapshot, work-type QA, year×field/type denominators, hazard panel and observed Reason reconciliation; then freeze eligible types and execute confirmatory models.",
-      "blocker": "No scientific-design blocker. Current execution blocker is network availability: Firecrawl credits exhausted and private-repo GitHub Actions fail before job steps. The remaining chain is fully scripted/resumable."
+      "evidence": "Frozen full-RWDB audit, bilingual drafts, 3 figures/2 tables, candidate-safe OpenAlex matching, bidirectional retraction concordance, work-type QA, grouped denominators, aggregated censoring-aware hazard, Reason ecology, mass-event sensitivity and citation-afterlife are scripted. Static package QA PASS: all 21 runner-referenced scripts exist, CLI contracts align, current OpenAlex API assumptions were re-verified, public surfaces were repaired, and an offline compile/--help/synthetic-test smoke gate now runs before the pipeline.",
+      "next_gate": "Obtain any normal networked execution surface and run RUNBOOK.md. First require PASS_OFFLINE_SMOKE, then candidate-safe OpenAlex shards 0–3, bidirectional concordance, anomalous work-type QA, year×field/type denominators, hazard panel and observed Reason reconciliation.",
+      "blocker": "No scientific-design or static-code-contract blocker. Actual execution remains blocked by the current surfaces: Firecrawl credits are exhausted and private-repo GitHub Actions fail before job steps start. No paid Railway runner was created."
     },
     "021": {
       "progress": 38,
