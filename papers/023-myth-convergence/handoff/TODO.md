@@ -12,9 +12,9 @@
 - [x] Freeze 24-motif calibration ontology v0.1.
 - [x] Generate byte-identical coder-A / coder-B packet templates.
 - [x] Add dependency-free reliability scorer.
-- [ ] Resolve exact scholarly passage locator for Atrahasis anthropogony.
-- [ ] QA all 15 passage locators and licensing/access notes.
-- [ ] Obtain genuinely independent second coding.
+- [x] Resolve Atrahasis anthropogony locator.
+- [x] QA all 15 passage locators and preserve chronology cautions.
+- [ ] Obtain genuinely independent coder-A/B responses.
 - [ ] Quantify agreement and disagreement taxonomy.
 - [ ] Revise/freeze full ontology v0.1 after reliability review.
 - [ ] Build first source-backed tradition × motif matrix.

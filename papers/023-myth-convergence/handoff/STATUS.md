@@ -1,21 +1,20 @@
 # Status
 
 ## State
-Active · 36%
+Block · 38%
 
 ## Current stage
-Calibration ontology v0.1 frozen; blinded 120-judgment packet and reliability scorer generated.
+Calibration v0.1 packet QA complete; independent dual-coding gate reached.
 
 ## Evidence
-- 24 motifs across flood, divine-conflict and anthropogony now have explicit inclusion/exclusion rules.
-- Previously conflated concepts are split: destructive inundation vs exterminatory deluge; storm-vs-serpent vs storm-vs-sea; earth/dust vs clay/mud vs potter-forming.
-- Witness scope is now explicit: in-window / inherited-or-transmitted / later-comparator / uncertain.
-- 15 source passages generate 120 family-specific judgments in byte-identical coder-A/B templates.
-- Dependency-free reliability code calculates four-state raw agreement, Cohen kappa and Gwet AC1 plus a binary present/absent subset.
-- One item (Atrahasis anthropogony) is deliberately marked not coder-ready until exact scholarly edition lines are supplied.
+- 24 motifs across flood, divine-conflict and anthropogony have frozen inclusion/exclusion rules.
+- 15 passages produce 120 family-specific judgments in byte-identical A/B templates.
+- All passage units now have usable locators; Atrahasis is frozen at I.195-240 with key material at I.210-226.
+- Packet QA preserves philological cautions rather than treating locator precision as historical certainty.
+- Reliability scorer is implemented for raw agreement, Cohen kappa, Gwet AC1 and confusion matrices.
 
 ## Next gate
-Resolve the Atrahasis passage locator, perform an internal packet QA, then obtain genuinely independent coder-B responses. Reliability results determine whether ontology v0.1 survives or is revised.
+Obtain genuinely independent coder-A/B responses, score reliability, inspect disagreement taxonomy, and revise/freeze ontology v0.1 accordingly.
 
 ## Blocker
-Independent coder B is required for the actual reliability gate. Packet construction and QA are not blocked.
+Formal progress now requires at least one genuinely independent second coder. The controller must not fill both A and B and call that reliability.
