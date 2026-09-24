@@ -1,8 +1,8 @@
 # ARIS4C019 · Process status
 
-- Stage: **Modern + published historical trends LOCKED · ILO convention history CLOSED · raw annual WDH/national-law reconstruction active**
+- Stage: **Modern + historical trend layers LOCKED · century-scale legal spine active · historical reform registry v2 frozen**
 - Activity: **active**
-- Progress: **80%**
+- Progress: **84%**
 - Scope correction remains in force: the former 98% state described only the narrow Pilot-0 publication package, not the full original research question.
 
 ## Frozen sub-study
@@ -98,3 +98,40 @@ Existing Pilot-0 PDF Actions pre-runner failure remains an engineering issue onl
 - **18 countries** appear in both registers.
 - Mean C052→C132 ratification gap among overlaps: **27.8 years**; median **26.4 years**.
 - C132 declaration units are preserved without unsafe conversion.
+
+
+## Century-scale legal reconstruction milestone
+
+- ILO 2026 historical review adds a pre-war benchmark: by **1934 only 12 countries worldwide** had general statutory paid-annual-leave schemes covering all workers; C052 (1936) then set a six-working-day international minimum and C132 (1970) raised the benchmark to at least three working weeks.
+- Historical legal spine is frozen in `process/HISTORICAL_PAID_LEAVE_SPINE.md`.
+- ILO/NATLEX 2000 selected legal snapshot: **41 countries** with recently adopted/amended general annual-leave laws; 25 >=3 weeks, 15 <3 weeks, one unspecified.
+- ILO/TRAVAIL 2012 broad cross-section: **155 countries/territories**; 147 exact standardized values, seven explicit no-universal-minimum cases, one interval-only case.
+- ILO 2012 × World Bank 2012 QA: 143 exact numeric pairs, Pearson **0.832**, mean absolute difference **2.17 days**; 22 pairs differ by >=5 days and are treated as legal/source QA cases rather than averaged silently.
+
+## Historical reform registry v2
+
+Outcome-blind primary-law adjudication now retains:
+- **Bulgaria 2001** — A-tier, 14 working days -> minimum 20 working days.
+- **Slovakia 2002** — A-tier, 3 weeks -> at least 4 weeks.
+- **Namibia 2008** — B-tier broad-code reform, 24 consecutive days -> 4 consecutive weeks / explicit 20 working days for a five-day week; effective **2008-11-01**.
+- **Great Britain 2007/2009** — B-tier staged increase, explicitly public-holiday-linked.
+
+Rejected as non-reforms/source conflicts:
+- Nicaragua;
+- Algeria;
+- Mali.
+
+WHR event-window feasibility is inadequate for Bulgaria/Slovakia and sparse for Namibia/UK, so these events must use reconstructed WDH/EVS/WVS historical outcomes rather than being forced into WHR.
+
+## 2012 statutory-leave x Life Ladder cross-section
+
+- matched exact legal-value + WHR2012 countries: **114**
+- Pearson: **+0.079**
+- Spearman: **+0.085**
+- bivariate OLS per +5 leave days: **+0.073**, 95% CI **[-0.100, +0.246]**
+- log-GDP + ILO-region adjusted: **+0.028**, 95% CI **[-0.103, +0.160]**
+- quadratic term crosses zero; region-specific slopes disagree and all cross zero.
+- leave-one-country-out adjusted beta range: **+0.006 to +0.062**; no single country hides a strong effect.
+- excluding Europe: **-0.015**, 95% CI **[-0.153, +0.124]**
+
+Interpretation: the broad historical legal cross-section also fails to reveal a robust aggregate linear/nonlinear statutory-leave -> Life Ladder relationship.
