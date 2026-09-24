@@ -180,12 +180,12 @@
       "blocker": "Single dominant blocker: live JPL SBDB object payload acquisition for the 16 small/boundary cases. No calibration/truth table/QCA solution may be opened before readiness passes."
     },
     "023": {
-      "progress": 56,
-      "stage": "v0.2 ARIS · G2/G3 PASS · G4 ontology audit complete; bundle construction active",
-      "activity": "active",
-      "evidence": "The provisional 56-motif set was audited into 60 analysis motifs + 3 derived diagnostics using orthogonal semantic axes. Primary confirmatory scope is 29 motifs in flood/anthropogony/divine-conflict; four additional families are secondary and coverage-gated. No expanded similarity has been computed.",
-      "next_gate": "Build 16-case × family source-coverage manifest; freeze primary/alternate bundles; generate blind expanded coder packets; then enter G5 clean independent validation.",
-      "blocker": "No immediate blocker. G5 independent human/domain-informed validation remains mandatory."
+      "progress": 65,
+      "stage": "v0.2 ARIS · G2/G3/G4 PASS · G5 independent validation gate",
+      "activity": "block",
+      "evidence": "G4 PASS: 29 primary motifs, 20 frozen source bundles, 48-row coverage manifest and 190-judgment blinded H/M validation packet. Pre-coding source coverage yields only 12/16 primary cases with >=1 bundle and max family dyads 15/10/28; Original-Research gate was not relaxed.",
+      "next_gate": "Independent human/domain-informed H + fresh external-model M complete the frozen 190-row packet; freeze, score reliability, domain-audit high-risk disagreements, adjudicate, and issue G5 PASS/FAIL.",
+      "blocker": "External independence: current controller cannot provide the required human/domain-informed coder or impersonate an independent external model."
     }
   },
   "scheduling": {

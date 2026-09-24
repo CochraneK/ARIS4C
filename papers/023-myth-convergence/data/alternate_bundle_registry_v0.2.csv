@@ -1,0 +1,9 @@
+alternate_bundle_id,primary_bundle_id,family,case_id,sensitivity_type,definition,status
+ALT_FLOOD_HEB_SOURCE_LAYERS,B_FLOOD_HEB_GEN,flood,HEB_GEN,source-critical decomposition,"Predeclare source-critical layer decomposition using published Genesis scholarship; exact verse allocation must be taken from the chosen scholarly model, not invented ad hoc.",G7_sensitivity_only
+ALT_ANTH_HEB_GEN1,B_ANTH_HEB_GEN,anthropogony,HEB_GEN,single passage,Genesis 1:26-28 only.,G7_sensitivity_only
+ALT_ANTH_HEB_GEN2,B_ANTH_HEB_GEN,anthropogony,HEB_GEN,single passage,Genesis 2:7 only.,G7_sensitivity_only
+ALT_DIV_AKK_SB_IV,B_DIV_AKK_SB,divine_conflict,AKK_MB_SB,narrow conflict,Enuma Elish Tablet IV conflict core only.,G7_sensitivity_only
+ALT_DIV_HIT_A,B_DIV_HIT_LBA,divine_conflict,HIT_LBA,version split,Illuyanka Version A only.,G7_sensitivity_only
+ALT_DIV_HIT_B,B_DIV_HIT_LBA,divine_conflict,HIT_LBA,version split,Illuyanka Version B only.,G7_sensitivity_only
+ALT_DIV_GRC_SUCCESSION,B_DIV_GRC_ARCH,divine_conflict,GRC_ARCH,passage split,Theogony 453-506 + 617-735 succession/Titanomachy sequence.,G7_sensitivity_only
+ALT_DIV_GRC_TYPHON,B_DIV_GRC_ARCH,divine_conflict,GRC_ARCH,passage split,Theogony 820-868 Typhon sequence.,G7_sensitivity_only

@@ -52,7 +52,13 @@
     "gate_register": "data/gate_register_v0.2.csv",
     "ontology_v0_2_draft": "data/motifs_v0.2_draft.csv",
     "ontology_audit": "data/ontology_audit_v0.2.csv",
-    "ontology_architecture": "process/ONTOLOGY_ARCHITECTURE_v0.2.md"
+    "ontology_architecture": "process/ONTOLOGY_ARCHITECTURE_v0.2.md",
+    "bundle_registry": "data/bundle_registry_v0.2.csv",
+    "bundle_coverage_manifest": "data/bundle_coverage_manifest_v0.2.csv",
+    "alternate_bundle_registry": "data/alternate_bundle_registry_v0.2.csv",
+    "validation_packet": "data/validation_v0.2/coder_packet_v0.2_template.csv",
+    "g4_gate": "process/G4_BUNDLE_PACKET_FREEZE.md",
+    "g5_validation_protocol": "process/G5_VALIDATION_PROTOCOL_v0.2.md"
   },
   "tags": [
     "ARIS4C",
@@ -95,7 +101,7 @@
     "finish_ready": false
   },
   "v0_2_submission_grade": {
-    "progress": 56,
+    "progress": 65,
     "article_route": "methods + empirical demonstration",
     "original_research_upgrade": "conditional",
     "gates": [
@@ -124,6 +130,23 @@
       "primary_confirmatory_motifs": 29,
       "secondary_generalization_motifs": 31,
       "state": "draft-frozen-for-source-coverage"
+    },
+    "g4_corpus_bundle_packet": "PASS",
+    "primary_empirical_scope": {
+      "families": 3,
+      "motifs": 29,
+      "bundles": 20,
+      "validation_judgments": 190
+    },
+    "model_gate_forecast": {
+      "primary_cases_with_any_bundle": 12,
+      "total_primary_cases": 16,
+      "max_dyads": {
+        "flood": 15,
+        "anthropogony": 10,
+        "divine_conflict": 28
+      },
+      "original_research_upgrade_forecast": "not_met_pre_coding"
     }
   }
 }

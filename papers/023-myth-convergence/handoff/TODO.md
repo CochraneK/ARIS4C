@@ -1,62 +1,55 @@
 # TODO · v0.2 submission-grade ARIS run
 
-## G0–G1 · frozen
-- [x] Preserve v0.1.1 Pilot-0.
-- [x] Submission-grade denominator reset.
-- [x] Paper plan / claims / preregistration freeze.
+## G0–G4 · PASS
+- [x] G0 preserve v0.1.1 Pilot-0.
+- [x] G1 paper-plan / claims / preregistration freeze.
+- [x] G2 systematic literature PASS.
+- [x] G3 Tier-A case-universe PASS.
+- [x] G4 audit ontology: 60 analysis motifs + 3 derived diagnostics.
+- [x] G4 freeze v0.2 primary empirical scope to 29 motifs / 3 families.
+- [x] G4 freeze 20 primary/control source bundles.
+- [x] G4 freeze 48-row case × primary-family coverage manifest.
+- [x] G4 freeze alternate-bundle sensitivity registry.
+- [x] G4 freeze 190-row blind validation packet.
+- [x] G4 freeze identical blank human/external-model coder files.
+- [x] G4 freeze source-packet + G5 validation contracts and scorer/validator.
+- [x] G4 freeze pre-result model-gate forecast; do not relax Original-Research threshold.
 
-## G2 · systematic literature
-- [x] Screen >=50 records (current: 52).
-- [x] Retain >=25 high-relevance/source-infrastructure records (current: 39).
-- [x] Include skeptical/critical method clusters.
-- [x] Exclude/document tertiary, duplicate and noncanonical records.
-- [x] Backward/forward citation pass on core methods/comparison papers.
-- [x] Normalize core bibliography metadata to verified DOI/publisher records where available.
-- [x] Freeze claim-to-source evidence map.
-- [x] Freeze final search/tool log and access-limit caveats.
+**G4 PASS.**
 
-**G2 PASS.**
+## G5 · independent validation — BLOCK
+- [ ] Human/domain-informed coder H completes 190 judgments in `data/validation_v0.2/coder_H_human.csv`.
+- [ ] Fresh independent external-model coder M completes 190 judgments in `data/validation_v0.2/coder_M_external_model.csv`.
+- [ ] Freeze both raw files before comparison.
+- [ ] Run `code/validate_validation_v0.2.py` on H/M.
+- [ ] Run `code/score_validation_v0.2.py`.
+- [ ] Produce disagreement taxonomy.
+- [ ] Domain-source audit all source-language / reconstruction / translation-critical disagreements.
+- [ ] Adjudicate after raw files freeze.
+- [ ] PASS/FAIL G5 without lowering thresholds.
 
-## G3 · case universe
-- [x] Tier A/B/C case rules.
-- [x] 17 candidate tradition-time units seeded.
-- [x] 14 case/source rows audited in source registry.
-- [x] Freeze bounded omitted-case search log for the ancient-text observation design.
-- [x] Split Hurrian vs Hittite case/source layers in the v0.2 universe.
-- [x] Lock canonical source/edition infrastructure for every Tier-A case; exact translation bundles move to G4.
-- [x] Freeze Egyptian case strata without manufacturing a unified narrative; exact motif-family bundles move to G4.
-- [x] Freeze every Tier-A inclusion/exclusion before expanded similarity.
+## G6 · mechanism inference
+- [ ] Reassess model activation gate using validated coverage.
+- [ ] If preregistered gate still fails, formally document no-model decision; do not fit underpowered headline regression.
+- [ ] If a valid amended gate is independently justified before results, follow versioned amendment only.
+- [ ] Descriptive validated similarity + process tracing remain allowed under Methods route.
 
-**G3 PASS.**
-
-## G4 · corpus/ontology
-- [x] Source-bundle and translation sensitivity rules frozen.
-- [x] Re-review old 56-motif ontology; freeze v0.2 draft as 60 analysis motifs + 3 derived diagnostics.
-- [ ] Build 16-case × family coverage manifest.
-- [ ] Primary + alternate bundle construction.
-- [ ] Expanded coverage matrix.
-- [ ] Frozen blind coder packets.
-
-## G5 · validation
-- [ ] Human/domain-informed clean validation subset.
-- [ ] Clean external-model audit subset.
-- [ ] Reliability/adjudication gate.
-
-## G6–G7 · analysis + robustness
-- [x] Analysis and robustness plans frozen.
-- [ ] Independent ancestry/contact/time/geography/environment matrices.
-- [ ] Model activation gate.
-- [ ] Primary dyadic model + permutation robustness.
-- [ ] Full sensitivity families.
+## G7 · robustness
+- [ ] Primary vs alternate bundles.
+- [ ] translation sensitivity.
+- [ ] missingness / ontology / metric / leave-case-out sensitivities.
+- [ ] dependence-cluster sensitivity.
 
 ## G8 · adversarial review
-- [ ] Reviewers A–D.
-- [ ] Revision/re-analysis.
-- [ ] Re-review until no critical issue.
+- [ ] Reviewer A ancient texts.
+- [ ] Reviewer B cultural evolution/phylogenetics.
+- [ ] Reviewer C statistics/network/causal inference.
+- [ ] Reviewer D hostile reproduction.
+- [ ] revision + re-review.
 
 ## G9 · manuscript
-- [ ] v0.2 rewrite.
-- [ ] final evidence-derived figures/tables.
+- [ ] rewrite v0.2 around validated evidence.
+- [ ] evidence-derived figures/tables.
 - [ ] improvement loop.
 - [ ] target-journal fit.
-- [ ] final delivery only after scientific gates pass.
+- [ ] final bilingual publication only after scientific gates pass.

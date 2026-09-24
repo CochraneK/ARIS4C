@@ -2,47 +2,57 @@
 
 ## One-line state
 
-**Active · 34%. Pilot-0 v0.1.1 is frozen; a submission-grade ARIS v0.2 run is now the canonical active project. Do not confuse the old Pilot PDFs with a submission-final paper.**
+**Block · 65%. G2 literature, G3 case universe and G4 corpus/bundle/packet gates PASS. The next scientific gate is genuinely independent G5 validation; do not compute expanded similarity or impersonate the external coders.**
 
 ## Read first
 1. STATUS.md
 2. TODO.md
-3. ../process/V0.2_SCOPE_RESET.md
-4. ../process/PAPER_PLAN_v0.2.md
-5. ../process/PREREGISTRATION_v0.2.md
-6. ../process/CASE_UNIVERSE_PROTOCOL_v0.2.md
-7. ../process/CORPUS_PROTOCOL_v0.2.md
-8. ../process/ANALYSIS_PLAN_v0.2.md
-9. ../process/ROBUSTNESS_PLAN_v0.2.md
-10. ../process/REVIEW_LOOP_v0.2.md
-11. ../process/LITERATURE_MAP_v0.2.md
+3. ../process/G4_BUNDLE_PACKET_FREEZE.md
+4. ../process/G5_VALIDATION_PROTOCOL_v0.2.md
+5. ../process/SOURCE_PACKET_CONTRACT_v0.2.md
+6. ../process/MODEL_GATE_FORECAST_v0.2.md
+7. ../data/bundle_registry_v0.2.csv
+8. ../data/bundle_coverage_manifest_v0.2.csv
+9. ../data/validation_v0.2/README.md
+10. ../process/PREREGISTRATION_v0.2.md
 
-## Frozen Pilot artifacts
-The v0.1.1 manuscripts/PDFs, coder packets and Pilot outputs remain auditable. They are feasibility artifacts, not the v0.2 submission manuscript.
+## Frozen v0.2 packet
+- primary motifs: 29
+- bundles: 20
+- judgments: 190
+- H file: blank/frozen
+- M file: blank/frozen
 
-Never edit in place:
-- coder_A.csv
-- coder_B.csv
-- reliability.json
-- v0.1.1 rule/audit files
+Never show either coder:
+- Pilot coder answers;
+- Pilot/v0.1 similarity outputs;
+- contact hypotheses;
+- ancestry/environment variables;
+- process-tracing conclusions;
+- Ovid's positive-control label;
+- the other v0.2 coder's file.
 
-## Immediate bounded work
+## External handoff options
 
-Work G2 and G3 **without inspecting new similarity ranks**:
-- expand/systematize literature;
-- identify omitted eligible Tier-A ancient-text cases;
-- verify source availability/chronology;
-- freeze case-universe inclusion/exclusion.
+### Human H
+Give the human coder:
+- motif codebook rows in the packet;
+- frozen source bundle boundaries;
+- lawful access to exact source/translation editions per SOURCE_PACKET_CONTRACT.
 
-Then move to G4 corpus/ontology expansion.
+They fill only state/confidence/rationale/ambiguity_flag.
 
-## Hard future gate
+### External model M
+Use a fresh provider/model/session with no ARIS4C project memory. Give exactly the same evidence boundary and definitions. It fills the separate M file.
 
-Submission-grade empirical claims require a clean independent validation stream at G5. AI-AI Pilot reliability does not substitute for human/domain-informed validation.
+## Controller work allowed while blocked
+Only work that cannot contaminate coding:
+- tooling tests;
+- reference normalization;
+- manuscript methods scaffolding;
+- reviewer protocol refinement.
 
-## Do not
-- do not mark Finish because PDFs already exist;
-- do not resurrect 100% until v0.2 G0–G9 pass;
-- do not select cases because their myths look similar;
-- do not invent global phylogenetic distances;
-- do not enable QCA unless its frozen trigger is satisfied.
+Do **not** inspect or generate expanded motif similarity until H and M are frozen/adjudicated.
+
+## Model route
+The pre-coding coverage forecast does not meet the Original-Research upgrade threshold. Do not lower it. Default manuscript route remains Methods + empirical demonstration.

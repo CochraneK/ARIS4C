@@ -182,3 +182,14 @@
 - Reclassified deterministic summary features as derived-only to avoid double-counting in similarity.
 - Expanded similarity remains uninspected.
 - G4 credit advanced from 2 to 6; total progress = 56%.
+
+## 2026-09-24 · G4 bundle/packet gate PASS
+- Froze v0.2 primary empirical scope to the three pre-result families only: 29 primary motifs total.
+- Froze 20 source bundles: 7 flood (including Ovid positive control), 5 anthropogony, 8 divine-conflict.
+- Materialized the full 16-case × 3-family coverage manifest (48 rows); no-bundle cells are missing-by-design, never motif absence.
+- Froze 8 predeclared alternate-bundle/source-layer sensitivities outside the primary validation packet.
+- Generated the 190-row blinded validation template plus byte-identical blank human and external-model copies.
+- Added source-packet contract, G5 independent-validation protocol, packet validator and family-level reliability scorer.
+- Pre-coding model-gate forecast: only 12/16 Tier-A primary cases have >=1 primary-family bundle; max raw primary dyads are 15, 10, 28. Original-Research upgrade is not forecast to pass and the preregistered threshold is not relaxed.
+- Secondary families remain predeclared/inactive; they are not activated to manufacture N.
+- G4 PASS; total v0.2 progress = 65%. Project is now Block on genuinely independent G5 validation.

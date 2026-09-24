@@ -117,3 +117,18 @@ The active denominator is now the v0.2 ARIS research contract in `process/V0.2_S
 Primary article route: Methods + empirical demonstration. Original Research status is conditional on case-universe, validation and inferential-model gates.
 
 A clean human/domain-informed validation subset is mandatory before submission-grade empirical claims. Existing AI-AI reliability remains useful Pilot evidence but is not relabeled as human reliability.
+
+
+## 2026-09-24 · v0.2 primary empirical scope freeze
+The submission-grade v0.2 empirical demonstration is frozen to the three families selected before expanded results: flood, anthropogony, and divine conflict.
+
+- 29 primary confirmatory motifs.
+- 20 primary/control source bundles.
+- 190 blinded validation judgments.
+- 31 secondary/generalization motifs remain declared but inactive in v0.2.
+
+Reason: activating secondary families after observing primary-family source sparsity would risk manufacturing sample size and post-hoc scope expansion.
+
+The pre-coding model-gate forecast shows only 12/16 primary cases have a defensible primary-family bundle, with maximum raw primary dyads 15/10/28 across flood/anthropogony/divine-conflict. The preregistered >=15-unit / >=50-dyad Original-Research upgrade gate is not relaxed.
+
+Default article route remains Methods + empirical demonstration.

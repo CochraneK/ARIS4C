@@ -3,7 +3,7 @@ G0,Pilot preservation + provenance,8,8,PASS,v0.1.1 frozen
 G1,Paper-plan + claims freeze,8,8,PASS,v0.2 RQs/claims/prereg frozen
 G2,Systematic literature map,12,12,PASS,58 screened; 45 retained; citation audit + claim map frozen
 G3,Case-universe construction,12,12,PASS,16 Tier-A primary + 1 positive control; dependence clusters explicit
-G4,Corpus/source-bundle expansion,15,6,ACTIVE,56-item candidate audited into 60 analysis motifs + 3 derived diagnostics; ontology architecture frozen for bundle design
+G4,Corpus/source-bundle expansion,15,15,PASS,20 bundles; 48-row coverage manifest; 190-judgment blinded H/M packet + validation/source contracts frozen; pre-result model-gate forecast recorded
 G5,Independent validation,10,0,PENDING,clean human/domain-informed + external audit required
 G6,Inferential mechanism model,15,3,PENDING,plan frozen; inputs/model gate not executed
 G7,Robustness/sensitivity,10,2,PENDING,plan frozen; analyses not executed

@@ -1,23 +1,23 @@
 # Status
 
 ## State
-Active · 56%
+Block · 65%
 
 ## Current stage
-v0.2 submission-grade ARIS · G2/G3 PASS · G4 ontology audit complete, bundle construction active.
+v0.2 submission-grade ARIS · G2/G3/G4 PASS · G5 independent validation gate.
 
 ## Evidence
-- Old 56-motif candidate set was audited rather than treated as a quota.
-- v0.2 draft contains 60 independent analysis motifs + 3 derived diagnostics.
-- Primary confirmatory scope = 29 motifs across flood (9), anthropogony (11), divine conflict (9).
-- Secondary generalization scope = 31 motifs across cosmogony, mortality, underworld and culture-hero families, activated only if source coverage is adequate.
-- Deterministic parent/meta motifs are excluded from primary similarity.
-- Major conflations were split: destructive vs exterminatory flood; earth/dust vs clay; breath vs speech; storm-serpent vs storm-sea; writing vs language.
-- Archetypal/interpretive constructs such as “trickster-like” and generic “chaos” were replaced by observable operational rules.
-- Expanded similarity remains uncomputed.
+- G2 literature PASS and G3 case-universe PASS remain frozen.
+- G4 PASS: 29 primary confirmatory motifs across flood/anthropogony/divine-conflict.
+- 20 source bundles frozen: 7 flood including Ovid control, 5 anthropogony, 8 divine-conflict.
+- 48-row 16-case × 3-family coverage manifest explicitly distinguishes no-defensible-bundle from motif absence.
+- 190-judgment blinded coder packet frozen; human and external-model CSVs are identical blank copies.
+- Source-packet, validation, alternate-bundle and reliability contracts are frozen.
+- Pre-coding model-gate forecast does not support the preregistered Original-Research upgrade; thresholds were not relaxed.
+- No expanded v0.2 similarity has been calculated.
 
 ## Next gate
-Build the 16-case × family coverage manifest, freeze primary and alternate source bundles, then generate blind coder packets for the expanded ontology. Coverage failure may remove a secondary motif/family before coding, but not because of observed similarity.
+G5: obtain a genuinely independent human/domain-informed coder and a genuinely separate external-model coder on the frozen 190-judgment packet; score reliability; domain-audit source-dependent disagreements; adjudicate only after both files freeze.
 
 ## Blocker
-No immediate blocker. G5 clean human/domain-informed validation remains mandatory after the G4 packet freezes.
+External independence. This controller cannot supply the required human/domain-informed coder or impersonate an independent external model. Submission-grade empirical claims remain blocked until G5 is completed.
