@@ -8,25 +8,24 @@ Implemented reproducible checks/builders:
 4. `dynamics_metrics.py` + `test_dynamics_metrics.py`
 5. `derive_pilot1_physics.py` + `validate_pilot1.py`
 6. `validate_source_hardening.py`
-7. evidence validators for batches 01–04
-8. `validate_evidence_state_v06.py` — Batch 05 / 50-of-50 composition-state closure / 188-cell coverage
+7. evidence validators for batches 01–05
+8. `validate_evidence_state_v06.py` — 50/50 composition evidence-state closure
+9. `validate_m2_freeze.py` — validates the five-condition anti-circularity manifest and keeps calibration closed
 
-Canonical data products:
+Canonical analytical control files:
 
-- `raw_physical_core_v0.1.csv`
-- `orbital_geometry_v0.2.csv`
-- `derived_physics_v0.2.csv`
-- `evidence_state_v0.6.csv`
-- `SOURCE_REGISTRY.md`
-- `SOURCE_CONFLICT_AUDIT.md`
-- `EVIDENCE_CODING_AUDIT_BATCH05.md`
-- `process/EVIDENCE_STATE_PROTOCOL.md`
+- `process/M2_CONDITION_FREEZE.md`
+- `process/M2_CONDITION_FREEZE.json`
+- `data/M2_READINESS_AUDIT.md`
+- `process/VARIABLES_AND_CALIBRATION.md`
+
+Current readiness is deliberately **FAIL**: 19/50 cases complete on all five M2 primary conditions.
 
 Still gated:
 
 - live 16-case SBDB numeric snapshot;
 - five dwarf-planet live orbit replacements;
-- primary M2 condition-family freeze;
-- only targeted evidence completion needed by those conditions;
+- targeted atmosphere/differentiation completion;
+- readiness re-audit;
 - calibration freeze;
 - QCA / sensitivity / clustering only afterward.

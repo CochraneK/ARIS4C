@@ -1,8 +1,8 @@
 # Model Ladder · ARIS4C022
 
-Pilot-0 · 2026-09-24
+Updated: 2026-09-24
 
-The main design risk is circularity: entering the exact IAU definition and then claiming QCA discovered the IAU classes. The following models are frozen separately.
+The central design risk is circularity: entering the official definition and then claiming QCA rediscovered it. Models therefore remain separated.
 
 ## M0 · Definitional benchmark
 
@@ -13,7 +13,7 @@ Conditions:
 - ROUND
 - DYN_DOM
 
-Expected benchmark relation: DIRECT_SUN_ORBIT * ROUND * DYN_DOM -> PLANET.
+Expected benchmark: `DIRECT_SUN_ORBIT * ROUND * DYN_DOM -> PLANET`.
 
 This is an implementation sanity check, not discovery and not a causal model.
 
@@ -23,33 +23,46 @@ Run Margot-family and Soter-family discriminants in separate specifications. Do 
 
 ## M2 · Anti-circularity physical-signature model
 
-Ask whether non-definitional physical traits alone reproduce official taxonomy. Keep at most about five core condition families in the primary Pilot-0 specification:
+Outcome: current official PLANET label, used **only as the outcome**.
 
-1. SCALE
-2. COMPOSITION
-3. ATMOSPHERE_RETENTION
-4. INTERNAL_ACTIVITY
-5. SOLAR_ENERGY
+Primary five condition families are now frozen in `M2_CONDITION_FREEZE.md/.json`:
 
-Exclude direct-Sun-orbit status, official cleared-neighborhood labels, and any direct recoding of PLANET. A weak M2 result is informative because it shows intuitive geophysical similarity does not substitute for orbital taxonomy.
+1. **SCALE** → escape velocity
+2. **BULK_MATERIAL** → density as a quantitative material proxy, not literal composition
+3. **ATMOSPHERE_RETENTION** → staged evidence-coded atmosphere state
+4. **INTERNAL_ORGANIZATION** → differentiation evidence
+5. **SOLAR_ENERGY** → relative insolation
+
+Pilot-0's provisional INTERNAL_ACTIVITY family was moved to sensitivity before any result inspection because geology does not have stable measurement semantics across gas giants and solid bodies.
+
+Explicitly excluded from M2 conditions:
+- direct-Sun-orbit / satellite status / primary body
+- official classification recodings
+- cleared-neighborhood labels
+- Margot Pi / Soter mu
+- ROUND / hydrostatic-equilibrium labels
+- boundary tags
+- any outcome-derived variable
+
+Current readiness audit: **FAIL**. Only 19/50 cases are complete on all five conditions; calibration remains closed.
 
 ## M3 · Satellite boundary analysis
 
-Outcome: SATELLITE. Use orbital hierarchy as the benchmark and separately describe planet-like satellites. Key cases include Ganymede, Titan, Charon, and Triton.
+Outcome: SATELLITE. Orbital hierarchy is the benchmark; planet-like satellites are described separately. Key cases include Ganymede, Titan, Charon and Triton.
 
 ## M4 · Geophysical similarity set
 
-Exploratory only and not an official class. Candidate dimensions are roundness/self-gravity, differentiation, atmosphere retention, internal activity, and volatile/ocean evidence. Never call this “true planetness”.
+Exploratory only, never an official class. Candidate dimensions include internal organization, atmosphere retention, current activity, ocean evidence and tidal heating. Never call this “true planetness”.
 
 ## Why compact QCA matters
 
 With 50 cases:
-- 4 binary conditions create 16 possible rows
-- 5 create 32
-- 6 create 64
-- 10 create 1024
+- 4 binary conditions → 16 possible rows
+- 5 → 32
+- 6 → 64
+- 10 → 1024
 
-Primary QCA therefore stays around 4–6 core conditions. Larger ontologies are handled through condition-family substitution and sensitivity analyses.
+Primary M2 therefore remains exactly five condition families. Alternatives are one-family-at-a-time sensitivity substitutions.
 
 ## Companion analyses
 
@@ -59,4 +72,4 @@ Primary QCA therefore stays around 4–6 core conditions. Larger ontologies are 
 
 ## Reporting gate
 
-Report calibration anchors, frequency threshold, consistency, PRI, complex/intermediate/parsimonious solutions, raw and unique coverage, contradictions, deviant cases, calibration perturbation, and leave-one-case-out sensitivity before using necessary/sufficient language in the abstract.
+Before necessary/sufficient language appears in an abstract, report calibration anchors, frequency threshold, consistency, PRI, complex/intermediate/parsimonious solutions, raw/unique coverage, contradictions, deviant cases, calibration perturbation and leave-one-case-out sensitivity.

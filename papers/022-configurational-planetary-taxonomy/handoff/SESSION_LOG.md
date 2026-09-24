@@ -1,23 +1,24 @@
 # SESSION LOG · ARIS4C022
 
 ## 2026-09-24 · cumulative
-- Froze 50-body sample, raw-variable architecture, evidence protocol and M0–M4 anti-circularity ladder.
-- Built source-traceable physical/orbit/derived spine.
-- Evidence batches 01–04 advanced coverage to 157/300.
-- Added CARBONACEOUS_HYDRATED before coding Bennu/Ryugu.
-- Began source-conflict audit with Mimas temporal supersession.
+- Froze the 50-body sample, raw-variable architecture, evidence ontology and M0–M4 anti-circularity ladder.
+- Built source-traceable physical/orbit/derived data spine.
+- Five blinded evidence batches advanced coverage to 188/300 and closed composition evidence-state coverage at 50/50.
+- Source-conflict audit adjudicated four cases with no unresolved material conflict.
+- Live JPL SBDB object acquisition remains the main numeric blocker.
 
-## Evidence batch 05 · remaining boundary objects
-- Reviewed Pallas, Hygiea, Interamnia and eight remote TNO boundary cases using peer-reviewed spectroscopy, occultation, binary-density and thermal-evolution studies.
-- Closed composition evidence-state coverage at 50/50.
-- Explicitly avoided treating surface spectra as direct bulk-interior measurements:
-  - Sedna/Gonggong remain NA_UNCERTAIN / MIXED_UNCERTAIN.
-  - Varda remains composition-uncertain and differentiation unmeasured.
-  - Ixion remains composition-uncertain.
-- Quaoar received the new 2026 occultation atmosphere constraint: CH4 surface pressure <0.65 nbar (3σ), coded as negligible-atmosphere evidence.
-- Pallas/Hygiea/Interamnia received hydrated-carbonaceous evidence states while internal differentiation remains model-dependent or uncertain.
-- Evidence coverage advanced by 31 cells to 188/300.
-- Source-conflict audit expanded to four adjudications with no unresolved conflict requiring NA_SOURCE_CONFLICT.
-- Rebuilt SOURCE_REGISTRY.md as a fully current canonical key map rather than relying on historical Git revisions.
-- Live JPL SBDB object payload remains the main numeric acquisition blocker.
-- All 50 rows remain UNEXPOSED_TO_QCA_RESULT; no calibration/truth table/solution inspection occurred.
+## M2 primary-condition freeze
+- Audited candidate M2 measurement equivalence before any calibration or QCA result.
+- Rejected geologic activity as a primary cross-class condition because surface geology is not measurement-equivalent for gas giants versus solid worlds.
+- Froze exactly five primary non-definitional families:
+  - SCALE → escape velocity;
+  - BULK_MATERIAL → density proxy;
+  - ATMOSPHERE_RETENTION → evidence-coded atmosphere;
+  - INTERNAL_ORGANIZATION → differentiation;
+  - SOLAR_ENERGY → relative insolation.
+- Froze explicit prohibited variables: official-label recodings, direct-Sun/satellite hierarchy, cleared-neighborhood labels, Margot/Soter dominance, roundness and outcome-derived fields.
+- Kept composition classes for mvQCA/sensitivity rather than imposing an arbitrary ordinal fuzzy scale.
+- Readiness audit found only 19/50 complete cases: 8 planets, 2 dwarfs, 9 satellites, 0 small bodies.
+- Froze readiness gates before calibration: >=40/50 substantive values per primary condition; >=35/50 complete cases; all 8 planets plus >=4 dwarfs, >=12 satellites and >=10 small bodies.
+- Calibration remains `CLOSED_NOT_READY`.
+- No calibration anchor, truth table, consistency, PRI, coverage or solution term has been inspected.
