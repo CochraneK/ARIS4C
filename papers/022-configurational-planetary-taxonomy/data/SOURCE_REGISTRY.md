@@ -135,3 +135,12 @@ This file is the **current canonical key → source map**. Historical revisions 
 - `NASA_MARS_MOONS_AIRLESS` — NASA Goddard describes both Phobos and Deimos as small airless bodies. https://science.nasa.gov/resource/electric-charging-on-martian-moon-phobos/
 - `NASA_IAPETUS_NO_ATMOSPHERE` — Cassini/NASA explicitly notes the absence of an atmosphere on Iapetus. https://science.nasa.gov/photojournal/dark-stained-iapetus/
 - `URANUS_MOONS_INTERIORS_2023` — Castillo-Rogez et al., JGR: Planets 128; coupled thermal/geochemical models for Ariel, Umbriel, Titania and Oberon imply layered ice/ocean/rock interiors. https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022JE007432
+
+## Evidence batch 08 · atmosphere gate closure
+
+- `NASA_ASTEROIDS_AIRLESS` — NASA Asteroids overview: asteroids are rocky, airless remnants. Used only for the asteroid-class cases Vesta, Pallas, Hygiea and Interamnia. https://science.nasa.gov/solar-system/asteroids/
+- `NASA_EROS_NO_ATMOSPHERE` — NEAR/NASA imaging explicitly states Eros has no atmosphere. https://science.nasa.gov/photojournal/light-and-shadow/
+- `NASA_RYUGU_AIRLESS` — NASA NTRS returned-sample/space-weathering work explicitly treats Ryugu as an airless rubble-pile asteroid. https://ntrs.nasa.gov/citations/20230008404
+- `NASA_ITOKAWA_AIRLESS` — NASA NTRS Itokawa returned-sample space-weathering work uses the airless-body surface context. https://ntrs.nasa.gov/citations/20140011739
+- `UMBRIEL_OCCULTATION_2023` — multichord stellar occultation: no atmosphere detected; CO2 pressure upper limit <72 nbar at 3σ. https://academic.oup.com/mnras/article/526/4/6193/7313621
+- `TITANIA_OCCULTATION_2009` — stellar occultation: no atmospheric refraction; gas-dependent surface-pressure upper limits ~8–22 nbar at 1σ. https://doi.org/10.1016/j.icarus.2008.09.011
