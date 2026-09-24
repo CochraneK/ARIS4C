@@ -13,6 +13,16 @@
 - [~] Add Cantril 1957–1963, Eurobarometer 1973+, WVS/EVS 1981+ and Gallup-era outcome coverage manifests. Cantril/WVS/Eurobarometer/Gallup coverage scaffolds are materialized; WDH XLSX and full EVS country-wave expansion remain.
 - [x] Freeze no-effect-inspection coverage gates and expanded statistical plan before running new expanded association/causal models.
 
+## P1G · Century-scale legal reconstruction
+
+- [x] Close full C052 54/54 and C132 39/39 primary ratification registers.
+- [x] Recover late-20th-century ILO/NATLEX 2000 41-country annual-leave snapshot.
+- [x] Recover ILO/TRAVAIL 2012 155-country standardized annual-leave cross-section.
+- [x] Crosscheck ILO 2012 against WB 2012 and preserve 22 >=5-day discrepancies as QA cases.
+- [x] Freeze historical reform registry v2: BGR 2001, SVK 2002, NAM 2008, GBR 2007/2009; reject NIC/DZA/MLI artifacts.
+- [~] Execute outcome-blind historical reform registry v2 against pre-WHR outcome sources. WHR feasibility gate says BGR/SVK unavailable and NAM/GBR too sparse for primary event inference; route to WDH HTML / EVS-WVS / Eurobarometer.
+- [~] Push national-law snapshots further back toward 1960s/1970s using ILO 1964/1969 revision reports and Legislative Series where recoverable.
+
 ## P1H · Expanded statistics
 
 - [~] Independently validate key modern FE/FD coefficients with the committed statsmodels implementation. Validator/workflow are ready; GitHub Actions run 35977496016 fails before any step due the repository-wide pre-runner issue.
