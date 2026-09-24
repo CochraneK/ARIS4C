@@ -1,5 +1,18 @@
 # Agent Handoff
 
+## Cold start
+
+Read in this order:
+
+1. `STATUS.md`
+2. `TODO.md`
+3. `../RUNBOOK.md`
+4. `../process/EXECUTION_PACKAGE_QA_2026-09-24.md`
+5. `../process/ANALYSIS_FREEZE_V1.md`
+
+Do not redesign the study before reading these files.
+
+
 Continue ARIS4C-020 without re-planning from scratch.
 
 1. Read `papers/020-global-retraction-ecology/process/RESEARCH_PLAN.md`.
