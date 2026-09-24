@@ -66,3 +66,10 @@
 - Seeded four independently sourced historical-contact edges: Sumerian-Akkadian bilingual scribal; Hittite-Ugaritic imperial/scribal; Hittite-Egypt diplomatic/military; Ugarit-Egypt maritime/diplomatic.
 - Kept the proposed Hurro-Hittite → Greek reception relation in a separate hypothesis table rather than a confirmed contact edge.
 - Project advanced to 80%; absence closure and external phylogeny acquisition are next.
+
+## 2026-09-24 · Glottolog ancestry gate
+- Froze Glottolog 5.3 as the external language-classification source and recorded Pilot-0 glottocode mappings.
+- Added separate Hittite and Hurrian mappings for the composite HUR_HIT unit.
+- Generated 55 topology-only tradition dyads with same-language / same-branch / same-macrofamily classes; composite dyads are non-quantitative-ready.
+- Explicitly prohibited interpreting Glottolog topology/branch lengths as divergence time or inventing cross-family numeric distances.
+- Project advanced to 83%; negative-evidence closure remains the main similarity gate.

@@ -1,23 +1,22 @@
 # TODO
 
 ## Completed
-- [x] Dual-AI reliability PASS; ontology v0.1 + v0.1.1 rules frozen.
-- [x] Replace defective Sumerian anthropogony witness.
-- [x] Regression-check 21 disagreements.
-- [x] Freeze conservative 11×24 source-backed seed matrix.
-- [x] Freeze categorical language/genealogy layer.
-- [x] Seed independently sourced historical contact network.
-- [x] Separate transmission hypotheses from confirmed contact edges.
+- [x] Reliability + v0.1.1 regression.
+- [x] Replacement Sumerian witness.
+- [x] Conservative 11×24 source-backed matrix.
+- [x] Independent historical-contact seed layer.
+- [x] Glottolog 5.3 source registry for Pilot-0 languages.
+- [x] Topology-only 55-dyad ancestry classification without invented numeric distances.
 
 ## Current critical path
-- [ ] Build source-bundle coverage manifest for each tradition × calibration family.
-- [ ] Close defensible tradition/source-bundle negatives.
-- [ ] Add Egyptian evidence for calibration families or retain principled not_observed.
-- [ ] Acquire external language tree/distance source; do not invent numeric phylogenetic distance.
-- [ ] Expand dated contact edges and intermediary routes with independent historical sources.
+- [ ] Build source-bundle coverage manifest by tradition × motif family.
+- [ ] Close defensible negative evidence.
+- [ ] Add Egyptian calibration-family evidence or retain principled not_observed.
+- [ ] Decide quantitative ancestry route: published dated family phylogenies vs topology-only preregistered model.
+- [ ] Expand dated contact/intermediary evidence.
 - [ ] Validate analysis-ready matrix.
-- [ ] Run coverage/prevalence diagnostics.
-- [ ] Run first descriptive Jaccard/clustering only after comparable-N gate.
+- [ ] Coverage/prevalence diagnostics.
+- [ ] Restricted descriptive Jaccard/clustering after comparable-N gate.
 - [ ] Pilot ancestry-vs-contact separation.
 - [ ] Freeze environmental variables.
-- [ ] Decide whether QCA adds information; QCA remains OFF.
+- [ ] QCA remains OFF until trigger conditions are met.

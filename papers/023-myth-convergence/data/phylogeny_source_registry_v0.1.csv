@@ -1,0 +1,13 @@
+tradition_id,language_label,glottocode,iso639_3,source_release,source_url,mapping_role
+SUM_OB,Sumerian,sume1241,sux,Glottolog 5.3,https://glottolog.org/resource/languoid/id/sume1241,single
+AKK_OB,Akkadian,akka1240,akk,Glottolog 5.3,https://glottolog.org/resource/languoid/id/akka1240,single
+AKK_MB_SB,Akkadian,akka1240,akk,Glottolog 5.3,https://glottolog.org/resource/languoid/id/akka1240,single
+HUR_HIT_LBA,Hittite,hitt1242,hit,Glottolog 5.3,https://glottolog.org/resource/languoid/id/hitt1242,composite_component
+HUR_HIT_LBA,Hurrian,hurr1240,xhu,Glottolog 5.3,https://glottolog.org/resource/languoid/id/hurr1240,composite_component
+UGARIT_LBA,Ugaritic,ugar1238,uga,Glottolog 5.3,https://glottolog.org/resource/languoid/id/ugar1238,single
+EGY_MK,Egyptian (Ancient),egyp1246,egy,Glottolog 5.3,https://glottolog.org/resource/languoid/id/egyp1246,single
+EGY_NK,Egyptian (Ancient),egyp1246,egy,Glottolog 5.3,https://glottolog.org/resource/languoid/id/egyp1246,single
+VED_RV,Vedic Sanskrit,vedi1234,vsn,Glottolog 5.3,https://glottolog.org/resource/languoid/id/vedi1234,single
+GRC_ARCH,Ionic-Attic Ancient Greek,anci1242,grc,Glottolog 5.3,https://glottolog.org/resource/languoid/id/anci1242,single
+HEB_GEN,Biblical Hebrew,bibl1238,,Glottolog 5.3 catalog,https://glottolog.org/resource/languoid/id/bibl1238,dialect_under_ancient_hebrew
+CHN_WS_HAN,Old Chinese,oldc1244,och,Glottolog 5.3,https://glottolog.org/resource/languoid/id/oldc1244,single

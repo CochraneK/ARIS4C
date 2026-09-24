@@ -180,12 +180,12 @@
       "blocker": "Primary blocker is numeric acquisition from live JPL SBDB object payloads in the current execution surfaces. Methodological work remains unblocked; no QCA result may be inspected before the readiness gates pass."
     },
     "023": {
-      "progress": 80,
-      "stage": "v0.1.1 matrix spine frozen · genealogy/contact evidence layers separated and seeded",
+      "progress": 83,
+      "stage": "Source-backed matrix + contact layer + Glottolog 5.3 ancestry registry frozen",
       "activity": "active",
-      "evidence": "Calibration and v0.1.1 regression are frozen; conservative 11×24 matrix exists. Genealogy records explicit language strata without invented distances, HUR_HIT composite ancestry is flagged, four independently sourced historical-contact edges are frozen, and Hurro-Hittite→Greek reception is kept in a separate hypothesis table.",
-      "next_gate": "Close source-bundle negative evidence for the 24 calibration motifs; acquire an external language phylogeny/distance representation; expand dated contact/intermediary evidence; then run coverage/prevalence and first descriptive similarity pilot.",
-      "blocker": "No hard blocker. Main bottleneck is defensible negative-evidence closure; quantitative phylogenetic modeling also waits on an external tree/distance source."
+      "evidence": "v0.1.1 matrix and contact layers remain frozen. Glottolog 5.3 mappings now cover all Pilot-0 language layers, with Hittite/Hurrian separated inside the composite case. All 55 tradition dyads have topology-only ancestry classes; no arbitrary phylogenetic distances are used.",
+      "next_gate": "Close source-bundle negative evidence; choose published dated phylogenies or a preregistered topology-only ancestry model; then run coverage/prevalence and restricted descriptive similarity.",
+      "blocker": "No hard blocker. Headline similarity is still gated by negative-evidence closure; quantitative ancestry-vs-contact modeling needs a defensible distance/tree strategy."
     }
   },
   "scheduling": {

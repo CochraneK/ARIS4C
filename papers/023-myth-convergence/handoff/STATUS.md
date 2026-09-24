@@ -1,20 +1,21 @@
 # Status
 
 ## State
-Active · 80%
+Active · 83%
 
 ## Current stage
-v0.1.1 matrix spine frozen · genealogy/contact layers separated and seeded.
+Source-backed matrix + contact layer + released Glottolog ancestry registry frozen; negative-evidence closure remains.
 
 ## Evidence
-- Dual-AI calibration PASS and v0.1.1 regression remain frozen.
-- Conservative 11×24 seed matrix is frozen without manufacturing tradition-level absences.
-- genealogy_v0.1.csv records language layers and flags the Hurrian-Hittite composite case as non-tree-ready.
-- contact_edges_v0.1.csv contains four externally supported historical-contact edges sourced independently of motif similarity.
-- transmission_hypotheses_v0.1.csv keeps Hurro-Hittite → Greek reception outside the confirmed contact network.
+- Dual-AI calibration and v0.1.1 regression PASS.
+- Conservative 11×24 matrix frozen.
+- Four independently sourced historical contact edges frozen separately from transmission hypotheses.
+- Glottolog 5.3 mappings are frozen for all Pilot-0 language layers, including separate Hittite and Hurrian components.
+- 55 tradition dyads now have topology-only ancestry classes; dyads involving the composite HUR_HIT unit are explicitly non-quantitative-ready.
+- No pseudo phylogenetic distances or branch-time claims were introduced.
 
 ## Next gate
-Close negative-evidence/source-bundle coverage for the 24 calibration motifs; acquire an external language phylogeny/distance representation and expand dated contact/intermediary evidence. Then run coverage/prevalence and the first strictly descriptive similarity pilot.
+Close source-bundle negative evidence for the 24 motifs and choose a defensible quantitative ancestry strategy: published dated family phylogenies where available, or preregistered topology-only categorical ancestry. Then run coverage/prevalence and a restricted descriptive similarity pilot.
 
 ## Blocker
-No hard blocker. Main scientific bottleneck remains source-bundle negative-evidence closure; phylogenetic modeling also waits on an external tree rather than hand-made distances.
+No hard blocker. Headline similarity remains gated by negative-evidence closure; quantitative ancestry-vs-contact modeling remains gated by a defensible distance/tree strategy across heterogeneous language families.
