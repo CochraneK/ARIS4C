@@ -77,3 +77,12 @@ Status: verified archived source; updating suspended.
 3. Retrospectively coded predictors that may depend on knowing the outcome are flagged.
 4. No current-country “genocide prediction” is published from a single QCA solution.
 5. Source licenses and redistribution permissions are checked before raw data are committed.
+
+
+## 2026-09-24 · Phase-1 verification note
+
+Official Systemic Peace index confirms the 1955–2018 PITF Problem Set and directly exposes the 2018 consolidated case list, genocide/politicide spreadsheet and 2018 codebook.
+
+Historical-replication warning: the codebook documents that the genocide/politicide event list is not a continuously updated modern outcome series. Treat PITF GP as historical replication only.
+
+See process/PHASE1_SOURCE_FREEZE.md and code/acquire_pitf.py.
