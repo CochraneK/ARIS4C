@@ -1,0 +1,40 @@
+name: ARIS4C021 replication contract
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/021-mass-atrocity-configurations/**'
+      - '.github/workflows/aris4c021-ci.yml'
+  pull_request:
+    paths:
+      - 'papers/021-mass-atrocity-configurations/**'
+      - '.github/workflows/aris4c021-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile papers/021-mass-atrocity-configurations/code/*.py
+      - name: Positive-case seed contract
+        run: python papers/021-mass-atrocity-configurations/code/validate_williams_positive_seed.py
+      - name: Williams evaluator unit tests
+        run: python papers/021-mass-atrocity-configurations/tests/test_validate_williams_replication.py
+      - name: Validate reconstructed matrix when present
+        shell: bash
+        run: |
+          MATRIX="papers/021-mass-atrocity-configurations/data/CONDITION_MATRIX_V1.csv"
+          if [ -f "$MATRIX" ]; then
+            python papers/021-mass-atrocity-configurations/code/validate_williams_replication.py "$MATRIX"
+          else
+            echo "CONDITION_MATRIX_V1.csv not frozen yet; contract-only CI."
+          fi
