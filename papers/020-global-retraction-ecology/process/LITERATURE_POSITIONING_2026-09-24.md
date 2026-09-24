@@ -47,6 +47,26 @@ This is a working novelty boundary, not a completed systematic review.
 - reports median lag 378 days and heterogeneity by discipline/publisher/type/reason;
 - geographically restricted.
 
+### Hauschke & Nazarovets · Journal of Information Science 2025
+**(Non-)retracted academic papers in OpenAlex**
+- queried 47,720 OpenAlex records marked as retracted on 2024-03-06;
+- found that OpenAlex's retraction marking was not perfectly concordant with true retraction status;
+- directly supports ARIS4C-020's rule that OpenAlex `is_retracted` is a concordance variable, not the authority defining the RWDB Retraction population.
+- DOI: 10.1177/01655515251322478
+
+### Fletcher & Stevenson · Research Integrity and Peer Review 2025
+**Predicting retracted research: a dataset and machine learning approaches**
+- built a retrospective case-control dataset combining Retraction Watch with OpenAlex;
+- used explicit article/source/type/language/journal coverage exclusions and matched non-retracted controls;
+- provides an important precedent for reproducible RWDB × OpenAlex data engineering, but its prediction-oriented inclusion rules are narrower than ARIS4C-020's all-discipline retraction-ecology estimand.
+- DOI: 10.1186/s41073-025-00168-w
+
+### Rawlins · Insights 2026
+**Research integrity and open access models: insights from Retraction Watch and OpenAlex**
+- another recent RWDB × OpenAlex analysis focused on access models/research integrity;
+- reinforces that simply joining these two databases is not itself a novelty claim.
+- DOI: 10.1629/uksg.763
+
 ## Working contribution target
 
 ARIS4C-020 should not claim novelty from “using Retraction Watch” or “doing global bibliometrics.”
