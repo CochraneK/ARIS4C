@@ -3,19 +3,19 @@
 <rect width="1600" height="420" rx="28" fill="#07162b"/>
 <style>text{font-family:Inter,"Noto Sans SC","Microsoft YaHei","PingFang SC",system-ui,sans-serif}.t{font-size:48px;font-weight:800;fill:#f8fafc}.s{font-size:23px;fill:#a9bfe0}.h{font-size:25px;font-weight:750;fill:#f8fafc}.b{font-size:17px;fill:#c8d7ec}.m{font-size:14px;fill:#8da9ce}.k{font-size:16px;font-weight:700;fill:#66e7a4}.n{font-size:17px;font-weight:800;fill:#54a9ff}.metric{font-size:38px;font-weight:800;fill:#f8fafc}</style>
 <text x="58" y="62" class="n">ARIS<tspan fill="#f8fafc">4C</tspan></text>
-<text x="800" y="72" text-anchor="middle" class="t">Portfolio state</text>
-<text x="800" y="112" text-anchor="middle" class="s">MECE management states from papers/dashboard.json</text>
+<text x="800.0" y="72" text-anchor="middle" class="t">Portfolio state</text>
+<text x="800.0" y="112" text-anchor="middle" class="s">MECE management states from papers/dashboard.json</text>
 <rect x="80.0" y="185" width="125.2" height="58" fill="#7c8cff"/>
 <rect x="205.2" y="185" width="563.5" height="58" fill="#48e996"/>
-<rect x="768.7" y="185" width="313.0" height="58" fill="#f2c14e"/>
-<rect x="1081.7" y="185" width="438.3" height="58" fill="#ef6a6a"/>
+<rect x="768.7" y="185" width="250.4" height="58" fill="#f2c14e"/>
+<rect x="1019.1" y="185" width="500.9" height="58" fill="#ef6a6a"/>
 <circle cx="125" cy="320" r="10" fill="#7c8cff"/>
 <text x="147" y="327" class="h">Finish · 2</text>
 <circle cx="500" cy="320" r="10" fill="#48e996"/>
 <text x="522" y="327" class="h">Active · 9</text>
 <circle cx="875" cy="320" r="10" fill="#f2c14e"/>
-<text x="897" y="327" class="h">Wait · 5</text>
+<text x="897" y="327" class="h">Wait · 4</text>
 <circle cx="1250" cy="320" r="10" fill="#ef6a6a"/>
-<text x="1272" y="327" class="h">Block · 7</text>
+<text x="1272" y="327" class="h">Block · 8</text>
 <text x="1510" y="327" text-anchor="end" class="m">Total 23</text>
 </svg>

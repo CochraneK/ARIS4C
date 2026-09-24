@@ -3,16 +3,16 @@
 <rect width="1600" height="1189" rx="28" fill="#07162b"/>
 <style>text{font-family:Inter,"Noto Sans SC","Microsoft YaHei","PingFang SC",system-ui,sans-serif}.t{font-size:48px;font-weight:800;fill:#f8fafc}.s{font-size:23px;fill:#a9bfe0}.h{font-size:25px;font-weight:750;fill:#f8fafc}.b{font-size:17px;fill:#c8d7ec}.m{font-size:14px;fill:#8da9ce}.k{font-size:16px;font-weight:700;fill:#66e7a4}.n{font-size:17px;font-weight:800;fill:#54a9ff}.metric{font-size:38px;font-weight:800;fill:#f8fafc}</style>
 <text x="58" y="62" class="n">ARIS<tspan fill="#f8fafc">4C</tspan></text>
-<text x="800" y="72" text-anchor="middle" class="t">Portfolio maturity by paper</text>
-<text x="800" y="112" text-anchor="middle" class="s">Management estimate, not a scientific result; 100% means the repository-level final output contract is satisfied</text>
+<text x="800.0" y="72" text-anchor="middle" class="t">Portfolio maturity by paper</text>
+<text x="800.0" y="112" text-anchor="middle" class="s">Management estimate, not a scientific result; 100% means the repository-level final output contract is satisfied</text>
 <text x="70" y="165" class="h" font-size="20">001 · Bee GCA × Uncertainty</text>
 <text x="730" y="165" text-anchor="end" class="b">100%</text>
 <rect x="70" y="183" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="70" y="183" width="660" height="16" rx="8" fill="#7c8cff"/>
+<rect x="70" y="183" width="660.0" height="16" rx="8" fill="#7c8cff"/>
 <text x="70" y="247" class="h" font-size="20">002 · Testing linguistic periodicity</text>
 <text x="730" y="247" text-anchor="end" class="b">100%</text>
 <rect x="70" y="265" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="70" y="265" width="660" height="16" rx="8" fill="#7c8cff"/>
+<rect x="70" y="265" width="660.0" height="16" rx="8" fill="#7c8cff"/>
 <text x="70" y="329" class="h" font-size="20">003 · Colonial Legacies × Disciplina…</text>
 <text x="730" y="329" text-anchor="end" class="b">78%</text>
 <rect x="70" y="347" width="660" height="16" rx="8" fill="#1b385a"/>
@@ -36,7 +36,7 @@
 <text x="70" y="739" class="h" font-size="20">008 · Human Intelligence Bootstrap</text>
 <text x="730" y="739" text-anchor="end" class="b">60%</text>
 <rect x="70" y="757" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="70" y="757" width="396" height="16" rx="8" fill="#f2c14e"/>
+<rect x="70" y="757" width="396.0" height="16" rx="8" fill="#f2c14e"/>
 <text x="70" y="821" class="h" font-size="20">009 · Phenomenology-Preserving Compu…</text>
 <text x="730" y="821" text-anchor="end" class="b">56%</text>
 <rect x="70" y="839" width="660" height="16" rx="8" fill="#1b385a"/>
@@ -56,7 +56,7 @@
 <text x="855" y="165" class="h" font-size="20">013 · Birth–Death Temporal Coupling</text>
 <text x="1515" y="165" text-anchor="end" class="b">50%</text>
 <rect x="855" y="183" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="183" width="330" height="16" rx="8" fill="#ef6a6a"/>
+<rect x="855" y="183" width="330.0" height="16" rx="8" fill="#ef6a6a"/>
 <text x="855" y="247" class="h" font-size="20">014 · Public Integrity Forensics</text>
 <text x="1515" y="247" text-anchor="end" class="b">71%</text>
 <rect x="855" y="265" width="660" height="16" rx="8" fill="#1b385a"/>
@@ -72,29 +72,29 @@
 <text x="855" y="493" class="h" font-size="20">017 · LING-02 · Predictive Language …</text>
 <text x="1515" y="493" text-anchor="end" class="b">20%</text>
 <rect x="855" y="511" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="511" width="132" height="16" rx="8" fill="#f2c14e"/>
+<rect x="855" y="511" width="132.0" height="16" rx="8" fill="#f2c14e"/>
 <text x="855" y="575" class="h" font-size="20">018 · Fly Neuro Playground</text>
-<text x="1515" y="575" text-anchor="end" class="b">88%</text>
+<text x="1515" y="575" text-anchor="end" class="b">90%</text>
 <rect x="855" y="593" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="593" width="580.8" height="16" rx="8" fill="#48e996"/>
-<text x="855" y="657" class="h" font-size="20">019 · Annual Leave × Life Evaluation</text>
-<text x="1515" y="657" text-anchor="end" class="b">96%</text>
+<rect x="855" y="593" width="594.0" height="16" rx="8" fill="#48e996"/>
+<text x="855" y="657" class="h" font-size="20">019 · Time Off × Happiness · Long Run</text>
+<text x="1515" y="657" text-anchor="end" class="b">84%</text>
 <rect x="855" y="675" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="675" width="633.5999999999999" height="16" rx="8" fill="#48e996"/>
+<rect x="855" y="675" width="554.4" height="16" rx="8" fill="#48e996"/>
 <text x="855" y="739" class="h" font-size="20">020 · Global Retraction Ecology</text>
 <text x="1515" y="739" text-anchor="end" class="b">75%</text>
 <rect x="855" y="757" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="757" width="495" height="16" rx="8" fill="#48e996"/>
-<text x="855" y="821" class="h" font-size="20">021 · Mass Atrocity Conditions · QCA</text>
-<text x="1515" y="821" text-anchor="end" class="b">20%</text>
+<rect x="855" y="757" width="495.0" height="16" rx="8" fill="#48e996"/>
+<text x="855" y="821" class="h" font-size="20">021 · Mass Atrocity Conditions</text>
+<text x="1515" y="821" text-anchor="end" class="b">42%</text>
 <rect x="855" y="839" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="839" width="132" height="16" rx="8" fill="#f2c14e"/>
+<rect x="855" y="839" width="277.2" height="16" rx="8" fill="#48e996"/>
 <text x="855" y="903" class="h" font-size="20">022 · Planetary Taxonomy × fsQCA</text>
-<text x="1515" y="903" text-anchor="end" class="b">18%</text>
+<text x="1515" y="903" text-anchor="end" class="b">90%</text>
 <rect x="855" y="921" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="921" width="118.8" height="16" rx="8" fill="#48e996"/>
-<text x="855" y="985" class="h" font-size="20">023 · 023</text>
-<text x="1515" y="985" text-anchor="end" class="b">24%</text>
+<rect x="855" y="921" width="594.0" height="16" rx="8" fill="#48e996"/>
+<text x="855" y="985" class="h" font-size="20">023 · Ancient Myth Convergence</text>
+<text x="1515" y="985" text-anchor="end" class="b">65%</text>
 <rect x="855" y="1003" width="660" height="16" rx="8" fill="#1b385a"/>
-<rect x="855" y="1003" width="158.39999999999998" height="16" rx="8" fill="#48e996"/>
+<rect x="855" y="1003" width="429.0" height="16" rx="8" fill="#ef6a6a"/>
 </svg>
