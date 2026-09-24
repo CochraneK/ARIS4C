@@ -172,12 +172,12 @@
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
-      "progress": 79,
-      "stage": "Composition evidence closed 50/50 · M2 condition-family freeze + numeric acquisition gate",
+      "progress": 82,
+      "stage": "M2 five-condition specification frozen · readiness FAIL / targeted acquisition gate",
       "activity": "active",
-      "evidence": "Five blinded evidence batches cover all 50 cases. evidence_state_v0.6 has 188/300 non-pending cells and composition evidence-state coverage is 50/50 without forced certainty. Current canonical source registry resolves all evidence keys; source-conflict audit v0.2 contains four adjudicated cases and no unresolved conflict requiring NA_SOURCE_CONFLICT. All cases remain UNEXPOSED_TO_QCA_RESULT.",
-      "next_gate": "Freeze primary M2 condition-family representatives before calibration; use that freeze to target only necessary evidence gaps. In parallel, capture the live 16-case JPL SBDB numeric snapshot and replace five dwarf-planet derived semimajor axes. Calibration remains closed until those gates pass.",
-      "blocker": "Partial numeric-acquisition blocker: live JPL SBDB object payloads remain inaccessible in the current execution surfaces. Methodological freezing and targeted evidence work can continue without inspecting QCA results."
+      "evidence": "Primary anti-circularity M2 is frozen before any calibration/result inspection: SCALE=escape velocity, BULK_MATERIAL=density proxy, ATMOSPHERE_RETENTION=atmosphere evidence, INTERNAL_ORGANIZATION=differentiation evidence, SOLAR_ENERGY=relative insolation. Composition evidence-state remains 50/50 and overall evidence 188/300. Current M2 substantive coverage is 34/34/25/32/34 with only 19/50 complete cases (8 planets, 2 dwarfs, 9 satellites, 0 small bodies). Calibration is CLOSED_NOT_READY.",
+      "next_gate": "Target readiness-critical gaps only: capture live JPL SBDB numerics for the 16 small/boundary bodies, replace five dwarf-planet derived semimajor axes, raise atmosphere and differentiation substantive coverage to >=40, and reach >=35 five-condition complete cases with required non-planet strata before freezing calibration anchors.",
+      "blocker": "Primary blocker is numeric acquisition from live JPL SBDB object payloads in the current execution surfaces. Methodological work remains unblocked; no QCA result may be inspected before the readiness gates pass."
     },
     "023": {
       "progress": 70,
