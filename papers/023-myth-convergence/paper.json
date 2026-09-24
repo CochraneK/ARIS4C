@@ -39,7 +39,8 @@
     "pilot_en_pdf": "dist/ARIS4C-023_EN.pdf",
     "pilot_zh_pdf": "dist/ARIS4C-023_ZH.pdf",
     "literature_screening_log": "data/literature_screening_log_v0.2.csv",
-    "case_source_registry": "data/case_source_registry_v0.2.csv"
+    "case_source_registry": "data/case_source_registry_v0.2.csv",
+    "case_universe_audit": "process/CASE_UNIVERSE_AUDIT_v0.2.md"
   },
   "tags": [
     "ARIS4C",
@@ -82,7 +83,7 @@
     "finish_ready": false
   },
   "v0_2_submission_grade": {
-    "progress": 44,
+    "progress": 46,
     "article_route": "methods + empirical demonstration",
     "original_research_upgrade": "conditional",
     "gates": [
@@ -98,6 +99,7 @@
       "G9 manuscript improvement"
     ],
     "literature_screened": 52,
-    "literature_retained": 39
+    "literature_retained": 39,
+    "case_candidates": 21
   }
 }

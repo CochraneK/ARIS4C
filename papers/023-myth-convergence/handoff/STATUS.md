@@ -1,21 +1,23 @@
 # Status
 
 ## State
-Active · 44%
+Active · 46%
 
 ## Current stage
-v0.2 submission-grade ARIS · literature threshold met; citation-chain + Tier-A universe freeze underway.
+v0.2 submission-grade ARIS · G2 near-close; case universe structurally corrected and expanded.
 
 ## Evidence
-- Pilot-0 remains frozen and unchanged.
-- v0.2 paper plan, claims, preregistration, corpus, analysis, robustness and adversarial-review protocols are frozen.
-- Literature screening log now contains 52 records; 39 are retained/relevant after explicit duplicate/tertiary/noncanonical exclusions.
-- Skeptical method clusters are included: horizontal-transfer failure modes, reticulation, non-independence/false-positive risk and parallelomania.
-- Case-source registry now audits 14 core/candidate traditions and identifies exactly which critical-edition/source locks remain.
-- Tier-A candidate universe still contains unresolved Hurrian/Hittite split, Egypt bundle design, and several critical-edition locks.
+- 52 literature/resource records screened; 39 retained/relevant with skeptical method clusters preserved.
+- Case-universe candidate registry now has 21 rows.
+- Hurrian/Hittite composite split into separate source-language layers.
+- Pilot Chinese composite deprecated for v0.2 and split into CHN_YAO + CHN_HUAI.
+- Later Vedic Shatapatha Brahmana Manu flood added as a separate time slice rather than being back-projected into Rigveda.
+- Old Kingdom Egypt added as its own textual stratum.
+- Avestan Yima and Roman Deucalion are retained as high-uncertainty / literary-network comparators, not assumed independent cases.
+- Case-source registry now has 20 rows.
 
 ## Next gate
-Complete backward/forward citation chaining and claim-to-source mapping (finish G2), then systematically search omitted Tier-A ancient-text traditions and freeze G3 before expanded similarity inspection.
+Finish G2 citation-chain/evidence-map freeze; continue omitted-case search and canonical edition locks until G3 Tier-A universe is frozen. Do not inspect expanded similarity ranks before that freeze.
 
 ## Blocker
-No immediate blocker. G5 clean human/domain-informed validation remains a future hard gate for submission-grade empirical claims.
+No immediate blocker. G5 clean human/domain-informed validation remains mandatory before submission-grade empirical claims.

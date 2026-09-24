@@ -19,10 +19,10 @@
 - [x] Tier A/B/C case rules.
 - [x] 17 candidate tradition-time units seeded.
 - [x] 14 case/source rows audited in source registry.
-- [ ] Search systematically for omitted eligible ancient-text traditions.
-- [ ] Fully split Hurrian vs Hittite case/source layers.
+- [~] Search systematically for omitted eligible ancient-text traditions (expanded with EGY_OK, VED_SB, CHN_YAO, CHN_HUAI; continue).
+- [x] Split Hurrian vs Hittite case/source layers in the v0.2 universe.
 - [ ] Lock canonical critical editions/translations for Vedic/Greek/Hebrew/Chinese cases.
-- [ ] Design Egyptian bundles without manufacturing a unified narrative.
+- [~] Design Egyptian bundles without manufacturing a unified narrative (Old Kingdom stratum added; family bundles still pending).
 - [ ] Freeze every Tier-A inclusion/exclusion before expanded similarity.
 
 ## G4 · corpus/ontology

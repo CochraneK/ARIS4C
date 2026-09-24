@@ -10,9 +10,13 @@ EGY_NK,New Kingdom Egyptian,Egyptian,-1550,-1070,hieratic/hieroglyphic primary,e
 VED_RV,Rigvedic,Vedic Sanskrit,-1500,-1000,oral-textual transmitted corpus,available,Indo-European Indo-Aryan,South Asia,B,A,include,Chronology interval explicit
 GRC_ARCH,Archaic Greek,Ancient Greek,-800,-500,literary primary,available,Indo-European Hellenic,Aegean,A,A,include,Hesiod/Homeric-era material
 HEB_GEN,Genesis primeval-history working unit,Biblical Hebrew,-700,-400,literary primary,available,Northwest Semitic,Levant/Babylonia context,B,A,include,Composition-layer uncertainty retained
-CHN_WS_HAN,Late Warring States-Early Han Chinese,Old Chinese,-475,100,transmitted classical texts,available_partial,Sinitic,China,B,A,include,Source layers remain separate
+CHN_WS_HAN,Late Warring States-Early Han Chinese,Old Chinese,-475,100,transmitted classical texts,available_partial,Sinitic,China,B,A,pilot_composite_deprecated_v0.2,Replaced in v0.2 by CHN_YAO + CHN_HUAI source/time layers; retained only for Pilot provenance
 ROM_OVD,Early Imperial Roman literary comparator,Latin,-20,20,literary primary,candidate,Indo-European Italic,Mediterranean,A,A,candidate_control,Known literary dependence makes a useful positive-control candidate
 AVE_EARLY,Early Avestan tradition,Avestan,-1200,-500,oral-textual transmitted corpus,needs_bundle,Indo-European Iranian,Iran/Central Asia,C,A,candidate,Chronology/transmission uncertainty high
 JPN_KOJIKI,Kojiki mythic corpus,Old Japanese,700,720,early literary witness,candidate,Japonic,Japan,A,B,candidate,Post-500 CE external comparator
 NORSE_EDDA,Old Norse Eddic corpus,Old Norse,1100,1300,medieval manuscript/oral tradition,candidate,Indo-European Germanic,North Atlantic,B,B,candidate,Later witness; validation only by default
 KICHE_POPOL,K'iche' Popol Vuh,K'iche',1500,1560,early colonial manuscript preserving indigenous tradition,candidate,Mayan,Mesoamerica,B,B,candidate,Later witness; validation only by default
+EGY_OK,Old Kingdom Pyramid Texts,Old Egyptian,-2350,-2160,royal funerary inscriptions,needs_bundle,Egyptian Afroasiatic,Egypt,A,A,candidate,Earlier Egyptian textual stratum; must not be folded into Middle Kingdom
+VED_SB,Later Vedic Shatapatha Brahmana,Vedic Sanskrit,-800,-500,orally transmitted ritual prose with later manuscripts,flood_bundle_candidate,Indo-European Indo-Aryan,North India,B,A,candidate,Independent Manu flood source; must not be back-projected into Rigveda
+CHN_YAO,Canon of Yao / early Yu flood-control textual layer,Old Chinese,-500,-200,transmitted classical text with layered composition,flood_bundle_candidate,Sinitic,China,C,A,candidate,Split from Pilot CHN_WS_HAN composite; composition/witness uncertainty explicit
+CHN_HUAI,Huainanzi cosmology / Nüwa layer,Old Chinese,-180,-122,Han literary text,cosmogony_catastrophe_candidate,Sinitic,China,A,A,candidate,Split from Pilot CHN_WS_HAN composite; later Han textual layer

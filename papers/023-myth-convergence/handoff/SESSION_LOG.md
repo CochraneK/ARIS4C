@@ -142,3 +142,12 @@
 - Built a 14-row case-source registry showing verified vs still-unlocked source/edition status.
 - G2 numerical thresholds are met, but citation chaining/evidence-map freeze remains; G3 case-universe still open.
 - Progress advanced from 34% to 44% under the explicit v0.2 denominator.
+
+## 2026-09-24 · G3 case-universe structural correction
+- Added Old Kingdom Egypt as a distinct source stratum rather than treating Egyptian tradition as Middle/New Kingdom only.
+- Added Shatapatha Brahmana Manu flood as VED_SB, a separate later-Vedic flood case; Rigveda no longer stands in for all ancient Indian flood tradition.
+- Deprecated the Pilot CHN_WS_HAN composite for v0.2 and split early Chinese material into CHN_YAO and CHN_HUAI source/time layers.
+- Retained Avestan Yima with explicit composite/redaction dating uncertainty.
+- Retained Ovidian Deucalion as a late literary-network comparator/possible positive control, not an independent pristine tradition.
+- Candidate universe now 21 rows; source registry 20 rows.
+- Progress advanced to 46%; universe remains deliberately unfrozen until omitted-case and edition-lock searches finish.
