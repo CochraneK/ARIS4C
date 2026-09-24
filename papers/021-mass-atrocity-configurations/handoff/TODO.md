@@ -2,6 +2,15 @@
 
 ## P0 · replication gate
 
+- [x] Freeze published Harff/Williams result-level replication targets.
+- [x] Reconstruct and materialize candidate Williams case universe: 40 positive + 99 high-risk controls = 139.
+- [x] Cross-check all 40 positives against independent transformed PITF annual data.
+- [ ] Recover Hainmueller/Hazlett Political Analysis replication archive containing the Harff N=126 case-level matrix.
+- [ ] Acquire historical Polity IV 2012 and UCDP/PRIO v4-2012 binaries; hash/version them.
+- [ ] Reconstruct A_R and W_R/W_T and compare against Williams published margins.
+- [ ] Recover/verify Williams-era E_R; separately build current-WDI E_C sensitivity.
+- [ ] Recover P/I/S from Harff/Williams coding; do not proxy-code them silently.
+
 - [ ] Download PITF State Failure / GenoPoliticide 2018 source files and codebook.
 - [ ] Record URLs, retrieval date, license/redistribution notes and SHA-256.
 - [ ] Reconstruct Harff/Williams case universe.
