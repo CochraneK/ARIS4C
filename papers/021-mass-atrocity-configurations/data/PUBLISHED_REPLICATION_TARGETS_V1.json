@@ -185,19 +185,21 @@
       "Uganda 1971-79",
       "Vietnam South 1965-75"
     ],
-    "published_false_positives_named_subset": [
-      "Algeria 1991",
-      "Cambodia 1997",
-      "DR Congo 1992",
-      "Pakistan 1983",
-      "Turkey 1971",
-      "Romania 1989"
-    ],
     "known_internal_discrepancies": {
       "economic_autarky_total": {
-        "table_components_total": 40,
-        "prose_total": 41,
-        "rule": "Use table cell counts as primary validation target; retain prose 41 as unresolved source discrepancy until original matrix is recovered."
+        "genocide_present": 18,
+        "non_genocide_present": 22,
+        "component_sum": 40,
+        "table_printed_total": 41,
+        "canonical_margin_target": 40,
+        "rule": "Validate the two subgroup cells (18 and 22) and their arithmetic sum 40. Preserve the printed table total 41 as an unresolved source-internal arithmetic inconsistency."
+      },
+      "analysis_universe_intro_typo": {
+        "intro_text_non_genocide": 100,
+        "case_selection_and_table_non_genocide": 99,
+        "total_n": 139,
+        "canonical_target": 99,
+        "rule": "Use 99 controls because the case-selection section, Table 1, and total N=139 agree on 40+99. Preserve the intro value 100 as a source-internal typo."
       }
     },
     "interpretation_guardrails": {
@@ -212,10 +214,23 @@
     },
     "control_frame_reconstruction": {
       "published_non_genocide_controls": 99,
-      "pitf2018_mechanical_non_gen_candidates": 103,
-      "unresolved_difference": 4,
-      "status": "source-version-drift-unresolved",
-      "rule": "Do not remove cases to improve model fit. Resolve the four-case difference through source/version/case-definition provenance before calling the frame an exact Williams reconstruction."
-    }
+      "identity_file": "data/WILLIAMS_CONTROL_IDENTITIES_V1.csv",
+      "status": "identity-universe-reconstructed-v1",
+      "basis": "Williams-era SCIP/GMU consolidated-event frame plus Djibouti 1991-94 confirmed in PITF 2010-era literature and later official lists.",
+      "known_rendering_artifact": "The old SCIP HTML renders Jordan 1970 twice, once under Kenya. Later official PITF tables show the second 1970 row is a continuation of Jordan; it is not a separate Kenya case.",
+      "remaining_uncertainty": "Exact source-vintage begin/end dates differ for a small number of cases across PITF revisions; resolve those before condition coding.",
+      "rule": "Identity count is locked at 99. Do not change membership to improve QCA/CNA fit; date/source-vintage discrepancies are tracked separately."
+    },
+    "published_false_positives": [
+      "Cambodia 1997",
+      "Chad 1965-94",
+      "DR Congo 1992",
+      "Liberia 1985",
+      "Sierra Leone 1991",
+      "Turkey 1971",
+      "Romania 1989",
+      "Algeria 1991",
+      "Pakistan 1983"
+    ]
   }
 }
