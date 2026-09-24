@@ -180,12 +180,12 @@
       "blocker": "None. Methodological guard remains: definitional benchmark and non-definitional physical-signature models must stay separate."
     },
     "023": {
-      "progress": 31,
-      "stage": "Pilot-0 source audit · ontology refinement and blinded calibration gate",
+      "progress": 36,
+      "stage": "Calibration v0.1 frozen · independent reliability gate",
       "activity": "active",
-      "evidence": "11 tradition-time units with source/chronology audit; China window corrected to late Warring States–Early Han and Egypt split into Middle/New Kingdom strata. Flood, divine-conflict and anthropogony selected for first 24-motif reliability packet; controller seed coding exposed ontology splits before confirmatory coding.",
-      "next_gate": "Refine three ambiguous motif families, add witness-scope coding, freeze 24-motif ontology v0.1 and generate blinded A/B calibration packets.",
-      "blocker": "No blocker for ontology/source work. A genuinely independent second coder will be required later to pass the reliability gate."
+      "evidence": "24 calibration motifs now have explicit inclusion/exclusion rules; false-equivalence splits are frozen, witness_scope added, and 15 passages × 8 family-specific motifs generate a 120-judgment blinded packet. Dependency-free reliability scoring is implemented.",
+      "next_gate": "Resolve exact Atrahasis anthropogony locator, QA all packet locators, then obtain genuinely independent coder-B responses and score agreement before expanding the matrix.",
+      "blocker": "Independent coder B is required for the formal reliability gate; all controller-side preparation remains executable."
     }
   },
   "scheduling": {

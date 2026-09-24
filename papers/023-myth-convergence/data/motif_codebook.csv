@@ -4,10 +4,11 @@ tradition_name,string,Human-readable bounded tradition,Old Babylonian literary t
 time_start,integer_or_interval,Start year with BCE negative,-2000
 time_end,integer_or_interval,End year,-1600
 source_id,string,Stable source witness identifier,src_0001
-motif_id,string,Frozen motif identifier,E_ANTHRO_CLAY
+motif_id,string,Frozen motif identifier,ANTH_CLAY_MUD
 motif_family,string,Higher-level motif family,anthropogony
 motif_state,categorical,Coded state,present|absent|uncertain|not_observed
 evidence_grade,categorical,Source quality,A|B|C|D
+witness_scope,categorical,Relation of witness to case window,in-window|inherited_or_transmitted|later-comparator|uncertain
 source_date_start,integer_or_interval,Earliest plausible witness date,-1800
 source_date_end,integer_or_interval,Latest plausible witness date,-1700
 catalogue_crosswalk,string,External motif identifiers,Berezkin/Thompson/ATU

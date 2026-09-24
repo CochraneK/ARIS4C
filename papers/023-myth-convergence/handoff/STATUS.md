@@ -1,20 +1,21 @@
 # Status
 
 ## State
-Active · 31%
+Active · 36%
 
 ## Current stage
-Pilot-0 source audit complete at seed level; case windows corrected; calibration packet design ready.
+Calibration ontology v0.1 frozen; blinded 120-judgment packet and reliability scorer generated.
 
 ## Evidence
-- 11 bounded tradition-time units now separate Egyptian Middle/New Kingdom strata and use a late-Warring-States–Early-Han Chinese window.
-- Source audit links each pilot tradition to primary/critical/institutional text infrastructure with chronology-risk flags.
-- First calibration families are flood, divine conflict/succession and anthropogony.
-- Controller seed coding exposed ontology problems before dual coding: destructive flood vs exterminatory deluge vs flood-control; serpent vs sea opponent; dust/earth vs clay/potter anthropogony.
-- QCA remains disabled until source-backed reliability and case calibration are demonstrated.
+- 24 motifs across flood, divine-conflict and anthropogony now have explicit inclusion/exclusion rules.
+- Previously conflated concepts are split: destructive inundation vs exterminatory deluge; storm-vs-serpent vs storm-vs-sea; earth/dust vs clay/mud vs potter-forming.
+- Witness scope is now explicit: in-window / inherited-or-transmitted / later-comparator / uncertain.
+- 15 source passages generate 120 family-specific judgments in byte-identical coder-A/B templates.
+- Dependency-free reliability code calculates four-state raw agreement, Cohen kappa and Gwet AC1 plus a binary present/absent subset.
+- One item (Atrahasis anthropogony) is deliberately marked not coder-ready until exact scholarly edition lines are supplied.
 
 ## Next gate
-Revise the affected motif ontology, generate a 24-motif blinded calibration form, and freeze ontology v0.1. Then independent dual coding can begin.
+Resolve the Atrahasis passage locator, perform an internal packet QA, then obtain genuinely independent coder-B responses. Reliability results determine whether ontology v0.1 survives or is revised.
 
 ## Blocker
-Independent coder B will eventually be needed for the reliability gate. No blocker for ontology refinement, packet generation, or single-controller source audit.
+Independent coder B is required for the actual reliability gate. Packet construction and QA are not blocked.
