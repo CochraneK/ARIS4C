@@ -1,18 +1,12 @@
 # ARIS4C019 · Process status
 
-- Stage: Final public-delivery gate · local public-PDF QA PASS · canonical binary publish blocked
-- Activity: block
-- Progress: 98%
-- Scientific package: **PASS / locked**.
-- SIR submission package: **PASS**. Blinded DOCX + 34-page reviewer PDF, machine QA, page-by-page visual QA, accessibility audit, DOCX→PDF parity and identity scan all pass.
-- Anonymous replication resource: **PASS**.
-- Public manuscripts: English and Chinese repository-final sources complete; four canonical SVG figures complete; one-page portfolio visual complete.
-- Public PDF build reproduction: **PASS locally**. English = 12 pages; Chinese = 7 pages; both pass extractable-text and render-first visual QA, including CJK rendering and figure-page clipping checks.
-- Canonical repository PDF paths: **PENDING** — `docs/paper/019/en/main.pdf` and `docs/paper/019/zh/main.pdf` are not yet present on `main`.
-- Canonical workflow diagnostics: trigger commits `dc857f638517a25b7cb5b3b70284dd4aa6955682` and `f5070aa1b2f388627a51ee367124446988fc035f` both failed to yield a PDF bot commit. Workflow run `35965678753` failed before build steps; a failed-job re-run reproduced the same zero-step failure (latest job `107530128521`).
-- Fallback local reproduction: exact current GitHub sources/figures/CSS were independently rendered again; optimized EN = 11 pages / 100,363 bytes, ZH = 7 pages / 207,347 bytes; text extraction and full-page visual QA pass. This does not replace the canonical Git binary gate.
-- Final delivery audit: `process/FINAL_PUBLIC_DELIVERY_AUDIT.md`.
-- Scientific interpretation: locked. WHR2024-refresh eight-event mean +0.088, median -0.099, 6/8 negative; Bahrain omission -0.117. Israel frozen holdout mean +0.002 is reference-sensitive. No robust positive or negative population Life Ladder effect is established.
-- Secondary outcomes: positive/negative affect remain locked for this paper.
-- Blocker: **repository engineering only** — canonical GitHub binary publication of the two public PDFs. No scientific work is blocked or reopened.
-- Finish gate: when both PDF paths exist on `main`, verify their Git blobs/readability, mark `paper.json` PDF status complete, sync handoff, and promote dashboard to Finish / 100%.
+- Stage: Historical expansion · source/coverage reconstruction
+- Activity: active
+- Progress: 60%
+- Scope correction: the previous 98% state referred to the narrow leave-specific Pilot-0/publication package, not the user's original broad question. The project-level scope is reopened.
+- Pilot-0: **PASS / frozen sub-study**. Eight-event WHR2024 refresh + independent Israel holdout + legal isolation audit + bilingual/SIR package remain preserved and must not be retroactively rewritten to manufacture stronger findings.
+- Expanded scope: long-run time-off institutions/working time from the early twentieth century (systematic ILO anchor from 1936), subjective-well-being evidence from 1945 onward, Eurobarometer 1973+, WVS/EVS 1981+, Gallup-era annual analysis, and modern legal coverage targeting 193 UN member states where sources permit.
+- Statistical expansion: descriptive historical atlas; policy-diffusion/event-history models; country/time fixed effects; within-between decomposition; nonlinear and lag models; instrument-specific outcome models and bridge diagnostics; multilevel/meta-analytic synthesis; expanded staggered event studies/synthetic controls; event-level meta-analysis; moderator/heterogeneity analysis.
+- Canonical plans: `process/HISTORICAL_EXPANSION_PLAN.md` and `process/HISTORICAL_SOURCE_MATRIX.md`.
+- Immediate gate: build a no-effect-inspection country × source × year/wave coverage inventory, then materialize the historical legal/working-time and multi-instrument well-being panels before new effect estimation.
+- Existing PDF-publication runner issue remains an engineering issue for the Pilot-0 snapshot only and is no longer the project-level blocker.
