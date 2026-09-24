@@ -43,11 +43,18 @@
 - [x] Verify SIR Markdown gate: ~8.15k words, 218-word abstract, 6 keywords, ordered figures, no author/repository identity leakage.
 - [x] Document substantive OpenAI/LLM assistance in Methods and keep AI out of authorship/evidence roles.
 - [x] Remove duplicate partial legal-audit artifacts; retain the complete 11-row legal audit as the sole canonical audit.
-- [ ] Build and QA editable SIR DOCX source from the blinded manuscript.
-- [ ] Build reviewer PDF from the same frozen source and visually inspect pagination, equations, references and figure rendering.
-- [ ] Establish a genuinely anonymous reviewer data/code access path; do not expose the identifying repository in the blinded file.
+- [x] Build and QA editable SIR DOCX source from the blinded manuscript.
+- [x] Build reviewer PDF from the same frozen source and visually inspect pagination, equations, references and figure rendering.
+- [x] Establish a genuinely anonymous reviewer data/code access path; do not expose the identifying repository in the blinded file.
 - [ ] Fill author-side submission metadata separately: affiliation, corresponding email, ORCID if applicable, funding, competing interests, and any institution-specific ethics/exemption determination.
-- [ ] Freeze final submission manifest linking manuscript, figures, tables, number lock, QA results and anonymous review package.
+- [x] Freeze final submission manifest linking manuscript, figures, tables, number lock, QA results and anonymous review package.
+
+## P2.5 · Portfolio public delivery
+
+- [x] Add one-page visual explainer for Finish-state portfolio display.
+- [x] Wire ARIS4C019 into the canonical bilingual public-PDF builder and CI workflow.
+- [ ] Verify generated English and Chinese public PDFs are committed under `docs/paper/019/` and pass extractability/page-count checks.
+- [ ] Run final repository output audit and only then promote dashboard activity to `finish` / 100%.
 
 ## P3 · Deferred / future confirmation
 
