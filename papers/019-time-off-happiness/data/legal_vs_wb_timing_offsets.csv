@@ -1,0 +1,10 @@
+event_id,country,legal_effective_year,wb_jump_year,wb_minus_legal_year,leave_avg_delta,event_tier,primary_pool,scope_flags
+BHR_EW2014,Bahrain,2012,2014,2,11.666666666666668,A_corroborated,True,
+CAN_EW2019,Canada,2019,2019,0,3.3333333333333,A_corroborated,True,federal_jurisdiction_only
+CHN_EW2009,China,2008,2009,1,6.66666666666667,A_corroborated,True,
+HRV_EW2011,Croatia,2010,2011,1,2,A_corroborated,True,
+XKX_EW2012,Kosovo,2010,2012,2,5,A_corroborated,True,
+KWT_EW2011,Kuwait,2010,2011,1,11.333333333333332,A_corroborated,True,
+LTU_EW2019,Lithuania,2017,2019,2,0.3333333333333002,A_corroborated,False,broad_labour_code_package
+LUX_EW2020,Luxembourg,2019,2020,1,1,A_corroborated,True,
+TWN_EW2018,Taiwan Province of China,2017,2018,1,0.6666666666666998,A_corroborated,True,
