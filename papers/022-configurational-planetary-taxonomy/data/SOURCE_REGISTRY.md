@@ -144,3 +144,30 @@ This file is the **current canonical key → source map**. Historical revisions 
 - `NASA_ITOKAWA_AIRLESS` — NASA NTRS Itokawa returned-sample space-weathering work uses the airless-body surface context. https://ntrs.nasa.gov/citations/20140011739
 - `UMBRIEL_OCCULTATION_2023` — multichord stellar occultation: no atmosphere detected; CO2 pressure upper limit <72 nbar at 3σ. https://academic.oup.com/mnras/article/526/4/6193/7313621
 - `TITANIA_OCCULTATION_2009` — stellar occultation: no atmospheric refraction; gas-dependent surface-pressure upper limits ~8–22 nbar at 1σ. https://doi.org/10.1016/j.icarus.2008.09.011
+
+## Numeric readiness gate · priority-ten small bodies
+
+Accepted under `process/NUMERIC_ACQUISITION_ADDENDUM.md`; source tier and derived/direct status are preserved per row.
+
+- `VESTA_DAWN_2013` — Russell et al., *Meteoritics & Planetary Science*; Dawn mass 2.59076±0.00001×10^20 kg, bulk density 3456±1% kg/m3. https://onlinelibrary.wiley.com/doi/full/10.1111/maps.12091
+- `NASA_PDS_VESTA` — NASA PDS target context; semimajor axis 2.36151 AU and Dawn mass. https://arcnav.psi.edu/urn:nasa:pds:context:target:asteroid.4_vesta
+- `PALLAS_CARRY_2010` — Carry et al., *Icarus*; ellipsoid radii 275±4, 258±3, 238±3 km, mass (1.2±0.3)×10^-10 solar masses, density 3.4±0.9 g/cm3. https://doi.org/10.1016/j.icarus.2009.08.007
+- `JPL_SB_ELEMENT_PALLAS` — JPL SSD fixed-format small-body element table sample; a=2.7721532 AU. https://ssd.jpl.nasa.gov/sb/elem_tables.html
+- `HYGIEA_SHAPE_2019` — Vernazza et al., *Nature Astronomy*; volume-equivalent radius 217±7 km and density 1944±250 kg/m3. https://doi.org/10.1038/s41550-019-0915-8
+- `HYGIEA_ORBIT_PEER_REVIEWED` — peer-reviewed asteroid-property table, a≈3.141 AU. https://academic.oup.com/view-large/431856666
+- `INTERAMNIA_AA_2020` — Hanuš et al., *A&A* 633 A65; D=332±6 km and density 1.98±0.68 g/cm3. https://doi.org/10.1051/0004-6361/201936639
+- `INTERAMNIA_ORBIT_2023` — Jiang et al. thermal study; a=3.056 AU, e=0.155, i=17.311°. https://arxiv.org/abs/2212.09534
+- `NASA_PDS_EROS` — NASA PDS; mass (6.687±0.003)×10^15 kg, density 2.67±0.03 g/cm3, a=1.4579 AU. https://arcnav.psi.edu/urn:nasa:pds:context:target:asteroid.433_eros
+- `NASA_PDS_BENNU` — NASA PDS; mass (7.329±0.009)×10^10 kg, volume 0.0615±0.0001 km3, density 1.190±0.013 g/cm3, a=1.1264 AU. https://arcnav.psi.edu/urn:nasa:pds:context:target:asteroid.101955_bennu
+- `NASA_PDS_RYUGU` — NASA PDS; mass (4.50±0.06)×10^11 kg, volume 0.377±0.005 km3, density 1.19±0.03 g/cm3, a=1.1896 AU. https://arcnav.psi.edu/urn:nasa:pds:context:target:asteroid.162173_ryugu
+- `NASA_PDS_ITOKAWA` — NASA PDS; mass (3.51±0.105)×10^10 kg, density 1.9±0.13 g/cm3, a=1.3241 AU. https://arcnav.psi.edu/urn:nasa:pds:context:target:asteroid.25143_itokawa
+- `ITOKAWA_SCIENCE_2006` — Abe et al., *Science*; direct Hayabusa mass/volume/density determination. https://doi.org/10.1126/science.1126272
+- `QUAOAR_APJ_2026` — Ortiz et al., *ApJ* 1008:159; equivalent diameter 1094.4±4.6 km and density 1.760±0.109 g/cm3 based on updated system mass. https://doi.org/10.3847/1538-4357/ae907e
+- `QUAOAR_Q_RATIO_2016` — Barr & Schwamb, MNRAS; Weywot satellite-to-total system mass ratio q=0.00053±0.0002. https://pureadmin.qub.ac.uk/ws/files/180564072/stw1052.pdf
+- `QUAOAR_ORBIT_2013` — Braga-Ribas et al., *ApJ*; a=43.51 AU, e=0.035, i=7.98°. https://lesia.obspm.fr/perso/bruno-sicardy/biblio/biblio/Braga_Ribas_etal_Quaoar_AJ13.pdf
+- `ORCUS_BROWN_2010` — Brown et al.; Orcus–Vanth system mass (6.32±0.01)×10^20 kg. https://authors.library.caltech.edu/records/71kzc-xdf69
+- `ORCUS_ALMA_2023` — Brown & Butler; measured Vanth/Orcus mass ratio 0.16±0.02. https://arxiv.org/abs/2307.04848
+- `ORCUS_SIZE_2019` — Sickafoose et al., *Icarus* context; Orcus D=917±25 km and a=39.3 AU. https://www.sciencedirect.com/science/article/pii/S0019103517307996
+- `ORCUS_ORBIT_2019` — same peer-reviewed Orcus/Vanth occultation context; a=39.3 AU, e=0.22, i=20.5°.
+- `ORCUS_VOLATILE_RETENTION_2019` — peer-reviewed Orcus/Vanth occultation paper summarizes volatile-retention evidence: Orcus is unlikely to retain enough volatiles for an atmosphere; coded MODEL_INFERRED rather than direct non-detection. https://www.sciencedirect.com/science/article/pii/S0019103517307996
+

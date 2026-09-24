@@ -5,19 +5,24 @@
   "title":"Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title":"Planetary Taxonomy × fsQCA",
   "year":2026,
-  "status":"m2-evidence-gates-pass-smallbody-numeric-only",
+  "status":"m2-readiness-pass-calibration-freeze-next",
   "domain":"planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary":"Primary M2 remains frozen and calibration closed. Evidence readiness now passes both ATMOSPHERE_RETENTION and INTERNAL_ORGANIZATION at 40/50 each. Complete cases are 27/50; the only dominant readiness failure is the missing 16-case small-body numeric layer that keeps SCALE, BULK_MATERIAL and SOLAR_ENERGY at 34/50.",
+  "summary":"The frozen anti-circularity M2 readiness gate now passes without changing conditions or thresholds. Priority-ten provenance-controlled small-body numerics raise primary-condition coverage to 44/44/41/40/44, complete cases to 37/50 and small/boundary completeness to 10/16. Calibration is now eligible to be frozen but remains uninspected.",
   "authors":["Cochrane Kang"],
-  "aris":{"provenance":"All evidence and readiness gates were frozen/updated before calibration or QCA exposure. Batch 08 uses explicit NASA airless-asteroid evidence and direct stellar-occultation upper limits; no atmosphere absence is inferred from silence.","version":"v1.4.0"},
+  "aris":{"provenance":"Sample, M2 conditions, readiness thresholds and alternate numeric-source rules were all frozen before result inspection. Priority-ten small-body numerics use mission/PDS/JPL-static/peer-reviewed or explicitly source-derived quantities, including explicit system-to-primary mass corrections for Quaoar and Orcus. All frozen readiness gates pass; no calibration or QCA result has been inspected.","version":"v1.5.0"},
   "links":{
     "source":"https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
     "m2_condition_freeze":"process/M2_CONDITION_FREEZE.md",
-    "m2_readiness_audit":"data/M2_READINESS_AUDIT_v0.4.md",
-    "evidence_state":"data/evidence_state_v0.9.csv",
+    "numeric_acquisition_addendum":"process/NUMERIC_ACQUISITION_ADDENDUM.md",
+    "numeric_acquisition_audit":"data/NUMERIC_ACQUISITION_AUDIT.md",
+    "m2_readiness_audit":"data/M2_READINESS_AUDIT_v1.0.md",
+    "physical_core":"data/raw_physical_core_v0.2.csv",
+    "orbital_geometry":"data/orbital_geometry_v0.3.csv",
+    "derived_physics":"data/derived_physics_v0.3.csv",
+    "evidence_state":"data/evidence_state_v1.0.csv",
     "sources":"data/SOURCE_REGISTRY.md"
   },
-  "tags":["ARIS","ARIS4C","planetary science","QCA","fsQCA","readiness gate","atmosphere","small bodies"],
+  "tags":["ARIS","ARIS4C","planetary science","QCA","fsQCA","readiness PASS","small bodies","provenance","anti-circularity"],
   "bilingual_delivery":{"english":true,"chinese":true},
-  "outputs":{"paper_en":"not-started","paper_zh":"not-started","figures":{"status":"planned","count":0},"tables":{"status":"evidence v0.9 + readiness v0.4","count":9},"pdf":{"status":"not-started","english":false,"chinese":false}}
+  "outputs":{"paper_en":"not-started","paper_zh":"not-started","figures":{"status":"planned","count":0},"tables":{"status":"numeric v0.3 + evidence v1.0 + readiness PASS","count":10},"pdf":{"status":"not-started","english":false,"chinese":false}}
 }

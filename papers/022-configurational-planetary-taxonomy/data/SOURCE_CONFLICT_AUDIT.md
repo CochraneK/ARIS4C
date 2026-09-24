@@ -53,3 +53,14 @@ Unresolved source conflicts requiring `NA_SOURCE_CONFLICT`: **0**.
 | C012 | Titania | atmosphere | TITANIA_OCCULTATION_2009 | direct upper-limit observation | No atmospheric refraction; nbar-level upper limits justify negligible-atmosphere coding, not an absolute physical zero. | RESOLVED_BY_UPPER_LIMIT |
 
 Unresolved source conflicts requiring `NA_SOURCE_CONFLICT`: **0**.
+
+## Numeric readiness gate adjudications
+
+| ID | Body | Variable | Sources | Type | Adjudication | Status |
+|---|---|---|---|---|---|---|
+| C013 | Quaoar | primary mass | QUAOAR_APJ_2026 + QUAOAR_Q_RATIO_2016 | system-vs-primary mass | Reconstruct system mass from published density × occultation volume, then subtract Weywot with published satellite-to-total q=0.00053±0.0002. Never use system mass silently. | RESOLVED_BY_EXPLICIT_DERIVATION |
+| C014 | Orcus | primary mass | ORCUS_BROWN_2010 + ORCUS_ALMA_2023 | system-vs-primary mass | Convert system mass to primary mass using directly measured Vanth/Orcus mass ratio 0.16±0.02. | RESOLVED_BY_EXPLICIT_DERIVATION |
+| C015 | Orcus | atmosphere | ORCUS_VOLATILE_RETENTION_2019 | model vs direct observation | Volatile-retention synthesis supports `MODEL_INFERRED / NONE_OR_NEGLIGIBLE`; do not upgrade to direct non-detection. | RESOLVED_BY_EVIDENCE_LEVEL |
+
+Unresolved source conflicts requiring `NA_SOURCE_CONFLICT`: **0**.
+
