@@ -97,7 +97,8 @@ def build_panels() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     wb = pd.read_csv(DATA / "worldbank_statutory_leave_panel.csv")
     cross = pd.read_csv(DATA / "modern_wb_whr_country_crosswalk.csv")
 
-    whr["country_key"] = whr["Country name"].map(norm_name)
+    whr = whr.rename(columns={"Country name": "country_name"})
+    whr["country_key"] = whr["country_name"].map(norm_name)
     whr["year"] = pd.to_numeric(whr["year"], errors="coerce").astype("Int64")
     whr["life"] = pd.to_numeric(whr["Life Ladder"], errors="coerce")
     whr["loggdp"] = pd.to_numeric(whr["Log GDP per capita"], errors="coerce")
@@ -121,7 +122,7 @@ def build_panels() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
             continue
         leave_rows.append(
             {
-                "country": r._asdict()["Country name"],
+                "country": r.country_name,
                 "country_key": r.country_key,
                 "code": code,
                 "year": int(r.year),
@@ -141,7 +142,7 @@ def build_panels() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         "hong kong": "hong kong s a r of china",
         "palestine": "state of palestine",
     }
-    whr_lookup = whr.set_index(["country_key", "year"])[["Country name", "life", "loggdp"]].to_dict("index")
+    whr_lookup = whr.set_index(["country_key", "year"])[["country_name", "life", "loggdp"]].to_dict("index")
     hour_rows = []
     for r in hours.itertuples(index=False):
         key = hour_alias.get(norm_name(r.Entity), norm_name(r.Entity))
@@ -156,7 +157,7 @@ def build_panels() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
             continue
         hour_rows.append(
             {
-                "country": rec["Country name"],
+                "country": rec["country_name"],
                 "country_key": key,
                 "code": str(r.Code),
                 "year": int(r.Year),
