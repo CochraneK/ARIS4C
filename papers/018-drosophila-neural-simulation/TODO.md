@@ -86,8 +86,20 @@
 - [x] Freeze R1–R5 localization protocol before inspecting matched outputs.
 - [x] Audit immediate legacy/current descending-signal → CPG semantics.
 - [x] R1: compare Retina geometry/order/index hashes — exact SHA-256 identity.
-- [ ] R2a: compare frozen retinal vectors after FlyGym→flyvis mapping.
-- [ ] R2b: compare pinned neural-model responses to frozen retinal vectors.
-- [ ] R3: retain pure decoder identity gate.
+- [x] R2a: compare frozen retinal vectors after FlyGym→flyvis mapping — exact equality.
+- [x] R2b: compare pinned neural-model responses to frozen retinal vectors — neural hashes equal.
+- [x] R3: retain pure decoder identity gate.
 - [ ] R4: deepen controller comparison only if upstream layers do not explain divergence.
 - [ ] R5: compare body trajectories only after R1–R4 localization.
+
+
+## Pilot 4 R2.5 · initial-scene sensory localization
+
+- [x] Freeze renderer/initial-scene gate before inspecting outputs.
+- [x] Implement isolated legacy/current reset sensory-capture scripts.
+- [x] Implement ommatidia/body-pose comparator.
+- [x] Add CI workflow.
+- [ ] Restore repository-wide GitHub Actions job execution.
+- [ ] R2.5: capture matched reset/first-frame sensory vectors.
+- [ ] Compare full/grayscale 2×721×2 hashes and body-root pose.
+- [ ] Localize renderer/camera/body/scene-reset semantics if sensory vectors differ.
