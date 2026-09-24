@@ -5,13 +5,13 @@
   "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title": "Planetary Taxonomy × fsQCA",
   "year": 2026,
-  "status": "pilot1-source-hardened",
+  "status": "pilot1-anchor-evidence-coding",
   "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. The physical/orbital/derived data spine now distinguishes JPL source values, fitted approximate planetary elements, satellite mean elements, explicit proxies and derived values. Eight planet orbits are source-hardened, five dwarf-planet heliocentric a values remain visibly provisional, and a 50-case geophysical evidence matrix/protocol is frozen before coding or QCA inspection.",
+  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. The physical/orbital/derived spine is source-hardened for the major planets, and the first blinded geophysical evidence batch now codes composition, atmosphere and differentiation for 10 anchor bodies under a pre-frozen protocol while all rows remain unexposed to QCA results.",
   "authors": ["Cochrane Kang"],
   "aris": {
-    "provenance": "ARIS4C022 was registered 2026-09-24. Pilot-0 froze the 50-body frame and anti-circularity model ladder. Physical-core v0.1 ingested JPL values for 34 cases and source-faithful Margot/Soter code. Pilot-1 built separate orbit and derived-physics layers. Source-hardening v0.2 replaced all eight planet period-derived semimajor axes with JPL approximate J2000 elements (Earth explicitly as EMB proxy), quantified the <0.05% shifts, and froze an unexposed 50-case geophysical evidence-state matrix and operational coding protocol before calibration or QCA solution inspection.",
-    "version": "v0.5.0"
+    "provenance": "ARIS4C022 froze the case frame, variable architecture and anti-circularity model ladder before analysis. Pilot-1 built the raw/orbit/derived spine and source-hardened the eight planet orbits. Evidence protocol v0.1 was frozen before coding. Anchor batch 01 then coded high-confidence NASA-supported composition, atmosphere and differentiation states for the eight planets plus Ceres and Pluto, with per-variable source keys and conservative unresolved cells left pending. No QCA calibration or solution inspection occurred.",
+    "version": "v0.6.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
@@ -21,22 +21,20 @@
     "sources": "data/SOURCE_REGISTRY.md",
     "model_ladder": "process/MODEL_LADDER.md",
     "case_frame": "data/case_frame_v0.1.csv",
-    "data_dictionary": "data/DATA_DICTIONARY.md",
     "physical_core": "data/raw_physical_core_v0.1.csv",
     "orbital_geometry": "data/orbital_geometry_v0.2.csv",
     "derived_physics": "data/derived_physics_v0.2.csv",
-    "evidence_state": "data/evidence_state_v0.1.csv",
-    "orbit_hardening_audit": "data/ORBIT_SOURCE_HARDENING_AUDIT.md",
-    "missingness_audit": "data/MISSINGNESS_AUDIT.md",
+    "evidence_state": "data/evidence_state_v0.2.csv",
+    "evidence_audit": "data/EVIDENCE_CODING_AUDIT.md",
     "dynamics_code": "code/dynamics_metrics.py"
   },
-  "tags": ["ARIS","ARIS4C","planetary science","planet definition","planetary taxonomy","QCA","fsQCA","set theory","dynamical dominance","orbital hierarchy","Mars","dwarf planets","natural satellites","Solar System","JPL SBDB","JPL mean elements","evidence-state coding"],
+  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","dynamical dominance","orbital hierarchy","Mars","dwarf planets","natural satellites","JPL SBDB","evidence-state coding"],
   "bilingual_delivery": {"english": true,"chinese": true},
   "outputs": {
     "paper_en": "not-started",
     "paper_zh": "not-started",
     "figures": {"status": "planned","count": 0},
-    "tables": {"status": "case frame + physical + orbit v0.2 + derived v0.2 + evidence-state skeleton","count": 5},
+    "tables": {"status": "case frame + physical + orbit + derived + evidence v0.2","count": 5},
     "pdf": {"status": "not-started","english": false,"chinese": false}
   }
 }
