@@ -13,7 +13,7 @@ RULES={
  ("data",r"data"),("image",r"image"),("results_conclusions",r"results?|conclusions?"),
  ("text",r"text"),("methods_analysis",r"methods?|analys"),("materials",r"materials?|cell lines?|tissues?"),
  ("authorship_affiliation",r"authorship|affiliation"),("peer_review",r"peer review"),
- ("references_attributions",r"referenc|attribution"),("human_subjects",r"human subject|patient consent|informed"),
+ ("references_attributions",r"referenc|attribution|cites retracted work"),("human_subjects",r"human subject|patient consent|informed"),
  ("animal_subjects",r"animal welfare|iacuc"),("article_general",r"about article|of/in article")
 ],
 "mechanism":[
@@ -46,7 +46,7 @@ RULES={
  ("publisher_error",r"error by journal/publisher|duplication of content through error by journal/publisher"),
  ("third_party_error",r"error by third party"),("rogue_editor",r"rogue editor"),
  ("complaint_author",r"complaints about author"),("complaint_institution",r"complaints about company/institution"),
- ("complaint_third_party",r"complaints about third party")
+ ("complaint_third_party",r"complaints about third party"),("third_party_involvement",r"third party involvement"),("commendable_response",r"doing the right thing")
 ],
 "notice_lifecycle":[
  ("notice_absent",r"notice.+lack of"),("notice_limited",r"notice.+limited or no information"),
@@ -58,7 +58,7 @@ RULES={
  ("withdrawn_outdated",r"withdrawn as out of date"),
  ("withdrawn_republish",r"withdrawn to publish in different journal"),
  ("transfer_ownership",r"transfer of copyright|ownership"),("publishing_ban",r"publishing ban"),
- ("date_unknown",r"date of article and/or notice unknown")
+ ("date_unknown",r"date of article and/or notice unknown"),("conference_nonpresentation",r"not presented at conference"),("citation_of_retracted_work",r"cites retracted work")
 ]
 }
 
