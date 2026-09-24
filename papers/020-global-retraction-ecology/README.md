@@ -1,5 +1,19 @@
 # ARIS4C-020 · Global Retraction Ecology
 
+## Current state · 2026-09-24
+
+**Active · 38%**
+
+- full RWDB snapshot audited: 72,606 rows / 67,197 Retractions;
+- 61,155 unique usable original-paper DOI;
+- median publication→retraction lag: 490 days;
+- OpenAlex deterministic 1,000-DOI pilot: 99.6% match;
+- OpenAlex full-match shard 0: 15,146 / 15,255 = 99.2855%;
+- event/work identity, parsing, denominator, reason-ontology, work-type and citation-afterlife gates specified;
+- next execution gate: OpenAlex shards 1–3 + year×field publication denominators.
+
+Key gates: [first data audit](process/FIRST_DATA_AUDIT.md) · [OpenAlex match](process/OPENALEX_MATCH_GATE.md) · [denominator spec](process/DENOMINATOR_SPEC.md) · [reason ontology](process/REASON_ONTOLOGY_SPEC.md) · [citation afterlife](process/CITATION_AFTERLIFE_SPEC.md)
+
 ## Question
 
 What does the global retraction system actually look like when we use the full Retraction Watch database, normalize by the underlying publication universe, preserve multi-label retraction reasons, model publication-to-retraction time, and follow citations after retraction?
