@@ -1,66 +1,62 @@
-# ARIS4C019 · Historical coverage gate v0.1
+# ARIS4C019 · Historical coverage gate v0.2
 
 **Gate date:** 2026-09-24  
 **Effect inspection:** prohibited / none performed in this gate
 
-## What is now materialized
+## What is now materially available
 
-The first historical coverage layer is no longer only a plan.
+The historical expansion now has executable coverage rather than only source plans.
 
-- source-level registry: **11 source families** spanning legal institutions, historical working time and subjective well-being;
-- WVS wave metadata registry: **7 waves** scaffolded;
-- WVS visible country registry: **229 source-wave-country rows** across Waves 1–6;
-- unique WVS country/territory codes visible across those rows: **96**;
-- Cantril 1957–1963 early-country seed: **10 historical countries/entities**;
-- WVS Wave 1 early-country seed: **10 countries**;
-- modern WORLD legal snapshot target: **193 UN member states**;
-- existing World Bank legal panel: **202 economies / 3,434 rows / EW 2004–2020**;
-- existing WHR annual panel in repository: **165 countries / 2,199 country-years through 2022**, with the WHR2024 refresh separately extending the frozen Pilot-0 source through 2023.
-
-## Historical time depth now supported by concrete sources
-
-| layer | earliest verified anchor | current role |
+| layer | materialized coverage | status |
 |---|---:|---|
-| historical days/hours literature | 1870 | pre-modern working-time context / extraction pending |
-| ILO paid annual leave standard | 1936 | international institutional diffusion |
-| WDH happiness distributions | 1945 | postwar historical well-being backbone |
-| Cantril self-anchoring ladder | 1957 | early cross-national bridge |
-| Eurobarometer | 1973 | repeated European life satisfaction |
-| WVS | 1981 | multi-wave global happiness / life satisfaction |
-| World Bank Employing Workers | 2004 | annual statutory-leave screening |
-| Gallup / WHR | 2005 | modern annual Life Ladder |
-| WORLD global legal snapshot | 2015 | 193-country legal cross-section |
+| WHR2024 annual Life Ladder availability | **2,363 country-years / 165 countries or territories / 2005–2023** | country-year coverage complete for the validated release |
+| OWID annual working-hours availability | **5,063 country-years / 130 countries or territories / 1870–2023** | coverage-only panel materialized; numeric hours withheld from this gate |
+| WVS visible Waves 1–6 | **229 wave-country rows / 96 unique codes** | seed materialized; Waves 3–6 catalogue-count mismatches remain explicit |
+| WDH Trends in Nations comparable series | **105 measure-country long-series rows / 56 normalized country labels** | metadata materialized; series values not opened |
+| Cantril ICPSR 7023 | **10 historical countries/entities / 1957–1963** | country seed materialized |
+| Eurobarometer ECS73 | **9 countries / 1973** | first country-survey seed materialized |
+| ILO C052/C132 | **54 + 39 ratifications source-count verified** | row-level bounded ingest code committed; live row materialization still pending |
+| World Bank Employing Workers | **202 economies / 3,434 rows / EW2004–2020** | already materialized from Pilot-0 |
+| WORLD 2015 | **193 UN member states target** | source verified; redistribution/license constraints retained |
 
-## WVS metadata inconsistency discovered
+## Cross-layer overlap before any effect inspection
 
-The IHSN catalogue pages report more countries/societies than are present in the currently visible country tables for several waves:
+| overlap | count |
+|---|---:|
+| WHR × actual-hours country-years | **1951** |
+| WHR × actual-hours countries | **125** |
+| WVS visible Waves 1–6 × actual-hours country codes | **89** |
+| WDH comparable-series countries × actual-hours countries | **51** |
+| WDH comparable-series countries × WHR countries | **55** |
 
-| wave | reported | visible rows | gap |
-|---:|---:|---:|---:|
-| 1 | 10 | 10 | 0 |
-| 2 | 18 | 18 | 0 |
-| 3 | 56 | 49 | 7 |
-| 4 | 41 | 39 | 2 |
-| 5 | 58 | 54 | 4 |
-| 6 | 60 | 59 | 1 |
+These are availability intersections only. No happiness–hours or happiness–leave coefficient, correlation, ranking, sign or graph was computed.
 
-This is a **QA finding**, not a reason to guess missing countries. The expanded panel must reconcile each wave against the downloadable release/DDI before country-wave coverage is frozen.
+## WDH comparability rule
 
-## Interpretation of scale
+The WDH Trends in Nations seed uses only series that WDH itself describes as spanning at least **20 years** and containing at least **10 comparable data points**. Measure family, response scale, WDH variable code and starting year are preserved. Apparent source-code anomalies are flagged rather than silently corrected. cite placeholder removed in repository artifact: source URL stored per row.
 
-The project is now materially broader than the Pilot-0:
+This seed is a bridge/coverage layer, not permission to pool 3-step happiness, 4-step life satisfaction, 10-step life satisfaction and 11-step life satisfaction as one raw outcome.
 
-- the modern legal universe can reach 193 countries;
-- postwar happiness evidence begins in 1945 rather than 2005;
-- WVS Waves 1–6 alone already expose 96 unique visible country/territory codes in the seed registry;
-- causal reform events remain a separate, stricter subset and are not allowed to determine descriptive/global coverage.
+## Working-hours comparability rule
 
-## Next coverage gates
+The materialized 1870–2023 availability derives from the OWID annual-working-hours series. Historical Huberman–Minns-era observations and later Penn World Table-era observations remain source-era separated. A numeric historical panel may be ingested next, but source changes must remain explicit.
 
-1. reconcile WVS Wave 3–7 release-country counts from downloadable metadata;
-2. enumerate Eurobarometer country × survey-year life-satisfaction coverage;
-3. acquire/export WDH Trends in Nations / comparable-question subsets where license and interface permit;
-4. materialize ILO C052/C132 ratification rows with status and declared leave length;
-5. add historical national-law effective dates separately from ILO ratification;
-6. extend working-time country coverage using OECD 1970–2019 plus the historical 1870–2000 literature;
-7. compute overlap cells among legal leave, realized hours and each well-being instrument before any expanded effect estimation.
+## WVS QA lock
+
+Current source metadata report more countries/societies than appear in visible catalogue country tables for Waves 3–6. No missing countries are guessed. Wave 7 remains pending official/current release-country inventory.
+
+## ILO lock
+
+NORMLEX currently reports **54 C052 ratifications (17 denounced/not in force)** and **39 C132 ratifications**. A bounded parser is committed at code/historical_ilo_ratification_ingest.py and hard-fails on count drift. Ratification remains an institutional anchor only; it is not silently treated as national statutory-entitlement adoption.
+
+## Still closed before expanded effect estimation
+
+1. materialize ILO C052/C132 country rows;
+2. reconcile WVS Waves 3–7 against downloadable release/DDI metadata;
+3. expand Eurobarometer country × survey coverage beyond the 1973 seed;
+4. build WDH observation/question metadata beyond the long-series seed;
+5. build national paid-leave primary-law chronology separately from ILO ratification;
+6. ingest numeric actual-hours values with source-era/comparability flags;
+7. create an instrument bridge manifest before harmonizing subjective-well-being scales.
+
+Until these are satisfied, the expanded statistical ladder remains locked.
