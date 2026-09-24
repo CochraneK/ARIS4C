@@ -1,9 +1,11 @@
 # STATUS · ARIS4C022
 
-- State: newly registered / initial design scaffold complete
-- Portfolio activity: active on registration; may return to wait after the current bounded unit
-- Progress estimate: 18%
-- Current gate: freeze Phase-1 case frame and provenance schema
+- State: Pilot-0 case frame frozen / raw-data ingestion gate
+- Portfolio activity: active
+- Progress estimate: 26%
+- Frozen case frame: 50 bodies = 8 planets + 5 dwarf planets + 21 satellites + 16 small/boundary bodies
+- Current gate: populate canonical raw physical/orbital matrix with field-level provenance and uncertainty
 - Blocker: none
-- Scientific caution: use QCA as configurational taxonomy unless an explicit causal outcome/mechanism is independently justified
+- Scientific caution: official-label QCA is a taxonomy audit, not causal discovery
+- Anti-circularity: definitional benchmark and non-definitional physical-signature models are frozen separately
 - Positive control: Mars is a planet under the current IAU Solar-System definition
