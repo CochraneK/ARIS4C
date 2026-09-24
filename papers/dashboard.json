@@ -156,12 +156,12 @@
       "blocker": "Repository engineering only: GitHub Actions/public-PDF binary publication has not produced the two canonical files. No scientific blocker and no further outcome analysis is required."
     },
     "020": {
-      "progress": 36,
-      "stage": "RWDB audited · OpenAlex match gate PASS · denominator contract frozen",
+      "progress": 38,
+      "stage": "RWDB audited · OpenAlex match gate PASS · analysis contracts frozen",
       "activity": "active",
-      "evidence": "72,606-row RWDB audit complete. Deterministic 1,000-DOI OpenAlex pilot matched 996/1,000 (99.6%); full-match shard 0 matched 15,146/15,255 unique DOIs (99.2855%) with zero API errors. Event/work identity, semicolon-list parsing, and denominator contracts are frozen.",
-      "next_gate": "Run OpenAlex enrichment shards 1–3 with the committed resumable script; aggregate full DOI coverage; generate year×field denominator tables and freeze eligible OpenAlex work types before comparative retraction-rate claims.",
-      "blocker": "No scientific blocker. External browser credits were exhausted after shard 0; remaining deterministic shards can run locally or on any networked runner. GitHub Actions are currently failing before job steps start."
+      "evidence": "72,606-row RWDB audit complete. 1,000-DOI OpenAlex pilot matched 99.6%; shard 0 matched 15,146/15,255 unique DOIs (99.2855%) with zero API errors. Event/work identity, parsing, denominator, reason-ontology, citation-afterlife and work-type concordance gates are now specified.",
+      "next_gate": "Execute OpenAlex shards 1–3 and year×field denominators; complete 110-label reason mapping and anomalous OpenAlex work-type QA before comparative rate models.",
+      "blocker": "No scientific blocker. External browser credits are exhausted; remaining matching/denominator jobs require another networked execution surface. GitHub Actions currently fail before job steps start."
     },
     "021": {
       "progress": 24,
