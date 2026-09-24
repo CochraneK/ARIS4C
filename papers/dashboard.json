@@ -148,12 +148,12 @@
       "blocker": "No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference."
     },
     "019": {
-      "progress": 96,
-      "stage": "Final public-delivery gate · SIR submission package PASS",
-      "activity": "active",
-      "evidence": "Scientific interpretation locked; complete SIR double-anonymous DOCX + 34-page reviewer PDF + anonymous replication resource all QA PASS. EN/ZH public manuscript sources complete; one-page portfolio explainer complete and visually checked. Public PDF builder/CI now includes 019. Core evidence remains fragile/non-directional: refreshed 8-event mean +0.088, median -0.099, 6/8 negative; Bahrain omission -0.117; Israel frozen holdout +0.002 but reference-sensitive.",
-      "next_gate": "Verify docs/paper/019/en/main.pdf and zh/main.pdf from canonical CI, run final output/handoff audit, then promote to Finish / 100%.",
-      "blocker": "No scientific blocker. Only repository public-PDF generation/audit remains before Finish; journal metadata and portal submission are author-side actions."
+      "progress": 98,
+      "stage": "Final public-delivery gate · local PDF QA PASS · canonical binary publish blocked",
+      "activity": "block",
+      "evidence": "Scientific interpretation, SIR submission package, anonymous replication resource, EN/ZH public manuscript sources and one-page visual are complete. Canonical public-PDF build was independently reproduced and render-QA'd locally (EN 12 pages; ZH 7 pages), but docs/paper/019/en/main.pdf and zh/main.pdf are still absent from main.",
+      "next_gate": "Canonical GitHub binary publish of both public PDFs; verify Git blobs/readability, mark paper.json PDF outputs complete, then promote to Finish / 100%.",
+      "blocker": "Repository engineering only: GitHub Actions/public-PDF binary publication has not produced the two canonical files. No scientific blocker and no further outcome analysis is required."
     },
     "020": {
       "progress": 28,
