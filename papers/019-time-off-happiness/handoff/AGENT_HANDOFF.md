@@ -15,7 +15,9 @@ A falsification-first cross-national legal-event study of statutory paid annual-
 - SIR submission package: **complete / QA PASS**
 - Anonymous replication resource: **complete**
 - EN/ZH public manuscript sources + four SVG figures + one-page portfolio visual: **complete**
-- Local public-PDF reproduction: **PASS** (EN 12 pages; ZH 7 pages; text/render/CJK/figure clipping checks pass)
+- Local public-PDF reproduction: **PASS** (canonical-style reproduction EN 12 pages; ZH 7 pages; text/render/CJK/figure clipping checks pass)
+- Runner diagnosis: workflow run `35965678753` plus a direct failed-job re-run both fail before any build step; latest job `107530128521` exposes no executed steps. Do not spend cycles changing 019 science/build logic to address this startup failure.
+- Additional fallback reproduction: exact current GitHub sources rendered locally again, optimized EN 11 pages / 100,363 bytes and ZH 7 pages / 207,347 bytes; extractable text and visual QA PASS
 - Missing canonical files on `main`:
   - `docs/paper/019/en/main.pdf`
   - `docs/paper/019/zh/main.pdf`
