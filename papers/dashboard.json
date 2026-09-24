@@ -172,12 +172,12 @@
       "blocker": "Current execution environment cannot retrieve the legacy PITF XLS binary; no scientific/design blocker. Acquisition script is ready for local/CI execution."
     },
     "022": {
-      "progress": 18,
-      "stage": "Registered · configurational-taxonomy framing and calibration scaffold",
+      "progress": 26,
+      "stage": "Pilot-0 case frame frozen · raw-data ingestion gate",
       "activity": "active",
-      "evidence": "QCA taxonomy framing, anti-circularity rules, variable families, formula registry, IAU/NASA/JPL source registry, and a full continuity package are committed. Mars is frozen as a positive-control planet rather than an unresolved planet-vs-satellite case.",
-      "next_gate": "Freeze a 40–60-body Phase-1 Solar-System case frame and machine-readable raw-variable/provenance schema before calibration or solution inspection.",
-      "blocker": "None; methodological caution only—official class-label QCA is a taxonomy audit, not causal discovery."
+      "evidence": "Frozen 50-body Solar-System frame (8 planets, 5 dwarf planets, 21 satellites, 16 small/boundary bodies), raw-variable dictionary, anti-circularity M0–M4 model ladder, and deterministic frame validator. Internal validation passes with 50 unique IDs/names and consistent orbital hierarchy.",
+      "next_gate": "Populate the 50-body raw physical/orbital matrix with field-level IAU/NASA/JPL provenance and uncertainty; then implement published Margot/Soter dynamical discriminants before calibration or QCA solution inspection.",
+      "blocker": "None. Methodological guard remains: definitional benchmark and non-definitional physical-signature models must stay separate."
     },
     "023": {
       "progress": 31,
