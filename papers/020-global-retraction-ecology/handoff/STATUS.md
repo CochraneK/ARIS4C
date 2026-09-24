@@ -1,24 +1,23 @@
 # Status
 
 ## State
-Active · 52%
+Active · 55%
 
 ## Current stage
-Executable event-to-work / concordance package · networked confirmatory gate.
+Static execution contract PASS · networked confirmatory gate.
 
 ## Evidence
-- Frozen RWDB snapshot: 72,606 rows / 67,197 primary Retractions / 61,155 unique usable original DOI.
-- OpenAlex feasibility: 996/1,000 pilot = 99.6%; historical shard 0 = 15,146/15,255 = 99.2855%.
-- Production matching preserves 0/1/N candidates and reruns all four shards.
-- RWDB→OpenAlex concordance and a bidirectional OpenAlex `is_retracted=true` snapshot/comparison are fully scripted; the latter records retrieval time and SHA-256.
-- 111/111 Appendix-B reference Reason labels map to orthogonal facets; observed snapshot has 110 labels pending exact reconciliation/manual audit.
-- Closest 2026 competitor already covers global denominator-normalized incidence, field/country/publisher comparisons, lag and concentration; 020 has been explicitly repositioned away from those as standalone novelty claims.
-- Aggregated cohort×field×age hazard construction is implemented, avoiding a 100M+ individual-control table.
-- Citation-afterlife edge acquisition and work-level summary are implemented as an opt-in heavy run.
-- 3 preliminary figures, 2 preliminary tables, bilingual working drafts, prior-art matrix, analysis freeze and one-command runbook are committed.
+- Full RWDB snapshot frozen: 72,606 rows / 67,197 Retractions / 61,155 unique usable original DOI.
+- OpenAlex feasibility remains strong: 996/1,000 deterministic pilot; historical shard-0 15,146/15,255 unique DOI.
+- Production package includes candidate-safe 0/1/N matching, RWDB→OpenAlex and bidirectional concordance, work-type QA, grouped denominators, aggregated hazard, Reason ecology, mass-event sensitivity and citation afterlife.
+- Static runner dependency check: 21 referenced scripts, 0 missing.
+- CLI contract inspection found no runner/child argparse mismatch.
+- OpenAlex API contract re-verified against current 2026 docs: Bearer auth, corpus=core, up-to-100 OR batching, grouped cursor paging and cites-filter semantics.
+- Offline smoke gate added: compile all code, CLI --help startup, synthetic identity/counting regression tests and 111-label ontology QA.
+- Public README/Page/EN+ZH maturity SVG repaired and synchronized; corrupted duplicate 020 row removed.
 
 ## Next gate
-On a networked runner execute the runbook: candidate-safe shards 0–3 → match summary → RWDB↔OpenAlex concordance → anomalous work-type QA → year×field/type denominators → aggregated hazard panel → observed Reason reconciliation. Then freeze eligible work types and unlock confirmatory incidence/sensitivity models.
+Run the package on a normal networked checkout. Require PASS_OFFLINE_SMOKE first, then execute candidate-safe OpenAlex shards 0–3 → match/concordance → work-type QA → denominators → hazard panel → observed Reason reconciliation. Citation-afterlife remains opt-in via --with-citations.
 
 ## Blocker
-No scientific-design blocker. Current remaining blocker is network execution: Firecrawl credits are exhausted and private-repo GitHub Actions still fail before any job step starts. The full network-dependent chain is scripted, resumable, and provenance-aware.
+No scientific-design or static-code-contract blocker. Network execution is unavailable on the current surfaces: Firecrawl credits are exhausted and private-repo GitHub Actions terminate before steps/logs exist. No potentially billable Railway runner was created without explicit approval.
