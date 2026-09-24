@@ -81,3 +81,12 @@ Fix:
 - Public generated surfaces are stale: `docs/index.html` still shows 22 papers through 022 and Today's date 2026-09-23; README also still reports 22 papers. 023 is present in canonical Git but has not been regenerated onto those surfaces.
 - GitHub Actions are currently failing before runner steps begin across multiple independent workflows (paper index, handoff sync, public PDFs and 021 contract). A manual rerun reproduced the same zero-step failure. This localizes the immediate automation fault to runner/account/platform execution rather than a repository test failure, but the exact account-side cause is not exposed by the available connector.
 - 019 canonical public PDFs remain absent from `docs/paper/019/en/main.pdf` and `zh/main.pdf`; its scientific work is complete but publication remains engineering-blocked.
+
+## 2026-09-24 · 023 calibration gate closed; portfolio queue refreshed
+
+- 023 completed the dual-AI calibration gate and is no longer blocked on coding independence: `coder_A.csv` (GLM substitute) and `coder_B.csv` (DeepSeek) both frozen at 120/120 judgments, `reliability.json` produced only after both were committed (four-state raw agreement 0.825; binary present/absent subset n = 103, raw 0.951 / kappa 0.894 / AC1 0.911; 21 disagreements).
+- Ontology v0.1 freezes with a mandatory six-rule v0.1.1 amendment layer before expansion to 56 motifs; the disagreement taxonomy and reliability decision are committed under `papers/023-myth-convergence/process/`.
+- Canonical `papers/dashboard.json` updated: 023 moved **Block 55 → Wait 70**, which returns it to the completion-first Wait pool (its next unit — v0.1.1 amendments, a replacement Sumerian anthropogony witness, the regression check and the first tradition × motif matrix — is fully executable).
+- `000/STATUS.md` refreshed manually for the same reason as the previous entry: automated controller generation is still not executing.
+- Continuity audit state unchanged for the rest of the portfolio: 020, 022 and 023 fail the `AGENT_HANDOFF.md` "Immediate next action" contract. 023 was repaired in this pass; 020 and 022 still need the heading added.
+- Public generated surfaces (README, `docs/index.html`, progress history) remain stale for the same runner reason and were not hand-patched.

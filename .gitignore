@@ -28,3 +28,7 @@ papers/*/data/cache/
 # OS / editors
 .DS_Store
 Thumbs.db
+
+# Local git-recovery backups (never commit)
+.git.corrupt_*/
+.git_bak_*/

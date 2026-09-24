@@ -1,0 +1,45 @@
+{
+  "n_keys_a": 120,
+  "n_keys_b": 120,
+  "n_common_keys": 120,
+  "n_completed_pairs": 120,
+  "four_state": {
+    "raw_agreement": 0.825,
+    "cohen_kappa": 0.6685082872928176,
+    "gwet_ac1": 0.7877328691159747,
+    "confusion_a_rows_b_columns": {
+      "present": {
+        "present": 34,
+        "absent": 1,
+        "uncertain": 1,
+        "not_observed": 0
+      },
+      "absent": {
+        "present": 4,
+        "absent": 64,
+        "uncertain": 4,
+        "not_observed": 0
+      },
+      "uncertain": {
+        "present": 2,
+        "absent": 2,
+        "uncertain": 1,
+        "not_observed": 0
+      },
+      "not_observed": {
+        "present": 0,
+        "absent": 7,
+        "uncertain": 0,
+        "not_observed": 0
+      }
+    }
+  },
+  "binary_present_absent_subset": {
+    "n": 103,
+    "raw_agreement": 0.9514563106796117,
+    "cohen_kappa": 0.8940111133978185,
+    "gwet_ac1": 0.9105048223129725
+  },
+  "unmatched_keys_a_only": [],
+  "unmatched_keys_b_only": []
+}

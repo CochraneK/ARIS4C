@@ -82,3 +82,17 @@ Coding semantics convention used by Coder B (input to the disagreement taxonomy)
 - `uncertain`: partial cue — translation-dependent wording, an ontology overlap between two motifs, or a locator extent that does not settle the question.
 - `not_observed`: the passage supplies no usable evidence either way because the relevant content is lacunose or the passage is silent by scope.
 - Coder B applied `not_observed` **zero** times: every one of the 15 frozen passages was selected precisely because it engages its family's domain, and in this coder's reading none of the 120 cells failed for lacuna or scope reasons. This is a documented boundary difference against Coder A's 7 uses and is expected to appear in the disagreement taxonomy.
+
+## 2026-09-24 · Reliability gate PASSED; ontology v0.1 frozen with v0.1.1 amendments
+
+Scoring was run only after the Coder B packet was frozen in Git (`afa03bdc`). Result: four-state raw agreement **0.825** (99/120) against a 0.80 floor; binary present/absent subset n = 103 with raw agreement 0.951, Cohen kappa 0.894, Gwet AC1 0.911; 21 disagreements. All four freeze criteria in `../process/CALIBRATION_PLAN.md` are met, the recurrence criterion at 5.8 % (7/120) against a 10 % ceiling.
+
+Decisions taken:
+
+- **v0.1 freezes** as the calibration ontology. The 24 motif labels and both coder files are unchanged; no label was massaged after the fact.
+- **v0.1.1 rule amendments are mandatory before the ontology expands to 56 motifs** — six rulings covering the missingness threshold, the earth/clay, body-material and animation sibling disjunctions, foretold-versus-effected transfer, and council/rebellion scope. Full text in `../process/RELIABILITY_DECISION.md` §4.
+- **A full v0.2 recalibration is not triggered now**, and is triggered automatically only if a motif still falls below 0.70 per-motif agreement on the expanded packet after the amendments.
+- **The exposure-contaminated cell stays excluded from confirmatory use**, and the headline statistic is reported both with (0.825) and without (0.824) it. Removing a concordant cell can only lower agreement, so the leak cannot have manufactured the gate result — but it is disclosed in the manuscript methods regardless, together with the shared-orchestration-harness caveat.
+- **`P_ANTH_SUM` is withdrawn as a confirmatory witness.** `ETCSL 1.7.4 Segment A 10-14` is one surviving sentence inside a heavily lacunose text; it carries six of the eight Sumerian anthropogony judgments and produced 6 of the 21 disagreements. A widened locator or a clay-explicit replacement witness is required before the Sumerian anthropogony cell enters the tradition × motif matrix.
+- **The disagreement taxonomy** (`../process/DISAGREEMENT_TAXONOMY.md`) classifies all 21 disagreements: incomplete witness 7, definition 10, ontology overlap 3, translation 1, **chronology 0**. The transmission-sensitive flood family (all 8 motifs, 40 cells) and the storm-serpent / storm-sea separation reproduced perfectly across model families: no disagreement touched any of the distinctions the plan was built to test.
+- **Nothing downstream is promoted by this exercise.** Similarity still does not prove borrowing, the four mechanism families remain unselected, and the QCA trigger is unchanged and still OFF.

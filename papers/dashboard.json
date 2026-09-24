@@ -180,12 +180,12 @@
       "blocker": "Partial acquisition blocker only: live JPL SBDB object endpoints remain inaccessible from the current execution surfaces. Numeric affected rows stay explicit pending; evidence coding can continue independently."
     },
     "023": {
-      "progress": 55,
-      "stage": "Coder A complete · independent DeepSeek Coder B pending",
-      "activity": "block",
-      "evidence": "Coder A is complete: GLM in a fresh WorkBuddy sandbox filled 120/120 judgments (36 present, 72 absent, 5 uncertain, 7 not_observed) as the recorded substitute for the originally intended Qoder/Qwen role. Coder B remains blank; no reliability result exists yet.",
-      "next_gate": "Independent fresh-session DeepSeek fills coder_B.csv without seeing A/seed/results; then run reliability, disagreement taxonomy, and ontology pass/revision decision.",
-      "blocker": "Coder B is still pending. Reliability cannot be scored until the independent DeepSeek packet is completed and committed."
+      "progress": 70,
+      "stage": "Dual-AI calibration gate CLOSED (PASS) · ontology v0.1 frozen with mandatory v0.1.1 rule amendments · next: first source-backed tradition × motif matrix",
+      "activity": "wait",
+      "evidence": "Both coder packets frozen in Git before any scoring: coder_A.csv (GLM substitute, 120/120: 36 present, 72 absent, 5 uncertain, 7 not_observed) and coder_B.csv (DeepSeek, 120/120: 40 present, 74 absent, 6 uncertain, 0 not_observed). reliability.json: four-state raw agreement 0.825 (99/120), Cohen kappa 0.669, Gwet AC1 0.788; binary present/absent subset n = 103 raw 0.951, kappa 0.894, AC1 0.911; 21 disagreements, all classified in process/DISAGREEMENT_TAXONOMY.md (incomplete witness 7, definition 10, ontology overlap 3, translation 1, chronology 0). All four frozen criteria met; recurrence 5.8% (7/120) against a 10% ceiling. Flood family (40 cells) and the storm-serpent / storm-sea separation reproduced perfectly across model families. process/RELIABILITY_DECISION.md rules v0.1 frozen with six v0.1.1 amendments, keeps the exposure-contaminated cell out of confirmatory use, and withdraws P_ANTH_SUM as a confirmatory witness.",
+      "next_gate": "Write the six v0.1.1 rules into a versioned data/calibration/motifs_v0.1.1.csv; replace or widen the withdrawn P_ANTH_SUM witness (ETCSL 1.7.4 Segment A 10-14) with a clay-explicit Sumerian anthropogony passage and re-run locator QA; regression-check the amendments against the 21 documented disagreements; then freeze the first source-backed tradition × motif matrix (11 tradition-time units).",
+      "blocker": "No blocking gate remains. Carried risks: one exposure-contaminated cell (P_DIV_BAAL × DIV_KINGSHIP_TRANSFER) that is excised from confirmatory use but not correctable retrospectively; both coder sessions shared one orchestration harness; the not_observed/absent threshold difference (A 7 vs B 0) is codified but not yet re-tested on a versioned packet; the Sumerian anthropogony cell cannot enter the matrix until its replacement witness is frozen. A versioned v0.2 recalibration is triggered only if a motif still falls below 0.70 per-motif agreement on the expanded packet."
     }
   },
   "scheduling": {

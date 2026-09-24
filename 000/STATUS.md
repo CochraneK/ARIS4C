@@ -15,13 +15,13 @@
 ## Current queue snapshot
 
 - **Finish:** 001, 002
-- **Active:** 018, 011, 003, 007, 014, 020, 022
-- **Wait:** 006, 008, 009, 021, 017
-- **Block:** 019, 015, 004, 010, 005, 016, 012, 013, 023
+- **Active:** 018, 011, 003, 007, 019, 014, 022, 020, 021
+- **Wait:** 023, 006, 008, 009, 017
+- **Block:** 015, 004, 010, 005, 016, 012, 013
 
 ## Current dispatch
 
-Continue **018** first. The next completion-first Wait candidate is **006** whenever additional genuine execution capacity becomes available.
+Continue **018** first. The next completion-first Wait candidate is **023** whenever additional genuine execution capacity becomes available.
 
 A higher Active count is allowed when the current model/agent/tool setup can
 sustain genuine parallel research without weakening paper-level isolation,
