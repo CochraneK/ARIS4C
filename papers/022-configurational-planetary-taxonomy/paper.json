@@ -5,17 +5,20 @@
   "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title": "Planetary Taxonomy × fsQCA",
   "year": 2026,
-  "status": "pilot1-evidence-v0.6-composition-closed",
+  "status": "m2-condition-freeze-readiness-fail",
   "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. Five blinded evidence batches now cover all cases and close the composition evidence-state layer at 50/50 without forcing certainty: surface-only or weakly constrained interiors remain explicit uncertainty/missingness. Overall evidence coverage is 188/300 and no QCA result has been inspected.",
+  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. Evidence-state composition is closed at 50/50, and the primary anti-circularity M2 model is now frozen to five non-definitional condition families. A pre-calibration readiness audit fails at 19/50 complete cases, so calibration and all QCA solutions remain closed pending targeted acquisition.",
   "authors": ["Cochrane Kang"],
   "aris": {
-    "provenance": "ARIS4C022 froze the sample, evidence ontology and anti-circularity ladder before analysis. Evidence v0.6 closes composition evidence states across all 50 cases, expands source-conflict adjudication, and restores a fully resolvable current source registry. Surface spectra are explicitly separated from bulk-interior claims. No QCA calibration or solution inspection has occurred.",
-    "version": "v1.0.0"
+    "provenance": "ARIS4C022 froze the sample, evidence ontology and anti-circularity ladder before analysis. After five blinded evidence batches, M2 condition families were frozen before any result inspection. Measurement-equivalence review replaced provisional INTERNAL_ACTIVITY with INTERNAL_ORGANIZATION/differentiation in the primary model, while geology/ocean/tidal heating were frozen as sensitivity families. Current readiness fails at 19/50 complete cases; calibration remains CLOSED_NOT_READY.",
+    "version": "v1.1.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
     "pipeline": "process/RESEARCH_PLAN.md",
+    "m2_condition_freeze": "process/M2_CONDITION_FREEZE.md",
+    "m2_condition_manifest": "process/M2_CONDITION_FREEZE.json",
+    "m2_readiness_audit": "data/M2_READINESS_AUDIT.md",
     "calibration": "process/VARIABLES_AND_CALIBRATION.md",
     "evidence_protocol": "process/EVIDENCE_STATE_PROTOCOL.md",
     "sources": "data/SOURCE_REGISTRY.md",
@@ -24,16 +27,15 @@
     "orbital_geometry": "data/orbital_geometry_v0.2.csv",
     "derived_physics": "data/derived_physics_v0.2.csv",
     "evidence_state": "data/evidence_state_v0.6.csv",
-    "evidence_batch05_audit": "data/EVIDENCE_CODING_AUDIT_BATCH05.md",
     "source_conflict_audit": "data/SOURCE_CONFLICT_AUDIT.md"
   },
-  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","small bodies","TNOs","surface-vs-bulk","source conflict","scientific missingness"],
+  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","anti-circularity","pre-calibration","small bodies","scientific missingness"],
   "bilingual_delivery": {"english": true,"chinese": true},
   "outputs": {
     "paper_en": "not-started",
     "paper_zh": "not-started",
     "figures": {"status": "planned","count": 0},
-    "tables": {"status": "case frame + physical + orbit + derived + evidence v0.6","count": 5},
+    "tables": {"status": "case frame + physical + orbit + derived + evidence + M2 readiness","count": 6},
     "pdf": {"status": "not-started","english": false,"chinese": false}
   }
 }
