@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "project": "ARIS4C021",
+  "frozen_at": "2026-09-24",
+  "purpose": "Published partial constraints from Williams 2016 used to validate reconstruction before the complete six-condition matrix is recovered.",
+  "condition_symbols": {
+    "A": "autocracy",
+    "P": "political_upheaval",
+    "W": "war",
+    "I": "exclusionary_ideology",
+    "S": "elite_ethnicity_salient",
+    "E": "economic_autarky"
+  },
+  "exact_known_rows": {
+    "RWA_1994_1994": {
+      "A": 1,
+      "P": 1,
+      "W": 1,
+      "I": 1,
+      "S": 1,
+      "E": 1,
+      "source_note": "Williams worked example / truth-table discussion"
+    },
+    "BIH_1992_1995": {
+      "A": 1,
+      "P": 1,
+      "W": 1,
+      "I": 0,
+      "S": 1,
+      "E": 1,
+      "source_note": "Williams worked example / truth-table discussion"
+    },
+    "PAK_1973_1977": {
+      "A": 0,
+      "P": 1,
+      "W": 1,
+      "I": 0,
+      "S": 1,
+      "E": 1,
+      "source_note": "Unique positive case highlighted for S*~I*E*P*W; also one of two non-autocratic positives"
+    },
+    "CHN_1959_1959": {
+      "A": 1,
+      "P": 0,
+      "W": 1,
+      "I": 1,
+      "E": 1,
+      "source_note": "Published membership in A*I*E*~P*W; S not constrained here"
+    },
+    "IRN_1981_1992": {
+      "A": 1,
+      "P": 0,
+      "W": 1,
+      "I": 1,
+      "E": 1,
+      "source_note": "Published membership in A*I*E*~P*W; S not constrained here"
+    },
+    "CHN_1966_1975": {
+      "A": 1,
+      "P": 1,
+      "W": 0,
+      "I": 1,
+      "E": 1,
+      "source_note": "Published membership in A*I*E*P*~W; S not constrained here"
+    }
+  },
+  "positive_path_memberships": {
+    "A*S*I": {
+      "expected_positive_n": 19,
+      "case_ids": [
+        "AFG_1978_1992",
+        "DZA_1962_1962",
+        "AGO_1975_1994",
+        "KHM_1975_1979",
+        "ETH_1976_1979",
+        "GTM_1978_1990",
+        "IDN_1965_1966",
+        "IRQ_1963_1975",
+        "IRQ_1988_1991",
+        "MMR_1978_1978",
+        "RWA_1963_1964",
+        "RWA_1994_1994",
+        "SOM_1988_1991",
+        "SDN_1983_2002",
+        "BDI_1965_1973",
+        "GNQ_1969_1979",
+        "IDN_1975_1992",
+        "SYR_1981_1982",
+        "YUG_1998_1999"
+      ]
+    },
+    "A*S*P": {
+      "expected_positive_n": 20,
+      "case_ids": [
+        "AFG_1978_1992",
+        "DZA_1962_1962",
+        "AGO_1975_1994",
+        "KHM_1975_1979",
+        "ETH_1976_1979",
+        "GTM_1978_1990",
+        "IDN_1965_1966",
+        "IRQ_1963_1975",
+        "IRQ_1988_1991",
+        "MMR_1978_1978",
+        "RWA_1963_1964",
+        "RWA_1994_1994",
+        "SDN_1983_2002",
+        "AGO_1998_2002",
+        "BIH_1992_1995",
+        "BDI_1993_1993",
+        "COD_1964_1965",
+        "NGA_1967_1970",
+        "SDN_1956_1972",
+        "UGA_1980_1986"
+      ]
+    }
+  },
+  "intermediate_solution": {
+    "formulas": [
+      "A*S*I",
+      "A*S*P",
+      "A*I*E*P*~W",
+      "A*I*E*~P*W",
+      "S*~I*E*P*W"
+    ],
+    "expected_true_positive_case_ids": [
+      "AFG_1978_1992",
+      "DZA_1962_1962",
+      "AGO_1998_2002",
+      "AGO_1975_1994",
+      "BIH_1992_1995",
+      "BDI_1993_1993",
+      "BDI_1965_1973",
+      "KHM_1975_1979",
+      "CHN_1959_1959",
+      "CHN_1966_1975",
+      "COD_1964_1965",
+      "GNQ_1969_1979",
+      "ETH_1976_1979",
+      "GTM_1978_1990",
+      "IDN_1965_1966",
+      "IDN_1975_1992",
+      "IRN_1981_1992",
+      "IRQ_1988_1991",
+      "IRQ_1963_1975",
+      "MMR_1978_1978",
+      "NGA_1967_1970",
+      "PAK_1973_1977",
+      "RWA_1994_1994",
+      "RWA_1963_1964",
+      "SOM_1988_1991",
+      "SDN_1983_2002",
+      "SDN_1956_1972",
+      "SYR_1981_1982",
+      "UGA_1980_1986",
+      "YUG_1998_1999"
+    ],
+    "expected_false_negative_case_ids": [
+      "ARG_1976_1980",
+      "BDI_1988_1988",
+      "CHL_1973_1976",
+      "COD_1977_1979",
+      "SLV_1980_1989",
+      "PAKBGD_1971_1971",
+      "PHL_1972_1976",
+      "LKA_1989_1990",
+      "UGA_1971_1979",
+      "VNM_S_1965_1975"
+    ],
+    "expected_false_positive_case_ids": [
+      "KHM_1997",
+      "TCD_1965",
+      "COD_1992",
+      "LBR_1985",
+      "SLE_1991",
+      "TUR_1971",
+      "ROU_1989",
+      "DZA_1991",
+      "PAK_1983"
+    ],
+    "expected_predicted_positive_n": 39,
+    "expected_true_positive_n": 30,
+    "expected_false_positive_n": 9,
+    "expected_false_negative_n": 10
+  },
+  "caveat": "Only constraints directly recoverable from the publication are encoded. Unspecified cells remain unknown and must not be inferred merely to satisfy the published solution."
+}
