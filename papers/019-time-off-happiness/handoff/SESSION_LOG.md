@@ -34,3 +34,6 @@
 - Created and locked Pilot-0 interpretation: no robust positive or negative population Life Ladder effect is established.
 - Started bilingual English/Chinese working-paper drafts and reframed the manuscript around legal-event identification, source robustness and independent holdout logic.
 
+- 2026-09-24 final public-delivery audit: canonical EN/ZH Markdown and four SVG figures were independently rebuilt into public PDFs and passed machine/text plus render-first visual QA (EN 12 pages, ZH 7 pages; CJK and figure pages visually clean).
+- A watched builder revision (`dc857f638517a25b7cb5b3b70284dd4aa6955682`) was committed to trigger the canonical GitHub PDF workflow, but no bot PDF commit appeared and `docs/paper/019/en/main.pdf` / `zh/main.pdf` remain absent.
+- Project state was therefore corrected to 98% / BLOCK: scientific and submission work is complete; the sole remaining gate is canonical Git binary publication and verification. Do not reopen outcomes or legal-event discovery to fill this engineering gap.
