@@ -36,11 +36,16 @@ def main():
     ))
     ap.add_argument("--api-key-env",default="OPENALEX_API_KEY")
     ap.add_argument("--force",action="store_true",help="Refetch even if the snapshot already exists.")
+    ap.add_argument("--manifest-out",type=Path,default=Path("papers/020-global-retraction-ecology/data/manifests/openalex_is_retracted_core.json"),help="Small tracked provenance manifest copied from the local sidecar.")
     args=ap.parse_args()
     args.out.parent.mkdir(parents=True,exist_ok=True)
     meta_path=args.out.with_suffix(args.out.suffix+".meta.json")
     if args.out.exists() and not args.force:
-        print(json.dumps({"status":"SKIP_EXISTING","out":str(args.out),"meta":str(meta_path)},indent=2))
+        if meta_path.exists():
+            meta=json.loads(meta_path.read_text(encoding="utf-8"))
+            args.manifest_out.parent.mkdir(parents=True,exist_ok=True)
+            args.manifest_out.write_text(json.dumps(meta,indent=2)+"\n",encoding="utf-8")
+        print(json.dumps({"status":"SKIP_EXISTING","out":str(args.out),"meta":str(meta_path),"manifest":str(args.manifest_out)},indent=2))
         return
     api_key=os.getenv(args.api_key_env,"").strip()
     retrieved_at=datetime.now(timezone.utc).isoformat()
@@ -78,7 +83,9 @@ def main():
         "api_key_used":bool(api_key),
     }
     meta_path.write_text(json.dumps(meta,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps({**meta,"out":str(args.out),"meta":str(meta_path)},indent=2))
+    args.manifest_out.parent.mkdir(parents=True,exist_ok=True)
+    args.manifest_out.write_text(json.dumps(meta,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({**meta,"out":str(args.out),"meta":str(meta_path),"manifest":str(args.manifest_out)},indent=2))
 
 if __name__=="__main__":
     main()
