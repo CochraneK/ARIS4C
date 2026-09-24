@@ -5,7 +5,7 @@
   "title": "Time Off and Happiness Across Countries: Long-Run Institutional Change, Comparative Well-Being Panels, and Policy-Reform Evidence",
   "short_title": "Time Off × Happiness · Long Run",
   "year": 2026,
-  "status": "scope-reopened-historical-expansion",
+  "status": "historical-expansion-acquisition-and-harmonization",
   "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
   "summary": "Expanded cross-national study of how paid annual leave, weekly rest, public holidays and realized working time evolved over the long twentieth century and early twenty-first century, linked to multi-source subjective well-being evidence from the postwar era onward. The completed eight-event/Israel Life Ladder study is preserved as Pilot-0, a narrow causal-identification module rather than the whole project.",
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder gates frozen and executed; WHR2024 source refresh, complete bounded 11-jump legal audit, independently frozen Israel holdout, bilingual manuscripts, four manuscript figures/tables, SIR double-anonymous DOCX/PDF package, anonymous replication bundle, final visual/identity QA, and one-page portfolio explainer completed; scope reopened 2026-09-24 after adequacy audit to add long-run institutional history, post-1945 multi-source well-being panels, broad country coverage and a full statistical synthesis",
-    "version": "v0.8.0"
+    "version": "v0.9.0"
   },
   "links": {
     "paper_en": "manuscript/WORKING_PAPER_EN.md",
@@ -29,7 +29,11 @@
     "paper_zh_pdf": "paper/019/zh/main.pdf",
     "submission_manifest": "submission/SIR_SUBMISSION_PACKAGE_MANIFEST.md",
     "historical_expansion": "process/HISTORICAL_EXPANSION_PLAN.md",
-    "historical_sources": "process/HISTORICAL_SOURCE_MATRIX.md"
+    "historical_sources": "process/HISTORICAL_SOURCE_MATRIX.md",
+    "historical_coverage": "process/HISTORICAL_COVERAGE_GATE.md",
+    "modern_overlap": "process/MODERN_PANEL_OVERLAP_GATE.md",
+    "statistical_freeze": "process/EXPANDED_STATISTICAL_FREEZE.md",
+    "acquisition_manifest": "data/historical_acquisition_manifest.csv"
   },
   "tags": [
     "ARIS",
@@ -122,7 +126,7 @@
       "submission_snapshot": "SIR package preserved but no longer treated as the complete ARIS4C019 final manuscript"
     },
     "historical_expansion": {
-      "status": "design-frozen-data-build-pending",
+      "status": "coverage-gates-pass-acquisition-pending",
       "exposure_target": "early-20th-century/1936-2026 legal and working-time history",
       "wellbeing_target": "1945-present multi-source subjective well-being",
       "modern_country_target": 193,
@@ -136,7 +140,35 @@
         "modern causal event studies",
         "event-effect meta-analysis",
         "heterogeneity"
-      ]
+      ],
+      "modern_wb_whr_overlap": {
+        "countries": 161,
+        "country_years": 1934,
+        "median_years": 14,
+        "countries_ge_10_years": 127,
+        "countries_ge_15_years": 57
+      },
+      "wvs_coverage": {
+        "waves": 7,
+        "country_wave_rows": 295,
+        "distinct_country_or_territory_codes": 107
+      },
+      "eurobarometer": {
+        "life_satisfaction_index_start": 1973,
+        "indexed_through": 2026,
+        "mannheim_trend_waves": 86,
+        "mannheim_cases": ">1000000",
+        "data_acquisition": "pending"
+      },
+      "wdh": {
+        "official_file": "TrendsInNations-2023e.xlsx",
+        "long_run_rule": ">=20 years and >=10 comparable observations",
+        "published_long_series": 200,
+        "published_nations": 70,
+        "published_period": "1945-2021",
+        "binary_acquisition": "pending-current-runtime"
+      },
+      "statistical_freeze": "process/EXPANDED_STATISTICAL_FREEZE.md"
     }
   }
 }
