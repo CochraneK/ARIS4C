@@ -5,16 +5,16 @@
   "title": "The Global Ecology of Scientific Retractions: A Full-Database, Field-Normalized Study of Retraction Dynamics, Causes, and Citation Afterlife",
   "short_title": "Global Retraction Ecology",
   "year": 2026,
-  "status": "preliminary-results-denominator-gate",
+  "status": "executable-preconfirmatory-denominator-gate",
   "domain": "research integrity / metascience / scientometrics / bibliometrics / scholarly communication",
-  "summary": "Full-RWDB all-discipline retraction ecology study with frozen 2026-09-23 audit, DOI/work identity control, preliminary descriptive results, bilingual working papers, and executable pipelines for OpenAlex enrichment, denominators, reason networks, time-to-retraction and mass-event sensitivity. Confirmatory comparative rates remain locked pending complete networked enrichment/denominator execution.",
+  "summary": "Executable pre-confirmatory all-discipline retraction ecology package: frozen full-RWDB audit, work/event identity controls, bilingual working manuscripts, descriptive figures/tables, candidate-safe OpenAlex enrichment, explicit core-corpus denominators, reason ontology/vocabulary gates, time-to-retraction, mass-event and citation-afterlife specifications. Comparative rates remain locked until networked full matching and denominators execute.",
   "authors": [
     "Cochrane Kang"
   ],
   "portfolio_visible": true,
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-24",
-    "version": "v0.6.0"
+    "version": "v0.7.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/020-global-retraction-ecology",
@@ -44,7 +44,14 @@
     "reason_network": "code/reason_network.py",
     "lag_profile": "code/lag_profile.py",
     "mass_event_screen": "code/mass_event_screen.py",
-    "openalex_match_summary": "code/summarize_openalex_match.py"
+    "openalex_match_summary": "code/summarize_openalex_match.py",
+    "runbook": "RUNBOOK.md",
+    "reason_reference_ontology": "data/reference/rwdb_reason_ontology_reference_v1.json",
+    "reason_reference_qa": "process/REASON_ONTOLOGY_REFERENCE_QA.md",
+    "work_type_qa": "code/openalex_work_type_qa.py",
+    "pipeline_runner": "code/run_pipeline.py",
+    "table01": "tables/table01_snapshot_audit.csv",
+    "table02": "tables/table02_top_reason_labels.csv"
   },
   "tags": [
     "ARIS4C",
