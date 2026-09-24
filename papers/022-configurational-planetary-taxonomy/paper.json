@@ -5,13 +5,13 @@
   "title": "Configurational Taxonomy of Planetary Bodies: A Fuzzy-Set QCA of Orbital Hierarchy, Dynamical Dominance, Composition, and Evolution",
   "short_title": "Planetary Taxonomy × fsQCA",
   "year": 2026,
-  "status": "pilot1-anchor-evidence-coding",
+  "status": "pilot1-evidence-batch02",
   "domain": "planetary science / comparative methods / set-theoretic analysis / taxonomy",
-  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. The physical/orbital/derived spine is source-hardened for the major planets, and the first blinded geophysical evidence batch now codes composition, atmosphere and differentiation for 10 anchor bodies under a pre-frozen protocol while all rows remain unexposed to QCA results.",
+  "summary": "A falsification-first configurational taxonomy of 50 Solar-System bodies. Two blinded evidence batches now cover the major planets and nine high-information satellite/boundary cases, with 82/300 evidence-state cells coded from NASA/JPL sources while all cases remain unexposed to QCA results.",
   "authors": ["Cochrane Kang"],
   "aris": {
-    "provenance": "ARIS4C022 froze the case frame, variable architecture and anti-circularity model ladder before analysis. Pilot-1 built the raw/orbit/derived spine and source-hardened the eight planet orbits. Evidence protocol v0.1 was frozen before coding. Anchor batch 01 then coded high-confidence NASA-supported composition, atmosphere and differentiation states for the eight planets plus Ceres and Pluto, with per-variable source keys and conservative unresolved cells left pending. No QCA calibration or solution inspection occurred.",
-    "version": "v0.6.0"
+    "provenance": "ARIS4C022 froze the case frame, raw-variable architecture, model ladder and evidence protocol before analysis. Pilot-1 built and source-hardened the data spine. Evidence batches 01 and 02 now code 19 bodies, including planet-like large moons and ocean-world counterexamples. Protocol v0.2 explicitly separates present/persistent oceans from paleo-ocean evidence. No QCA calibration or solution inspection has occurred.",
+    "version": "v0.7.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/022-configurational-planetary-taxonomy",
@@ -19,22 +19,21 @@
     "calibration": "process/VARIABLES_AND_CALIBRATION.md",
     "evidence_protocol": "process/EVIDENCE_STATE_PROTOCOL.md",
     "sources": "data/SOURCE_REGISTRY.md",
-    "model_ladder": "process/MODEL_LADDER.md",
     "case_frame": "data/case_frame_v0.1.csv",
     "physical_core": "data/raw_physical_core_v0.1.csv",
     "orbital_geometry": "data/orbital_geometry_v0.2.csv",
     "derived_physics": "data/derived_physics_v0.2.csv",
-    "evidence_state": "data/evidence_state_v0.2.csv",
-    "evidence_audit": "data/EVIDENCE_CODING_AUDIT.md",
+    "evidence_state": "data/evidence_state_v0.3.csv",
+    "evidence_batch02_audit": "data/EVIDENCE_CODING_AUDIT_BATCH02.md",
     "dynamics_code": "code/dynamics_metrics.py"
   },
-  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","dynamical dominance","orbital hierarchy","Mars","dwarf planets","natural satellites","JPL SBDB","evidence-state coding"],
+  "tags": ["ARIS","ARIS4C","planetary science","planetary taxonomy","QCA","fsQCA","natural satellites","ocean worlds","tidal heating","JPL SBDB","evidence-state coding"],
   "bilingual_delivery": {"english": true,"chinese": true},
   "outputs": {
     "paper_en": "not-started",
     "paper_zh": "not-started",
     "figures": {"status": "planned","count": 0},
-    "tables": {"status": "case frame + physical + orbit + derived + evidence v0.2","count": 5},
+    "tables": {"status": "case frame + physical + orbit + derived + evidence v0.3","count": 5},
     "pdf": {"status": "not-started","english": false,"chinese": false}
   }
 }
