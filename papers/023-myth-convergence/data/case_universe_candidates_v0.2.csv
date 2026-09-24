@@ -1,0 +1,18 @@
+case_id,tradition_label,language_layer,start_year,end_year,witness_type,source_bundle_status,language_mapping,geography_status,chronology_grade,tier,inclusion_status,exclusion_reason
+SUM_OB,Sumerian Old Babylonian reception,Sumerian,-2100,-1600,cuneiform primary/critical,available,Sumerian isolate,Mesopotamia,B,A,include,Pilot case; split from Akkadian
+AKK_OB,Old Babylonian Akkadian,Akkadian,-1900,-1600,cuneiform primary/critical,available,East Semitic,Mesopotamia,A,A,include,Atrahasis / Old Babylonian material
+AKK_MB_SB,Middle/Standard Babylonian Akkadian,Akkadian,-1500,-600,cuneiform primary/critical,available,East Semitic,Mesopotamia,A,A,include,Gilgamesh XI and later Akkadian layer
+HUR_LBA,Late Bronze Age Hurrian,Hurrian,-1600,-1200,cuneiform primary/translated,needs_split_bundle,Hurrian-Urartian,Anatolia/N. Mesopotamia,B,A,candidate,Split from old HUR_HIT composite
+HIT_LBA,Late Bronze Age Hittite,Hittite,-1600,-1200,cuneiform primary/translated,needs_split_bundle,Indo-European Anatolian,Anatolia,A,A,candidate,Split from old HUR_HIT composite
+UGARIT_LBA,Late Bronze Age Ugaritic,Ugaritic,-1400,-1180,alphabetic cuneiform primary,available,Northwest Semitic,Levant,A,A,include,Baal cycle
+EGY_MK,Middle Kingdom Egyptian,Middle Egyptian,-2025,-1700,hieroglyphic/hieratic primary,needs_bundle,Egyptian Afroasiatic,Egypt,B,A,candidate,Do not fabricate unified creation narrative
+EGY_NK,New Kingdom Egyptian,Egyptian,-1550,-1070,hieratic/hieroglyphic primary,exploratory_bundle,Egyptian Afroasiatic,Egypt,A,A,candidate,Horus/Seth requires clean independent audit
+VED_RV,Rigvedic,Vedic Sanskrit,-1500,-1000,oral-textual transmitted corpus,available,Indo-European Indo-Aryan,South Asia,B,A,include,Chronology interval explicit
+GRC_ARCH,Archaic Greek,Ancient Greek,-800,-500,literary primary,available,Indo-European Hellenic,Aegean,A,A,include,Hesiod/Homeric-era material
+HEB_GEN,Genesis primeval-history working unit,Biblical Hebrew,-700,-400,literary primary,available,Northwest Semitic,Levant/Babylonia context,B,A,include,Composition-layer uncertainty retained
+CHN_WS_HAN,Late Warring States-Early Han Chinese,Old Chinese,-475,100,transmitted classical texts,available_partial,Sinitic,China,B,A,include,Source layers remain separate
+ROM_OVD,Early Imperial Roman literary comparator,Latin,-20,20,literary primary,candidate,Indo-European Italic,Mediterranean,A,A,candidate_control,Known literary dependence makes a useful positive-control candidate
+AVE_EARLY,Early Avestan tradition,Avestan,-1200,-500,oral-textual transmitted corpus,needs_bundle,Indo-European Iranian,Iran/Central Asia,C,A,candidate,Chronology/transmission uncertainty high
+JPN_KOJIKI,Kojiki mythic corpus,Old Japanese,700,720,early literary witness,candidate,Japonic,Japan,A,B,candidate,Post-500 CE external comparator
+NORSE_EDDA,Old Norse Eddic corpus,Old Norse,1100,1300,medieval manuscript/oral tradition,candidate,Indo-European Germanic,North Atlantic,B,B,candidate,Later witness; validation only by default
+KICHE_POPOL,K'iche' Popol Vuh,K'iche',1500,1560,early colonial manuscript preserving indigenous tradition,candidate,Mayan,Mesoamerica,B,B,candidate,Later witness; validation only by default

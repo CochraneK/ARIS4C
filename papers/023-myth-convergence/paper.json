@@ -5,9 +5,9 @@
   "title": "Why Do Ancient Traditions Tell Similar Stories? A Comparative Cultural-Evolution Study of Mythic Motifs, Inheritance, Diffusion, Ecology, and Convergence",
   "short_title": "Ancient Myth Convergence",
   "year": 2026,
-  "status": "final",
+  "status": "active-v0.2-submission-grade",
   "domain": "comparative mythology / folklore / cultural evolution / historical anthropology / computational humanities",
-  "summary": "A provenance-first comparative mythology pilot showing that motif similarity must be interpreted jointly with source boundaries, chronology, language genealogy, independent contact evidence, environmental uncertainty and process tracing. The frozen core contains a reliable 24-motif ontology, audited source-bundle similarities, and four mechanism-focused historical comparisons.",
+  "summary": "Pilot-0 v0.1.1 is frozen and publicly readable, but the canonical project has reopened as a submission-grade ARIS v0.2 methods + empirical-demonstration study. Current work focuses on systematic literature, case-universe freeze, corpus expansion, clean validation, preregistered dyadic mechanism models, robustness and adversarial review.",
   "authors": [
     "Cochrane Kang"
   ],
@@ -30,8 +30,14 @@
     "one_page_visual": "../../docs/assets/paper-at-a-glance/023.svg",
     "pdf_build_manifest": "process/PDF_BUILD_MANIFEST.md",
     "public_delivery_audit": "process/PUBLIC_DELIVERY_AUDIT.md",
-    "paper_en_pdf": "dist/ARIS4C-023_EN.pdf",
-    "paper_zh_pdf": "dist/ARIS4C-023_ZH.pdf"
+    "v0_2_scope_reset": "process/V0.2_SCOPE_RESET.md",
+    "v0_2_paper_plan": "process/PAPER_PLAN_v0.2.md",
+    "v0_2_preregistration": "process/PREREGISTRATION_v0.2.md",
+    "v0_2_case_universe": "process/CASE_UNIVERSE_PROTOCOL_v0.2.md",
+    "v0_2_analysis_plan": "process/ANALYSIS_PLAN_v0.2.md",
+    "v0_2_review_loop": "process/REVIEW_LOOP_v0.2.md",
+    "pilot_en_pdf": "dist/ARIS4C-023_EN.pdf",
+    "pilot_zh_pdf": "dist/ARIS4C-023_ZH.pdf"
   },
   "tags": [
     "ARIS4C",
@@ -49,8 +55,8 @@
     "chinese": true
   },
   "outputs": {
-    "paper_en": "final",
-    "paper_zh": "final",
+    "paper_en": "pilot-0-frozen; v0.2 rewrite pending",
+    "paper_zh": "pilot-0-frozen; v0.2 mirror pending",
     "figures": {
       "status": "complete",
       "count": 3,
@@ -61,23 +67,9 @@
       "count": 3
     },
     "pdf": {
-      "status": "complete",
+      "status": "pilot-0-public-artifact; not submission-final",
       "english": true,
-      "chinese": true,
-      "repository_artifacts": {
-        "english": {
-          "repo_path": "papers/023-myth-convergence/dist/ARIS4C-023_EN.pdf",
-          "pages": 6,
-          "bytes": 59060,
-          "git_blob_sha": "37b85671190a160e1fea7d93848bf20a7d33c36a"
-        },
-        "chinese": {
-          "repo_path": "papers/023-myth-convergence/dist/ARIS4C-023_ZH.pdf",
-          "pages": 5,
-          "bytes": 53718,
-          "git_blob_sha": "b59f0dfc7271b4833f3332c9d611cc8aca515874"
-        }
-      }
+      "chinese": true
     },
     "one_page_visual": {
       "status": "complete",
@@ -85,6 +77,23 @@
       "language": "zh-CN",
       "purpose": "one-page visual explanation of the complete paper for the portfolio table"
     },
-    "finish_ready": true
+    "finish_ready": false
+  },
+  "v0_2_submission_grade": {
+    "progress": 34,
+    "article_route": "methods + empirical demonstration",
+    "original_research_upgrade": "conditional",
+    "gates": [
+      "G0 pilot provenance",
+      "G1 paper plan",
+      "G2 literature",
+      "G3 case universe",
+      "G4 corpus/ontology",
+      "G5 independent validation",
+      "G6 inferential model",
+      "G7 robustness",
+      "G8 adversarial review",
+      "G9 manuscript improvement"
+    ]
   }
 }

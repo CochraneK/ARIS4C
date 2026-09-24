@@ -60,7 +60,6 @@ ARIS 是研究引擎；**ARIS4C 是围绕论文建立的完整研究系统**：�
 
 - **001 · 蜜蜂 GCA × 不确定性** — [English PDF](https://cochranek.github.io/ARIS4C/paper/001/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/001/zh/main.pdf)
 - **002 · LING-01 · 语言周期性检验** — [English PDF](https://cochranek.github.io/ARIS4C/paper/002/en/main.pdf) · [中文 PDF](https://cochranek.github.io/ARIS4C/paper/002/zh/main.pdf)
-- **023 · Ancient Myth Convergence** — [English PDF](papers/023-myth-convergence/dist/ARIS4C-023_EN.pdf) · [中文 PDF](papers/023-myth-convergence/dist/ARIS4C-023_ZH.pdf)
 
 ## 23 个 Paper
 
@@ -85,10 +84,10 @@ ARIS 是研究引擎；**ARIS4C 是围绕论文建立的完整研究系统**：�
 | **017** | [LING-02 · 预测性语言空间](papers/017-predictive-language-space/) | 🟡 待推进 | 20% | [handoff](papers/017-predictive-language-space/handoff/AGENT_HANDOFF.md) | — |
 | **018** | [Fly Neuro Playground](papers/018-drosophila-neural-simulation/) | 🟢 正在推进 | 90% | [handoff](papers/018-drosophila-neural-simulation/handoff/AGENT_HANDOFF.md) | — |
 | **019** | [Annual Leave × Life Evaluation](papers/019-time-off-happiness/) | 🟢 正在推进 | 78% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
-| **020** | [全学科撤稿生态](papers/020-global-retraction-ecology/) | 🟢 正在推进 | 55% | [handoff](papers/020-global-retraction-ecology/handoff/AGENT_HANDOFF.md) | — |
+| **020** | [全学科撤稿生态](papers/020-global-retraction-ecology/) | 🟢 正在推进 | 75% | [handoff](papers/020-global-retraction-ecology/handoff/AGENT_HANDOFF.md) | — |
 | **021** | [大规模暴行条件 · QCA](papers/021-mass-atrocity-configurations/) | 🟢 正在推进 | 38% | [handoff](papers/021-mass-atrocity-configurations/handoff/AGENT_HANDOFF.md) | — |
 | **022** | [行星天体分类 · fsQCA](papers/022-configurational-planetary-taxonomy/) | 🟢 正在推进 | 59% | [handoff](papers/022-configurational-planetary-taxonomy/handoff/AGENT_HANDOFF.md) | — |
-| **023** | [Ancient Myth Convergence](papers/023-myth-convergence/) | 🔵 完成 | 100% | [handoff](papers/023-myth-convergence/handoff/AGENT_HANDOFF.md) | <a href="./docs/assets/paper-at-a-glance/023.svg"><img src="./docs/assets/paper-at-a-glance/023.svg" height="80" loading="lazy" decoding="async" alt="一图读懂 023" title="Click to open the full one-page visual"></a> |
+| **023** | [Ancient Myth Convergence](papers/023-myth-convergence/) | 🟢 Active | 34% | [handoff](papers/023-myth-convergence/handoff/AGENT_HANDOFF.md) | <a href="./docs/assets/paper-at-a-glance/023.svg"><img src="./docs/assets/paper-at-a-glance/023.svg" height="80" loading="lazy" decoding="async" alt="Pilot-0 一图读懂 023" title="Pilot-0 visual; v0.2 active"></a> |
 
 
 ## ARIS4C 如何运作

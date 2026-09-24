@@ -107,3 +107,13 @@ The final-state boundary is intentionally conservative:
 - The original 56-motif expansion is deferred to a versioned v0.2.
 - QCA remains OFF because its trigger conditions were not met.
 - Future work must version forward rather than rewrite the frozen coder/reliability evidence.
+
+
+## 2026-09-24 · v0.2 submission-grade scope reset
+The previous `Finish · 100%` designation is withdrawn as a **submission-grade research claim**. v0.1.1 remains frozen as a successful Pilot-0/public-delivery release.
+
+The active denominator is now the v0.2 ARIS research contract in `process/V0.2_SCOPE_RESET.md`, yielding **Active · 34%** at reset.
+
+Primary article route: Methods + empirical demonstration. Original Research status is conditional on case-universe, validation and inferential-model gates.
+
+A clean human/domain-informed validation subset is mandatory before submission-grade empirical claims. Existing AI-AI reliability remains useful Pilot evidence but is not relabeled as human reliability.

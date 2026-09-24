@@ -180,12 +180,12 @@
       "blocker": "Single dominant blocker: live JPL SBDB object payload acquisition for the 16 small/boundary cases. No calibration/truth table/QCA solution may be opened before readiness passes."
     },
     "023": {
-      "progress": 100,
-      "stage": "Finish · frozen Pilot-0 core + bilingual PDF-first public package",
-      "activity": "finish",
-      "evidence": "Final EN/ZH manuscripts, 3 substantive figures, 3 tables, one-page visual, durable EN/ZH repository PDFs, frozen dual-model reliability, source-bundle similarity audit and PT01–PT04 mechanism synthesis are all committed. Egypt remains an explicitly excluded exploratory v0.2 extension.",
-      "next_gate": "None for v0.1.1. Optional future v0.2 may independently audit Egypt and expand motifs/traditions without reopening the frozen core.",
-      "blocker": "None. v0.1.1 final/output contract complete."
+      "progress": 34,
+      "stage": "v0.2 submission-grade ARIS run · literature + case-universe gates",
+      "activity": "active",
+      "evidence": "Pilot-0 v0.1.1 remains frozen. Submission-grade scope reset now includes a frozen paper plan/claims register, preregistration-style analysis contract, Tier A/B/C case-universe protocol with 17 seeded candidates, corpus protocol, dyadic mechanism-analysis plan, robustness suite, four-role adversarial review loop and verified literature seed map.",
+      "next_gate": "Complete G2 systematic literature map and G3 Tier-A case-universe freeze before inspecting expanded similarity ranks; then expand ontology/source bundles under blind contamination controls.",
+      "blocker": "No immediate blocker. G5 will require a clean human/domain-informed independent validation subset before submission-grade empirical claims."
     }
   },
   "scheduling": {

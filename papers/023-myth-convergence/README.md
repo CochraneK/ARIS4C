@@ -1,37 +1,44 @@
 # ARIS4C-023 · Ancient Myth Convergence
 
-**Current state: 99% — scientific core and bilingual publication package complete; durable PDF binary publication pending.**
+**Canonical state: Active · 34% — submission-grade v0.2 ARIS run.**
 
-## Question
+The earlier v0.1.1 package is frozen as **Pilot-0 / feasibility evidence**. Its manuscripts and PDFs remain available, but they are no longer presented as a submission-final paper.
 
-Why do ancient traditions sometimes tell strikingly similar stories—and how can we distinguish shared ancestry, historical diffusion, environmental convergence, and recurrent cognitive/social structure?
+## v0.2 question
 
-## Core result
+How can comparative mythology separate:
+- textual motif resemblance,
+- vertical inheritance,
+- historical diffusion/contact,
+- ecological similarity,
+- chronology/source survival,
+- residual cognitive/social convergence,
+without turning missing evidence into absence or similarity into proof of borrowing?
 
-The project does **not** reduce myth comparison to a similarity leaderboard.
+## Submission route
 
-- Dual-model calibration: 120 judgments, four-state agreement **0.825**, binary present/absent κ **0.894**.
-- Gilgamesh XI <-> Genesis 6–9 flood bundles: **6 shared present**, Jaccard **0.857**.
-- Rigveda <-> selected Hesiodic divine-conflict bundle: simple matching **0.875** but Jaccard **0.50**, because shared absences dominate.
-- Process tracing supports a Mesopotamian literary-dependence family for the Genesis flood while leaving the exact intermediary unresolved.
-- Sumerian <-> Akkadian anthropogony is consistent with a shared Mesopotamian repertoire in a bilingual scribal transmission environment.
-- Chinese water-control/catastrophe material is structurally distinct from the Near Eastern ark-survival package; proposed geological anchoring remains contested.
-- Independent Indo-European comparative evidence shows why motif Jaccard alone cannot decide genealogy.
+Primary: **Methods + empirical demonstration**.
 
-**Methodological conclusion:** similarity is an observation to explain, not evidence of transmission by itself.
+Upgrade to Original Research only if the expanded case universe, independent validation, inferential-model and robustness gates pass.
 
-## Outputs
+## Read next
 
-- English manuscript: `manuscript/working_paper_en.md`
-- 中文 manuscript: `manuscript/working_paper_zh.md`
-- One-page visual: `../../docs/assets/paper-at-a-glance/023.svg`
-- Figures: `figures/`
-- Tables: `tables/`
-- PDF build/QA manifest: `process/PDF_BUILD_MANIFEST.md`
-- Public-delivery audit: `process/PUBLIC_DELIVERY_AUDIT.md`
+- `process/V0.2_SCOPE_RESET.md`
+- `process/PAPER_PLAN_v0.2.md`
+- `process/PREREGISTRATION_v0.2.md`
+- `process/CASE_UNIVERSE_PROTOCOL_v0.2.md`
+- `process/CORPUS_PROTOCOL_v0.2.md`
+- `process/ANALYSIS_PLAN_v0.2.md`
+- `process/ROBUSTNESS_PLAN_v0.2.md`
+- `process/REVIEW_LOOP_v0.2.md`
+- `process/LITERATURE_MAP_v0.2.md`
 
-The English and Chinese PDFs have been generated and render-QA'd locally, but no repository/public PDF URLs are claimed until the binary files are actually uploaded.
+## Frozen Pilot-0 artifacts
 
-## Boundaries
+- English Pilot PDF: `dist/ARIS4C-023_EN.pdf`
+- 中文 Pilot PDF: `dist/ARIS4C-023_ZH.pdf`
+- v0.1.1 coder/reliability/source-bundle outputs remain immutable.
 
-QCA remains OFF. Egypt is a registered exploratory extension but excluded from confirmatory results pending independent spot-audit. A future v0.2 may expand beyond the 24 calibrated motifs; it must not rewrite the frozen v0.1.1 coder files.
+## Current scientific work
+
+G2 systematic literature and G3 case-universe construction. Expanded similarity must not be inspected until the Tier-A universe and corpus-selection rules are frozen.

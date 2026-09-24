@@ -124,3 +124,13 @@
 - Removed the temporary PDF GitHub Actions workflow after discovering repository-level Actions jobs were failing before executing any steps.
 - Wired PDF-first links, one-page visual, README portfolio entry, Command Center card/showcase and final handoff metadata.
 - v0.1.1 declared Finish · 100%; optional Egypt/56-motif work is v0.2 and cannot block or rewrite the frozen paper.
+
+## 2026-09-24 · v0.2 submission-grade ARIS reset
+- Re-audited 023 against ARIS4C Output Standard and upstream paper-writing expectations.
+- Determined that Pilot/public-output completion had been conflated with publication maturity.
+- Preserved all v0.1.1 artifacts but withdrew submission-grade Finish status.
+- Opened v0.2 with an explicit 100-point G0–G9 research denominator; current state = Active · 34%.
+- Froze paper plan, claims register, preregistration-style analysis contract, case-universe protocol, corpus protocol, analysis plan, robustness plan and four-role adversarial review loop.
+- Seeded 17 case-universe candidates with Tier A/B status and inclusion rationale.
+- Created a verified literature seed map centered on cross-cultural non-independence, cultural phylogenetics, folktale phylogenetics, D-PLACE architecture and ancient Near Eastern flood source criticism.
+- Next work is G2 systematic literature + G3 case-universe completion before expanded similarity inspection.
