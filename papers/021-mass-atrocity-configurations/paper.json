@@ -2,16 +2,18 @@
   "id": "021",
   "portfolio_id": "ARIS4C-021",
   "slug": "mass-atrocity-configurations",
-  "title": "Configurations of Mass Atrocity Onset: A Set-Theoretic Replication and Extension of Genocide/Politicide Risk Models",
-  "short_title": "Mass Atrocity Conditions · QCA",
+  "title": "Necessary, Sufficient, and Sequential Conditions of Mass Atrocity Onset: A Multimethod Comparative Study",
+  "short_title": "Mass Atrocity Conditions",
   "year": 2026,
   "status": "concept-design",
-  "domain": "genocide studies / comparative politics / conflict processes / set-theoretic methods / atrocity prevention",
-  "summary": "A prevention-oriented comparative study of the configurations under which genocide, politicide, and intrastate mass killing begin. The project first reproduces classic Harff/Williams risk configurations on their original case universe, then extends them with newer public data and explicitly tests necessity, sufficiency, equifinality, causal asymmetry, and stability across outcome definitions. A periodic-table-like risk atlas is a visualization layer, not a claim that single factors deterministically cause atrocities.",
-  "authors": ["Cochrane Kang"],
+  "domain": "genocide studies / comparative politics / conflict processes / configurational comparative methods / event history / causal inference / atrocity prevention",
+  "summary": "A prevention-oriented multimethod comparative study of the conditions, combinations, sequences, and timing under which genocide, politicide, and intrastate mass killing begin. QCA is retained as one replication and configurational tool, alongside Coincidence Analysis (CNA), Necessary Condition Analysis (NCA), event-history/rare-event models, process tracing, sequence-sensitive comparison, and predictive benchmarks. A periodic-table-like condition atlas is an evidence-synthesis layer rather than a deterministic causal recipe.",
+  "authors": [
+    "Cochrane Kang"
+  ],
   "aris": {
-    "provenance": "ARIS4C user-requested project registered 2026-09-24; initial literature anchor, outcome hierarchy, QCA design, condition ontology and source inventory frozen before outcome inspection",
-    "version": "v0.1.0"
+    "provenance": "ARIS4C user-requested project registered 2026-09-24; reframed the same day from a QCA-centered design to a method-neutral multimethod design before empirical outcome inspection",
+    "version": "v0.2.0"
   },
   "links": {
     "pipeline": "process/RESEARCH_PLAN.md",
@@ -20,14 +22,46 @@
     "sources": "data/SOURCE_INVENTORY.md",
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/021-mass-atrocity-configurations"
   },
-  "tags": ["ARIS","ARIS4C","genocide","politicide","mass atrocity","mass killing","QCA","fsQCA","necessary conditions","sufficient configurations","early warning","atrocity prevention","comparative politics"],
-  "bilingual_delivery": {"english": false, "chinese": false},
+  "tags": [
+    "ARIS",
+    "ARIS4C",
+    "genocide",
+    "politicide",
+    "mass atrocity",
+    "mass killing",
+    "QCA",
+    "CNA",
+    "NCA",
+    "necessary conditions",
+    "sufficient configurations",
+    "event history",
+    "process tracing",
+    "rare events",
+    "early warning",
+    "atrocity prevention",
+    "comparative politics"
+  ],
+  "bilingual_delivery": {
+    "english": false,
+    "chinese": false
+  },
   "outputs": {
     "paper_en": "not-started",
     "paper_zh": "not-started",
-    "figures": {"status": "concept-scaffold","count": 0,"strategy": "periodic-table-like condition atlas + truth-table/pathway visualization after calibration and QCA are frozen"},
-    "tables": {"status": "concept-scaffold","count": 0},
+    "figures": {
+      "status": "concept-scaffold",
+      "count": 0,
+      "strategy": "periodic-table-like condition atlas + configurational pathways + timing/onset visualization after method-specific design gates are frozen"
+    },
+    "tables": {
+      "status": "concept-scaffold",
+      "count": 0
+    },
     "exception": "Pre-outcome design stage. No condition is labeled necessary or sufficient until replicated and sensitivity-tested.",
-    "pdf": {"status": "not-started","english": false,"chinese": false}
+    "pdf": {
+      "status": "not-started",
+      "english": false,
+      "chinese": false
+    }
   }
 }
