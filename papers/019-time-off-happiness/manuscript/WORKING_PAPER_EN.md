@@ -2,8 +2,9 @@
 
 ## A Global Legal-Event Audit and Falsification-First Holdout Study
 
-**ARIS4C019 — Working paper v0.1**  
-**Date:** 21 September 2026
+**Cochrane Kang**  
+**ARIS4C019 — Repository final v0.6**  
+**Date:** 24 September 2026
 
 ### Abstract
 
