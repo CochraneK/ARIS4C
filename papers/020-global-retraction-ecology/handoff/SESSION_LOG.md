@@ -23,3 +23,12 @@
 - External browser credits were exhausted before shards 1–3. This is an execution-surface limitation, not a scientific/data blocker.
 - Added resumable OpenAlex enrichment and grouped denominator scripts.
 - Froze event-vs-work identity, RWDB semicolon parsing, and denominator contracts.
+
+## 2026-09-24 · Competitor repositioning + concordance/survival/citation engineering
+- Closest competitor arXiv:2604.02302 inspected in full text; global denominator-normalized incidence, fractional country weighting, field/publisher comparisons, lag and concentration are now treated as prior art rather than ARIS4C-020 standalone novelty.
+- Added closest-competitor gap analysis, confirmatory/exploratory analysis freeze, prior-art screening protocol and evidence matrix.
+- Working title revised to emphasize event-to-work reconstruction, Reason ecology, timing and citation afterlife rather than causal “Causes.”
+- Added aggregated cohort×field×age hazard construction from grouped OpenAlex denominators, avoiding materialization of the complete non-retracted work universe.
+- Added batched OpenAlex incoming-citation acquisition using cites-filter OR batches and referenced-work back-mapping; citation afterlife remains an explicit heavy run.
+- Added RWDB→OpenAlex concordance report and bidirectional OpenAlex is_retracted snapshot/comparison, including original-DOI vs notice-DOI separation.
+- OpenAlex retracted snapshot now records retrieval timestamp and SHA-256 provenance.
