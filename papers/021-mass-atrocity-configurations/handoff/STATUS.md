@@ -4,9 +4,9 @@
 - Project status: concept-design
 - Activity: wait
 - Portfolio progress: 18%
-- Current stage: literature anchor + outcome hierarchy + QCA architecture + condition ontology frozen
-- Evidence established: Harff structural-risk model identified as replication anchor; Williams 2016 identified as direct QCA predecessor using 139 genocide/non-genocide cases; PITF 2018, V-Dem v16, Early Warning Project and PITF Worldwide Atrocities identified as candidate source stack.
-- Next gate: acquire/hash PITF replication data and reconstruct the historical case/condition matrix before any modern extension or outcome inspection.
+- Current stage: literature anchor + outcome hierarchy + multimethod architecture + condition ontology frozen
+- Evidence established: Harff structural-risk model identified as replication anchor; Williams 2016 identified as direct QCA predecessor; method landscape now includes QCA, CNA, NCA, event-history/rare-event models, predictive benchmarks, and process tracing; PITF 2018, V-Dem v16, Early Warning Project and PITF Worldwide Atrocities identified as candidate source stack.
+- Next gate: acquire/hash PITF replication data, reconstruct the historical case/condition matrix, and freeze the cross-method replication protocol before any modern extension or outcome inspection.
 - Blocker: none; queued behind higher-progress active portfolio work.
 
 ## Claim boundary
