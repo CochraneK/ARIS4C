@@ -1,8 +1,8 @@
 # ARIS4C019 · Process status
 
-- Stage: **Expanded modern statistics LOCKED · full WDH historical trend bridge LOCKED · legal/raw-outcome reconstruction active**
+- Stage: **Modern + published historical trends LOCKED · ILO convention history CLOSED · raw annual WDH/national-law reconstruction active**
 - Activity: **active**
-- Progress: **78%**
+- Progress: **80%**
 - Scope correction remains in force: the former 98% state described only the narrow Pilot-0 publication package, not the full original research question.
 
 ## Frozen sub-study
@@ -19,7 +19,7 @@
 - Eurobarometer: general life-satisfaction measurement chain **1973–2026**; Mannheim trend file = **86 waves / >1,000,000 respondent cases** through 2002, numeric acquisition pending.
 - WVS: Waves 1–7 registry = **295 country-wave rows / 107 distinct country-or-territory codes**; Waves 3–6 keep reported-count vs visible-table QA flags.
 - WHR2024: annual Life Ladder source through 2023.
-- ILO: C052 current official count **54 ratifications**; C132 **39 ratifications**; C132 complete 39-country seed is materialized and primary-date verification is partial.
+- ILO convention history: C052 **54/54 exact primary dates**, C132 **39/39 exact primary dates**; C052→C132 succession table and C132 declaration-unit guardrail are complete.
 
 ## Expanded modern annual analysis
 
@@ -78,3 +78,23 @@ Existing Pilot-0 PDF Actions pre-runner failure remains an engineering issue onl
 - A0→A1 decomposition shows hours attenuation is driven by macro adjustment rather than complete-case selection; leave-FD complete-case selection makes the negative A0 coefficient more negative, while macro adjustment moves it back across zero.
 - Independent statsmodels validation code is committed in `code/validate_expanded_modern_panel_statsmodels.py`.
 - GitHub Actions run **35977496016**, job **107561331580**, failed before any step executed (`steps=null`), matching the repository-wide pre-runner failure. Validator execution is therefore **pending**, not PASS.
+
+
+## Raw WDH HTML reconstruction
+
+- The transport-blocked XLSX is no longer the only raw-year route.
+- Official WDH country/equivalent-measure HTML exposes year-level distributional findings and transformed 0–10 means.
+- Reconstruction rule was validated independently on:
+  - USA 111C / hl4 (1946–2017): reconstructed slope +0.001732 vs published +0.001;
+  - Japan 121C / ls4 (1958–2013): reconstructed +0.004793 vs published +0.004.
+- Differences are <0.001/year and consistent with displayed-value rounding.
+- Canonical builder: `code/rebuild_wdh_html_annual_panel.py`.
+- Full batch output is pending a network-capable runner; this is now an execution dependency, not an unresolved source-design problem.
+
+## ILO institutional history closed
+
+- C052 exact primary register: **54/54**; 37 currently in force, 17 not in force.
+- C132 exact primary register: **39/39**; all currently in force.
+- **18 countries** appear in both registers.
+- Mean C052→C132 ratification gap among overlaps: **27.8 years**; median **26.4 years**.
+- C132 declaration units are preserved without unsafe conversion.
