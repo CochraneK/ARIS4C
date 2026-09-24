@@ -19,5 +19,5 @@
 - Canonical scientific state was already complete and substantially ahead of the earlier chat state: scientific interpretation locked; SIR submission package complete; public EN/ZH sources complete; local public-PDF QA passed.
 - One stale continuity defect was found: `handoff/STATUS.md` and `handoff/AGENT_HANDOFF.md` still described the older 82% SIR-prep stage while canonical `process/STATUS.md`, `paper.json`, and `papers/dashboard.json` were already at 98% with only canonical PDF publication blocked.
 - The stale handoff entry files were synchronized to the current 98% / repository-engineering-blocked state.
-- A dedicated deletion checkpoint was added so a new chat/agent can resume from Git without reconstructing this conversation.
+- The standard handoff entry files now contain the deletion-safe cold-start state, so a new chat/agent can resume from Git without reconstructing this conversation.
 - Next action after chat deletion is repository delivery only: publish and verify the two canonical EN/ZH PDFs, then promote ARIS4C019 to Finish / 100%. No further scientific analysis should be invented to fill the remaining 2%.
