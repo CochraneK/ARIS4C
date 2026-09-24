@@ -56,3 +56,13 @@ Public-safe summary:
 - a matched static-target cross-version diagnostic was frozen before inspecting results;
 - legacy/current dependency stacks run in isolated CI jobs and a third job compares only pre-specified engineering metrics;
 - no post-hoc equivalence threshold, version winner, or biological interpretation is permitted from the first matched diagnostic.
+
+## 2026-09-24 · deletion-ready Git handoff requested
+
+- **Surface:** ChatGPT / ARIS4C project conversation
+- **Participants:** Cochrane Kang + AI research assistant
+- **User request:** Persist all material ARIS4C018 work to Git, make the project compliant with the ARIS4C handoff standard, and prepare for deletion of the current chat.
+- **Repository audit result:** Canonical Git state is 90% / Pilot 4 localization. Pilots 0–3, Pilot 4 matched diagnostic, R1 and R2 are already committed. R2.5 is implemented but has not scientifically executed because GitHub Actions currently fails before job steps begin.
+- **Corrections made:** Added the missing R2 narrative result; refreshed project README; reconciled historical TODO items; refreshed handoff CONTEXT/TODO/DECISIONS/SESSION_LOG; verified the current runner blocker.
+- **Continuation rule:** Do not rely on this chat. Start from `handoff/README.md` and `handoff/AGENT_HANDOFF.md`, then execute the frozen R2.5 gate when a runner becomes available.
+- **Safety/claim boundary:** No hidden chain-of-thought, credentials, or private material were committed; only public-safe research continuity information is retained.
