@@ -7,15 +7,17 @@
 5. [x] Implement and regression-test Margot/Soter equations.
 6. [~] Evidence-state coding:
    - [x] Batch 01: 8 planets + Ceres + Pluto.
-   - [x] Batch 02: Moon + 8 high-information moon/boundary cases.
-   - [x] Batch 03: remaining 12 selected satellites + Haumea/Makemake/Eris.
-   - [x] Composition 34/50.
-   - [~] Atmosphere 24/50.
-   - [~] Differentiation 24/50.
-   - [~] Geology 23/50.
-   - [~] Ocean 14/50.
-   - [~] Tidal heating 20/50.
-   - [ ] 16 small/boundary cases.
+   - [x] Batch 02: high-information moon/boundary set.
+   - [x] Batch 03: remaining selected satellites + Haumea/Makemake/Eris.
+   - [x] Batch 04: Vesta/Eros/Bennu/Ryugu/Itokawa.
+   - [x] Add CARBONACEOUS_HYDRATED ontology class.
+   - [~] Composition 39/50.
+   - [~] Atmosphere 25/50.
+   - [~] Differentiation 29/50.
+   - [~] Geology 24/50.
+   - [~] Ocean 15/50.
+   - [~] Tidal heating 25/50.
+   - [ ] Remaining 11 small/boundary bodies.
 7. [~] Source-conflict audit:
    - [x] C001 Mimas temporal supersession adjudicated.
    - [ ] Scan all coded cells for unresolved conflicts / outdated agency summaries.
