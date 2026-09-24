@@ -1,84 +1,79 @@
-# Variables & Calibration Scaffold · ARIS4C022
+# Variables & Calibration · ARIS4C022
 
-This file is a pre-analysis scaffold, not a frozen preregistration. Thresholds must be justified from theory / natural breakpoints / published criteria before outcome inspection.
+Updated: 2026-09-24
+
+Calibration is **CLOSED_NOT_READY**. The primary M2 condition families are frozen, but no fuzzy-set anchor may be tuned or inspected until the pre-calibration readiness gates pass.
 
 ## Outcomes
 
-| Outcome | Type | First-pass definition |
+| Outcome | Type | Role |
 |---|---|---|
-| PLANET | crisp benchmark | Current IAU Solar-System major-planet label |
-| DWARF_PLANET | crisp benchmark | Current IAU dwarf-planet label |
-| SATELLITE | crisp | Bound natural body whose primary is a nonstellar body |
-| DYN_DOM | fuzzy | Membership in strong dynamical dominance, calibrated from published quantitative discriminants |
-| ROUND | fuzzy/crisp sensitivity | Degree of hydrostatic-equilibrium / near-roundness evidence |
+| PLANET | crisp benchmark | M0/M2 outcome |
+| DWARF_PLANET | crisp benchmark | separate outcome analysis |
+| SATELLITE | crisp | M3 outcome |
+| DYN_DOM | fuzzy/quantitative | M1 only |
+| ROUND | fuzzy/crisp sensitivity | M0/M4 only |
 
-QCA runs each outcome separately.
+## Frozen M2 primary conditions
 
-## Condition families
+| Family | Primary representative | Current substantive coverage | Status |
+|---|---|---:|---|
+| SCALE | escape_velocity_m_s | 34/50 | incomplete |
+| BULK_MATERIAL | density_from_mass_radius_g_cm3 | 34/50 | incomplete |
+| ATMOSPHERE_RETENTION | atmosphere_value | 25/50 | incomplete |
+| INTERNAL_ORGANIZATION | differentiation_value | 32/50 | incomplete |
+| SOLAR_ENERGY | insolation_rel_earth | 34/50 | incomplete |
 
-| Family | Candidate variables | QCA role | Warning |
-|---|---|---|---|
-| ORBITAL_HIERARCHY | primary type, direct stellar orbit, satellite orbit | primary | conceptually prior to many class labels |
-| DYNAMICAL_DOMINANCE | Margot Pi/criterion, Soter mu, clearing time | primary | use published formulas / units exactly |
-| SELF_GRAVITY | roundness, hydrostatic-equilibrium evidence | primary | observational uncertainty for small bodies |
-| BULK_SCALE | mass, radius/diameter | primary + sensitivity | do not enter all derived scale variables together |
-| BULK_STRUCTURE | density, moment-of-inertia proxy, differentiation | secondary | data completeness varies |
-| ATMOSPHERE | pressure, atmospheric mass, major gases | exploratory | absence may reflect retention + temperature + mass |
-| COMPOSITION | rock/metal, ice/volatile, gas-envelope class | exploratory | heterogeneous measurement/model uncertainty |
-| THERMAL_GEOLOGY | volcanism, resurfacing, tidal heating, heat flux | exploratory | current activity != formation class |
-| STELLAR_ENVIRONMENT | semimajor axis, insolation, T_eq, snow-line-normalized distance | sensitivity | absolute AU is Solar-System-specific |
-| EVOLUTION | age, atmospheric loss, differentiation history | exploratory | avoid vague “lifecycle” coding without an operational definition |
+Complete on all five: **19/50**.
+
+The composition ontology is not forced into an ordinal fuzzy scale. It remains available for mvQCA / class-contrast sensitivity.
+
+## Readiness gates before calibration
+
+All must pass:
+
+1. every primary condition has >=40/50 substantive values;
+2. complete-case set >=35/50;
+3. all 8 major planets complete;
+4. complete non-planets include at least:
+   - 4/5 dwarf planets,
+   - 12/21 satellites,
+   - 10/16 small/boundary bodies;
+5. remaining missingness has scientific provenance;
+6. calibration anchors are theory/physics/evidence based and frozen before any solution inspection.
+
+Current complete strata: 8 planets, 2 dwarf planets, 9 satellites, 0 small bodies. **FAIL.**
 
 ## Redundancy map
 
-The following are linked mathematically and cannot be treated as orthogonal evidence:
+Do not enter tightly coupled variables simultaneously:
+- mass + radius → density;
+- mass + radius → surface gravity;
+- mass + radius → escape velocity;
+- stellar distance → insolation;
+- mass + host + orbit → dynamical-dominance metrics.
 
-- mass + radius -> density;
-- mass + radius -> surface gravity;
-- mass + radius -> escape velocity;
-- star mass + semimajor axis -> orbital period (approximately);
-- star luminosity + semimajor axis -> insolation;
-- mass + host mass + semimajor axis -> Hill radius;
-- mass + host mass + orbit -> several dynamical-dominance metrics.
+Primary M2 selects one representative per family. Alternatives are sensitivity substitutions only.
 
-Primary QCA models should select **one representative per tightly coupled family**, then use alternatives in sensitivity runs.
+## Calibration principles once the gate passes
 
-## Calibration plan
+- theory/natural-break/published thresholds preferred to sample quantiles;
+- outcome labels cannot determine anchors;
+- explicit full-out / crossover / full-in values;
+- uncertainty and scientific missingness stay visible;
+- threshold perturbation is mandatory.
 
-### Crisp conditions
-Use 0/1 only for genuinely categorical relations such as:
-- directly orbits the Sun;
-- orbits a planet / dwarf planet;
-- official IAU benchmark label.
+## Frozen sensitivity families
 
-### Fuzzy conditions
-Use theory-anchored full-out / crossover / full-in points.
+- SCALE: mass or radius instead of escape velocity
+- BULK_MATERIAL: composition classes via mvQCA instead of density
+- ATMOSPHERE_RETENTION: comparable pressure where defensible
+- INTERNAL_ORGANIZATION: geology, ocean, or tidal heating in separate sensitivity models
+- SOLAR_ENERGY: distance or equilibrium-temperature proxy instead of insolation
 
-Candidate examples:
-- DYN_DOM: anchor on published planet discriminant values / threshold, not sample quartiles.
-- MASSIVE / LARGE: only if a substantively meaningful physical threshold can be defended; otherwise treat as sensitivity.
-- ROUND: combine shape measurements + accepted hydrostatic-equilibrium assessments, with uncertainty flags.
-- ATMOSPHERE_RICH: calibrate from surface pressure / atmospheric mass only if cross-case comparability is defensible.
-- GEO_ACTIVE: use an evidence rubric with explicit present / uncertain / absent states.
+## Anti-circularity state
 
-## Consistency / coverage
-
-Thresholds are to be frozen before solution inspection. Report:
-- necessity consistency + coverage;
-- sufficiency consistency;
-- PRI;
-- raw coverage;
-- unique coverage;
-- solution coverage / consistency;
-- contradictory truth-table rows.
-
-No single universal cutoff will be treated as a law; threshold sensitivity is mandatory.
-
-## Mars check
-
-Mars should satisfy:
-- direct orbit around the Sun;
-- near-round/self-gravitating;
-- strong dynamical dominance under published quantitative criteria.
-
-It is therefore a positive-control PLANET case. Its two moons are separate SATELLITE cases and must not be collapsed into the Mars row.
+- calibration anchors inspected/tuned: 0
+- truth-table rows inspected: 0
+- consistency/PRI/coverage inspected: 0
+- QCA solutions inspected: 0
