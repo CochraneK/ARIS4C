@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Resumable OpenAlex enrichment for unique RWDB Retraction DOIs.
 
-One JSONL row is written per *query DOI*, not per OpenAlex Work. This makes
-0/1/N candidate matches explicit and prevents duplicate OpenAlex records for
-one DOI from silently inflating downstream counts.
+One JSONL row is written per query DOI, preserving 0/1/N OpenAlex candidates.
+The script pins corpus=core, authenticates via Authorization header when a key
+is available, and retries transient 429/5xx failures with exponential backoff.
 """
 from __future__ import annotations
 import argparse, csv, hashlib, json, os, time
 from collections import defaultdict
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
@@ -21,10 +22,33 @@ def norm_doi(v:str)->str:
             x=x[len(p):]
     return "" if x in MISSING else x
 
-def get_json(url:str):
-    req=Request(url,headers={"User-Agent":"ARIS4C-020/1.1"})
-    with urlopen(req,timeout=60) as resp:
-        return json.load(resp)
+def get_json(url:str, api_key:str="", retries:int=6):
+    headers={"User-Agent":"ARIS4C-020/1.2"}
+    if api_key:
+        headers["Authorization"]=f"Bearer {api_key}"
+    for attempt in range(retries):
+        try:
+            req=Request(url,headers=headers)
+            with urlopen(req,timeout=90) as resp:
+                return json.load(resp), {
+                    "remaining":resp.headers.get("X-RateLimit-Remaining"),
+                    "limit":resp.headers.get("X-RateLimit-Limit"),
+                    "credits_used":resp.headers.get("X-RateLimit-Credits-Used"),
+                    "reset_seconds":resp.headers.get("X-RateLimit-Reset"),
+                }
+        except HTTPError as exc:
+            if exc.code not in {429,500,502,503,504} or attempt==retries-1:
+                raise
+            wait=min(60,2**attempt)
+            retry_after=exc.headers.get("Retry-After") if exc.headers else None
+            if retry_after and str(retry_after).isdigit():
+                wait=max(wait,int(retry_after))
+            time.sleep(wait)
+        except URLError:
+            if attempt==retries-1:
+                raise
+            time.sleep(min(60,2**attempt))
+    raise RuntimeError("unreachable")
 
 def main()->int:
     ap=argparse.ArgumentParser()
@@ -33,10 +57,8 @@ def main()->int:
     ap.add_argument("--shards",type=int,default=4)
     ap.add_argument("--out",type=Path)
     ap.add_argument("--sleep",type=float,default=0.08)
-    ap.add_argument("--retry-unmatched",action="store_true",
-                    help="Retry query DOIs already recorded with zero OpenAlex candidates.")
-    ap.add_argument("--api-key-env",default="OPENALEX_API_KEY",
-                    help="Environment variable containing an optional OpenAlex API key.")
+    ap.add_argument("--retry-unmatched",action="store_true")
+    ap.add_argument("--api-key-env",default="OPENALEX_API_KEY")
     args=ap.parse_args()
     if not 0 <= args.shard < args.shards:
         raise SystemExit("invalid shard")
@@ -66,9 +88,7 @@ def main()->int:
                 except json.JSONDecodeError:
                     continue
                 q=norm_doi(row.get("query_doi",""))
-                if not q:
-                    continue
-                if row.get("candidate_count",0)>0 or not args.retry_unmatched:
+                if q and (row.get("candidate_count",0)>0 or not args.retry_unmatched):
                     done.add(q)
 
     pending=[d for d in todo if d not in done]
@@ -78,6 +98,7 @@ def main()->int:
     )
     api_key=os.getenv(args.api_key_env,"").strip()
     matched=unmatched=ambiguous=0
+    last_rate={}
 
     with out.open("a",encoding="utf-8") as sink:
         for i in range(0,len(pending),100):
@@ -86,11 +107,10 @@ def main()->int:
                 "filter":"doi:"+"|".join(batch),
                 "per_page":"100",
                 "select":select,
+                "corpus":"core",
             }
-            if api_key:
-                params["api_key"]=api_key
             url="https://api.openalex.org/works?"+urlencode(params,safe=":|/,")
-            obj=get_json(url)
+            obj,last_rate=get_json(url,api_key=api_key)
 
             grouped=defaultdict(list)
             for work in obj.get("results",[]):
@@ -106,19 +126,24 @@ def main()->int:
                     "candidates":candidates,
                 }
                 sink.write(json.dumps(row,ensure_ascii=False,separators=(",",":"))+"\n")
-                if len(candidates)==0: unmatched+=1
-                elif len(candidates)==1: matched+=1
+                if len(candidates)==0:
+                    unmatched+=1
+                elif len(candidates)==1:
+                    matched+=1
                 else:
                     matched+=1
                     ambiguous+=1
             sink.flush()
             print(
                 f"shard={args.shard} batch={i//100+1}/{(len(pending)+99)//100} "
-                f"matched={matched} unmatched={unmatched} ambiguous={ambiguous}"
+                f"matched={matched} unmatched={unmatched} ambiguous={ambiguous} "
+                f"remaining={last_rate.get('remaining')}"
             )
             time.sleep(args.sleep)
 
     print(json.dumps({
+        "schema_version":2,
+        "corpus":"core",
         "shard":args.shard,
         "shards":args.shards,
         "input_dois":len(todo),
@@ -128,6 +153,7 @@ def main()->int:
         "unmatched_now":unmatched,
         "ambiguous_now":ambiguous,
         "api_key_used":bool(api_key),
+        "last_rate_headers":last_rate,
     },indent=2))
     return 0
 
