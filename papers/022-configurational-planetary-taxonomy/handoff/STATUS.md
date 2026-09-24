@@ -1,30 +1,22 @@
 # STATUS · ARIS4C022
 
-- State: M2 frozen / dwarf + satellite strata PASS / small-body numeric gate
+- State: M2 frozen / INTERNAL_ORGANIZATION PASS / atmosphere + small-body numeric gate
 - Portfolio activity: active
-- Progress estimate: 85%
+- Progress estimate: 87%
 - Frozen case frame: 50 bodies
-- M2 primary specification remains frozen:
-  - SCALE = escape velocity
-  - BULK_MATERIAL = density proxy
-  - ATMOSPHERE_RETENTION = atmosphere evidence
-  - INTERNAL_ORGANIZATION = differentiation evidence
-  - SOLAR_ENERGY = relative insolation
-- Evidence v0.7 adds readiness-targeted updates for Haumea, Eris, Mimas, Enceladus, Tethys and Charon
+- Evidence v0.8 adds Phobos/Deimos/Iapetus atmosphere evidence and model-level differentiated interiors for Ariel/Umbriel/Titania/Oberon
 - Current M2 substantive coverage:
   - SCALE 34/50
   - BULK_MATERIAL 34/50
-  - ATMOSPHERE_RETENTION 28/50
-  - INTERNAL_ORGANIZATION 36/50
+  - ATMOSPHERE_RETENTION 31/50
+  - INTERNAL_ORGANIZATION **40/50 — PASS**
   - SOLAR_ENERGY 34/50
-- Complete on all five: **25/50**
-- Complete strata:
-  - planets 8/8 — PASS
-  - dwarf planets 4/5 — PASS
-  - satellites 13/21 — PASS
-  - small/boundary bodies 0/16 — FAIL
+- Complete on all five: 25/50
+- Complete strata: planets 8/8 PASS; dwarfs 4/5 PASS; satellites 13/21 PASS; small/boundary 0/16 FAIL
 - Calibration status: CLOSED_NOT_READY
-- Dominant blocker: the 16 small/boundary cases still lack canonical JPL SBDB numeric SCALE/BULK_MATERIAL/SOLAR_ENERGY inputs
-- Secondary gaps: atmosphere needs 12 additional substantive cases to reach 40; internal organization needs 4
-- Source-conflict audit: 7 adjudications / clarifications, 0 unresolved conflicts requiring NA_SOURCE_CONFLICT
+- Remaining dominant gates:
+  - live JPL SBDB numerics for 16 small/boundary cases;
+  - atmosphere 31 → >=40;
+  - complete cases 25 → >=35, with >=10 complete small/boundary cases
+- Source-conflict audit: 9 adjudication/construct entries, 0 unresolved conflicts
 - Anti-circularity: no calibration anchor, truth table, consistency/PRI/coverage statistic or QCA solution inspected
