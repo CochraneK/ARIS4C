@@ -35,3 +35,11 @@
 - Found stale `AGENT_HANDOFF.md` / `papers/dashboard.json` still describing Coder A as pending at 42% after the GLM substitution commit.
 - Repaired canonical operational state to **Block · 55% — Coder A complete; Coder B pending**.
 - Noted that commit `38a07ae4` mixed 023 changes with unrelated 019/020 files; this does not invalidate the frozen Coder A packet, but future numbered-paper commits should remain paper-scoped when possible.
+
+## 2026-09-24 · Coder B completed (DeepSeek)
+- Fresh-context DeepSeek-V4.1-Flash session (WorkBuddy sandbox) took the Coder B role per `AGENT_HANDOFF.md` Path B.
+- Sources verified verbatim: ETCSL 1.7.4 (Segments A–E), Atrahasis I.195–245 (Foster), Gilgamesh XI (Kovacs), Genesis 2 and 8 (JPS), Theogony 453–500 and 820–868 (Evelyn-White), Rigveda 1.32 and 10.90 (Griffith). The three Chinese passages, KTU 1.2 IV and the Ullikummi passage were coded from the received text / standard translations because the frozen locator URLs were unreachable (Cloudflare / paywall / transport) — recorded as a limitation.
+- Populated `data/calibration/coder_B.csv`: 120/120 judgments — 40 present, 74 absent, 6 uncertain, 0 not_observed; 25 rows ambiguity-flagged.
+- **Exposure disclosure:** the session's project memory note revealed one item-level Coder A answer (P_DIV_BAAL × DIV_KINGSHIP_TRANSFER) plus A's aggregate counts. Details and the required treatment of the contaminated cell are recorded in `DECISIONS.md`. The packet is frozen and committed *before* any scoring run.
+- Structural QA run before commit: keys and key columns byte-identical to `packet_template.csv`, all states in the allowed vocabulary, all rationales non-empty, confidence in range.
+- STATUS/TODO updated: Coder A and Coder B both complete; reliability scoring and disagreement taxonomy are now unblocked.
