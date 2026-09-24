@@ -23,3 +23,8 @@
 - [x] Implement batched OpenAlex citation-afterlife edge acquisition and summary.
 - [x] Freeze closest-competitor gap, analysis freeze, prior-art protocol and evidence matrix.
 - [ ] Execute the full networked concordance/denominator/hazard chain and freeze results.
+
+- [x] Static execution-package QA: runner dependencies + CLI contracts + current OpenAlex API contract.
+- [x] Add offline compile/CLI/synthetic smoke gate before full pipeline.
+- [x] Repair/sync 020 README, Command Center and EN/ZH maturity SVG public surfaces.
+- [ ] Execute offline smoke on a canonical checkout and record PASS_OFFLINE_SMOKE.
