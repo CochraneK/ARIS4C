@@ -31,7 +31,8 @@ This will:
 8. rerun **all four** OpenAlex DOI shards in the candidate-safe 0/1/N format;
 9. summarize full DOI match coverage;
 10. materialize anomalous OpenAlex work-type QA cases;
-11. create year×field and year×type denominator tables.
+11. create year×field and year×type denominator tables;
+12. build the compact cohort×field×age hazard panel from grouped denominators.
 
 ## Offline/local-only validation
 
@@ -74,3 +75,17 @@ Do not unlock country/field/publisher risk results until:
 - large API caches
 
 Only compact manifests, QA tables, derived aggregate tables, code and final figures belong in Git.
+
+## Citation-afterlife run
+
+Citation acquisition is intentionally **not** part of the default network run because the incoming-citation edge set can be much larger than the matching/denominator jobs.
+
+Run it explicitly:
+
+```bash
+python papers/020-global-retraction-ecology/code/run_pipeline.py --with-citations
+```
+
+The citation fetcher batches multiple target OpenAlex Work IDs with the `cites:` OR filter, then uses each citing work's `referenced_works` list to recover target→citer edges. Completed batches are written atomically under gitignored `data/interim/openalex_citation_batches/`, so a failed run resumes without restarting finished batches.
+
+The resulting work-level summary distinguishes citations published before, on, and after the earliest formal RWDB RetractionDate. Citing-work publication date is a bibliographic event-time proxy, not proof that the citing authors saw or endorsed the retracted claim.
