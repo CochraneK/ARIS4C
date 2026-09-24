@@ -140,12 +140,12 @@
       "blocker": "None; queued behind higher-progress completion-first work"
     },
     "018": {
-      "progress": 88,
-      "stage": "Pilot 4 matched diagnostic COMPLETE · R1 Retina exact identity PASS · R2 frozen-retinal localization running",
+      "progress": 90,
+      "stage": "Pilot 4 matched diagnostic COMPLETE · R1/R2 excluded · R2.5 initial-scene sensory localization running",
       "activity": "active",
-      "evidence": "Pilot4 matched diagnostic shows upstream decoder divergence under matched target conditions. R1 workflow 35560206659 PASS: legacy/current Retina are byte-identical at ID-map SHA-256, pale/yellow-mask SHA-256 and 721-index FlyGym→flyvis mapper SHA-256; both are exact bijections. R1 geometry/order is excluded as the first divergence.",
-      "next_gate": "Complete R2a deterministic frozen-retinal mapped-vector equality and R2b pinned flyvis neural-response comparison. If R2a is identical but R2b diverges, localize the difference to flyvis version/model dynamics or numerical execution before investigating rendering/body.",
-      "blocker": "No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference."
+      "evidence": "Pilot4 first-frame decoder divergence is reproducible. R1 Retina geometry/order is byte-identical. R2 frozen-retinal diagnostic is complete: all six deterministic retinal vectors, mapped inputs and pinned flyvis neural hashes match across legacy/current; tracking-cell mean differences are zero.",
+      "next_gate": "Run R2.5 matched reset/first-frame sensory capture without flyvis/decoder/controller stepping; compare actual 2×721×2 ommatidia hashes and body-root pose to determine whether divergence first enters through renderer/camera/body/scene-reset semantics.",
+      "blocker": "No current blocker. R2.5 CI has been implemented and triggered. No biological or version-quality interpretation is permitted."
     },
     "019": {
       "progress": 84,
