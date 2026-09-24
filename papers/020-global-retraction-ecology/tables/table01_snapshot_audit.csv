@@ -1,0 +1,17 @@
+metric,value,note
+dataset_generated_on,2026-09-23,official Retraction Watch bulk snapshot
+all_rows,72606,all RetractionNature values
+retraction_rows,67197,primary confirmatory event population
+expression_of_concern_rows,3719,exploratory only
+correction_rows,1530,exploratory only
+reinstatement_rows,160,exploratory only
+original_doi_available_retraction_rows,61316,91.25% of Retraction rows
+unique_usable_original_doi,61155,DOI-linked work population before candidate QA
+unique_reason_labels_observed,110,observed in frozen snapshot
+mean_reason_labels_per_retraction,3.960668,multi-label
+median_publication_to_retraction_days,490,conditional on eventual recorded Retraction
+p25_publication_to_retraction_days,153,conditional descriptive lag
+p75_publication_to_retraction_days,1061,conditional descriptive lag
+negative_lag_rows,0,date QA
+openalex_pilot_match_rate,0.996,996 of 1000 deterministic DOI pilot
+openalex_historical_shard0_match_rate,0.992855,15146 of 15255 unique DOI; feasibility format
