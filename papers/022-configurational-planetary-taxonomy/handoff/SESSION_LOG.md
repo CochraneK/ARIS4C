@@ -1,24 +1,25 @@
 # SESSION LOG · ARIS4C022
 
 ## 2026-09-24 · cumulative
-- Froze the 50-body sample, raw-variable architecture, evidence ontology and M0–M4 anti-circularity ladder.
-- Built source-traceable physical/orbit/derived data spine.
-- Five blinded evidence batches advanced coverage to 188/300 and closed composition evidence-state coverage at 50/50.
-- Source-conflict audit adjudicated four cases with no unresolved material conflict.
-- Live JPL SBDB object acquisition remains the main numeric blocker.
+- Froze the 50-body sample, evidence ontology and anti-circularity model ladder before analysis.
+- Built source-traceable physical/orbit/derived spine.
+- Five blinded evidence batches closed composition evidence-state coverage at 50/50.
+- Froze M2 to five non-definitional condition families and readiness gates.
+- Initial M2 readiness: 19/50 complete; calibration CLOSED_NOT_READY.
 
-## M2 primary-condition freeze
-- Audited candidate M2 measurement equivalence before any calibration or QCA result.
-- Rejected geologic activity as a primary cross-class condition because surface geology is not measurement-equivalent for gas giants versus solid worlds.
-- Froze exactly five primary non-definitional families:
-  - SCALE → escape velocity;
-  - BULK_MATERIAL → density proxy;
-  - ATMOSPHERE_RETENTION → evidence-coded atmosphere;
-  - INTERNAL_ORGANIZATION → differentiation;
-  - SOLAR_ENERGY → relative insolation.
-- Froze explicit prohibited variables: official-label recodings, direct-Sun/satellite hierarchy, cleared-neighborhood labels, Margot/Soter dominance, roundness and outcome-derived fields.
-- Kept composition classes for mvQCA/sensitivity rather than imposing an arbitrary ordinal fuzzy scale.
-- Readiness audit found only 19/50 complete cases: 8 planets, 2 dwarfs, 9 satellites, 0 small bodies.
-- Froze readiness gates before calibration: >=40/50 substantive values per primary condition; >=35/50 complete cases; all 8 planets plus >=4 dwarfs, >=12 satellites and >=10 small bodies.
-- Calibration remains `CLOSED_NOT_READY`.
-- No calibration anchor, truth table, consistency, PRI, coverage or solution term has been inspected.
+## Readiness-targeted evidence Batch 06
+- Built a case-level readiness gap map instead of continuing broad evidence filling.
+- Prioritized cases that could change pre-frozen stratum gates without touching the outcome:
+  - Haumea: 2017 stellar occultation provides no-global-atmosphere constraint; 2019 ApJ model supports differentiated interior.
+  - Eris: spin/orbit dissipation work supports differentiated ice-shell / rocky-core structure.
+  - Mimas: Saturn-moon atmosphere synthesis supports negligible atmosphere.
+  - Enceladus: Cassini UVIS occultation directly detected a localized water-vapor atmosphere.
+  - Tethys: shape/mass analysis supports model-level differentiation with a small rocky core.
+  - Charon: New Horizons follow-on interior objectives support partial/full differentiation as model-level evidence.
+- Primary-condition substantive coverage advanced from 34/34/25/32/34 to **34/34/28/36/34**.
+- Complete five-condition cases advanced **19 → 25**.
+- Dwarf complete stratum advanced **2/5 → 4/5**, passing its pre-frozen gate.
+- Satellite complete stratum advanced **9/21 → 13/21**, passing its pre-frozen gate.
+- Small/boundary complete stratum remains **0/16** because its numeric layer is still blocked by live SBDB acquisition.
+- Source-conflict/construct audit expanded without any unresolved conflict.
+- No calibration anchor, truth table, consistency, PRI, coverage or QCA solution was inspected.
