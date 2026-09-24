@@ -51,6 +51,7 @@
 
 ## P2.5 · Portfolio public delivery
 
+- [x] Diagnose canonical PDF workflow startup failure: run `35965678753` fails before build steps and a failed-job re-run reproduces the same zero-step condition; local fallback render/QA passes.
 - [x] Add one-page visual explainer for Finish-state portfolio display.
 - [x] Wire ARIS4C019 into the canonical bilingual public-PDF builder and CI workflow.
 - [ ] Verify generated English and Chinese public PDFs are committed under `docs/paper/019/` and pass extractability/page-count checks.
