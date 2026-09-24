@@ -67,6 +67,29 @@ This is a working novelty boundary, not a completed systematic review.
 - reinforces that simply joining these two databases is not itself a novelty claim.
 - DOI: 10.1629/uksg.763
 
+### Venturini, Urbinati & Gallo · arXiv 2026
+**The Retraction Epidemic in Science Across Publishers, Fields, and Countries**
+- >107 million OpenAlex works, publication cohorts 1992–2021;
+- ~31,000 OpenAlex works marked retracted;
+- per-paper and per-active-author incidence;
+- field/domain, country and publisher comparisons;
+- fractional country attribution;
+- negative-binomial exposure-adjusted temporal models;
+- publication-to-retraction lag;
+- right-censoring handled primarily through a pre-2021 cutoff;
+- concentration / Gini analysis.
+- This is the closest direct competitor and removes “global denominator-normalized retraction incidence” as a standalone novelty claim.
+- arXiv:2604.02302
+
+### Oppenlaender · arXiv 2026
+**How Ten Publishers Retract Research**
+- 46,087 RWDB retractions across ten major publishers;
+- retraction rates, reasons, temporal and geographic patterns;
+- further removes publisher-normalized rates/reasons as standalone novelty.
+- arXiv:2602.19197
+
+See `CLOSEST_COMPETITOR_GAP.md` for the explicit gap matrix.
+
 ## Working contribution target
 
 ARIS4C-020 should not claim novelty from “using Retraction Watch” or “doing global bibliometrics.”
@@ -75,12 +98,12 @@ The defensible integrated target is the combination of:
 
 1. complete current RWDB Retraction-event spine;
 2. explicit event-vs-work deduplication;
-3. all-field publication denominators;
-4. cohort/right-censoring-aware time-to-retraction;
-5. native 110-label multi-label reason ecology plus orthogonal facets;
-6. mass-retraction / paper-mill decomposition;
-7. full vs fractional country exposure;
-8. all-field citation afterlife with matched controls;
-9. versioned source snapshots and reproducible sensitivity gates.
+3. cross-database retraction-status concordance/discordance audit;
+4. all-field publication denominators as a necessary benchmark rather than a novelty claim;
+5. true right-censored time-to-retraction using the non-retracted publication universe;
+6. native 110-label multi-label reason ecology plus orthogonal facets;
+7. mass-retraction / paper-mill leave-cluster-out decomposition;
+8. all-field citation afterlife with matched controls on the same work spine;
+9. versioned source snapshots, 0/1/N DOI-candidate preservation and reproducible sensitivity gates.
 
 The novelty claim remains provisional until a formal systematic literature search is completed.
