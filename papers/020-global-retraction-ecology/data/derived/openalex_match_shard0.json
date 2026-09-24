@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "snapshot_sha256": "da61a30cd4b01b681d1b42ad43cae7ae9eca2213a4f33ff7e762b7942c93f663",
+  "shard_rule": "int(SHA256(doi)[:8],16) % 4",
+  "shard": 0,
+  "n_shards": 4,
+  "input_unique_dois": 15255,
+  "matched_unique_dois": 15146,
+  "unmatched_unique_dois": 109,
+  "match_rate": 0.992855,
+  "api_errors": [],
+  "openalex_domains": {"Physical Sciences":5813,"Health Sciences":3695,"Life Sciences":3011,"Social Sciences":2526},
+  "openalex_is_retracted": {"true":15027,"false":132},
+  "work_types": {"article":11589,"conference-paper":2563,"retraction":563,"reference-entry":147,"review":130,"book-chapter":93,"preprint":18,"erratum":13,"conference-abstract":13,"editorial":11,"book-review":8,"letter":4,"book":3,"other":2,"supplementary-materials":1,"paratext":1},
+  "oa_status": {"closed":6956,"hybrid":2899,"gold":2759,"bronze":1058,"diamond":949,"green":538},
+  "citation_sum": 274379,
+  "citation_n": 15159,
+  "note": "Match-rate denominator uses unique normalized DOI matches. Full enrichment script deduplicates by normalized DOI."
+}
