@@ -29,6 +29,7 @@ def main()->int:
     args=ap.parse_args()
 
     py=sys.executable
+    run([py,str(CODE/"smoke_offline.py")],"Offline package smoke test")
     if not args.rwdb.exists() and not args.skip_download:
         run([py,str(CODE/"acquire_rwdb.py"),"--out",str(args.rwdb)],"Acquire RWDB")
     if not args.rwdb.exists():
