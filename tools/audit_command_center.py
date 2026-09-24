@@ -21,11 +21,29 @@ def main()->None:
     html=INDEX.read_text(encoding="utf-8")
     js=JS.read_text(encoding="utf-8")
     dashboard=json.loads(DASH.read_text(encoding="utf-8"))
-    manifests=sorted(PAPERS.glob("[0-9][0-9][0-9]-*/paper.json"))
-    ids=[str(json.loads(p.read_text(encoding="utf-8")).get("id")) for p in manifests]
+    dashboard_ids=set(map(str,dashboard.get("projects",{}).keys()))
+    visible=[]
+    seen=set()
+    for manifest in sorted(PAPERS.glob("[0-9][0-9][0-9]-*/paper.json")):
+        meta=json.loads(manifest.read_text(encoding="utf-8"))
+        pid=str(meta.get("id"))
+        if meta.get("portfolio_visible",True) is False or pid not in dashboard_ids:
+            continue
+        if pid in seen:
+            fail(f"duplicate visible portfolio id: {pid}")
+        seen.add(pid)
+        visible.append((pid,manifest.parent.name))
+    ids=[pid for pid,_ in visible]
 
-    # Complete portfolio visibility: every paper must remain in BOTH the rolling
-    # showcase and the detailed-card surface, regardless of progress/state.
+    missing=sorted(dashboard_ids-set(ids))
+    if missing:
+        fail(f"dashboard project(s) missing visible manifest: {missing}")
+    extras=sorted(set(ids)-dashboard_ids)
+    if extras:
+        fail(f"visible manifest(s) not present in dashboard: {extras}")
+
+    # Complete portfolio visibility: every canonical visible paper must remain
+    # in BOTH the rolling showcase and the detailed-card surface.
     for pid in ids:
         if not re.search(rf'class="showcase-card"[^>]*data-showcase-original="true"[^>]*data-id="{re.escape(pid)}"',html):
             fail(f"paper {pid} missing from All-projects showcase")
