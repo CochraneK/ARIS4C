@@ -16,7 +16,8 @@ assert len({r["case_id"] for r in inc})==99, "duplicate control case_id"
 assert all(r["outcome_genocide"]=="0" for r in inc)
 assert not any(r["case_id"]=="KEN_1970" for r in inc), "SCIP Jordan/Kenya rendering artifact leaked into controls"
 assert any(r["case_id"]=="DJI_1991" for r in inc), "Djibouti 1991-94 missing"
+assert not any(r["case_id"].startswith("CUB_") for r in inc), "Cuba 1952-start episode must remain outside Williams 1955-1998 control frame"
 flagged={r["case_id"] for r in inc if r["date_status"]=="cross-version-date-drift"}
 expected={"COL_1984","JOR_1957","NIC_1978","PER_1962"}
 assert flagged==expected, f"unexpected date-drift set: {sorted(flagged)}"
-print("PASS: 99 unique controls; Kenya-1970 artifact absent; Djibouti present; date-drift flags stable")
+print("PASS: 99 unique controls; Kenya-1970 artifact absent; Djibouti present; Cuba-1952 excluded; date-drift flags stable")
