@@ -172,12 +172,12 @@
       "blocker": "Historical PITF/Polity binaries and Harff Phase-III model data are not directly retrievable in the current runtime; source URLs and cross-checks are pinned. GitHub Actions currently fails pre-runner but does not block scientific reconstruction."
     },
     "022": {
-      "progress": 26,
-      "stage": "Pilot-0 case frame frozen · raw-data ingestion gate",
+      "progress": 34,
+      "stage": "Physical core v0.1 ingested · SBDB + orbital-geometry gate",
       "activity": "active",
-      "evidence": "Frozen 50-body Solar-System frame: 8 planets, 5 dwarf planets, 21 satellites, 16 small/boundary bodies. Raw-variable dictionary, anti-circularity model ladder, case-frame freeze note, deterministic validator, and updated continuity metadata are committed before QCA solution inspection.",
-      "next_gate": "Populate the 50-case raw physical/orbital matrix with field-level provenance and uncertainty; then implement the published Margot/Soter dynamical metrics before calibrating fuzzy sets.",
-      "blocker": "None. Methodological constraint: keep the definitional IAU benchmark separate from the non-definitional physical-signature model."
+      "evidence": "50-row raw physical matrix materialized. Authoritative JPL core values cover 34/50 cases (8 planets, 5 dwarf planets, 21 satellites); 16 small bodies remain explicit NA_NOT_INGESTED behind a frozen SBDB snapshotter. Margot (2015) Eq. 8/9/10 and Soter (2006) mu are implemented with regression tests and a deterministic no-fabrication validator.",
+      "next_gate": "Run the 16-case JPL SBDB snapshot; ingest heliocentric versus primary-centric orbital geometry with frame/epoch provenance; then complete the field-level missingness/conflict audit before fsQCA calibration.",
+      "blocker": "None scientific. If GitHub Actions remains pre-runner, automated SBDB ingestion needs another ordinary networked execution surface."
     },
     "023": {
       "progress": 42,
