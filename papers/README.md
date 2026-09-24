@@ -22,6 +22,11 @@ This directory is the canonical registry of research projects produced with ARIS
 | 014 | OpenIntegrity / UK Pilot 1A frozen / China Pilot 0 live procurement + CAS universe feasibility frozen / cross-source entity graph next | papers/014-public-integrity-forensics/ |
 | 015 | Sleeping Beauty Miner / pilot + mechanism track | papers/015-sleeping-beauty-miner/ |
 | 016 | Global Grammar of Swearing / Phase-0 working manuscript + validation gates | papers/016-global-grammar-of-swearing/ |
+| 017 | Predictive Language Space / concept scaffold | papers/017-predictive-language-space/ |
+| 018 | Fly Neuro Playground / Pilot 4 diagnostic | papers/018-drosophila-neural-simulation/ |
+| 019 | Annual Leave × Life Evaluation / submission prep | papers/019-time-off-happiness/ |
+| 020 | All-field retraction research / registered in dashboard; stable folder bootstrap pending | — |
+| 021 | Mass Atrocity Conditions · QCA / concept design + historical replication gate | papers/021-mass-atrocity-configurations/ |
 
 Paper 002 passed independent cross-family ARIS secondary review and has been formally promoted.
 
