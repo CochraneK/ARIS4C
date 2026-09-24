@@ -16,10 +16,10 @@
 
 | source | time depth | geography | construct | use | caveat |
 |---|---|---|---|---|---|
-| World Database of Happiness | observations from 1945 onward; coverage through 2019 in documented archive | up to 173 nations in archive | happiness/life satisfaction distributions with wording metadata | historical outcome backbone / comparable-question subsets | heterogeneous questions and irregular timing |
+| World Database of Happiness | observations from 1945 onward; long-run Trends in Nations extends through 2021 in published use | 173 nations in broad archive; 70 nations / 200 qualifying long time series reported for Trends in Nations use | happiness/life satisfaction means + SD with wording metadata | historical outcome backbone / long-run comparable subsets | heterogeneous questions and irregular timing; official XLSX binary acquisition pending |
 | Cantril Pattern of Human Concerns | 1957–1963 | ICPSR data for 10 of original 14 nations | early comparative subjective evaluation / concerns | early cross-national bridge | not an annual panel; some sampling limitations |
-| Eurobarometer | first life-satisfaction study 1973; repeated thereafter | European Community/EU, expanding membership | life satisfaction | repeated European long-run panel | changing country membership; Europe only |
-| WVS / EVS | 1981 onward | expanding global country waves | happiness + life satisfaction | global country-wave panel | wave spacing and question/scaling differences |
+| Eurobarometer | life-satisfaction index 1973–2026; Mannheim harmonized trend file 1970–2002 | European Community/EU, expanding membership | life satisfaction | repeated European long-run panel | changing membership; question/scale variants; Europe only |
+| WVS / EVS | 1981 onward | 107 distinct country/territory codes currently materialized across WVS Waves 1–7 | happiness + life satisfaction | global country-wave panel | wave spacing, release-version differences and question/scaling differences |
 | Gallup World Poll / WHR | mid-2000s onward; current WHR public products vary by release | >140 countries in typical recent years | Cantril Life Ladder and affect | modern annual/global backbone | distinguish genuine annual values from rolling multi-year WHR display averages |
 
 ## Verified scope facts motivating expansion
