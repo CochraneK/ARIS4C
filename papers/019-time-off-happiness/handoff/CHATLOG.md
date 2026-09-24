@@ -46,3 +46,13 @@
 - Eurobarometer 1973–2026 and WDH long-run postwar outcome routes are pinned, with access/transfer constraints explicitly separated from data nonexistence.
 - Expanded statistical analysis was frozen before inspecting new full-panel happiness effects.
 - C132 international diffusion is materialized for all 39 current ratifiers as a verification queue; national legal implementation remains a separate exposure-history task.
+
+## 2026-09-24 · Modern broad-panel module locked
+
+- User said GO; work continued from the adequacy critique into actual large-sample statistics rather than additional planning.
+- Built and analyzed a 161-country / 1,934-country-year modern statutory-leave × annual-WHR panel and a 130-country 1870–2023 actual-hours source.
+- Ran the prespecified modern association stack and macro/control/nonlinear/timing sensitivities.
+- The key result is not a preferred positive or negative coefficient: legal-vs-database timing changes the FD sign. WB report-year timing gives a negative estimate; verified legal-year alignment gives a positive estimate on the same verified changes.
+- Therefore modern interpretation is frozen as directionally unstable / timing-sensitive, and the project proceeds to historical WDH/Eurobarometer/WVS-EVS data rather than significance chasing.
+- README, STATUS, TODO, DECISIONS, AGENT_HANDOFF, paper.json and portfolio dashboard were synchronized to 75% / active.
+
