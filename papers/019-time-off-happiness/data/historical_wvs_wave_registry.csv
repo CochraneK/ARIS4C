@@ -1,0 +1,8 @@
+source,wave,start_year,end_year,reported_country_society_count,visible_country_list_count,respondents_reported,coverage_qa_status,source_url,qa_note
+WVS,1,1981,1984,10,10,13586,"PASS visible list matches reported count","https://datacatalog.ihsn.org/catalog/8894/study-description","Argentina Australia Finland Hungary Japan Mexico South Africa South Korea Sweden United States"
+WVS,2,1990,1994,18,18,24558,"PASS geographic coverage list matches reported count","https://catalog.ihsn.org/catalog/8891","IHSN page country table/search presentation is inconsistent but Geographic Coverage names 18"
+WVS,3,1995,1998,56,49,">77800","MISMATCH investigate release composition","https://catalog.ihsn.org/catalog/8864","page reports 56 countries/societies but visible country table contains 49 rows; do not silently assume 56 country rows"
+WVS,4,1999,2004,41,39,">60000","MISMATCH investigate release composition","https://catalog.ihsn.org/catalog/8863/study-description","page reports 41 countries/societies but visible country table contains 39 rows"
+WVS,5,2005,2009,58,54,">83000","MISMATCH investigate release composition","https://catalog.ihsn.org/catalog/8839","page reports 58 countries/societies but visible country table contains 54 rows; Geographic Coverage text mentions additional Uruguay/Zambia not present in visible table"
+WVS,6,2010,2014,60,59,">85000","MISMATCH investigate release composition","https://catalog.ihsn.org/catalog/8838","page reports 60 countries/societies; search-visible country table contains 59 rows"
+WVS,7,2017,2022,66,,">98000 reported in secondary harmonization source","PENDING official release inventory","https://www.worldvaluessurvey.org/","do not lock count until official/current release metadata is ingested"
