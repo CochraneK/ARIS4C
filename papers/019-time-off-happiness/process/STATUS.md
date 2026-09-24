@@ -9,7 +9,8 @@
 - Public manuscripts: English and Chinese repository-final sources complete; four canonical SVG figures complete; one-page portfolio visual complete.
 - Public PDF build reproduction: **PASS locally**. English = 12 pages; Chinese = 7 pages; both pass extractable-text and render-first visual QA, including CJK rendering and figure-page clipping checks.
 - Canonical repository PDF paths: **PENDING** — `docs/paper/019/en/main.pdf` and `docs/paper/019/zh/main.pdf` are not yet present on `main`.
-- Canonical workflow trigger commit: `dc857f638517a25b7cb5b3b70284dd4aa6955682`; no PDF bot commit has appeared.
+- Canonical workflow diagnostics: trigger commits `dc857f638517a25b7cb5b3b70284dd4aa6955682` and `f5070aa1b2f388627a51ee367124446988fc035f` both failed to yield a PDF bot commit. Workflow run `35965678753` failed before build steps; a failed-job re-run reproduced the same zero-step failure (latest job `107530128521`).
+- Fallback local reproduction: exact current GitHub sources/figures/CSS were independently rendered again; optimized EN = 11 pages / 100,363 bytes, ZH = 7 pages / 207,347 bytes; text extraction and full-page visual QA pass. This does not replace the canonical Git binary gate.
 - Final delivery audit: `process/FINAL_PUBLIC_DELIVERY_AUDIT.md`.
 - Scientific interpretation: locked. WHR2024-refresh eight-event mean +0.088, median -0.099, 6/8 negative; Bahrain omission -0.117. Israel frozen holdout mean +0.002 is reference-sensitive. No robust positive or negative population Life Ladder effect is established.
 - Secondary outcomes: positive/negative affect remain locked for this paper.
