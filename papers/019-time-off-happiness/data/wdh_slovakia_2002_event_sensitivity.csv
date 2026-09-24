@@ -1,0 +1,20 @@
+analysis,dropped_donor,effect
+post_2003_only,,-0.08142857142857096
+post_2003_2004,,-0.02714285714285669
+post_2003_2005,,0.023809523809524336
+leave_one_donor_out_post_2003_2005,Czech Republic,-0.023055555555556495
+leave_one_donor_out_post_2003_2005,Hungary,-0.032777777777776684
+leave_one_donor_out_post_2003_2005,Poland,0.0316666666666654
+leave_one_donor_out_post_2003_2005,Slovenia,0.009999999999999482
+leave_one_donor_out_post_2003_2005,Estonia,0.08138888888888857
+leave_one_donor_out_post_2003_2005,Latvia,-0.0030555555555557556
+leave_one_donor_out_post_2003_2005,Lithuania,0.10250000000000031
+
+placebo_country,placebo_effect
+Czech Republic,-0.32476190476190503
+Hungary,-0.3914285714285718
+Poland,0.05047619047619159
+Slovenia,-0.09809523809523646
+Estonia,0.3914285714285709
+Latvia,-0.1876190476190474
+Lithuania,0.536190476190475
