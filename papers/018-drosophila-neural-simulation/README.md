@@ -1,229 +1,181 @@
 # ARIS4C018 · Drosophila Open Science & Neural Simulation
 
-## What this has become
+## Current state
 
-ARIS4C018 started as an open-source Drosophila-neuroscience survey.
+**90% · Active · Pilot 4 localization**
 
-It is now a working **Fly Neuro Playground / embodied-neural reproduction project** with a strict separation between:
+ARIS4C018 began as an open-source Drosophila-neuroscience survey and became a reproducible embodied-neural simulation project / Fly Neuro Playground.
 
-- biological/connectome-constrained neural computation;
-- engineered neural readout;
-- embodied physics;
-- user-facing visualization.
-
-Preferred visual language:
+The project now has two independently reproduced stacks:
 
 ```
-left: fly behaviour / target / trajectory
-right: neural activity
-bottom: decoder state + time
-```
-
-018 is still an exploration project. No novel biological hypothesis is frozen yet.
-
-## Progress
-
-### Pilot 0 · toy sandbox — PASS
-
-Transparent non-biological ring-rate model used to validate:
-
-```
-perturb -> neural state -> behaviour -> measurement -> replay
-```
-
-### Pilot 1 · maintained components — PASS
-
-Clean pinned CI reproduced:
-
-- flyvis connectome construction;
-- FlyGym / NeuroMechFly compilation.
-
-### Pilot 2A · legacy real embodied-neural interface — PASS
-
-Official legacy FlyGym + pretrained flyvis reproduced with:
-
-- real retinal rendering;
-- upstream 1.0 s neural fade-in;
-- FlyGym body state;
-- **2 × 45,669** neural state.
-
-### Pilot 2B · bounded legacy closed loop — PASS
-
-Reproduced:
-
-```
-moving target
- -> Retina
+LEGACY
+FlyGym 1.x Retina
  -> flyvis
- -> neural z-score maps
- -> object mask
- -> turning bias
- -> two-value descending drive
+ -> engineered decoder
+ -> hybrid locomotion
+ -> body
+
+CURRENT
+FlyGym 2.x Retina
+ -> current flyvis
+ -> same audited decoder
+ -> current HybridTurningController
  -> body
 ```
 
-Important: the decoder after flyvis is engineered, not a reconstructed biological visual-to-motor pathway.
+Both emit provenance-aware neural / decoder / body traces.
 
-### Pilot 2C · synchronized real trace — PASS
+## What is already established
 
-CI computed, validated and committed:
+### Pilots 0–3 · reproduction and migration
 
-- **100 real model frames**
-- **25 selected visual cell types per eye**
-- body state
-- target state
-- decoder state
-- neural summaries
-
-Canonical data:
-
-`data/pilot2c_synchronized_trace.json`
+- toy perturbation / visualization sandbox: **PASS**
+- maintained flyvis + FlyGym component reproduction: **PASS**
+- legacy real embodied-neural interface: **PASS**
+- bounded legacy visual-neural closed loop: **PASS**
+- legacy synchronized real trace: **PASS**
+- current FlyGym 2.x → current flyvis migration: **PASS**
+- strict current full chain: **PASS**
+- current synchronized trace: **PASS**
+- legacy/current semantic trace parity: **PASS**
+- bounded FlyGym 1.x → 2.x migration engineering: **CLOSED**
 
 Real replay:
 
 `prototype/replay.html`
 
-The replay never silently substitutes toy data.
+It distinguishes provenance and never silently substitutes toy data.
 
-### Pilot 3A · current FlyGym 2.x → current flyvis — PASS
+### Pilot 4 · matched cross-version diagnostic
 
-The biological visual interface has now been migrated off legacy FlyGym:
+A pre-frozen matched static-target diagnostic found a reproducible first-frame decoder divergence.
 
-```
-current FlyGym 2.x eye cameras
- -> Retina
- -> (2, 721, 2)
- -> explicit one-to-one mapper
- -> current pretrained flyvis
- -> (2, 45,669)
-```
-
-Observed current-stack script wall-clock:
-
-**23.116 s**
-
-Comparable legacy smoke:
-
-**~47.0 s**
-
-This is ~2× faster for this specific ARIS smoke path.
-
-### Pilot 3B · current full chain — RUNNING
-
-Current strict gate:
+Legacy first target frame:
 
 ```
-current walking fly baseline
- -> current Retina / flyvis
- -> audited decoder
- -> current HybridTurningController
- -> current body
+max z = 209.31
+object mask present
+bias = -0.2622
+drive = [0.4, 1.2]
 ```
 
-The target is a real visible static geom in the current FlyGym world.
-
-PASS requires:
-
-- a real nonempty neural-derived object mask;
-- nonzero left/right descending-drive asymmetry;
-- embodied current-stack motion.
-
-Finite numbers alone do not count.
-
-## Provenance layers
-
-### BIO
-
-- retinal input;
-- flyvis neural state;
-- connectome-constrained visual representation.
-
-### DECODER
-
-- baseline normalization;
-- spatial z-score aggregation;
-- object-mask threshold;
-- geometric readout;
-- turning bias;
-- descending-drive mapping.
-
-### BODY
-
-- current FlyGym / NeuroMechFly physics;
-- HybridTurningController;
-- trajectory.
-
-### CONTROL
-
-- intact;
-- null;
-- ablation;
-- migration-regression conditions.
-
-## Browser/product direction
-
-Current FlyGym 2.x itself now ships:
-
-- a real MuJoCo-WASM interactive browser viewer;
-- a real NeuroMechFly browser game.
-
-This changes the product strategy.
-
-A realistic 018 architecture is:
+Current first target frame:
 
 ```
-browser body physics / replay
-        +
-real neural trace panel
-        +
-explicit provenance
+max z = 2.03
+object mask absent
+bias = 0
+drive = [1.0, 1.0]
 ```
 
-Near term:
+This difference appears before body trajectory can explain it.
 
-1. validated real-trace replay;
-2. browser body visualization;
-3. current-stack live neural backend;
-4. eventually live neural/body closed loop.
+### R1 · Retina geometry/order
 
-See:
+**EXCLUDED as the first divergence.**
 
-- `fly-neuro-playground-design.md`
-- `user-facing-projects-survey-v0.md`
+Legacy/current are byte-identical for:
 
-## Scientific guardrails
+- Retina geometry;
+- 721 ommatidium IDs;
+- pale/yellow mask;
+- FlyGym→flyvis 721-index mapping.
 
-Read before interpreting results:
+See `PILOT4_R1_RESULT.md`.
 
-- `CLAIM_BOUNDARY_MATRIX.md`
-- `OFFICIAL_LEGACY_DECODER_SPEC.md`
-- `TRACE_ANALYSIS.md`
-- `RESEARCH_QUESTION_GATE.md`
+### R2 · frozen retinal vector → flyvis
 
-The project deliberately records negative results and decoder artefacts instead of optimizing only for compelling videos.
+**EXCLUDED as the first divergence.**
 
-## Current key files
+Across six deterministic frozen retinal inputs:
 
-- `STATUS.md`
-- `TODO.md`
-- `DECISIONS.md`
-- `VALIDATED_PROJECT_LANDSCAPE.md`
-- `PILOT2C_RESULT.md`
-- `PILOT3_MIGRATION_PLAN.md`
-- `PILOT3A_RESULT.md`
-- `PILOT3B_PROTOCOL.md`
-- `code/flygym2_flyvis_adapter.py`
-- `data/pilot2c_synchronized_trace.json`
-- `prototype/replay.html`
+- retinal hashes match;
+- mapped-input hashes match;
+- neural-output hashes match;
+- tracking-cell mean MAE = 0;
+- tracking-cell max difference = 0.
 
-## Fork rule
+See `PILOT4_R2_RESULT.md` and `data/pilot4_r2_frozen_retinal.json`.
 
-Keep ecosystem mapping, reproduction, migration and question discovery inside 018.
+## Current gate · R2.5
 
-Fork a dedicated software repo or formal paper only when one direction has:
+R2.5 is already designed and implemented.
 
-- a stable maintained stack;
-- a falsifiable question or standalone user product;
-- frozen provenance;
-- reproducible controls;
-- a clear contribution beyond reproducing existing work.
+It asks:
+
+> Are legacy and current stacks already presenting different **actual sensory vectors** at reset / first visual frame under the matched static-target scene?
+
+It captures, before locomotor stepping:
+
+- body/root pose;
+- renderer/camera context where exposed;
+- raw/ommatidia summaries;
+- full `2 × 721 × 2` sensory readout;
+- grayscale flyvis input;
+- deterministic hashes.
+
+Files:
+
+- `PILOT4_R2_5_RENDERER_GATE.md`
+- `code/pilot4_r2_5_initial_scene.py`
+- `code/pilot4_r2_5_compare.py`
+- `.github/workflows/aris4c018-pilot4-r2-5-initial-scene.yml`
+
+## Current blocker
+
+The R2.5 workflow has **not executed** because GitHub Actions currently fails before any job step begins.
+
+Latest R2.5 run:
+
+https://github.com/CochraneK/ARIS4C/actions/runs/35988075468
+
+The same zero-step pattern also affects repository-wide index/handoff workflows, so this is currently classified as an **Actions/runner infrastructure blocker**, not an R2.5 scientific-code failure.
+
+Do not mark R2.5 PASS/FAIL until jobs actually start.
+
+## Scientific boundary
+
+Do not conclude from Pilot 4 that:
+
+- legacy is biologically better;
+- current is biologically worse;
+- larger decoder magnitude is more accurate;
+- the renderer is responsible before R2.5 executes.
+
+The current result is a software/model-stack reproducibility diagnostic.
+
+## Product direction
+
+The preferred interface remains:
+
+```
+left: fly behaviour / target / trajectory
+right: neural activity
+bottom: decoder + provenance
+```
+
+Provenance layers:
+
+- **BIO** — biologically/connectome-constrained neural state
+- **DECODER** — engineered neural-to-control mapping
+- **BODY** — simulated physical state
+- **CONTROL** — null/ablation/comparison
+
+Current FlyGym already provides MuJoCo-WASM browser infrastructure. A future standalone Fly Neuro Playground should reuse that body/physics layer and focus ARIS work on neural/provenance/experiment UX.
+
+## Cold start
+
+If continuing from a new chat/account/agent, do **not** reconstruct the project from conversation history.
+
+Read:
+
+1. `handoff/README.md`
+2. `handoff/AGENT_HANDOFF.md`
+3. `handoff/STATUS.md`
+4. `handoff/TODO.md`
+5. `PILOT4_R2_5_RENDERER_GATE.md`
+6. `PILOT4_R2_RESULT.md`
+7. `STATUS.md`
+
+Git is the source of truth.
