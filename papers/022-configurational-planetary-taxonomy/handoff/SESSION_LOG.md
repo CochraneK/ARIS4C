@@ -33,3 +33,14 @@
 - Complete cases remain 25/50 because newly closed atmosphere and organization gaps occur on different cases.
 - No Uranian-moon atmosphere state was inferred from absence of mention.
 - Calibration remains CLOSED_NOT_READY; no QCA result inspected.
+
+## Readiness-targeted evidence Batch 08
+- Used NASA's explicit asteroid-class airless characterization for Vesta/Pallas/Hygiea/Interamnia only.
+- Used direct NEAR/NASA atmosphere absence for Eros.
+- Used NASA returned-sample/space-weathering sources for airless Ryugu and Itokawa.
+- Added direct stellar-occultation atmosphere upper limits for Umbriel and Titania.
+- ATMOSPHERE_RETENTION advanced 31 → **40/50**, passing its pre-frozen gate.
+- INTERNAL_ORGANIZATION remains 40/50 PASS.
+- Complete cases advanced 25 → **27/50**, with satellites 13 → 15.
+- All remaining readiness failures now trace to the 16-case small-body numeric layer and consequent complete-case gate.
+- No calibration/QCA result inspected.

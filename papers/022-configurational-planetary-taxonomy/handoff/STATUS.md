@@ -1,22 +1,22 @@
 # STATUS · ARIS4C022
 
-- State: M2 frozen / INTERNAL_ORGANIZATION PASS / atmosphere + small-body numeric gate
+- State: M2 frozen / both evidence-condition gates PASS / small-body numeric gate
 - Portfolio activity: active
-- Progress estimate: 87%
+- Progress estimate: 90%
 - Frozen case frame: 50 bodies
-- Evidence v0.8 adds Phobos/Deimos/Iapetus atmosphere evidence and model-level differentiated interiors for Ariel/Umbriel/Titania/Oberon
+- Evidence v0.9 closes the atmosphere readiness gate using explicit agency/occultation evidence
 - Current M2 substantive coverage:
   - SCALE 34/50
   - BULK_MATERIAL 34/50
-  - ATMOSPHERE_RETENTION 31/50
+  - ATMOSPHERE_RETENTION **40/50 — PASS**
   - INTERNAL_ORGANIZATION **40/50 — PASS**
   - SOLAR_ENERGY 34/50
-- Complete on all five: 25/50
-- Complete strata: planets 8/8 PASS; dwarfs 4/5 PASS; satellites 13/21 PASS; small/boundary 0/16 FAIL
+- Complete on all five: **27/50**
+- Complete strata: planets 8/8 PASS; dwarfs 4/5 PASS; satellites 15/21 PASS; small/boundary 0/16 FAIL
 - Calibration status: CLOSED_NOT_READY
-- Remaining dominant gates:
-  - live JPL SBDB numerics for 16 small/boundary cases;
-  - atmosphere 31 → >=40;
-  - complete cases 25 → >=35, with >=10 complete small/boundary cases
-- Source-conflict audit: 9 adjudication/construct entries, 0 unresolved conflicts
-- Anti-circularity: no calibration anchor, truth table, consistency/PRI/coverage statistic or QCA solution inspected
+- Remaining readiness failures are now numeric/complete-case only:
+  - SCALE/BULK_MATERIAL/SOLAR_ENERGY each 34/50 because all 16 small/boundary numeric rows remain absent;
+  - complete cases 27/50 <35;
+  - small/boundary complete cases 0/16 <10
+- Source-conflict audit: 12 adjudication/construct entries, 0 unresolved conflicts
+- Anti-circularity firewall remains intact: no calibration anchor, truth table, consistency/PRI/coverage statistic or QCA solution inspected
