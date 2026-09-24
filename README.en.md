@@ -85,7 +85,7 @@ ARIS is the research engine. **ARIS4C is the canonical research system around it
 | **017** | [LING-02 · Predictive Language Space](papers/017-predictive-language-space/) | 🟡 Wait | 20% | [handoff](papers/017-predictive-language-space/handoff/AGENT_HANDOFF.md) | — |
 | **018** | [Fly Neuro Playground](papers/018-drosophila-neural-simulation/) | 🟢 Active | 90% | [handoff](papers/018-drosophila-neural-simulation/handoff/AGENT_HANDOFF.md) | — |
 | **019** | [Time Off × Happiness · Long Run](papers/019-time-off-happiness/) | 🟢 Active | 78% | [handoff](papers/019-time-off-happiness/handoff/AGENT_HANDOFF.md) | — |
-| **020** | [Global Retraction Ecology](papers/020-global-retraction-ecology/) | 🟢 Active | 55% | [handoff](papers/020-global-retraction-ecology/handoff/AGENT_HANDOFF.md) | — |
+| **020** | [Global Retraction Ecology](papers/020-global-retraction-ecology/) | 🟢 Active | 75% | [handoff](papers/020-global-retraction-ecology/handoff/AGENT_HANDOFF.md) | — |
 | **021** | [Mass Atrocity Conditions](papers/021-mass-atrocity-configurations/) | 🟢 Active | 38% | [handoff](papers/021-mass-atrocity-configurations/handoff/AGENT_HANDOFF.md) | — |
 | **022** | [Planetary Taxonomy × fsQCA](papers/022-configurational-planetary-taxonomy/) | 🟢 Active | 59% | [handoff](papers/022-configurational-planetary-taxonomy/handoff/AGENT_HANDOFF.md) | — |
 | **023** | [Ancient Myth Convergence](papers/023-myth-convergence/) | 🔵 Finish | 100% | [handoff](papers/023-myth-convergence/handoff/AGENT_HANDOFF.md) | <a href="./docs/assets/paper-at-a-glance/023.svg"><img src="./docs/assets/paper-at-a-glance/023.svg" height="80" loading="lazy" decoding="async" alt="One-page visual 023" title="Click to open the full one-page visual"></a> |
