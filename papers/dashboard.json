@@ -148,12 +148,12 @@
       "blocker": "No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference."
     },
     "019": {
-      "progress": 75,
-      "stage": "Expanded modern statistics LOCKED · historical synthesis active",
+      "progress": 78,
+      "stage": "Expanded modern LOCKED · full WDH Table-2 historical trend bridge LOCKED · raw historical reconstruction",
       "activity": "active",
-      "evidence": "Pilot-0 frozen. Modern broad panel is now a completed module: 161 countries / 1,934 statutory-leave×WHR country-years; A1 leave TWFE +0.045 per 5 days (CI crosses 0); A1 hours TWFE +0.013 per 100h (CI crosses 0); RCS/trend results do not establish a stable direction. Legal timing audit shows WB jumps lag law by mean 1.22y; verified-changer FD flips from -0.240 under WB report-year coding to +0.093 under legal-year coding, falsifying a simple sign interpretation. Long-run hours = 130 countries / 5,063 observations / 1870–2023; WDH public mean registry = 124 series / 61 nation labels / earliest 1946; WVS Waves1–7 = 295 rows / 107 codes.",
-      "next_gate": "Materialize numeric WDH + Eurobarometer + EVS/WVS outcomes; finish C052/C132 primary rows and national leave-law chronology; run historical instrument-specific models and cross-instrument/event synthesis; then rebuild bilingual manuscript.",
-      "blocker": "No design blocker. Some historical outcome sources require binary transfer or registered access; source identities/coverage and the modern interpretation lock are already canonical."
+      "evidence": "Pilot-0 frozen. Modern leave×WHR module locked at 161 countries / 1,934 country-years; legal-time falsification prevents simple sign interpretation. Taiwan hours join fixed: A0 actual-hours = 2,015 country-years / 130 countries; joint = 1,663 / 129. Full WDH Table 2 now materialized at 200 displayed / 199 exact unique trends; 190 unique trends across 46 countries align to same-window annual-hours histories. Full-series Pearson/Spearman = +0.101/+0.094 and one-longest-series-per-country = -0.057/-0.045, so the earlier pre-1990 negative pattern is subset-sensitive and no stable historical monotonic relation is established.",
+      "next_gate": "Acquire raw yearly TrendsInNations workbook and Eurobarometer/EVS-WVS numeric outcomes; finish C052/C132 and national paid-leave legal chronology; run instrument-specific historical models/event synthesis; independently execute committed statsmodels validator once Actions runner recovers; then rebuild bilingual manuscript.",
+      "blocker": "No design blocker. Raw WDH workbook/binary or registered survey transfer remains an acquisition dependency; GitHub Actions also still fails pre-runner, so independent statsmodels CI is pending rather than passed."
     },
     "020": {
       "progress": 52,
