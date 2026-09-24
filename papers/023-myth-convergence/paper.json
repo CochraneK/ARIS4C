@@ -5,9 +5,9 @@
   "title": "Why Do Ancient Traditions Tell Similar Stories? A Comparative Cultural-Evolution Study of Mythic Motifs, Inheritance, Diffusion, Ecology, and Convergence",
   "short_title": "Ancient Myth Convergence",
   "year": 2026,
-  "status": "design-and-data-mapping",
+  "status": "working-paper-core-frozen",
   "domain": "comparative mythology / folklore / cultural evolution / historical anthropology / computational humanities",
-  "summary": "A multi-method cross-cultural study of recurrent mythic motifs that separates shared ancestry, horizontal diffusion, ecological convergence and cognitive/social convergence using auditable motif coding, temporal overlap, spatial/contact networks, phylogenetic comparative methods, dyadic models, process tracing and optional QCA.",
+  "summary": "A provenance-first comparative mythology pilot showing that motif similarity must be interpreted jointly with source boundaries, chronology, language genealogy, independent contact evidence, environmental uncertainty and process tracing. The frozen core contains a reliable 24-motif ontology, audited source-bundle similarities, and four mechanism-focused historical comparisons.",
   "authors": [
     "Cochrane Kang"
   ],
@@ -21,7 +21,12 @@
     "research_plan": "process/RESEARCH_PLAN.md",
     "methods": "process/METHOD_MATRIX.md",
     "data": "data/README.md",
-    "codebook": "data/motif_codebook.csv"
+    "codebook": "data/motif_codebook.csv",
+    "paper_en_full": "manuscript/working_paper_en.md",
+    "paper_zh_full": "manuscript/working_paper_zh.md",
+    "figures": "figures/",
+    "tables": "tables/",
+    "core_freeze_audit": "process/CORE_FREEZE_AUDIT.md"
   },
   "tags": [
     "ARIS4C",
@@ -35,25 +40,29 @@
     "QCA"
   ],
   "bilingual_delivery": {
-    "english": false,
-    "chinese": false
+    "english": true,
+    "chinese": true
   },
   "outputs": {
-    "paper_en": "not-started",
-    "paper_zh": "not-started",
+    "paper_en": "complete-working-paper",
+    "paper_zh": "complete-working-paper",
     "figures": {
-      "status": "not-started",
-      "count": 0,
-      "strategy": "adaptive to inferential structure"
+      "status": "complete-working-core",
+      "count": 3,
+      "strategy": "pipeline + similarity support + mechanism evidence"
     },
     "tables": {
-      "status": "not-started",
-      "count": 0
+      "status": "complete-working-core",
+      "count": 3
     },
     "pdf": {
-      "status": "not-started",
+      "status": "pending-public-delivery",
       "english": false,
       "chinese": false
+    },
+    "one_page_visual": {
+      "status": "pending",
+      "purpose": "required before Finish"
     }
   }
 }

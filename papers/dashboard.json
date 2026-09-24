@@ -180,12 +180,12 @@
       "blocker": "Live JPL SBDB object payload acquisition remains the dominant blocker. Calibration/truth tables/QCA solutions remain closed by the frozen readiness rules."
     },
     "023": {
-      "progress": 96,
-      "stage": "Mechanism-level process tracing synthesized · Egypt conservatively registered · paper-freeze gate",
+      "progress": 98,
+      "stage": "Scientific core frozen · bilingual working papers + 3 figures + 3 tables complete · public-delivery gate",
       "activity": "active",
-      "evidence": "PT01–PT04 process tracing now separates literary dependence, contact opportunity, language genealogy, environmental hypotheses, and metric artifacts. Egypt New Kingdom Horus/Seth is source-registered but its 8 post-calibration controller codes are excluded pending independent spot-audit. Environmental evidence is contextual/contested only; no pseudo-quantitative exposure score is used.",
-      "next_gate": "Independent spot-audit the 8 Egyptian cells; draft Results/Discussion from frozen evidence with claim-strength labels; final reproducibility/continuity audit; then decide Finish vs v0.2 expansion.",
-      "blocker": "Core Pilot-0 has no blocker. Egypt confirmatory inclusion requires one independent 8-cell spot-audit."
+      "evidence": "Pilot-0 core is manuscript-frozen: EN/ZH full working papers, 3 substantive SVG figures, 3 tables, calibration/reliability, bundle similarity audit and PT01–PT04 mechanism synthesis are committed. CORE_FREEZE_AUDIT=PASS for science; Egypt remains exploratory/excluded.",
+      "next_gate": "Compile EN/ZH PDFs; create one-page Finish visual; wire PDF-first links; run final continuity/output audit; mark Finish only after output standard passes.",
+      "blocker": "No scientific blocker for the frozen core. Finish is withheld because PDFs and one-page visual are still missing."
     }
   },
   "scheduling": {

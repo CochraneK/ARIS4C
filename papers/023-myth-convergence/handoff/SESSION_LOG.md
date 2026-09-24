@@ -97,3 +97,11 @@
 - Registered Papyrus Chester Beatty I / Horus-Seth as an Egyptian New Kingdom divine-conflict candidate; 8 controller-coded cells are excluded pending independent spot-audit.
 - Froze environmental evidence as contextual/contested rather than inventing numeric ancient exposure scores.
 - Project advanced to 96%; remaining bounded gate is Egyptian spot-audit plus manuscript/reproducibility freeze.
+
+## 2026-09-24 · bilingual core working-paper freeze
+- Drafted complete English and Chinese Pilot-0 working papers from frozen evidence.
+- Added three substantive tables: calibration reliability, selected source-bundle similarity, and process-tracing mechanism synthesis.
+- Added three scientific SVG figures: evidence pipeline, all 12 bundle Jaccards with shared-positive support, and mechanism evidence map.
+- Added CORE_FREEZE_AUDIT.md: scientific core PASS; Finish/public-delivery NOT YET PASS because PDFs and one-page visual remain pending.
+- Reframed Egypt as an exploratory extension that cannot block the frozen core paper and cannot enter confirmatory results without independent spot-audit.
+- Project advanced to 98%; next gate is PDF-first public delivery and one-page visual, not further uncontrolled scientific expansion.

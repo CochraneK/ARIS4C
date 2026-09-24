@@ -1,68 +1,34 @@
 # ARIS4C-023 · Ancient Myth Convergence
 
-## Core question
+**Current state: scientific Pilot-0 core frozen; public-delivery gate pending.**
 
-Why do ancient and traditional societies sometimes tell strikingly similar stories?
+## Question
 
-ARIS4C-023 studies recurring mythic structures—floods, anthropogony, creation, world destruction and renewal, underworld journeys, divine conflict, culture heroes and related motifs—without assuming that similarity itself proves contact, borrowing, or a single lost source.
+Why do ancient traditions sometimes tell strikingly similar stories—and how can we distinguish shared ancestry, historical diffusion, environmental convergence, and recurrent cognitive/social structure?
 
-The project explicitly compares four competing mechanism families:
+## Core result
 
-1. **Vertical inheritance** — related populations preserve motifs from a shared ancestral tradition.
-2. **Horizontal diffusion** — motifs move through trade, migration, conquest, intermarriage, textual borrowing, translation, or other contact.
-3. **Ecological convergence** — similar environments or hazards independently favor similar narratives.
-4. **Cognitive / social convergence** — recurrent human cognitive, developmental, social, or political constraints generate similar narrative structures independently.
+The project does **not** reduce myth comparison to a similarity leaderboard.
 
-## Method principle
+- Dual-model calibration: 120 judgments, four-state agreement **0.825**, binary present/absent κ **0.894**.
+- Gilgamesh XI ↔ Genesis 6–9 flood bundles: **6 shared present**, Jaccard **0.857**.
+- Rigveda ↔ selected Hesiodic divine-conflict bundle: simple matching **0.875** but Jaccard **0.50**, because shared absences dominate.
+- Process tracing supports a Mesopotamian literary-dependence family for the Genesis flood while leaving the exact intermediary unresolved.
+- Sumerian ↔ Akkadian anthropogony is consistent with a shared Mesopotamian repertoire in a bilingual scribal transmission environment.
+- Chinese water-control/catastrophe material is structurally distinct from the Near Eastern ark-survival package; proposed geological anchoring remains contested.
+- Independent Indo-European comparative evidence shows why motif Jaccard alone cannot decide genealogy.
 
-**QCA is optional, not the project identity.**
+**Methodological conclusion:** similarity is an observation to explain, not evidence of transmission by itself.
 
-The core design is a multi-method comparative pipeline:
+## Outputs
 
-- motif ontology + auditable source coding;
-- tradition × time-slice database;
-- pairwise similarity matrix;
-- clustering / ordination;
-- geographic and contact networks;
-- temporal overlap and diffusion windows;
-- phylogenetic comparative analysis where language/population trees are defensible;
-- dyadic / network models for similarity and contact;
-- process tracing for historically plausible transmission chains;
-- QCA/fsQCA only when a well-calibrated configurational question and adequate case structure exist.
+- English working paper: `manuscript/working_paper_en.md`
+- 中文 working paper: `manuscript/working_paper_zh.md`
+- Figures: `figures/`
+- Tables: `tables/`
+- Frozen process tracing: `process/PROCESS_TRACING_SYNTHESIS.md`
+- Core-freeze audit: `process/CORE_FREEZE_AUDIT.md`
 
-## Unit of analysis
+## Boundaries
 
-Three layers are kept separate:
-
-- **Evidence layer:** source passage / text witness.
-- **Culture layer:** tradition × time slice.
-- **Comparison layer:** tradition dyad or motif-by-tradition matrix.
-
-This prevents a common error: treating a modern nation, a millennia-long “civilization,” and a surviving textual witness as if they were the same case.
-
-## First-pass motif families
-
-Cosmogenesis; anthropogony (clay/earth, blood, breath/speech, plant/wood, divine body); deluge/flood; destruction-and-renewal cycles; divine succession; culture hero/fire/knowledge; underworld descent; lost immortality; origin of mortality; cosmic egg/primordial waters; sibling/twin antagonism; monster-slaying/chaoskampf; sacred mountain/world tree/cosmic axis.
-
-The ontology will be mapped where possible to established motif catalogues rather than invented from scratch.
-
-## Initial data spine
-
-- **Berezkin–Duvakin Analytical Catalogue of Folklore and Mythological Motifs** — cross-regional motif distribution.
-- **ATU / Thompson indexes** — folktale-type and motif crosswalks, with scope limitations for myth.
-- **eHRAF World Cultures / Archaeology** — source-indexed ethnographic and archaeological comparison.
-- **D-PLACE** — culture, language, geography and ecology.
-- **Seshat / DRH** — historical polity/religion variables where temporal and conceptual coverage fits.
-- Primary texts, critical editions and specialist scholarship remain the authority for historically specific claims.
-
-## Guardrails
-
-- Similarity is not evidence of contact by itself.
-- Earliest surviving text is not automatically the date of oral origin.
-- Absence from a database is not absence from a tradition.
-- Modern geographic distance is not a substitute for historical contact.
-- Language trees are proxies for population/cultural history, not literal trees of myths.
-- NLP similarity is exploratory unless validated against human-coded motifs.
-- “Ancient civilization” is not treated as a timeless homogeneous unit.
-
-See `process/RESEARCH_PLAN.md` and `process/METHOD_MATRIX.md`.
+QCA remains OFF. Egypt is registered as an exploratory extension but excluded from confirmatory results pending independent spot-audit. A future v0.2 may expand beyond the 24 calibrated motifs; it must not rewrite the frozen v0.1.1 coder files.
