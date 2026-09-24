@@ -1,47 +1,80 @@
-# ARIS4C021 · Case-universe reconstruction v0.2
+# ARIS4C021 · Case-universe reconstruction v0.3
 
-## What is now reproduced
+## Published target
 
-Williams 2016 reports **40 genocide cases + 99 non-genocide PITF instability cases = 139**.
+Williams 2016 analyzes:
 
-A public PITF-2014 transformation in the Early Warning Project replication repository reproduces **exactly 40 geno-/politicide onset country-years for 1955–1998**, matching the Williams positive-case count and onset list.
+- **40 genocide cases**
+- **99 non-genocide PITF instability cases**
+- **139 total cases**
 
-Using the PITF consolidation rule — merge overlapping instability events, or events separated by no more than five years — on the same public panel gives **102 non-genocide consolidated episodes beginning 1955–1998**.
+## Positive cases · PASS
+
+The 40 genocide identities are taken directly from Williams's published case list.
+
+Independent cross-check against IBM's transformed SystemicPeace/PITF annual genocide series finds:
+- 40/40 positive cases overlap at least one positive annual death-magnitude observation;
+- episode identity is strongly corroborated;
+- episode boundaries must not be reconstructed as simple consecutive runs of annual DEATHMAG > 0.
+
+Canonical positive seed:
+- data/WILLIAMS_POSITIVE_CASES_SEED.csv
+
+## Negative controls · 102 -> 99 resolved
+
+A reproducible reconstruction from the public PITF-2014 country-year panel initially yields **102** apparent non-genocide consolidated episodes beginning in 1955–1998.
+
+The difference from Williams's published 99 is explained by three **left-truncation artifacts**. Restricting the annual panel to 1955 makes three older consolidated episodes look as though they began in 1955:
+
+| Apparent 1955 candidate | Older consolidated onset |
+|---|---:|
+| Colombia | 1948 |
+| Cuba | 1952 |
+| Iran | 1953 |
+
+These are not new post-1955 control onsets and are therefore excluded.
+
+**102 - 3 = 99**, exactly matching Williams.
+
+The exclusion rule is substantive and temporal; it was not chosen to improve condition margins or QCA fit.
+
+Canonical audit artifacts:
+- data/WILLIAMS_NEGATIVE_CANDIDATES_V0.csv
+- data/LEFT_TRUNCATION_EXCLUSIONS_V1.csv
+- data/WILLIAMS_NEGATIVE_CASES_IDENTITY_V1.csv
+- code/validate_control_identity.py
+
+## Combined identity lock
+
+data/CASE_UNIVERSE_IDENTITY_V1.csv contains the full **40 + 99 = 139** identity frame.
+
+Identity is now frozen at the case/event level.
+
+## What identity lock does NOT imply
+
+The six-condition matrix is not yet reconstructed.
+
+Later PITF vintages changed some dates/type boundaries relative to the older Williams-era consolidated list. Therefore:
+- positive Williams dates are publication-anchored;
+- negative identities are stable;
+- some exact old-vintage negative dates remain provisional/cross-version;
+- retrospective P/W coding cannot silently use later-vintage dates.
+
+## Condition reconstruction boundary
+
+Directly substituting later public elite-characteristics data does not reproduce Williams's published I/S margins. Williams also used qualitative/manual coding.
 
 Therefore:
+- R track reconstructs Williams's historical procedure and manual judgments where recoverable;
+- M track uses explicitly version-pinned reproducible modern rules;
+- published marginal totals and QCA solutions are validation targets, never imputation targets.
 
-- published Williams controls: **99**
-- PITF-2014-lineage reconstructed candidates: **102**
-- unresolved difference: **3 cases**
+See:
+- process/WILLIAMS_CODING_PROTOCOL.md
+- process/CONDITION_RECOVERY_AUDIT.md
+- process/CONDITION_MATRIX_CONTRACT.md
+- data/CONDITION_MATRIX_V0.csv
 
-## Interpretation
+## Next gate
 
-This is now a **version-lineage gap**, not a free modeling choice.
-
-Williams cites PITF/Harff data accessed on **2012-11-12**. The available public machine-readable reconstruction is PITF 2014. Cases may have been added, re-dated, retyped or retrospectively consolidated between the 2012-era source and 2014.
-
-ARIS4C021 will **not delete three cases merely to force N=99**.
-
-## Current canonical statuses
-
-- Williams 40 positive seed: literature-derived and independently cross-checked.
-- 102 negative candidates: **candidate_not_canonical**.
-- Final 99 negative controls: **not frozen**.
-- CONDITION_MATRIX_V1.csv: **not frozen**.
-
-## Resolution strategy
-
-1. locate a 2012-era PITF consolidated case list / problem-set snapshot;
-2. compare it directly with the 102 candidate list;
-3. identify the exact three version-added/reclassified cases;
-4. record case-level provenance;
-5. only then freeze CASE_UNIVERSE_V1.
-
-If an exact 2012 snapshot cannot be recovered, the paper will keep:
-- a published-N reconstruction track;
-- a transparent PITF-2014 sensitivity track;
-rather than pretending the historical list is known exactly.
-
-## Strong validation clue
-
-Williams's nine published false-positive cases all correspond to episodes in the 102-case candidate universe. This supports, but does not prove, the reconstruction lineage.
+Recover condition evidence case-by-case, quantify unresolved/manual cells, compare reconstructed margins to the published targets without tuning, then freeze CONDITION_MATRIX_V1.
