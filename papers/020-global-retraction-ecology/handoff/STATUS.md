@@ -1,23 +1,23 @@
 # Status
 
 ## State
-Active · 45%
+Active · 48%
 
 ## Current stage
-Preliminary results + bilingual working paper · confirmatory denominator gate.
+Executable pre-confirmatory package · networked denominator gate.
 
 ## Evidence
-- Full RWDB snapshot frozen: 72,606 rows / 67,197 primary Retractions / 61,155 unique usable original DOI.
-- Median publication→retraction lag: 490 days; descriptive only until survival denominator is available.
-- OpenAlex pilot: 996/1,000 = 99.6%; shard 0: 15,146/15,255 = 99.2855%.
-- OpenAlex enrichment now preserves 0/1/N candidates per query DOI, preventing one-to-many candidate inflation.
-- Event/work identity, parsing, denominator, time-to-retraction, mass-event, citation-afterlife, work-type and reason-ontology gates frozen.
-- Official Appendix-B reference has 111 reason names; observed snapshot has 110 unique labels, now handled as an explicit vocabulary-drift gate.
-- 3 preliminary descriptive SVG figures and bilingual EN/ZH working-paper drafts committed.
-- Core synthetic regression test for DOI collapse and fractional counting passed locally.
+- Full RWDB snapshot frozen: 72,606 rows / 67,197 Retractions / 61,155 unique usable original DOI.
+- OpenAlex feasibility: 996/1,000 pilot = 99.6%; historical shard 0 = 15,146/15,255 = 99.2855%.
+- Production OpenAlex format is one query DOI → 0/1/N candidates; all four shards must be rerun in this format.
+- OpenAlex `is_retracted` is concordance only; recent literature independently documents false OpenAlex retraction markings.
+- OpenAlex API key is sent only in the Authorization header; `corpus=core` is explicit; transient retry/backoff implemented.
+- Reason reference ontology now has 111/111 Appendix-B labels mapped and 0 unclassified; observed 110-label snapshot reconciliation/manual audit remains.
+- Core work table, full/fractional counting, reason network, lag profile, mass-event screen, work-type QA, match summarizer and one-command pipeline runner are implemented.
+- 3 descriptive SVG figures, 2 preliminary tables and EN/ZH working-paper drafts are committed.
 
 ## Next gate
-Complete OpenAlex shards 1–3 using the 0/1/N candidate-safe format; aggregate full DOI coverage; execute year × field denominators; reconcile observed 110 vs reference 111 Reason vocabulary; then freeze eligible OpenAlex work types.
+Run `RUNBOOK.md` on a networked execution surface: candidate-safe OpenAlex shards 0–3 → match summary → work-type QA → year × field denominators → observed Reason reconciliation → eligible-type freeze.
 
 ## Blocker
-No scientific-design blocker. Remaining confirmatory execution requires a networked runner. External browser credits are exhausted and private-repo GitHub Actions still fail before any job step starts (confirmed again after an explicit re-run).
+No scientific-design blocker. Firecrawl credits are exhausted and private-repo GitHub Actions still fail before any job step starts; the remaining network-dependent work is fully scripted and resumable.
