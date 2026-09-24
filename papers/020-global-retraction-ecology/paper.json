@@ -5,16 +5,16 @@
   "title": "The Global Ecology of Scientific Retractions: Event-to-Work Reconstruction, Reason Ecology, Timing, and Citation Afterlife",
   "short_title": "Global Retraction Ecology",
   "year": 2026,
-  "status": "static-execution-contract-pass-network-gate",
+  "status": "wb-network-run-conditional-pass-postrun-qa",
   "domain": "research integrity / metascience / scientometrics / bibliometrics / scholarly communication",
-  "summary": "Full-RWDB event-to-work reconstruction package with explicit RWDB↔OpenAlex concordance, multi-label Reason ecology, mass-event sensitivity, censoring-aware timing and citation-afterlife pipelines. Static execution-contract QA now passes; comparative incidence remains locked until the offline smoke and networked match/denominator gates actually execute.",
+  "summary": "WB completed the formerly blocked network run and produced real full-match, denominator, concordance and hazard artifacts. Post-run controller QA gives a conditional pass: two bounded summary/coverage contract defects were identified and fixed in code, their pre-fix derived outputs are marked provisional pending rerun, and 158 anomalous OpenAlex work-type rows remain to be adjudicated before confirmatory comparative results unlock.",
   "authors": [
     "Cochrane Kang"
   ],
   "portfolio_visible": true,
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-24",
-    "version": "v0.9.0"
+    "version": "v0.9.1"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/020-global-retraction-ecology",
@@ -63,7 +63,8 @@
     "paper_zh_full": "manuscript/working_paper_zh.md",
     "openalex_api_contract": "process/OPENALEX_API_CONTRACT_2026-09-24.md",
     "execution_package_qa": "process/EXECUTION_PACKAGE_QA_2026-09-24.md",
-    "offline_smoke": "code/smoke_offline.py"
+    "offline_smoke": "code/smoke_offline.py",
+    "post_wb_audit": "process/POST_WB_AUDIT_2026-09-24.md"
   },
   "tags": [
     "ARIS4C",
@@ -99,7 +100,12 @@
     "qa": {
       "static_contract": "pass",
       "offline_smoke": "not-yet-executed-on-canonical-checkout",
-      "network_match": "pending"
+      "network_match": "pending",
+      "wb_network_run": "pass",
+      "post_wb_audit": "conditional-pass",
+      "hazard_coverage_sidecar": "rerun-required",
+      "bidirectional_unique_doi_summary": "rerun-required",
+      "work_type_adjudication": "pending"
     }
   }
 }
