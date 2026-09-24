@@ -3,7 +3,7 @@
 - **Project status:** expanded-modern-module-locked-historical-synthesis-active
 - **Activity:** active
 - **Portfolio progress:** 75%
-- **Current stage:** Expanded modern statistics LOCKED · historical outcome/legal reconstruction active
+- **Current stage:** Expanded modern statistics LOCKED · full WDH historical trend bridge LOCKED · legal/raw-outcome reconstruction active
 
 ## Complete / frozen
 
@@ -39,3 +39,15 @@ Therefore neither sign is promoted as causal, and positive WB lag-2/lag-3 coeffi
 - rebuild EN/ZH manuscript around the full long-run project.
 
 No current design blocker. Some source acquisition requires a binary-capable or registered-data execution surface.
+
+
+## 2026-09-24 historical trend milestone
+
+- Full published WDH Table 2: **200 displayed rows / 199 exact unique trend rows**.
+- Exact source duplicate retained in verbatim materialization but excluded from analytical weighting: UK ls4 1990–2020.
+- Same-window actual-hours bridge: **190 trend rows / 46 countries**.
+- One-row-per-country correlation: Pearson **-0.057**, Spearman **-0.045**; full-series Pearson **+0.101**, Spearman **+0.094**.
+- Historical trend interpretation is locked: **no stable monotonic hours-trend × well-being-trend relationship**.
+- Earlier stronger negative result from the pre-1990-start subset is superseded as sample-selection sensitive.
+- Taiwan working-hours join was repaired; A0 hours = **2,015 / 130**, joint = **1,663 / 129**.
+- Independent statsmodels validator is committed, but Actions run **35977496016** failed pre-runner with zero executed steps; do not call validation PASS yet.
