@@ -1,0 +1,15 @@
+entity,code,working_hours_first_year,working_hours_last_year,working_hours_observations,wdh_longrun_registry
+Australia,AUS,1870,2023,81,true
+Belgium,BEL,1870,2023,81,true
+Canada,CAN,1870,2023,81,true
+Denmark,DNK,1870,2023,81,true
+France,FRA,1870,2023,81,true
+Germany,DEU,1870,2023,81,true
+Ireland,IRL,1870,2023,81,true
+Italy,ITA,1870,2023,81,true
+Netherlands,NLD,1870,2023,80,true
+Spain,ESP,1870,2023,81,true
+Sweden,SWE,1870,2023,81,true
+Switzerland,CHE,1870,2023,81,true
+United Kingdom,GBR,1870,2023,81,true
+United States,USA,1870,2023,81,true
