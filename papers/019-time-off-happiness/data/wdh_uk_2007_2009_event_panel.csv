@@ -1,0 +1,73 @@
+country,role,year,wdh_121c_mean_0_10,phase,source_url
+United Kingdom,treated,2004,7.13,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+United Kingdom,treated,2005,7.095,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+United Kingdom,treated,2006,7.085,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+United Kingdom,treated,2007,7.095,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+United Kingdom,treated,2008,7,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+United Kingdom,treated,2009,7.28,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+United Kingdom,treated,2010,7.245,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+United Kingdom,treated,2011,7.235,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+United Kingdom,treated,2012,7.29,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Belgium,donor,2004,7.12,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Belgium,donor,2005,6.955,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Belgium,donor,2006,7.1,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Belgium,donor,2007,7.04,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Belgium,donor,2008,6.85,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Belgium,donor,2009,7.05,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Belgium,donor,2010,6.945,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Belgium,donor,2011,6.955,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Belgium,donor,2012,6.97,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Denmark,donor,2004,8.18,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Denmark,donor,2005,8.195,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Denmark,donor,2006,8.195,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Denmark,donor,2007,8.24,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Denmark,donor,2008,8.17,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Denmark,donor,2009,8.375,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Denmark,donor,2010,8.38,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Denmark,donor,2011,8.405,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Denmark,donor,2012,8.35,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+France,donor,2004,6.41,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+France,donor,2005,6.405,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+France,donor,2006,6.505,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+France,donor,2007,6.435,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+France,donor,2008,6.225,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+France,donor,2009,6.71,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+France,donor,2010,6.465,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+France,donor,2011,6.325,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+France,donor,2012,6.555,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Italy,donor,2004,6.18,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Italy,donor,2005,6.035,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Italy,donor,2006,6.11,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Italy,donor,2007,5.935,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Italy,donor,2008,5.425,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Italy,donor,2009,5.74,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Italy,donor,2010,5.81,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Italy,donor,2011,5.715,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Italy,donor,2012,5.265,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Ireland,donor,2004,7.41,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Ireland,donor,2005,7.285,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Ireland,donor,2006,7.275,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Ireland,donor,2007,7.15,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Ireland,donor,2008,7.09,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Ireland,donor,2009,7.035,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Ireland,donor,2010,6.985,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Ireland,donor,2011,6.95,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Ireland,donor,2012,6.725,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Luxembourg,donor,2004,7.76,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Luxembourg,donor,2005,7.635,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Luxembourg,donor,2006,7.555,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Luxembourg,donor,2007,7.56,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Luxembourg,donor,2008,7.475,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Luxembourg,donor,2009,7.535,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Luxembourg,donor,2010,7.46,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Luxembourg,donor,2011,7.475,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Luxembourg,donor,2012,7.375,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Netherlands,donor,2004,7.45,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Netherlands,donor,2005,7.615,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Netherlands,donor,2006,7.615,pre,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Netherlands,donor,2007,7.695,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Netherlands,donor,2008,7.8,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Netherlands,donor,2009,7.72,transition,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Netherlands,donor,2010,7.7,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Netherlands,donor,2011,7.83,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
+Netherlands,donor,2012,7.665,post,https://worlddatabaseofhappiness.eur.nl/equivalent-measures/4-step-verbal-lifesatisfaction-5/
