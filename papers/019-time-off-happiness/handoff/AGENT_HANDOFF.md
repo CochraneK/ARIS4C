@@ -1,16 +1,56 @@
 # ARIS4C019 · Agent takeover brief
 
-## 2026-09-24 scope reopening
+## 2026-09-24 current canonical state
 
-The user's adequacy review supersedes the prior assumption that ARIS4C019 was nearly finished. The previous 98% state described a narrow, publication-ready Pilot-0 only. Project-level progress is reset to **60% / active** because the original broad research question requires substantial historical and statistical expansion.
+The former near-finish Pilot-0 state is **not** the current project-level state. ARIS4C019 was reopened after an adequacy audit and now stands at **75% / active**.
 
-Read first:
-- `process/HISTORICAL_EXPANSION_PLAN.md`
-- `process/HISTORICAL_SOURCE_MATRIX.md`
-- `process/RESEARCH_PLAN.md`
-- `handoff/TODO.md`
+### Read first
 
-Preserve the existing eight-event/Israel analysis as a frozen sub-study. Do not discard it and do not overwrite its interpretation. New work should expand chronology, country coverage, outcome sources and statistical models.
+1. `process/STATUS.md`
+2. `process/EXPANDED_MODERN_INTERPRETATION_LOCK.md`
+3. `process/HISTORICAL_EXPANSION_PLAN.md`
+4. `process/EXPANDED_STATISTICAL_FREEZE.md`
+5. `handoff/TODO.md`
+6. `handoff/DECISIONS.md`
+
+### What is complete
+
+- Pilot-0 causal module: frozen / complete; do not rewrite.
+- Modern WB statutory-leave × WHR panel: **161 countries / 1,934 country-years**.
+- Modern broad statistical module: executed and interpretation-locked.
+- Actual working-hours coverage: **130 countries / 5,063 observations / 1870–2023**.
+- WDH public long-run mean registry: **124 series / 61 nation labels / earliest 1946**.
+- WVS Waves 1–7 registry: **295 country-wave rows / 107 codes**.
+- Eurobarometer long-run life-satisfaction source chain: mapped; numeric aggregation pending.
+
+### Modern interpretation that must not drift
+
+The modern country-year panel does **not** establish a stable positive or negative aggregate Life Ladder response to statutory paid annual leave or annual working hours.
+
+The strongest reason is the timing falsification:
+- verified WB panel leave jumps occur on average **1.22 years after** the actual law;
+- using WB report-year timing, verified-changer A1 FD is about **-0.240 / +5 leave days**;
+- moving the same verified leave step to legal effective year yields about **+0.093**;
+- neither sign is causal; the sign flip demonstrates timing sensitivity.
+
+Do not describe positive lag-2/lag-3 WB coefficients as delayed happiness benefits.
+
+### Next scientific gate
+
+Continue historical expansion, not more post-hoc mining of WHR:
+
+1. materialize numeric WDH long-run observations;
+2. acquire/aggregate Eurobarometer and EVS/WVS outcomes;
+3. finish C052/C132 primary rows and national paid-leave legal chronology;
+4. run source-specific historical hours/leave × well-being models;
+5. synthesize instrument-specific coefficients and verified event effects;
+6. rewrite EN/ZH manuscript for the expanded study.
+
+### Reproducibility
+
+- modern analysis code: `code/expanded_modern_panel_analysis.py`
+- public transport mirrors are commit-pinned;
+- GitHub Actions remains affected by the repository-wide pre-runner startup issue, so CI replication is still a future engineering gate.
 
 ---
 
