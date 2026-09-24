@@ -9,11 +9,13 @@
 - [~] Ingest ILO C052/C132 ratification/denunciation histories as institutional anchors; do not equate ratification with national entitlement adoption. C132 closed 39-country seed + decade diffusion are materialized; 13 exact NORMLEX dates are primary-verified; remaining C132 dates and full C052 rows remain.
 - [ ] Build national paid-leave legal chronology with primary-law effective dates and entitlement levels, prioritizing earliest adoption and major upgrades.
 - [~] Build historical actual-working-hours panel, retaining source/sector comparability flags. Current transport-pinned source has 5,063 observations / 130 countries / 1870–2023; 14-country 1870–1938 seed and coverage/WDH bridge are materialized. Further source-version/comparability work remains.
-- [~] Build World Database of Happiness historical outcome table with question-family metadata and comparable-subset flags. Public long-run mean registry is materialized at 124 variable series / 61 nation labels / earliest 1946; numeric XLSX observations remain pending.
+- [~] Build World Database of Happiness historical outcome table with question-family metadata and comparable-subset flags. Public registry = 124 variable series / 61 nation labels / earliest 1946; published Table 2 is now fully materialized at 200 displayed / 199 exact unique trend rows and 190 same-window hours matches / 46 countries. Raw yearly XLSX observations remain pending.
 - [~] Add Cantril 1957–1963, Eurobarometer 1973+, WVS/EVS 1981+ and Gallup-era outcome coverage manifests. Cantril/WVS/Eurobarometer/Gallup coverage scaffolds are materialized; WDH XLSX and full EVS country-wave expansion remain.
 - [x] Freeze no-effect-inspection coverage gates and expanded statistical plan before running new expanded association/causal models.
 
 ## P1H · Expanded statistics
+
+- [~] Independently validate key modern FE/FD coefficients with the committed statsmodels implementation. Validator/workflow are ready; GitHub Actions run 35977496016 fails before any step due the repository-wide pre-runner issue.
 
 - [x] Execute and freeze the expanded modern WHR association module (TWFE / within-between / FD / A1 / support / trends / spline / lags / influence / joint hours+leave).
 - [x] Quantify legal-vs-WB timing error: verified WB jump timing averages +1.22 years relative to law.
@@ -22,7 +24,7 @@
 - [x] Add same-sample macro attenuation decomposition to separate complete-case selection from control adjustment.
 
 - [ ] Descriptive atlas: decade diffusion, regional trajectories, country timelines, exposure distributions, happiness trajectories and happiness inequality where available.
-- [~] Country/time fixed-effects and within-between models for comparable panels. Modern WHR leave/hours module executed and interpretation-locked; historical WDH/Eurobarometer/WVS-EVS instrument-specific panels remain.
+- [~] Country/time fixed-effects and within-between models for comparable panels. Modern WHR leave/hours module executed and interpretation-locked; published WDH historical trend×hours bridge executed and locked; raw-year WDH/Eurobarometer/WVS-EVS instrument-specific panels remain.
 - [~] Nonlinear dose-response and lag/distributed-lag models with explicit association-only interpretation unless stronger identification is met. Modern RCS + lag stack executed; WB report-year lag interpretation is timing-falsified and historical instruments remain.
 - [ ] Instrument-specific outcome models plus overlap-country bridge diagnostics; do not pool raw happiness scales blindly.
 - [ ] Random-effects / multilevel synthesis across survey families.
