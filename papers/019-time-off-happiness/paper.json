@@ -5,7 +5,7 @@
   "title": "Statutory Paid Annual Leave and National Life Evaluation: A Global Legal-Event Audit and Falsification-First Holdout Study",
   "short_title": "Annual Leave × Life Evaluation",
   "year": 2026,
-  "status": "submission-package-ready-public-delivery-gate",
+  "status": "final-public-delivery-blocked-on-canonical-pdf-publish",
   "domain": "labor economics / subjective well-being / comparative social policy / causal inference",
   "summary": "A falsification-first cross-national legal-event study of statutory paid annual-leave reforms and annual population Life Ladder. The original eight-event panel is retained as a broader labour/time-off stress test; a cleaner, independently frozen Israel 2016 holdout is analyzed separately. Current evidence is fragile and directionally unstable rather than a robust positive or negative annual-leave effect.",
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-21; legal-event, donor, covariate and Life Ladder gates frozen and executed; WHR2024 source refresh, complete bounded 11-jump legal audit, independently frozen Israel holdout, bilingual manuscripts, four manuscript figures/tables, SIR double-anonymous DOCX/PDF package, anonymous replication bundle, final visual/identity QA, and one-page portfolio explainer completed",
-    "version": "v0.7.0"
+    "version": "v0.7.1"
   },
   "links": {
     "paper_en": "manuscript/WORKING_PAPER_EN.md",
@@ -63,10 +63,25 @@
     },
     "exception": "Interpretation locked: no robust positive or negative population Life Ladder effect of statutory annual leave is established. Israel's pre-frozen 2015-reference holdout is near zero but alternative post-outcome baselines are materially negative. Positive/negative affect remain locked.",
     "pdf": {
-      "status": "building-via-canonical-ci",
+      "status": "local-build-and-render-qa-pass-canonical-git-binaries-pending",
       "english": false,
       "chinese": false,
-      "builder": "tools/build_public_pdfs.py"
+      "local_qa": {
+        "english_pages": 12,
+        "chinese_pages": 7,
+        "extractable_text": true,
+        "render_first_visual_qa": "pass",
+        "cjk_rendering": "pass",
+        "figure_clipping": "pass"
+      },
+      "canonical_paths": {
+        "english": "docs/paper/019/en/main.pdf",
+        "chinese": "docs/paper/019/zh/main.pdf"
+      },
+      "trigger_commit": "dc857f638517a25b7cb5b3b70284dd4aa6955682",
+      "final_audit": "process/FINAL_PUBLIC_DELIVERY_AUDIT.md",
+      "builder": "tools/build_public_pdfs.py",
+      "finish_condition": "both canonical PDF paths exist on main and pass Git-side readability/blob verification"
     },
     "sir_blinded": "final-package-pass",
     "docx": {
