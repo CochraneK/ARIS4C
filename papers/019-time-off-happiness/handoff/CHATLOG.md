@@ -30,3 +30,10 @@
 - The exact current EN/ZH Markdown, four SVG figures and publication CSS were independently rendered again with the available local fallback stack. Optimized fallback PDFs passed text extraction and render-first visual QA (EN 11 pages / 100,363 bytes; ZH 7 pages / 207,347 bytes).
 - The project remains truthfully at 98% / block because `docs/paper/019/en/main.pdf` and `docs/paper/019/zh/main.pdf` are still absent from `main`.
 - Scientific claims remain frozen; no outcome/legal-event analysis was reopened to fill an engineering delivery gap.
+
+## 2026-09-24 · Scope adequacy correction
+
+- User challenged ARIS4C019 as insufficiently broad: too little twentieth-century history, too few countries, too short an annual window and too little statistical analysis.
+- The critique was accepted as a project-design issue rather than defended as a finished result.
+- Existing leave-specific Pilot-0 remains preserved, but project-level scope is reopened around long-run global institutional change, postwar multi-source happiness evidence and a substantially broader statistical synthesis.
+- Project-level progress is reset from the narrow 98% publication state to 60% / active.
