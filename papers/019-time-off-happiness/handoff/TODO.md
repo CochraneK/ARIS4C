@@ -5,18 +5,18 @@
 - [x] Reopen ARIS4C019 beyond the narrow leave-specific Pilot-0 after scope audit.
 - [x] Freeze multi-resolution historical design: legal/institutional history -> country-wave well-being -> annual Gallup-era panel.
 - [x] Add historical source matrix spanning ILO C052/C132, national laws, WORLD/Equal Futures, OECD historical hours, WDH, Cantril, Eurobarometer, WVS/EVS and Gallup/WHR.
-- [ ] Build country × source × year/wave coverage inventory for 1900–2026 exposures and 1945–2026 subjective well-being.
+- [~] Build country × source × year/wave coverage inventory for 1900–2026 exposures and 1945–2026 subjective well-being. Modern WB×WHR 161-country/1,934-year overlap, WVS 295 country-wave rows/107 codes, Cantril seed, Eurobarometer registry summary and WDH acquisition gate are complete; full historical country-year reconstruction remains.
 - [ ] Ingest ILO C052/C132 ratification/denunciation histories as institutional anchors; do not equate ratification with national entitlement adoption.
 - [ ] Build national paid-leave legal chronology with primary-law effective dates and entitlement levels, prioritizing earliest adoption and major upgrades.
 - [ ] Build historical actual-working-hours panel, retaining source/sector comparability flags.
 - [ ] Build World Database of Happiness historical outcome table with question-family metadata and comparable-subset flags.
-- [ ] Add Cantril 1957–1963, Eurobarometer 1973+, WVS/EVS 1981+ and Gallup-era outcome coverage manifests.
-- [ ] Produce no-effect-inspection historical coverage dashboard before running expanded association/causal models.
+- [~] Add Cantril 1957–1963, Eurobarometer 1973+, WVS/EVS 1981+ and Gallup-era outcome coverage manifests. Cantril/WVS/Eurobarometer/Gallup coverage scaffolds are materialized; WDH XLSX and full EVS country-wave expansion remain.
+- [x] Freeze no-effect-inspection coverage gates and expanded statistical plan before running new expanded association/causal models.
 
 ## P1H · Expanded statistics
 
 - [ ] Descriptive atlas: decade diffusion, regional trajectories, country timelines, exposure distributions, happiness trajectories and happiness inequality where available.
-- [ ] Country/time fixed-effects and within-between models for comparable panels.
+- [ ] Country/time fixed-effects and within-between models for comparable panels. Model hierarchy frozen in `process/EXPANDED_STATISTICAL_FREEZE.md`.
 - [ ] Nonlinear dose-response and lag/distributed-lag models with explicit association-only interpretation unless stronger identification is met.
 - [ ] Instrument-specific outcome models plus overlap-country bridge diagnostics; do not pool raw happiness scales blindly.
 - [ ] Random-effects / multilevel synthesis across survey families.
