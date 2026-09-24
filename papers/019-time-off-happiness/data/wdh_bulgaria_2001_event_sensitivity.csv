@@ -1,0 +1,22 @@
+analysis,dropped_donor,effect
+main_all_9,,-0.9266666666666667
+leave_one_donor_out,Czech Republic,-1.0412500000000007
+leave_one_donor_out,Hungary,-0.9500000000000002
+leave_one_donor_out,Poland,-0.9975000000000005
+leave_one_donor_out,Romania,-0.7774999999999999
+leave_one_donor_out,Slovakia,-1.0162499999999994
+leave_one_donor_out,Slovenia,-0.942499999999999
+leave_one_donor_out,Estonia,-0.8424999999999994
+leave_one_donor_out,Latvia,-0.8712499999999999
+leave_one_donor_out,Lithuania,-0.9012500000000001
+
+placebo_country,placebo_effect
+Czech Republic,-0.9155555555555559
+Hungary,-0.1044444444444444
+Poland,-0.5266666666666665
+Romania,1.4288888888888889
+Slovakia,-0.6933333333333326
+Slovenia,-0.03777777777777816
+Estonia,0.8511111111111105
+Latvia,0.5955555555555555
+Lithuania,0.32888888888888956
