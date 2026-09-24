@@ -37,3 +37,12 @@
 - The critique was accepted as a project-design issue rather than defended as a finished result.
 - Existing leave-specific Pilot-0 remains preserved, but project-level scope is reopened around long-run global institutional change, postwar multi-source happiness evidence and a substantially broader statistical synthesis.
 - Project-level progress is reset from the narrow 98% publication state to 60% / active.
+
+## 2026-09-24 · Expanded historical data execution
+
+- Continued in GO mode from the user's scope critique.
+- Modern descriptive panel availability now reaches 161 countries / 1,934 WB-leave × WHR country-years rather than the old eight-event framing.
+- WVS Waves 1–7 country-level coverage registry now contains 295 country-wave rows / 107 distinct codes.
+- Eurobarometer 1973–2026 and WDH long-run postwar outcome routes are pinned, with access/transfer constraints explicitly separated from data nonexistence.
+- Expanded statistical analysis was frozen before inspecting new full-panel happiness effects.
+- C132 international diffusion is materialized for all 39 current ratifiers as a verification queue; national legal implementation remains a separate exposure-history task.
