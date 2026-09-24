@@ -153,18 +153,40 @@ have to move together.
 
 ## 7. Two things still stand between this and a dual-coding run
 
-1. **Witness release.** A coder can be shown text for 40 of 120 judgments as pinned
-   (§3, §4). The other 80 need option 1, 2 or 3 above, and that is a decision, not a fix.
-2. **A coder surface and a harness.** The local multi-model gateway
-   (`FREELLMAPI_BASE_URL`, 127.0.0.1:18080) was **not listening** when this was
-   measured (`/v1/models` connection refused), so no second model family was
-   reachable in this session. Separately, 023 has **no coder harness committed or
-   built** — `code/` holds the scorer, the validator, the similarity builder and now
-   this audit, but nothing that sends a packet to a model and freezes the response.
-   The 012 run used `run_012_coders.py` (kept outside the repository with its
-   checkpoints and per-call provenance); a 023 run would follow the same shape, and
-   must additionally refuse any packet whose witness file has not been released, so
-   that it cannot silently produce the 80 blind judgments.
+1. **Witness release.** Now partly done. `code/build_witnesses.py` stages the five
+   readable packets as witness files and records their digests, locators, extraction
+   notes and licence notices in `data/calibration/witness_manifest.json`; because all
+   five sources assert copyright or a non-commercial licence, **the text itself is
+   staged outside the repository** (`$ARIS4C023_SCRATCH/witnesses/`), so 40 judgments
+   are codable today under the same split 016 uses for its lexical material. The other
+   80 still need option 1, 2 or 3 above, and that is a decision, not a fix.
+2. **A coder surface and a harness.** The harness exists now:
+   `out/023/run_023_coders.py` (outside the repository, following the 012 precedent
+   that no committed script calls a model endpoint). It codes one packet per call at
+   temperature 0, checkpoints per packet, logs requested vs **served** model, prompt
+   hash and witness hash per call, and — the point 012's runner did not need — it
+   **refuses any packet without a staged witness that hashes to the committed
+   manifest**, leaving its 8 rows blank. Verified offline on 2026-09-24:
+   `--dry-run` reports "5 packets with a verified witness, 10 refused; 40 judgments
+   available, 80 will stay blank", and a stub-transport self-test
+   (`out/023/_selftest/`) reproduces the 120-row sheet with exactly the 40 answered
+   rows and a header identical to the frozen `coder_A.csv`; deleting a witness file or
+   appending one byte to it flips that packet to `witness_not_staged` /
+   `digest_mismatch` and it is not coded.
+   What is still missing is the surface: the local multi-model gateway
+   (`FREELLMAPI_BASE_URL`, 127.0.0.1:18080) had **0 listeners** when this was
+   re-measured, and the one backup key in the environment is banned at its provider,
+   so **coder A cannot be produced today**. It is one command away:
+   `ARIS4C023_MODEL_A=<route> python run_023_coders.py A`.
+
+## 7b. What the harness refuses, per packet
+
+| packet | witness state |
+| --- | --- |
+| P_FLOOD_SUM, P_ANTH_SUM | staged (ETCSL prose, © Oxford, terms not stated) |
+| P_ANTH_ATRA | staged (Livius, all rights reserved, adapted from B.R. Foster) |
+| P_FLOOD_GEN, P_ANTH_GEN | staged (Sefaria API, CC-BY-NC, JPS Tanakh gender-sensitive) |
+| the other 10 | refused — no released witness; 80 rows stay blank |
 
 ## 8. Files and commands
 
@@ -188,24 +210,49 @@ have to move together.
   `licence_class` for the five released ones
 - `data/calibration/text_release_summary.json` — class tallies, recheck coverage, and
   `licence_of_releasable_witnesses` / `releasable_with_open_licence`
+- `code/build_witnesses.py` — fetches the five readable witnesses once each, writes them
+  to `$ARIS4C023_SCRATCH/witnesses/` (outside the repository) and `--write` regenerates
+  `data/calibration/witness_manifest.json` from the digests. `ARIS4C023_SCRATCH` must be
+  an absolute path — the same directory is read back by the harness:
+
+  ```
+  ARIS4C023_SCRATCH="$PWD/../out/023" \
+    python papers/023-myth-convergence/code/build_witnesses.py --write
+  ```
+  (run from the repository root, so the scratch directory is its absolute path)
+
+- `data/calibration/witness_manifest.json` — 5 of 15 packets, 40 of 120 judgments
+  coverable; per packet the sha256, byte/char/line counts, staged path, extraction note,
+  locator, licence class and the licence text as the source states it. `witness_chars`
+  counts include the trailing newline; `committed_to_repository` is `false` for every entry.
+- `out/023/run_023_coders.py` — the coder harness (§7.2), and `out/023/_selftest/` the
+  stub-transport test that generated its verification numbers. Neither is committed:
+  the repository convention is that no committed script calls a model endpoint.
 
 ## 9. Bottom line
 
 The instrument is what is broken here, not the model and not the hypothesis. 023's
 dual-coding gate asks two coders to judge 120 motif states from 15 passages; for **80
 of those 120** the passage cannot be handed to a coder as the packet currently pins it,
-and 24 of those 80 have no open witness located at all. For none of the 120 does a
-witness file exist yet. Any kappa or raw agreement computed today would describe
-retrieval conditions, not coder reliability — which is the same failure mode 012
+and 24 of those 80 have no open witness located at all. For the other 40 a witness file
+now exists, staged outside the repository with its digest committed, and the harness will
+code exactly those 40 and refuse the rest. Any kappa or raw agreement computed today would
+describe retrieval conditions, not coder reliability — which is the same failure mode 012
 measured on its own reliability gate and 005 measured on its adjudication packets.
 
 What 023 needs is a decision, in this order:
 
-1. which of §6's three routes to take (recommendation: option 1, release witnesses for
-   the 96 retrievable judgments, and record `EVIDENCE_UNAVAILABLE` for the 24 that are
-   not, rather than scoring them);
-2. where witness text may live, given that every readable source asserts copyright or
-   a non-commercial licence (§4);
-3. only then, the coder surface and the harness (§7). The instrument is still v0.1 and
-   frozen; re-issuing it as v0.2 is a recorded version bump, not a silent edit.
+1. which of §6's three routes to take for the remaining 80 judgments (recommendation:
+   option 1, release witnesses for the 96 retrievable judgments, and record
+   `EVIDENCE_UNAVAILABLE` for the 24 that are not, rather than scoring them);
+2. confirm that staging copyrighted / non-commercially-licensed witness text outside the
+   repository, with digests committed, is the policy for this packet (§4, §7.1) — if
+   instead the witnesses must be committable, the five readable sources all need
+   re-pinning to openly licensed editions and this stage has to be redone;
+3. a model surface. The harness is built and verified offline (§7.2); the gateway was
+   down and no alternative route was usable, so coder A has not been produced and no
+   response file in this repository should be read as if it had. The instrument is still
+   v0.1 and frozen, and `coder_A.csv` / `coder_B.csv` are still the byte-identical
+   blanks they were at freeze; re-issuing the packet as v0.2 is a recorded version bump,
+   not a silent edit.
 

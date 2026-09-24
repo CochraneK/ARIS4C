@@ -11,9 +11,9 @@
 - [x] Freeze historical-contact edge schema.
 - [x] Freeze downstream analysis contract and QCA trigger.
 - [ ] Record the witness-release decision the audit forces: re-pin to text-returning endpoints and release witnesses for the 96 retrievable judgments (packet v0.2), or restrict the run and log `EVIDENCE_UNAVAILABLE` for the rest.
-- [ ] Decide where witness text may live: every readable source asserts copyright or a non-commercial licence, so witness files may have to stay outside the repository with digests and locators committed.
-- [ ] Build the coder harness (012's `run_012_coders.py` shape: per-item checkpoint, served-model provenance, refuses any packet without a released witness).
-- [ ] Obtain genuinely independent coder-A/B responses.
+- [x] Decide where witness text may live: the 5 readable sources all assert copyright or a non-commercial licence, so `code/build_witnesses.py` stages the text outside the repository and commits only digests, locators, extraction notes and licence notes (`data/calibration/witness_manifest.json`).
+- [x] Build the coder harness (012's `run_012_coders.py` shape, kept outside the repository at `out/023/run_023_coders.py`: per-packet checkpoint, served-model provenance, refuses any packet without a staged witness that hashes to the manifest). Verified offline only — `--dry-run` plus a stub-transport self-test; no coder response exists yet.
+- [ ] Obtain genuinely independent coder-A/B responses. Blocked on a model surface: 127.0.0.1:18080 had 0 listeners on 2026-09-24 and the backup key is banned, so the 40-judgment run has not been executed.
 - [ ] Score reliability + disagreement taxonomy.
 - [ ] Revise/freeze full ontology v0.1 after reliability review.
 - [ ] Build first source-backed tradition × motif matrix.
