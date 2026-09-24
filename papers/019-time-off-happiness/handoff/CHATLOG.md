@@ -56,3 +56,19 @@
 - Therefore modern interpretation is frozen as directionally unstable / timing-sensitive, and the project proceeds to historical WDH/Eurobarometer/WVS-EVS data rather than significance chasing.
 - README, STATUS, TODO, DECISIONS, AGENT_HANDOFF, paper.json and portfolio dashboard were synchronized to 75% / active.
 
+## 2026-09-24 · Expanded historical reconstruction continuation
+
+User requested continued GO-mode expansion after judging the original study insufficiently historical/broad.
+
+This execution block:
+- corrected the Taiwan working-hours join and reran affected modern hours/joint models;
+- decomposed A0→A1 movement into sample-selection versus macro-control effects;
+- materialized the full 200-row published WDH Table-2 trend frame, identified one exact source duplicate, and matched 190 unique trends across 46 countries to same-window working-hours histories;
+- locked the full historical trend interpretation: no stable monotonic aggregate hours-trend × wellbeing-trend relationship;
+- validated official WDH HTML as a year-level reconstruction source on USA hl4 and Japan ls4;
+- completed the full primary ILO C052 54-country and C132 39-country NORMLEX ratification registers;
+- built C052→C132 succession and declaration-unit guardrails;
+- advanced project status to **80% / active**.
+
+Current next gate: recover/execute broad historical statutory-leave panels (ILO TRAVAIL/NATLEX), run the WDH HTML annual builder on a network-capable runner, and acquire Eurobarometer/EVS-WVS numeric outcomes.
+
