@@ -56,7 +56,11 @@
     "openalex_retracted_snapshot": "code/snapshot_openalex_retracted.py",
     "bidirectional_concordance": "code/compare_bidirectional_concordance.py",
     "citation_edges": "code/openalex_citation_edges.py",
-    "citation_summary": "code/summarize_citation_afterlife.py"
+    "citation_summary": "code/summarize_citation_afterlife.py",
+    "paper_en": "manuscript/working_paper_en.md",
+    "paper_zh": "manuscript/working_paper_zh.md",
+    "paper_en_full": "manuscript/working_paper_en.md",
+    "paper_zh_full": "manuscript/working_paper_zh.md"
   },
   "tags": [
     "ARIS4C",
