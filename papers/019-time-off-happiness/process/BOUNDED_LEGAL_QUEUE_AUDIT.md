@@ -1,56 +1,63 @@
-# ARIS4C019 · Bounded Legal-Verification Queue Audit
+# ARIS4C019 · Bounded Legal Queue Audit v0.1
 
 **Closed:** 2026-09-24  
-**Scope fixed before search:** Tajikistan, Montenegro, Ecuador only.  
-**Purpose:** decide whether the remaining high-priority World Bank leave jumps represent real statutory annual-leave reforms, coding/standardization changes, or broad labour-policy packages.
+**Scope:** final bounded verification pass for Tajikistan, Montenegro and Ecuador
 
-> This closes the current expansion round. No further countries are added merely to increase event count.
+> This audit closes the current expansion round. These candidates were selected from the pre-existing World Bank jump queue based on coverage and statutory-leave change magnitude, not on their Life Ladder outcomes.
 
-## Decisions
+## Result
 
-### Tajikistan 2015 — reject as treatment
+None of the three candidates passes the leave-specific legal-treatment gate.
 
-The queue contains a World Bank average-leave drop from 21 to 18 working days around EW2015. However, the legal evidence does not support a corresponding statutory cut.
+| Candidate | WB signal | Legal finding | Decision |
+|---|---:|---|---|
+| Tajikistan 2015 | average leave 21 → 18 days | No matching 2015 annual-leave entitlement cut was verified. The official legal record shows the 1997 Labour Code remained in force until the 2016 replacement; contemporaneous 2014/2015 amendments located in the official database concern holiday law rather than a leave-specific cut. | **Reject as treatment** unless new primary legal evidence appears. |
+| Montenegro 2015 | average leave 21 → 20.67 | The 2014 consolidated Labour Law already sets a statutory minimum of **20 working days** in Article 65, and the government published a consolidated Labour Law text again in 2015. | **Reject as treatment**; likely tenure/profile recoding. |
+| Ecuador 2013 | average leave 12.33 → 12.0 | Current/continuing Labour Code rule is **15 consecutive days** of annual vacation, with extra tenure days after five years. ILO records a broad 2012 labour-rights law but no verified annual-leave reduction matching the -0.33 standardized average shift. | **Reject as treatment**; likely standardized-case/profile recoding. |
 
-The 1997 Tajik Labour Code identifies a general minimum annual paid leave regime; contemporary legal summaries and the later 2016 Labour Code continue to describe the minimum as **at least 24 calendar days**. ILO material also describes Tajik legislation as providing a 24-calendar-day basic annual holiday.
+Machine-readable decisions are in `data/bounded_legal_queue_audit.csv`.
 
-**Decision:** classify the EW2015 −3 step as a **measurement / standardization / calendar-to-working-day coding change unless contrary primary legal evidence emerges**. It does not enter the leave-specific holdout.
+## Evidence notes
 
-## Montenegro — one real reform, two queue artifacts
+### Tajikistan
 
-Historical material before the substantive reform describes an **18-working-day** minimum. ILO CEACR specifically notes that amendments published in **Official Gazette No. 59/2011 (14 December 2011)** changed Labour Law section 65(1) so annual paid leave became **not less than 20 working days**.
+- Official ADLIA record for the 1997 Labour Code contains the annual-leave chapter and remained the operative Labour Code until the new code was adopted in 2016.
+- The 2016 adoption record explicitly replaces the prior-code regime.
+- Searches of official 2014/2015 legal changes identified amendments to the law on holidays, but did not identify a leave-specific statutory reduction corresponding to the World Bank panel's 21→18 working-day change.
 
-Doing Business material additionally describes the 2011/12 Montenegro reform as increasing paid annual leave from **19 to 21 working days**, while simultaneously changing fixed-term-contract rules and redundancy notice. This is consistent with the World Bank standardized case moving more than the statutory floor alone.
+Conclusion: **do not infer a legal reform from the World Bank discontinuity alone**.
 
-Therefore:
+### Montenegro
 
-- **EW2010 18→19:** no distinct matching legal reform verified → reject as a separate treatment.
-- **EW2013 19→21:** legally real reform window, but it is part of a **broader Labour Law package**, not a stand-alone annual-leave statute → retain only as sensitivity / broad-policy evidence.
-- **EW2015 21→20.67:** no matching statutory annual-leave reduction verified; Council of Europe material still describes the governing law as at least 20 working days → reject as a treatment.
+The English 2014 consolidated Labour Law states in Article 65 that annual leave must be **not less than 20 working days**. The government also published a consolidated Labour Law text in November 2015.
 
-## Ecuador 2013 — reject as treatment
+The World Bank panel's 2015 movement from 21.0 to 20.67 is too small and too tenure-profile-shaped to count as a treatment without a matching legal entitlement change.
 
-The queue contains only a very small World Bank change (average −0.33 day, driven by the standardized five-year-tenure case).
+Conclusion: **coding/profile update, not a verified leave reform**.
 
-Ecuador Labour Code Article 69 provides **15 days of annual leave**, with additional seniority leave after five years. NATLEX lists the 2012 Organic Law for the Defence of Labour Rights as an amendment to the Labour Code, but official legislative summaries emphasize enforcement/social-protection changes such as late social-security affiliation and lactation-period changes; they do not identify an annual-leave entitlement cut corresponding to the World Bank step.
+### Ecuador
 
-**Decision:** classify the 2013 −0.33 change as a **standardized-case / coding adjustment**, not a verified statutory annual-leave reform.
+The Ministry of Labour describes Article 69 of the Labour Code as providing **15 consecutive days** of annual vacation, plus one extra day for each year beyond five years with the same employer. ILO NATLEX lists the 31 July 2012 Organic Law for Defence of Labour Rights as an amending text, but no annual-leave entitlement change was verified that would explain the World Bank panel's -0.33 average shift.
 
-## Bounded-search conclusion
+Conclusion: **do not treat the 2013 World Bank average change as an annual-leave policy shock**.
 
-This bounded audit did **not** add a new clean annual-leave holdout event.
+## Bounded-search stopping rule
 
-What survives is:
+This verification round is now **closed**.
 
-1. the original eight-event Pilot-0 panel as a broad legal-reform stress test;
-2. China 2008 as the cleanest leave-specific event among the original pool, still with GFC timing caveat;
-3. Montenegro 2011/12 as a verified but **bundled Labour Law** sensitivity event;
-4. Mexico 2023 as the most promising future leave-specific holdout once a validated annual Life Ladder panel provides at least two full post years;
-5. New Zealand 2007 as legally clean but permanently weak under the current WHR pre-period requirement.
+Do not continue mining ever-smaller World Bank leave-panel discontinuities merely to enlarge the event count. Re-open legal-event discovery only when at least one of the following occurs:
 
-The correct next step is **not further event fishing**. The next gate is either:
+1. a new authoritative statutory-leave reform database/source is obtained;
+2. annual Life Ladder coverage is extended far enough to admit already-clean modern reforms such as Mexico 2023;
+3. a specific stand-alone annual-leave reform is independently identified from legal/policy literature.
 
-- acquire/validate later annual Gallup/WHR Life Ladder observations that make Mexico 2023 estimable under the frozen >=2-post rule; or
-- reframe the manuscript around the methodological finding that global annual-leave natural experiments are sparse and heterogeneous, with the current panel serving as a feasibility/identification study rather than a simple policy-effect paper.
+## Scientific consequence
 
-Machine-readable audit: `data/bounded_legal_queue_audit.csv`.
+The scarcity of clean, outcome-covered natural experiments is itself a design result.
+
+ARIS4C019 should now maintain two explicitly different estimands:
+
+- **Track A — leave-specific causal question:** only stand-alone annual-leave reforms that pass the strict legal-isolation and coverage gate. Current viable pool is too small for a pooled manuscript-level causal claim.
+- **Track B — broader labour/time-off reform question:** preserve the existing eight-event panel as a transparent exploratory/stress-test analysis, with its policy-bundle, pretrend and shock limitations.
+
+Positive/negative affect remain locked because opening more outcomes does not solve the identification problem.
