@@ -4,15 +4,15 @@
   "title": "Drosophila Open Science & Neural Simulation",
   "short_title": "Fly Neuro Playground",
   "year": 2026,
-  "status": "exploration-pilot4-diagnostic-complete-r1-running",
+  "status": "exploration-pilot4-r2-complete-r2.5-actions-blocked",
   "domain": "computational neuroscience / Drosophila / connectomics / embodied simulation / open science",
-  "summary": "Drosophila embodied-neural simulation project. Migration to current FlyGym 2.x is closed with synchronized trace parity. Pilot 4 now completed the first pre-frozen matched static-target legacy/current diagnostic and found reproducible differences in target-mask rate, decoder magnitude and body displacement despite identical baseline zero-SD fraction. R1 Retina geometry/order localization is running before any biological or version-quality interpretation.",
+  "summary": "Drosophila embodied-neural simulation project. Legacy/current migration is closed and Pilot 4 matched static-target diagnostics found a reproducible first-frame decoder divergence. R1 Retina geometry/order is byte-identical, and R2 frozen retinal vectors, mapper outputs, neural hashes, and tracking-cell means are equal across stacks. R2.5 reset/first-frame sensory capture is implemented to localize renderer/camera/scene-input differences, but repository-wide GitHub Actions jobs are currently failing before any step executes.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
     "provenance": "ARIS4C exploration layer; formal research protocol deferred until a falsifiable biological question and published model/data path are selected",
-    "version": "v0.9.0",
+    "version": "v0.10.0",
     "commit": ""
   },
   "links": {
@@ -56,7 +56,10 @@
     "pilot4_data": "data/pilot4_matched_cross_version.json",
     "pilot4_localization": "PILOT4_LOCALIZATION_PROTOCOL.md",
     "controller_semantics": "CONTROLLER_SEMANTICS_AUDIT.md",
-    "question_candidates": "QUESTION_CANDIDATES_PRE_PILOT4.md"
+    "question_candidates": "QUESTION_CANDIDATES_PRE_PILOT4.md",
+    "pilot4_r1_result": "PILOT4_R1_RESULT.md",
+    "pilot4_r2_data": "data/pilot4_r2_frozen_retinal.json",
+    "pilot4_r2_5_gate": "PILOT4_R2_5_RENDERER_GATE.md"
   },
   "tags": [
     "ARIS4C",
