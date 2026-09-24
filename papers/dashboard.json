@@ -148,12 +148,12 @@
       "blocker": "No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference."
     },
     "019": {
-      "progress": 82,
-      "stage": "SIR submission prep · blinded Markdown gate PASS · DOCX / anonymous-review gate",
+      "progress": 96,
+      "stage": "Final public-delivery gate · SIR submission package PASS",
       "activity": "active",
-      "evidence": "SIR double-anonymous Markdown draft (~8.15k words; 218-word abstract; 6 keywords) passes identity/format scan; bilingual number/claim QA PASS; 4 canonical figures + 4 frozen tables; complete 11-jump legal audit yields 0 new clean holdouts; independently frozen Israel holdout mean +0.002 remains reference-sensitive. Original refreshed 8-event panel mean +0.088, median -0.099, 6/8 negative; excluding Bahrain -> -0.117.",
-      "next_gate": "Generate and visually QA editable SIR DOCX + reviewer PDF from the frozen blinded source; establish anonymous reviewer data/code access; freeze final submission manifest.",
-      "blocker": "No scientific or analysis blocker. Remaining external/author-only inputs are anonymous review hosting/link plus affiliation/contact/ORCID/funding/competing-interest and institution-specific ethics/exemption metadata."
+      "evidence": "Scientific interpretation locked; complete SIR double-anonymous DOCX + 34-page reviewer PDF + anonymous replication resource all QA PASS. EN/ZH public manuscript sources complete; one-page portfolio explainer complete and visually checked. Public PDF builder/CI now includes 019. Core evidence remains fragile/non-directional: refreshed 8-event mean +0.088, median -0.099, 6/8 negative; Bahrain omission -0.117; Israel frozen holdout +0.002 but reference-sensitive.",
+      "next_gate": "Verify docs/paper/019/en/main.pdf and zh/main.pdf from canonical CI, run final output/handoff audit, then promote to Finish / 100%.",
+      "blocker": "No scientific blocker. Only repository public-PDF generation/audit remains before Finish; journal metadata and portal submission are author-side actions."
     },
     "020": {
       "progress": 28,
