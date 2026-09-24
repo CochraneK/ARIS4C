@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "project": "ARIS4C021",
+  "generated_on": "2026-09-24",
+  "status": "provisional-third-party-crosscheck",
+  "source": {
+    "repository": "IBM/mixed-migration-forecasting",
+    "commit": "5047c748b60b3f7c3621e0174200007865cc2933",
+    "processed_blob_sha": "60dd5e5b260f550ab8f45bf5c40d9782f1001c95",
+    "transformed_from": "PITF GenoPoliticide 2017.xls",
+    "indicators": [
+      "SP.GE.YR.LENGTH",
+      "SP.GE.MAG.DEATH"
+    ],
+    "canonical": false
+  },
+  "comparison": {
+    "williams_included_positive_cases": 40,
+    "cases_with_any_positive_deathmag_overlap": 40,
+    "cases_with_full_positive_year_coverage": 33,
+    "cases_with_partial_positive_year_coverage": 7,
+    "cases_with_no_positive_overlap": 0
+  },
+  "partial_cases": [
+    {
+      "case_id": "BDI_1965_1973",
+      "positive_years": 7,
+      "expected_years": 9,
+      "missing_years": [
+        1966,
+        1968
+      ]
+    },
+    {
+      "case_id": "COD_1964_1965",
+      "positive_years": 1,
+      "expected_years": 2,
+      "missing_years": [
+        1965
+      ]
+    },
+    {
+      "case_id": "SLV_1980_1989",
+      "positive_years": 9,
+      "expected_years": 10,
+      "missing_years": [
+        1989
+      ]
+    },
+    {
+      "case_id": "IDN_1975_1992",
+      "positive_years": 16,
+      "expected_years": 18,
+      "missing_years": [
+        1988,
+        1991
+      ]
+    },
+    {
+      "case_id": "IRN_1981_1992",
+      "positive_years": 11,
+      "expected_years": 12,
+      "missing_years": [
+        1987
+      ]
+    },
+    {
+      "case_id": "IRQ_1963_1975",
+      "positive_years": 10,
+      "expected_years": 13,
+      "missing_years": [
+        1967,
+        1970,
+        1971
+      ]
+    },
+    {
+      "case_id": "RWA_1963_1964",
+      "positive_years": 1,
+      "expected_years": 2,
+      "missing_years": [
+        1964
+      ]
+    }
+  ],
+  "interpretation": [
+    "All 40 Williams analysis-positive cases have positive PITF death-magnitude overlap in the independent IBM transformation.",
+    "Do not reconstruct episode boundaries by treating only contiguous DEATHMAG>0 years as episodes; seven Williams episode intervals contain internal or terminal zero-deathmag years in the transformed annual series.",
+    "This cross-check supports case identity/timing plausibility but does not validate the six-condition A/P/W/I/S/E matrix."
+  ]
+}
