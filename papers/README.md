@@ -25,8 +25,9 @@ This directory is the canonical registry of research projects produced with ARIS
 | 017 | Predictive Language Space / concept scaffold | papers/017-predictive-language-space/ |
 | 018 | Fly Neuro Playground / Pilot 4 diagnostic | papers/018-drosophila-neural-simulation/ |
 | 019 | Annual Leave × Life Evaluation / submission prep | papers/019-time-off-happiness/ |
-| 020 | All-field retraction research / registered in dashboard; stable folder bootstrap pending | — |
+| 020 | Global Retraction Ecology / full RWDB audit + denominator design | papers/020-global-retraction-ecology/ |
 | 021 | Mass Atrocity Conditions · QCA / concept design + historical replication gate | papers/021-mass-atrocity-configurations/ |
+| 022 | Planetary Taxonomy × fsQCA / configurational taxonomy + case-frame gate | papers/022-configurational-planetary-taxonomy/ |
 
 Paper 002 passed independent cross-family ARIS secondary review and has been formally promoted.
 
