@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_id": "NASA_NSSDC_PLANETARY_FACT_SHEET_2025-03-18",
+  "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+  "publisher": "NASA Goddard / National Space Science Data Center",
+  "source_last_updated": "2025-03-18",
+  "retrieved_for_project": "2026-09-24",
+  "scope": ["Mercury","Venus","Earth","Moon","Mars","Jupiter","Saturn","Uranus","Neptune","Pluto"],
+  "fields": ["mass","diameter","density","gravity","escape_velocity","rotation_period","distance","orbital_period","orbital_inclination","orbital_eccentricity","mean_temperature","surface_pressure"],
+  "notes": [
+    "The NASA comparison table uses an asterisk for Moon distance/orbit values because they are Earth-relative; the seed table preserves that reference explicitly.",
+    "Gas-giant surface pressure entries shown as Unknown are encoded as NA_NOT_MEASURED rather than zero.",
+    "This is a provenance seed, not the final harmonized raw matrix."
+  ]
+}
