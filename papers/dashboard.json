@@ -170,6 +170,14 @@
       "evidence": "Harff 2003 structural-risk model and Williams 2016 139-case QCA are frozen as replication anchors; outcome hierarchy, seven-family condition ontology, temporal firewall, QCA thresholds, PITF/V-Dem/EWP source inventory and continuity package are committed before empirical outcome inspection.",
       "next_gate": "Acquire/hash PITF 2018 source files; reconstruct the historical Harff/Williams case universe and six-condition matrix; freeze calibration and run replication-only necessity/sufficiency analyses before any modern extension.",
       "blocker": "None; executable but queued behind higher-progress active portfolio work."
+    },
+    "022": {
+      "progress": 18,
+      "stage": "Registered · configurational-taxonomy framing and calibration scaffold",
+      "activity": "active",
+      "evidence": "QCA taxonomy framing, anti-circularity rules, variable families, formula registry, IAU/NASA/JPL source registry, and a full continuity package are committed. Mars is frozen as a positive-control planet rather than an unresolved planet-vs-satellite case.",
+      "next_gate": "Freeze a 40–60-body Phase-1 Solar-System case frame and machine-readable raw-variable/provenance schema before calibration or solution inspection.",
+      "blocker": "None; methodological caution only—official class-label QCA is a taxonomy audit, not causal discovery."
     }
   },
   "scheduling": {
