@@ -2,19 +2,19 @@
   "id": "020",
   "portfolio_id": "ARIS4C-020",
   "slug": "global-retraction-ecology",
-  "title": "The Global Ecology of Scientific Retractions: A Full-Database, Field-Normalized Study of Retraction Dynamics, Causes, and Citation Afterlife",
+  "title": "The Global Ecology of Scientific Retractions: Event-to-Work Reconstruction, Reason Ecology, Timing, and Citation Afterlife",
   "short_title": "Global Retraction Ecology",
   "year": 2026,
-  "status": "preliminary-results-denominator-gate",
+  "status": "executable-preconfirmatory-concordance-denominator-gate",
   "domain": "research integrity / metascience / scientometrics / bibliometrics / scholarly communication",
-  "summary": "Full-RWDB all-discipline retraction ecology study with frozen 2026-09-23 audit, DOI/work identity control, preliminary descriptive results, bilingual working papers, and executable pipelines for OpenAlex enrichment, denominators, reason networks, time-to-retraction and mass-event sensitivity. Confirmatory comparative rates remain locked pending complete networked enrichment/denominator execution.",
+  "summary": "Event-to-work reconstruction of the frozen full Retraction Watch corpus with explicit RWDB↔OpenAlex concordance, multi-label Reason ecology, mass-event sensitivity, censoring-aware timing, and citation-afterlife pipelines. Preliminary descriptive outputs and bilingual working papers exist; comparative incidence remains locked pending networked full matching, work-type QA, denominator execution, observed Reason reconciliation, and sensitivity gates.",
   "authors": [
     "Cochrane Kang"
   ],
   "portfolio_visible": true,
   "aris": {
     "provenance": "ARIS4C user-requested project registered 2026-09-24",
-    "version": "v0.6.0"
+    "version": "v0.8.0"
   },
   "links": {
     "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/020-global-retraction-ecology",
@@ -44,7 +44,19 @@
     "reason_network": "code/reason_network.py",
     "lag_profile": "code/lag_profile.py",
     "mass_event_screen": "code/mass_event_screen.py",
-    "openalex_match_summary": "code/summarize_openalex_match.py"
+    "openalex_match_summary": "code/summarize_openalex_match.py",
+    "closest_competitor_gap": "process/CLOSEST_COMPETITOR_GAP.md",
+    "analysis_freeze": "process/ANALYSIS_FREEZE_V1.md",
+    "prior_art_protocol": "process/PRIOR_ART_SCREEN_PROTOCOL.md",
+    "prior_art_matrix": "data/reference/prior_art_matrix_2026-09-24.csv",
+    "aggregated_survival": "process/AGGREGATED_SURVIVAL_STRATEGY.md",
+    "runbook": "RUNBOOK.md",
+    "pipeline_runner": "code/run_pipeline.py",
+    "openalex_concordance": "code/build_openalex_concordance.py",
+    "openalex_retracted_snapshot": "code/snapshot_openalex_retracted.py",
+    "bidirectional_concordance": "code/compare_bidirectional_concordance.py",
+    "citation_edges": "code/openalex_citation_edges.py",
+    "citation_summary": "code/summarize_citation_afterlife.py"
   },
   "tags": [
     "ARIS4C",
