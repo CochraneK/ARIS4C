@@ -1,0 +1,57 @@
+old_motif_id,family,old_label,decision,replacement_ids,issue,analysis_role
+FLOOD_01,flood,Catastrophic inundation,split,FLOOD_DSTR_INUNDATION;FLOOD_EXTERMINATORY,Conflated event presence with exterminatory severity,primary_confirmatory
+FLOOD_02,flood,Supernatural warning,replace_with_anchor,FLOOD_WARNING,,primary_confirmatory
+FLOOD_03,flood,Selected survivor,replace_with_anchor,FLOOD_SELECTED_SURVIVOR,,primary_confirmatory
+FLOOD_04,flood,Vessel refuge,replace_with_anchor,FLOOD_VESSEL,,primary_confirmatory
+FLOOD_05,flood,High-place refuge,replace_with_anchor,FLOOD_HIGH_REFUGE,,primary_confirmatory
+FLOOD_06,flood,Scout after flood,retain_refine,FLOOD_SCOUT_TEST,,primary_confirmatory
+FLOOD_07,flood,Post-survival ritual,replace_with_anchor,FLOOD_POST_RITUAL,,primary_confirmatory
+FLOOD_08,flood,Human repopulation,replace_with_anchor,FLOOD_REPOPULATION,,primary_confirmatory
+ANTH_01,anthropogony,Earth or clay humans,split,ANTH_EARTH_DUST;ANTH_CLAY_MUD,Earth/dust and plastic clay were not separable,primary_confirmatory
+ANTH_02,anthropogony,Divine flesh or blood,replace_with_anchor,ANTH_DIVINE_BLOOD_FLESH,,primary_confirmatory
+ANTH_03,anthropogony,Breath speech animation,split,ANTH_BREATH_ANIMATION;ANTH_SPEECH_NAMING_CREATION,Breath/wind and performative speech are distinct mechanisms,primary_confirmatory
+ANTH_04,anthropogony,Plant or wood humans,retain_refine,ANTH_PLANT_WOOD,,primary_confirmatory
+ANTH_05,anthropogony,Failed prior creations,retain_refine,ANTH_FAILED_PRIOR_CREATION,,primary_confirmatory
+ANTH_06,anthropogony,Humans created for service,replace_with_anchor,ANTH_CREATED_FOR_SERVICE,,primary_confirmatory
+ANTH_07,anthropogony,Mixed creation materials,derived_only,ANTH_MULTI_MATERIAL_META,Deterministically derivable from component material motifs; double-counting risk,derived_diagnostic
+ANTH_08,anthropogony,Primordial progenitor pair,replace_with_anchor,ANTH_FIRST_PAIR,,primary_confirmatory
+COS_01,cosmogony,Primordial waters,retain_refine,COS_PRIMORDIAL_WATERS,,secondary_generalization
+COS_02,cosmogony,Heaven earth separation,retain_refine,COS_HEAVEN_EARTH_SEPARATION,,secondary_generalization
+COS_03,cosmogony,Cosmic egg,retain_refine,COS_EGG_CONTAINER,,secondary_generalization
+COS_04,cosmogony,World from body,retain_refine,COS_BODY_TO_WORLD,,secondary_generalization
+COS_05,cosmogony,Cosmic axis,retain_refine,COS_AXIS,,secondary_generalization
+COS_06,cosmogony,Order from chaos,debiased_redefinition,COS_ORDER_FROM_UNDIFFERENTIATED,Removed researcher-imposed 'chaos' label; requires explicit undifferentiated→ordered contrast,secondary_generalization
+COS_07,cosmogony,Creation by speech,retain_refine,COS_SPEECH_CREATION,,secondary_generalization
+COS_08,cosmogony,Layered cosmos,retain_refine,COS_LAYERED_REALMS,,secondary_generalization
+DIV_01,divine_conflict,Younger gods overthrow older,replace_with_anchor,DIV_SUCCESSION_YOUNGER_OLDER,,primary_confirmatory
+DIV_02,divine_conflict,Father son succession conflict,replace_with_anchor,DIV_FATHER_SON,,primary_confirmatory
+DIV_03,divine_conflict,Storm god versus sea/serpent,split,DIV_STORM_SERPENT;DIV_STORM_SEA,Serpent/dragon and personified sea opponent conflated,primary_confirmatory
+DIV_04,divine_conflict,Defeated body becomes cosmos,replace_with_anchor,DIV_BODY_TO_COSMOS,,primary_confirmatory
+DIV_05,divine_conflict,Divine council,replace_with_anchor,DIV_COUNCIL,,primary_confirmatory
+DIV_06,divine_conflict,Stolen divine power,retain_refine,DIV_STOLEN_POWER_SYMBOL,Old wording mixed stolen object/power with generic usurpation,primary_confirmatory
+DIV_07,divine_conflict,Transferred divine kingship,replace_with_anchor,DIV_KINGSHIP_TRANSFER,,primary_confirmatory
+DIV_08,divine_conflict,Primordial rebellion,replace_with_anchor,DIV_PRIMORDIAL_REBELLION,,primary_confirmatory
+MORT_01,mortality,Lost immortality,derived_only,MORT_LOST_IMMORTALITY_META,Parent summary overlaps specific loss mechanisms,derived_diagnostic
+MORT_02,mortality,Immortality intercepted,retain_refine,MORT_IMMORTALITY_INTERCEPTED,,secondary_generalization
+MORT_03,mortality,Snake renewal contrast,retain_refine,MORT_SNAKE_RENEWAL_CONTRAST,,secondary_generalization
+MORT_04,mortality,Forbidden act introduces death,retain_refine,MORT_FORBIDDEN_ACT,,secondary_generalization
+MORT_05,mortality,First death etiological event,retain_refine,MORT_FIRST_DEATH,,secondary_generalization
+MORT_06,mortality,Failed immortality quest,retain_refine,MORT_FAILED_QUEST,,secondary_generalization
+MORT_07,mortality,Immortality substance,retain_refine,MORT_IMMORTALITY_SUBSTANCE,,secondary_generalization
+MORT_08,mortality,Death chosen or substituted,retain_refine,MORT_CHOICE_MESSAGE_ERROR,,secondary_generalization
+UND_01,underworld,Living descent,retain_refine,UND_LIVING_DESCENT,,secondary_generalization
+UND_02,underworld,Gate sequence,retain_refine,UND_GATE_SEQUENCE,,secondary_generalization
+UND_03,underworld,Loss of attributes,retain_refine,UND_ATTRIBUTE_STRIPPING,,secondary_generalization
+UND_04,underworld,Conditional return,retain_refine,UND_CONDITIONAL_RETURN,,secondary_generalization
+UND_05,underworld,Judgment of dead,retain_refine,UND_JUDGMENT_DEAD,,secondary_generalization
+UND_06,underworld,River or barrier crossing,retain_refine,UND_BARRIER_CROSSING,,secondary_generalization
+UND_07,underworld,Underworld food binds,retain_refine,UND_FOOD_BINDS,,secondary_generalization
+UND_08,underworld,Cyclical return fertility,debiased_redefinition,UND_SEASONAL_FERTILITY_RETURN,Requires source-supported seasonal/fertility link; modern allegory insufficient,secondary_generalization
+CULT_01,culture_hero,Fire acquired,retain_refine,CULT_FIRE_TRANSFER,,secondary_generalization
+CULT_02,culture_hero,Writing or language gift,split,CULT_WRITING_GIFT;CULT_LANGUAGE_SYMBOLIC_GIFT,Writing and spoken/symbolic language are distinct cultural goods,secondary_generalization
+CULT_03,culture_hero,Agriculture gift,retain_refine,CULT_AGRICULTURE_GIFT,,secondary_generalization
+CULT_04,culture_hero,Craft technology gift,retain_refine,CULT_CRAFT_TECH_GIFT,Made residual category to prevent double-counting specific technologies,secondary_generalization
+CULT_05,culture_hero,Trickster mediation,debiased_redefinition,CULT_DECEPTIVE_ACQUISITION,Removed archetypal 'trickster-like' judgment; code narrated behavior,secondary_generalization
+CULT_06,culture_hero,Forbidden knowledge,retain_refine,CULT_WITHHELD_KNOWLEDGE,,secondary_generalization
+CULT_07,culture_hero,Punished benefactor,retain_refine,CULT_PUNISHED_BENEFACTOR,,secondary_generalization
+CULT_08,culture_hero,Nonhuman source of knowledge,derived_only,CULT_NONHUMAN_SOURCE_META,Actor class mechanically overlaps specific gift motifs,derived_diagnostic

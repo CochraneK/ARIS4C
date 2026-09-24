@@ -171,3 +171,14 @@
 - Amended PAPER_PLAN wording so case count is never interpreted as IID sample size.
 - Added gate_register_v0.2.csv. Current weighted credit = 52/100.
 - G3 PASS; G4 corpus/ontology expansion is now active.
+
+## 2026-09-24 · G4 ontology audit
+- Audited all 56 provisional Pilot motifs instead of preserving 56 as an arbitrary quota.
+- Rebuilt ontology as 60 independent analysis motifs + 3 derived diagnostic/meta features.
+- Primary confirmatory scope now 29 motifs across flood, anthropogony and divine-conflict; four additional families are secondary generalization layers contingent on source coverage.
+- Applied orthogonal-axis logic: global MECE is rejected because genuine motifs can co-occur; sibling exclusivity is used only within a semantic axis.
+- Split flood severity, earth/clay, breath/speech, storm-serpent/storm-sea and writing/language conflations.
+- Removed archetypal 'trickster-like' coding in favor of observable deceptive acquisition; replaced generic 'chaos' with explicit undifferentiated→ordered structure.
+- Reclassified deterministic summary features as derived-only to avoid double-counting in similarity.
+- Expanded similarity remains uninspected.
+- G4 credit advanced from 2 to 6; total progress = 56%.

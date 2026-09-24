@@ -87,7 +87,7 @@ ARIS 是研究引擎；**ARIS4C 是围绕论文建立的完整研究系统**：�
 | **020** | [全学科撤稿生态](papers/020-global-retraction-ecology/) | 🟢 正在推进 | 75% | [handoff](papers/020-global-retraction-ecology/handoff/AGENT_HANDOFF.md) | — |
 | **021** | [大规模暴行条件 · QCA](papers/021-mass-atrocity-configurations/) | 🟢 正在推进 | 38% | [handoff](papers/021-mass-atrocity-configurations/handoff/AGENT_HANDOFF.md) | — |
 | **022** | [行星天体分类 · fsQCA](papers/022-configurational-planetary-taxonomy/) | 🟢 正在推进 | 59% | [handoff](papers/022-configurational-planetary-taxonomy/handoff/AGENT_HANDOFF.md) | — |
-| **023** | [Ancient Myth Convergence](papers/023-myth-convergence/) | 🟢 Active | 52% | [handoff](papers/023-myth-convergence/handoff/AGENT_HANDOFF.md) | <a href="./docs/assets/paper-at-a-glance/023.svg"><img src="./docs/assets/paper-at-a-glance/023.svg" height="80" loading="lazy" decoding="async" alt="Pilot-0 一图读懂 023" title="Pilot-0 visual; v0.2 active"></a> |
+| **023** | [Ancient Myth Convergence](papers/023-myth-convergence/) | 🟢 Active | 56% | [handoff](papers/023-myth-convergence/handoff/AGENT_HANDOFF.md) | <a href="./docs/assets/paper-at-a-glance/023.svg"><img src="./docs/assets/paper-at-a-glance/023.svg" height="80" loading="lazy" decoding="async" alt="Pilot-0 一图读懂 023" title="Pilot-0 visual; v0.2 active"></a> |
 
 
 ## ARIS4C 如何运作

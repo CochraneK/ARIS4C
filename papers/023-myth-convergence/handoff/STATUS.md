@@ -1,22 +1,23 @@
 # Status
 
 ## State
-Active · 52%
+Active · 56%
 
 ## Current stage
-v0.2 submission-grade ARIS · G2 literature PASS · G3 case universe PASS · G4 corpus/ontology active.
+v0.2 submission-grade ARIS · G2/G3 PASS · G4 ontology audit complete, bundle construction active.
 
 ## Evidence
-- G2 PASS: 58 screened, 45 retained/relevant, citation-chain audit + C1–C7 evidence map frozen.
-- G3 PASS: 16 Tier-A primary tradition-time/source-layer cases frozen before expanded similarity inspection.
-- ROM_OVD is a tagged positive control, not a pristine independent case.
-- Three Tier-B late-witness traditions remain external validation only.
-- Pilot CHN_WS_HAN is deprecated for v0.2 inference and split into CHN_YAO + CHN_HUAI.
-- Dependence clusters are explicit for Akkadian, Hurrian/Hittite, Egyptian, Vedic and Old Chinese repeated/source-linked layers.
-- Every Tier-A case has a canonical source/edition infrastructure lock; exact G4 bundles/translations remain pending.
+- Old 56-motif candidate set was audited rather than treated as a quota.
+- v0.2 draft contains 60 independent analysis motifs + 3 derived diagnostics.
+- Primary confirmatory scope = 29 motifs across flood (9), anthropogony (11), divine conflict (9).
+- Secondary generalization scope = 31 motifs across cosmogony, mortality, underworld and culture-hero families, activated only if source coverage is adequate.
+- Deterministic parent/meta motifs are excluded from primary similarity.
+- Major conflations were split: destructive vs exterminatory flood; earth/dust vs clay; breath vs speech; storm-serpent vs storm-sea; writing vs language.
+- Archetypal/interpretive constructs such as “trickster-like” and generic “chaos” were replaced by observable operational rules.
+- Expanded similarity remains uncomputed.
 
 ## Next gate
-G4: re-review the 56-motif candidate ontology, freeze primary + alternate source bundles, build coverage manifests, then create blind expanded coder packets without inspecting expanded similarity ranks.
+Build the 16-case × family coverage manifest, freeze primary and alternate source bundles, then generate blind coder packets for the expanded ontology. Coverage failure may remove a secondary motif/family before coding, but not because of observed similarity.
 
 ## Blocker
-No immediate blocker. G5 clean human/domain-informed validation remains mandatory before submission-grade empirical claims.
+No immediate blocker. G5 clean human/domain-informed validation remains mandatory after the G4 packet freezes.

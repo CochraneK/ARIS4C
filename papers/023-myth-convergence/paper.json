@@ -49,7 +49,10 @@
     "case_source_locks": "data/case_source_locks_v0.2.csv",
     "case_search_log": "data/case_search_log_v0.2.csv",
     "g3_case_gate": "process/G3_CASE_UNIVERSE_GATE.md",
-    "gate_register": "data/gate_register_v0.2.csv"
+    "gate_register": "data/gate_register_v0.2.csv",
+    "ontology_v0_2_draft": "data/motifs_v0.2_draft.csv",
+    "ontology_audit": "data/ontology_audit_v0.2.csv",
+    "ontology_architecture": "process/ONTOLOGY_ARCHITECTURE_v0.2.md"
   },
   "tags": [
     "ARIS4C",
@@ -92,7 +95,7 @@
     "finish_ready": false
   },
   "v0_2_submission_grade": {
-    "progress": 52,
+    "progress": 56,
     "article_route": "methods + empirical demonstration",
     "original_research_upgrade": "conditional",
     "gates": [
@@ -113,6 +116,14 @@
     "g2_literature": "PASS",
     "g3_case_universe": "PASS",
     "tier_A_primary_cases": 16,
-    "tier_A_positive_controls": 1
+    "tier_A_positive_controls": 1,
+    "ontology": {
+      "old_candidate_count": 56,
+      "analysis_motifs": 60,
+      "derived_diagnostics": 3,
+      "primary_confirmatory_motifs": 29,
+      "secondary_generalization_motifs": 31,
+      "state": "draft-frozen-for-source-coverage"
+    }
   }
 }

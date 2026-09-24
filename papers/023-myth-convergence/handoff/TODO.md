@@ -31,7 +31,8 @@
 
 ## G4 · corpus/ontology
 - [x] Source-bundle and translation sensitivity rules frozen.
-- [ ] Re-review 56-motif ontology.
+- [x] Re-review old 56-motif ontology; freeze v0.2 draft as 60 analysis motifs + 3 derived diagnostics.
+- [ ] Build 16-case × family coverage manifest.
 - [ ] Primary + alternate bundle construction.
 - [ ] Expanded coverage matrix.
 - [ ] Frozen blind coder packets.
