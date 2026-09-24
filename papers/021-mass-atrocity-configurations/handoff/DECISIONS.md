@@ -13,3 +13,15 @@
 - Necessary-condition analysis precedes sufficiency analysis.
 - Analyze outcome absence separately to test causal asymmetry and resilience.
 - The periodic-table-like visualization is downstream of inference and may only display evidence-supported roles plus uncertainty.
+
+
+## 2026-09-24 · Multimethod architecture frozen
+
+- QCA is a replication/configurational tool, not the identity of Paper 021.
+- Phase 1 uses one historical frame for Harff-style conventional baseline + QCA + CNA.
+- NCA is deferred to modern continuous/ordinal indicators where bottleneck necessity is substantively meaningful.
+- Event-history / rare-event models address onset timing and lagged risk, not set-theoretic necessity.
+- Machine-learning models are predictive benchmarks only.
+- Comparative process tracing is used to test mechanisms and sequence in typical, deviant, and high-risk non-onset cases.
+- Cross-method disagreement is retained as a result rather than forced into one verdict.
+- Modern extension is locked until CROSS_METHOD_REPLICATION_LOCK.md exists.
