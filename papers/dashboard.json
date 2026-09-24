@@ -148,12 +148,12 @@
       "blocker": "No current blocker. R2 legacy/current jobs are running. No biological interpretation is permitted from the matched stack difference."
     },
     "019": {
-      "progress": 98,
-      "stage": "Final public-delivery gate · PDF QA PASS · GitHub Actions pre-runner publish blocker",
-      "activity": "block",
-      "evidence": "Scientific interpretation, SIR submission package, anonymous replication resource, EN/ZH public manuscript sources and one-page visual are complete. Canonical-style local PDF QA passed (EN 12 pages; ZH 7 pages), and a second exact-source fallback render also passed. Workflow run 35965678753 plus a failed-job rerun both fail before build steps execute; canonical PDF paths remain absent.",
-      "next_gate": "When GitHub Actions runner execution is available, rerun/publish both canonical public PDFs; verify Git blobs/readability, mark paper.json PDF outputs complete, then promote to Finish / 100%.",
-      "blocker": "Repository engineering only: GitHub Actions fails before runner/build steps for the public-PDF workflow. No scientific blocker and no further outcome analysis is required."
+      "progress": 60,
+      "stage": "Historical expansion · source/coverage reconstruction",
+      "activity": "active",
+      "evidence": "Pilot-0 causal study is complete/frozen, but adequacy audit reopened the project: historical design now spans early-20th-century/ILO-era time-off institutions, post-1945 multi-source well-being, modern 193-country legal coverage, historical working time and a full statistical synthesis.",
+      "next_gate": "Build no-effect-inspection country × source × year/wave coverage inventory; ingest historical legal/working-time and WDH/Cantril/Eurobarometer/WVS-EVS/Gallup outcome layers; then run the expanded prespecified statistical ladder.",
+      "blocker": "No immediate scientific blocker. Main work is historical data reconstruction and measurement harmonization; the GitHub Actions PDF runner issue affects only the frozen Pilot-0 publication snapshot."
     },
     "020": {
       "progress": 38,
