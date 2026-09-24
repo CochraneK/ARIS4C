@@ -19,7 +19,7 @@ def read_csv(name: str):
 def main() -> int:
     sources = read_csv("historical_source_coverage.csv")
     wvs = read_csv("historical_wvs_wave_registry.csv")
-    early = read_csv("historical_early_wellbeing_country_seed.csv")
+    early = read_csv("historical_early_wellbeing_country_seed.csv")\n    modern = read_csv("modern_wb_whr_overlap.csv")\n    modern_summary = read_csv("modern_wb_whr_overlap_summary.csv")
 
     assert len(sources) >= 10
     ids = {r["source_id"] for r in sources}
@@ -44,13 +44,13 @@ def main() -> int:
     cantril = [r for r in early if r["source_id"] == "CANTRIL_7023"]
     wvs1 = [r for r in early if r["source_id"] == "WVS_W1"]
     assert len(cantril) == 10
-    assert len(wvs1) == 10
+    assert len(wvs1) == 10\n\n    wave7 = next(r for r in wvs if r["wave"] == "7")\n    assert int(wave7["reported_country_society_count"]) == 66\n    assert int(wave7["visible_country_list_count"]) == 66\n    assert len(modern) == 1934\n    assert len(modern_summary) == 161
 
     print(f"sources={len(sources)}")
     print(f"wvs_waves={len(wvs)}")
     print(f"wvs_metadata_mismatch_waves={','.join(r['wave'] for r in mismatches)}")
     print(f"cantril_country_rows={len(cantril)}")
-    print(f"wvs1_country_rows={len(wvs1)}")
+    print(f"wvs1_country_rows={len(wvs1)}")\n    print(f"modern_overlap_country_years={len(modern)}")\n    print(f"modern_overlap_countries={len(modern_summary)}")
     return 0
 
 if __name__ == "__main__":
