@@ -41,3 +41,13 @@
 - Keep Djibouti 1991–1994 in the 99-control frame: an independent 2012 source explicitly reproduces it from PITF Consolidated Problem Set version 2010.
 - Exclude the Cuba consolidated episode beginning 3/1952 from the Williams 1955–1998 analytic frame, even though later PITF tables contain post-1955 subcomponents inside that consolidated episode.
 - This rule is fixed before condition reconstruction and may not be changed to improve published-margin or QCA fit.
+
+## 2026-09-24 · Identity lock and anti-circularity gate
+
+- Upgrade the 139-case frame from candidate to identity-level V1: 40 positive identities + 99 non-genocide controls are now fixed.
+- The 102→99 discrepancy is resolved by deterministic left-truncation correction, not discretionary case deletion.
+- Keep exact historical timing separate from identity: later PITF vintages may differ from the Williams-era dates and may not silently overwrite them.
+- Freeze Williams's six-condition coding protocol before filling the condition matrix.
+- Do not infer missing A/P/W/I/S/E cells from published marginal totals, QCA paths, false positives or false negatives.
+- Maintain R (historical replication) and M (modern/version-pinned reproducible) condition tracks even when they disagree.
+- Treat Williams's under-specified A reassessment and qualitative P/I/S judgments as provenance issues to document, not gaps to hide with convenient deterministic proxies.
