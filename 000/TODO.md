@@ -15,7 +15,8 @@
 
 ## P2 · Public/control surfaces
 
-- [ ] Resolve duplicate ARIS4C018 directories (`018-drosophila-neural-simulation` vs `018-drosophila-open-simulation`) via explicit archive/redirect/migration while preserving provenance; current live evidence/stage is on the neural-simulation line.
-
+- [x] Resolve duplicate ARIS4C018 portfolio identity without deleting provenance: `018-drosophila-neural-simulation` is canonical; `018-drosophila-open-simulation` is retained as `portfolio_visible:false` with `superseded_by` metadata.
+- [ ] Restore GitHub Actions runner execution. Since 2026-09-23/24, index/handoff/PDF/research workflows are failing before the first step starts; reruns reproduce the same zero-step failure.
+- [ ] After runner execution is restored, regenerate README, README SVGs, Research Command Center, progress history, and 000 snapshot from canonical Git state; verify 023 is public and Today's curve shows the current Beijing date.
 - [ ] Keep README and Research Command Center synchronized with canonical states.
 - [ ] Keep 000 handoff current enough for a new agent/account/computer to resume safely.
