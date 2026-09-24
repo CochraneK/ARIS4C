@@ -4,32 +4,34 @@
 
 ## 当前 canonical 数据层
 
-- 50 个冻结案例：8 行星 + 5 矮行星 + 21 卫星 + 16 小/边界天体。
-- `raw_physical_core_v0.1.csv`：34/50 有 JPL 核心物理数据。
+- 50 个冻结案例。
+- `raw_physical_core_v0.1.csv`：34/50 JPL 核心物理数据。
 - `orbital_geometry_v0.2.csv`：8 行星 JPL approximate elements；5 矮行星 derived-a；21 卫星 JPL Mean Elements；16 小天体待 SBDB。
-- `derived_physics_v0.2.csv`：34 个案例的重力、逃逸速度、密度诊断和太阳环境；13 个直接绕日天体的 Margot Π。
-- `evidence_state_v0.2.csv`：第一批 10 个锚点已开始盲编码，41/300 个证据状态单元不再是 pending。
-- `EVIDENCE_STATE_PROTOCOL.md`：编码规则在看 QCA 之前冻结。
-- `EVIDENCE_CODING_AUDIT.md`：记录当前证据覆盖和保守决策。
+- `derived_physics_v0.2.csv`：34 个案例的重力、逃逸速度、密度诊断和太阳环境；13 个直接绕日天体 Margot Π。
+- `evidence_state_v0.3.csv`：两批盲编码后已有 **82/300** 个证据状态单元完成。
+- `EVIDENCE_STATE_PROTOCOL.md` v0.2：已经明确“现存/持续地下海洋”与“远古 paleo-ocean”不能混为一类。
 
-## Anchor batch 01
+## Evidence batches
 
-对象：Mercury、Venus、Earth、Mars、Jupiter、Saturn、Uranus、Neptune、Ceres、Pluto。
+Batch 01：8 大行星 + Ceres + Pluto。
 
-已编码：
-- composition 10/50
-- atmosphere 10/50
-- differentiation 10/50
-- geological activity 1/50
-- direct-Sun tidal heating N/A 10/50
+Batch 02：Moon、Io、Europa、Ganymede、Callisto、Enceladus、Titan、Triton、Charon。
 
-没有为了提高完整率而把未知写成“没有”。Ocean、更多 geology 以及卫星 tidal heating 会使用更专门的任务/论文来源。
+当前覆盖：
+- composition 19/50
+- atmosphere 18/50
+- differentiation 18/50
+- geology 9/50
+- present/persistent ocean 5/50
+- tidal heating 13/50
+
+这已经把最重要的反例结构带进数据：Ganymede/Titan 比 Mercury 大却仍是卫星；Europa/Enceladus 有强地下海洋证据；Io 是极端潮汐火山体；Charon 则是大质量比、古老重铺表面的边界案例。
 
 ## 当前 gate
 
 1. live JPL SBDB：16 个小天体；
 2. live SBDB/Horizons：5 个矮行星轨道；
-3. 继续盲编码 40 个天体，优先大卫星和边界天体；
+3. 继续盲编码剩余 31 个天体；
 4. source-conflict audit；
 5. 然后才冻结 fsQCA calibration。
 
