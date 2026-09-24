@@ -1,23 +1,24 @@
 # STATUS · ARIS4C022
 
-- State: Pilot-1 small-body evidence anchors active / SBDB acquisition gate
+- State: Pilot-1 composition evidence closed / numeric acquisition + calibration-prep gate
 - Portfolio activity: active
-- Progress estimate: 72%
+- Progress estimate: 79%
 - Frozen case frame: 50 bodies
 - Raw physical matrix: 34/50 authoritative JPL core physical values
 - Orbit v0.2: 8 JPL planet elements + 5 derived dwarf a + 21 JPL satellite mean elements + 16 pending small bodies
-- Evidence protocol v0.4: adds CARBONACEOUS_HYDRATED and separates parent-body aqueous alteration from present ocean state
-- Evidence v0.5 coverage:
-  - composition 39/50
-  - atmosphere 25/50
-  - differentiation 29/50
+- Evidence protocol v0.4 frozen before QCA
+- Evidence v0.6 coverage:
+  - composition **50/50**
+  - atmosphere 26/50
+  - differentiation 37/50
   - geology 24/50
   - present/persistent ocean 15/50
-  - tidal heating 25/50
-  - total 157/300 non-pending cells
-- Batch 04: Vesta, Eros, Bennu, Ryugu, Itokawa
-- Five of 16 small/boundary cases now have mission/sample-return evidence states
-- Source-conflict audit active; Mimas temporal supersession remains adjudicated
-- Small-body numeric gate: live JPL SBDB raw JSON still required for all 16 small/boundary rows
+  - tidal heating 36/50
+  - total **188/300** non-pending cells
+- Batch 05: Pallas, Hygiea, Interamnia, Quaoar, Orcus, Sedna, Gonggong, Salacia, Varda, Ixion, Varuna
+- Composition closure is evidence-state closure, not forced certainty: uncertain/unmeasured bulk composition remains explicitly NA_UNCERTAIN/NA_NOT_MEASURED
+- Source registry is again fully canonical: all evidence source keys through Batch 05 resolve in the current file
+- Source-conflict audit v0.2: 4 adjudicated cases, 0 unresolved conflicts requiring NA_SOURCE_CONFLICT
+- Small-body numeric gate: live JPL SBDB raw JSON still required for 16 small/boundary rows
 - Dwarf-orbit gate: 5 derived semimajor axes still await live SBDB/Horizons replacement
 - Anti-circularity: all 50 rows remain UNEXPOSED_TO_QCA_RESULT; no fsQCA calibration/truth table/solution inspected
