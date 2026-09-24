@@ -1,14 +1,41 @@
 # ARIS4C019 · Current status
 
-- **Project status:** historical-expansion-acquisition-and-harmonization
+- **Project status:** expanded-modern-module-locked-historical-synthesis-active
 - **Activity:** active
-- **Portfolio progress:** 68%
-- **Current stage:** Historical expansion · coverage gates PASS · historical acquisition / harmonization
-- **Pilot-0:** complete/frozen causal-identification sub-study; scientific interpretation remains unchanged.
-- **Modern panel:** 161 countries / 1,934 exact statutory-leave × annual-WHR availability country-years; 127 countries >=10 linked years; 57 >=15.
-- **WVS:** 295 country-wave coverage rows, Waves 1–7, 107 distinct country/territory codes.
-- **Eurobarometer:** life-satisfaction registry 1973–2026; harmonized Mannheim trend file = 86 waves / >1M cases through 2002; data acquisition pending.
-- **WDH:** official TrendsInNations XLSX pinned; long-run criterion >=20 years + >=10 comparable points; published use = 200 time series / 70 nations / 1945–2021; binary transfer pending in current runtime.
-- **Statistics:** FE / within-between / first-difference / spline / lag / instrument bridge / multilevel-meta / verified event-study / synthetic-control / event-meta-analysis hierarchy frozen before expanded outcome inspection.
-- **Next gate:** acquire long-run outcome files and full ILO ratification/legal histories, build historical overlap panels, then open prespecified expanded analyses.
-- **Canonical entry points:** `process/HISTORICAL_COVERAGE_GATE.md`, `process/MODERN_PANEL_OVERLAP_GATE.md`, `process/EXPANDED_STATISTICAL_FREEZE.md`, `data/historical_acquisition_manifest.csv`.
+- **Portfolio progress:** 75%
+- **Current stage:** Expanded modern statistics LOCKED · historical outcome/legal reconstruction active
+
+## Complete / frozen
+
+- Pilot-0 causal-identification sub-study: complete/frozen; interpretation unchanged.
+- Expanded modern availability panel: **161 countries / 1,934 country-years**.
+- Expanded modern statistical module: TWFE, within-between, FD, macro A1, support subsets, country trends, RCS, lags, influence, joint hours+leave, legal-credibility restriction and legal-time falsification.
+- Modern interpretation: locked in `process/EXPANDED_MODERN_INTERPRETATION_LOCK.md`.
+- Actual-hours coverage: **130 countries / 5,063 observations / 1870–2023**.
+- Prewar hours–WDH bridge: **14/14 earliest hours countries** appear in WDH long-run registry.
+- WVS Waves 1–7: **295 country-wave rows / 107 distinct codes**.
+- WDH public long-run mean registry: **124 variable series / 61 nation labels / earliest 1946**.
+- Eurobarometer life-satisfaction measurement chain: **1973–2026**.
+
+## Main modern finding
+
+The broad modern panel does not produce a stable positive or negative aggregate leave/hours result.
+
+The strongest falsification is timing:
+- verified WB leave jumps occur on average **1.22 years after** the actual legal effective year;
+- macro-adjusted verified-changer FD is strongly negative when timestamped by WB reporting year;
+- the same verified leave steps flip positive when aligned to legal effective year.
+
+Therefore neither sign is promoted as causal, and positive WB lag-2/lag-3 coefficients are not interpreted as delayed well-being benefits.
+
+## Remaining project gate
+
+- acquire/materialize numeric WDH long-run outcome observations;
+- acquire/aggregate Eurobarometer and EVS/WVS outcomes;
+- complete primary-source C052/C132 rows;
+- construct national paid-leave legal chronology;
+- run historical source-specific association models;
+- synthesize instrument/event estimates;
+- rebuild EN/ZH manuscript around the full long-run project.
+
+No current design blocker. Some source acquisition requires a binary-capable or registered-data execution surface.
