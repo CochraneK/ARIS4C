@@ -1,0 +1,16 @@
+field,type,description,allowed_or_example
+tradition_id,string,Stable tradition-time identifier,mesopotamia_old_babylonian
+tradition_name,string,Human-readable bounded tradition,Old Babylonian literary tradition
+time_start,integer_or_interval,Start year with BCE negative,-2000
+time_end,integer_or_interval,End year,-1600
+source_id,string,Stable source witness identifier,src_0001
+motif_id,string,Frozen motif identifier,E_ANTHRO_CLAY
+motif_family,string,Higher-level motif family,anthropogony
+motif_state,categorical,Coded state,present|absent|uncertain|not_observed
+evidence_grade,categorical,Source quality,A|B|C|D
+source_date_start,integer_or_interval,Earliest plausible witness date,-1800
+source_date_end,integer_or_interval,Latest plausible witness date,-1700
+catalogue_crosswalk,string,External motif identifiers,Berezkin/Thompson/ATU
+coder,string_or_hash,Coder identity/blinded code,coder_A
+citation,string,Source citation with page/section,
+notes,string,Ambiguity/translation/variant notes,

@@ -178,6 +178,14 @@
       "evidence": "QCA taxonomy framing, anti-circularity rules, variable families, formula registry, IAU/NASA/JPL source registry, and a full continuity package are committed. Mars is frozen as a positive-control planet rather than an unresolved planet-vs-satellite case.",
       "next_gate": "Freeze a 40–60-body Phase-1 Solar-System case frame and machine-readable raw-variable/provenance schema before calibration or solution inspection.",
       "blocker": "None; methodological caution only—official class-label QCA is a taxonomy audit, not causal discovery."
+    },
+    "023": {
+      "progress": 18,
+      "stage": "Design scaffold · motif ontology and Pilot-0 freeze gate",
+      "activity": "active",
+      "evidence": "Mechanism-competition design separates vertical inheritance, horizontal diffusion, ecological convergence and cognitive/social convergence. Data spine and method matrix are defined; QCA is optional downstream of motif/source calibration.",
+      "next_gate": "Freeze 8–12 tradition-time Pilot-0 sample, 40–80 motif ontology, source/evidence rules and dual-coded calibration subset; then build the first auditable tradition × motif matrix.",
+      "blocker": "No immediate technical blocker. Primary scientific risk is ontology/source comparability and non-independence of cultural/dyadic observations."
     }
   },
   "scheduling": {

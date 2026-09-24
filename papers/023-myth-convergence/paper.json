@@ -1,0 +1,59 @@
+{
+  "id": "023",
+  "portfolio_id": "ARIS4C-023",
+  "slug": "myth-convergence",
+  "title": "Why Do Ancient Traditions Tell Similar Stories? A Comparative Cultural-Evolution Study of Mythic Motifs, Inheritance, Diffusion, Ecology, and Convergence",
+  "short_title": "Ancient Myth Convergence",
+  "year": 2026,
+  "status": "design-and-data-mapping",
+  "domain": "comparative mythology / folklore / cultural evolution / historical anthropology / computational humanities",
+  "summary": "A multi-method cross-cultural study of recurrent mythic motifs that separates shared ancestry, horizontal diffusion, ecological convergence and cognitive/social convergence using auditable motif coding, temporal overlap, spatial/contact networks, phylogenetic comparative methods, dyadic models, process tracing and optional QCA.",
+  "authors": [
+    "Cochrane Kang"
+  ],
+  "portfolio_visible": true,
+  "aris": {
+    "provenance": "ARIS4C user-requested project registered 2026-09-24",
+    "version": "v0.4.26"
+  },
+  "links": {
+    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/023-myth-convergence",
+    "research_plan": "process/RESEARCH_PLAN.md",
+    "methods": "process/METHOD_MATRIX.md",
+    "data": "data/README.md",
+    "codebook": "data/motif_codebook.csv"
+  },
+  "tags": [
+    "ARIS4C",
+    "comparative mythology",
+    "folklore",
+    "cultural evolution",
+    "phylogenetics",
+    "diffusion",
+    "motifs",
+    "cross-cultural research",
+    "QCA"
+  ],
+  "bilingual_delivery": {
+    "english": false,
+    "chinese": false
+  },
+  "outputs": {
+    "paper_en": "not-started",
+    "paper_zh": "not-started",
+    "figures": {
+      "status": "not-started",
+      "count": 0,
+      "strategy": "adaptive to inferential structure"
+    },
+    "tables": {
+      "status": "not-started",
+      "count": 0
+    },
+    "pdf": {
+      "status": "not-started",
+      "english": false,
+      "chinese": false
+    }
+  }
+}
