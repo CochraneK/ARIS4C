@@ -181,11 +181,11 @@
     },
     "023": {
       "progress": 42,
-      "stage": "Reliability gate blocked · downstream analysis pipeline ready",
+      "stage": "Independent dual-AI coding gate · cold-start handoff hardened",
       "activity": "block",
-      "evidence": "Calibration v0.1 and locator QA are complete. Coding validator, missingness-safe Jaccard dyad builder, contact-edge schema and downstream analysis contract are committed; contact evidence is structurally separated from myth similarity and QCA remains conditional.",
-      "next_gate": "Obtain independent dual coding; meanwhile populate historically sourced contact/genealogy/environment tables without looking at similarity results.",
-      "blocker": "Formal motif-reliability inference requires a genuinely independent second coder; controller-side analysis infrastructure is ready."
+      "evidence": "Calibration and downstream tooling are complete. Handoff now explicitly records Qoder/Qwen as pending Coder A and fresh-session DeepSeek as pending Coder B, with exact blinding/file/scoring rules and a cold-start execution path.",
+      "next_gate": "Qoder/Qwen populates coder_A.csv; independent DeepSeek populates coder_B.csv; then run reliability/disagreement review and freeze or revise ontology.",
+      "blocker": "Both independent coding streams are still pending for ARIS4C-023; other Qoder repository work does not satisfy this gate."
     }
   },
   "scheduling": {
