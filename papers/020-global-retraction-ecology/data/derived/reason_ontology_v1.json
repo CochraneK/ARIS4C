@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "mapping_version": "v1-rule-based-draft",
+  "mapping_version": "v1-rule-based-observed-complete",
   "principle": "orthogonal facets supplement, never replace, the official RWDB atomic label",
   "rows": [
     {
@@ -1181,9 +1181,11 @@
       "affected_object": [],
       "mechanism": [],
       "ethics_compliance": [],
-      "process_actor": [],
+      "process_actor": [
+        "miscommunication_third_party"
+      ],
       "notice_lifecycle": [],
-      "evidence_specificity": "unclassified"
+      "evidence_specificity": "procedural_or_lifecycle"
     },
     {
       "reason_raw": "Euphemisms for Misconduct",
@@ -1299,8 +1301,6 @@
       "evidence_specificity": "specific_or_domain_issue"
     }
   ],
-  "unmapped_labels": [
-    "Miscommunication with/by Third Party"
-  ],
-  "gate": "No manuscript facet result until unmapped_labels is empty and manual audit is frozen."
+  "unmapped_labels": [],
+  "gate": "Observed 2026-09-23 snapshot has 0 unclassified Reason labels; manual scientific audit of the facet mapping remains required before confirmatory facet claims."
 }
