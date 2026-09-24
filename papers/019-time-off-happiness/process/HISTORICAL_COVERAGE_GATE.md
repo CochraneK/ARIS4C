@@ -1,4 +1,4 @@
-# ARIS4C019 · Historical coverage gate v0.2
+# ARIS4C019 · Historical coverage gate v0.3
 
 **Gate date:** 2026-09-24  
 **Effect inspection:** prohibited / none performed in this gate
@@ -14,10 +14,25 @@ The historical expansion now has executable coverage rather than only source pla
 | WVS visible Waves 1–6 | **229 wave-country rows / 96 unique codes** | seed materialized; Waves 3–6 catalogue-count mismatches remain explicit |
 | WDH Trends in Nations comparable series | **105 measure-country long-series rows / 56 normalized country labels** | metadata materialized; series values not opened |
 | Cantril ICPSR 7023 | **10 historical countries/entities / 1957–1963** | country seed materialized |
-| Eurobarometer ECS73 | **9 countries / 1973** | first country-survey seed materialized |
+| Eurobarometer life satisfaction | **809 entity-years / 1973–2016 / 36 country-or-survey-territory labels + EU aggregate** | coverage-only panel materialized; numeric satisfaction shares omitted |
 | ILO C052/C132 | **54 + 39 ratifications source-count verified** | row-level bounded ingest code committed; live row materialization still pending |
 | World Bank Employing Workers | **202 economies / 3,434 rows / EW2004–2020** | already materialized from Pilot-0 |
 | WORLD 2015 | **193 UN member states target** | source verified; redistribution/license constraints retained |
+
+## Canonical country × source × time master
+
+`data/historical_country_source_coverage_v1.csv` is now the single canonical availability table for the currently materialized layers: **8,579 rows across 11 source IDs**. Every row carries `value_inspected=no`; numeric happiness and working-hours values are intentionally absent.
+
+Current row composition:
+
+- WHR annual: 2,363;
+- OWID working-hours availability: 5,063;
+- Eurobarometer: 809;
+- WDH comparable long-series metadata: 105;
+- WVS visible Waves 1–6: 229;
+- Cantril ICPSR 7023: 10.
+
+The earlier temporary `historical_source_coverage_inventory.csv` and `historical_country_source_coverage_seed.csv` were removed after consolidation to avoid multiple canonical truths.
 
 ## Cross-layer overlap before any effect inspection
 
@@ -53,8 +68,8 @@ NORMLEX currently reports **54 C052 ratifications (17 denounced/not in force)** 
 
 1. materialize ILO C052/C132 country rows;
 2. reconcile WVS Waves 3–7 against downloadable release/DDI metadata;
-3. expand Eurobarometer country × survey coverage beyond the 1973 seed;
-4. build WDH observation/question metadata beyond the long-series seed;
+3. replace/augment the 1973–2016 Eurobarometer transport mirror with GESIS/EC machine metadata and extend post-2016 coverage;
+4. build WDH observation/question metadata and actual comparable-series observations beyond the 105-row long-series metadata seed;
 5. build national paid-leave primary-law chronology separately from ILO ratification;
 6. ingest numeric actual-hours values with source-era/comparability flags;
 7. create an instrument bridge manifest before harmonizing subjective-well-being scales.
