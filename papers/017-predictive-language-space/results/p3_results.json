@@ -1,0 +1,230 @@
+{
+ "dataset": "Grambank v1.0",
+ "stage": "P3 empty-cell universe + 6-model plausibility scoring",
+ "frozen_design": "results/p3_design.json",
+ "universe": {
+  "n_pairs_pre_trunc": 18915,
+  "n_pairs_final": 4000,
+  "n_cells": 17053,
+  "n_gaps": 32,
+  "n_rare_1_10": 484,
+  "n_ge50": 14726,
+  "decile_cells": 1705,
+  "first_pair": [
+   "GB020",
+   "GB021"
+  ],
+  "last_pair": [
+   "GB047",
+   "GB316"
+  ]
+ },
+ "item1_agreement": {
+  "pairwise_spearman": {
+   "C1_indep|C3_tree": {
+    "gap32": -0.2121562412154058,
+    "full": 0.9718948144682263
+   },
+   "C1_indep|C4_ldm": {
+    "gap32": 0.9002932551319647,
+    "full": 0.9961102757245929
+   },
+   "C1_indep|C5_graph": {
+    "gap32": 0.0012831087946841594,
+    "full": 0.9923534083503979
+   },
+   "C1_indep|C6_manifold": {
+    "gap32": 0.42778592375366564,
+    "full": 0.04059195300107925
+   },
+   "C1_indep|C7_energy": {
+    "gap32": -0.9464809384164222,
+    "full": 0.044811938526813117
+   },
+   "C3_tree|C4_ldm": {
+    "gap32": -0.28103436336342114,
+    "full": 0.9757951727499496
+   },
+   "C3_tree|C5_graph": {
+    "gap32": -0.19270202747420206,
+    "full": 0.9799638725439895
+   },
+   "C3_tree|C6_manifold": {
+    "gap32": -0.423731232454879,
+    "full": 0.04892060283247926
+   },
+   "C3_tree|C7_energy": {
+    "gap32": 0.4176281077075865,
+    "full": 0.11353555321330455
+   },
+   "C4_ldm|C5_graph": {
+    "gap32": 0.09000091688427461,
+    "full": 0.9952037366557986
+   },
+   "C4_ldm|C6_manifold": {
+    "gap32": 0.3167155425219941,
+    "full": 0.038919666895860426
+   },
+   "C4_ldm|C7_energy": {
+    "gap32": -0.8801319648093842,
+    "full": 0.07817997164429445
+   },
+   "C5_graph|C6_manifold": {
+    "gap32": -0.17156997597491044,
+    "full": 0.041870182270560684
+   },
+   "C5_graph|C7_energy": {
+    "gap32": 0.14994042772166322,
+    "full": 0.11975737332897418
+   },
+   "C6_manifold|C7_energy": {
+    "gap32": -0.5447214076246334,
+    "full": -0.010994414310984833
+   }
+  },
+  "n_consensus": 1428,
+  "n_true_gaps_in_consensus": 32,
+  "c4_rank_of_consensus": {
+   "min": 1.0,
+   "median": 719.5,
+   "max": 3611.0
+  },
+  "rank_convention": "rank 1 = lowest support; bottom decile = ranks 1..1705"
+ },
+ "item2_seed_stability": {
+  "per_model": {
+   "C1_indep": {
+    "mean": 0.9996892554901013,
+    "min": 0.9996325738224761,
+    "n_pairs": 10
+   },
+   "C3_tree": {
+    "mean": 0.9993416579944032,
+    "min": 0.9992653364775056,
+    "n_pairs": 10
+   },
+   "C4_ldm": {
+    "mean": 0.9996289291085475,
+    "min": 0.9995545913769885,
+    "n_pairs": 10
+   },
+   "C5_graph": {
+    "mean": 0.9993356301956,
+    "min": 0.9992764159371716,
+    "n_pairs": 10
+   },
+   "C6_manifold": {
+    "mean": 0.10276085214327309,
+    "min": -0.042480668811185084,
+    "n_pairs": 10
+   },
+   "C7_energy": {
+    "mean": 0.9633822398197853,
+    "min": 0.9598143067359822,
+    "n_pairs": 10
+   }
+  },
+  "trigger_4_models": [
+   "C6_manifold"
+  ],
+  "trigger_4_threshold": 0.5
+ },
+ "item3_rare_calibration": {
+  "per_model": {
+   "C1_indep": {
+    "logloss": 0.027015681792635145,
+    "brier": 1.0433257188313527e-05,
+    "spearman_logcount": 0.5985924362984074,
+    "false_low_rate_ge50": 0.006179546380551406
+   },
+   "C3_tree": {
+    "logloss": 0.027307151447477723,
+    "brier": 1.0237930450656203e-05,
+    "spearman_logcount": 0.9265688925434683,
+    "false_low_rate_ge50": 0.0
+   },
+   "C4_ldm": {
+    "logloss": 0.026846450530702375,
+    "brier": 6.053478516438615e-06,
+    "spearman_logcount": 0.6361506636389583,
+    "false_low_rate_ge50": 0.003666983566481054
+   },
+   "C5_graph": {
+    "logloss": 0.026322562340102548,
+    "brier": 5.3949113900105056e-08,
+    "spearman_logcount": 0.9320919905940296,
+    "false_low_rate_ge50": 6.790710308298248e-05
+   },
+   "C6_manifold": {
+    "logloss": 0.03919163578779643,
+    "brier": 1.9242169198964392e-05,
+    "spearman_logcount": 0.06549974525628117,
+    "false_low_rate_ge50": 0.09866902077957354
+   },
+   "C7_energy": {
+    "logloss": 0.269966281735942,
+    "brier": 0.060276103736950554,
+    "spearman_logcount": 0.033950967811097396,
+    "false_low_rate_ge50": 0.0798587532255874
+   }
+  },
+  "trigger_5_models": [
+   "C6_manifold",
+   "C7_energy"
+  ],
+  "trigger_5_rule": "false_low_rate>0.10 or spearman<0.5",
+  "note": "C6 support is a mean Gaussian density (not a probability); its logloss/brier are proxy values with clipping"
+ },
+ "item4_abstention": {
+  "C1_indep": {
+   "n_abstain": 1705,
+   "jaccard_vs_consensus": 0.7995404939689833,
+   "n_abstain_true_gap_hits": 32
+  },
+  "C3_tree": {
+   "n_abstain": 1705,
+   "jaccard_vs_consensus": 0.8183401044689496,
+   "n_abstain_true_gap_hits": 32
+  },
+  "C4_ldm": {
+   "n_abstain": 1705,
+   "jaccard_vs_consensus": 0.8215116279069767,
+   "n_abstain_true_gap_hits": 32
+  },
+  "C5_graph": {
+   "n_abstain": 1705,
+   "jaccard_vs_consensus": 0.8289550496205488,
+   "n_abstain_true_gap_hits": 32
+  },
+  "C6_manifold": {
+   "n_abstain": 1705,
+   "jaccard_vs_consensus": 0.06347589952477936,
+   "n_abstain_true_gap_hits": 3
+  },
+  "C7_energy": {
+   "n_abstain": 1705,
+   "jaccard_vs_consensus": 0.12941600576784426,
+   "n_abstain_true_gap_hits": 13
+  }
+ },
+ "c5_converged_pairs": {
+  "global": 3999,
+  "n_pairs": 4000
+ },
+ "c6_sigma": {
+  "global": 0.5555230499388562,
+  "per_seed": {
+   "42": 0.6030373263581388,
+   "43": 0.6209778022301096,
+   "44": 0.6494338091185113,
+   "45": 0.6138457257141844,
+   "46": 0.6042167633358899
+  }
+ },
+ "provenance": {
+  "probe": "code/probe_p3.py (fixed 05:33 obsm[:,ok])",
+  "executor_run": "results/stage4_run.log (died 128K; orchestrator completed)",
+  "orchestrator": "window A, 2026-09-26"
+ },
+ "generated_at": "2026-09-25T22:23:35.688402+00:00"
+}

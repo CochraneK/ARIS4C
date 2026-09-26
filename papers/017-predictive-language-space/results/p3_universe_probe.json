@@ -1,0 +1,24 @@
+{
+ "n_languages": 2467,
+ "n_params": 195,
+ "n_params_ok": 195,
+ "n_pairs_pre_trunc": 18915,
+ "truncated": true,
+ "n_pairs_final": 4000,
+ "n_dropped": 14915,
+ "n_grid_combos": 17053,
+ "n_gaps": 32,
+ "n_rare_1_10": 484,
+ "n_ge50": 14726,
+ "grid_size_min": 4,
+ "grid_size_max": 12,
+ "first_pair": [
+  "GB020",
+  "GB021"
+ ],
+ "last_pair": [
+  "GB047",
+  "GB316"
+ ],
+ "obscount_min_ok": 841
+}

@@ -1,0 +1,9 @@
+STAGE5_FINAL FROZEN 2026-09-26T04:40:00+00:00
+
+Bilingual manuscript frozen (ARIS4C-017, LING-02):
+  paper/paper_EN.md  sha256 26f2c8188989d5b98ce25e3051847bcd3a529389a5f5fb8f40066b491c7ca6c4  (132 lines, 3962 words, 10 figures, 14 refs)
+  paper/paper_ZH.md  sha256 a9434d0c2e87cd8606df3979a38ff5507c442e29e4bc59249231a75ce7b058e5  (125 lines, ZCHUNK residual 0, 22 key numbers identical to EN)
+H verdicts (locked): H1 supported | H2 falsified (trigger 1) | H3 supported | H4 partially falsified (trigger 5)
+Provenance chain: data b5ad6480… (commit 37f73da) -> pilot0 15:42:09Z -> p2 16:46:44Z -> p3 21:41:36Z (09-25) -> stage5_final 04:40:00Z (09-26)
+Takeover log: 5a ARIS died 128K (58-line draft) -> orchestrator completed; 5b ARIS died 128K (74-line draft) -> orchestrator completed. Deviations: paper/paper_EN_notes.md
+P4 (external hold-out on historical/extinct languages): NOT executed this run; positioned as future work (Section 6).

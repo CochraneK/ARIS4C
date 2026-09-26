@@ -1,0 +1,36 @@
+{
+ "generated_utc": "2026-09-25T14:39:21+00:00",
+ "source": {
+  "dataset": "Grambank v1.0 (Glottobank)",
+  "url": "https://grambank.clld.org",
+  "repo_commit": "37f73da55cf8b426c82383f46a972bc59ce6cf76",
+  "fetched_utc": "2026-09-25T11:50:05.534238Z",
+  "values_sha256": "b5ad64804fb092496c4447938a1a5143f502c95e0799833db97b064c13d22363"
+ },
+ "n_languages": 2467,
+ "n_parameters": 195,
+ "grid_cells": 481065,
+ "nan_cells": 119040,
+ "nan_ratio": 0.247451,
+ "n_families": 215,
+ "n_macroareas": 6,
+ "family_missing": 101,
+ "macroarea_missing": 4,
+ "level_counts": {
+  "language": 2393,
+  "dialect": 70,
+  "family": 4
+ },
+ "join": {
+  "family_ids_unmatched_in_families_table": 0,
+  "languages_dropped_no_values": 0,
+  "value_rows_dropped_unknown_language": 0
+ },
+ "value_tokens": {
+  "0": 242782,
+  "1": 112315,
+  "2": 5410,
+  "3": 1518
+ },
+ "note": "Value '?' 映射 NaN；family_id/macroarea 缺失置 'NA'（C2a/C2b 回退 C1 用）"
+}

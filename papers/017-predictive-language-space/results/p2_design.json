@@ -1,0 +1,57 @@
+{
+ "stage": "3 · P2 掩蔽特征预测 + 模型族（C3_tree / C4_ldm）",
+ "frozen_date": "2026-09-25",
+ "frozen_before_code": true,
+ "reuses_no_rebuild": {
+  "matrix": "results/p1_matrix.csv（2467×195，481065 格，观测 75.25%；不重建）",
+  "split": "results/pilot0_split_config.json（random：5 seeds 42–46 × 493 语言；family：aust1307 536；macroarea：Papunesia 728；不重抽）",
+  "pilot0": "results/pilot0_results.json（C1/C2a/C2b 各层数字 → 仅作 P2 背景行）"
+ },
+ "task": "在留出语言上预测被掩蔽特征；模型只用该层训练行拟合（测试语言不进入拟合）。single：每个测试语言随机掩蔽 min(5, n_observed) 个观测格；bundle：每个测试语言掩蔽各束 3 参数的全部观测格（束参数 ID 决定，确定性，无 rng）。",
+ "bundles": {
+  "B1": ["GB068", "GB074", "GB075"],
+  "B2": ["GB079", "GB080", "GB081"],
+  "B3": ["GB262", "GB041", "GB306"],
+  "rule": "B1 = parameters.csv 名称匹配 /word order|modifier|position/i 的参数（7 个匹配：GB068/074/075/127/135/204/…）按 Parameter_ID 字典序前 3；B2 = max(B1)=GB075 之后紧邻 3 个（相邻参数块）；B3 = 剩余 189 个（字典序排序）用 np.random.default_rng(42) 取 3。",
+  "names": {
+   "GB068": "Do core adjectives act like verbs in predicative position?",
+   "GB074": "Are there prepositions?",
+   "GB075": "Are there postpositions?",
+   "GB079": "Do verbs have prefixes/proclitics (beyond A/S/P)?",
+   "GB080": "Do verbs have suffixes/enclitics (beyond A/S/P)?",
+   "GB081": "Is there productive infixation in verbs?",
+   "GB262": "Is there a clause-initial polar interrogative particle?",
+   "GB041": "Are there several nouns suppletive for number?",
+   "GB306": "Is there a phonologically independent non-bipartite reciprocal pronoun?"
+  }
+ },
+ "masking": {
+  "single": "每 (层, [seed])：rng=default_rng(mask_seed)，按矩阵行序对测试语言顺序消费；每语言 k=min(5,n_obs)，mask=rng.choice(观测位置, k, replace=False)",
+  "bundle": "确定性：掩蔽束 3 参数中该语言的全部观测格（mask seed 不适用）",
+  "mask_seeds": { "random": "对应 split seed s (42–46)", "family": 1042, "macroarea": 1043 }
+ },
+ "models": {
+  "C3_tree": "树感知邻居。lineage = languages.csv lineage（斜杠分隔 glottocode 路径组件，去尾部空段，101 缺失→空路径）。L(t,i)=公共前缀组件数（Glottolog 为树 ⇒ 前缀嵌套，逐层等值计数即公共前缀长）；d = 1 − 2L/(len_t+len_i)（双方均空→d=1）；w_i = exp(−3d)·(1+2·[同 family，NA 除外])·(1+0.5·[同 macroarea，NA 除外])，仅训练行。P(c|t,p) = (Σ_i w_i·1[x_i=c]+1)/(Σ_i w_i + K_p)，K_p=|该参数合法代码|。Σw=0 或测试语言 family+macroarea 均 NA → 逐格回退 C1。",
+  "C4_ldm": "rank-3 线性潜因子（Bjerva 2019「潜变量+特征读出」结构的无神经、无概念字典最小重实现，非其完整模型）。one-hot 槽位 (p,c)，c∈合法代码，共 398 槽（4 个非零基参数用实际代码位）。训练行：soft-impute 30 轮（缺失初值=C1 概率；每轮 rank-3 SVD 截断→回填缺失）→ X≈F·Aᵀ（F (ntr×3)，A (398×3)）。测试语言：f_t 由其观测槽位（排除该任务掩蔽格）最小二乘读出；P(c|t,p) ∝ max(0, A_{p,c}·f_t)；该参数全 ≤0 → 回退 C1；无观测槽 → 全 C1。",
+  "background": "C1_marginal / C2a_phylo / C2b_geo 不在 P2 重算：结果表直接引用 Pilot-0 对应层数字，标注 [reused Pilot-0]。口径差异：Pilot-0=全留出格，P2=掩蔽格，数值不可直接比大小，仅作背景行。"
+ },
+ "deferred_comparators": "brief 比较器 5（图/依赖）、6（非线性流形）、7（约束/能量）推迟段4。理由：(a) 段3 预算为无 GPU 单次 CPU 运行，图构建/流形拟能/能量模型采样需额外基础设施与超参扫描；(b) P2 核心对照（边际基线 vs 树感知 vs 潜因子）足以判门控并定位 Pilot-0 暴露的「跨组迁移」缺口；(c) brief 无硬期限，门控通过后作为增量模型引入，避免污染本段冻结比较器。",
+ "metrics": "logloss / brier / macro_acc / ece_10bin / reliability_slope —— 与 Pilot-0 同定义（10 分箱 ECE、加权可靠性斜率），仅统计非 NaN 掩蔽格。random 层 = 5-seed 均值±std；family/macroarea = 单值。",
+ "h3_bundle_ranking": "每个被完整掩蔽的束（3 格均观测）：真配置联合概率 = 各格预测概率乘积（特征独立近似，已注明）；1000 个伪配置（每格从该参数合法代码集均匀随机）。单一全局 rng=default_rng(42)，消费顺序 = 层（random 42–46 → family → macroarea）× 测试语言（行序）× 束（B1→B2→B3）；伪代码集在 C3/C4 间共享。报平均秩（1=最好）与 rank AUC（tie 计 0.5）；h3_all = 三束池化。",
+ "hypothesis_mapping": {
+  "H1_predictive_constraint": "行：tiers.*.{single,bundle_*}.{C3_tree,C4_ldm} 的 logloss/macro_acc（vs 背景 C1，定性）+ h3 rank_auc（主定量证据，0.5=随机）。证伪：C3 与 C4 的 h3_all rank_auc 均 ≤ 0.5。",
+  "H2_phylo_robust": "行：tiers.family.*.C3_tree。支持：C3_tree.family.logloss < 背景 C1_marginal.family（0.5252）且 ≤ 自身 random 均值（跨组迁移未全失）。证伪：C3_tree.family.logloss ≥ 0.5252（family-held-out 增益消失）。",
+  "H3_configuration_prediction": "行：h3.*.*.{mean_rank,rank_auc}。支持：rank_auc > 0.5 且 mean_rank < 501。",
+  "H4_calibrated_missingness": "行：tiers.*.*.{C3_tree,C4_ldm}.{ece_10bin,reliability_slope}（部分证据，完整版 P3）。支持：ece ≤ 0.05 且 slope ∈ [0.5, 1.5]。",
+  "note": "C1 背景口径为全留出格，所有 vs 背景比较均为定性参照；H3 rank AUC（0.5=随机）为主定量标尺。"
+ },
+ "falsification_conditions": [
+  "① family-held-out 增益消失 → C3_tree.family.logloss ≥ 0.5252（或 ≥ 自身 random 均值）触发；见 tiers.family.{single,bundle_*}.C3_tree",
+  "② 性能可被地理/语系先验完全解释 → C3/C4 各层 logloss ≥ 对应层 C2a/C2b 背景（定性，口径注明）触发；见 tiers.* vs background_pilot0.*",
+  "③ 预设束预测打不过边际基线 → C3 与 C4 的 h3_all.rank_auc 均 ≤ 0.5 触发；见 h3.*.all",
+  "④ 空格评分跨数据集/模型族不稳定 → P3 范围，本段不评（注明）",
+  "⑤ 校准差 → 任一 C3/C4 ece_10bin > 0.05 触发；见 tiers.*.*.ece_10bin",
+  "⑥ 独立外部留出失败 → P4 范围，本段不评（注明）"
+ ],
+ "engineering": "预测矩阵只持 (nte,P,4)；bash 跑脚本文件不传 timeout；不重下数据/不重建矩阵/不重抽 split；中间产物落 results/p2_*；失败重试 ≤2 次后记 p2_run_notes.md。"
+}

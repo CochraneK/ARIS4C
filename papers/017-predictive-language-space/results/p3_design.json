@@ -1,0 +1,66 @@
+{
+ "design_id": "P3-stage4",
+ "frozen_at": "2026-09-26T05:36:00+08:00",
+ "frozen_by": "orchestrator (window A) — executor LLM run died on 128K (131073>131072) during probe debugging; orchestrator completes per stage4_prompt.txt frozen spec",
+ "protocol_source": "stage4_prompt.txt (57 lines, frozen by window B)",
+ "universe": {
+  "selection": "params: obscount>=200 & >=2 codes; pairs: co-observed>=300; lexicographic (Parameter_ID, i<j) truncated to first 4000",
+  "n_languages": 2467,
+  "n_params": 195,
+  "n_params_ok": 195,
+  "n_pairs_pre_trunc": 18915,
+  "truncated": true,
+  "n_pairs_final": 4000,
+  "n_dropped": 14915,
+  "n_grid_combos": 17053,
+  "n_gaps": 32,
+  "n_rare_1_10": 484,
+  "n_ge50": 14726,
+  "grid_size_min": 4,
+  "grid_size_max": 12,
+  "first_pair": ["GB020", "GB021"],
+  "last_pair": ["GB047", "GB316"],
+  "note": "probe bug fixed 05:33 (obsm[ok] row-select -> obsm[:,ok]); stats from fixed code/probe_p3.py"
+ },
+ "scope_resolutions": [
+  "R1 scoring universe = all 17053 legal combos of the 4000 pairs; headline gap analysis on the 32 gaps",
+  "R2 bottom decile = bottom 10% of each model's support over the 17053 combos (1705 cells); consensus set = in >=4/6 models' bottom deciles",
+  "R3 item-1 Spearman reported on both the 32-gap set (frozen '空格全集') and the full 17053 set (added for power)",
+  "R4 CSV scope: global fit all 6 models x 17053 + seed-stability rows for C4_ldm only (5 x 17053); per-seed full support kept in-memory for Spearman, summarized in JSON (avoids ~200MB)",
+  "R5 prompt model section lists 6 models (C1/C3/C4/C5/C6/C7) but eval/output lines say '5'; resolved to all 6; pairwise = 15 pairs; consensus threshold >=4/6"
+ ],
+ "models": {
+  "C1_indep": "P(ci,cj) = D1[pi,ci]*D1[pj,cj]; D1 = global Laplace add-1 marginal over all 2467 rows (P2 c1_dists convention, CODES non-zero-based)",
+  "C3_tree": "score(ci,cj) = (1/n) sum_l [ (W@I)[l] - W[l,l]*I[l] + 1 ] / [ rowsum_excl_l + Ki*Kj ]; I[m]=1[combo_m==(ci,cj), both observed]; W[l,m] = exp(-3d(l,m))*(1+2*[same fam, neither NA])*(1+0.5*[same mac, neither NA]); d = 1-2*Lc/(LEN_l+LEN_m) (P2 lineage PREF/LEN); W (2467x2467 float64 ~49MB) computed once, cached results/_w_cache.npz",
+  "C4_ldm": "soft-impute rank-3, 30 iters, missing init = C1 prob (global), seed 42 -> A3 (398,3); per language f_l = lstsq(A3[obs_slots_l], y_l), no obs -> D1 fallback; P(c|f_l) = max(0, a_{p,c}.f_l) normalized over codes of p (latent conditional-independence approx, noted); score(ci,cj) = (1/n) sum_l P(ci|f_l)*P(cj|f_l)",
+  "C5_graph": "per pair: P0 = (C+1)/(n_pair+Ki*Kj) (Laplace +1); fit log P0 ~= alpha_i + beta_j + u_i*v_j (rank-1 bilinear) by ALS 100 rounds; init rng=default_rng(42) per pair: v~N(0,0.1,Kj), u=0, alpha=rowmean(log P0), beta=0; convergence flag = max param change < 1e-10; support = softmax(alpha+beta+u v) over pair grid",
+  "C6_manifold": "one-hot (n,398) missing->0 (noted convention); TSNE(perplexity=30, init='pca', random_state=42, n_iter=1000, early_exaggeration=4) -> emb (n,2); ybar = mean(emb); ybar_p(c) = mean emb of languages observed with (p,c) (empty set -> contribution 0); xhat = ybar_pi(ci)+ybar_pj(cj)-ybar; support = mean_l exp(-||xhat-emb_l||^2/(2 sigma^2)), sigma = median NN distance (NearestNeighbors k=2)",
+  "C7_energy": "rate = (count+1)/(n_pair+Ki*Kj); rate_indep = D1[pi,ci]*D1[pj,cj] (global C1); E = clip(-ln(rate/rate_indep), -ln50, ln50); support = exp(-E)/sum over pair grid"
+ },
+ "evaluation": {
+  "item1_agreement": "pairwise Spearman (15 pairs) on 32-gap set and full 17053 set; consensus low-support set per R2; report size, n_true_gaps_in_consensus, C4 rank (min/median/max) of consensus cells within full set",
+  "item2_seed_stability": "5 random splits (pilot0 config seeds 42-46, train = all - held 493); refit per model on train (C1 marginal, C3 W on train rows, C4 soft-impute refit, C5 ALS on train counts, C6 TSNE on train rows, C7 rates on train counts); score same 17053 universe; per model = mean of 10 pairwise cross-seed Spearman; ④ TRIGGER if any model mean < 0.5",
+  "item3_rare_calibration": "484 rare cells (count 1-10, global counts); soft label y = (count+1)/(n_pair+Ki*Kj); per model: logloss (p clipped [1e-12, 1-1e-12]; C6 is a density, clipping noted), brier, Spearman(support, log(count+1)), false_low_rate = fraction of count>=50 cells (14726) in model bottom decile (expect ~0); ⑤ TRIGGER (P3 proxy, noted) if any model false_low_rate > 0.10 or Spearman(support, log(count+1)) < 0.5",
+  "item4_abstention": "abstention set = model bottom 10% over 17053 (R2); report |abstention|, Jaccard vs consensus set, abstention ∩ true gaps count"
+ },
+ "hypothesis_mapping": "H4 (calibration) -> item3; falsification ④ (stability) -> item2 threshold 0.5; falsification ⑤ (calibration) -> item3 proxy above",
+ "outputs": {
+  "code": "code/run_p3.py (single file, chunked writes; no 3a/3b split — estimated runtime 2-4 min, within 30-min budget)",
+  "results": ["results/p3_results.json", "results/p3_results.csv (scope R4)"],
+  "figures": [
+   "figures/p3_comparison.png (hist of 6 models' support on 32 gaps, log y)",
+   "figures/p3_agreement.png (Spearman heatmap 15 pairs, full set + seed-stability bars per model, ④ line at 0.5)",
+   "figures/p3_calibration.png (rare-tier logloss/brier bars per model + C4 support-vs-count scatter on rare+ge50)"
+  ],
+  "notes": "results/p3_run_notes.md (<=30 lines, written by orchestrator post-run)",
+  "not_written": "paper.json, FROZEN marker — stage 4b orchestrator"
+ },
+ "degradation_paths": "C5 ALS 100->30 rounds; C6 n_iter 1000->500 (any use recorded in run_notes)",
+ "budget": "script runtime <= 30 min; W computed once + cached; hold <=3 full (n,398)-size matrices at a time",
+ "determinism": "seeds frozen: C4 soft-impute 42, C5 init 42 per pair, C6 TSNE 42; stability splits fixed from pilot0_split_config.json; rerun must be byte-identical",
+ "provenance": {
+  "probe": "code/probe_p3.py (fixed 05:33: obsm[ok] -> obsm[:,ok])",
+  "probe_out": "results/p3_universe_probe.json",
+  "executor_run": "results/stage4_run.log (LLM run died 128K ~05:3x; orchestrator took over)"
+ }
+}

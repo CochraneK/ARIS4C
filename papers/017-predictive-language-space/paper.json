@@ -1,77 +1,201 @@
 {
-  "id": "017",
-  "portfolio_id": "ARIS4C-017",
-  "series_id": "LING-02",
-  "slug": "predictive-language-space",
-  "title": "Predicting the Empty Cells of Human Language Space: A Falsification-First Test of Typological Constraint and Unrealized Configurations",
-  "short_title": "LING-02 · Predictive Language Space",
-  "year": 2026,
-  "status": "concept-scaffold",
-  "domain": "linguistic typology / quantitative linguistics / language universals / predictive modeling",
-  "summary": "A conceptual successor to ARIS4C002 that shifts from testing one global circular geometry to testing whether competing typological constraint models can predict held-out languages, masked feature bundles, and calibrated support over unobserved regions of language space. Extinct-language claims are tertiary and require independently documented historical holdouts.",
-  "authors": [
-    "Cochrane Kang"
+ "project": "ARIS4C 017-predictive-language-space",
+ "stage": "stage5_final",
+ "date": "2026-09-26",
+ "pipeline": "ARIS v0.4.26 (local)",
+ "llm_gateway": "http://172.16.25.104:1026/v1",
+ "executor": "Deepseek-Flash-V4-正式版",
+ "reviewer": null,
+ "note": "Stage5 final (bilingual manuscript): ARIS runs for 5a (EN) died 12:11 and 5b (ZH) died 12:34, both on 128K overflow (131073>131072); orchestrator completed both manuscripts per frozen stage prompts (4th and 5th takeovers). EN 132 lines/3962 words, ZH 125 lines, ZCHUNK residual 0, 22 key numbers verified identical to EN and frozen artifacts; 14 references (4 truncated titles re-verified by DOI via Crossref 2026-09-26). See paper/paper_EN_notes.md.",
+ "note_p3": "P3 (stage4): executor run died on 128K overflow (same mode as P2); orchestrator completed run_p3.py per frozen p3_design.json — 9 background runs (8 crashes + 1 success, run#9 1m49s, no degradation path used), 7 single-point fixes in run_p3.py (C4 matmul direction, C5 ALS u/v updates, C7 rate ravel, C6 TSNE max_iter, C6 xh reshape, seed-loop np.ix_), 1 edit-indentation incident caught by py_compile, 1 matplotlib stale-font-cache environment fix; see results/p3_run_notes.md",
+ "data": {
+  "dataset": "Grambank v1.0 (Glottobank)",
+  "source_url": "https://grambank.clld.org",
+  "repo_commit": "37f73da55cf8b426c82383f46a972bc59ce6cf76",
+  "fetched_utc": "2026-09-25T11:50:05.534238Z",
+  "tables_used": [
+   "p1_matrix.csv (2467×195, build_p1_matrix.py)",
+   "codes.csv"
   ],
-  "series": {
-    "code": "LING",
-    "index": 2,
-    "name": "Language Systems",
-    "predecessor": "002",
-    "predecessor_series_id": "LING-01",
-    "relation": "conceptual-successor"
-  },
-  "lineage": {
-    "conceptual_predecessor": "002",
-    "predecessor_slug": "language-geometry",
-    "boundary": "002 tests the simple global circular geometry; 017 tests predictive constraint structure over observed and unobserved typological configurations without assuming circularity."
-  },
-  "aris": {
-    "provenance": "ARIS4C conceptual split from completed LING-01; falsification-first predictive-language-space design scaffold",
-    "version": "v0.4.26"
-  },
-  "links": {
-    "paper_en": "",
-    "paper_zh": "",
-    "pipeline": "process/RESEARCH_PLAN.md",
-    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/017-predictive-language-space",
-    "predecessor": "https://github.com/CochraneK/ARIS4C/tree/main/papers/002-language-geometry",
-    "series_registry": "../series.json"
-  },
-  "tags": [
-    "ARIS",
-    "ARIS4C",
-    "LING-02",
-    "linguistic typology",
-    "predictive language space",
-    "language universals",
-    "held-out prediction",
-    "family-held-out",
-    "missing configurations",
-    "unrealized languages",
-    "calibration",
-    "model comparison"
+  "missing_convention": "Value '?' = explicit unknown; mapped to NaN together with missing parameter rows; cell NaN ratio 0.247451 (119040/481065)",
+  "values_sha256": "b5ad64804fb092496c4447938a1a5143f502c95e0799833db97b064c13d22363"
+ },
+ "seed": 42,
+ "random_seeds": [
+  42,
+  43,
+  44,
+  45,
+  46
+ ],
+ "code": [
+  "_check_arxiv.py",
+  "_exrows.py",
+  "_extract_lit.py",
+  "_hdr_check.py",
+  "_meta.py",
+  "_probe2.py",
+  "_probe3.py",
+  "_probe4.py",
+  "_probe_arxiv.py",
+  "_probe_lit.py",
+  "_probe_p1.py",
+  "_probe_p2.py",
+  "_s2_arxiv.py",
+  "build_p1_matrix.py",
+  "check_arxiv_grambank.py",
+  "check_env.py",
+  "check_releases.py",
+  "crossref_supplement.py",
+  "fetch_data.py",
+  "fetch_data_fix.py",
+  "list_oa.py",
+  "lit_discover.py",
+  "lit_sweep.py",
+  "lit_sweep_retry.py",
+  "oa_backfill.py",
+  "p2_outputs.py",
+  "pilot0_outputs.py",
+  "plot_p2.py",
+  "preview_headers.py",
+  "probe_p3.py",
+  "probe_sources.py",
+  "probe_sources2.py",
+  "probe_sources3.py",
+  "probe_sources4.py",
+  "profile_data.py",
+  "profile_data2.py",
+  "run_p2.py",
+  "run_p3.py",
+  "run_pilot0.py",
+  "run_pilot0_ORCH.py",
+  "verify_provenance.py"
+ ],
+ "comparators": {
+  "C3_tree": "tree-aware weighted-Laplace neighbor (lineage prefix distance)",
+  "C4_ldm": "latent-factor minimal reimpl of Bjerva 2019 (soft-impute rank-3 + readout)"
+ },
+ "fallback_rule": "group='NA' or group absent in training or no observed values for param in group -> C1",
+ "metrics": [
+  "logloss",
+  "brier",
+  "macro_acc",
+  "ece_10bin",
+  "reliability_slope"
+ ],
+ "smoothing": "Laplace add-1",
+ "artifacts": [
+  "results/pilot0_split_config.json",
+  "results/pilot0_results.json",
+  "results/pilot0_results.csv",
+  "results/pilot0_calib_data.npz",
+  "results/pilot0_summary.md",
+  "figures/pilot0_comparison.png",
+  "figures/pilot0_calibration_marginal.png",
+  "figures/pilot0_calibration_phylo.png",
+  "results/p2_design.json",
+  "results/p2_results.json",
+  "results/p2_results.csv",
+  "results/p2_run_notes.md",
+  "results/p2_summary.md",
+  "results/p2_FROZEN.txt",
+   "figures/p2_comparison.png",
+   "figures/p2_h3_ranking.png",
+   "figures/p2_calibration.png",
+   "figures/p2_h3_rank_auc.png",
+   "results/p2_errors.log",
+   "results/run_p2_stdout.log",
+   "results/run_p2_stdout2.log",
+   "results/p3_design.json",
+   "results/p3_universe_probe.json",
+   "results/p3_results.json",
+   "results/p3_results.csv",
+   "results/p3_run_notes.md",
+   "results/p3_FROZEN.txt",
+   "results/p3_errors.log",
+   "results/p3_run_stdout.log",
+   "results/_w_cache.npz",
+   "figures/p3_comparison.png",
+   "figures/p3_agreement.png",
+   "figures/p3_calibration.png"
   ],
-  "bilingual_delivery": {
-    "english": false,
-    "chinese": false
+  "frozen": "2026-09-25T16:46:44+00:00",
+  "reconciliation": "stage3b 双窗口并发收官（窗口A p2_outputs.py 00:46:44-45 / 窗口B plot_p2.py 00:46:19）；p2_comparison.png 为窗口A 版本（last-write）；两窗口图文件名不冲突、均确定性源于 p2_results.json（逐字节一致重跑）；全部数值经窗口B 交叉验证与 p2_summary.md 一致",
+ "note_pilot0": "Pilot-0 执行脚本由 stage2 ARIS 会话起草、编排侧补完并修复 3 处缺陷（非零基代码/NaN 系名/索引错位）；数值经 version-A 草稿交叉验证",
+ "pilot0_comparators": {
+  "C1_marginal": "C1 global marginal",
+  "C2a_phylo": "C2a family prior",
+  "C2b_geo": "C2b geo prior"
+ },
+ "p2": {
+  "design": "results/p2_design.json",
+  "tasks": [
+   "single",
+   "bundle_B1",
+   "bundle_B2",
+   "bundle_B3"
+  ],
+  "bundles": {
+   "B1": [
+    "GB068",
+    "GB074",
+    "GB075"
+   ],
+   "B2": [
+    "GB079",
+    "GB080",
+    "GB081"
+   ],
+   "B3": [
+    "GB262",
+    "GB041",
+    "GB306"
+   ]
   },
-  "outputs": {
-    "paper_en": "not-started",
-    "paper_zh": "not-started",
-    "figures": {
-      "status": "not-started",
-      "count": 0,
-      "strategy": "adaptive visual narrative after Pilot-0"
-    },
-    "tables": {
-      "status": "not-started",
-      "count": 0
-    },
-    "exception": "Pre-pilot concept scaffold; final-output visual requirements are not yet applicable.",
-    "pdf": {
-      "status": "not-started",
-      "english": false,
-      "chinese": false
-    }
+  "masking": "single: per-(layer,seed) rng row-order, k=min(5,n_obs) observed cells; bundle: all observed cells of 3 params",
+  "h3": "global rng42, layers x row-order x B1->B3, 1000 pseudo configs shared by C3/C4, rank=1+n_above, AUC tie=0.5",
+  "caliber_note": "C1/C2a/C2b not recomputed; reused Pilot-0 tier numbers as background rows (口径: 全留出格 vs 掩蔽格, 数值不可直接比大小)."
+ },
+ "p3": {
+  "design": "results/p3_design.json",
+  "universe": "co-obs>=300 pairs (18915) -> lexicographic top 4000 -> 17053 valid combos = 32 true gaps + 484 rare(1-10) + 14726 ge50; DEC=1705 (bottom 10%)",
+  "models": "C1_indep, C3_tree, C4_ldm, C5_graph, C6_manifold, C7_energy",
+  "seed_stability": "C4 re-scored under 5 seeds (42-46); C4 'seed 42' = no-op (deterministic SVD fit)",
+  "calibration_note": "item3 rare-combo calibration; C6 support = gaussian kernel density (logloss/brier proxy, soft-label clip)",
+  "consensus": "n=1428, gap_hits=32 (all true gaps in consensus); C4 rank min/med/max=1/719.5/3611 (1=lowest)",
+  "trigger_4_seed_stability": "C6_manifold (stab 0.103 < 0.5); C1/C3/C4/C5 = 0.963-1.000",
+  "trigger_5_rare_calibration": "C6_manifold (sp 0.065), C7_energy (sp 0.034)",
+  "c5_convergence": "3999/4000 global pairs (1 truncated at 100 rounds)",
+  "agreement": "C1/C3/C4/C5 pairwise full Spearman 0.972-0.996; any pair involving C6 or C7 < 0.13",
+  "runtime": "1m49s (run#9 of 9 background runs; 8 prior crashes fixed; no degradation path used)"
+ },
+ "stage5": {
+  "paper_en": "paper/paper_EN.md (132 lines, 3962 words, 10 figures cited, 14 references; 4 truncated titles DOI-verified via Crossref 2026-09-26)",
+  "paper_zh": "paper/paper_ZH.md (125 lines, ZCHUNK residual 0, 22 key numbers identical to EN; references kept in English per frozen prompt)",
+  "deviation_log": "paper/paper_EN_notes.md",
+  "takeover": "5a executor drafted 58 lines before 128K death; orchestrator completed per stage5a_prompt.txt. 5b executor drafted 74 lines before 128K death; orchestrator completed per stage5b_prompt.txt.",
+  "h_verdicts": "H1 supported; H2 falsified (trigger 1: C3 family logloss 0.7820 >= marginal 0.5252); H3 supported; H4 partially falsified (trigger 5)",
+  "p4": "not executed this run; positioned as future work in Section 6"
+ },
+ "stage_history": [
+  {
+   "stage": "stage2_pilot0",
+   "frozen": "2026-09-25T15:42:09+00:00"
+  },
+  {
+   "stage": "stage3_p2",
+   "frozen": "2026-09-25T16:46:44+00:00"
+  },
+  {
+   "stage": "stage4_p3",
+   "frozen": "2026-09-25T21:41:36+00:00"
+  },
+  {
+   "stage": "stage5_final",
+   "frozen": "2026-09-26T04:40:00+00:00"
   }
+ ],
+ "frozen_p3": "2026-09-25T21:41:36+00:00",
+ "frozen_pilot0": "2026-09-25T15:42:09+00:00",
+ "frozen_stage5": "2026-09-26T04:40:00+00:00"
 }
