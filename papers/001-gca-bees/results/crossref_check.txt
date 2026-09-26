@@ -1,0 +1,33 @@
+OK | 10.3758/bf03328341 | 1966 | Bermant | Discrimination training and reversal in groups of honey bees
+OK | 10.1016/s0003-3472(86)80157-9 | 1986 | Gould | Pattern learning by honey bees
+OK | 10.2307/4422 | 1986 | Wells | Optimal Diet, Minimal Uncertainty and Individual Constancy in the Foraging of Ho
+OK | 10.1007/bf01997235 | 1995 | Benatar | Selection on a haploid genotype for discrimination learning performance: Correla
+OK | 10.1007/s003590050360 | 1999 | Scheiner | Tactile learning and the individual evaluation of the reward in honey bees ( Api
+OK | 10.1037/0735-7036.114.1.86 | 2000 | Chandra | Heritable variation for latent inhibition and its correlation with reversal lear
+OK | 10.1007/s100710000068 | 2000 | Ben-Shahar | Differences in performance on a reversal learning test and division of labor in 
+OK | 10.1006/nlme.2000.3996 | 2001 | Scheiner | The Effects of Genotype, Foraging Role, and Sucrose Responsiveness on the Tactil
+OK | 10.1023/a:1012227308783 | 2001 | Chandra | Quantitative Trait Loci Associated with Reversal Learning and Latent Inhibition 
+OK | 10.1101/lm.44602 | 2002 | Komischke | Successive Olfactory Reversal Learning in Honeybees
+OK | 10.1073/pnas.0732090100 | 2003 | Chen | Global perception in small brains: Topological pattern recognition in  honey bee
+OK | 10.3389/fnbeh.2010.00048 | 2010 | Mota | Multiple reversal olfactory learning in honeybees
+OK | 10.3389/fnbeh.2010.00186 | 2010 | Hadar | Memory Formation in Reversal Learning of the Honeybee
+OK | 10.1007/s10905-014-9465-1 | 2014 | Carr-Markell | Comparing Reversal-Learning Abilities, Sucrose Responsiveness, and Foraging Expe
+OK | 10.1016/j.beproc.2015.03.001 | 2015 | Muszynski | Relational learning in honeybees (Apis mellifera): Oddity and nonoddity discrimi
+OK | 10.1098/rspb.2016.2149 | 2017 | Benaets | Covert deformed wing virus infections have long-term deleterious effects on hone
+OK | 10.7717/peerj.5918 | 2018 | Pérez Claudio | Appetitive reversal learning differences of two honey bee subspecies with differ
+YEAR? | 10.1073/pnas.1314571110 | 2013 | Perry | Honey bees selectively avoid difficult choices
+OK | 10.1007/s10071-022-01741-2 | 2023 | Finke | Individual consistency in the learning abilities of honey bees: cognitive specia
+OK | 10.1007/s00265-026-03744-2 | 2026 | Oxman | Honey bees increase recruitment effort when dance information is honest
+AUTH? | 10.1007/s10071-026-02076-y | 2026 | Golański | Buzzed but not elated? Effect of ethanol on cognitive judgement bias in honeybee
+OK | 10.1073/pnas.1408039111 | 2014 | Cheeseman | Way-finding in displaced clock-shifted bees proves bees use a cognitive map
+OK | 10.3389/fevo.2019.00177 | 2019 | Hendriksma | Individual and Colony Level Foraging Decisions of Bumble Bees and Honey Bees in 
+OK | 10.1371/journal.pone.0045096 | 2012 | Raine | No Trade-Off between Learning Speed and Associative Flexibility in Bumblebees: A
+OK | 10.1038/s41598-017-00389-0 | 2017 | Evans | Fast learning in free-foraging bumble bees is negatively correlated with lifetim
+OK | 10.1523/jneurosci.15-03-01617.1995 | 1995 | Hammer | Learning and memory in the honeybee
+OK | 10.3389/fpsyg.2013.00162 | 2013 | Pahl | Numerical Cognition in Bees and Other Insects
+OK | 10.3819/ccbr.2012.70005 | 2012 | Roberts | Information Seeking in Animals: Metacognition?
+OK | 10.3389/fnhum.2014.00443 | 2014 | Fleming | How to measure metacognition
+OK | 10.3389/fetho.2023.1246370 | 2023 | Qu | Uncertainty monitoring and information seeking in non-primate animals: Meta-anal
+OK | 10.1207/s15516709cog0000_50 | 2006 | Hills | Animal Foraging and the Evolution of Goal‐Directed Cognition
+OK | 10.1371/journal.pone.0111805 | 2014 | Veldwijk | The Effect of Including an Opt-Out Option in Discrete Choice Experiments
+OK | 10.5281/zenodo.17771502 | Honest bees increase recruitment and gain confidence over ti | Oxman, Karmi | Zenodo

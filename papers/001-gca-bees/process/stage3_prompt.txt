@@ -1,0 +1,31 @@
+# ARIS4C-001 重跑 · 分段执行 · 段3（试次级决策分析 + 稳健性）
+
+你是 ARIS4C-001（GCA bees：蜜蜂一般学习能力 → 不确定性监控）重跑的执行器。段1、段2 已完成并冻结。本段做：试次级决策模型（Oxman 2026 事件级数据）+ 全套稳健性检验。不写稿件。
+
+## 上下文纪律（硬性，防 128K/413 溢出）
+- 段2 两次死亡教训：run#1 死于 413（cmd 风格复合命令被 Git Bash 误解析成全盘递归 find，371 万行进请求体）；run#2 死于 128K 溢出（读 100+ 行大输出撑爆上下文）。禁止任何 bash 调用含 `find` / `for` / `cd /d` / `ls -R` / `dir /s` / 复合逻辑（`&&`/`;`/`|`，唯一允许的管道是 `… | head -n N`）；bash 仅限单命令形态：`python <script.py>`、`ls <目录>`、`wc -l <文件>`、`head -n 20 <小文件>`、`cat <≤60 行小文件>`；cmd.exe 语法（`dir`、`type`、`cd /d`、`for %f`、`find /c`、`&`、反斜杠路径）一律禁用；只准在沙盒夹内用相对路径操作；Windows 路径在 bash 里一律正斜杠 `D:/…`。
+- 一切文件操作/API/计算一律写成 `code/*.py` 脚本运行；任何调用输出 >40 行 = 立即改用 .py 并把输出写盘。读大文件只读表头 + 前 3–5 行 + 行数统计。中间结果一律写盘，对话里只汇报路径 + 关键数字。已存在的文件先检查，不重复下载/读取。
+- 单次工具输出尽量短（python 输出 ≤40 行）。推理 1–2 句。总工具调用 ≤30 次。bash 调用不要传 timeout 参数。写文件必须分块（单块 ≤60 行，heredoc `>>` 追加）。python 用 `C:/Users/SCZ_2207/.workbuddy/binaries/python/envs/default/Scripts/python.exe`。
+
+## 现状与输入（先读这 6 件，全部已冻结；大文件只读关键段）
+- RESEARCH_BRIEF.md + stage1_summary.md + stage2_summary.md（段2 主结论与遗留问题）
+- results/stage2_results.json（全部估计值汇总，数字以此为准）+ results/corr_pairs.csv（16 行相关对）
+- data/oxman2026/PROFILE.md（数据画像：Raw Follower Data.xlsx 事件级 632×23，ID=跟随者 233 唯一，Personality=舞者 Honest/Liar，#Circuits Followed by Entrance=跟随努力，FOCAL BEE Circuits per entrance=信息量）
+- **引用纪律**：只可引用 REGISTRY/LIT_NOTES 冻结的 32 条；不得改动冻结条目。
+- **禁止读取/复用旧仓库 `D:\Software\ARIS4C\papers\` 任何文件**。
+
+## 本段任务
+1. **试次级决策模型（核心，estimand ②）**：`data/oxman2026/Raw Follower Data.xlsx` 事件级（Honest+Liar 子集 n=536，跟随者 233 唯一）：
+   - 混合模型：log1p(#Circuits Followed) ~ is_liar + FOCAL_BEE_Circuits + Stage + (1|ID)，statsmodels MixedLM（scipy/statsmodels 均在 venv）；报告固定效应 β/CI/p + 随机效应方差 + R² 边/组。
+   - 潜 precision 检验：信息量效应的个体异质性——(1|ID) 随机斜率版（focal 的随机斜率，若收敛）或分层：按跟随者对 focal 的敏感度（事件级残差回归）排序，比较高/低 sensitivity 分组的 liar 效应是否分化（不预设符号，两层报告）。
+   - 近期奖惩代理：同一 (ID, Trial) 内事件的时序位置（序数变量或近期同 trial 事件均值），检验跟随努力是否随 trial 内累积变化（探索性）。
+   - 结果写 `results/s3_trial_model.json`（全部系数/CI/p/方差分量/拟合指标；收敛警告如实记录）。
+2. **稳健性全套**（写 `results/s3_robustness.json`）：
+   - Finke 2023 元分析留一法：RL1–NP (k=4) 与 RL2–NP (k=4) 逐个去掉 1 实验重算 DL meta，报告 r/CI/p 稳定性；RL1–RL2 (k=2) 无留一空间，改报固定效应对照。
+   - corr_pairs.csv 逐行复算 p（t 检验）与派生 CI，与论文报告值对照（容差内一致即 OK，不一致逐条记录原因）。
+   - Perry 2013 组级 opt-out 统计（additive χ²=25.349, df=10）：从 `results/s2_perry_ctx.txt` 正文数字复验自由度与统计量自洽性（原文只报结论则如实记录"仅可一致性核对，不可重算"）。
+   - Oxman 模型稳健性：log1p 变换敏感性（未变换 effort 的 Gamma 族 GLMM 或 OLS 对照，二选一并注明）+ 剔除只出现 1 次的跟随者后重跑主模型。
+3. 写 `stage3_summary.md`（产物路径、试次级模型关键数字、稳健性结论矩阵 [检验×稳定/不稳定+数字]、遗留问题、给段4 建议：哪些数字进稿、双语稿结构建议）。
+
+## 完成标准
+1–3 全落盘；所有数字可追溯到来源（ref_id/数据文件+列名）；收敛失败/不可估的检验如实记录"不可估+原因"，不编造数字。不写稿件正文（只给段4 建议），不重跑段1/段2 已冻结的抽取，不读旧仓库。

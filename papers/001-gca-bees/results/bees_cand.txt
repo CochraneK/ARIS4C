@@ -1,0 +1,201 @@
+1966 | Gordon Bermant | Discrimination training and reversal in groups of honey bees | Psychonomic Science | OA:Y | 10.3758/bf03328341
+
+
+1969 | Randolf Menzel | On the honey bees memory of spectral colors reversal learning and learning of several colors |  | OA:n | 
+
+
+1979 | Stephen Taber | ENHANCED FERTILITY OF HONEY BEE SEMEN STORED IN VITRO AND POSSIBLY A REVERSAL OF SENESCENCE | Apidologie | OA:Y | 10.1051/apido:19790203
+
+
+1986 | James L. Gould | Pattern learning by honey bees | Animal Behaviour | OA:n | 10.1016/s0003-3472(86)80157-9
+
+
+1995 | Shirly T. Benatar | Selection on a haploid genotype for discrimination learning performance: Correlation between drone honey bees (Apis mellifera) and their worker progeny (Hymenoptera: Apidae) | Journal of Insect Behavior | OA:n | 10.1007/bf01997235
+
+
+1995 | Martin Hammer | Learning and memory in the honeybee | Journal of Neuroscience | OA:Y | 10.1523/jneurosci.15-03-01617.1995
+Insects are favorable subjects for neuroethological studies. Their nervous systems are relatively small and contain many individually identifiable cells. The CNS is highly compartmentalized with clear separations between multisensory higher order neuropiles in the brain and neuropiles serving sensory-motor routines in the ventral cord (Huber, 1974). The rich behavior of insects includes orientatio
+
+1998 | Walter Kaiser | Heartbeat-reversal in honey bees | TUbilio (Technical University of Darmstadt) | OA:n | 
+
+
+1999 | Ricarda Scheiner | Tactile learning and the individual evaluation of the reward in honey bees ( Apis mellifera L.) | Journal of Comparative Physiology A | OA:n | 10.1007/s003590050360
+
+
+1999 | Michael S. Engel | The Taxonomy of Recent and Fossil Honey Bees (Hymenoptera: Apidae; Apis) | Biodiversity Heritage Library (Smithsonian Institution) | OA:Y | 10.5281/zenodo.16256754
+(Uploaded by Plazi from the Biodiversity Heritage Library) No abstract provided.
+
+2000 | Sathees Chandra | Heritable variation for latent inhibition and its correlation with reversal learning in honeybees (Apis mellifera). | Journal of comparative psychology | OA:n | 10.1037/0735-7036.114.1.86
+Latent inhibition (LI) in honeybees (Apis mellifera) was studied by using a proboscis extension response conditioning procedure. Individual queens, drones, and workers differed in the degree to which they revealed LI. The authors hypothesized that individual differences would have a substantial genetic basis. Two sets of progeny were established by crossing virgin queens and individual drones, bot
+
+2000 | Sathees Chandra | Heritable variation for latent inhibition and its correlation with reversal learning in honeybees (Apis mellifera). | Journal of comparative psychology | OA:n | 10.1037//0735-7036.114.1.86
+
+
+2000 | Yehuda Ben‐Shahar | Differences in performance on a reversal learning test and division of labor in honey bee colonies | Animal Cognition | OA:n | 10.1007/s100710000068
+
+
+2001 | Ricarda Scheiner | The Effects of Genotype, Foraging Role, and Sucrose Responsiveness on the Tactile Learning Performance of Honey Bees (Apis mellifera L.) | Neurobiology of Learning and Memory | OA:n | 10.1006/nlme.2000.3996
+
+
+2001 | Sathees Chandra | Quantitative Trait Loci Associated with Reversal Learning and Latent Inhibition in Honeybees (Apis mellifera) | Behavior Genetics | OA:n | 10.1023/a:1012227308783
+
+
+2002 | Bernhard Komischke | Successive Olfactory Reversal Learning in Honeybees | Learning & Memory | OA:Y | 10.1101/lm.44602
+Honeybees Apis mellifera can associate an originally neutral odor with a reinforcement of sucrose solution. Forward pairings of odor and reinforcement enable the odor to release the proboscis extension reflex in consecutive tests. Bees can also be conditioned differentially: They learn to respond to a reinforced odor and not to a nonreinforced one. They can also learn to reverse their choice. Here
+
+2003 | Lin Chen | Global perception in small brains: Topological pattern recognition in honey bees | Proceedings of the National Academy of Sciences | OA:Y | 10.1073/pnas.0732090100
+A series of experiments with honey bees demonstrate that their small brains nevertheless possess the ability for topological perception. Bees rapidly learned to discriminate patterns that are topologically different, and they generalized the learned cue to other novel patterns. By contrast, discrimination of topologically equivalent patterns was learned much more slowly and not as well. Thus, alth
+
+2003 | Christophe Cordella | Honey Characterization and Adulteration Detection by Pattern Recognition Applied on HPAEC-PAD Profiles. 1. Honey Floral Species Characterization | Journal of Agricultural and Food Chemistry | OA:n | 10.1021/jf021100m
+An improved COFRAC (COmité FRançais d'ACréditation) method for the analysis and evaluation of the quality of honey by high-performance anion-exchange chromatography of sugar profiles is proposed. With this method, both minor and major sugars are simultaneously analyzed and the technique is integrated in a new chemometric approach, which uses the entire chromatographic sugars profile of each analyz
+
+2004 | Geraldine A. Wright | Different Thresholds for Detection and Discrimination of Odors in the Honey bee (Apis mellifera) | Chemical Senses | OA:n | 10.1093/chemse/bjh016
+Naturally occurring odors used by animals for mate recognition, food identification and other purposes must be detected at concentrations that vary across several orders of magnitude. Olfactory systems must therefore have the capacity to represent odors over a large range of concentrations regardless of dramatic changes in the salience, or perceived intensity, of a stimulus. The stability of the r
+
+2005 | Nicolas Châline | Learning and Discrimination of Individual Cuticular Hydrocarbons by Honeybees (Apis mellifera) | Chemical Senses | OA:Y | 10.1093/chemse/bji027
+In social insect colonies, recognition of nestmates, kinship, caste and reproductive status is crucial both for individuals and for the colony. The recognition cues used are thought to be chemical, with the hydrocarbons found on the cuticle of insects often cited as being particularly important. However, in honeybees (Apis mellifera) the role of cuticular hydrocarbons in nestmate recognition is co
+
+2005 | Ricardo Ramírez‐Romero | Effects of Cry1Ab protoxin, deltamethrin and imidacloprid on the foraging activity and the learning performances of the honeybee Apis mellifera , a comparative approach | Apidologie | OA:Y | 10.1051/apido:2005039
+
+
+2005 | Gro Vang Amdam | Social reversal of immunosenescence in honey bee workers | Experimental Gerontology | OA:Y | 10.1016/j.exger.2005.08.004
+
+
+2006 | Sayaka Hori | Associative visual learning, color discrimination, and chromatic adaptation in the harnessed honeybee Apis mellifera L. | Journal of Comparative Physiology A | OA:n | 10.1007/s00359-005-0091-4
+
+
+2006 | Greg J. Hunt | Behavioral genomics of honeybee foraging and nest defense | Die Naturwissenschaften | OA:Y | 10.1007/s00114-006-0183-1
+The honeybee has been the most important insect species for study of social behavior. The recently released draft genomic sequence for the bee will accelerate honeybee behavioral genetics. Although we lack sufficient tools to manipulate this genome easily, quantitative trait loci (QTLs) that influence natural variation in behavior have been identified and tested for their effects on correlated beh
+
+2006 | Carolina Andrea Acquarone | Pattern of pH and electrical conductivity upon honey dilution as a complementary tool for discriminating geographical origin of honeys | Food Chemistry | OA:n | 10.1016/j.foodchem.2006.01.058
+
+
+2007 | Sayaka Hori | Associative learning and discrimination of motion cues in the harnessed honeybee Apis mellifera L. | Journal of Comparative Physiology A | OA:n | 10.1007/s00359-007-0234-x
+
+
+2007 | Dinar Tri Soelistyowati | Efficacy of Honey on Sex Reversal of Guppy (Poecilia reticulata Peters) | Jurnal Akuakultur Indonesia | OA:Y | 10.19027/jai.6.155-160
+This study was performed to determine effectiveness of honey on sex reversal of guppy. Guppy broodstock was dipped on 1 L of water containing 0, 20, 40 or 60 mL of honey, for 10 hours. Sex identification was carried out by morphologically and histological method. The results of study show that percentage of male progeny tends to increase by increasing the dose of honey used. Higher percentage of m
+
+2009 | I. Stanimirova | Tracing the geographical origin of honeys based on volatile compounds profiles assessment using pattern recognition techniques | Food Chemistry | OA:n | 10.1016/j.foodchem.2009.04.079
+
+
+2010 | Theo Mota | Multiple reversal olfactory learning in honeybees | Frontiers in Behavioral Neuroscience | OA:Y | 10.3389/fnbeh.2010.00048
+In multiple reversal learning, animals trained to discriminate a reinforced from a non-reinforced stimulus are subjected to various, successive reversals of stimulus contingencies (e.g. A+ vs. B-, A- vs. B+, A+ vs. B-). This protocol is useful to determine whether or not animals "learn to learn" and solve successive discriminations faster (or with fewer errors) with increasing reversal experience.
+
+2010 | Ravit Hadar | Memory Formation in Reversal Learning of the Honeybee | Frontiers in Behavioral Neuroscience | OA:Y | 10.3389/fnbeh.2010.00186
+In reversal learning animals are first trained with a differential learning protocol, where they learn to respond to a reinforced odor (CS+) and not to respond to a non-reinforced odor (CS-). Once they respond correctly to this rule, the contingencies of the conditioned stimuli are reversed, and animals learn to adjust their response to the new rule. This study investigated the effect of a protein
+
+2012 | Nigel E. Raıne | No Trade-Off between Learning Speed and Associative Flexibility in Bumblebees: A Reversal Learning Test with Multiple Colonies | PLoS ONE | OA:Y | 10.1371/journal.pone.0045096
+Potential trade-offs between learning speed and memory-related performance could be important factors in the evolution of learning. Here, we test whether rapid learning interferes with the acquisition of new information using a reversal learning paradigm. Bumblebees (Bombus terrestris) were trained to associate yellow with a floral reward. Subsequently the association between colour and reward was
+
+2012 | Christof Schneider | RFID Tracking of Sublethal Effects of Two Neonicotinoid Insecticides on the Foraging Behavior of Apis mellifera | PLoS ONE | OA:Y | 10.1371/journal.pone.0030023
+The development of insecticides requires valid risk assessment procedures to avoid causing harm to beneficial insects and especially to pollinators such as the honeybee Apis mellifera. In addition to testing according to current guidelines designed to detect bee mortality, tests are needed to determine possible sublethal effects interfering with the animal's vitality and behavioral performance. Se
+
+2012 | Eny Heriyati | Sex reversal of Nile tilapia using honey and analysis of aromatase gene expression |  | OA:n | 
+
+
+2013 | Barış Yüce | Honey Bees Inspired Optimization Method: The Bees Algorithm | Insects | OA:Y | 10.3390/insects4040646
+Optimization algorithms are search methods where the goal is to find an optimal solution to a problem, in order to satisfy one or more objective functions, possibly subject to a set of constraints. Studies of social animals and social insects have resulted in a number of computational models of swarm intelligence. Within these swarms their collective behavior is usually very complex. The collectiv
+
+2013 | Mario Pahl | Numerical Cognition in Bees and Other Insects | Frontiers in Psychology | OA:Y | 10.3389/fpsyg.2013.00162
+The ability to perceive the number of objects has been known to exist in vertebrates for a few decades, but recent behavioral investigations have demonstrated that several invertebrate species can also be placed on the continuum of numerical abilities shared with birds, mammals, and reptiles. In this review article, we present the main experimental studies that have examined the ability of insects
+
+2014 | Morgan K. Carr-Markell | Comparing Reversal-Learning Abilities, Sucrose Responsiveness, and Foraging Experience Between Scout and Non-Scout Honey bee (Apis mellifera) Foragers | Journal of Insect Behavior | OA:n | 10.1007/s10905-014-9465-1
+
+
+2014 | Vanessa Corby‐Harris | The Bacterial Communities Associated with Honey Bee (Apis mellifera) Foragers | PLoS ONE | OA:Y | 10.1371/journal.pone.0095056
+The honey bee is a key pollinator species in decline worldwide. As part of a commercial operation, bee colonies are exposed to a variety of agricultural ecosystems throughout the year and a multitude of environmental variables that may affect the microbial balance of individuals and the hive. While many recent studies support the idea of a core microbiota in guts of younger in-hive bees, it is unk
+
+2014 | Hossam F. Abou‐Shaara | The foraging behaviour of honey bees, Apis mellifera: a review | Veterinární Medicína | OA:Y | 10.17221/7240-vetmed
+Foraging behaviour is one of the distinctive behaviours of honey bees, Apis mellifera. This behaviour is the link between the honey bee colony and the ambient environment. Therefore, various in-colony and out-colony factors have an impact on this behaviour, and many studies have been employed to investigate these factors. Foraging behaviour is not advantageous only for the colony and for plant pol
+
+2014 | James Frederick Cheeseman | Way-finding in displaced clock-shifted bees proves bees use a cognitive map | Proceedings of the National Academy of Sciences | OA:Y | 10.1073/pnas.1408039111
+Mammals navigate by means of a metric cognitive map. Insects, most notably bees and ants, are also impressive navigators. The question whether they, too, have a metric cognitive map is important to cognitive science and neuroscience. Experimentally captured and displaced bees often depart from the release site in the compass direction they were bent on before their capture, even though this no lon
+
+2015 | Nicole M. Muszynski | Relational learning in honeybees (Apis mellifera): Oddity and nonoddity discrimination | Behavioural Processes | OA:n | 10.1016/j.beproc.2015.03.001
+
+
+2015 | Charles I. Abramson | The effect of ethanol on reversal learning in honey bees (Apis mellifera anatolica): Response inhibition in a social insect model | Alcohol | OA:n | 10.1016/j.alcohol.2015.02.005
+
+
+2015 | Constance Boitard | GABAergic feedback signaling into the calyces of the mushroom bodies enables olfactory reversal learning in honey bees | Frontiers in Behavioral Neuroscience | OA:Y | 10.3389/fnbeh.2015.00198
+In reversal learning, subjects first learn to respond to a reinforced stimulus A and not to a non-reinforced stimulus B (A(+) vs. B(-)) and then have to learn the opposite when stimulus contingencies are reversed (A(-) vs. B(+)). This change in stimulus valence generates a transitory ambiguity at the level of stimulus outcome that needs to be overcome to solve the second discrimination. Honey bees
+
+2015 | Pei‐Wei Tsai | Constructing foreign exchange rate forecasting model with interactive artificial bee colony algorithm and consumer confidence index | Swinburne figshare (Swinburne University of Technology) | OA:n | 
+
+
+2016 | Karoline Fritzsche | Sex Ratio Bias Leads to the Evolution of Sex Role Reversal in Honey Locust Beetles | Current Biology | OA:Y | 10.1016/j.cub.2016.07.018
+
+
+2016 | Pei‐Wei Tsai | STRUCTURING INTERACTIVE ARTIFICIAL BEE COLONY FORECASTING MODEL IN FOREIGN EXCHANGE RATE FORECASTING WITH CONSUMER CONFIDENCE INDEX AND CONVENTIONAL MICROECONOMICS FACTORS | Swinburne figshare (Swinburne University of Technology) | OA:n | 10.24507/icicelb.07.04.895
+Existing methods used in the foreign exchange rate forecasting are mostly in the branch of the time series methods. The time series models usually do not focus on the short-term forecasting, but the chronic forecasting. Models for the short-term forecasting still remains blank. In addition, conventional foreign exchange rate forecasting methods only consider the factors in microeconomics. No psych
+
+2017 | Kristof Benaets | Covert deformed wing virus infections have long-term deleterious effects on honeybee foraging and survival | Proceedings of the Royal Society B Biological Sciences | OA:Y | 10.1098/rspb.2016.2149
+Several studies have suggested that covert stressors can contribute to bee colony declines. Here we provide a novel case study and show using radiofrequency identification tracking technology that covert deformed wing virus (DWV) infections in adult honeybee workers seriously impact long-term foraging and survival under natural foraging conditions. In particular, our experiments show that adult wo
+
+2017 | Eny Heriyati | Ekspresi gen aromatase pada pengarahan diferensiasi kelamin ikan nila (Oreochromis niloticus Linnaeus 1758) menggunakan madu [Aromatase gene expression of sex reversal Nile tilapia (Oreochromis niloticus Linnaeus 1758) using honey] | Jurnal Iktiologi Indonesia | OA:Y | 10.32491/jii.v15i1.74
+In tilapia aquaculture, all male populations are preferred because they achieve higher growth rates and prevent uncontrolled reproduction. Sex reversal techniques are largely used for the control of sex in fish farming and in fundamental studies on sex determinism mechanisms. The study was conducted to determine the effect of immersion Nile tilapia larvae in water containing different honey source
+
+2017 | Naik Zada | Reversal of ethambutol induced optic neuritis with natural honey in rabbits |  | OA:n | 
+BACKGROUND: Ethambutol induced optic neuritis is common side effect in anti tubercular therapy. Bilateral progressive painless visual blurring and or decreased color perception may be noted. The present study was aimed to see the reversal of Ethambutol induced optic toxicity with natural honey.OBJECTIVE: To study the reversal of ethambutol induced optic neuritis with natural honey in rabbits.MATER
+
+2017 | Lisa J. Evans | Fast learning in free-foraging bumble bees is negatively correlated with lifetime resource collection | Scientific Reports | OA:Y | 10.1038/s41598-017-00389-0
+Despite widespread interest in the potential adaptive value of individual differences in cognition, few studies have attempted to address the question of how variation in learning and memory impacts their performance in natural environments. Using a novel split-colony experimental design we evaluated visual learning performance of foraging naïve bumble bees (Bombus terrestris) in an ecologically r
+
+2017 | Jacob M. Peters | Wings as impellers: Honey bees co-opt flight system to induce nest ventilation and disperse pheromones | Journal of Experimental Biology | OA:Y | 10.1242/jeb.149476
+Honey bees (Apis mellifera) are remarkable fliers that regularly carry heavy loads of nectar and pollen, supported by a flight system – the wings, thorax and flight muscles - that one might assume is optimized for aerial locomotion. However, honey bees also use this system to perform other crucial tasks that are unrelated to flight. When ventilating the nest, bees grip the surface of the comb or n
+
+2018 | Eddie Pérez Claudio | Appetitive reversal learning differences of two honey bee subspecies with different foraging behaviors | PeerJ | OA:Y | 10.7717/peerj.5918
+We aimed to examine mechanistically the observed foraging differences across two honey bee,Apis mellifera, subspecies using the proboscis extension response assay. Specifically, we compared differences in appetitive reversal learning ability between honey bee subspecies:Apis mellifera caucasica(Pollman), andApis mellifera syriaca(Skorikov) in a “common garden” apiary. It was hypothesized that spec
+
+2018 | Eddie Pérez Claudio | Appetitive reversal learning differences of two honey bee subspecies with different foraging behaviors |  | OA:Y | 10.7287/peerj.preprints.27274
+We aimed to examine mechanistically the observed foraging differences across two honey bee, Apis mellifera, subspecies using the Proboscis Extension Response (PER) assay. Specifically, we compared differences in appetitive reversal learning ability between honey bee subspecies:Apis mellifera caucasica(Pollman), andApis mellifera syriaca(Skorikov) in a “common garden” apiary. It was hypothesized th
+
+2018 | Eddie Pérez Claudio | Appetitive reversal learning differences of two honey bee subspecies with different foraging behaviors |  | OA:Y | 10.7287/peerj.preprints.27274v1
+We aimed to examine mechanistically the observed foraging differences across two honey bee, Apis mellifera , subspecies using the Proboscis Extension Response (PER) assay. Specifically, we compared differences in appetitive reversal learning ability between honey bee subspecies: Apis mellifera caucasica (Pollman), and Apis mellifera syriaca (Skorikov) in a “common garden” apiary. It was hypothesiz
+
+2018 | Dominic Clarke | Predictive modelling of honey bee foraging activity using local weather conditions | Apidologie | OA:Y | 10.1007/s13592-018-0565-3
+We investigated the connection between foraging activity of honey bees ( Apis mellifera ) and local weather conditions. We measured bee egress rate along with temperature, solar radiation, atmospheric pressure, humidity, rainfall, wind direction and speed. Data was collected from two hives, over the periods June–September 2013 (hive 1) and July–September 2014 (hive 2). We fitted an ordinary-least-
+
+2019 | Svenja Bänsch | Foraging of honey bees in agricultural landscapes with changing patterns of flower resources | Agriculture Ecosystems & Environment | OA:Y | 10.1016/j.agee.2019.106792
+
+
+2019 | Harmen P. Hendriksma | Individual and Colony Level Foraging Decisions of Bumble Bees and Honey Bees in Relation to Balancing of Nutrient Needs | Frontiers in Ecology and Evolution | OA:Y | 10.3389/fevo.2019.00177
+Foraging decisions of social animals occur in the context of social groups, and thus may be subject to considerations of not only an individual’s nutritional state and nutrient input, but those of the social group in which they live. In eusocial insects, which live in colonies containing workers that forage for food that is mostly consumed by others, foraging decisions that reflect colony needs ma
+
+2021 | Bradley David Ohlinger | Honey Bees (Hymenoptera: Apidae) Decrease Foraging But Not Recruitment After Neonicotinoid Exposure | Journal of Insect Science | OA:Y | 10.1093/jisesa/ieab095
+Honey bees (Linnaeus, Hymenoptera: Apidae) are widely used as commercial pollinators and commonly forage in agricultural and urban landscapes containing neonicotinoid-treated plants. Previous research has demonstrated that honey bees display adverse behavioral and cognitive effects after treatment with sublethal doses of neonicotinoids. In laboratory studies, honey bees simultaneously increase the
+
+2022 | Lydia Goff | C-CASE 2022: Competence to Excellence01. The Queen Bee phenomenon in Canadian surgical subspecialties: an evaluation of gender biases in the resident training environment02. Barriers to surgical peer coaching — What have we learned, and where do we go from here?03. Shared decision-making and evidence-based medicine: Pivotal or trivial to patient care in orthopedic trauma?04. Immersive virtual reality and cadaveric bone are equally effective in skeletal anatomy education: a randomized crossover noninferiority trial05. Development of simulators for decentralized simulation-based education IO training using design thinking and Delphi — a novel approach06. The impact of feedback on laparoscopic skills for surgical residents during COVID-1907. The role of collaborative feedback and remote practice in the acquisition of suturing skills by medical students at Université de Montréal08. Efficacy testing of an affordable and realistic small bowel simulator for hand-sewn anastomosis09. The LASER rating scale: a new teaching tool in otolaryngology10. Virtual patient case simulations: their role in undergraduate and postgraduate surgical training11. Evaluating the effectiveness of video-assisted informed consent in surgery: a systematic review12. Communication patterns in the cardiac surgery operating room are affected by task difficulty: a simulation model13. Improving adherence to postcall departure guidelines in orthopedics: a quality-improvement initiative14. Increasing familiarity among team members helps to reduce laparoscopic procedure time15. The effectiveness of a self-directed online learning module on trainee knowledge and confidence during plastic surgery clinical rotations16. Implementing an orientation handbook before a surgical rotation in urology17. An examination of equity-related experiences of surgical trainees at academic centres across Ontario: design of a targeted needs assessment18. Viewing differences between experts and trainees: implication for surgical education19. Assessment of medical student exposure to and satisfaction with surgical subspecialty education20. Assessment of student exposure to climate impacts of surgical personal protective equipment in the undergraduate medical curriculum21. Virtual reality simulation for the middle cranial fossa approach — a face, content and construct validation study22. Evaluating the Canadian Orthopaedic Surgery Medical Education Course (COSMEC)23. Subpial resection in a novel ex vivo calf brain epilepsy simulation model24. Effectiveness of the Eyesi augmented reality simulator for ophthalmology trainees: a systematic review and meta-analysis25. Learning beyond the objectives: an evidence-based analysis of AI-selected competencies in surgical simulation training26. Virtual compared with in-person surgical grand rounds: participants’ perceptions, preferences and directions for the future27. Quality of narrative feedback for entrustable professional activities assessed in the operating room: analysis of 4. years of assessments in the surgical foundations curriculum at Queen’s University28. SimOscopy: an accessible 3D-printed and laser-cut laparoscopic surgical simulator developed for a mobile device29. A debriefing tool to acquire nontechnical skills in trauma courses30. Capacity building using a hub-and-spokes model to produce customizable simulators for surgical education31. Exploring skin tone diversity in a plastic surgery resident education curriculum32. Video-based assessments of thoracic surgery trainees’ operative skills as adjuncts in competency-based medical education33. How do you feel? An examination of team leaders’ and members’ emotions in surgical simulations34. Comparing the efficacy of a real-time intelligent coaching system to human expert instruction in surgical technical skills training: randomized controlled trial35. Empowering women to pursue surgery: launching a pilot gender-congruent mentorship program for medical students36. Affective and cognitive responses to a virtual reality spine simulator37. Immersive virtual reality for patient-specific preoperative planning: a systematic review38. The categorization of surgical problems by junior and senior medical students39. The application of microlearning modules in surgical education to enhance procedural skills and surgical training40. Authorship gender disparity and trends in female authorship in 5 high-impact orthopedic journals from 2002 to 202241. The landscape of Canadian academic surgery: analysis of gender representation, academic rank, and research productivity | Canadian Journal of Surgery | OA:Y | 10.1503/cjs.014622
+# 01. The Queen Bee phenomenon in Canadian surgical subspecialties: an evaluation of gender biases in the resident training environment {#article-title-2} The Queen Bee phenomenon describes the behavioural response that occurs when women achieve success in a male-dominated environment, and in this
+
+2023 | Valerie Finke | Individual consistency in the learning abilities of honey bees: cognitive specialization within sensory and reinforcement modalities | Animal Cognition | OA:Y | 10.1007/s10071-022-01741-2
+The question of whether individuals perform consistently across a variety of cognitive tasks is relevant for studies of comparative cognition. The honey bee (Apis mellifera) is an appropriate model to study cognitive consistency as its learning can be studied in multiple elemental and non-elemental learning tasks. We took advantage of this possibility and studied if the ability of honey bees to le
+
+2024 | Wei Lu | Reversal of Oxaliplatin Resistance by New Zealand Manuka Honey Extracts in Gastrointestinal Cancer Cells | Tuwhera (Auckland University of Technology) | OA:Y | 
+Gastrointestinal (GI) cancers remain among the leading causes of cancer-related deaths worldwide. GI cancer is one of the leading causes of cancer mortality in New Zealand with over 4,000 new cases and more than 1,000 deaths by GI cancers reported annually in NZ. Therefore, GI cancer is a big health burden to the health system. Although oxaliplatin-based chemotherapy has been widely adopted as the
+
+2024 | Hartono Hartono | Effect of Larval Ages and Honey Treatment on the Sex Reversal of Betta Fish (Betta splendens) | Pakistan Journal of Biological Sciences | OA:Y | 10.3923/pjbs.2024.594.601
+Background and Objective: Betta fish is one of the most popular ornamental fish because of their attractive body shape, especially for males. The fish development usually results in a similar number of males and females or an even higher number of females. This study aimed to determine the effect of various concentrations of honey and the age of larvae on the sex ratio of Betta fish. Materials and
+
+2025 | Oxman, Karmi | Honest bees increase recruitment and gain confidence over time - Dataset | Zenodo (CERN European Organization for Nuclear Research) | OA:Y | 10.5281/zenodo.17771502
+Data for submission for publication
+
+2025 | Oxman, Karmi | Honest bees increase recruitment and gain confidence over time - Dataset | Zenodo (CERN European Organization for Nuclear Research) | OA:Y | 10.5281/zenodo.17771503
+Data for submission for publication
+
+2026 | Karmi L. Oxman | Honey bees increase recruitment effort when dance information is honest | Behavioral Ecology and Sociobiology | OA:Y | 10.1007/s00265-026-03744-2
+Abstract Honey bee ( Apis mellifera ) recruitment dances vary in the accuracy of information they convey about available food sources. We investigated whether honey bees can assess the reliability of waggle dances. During the “learning stage”, free-flying foragers were exposed to one of three treatments as they visited the feeder at location A. Treatments differed in the quality of information com
+
+2026 | Marta Golańska | Buzzed but not elated? Effect of ethanol on cognitive judgement bias in honeybees | Animal Cognition | OA:Y | 10.1007/s10071-026-02076-y
+Ethanol is a neuroactive compound known to alter cognition, behavior, and physiology in a diverse range of vertebrate and invertebrate animals. It is also naturally present in many environments and might exert influence on various organisms, such as honeybees feeding on fermenting nectar, reflecting on the ecological networks the organism is involved in. In this study, we tested whether exposure o
+
+2026 | Besse Tenri Nurkamilah | Exploration Exploration of Natural Honey as a Potential Sex Reversal Agent in Guppy (Poecilia reticulata) | Agrikan Jurnal Agribisnis Perikanan | OA:Y | 10.52046/agrikan.v19i1.2749
+Guppy (Poecilia reticulata) is one of the most popular freshwater ornamental fish with high economic value, particularly in males, which exhibit brighter coloration and more attractive fin morphology than females. Consequently sex ratio manipulation through sex reversal techniques has been explored to increase male production in aquaculture. This study aimed to evaluate the potential of natural ho
+
+2026 | Nebojša Ralević | A Bee Colony Optimization Framework with Fuzzy Softmax Confidence Modeling for Multiclass Brain Tumor MRI Classification | Mathematics | OA:Y | 10.3390/math14132444
+Brain tumor classification from magnetic resonance imaging (MRI) remains challenging in settings where only image-level labels are available and tumor classes exhibit overlapping visual characteristics. In this study, we consider the publicly available Brain Tumor MRI Dataset from Kaggle, a four-class dataset composed of 2D MRI slices belonging to the categories glioma, meningioma, pituitary tumor
+
+2026 | Igor' Zaharyan | Honey quality and adulteration: a risk-based monitoring model and its impact on consumer confidence | Russian Journal of Management | OA:Y | 10.29039/2409-6024-2026-14-4-556-576
+This paper examines the multifaceted problem of authenticating beekeeping products in the context of the current market transformation. The key research focus is the development and validation of a risk-based honey quality monitoring model that combines modern analytical approaches with expert producer verification practices. An analysis of changes in the scale and forms of honey adulteration on t
+

@@ -1,0 +1,209 @@
+### [finke] correlat
+ as its learning can be studied in multiple elemental and non-elemental learning tasks. We took advantage of this possibility and studied if the ability of honey bees to learn a simple discrimination correlates with their ability to solve two tasks of higher complexity, reversal learning and negative patterning. We performed four experiments in which we varied the sensory modality of the stimuli (visual o
+
+### [finke] correlat
+ments in which we varied the sensory modality of the stimuli (visual or olfactory) and the type (Pavlovian or operant) and complexity (elemental or non-elemental) of conditioning to examine if stable correlated performances could be observed across experiments. Across all experiments, an individual’s proficiency to learn the simple discrimination task was positively and significantly correlated with perfo
+
+### [finke] correlat
+ne if stable correlated performances could be observed across experiments. Across all experiments, an individual’s proficiency to learn the simple discrimination task was positively and significantly correlated with performance in both reversal learning and negative patterning, while the performances in reversal learning and negative patterning were positively, yet not significantly correlated. These resu
+
+### [finke] correlat
+significantly correlated with performance in both reversal learning and negative patterning, while the performances in reversal learning and negative patterning were positively, yet not significantly correlated. These results suggest that correlated performances across learning paradigms represent a distinct cognitive characteristic of bees. Further research is necessary to examine if individual cognitive
+
+### [finke] correlat
+ce in both reversal learning and negative patterning, while the performances in reversal learning and negative patterning were positively, yet not significantly correlated. These results suggest that correlated performances across learning paradigms represent a distinct cognitive characteristic of bees. Further research is necessary to examine if individual cognitive consistency can be found in other inse
+
+### [finke] correlat
+gh 1999 ; Ben-Shahar et al. 2000 ; Scheiner and Amdam 2009 ; Scheiner et al. 2017 ). For example, nectar and pollen foragers show inter-individual differences in their response thresholds to sucrose, correlating positively with differences in appetitive associative learning performances (Scheiner et al. 1999 , 2001a , b ; Pankiw and Page 1999 ). However, only a few studies have examined whether inter-indi
+
+### [finke] correlat
+s stable over time in forager bees, justifying that their pattern of performances could be defined as a cognitive profile. We also evidenced that the performance in an elemental visual discrimination correlates positively with the performance in a non-elemental visual relational concept learning task where subjects have to follow a rule based on spatial relations between objects independently of the physi
+
+### [finke] correlat
+ept learning task where subjects have to follow a rule based on spatial relations between objects independently of the physical properties of those objects (Finke et al. 2021 ). By contrast, no clear correlation was observed between the learning performances in the olfactory and visual modality, suggesting that cognitive consistency is modality-specific (Finke et al. 2021 ). Cognitive specialization i.e. 
+
+### [finke] correlat
+merates with a fixed neuronal architecture, which could operate separately or in conjunction according to the complexity of the learning task. Here we aimed at testing whether individual performances correlate between different learning tasks relying on the same reinforcement and sensory modality or whether distinct cognitive modules mediate performance in these tasks. We tested bees in (i) a reversal lea
+
+### [finke] correlat
+y in their cognitive success, thus indicating the presence of abilities that would be independent of a specific experimental context. Our hypothesis was that within each experiment performances would correlate positively across all tasks and that we would find similar patterns of correlations in performances across the different experiments. We hypothesized this based on our recent findings showing that l
+
+### [finke] correlat
+d be independent of a specific experimental context. Our hypothesis was that within each experiment performances would correlate positively across all tasks and that we would find similar patterns of correlations in performances across the different experiments. We hypothesized this based on our recent findings showing that learning proficiency differs between individuals but remains consistent over time 
+
+### [finke] correlat
+of correct choices in the non-reinforced tests to assess individual consistency across the three leaning tasks tested. Individual consistency across the different tasks was tested using Spearman rank correlations between test performances. Reversal learning ability can only be tested on individuals that successfully acquired the first A+B− association (Mota and Giurfa 2010 ). Most bees chose preferentiall
+
+### [finke] correlat
+ GraphPad prism version 9.0.0 (GraphPad Software Inc., San Diego, California, USA). The significance level was α = 0.05 to account for our relatively small sample sizes (Lakens et al. 2018 ). For all correlations of the test performances across the three learning tasks, the null hypothesis was that the correlation coefficient rho was not different from zero. Results We analyzed whether individual performa
+
+### [finke] correlat
+el was α = 0.05 to account for our relatively small sample sizes (Lakens et al. 2018 ). For all correlations of the test performances across the three learning tasks, the null hypothesis was that the correlation coefficient rho was not different from zero. Results We analyzed whether individual performances of free-flying bees ( n = 33) in a reversal learning problem correlated with performances in a nega
+
+### [finke] correlat
+ null hypothesis was that the correlation coefficient rho was not different from zero. Results We analyzed whether individual performances of free-flying bees ( n = 33) in a reversal learning problem correlated with performances in a negative-patterning problem, both established using visual stimuli. As reversal learning consists of two phases (A+ vs. B− → A− vs. B+), we performed separated analyses betwe
+
+### [finke] correlat
+ in the 1st and 2nd phases of the reversal learning protocol. Only bees that successfully learned the initial discrimination of the reversal learning (≥ 60% correct choices in the test) were used for correlations including the 2nd reversal learning phase as successful reversal learning requires learning of the initial discrimination. Including bees that did not learn in the first phase goes against the de
+
+### [finke] correlat
+, p = 0.24, NP : \({\chi }_{(1)}^{ 2}\) = 0.15, p = 0.70; tables S4–S6 in the supplementary). Figure 2 shows that individual learning performances in the 1st discrimination phase of reversal learning correlated with performances in the 2nd phase of reversal learning (Spearman rank correlation, n = 27, rho = 0.53, p = 0.005, R 2 = 0.34, Fig. 2 A, Table 1 ). Most bees ( n = 4 out of 6 non-learner bees in th
+
+### [finke] correlat
+lementary). Figure 2 shows that individual learning performances in the 1st discrimination phase of reversal learning correlated with performances in the 2nd phase of reversal learning (Spearman rank correlation, n = 27, rho = 0.53, p = 0.005, R 2 = 0.34, Fig. 2 A, Table 1 ). Most bees ( n = 4 out of 6 non-learner bees in the 1st phase) that were excluded because they were considered as non-learners in th
+
+### [finke] correlat
+reversal learning (see above) but rather as an elemental learning performance given that they did not learn to reverse the reinforcement contingency. Individual test performances were also positively correlated between the 1st phase of reversal learning and in the negative patterning procedure ( n = 33, rho = 0.42, p = 0.02, R 2 = 0.2, Fig. 2 B, Table 1 ). However, no significant correlation was observed 
+
+### [finke] correlat
+ also positively correlated between the 1st phase of reversal learning and in the negative patterning procedure ( n = 33, rho = 0.42, p = 0.02, R 2 = 0.2, Fig. 2 B, Table 1 ). However, no significant correlation was observed between the 2nd phase of reversal learning and negative patterning ( n = 27, rho = 0.25, p = 0.201, R 2 = 0.06, Fig. 2 C, Table 1 ). Here, most bees ( n = 4 out of 6) that were non-le
+
+### [finke] correlat
+2 C, Table 1 ). Here, most bees ( n = 4 out of 6) that were non-learners in the 2nd phase of reversal learning succeeded nevertheless in the negative patterning discrimination. Fig. 2 Full size image Correlations of individual test performances in Experiment 1: Visual learning experiment with free-flying bees. Pairwise Spearman rank correlations between the test performances (Percent of correct choices) o
+
+### [finke] correlat
+n the negative patterning discrimination. Fig. 2 Full size image Correlations of individual test performances in Experiment 1: Visual learning experiment with free-flying bees. Pairwise Spearman rank correlations between the test performances (Percent of correct choices) of individual bees in A the 1st phase of reversal learning (1st RL) and the 2nd phase of reversal learning (2nd RL; n = 27, rho = 0.53, 
+
+### [finke] correlat
+t represents data from one bee. The regression line is indicated in orange and the dotted grey lines show the 95%-confidence intervals of the regression. Solid regression lines indicate a significant correlation and dashed lines indicate a non-significant correlation (color figure online) Table 1 Results of the Spearman rank correlations comparing the individual’s test performances in the 1st phase of rev
+
+### [finke] correlat
+ndicated in orange and the dotted grey lines show the 95%-confidence intervals of the regression. Solid regression lines indicate a significant correlation and dashed lines indicate a non-significant correlation (color figure online) Table 1 Results of the Spearman rank correlations comparing the individual’s test performances in the 1st phase of reversal learning (1st RL), the 2nd phase of reversal learn
+
+### [finke] correlat
+tervals of the regression. Solid regression lines indicate a significant correlation and dashed lines indicate a non-significant correlation (color figure online) Table 1 Results of the Spearman rank correlations comparing the individual’s test performances in the 1st phase of reversal learning (1st RL), the 2nd phase of reversal learning (2nd RL) and negative patterning (NP) Full size table Experiment 2.
+
+### [finke] correlat
+of correct choices in the non-reinforced tests to assess individual consistency across the three leaning tasks tested. Individual consistency across the different tasks was tested using Spearman rank correlations between test performances. Reversal learning ability can only be tested on individuals that successfully acquired the first A+B− association (Mota and Giurfa 2010 ). In both experiments, most bee
+
+### [finke] correlat
+ a detailed description of the GLMMs and model selection procedure, Tables S10–S12). Results We analyzed if individual performances of free-flying bees ( n = 22) in a reversal learning discrimination correlated with performances in a negative-patterning problem, both established using olfactory stimuli. As before, we performed separated analyses between negative-patterning performances and performances in
+
+### [finke] correlat
+ performances in the 1st and 2nd phases of reversal learning. Only bees that successfully learned the initial discrimination of the reversal learning (≥ 60% correct choices in the test) were used for correlations including the 2nd reversal learning phase as successful reversal learning requires learning of the initial discrimination. There were no significant effects of the sequence of problems trained ( 
+
+### [finke] correlat
+{ 2}\) = 0.35, p = 0.55, NP: \({\chi }_{(1)}^{ 2}\) = 1, p = 0.32, Tables S10–S12). Figure 3 shows that test performances remained consistent across the two phases of reversal learning (Spearman rank correlation, n = 20, rho = 0.6, p = 0.006, R 2 = 0.25, Fig. 3 A, Table 1 ). The two bees that were excluded from this analysis, as they did not learn the initial discrimination, also did not show any sign of 
+
+### [finke] correlat
+ also remained consistent across the 1st phase of reversal learning and negative patterning ( n = 22, rho = 0.46, p = 0.03, R 2 = 0.25, Fig. 3 B, Table 1 ). As for the visual modality, no significant correlation was found between test performances of the 2nd phase of reversal learning phase and negative patterning ( n = 20, rho = 0.19, p = 0.41, R 2 = 0.03, Fig. 3 C, Table 1 ). Here one excluded bee also 
+
+### [finke] correlat
+9, p = 0.41, R 2 = 0.03, Fig. 3 C, Table 1 ). Here one excluded bee also failed in negative patterning while the other just reached the learner threshold (62% correct choices). Fig. 3 Full size image Correlations of the individual test performances in Experiment 2: Olfactory learning experiment with free-flying bees. Pairwise Spearman rank correlations between test performances (Percent of correct choices
+
+### [finke] correlat
+r threshold (62% correct choices). Fig. 3 Full size image Correlations of the individual test performances in Experiment 2: Olfactory learning experiment with free-flying bees. Pairwise Spearman rank correlations between test performances (Percent of correct choices) of individual bees in A the 1st phase of reversal learning (1st RL) and the 2nd phase of reversal learning (2nd RL; n = 20, rho = 0.6, p = 0
+
+### [finke] correlat
+ch dot represents the data of one bee. A regression line is indicated in orange and the dotted lines show the 95%-confidence intervals of the regression. Solid regression lines indicate a significant correlation and dashed lines indicate a non-significant correlation (color figure online) Experiment 3. visual learning in restrained bees Material and methods General methods The day before the learning expe
+
+### [finke] correlat
+ is indicated in orange and the dotted lines show the 95%-confidence intervals of the regression. Solid regression lines indicate a significant correlation and dashed lines indicate a non-significant correlation (color figure online) Experiment 3. visual learning in restrained bees Material and methods General methods The day before the learning experiments, returning non-pollen foragers from a single col
+
+### [finke] correlat
+ting score. For example, a bee scored ‘0’ could have been none responsive to any stimulus or responsive to all stimuli. Individual consistency in learning performance was analyzed using Spearman rank correlations. Only bees characterized as ‘learners’ ( n = 61 of 140 bees) in the test following the 1st phase of the reversal learning protocol were kept for analysis of the 2nd phase of reversal learning, as
+
+### [finke] correlat
+ess’ or ‘failure’ in the 2nd phase of reversal learning can only be assessed in bees that learned the initial association established in the 1st phase of reversal learning. Consequently, we could not correlate statistically the test performances of the 1st phase with those of the 2nd phase as correlations can only be performed when the data has more than one value (only learners of the first phase had to 
+
+### [finke] correlat
+ned the initial association established in the 1st phase of reversal learning. Consequently, we could not correlate statistically the test performances of the 1st phase with those of the 2nd phase as correlations can only be performed when the data has more than one value (only learners of the first phase had to be used and in consequence all their responses were scored as 1). To assess if the order in wh
+
+### [finke] correlat
+ GraphPad prism version 9.0.0 (GraphPad Software Inc., San Diego, California, USA). The significance level was α = 0.05 to account for our relatively small sample sizes (Lakens et al. 2018 ). For all correlations of the test performances across the three learning tasks, the null hypothesis was that the correlation coefficient rho was not different from zero. Results We studied the learning performances of
+
+### [finke] correlat
+el was α = 0.05 to account for our relatively small sample sizes (Lakens et al. 2018 ). For all correlations of the test performances across the three learning tasks, the null hypothesis was that the correlation coefficient rho was not different from zero. Results We studied the learning performances of restrained bees ( n = 140) conditioned with visual stimuli using a visual variant of the proboscis exte
+
+### [finke] correlat
+lts We studied the learning performances of restrained bees ( n = 140) conditioned with visual stimuli using a visual variant of the proboscis extension response (PER) protocol. Our goal was again to correlate performances across the two phases of reversal learning and between the reversal learning phases and negative patterning. Importantly, neither the order in which the learning tasks were trained ( or
+
+### [finke] correlat
+ve if the bees successfully acquired the initial A+ B− discrimination in the 1st phase of reversal learning. Due to this, we could only use learner bees of the 1st phase (bees with score = 1) for any correlation involving the performances in the 2nd phase of reversal learning. As correlation analyses require at least two different values within each data frame we were mathematically unable to correlate pe
+
+### [finke] correlat
+phase of reversal learning. Due to this, we could only use learner bees of the 1st phase (bees with score = 1) for any correlation involving the performances in the 2nd phase of reversal learning. As correlation analyses require at least two different values within each data frame we were mathematically unable to correlate performances of the 1st and the 2nd phase of reversal learning. Nevertheless, we ob
+
+### [finke] correlat
+any correlation involving the performances in the 2nd phase of reversal learning. As correlation analyses require at least two different values within each data frame we were mathematically unable to correlate performances of the 1st and the 2nd phase of reversal learning. Nevertheless, we observed that the majority of learners in the 1st phase was also successful in the 2nd reversal phase (59%, Fig. 4 A)
+
+### [finke] correlat
+phase of reversal learning despite having failed to learn in the 1st phase. Individual test performances in the 1st phase of reversal learning and in negative patterning were significantly positively correlated (Spearman rank correlation; n = 140, rho = 0.18, p = 0.03, Fig. 4 B, Table 1 ). No significant correlation was found between the test ranks of the 2nd phase of reversal learning and negative patter
+
+### [finke] correlat
+ despite having failed to learn in the 1st phase. Individual test performances in the 1st phase of reversal learning and in negative patterning were significantly positively correlated (Spearman rank correlation; n = 140, rho = 0.18, p = 0.03, Fig. 4 B, Table 1 ). No significant correlation was found between the test ranks of the 2nd phase of reversal learning and negative patterning ( n = 61, rho = 0.18,
+
+### [finke] correlat
+n the 1st phase of reversal learning and in negative patterning were significantly positively correlated (Spearman rank correlation; n = 140, rho = 0.18, p = 0.03, Fig. 4 B, Table 1 ). No significant correlation was found between the test ranks of the 2nd phase of reversal learning and negative patterning ( n = 61, rho = 0.18, p = 0.17, Fig. 4 C, Table 1 ). This pattern of correlation could be intuited by
+
+### [finke] correlat
+ble 1 ). No significant correlation was found between the test ranks of the 2nd phase of reversal learning and negative patterning ( n = 61, rho = 0.18, p = 0.17, Fig. 4 C, Table 1 ). This pattern of correlation could be intuited by the fact that only a minority of non-learner bees in the 1st phase of reversal learning was successful in the negative patterning protocol (25%), suggesting that being able to
+
+### [finke] correlat
+that failed in 2nd phase despite being successful in the 1st phase of reversal learning were nevertheless successful in the negative patterning discrimination (Fig. 4 B and C). Fig. 4 Full size image Correlations of the individual test performances in Experiment 3: Visual learning experiments with restrained bees. A A direct statistical correlation could not be performed, as we could only use the learner 
+
+### [finke] correlat
+ning discrimination (Fig. 4 B and C). Fig. 4 Full size image Correlations of the individual test performances in Experiment 3: Visual learning experiments with restrained bees. A A direct statistical correlation could not be performed, as we could only use the learner bees in the 1st phase as successful reversal of reward contingencies in the 2nd phase of reversal learning prerequisites learning the initi
+
+### [finke] correlat
+1st phase of reversal learning (1st RL) were also successful in the 2nd phase of reversal learning (2nd RL; 59%). 84% of the bees that failed to learn in the 1st phase, and were thus not used for the correlation, remained non-learners in the 2nd phase of reversal learning. B The individual test performances were positively correlated between the 1st phase of reversal learning and negative patterning (NP; 
+
+### [finke] correlat
+bees that failed to learn in the 1st phase, and were thus not used for the correlation, remained non-learners in the 2nd phase of reversal learning. B The individual test performances were positively correlated between the 1st phase of reversal learning and negative patterning (NP; Spearman rank correlation; n = 140, rho = 0.18, p = 0.03). Indeed, the majority of learners (57%) and non-learners (75%) in t
+
+### [finke] correlat
+non-learners in the 2nd phase of reversal learning. B The individual test performances were positively correlated between the 1st phase of reversal learning and negative patterning (NP; Spearman rank correlation; n = 140, rho = 0.18, p = 0.03). Indeed, the majority of learners (57%) and non-learners (75%) in the 1st phase of reversal learning remained in their category in the negative patterning paradigm.
+
+### [finke] correlat
+) in the 1st phase of reversal learning remained in their category in the negative patterning paradigm. C The individual test performances of the 2nd phase of reversal learning were not significantly correlated with negative patterning (Spearman rank correlation; n = 61, rho = 0.18, p = 0.17). While 69% of the learners in the 2nd phase of reversal learning were also successful in negative patterning, half
+
+### [finke] correlat
+ their category in the negative patterning paradigm. C The individual test performances of the 2nd phase of reversal learning were not significantly correlated with negative patterning (Spearman rank correlation; n = 61, rho = 0.18, p = 0.17). While 69% of the learners in the 2nd phase of reversal learning were also successful in negative patterning, half of the bees (51%) that failed in the 2nd phase of 
+
+### [finke] correlat
+ting score. For example, a bee scored ‘0’ could have been none responsive to any stimulus or responsive to all stimuli. Individual consistency in learning performance was analyzed using Spearman rank correlations. Only bees characterized as ‘learners’ ( n = 42 of 89 bees) in the test following the 1st phase of the reversal learning protocol were kept for analysis of the 2nd phase of reversal learning, as 
+
+### [finke] correlat
+selection procedure, Tables S22–S24). Results We subjected restrained bees ( n = 89) to olfactory PER conditioning and determined if performances in the two phases of a reversal learning problem were correlated with performances in a negative-patterning problem. Again, the sequence in which the problems were trained ( order ) and the stimulus identity in reversal learning ( group_RL ) had no influence on 
+
+### [finke] correlat
+and for the reasons already explained, we used only bees that learned the discrimination of the 1st phase of reversal learning ( n = 41). As in the experiment on visual PER conditioning, we could not correlate statistically the individual test performances of the 1st and 2nd phase of reversal learning in these bees. Yet, half of learners in the 1st phase (52%) were also successful in the 2nd phase of reve
+
+### [finke] correlat
+xcluded as non-learners due to their performance in the 1st phase, 91% ( n = 43 out of 47) remained non-learners in the 2nd phase of reversal learning. Test performances were significantly positively correlated in the 1st phase of reversal learning and in negative patterning (Spearman rank correlation; n = 89, rho = 0.33, p = 0.002, Fig. 5 B, Table 1 ). However, there was no significant correlation betwee
+
+### [finke] correlat
+remained non-learners in the 2nd phase of reversal learning. Test performances were significantly positively correlated in the 1st phase of reversal learning and in negative patterning (Spearman rank correlation; n = 89, rho = 0.33, p = 0.002, Fig. 5 B, Table 1 ). However, there was no significant correlation between test performances in the 2nd phase of reversal learning and negative patterning ( n = 42,
+
+### [finke] correlat
+ositively correlated in the 1st phase of reversal learning and in negative patterning (Spearman rank correlation; n = 89, rho = 0.33, p = 0.002, Fig. 5 B, Table 1 ). However, there was no significant correlation between test performances in the 2nd phase of reversal learning and negative patterning ( n = 42, rho = 0.15, p = 0.36, Fig. 5 C, Table 1 ). As in the experiment on visual PER conditioning, this l
+
+### [finke] correlat
+ween test performances in the 2nd phase of reversal learning and negative patterning ( n = 42, rho = 0.15, p = 0.36, Fig. 5 C, Table 1 ). As in the experiment on visual PER conditioning, this lack of correlation is mainly due to the fact that while only 17% of non-learners in the 1st phase of reversal learning learned successfully the negative patterning problem, 40% of the non-learner bees in the 2nd pha
+
+### [finke] correlat
+rning learned successfully the negative patterning problem, 40% of the non-learner bees in the 2nd phase of reversal learning succeeded in negative patterning (Fig. 5 B and C). Fig. 5 Full size image Correlations of the individual test performances in Experiment 4: Olfactory learning experiments with restrained bees. A A direct statistical correlation could not be performed, as we could only use the learn
+
+### [finke] correlat
+ative patterning (Fig. 5 B and C). Fig. 5 Full size image Correlations of the individual test performances in Experiment 4: Olfactory learning experiments with restrained bees. A A direct statistical correlation could not be performed, as we could only use the learner bees in the 1st phase as successful reversal of reward contingencies in the 2nd phase of reversal learning prerequisites learning the initi
+
+### [finke] correlat
+t phase of reversal learning (1st RL) were also successful in the 2nd phase of reversal learning (2nd RL; 53%). 91. % of the bees that failed to learn in the 1st phase, and were thus not used for the correlation, were also non-learners in the 2nd phase of reversal learning. B The individual test performances were positively correlated between the 1st phase of reversal learning and negative patterning (2nd
+
+### [finke] correlat
+ees that failed to learn in the 1st phase, and were thus not used for the correlation, were also non-learners in the 2nd phase of reversal learning. B The individual test performances were positively correlated between the 1st phase of reversal learning and negative patterning (2nd RL; Spearman rank correlation; n = 89, rho = 0.33, p = 0.002). Indeed, many learners (48%) and non-learners (83%) in the 1st 
+
+### [finke] correlat
+learners in the 2nd phase of reversal learning. B The individual test performances were positively correlated between the 1st phase of reversal learning and negative patterning (2nd RL; Spearman rank correlation; n = 89, rho = 0.33, p = 0.002). Indeed, many learners (48%) and non-learners (83%) in the 1st phase of reversal learning remained in their category in the negative patterning paradigm. C The indi
+
+### [finke] correlat
+) in the 1st phase of reversal learning remained in their category in the negative patterning paradigm. C The individual test performances of the 2nd phase of reversal learning were not significantly correlated with negative patterning (NP; Spearman rank correlation; n = 42, rho = 0.15, p = 0.36). While 55% of the learners in the 2nd phase of reversal learning were also successful in the negative patterni
+
+### [finke] correlat
+ir category in the negative patterning paradigm. C The individual test performances of the 2nd phase of reversal learning were not significantly correlated with negative patterning (NP; Spearman rank correlation; n = 42, rho = 0.15, p = 0.36). While 55% of the learners in the 2nd phase of reversal learning were also successful in the negative patterning task, almost half of the bees (40%) that failed in t
+
+### [finke] correlat
+vidual performances remained consistent across some, but not all protocols tested. The individual bees’ proficiency to solve an elemental association in the 1st phase of reversal learning (A+ vs. B−) correlated positively with the performance in the 2nd phase (A− vs. B+ , Table 1 ) and negative patterning (C+ and D+ vs. CD−, Table 1 ). However, we did not find a significant correlation between performance
+
+### [finke] correlat
+l learning (A+ vs. B−) correlated positively with the performance in the 2nd phase (A− vs. B+ , Table 1 ) and negative patterning (C+ and D+ vs. CD−, Table 1 ). However, we did not find a significant correlation between performances in the 2nd phase of reversal learning and negative patterning, i.e. between the task that requires overcoming transient stimulus ambiguity and the configural task, respectivel

@@ -1,0 +1,377 @@
+{
+ "provenance": {
+  "data_file": "data/oxman2026/Raw Follower Data.xlsx",
+  "zenodo_doi": "10.5281/zenodo.17771502",
+  "paper_ref": "REGISTRY [25] Oxman et al. 2026, 10.1007/s00265-026-03744-2",
+  "effort_col": "#Circuits Followed by Entrance",
+  "focal_col": "FOCAL BEE Circuits per entrance",
+  "subset": "Personality in {Honest, Liar}",
+  "id_col": "ID (follower bee)",
+  "trial_col": "Unique TRIAL ID",
+  "note": "all tests two-sided; no sign pre-registered (stage-2 discipline retained)"
+ },
+ "data": {
+  "n_events": 536,
+  "n_honest": 234,
+  "n_liar": 302,
+  "n_ids": 213,
+  "n_trials": 325,
+  "stage_counts": {
+   "Learning": 305,
+   "Test": 231
+  },
+  "event_code_counts": {
+   "EF": 536
+  },
+  "effort_missing": 0,
+  "focal_missing": 0,
+  "effort_stats": {
+   "count": 536.0,
+   "mean": 5.2052,
+   "std": 3.9774,
+   "min": 1.0,
+   "25%": 2.0,
+   "50%": 4.0,
+   "75%": 7.0,
+   "max": 23.0
+  },
+  "focal_stats": {
+   "count": 536.0,
+   "mean": 25.0373,
+   "std": 18.932,
+   "min": 1.0,
+   "25%": 13.0,
+   "50%": 20.0,
+   "75%": 31.5,
+   "max": 90.0
+  },
+  "events_per_id": {
+   "count": 213.0,
+   "mean": 2.516,
+   "std": 1.922,
+   "min": 1.0,
+   "25%": 1.0,
+   "50%": 2.0,
+   "75%": 3.0,
+   "max": 9.0
+  },
+  "n_events_after_dropna": 536
+ },
+ "main_mixed": {
+  "fixed_effects": {
+   "Intercept": {
+    "beta": 1.193159,
+    "se": 0.066319,
+    "ci95_lo": 1.063175,
+    "ci95_hi": 1.323142,
+    "p": 0.0
+   },
+   "is_liar": {
+    "beta": 0.234586,
+    "se": 0.055647,
+    "ci95_lo": 0.12552,
+    "ci95_hi": 0.343651,
+    "p": 2.491e-05
+   },
+   "focal": {
+    "beta": 0.010629,
+    "se": 0.001434,
+    "ci95_lo": 0.007818,
+    "ci95_hi": 0.01344,
+    "p": 0.0
+   },
+   "stage_test": {
+    "beta": 0.065188,
+    "se": 0.051635,
+    "ci95_lo": -0.036016,
+    "ci95_hi": 0.166392,
+    "p": 0.20678169
+   },
+   "ID Var": {
+    "beta": 0.092453,
+    "se": 0.053917,
+    "ci95_lo": -0.013222,
+    "ci95_hi": 0.198129,
+    "p": 0.08639378
+   }
+  },
+  "cov_re": [
+   [
+    0.029304
+   ]
+  ],
+  "resid_var": 0.316955,
+  "r2_marginal": 0.1124,
+  "r2_conditional": 0.1299,
+  "n_events": 536,
+  "n_groups": 1,
+  "loglik": -484.279,
+  "AIC": NaN,
+  "BIC": NaN,
+  "warnings": [],
+  "converged": true,
+  "formula": "log1p(#Circuits Followed) ~ is_liar + FOCAL_BEE_Circuits + I(Stage=='Test') + (1|ID), REML"
+ },
+ "random_slope_focal": {
+  "fixed_effects": {
+   "Intercept": {
+    "beta": 1.141681,
+    "se": 0.076285,
+    "ci95_lo": 0.992166,
+    "ci95_hi": 1.291196,
+    "p": 0.0
+   },
+   "is_liar": {
+    "beta": 0.252615,
+    "se": 0.057337,
+    "ci95_lo": 0.140235,
+    "ci95_hi": 0.364994,
+    "p": 1.054e-05
+   },
+   "focal": {
+    "beta": 0.012576,
+    "se": 0.002007,
+    "ci95_lo": 0.008641,
+    "ci95_hi": 0.01651,
+    "p": 0.0
+   },
+   "stage_test": {
+    "beta": 0.06447,
+    "se": 0.050086,
+    "ci95_lo": -0.033696,
+    "ci95_hi": 0.162637,
+    "p": 0.19802527
+   },
+   "ID Var": {
+    "beta": 1.022784,
+    "se": 0.627637,
+    "ci95_lo": -0.207363,
+    "ci95_hi": 2.25293,
+    "p": 0.10319085
+   },
+   "ID x focal Cov": {
+    "beta": -0.027195,
+    "se": 0.016995,
+    "ci95_lo": -0.060505,
+    "ci95_hi": 0.006114,
+    "p": 0.10955706
+   },
+   "focal Var": {
+    "beta": 0.00087,
+    "se": 0.000496,
+    "ci95_lo": -0.000103,
+    "ci95_hi": 0.001842,
+    "p": 0.07963354
+   }
+  },
+  "cov_re": [
+   [
+    0.256633,
+    -0.006824
+   ],
+   [
+    -0.006824,
+    0.000218
+   ]
+  ],
+  "resid_var": 0.250916,
+  "r2_marginal": 0.1782,
+  "r2_conditional": 0.298,
+  "n_events": 536,
+  "n_groups": 2,
+  "loglik": -484.924,
+  "AIC": NaN,
+  "BIC": NaN,
+  "warnings": [
+   "Maximum Likelihood optimization failed to converge. Check mle_retvals",
+   "Retrying MixedLM optimization with lbfgs",
+   "The MLE may be on the boundary of the parameter space."
+  ],
+  "converged": true,
+  "formula": "effort_log ~ is_liar + focal + stage_test + (1+focal|ID), REML",
+  "singular": false
+ },
+ "sensitivity_stratification": {
+  "rule": "per-bee OLS effort_log ~ focal + is_liar (within bee); eligible >=4 events & >=2 distinct focal values; median split of per-bee beta_focal into high/low sensitivity; per-bee beta_liar compared (two-sided, no sign pre-registered)",
+  "n_eligible_bees": 47,
+  "n_high": 24,
+  "n_low": 23,
+  "beta_focal_median": 0.0185,
+  "beta_liar_high": {
+   "mean": 0.3904,
+   "se": 0.11189,
+   "ci95": [
+    0.17109,
+    0.6097
+   ]
+  },
+  "beta_liar_low": {
+   "mean": 0.18345,
+   "se": 0.12926,
+   "ci95": [
+    -0.0699,
+    0.4368
+   ]
+  },
+  "welch_ttest": {
+   "t": 1.2105,
+   "df": 43.8,
+   "p": 0.232592
+  },
+  "sign_test_high": {
+   "n_pos": 18,
+   "p": 0.0227
+  },
+  "sign_test_low": {
+   "n_pos": 11,
+   "p": 1.0
+  }
+ },
+ "sensitivity_interaction": {
+  "fixed_effects": {
+   "Intercept": {
+    "beta": 1.245366,
+    "se": 0.114763,
+    "ci95_lo": 1.020433,
+    "ci95_hi": 1.470298,
+    "p": 0.0
+   },
+   "is_liar": {
+    "beta": 0.2601,
+    "se": 0.110554,
+    "ci95_lo": 0.043417,
+    "ci95_hi": 0.476783,
+    "p": 0.01863823
+   },
+   "high_sens": {
+    "beta": 0.137312,
+    "se": 0.125197,
+    "ci95_lo": -0.10807,
+    "ci95_hi": 0.382695,
+    "p": 0.27274313
+   },
+   "is_liar:high_sens": {
+    "beta": -0.129085,
+    "se": 0.150268,
+    "ci95_lo": -0.423606,
+    "ci95_hi": 0.165436,
+    "p": 0.39032508
+   },
+   "focal": {
+    "beta": 0.012124,
+    "se": 0.002136,
+    "ci95_lo": 0.007938,
+    "ci95_hi": 0.016309,
+    "p": 1e-08
+   },
+   "stage_test": {
+    "beta": -0.002801,
+    "se": 0.068252,
+    "ci95_lo": -0.136573,
+    "ci95_hi": 0.13097,
+    "p": 0.96726103
+   },
+   "ID Var": {
+    "beta": 0.143856,
+    "se": 0.079679,
+    "ci95_lo": -0.012313,
+    "ci95_hi": 0.300024,
+    "p": 0.07100643
+   }
+  },
+  "cov_re": [
+   [
+    0.040485
+   ]
+  ],
+  "resid_var": 0.281424,
+  "r2_marginal": 0.1315,
+  "r2_conditional": 0.1741,
+  "n_events": 264,
+  "n_groups": 1,
+  "loglik": -231.412,
+  "AIC": NaN,
+  "BIC": NaN,
+  "warnings": [],
+  "converged": true,
+  "formula": "effort_log ~ is_liar*high_sens + focal + stage_test + (1|ID) (bee-level high/low sensitivity indicator), REML"
+ },
+ "recent_proxy_model": {
+  "fixed_effects": {
+   "Intercept": {
+    "beta": 0.860932,
+    "se": 0.208272,
+    "ci95_lo": 0.452726,
+    "ci95_hi": 1.269138,
+    "p": 3.57e-05
+   },
+   "pos": {
+    "beta": 0.146467,
+    "se": 0.161556,
+    "ci95_lo": -0.170177,
+    "ci95_hi": 0.463111,
+    "p": 0.3646171
+   },
+   "recent_mean": {
+    "beta": 0.21756,
+    "se": 0.082258,
+    "ci95_lo": 0.056337,
+    "ci95_hi": 0.378782,
+    "p": 0.00817267
+   },
+   "is_liar": {
+    "beta": 0.236306,
+    "se": 0.086447,
+    "ci95_lo": 0.066872,
+    "ci95_hi": 0.405739,
+    "p": 0.00626616
+   },
+   "focal": {
+    "beta": 0.010269,
+    "se": 0.002386,
+    "ci95_lo": 0.005593,
+    "ci95_hi": 0.014946,
+    "p": 1.678e-05
+   },
+   "stage_test": {
+    "beta": 0.065452,
+    "se": 0.087038,
+    "ci95_lo": -0.10514,
+    "ci95_hi": 0.236044,
+    "p": 0.45205597
+   },
+   "ID Var": {
+    "beta": 0.0,
+    "se": 0.098278,
+    "ci95_lo": -0.192621,
+    "ci95_hi": 0.192621,
+    "p": 1.0
+   }
+  },
+  "cov_re": [
+   [
+    0.0
+   ]
+  ],
+  "resid_var": 0.333668,
+  "r2_marginal": 0.142,
+  "r2_conditional": 0.142,
+  "n_events": 211,
+  "n_groups": 1,
+  "loglik": -193.769,
+  "AIC": NaN,
+  "BIC": NaN,
+  "warnings": [
+   "The MLE may be on the boundary of the parameter space."
+  ],
+  "converged": true,
+  "formula": "effort_log ~ pos + recent_mean + is_liar + focal + stage_test + (1|ID), REML; NOTE: crossed RE (1|trial_key) not supported by statsmodels MixedLM -> bee-level clustering only"
+ },
+ "recent_proxy": {
+  "note": "EXPLORATORY; no explicit per-event reward in dataset; proxy = temporal accumulation within (ID, Unique TRIAL ID): pos = ordinal position of bee's events in trial (0..1); recent_mean = expanding mean of log1p(effort) over the same bee's prior events in the same trial (first event per bee-trial dropped).",
+  "grouping_note": "single grouping var (1|ID) only (crossed RE unavailable in statsmodels)",
+  "n_used": 211,
+  "n_dropped_first_event": 325,
+  "bees_trials": 325
+ }
+}

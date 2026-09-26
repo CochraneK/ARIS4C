@@ -1,0 +1,67 @@
+{
+ "zenodo": "FAILED HTTP Error 403: Forbidden",
+ "finke2023": {
+  "crossref": {
+   "title": [
+    "Individual consistency in the learning abilities of honey bees: cognitive specialization within sensory and reinforcement modalities"
+   ],
+   "year": 2023,
+   "abstract": " Abstract \n                   \n                    The question of whether individuals perform consistently across a variety of cognitive tasks is relevant for studies of comparative cognition. The honey bee (\n                     Apis mellifera \n                    ) is an appropriate model to study cognitive consistency as its learning can be studied in multiple elemental and non-elemental learning tasks. We took advantage of this possibility and studied if the ability of honey bees to learn a simple discrimination correlates with their ability to solve two tasks of higher complexity, reversal learning and negative patterning. We performed four experiments in which we varied the sensory modality of the stimuli (visual or olfactory) and the type (Pavlovian or operant) and complexity (elemental or non-elemental) of conditioning to examine if stable correlated performances could be observed across experiments. Across all experiments, an individual’s proficiency to learn the simple discrimination task was positively and significantly correlated with performance in both reversal learning and negative patterning, while the performances in reversal learning and negative patterning were positively, yet not significantly correlated. These results suggest that correlated performances across learning paradigms represent a distinct cognitive characteristic of bees. Further research is necessary to examine if individual cognitive consistency can be found in other insect species as a com"
+  },
+  "fulltext": "ok 111205 chars",
+  "si": [
+   "https://link.springer.com/content/pdf/10.1007/s10071-022-01741-2.pdf",
+   "https://link.springer.com/content/pdf/10.1007/s10071-022-01741-2.pdf",
+   "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10071-022-01741-2/MediaObjects/10071_2022_1741_MOESM1_ESM.docx"
+  ],
+  "si_dl": {
+   "0": "ok 1952687B",
+   "1": "ok 1952687B",
+   "2": "ok 918131B"
+  }
+ },
+ "perry2013": {
+  "crossref": {
+   "title": [
+    "Honey bees selectively avoid difficult choices"
+   ],
+   "year": 2013,
+   "abstract": " Significance \n                   \n                    Here we show that honey bees (\n                     Apis mellifera \n                    ) can adaptively alter their behavior in a choice test in response to trial difficulty. Bees preferentially opt out of difficult trials and by doing so, improve their success rate. We discuss whether this choice involves assessing degree of uncertainty (considered a definition of basic metacognition) or whether this task might be solved by associative mechanisms. We propose a hypothesis for how uncertainty might be processed within the known circuitry of the insect brain to frame the concept of uncertainty as a topic for neurobiological analysis.\n                   "
+  },
+  "fulltext": "BLOCKED HTTP Error 403: Forbidden"
+ },
+ "raine2012": {
+  "crossref": {
+   "title": [
+    "No Trade-Off between Learning Speed and Associative Flexibility in Bumblebees: A Reversal Learning Test with Multiple Colonies"
+   ],
+   "year": 2012,
+   "abstract": ""
+  },
+  "fulltext": "ok 62390 chars",
+  "si": [],
+  "si_dl": {}
+ },
+ "evans2017": {
+  "crossref": {
+   "title": [
+    "Fast learning in free-foraging bumble bees is negatively correlated with lifetime resource collection"
+   ],
+   "year": 2017,
+   "abstract": " Abstract  Despite widespread interest in the potential adaptive value of individual differences in cognition, few studies have attempted to address the question of how variation in learning and memory impacts their performance in natural environments. Using a novel split-colony experimental design we evaluated visual learning performance of foraging naïve bumble bees ( Bombus terrestris ) in an ecologically relevant associative learning task under controlled laboratory conditions, before monitoring the lifetime foraging performance of the same individual bees in the field. We found appreciable variation among the 85 workers tested in both their learning and foraging performance, which was not predicted by colony membership. However, rather than finding that foragers benefited from enhanced learning performance, we found that fast and slow learners collected food at comparable rates and completed a similar number of foraging bouts per day in the field. Furthermore, bees with better learning abilities foraged for fewer days; suggesting a cost of enhanced learning performance in the wild. As a result, slower learning individuals collected more resources for their colony over the course of their foraging career. These results demonstrate that enhanced cognitive traits are not necessarily beneficial to the foraging performance of individuals or colonies in all environments. "
+  },
+  "fulltext": "ok 56276 chars",
+  "si": [
+   "https://www.nature.com/articles/s41598-017-00389-0.pdf",
+   "https://www.nature.com/articles/s41598-017-00389-0.pdf",
+   "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-017-00389-0/MediaObjects/41598_2017_389_MOESM1_ESM.pdf",
+   "https://www.nature.com/articles/s41598-017-00389-0.pdf"
+  ],
+  "si_dl": {
+   "0": "ok 1499776B",
+   "1": "ok 1499776B",
+   "2": "ok 750298B",
+   "3": "ok 1499776B"
+  }
+ }
+}

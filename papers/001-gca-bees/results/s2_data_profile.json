@@ -1,0 +1,1186 @@
+{
+ "oxman2026": {
+  "tabular": {
+   "Focal bee totals by entrance.xlsx": {
+    "Sheet1": {
+     "shape": [
+      195,
+      33
+     ],
+     "columns": {
+      "Real Time": {
+       "n_missing": 0,
+       "n_unique": 195,
+       "dtype": "cat",
+       "top": {
+        "08:40:39.743000": 1,
+        "08:46:47.341000": 1,
+        "08:54:01.913000": 1,
+        "09:10:11.917000": 1,
+        "09:16:55.782000": 1,
+        "09:27:04.380000": 1,
+        "10:04:43.110000": 1,
+        "10:10:18.734000": 1,
+        "10:15:56.243000": 1,
+        "10:22:17.705000": 1
+       }
+      },
+      "ID": {
+       "n_missing": 0,
+       "n_unique": 21,
+       "dtype": "cat",
+       "top": {
+        "W65": 34,
+        "W12": 12,
+        "B56": 12,
+        "BB15": 12,
+        "B39": 11,
+        "R80": 11,
+        "G57": 11,
+        "Y81": 11,
+        "B8": 9,
+        "O43": 8
+       }
+      },
+      "Unique TRIAL ID": {
+       "n_missing": 0,
+       "n_unique": 24,
+       "dtype": "cat",
+       "top": {
+        "3W65": 13,
+        "4W12": 12,
+        "12B56": 12,
+        "22BB15": 12,
+        "1W65": 11,
+        "11B39": 11,
+        "20G57": 11,
+        "23Y81": 11,
+        "2W65": 10,
+        "18B8": 9
+       }
+      },
+      "Unique HIVE ID": {
+       "n_missing": 0,
+       "n_unique": 21,
+       "dtype": "cat",
+       "top": {
+        "2W65": 34,
+        "2W12": 12,
+        "4B56": 12,
+        "5BB15": 12,
+        "4B39": 11,
+        "1R80": 11,
+        "5G57": 11,
+        "5Y81": 11,
+        "5B8": 9,
+        "3O43": 8
+       }
+      },
+      "Video #": {
+       "n_missing": 0,
+       "n_unique": 180,
+       "dtype": "cat",
+       "top": {
+        "S1240025": 2,
+        "S1380017": 2,
+        "S1220010": 2,
+        "S1420010": 2,
+        "S1430003": 2,
+        "S1430005": 2,
+        "S1440005": 2,
+        "S1440007": 2,
+        "S1450004": 2,
+        "S1450005": 2
+       }
+      },
+      "Trial Date": {
+       "n_missing": 0,
+       "n_unique": 24,
+       "dtype": "cat",
+       "top": {
+        "2025-04-26 00:00:00": 13,
+        "2025-04-27 00:00:00": 12,
+        "2016-07-08 00:00:00": 12,
+        "2025-07-27 00:00:00": 12,
+        "2025-04-24 00:00:00": 11,
+        "2025-07-07 00:00:00": 11,
+        "2016-07-25 00:00:00": 11,
+        "2016-07-28 00:00:00": 11,
+        "2025-04-25 00:00:00": 10,
+        "2016-07-21 00:00:00": 9
+       }
+      },
+      "Trial ID": {
+       "n_missing": 0,
+       "n_unique": 24,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 24.0,
+       "mean": 12.1333
+      },
+      "Feeder Location": {
+       "n_missing": 0,
+       "n_unique": 2,
+       "dtype": "cat",
+       "top": {
+        "Library": 109,
+        "Gate": 86
+       }
+      },
+      "Stage": {
+       "n_missing": 0,
+       "n_unique": 2,
+       "dtype": "cat",
+       "top": {
+        "Learning": 122,
+        "Test": 73
+       }
+      },
+      "Personality": {
+       "n_missing": 0,
+       "n_unique": 3,
+       "dtype": "cat",
+       "top": {
+        "Liar": 82,
+        "Honest": 62,
+        "Unverified": 51
+       }
+      },
+      "Alpha/Other": {
+       "n_missing": 0,
+       "n_unique": 1,
+       "dtype": "cat",
+       "top": {
+        "Alpha": 195
+       }
+      },
+      "Feeder Side": {
+       "n_missing": 0,
+       "n_unique": 2,
+       "dtype": "cat",
+       "top": {
+        "Right": 113,
+        "Left": 82
+       }
+      },
+      "NEW HIVE #": {
+       "n_missing": 0,
+       "n_unique": 5,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 5.0,
+       "mean": 3.4205
+      },
+      "Avg Daily Temperature": {
+       "n_missing": 0,
+       "n_unique": 11,
+       "dtype": "float64",
+       "min": 18.0,
+       "max": 29.5,
+       "mean": 26.8436
+      },
+      "Max Daily Temperature ©": {
+       "n_missing": 0,
+       "n_unique": 10,
+       "dtype": "int64",
+       "min": 21.0,
+       "max": 37.0,
+       "mean": 30.7795
+      },
+      "Complete or Half Trial": {
+       "n_missing": 0,
+       "n_unique": 2,
+       "dtype": "cat",
+       "top": {
+        "Complete": 137,
+        "Half": 58
+       }
+      },
+      "Plate Color": {
+       "n_missing": 8,
+       "n_unique": 3,
+       "dtype": "cat",
+       "top": {
+        "Green": 86,
+        "Yellow": 84,
+        "Red": 17,
+        "nan": 8
+       }
+      },
+      "Umbrella Color": {
+       "n_missing": 8,
+       "n_unique": 3,
+       "dtype": "cat",
+       "top": {
+        "Blue": 95,
+        "White": 70,
+        "Yellow": 22,
+        "nan": 8
+       }
+      },
+      "Return #": {
+       "n_missing": 0,
+       "n_unique": 22,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 22.0,
+       "mean": 7.9795
+      },
+      "Return # relative to stage": {
+       "n_missing": 0,
+       "n_unique": 13,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 13.0,
+       "mean": 5.0205
+      },
+      "Dance # Chrono": {
+       "n_missing": 0,
+       "n_unique": 13,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 13.0,
+       "mean": 5.0974
+      },
+      "Dance # Relative to stage": {
+       "n_missing": 0,
+       "n_unique": 7,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 7.0,
+       "mean": 3.1692
+      },
+      "Total # unique followers per entrance": {
+       "n_missing": 0,
+       "n_unique": 15,
+       "dtype": "int64",
+       "min": 0.0,
+       "max": 15.0,
+       "mean": 3.2154
+      },
+      "Hana Sum Dance Duration Per Entrance": {
+       "n_missing": 0,
+       "n_unique": 195,
+       "dtype": "float64",
+       "min": 1.836,
+       "max": 162.674,
+       "mean": 36.603
+      },
+      "Hana Sum Dancer Circuits per Entrance": {
+       "n_missing": 0,
+       "n_unique": 45,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 90.0,
+       "mean": 16.8205
+      },
+      "Elapsed Time from Beginning of Experiment": {
+       "n_missing": 0,
+       "n_unique": 195,
+       "dtype": "cat",
+       "top": {
+        "00:24:54.743000": 1,
+        "00:31:02.341000": 1,
+        "00:38:16.913000": 1,
+        "00:54:26.917000": 1,
+        "01:01:10.782000": 1,
+        "01:11:19.380000": 1,
+        "01:48:58.110000": 1,
+        "01:54:33.734000": 1,
+        "02:00:11.243000": 1,
+        "02:06:32.705000": 1
+       }
+      },
+      "Elapsed Time from Beginning of Experiment in Seconds": {
+       "n_missing": 0,
+       "n_unique": 195,
+       "dtype": "float64",
+       "min": 160.295,
+       "max": 12283.503,
+       "mean": 4142.5428
+      },
+      "Experiment Start Time": {
+       "n_missing": 0,
+       "n_unique": 24,
+       "dtype": "cat",
+       "top": {
+        "08:52:31": 13,
+        "10:02:02": 12,
+        "06:35:00": 12,
+        "06:34:50": 12,
+        "08:15:45": 11,
+        "07:22:05": 11,
+        "06:42:20": 11,
+        "06:37:45": 11,
+        "07:44:18": 10,
+        "06:18:47": 9
+       }
+      },
+      "Elapsed Time From Beginning of Stage": {
+       "n_missing": 0,
+       "n_unique": 195,
+       "dtype": "cat",
+       "top": {
+        "00:24:54.743000": 1,
+        "00:31:02.341000": 1,
+        "00:38:16.913000": 1,
+        "00:54:26.917000": 1,
+        "01:01:10.782000": 1,
+        "00:04:06.380000": 1,
+        "00:41:45.110000": 1,
+        "00:47:20.734000": 1,
+        "00:52:58.243000": 1,
+        "00:59:19.705000": 1
+       }
+      },
+      "Elsapsed Time from Beginning of Stage in Seconds": {
+       "n_missing": 0,
+       "n_unique": 195,
+       "dtype": "float64",
+       "min": 160.295,
+       "max": 8998.503,
+       "mean": 2598.1017
+      },
+      "Stage Start Time (First time Hana is released from feeder at this location)": {
+       "n_missing": 0,
+       "n_unique": 42,
+       "dtype": "cat",
+       "top": {
+        "09:38:28": 7,
+        "11:08:00": 7,
+        "07:47:44": 7,
+        "06:37:54": 7,
+        "08:26:22": 7,
+        "09:22:58": 6,
+        "08:52:31": 6,
+        "07:57:10": 6,
+        "07:54:24": 6,
+        "06:35:00": 6
+       }
+      },
+      "Stage Stop Time (learning: last time caught at learn location, test: stop waiting for arrivals)": {
+       "n_missing": 0,
+       "n_unique": 42,
+       "dtype": "cat",
+       "top": {
+        "11:25:17": 7,
+        "13:46:00": 7,
+        "08:40:50": 7,
+        "07:58:00": 7,
+        "10:25:18": 7,
+        "11:39:31": 6,
+        "09:33:21": 6,
+        "09:14:00": 6,
+        "09:53:12": 6,
+        "07:41:30": 6
+       }
+      },
+      "Stage Duration": {
+       "n_missing": 0,
+       "n_unique": 40,
+       "dtype": "cat",
+       "top": {
+        "01:46:49": 7,
+        "02:38:00": 7,
+        "00:53:06": 7,
+        "01:20:06": 7,
+        "01:58:56": 7,
+        "02:16:33": 6,
+        "00:40:50": 6,
+        "01:16:50": 6,
+        "01:58:48": 6,
+        "00:53:37": 6
+       }
+      }
+     },
+     "head5": [
+      {
+       "Real Time": "08:40:39.743000",
+       "ID": "W65",
+       "Unique TRIAL ID": "1W65",
+       "Unique HIVE ID": "2W65",
+       "Video #": "S1240011",
+       "Trial Date": 1745452800000,
+       "Trial ID": 1,
+       "Feeder Location": "Gate",
+       "Stage": "Learning",
+       "Personality": "Unverified",
+       "Alpha/Other": "Alpha",
+       "Feeder Side": "Left",
+       "NEW HIVE #": 2,
+       "Avg Daily Temperature": 26.5,
+       "Max Daily Temperature ©": 31,
+       "Complete or Half Trial": "Complete",
+       "Plate Color": "Green",
+       "Umbrella Color": "Blue",
+       "Return #": 3,
+       "Return # relative to stage": 3,
+       "Dance # Chrono": 1,
+       "Dance # Relative to stage": 1,
+       "Total # unique followers per entrance": 3,
+       "Hana Sum Dance Duration Per Entrance": 11.14,
+       "Hana Sum Dancer Circuits per Entrance": 4,
+       "Elapsed Time from Beginning of Experiment": "00:24:54.743000",
+       "Elapsed Time from Beginning of Experiment in Seconds": 1494.743,
+       "Experiment Start Time": "08:15:45",
+       "Elapsed Time From Beginning of Stage": "00:24:54.743000",
+       "Elsapsed Time from Beginning of Stage in Seconds": 1494.743,
+       "Stage Start Time (First time Hana is released from feeder at this location)": "08:15:45",
+       "Stage Stop Time (learning: last time caught at learn location, test: stop waiting for arrivals)": "09:18:18",
+       "Stage Duration": "01:02:33"
+      },
+      {
+       "Real Time": "08:46:47.341000",
+       "ID": "W65",
+       "Unique TRIAL ID": "1W65",
+       "Unique HIVE ID": "2W65",
+       "Video #": "S1240012",
+       "Trial Date": 1745452800000,
+       "Trial ID": 1,
+       "Feeder Location": "Gate",
+       "Stage": "Learning",
+       "Personality": "Unverified",
+       "Alpha/Other": "Alpha",
+       "Feeder Side": "Left",
+       "NEW HIVE #": 2,
+       "Avg Daily Temperature": 26.5,
+       "Max Daily Temperature ©": 31,
+       "Complete or Half Trial": "Complete",
+       "Plate Color": "Green",
+       "Umbrella Color": "Blue",
+       "Return #": 4,
+       "Return # relative to stage": 4,
+       "Dance # Chrono": 2,
+       "Dance # Relative to stage": 2,
+       "Total # unique followers per entrance": 0,
+       "Hana Sum Dance Duration Per Entrance": 9.232,
+       "Hana Sum Dancer Circuits per Entrance": 4,
+       "Elapsed Time from Beginning of Experiment": "00:31:02.341000",
+       "Elapsed Time from Beginning of Experiment in Seconds": 1862.341,
+       "Experiment Start Time": "08:15:45",
+       "Elapsed Time From Beginning of Stage": "00:31:02.341000",
+       "Elsapsed Time from Beginning of Stage in Seconds": 1862.341,
+       "Stage Start Time (First time Hana is released from feeder at this location)": "08:15:45",
+       "Stage Stop Time (learning: last time caught at learn location, test: stop waiting for arrivals)": "09:18:18",
+       "Stage Duration": "01:02:33"
+      },
+      {
+       "Real Time": "08:54:01.913000",
+       "ID": "W65",
+       "Unique TRIAL ID": "1W65",
+       "Unique HIVE ID": "2W65",
+       "Video #": "S1240013",
+       "Trial Date": 1745452800000,
+       "Trial ID": 1,
+       "Feeder Location": "Gate",
+       "Stage": "Learning",
+       "Personality": "Unverified",
+       "Alpha/Other": "Alpha",
+       "Feeder Side": "Left",
+       "NEW HIVE #": 2,
+       "Avg Daily Temperature": 26.5,
+       "Max Daily Temperature ©": 31,
+       "Complete or Half Trial": "Complete",
+       "Plate Color": "Green",
+       "Umbrella Color": "Blue",
+       "Return #": 5,
+       "Return # relative to stage": 5,
+       "Dance # Chrono": 3,
+       "Dance # Relative to stage": 3,
+       "Total # unique followers per entrance": 1,
+       "Hana Sum Dance Duration Per Entrance": 17.782,
+       "Hana Sum Dancer Circuits per Entrance": 8,
+       "Elapsed Time from Beginning of Experiment": "00:38:16.913000",
+       "Elapsed Time from Beginning of Experiment in Seconds": 2296.913,
+       "Experiment Start Time": "08:15:45",
+       "Elapsed Time From Beginning of Stage": "00:38:16.913000",
+       "Elsapsed Time from Beginning of Stage in Seconds": 2296.913,
+       "Stage Start Time (First time Hana is released from feeder at this location)": "08:15:45",
+       "Stage Stop Time (learning: last time caught at learn location, test: stop waiting for arrivals)": "09:18:18",
+       "Stage Duration": "01:02:33"
+      },
+      {
+       "Real Time": "09:10:11.917000",
+       "ID": "W65",
+       "Unique TRIAL ID": "1W65",
+       "Unique HIVE ID": "2W65",
+       "Video #": "S1240016",
+       "Trial Date": 1745452800000,
+       "Trial ID": 1,
+       "Feeder Location": "Gate",
+       "Stage": "Learning",
+       "Personality": "Unverified",
+       "Alpha/Other": "Alpha",
+       "Feeder Side": "Left",
+       "NEW HIVE #": 2,
+       "Avg Daily Temperature": 26.5,
+       "Max Daily Temperature ©": 31,
+       "Complete or Half Trial": "Complete",
+       "Plate Color": "Green",
+       "Umbrella Color": "Blue",
+       "Return #": 7,
+       "Return # relative to stage": 7,
+       "Dance # Chrono": 4,
+       "Dance # Relative to stage": 4,
+       "Total # unique followers per entrance": 3,
+       "Hana Sum Dance Duration Per Entrance": 26.14,
+       "Hana Sum Dancer Circuits per Entrance": 11,
+       "Elapsed Time from Beginning of Experiment": "00:54:26.917000",
+       "Elapsed Time from Beginning of Experiment in Seconds": 3266.917,
+       "Experiment Start Time": "08:15:45",
+       "Elapsed Time From Beginning of Stage": "00:54:26.917000",
+       "Elsapsed Time from Beginning of Stage in Seconds": 3266.917,
+       "Stage Start Time (First time Hana is released from feeder at this location)": "08:15:45",
+       "Stage Stop Time (learning: last time caught at learn location, test: stop waiting for arrivals)": "09:18:18",
+       "Stage Duration": "01:02:33"
+      },
+      {
+       "Real Time": "09:16:55.782000",
+       "ID": "W65",
+       "Unique TRIAL ID": "1W65",
+       "Unique HIVE ID": "2W65",
+       "Video #": "S1240017",
+       "Trial Date": 1745452800000,
+       "Trial ID": 1,
+       "Feeder Location": "Gate",
+       "Stage": "Learning",
+       "Personality": "Unverified",
+       "Alpha/Other": "Alpha",
+       "Feeder Side": "Left",
+       "NEW HIVE #": 2,
+       "Avg Daily Temperature": 26.5,
+       "Max Daily Temperature ©": 31,
+       "Complete or Half Trial": "Complete",
+       "Plate Color": "Green",
+       "Umbrella Color": "Blue",
+       "Return #": 8,
+       "Return # relative to stage": 8,
+       "Dance # Chrono": 5,
+       "Dance # Relative to stage": 5,
+       "Total # unique followers per entrance": 2,
+       "Hana Sum Dance Duration Per Entrance": 17.378,
+       "Hana Sum Dancer Circuits per Entrance": 7,
+       "Elapsed Time from Beginning of Experiment": "01:01:10.782000",
+       "Elapsed Time from Beginning of Experiment in Seconds": 3670.782,
+       "Experiment Start Time": "08:15:45",
+       "Elapsed Time From Beginning of Stage": "01:01:10.782000",
+       "Elsapsed Time from Beginning of Stage in Seconds": 3670.782,
+       "Stage Start Time (First time Hana is released from feeder at this location)": "08:15:45",
+       "Stage Stop Time (learning: last time caught at learn location, test: stop waiting for arrivals)": "09:18:18",
+       "Stage Duration": "01:02:33"
+      }
+     ]
+    }
+   },
+   "Mean Circuits Followed Per Stage.xlsx": {
+    "Sheet1": {
+     "shape": [
+      169,
+      7
+     ],
+     "columns": {
+      "Personality": {
+       "n_missing": 0,
+       "n_unique": 3,
+       "dtype": "cat",
+       "top": {
+        "Liar": 77,
+        "Honest": 58,
+        "Unverified": 34
+       }
+      },
+      "Dance # Relative (including indep/dep/neither)": {
+       "n_missing": 0,
+       "n_unique": 7,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 7.0,
+       "mean": 3.213
+      },
+      "Stage": {
+       "n_missing": 0,
+       "n_unique": 2,
+       "dtype": "cat",
+       "top": {
+        "Learning": 100,
+        "Test": 69
+       }
+      },
+      "Trial ID": {
+       "n_missing": 0,
+       "n_unique": 23,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 24.0,
+       "mean": 12.4438
+      },
+      "(for follower calculation) HANA #Circuits per entrance": {
+       "n_missing": 0,
+       "n_unique": 45,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 90.0,
+       "mean": 18.4379
+      },
+      "N Rows": {
+       "n_missing": 0,
+       "n_unique": 14,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 15.0,
+       "mean": 3.7396
+      },
+      "Mean(#Follower Circuits by Entrance)": {
+       "n_missing": 0,
+       "n_unique": 71,
+       "dtype": "float64",
+       "min": 1.0,
+       "max": 16.0,
+       "mean": 4.5796
+      }
+     },
+     "head5": [
+      {
+       "Personality": "Unverified",
+       "Dance # Relative (including indep/dep/neither)": 1,
+       "Stage": "Learning",
+       "Trial ID": 1,
+       "(for follower calculation) HANA #Circuits per entrance": 4,
+       "N Rows": 3,
+       "Mean(#Follower Circuits by Entrance)": 3.0
+      },
+      {
+       "Personality": "Honest",
+       "Dance # Relative (including indep/dep/neither)": 1,
+       "Stage": "Learning",
+       "Trial ID": 2,
+       "(for follower calculation) HANA #Circuits per entrance": 13,
+       "N Rows": 4,
+       "Mean(#Follower Circuits by Entrance)": 7.5
+      },
+      {
+       "Personality": "Liar",
+       "Dance # Relative (including indep/dep/neither)": 1,
+       "Stage": "Learning",
+       "Trial ID": 3,
+       "(for follower calculation) HANA #Circuits per entrance": 21,
+       "N Rows": 4,
+       "Mean(#Follower Circuits by Entrance)": 6.25
+      },
+      {
+       "Personality": "Liar",
+       "Dance # Relative (including indep/dep/neither)": 1,
+       "Stage": "Learning",
+       "Trial ID": 7,
+       "(for follower calculation) HANA #Circuits per entrance": 12,
+       "N Rows": 2,
+       "Mean(#Follower Circuits by Entrance)": 2.0
+      },
+      {
+       "Personality": "Honest",
+       "Dance # Relative (including indep/dep/neither)": 1,
+       "Stage": "Learning",
+       "Trial ID": 9,
+       "(for follower calculation) HANA #Circuits per entrance": 7,
+       "N Rows": 1,
+       "Mean(#Follower Circuits by Entrance)": 1.0
+      }
+     ]
+    }
+   },
+   "Raw Follower Data.xlsx": {
+    "Sheet1": {
+     "shape": [
+      632,
+      23
+     ],
+     "columns": {
+      "Real Time": {
+       "n_missing": 0,
+       "n_unique": 562,
+       "dtype": "cat",
+       "top": {
+        "07:22:41.056000": 5,
+        "08:32:33.096000": 3,
+        "07:52:05.317000": 3,
+        "08:01:31.773000": 3,
+        "07:45:11.579000": 3,
+        "08:40:26.498000": 3,
+        "10:33:02.010000": 3,
+        "10:22:12.527000": 3,
+        "07:17:18.407000": 3,
+        "07:06:55.031000": 3
+       }
+      },
+      "ID": {
+       "n_missing": 0,
+       "n_unique": 233,
+       "dtype": "cat",
+       "top": {
+        "Y31": 10,
+        "W49": 10,
+        "G43": 9,
+        "R53": 9,
+        "G21": 9,
+        "W98": 9,
+        "O22": 9,
+        "R78": 9,
+        "G31": 8,
+        "R73": 8
+       }
+      },
+      "Unique TRIAL ID": {
+       "n_missing": 0,
+       "n_unique": 399,
+       "dtype": "cat",
+       "top": {
+        "20R16": 5,
+        "22B96": 5,
+        "22R38": 5,
+        "4W15": 5,
+        "11G31": 4,
+        "12G31": 4,
+        "12Y29": 4,
+        "19G45": 4,
+        "19W98": 4,
+        "19Y31": 4
+       }
+      },
+      "Unique HIVE ID": {
+       "n_missing": 0,
+       "n_unique": 267,
+       "dtype": "cat",
+       "top": {
+        "5Y31": 10,
+        "2W49": 10,
+        "5W98": 9,
+        "2O22": 9,
+        "5R78": 9,
+        "4G31": 8,
+        "2W74": 7,
+        "5G43": 7,
+        "5G74": 7,
+        "5R53": 7
+       }
+      },
+      "Event Code": {
+       "n_missing": 0,
+       "n_unique": 1,
+       "dtype": "cat",
+       "top": {
+        "EF": 632
+       }
+      },
+      "Time of Event (ms)": {
+       "n_missing": 0,
+       "n_unique": 560,
+       "dtype": "cat",
+       "top": {
+        "00:08:44.056000": 5,
+        "00:02:47.096000": 3,
+        "00:08:39.317000": 3,
+        "00:05:17.057000": 3,
+        "00:05:51.773000": 3,
+        "00:07:15.579000": 3,
+        "00:02:50.498000": 3,
+        "00:02:40.010000": 3,
+        "00:03:09.527000": 3,
+        "00:03:21.407000": 3
+       }
+      },
+      "Video #": {
+       "n_missing": 0,
+       "n_unique": 157,
+       "dtype": "cat",
+       "top": {
+        "S1440005": 20,
+        "S1440007": 19,
+        "S1440006": 15,
+        "S1430003": 15,
+        "S1450004": 15,
+        "S1460010": 15,
+        "S1420010": 14,
+        "S1460020": 14,
+        "S1280048": 13,
+        "S1450005": 12
+       }
+      },
+      "Trial Date": {
+       "n_missing": 0,
+       "n_unique": 23,
+       "dtype": "cat",
+       "top": {
+        "2016-07-25 00:00:00": 77,
+        "2025-07-27 00:00:00": 77,
+        "2025-04-27 00:00:00": 57,
+        "2025-04-26 00:00:00": 51,
+        "2025-07-22 00:00:00": 45,
+        "2025-04-25 00:00:00": 35,
+        "2025-04-24 00:00:00": 33,
+        "2025-07-13 00:00:00": 30,
+        "2025-07-26 00:00:00": 27,
+        "2016-07-28 00:00:00": 23
+       }
+      },
+      "Trial ID": {
+       "n_missing": 0,
+       "n_unique": 23,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 24.0,
+       "mean": 13.2722
+      },
+      "Feeder Location": {
+       "n_missing": 0,
+       "n_unique": 2,
+       "dtype": "cat",
+       "top": {
+        "Library": 319,
+        "Gate": 313
+       }
+      },
+      "Stage": {
+       "n_missing": 0,
+       "n_unique": 2,
+       "dtype": "cat",
+       "top": {
+        "Learning": 358,
+        "Test": 274
+       }
+      },
+      "Personality": {
+       "n_missing": 0,
+       "n_unique": 3,
+       "dtype": "cat",
+       "top": {
+        "Liar": 302,
+        "Honest": 234,
+        "Unverified": 96
+       }
+      },
+      "Feeder Side": {
+       "n_missing": 0,
+       "n_unique": 2,
+       "dtype": "cat",
+       "top": {
+        "Right": 433,
+        "Left": 199
+       }
+      },
+      "NEW HIVE #": {
+       "n_missing": 0,
+       "n_unique": 5,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 5.0,
+       "mean": 3.7358
+      },
+      "Avg Daily Temperature": {
+       "n_missing": 0,
+       "n_unique": 10,
+       "dtype": "float64",
+       "min": 19.0,
+       "max": 29.5,
+       "mean": 27.3623
+      },
+      "Max Daily Temperature ©": {
+       "n_missing": 0,
+       "n_unique": 9,
+       "dtype": "int64",
+       "min": 22.0,
+       "max": 37.0,
+       "mean": 31.3244
+      },
+      "Plate Color": {
+       "n_missing": 9,
+       "n_unique": 3,
+       "dtype": "cat",
+       "top": {
+        "Yellow": 288,
+        "Green": 273,
+        "Red": 62,
+        "nan": 9
+       }
+      },
+      "Umbrella Color": {
+       "n_missing": 9,
+       "n_unique": 3,
+       "dtype": "cat",
+       "top": {
+        "Blue": 347,
+        "White": 194,
+        "Yellow": 82,
+        "nan": 9
+       }
+      },
+      "Return # relative to stage": {
+       "n_missing": 0,
+       "n_unique": 13,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 13.0,
+       "mean": 5.0854
+      },
+      "Dance # Chrono": {
+       "n_missing": 0,
+       "n_unique": 13,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 13.0,
+       "mean": 5.7658
+      },
+      "Dance # Relative to stage": {
+       "n_missing": 0,
+       "n_unique": 7,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 7.0,
+       "mean": 3.4098
+      },
+      "#Circuits Followed by Entrance": {
+       "n_missing": 0,
+       "n_unique": 21,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 23.0,
+       "mean": 5.0269
+      },
+      "FOCAL BEE Circuits per entrance": {
+       "n_missing": 0,
+       "n_unique": 45,
+       "dtype": "int64",
+       "min": 1.0,
+       "max": 90.0,
+       "mean": 23.2848
+      }
+     },
+     "head5": [
+      {
+       "Real Time": "12:19:10.656000",
+       "ID": "G47",
+       "Unique TRIAL ID": "10G47",
+       "Unique HIVE ID": "3G47",
+       "Event Code": "EF",
+       "Time of Event (ms)": "00:02:35.656000",
+       "Video #": "S1340046",
+       "Trial Date": "June 6 B",
+       "Trial ID": 10,
+       "Feeder Location": "Library",
+       "Stage": "Test",
+       "Personality": "Unverified",
+       "Feeder Side": "Right",
+       "NEW HIVE #": 3,
+       "Avg Daily Temperature": 24.0,
+       "Max Daily Temperature ©": 29,
+       "Plate Color": "Green",
+       "Umbrella Color": "White",
+       "Return # relative to stage": 4,
+       "Dance # Chrono": 4,
+       "Dance # Relative to stage": 1,
+       "#Circuits Followed by Entrance": 6,
+       "FOCAL BEE Circuits per entrance": 6
+      },
+      {
+       "Real Time": "11:36:10.316000",
+       "ID": "O24",
+       "Unique TRIAL ID": "10O24",
+       "Unique HIVE ID": "3O24",
+       "Event Code": "EF",
+       "Time of Event (ms)": "00:07:27.316000",
+       "Video #": "S1340039",
+       "Trial Date": "June 6 B",
+       "Trial ID": 10,
+       "Feeder Location": "Gate",
+       "Stage": "Learning",
+       "Personality": "Unverified",
+       "Feeder Side": "Right",
+       "NEW HIVE #": 3,
+       "Avg Daily Temperature": 24.0,
+       "Max Daily Temperature ©": 29,
+       "Plate Color": "Yellow",
+       "Umbrella Color": "Blue",
+       "Return # relative to stage": 6,
+       "Dance # Chrono": 3,
+       "Dance # Relative to stage": 3,
+       "#Circuits Followed by Entrance": 7,
+       "FOCAL BEE Circuits per entrance": 19
+      },
+      {
+       "Real Time": "12:27:15.562000",
+       "ID": "O3",
+       "Unique TRIAL ID": "10O3",
+       "Unique HIVE ID": "3O3",
+       "Event Code": "EF",
+       "Time of Event (ms)": "00:04:05.562000",
+       "Video #": "S1340047",
+       "Trial Date": "June 6 B",
+       "Trial ID": 10,
+       "Feeder Location": "Library",
+       "Stage": "Test",
+       "Personality": "Unverified",
+       "Feeder Side": "Right",
+       "NEW HIVE #": 3,
+       "Avg Daily Temperature": 24.0,
+       "Max Daily Temperature ©": 29,
+       "Plate Color": "Green",
+       "Umbrella Color": "White",
+       "Return # relative to stage": 5,
+       "Dance # Chrono": 5,
+       "Dance # Relative to stage": 2,
+       "#Circuits Followed by Entrance": 8,
+       "FOCAL BEE Circuits per entrance": 15
+      },
+      {
+       "Real Time": "12:42:02.497000",
+       "ID": "O39",
+       "Unique TRIAL ID": "10O39",
+       "Unique HIVE ID": "3O39",
+       "Event Code": "EF",
+       "Time of Event (ms)": "00:02:27.497000",
+       "Video #": "S1340049",
+       "Trial Date": "June 6 B",
+       "Trial ID": 10,
+       "Feeder Location": "Library",
+       "Stage": "Test",
+       "Personality": "Unverified",
+       "Feeder Side": "Right",
+       "NEW HIVE #": 3,
+       "Avg Daily Temperature": 24.0,
+       "Max Daily Temperature ©": 29,
+       "Plate Color": "Green",
+       "Umbrella Color": "White",
+       "Return # relative to stage": 7,
+       "Dance # Chrono": 6,
+       "Dance # Relative to stage": 3,
+       "#Circuits Followed by Entrance": 2,
+       "FOCAL BEE Circuits per entrance": 2
+      },
+      {
+       "Real Time": "07:33:37.241000",
+       "ID": "B13",
+       "Unique TRIAL ID": "11B13",
+       "Unique HIVE ID": "4B13",
+       "Event Code": "EF",
+       "Time of Event (ms)": "00:00:52.241000",
+       "Video #": "s1350008",
+       "Trial Date": 1751846400000,
+       "Trial ID": 11,
+       "Feeder Location": "Library",
+       "Stage": "Learning",
+       "Personality": "Liar",
+       "Feeder Side": "Right",
+       "NEW HIVE #": 4,
+       "Avg Daily Temperature": 28.0,
+       "Max Daily Temperature ©": 32,
+       "Plate Color": "Yellow",
+       "Umbrella Color": "Blue",
+       "Return # relative to stage": 4,
+       "Dance # Chrono": 3,
+       "Dance # Relative to stage": 3,
+       "#Circuits Followed by Entrance": 2,
+       "FOCAL BEE Circuits per entrance": 40
+      }
+     ]
+    }
+   }
+  },
+  "other": [
+   {
+    "name": "record.json",
+    "bytes": 4528
+   }
+  ],
+  "pdf": []
+ },
+ "finke2023": {
+  "tabular": {},
+  "other": [
+   {
+    "name": "crossref_meta.json",
+    "bytes": 1699
+   },
+   {
+    "name": "fulltext.html",
+    "bytes": 706155
+   },
+   {
+    "name": "fulltext.txt",
+    "chars": 111705
+   },
+   {
+    "name": "si_2_10071_2022_1741_MOESM1_ESM.docx",
+    "bytes": 918131,
+    "magic": "504b030414000600"
+   }
+  ],
+  "pdf": [
+   "si_0_s10071-022-01741-2.pdf",
+   "si_0_s10071-022-01741-2.pdf -> text 108474 chars",
+   "si_1_s10071-022-01741-2.pdf",
+   "si_1_s10071-022-01741-2.pdf -> text 108474 chars"
+  ]
+ },
+ "perry2013": {
+  "tabular": {},
+  "other": [
+   {
+    "name": "crossref_meta.json",
+    "bytes": 827
+   },
+   {
+    "name": "fulltext.html",
+    "bytes": 161380
+   },
+   {
+    "name": "fulltext.txt",
+    "chars": 38468
+   }
+  ],
+  "pdf": []
+ },
+ "raine2012": {
+  "tabular": {},
+  "other": [
+   {
+    "name": "crossref_meta.json",
+    "bytes": 187
+   },
+   {
+    "name": "fulltext.html",
+    "bytes": 247182
+   },
+   {
+    "name": "fulltext.txt",
+    "chars": 62648
+   }
+  ],
+  "pdf": []
+ },
+ "evans2017": {
+  "tabular": {},
+  "other": [
+   {
+    "name": "crossref_meta.json",
+    "bytes": 1556
+   },
+   {
+    "name": "fulltext.html",
+    "bytes": 468784
+   },
+   {
+    "name": "fulltext.txt",
+    "chars": 56576
+   }
+  ],
+  "pdf": [
+   "si_0_s41598-017-00389-0.pdf",
+   "si_0_s41598-017-00389-0.pdf -> text 52584 chars",
+   "si_1_s41598-017-00389-0.pdf",
+   "si_1_s41598-017-00389-0.pdf -> text 52584 chars",
+   "si_2_41598_2017_389_MOESM1_ESM.pdf",
+   "si_2_41598_2017_389_MOESM1_ESM.pdf -> text 17565 chars",
+   "si_3_s41598-017-00389-0.pdf",
+   "si_3_s41598-017-00389-0.pdf -> text 52584 chars"
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+=== A) authors: Avila Leal ===
+AUTHOR https://openalex.org/A5021232322 | n=1 | Bruno Avila Leal de Meirelles Herrera
+AUTHOR https://openalex.org/A5086942764 | n=2 | José Ávila-Leal
+   2015 | Isolation and Characterization of Potential Probiotic Bacteria Suitable for Mollusk L | The Thai Journal of Veterina | OA:Y | 10.56808/2985-1130.2614
+   2017 | Effects of bacilli, molasses, and reducing feeding rate on biofloc formation, growth, | Latin American Journal of Aq | OA:Y | 10.3856/vol45-issue5-fulltext-4
+AUTHOR https://openalex.org/A5010431939 | n=5 | M. Avila
+   2020 | Synthesis, characterization and cytotoxicity of zinc oxide nanoparticles by green syn | Journal of Drug Delivery Sci | OA:n | 10.1016/j.jddst.2020.101925
+   2003 | In situ surface oxidation of Ti-44Al-11Nb alloy at room temperature | Journal of Materials Science | OA:n | 10.1023/a:1021875700029
+   2002 | Comparison of in situ oxidation between Ti-44AI and Ti-44AI-11Nb alloys below 400 °C | Journal of Materials Science | OA:n | 10.1023/a:1015404904262
+   2002 | In Situ Initial Surface Oxidation of Ti-44Al-11Nb Alloy at Room Temperature | APS | OA:n | 
+   2001 | In situ initial oxidation of Ti45Al44Nb 11 and Ti56 Al44 alloys investigated by surfa |  | OA:n | 
+AUTHOR https://openalex.org/A5079525037 | n=2 | María Ángeles Leal-Ávila
+   2022 | Mitochondrial Dysfunction Induced by Zinc Oxide Nanoparticles | Crystals | OA:Y | 10.3390/cryst12081089
+   2022 | Evaluation of the Efficacy and Safety of Silver Nanoparticles in the Treatment of Non | Viruses | OA:Y | 10.3390/v14112329
+AUTHOR https://openalex.org/A5006790328 | n=6 | Giselle Ávila Leal de Meirelles
+   2016 | Reestruturação produtiva do capital, pauperização e desigualdade social na América La | Serviço Social em Revista | OA:Y | 10.5433/1679-4842.2016v18n2p52
+   2015 | Pauperização Relativa, Desigualdade Social e a "Questão Social"contemporânea. | Temporalis | OA:Y | 10.22422/2238-1856.2015v15n29p65-88
+   2017 | A MUNDIALIZAÇÃO DO CAPITAL E OS REBATIMENTOS PARA O SERVIÇO SOCIAL BRASILEIRO |  | OA:n | 
+   2018 | Para entender a crise contemporânea: a experiência portuguesa como lição | Revista Katálysis | OA:Y | 10.1590/1982-02592018v21n1p219
+   2017 | Serviço Social e “Questão Social”: fundamentos teóricos e análise contemporânea | Serviço Social em Revista | OA:Y | 10.5433/1679-4842.2017v19n2p110
+   2022 | O serviço social brasileiro frente à desigualdade social e à pauperização | SER Social | OA:Y | 10.26512/sersocial.v24i50.38502
+AUTHOR https://openalex.org/A5043801487 | n=3 | Laura Carolina Sánchez Leal
+   1998 | Recubrimientos superficiales con láseres de diodos de alta potencia | Revista de Metalurgia | OA:Y | 10.3989/revmetalm.1998.v34.i2.683
+   2011 | Intracavity absorption spectroscopy with Er3+-doped fiber lasers | Portuguese National Funding  | OA:Y | 
+   2025 | Análisis de la deserción en estudiantes de ciencias exactas en una institución públic | RECIE Revista Electrónica Ci | OA:Y | 10.33010/recie.v9i0.2394
+AUTHOR https://openalex.org/A5124564646 | n=1 | Jaiver Alberto Avila Leal
+   1992 | Variaciones de la topografía corneal en pacientes usuarios de lentes de contacto blan | Ciencia Unisalle (Universida | OA:n | 
+AUTHOR https://openalex.org/A5011460006 | n=1 | Avila Leal
+   2020 | Propuesta de diseño de servicio para la promoción de lectura en niños de hogares comu |  | OA:n | 
+=== B) works search: abstention / opt out bees ===
+-- q: honey bee abstention | total 155
+   2014 | Politics meets Science: The case of neonicotinoid insecticides in Europe | OpenEdition (OpenEdition) | OA:Y | 
+-- q: bee "opt out" confidence | total 1606
+   2013 | Honey bees selectively avoid difficult choices | Proceedings of the National  | OA:Y | 10.1073/pnas.1314571110
+   2013 | Standard survey methods for estimating colony losses and explanatory risk factors inA | Journal of Apicultural Resea | OA:Y | 10.3896/ibra.1.52.4.18
+-- q: Apis mellifera uncertainty | total 4801
+   1986 | Optimal Diet, Minimal Uncertainty and Individual Constancy in the Foraging of Honey B | Journal of Animal Ecology | OA:n | 10.2307/4422
+   2003 | Trophallaxis in forager honeybees (Apis mellifera): resource uncertainty enhances beg | Journal of Comparative Physi | OA:n | 10.1007/s00359-002-0382-y
+   2023 | Revised guidance on the risk assessment of plant protection products on bees (Apis me | EFSA Journal | OA:Y | 10.2903/j.efsa.2023.7989
+   2013 | Standard methods for toxicology research inApis mellifera | Journal of Apicultural Resea | OA:Y | 10.3896/ibra.1.52.4.14
+   2008 | Genomic analysis of post-mating changes in the honey bee queen (Apis mellifera) | BMC Genomics | OA:Y | 10.1186/1471-2164-9-232
+   2015 | Extreme Recombination Frequencies Shape Genome Variation and Evolution in the Honeybe | PLoS Genetics | OA:Y | 10.1371/journal.pgen.1005189
+   2014 | Toxins induce ‘malaise’ behaviour in the honeybee (Apis mellifera) | Journal of Comparative Physi | OA:Y | 10.1007/s00359-014-0932-0

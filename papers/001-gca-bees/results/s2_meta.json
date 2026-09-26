@@ -1,0 +1,121 @@
+{
+  "method": "Fisher z transform; per-pair two-tailed t-test p recomputed (scipy); 3-var PD determinant for single-factor compatibility; DerSimonian-Laird random-effects meta per task-pair group",
+  "experiments": {
+    "Finke Expt1": {
+      "pairs": {
+        "RL1-RL2": 0.53,
+        "RL1-NP": 0.42,
+        "RL2-NP": 0.25
+      },
+      "sig_positive": [
+        "RL1-RL2 p=0.005",
+        "RL1-NP p=0.02"
+      ],
+      "ns": [
+        "RL2-NP p=0.201"
+      ],
+      "pd_det_3var": 0.5915,
+      "pd_ok": true
+    },
+    "Finke Expt2": {
+      "pairs": {
+        "RL1-RL2": 0.6,
+        "RL1-NP": 0.46,
+        "RL2-NP": 0.19
+      },
+      "sig_positive": [
+        "RL1-RL2 p=0.006",
+        "RL1-NP p=0.03"
+      ],
+      "ns": [
+        "RL2-NP p=0.41"
+      ],
+      "pd_det_3var": 0.4972,
+      "pd_ok": true
+    },
+    "Finke Expt3": {
+      "pairs": {
+        "RL1-RL2": null,
+        "RL1-NP": 0.18,
+        "RL2-NP": 0.18
+      },
+      "sig_positive": [
+        "RL1-NP p=0.03"
+      ],
+      "ns": [
+        "RL2-NP p=0.17"
+      ],
+      "pd_det_3var": "n/a (RL1-RL2 missing)",
+      "pd_ok": null
+    },
+    "Finke Expt4": {
+      "pairs": {
+        "RL1-RL2": null,
+        "RL1-NP": 0.33,
+        "RL2-NP": 0.15
+      },
+      "sig_positive": [
+        "RL1-NP p=0.002"
+      ],
+      "ns": [
+        "RL2-NP p=0.36"
+      ],
+      "pd_det_3var": "n/a (RL1-RL2 missing)",
+      "pd_ok": null
+    }
+  },
+  "meta_within_finke": {
+    "RL1-RL2 (k=2)": {
+      "k": 2,
+      "Q": 0.005,
+      "I2": 0.0,
+      "tau2": 0.0,
+      "r_fixed": 0.566,
+      "r": 0.56,
+      "ci95": [
+        0.316,
+        0.735
+      ],
+      "p": 0.0001
+    },
+    "RL1-NP (k=4)": {
+      "k": 4,
+      "Q": 0.058,
+      "I2": 0.0,
+      "tau2": 0.0,
+      "r_fixed": 0.352,
+      "r": 0.277,
+      "ci95": [
+        0.164,
+        0.383
+      ],
+      "p": 0.0
+    },
+    "RL2-NP (k=4)": {
+      "k": 4,
+      "Q": 0.006,
+      "I2": 0.0,
+      "tau2": 0.0,
+      "r_fixed": 0.193,
+      "r": 0.185,
+      "ci95": [
+        0.02,
+        0.34
+      ],
+      "p": 0.0278
+    }
+  },
+  "meta_cross_study_simple_to_reversal": {
+    "k": 3,
+    "Q": 0.007,
+    "I2": 0.0,
+    "tau2": 0.0,
+    "r_fixed": 0.578,
+    "r": 0.571,
+    "ci95": [
+      0.369,
+      0.722
+    ],
+    "p": 0.0
+  }
+}

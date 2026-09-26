@@ -1,0 +1,378 @@
+{
+  "finke_loo_meta": {
+    "RL1-NP": {
+      "full": {
+        "k": 4,
+        "r": 0.277,
+        "ci95": [
+          0.164,
+          0.383
+        ],
+        "p": 0.0
+      },
+      "leave_one_out": {
+        "drop_Expt1": {
+          "k": 3,
+          "r": 0.258,
+          "ci95": [
+            0.137,
+            0.371
+          ],
+          "p": 4e-05
+        },
+        "drop_Expt2": {
+          "k": 3,
+          "r": 0.262,
+          "ci95": [
+            0.144,
+            0.373
+          ],
+          "p": 2e-05
+        },
+        "drop_Expt3": {
+          "k": 3,
+          "r": 0.37,
+          "ci95": [
+            0.216,
+            0.505
+          ],
+          "p": 1e-05
+        },
+        "drop_Expt4": {
+          "k": 3,
+          "r": 0.252,
+          "ci95": [
+            0.113,
+            0.381
+          ],
+          "p": 0.00046
+        }
+      }
+    },
+    "RL2-NP": {
+      "full": {
+        "k": 4,
+        "r": 0.185,
+        "ci95": [
+          0.02,
+          0.34
+        ],
+        "p": 0.02778
+      },
+      "leave_one_out": {
+        "drop_Expt1": {
+          "k": 3,
+          "r": 0.171,
+          "ci95": [
+            -0.011,
+            0.342
+          ],
+          "p": 0.06477
+        },
+        "drop_Expt2": {
+          "k": 3,
+          "r": 0.184,
+          "ci95": [
+            0.008,
+            0.349
+          ],
+          "p": 0.0401
+        },
+        "drop_Expt3": {
+          "k": 3,
+          "r": 0.189,
+          "ci95": [
+            -0.028,
+            0.389
+          ],
+          "p": 0.08728
+        },
+        "drop_Expt4": {
+          "k": 3,
+          "r": 0.199,
+          "ci95": [
+            0.005,
+            0.379
+          ],
+          "p": 0.04491
+        }
+      }
+    },
+    "RL1-RL2": {
+      "full": {
+        "k": 2,
+        "r": 0.56,
+        "ci95": [
+          0.316,
+          0.735
+        ],
+        "p": 5e-05
+      },
+      "leave_one_out": {
+        "drop_Expt1": {
+          "k": 1,
+          "r": 0.6,
+          "ci95": [
+            0.214,
+            0.824
+          ],
+          "p": 0.00426
+        },
+        "drop_Expt2": {
+          "k": 1,
+          "r": 0.53,
+          "ci95": [
+            0.188,
+            0.757
+          ],
+          "p": 0.00384
+        }
+      }
+    }
+  },
+  "corr_pairs_reverify": [
+    {
+      "ref_id": "23",
+      "task_pair": "RL1-RL2",
+      "r_reported": "0.53",
+      "N": "27",
+      "p_recomputed": 0.00446,
+      "ci95_recomputed": [
+        0.188,
+        0.757
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL1-NP",
+      "r_reported": "0.42",
+      "N": "33",
+      "p_recomputed": 0.01496,
+      "ci95_recomputed": [
+        0.09,
+        0.667
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL2-NP",
+      "r_reported": "0.25",
+      "N": "27",
+      "p_recomputed": 0.20852,
+      "ci95_recomputed": [
+        -0.144,
+        0.575
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL1-RL2",
+      "r_reported": "0.60",
+      "N": "20",
+      "p_recomputed": 0.00516,
+      "ci95_recomputed": [
+        0.214,
+        0.824
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL1-NP",
+      "r_reported": "0.46",
+      "N": "22",
+      "p_recomputed": 0.03124,
+      "ci95_recomputed": [
+        0.048,
+        0.738
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL2-NP",
+      "r_reported": "0.19",
+      "N": "20",
+      "p_recomputed": 0.42235,
+      "ci95_recomputed": [
+        -0.276,
+        0.583
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL1-RL2",
+      "r_reported": "",
+      "N": "",
+      "verdict": "n/a (not extractable row)"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL1-NP",
+      "r_reported": "0.18",
+      "N": "140",
+      "p_recomputed": 0.03333,
+      "ci95_recomputed": [
+        0.015,
+        0.336
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL2-NP",
+      "r_reported": "0.18",
+      "N": "61",
+      "p_recomputed": 0.1651,
+      "ci95_recomputed": [
+        -0.075,
+        0.413
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL1-RL2",
+      "r_reported": "",
+      "N": "",
+      "verdict": "n/a (not extractable row)"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL1-NP",
+      "r_reported": "0.33",
+      "N": "89",
+      "p_recomputed": 0.00159,
+      "ci95_recomputed": [
+        0.131,
+        0.504
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "23",
+      "task_pair": "RL2-NP",
+      "r_reported": "0.15",
+      "N": "42",
+      "p_recomputed": 0.34305,
+      "ci95_recomputed": [
+        -0.161,
+        0.434
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "20",
+      "task_pair": "D-R (discrimination-reversal)",
+      "r_reported": "0.60",
+      "N": "18",
+      "p_recomputed": 0.00848,
+      "ci95_recomputed": [
+        0.185,
+        0.833
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "21",
+      "task_pair": "LPI-t (learning time)",
+      "r_reported": "0.62",
+      "N": "48",
+      "p_recomputed": 0.0,
+      "ci95_recomputed": [
+        0.408,
+        0.769
+      ],
+      "verdict": "OK"
+    },
+    {
+      "ref_id": "21",
+      "task_pair": "LPI-foraging days",
+      "r_reported": "",
+      "N": "49",
+      "verdict": "n/a (not extractable row)"
+    },
+    {
+      "ref_id": "6",
+      "task_pair": "LI-R",
+      "r_reported": "",
+      "N": "",
+      "verdict": "n/a (not extractable row)"
+    }
+  ],
+  "perry_chi2_consistency": {
+    "as_reported": "additive chi2=25.349, df=10, P=0.005 (10 bees, difficult vs easy trials)",
+    "check": "df=10 matches n_bees (per-bee additive component); raw per-bee opt-out counts not in OA full text -> consistency check only, NOT re-computable; no internal contradiction found in s2_perry_ctx.txt window",
+    "verdict": "CONSISTENT_AS_REPORTED (not re-computable)"
+  },
+  "oxman_untransformed_ols": {
+    "note": "transformation sensitivity: raw effort (no log1p), OLS",
+    "n": 536,
+    "coef": {
+      "const": 2.36711,
+      "is_liar": 1.44167,
+      "focal": 0.07158,
+      "stage_test": 0.54201
+    },
+    "p": {
+      "const": 0.0,
+      "is_liar": 4e-05,
+      "focal": 0.0,
+      "stage_test": 0.1032
+    },
+    "r2": 0.1147
+  },
+  "oxman_exclude_single_event": {
+    "n_bees_excluded": 90,
+    "n_events_kept": 446,
+    "fitted": true,
+    "fixed_effects": {
+      "Intercept": {
+        "beta": 2.42774,
+        "ci95": [
+          1.46895,
+          3.38654
+        ],
+        "p": 0.0
+      },
+      "is_liar": {
+        "beta": 1.5613,
+        "ci95": [
+          0.77165,
+          2.35095
+        ],
+        "p": 0.00011
+      },
+      "focal": {
+        "beta": 0.07815,
+        "ci95": [
+          0.05788,
+          0.09843
+        ],
+        "p": 0.0
+      },
+      "stage_test": {
+        "beta": 0.49336,
+        "ci95": [
+          -0.23294,
+          1.21965
+        ],
+        "p": 0.18307
+      },
+      "Group Var": {
+        "beta": 0.04466,
+        "ci95": [
+          -0.03806,
+          0.12739
+        ],
+        "p": 0.28997
+      }
+    },
+    "fit_error": "'groups' is a required keyword argument in MixedLM.from_formula",
+    "r2_note": "raw effort (no log1p) mixed model, single-event followers excluded (transformation sensitivity)"
+  }
+}

@@ -1,0 +1,47 @@
+# 001-gca-bees · 冻结声明（stage5_final）
+冻结时间：2026-09-26 16:1x BJT · 窗口A · 段5 收官
+执行环境：ARIS v0.4.26 + 内网网关 172.16.25.104:1026（Deepseek-Flash-V4-正式版，128K 硬上限）
+重跑铁律合规：只复用旧仓库 idea；代码新写（code/ 全部 2026-09-26 新写）；数据公开源重取（Zenodo 10.5281/zenodo.17771502 + OA SI）；未复用旧代码/数据/结果。
+运行事故：128K 死亡 6 例 → 编排器接管 8 次（aris-128k-takeover 直写补完，未重跑已冻结产物）。
+段4 稿件：编排器直写（未跑 LLM）；段5 收官：编排器直写（未跑 LLM）。
+
+## 冻结产物清单（本目录 + 同级目录）
+paper/paper_EN.md        双语主稿（EN，7 块 245 行，摘要 2462 字符，32 条参考文献）
+paper/paper_ZH.md        中文镜像稿（数字与 EN 逐项一致）
+paper/paper_EN_notes.md  正文数字→源 JSON 字段映射 + run provenance
+paper/paper.json         stage5_final 元数据 + 关键数字
+results/stage2_results.json   段2 协方差结构主结果（M1–M5）
+results/s3_trial_model.json   段3 试次级混合模型（主模型/随机斜率/分层/交互/近期代理）
+results/s3_robustness.json    段3 稳健性（LOO/复算/Perry/未变换/剔除单次事件）
+results/corr_pairs.csv        表1 16 格相关值（段2 冻结）
+results/s2_data_profile.json / s2_meta.json / s2_precision.json / s2_fetch.json  段2 辅助冻结件
+lit/REGISTRY.md + lit/LIT_NOTES.md  冻结文献集（25+7=32 条，Crossref 逐条核实）
+code/  全部分析脚本（新写）
+
+## 关键冻结数字（稿件引用唯一来源）
+元分析（段2）：
+  RL1–RL2  r=0.56 [0.316,0.735]  k=2  p=.0001
+  RL1–NP   r=0.277 [0.164,0.383] k=4  p<.001   （LOO 全稳健）
+  跨研究   r=0.571 [0.369,0.722] k=3  p<.001
+  RL2–NP   r=0.185 [0.020,0.340] k=4  p=.028   临界：drop Expt3(p=.087 ns, 依赖 n=61)
+M1：12 对全正 + 3 变量协方差正定（det 0.5915/0.4972）→ 部分支持；M2/M3 不可估不作主张；M5 Perry 两阶段 χ²(10)=25.349 P=.005（7/10 通过）
+试次级主模型（段3，n=536 事件/213 蜂/325 trial，DV=log1p 环数，REML 收敛 loglik=−484.279）：
+  is_liar β=0.234586 [0.12552,0.343651] p=2.491e-05  （exp(β)−1≈+26% 跟随时长）
+  focal   β=0.010629 [0.007818,0.01344]  p<.001      （每 focal 环数 +1.1%）
+  stage   β=0.065188 p=.207 ns
+  Var(ID)=0.029304  resid=0.316955  R²m=.1124 R²c=.1299
+随机斜率：focal Var=0.00087 p=.0796 / ID×focal cov=−0.027195 p=.1096 / R²c→.298 / singular=false
+个体分层（47 蜂 hi24/lo23，中位 β_focal=0.0185）：Welch t p=.232592；符号 hi 18/24 p=.0227 / lo 11/23 p=1.0；交互 β=−0.129085 p=.39032508（提示性非确认性）
+近期代理（n=211，探索性）：recent_mean β=0.21756 [0.0563,0.3788] p=.00817；pos β p=.36462；Var(ID)=0.0 boundary
+稳健性：RL1-NP/RL1-RL2 LOO 稳健；RL2-NP 临界（见上）；corr_pairs 16/16 复算 OK；未变换 OLS 结论不变（is_liar p=4e-05 / focal p<.001）；剔除单次事件 446 事件结论不变（is_liar 1.5613 [0.7717,2.3510] p=1.1e-04 / focal 0.0782 p<.001）
+
+## 主张纪律（claims policy，入稿 §6.3 逐字）
+1. 不作单因子 GCA 确认主张（M1 仅部分支持 → 层级/任务特异结构）
+2. 不确定性监控/元认知主张需独立证据链（本稿试次级结果支持信息追踪 + 信任先验）
+3. 神经推论（GCA 脑机制等）全部标注为假设
+探索性条目（precision 代理、近期代理）全部标注 post-hoc/exploratory。
+
+## 引用冻结
+32 条 = REGISTRY 25（§A）+ LIT_NOTES §B 7；Crossref 逐条核实（results/crossref_check.txt，含本段 8 条 DOI 书目补全：[4][14][26]–[32]；Hammer 1995 修正为双作者 Hammer & Menzel）。数据记录：10.5281/zenodo.17771502（姊妹集 17771503）。
+
+冻结后任何修改须走重开流程（更新本文件 + COORDINATION 认领行 + 新 commit），禁止静默改动。

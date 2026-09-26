@@ -1,0 +1,10 @@
+WROTE results/s3_trial_model.json
+n=536 ids=213 trials=325 (honest=234 liar=302)
+main is_liar: b=0.2346 CI[0.1255,0.3437] p=2.49e-05
+main focal: b=0.0106 CI[0.0078,0.0134] p=0
+main stage_test: b=0.0652 CI[-0.0360,0.1664] p=0.207
+main var(ID)=0.029304 resid=0.316955 R2m=0.112 R2c=0.130 conv=True warn=[]
+random_slope cov_re=[[0.256633, -0.006824], [-0.006824, 0.000218]] singular=False R2m=0.178 R2c=0.298 warn=['Maximum Likelihood optimization failed to converge. Check mle_retvals']
+sens: n_beels=47 hi/lo=24/23 med_bf=0.0185 lier_hi=0.3904 lier_lo=0.18345 welch_p=0.2326 sign_hi=0.023 sign_lo=1.000
+sens interaction is_liar:high_sens b=-0.129085 p=0.39032508
+recent: n=211 pos p=0.3646171 recent_mean p=0.00817267 (exploratory)

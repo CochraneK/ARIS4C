@@ -1,0 +1,53 @@
+=== X1) Crossref bib: Apis mellifera opt-out ===
+2019 | ? | Apis mellifera mellifera | 10.1079/cabicompendium.93196
+2023 | Makarov | Apis mellifera | 10.15393/j1.art.2023.14502
+None | ? | Mites Associated with Apis mellifera Linnaeus and Apis cerana Fabricus in the Southern Tag | 10.59852/tpe-a404v12i2
+None | ? | ผลของอุณหภูมิต่อความเป็นพิษของสารฆ่าแมลงบางชนิดต่อผึ้งพันธุ์ (Apis mellifera L.) และผึ้งโพ | 10.58837/chula.the.1987.600
+2007 | Gençer | Morphometric characterization of Iranian (Apis mellifera meda), Central Anatolian (Apis me | 10.3896/ibra.1.46.4.03
+2017 | Uçak Koç | Farklı Mevsimlerde Yetiştirilen Kafkas (Apis mellifera caucasica), İtalyan (Apis mellifera | 10.16984/saufenbilder.300635
+None | Oliveira | Polietismo e detecção de vírus deformador das asas em abelha Apis mellifera scutellata (Af | 10.11606/t.11.2013.tde-27032013-152000
+None | ? | การเลี้ยงผึ้งและผลผลิตน้ำผึ้งของผึ้งพันธุ์ Apis mellifera ที่นำไปเลี้ยงในสวนผลไม้ | 10.58837/chula.the.1987.605
+None | ? | ศักยภาพของการอยู่รอดและผลผลิตน้ำผึ้งของผึ้งพันธุ์ Apis mellifera ที่นำไปเลี้ยงในสวนยาง | 10.58837/chula.the.1984.437
+2015 | ? | Thermoregulation in bees with emphasis on Apis mellifera | 10.21708/avb.2014.8.3.3491
+1970 | Kerr | Natural Crossing Between Apis mellifera adansonii and Apis mellifera ligustica | 10.2307/2406721
+2023 | Kaskinova | Effect of sample size on the assessment of the Apis mellifera mellifera subspecies | 10.31301/2221-6197.bmcs.2023-11
+=== X2) Crossref bib: Avila d'Avila Leal honey bee ===
+1995 | Montenegro | Continua actividad de Apis mellifera en Lo Blanco, V Región de Chile | 10.7764/rcia.v22i1-2.844
+2018 | Avila | Microtubule Proteins | 10.1201/9781351074643
+2025 | Avila-Rubio | Solid-State Manufacturing and Microstructural, Microhardness, and Wear Evaluation of 2024  | 10.2139/ssrn.5404628
+2008 | Munoz-Avila | Transfer Learning and Hierarchical Task Network Representations and Planning | 10.21236/ada500020
+2011 | ? | Alonso, Avila | 10.1093/benz/9780199773787.article.b00003416
+2026 | Avila-Rubio | Solid-state manufacturing and microstructural, microhardness, and wear evaluation of 2024  | 10.1016/j.matlet.2025.139633
+2017 | Leal | Polypharmacy among elderly populations | 10.1016/j.eurpsy.2017.02.226
+None | ? | African Honey Bee, Africanized Honey Bee, or Killer Bee, Apis mellifera scutellata Lepelet | 10.1007/springerreference_85286
+2011 | ? | Antonio de Avila | 10.1093/benz/9780199773787.article.b00005820
+2011 | ? | Pedro de Avila | 10.1093/benz/9780199773787.article.b00137697
+2011 | ? | Martin de Avila | 10.1093/benz/9780199773787.article.b00117463
+2024 | Avila | In Pursuit of Healthier Learning Environments: High‐Altitude Classroom Ventilation | 10.1155/2024/2205311
+2021 | Avila-Pesantez | Improving the Serious Game design using Game Learning Analytics and Eye-tracking: A pilot  | 10.1109/urucon53396.2021.9647058
+2026 | Leal-Perez | Ion-exchange synthesis of copper sulfide nanostructures in a montmorillonite-based layered | 10.1016/j.matlet.2026.140521
+2025 | Avila | Occupational Health Law | 10.1016/b978-0-443-12128-9.00034-6
+=== X3) Crossref bib: Dyer honey bee cognitive abilities ===
+2025 | Loughran | Neurotranscriptomic profiling of DWV-infected honey bee foragers with different cognitive  | 10.1101/2025.05.23.655587
+2023 | Chen | Early-Life Sublethal Thiacloprid Exposure to Honey Bee Larvae: Enduring Effects on Adult B | 10.3390/toxics12010018
+1922 | Merrill | The correlation between some physical characters of the bee and its honey-storing abilitie | 10.5962/bhl.title.54301
+2023 | ? | Neuroethology and Cognitive Science | 10.2307/j.ctv32fs504.12
+2023 | ? | 7 Neuroethology and Cognitive Science | 10.1515/9780691246093-011
+2025 | Loughran | Neurotranscriptomic profiling of deformed wing virus-infected honey bee foragers (
+        | 10.1242/bio.062204
+2009 | ? | The Foraging Abilities of a Colony | 10.2307/j.ctv1kz4h15.6
+2021 | Yan | Review of: "Honey bee sHSP are responsive to diverse proteostatic stresses and potentially | 10.32388/qc5391
+1995 | ? | 3. The Foraging Abilities of a Colony | 10.4159/9780674043404-004
+1985 | Dyer | Nocturnal orientation by the Asian honey bee, Apis dorsata | 10.1016/s0003-3472(85)80009-9
+=== X4) Crossref bib: honey bee negative patterning ===
+None | ? | African Honey Bee, Africanized Honey Bee, or Killer Bee, Apis mellifera scutellata Lepelet | 10.1007/springerreference_85286
+2023 | ? | The Honey Bee Colony Is a Superorganism | 10.2307/j.ctv32fs504.17
+1991 | Bailey | THE HONEY BEE | 10.1016/b978-0-12-073481-8.50006-0
+2023 | ? | 11 The Honey Bee Colony Is a Superorganism | 10.1515/9780691246093-015
+2019 | Kent | The Africanized Honey Bee in Peru | 10.1201/9780429308741-19
+2021 | ? | Honey Bee Medicine | 10.1002/9781119583417.oth
+2026 | ? | Honey Bee Medicine Resources | 10.1002/9781394292530.oth1
+2023 | Marwaha | The Drone Honey Bee Morphometric Character | 10.2174/9789815179309123010004
+2021 | Oliver | Honey Bee Nutrition | 10.1002/9781119583417.ch8
+2021 | Davidson | Honey Bee Pharmacology | 10.1002/9781119583417.ch10
+=== X5) OpenAlex authors: Avila d'Avila Leal ===

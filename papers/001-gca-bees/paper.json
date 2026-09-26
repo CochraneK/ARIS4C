@@ -1,35 +1,31 @@
 {
   "id": "001",
   "slug": "gca-bees",
-  "title": "From General Learning Ability to Uncertainty Monitoring in Honey Bees",
-  "short_title": "Bee GCA × Uncertainty",
+  "title": "General Cognitive Ability or Task-Specific Structure? Cross-Task Covariance and Trial-Level Decision Analysis in Honey Bee Learning",
+  "short_title": "Bee GCA x Uncertainty (rerun)",
   "year": 2026,
-  "status": "submission-package-ready",
+  "status": "stage5_final",
+  "run": "local-ARIS-rerun-2026-09-26",
   "domain": "comparative cognition / psychometrics / computational neuroethology",
-  "summary": "A submission-ready quantitative synthesis and theory paper showing reproducible covariance among honey-bee learning tasks while separating that evidence from uncertainty-monitoring, metacognition, and consciousness claims; the Frontiers Comparative Psychology submission package includes journal metadata, statements, cover letter, reproducible analysis, and fallback-journal guidance.",
+  "summary": "Rerun (local ARIS, 2026-09-26) quantitative reanalysis: published-summary covariance structure among honey-bee learning tasks (M1-M5) plus trial-level mixed-model decision analysis on Oxman et al. 2026 (Zenodo 10.5281/zenodo.17771502). Result: hierarchical task-specific structure rather than single-factor GCA (M1 partial support, RL2-NP edge borderline under LOO); robust information tracking (focal circuit rate, beta=0.0106, p<.001) and robust dancer-personality effect (liar followers +26% time, p=2.5e-05); latent-precision proxy exploratory only. Claims policy enforced: no GCA claim, uncertainty-monitoring claims require independent chains, neural inferences flagged hypothetical.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
-    "provenance": "ARIS4C full reconstruction; finalized as quantitative synthesis + theory article",
-    "version": "v0.4.26",
-    "commit": "951654847b015585385b2448c5667dcd04e7b56b"
+    "provenance": "ARIS4C local rerun: ARIS v0.4.26, internal LLM gateway 172.16.25.104:1026 (Deepseek-Flash-V4, 128K hard cap); 6 in-run 128K deaths, 8 orchestrator takeovers (aris-128k-takeover); stage 4 bilingual manuscript orchestrator direct-write (no LLM); stage 2/3 code newly written per rerun iron rule (no old code/data/results reuse); frozen 2026-09-26",
+    "version": "v0.4.26"
   },
   "links": {
-    "paper_en": "paper/en/main.html",
-    "paper_zh": "paper/zh/main.html",
-    "pipeline": "https://github.com/CochraneK/ARIS4C/blob/main/papers/001-gca-bees/process/STATUS.md",
-    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/001-gca-bees",
-    "figures": "https://github.com/CochraneK/ARIS4C/tree/main/papers/001-gca-bees/figures",
-    "tables": "https://github.com/CochraneK/ARIS4C/blob/main/papers/001-gca-bees/tables/TABLES.md",
-    "paper_zh_full": "https://github.com/CochraneK/ARIS4C/blob/main/papers/001-gca-bees/manuscript/MAIN.zh-CN.md",
-    "paper_en_full": "https://github.com/CochraneK/ARIS4C/blob/main/papers/001-gca-bees/manuscript/MAIN.md",
-    "paper_en_pdf": "paper/001/en/main.pdf",
-    "paper_zh_pdf": "paper/001/zh/main.pdf"
+    "paper_en": "paper/paper_EN.md",
+    "paper_zh": "paper/paper_ZH.md",
+    "notes": "paper/paper_EN_notes.md",
+    "frozen_declaration": "results/final_FROZEN.txt",
+    "data_record": "https://doi.org/10.5281/zenodo.17771502"
   },
   "tags": [
     "ARIS",
     "ARIS4C",
+    "rerun",
     "honey bees",
     "general cognitive ability",
     "uncertainty monitoring",
@@ -39,27 +35,53 @@
   "outputs": {
     "paper_en": "complete",
     "paper_zh": "complete",
-    "figures": {
-      "status": "complete",
-      "count": 5,
-      "strategy": "adaptive visual narrative; no fixed figure quota"
+    "notes": "complete",
+    "results_frozen": [
+      "results/s2_data_profile.json",
+      "results/stage2_results.json",
+      "results/s3_trial_model.json",
+      "results/s3_robustness.json",
+      "results/corr_pairs.csv",
+      "results/s2_precision.json",
+      "results/s2_meta.json"
+    ],
+    "lit_frozen": [
+      "lit/REGISTRY.md",
+      "lit/LIT_NOTES.md"
+    ],
+    "code": "code/ (fetch_round1-5, verify_crossref, s2_*, s3_*, scan)",
+    "figures": "none (tables-only presentation; figures/ empty by design)",
+    "data": "not synced (13MB > 5MB rule; public sources cited: Zenodo 10.5281/zenodo.17771502 + OA supplementary material)",
+    "pdf": "not built (outside stage 5 contract for rerun)"
+  },
+  "key_numbers": {
+    "meta": {
+      "RL1_RL2": "r=0.56 [0.316,0.735] k=2 p=.0001",
+      "RL1_NP": "r=0.277 [0.164,0.383] k=4 p<.001 (LOO-robust)",
+      "RL2_NP": "r=0.185 [0.020,0.340] k=4 p=.028 BORDERLINE (drop Expt3 p=.087 ns)",
+      "cross_study": "r=0.571 [0.369,0.722] k=3 p<.001"
     },
-    "tables": {
-      "status": "complete",
-      "count": 3
+    "trial_model": {
+      "n_events": 536,
+      "n_bees": 213,
+      "n_trials": 325,
+      "is_liar": "beta=0.234586 [0.12552,0.343651] p=2.491e-05",
+      "focal": "beta=0.010629 [0.007818,0.01344] p<.001",
+      "stage": "beta=0.065188 p=.207",
+      "var_id": 0.029304,
+      "var_resid": 0.316955,
+      "r2m": 0.1124,
+      "r2c": 0.1299,
+      "loglik": -484.279,
+      "recent_proxy": "recent_mean beta=0.21756 p=.00817 (n=211, exploratory)"
     },
-    "exception": "",
-    "pdf": {
-      "status": "complete",
-      "english": true,
-      "chinese": true,
-      "builder": "tools/build_public_pdfs.py"
-    },
-    "one_page_visual": {
-      "status": "complete",
-      "repo_path": "docs/assets/paper-at-a-glance/001.webp",
-      "language": "zh-CN",
-      "purpose": "one-page visual explanation of the complete paper for the portfolio table"
+    "robustness": {
+      "loo": "RL1-NP / RL1-RL2 robust; RL2-NP borderline (depends on Expt3 n=61)",
+      "corr_pairs_recompute": "16/16 OK",
+      "perry": "consistency check only, chi2(10)=25.349 P=.005",
+      "untransformed_ols": "conclusion unchanged (is_liar p=4e-05, focal p<.001)",
+      "exclude_single_event": "446 events, conclusion unchanged"
     }
-  }
+  },
+  "frozen_date": "2026-09-26"
 }

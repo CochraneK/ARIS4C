@@ -1,0 +1,18 @@
+1. Fast learning in free-foraging bumble bees is negatively correlated with lifetime resource collection | Scientific Reports Skip to main content Thank you for visiting nature.com.
+2. Advertisement View all journals Saved research Search Account Log in Content Explore content About the journal Publish with us Sign up for alerts RSS feed nature scientific reports articles article Fast learning in free-foraging bumble bees is negatively correlated with lifetime resource collection Download PDF Download PDF Article Open access Published: 29 March 2017 Fast learning in free-foraging bumble bees is negatively correlated with lifetime resource collection Lisa J.
+3. In the field, colony foraging performance provides a robust proxy measure of colony fitness as it correlates well with production of sexual offspring: new queens (gynes) and males 20 , 21 , 22 .
+4. terrestris ) workers is correlated with their lifetime foraging performance/contribution to their colony: i.e.
+5. Furthermore, LPI was not correlated with any of the variables that were identified as potential covariates, including the age of the foragers when their learning performance was assessed (Spearman’s ρ = −0.027, n = 49, P = 0.06), the age of the colony when learning performance of each forager was assessed (Spearman’s ρ = −0.22, n = 49, P = 0.13), or forager mass (Spearman’s ρ = −0.02, n = 49, P = 0.91).
+6. Figure 1 Full size image Correlations between ( a ) mean pollen collection rates (pollen score/min) and LPI of 30 bees that were observed to perform at least three pollen foraging bouts and ( b ) mean nectar collection rates (mg/min) and Learning Performance Index (LPI) of the 22 bees that were observed to perform at least three nectar foraging bouts.
+7. Neither correlation is statistically significant.
+8. The number of bouts for which foraging efficiency was observed was directly proportional to the total number of foraging bouts undertaken (recorded using the RFID system) by each bee (Spearman’s ρ = 0.76, n = 45, P < 0.001).
+9. LPI was significantly positively correlated with number of days spent foraging (Fig.
+10. Figure 2 Full size image Correlations between Learning Performance Index (LPI) and ( a) the number of days on which each bee foraged, ( b ) the mean number of foraging bouts undertaken per day and ( c ) the mean duration of foraging bouts.
+11. A line of best fit, generated from a least-square linear regression, has been added for ease of interpretation to the significant correlation in panel a.
+12. An ‘energetic cost’ associated with learning would be consistent with results from honey bees ( Apis mellifera ), for which a negative correlation has been shown between learning performance and survival (when food was withheld) under laboratory conditions 38 .
+13. In a recent review, Rowe and Healy 12 question whether it is realistic to expect cognition to be correlated with fitness.
+14. Our Learning Performance Index is strongly correlated (Spearman’s ρ = 0.619, n = 48, P < 0.001) with ‘t’ (used in previous publications as measure of learning speed 19 ), but has the advantage of giving similar weight to the rate of change in performance (slope of the learning curve), the shape of the learning curve, and variation in the level of saturation performance.
+15. Problem-solving performance is correlated with reproductive success in a wild bird population.
+16. Performance in cognitive and problem-solving tasks in male spotted bowerbirds does not correlate with mating success.
+17. The correlation of learning speed and natural foraging success in bumble-bees.
+18. Electronic supplementary material Fast learning in free-foraging bumble bees is negatively correlated with lifetime resource collection.

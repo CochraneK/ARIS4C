@@ -1,0 +1,37 @@
+1. Honey bees selectively avoid difficult choices - PMC Skip to main content An official website of the United States government Here's how you know Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States.
+2. doi: 10.1073/pnas.1314571110 Search in PMC Search in PubMed View in NLM Catalog Add to search Honey bees selectively avoid difficult choices Clint J Perry Clint J Perry 1 Department of Biological Sciences, Macquarie University, Sydney, NSW 2109, Australia Find articles by Clint J Perry 1 , Andrew B Barron Andrew B Barron 1 Department of Biological Sciences, Macquarie University, Sydney, NSW 2109, Australia Find articles by Andrew B Barron 1, 1 Author information Article notes Copyright and License information 1 Department of Biological Sciences, Macquarie University, Sydney, NSW 2109, Australia 1 To whom correspondence should be addressed.
+3. Bees preferentially opt out of difficult trials and by doing so, improve their success rate.
+4. Bees opted out more often on difficult trials, and opting out improved their proportion of successful trials.
+5. ( 3 , 4 ) developed the opt-out paradigm to test uncertainty monitoring in animals in which an animal must solve a discrimination task that varies in difficulty.
+6. A third option is then introduced where the animal can “opt out” by responding in some different way to avoid the discrimination task, thereby usually beginning a new trial.
+7. If animals opt out more on difficult than easy tasks, if opting out improves performance on difficult tasks, and if they can apply the opt-out strategy to a novel task, then this has been taken as evidence that animals can modify their decision-making strategy based on their degree of uncertainty.
+8. However, some strongly argue that all comparative studies using opt-out paradigms can be explained through associative mechanisms that do not require judgments of uncertainty ( 3 , 13 – 15 ).
+9. Here we contribute to the debate by examining how an invertebrate, the honey bee, performed in the opt-out paradigm.
+10. We combined a configural-learning task, where bees had to learn stimuli placed above or below a referent ( 17 ), with the option to opt out of trials ( 5 ) to determine if bees adaptively changed behavior in response to task difficulty.
+11. Stage 4: test of generalization of the opt-out rule.
+12. ( A ) Percentage of correct choices as a function of blocks of five trials (stage 1) and performance in nonrewarded transfer test (stage 2).
+13. Bees tended to opt out more on hard and impossible trials than on easy trials (stage 3).
+14. Bees also opted out significantly more on difficult trials (average of hard and impossible trials) than on easy trials.
+15. When presented in the first decision chamber bees had the option to opt out and fly through to the second chamber, where a different set of targets were present.
+16. When presented in the second chamber bees had no option to opt out and their choice was forced.
+17. We used χ 2 analyses to compare the rates of opt out on easy, hard, and impossible trials.
+18. 3 , row 6) showed that as a group these 10 bees opted out more often on difficult trials (hard and impossible) than on easy trials (additive χ 2 ; χ 2 = 25.349, df = 10, P = 0.005).
+19. Second row: Difference between probability of opting out on difficult trials (average of hard and impossible) minus probability of opting out on easy trials.
+20. Bees are ordered in increasing ranking of opt-out differential.
+21. Fourth row: Performance on transfer of opt-out concept first trial (+, opted out; −, made choice and did not opt out).
+22. Fifth row: cumulative performance on transfer of opt-out concept (five unrewarded trials).
+23. Dotted line box: indicates 7 of 10 bees that opted out more on difficult trials than easy trials.
+24. To answer this question, we compared how often bees correctly solved the task in hard trials where bees could opt out (unforced trials) with hard trials where bees could not opt out (forced trials).
+25. Unforced trials were those in the first decision chamber because bees had access to the exit port and could therefore opt out.
+26. If bees were using the opt-out option adaptively and selectively, then they should perform better on unforced hard trials than forced.
+27. If, however, bees opted out more on difficult trials because they had simply learned to generally avoid this configuration irrespective of trial-specific certainty, then bees would be predicted to show the same level of performance in forced and unforced hard trials.
+28. We hypothesized that if bees were uncertain about the outcome of choosing these new targets, they would opt out of decisions that contained them.
+29. Of the 10 bees that completed stages C and D, no bees opted out during training, suggesting they did not select to opt out in response to a novel stimulus.
+30. 3 ), but the individuals that opted out significantly more on difficult trials than easy trials also ranked highly on performance difference between unforced and forced trials and the generalization test ( Fig.
+31. Therefore, it is little surprise that only some of the bees exposed to our arduous testing regime individually showed adaptive use of the opt-out rule in hard trials.
+32. The proportion of bees able to generalize the opt-out rule to a novel task in our study was similar to that reported for primates ( 5 ).
+33. Our data suggest some bees appeared capable of adapting their decision strategy in response to variation in task difficulty by adaptively using the option to opt out.
+34. Adaptive use of an opt-out option in hard trials has been interpreted as evidence that animals are able to react to their degree of uncertainty ( 4 ).
+35. Although not itself rewarding, the opt-out response still has a conditioned response strength because it provides a way to avoid punishment.
+36. These assumptions alone are sufficient to predict that animals will opt out more for hard trials than easy in certain paradigms, and that performance should be better in unforced than forced hard trials ( 14 , 15 ).
+37. However, whichever computational strategy is used, our data suggest that a capacity to respond adaptively to difficult choices may be more general than has been previously thought.

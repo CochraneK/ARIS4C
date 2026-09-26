@@ -1,0 +1,29 @@
+{
+ "zenodo": [
+  {
+   "variant": "api",
+   "status": "OK n_files=3 total=148784B",
+   "downloaded": [
+    [
+     "Focal bee totals by entrance.xlsx",
+     "ok 48068B"
+    ],
+    [
+     "Mean Circuits Followed Per Stage.xlsx",
+     "ok 14619B"
+    ],
+    [
+     "Raw Follower Data.xlsx",
+     "ok 86097B"
+    ]
+   ]
+  }
+ ],
+ "perry": {
+  "pmc": {
+   "pmcid": "PMC3839751",
+   "chars": 38313
+  },
+  "si_index": "failed HTTP Error 403: Forbidden"
+ }
+}
