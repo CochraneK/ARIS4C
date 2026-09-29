@@ -1,0 +1,69 @@
+discipline,criterion,pass1,pass2,arbitration,final
+Anthropology,C1,5,5,none,5
+Anthropology,C2,5,5,none,5
+Anthropology,C3,5,5,none,5
+Anthropology,C4,4,4,none,4
+Archaeology,C1,4,4,none,4
+Archaeology,C2,4,4,none,4
+Archaeology,C3,4,4,none,4
+Archaeology,C4,3,3,none,3
+Botany,C1,5,5,none,5
+Botany,C2,5,5,none,5
+Botany,C3,5,5,none,5
+Botany,C4,4,4,none,4
+Chemistry,C1,2,2,none,2
+Chemistry,C2,3,3,none,3
+Chemistry,C3,3,3,none,3
+Chemistry,C4,2,2,none,2
+Computer Science,C1,1,1,none,1
+Computer Science,C2,2,2,none,2
+Computer Science,C3,1,1,none,1
+Computer Science,C4,2,2,none,2
+Engineering,C1,3,3,none,3
+Engineering,C2,4,4,none,4
+Engineering,C3,3,3,none,3
+Engineering,C4,3,3,none,3
+Evolutionary Biology,C1,4,4,none,4
+Evolutionary Biology,C2,4,4,none,4
+Evolutionary Biology,C3,5,5,none,5
+Evolutionary Biology,C4,3,3,none,3
+History,C1,5,5,none,5
+History,C2,4,4,none,4
+History,C3,3,3,none,3
+History,C4,4,4,none,4
+Law,C1,5,5,none,5
+Law,C2,5,5,none,5
+Law,C3,4,4,none,4
+Law,C4,5,5,none,5
+Linguistics,C1,4,4,none,4
+Linguistics,C2,4,4,none,4
+Linguistics,C3,4,4,none,4
+Linguistics,C4,3,3,none,3
+Materials Science,C1,2,2,none,2
+Materials Science,C2,3,3,none,3
+Materials Science,C3,3,3,none,3
+Materials Science,C4,2,2,none,2
+Mathematics,C1,1,1,none,1
+Mathematics,C2,2,2,none,2
+Mathematics,C3,1,1,none,1
+Mathematics,C4,2,2,none,2
+Mining,C1,5,5,none,5
+Mining,C2,5,5,none,5
+Mining,C3,4,4,none,4
+Mining,C4,4,4,none,4
+Philosophy,C1,3,3,none,3
+Philosophy,C2,3,3,none,3
+Philosophy,C3,2,2,none,2
+Philosophy,C4,3,3,none,3
+Physics,C1,2,2,none,2
+Physics,C2,2,2,none,2
+Physics,C3,1,1,none,1
+Physics,C4,2,2,none,2
+Political Science,C1,4,4,none,4
+Political Science,C2,4,4,none,4
+Political Science,C3,3,3,none,3
+Political Science,C4,4,4,none,4
+Tropical Medicine,C1,5,5,none,5
+Tropical Medicine,C2,5,5,none,5
+Tropical Medicine,C3,4,4,none,4
+Tropical Medicine,C4,4,4,none,4

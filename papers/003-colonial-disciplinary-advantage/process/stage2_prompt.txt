@@ -1,0 +1,51 @@
+你是 003「殖民遗产与学科优势的全球地理」重跑的段2 executor（本地 ARIS，内网 DeepSeek-Flash-V4-正式版）。段1 已完成（登记表 148 + DATA_PROFILE + LIT_NOTES + stage1_summary）。本段任务 = **设计冻结**：完成 DESIGN_LOCKED 前 8 项剩余输入，产出段2 交付物。
+
+## 开工先读（按序，读完即弃，不要全文复述）
+1. RESEARCH_BRIEF.md（唯一冻结 idea；主原则 historical theory first）
+2. stage1_summary.md（段1 结论 + 段2 八项任务 + 建议顺序）
+3. data/DATA_PROFILE.md（91 行：暴露候选/A–D 层/字段路径+count/限流政策/IKES 草案/H1–H6/gate 剩余输入）
+4. process/COORDINATION.md（账本；段末追加段2 节）
+- 允许按需读 lit/LIT_NOTES.md（109 行，取 [028][134][130] 等设计含义条目）；lit/REGISTRY.md 只允许定位式 grep，禁止全文 read。
+- **禁止读取旧仓库 `D:\Software\ARIS4C\papers\` 任何文件。**
+
+## 任务（严格按序）
+### S1 便宜探针（先行，各 1–3 次 API 调用级）
+1. **P2 复探**（段1 遗留首项，两轮 503 未决）：验证 OpenAlex 同键多值 OR 语义。设计：取 count(`authorships.countries:BR`)、count(`authorships.countries:US`)、count(`authorships.countries:BR,US`)（全字段，无其他 filter；BR=3,894,723 / US=32,546,581 为段1 已知值，须重取核对）。判读：count(BR,US) ∈ [max, sum) → **OR 语义**；count(BR,US) ≪ min → AND；若 503 经 backoff(3,6,12,24) 重试 3 次仍失败 → 判 **UNVERIFIED**，记录后继续（不阻塞本段；段3 面板构建届时一律用单值 filter）。
+2. **D 层 institution filter 探针**：测 `institutions.country_code:BR`（或 `institutions.countries`）哪个键有效 + 返回 count；再测 1 次 institution 名称 filter 示例（如 `institutions.display_name.search:university` 类）验证大学级查询可行。
+- 产物：data/probes_stage2.md §1/§2（原始 count、判读、失败记录）；原始响应存 data/raw/probes/（幂等，重跑不重复下载）。
+
+### S2 学科集合冻结
+- 起点：DATA_PROFILE §2 的 A 层高 IKES 候选 + 对照集（含 fields/25 的 Mat=25 等）。
+- 补缺复探：botany / mining / tropical 在 fields/25 层 0 命中 → 用 OpenAlex 概念/字段检索（/concepts?search=、/fields?search=，可试 fields/3、fields/4、subfields、topics 各 1 次）找正确层级的原生标签或 ID；找不到原生标签 → 明确写「无原生标签，采用 X 代理/复合构造」并给理由。
+- 冻结内容：确认性学科集合（治疗学科 + 对照学科如 Materials/现代工程类），每条含 OpenAlex ID + 名称 + 层级 + 入选理由 + 角色；附 crosswalk 表（本地名 ↔ OpenAlex ID ↔ 层级 ↔ 备注）。
+- 产物：data/subject_freeze.md + data/raw/probes/subject_*.json（幂等）。
+### S3 IKES 双盲编码 + 仲裁 + 冻结
+- 对 subject_freeze 中每个学科：按 DATA_PROFILE §6 的 4 准则各打 1–5 分。
+- **双盲机制（同模型，独立性弱于真双模型）**：pass1 打分后落盘 data/ikes/pass1.tsv；pass2 必须**在不重读 pass1 文件**的前提下独立重打（只看学科名 + 准则定义），落盘 pass2.tsv；|pass1−pass2|>1 的格 → 仲裁（第 3 遍显式 deliberation），写仲裁理由。
+- 每格 provenance 字段：学科 / 准则 / pass1 / pass2 / 仲裁(若有) / 最终分。
+- **必须声明**：executor/reviewer 同模型，双盲独立性弱于真双模型，不得声称"独立 Coder B"（写入 IKES_freeze.md 头部 + 各 tsv 注释）。
+- 随机置换证伪集：预生成 100 个随机 IKES 置换（固定种子，落盘 data/ikes/permutations.tsv 含 seed），供段3/段4 H2 证伪检验使用。
+- 产物：data/IKES_freeze.md（准则定义 + 最终分表 + 分歧/仲裁日志 + provenance + 局限声明）。
+
+### S4 暴露数据下载与合并
+- 按 DATA_PROFILE §1 暴露候选：COW（200 可达）+ OWID（200 可达）自动下载到 data/raw/exposure/（幂等，记录 URL + sha256 + 行数/列数/时间跨度/许可）；Easterly 403 → 在 manifest 标 **MANUAL_REQUIRED**（留人工位，不阻塞）。
+- 合并/画像：确认国家级殖民暴露变量覆盖（country × era/status），写清「descendant 约束」——现代 GDP/R&D/大学规模是历史过程 descendant，**只取殖民期/历史变量**，不得当 baseline 混杂。
+- 产物：data/exposure_manifest.md（源 / URL / sha256 / 行列 / 跨度 / 许可 / 人工位 / 合并规则）。
+
+### S5 冻结决策 → DESIGN_LOCKED
+1. **H1 变换预选**：主分析用 log1p（有界/对称），绝对量并排报告（brief 4.1）；写明规则。
+2. **窗口冻结**：≥1990 vs ≥2000——用 1–2 次 count 调用取两窗口证据（如 BR×Mat 各窗口 count），给判定 + 理由。
+3. **主 dyad 集**：殖民 dyad（帝国中心 × 前殖民地）从 S4 暴露数据机械导出（只取暴露关系，禁止触碰 outcome）；参照 LIT_NOTES [028] 贸易版口径；冻结 dyad 数量与清单指针。
+4. **data/DESIGN_LOCKED.md**：逐项勾选 8 项剩余输入（值 + 证据 + 文件指针）→ 声明 DESIGN_LOCKED 达成；声明 outcome 仍锁（country×field outcome 矩阵未物化未查看）；列出段3 任务（A 层面板全量拉取 + B 层本地 dyad 构边 + C 层小 N 集 + D 层 institution 补探）。
+
+## 纪律（硬约束，违反=失败）
+- 每次工具调用前推理 1–2 句；**总工具调用 ≤ 60**。
+- 禁止 read 大文件（REGISTRY 只 grep）；python 输出 ≤40 行；中间结果写盘。
+- 写文件分块：heredoc 追加，单块 ≤80 行，禁止单次响应写大文件。
+- API（api.openalex.org）：≥2s 间隔 + backoff(3,6,12,24) + 每请求至多 3 次重试；raw 幂等落盘（data/raw/），不重复下载。
+- **零 outcome**：probe/可行性 count 允许；country×field outcome 矩阵的逐格数值（产出/引用/协作）禁止物化或记录。
+- python：`C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe`（pandas/numpy/scipy 可用）。
+- 不声称"独立 Coder B"；所有冻结文件带 provenance（ARIS v0.4.26、模型、端点、日期）。
+
+## 完成标准（全满足才算段2 完成）
+data/probes_stage2.md、data/subject_freeze.md、data/IKES_freeze.md（+data/ikes/ 4 文件）、data/exposure_manifest.md、data/DESIGN_LOCKED.md（8 项全勾）、stage2_summary.md（≤60 行：产物表 + 判定摘要 + 遗留）全部落盘；process/COORDINATION.md 追加段2 节（含调用数统计 + 失败记录）。最后 stdout 输出 ≤40 行摘要（产物清单 + DESIGN_LOCKED 状态 + 遗留问题）。

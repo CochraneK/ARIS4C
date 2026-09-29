@@ -1,0 +1,73 @@
+﻿# IKES pass2 — Coder B（子代理 spawn 两次失败：网关 400 reasoning effort 错配；降级为编排器同上下文第二遍，输入序反转减锚定）
+# 局限声明（强化）：Coder B 非独立模型/独立上下文，仅同上下文反转序抽取，独立性弱于真双盲，不得声称"独立 Coder B"
+# 输入：仅学科名 + 4 准则定义（未重读 pass1 分值；反转序：学科倒序 Engineering→History，准则 C4→C1）；1–5 分
+# 准则：C1 学科殖民史嵌入度 / C2 中心—外围分工 / C3 对殖民地数据-材料依赖 / C4 制度路径依赖
+discipline	criterion	score	rationale
+Engineering	C4	3	殖民公共工程部门（铁路/港务/水利署）演化为独立国家工程机构
+Engineering	C3	3	殖民工程档案、测绘与勘测数据构成学科历史数据基础
+Engineering	C2	4	帝国工程由宗主国设计主导、殖民地外围施工实施
+Engineering	C1	3	殖民基础设施是工程史重大背景，但学科主干非殖民
+Mathematics	C4	2	制度体系为现代大学产物，无殖民路径
+Mathematics	C3	1	无数据/材料依赖
+Mathematics	C2	2	理论中心/应用边缘弱结构，非殖民史变量
+Mathematics	C1	1	最普适学科，无直接殖民嵌入
+Physics	C4	2	大学物理系为现代制度，无殖民路径
+Physics	C3	1	无殖民数据/材料依赖
+Physics	C2	2	研究设施偏宗主国中心，范式全球化
+Physics	C1	2	热带天文台选址构成少量嵌入
+Computer Science	C4	2	制度体系为战后/冷战遗产
+Computer Science	C3	1	无殖民数据/材料依赖
+Computer Science	C2	2	数字鸿沟存在但非殖民史变量
+Computer Science	C1	1	战后成形，无直接殖民嵌入
+Materials Science	C4	2	战后工业时代成形，制度路径依赖弱
+Materials Science	C3	3	矿物/样本数据部分有殖民时代来源
+Materials Science	C2	3	原材料流动中心—外围结构存在，知识生产已全球化
+Materials Science	C1	2	与殖民关联限于原材料入口，间接
+Chemistry	C4	2	制度体系现代，路径依赖弱
+Chemistry	C3	3	化学分析与样本数据有殖民来源
+Chemistry	C2	3	商品供给外围→核心，实验室知识中心
+Chemistry	C1	2	商品化学（橡胶/奎宁/染料）是历史入口
+Mining	C4	4	矿业法/特许制度/工程体制为殖民遗产
+Mining	C3	4	殖民地质调查与矿山档案是数据基础
+Mining	C2	5	开采型外围→工业核心，教科书级中心—外围
+Mining	C1	5	殖民资源开采是学科核心历史
+Tropical Medicine	C4	4	殖民卫生体系演化为独立国家卫生制度
+Tropical Medicine	C3	4	疾病数据来自殖民诊所/军医网络
+Tropical Medicine	C2	5	热带=外围、宗主国=中心，分工即殖民
+Tropical Medicine	C1	5	学科诞生为殖民统治服务
+Botany	C4	4	帝国植物园（Kew）与分类学机构制度连续
+Botany	C3	5	标本馆材料与种质资源依赖殖民时代采集
+Botany	C2	5	帝国植物园=中心，殖民地采集=外围供给
+Botany	C1	5	经济植物学是殖民资源开发支柱
+Evolutionary Biology	C4	3	标本库与自然史博物馆与殖民时代连续
+Evolutionary Biology	C3	5	模式标本/标本馆材料依赖殖民采集网络
+Evolutionary Biology	C2	4	标本流向宗主国博物馆，解析集中于帝国机构
+Evolutionary Biology	C1	4	殖民自然史考察与标本采集是经验基础
+Archaeology	C4	3	博物馆与研究机构体系有殖民遗产
+Archaeology	C3	4	标本藏品实体存于宗主国博物馆
+Archaeology	C2	4	帝国博物馆集中收藏，宗主国机构发掘边缘遗址
+Archaeology	C1	4	殖民时期 antiquarianism 与帝国发掘塑造学科起源
+Anthropology	C4	4	殖民服务培训与大学人类学系制度连续
+Anthropology	C3	5	田野数据与博物馆收藏高度依赖殖民网络
+Anthropology	C2	5	宗主国出理论、殖民边缘出田野，流动单向
+Anthropology	C1	5	学科诞生于研究"殖民他者"，奠基经验即殖民接触
+Linguistics	C4	3	语言政策与学术机构有殖民遗产，方法体系相对独立
+Linguistics	C3	4	语料/语言记录数据相当部分来自殖民调查与采集
+Linguistics	C2	4	标准语言边缘化土著语言，知识生产偏向帝国语言
+Linguistics	C1	4	殖民时代语言分类与记录是大量语言记录的起源
+Philosophy	C4	3	学术体制与期刊体系为欧洲中心遗产
+Philosophy	C3	2	对数据/材料无强依赖
+Philosophy	C2	3	正典欧洲中心，非西方哲学长期边缘化
+Philosophy	C1	3	种族/帝国/后殖民哲学存在，整体以欧洲正典为中心
+Law	C4	5	大陆法/普通法分野与司法体系直接映射殖民边界
+Law	C3	4	法典与判例由宗主国输出，边缘法律材料依赖宗主来源
+Law	C2	5	帝国法律秩序=典型中心—外围体系
+Law	C1	5	殖民法（indirect rule/法系移植/治外法权）是核心子领域
+Political Science	C4	4	前殖民地现代政治制度多为殖民遗产，研究对象制度上依赖
+Political Science	C3	3	依赖殖民行政记录与人口普查，但基础设施多已战后重建
+Political Science	C2	4	比较政治中心—外围框架与制度输出呈帝国辐射
+Political Science	C1	4	殖民统治/帝国国家/去殖民化研究是学科主干
+History	C4	4	史学系/学派/研究议程有殖民时代制度遗产
+History	C3	3	档案集中于宗主国档案馆，殖民地地方档案亦存在
+History	C2	4	宗主国史学与边缘地方史学并行，正典偏向宗主国
+History	C1	5	帝国/殖民时期是学科核心研究对象，史学传统被帝国深刻塑造
