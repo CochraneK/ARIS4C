@@ -179,3 +179,14 @@ Read:
 7. `STATUS.md`
 
 Git is the source of truth.
+
+## Founding charter (merged 2026-09-30 from the 018 open scaffold)
+
+Before it became the embodied-simulation / Pilot-gates project above, 018 started as a discovery-driven "Drosophila Open Simulation" scaffold with two linked founding goals:
+
+1. Build an auditable atlas of reusable open-source Drosophila simulation / connectome / behavior projects and reproduce representative examples;
+2. Use those reproducible systems to generate and test genuinely interesting scientific questions — rather than treating the repository survey itself as the endpoint.
+
+A preferred public-facing interaction pattern was a **synchronized view**: a fly moves on one side while neural/neuronal activation is shown on the other — a pattern that still informs the current product direction (behavior left / neural right / decoder+provenance bottom).
+
+The scaffold's founding research plan (P1–P5 discovery ladder: atlas → reproduction → coupled visualization → question mining → pilot) is preserved at `process/RESEARCH_PLAN.md`. The full merge record (conflicts, resolutions, invariants) is in `MERGE_NOTE.md`.

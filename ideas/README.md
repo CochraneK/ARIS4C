@@ -6,9 +6,15 @@ This directory is the staging area for research ideas that are not yet promoted 
 
 | Candidate | State | Current question | Promotion status |
 |---|---|---|---|
-| `language-periodic-system` | ARIS active candidate · robustness screening | Does cross-linguistic structural space support a genuinely periodic geometry, or do non-periodic models explain it better? | Not yet a numbered paper; formal ARIS secondary review and stronger robustness remain required |
+| _(none currently active)_ | — | — | — |
 
 An active candidate is deliberately **not** the same thing as a paper. It can still be reframed, parked, merged, or rejected by evidence.
+
+## Superseded
+
+| Candidate | Superseded by | Note |
+|---|---|---|
+| `language-periodic-system` | `papers/002-language-geometry` (formal paper · manuscript preparation) | Ancestor W1–W staging (40+ stage1a–i scripts/results). Retained for provenance only — **not** an active idea, not a 002 input. See `language-periodic-system/SUPERSEDED.md`. |
 
 ## Promotion rule
 

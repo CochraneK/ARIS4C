@@ -7,11 +7,17 @@
   "status": "exploration-pilot4-r2-complete-r2.5-actions-blocked",
   "domain": "computational neuroscience / Drosophila / connectomics / embodied simulation / open science",
   "summary": "Drosophila embodied-neural simulation project. Legacy/current migration is closed and Pilot 4 matched static-target diagnostics found a reproducible first-frame decoder divergence. R1 Retina geometry/order is byte-identical, and R2 frozen retinal vectors, mapper outputs, neural hashes, and tracking-cell means are equal across stacks. R2.5 reset/first-frame sensory capture is implemented to localize renderer/camera/scene-input differences, but repository-wide GitHub Actions jobs are currently failing before any step executes.",
+  "portfolio_visible": true,
+  "merged_from": {
+    "date": "2026-09-30",
+    "source_dir": "papers/018-drosophila-open-simulation",
+    "note": "Consolidated the 018 open-simulation concept scaffold into this canonical neural-simulation directory. Founding charter (2 goals: simulation atlas + research-question generation) and RESEARCH_PLAN.md (P1-P5 discovery ladder) folded in; see MERGE_NOTE.md. The open directory is deleted."
+  },
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
-    "provenance": "ARIS4C exploration layer; formal research protocol deferred until a falsifiable biological question and published model/data path are selected",
+    "provenance": "ARIS4C exploration layer; formal research protocol deferred until a falsifiable biological question and published model/data path are selected. 2026-09-30: became the canonical 018 directory after consolidating the superseded 018 open-simulation scaffold (founding charter + RESEARCH_PLAN folded in; see MERGE_NOTE.md).",
     "version": "v0.10.0",
     "commit": ""
   },

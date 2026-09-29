@@ -1,0 +1,53 @@
+{
+  "id": "025",
+  "slug": "ai-scale-adaptation",
+  "title": "AI-Powered Psychometric Scale Adaptation: From Manual Expert Iteration to Reproducible LLM-Native Item Generation, Cross-Cultural Adaptation, and Bias Auditing",
+  "short_title": "AI-Powered Scale Adaptation",
+  "year": 2026,
+  "status": "scope-completed",
+  "domain": "computational psychometrics / generative psychometrics / psycholinguistics / NLP / item response theory / cross-cultural adaptation",
+  "summary": "A scope survey and candidate proposal for LLM-native psychometric scale adaptation: RAG-based cross-cultural dynamic adaptation, an AI-GENIE-style clinical pipeline, LLM pre-prediction of multilingual measurement invariance, an adaptive prompt-engineering framework for psychometrics, and a reproducibility-and-bias audit layer.",
+  "authors": [
+    "Cochrane Kang"
+  ],
+  "aris": {
+    "provenance": "Ancestor produced by DSH/ARIS (research-directions/ai-scale-adaptation, W2 scope survey) imported 2026-09-30 as ARIS4C scaffold; formal ARIS4C run not yet started",
+    "version": "v0.4.26",
+    "commit": ""
+  },
+  "links": {
+    "paper_en": "",
+    "paper_zh": "",
+    "scoping_report": "process/ancestor/SCOPING_REPORT.md",
+    "key_papers": "process/ancestor/KEY_PAPERS.md",
+    "pipeline": "process/STATUS.md",
+    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/025-ai-scale-adaptation"
+  },
+  "tags": [
+    "ARIS",
+    "ARIS4C",
+    "psychometrics",
+    "scale adaptation",
+    "cross-cultural",
+    "LLM",
+    "item generation",
+    "measurement invariance",
+    "IRT",
+    "bias audit",
+    "scope-completed"
+  ],
+  "bilingual_delivery": {
+    "english": false,
+    "chinese": false
+  },
+  "outputs": {
+    "paper_en": "not-started",
+    "paper_zh": "not-started",
+    "figures": { "status": "not-started", "count": 0, "strategy": "adaptive after a chosen innovation point is selected" },
+    "tables": { "status": "not-started", "count": 0 },
+    "exception": "Scope-completed survey imported from DSH ancestor; no single innovation point yet locked.",
+    "pdf": { "status": "not-started", "english": false, "chinese": false }
+  },
+  "portfolio_visible": false,
+  "portfolio_note": "Imported from DSH/ARIS research-directions/ai-scale-adaptation. 5 candidate innovation points; 1-2 need to be locked before a formal run."
+}

@@ -1,0 +1,59 @@
+{
+  "id": "024",
+  "slug": "avatar-therapy-safety-benchmark",
+  "title": "SPOKE-SAFE: A Psychiatry-Specific Adversarial Benchmark and Therapeutic-Assertiveness Measure for Commanded-Auditory-Voice Hallucination Avatar Therapy",
+  "short_title": "SPOKE-SAFE (Avatar Therapy Safety Benchmark)",
+  "year": 2026,
+  "status": "concept-design",
+  "domain": "computational psychiatry / schizophrenia / auditory verbal hallucinations / LLM safety / evaluation benchmark",
+  "summary": "An open, psychiatry-specific adversarial benchmark (Adv-AVH) plus a therapeutic-assertiveness metric and a Silent Override layered safety architecture for LLM-driven avatar therapy of commanded auditory verbal hallucinations, producing reproducible cross-model safety-efficacy trade-off curves.",
+  "authors": [
+    "Cochrane Kang"
+  ],
+  "aris": {
+    "provenance": "Ancestor produced by DSH/ARIS (research-directions/avatar-therapy, W1-W5+) imported 2026-09-30 as ARIS4C concept-design scaffold; formal ARIS4C run not yet started",
+    "version": "v0.4.26",
+    "commit": ""
+  },
+  "gate": {
+    "status": "BLOCKED",
+    "reason": "Cross-model reviewer missing. Existing reviews are DeepSeek same-family best-effort and do not constitute cross-model acceptance. Resolve before /experiment-bridge.",
+    "pilot_data_provenance": "pilot_results.jsonl and data/experiments/scored_results.jsonl are DeepSeek same-family best-effort outputs; label as pilot/synthetic, not clinical or cross-model validated."
+  },
+  "links": {
+    "paper_en": "",
+    "paper_zh": "",
+    "final_proposal": "process/ancestor/FINAL_PROPOSAL.md",
+    "idea_report": "process/ancestor/IDEA_REPORT.md",
+    "experiment_plan": "process/ancestor/EXPERIMENT_PLAN.md",
+    "pipeline": "process/STATUS.md",
+    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/024-avatar-therapy-safety-benchmark"
+  },
+  "tags": [
+    "ARIS",
+    "ARIS4C",
+    "avatar therapy",
+    "schizophrenia",
+    "auditory verbal hallucinations",
+    "commanded AVH",
+    "LLM safety",
+    "adversarial benchmark",
+    "assertiveness",
+    "concept-design",
+    "blocked-gate"
+  ],
+  "bilingual_delivery": {
+    "english": false,
+    "chinese": false
+  },
+  "outputs": {
+    "paper_en": "not-started",
+    "paper_zh": "not-started",
+    "figures": { "status": "not-started", "count": 0, "strategy": "safety-efficacy trade-off curves after benchmark build" },
+    "tables": { "status": "not-started", "count": 0 },
+    "exception": "Concept design imported from DSH ancestor; benchmark and metrics not yet built.",
+    "pdf": { "status": "not-started", "english": false, "chinese": false }
+  },
+  "portfolio_visible": false,
+  "portfolio_note": "Imported from DSH/ARIS research-directions/avatar-therapy. Blocked on cross-model reviewer; excluded from canonical portfolio until gate cleared."
+}

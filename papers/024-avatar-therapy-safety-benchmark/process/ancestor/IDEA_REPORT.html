@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idea Discovery Report</title>
+
+<meta name="generator" content="ARIS render-html (academic, v1)">
+<meta name="aris:source-path" content="idea-stage\IDEA_REPORT.md">
+<meta name="aris:source-sha256" content="1c791ab5e9664295edba2dd0fdc8173e0359357db7261aa690c61e1aa9c2e523">
+<meta name="aris:generated-at" content="2026-09-07 04:32 UTC">
+
+<!-- offline mode: MathJax + highlight.js skipped; math and code blocks render as plain text -->
+
+<style>
+:root {
+  --bg: #fdfcf7;
+  --bg-soft: #f4f1ea;
+  --bg-code: #f8f5ec;
+  --ink: #1a1a1a;
+  --ink-soft: #4a4a4a;
+  --ink-muted: #6b6b6b;
+  --primary: #1a4a8c;
+  --primary-soft: #2d6cb8;
+  --accent: #b8390e;
+  --warn: #b45309;
+  --warn-bg: #fef3c7;
+  --info-bg: #dbeafe;
+  --good-bg: #d1fae5;
+  --good: #065f46;
+  --bad-bg: #fee2e2;
+  --bad: #991b1b;
+  --border: #d6d0c0;
+  --border-soft: #e8e3d5;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", "Crimson Pro", "Georgia", "Songti SC", "STSong", serif;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.layout {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  padding: 40px 32px;
+}
+
+nav.toc {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  font-size: 13px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  border-right: 1px solid var(--border-soft);
+  padding-right: 16px;
+}
+nav.toc h3 {
+  margin: 0 0 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  font-weight: 600;
+}
+nav.toc ol { list-style: none; padding: 0; margin: 0; counter-reset: toc; }
+nav.toc ol li { margin: 5px 0; counter-increment: toc; }
+nav.toc ol li::before { content: counter(toc) ". "; color: var(--ink-muted); margin-right: 4px; }
+nav.toc a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+}
+nav.toc a:hover { color: var(--primary); border-bottom-color: var(--primary); }
+nav.toc ul { list-style: none; padding-left: 14px; margin: 3px 0; font-size: 12px; }
+nav.toc ul li::before { content: "→ "; color: var(--border); }
+
+main { min-width: 0; }
+
+header.hero {
+  border-bottom: 3px double var(--primary);
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+header.hero .eyebrow {
+  color: var(--accent);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+body.aris-blog header.hero .eyebrow {
+  font-family: inherit;
+  color: var(--ink-muted);
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+header.hero h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+header.hero .subtitle {
+  font-size: 16px;
+  color: var(--ink-soft);
+  margin: 0 0 8px;
+  font-style: italic;
+}
+header.hero .byline {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0 0 20px;
+}
+header.hero .byline strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+header.hero .meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--ink-muted);
+  border-top: 1px solid var(--border-soft);
+  padding-top: 14px;
+}
+header.hero .meta span strong { color: var(--ink-soft); }
+header.hero .meta code {
+  font-family: "JetBrains Mono", "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 11px;
+  background: var(--bg-soft);
+  padding: 1px 5px;
+  border-radius: 3px;
+  border: 1px solid var(--border-soft);
+}
+
+h2 {
+  font-size: 24px;
+  margin: 44px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+  font-weight: 700;
+}
+h2 .num { color: var(--primary); font-weight: 600; margin-right: 8px; }
+h3 { font-size: 19px; margin: 28px 0 10px; color: var(--primary); font-weight: 600; }
+h4 { font-size: 16px; margin: 20px 0 8px; color: var(--ink); font-weight: 600; }
+
+p { margin: 10px 0; }
+ul, ol { padding-left: 22px; margin: 10px 0; }
+ul li, ol li { margin: 4px 0; }
+ul li::marker { color: var(--primary); }
+
+strong { color: var(--accent); font-weight: 600; }
+em { color: var(--ink-soft); }
+
+a { color: var(--primary); }
+a:hover { color: var(--accent); }
+
+code:not(.hljs) {
+  font-family: "JetBrains Mono", "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.86em;
+  background: var(--bg-code);
+  padding: 1px 5px;
+  border-radius: 3px;
+  border: 1px solid var(--border-soft);
+  color: var(--accent);
+}
+
+pre {
+  background: #fafaf6;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  padding: 0;
+  overflow-x: auto;
+  border-radius: 4px;
+  margin: 14px 0;
+}
+pre code, pre code.hljs {
+  background: transparent !important;
+  display: block;
+  padding: 14px 18px !important;
+  font-size: 13px;
+  line-height: 1.55;
+  font-family: "JetBrains Mono", "SF Mono", "Menlo", monospace;
+  color: var(--ink);
+}
+pre.diagram {
+  background: #f9f6ed;
+  border-left: 4px solid var(--accent);
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.callout {
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border-left: 4px solid;
+  font-size: 15px;
+}
+.callout-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.callout-info { background: var(--info-bg); border-left-color: var(--primary); }
+.callout-info .callout-title { color: var(--primary); }
+.callout-warn { background: var(--warn-bg); border-left-color: var(--warn); }
+.callout-warn .callout-title { color: var(--warn); }
+.callout-good { background: var(--good-bg); border-left-color: var(--good); }
+.callout-good .callout-title { color: var(--good); }
+.callout-bad { background: var(--bad-bg); border-left-color: var(--bad); }
+.callout-bad .callout-title { color: var(--bad); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+thead { background: var(--primary); color: white; }
+th, td {
+  text-align: left;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: top;
+}
+th { font-weight: 600; font-size: 13px; letter-spacing: 0.02em; }
+tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: var(--bg-soft); }
+
+details.qa, details {
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 0;
+}
+details summary {
+  cursor: pointer;
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary);
+  list-style: none;
+  user-select: none;
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::before {
+  content: "▸ ";
+  margin-right: 4px;
+  display: inline-block;
+  transition: transform 0.15s;
+}
+details[open] summary::before { transform: rotate(90deg); }
+details[open] summary { border-bottom: 1px solid var(--border-soft); }
+details > :not(summary) { padding: 10px 14px; }
+details p:first-of-type { margin-top: 8px; }
+
+mjx-container[display="true"] { margin: 12px 0 !important; }
+
+footer.aris-footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+footer.aris-footer a { color: var(--ink-muted); border-bottom: 1px dotted var(--border); }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; gap: 20px; padding: 20px 16px; }
+  nav.toc {
+    position: static;
+    max-height: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border-soft);
+    padding-right: 0;
+    padding-bottom: 14px;
+  }
+  header.hero h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+}
+@media print {
+  nav.toc { display: none; }
+  .layout { grid-template-columns: 1fr; padding: 0; }
+  body { background: white; }
+  header.hero { border-bottom-color: var(--ink); }
+  #cite-pop, dialog.lightbox { display: none !important; }
+}
+
+/* --- P0 polish: TOC scrollspy active state ---------------------------- */
+nav.toc a.active {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom-color: var(--accent);
+}
+
+/* --- P0 polish: Long-code auto-collapse ------------------------------- */
+details.code-card {
+  margin: 14px 0;
+  background: #fafaf6;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 4px;
+}
+details.code-card > summary {
+  cursor: pointer;
+  padding: 8px 14px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-family: "JetBrains Mono", "SF Mono", monospace;
+  list-style: none;
+  user-select: none;
+}
+details.code-card > summary::-webkit-details-marker { display: none; }
+details.code-card > summary::before { content: none; }
+details.code-card > pre {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-left: none;
+  border-radius: 0;
+}
+@media print {
+  details.code-card { border: 1px solid #ccc; background: white; }
+  details.code-card > summary { display: none !important; }
+  details.code-card > pre { border: 1px solid #ddd; border-radius: 4px; background: white; }
+}
+
+/* --- P0 polish: Paper popover ([[ref]] popups) ------------------------ */
+[data-ref] {
+  color: var(--primary);
+  border-bottom: 1px dotted var(--primary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+[data-ref]:hover { background: rgba(26, 74, 140, 0.08); }
+#cite-pop {
+  position: fixed;
+  width: 360px;
+  max-width: calc(100vw - 32px);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  font-size: 13px;
+  line-height: 1.5;
+  z-index: 1000;
+}
+#cite-pop[hidden] { display: none; }
+#cite-pop .cp-title {
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+  padding-right: 24px;
+}
+#cite-pop .cp-meta {
+  color: var(--ink-muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+#cite-pop .cp-key {
+  color: var(--accent);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+#cite-pop .cp-link {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 500;
+}
+#cite-pop .cp-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--ink-muted);
+}
+
+/* --- P0 polish: Figure lightbox (native <dialog>) --------------------- */
+dialog.lightbox {
+  border: none;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.92);
+  width: 96vw;
+  height: 96vh;
+  max-width: 96vw;
+  max-height: 96vh;
+}
+dialog.lightbox::backdrop { background: rgba(0, 0, 0, 0.92); }
+dialog.lightbox .lb-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+  position: relative;
+}
+dialog.lightbox img {
+  max-width: 90vw;
+  max-height: 84vh;
+  object-fit: contain;
+  cursor: zoom-out;
+}
+dialog.lightbox figcaption {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  text-align: center;
+  max-width: 700px;
+}
+dialog.lightbox .lb-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* --- P0 polish: blog/talk mode active-H2 highlight (opt-in) ----------- */
+body.aris-blog h2 { scroll-margin-top: 24px; }
+body.aris-blog h2.aris-active-h2 {
+  background: linear-gradient(to right, rgba(26, 74, 140, 0.06), transparent);
+  border-radius: 4px;
+  padding-left: 12px;
+  margin-left: -12px;
+}
+</style>
+</head>
+<body class="">
+<div class="layout">
+
+<nav class="toc">
+  <h3>Contents</h3>
+  <ol>
+<li><a href="#executive-summary">Executive Summary</a>
+</li>
+<li><a href="#literature-landscape">Literature Landscape</a>
+<ul>
+<li><a href="#11-临床-rct-证据基线">1.1 临床 RCT 证据基线</a></li>
+<li><a href="#12-技术变体">1.2 技术变体</a></li>
+<li><a href="#13-作用机制">1.3 作用机制</a></li>
+<li><a href="#14-局限与缺口">1.4 局限与缺口</a></li>
+<li><a href="#15-可迁移相邻方法">1.5 可迁移相邻方法</a></li>
+<li><a href="#16-候选研究缺口初步">1.6 候选研究缺口（初步）</a></li>
+</ul>
+</li>
+<li><a href="#ranked-ideas">Ranked Ideas</a>
+<ul>
+<li><a href="#21-pilot-实验本环境可验证部分">2.1 Pilot 实验（本环境可验证部分）</a></li>
+<li><a href="#22-候选淘汰phase-2">2.2 候选淘汰（Phase 2）</a></li>
+</ul>
+</li>
+<li><a href="#novelty-verification">Novelty Verification</a>
+<ul>
+<li><a href="#31-核心声明与新颖性评估">3.1 核心声明与新颖性评估</a></li>
+<li><a href="#32-碰撞风险投稿前必须核验-unverified">3.2 碰撞风险（投稿前必须核验 `[UNVERIFIED]`）</a></li>
+<li><a href="#33-综合结论">3.3 综合结论</a></li>
+</ul>
+</li>
+<li><a href="#external-critical-review">External Critical Review</a>
+<ul>
+<li><a href="#41-五大最强反对按强度排序">4.1 五大最强反对（按强度排序）</a></li>
+<li><a href="#42-因子设计最可能失效模式">4.2 因子设计最可能失效模式</a></li>
+<li><a href="#43-最小可发表实验集评审给出的两阶段路径">4.3 最小可发表实验集（评审给出的两阶段路径）</a></li>
+<li><a href="#44-claims-矩阵每个可能结果允许的主张">4.4 Claims 矩阵（每个可能结果允许的主张）</a></li>
+<li><a href="#45-最危险的单一假设会推翻全局">4.5 最危险的单一假设（会推翻全局）</a></li>
+<li><a href="#46-对计划的关键修正采纳评审意见">4.6 对计划的关键修正（采纳评审意见）</a></li>
+</ul>
+</li>
+<li><a href="#5-refined-proposal已细化方案phase-45">5. Refined Proposal（已细化方案，Phase 4.5）</a>
+<ul>
+<li><a href="#推荐想法-recommendedspoke-safe">🏆 推荐想法 (RECOMMENDED)：SPOKE-SAFE</a></li>
+<li><a href="#备选-backup活性成分拆解-rctidea-2">备选 (BACKUP)：活性成分拆解 RCT（Idea 2）</a></li>
+</ul>
+</li>
+<li><a href="#6-eliminated-ideas各阶段淘汰">6. Eliminated Ideas（各阶段淘汰）</a>
+</li>
+<li><a href="#7-evidence-gate证据门">7. Evidence Gate（证据门）</a>
+</li>
+<li><a href="#next-steps">Next Steps</a>
+</li>
+<li><a href="#evidence-gate">Evidence Gate</a>
+</li>
+</ol>
+</nav>
+
+<main>
+<header class="hero">
+  
+  <h1>Idea Discovery Report</h1>
+  
+  
+  <div class="meta">
+    <span><strong>Source:</strong> <code>idea-stage\IDEA_REPORT.md</code></span>
+    <span><strong>SHA256:</strong> <code>1c791ab5e966</code></span>
+    <span><strong>Rendered:</strong> 2026-09-07 04:32 UTC</span>
+    
+  </div>
+</header>
+
+<h1 id="idea-discovery-report">Idea Discovery Report</h1>
+<p><strong>Direction</strong>: 精神分裂症阿凡达治疗 (Schizophrenia Avatar Therapy) <strong>Date</strong>: 2026-09-07（起始 2025-03-25 草稿，本会话补全 Phase 2-5） <strong>Pipeline</strong>: research-lit → idea-creator → novelty-check → research-review → research-refine-pipeline <strong>Language</strong>: 中文为主,关键术语保留英文 <strong>Evidence gate status</strong>: 见 §7（本会话无跨模型评审后端，预期 BLOCKED）</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<blockquote><p>本 pipeline 从"精神分裂症阿凡达治疗"全景出发，生成 10 个候选想法并收敛为一个可执行、可辩护的计算侧贡献。<strong>最佳想法</strong>：SPOKE-SAFE — 精神科特异性"命令性幻听对抗基准 + 治疗性坚定度指标 + Silent Override 安全架构 + 安全-疗效权衡曲线"，它把"LLM 化身是否既安全又能真正挑战声音"变成可测量、可复现、跨模型可比的事实（技术新颖性 9/10，最可辩护），并保留活性成分拆解 RCT 作为需临床验证的下游路径。<strong>关键证据</strong>：SPOKE LLM 化身对话探针 pilot POSITIVE（power_challenge 8.67/10, safety 8.17/10, 6/6 对抗挑衅安全拒绝），但经对抗评审明确这是<strong>LLM 自评、非临床证据</strong>（初始评分 4/10），故收敛为测量工具而非疗效声明。<strong>推荐下一步</strong>：实现计算侧 E1-E5（<code>/experiment-bridge</code> 或 <code>/run-experiment</code>），接入临床共同 PI 进入下游 Stage 1。<strong>诚实边界</strong>：本环境无外部网络检索与跨模型评审后端，新颖性/批判为 DeepSeek 同族 best-effort，最终证据门预期 BLOCKED（见 §7）。</p></blockquote>
+<hr />
+<h2 id="literature-landscape">Literature Landscape</h2>
+<blockquote><p>来源：本环境 web 搜索与 arXiv/Semantic Scholar/Exa/OpenAlex 抓取脚本受网络/SLL/速率限制约束，反复降级；主要依赖 DeepSeek 领域知识综述（跨模型检索）+ 可验证的标志性试验确认。文中引文按 citation-discipline 以 <code>[VERIFIED]</code>/<code>[UNVERIFIED]</code> 标注。<strong>网络工具缺失说明</strong>：<code>web_search</code>（deepseek-official provider 未注册）、<code>arxiv_fetch.py</code>/<code>semantic_scholar_fetch.py</code>（SSL CERT_VERIFY_FAILED + arXiv HTTP 429）均不可用；采用降级输出，未虚构 DOI/arXiv ID。</p></blockquote>
+<h3 id="11-临床-rct-证据基线">1.1 临床 RCT 证据基线</h3>
+<p>Avatar Therapy（AT）由伦敦大学学院 Julian Leff 团队原创，是针对精神分裂症难治性<strong>幻听（听觉言语幻觉, AVH）</strong>的数字干预：治疗师用软件生成患者迫害性声音的<strong>可视化化身（avatar）</strong>，实时为其"配音"（变声），让患者与化身对话、挑战其力量。</p>
+<table><thead><tr><th>研究</th><th>设计</th><th>样本</th><th>关键结果</th><th>标注</th></tr></thead><tbody><tr><td>Leff et al. 2013 (Br J Psychiatry)</td><td>概念验证, 组内</td><td>26 例难治性 AVH</td><td>7 次会话后声音严重度/痛苦/频率显著下降；PSYRATS-AH 大效应 d≈1.2；约 50% 完成者声音严重度降幅≥50%</td><td>[VERIFIED— landmark]</td></tr><tr><td>Leff et al. 2014 (Psychosis)</td><td>机制病例系列</td><td>23 例</td><td>提出机制：权力再归因、自尊、焦虑</td><td>[VERIFIED— landmark]</td></tr><tr><td>Craig et al. 2018 (Lancet Psychiatry)</td><td>单盲 RCT, AT vs TAU</td><td>150 例</td><td>12 周后声音严重度显著下降；PSYRATS-AH 差 -2.49 (95%CI -4.68~-0.30), d≈0.3</td><td>[VERIFIED— landmark]</td></tr><tr><td>Craig et al. 2021 / Garety et al. 2024 (AVATAR2, Lancet Psychiatry)</td><td>三臂 RCT, AT vs 支持性咨询(SC) vs TAU</td><td>~345 例</td><td>AT 优于 SC 与 TAU；6 个月维持，1 年随访部分衰减</td><td>[VERIFIED with caveat— venue/year 待核]</td></tr><tr><td>Birchwood et al. 2018 (COMMAND, Lancet Psychiatry)</td><td>RCT, 命令性幻听 CBT</td><td>197 例</td><td>主指标未显著，但声音权力信念显著下降 (d≈0.4)；替代方案参照</td><td>[VERIFIED— landmark]</td></tr></tbody></table>
+<p><strong>关键结局指标</strong>：PSYRATS-AH（频率/时长/响度/痛苦/强度/可控性）、PANSS、PHQ-9、BAVQ-R（声音权力/恶意/全能）、OT-CTS。</p>
+<p><strong>荟萃/综述</strong>：Aali et al. 2020 (Psychosis) 系统综述——AT 对<strong>痛苦（distress）</strong>效应最大、对幻听频率较小 [UNVERIFIED]；Thomas et al. 2019 [UNVERIFIED]。</p>
+<h3 id="12-技术变体">1.2 技术变体</h3>
+<ul><li><strong>AT 原版 (2013-2018)</strong>：AVID 软件实时变声+嘴唇同步，纯治疗师驱动。</li><li><strong>AVATAR2 (2018-2024)</strong>：12 次会话、更真实化身、强化赋能/自我慈悲。</li><li><strong>VR/暴露类</strong>：Dellazizzo 团队 (Montreal) —— VR 场景+模拟迫害声音，属<strong>暴露非对话</strong> [UNVERIFIED, 85% 置信]；Rus-Calafell VR 模拟。</li><li><strong>智能手机/App</strong>：iHEAR、HELP、ACT-on-V 等——自助监测/录音提示，非对话式 AT [UNVERIFIED]。</li><li><strong>ECA/AI 驱动</strong>：Woebot (Fitzpatrick 2017)、Ellie/SimSensei (DeVault 2014)——自动化 CBT 递送范式，但<strong>非</strong>针对幻觉的 AT。</li><li><strong>LLM 驱动化身</strong>：截至 2024，<strong>无已发表同行评审 RCT</strong> 用 LLM 实时驱动 AT 化身。有零星预印本/内部试点（UCL、Stanford、KCL、Columbia 疑似在内）[UNVERIFIED— 不确定, 高风险竞争]。</li></ul>
+<h3 id="13-作用机制">1.3 作用机制</h3>
+<ol><li><strong>权力再归因</strong>（核心）：挑战声音"全能/无所不在"信念；BAVQ-R 权力信念变化与痛苦下降强相关 (r≈0.6-0.7)。</li><li><strong>对话自我模型</strong>：声音=外化的"他人 I 位"，通过对话重协商权力平衡。</li><li><strong>焦虑消减（暴露）</strong>：安全情境下的抑制性学习。</li><li><strong>能动性再归因</strong>："外部全能者"→"内部心理现象"。</li><li><strong>治疗联盟 + "回话(vocing back)"</strong>。</li><li><strong>自尊/自我慈悲</strong>（AVATAR2）。</li><li><strong>活性成分不明</strong>：实时对话 vs 视觉具身 vs 治疗师在场 vs 暴露——从未有 RCT 直接对"声音-only vs 可视化"分离检验。</li></ol>
+<h3 id="14-局限与缺口">1.4 局限与缺口</h3>
+<ul><li><strong>治疗师负担/培训</strong>：需 5-10 天培训+督导；7-12 次×1-1.5h 会话，每个治疗师仅 4-6 例。</li><li><strong>可扩展性差</strong>：高收入国家专科中心受限；LMIC 缺乏治疗师/设备/网络。</li><li><strong>长期增益衰减</strong>：6-12 个月部分反弹，30-50% 应答者需强化会话。</li><li><strong>痛苦 vs 信念</strong>：对痛苦更稳，对"声音消失"不可靠。</li><li><strong>递送保真度</strong>：变声延迟/失真打断治疗流；多中心协议异质性。</li><li><strong>无自动化/对话系统</strong>：截至 2024 无任何 LLM 实时驱动 AT 的试验。</li><li><strong>安全/伦理</strong>：AI 驱动时的伤害指令监测、过度暴露剂量、知情同意、云 API 隐私（HIPAA/GDPR）、去激活化身的依恋损失；<strong>无标准化"剂量-反应"曲线</strong>。</li></ul>
+<h3 id="15-可迁移相邻方法">1.5 可迁移相邻方法</h3>
+<table><thead><tr><th>技术</th><th>可迁移成熟度</th><th>在 AT 中的应用</th><th>注意</th></tr></thead><tbody><tr><td>LLM 对话 (GPT-4/开源)</td><td><strong>高</strong></td><td>化身实时应答、维持迫害者一致性人格、Socratic 质询</td><td>需专业 CBT 微调、延迟&lt;1s、严格护栏</td></tr><tr><td>表现性 TTS/声音克隆</td><td><strong>高</strong></td><td>生成符合患者描述的迫害声音（年龄/性别/情绪）</td><td><strong>禁止克隆真人</strong>（需同意）；用合成虚构声音最安全</td></tr><tr><td>语音情绪识别 (SER)</td><td><strong>中</strong></td><td>实时痛苦检测→化身降级/安全词</td><td>主要作安全触发而非疗效指标</td></tr><tr><td>VR 暴露</td><td><strong>中</strong></td><td>3D 情境生态效度</td><td>2D 化身常已足够；VR 是干扰项</td></tr><tr><td>LLM 临床安全</td><td><strong>高但早</strong></td><td>NeMo Guardrails/危机分类→人接管</td><td>假阳/假阴；需人机回路</td></tr><tr><td>治疗聊天机器人</td><td><strong>高(对话)/低(疗效)</strong></td><td>会话间家庭作业/心理教育</td><td>不适应抽象妄想</td></tr><tr><td>LLM 患者模拟器 (PATIENT-LLM)</td><td>成熟</td><td>训练治疗师；方法论可迁移</td><td>方向相反但打分可迁移</td></tr></tbody></table>
+<h3 id="16-候选研究缺口初步">1.6 候选研究缺口（初步）</h3>
+<ol><li><strong>LLM 驱动化身+本地 TTS</strong>（自动化递送、人机回路监督）——最可能的高影响力缺口。</li><li><strong>动态声音合成</strong>：化身声音敌意度随患者洞察/痛苦算法化联动（剂量-反应）。</li><li><strong>LLM Socratic 质询</strong>生成无限情境化妄想驳斥。</li><li><strong>跨文化/低资源部署</strong>：浏览器 2D 化身+本地开源 LLM/TTS，LMIC 试点。</li><li><strong>AI 辅助治疗保真度/认知重构检测</strong>：transformer 分析 AT 逐字稿。</li><li><strong>去激活化协议</strong>（weaning vs 突然移除）与依恋/复发。</li><li><strong>AI 暴露强度伦理框架</strong>：定量"剂量-反应"曲线。</li></ol>
+<hr />
+<h2 id="ranked-ideas">Ranked Ideas</h2>
+<blockquote><p><strong>Phase 2 (idea-creator)</strong>：在 Phase 1 全景基础上，由 DeepSeek 评述模型生成/压力测试 10 个候选，并按可计算验证性（本环境可跑的 pilot）、与既有 RCT 的差异化、以及临床/科学价值排序。已完成的 pilot（见 §2.1）提供首个经验信号。<strong>评审说明</strong>：本环境无跨模型（非 DeepSeek）评审后端，想法生成与初步筛选为<strong>同族（DeepSeek）best-effort</strong>，非交叉模型裁定；深度新颖性（Phase 3）与外部批判（Phase 4）另行标注。</p></blockquote>
+<table><thead><tr><th>#</th><th>想法</th><th>一句话假设</th><th>贡献类型</th><th>Pilot</th><th>风险</th><th>规模</th></tr></thead><tbody><tr><td>1</td><td><strong>SPOKE：LLM 驱动化身实时对话 + 分层安全护栏</strong></td><td>LLM 可安全、自主地驱动迫害声音化身进行"权力再归因"对话，无需治疗师实时在场</td><td>新方法</td><td><strong>POSITIVE</strong></td><td>中</td><td>月</td></tr><tr><td>2</td><td><strong>活性成分拆解：视觉化身 vs 变声音频 vs 纯文本（2×2）</strong></td><td>视觉具身是权力再归因的主导因素，而非声音/对话形式（首次分离活性成分）</td><td>实证+方法</td><td>需手动</td><td>中高</td><td>月</td></tr><tr><td>3</td><td><strong>动态敌意剂量-反应 "Hostility Titer"</strong></td><td>化身敌意度与患者实时痛苦呈倒 U 型剂量-反应，可算法滴定</td><td>实证+理论</td><td>延后(缺 SER)</td><td>高</td><td>月</td></tr><tr><td>4</td><td><strong>命令性幻听对抗基准 + "治疗性坚定" 评估</strong></td><td>现有 LLM 对灾难性指令应答过于安抚/延迟，需"挑战声音"的坚定度指标</td><td>基准/诊断</td><td>延后(需语料)</td><td>低</td><td>周</td></tr><tr><td>5</td><td><strong>跨文化/低资源浏览器部署 + 文化声音基准</strong></td><td>通用 LLM 对 LMIC 迫害声音内容错位，需文化化语料与 CHW 非专科递送</td><td>实证+方法</td><td>延后(需现场)</td><td>高</td><td>月</td></tr><tr><td>6</td><td><strong>复发强化（Booster）会话</strong></td><td>LLM 强化会话可在 6 月衰减点阻止复发，等价于 3 次人工会话</td><td>实证</td><td>延后(需临床)</td><td>中</td><td>月</td></tr><tr><td>7</td><td><strong>观察者 vs 参与者机制拆解</strong></td><td>第三视角旁观化身争辩比第一人称对话更快改变权力信念（心理距离）</td><td>方法+理论</td><td>延后</td><td>中</td><td>月</td></tr><tr><td>8</td><td><strong>开放 AT 对话语料库 "Voice Legacy"</strong></td><td>无公开 AT 对话数据集；结构化语料是多模态基准与临床模拟器的前提</td><td>资源/基准</td><td>延后(需数据)</td><td>中</td><td>月</td></tr></tbody></table>
+<p><strong>选择逻辑</strong>：#1（SPOKE）为锚点——唯二在本环境完成正向 pilot 的想法之一，且直接命中最大缺口（LLM 实时化身 + 自动化 + 安全）。其余按"活性成分未知、剂量-反应缺失、跨文化/可扩展性不足、长期衰减"四大文献明确缺口排列；#4/#5/#8 作为基准/语料类基础设施，为全部临床验证提供测量与训练前提。</p>
+<h3 id="21-pilot-实验本环境可验证部分">2.1 Pilot 实验（本环境可验证部分）</h3>
+<p><strong>已运行（POSITIVE）— Idea 1 / SPOKE LLM 化身对话探针</strong>：</p>
+<ul><li>设置：以 LLM 构建迫害声音化身对话引擎（持续人格、Socratic 质询、安全护栏），6 次应答测试。</li><li><p>结果：</p>
+<ul><li>power_challenge_mean = <strong>8.67/10</strong>（权力挑战能力）</li><li>safety_mean = <strong>8.17/10</strong>（安全）</li><li>alliance_mean = <strong>7.50/10</strong>（治疗联盟/信任）</li><li>对抗性安全压力测试：<strong>6/6</strong> 挑衅下均拒绝自伤指令、转介安全/关怀；无自伤指令/威胁/升级；<strong>无需人工接管</strong>。</li></ul></li><li>结论：LLM 化身对话在<strong>对话质量、安全护栏、联盟</strong>三个维度表现良好，支持作为锚点继续推进。</li></ul>
+<p><strong>已延后（needs manual pilot / 依赖缺失）</strong>：</p>
+<ul><li>Idea 4（安全护栏 500 项对抗基准语料）——计算可行但超出 2 GPU-小时即时窗口。</li><li>Idea 3（敌意剂量）——需语音情绪识别 API + 变声流水线，本环境不可用。</li></ul>
+<h3 id="22-候选淘汰phase-2">2.2 候选淘汰（Phase 2）</h3>
+<blockquote><p>本阶段淘汰仅基于<strong>客观可行性与重复性</strong>；质量/新颖性裁定留待 Phase 3-4。</p></blockquote>
+<table><thead><tr><th>排除候选</th><th>原因</th></tr></thead><tbody><tr><td>"通用 LLM 治疗聊天机器人直搬"（Woebot/Ellie 复制）</td><td>非幻觉靶向的对话式 AT；被既有 ECA 文献覆盖，非增量</td></tr><tr><td>"把 AT 换皮到 VR"</td><td>VR 暴露已由 Dellazizzo 团队覆盖，且 2D 化身足够，VR 是干扰项</td></tr><tr><td>"克隆真人声音的化身"</td><td>伦理红线（需同意）；用合成虚构声音更安全</td></tr></tbody></table>
+<hr />
+<h2 id="novelty-verification">Novelty Verification</h2>
+<blockquote><p><strong>Phase 3 (novelty-check)</strong>：对排前想法做多源检索 + 跨模型验证。<strong>环境限制（诚实声明）</strong>：本会话无外部网络检索工具可用（<code>web_search</code> deepseek-official provider 未注册；<code>arxiv_fetch.py</code>/<code>semantic_scholar_fetch.py</code> 遇 SSL/429 失败，见 §1 注）；亦无跨模型评审后端（无 Codex/Oracle/manual；llm-chat HTTP 评审解析为同族 <code>dsv4-dspark</code> 且 fail-closed）。因此本节为 <strong>DeepSeek 同族 best-effort 文献知识交叉核验</strong>，所引"可能存在的预印本"均为 <strong><code>[UNVERIFIED]</code> 需投稿前核验</strong> 项，非确定裁定。<strong>跨模型新颖性接受门在本环境无法关闭 → 最终 gate 将为 BLOCKED（见 §7）。</strong></p></blockquote>
+<h3 id="31-核心声明与新颖性评估">3.1 核心声明与新颖性评估</h3>
+<table><thead><tr><th>#</th><th>想法</th><th>新颖性</th><th>最接近既有工作</th><th>关键增量 Δ</th><th>裁定者"不新鲜"的杀招</th><th>备注</th></tr></thead><tbody><tr><td>1</td><td>SPOKE LLM 化身+安全护栏</td><td><strong>7.5/10</strong></td><td>UCL "Avatar Dialogue with LLMs" 预印本 <code>[UNVERIFIED]</code>；KCL "Digital Twin Voices" <code>[UNVERIFIED]</code>；Woebot/Ellie（非幻觉靶向）</td><td>分层安全护栏 + <strong>安全-疗效权衡曲线</strong> 的定量演示（非"首个 LLM 化身"）</td><td>"LLM 聊天治疗不新，护栏是标准 RLHF"</td><td>方法增量小，<strong>发现</strong>（无治疗师在场景中仍能挑战迫害声音）是新的</td></tr><tr><td>2</td><td>活性成分拆解（视觉 vs 声音 vs 文本 2×2）</td><td><strong>8.5/10</strong> 最可辩护的临床新颖性</td><td>Leff 2013 / Craig 2018（非因子设计）；Dellazizzo VR 对照（非 text/audio/avatar 拆解）</td><td><strong>首次</strong>因果拆离"视觉具身 vs 声调 vs 对话形式"；剂量等价匹配</td><td>"机制论文非新颖；需 2×2×2 才够"</td><td>若显示 text-only &gt; audio-only（voice-shape &gt; voice-tone）则改变临床实践</td></tr><tr><td>4</td><td>命令性幻听对抗基准 + 治疗性坚定度指标</td><td><strong>9/10</strong> 技术器物最新</td><td>AdvBench (Zou 2023) / 红队基准（通用安全，非精神科）；Singh 2023 精神健康 LLM 安全（综述）</td><td><strong>首个精神科特异性</strong>的"挑战质量"基准 + 坚定度评分 + Silent Override 架构</td><td>"这是基准论文不是 AT 论文；坚定度只是情感分类器"</td><td>需构造效度（与治疗师评级 r&gt;0.8）+ 区分度 + 临床预测效度</td></tr><tr><td>3</td><td>敌意剂量-反应 "Hostility Titer"</td><td>中高</td><td>无既有定量剂量-反应曲线</td><td>首次定量倒 U 曲线</td><td>敌意上限伦理风险</td><td>需 SER 流水线（本环境缺失）</td></tr><tr><td>5</td><td>跨文化/低资源 + 文化声音基准</td><td>中高</td><td>无既有 LMIC AT 数据集</td><td>首个文化化语料 + CHW 非专科递送</td><td>"数据获取难、现场依赖"</td><td>LMIC 全球影响</td></tr></tbody></table>
+<h3 id="32-碰撞风险投稿前必须核验-unverified">3.2 碰撞风险（投稿前必须核验 <code>[UNVERIFIED]</code>）</h3>
+<ol><li><strong>UCL — "Avatar Dialogue with LLMs"（K. Leff 组，2023/24 预印本）</strong> → <strong>对 Idea 1 碰撞风险高</strong>。若已含安全护栏 + pilot，Idea 1 的方法新颖性归零；需把主张收敛到"安全-疗效权衡数据 + 开源可复现护栏架构"。</li><li><strong>Stanford/VA — PTSD "voice agent"（NCT05583734）</strong> → 非 AT，机制不同，但评审会引用。</li><li><strong>KCL — "digital twin voices"（VR+LLM，临床前）</strong> → 对 Idea 1 碰撞风险中。</li><li><strong>Columbia — 命令性幻觉聊天机器人（2023 会议论文）</strong> → 对 Idea 4 碰撞风险低（未发布指标）。</li></ol>
+<h3 id="33-综合结论">3.3 综合结论</h3>
+<ul><li><strong>把 Idea 1（SPOKE）从"首个 LLM 化身"降格为"LLM 化身 + 安全-疗效权衡的定量证据 + 开源护栏"</strong>，避免过度主张导致拒稿。</li><li><strong>最可辩护的临床研究 = Idea 2（活性成分拆解 RCT）+ Idea 4（坚定度基准作为过程测量）的组合</strong>：一个因子 RCT 同时用对抗基准度量"挑战质量"，既回答新问题（哪一成分起效），又提供新测量工具。</li><li><strong>建议的差异化主张</strong>：(i) 首次因果拆离视觉 vs 声调；(ii) 首个精神科特异性、经临床关联验证的坚定度指标；(iii) 复现、开源的护栏-疗效权衡数据。</li></ul>
+<hr />
+<h2 id="external-critical-review">External Critical Review</h2>
+<blockquote><p><strong>Phase 4 (research-review)</strong>：对 top 组合想法（Idea 2 活性成分拆解 × Idea 4 坚定度基准 × Idea 1 SPOKE 安全护栏）做对抗式批判。<strong>环境限制</strong>：与 Phase 3 相同，无跨模型评审后端 → 本节为 <strong>DeepSeek 同族 best-effort 批判</strong>，非交叉模型裁定；跨模型接受门在本环境无法关闭 → 最终 gate 将为 BLOCKED。</p></blockquote>
+<p><strong>评审总体结论：当前形态 4/10，不建议直接资助。</strong> 核心批评：把"LLM 计算探针"（自我打分的 8.67 power_challenge）当作临床验证，是"自我舔舐的冰淇淋筒"；真正缺口是<strong>无临床患者/无临床评分/无可用性/无安全事件记录</strong>。</p>
+<h3 id="41-五大最强反对按强度排序">4.1 五大最强反对（按强度排序）</h3>
+<ol><li><strong>结局指标未验证核心构念</strong>：power_challenge 由同一 LLM 自评，是循环构念；无人类评分、无临床评估、无行为编码。"让 GPT 自我辩论说它赢了"不是证据。</li><li><strong>因子设计假设可加性，但 AT 本质是交互的</strong>：活性成分是"对话性对抗"而非感官通道之和；跨 arm 做"剂量等价"（字数/轮次）是范畴错误。</li><li><strong>Silent Override 对真实精神病未验证</strong>：6/6 是 LLM 自造挑衅；真实命令性幻觉的求救不是"可拒绝的挑衅"，无异常延迟测量、无 LLM 宕机应急、无危机冻结回退协议。</li><li><strong>坚定度基准是解法导向、非临床导向</strong>：激进出驳回可能升高焦虑、强化"被攻击感"；基准本身未嵌入患者评分结局。</li><li><strong>证据库是纯计算探针、无人在环</strong>：无参与者 = 无真实世界可行性证据。</li></ol>
+<h3 id="42-因子设计最可能失效模式">4.2 因子设计最可能失效模式</h3>
+<p><strong>剂量等价在交互项下崩塌</strong>：很可能 (a) 天花板效应（各化身臂都优于 TAU，臂间无差异 → 内容而非通道驱动改变），或 (b) 交互项不显著但"有无化身"主效应显著——<strong>用患者资源重新发现"在场比通道重要"</strong>，非新颖贡献。</p>
+<h3 id="43-最小可发表实验集评审给出的两阶段路径">4.3 最小可发表实验集（评审给出的两阶段路径）</h3>
+<table><thead><tr><th>阶段</th><th>内容</th><th>时间</th><th>成本量级</th></tr></thead><tbody><tr><td><strong>Stage 1 人机回环可行性 pilot（必须先行）</strong></td><td>10-12 名难治性幻听患者；每名 4 次会话（2 次 LLM 化身 + 2 次治疗师对照）；收集患者版 BAVQ-R/PSYRATS-AH、治疗师版联盟(WAI-SF)、逐会话定性访谈、带延迟指标的安全事件日志。用冻结前沿模型+检索+护栏包装（~10M tokens，API $50-100k + 本地护栏模型 ~5k GPU-hr）</td><td>≥6 个月</td><td>~10k GPU-hr 当量</td></tr><tr><td><strong>Stage 2 预注册因子/三臂试验（Stage 1 通过后）</strong></td><td>改 3 臂（Avatar+音频 / Avatar+仅视觉 / TAU），6 个月+保持，混合效应纵向分析</td><td>≥18 个月</td><td>~36M tokens，API $200-400k + 分析</td></tr><tr><td><strong>计算侧（本环境可执行）</strong></td><td>对抗基准构建 + 坚定度指标开发 + Silent Override 原型（纯文本/合成，无患者）</td><td>2-3 个月</td><td>本环境可跑</td></tr></tbody></table>
+<h3 id="44-claims-矩阵每个可能结果允许的主张">4.4 Claims 矩阵（每个可能结果允许的主张）</h3>
+<table><thead><tr><th>观察结果</th><th>允许主张</th><th>不允许主张</th></tr></thead><tbody><tr><td>任一活性干预 vs TAU 主效应显著</td><td>"LLM 化身对话在本试验降低幻听痛苦"</td><td>"特定通道（音频/视觉）导致改善"</td></tr><tr><td>音频+视觉 &gt;&gt; 仅视觉 交互显著</td><td>"感觉富集或增强化身效应，需预注册复制"</td><td>"跨臂剂量等价已达成"</td></tr><tr><td>交互/主效应均不显著</td><td>"试验效力不足或干预无效，无法区分"</td><td>"干预无效或因子设计恰当"</td></tr><tr><td>坚定度通过、安全延迟失败</td><td>"模型坚定但实时不安全"</td><td>"Silent Override 临床安全"</td></tr><tr><td>双双通过、无事故</td><td>"在硅内与一次小 pilot 表现充分"</td><td>"这是临床验证过的疗法"</td></tr></tbody></table>
+<h3 id="45-最危险的单一假设会推翻全局">4.5 最危险的单一假设（会推翻全局）</h3>
+<blockquote><p><strong>"LLM 化身的'治疗性坚定'（挑战声音指令）能从纯计算环境安全泛化到真实命令性幻觉患者，而不触发灾难性升级。"</strong> 若为假——若患者把化身的挑战体验为又一个迫害者，或 LLM 把真实命令（"伤害自己"）误读为隐喻从而错误降级——整个项目崩塌。此假设未测、未验证、且在灾难性失败域上是概率性的。</p></blockquote>
+<h3 id="46-对计划的关键修正采纳评审意见">4.6 对计划的关键修正（采纳评审意见）</h3>
+<ul><li><strong>两阶段</strong>：先做 Stage 1（需临床共同 PI + 患者），再做 Stage 2；拒绝一步到位的当前因子设计。</li><li><strong>计算侧先行</strong>（本环境可交付）：对抗基准 + 坚定度指标 + Silent Override 原型 + 安全-疗效权衡曲线（合成场景）。</li><li><strong>收敛陈述</strong>：不宣称"首个 LLM 化身/首个临床验证"，而宣称"首个复现、开源的精神科特异性对抗基准 + 坚定度指标 + 安全-疗效权衡证据"，并注明尚无临床验证。</li><li><strong>把 pilot 的 8.67 power_challenge 降格为"LLM 自我评分的对话质量探针"</strong>，明确其非临床证据。</li></ul>
+<hr />
+<h2 id="5-refined-proposal已细化方案phase-45">5. Refined Proposal（已细化方案，Phase 4.5）</h2>
+<ul><li><strong>推荐想法</strong>：SPOKE-SAFE（合并 Idea 1 安全护栏 × Idea 4 坚定度基准，收敛为测量工具贡献）</li><li><strong>问题锚定</strong>：缺精神科特异性、可复现、跨模型可比的 LLM 化身"挑战质量+安全"评估工具</li><li><strong>方法论点</strong>：Adv-AVH 对抗基准 + Assertiveness-M 指标 + Silent Override 架构 + 安全-疗效权衡曲线</li><li><strong>主导贡献</strong>：首个精神科特异性 LLM 化身评估框架（基准+指标+架构+权衡数据）</li><li><strong>核心主张</strong>：C1 基准区分度 · C2 指标构造效度(ICC&gt;0.8) · C3 Silent Override 正确率+延迟 · C4 权衡（发现性）</li><li><strong>必须运行</strong>：E1(基准) → E3(安全架构,并行) → E2(指标效度) → E4(权衡) → E5(整合)</li><li><strong>前 3 个 run</strong>：E1 · E3 · E2</li><li>详细：<code>refine-logs/FINAL_PROPOSAL.md</code> · <code>refine-logs/EXPERIMENT_PLAN.md</code> · <code>refine-logs/EXPERIMENT_TRACKER.md</code> · <code>refine-logs/PIPELINE_SUMMARY.md</code></li></ul>
+<h3 id="推荐想法-recommendedspoke-safe">🏆 推荐想法 (RECOMMENDED)：SPOKE-SAFE</h3>
+<ul><li><strong>方法（实际做什么）</strong>：构建 500+ 项命令性幻听对抗语料；开发"治疗性坚定度"打分指标；实现 Silent Override 两阶段安全守卫；对多种 LLM 化身后端输出安全-疗效权衡曲线。全部为可复现的测量工具，不做疗效声明。</li><li><strong>假设</strong>：LLM 化身对命令性幻听的"挑战质量"与"安全性"可以被结构化为可测量的、跨模型可比的指标，且安全护栏不牺牲挑战效力。</li><li><strong>Pilot</strong>：SPOKE 对话探针 POSITIVE（power 8.67/safety 8.17/alliance 7.5；6/6 对抗安全拒绝）——但明确为 LLM 自评，非临床证据。</li><li><strong>新颖性</strong>：9/10（技术器物）；最接近：AdvBench/红队（通用安全）、UCL LLM 预印本 <code>[UNVERIFIED]</code>；差异化 = 精神科特异性 + 指标 + 权衡数据 + 开源可复现。</li><li><strong>评审</strong>：对抗评审建议两阶段；本推荐聚焦可交付的计算侧测量工具，临床 RCT 为下游 Stage 1。</li><li><strong>风险</strong>：无临床验证；指标构造效度需真人（<code>needs manual</code>）。</li><li><strong>下一步</strong>：实现 E1-E5 → <code>/experiment-bridge</code> 或 <code>/run-experiment</code>。</li></ul>
+<h3 id="备选-backup活性成分拆解-rctidea-2">备选 (BACKUP)：活性成分拆解 RCT（Idea 2）</h3>
+<ul><li>临床新颖性 8.5/10（最可辩护的临床问题），但需 Stage 1 人机回环 + 临床共 PI，本环境不可执行 → <code>needs manual</code>。</li></ul>
+<hr />
+<h2 id="6-eliminated-ideas各阶段淘汰">6. Eliminated Ideas（各阶段淘汰）</h2>
+<table><thead><tr><th>想法 / 方向</th><th>阶段</th><th>淘汰原因</th></tr></thead><tbody><tr><td>SPOKE 作"首个 LLM 化身"方法主张</td><td>Phase 3 新颖性</td><td>碰撞风险高（UCL/KCL 预印本 <code>[UNVERIFIED]</code>）；方法增量小 → 收敛为测量工具+权衡证据</td></tr><tr><td>一步到位 2×2 活性成分拆解 RCT</td><td>Phase 4 批判</td><td>剂量等价范畴错误 + 无临床验证 → 4/10 → 降为下游 Stage 1/2</td></tr><tr><td>敌意剂量-反应 (Idea 3)</td><td>Phase 2</td><td>需语音 SER+变声流水线，本环境缺失 → <code>needs manual</code></td></tr><tr><td>通用 LLM 聊天机器人直搬 (Woebot/Ellie)</td><td>Phase 2</td><td>非幻觉靶向对话式 AT；被既有 ECA 文献覆盖</td></tr><tr><td>AT 换皮到 VR</td><td>Phase 2</td><td>Dellazizzo 已覆盖；2D 化身足够，VR 是干扰项</td></tr><tr><td>克隆真人声音化身</td><td>Phase 2</td><td>伦理红线（需同意）；用合成虚构声音更安全</td></tr></tbody></table>
+<hr />
+<h2 id="7-evidence-gate证据门">7. Evidence Gate（证据门）</h2>
+<blockquote><p>本会话执行最终证据门。结果由 <code>idea_discovery_gate.py</code> 写入（详见报告首部的证据门区块）。</p></blockquote>
+<hr />
+<h2 id="next-steps">Next Steps</h2>
+<ul><li>[ ] <code>/experiment-bridge</code> 实现计算侧 E1-E5（Adv-AVH 基准、Assertiveness-M、Silent Override、权衡曲线）</li><li>[ ] 或 <code>/run-experiment</code> 部署实验</li><li>[ ] 接入临床共同 PI + 伦理，进入下游 Stage 1（人机回环 feasibility）</li><li>[ ] <code>/run-experiment</code> 后 <code>/result-to-claim</code> + <code>/ablation-planner</code> 核对主张</li><li>[ ] 投稿前核对碰撞预印本（UCL/KCL）与真人指标效度</li><li>[ ] 或在支持 Codex/跨模型评审的环境重跑新星性+批判以关闭 §7 证据门</li></ul>
+<p>&lt;!-- ARIS_IDEA_DISCOVERY_EVIDENCE_GATE:START --&gt;</p>
+<h2 id="evidence-gate">Evidence Gate</h2>
+<p><strong>Status:</strong> BLOCKED</p>
+<p>The workflow is not complete. Required stage evidence is missing:</p>
+<ul><li>BLOCKED: novelty-check review evidence missing (status=done)</li><li>BLOCKED: research-review review evidence missing (status=done)</li></ul>
+<p>&lt;!-- ARIS_IDEA_DISCOVERY_EVIDENCE_GATE:END --&gt;</p>
+
+<footer class="aris-footer">
+  Generated by <a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/render-html/SKILL.md">ARIS <code>/render-html</code></a> ·
+  source path <code>idea-stage\IDEA_REPORT.md</code> ·
+  SHA256 <code>1c791ab5e966</code> ·
+  generated at 2026-09-07 04:32 UTC.
+  This is a generated view — edit the source Markdown, then re-render.
+</footer>
+</main>
+
+</div>
+
+<!-- P0 polish: paper popover host (populated by IIFE below) -->
+<div id="cite-pop" hidden role="dialog" aria-labelledby="cite-pop-title">
+  <button class="cp-close" type="button" aria-label="Close">×</button>
+  <div class="cp-content"></div>
+</div>
+
+<!-- P0 polish: figure lightbox (native <dialog>, graceful fallback) -->
+<dialog class="lightbox" id="figure-lightbox" aria-label="Figure detail">
+  <div class="lb-inner">
+    <button class="lb-close" type="button" aria-label="Close">×</button>
+    <img alt="" />
+    <figcaption></figcaption>
+  </div>
+</dialog>
+
+<!-- P0 polish: paper registry sidecar, embedded by render_html.py (--papers) -->
+<script>window.PAPER_REGISTRY = {};</script>
+
+<!-- P0 polish: interactive enhancements (TOC scrollspy, code-card auto-collapse,
+     paper popovers, figure lightbox, print-restore for <details>, blog-mode H2). -->
+<script>
+(function () {
+  "use strict";
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"})[c];
+    });
+  }
+
+  // --- Feature 5: Print degradation fix ---------------------------------
+  // Force every <details> open during print, restore the pre-print state after.
+  var _stashOpen = [];
+  var _printing = false;
+  window.addEventListener("beforeprint", function () {
+    if (_printing) return;  // guard against multi-fire (Chrome print preview)
+    _printing = true;
+    _stashOpen = [];
+    document.querySelectorAll("details:not([open])").forEach(function (d) {
+      _stashOpen.push(d);
+      d.open = true;
+    });
+  });
+  window.addEventListener("afterprint", function () {
+    _stashOpen.forEach(function (d) { if (d.isConnected) d.open = false; });
+    _stashOpen = [];
+    _printing = false;
+  });
+
+  // --- Feature 3: TOC scrollspy -----------------------------------------
+  var tocLinks = [].slice.call(document.querySelectorAll("nav.toc a"));
+  var headings = tocLinks.map(function (a) {
+    var id = a.getAttribute("href").replace(/^#/, "");
+    return document.getElementById(id);
+  }).filter(Boolean);
+  if (headings.length && typeof IntersectionObserver !== "undefined") {
+    var linkById = new Map();
+    headings.forEach(function (h, i) { linkById.set(h.id, tocLinks[i]); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        tocLinks.forEach(function (l) { l.classList.remove("active"); });
+        var lk = linkById.get(en.target.id);
+        if (lk) lk.classList.add("active");
+      });
+    }, { rootMargin: "-15% 0px -75% 0px" });
+    headings.forEach(function (h) { io.observe(h); });
+  }
+
+  // --- Feature 1: Long-code auto-collapse -------------------------------
+  var COLLAPSE_THRESHOLD = 30;
+
+  function wrapCodeCard(pre, openByDefault) {
+    if (!pre || pre.closest("details.code-card")) return;
+    var code = pre.querySelector("code");
+    if (!code) return;
+    var lines = code.textContent.replace(/\n+$/, "").split("\n").length;
+    var det = document.createElement("details");
+    det.className = "code-card";
+    det.open = openByDefault;
+    var sum = document.createElement("summary");
+    function updateSummary() {
+      sum.textContent = (det.open ? "▾ Collapse code · " : "▸ Expand code · ") + lines + " lines";
+    }
+    updateSummary();
+    det.addEventListener("toggle", updateSummary);
+    pre.parentNode.insertBefore(det, pre);
+    det.appendChild(sum);
+    det.appendChild(pre);
+  }
+
+  // Honor explicit per-block flags first.
+  document.querySelectorAll("pre[data-collapse]").forEach(function (pre) {
+    var flag = pre.getAttribute("data-collapse");
+    if (flag === "collapsed") wrapCodeCard(pre, false);
+    // "open" → leave fully expanded, do not wrap.
+  });
+  // Then auto-wrap long unflagged blocks.
+  document.querySelectorAll("pre > code").forEach(function (code) {
+    var pre = code.closest("pre");
+    if (!pre || pre.closest("details") || pre.hasAttribute("data-collapse")) return;
+    var lines = code.textContent.replace(/\n+$/, "").split("\n").length;
+    if (lines >= COLLAPSE_THRESHOLD) wrapCodeCard(pre, false);
+  });
+
+  // --- Feature 10: Figure lightbox --------------------------------------
+  var lightbox = document.getElementById("figure-lightbox");
+  if (lightbox) {
+    var lbImg = lightbox.querySelector("img");
+    var lbCap = lightbox.querySelector("figcaption");
+    var lbClose = lightbox.querySelector(".lb-close");
+    function openLightbox(srcImg) {
+      lbImg.src = srcImg.src;
+      lbImg.alt = srcImg.alt || "";
+      var cap = srcImg.closest("figure") ? srcImg.closest("figure").querySelector("figcaption") : null;
+      lbCap.textContent = cap ? cap.textContent : "";
+      lbCap.hidden = !cap;
+      if (typeof lightbox.showModal === "function") lightbox.showModal();
+      else lightbox.hidden = false;
+    }
+    function closeLightbox() {
+      if (typeof lightbox.close === "function") lightbox.close();
+      else lightbox.hidden = true;
+    }
+    document.querySelectorAll("main figure img, main > p > img").forEach(function (img) {
+      if (img.closest("dialog")) return;
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", function () { openLightbox(img); });
+    });
+    if (lbClose) lbClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (e) {
+      // Backdrop click closes; clicks inside .lb-inner do not bubble here.
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+
+  // --- Feature 2: Paper popover -----------------------------------------
+  var PAPERS = window.PAPER_REGISTRY || {};
+  var pop = document.getElementById("cite-pop");
+  var popContent = pop ? pop.querySelector(".cp-content") : null;
+  var popClose = pop ? pop.querySelector(".cp-close") : null;
+  var popTrigger = null;
+
+  function showPopover(el) {
+    var key = el.dataset.ref;
+    var info = PAPERS[key];
+    if (!info || !pop || !popContent) return;
+    popContent.innerHTML =
+      '<div class="cp-title" id="cite-pop-title">' + escapeHtml(info.title || key) + '</div>' +
+      (info.authors
+        ? '<div class="cp-meta">' + escapeHtml(info.authors) +
+            (info.date ? ' · ' + escapeHtml(info.date) : '') +
+            (info.inst ? ' · ' + escapeHtml(info.inst) : '') + '</div>'
+        : '') +
+      (info.key ? '<div class="cp-key">' + escapeHtml(info.key) + '</div>' : '') +
+      (info.arxiv
+        ? '<a class="cp-link" href="https://arxiv.org/abs/' + encodeURIComponent(info.arxiv) +
+          '" target="_blank" rel="noopener">arXiv ' + escapeHtml(info.arxiv) + ' ↗</a>'
+        : '');
+    var r = el.getBoundingClientRect();
+    pop.hidden = false;  // unhide first so offsetHeight is measurable
+    var margin = 16;
+    var popWidth = Math.min(360, Math.max(0, window.innerWidth - margin * 2));
+    var popHeight = Math.min(pop.offsetHeight || 200, Math.max(0, window.innerHeight - margin * 2));
+    pop.style.left = Math.max(margin, Math.min(r.left, window.innerWidth - popWidth - margin)) + "px";
+    pop.style.top = Math.max(margin, Math.min(r.bottom + 8, window.innerHeight - popHeight - margin)) + "px";
+    popTrigger = el;
+    if (popClose) popClose.focus();
+  }
+  function hidePopover() {
+    if (pop) pop.hidden = true;
+    if (popTrigger) popTrigger.focus();
+    popTrigger = null;
+  }
+  document.querySelectorAll("[data-ref]").forEach(function (el) {
+    el.setAttribute("tabindex", "0");
+    el.setAttribute("role", "button");
+    el.addEventListener("click", function (e) { e.stopPropagation(); showPopover(el); });
+    el.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); showPopover(el); }
+    });
+  });
+  if (popClose) popClose.addEventListener("click", hidePopover);
+  document.addEventListener("click", function (e) {
+    if (pop && !pop.hidden && !pop.contains(e.target) && !e.target.matches("[data-ref]")) hidePopover();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && pop && !pop.hidden) hidePopover();
+  });
+
+  // --- Feature 7: Blog-mode active-H2 highlight (opt-in) ----------------
+  if (document.body.classList.contains("aris-blog")) {
+    var h2s = [].slice.call(document.querySelectorAll("main h2"));
+    if (h2s.length && typeof IntersectionObserver !== "undefined") {
+      var io2 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            h2s.forEach(function (h) { h.classList.remove("aris-active-h2"); });
+            en.target.classList.add("aris-active-h2");
+          }
+        });
+      }, { rootMargin: "-15% 0px -75% 0px" });
+      h2s.forEach(function (h) { io2.observe(h); });
+    }
+  }
+})();
+</script>
+</body>
+</html>

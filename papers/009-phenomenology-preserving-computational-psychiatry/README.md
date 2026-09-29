@@ -167,3 +167,15 @@ A long interview is not automatically better for every purpose.
 A highly predictive model is not necessarily the least distorted model.
 
 The scientific goal is to make these trade-offs visible and testable.
+
+## W2 literature base (imported 2026-09-30)
+
+Three DSH-side W2 direction packages were imported as 009's literature base (literature only — no code/data/results, per the re-run iron law). Mapping to the two-stage model and boundary discipline are documented in `process/LIT_INTEGRATION.md`.
+
+| Direction | Location | Feeds |
+|---|---|---|
+| computational-psychiatry | `process/literature/computational-psychiatry/` | Stage B (encoding/compression) — computational formalisms |
+| phenomenological-psychiatry | `process/literature/phenomenological-psychiatry/` | Stage A (acquisition/elicitation) — first-person experience structure |
+| prior-trial-effects | `process/literature/prior-trial-effects/` | Cross-stage confound — expectation/anticipation as a falsification lead |
+
+Follow-ups (W3 convergence): de-duplicate the three KEY_PAPERS lists, fix prior-trial-effects' role (baseline vs sub-question), and run 009's own W3 convergence on top of the imported W2 material.
