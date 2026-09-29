@@ -1,0 +1,45 @@
+================================================================
+002-language-geometry · FINAL FREEZE DECLARATION (stage 5)
+================================================================
+Run: local-ARIS-rerun (ARIS v0.4.26, gateway 172.16.25.104:1026)
+Sandbox: D:\Software\ARIS4C-local\002-language-geometry\
+Repo mirror: D:\Software\ARIS4C\papers\002-language-geometry\
+
+FREEZE LAYERS:
+- Data + code + M1/M2: frozen 2026-09-26
+  (8 analysis CSVs pinned by sha256 vs data/raw/MANIFEST.tsv;
+   M1X full double-run byte-identical, diffs = 0;
+   M2 three-chain cross-verification PASS)
+- M3/M4/robustness: frozen 2026-09-28
+  (xcheck r2 from checkpoint, SUMMARY diffs = 0;
+   sha256 re-verified at xcheck r2, ALL_OK = True)
+- Stage-4 bilingual manuscript + stage-5 wrapper: 2026-09-30
+  (orchestrator direct-write per frozen RESEARCH_PLAN §7;
+   zero LLM draft, zero number recomputation — all figures
+   transcribed verbatim from the frozen JSON above)
+
+HEADLINE VERDICT (frozen, claims item 3 phrasing):
+  「周期性结构不提供留出预测力」
+  (The periodic structure does not provide holdout predictive power.)
+  H3 verdict (m4_aggregation.json, verbatim):
+  「H3 拒绝/降级（逐层依据见 basis；探索性聚合、非新增假设）」
+
+STAGE 4/5 DELIVERABLES (sha256, computed 2026-09-30):
+  paper/paper_EN.md        e6c094227fca9a4fd21d1fc8317ac16958960db2a1d24016aeea55774893ce3c
+  paper/paper_ZH.md        5b814aa4d34e83c3c1beb11900752a93d91cbdb2ca6efcecffcce79062076ab1
+  paper/paper_EN_notes.md  23c5c7f11cbc7c7a551f21e1fa5ec6ca79fc174003e54faa0cb318c07cffabcb
+  stage4_summary.md        43114fdc5fd338e415017959d0fe22a6840e2978e8ae848ba3cfaad417f78de4
+  paper.json               52e1b9e1d0ba6ba742b1dbfaef33cba97b1af682a14db463883c729b60039430
+
+CARRIED FROZEN GAPS (disclosed in paper body + notes, not blocking):
+  1. m4 H1 stored delta_mean sign vs sign_convention (direction fields re-verified OK)
+  2. m3_WALS.json missing h2_direction key (per-table h2_rejected consistent)
+  3. random 2-D null: 4 tables not executed (stage budget; 2 executed, xcheck verbatim)
+
+SYNC RULE (repo mirror): paper/ + stage4_summary.md + paper.json +
+  results/final_FROZEN.txt + process/RESEARCH_PLAN.md + lit/ +
+  stage1/2/3_summary.md; EXCLUDED: .log, .npz, files > 5MB, drafts,
+  data/raw (sandbox-retained; public sources re-fetchable, pinned).
+
+Status: STAGE5_FINAL — 002 rerun closed. Next queue item: 003 stage 3b.
+================================================================

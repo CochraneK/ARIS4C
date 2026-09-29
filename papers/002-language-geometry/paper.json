@@ -1,119 +1,99 @@
 {
   "id": "002",
   "slug": "language-geometry",
-  "title": "Testing the periodic-table hypothesis of human language: predictive evidence does not support a global circular organization",
-  "short_title": "Testing linguistic periodicity",
+  "title": "The Periodic Table of Languages? A Predictive Stress-Test of Global Circular Organization in Typological Feature Space",
+  "short_title": "Language periodic table (rerun)",
   "year": 2026,
-  "status": "submission-ready-author-metadata-pending",
-  "domain": "linguistic typology / quantitative linguistics / language universals / model comparison",
-  "summary": "A predictive stress test of the simple global-circle form of the language periodic-table hypothesis across TLI, GBI, and WALS. Family-held-out evidence and direct circularity diagnostics do not support the tested global circular geometry; hierarchical/non-circular models provide stronger predictive benchmarks without establishing one universal tree geometry.",
+  "status": "stage5_final",
+  "run": "local-ARIS-rerun-2026-09-26",
+  "domain": "linguistic typology / circular seriation / holdout prediction / geometry comparison",
+  "summary": "Rerun (local ARIS) predictive stress-test of the 'periodic table of languages' claim: six language x feature tables (TLI x3, GBI x2, WALS auxiliary; 555-2,501 languages) under leave-one-family-out (509 executed folds). Pre-registered H1-H4 with margin 0.02 nats/cell. Results: (i) direct circularity diagnostic significant in 4/6 tables (one-sided p <= 0.03, R = 0.049-0.083), ns on TLI_stat_large (p = 0.734) and WALS (p = 0.234, 99.83% imputed); (ii) H1: circular beats marginal baseline on all 3 TLI tables (log-loss 0.4666-0.4857 vs 0.5241-0.5402; sign-test p <= 1.17e-06) but loses on both GBI tables (0.6691/0.6808 vs 0.5410/0.5330; p <= 4.02e-21); (iii) H2 rejected: UPGMA dominates circular on all 5 main tables (family-level 95% CI lower bounds 0.0465-0.1144 above margin), MDS on 3 of 5; (iv) H3 rejected/downgraded - three-layer direction inconsistent (sole outlier source = GBI layer, leave-out-verified) and every layer comprehensively dominated by non-circular comparators. Robustness: leakage guard tightening (|r| 0.90 -> 0.95) no verdict flips; circular strictly worse than pure Macroarea geographic prior on both GBI tables (M5a worse = TRUE); executed random 2-D layout nulls (2 tables) show MDS advantage is not MDS-specific (per-family p = 0.31-0.54). Verdict (claims item 3 phrasing): the periodic structure does not provide holdout predictive power. Provenance: no in-domain indexed source for the claim (OpenAlex negative finding, registered); all data re-fetched + pinned 2026-09-26, all code newly written; M1X double-run byte-identical; M3 xcheck diffs = 0.",
   "authors": [
     "Cochrane Kang"
   ],
   "aris": {
-    "provenance": "ARIS4C primary OpenAI GPT executor + independent WorkBuddy/Tencent Hy3 secondary review; review slot 002 promoted after PASS",
-    "version": "v0.4.26",
-    "commit": "951654847b015585385b2448c5667dcd04e7b56b",
-    "secondary_review": {
-      "provider": "WorkBuddy",
-      "model": "Tencent Hy3",
-      "verdict": "PASS",
-      "promotion_authorized": true,
-      "receipt_source": "../../ideas/language-periodic-system/refine-logs/SECONDARY_REVIEW_RECEIPT.md"
-    }
+    "provenance": "ARIS4C local rerun: ARIS v0.4.26, internal LLM gateway 172.16.25.104:1026 (Deepseek-Flash-V4, 128K hard cap); stage-1 executor death 16:50:38 + stage-2 executor death 03:18:12 (both 128K), completed by orchestrator direct-write (no LLM recompute, double-run verified); stage-3 executor completed normally (xcheck r2 diffs = 0); stage 4 bilingual manuscript orchestrator direct-write per frozen RESEARCH_PLAN section 7 (no LLM); data + M1/M2 frozen 2026-09-26, M3/M4/robustness frozen 2026-09-28, manuscript 2026-09-30",
+    "version": "v0.4.26"
   },
   "links": {
-    "paper_en": "https://github.com/CochraneK/ARIS4C/blob/main/papers/002-language-geometry/manuscript/DRAFT.md",
-    "paper_zh": "https://github.com/CochraneK/ARIS4C/blob/main/papers/002-language-geometry/manuscript/DRAFT.zh-CN.md",
-    "pipeline": "https://github.com/CochraneK/ARIS4C/blob/main/papers/002-language-geometry/process/STATUS.md",
-    "source": "https://github.com/CochraneK/ARIS4C/tree/main/papers/002-language-geometry",
-    "staging_provenance": "https://github.com/CochraneK/ARIS4C/tree/main/ideas/language-periodic-system",
-    "figures": "https://github.com/CochraneK/ARIS4C/tree/main/papers/002-language-geometry/figures",
-    "tables": "https://github.com/CochraneK/ARIS4C/blob/main/papers/002-language-geometry/manuscript/TABLES.md",
-    "submission_package": "https://github.com/CochraneK/ARIS4C/tree/main/papers/002-language-geometry/submission/linguistic-typology",
-    "submission_qa": "https://github.com/CochraneK/ARIS4C/blob/main/papers/002-language-geometry/submission/linguistic-typology/SUBMISSION_QA.md",
-    "paper_en_full": "paper/002/en/main.html",
-    "paper_zh_full": "paper/002/zh/main.html",
-    "paper_en_pdf": "paper/002/en/main.pdf",
-    "paper_zh_pdf": "paper/002/zh/main.pdf"
+    "paper_en": "paper/paper_EN.md",
+    "paper_zh": "paper/paper_ZH.md",
+    "notes": "paper/paper_EN_notes.md",
+    "frozen_declaration": "results/final_FROZEN.txt",
+    "research_plan": "process/RESEARCH_PLAN.md",
+    "lit_registry": "lit/REGISTRY.md",
+    "data_record": "data/raw/MANIFEST.tsv (pinned: annagraff/crossling-curated @ 255632bc, cldf-datasets/wals @ f97440d6, glottolog/glottolog-cldf @ 072ca0d0; fetch 2026-09-26)"
   },
   "tags": [
     "ARIS",
     "ARIS4C",
+    "rerun",
     "linguistic typology",
-    "language periodic table",
-    "model comparison",
     "circular seriation",
-    "WALS",
-    "Grambank",
-    "TLI",
-    "GBI"
+    "periodic table of languages",
+    "holdout prediction",
+    "leave-one-family-out",
+    "negative result"
   ],
-  "submission": {
-    "target_journal": "Linguistic Typology",
-    "manuscript_review_verdict": "PASS_SUBMISSION_PREP",
-    "technical_package_verdict": "TECHNICAL_SUBMISSION_PACKAGE_PASS",
-    "final_reviewed_workflow_run": 35412714647,
-    "final_artifact_id": 10575195098,
-    "artifact_digest": "sha256:d43a6c0e3a136ff71d918a8ce07df05f2a22dead5c38789457b9c3710007d192",
-    "blocking_items": [
-      "refresh/re-QA Linguistic Typology package against canonical six-figure manuscript",
-      "author metadata/declarations",
-      "actual ScholarOne submission"
-    ],
-    "package_refresh_required": true,
-    "package_refresh_reason": "Canonical EN/ZH manuscripts expanded from the previously QA'd three-figure journal package to a six-figure visual narrative after build commit 608bc871fd4a634a0906b93aeabcd47675e8cb08.",
-    "technical_package_scope": "TECHNICAL_SUBMISSION_PACKAGE_PASS is historical for workflow run 35412714647 / build commit 608bc871fd4a634a0906b93aeabcd47675e8cb08 (3-figure package); re-QA required before ScholarOne.",
-    "latest_verified_manuscript_ci": {
-      "run": 35422718503,
-      "run_number": 114,
-      "commit": "99568d00fa33b6dd8bae7610965d32d5bac213c2",
-      "conclusion": "success"
-    }
-  },
-  "bilingual_delivery": {
-    "english": true,
-    "chinese": true
-  },
   "outputs": {
     "paper_en": "complete",
     "paper_zh": "complete",
-    "figures": {
-      "status": "complete",
-      "count": 6,
-      "strategy": "adaptive visual narrative; sequential main-text figures"
+    "notes": "complete",
+    "results_frozen": [
+      "results/m1_*.json (6 tables)",
+      "results/m2_*.json (6 tables + m2_results.json)",
+      "results/m3_*.json (6 tables + m3_results.json)",
+      "results/m4_aggregation.json",
+      "results/robustness_leaveout_layer.json",
+      "results/robustness_m5_priors.json",
+      "results/leak_sens_GBI_stat_raw.json",
+      "results/m3_null_TLI_stat_small.tsv + m3_null_TLI_log_small.tsv",
+      "results/leakage_check.tsv (202,983 data rows)",
+      "results/m3_sha256.txt"
+    ],
+    "lit_frozen": [
+      "lit/REGISTRY.md",
+      "lit/LIT_NOTES.md"
+    ],
+    "code": "code/ (fetch + m1_*, m2_*, m3_comparators.py, m4_robust.py) - sandbox only, not synced (no size violation; kept in ARIS4C-local per plan A)",
+    "figures": "none (tables-only presentation)",
+    "data": "not synced (raw CSVs > 5MB rule; public sources pinned by commit + sha256 in data/raw/MANIFEST.tsv, sandbox-retained)",
+    "pdf": "not built (outside stage 5 contract for rerun)"
+  },
+  "key_numbers": {
+    "m1_diagnostic": {
+      "TLI_stat_small": "R=0.053851946851075846 p=0.004 reject_null",
+      "TLI_stat_large": "R=0.05174877999774007 p=0.734 ns",
+      "TLI_log_small": "R=0.060353030969664885 p=0.03 reject_null",
+      "GBI_stat": "R=0.04862160710577147 p=0.001 reject_null",
+      "GBI_log": "R=0.0832751225701077 p=0.0 reject_null",
+      "WALS": "R=0.9514340507219855 p=0.234 ns [impute 0.9982576569372251]"
     },
-    "tables": {
-      "status": "complete",
-      "count": 6
+    "m2_h1": {
+      "TLI_stat_small": "circ 0.4665523412608537 vs marg 0.5401859302363116, sign_p=5.2573169769006436e-09, circular_better",
+      "TLI_stat_large": "circ 0.48572673315998505 vs marg 0.5314238716262168, sign_p=1.8829338019072798e-08, circular_better",
+      "TLI_log_small": "circ 0.4747657966533464 vs marg 0.5240766780036488, sign_p=1.1688116132369708e-06, circular_better",
+      "GBI_stat": "circ 0.669097174599512 vs marg 0.5410274927960423, sign_p=5.293955920339377e-23, marginal_better",
+      "GBI_log": "circ 0.6807653926821746 vs marg 0.5330256672618042, sign_p=4.0234064994579266e-21, marginal_better",
+      "WALS": "circ 1.0738384604729019 vs marg 1.1842131436781866, sign_p=0.0037465093469812305, perm_p=null, circular_better [auxiliary]"
     },
-    "exception": "",
-    "pdf": {
-      "status": "complete",
-      "english": true,
-      "chinese": true,
-      "builder": "tools/build_public_pdfs.py"
+    "m3_h2": {
+      "upgma_rejected": "TLI_small d=0.1721387200961701 (lb 0.05672952583770871) / TLI_large d=0.25584262422185433 (lb 0.10079888488359529) / TLI_log d=0.17964204609406967 (lb 0.0464988785014972) / GBI_stat d=0.2274294630612014 (lb 0.11437239602694357) / GBI_log d=0.20915550801328936 (lb 0.11184268797037789) - all 5 main tables REJECTED",
+      "mds_rejected": "TLI_large d=0.18972934401346964 (lb 0.034734639052493556) / GBI_stat d=0.16945992445168429 (lb 0.056601518708417724) / GBI_log d=0.1810227046374732 (lb 0.05932316493210508) REJECTED; TLI_small / TLI_log not rejected (lb negative)",
+      "WALS": "neither rejected (upgma lb -0.26760759137578527, mds lb -0.7308947384132571) [auxiliary]"
     },
-    "one_page_visual": {
-      "status": "complete",
-      "repo_path": "docs/assets/paper-at-a-glance/002.webp",
-      "language": "zh-CN",
-      "purpose": "one-page visual explanation of the complete paper for the portfolio table"
+    "m4_h3": {
+      "verdict": "H3 拒绝/降级（逐层依据见 basis；探索性聚合、非新增假设）",
+      "h1_layers": "TLI circular 3:0 / GBI marginal 2:0 (dominance) / WALS circular 1:0 -> agreement FALSE, outlier source GBI",
+      "h2_upgma": "3:0 / 2:0 / 1:0 all dominance -> TRUE all three layers",
+      "h2_mds": "3:0 / 2:0 / 1:0 all dominance -> TRUE all three layers"
+    },
+    "robustness": {
+      "leaveout_layer": "H1 sole outlier source = GBI layer (GBI-out -> agreement TRUE); all 9 H2 cells TRUE",
+      "leakage_sens": "GBI_stat |r| 0.90->0.95: no direction change (H1 d 0.12806968180346945 -> 0.1314653409087065)",
+      "m5a_geographic_prior": "GBI_stat worse=TRUE d=0.15748002865395194 CI[0.021623599986282327,0.3051912158412761]; GBI_log worse=TRUE d=0.18060472541544145 CI[0.055753246940047706,0.30615435396064267]; other 4 tables worse=FALSE",
+      "random_2d_null": "executed TLI_stat_small (p mean 0.5398) + TLI_log_small (p mean 0.3096); 4 tables not executed (budget); xcheck first-3-family verbatim match"
     }
   },
-  "portfolio_id": "ARIS4C-002",
-  "series_id": "LING-01",
-  "series": {
-    "code": "LING",
-    "index": 1,
-    "name": "Language Systems",
-    "successor": "017",
-    "successor_series_id": "LING-02",
-    "relation": "predecessor"
-  },
-  "lineage": {
-    "conceptual_successor": "017",
-    "successor_slug": "predictive-language-space",
-    "boundary": "002 tests whether a simple global circular geometry predicts observed typological structure; 017 asks whether learned typological constraints can predict held-out, missing, extinct-proxy, or unrealized configurations."
-  }
+  "frozen_date": "2026-09-28"
 }
