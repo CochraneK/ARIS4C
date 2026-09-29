@@ -1,0 +1,45 @@
+# ARIS4C-003 重跑 · 分段执行 · 段1（文献抽取与数据可行性画像）
+
+你是 ARIS4C-003（殖民遗产与学科优势的全球地理）重跑的执行器。本次为分段执行的第 1 段：只做文献抽取与数据可行性画像，不做任何建模/分析/写稿，**不查看任何确认 outcome 值**（country×field 产出/影响/协作矩阵一律不物化、不记录数值——pre-outcome gate 之前）。后续段会基于本段产物继续。
+
+## 上下文纪律（硬性，防 128K 溢出）
+- 禁止打印大文件全文。读大文件只读表头 + 前 3–5 行 + 行数统计，结果写盘。
+- 中间结果一律写入文件，用路径引用；对话里只汇报路径 + 关键数字，不复述内容。
+- 已存在的文件先 ls/检查，不要重复下载、重复读。
+- 单次工具输出尽量短。推理控制在 1–2 句。总工具调用 ≤25 次。
+- bash 调用不要传 timeout 参数。
+- 写文件必须分块（单块 ≤60 行，heredoc `>>` 追加），禁止单次响应写大文件。
+
+## 现状
+- 工作目录即本 run 目录。RESEARCH_BRIEF.md 是唯一 idea 输入（先读它）。
+- data/ lit/ code/ results/ 尚不存在，需本段自建（results/ 建空目录即可）；无任何已下载数据。
+- **禁止读取/复制/复用旧仓库 `D:\Software\ARIS4C\papers\` 下任何文件**（旧 run 停在 78% 分析中，其编码/中间结果/文献清单一律不参考）。
+
+## 本段任务
+1. 读 RESEARCH_BRIEF.md，确认冻结设计四件套（只确认理解，不改动）：
+   - 四层分析单元 A（country×discipline×year，主）/ B（country-pair×discipline×year，主网络）/ C（imperial-center×discipline×year，小 N 二级）/ D（university×discipline×ranking year，二级三角）；
+   - 三个暴露 family：2.1 前殖民/依附（国家级主）/ 2.2 二元前殖民（网络主）/ 2.3 帝国中心（小 N 二级）/ 2.4 范围外不纳入确认推断；
+   - H1–H6（H1 暴露×学科梯度，主分析须在查暴露关联前选定有界/对称或 log 变换；H2 随 IKES 单调的特异性；H3 前殖民间异质性；H4 dyad 持久性；H5 帝国中心 profile；H6 声誉异常偏高）；
+   - 推断纪律：关联须 net of 当代聚合国力（alpha_ct 固定效应）；**现代 GDP/R&D/大学规模是历史过程的 descendant，不得机械当 baseline 混杂**；小 N 层用比较/精确推断；排名数据永远二级。
+2. 文献抽取（本段核心门控产物）：
+   - 首选 OpenAlex API（`https://api.openalex.org`，免费无 key），Crossref（`https://api.crossref.org`）补核引用。不要用 Semantic Scholar（429）。
+   - 检索方向（5 类，每类 1–2 条高精度查询 × top 10–20，不穷举）：
+     ① 殖民遗产/帝国中心—外围与科学产出地理（"colonial legacy"×science/geography of science/center-periphery）；
+     ② 文献计量方法：RCA（revealed comparative advantage in science）、归一化引用影响（FWCI/CNS 类）、跨国 co-authorship 网络方法；
+     ③ 历史殖民暴露的公开数据集/量化指标（殖民时长、独立年代、settler/exploitation 类型、帝国归属）；
+     ④ 学科专业化与知识生产结构（discipline structure、knowledge domains、scientific specialization）；
+     ⑤ 科学声誉/排名的文献计量三角验证方法。
+   - 建 `lit/REGISTRY.md`（分块写 ≤60 行/块，本段末尾冻结）。每研究一条，字段：
+     `[序号] 标题 / 第一作者+年份 / 期刊 / DOI / 主题类（①–⑤）/ 方法或数据一句话 / 对本课题相关性一句 / 核实状态（VERIFIED 经 Crossref DOI 核存在+元数据 / UNVERIFIED+原因）`。
+   - 每条引用逐条 Crossref 核：确认存在 + 标题/年份/作者对齐。找不到就标 UNVERIFIED 并写原因，不得编造。
+3. 写 `data/DATA_PROFILE.md`（数据可行性画像，门控核心；只验 schema/量级/可及性，**不物化 outcome 矩阵**）：
+   - **历史殖民暴露**：候选公开数据集 ≥2 个（国家级：殖民时长/独立年代/殖民类型/帝国归属；能到 dyad 级更好），每个记 URL + 许可 + 粒度（country/dyad）+ 访问状态（可达/需申请/失效）。本段不下载。
+   - **OpenAlex 面板**：A 层（country×discipline×year）——用 1 条最小 test 查询验证字段路径（authorships.country_code、fields/concepts 标签、publication_year、cited_by_count）与无 key 限流（10 rps、每日 10 万 results），并查相关 filter 组合的 `meta.count` 量级，估算总请求数与耗时预算；**test 查询只记 schema 与 count，不记任何 country×field 数值**。B 层（dyad）——OpenAlex 无直接 dyad 端点：验证替代路径（逐 work 聚合 authorships 的可行性/请求量，或现成开源 co-authorship 数据集），给可行性判定。
+   - **学科确认性集合 + IKES**：从 OpenAlex fields 分类列举候选确认性学科 + 对照学科（Materials/现代工程类 comparator），只列候选清单（名称 + 标签路径）；起草 IKES 双盲编码协议（编码维度、量表、双盲流程、分歧裁决、provenance 字段），并**显式写明本 run 独立性局限：executor/reviewer 同模型（内网 DeepSeek-Flash-V4-正式版），双盲弱于真双模型，不得声称"独立 Coder B"**。
+   - **排名/声誉（二级）**：QS/THE/ARWU 公开可得性与粒度（university×year），只记可及性，本段不下载。
+   - **判定**：A/B/C/D 四层各判「可建/降级/不可建」；H1–H6 各判「数据可支撑/需降级/暂不可」；给出 pre-outcome gate（DESIGN_LOCKED）所需剩余输入清单。
+4. 写 `lit/LIT_NOTES.md`：文献汇编（殖民与科学地理、中心—外围理论、文献计量方法、历史暴露量化、声誉三角）。每研究：标题/作者/年份/来源 + 相关性一句。
+5. 写 `stage1_summary.md`：本段产物路径清单、各数据层/各 H 的可行性判定、已确认的 gate 前冻结输入、遗留问题、给段2的建议（段2 = 暴露定义冻结 + 学科集合与 IKES 编码 + OpenAlex 面板构建）。
+
+## 完成标准
+`lit/REGISTRY.md`、`data/DATA_PROFILE.md`、`lit/LIT_NOTES.md`、`stage1_summary.md` 四件落盘，登记表冻结，全程零 outcome 数值记录（provenance 可查）。对话只汇报路径与关键数字。不要开始任何建模/分析/写稿。不要读旧仓库。
