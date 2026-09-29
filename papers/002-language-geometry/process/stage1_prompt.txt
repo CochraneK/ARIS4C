@@ -1,0 +1,45 @@
+# 段1 任务 — 002-language-geometry（语言几何：元素周期表假设的预测检验）· 脚手架重建 + 登记表 + 数据可行性画像
+
+## 角色与环境
+- 你是 ARIS executor。工作目录 = `D:\Software\ARIS4C-local\002-language-geometry`（下称「本目录」），全部产物写在本目录下。
+- Python venv：`C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe`（pandas/numpy/scipy 可用）。无 GPU。
+- 先读本目录 `RESEARCH_BRIEF.md`（唯一 idea 输入）与 `COORDINATION.md`（纪律）。
+
+## 红线（违反=段失败）
+- **禁读/复用旧仓库 `D:\Software\ARIS4C\papers\002-language-geometry\` 的 code/data/results**；其 process 文档仅可作背景（识别 TLI/GBI/WALS 的公开来源），旧 run 数值一律不得写入任何交付物。
+- 数据一律公开源重新获取（记录 URL+版本+获取日期）。
+- **禁止编造假设填坑**：关键设计点（指标定义、split 方案等）若无法从 brief 的问题定义推导，停在该点，把具体缺口写进 `stage1_summary.md` 报用户，宁可留缺口不可编造。
+
+## 交付物（四组，门控=前三组全冻结 + summary 落盘）
+
+### A. idea 脚手架重建 → `process/RESEARCH_PLAN.md`（冻结件 1）
+1. 假设编号表（≥H1–H3，可按 brief 推导增补）：H1 全局圆形组织具有超出边际基线的留出预测力；H2 圆形组织不劣于非圆形基准（层次/树感知/潜因子）；H3 预测结论跨 TLI/GBI/WALS 稳健。每条假设给可计算的操作化定义（指标+判据）。
+2. 比较器模型族（每族给段2 将用的具体估计器，纯 Python 可实现）：circular seriation / 层次·树感知 / 潜因子·低维 / 特征边际·独立基线 /（可选）随机空间布局 null。
+3. 证伪条件（brief Gaps.3 四条逐条落）。
+4. 数据版本冻结计划：TLI/GBI/WALS 各自的候选公开来源（URL+版本标识+获取日期占位，段1 实际下载后回填）+ target leakage 检查规则（目标特征或其近义编码不得入预测变量集）。
+5. family-held-out split 方案：留出单位=语系；最小语系规模规则（建议 ≥3 语言，可按数据实际调整并记录理由）；分层（按层 TLI/GBI/WALS 分别做，不合并）。
+6. M-estimand 清单：M1 circularity 直接诊断 / M2 family-held-out 圆形 vs 边际基线 / M3 圆形 vs 非圆形模型族 / M4 跨层一致性（可按推导增删，每条标注可估性预判）。
+
+### B. 文献登记表 → `lit/REGISTRY.md` + `lit/LIT_NOTES.md`（冻结件 2）
+- OpenAlex 检索 ≥5 轮（方向示例：periodic table of languages / circular seriation typological features / geometry of language universals / WALS feature prediction / family-held-out typology prediction / circular MDS linguistic features），候选去重后逐条登记（编号/标题/载体/年份/DOI/核心主张/是否使用 TLI·GBI·WALS）。
+- 每条用 Crossref 逐条核实（`api.crossref.org/works/{doi}`，UA 头必需）→ `results/crossref_check.txt`；书目字段以 Crossref 返回为准。
+- 覆盖下限：圆形/周期表假设来源 + circular seriation 方法 + 层次/潜因子比较器 + TLI/GBI/WALS 数据层描述文献。条数由证据定，不设上限。
+
+### C. 数据可行性画像 → `data/DATA_PROFILE.md`（冻结件 3）
+- 三数据层从公开源下载/核验（TLI/GBI/WALS 的确切公开来源由你在 B 组文献+网络检索中确认；找不到确切来源的层，标 C 级并写明找过什么）。
+- 每层报告：语言数 / 语系数（语系标签来源，如 Glottolog）/ 特征数 / 编码类型（二值·多态·连续）/ 缺失模式 / 系统发育可得性 / 获取 URL+版本+日期。
+- family-held-out 可行性：按 split 规则列出可留出语系清单与留出 cell 数。
+- circularity 诊断可算性：每层有效特征数是否够（建议 ≥12 个二值化特征）+ 拟用直接检验（如布局首谐波周期性检验）是否可实现。
+- A/B/C 分级（A=按原方案可估 / B=需降级 / C=不可估）+ 各 M-estimand 的可估性判定。
+- **不合并数据集凑覆盖**（brief 红线）。
+
+### D. `stage1_summary.md`
+- 门控状态（三件冻结件是否落盘+残标=0）、核心结论（各 M 可估性、各层 A/B/C）、给段2 的建议、（若有）缺口与停报项。
+
+## 纪律（001 全量沉淀）
+- 分块写：单块 ≤80 行（heredoc `>>` 追加）；写代码文件单块 ≤60 行。
+- 禁读大 CSV 全文（head/wc/python 摘要）；python stdout ≤40 行。
+- bash：禁复合命令/禁 cmd 语法（`cd /d`、`for %f`）/禁全盘递归 find；只允许 python 脚本 + ls/wc/head/cat + 唯一 head 管道；长输出先写盘。
+- 不传 bash timeout 参数；失败重试 ≤2 次后记录继续。
+- 总工具调用 ≤30；推理 1–2 句，不复述本 prompt。
+- 门控通过后写 `stage1_summary.md` 即停，**不要做段2 的工作**。

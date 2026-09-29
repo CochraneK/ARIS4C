@@ -1,0 +1,64 @@
+{
+ "table": "TLI_stat_small",
+ "n_families": 82,
+ "n_families_done": 82,
+ "n_families_skipped": 0,
+ "n_cells_valid": 31729,
+ "impute_rate": 0.05102247809665485,
+ "wals_note": null,
+ "circular": {
+  "mean_logloss": 0.4665523412608537,
+  "top1": 0.6852578290411468,
+  "n_families_valid": 82,
+  "matches_m2": true
+ },
+ "marginal": {
+  "mean_logloss": 0.5401859302363116,
+  "top1": 0.7437321241916925,
+  "n_families_valid": 82,
+  "matches_m2": true
+ },
+ "upgma": {
+  "mean_logloss": 0.2944136211646837,
+  "top1": 0.6710163547004158,
+  "n_families_valid": 82,
+  "delta_vs_circular_mean": 0.1721387200961701,
+  "ci95": [
+   0.05672952583770871,
+   0.36745613157407814
+  ],
+  "n_delta_folds": 82,
+  "h2_rejected": true,
+  "verdict": "H2 拒绝（圆形显著劣：CI 下界 0.0567 > margin 0.02）"
+ },
+ "mds": {
+  "mean_logloss": 0.40511292118480985,
+  "top1": 0.6757788471825374,
+  "n_families_valid": 82,
+  "delta_vs_circular_mean": 0.061439420076044006,
+  "ci95": [
+   -0.1281043339039451,
+   0.22765075610962462
+  ],
+  "n_delta_folds": 82,
+  "h2_rejected": false,
+  "verdict": "H2 不被拒绝（Δ 均值 0.0614, 95% CI [-0.1281, 0.2277]，下界未超 margin 0.02）"
+ },
+ "m5a_macroarea": {
+  "status": "Macroarea 可用（钉版 glottolog languages.csv Macroarea 列）",
+  "delta_vs_circular_mean": 0.018272345376294116,
+  "ci95": [
+   -0.18901376567390407,
+   0.27390558765886663
+  ],
+  "n_delta_folds": 82,
+  "circular_significantly_worse_than_macroarea": false,
+  "note": "探索性、非判定项；residual 增益≈0（下界未超 margin）→ 增益可被地理先验解释（降级信号）"
+ },
+ "null_2d": {
+  "status": "已执行"
+ },
+ "capped": false,
+ "elapsed_sec": 3328.3,
+ "seed": 42
+}

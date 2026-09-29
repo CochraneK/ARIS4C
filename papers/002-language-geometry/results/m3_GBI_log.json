@@ -1,0 +1,64 @@
+{
+ "table": "GBI_log",
+ "n_families": 75,
+ "n_families_done": 75,
+ "n_families_skipped": 0,
+ "n_cells_valid": 104066,
+ "impute_rate": 4.416174976881993e-05,
+ "wals_note": null,
+ "circular": {
+  "mean_logloss": 0.6807653926821746,
+  "top1": 0.660196485904223,
+  "n_families_valid": 75,
+  "matches_m2": true
+ },
+ "marginal": {
+  "mean_logloss": 0.5330256672618042,
+  "top1": 0.7265465699509146,
+  "n_families_valid": 75,
+  "matches_m2": true
+ },
+ "upgma": {
+  "mean_logloss": 0.4716098846688852,
+  "top1": 0.6665857352153227,
+  "n_families_valid": 75,
+  "delta_vs_circular_mean": 0.20915550801328936,
+  "ci95": [
+   0.11184268797037789,
+   0.29688171588489665
+  ],
+  "n_delta_folds": 75,
+  "h2_rejected": true,
+  "verdict": "H2 拒绝（圆形显著劣：CI 下界 0.1118 > margin 0.02）"
+ },
+ "mds": {
+  "mean_logloss": 0.4997426880447014,
+  "top1": 0.6657727205091001,
+  "n_families_valid": 75,
+  "delta_vs_circular_mean": 0.1810227046374732,
+  "ci95": [
+   0.05932316493210508,
+   0.2764157475540817
+  ],
+  "n_delta_folds": 75,
+  "h2_rejected": true,
+  "verdict": "H2 拒绝（圆形显著劣：CI 下界 0.0593 > margin 0.02）"
+ },
+ "m5a_macroarea": {
+  "status": "Macroarea 可用（钉版 glottolog languages.csv Macroarea 列）",
+  "delta_vs_circular_mean": 0.18060472541544145,
+  "ci95": [
+   0.055753246940047706,
+   0.30615435396064267
+  ],
+  "n_delta_folds": 75,
+  "circular_significantly_worse_than_macroarea": true,
+  "note": "探索性、非判定项；圆形显著劣于 Macroarea 先验（CI 下界超 margin）→ 圆形几何不可完全由地理先验还原"
+ },
+ "null_2d": {
+  "status": "未执行（预算；估计 20625s > 剩余 10766s）"
+ },
+ "capped": false,
+ "elapsed_sec": 33.8,
+ "seed": 42
+}

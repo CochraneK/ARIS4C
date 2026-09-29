@@ -1,0 +1,190 @@
+# crossref_check.txt — 2026-09-26 — all DOIs of lit candidates verified one-by-one
+OK	10.1007/s11786-017-0329-x	2018	Port; Gheorghita; Guth; Clark; Liang; Dasu	Mathematics in Computer Science	Persistent Topology of Syntax
+OK	10.1007/s11786-021-00520-5	2022	Port; Karidi; Marcolli	Mathematics in Computer Science	Topological Analysis of Syntactic Structures
+OK	10.1016/j.patcog.2019.107192	2020	Evangelopoulos; Brockmeier; Mu; Goulermas	Pattern Recognition	Circular object arrangement using spherical embeddings
+OK	10.1038/s41467-025-67463-4	2026	Kemp	Nature Communications	Symmetry in category systems across languages
+OK	10.1038/s41562-025-02325-z	2025	Verkerk; Shcherbakova; Haynie; Skirgård; Rzymski; Atkinson	Nature Human Behaviour	Enduring constraints on grammar revealed by Bayesian spatiophylogenetic analyses
+OK	10.1038/s41597-024-04319-4	2025	Graff; Chousou-Polydouri; Inman; Skirgård; Lischka; Zakharko	Scientific Data	Curating global datasets of structural linguistic features for independence
+OK	10.1126/sciadv.adg6175	2023	Skirgård; Haynie; Blasi; Hammarström; Collins; Latarche	Science Advances	Grambank reveals the importance of genealogical constraints on linguistic diversity and hi
+OK	10.1137/21M139356X	2021	Armstrong; Guzmán; Sing Long	SIAM Journal on Mathematics of Data Science	An Optimal Algorithm for Strict Circular Seriation
+OK	10.18653/v1/N19-1156	2019	Bjerva; Kementchedjhieva; Cotterell; Augenstein	Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)	A Probabilistic Generative Model of Linguistic Typology
+NO-DOI	A multimodal contrastive study of (dis)fluency across languages and settings : t (skipped, not Crossref-verifiable)
+NO-DOI	Between Majority Power and Minority Resistance: Kurdish Linguistic Rights in Tur (skipped, not Crossref-verifiable)
+NO-DOI	Combinatorial algorithms for the seriation problem (skipped, not Crossref-verifiable)
+NO-DOI	Complement clauses and complementation systems: a cross-linguistic study of gram (skipped, not Crossref-verifiable)
+OK	https://doi.org/10.1002/9781118346136.ch10	2015	Hawkins	The Handbook of Language Emergence	Typological Variation and Efficient Processing
+OK	https://doi.org/10.1002/ar.a.20050	2004	You; Weinbaum; Cowin; Schaffler	The Anatomical Record Part A: Discoveries in Molecular, Cellular, and Evolutionary Biology	Ultrastructure of the osteocyte process and its pericellular matrix
+OK	https://doi.org/10.1002/imt2.43	2022	Gu	iMeta	Complex heatmap visualization
+OK	https://doi.org/10.1002/wcs.1251	2013	Malt; Majid	WIREs Cognitive Science	How thought is mapped into words
+OK	https://doi.org/10.1007/978-1-4612-0005-5	2001	Gracia-Bondía; Várilly; Figueroa		Elements of Noncommutative Geometry
+OK	https://doi.org/10.1007/bf02101490	1994	Kontsevich; Manin	Communications in Mathematical Physics	Gromov-Witten classes, quantum cohomology, and enumerative geometry
+OK	https://doi.org/10.1007/s00366-018-0616-4	2019	Omairey; Dunning; Sriramula	Engineering with Computers	Development of an ABAQUS plugin tool for periodic RVE homogenisation
+OK	https://doi.org/10.1007/s10460-020-10162-1	2021	Rissing; Inwood; Stengel	Agriculture and Human Values	The invisible labor and multidimensional impacts of negotiating childcare on farms
+OK	https://doi.org/10.1007/s11075-022-01461-1	2023	Concas; Fenu; Rodriguez; Vandebril	Numerical Algorithms	The seriation problem in the presence of a double Fiedler value
+OK	https://doi.org/10.1007/s11109-016-9368-2	2017	Bauer; Barberá; Ackermann; Venetz	Political Behavior	Is the Left-Right Scale a Valid Measure of Ideology?
+OK	https://doi.org/10.1007/s11263-016-0981-7	2017	Krishna; Zhu; Groth; Johnson; Hata; Kravitz	International Journal of Computer Vision	Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations
+OK	https://doi.org/10.1016/0079-6107(73)90003-5	1973	Bayley	Progress in Biophysics and Molecular Biology	The analysis of circular dichroism of biomolecules
+OK	https://doi.org/10.1016/0095-8956(74)90094-x	1974	Gavril	Journal of Combinatorial Theory, Series B	The intersection graphs of subtrees in trees are exactly the chordal graphs
+OK	https://doi.org/10.1016/0095-8956(88)90038-x	1988	Spinrad	Journal of Combinatorial Theory, Series B	Circular-arc graphs with clique cover number two
+OK	https://doi.org/10.1016/0771-050x(78)90024-4	1978	Laporte	Journal of Computational and Applied Mathematics	The seriation problem and the travelling salesman problem
+OK	https://doi.org/10.1016/j.bbagen.2018.03.005	2018	Patty; Luo; Snik; Ariese; Buma; ten Kate	Biochimica et Biophysica Acta (BBA) - General Subjects	Imaging linear and circular polarization features in leaves with complete Mueller matrix p
+OK	https://doi.org/10.1016/j.biomaterials.2011.09.093	2012	Sur; Pashuck; Guler; Ito; Stupp; Launey	Biomaterials	A hybrid nanofiber matrix to control the survival and maturation of brain neurons
+OK	https://doi.org/10.1016/j.cpc.2018.01.012	2018	van Setten; Giantomassi; Bousquet; Verstraete; Hamann; Gonze	Computer Physics Communications	The PseudoDojo: Training and grading a 85 element optimized norm-conserving pseudopotentia
+OK	https://doi.org/10.1016/j.cpc.2018.09.020	2019	Kapil; Rossi; Marsalek; Petraglia; Litman; Spura	Computer Physics Communications	i-PI 2.0: A universal force engine for advanced molecular simulations
+OK	https://doi.org/10.1016/j.disc.2008.04.003	2009	Lin; Szwarcfiter	Discrete Mathematics	Characterizations and recognition of circular-arc graphs and subclasses: A survey
+OK	https://doi.org/10.1016/j.ejc.2008.07.024	2009	Belkale; Chandran	European Journal of Combinatorics	Hadwiger’s conjecture for proper circular arc graphs
+OK	https://doi.org/10.1016/j.ejcts.2005.06.043	2005	Anderson; Ho; Redmann; Sanchez-Quintana; Lunkenheimer	European Journal of Cardio-Thoracic Surgery	The anatomical arrangement of the myocardial cells making up the ventricular mass
+OK	https://doi.org/10.1016/j.erss.2023.102954	2023	Sovacool; Iskandarova; Hall	Energy Research &amp; Social Science	Industrializing theories: A thematic analysis of conceptual frameworks and typologies for 
+OK	https://doi.org/10.1016/j.jclepro.2017.01.027	2017	Kivimaa; Hildén; Huitema; Jordan; Newig	Journal of Cleaner Production	Experiments in climate governance – A systematic review of research on energy and built en
+OK	https://doi.org/10.1016/j.jclepro.2019.02.045	2019	Mendoza; Gallego-Schmid; Azapagic	Journal of Cleaner Production	Building a business case for implementation of a circular economy in higher education inst
+OK	https://doi.org/10.1016/j.jmb.2018.07.026	2018	Erskine; MacPhee; Stanley-Wall	Journal of Molecular Biology	Functional Amyloid and Other Protein Fibers in the Biofilm Matrix
+OK	https://doi.org/10.1016/j.patcog.2019.107192	2020	Evangelopoulos; Brockmeier; Mu; Goulermas	Pattern Recognition	Circular object arrangement using spherical embeddings
+OK	https://doi.org/10.1016/j.scs.2021.102925	2021	Marchesi; Tweed	Sustainable Cities and Society	Social innovation for a circular economy in social housing
+OK	https://doi.org/10.1016/j.visres.2006.02.007	2006	Hegedüs; Szél; Horváth	Vision Research	Imaging polarimetry of the circularly polarizing cuticle of scarab beetles (Coleoptera: Ru
+OK	https://doi.org/10.1016/s0747-7171(10)80003-3	1992	Renegar	Journal of Symbolic Computation	On the computational complexity and geometry of the first-order theory of the reals. Part 
+OK	https://doi.org/10.1017/s0140525x02000122	2002	Carruthers	Behavioral and Brain Sciences	The cognitive functions of language
+OK	https://doi.org/10.1017/s0140525x0999094x	2009	Evans; Levinson	Behavioral and Brain Sciences	The myth of language universals: Language diversity and its importance for cognitive scien
+OK	https://doi.org/10.1021/acs.jchemed.1c00383	2022	Andino-Enríquez; Andino-Enríquez; Hidalgo-Báez; Chalán-Gualán; Gualapuro-Gualapuro; Belli	Journal of Chemical Education	Adaptation of the Periodic Table to Kichwa: An Ecuadorian Native Language
+OK	https://doi.org/10.1037/0097-7403.17.3.334	1991	von Fersen; Wynne; Delius; Staddon	Journal of Experimental Psychology: Animal Behavior Processes	Transitive inference formation in pigeons.
+OK	https://doi.org/10.1037/rev0000257	2021	Smith; Monaghan; Huettig	Psychological Review	The effect of orthographic systems on the developing reading system: Typological and compu
+OK	https://doi.org/10.1038/nature01586	2003	Read; Peterson; Tourasse; Baillie; Paulsen; Nelson	Nature	The genome sequence of Bacillus anthracis Ames and comparison to closely related bacteria
+OK	https://doi.org/10.1038/ncomms11515	2016	Wang; Hamad; MacLachlan	Nature Communications	Structure and transformation of tactoids in cellulose nanocrystal suspensions
+OK	https://doi.org/10.1038/ncomms15679	2017	Isayev; Oses; Toher; Gossett; Curtarolo; Tropsha	Nature Communications	Universal fragment descriptors for predicting properties of inorganic crystals
+OK	https://doi.org/10.1038/ncomms8461	2015	Matsuhisa; Kaltenbrunner; Yokota; Jinno; Kuribara; Sekitani	Nature Communications	Printable elastic conductors with a high conductivity for electronic textile applications
+OK	https://doi.org/10.1038/s41586-019-1335-8	2019	Tshitoyan; Dagdelen; Weston; Dunn; Rong; Kononova	Nature	Unsupervised word embeddings capture latent knowledge from materials science literature
+OK	https://doi.org/10.1038/s41586-021-03819-2	2021	Jumper; Evans; Pritzel; Green; Figurnov; Ronneberger	Nature	Highly accurate protein structure prediction with AlphaFold
+OK	https://doi.org/10.1038/s41588-023-01551-3	2023	Chapman; Luebeck; Sridhar; Wong; Dixit; Wang	Nature Genetics	Circular extrachromosomal DNA promotes tumor heterogeneity in high-risk medulloblastoma
+OK	https://doi.org/10.1038/s41592-019-0686-2	2020	Virtanen; Gommers; Oliphant; Haberland; Reddy; Cournapeau	Nature Methods	SciPy 1.0: fundamental algorithms for scientific computing in Python
+OK	https://doi.org/10.1038/s41593-022-01026-4	2022	Goldstein; Zada; Buchnik; Schain; Price; Aubrey	Nature Neuroscience	Shared computational principles for language processing in humans and deep language models
+OK	https://doi.org/10.1038/s41597-024-04319-4	2025	Graff; Chousou-Polydouri; Inman; Skirgård; Lischka; Zakharko	Scientific Data	Curating global datasets of structural linguistic features for independence
+OK	https://doi.org/10.1038/s42256-021-00438-4	2022	Fang; Liu; Lei; He; Zhang; Zhou	Nature Machine Intelligence	Geometry-enhanced molecular representation learning for property prediction
+OK	https://doi.org/10.1073/pnas.0610848104	2007	Dediu; Ladd	Proceedings of the National Academy of Sciences	Linguistic tone is related to the population frequency of the adaptive haplogroups of two 
+OK	https://doi.org/10.1073/pnas.1605782113	2016	Blasi; Wichmann; Hammarström; Stadler; Christiansen	Proceedings of the National Academy of Sciences	Sound–meaning association biases evidenced across thousands of languages
+OK	https://doi.org/10.1075/dia.20004.mac	2021	Macklin-Cordes; Bowern; Round	Diachronica	Phylogenetic signal in phonotactics
+OK	https://doi.org/10.1075/dia.23029.sin	2024	Sinnemäki; Di Garbo; Napoleão de Souza; Ellison	Diachronica	A typological approach to language change in contact situations
+OK	https://doi.org/10.1075/jul.00002.nor	2022	Norvik; Jing; Dunn; Forkel; Honkola; Klumpp	Journal of Uralic Linguistics	Uralic typology in the light of a new comprehensive dataset
+OK	https://doi.org/10.1080/03640210709336986	2007	Dowman	Cognitive Science	Explaining Color Term Typology With an Evolutionary Model
+OK	https://doi.org/10.1088/1126-6708/1999/12/027	1999	Sen	Journal of High Energy Physics	Universality of the tachyon potential
+OK	https://doi.org/10.1088/1126-6708/2008/02/101	2008	Babichev; Mukhanov; Vikman	Journal of High Energy Physics	<i>k</i>
+                    -Essence, superluminal propagation, causality and emergent ge
+OK	https://doi.org/10.1090/s0002-9904-1970-12628-3	1970	Tucker	Bulletin of the American Mathematical Society	Characterizing circular-arc graphs
+OK	https://doi.org/10.1090/s0273-0979-1989-15750-9	1989	Blum; Shub; Smale	Bulletin of the American Mathematical Society	On a theory of computation and complexity over the real numbers: 𝑁𝑃- completeness, recursi
+OK	https://doi.org/10.1093/bioinformatics/btv428	2015	Galili	Bioinformatics	dendextend: an R package for visualizing, adjusting and comparing trees of hierarchical cl
+OK	https://doi.org/10.1093/bioinformatics/btw405	2016	Wu; Anafi; Hughes; Kornacker; Hogenesch	Bioinformatics	MetaCycle: an integrated R package to evaluate periodicity in large scale data
+OK	https://doi.org/10.1093/iwc/iwaf050	2026	Knowles; Fledderjohann; Singh; Harper; McDowell; Tsouvalis	Interacting with Computers	Not just a number: a multidimensional approach to ageing in HCI
+OK	https://doi.org/10.1098/rsta.2012.0476	2014	Peverati; Truhlar	Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences	Quest for a universal density functional: the accuracy of density functionals across a bro
+OK	https://doi.org/10.1098/rstb.1950.0010	1950	Smith	Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences	The motor nervous system of the starfish,
+                    <i>Astropecten irregularis</
+OK	https://doi.org/10.1098/rstb.2020.0056	2021	Evans; Greenhill; Watts; List; Botero; Gray	Philosophical Transactions of the Royal Society B	The uses and abuses of tree thinking in cultural evolution
+OK	https://doi.org/10.1101/gad.1604607	2007	Schneider; Grosschedl	Genes &amp; Development	Dynamics and interplay of nuclear architecture, genome organization, and gene expression
+OK	https://doi.org/10.1103/physrevd.79.025023	2009	Iqbal; Liu	Physical Review D	Universality of the hydrodynamic limit in AdS/CFT and the membrane paradigm
+OK	https://doi.org/10.1103/revmodphys.72.873	2000	Dyre; Schrøder	Reviews of Modern Physics	Universality of ac conduction in disordered solids
+OK	https://doi.org/10.1103/revmodphys.81.109	2009	Castro Neto; Guinea; Peres; Novoselov; Geim	Reviews of Modern Physics	The electronic properties of graphene
+OK	https://doi.org/10.1105/tpc.109.071431	2010	Daum; Nicastro; Austin; McIntosh; Kühlbrandt	The Plant Cell	Arrangement of Photosystem II and ATP Synthase in Chloroplast Membranes of Spinach and Pea
+OK	https://doi.org/10.1107/s0909049505012719	2005	Ravel; Newville	Journal of Synchrotron Radiation	<i>ATHENA</i>
+                    ,
+                    <i>ARTEMIS</i>
+                   
+OK	https://doi.org/10.1109/32.825767	2000	Medvidovic; Taylor	IEEE Transactions on Software Engineering	A classification and comparison framework for software architecture description languages
+OK	https://doi.org/10.1111/cgf.12935	2016	Behrisch; Bach; Henry Riche; Schreck; Fekete	Computer Graphics Forum	Matrix Reordering Methods for Table and Network Visualization
+OK	https://doi.org/10.1111/cogs.12088	2014	Piantadosi; Gibson	Cognitive Science	Quantitative Standards for Absolute Linguistic Universals
+OK	https://doi.org/10.1111/j.1096-0031.1988.tb00514.x	1988	Gauthier; Kluge; Rowe	Cladistics	AMNIOTE PHYLOGENY AND THE IMPORTANCE OF FOSSILS
+OK	https://doi.org/10.1111/j.1096-0031.2003.tb00375.x	2003	D’Elıacute;a	Cladistics	Phylogenetics of Sigmodontinae (Rodentia, Muroidea, Cricetidae), with special reference to
+OK	https://doi.org/10.1111/j.2044-8317.1974.tb00534.x	1974	Hubert	British Journal of Mathematical and Statistical Psychology	SOME APPLICATIONS OF GRAPH THEORY AND RELATED NON‐METRIC TECHNIQUES TO PROBLEMS OF APPROXI
+OK	https://doi.org/10.1111/j.2044-8317.1976.tb00714.x	1976	Hubert; Schultz	British Journal of Mathematical and Statistical Psychology	QUADRATIC ASSIGNMENT AS A GENERAL DATA ANALYSIS STRATEGY
+OK	https://doi.org/10.1111/soru.12399	2023	Wheeler; Lobley; McCann; Phillimore	Sociologia Ruralis	‘It's a lonely old world’: Developing a multidimensional understanding of loneliness in fa
+OK	https://doi.org/10.1126/sciadv.adf7704	2023	Shcherbakova; Michaelis; Haynie; Passmore; Gast; Gray	Science Advances	Societies of strangers do not speak less complex languages
+OK	https://doi.org/10.1126/sciadv.adg6175	2023	Skirgård; Haynie; Blasi; Hammarström; Collins; Latarche	Science Advances	Grambank reveals the importance of genealogical constraints on linguistic diversity and hi
+OK	https://doi.org/10.1126/sciadv.adi9944	2023	Zhang; Guo; Li; Zhou; Zhao; Tong	Science Advances	Processable circularly polarized luminescence material enables flexible stereoscopic 3D im
+OK	https://doi.org/10.1126/science.ado7201	2025	Ugras; Carson; Lynch; Li; Yao; Cupellini	Science	Transforming achiral semiconductors into chiral domains with exceptional circular dichrois
+OK	https://doi.org/10.1137/21m139356x	2021	Armstrong; Guzmán; Sing Long	SIAM Journal on Mathematics of Data Science	An Optimal Algorithm for Strict Circular Seriation
+OK	https://doi.org/10.1137/22m1495342	2023	Carmona; Chepoi; Naves; Préa	SIAM Journal on Mathematics of Data Science	A Simple and Optimal Algorithm for Strict Circular Seriation
+OK	https://doi.org/10.1145/22952.22956	1987	Snodgrass	ACM Transactions on Database Systems	The temporal query language TQuel
+OK	https://doi.org/10.1145/3639372	2024	Zhao; Chen; Yang; Liu; Deng; Cai	ACM Transactions on Intelligent Systems and Technology	Explainability for Large Language Models: A Survey
+OK	https://doi.org/10.1145/72551.72552	1989	Bal; Steiner; Tanenbaum	ACM Computing Surveys	Programming languages for distributed computing systems
+OK	https://doi.org/10.1146/annurev-arplant-043015-111854	2016	Chan; Phua; Crisp; McQuinn; Pogson	Annual Review of Plant Biology	Learning the Languages of the Chloroplast: Retrograde Signaling and Beyond
+OK	https://doi.org/10.1146/annurev-linguist-030514-124819	2015	Ladd; Roberts; Dediu	Annual Review of Linguistics	Correlational Studies in Typological and Historical Linguistics
+OK	https://doi.org/10.1146/annurev-linguistics-011415-040544	2018	Kouwenberg; Singler	Annual Review of Linguistics	Creolization in Context: Historical and Typological Perspectives
+OK	https://doi.org/10.1146/annurev-linguistics-011516-034142	2018	Bowern	Annual Review of Linguistics	Computational Phylogenetics
+OK	https://doi.org/10.1146/annurev-micro-020518-120056	2021	Rohs; Bernhardt	Annual Review of Microbiology	Growth and Division of the Peptidoglycan Matrix
+OK	https://doi.org/10.1161/01.res.85.4.364	1999	Spinale; Coker; Krombach; Mukherjee; Hallak; Houck	Circulation Research	Matrix Metalloproteinase Inhibition During the Development of Congestive Heart Failure
+OK	https://doi.org/10.1162/coli_a_00357	2019	Ponti; O’Horan; Berzak; Vulić; Reichart; Poibeau	Computational Linguistics	Modeling Language Variation and Universals: A Survey on Typological Linguistics for Natura
+OK	https://doi.org/10.1162/coli_a_00491	2023	Östling; Kurfalı	Computational Linguistics	Language Embeddings Sometimes Contain Typological
+                    Generalizations
+OK	https://doi.org/10.1162/coli_a_00498	2024	Bjerva	Computational Linguistics	The Role of Typological Feature Prediction in NLP and
+                    Linguistics
+OK	https://doi.org/10.1162/ling.2009.40.2.187	2009	Kratzer	Linguistic Inquiry	Making a Pronoun: Fake Indexicals as Windows into the Properties of Pronouns
+OK	https://doi.org/10.1177/0149206317699522	2017	Micelotta; Lounsbury; Greenwood	Journal of Management	Pathways of Institutional Change: An Integrative Review and Research Agenda
+FAIL	https://doi.org/10.1184/r1/6584909.v1	HTTP 404	The Architecture Analysis & Design Language (AADL): An Introduction
+OK	https://doi.org/10.1186/1755-8794-3-21	2010	Gribov; Sill; Lück; Rücker; Döhner; Bullinger	BMC Medical Genomics	SEURAT: Visual analytics for the integrated analysis of microarray data
+OK	https://doi.org/10.1186/1758-2946-3-33	2011	O'Boyle; Banck; James; Morley; Vandermeersch; Hutchison	Journal of Cheminformatics	Open Babel: An open chemical toolbox
+OK	https://doi.org/10.1186/s12864-016-3477-5	2017	Ayad; Pissis	BMC Genomics	MARS: improving multiple circular sequence alignment using refined sequences
+OK	https://doi.org/10.1186/s12951-025-03371-5	2025	Rajpal; Nongthongbam; Bhatia; Singh; Raina; Minkina	Journal of Nanobiotechnology	The nano-paradox: addressing nanotoxicity for sustainable agriculture, circular economy an
+OK	https://doi.org/10.1186/s13059-018-1486-1	2018	Kerpedjiev; Abdennur; Lekschas; McCallum; Dinkla; Strobelt	Genome Biology	HiGlass: web-based visual exploration and analysis of genome interaction maps
+FAIL	https://doi.org/10.13140/2.1.4990.4001	HTTP 404	Functional trade-off between lexical tone and intonation: typological evidence f
+OK	https://doi.org/10.1349/ps1.1537-0852.a.350	2010	Malchukov	Linguistic Discovery	Analyzing Semantic Maps: A Multifactorial Approach
+OK	https://doi.org/10.1349/ps1.1537-0852.a.356	2010	Wälchli	Linguistic Discovery	Similarity Semantics and Building Probabilistic Semantic Maps from Parallel Texts
+OK	https://doi.org/10.1353/lan.2003.0174	2003	Levinson; Meira; 	Language	‘Natural concepts’ in the spatial topological domain—Adpositional meanings in crosslinguis
+OK	https://doi.org/10.1353/lan.2015.0003	2015	Corbett	Language	Morphosyntactic complexity: A typology of lexical splits
+OK	https://doi.org/10.1353/lib.2006.0053	2006	White; Marsh	Library Trends	Content Analysis: A Flexible Methodology
+OK	https://doi.org/10.1371/journal.pcbi.1005273	2017	Amalric; Wang; Pica; Figueira; Sigman; Dehaene	PLOS Computational Biology	The language of geometry: Fast comprehension of geometrical primitives and rules in human 
+OK	https://doi.org/10.1371/journal.pone.0008559	2010	Lupyan; Dale	PLoS ONE	Language Structure Is Partly Determined by Social Structure
+OK	https://doi.org/10.1371/journal.pone.0009423	2010	Mannige; Brooks	PLoS ONE	Periodic Table of Virus Capsids: Implications for Natural Selection and Design
+OK	https://doi.org/10.1371/journal.pone.0011844	2010	Hunter; Guatelli-Steinberg; Weston; Durner; Betsinger	PLoS ONE	Model of Tooth Morphogenesis Predicts Carabelli Cusp Expression, Size, and Symmetry in Hum
+OK	https://doi.org/10.1371/journal.pone.0070902	2013	Roberts; Winters	PLoS ONE	Linguistic Diversity and Traffic Accidents: Lessons from Statistical Studies of Cultural T
+OK	https://doi.org/10.1371/journal.pone.0132145	2015	Roberts; Winters; Chen	PLOS ONE	Future Tense and Economic Decisions: Controlling for Cultural Evolution
+OK	https://doi.org/10.1515/ci-2019-0203	2019	Gomollón-Bel	Chemistry International	Ten Chemical Innovations That Will Change Our World: IUPAC identifies emerging technologie
+OK	https://doi.org/10.1515/ling-2012-0021	2012	Wälchli; Cysouw	Linguistics	Lexical typology through similarity semantics: Toward a semantic map of motion verbs
+OK	https://doi.org/10.1515/lingty-2021-0025	2022	Macklin-Cordes; Round	Linguistic Typology	Challenges of sampling and how phylogenetic comparative methods help: with a case study of
+OK	https://doi.org/10.1523/jneurosci.23-08-03423.2003	2003	Davis; Johnsrude	The Journal of Neuroscience	Hierarchical Processing in Spoken Language Comprehension
+FAIL	https://doi.org/10.17863/cam.64134	HTTP 404	SciPy 1.0: fundamental algorithms for scientific computing in Python
+OK	https://doi.org/10.18653/v1/2020.sigtyp-1.1	2020	Bjerva; Salesky; Mielke; Chaudhary; Celano; Ponti	Proceedings of the Second Workshop on Computational Research in Linguistic Typology	SIGTYP 2020 Shared Task: Prediction of Typological Features
+OK	https://doi.org/10.18653/v1/2020.sigtyp-1.3	2020	Gutkin; Sproat	Proceedings of the Second Workshop on Computational Research in Linguistic Typology	NEMO: Frequentist Inference Approach to Constrained Linguistic Typology Feature Prediction
+OK	https://doi.org/10.18653/v1/2020.sigtyp-1.4	2020	Vastl; Zeman; Rosa	Proceedings of the Second Workshop on Computational Research in Linguistic Typology	Predicting Typological Features in WALS using Language Embeddings and Conditional Probabil
+OK	https://doi.org/10.18653/v1/2023.acl-long.235	2023	FitzGerald; Hench; Peris; Mackie; Rottmann; Sanchez	Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)	MASSIVE: A 1M-Example Multilingual Natural Language Understanding Dataset with 51 Typologi
+OK	https://doi.org/10.18653/v1/2024.emnlp-main.326	2024	Ploeger; Poelman; de Lhoneux; Bjerva	Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing	What is ”Typological Diversity” in NLP?
+OK	https://doi.org/10.18653/v1/d17-1268	2017	Malaviya; Neubig; Littell	Proceedings of the 2017 Conference on Empirical Methods in Natural
+          Language Processing	Learning Language Representations for Typology Prediction
+OK	https://doi.org/10.18653/v1/d18-1468	2018	Murawaki	Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing	Analyzing Correlated Evolution of Multiple Features Using Latent Representations
+OK	https://doi.org/10.18653/v1/e17-2002	2017	Littell; Mortensen; Lin; Kairis; Turner; Levin	Proceedings of the 15th Conference of the European Chapter of the
+          Association for Computational Linguistics: Volume 2, Short Papers	URIEL and lang2vec: Representing languages as typological,
+            geographical, and p
+OK	https://doi.org/10.18653/v1/p19-1493	2019	Pires; Schlinger; Garrette	Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics	How Multilingual is Multilingual BERT?
+FAIL	https://doi.org/10.18716/ojs/aaeo/2019_3464	HTTP 404	The linguistic features of Bangala before Lingala: The pidginization of Bobangi 
+OK	https://doi.org/10.21203/rs.3.rs-1262191/v1	2022	Neureiter; Ranacher; Efrat-Kowalsky; Kaiping; Weibel; Widmer		Detecting Contact In Language Trees: A Bayesian Phylogenetic Model With Horizontal Transfe
+OK	https://doi.org/10.2140/pjm.1971.39.535	1971	Tucker	Pacific Journal of Mathematics	Matrix characterizations of circular-arc graphs
+OK	https://doi.org/10.2307/1368426	1988	McKitrick; Zink	The Condor	Species Concepts in Ornithology
+OK	https://doi.org/10.26530/oapen_377572	2010	Bemong; Borghart; De Dobbeleer; Demoen; De Temmerman; Keunen		Bakhtin’s Theory of the Literary Chronotope: Reflections, Applications, Perspectives
+OK	https://doi.org/10.3115/v1/n15-1036	2015	Murawaki	Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies	Continuous Space Representations of Linguistic Typology and their Application to Phylogene
+OK	https://doi.org/10.3389/fpsyg.2015.01515	2015	Murphy	Frontiers in Psychology	The brain dynamics of linguistic computation
+OK	https://doi.org/10.3389/fpsyg.2018.01141	2018	Sinnemäki; Di Garbo	Frontiers in Psychology	Language Structures May Adapt to the Sociolinguistic Environment, but It Matters What and 
+OK	https://doi.org/10.3389/fpsyg.2021.682132	2021	Jäger; Wahle	Frontiers in Psychology	Phylogenetic Typology
+OK	https://doi.org/10.3390/polym13172998	2021	Bustamante-Torres; Romero-Fierro; Arcentales-Vera; Pardo; Bucio	Polymers	Interaction between Filler and Polymeric Matrix in Nanocomposites: Magnetic Approach and A
+OK	https://doi.org/10.3758/s13423-019-01634-5	2019	Rissman; Majid	Psychonomic Bulletin &amp; Review	Thematic roles: Core knowledge or linguistic construct?
+OK	https://doi.org/10.3765/plsa.v4i1.4515	2019	Norris	Proceedings of the Linguistic Society of America	A typological perspective on nominal concord
+OK	https://doi.org/10.4007/annals.2005.161.1245	2005	Knutson; Miller	Annals of Mathematics	Gröbner geometry of Schubert polynomials
+OK	https://doi.org/10.4310/jdg/1143642908	2005	Hopkins; Singer	Journal of Differential Geometry	Quadratic functions in geometry, topology, and M-theory
+OK	https://doi.org/10.4310/jdg/1261495336	2009	Wei; Wylie	Journal of Differential Geometry	Comparison geometry for the Bakry-Emery Ricci tensor
+OK	https://doi.org/10.4324/9780203449097-13	2013		Guide to Dyspraxia and Developmental Coordination Disorders	Language and communication
+OK	https://doi.org/10.4324/9780203503577	2022	Vertovec		Superdiversity
+OK	https://doi.org/10.4324/9781315085678	2017			The New Psychology of Language
+FAIL	https://doi.org/10.48550/arxiv.2003.05002	HTTP 404	TyDi QA: A Benchmark for Information-Seeking Question Answering in\n Typological
+FAIL	https://doi.org/10.48550/arxiv.2204.02311	HTTP 404	PaLM: Scaling Language Modeling with Pathways
+FAIL	https://doi.org/10.48550/arxiv.2204.08582	HTTP 404	MASSIVE: A 1M-Example Multilingual Natural Language Understanding Dataset with 5
+FAIL	https://doi.org/10.48550/arxiv.2205.04694	HTTP 404	A simple and optimal algorithm for strict circular seriation
+FAIL	https://doi.org/10.48550/arxiv.2206.07682	HTTP 404	Emergent Abilities of Large Language Models
+FAIL	https://doi.org/10.48550/arxiv.2210.11416	HTTP 404	Scaling Instruction-Finetuned Language Models
+OK	https://doi.org/10.5244/c.26.127	2012	Mishra; Alahari; Jawahar	Procedings of the British Machine Vision Conference 2012	Scene Text Recognition using Higher Order Language Priors
+FAIL	https://doi.org/10.5281/zenodo.3268721	HTTP 404	Highly complex syllable structure: A typological and diachronic study
+OK	https://doi.org/10.5539/ijel.v8n5p215	2018	Asghar; Mahmood; Asghar	International Journal of English Linguistics	A Multidimensional Analysis of Pakistani Legal English
+OK	https://doi.org/10.5860/choice.39-3215	2002		Choice Reviews Online	The atoms of language
+OK	https://doi.org/10.5962/bhl.title.5189	1978	Weber		A seriation of the late prehistoric Santa Maria culture of northwestern Argentina / Ronald
+OK	https://doi.org/10.7226/jtfm.19.1.11	2013	Innah; Suharjito; Dharmawan; Darusman	Jurnal Manajemen Hutan Tropika (Journal of Tropical Forest Management)	Collective Action Typologies and Reforestation in Indigenous Community of Biak-Papua
+OK	https://doi.org/10.7764/tesisuc/ing/52746	None	Armstrong Cruz		An optimal algorithm for strict circular seriation
+FAIL	https://doi.org/10.7916/d8c26cwm	HTTP 404	Identity in American Politics: A multidimensional approach to study and measurem
+FAIL	https://doi.org/10.82308/12870	HTTP 404	A connectionist model of the development of children's seriation abilities /
+NO-DOI	Infinite periodic minimal surfaces without self-intersections (skipped, not Crossref-verifiable)
+NO-DOI	Parts of speech and dependent clauses: A typological study (skipped, not Crossref-verifiable)
+NO-DOI	Periodic Table of the Finite Elements (skipped, not Crossref-verifiable)
+NO-DOI	Seriation of Certain Arikara Villages (skipped, not Crossref-verifiable)
+NO-DOI	Webster's New World College Dictionary (skipped, not Crossref-verifiable)

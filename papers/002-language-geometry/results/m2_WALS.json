@@ -1,0 +1,21 @@
+{
+ "table": "WALS",
+ "n_families": 109,
+ "n_families_done": 104,
+ "n_families_valid": 88,
+ "n_families_skipped": 5,
+ "mean_logloss_circular": 1.0738384604729019,
+ "mean_logloss_marginal": 1.1842131436781866,
+ "top1_circular": 0.40358527661398635,
+ "top1_marginal": 0.5172027398223081,
+ "sign_test_p": 0.0037465093469812305,
+ "perm_test_p": null,
+ "n_cells_valid": 4287,
+ "n_leak_pairs": 15431,
+ "impute_rate": 0.9982576569372251,
+ "capped": false,
+ "h1_direction": "circular_better",
+ "verdict": "H1 支持：圆形 mean log-loss < 边际 且 符号检验 p<.05 [高填补率·解释需谨慎]",
+ "elapsed_sec": 1914.5,
+ "seed": 42
+}

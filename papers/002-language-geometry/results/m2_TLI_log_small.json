@@ -1,0 +1,21 @@
+{
+ "table": "TLI_log_small",
+ "n_families": 65,
+ "n_families_done": 65,
+ "n_families_valid": 65,
+ "n_families_skipped": 0,
+ "mean_logloss_circular": 0.4747657966533464,
+ "mean_logloss_marginal": 0.5240766780036488,
+ "top1_circular": 0.687742736383933,
+ "top1_marginal": 0.7540444506874338,
+ "sign_test_p": 1.1688116132369708e-06,
+ "perm_test_p": 0.0,
+ "n_cells_valid": 28624,
+ "n_leak_pairs": 53203,
+ "impute_rate": 0.039620125540703155,
+ "capped": false,
+ "h1_direction": "circular_better",
+ "verdict": "H1 支持：圆形 mean log-loss < 边际 且 符号检验 p<.05",
+ "elapsed_sec": 34.7,
+ "seed": 42
+}

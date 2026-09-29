@@ -1,0 +1,82 @@
+{
+ "TLI_stat_small": {
+  "n_langs": 644,
+  "n_binary": 261,
+  "n_pairs_imputed": 10564,
+  "impute_rate": 0.05102247809665485,
+  "R_obs": 0.053851946851075846,
+  "p_one_sided": 0.004,
+  "verdict": "reject_null（支持圆形组织）",
+  "n_null_done": 1000,
+  "capped": false,
+  "elapsed_sec": 37.0
+ },
+ "_done_tables": [
+  "TLI_stat_small",
+  "TLI_stat_large",
+  "TLI_log_small",
+  "GBI_stat",
+  "GBI_log",
+  "WALS"
+ ],
+ "TLI_stat_large": {
+  "n_langs": 1696,
+  "n_binary": 266,
+  "n_pairs_imputed": 271609,
+  "impute_rate": 0.18896379473479155,
+  "R_obs": 0.05174877999774007,
+  "p_one_sided": 0.734,
+  "verdict": "ns（直接诊断侧拒绝信号）",
+  "n_null_done": 1000,
+  "capped": false,
+  "elapsed_sec": 192.9
+ },
+ "TLI_log_small": {
+  "n_langs": 555,
+  "n_binary": 274,
+  "n_pairs_imputed": 6091,
+  "impute_rate": 0.039620125540703155,
+  "R_obs": 0.060353030969664885,
+  "p_one_sided": 0.03,
+  "verdict": "reject_null（支持圆形组织）",
+  "n_null_done": 1000,
+  "capped": false,
+  "elapsed_sec": 25.3
+ },
+ "GBI_stat": {
+  "n_langs": 1140,
+  "n_binary": 178,
+  "n_pairs_imputed": 169,
+  "impute_rate": 0.00026030836529427167,
+  "R_obs": 0.04862160710577147,
+  "p_one_sided": 0.001,
+  "verdict": "reject_null（支持圆形组织）",
+  "n_null_done": 1000,
+  "capped": false,
+  "elapsed_sec": 81.8
+ },
+ "GBI_log": {
+  "n_langs": 1223,
+  "n_binary": 190,
+  "n_pairs_imputed": 33,
+  "impute_rate": 4.416174976881993e-05,
+  "R_obs": 0.0832751225701077,
+  "p_one_sided": 0.0,
+  "verdict": "reject_null（支持圆形组织）",
+  "n_null_done": 1000,
+  "capped": false,
+  "elapsed_sec": 94.5
+ },
+ "WALS": {
+  "n_langs": 2501,
+  "n_binary": 18,
+  "n_pairs_imputed": 3120803,
+  "impute_rate": 0.9982576569372251,
+  "R_obs": 0.9514340507219855,
+  "p_one_sided": 0.234,
+  "verdict": "ns（直接诊断侧拒绝信号） [高填补率·解释需谨慎]",
+  "n_null_done": 1000,
+  "capped": false,
+  "elapsed_sec": 315.2
+ }
+}

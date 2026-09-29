@@ -1,0 +1,8 @@
+FILE m1_GBI_log.json: IDENTICAL (elapsed* excluded)
+FILE m1_GBI_stat.json: IDENTICAL (elapsed* excluded)
+FILE m1_TLI_log_small.json: IDENTICAL (elapsed* excluded)
+FILE m1_TLI_stat_large.json: IDENTICAL (elapsed* excluded)
+FILE m1_TLI_stat_small.json: IDENTICAL (elapsed* excluded)
+FILE m1_WALS.json: IDENTICAL (elapsed* excluded)
+FILE m1_results.json: IDENTICAL (elapsed* excluded)
+SUMMARY files=7 diffs=0 -> PASS deterministic double-run

@@ -1,0 +1,21 @@
+{
+ "table": "GBI_log",
+ "n_families": 75,
+ "n_families_done": 75,
+ "n_families_valid": 75,
+ "n_families_skipped": 0,
+ "mean_logloss_circular": 0.6807653926821746,
+ "mean_logloss_marginal": 0.5330256672618042,
+ "top1_circular": 0.660196485904223,
+ "top1_marginal": 0.7265465699509146,
+ "sign_test_p": 4.0234064994579266e-21,
+ "perm_test_p": 0.0,
+ "n_cells_valid": 104066,
+ "n_leak_pairs": 17770,
+ "impute_rate": 4.416174976881993e-05,
+ "capped": false,
+ "h1_direction": "marginal_better",
+ "verdict": "H1 拒绝：mean_c=0.6808 vs mean_m=0.5330, sign_p=4.0234064994579266e-21",
+ "elapsed_sec": 169.0,
+ "seed": 42
+}

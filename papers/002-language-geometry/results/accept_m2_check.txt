@@ -1,0 +1,16 @@
+PASS: ① m2_results.json 6 表齐全 + 19 字段 + n_families=holdout(82/108/65/75/75/109) + seed=42 + capped=False + _done_tables=6 表
+PASS: ② run.log 完成签名: M2 all tables done total_elapsed=2915s
+PASS: ② WALS 5 族 SKIPPED(n_held<3) 记账=预期: ['band1339', 'basq1248', 'sena1264', 'sout2772', 'yoku1255']
+PASS: ③ err.log 无 Traceback（仅 3 条 numpy divide-by-zero warning，良性）
+  TLI_stat_small: rows=82 (+skip 0) valid=82 mean_c=0.466552 mean_m=0.540186 sign_p=5.257e-09 perm_p=0.0 n_cells=31729 residual=0
+  TLI_stat_large: rows=108 (+skip 0) valid=108 mean_c=0.485727 mean_m=0.531424 sign_p=1.883e-08 perm_p=0.0 n_cells=59343 residual=0
+  TLI_log_small: rows=65 (+skip 0) valid=65 mean_c=0.474766 mean_m=0.524077 sign_p=1.169e-06 perm_p=0.0 n_cells=28624 residual=0
+  GBI_stat: rows=75 (+skip 0) valid=75 mean_c=0.669097 mean_m=0.541027 sign_p=5.294e-23 perm_p=0.0 n_cells=86337 residual=0
+  GBI_log: rows=75 (+skip 0) valid=75 mean_c=0.680765 mean_m=0.533026 sign_p=4.023e-21 perm_p=0.0 n_cells=104066 residual=0
+  WALS: rows=104 (+skip 5) valid=88 mean_c=1.073838 mean_m=1.184213 sign_p=3.747e-03 perm_p=None n_cells=4287 residual=0
+PASS: ④⑤⑦ 6 表 fold tsv：行数 vs holdout / 无重复行 / 独立重算(mean·top1·sign_p·perm_p·n_cells·n_valid 逐字对汇总) / 残标扫描=0
+  leakage_check.tsv 行数(含表头)=202984
+PASS: ⑥ TLI_stat_small: 备份 82 folds vs 现产前 82 folds 逐 fold 逐列一致（除 elapsed_sec）
+PASS: ⑥ TLI_stat_large: 备份 24 folds vs 现产前 24 folds 逐 fold 逐列一致（除 elapsed_sec）
+PASS: ⑧ m2_<table>.json ×6 已从 m2_results.json 确定性转写补齐（转录非重算，roundtrip 验证通过）
+OVERALL = PASS

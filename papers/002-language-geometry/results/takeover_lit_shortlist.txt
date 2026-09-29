@@ -1,0 +1,44 @@
+﻿verified-OK candidates: 148
+found_in counts: {'R3 circular-robinson': 24, 'R4 geometry-universals': 22, 'R6 phylo-typology': 22, 'R7 mds-linguistic': 21, 'R2 circular-seriation': 19, 'R1 periodic-table': 16, 'R5 wals-prediction': 15, 'anchor': 9}
+--- periodic matches (hypothesis source) ---
+2019 | Omairey; Dunning; Sriramula | Engineering with Computers | Development of an ABAQUS plugin tool for periodic RVE homogenisation | doi=https://doi.org/10.1007/s00366-018-0616-4
+2022 | Andino-Enr铆quez; Andino-Enr铆quez; Hidalgo-B谩ez; Chal谩n-Gual谩 | Journal of Chemical Education | Adaptation of the Periodic Table to Kichwa: An Ecuadorian Native Language | doi=https://doi.org/10.1021/acs.jchemed.1c00383
+2016 | Wu; Anafi; Hughes; Kornacker; Hogenesch | Bioinformatics | MetaCycle: an integrated R package to evaluate periodicity in large scale data | doi=https://doi.org/10.1093/bioinformatics/btw405
+2010 | Mannige; Brooks | PLoS ONE | Periodic Table of Virus Capsids: Implications for Natural Selection and Design | doi=https://doi.org/10.1371/journal.pone.0009423
+--- top 35 by score ---
+14 | 2021 | Armstrong; Guzm谩n; Sing Long               | An Optimal Algorithm for Strict Circular Seriation
+14 | 2021 | Armstrong; Guzm谩n; Sing Long               | An Optimal Algorithm for Strict Circular Seriation
+14 |  | Armstrong Cruz                             | An optimal algorithm for strict circular seriation
+14 | 2023 | Carmona; Chepoi; Naves; Pr茅a               | A Simple and Optimal Algorithm for Strict Circular Seriation
+10 | 2022 | Andino-Enr铆quez; Andino-Enr铆quez; Hidalgo- | Adaptation of the Periodic Table to Kichwa: An Ecuadorian Native Language
+10 | 2010 | Mannige; Brooks                            | Periodic Table of Virus Capsids: Implications for Natural Selection and Design
+ 8 | 1978 | Laporte                                    | The seriation problem and the travelling salesman problem
+ 8 | 1974 | Hubert                                     | SOME APPLICATIONS OF GRAPH THEORY AND RELATED NON鈥怣ETRIC TECHNIQUES TO PROBLEMS 
+ 8 | 1978 | Weber                                      | A seriation of the late prehistoric Santa Maria culture of northwestern Argentin
+ 8 | 2023 | Concas; Fenu; Rodriguez; Vandebril         | The seriation problem in the presence of a double Fiedler value
+ 8 | 2003 | Levinson; Meira;                           | 鈥楴atural concepts鈥?in the spatial topological domain鈥擜dpositional meanings in cr
+ 7 | 2015 | Murawaki                                   | Continuous Space Representations of Linguistic Typology and their Application to
+ 7 | 2021 | J盲ger; Wahle                               | Phylogenetic Typology
+ 7 | 2020 | Vastl; Zeman; Rosa                         | Predicting Typological Features in WALS using Language Embeddings and Conditiona
+ 6 | 2020 | Evangelopoulos; Brockmeier; Mu; Goulermas  | Circular object arrangement using spherical embeddings
+ 6 | 2019 | Mendoza; Gallego-Schmid; Azapagic          | Building a business case for implementation of a circular economy in higher educ
+ 6 | 1988 | Spinrad                                    | Circular-arc graphs with clique cover number two
+ 6 | 2009 | Belkale; Chandran                          | Hadwiger鈥檚 conjecture for proper circular arc graphs
+ 6 | 2020 | Evangelopoulos; Brockmeier; Mu; Goulermas  | Circular object arrangement using spherical embeddings
+ 6 | 2023 | Chapman; Luebeck; Sridhar; Wong; Dixit; Wa | Circular extrachromosomal DNA promotes tumor heterogeneity in high-risk medullob
+ 6 | 2023 | Zhang; Guo; Li; Zhou; Zhao; Tong           | Processable circularly polarized luminescence material enables flexible stereosc
+ 6 | 2006 | Heged眉s; Sz茅l; Horv谩th                     | Imaging polarimetry of the circularly polarizing cuticle of scarab beetles (Cole
+ 6 | 2021 | Marchesi; Tweed                            | Social innovation for a circular economy in social housing
+ 6 | 2009 | Lin; Szwarcfiter                           | Characterizations and recognition of circular-arc graphs and subclasses: A surve
+ 6 | 2025 | Rajpal; Nongthongbam; Bhatia; Singh; Raina | The nano-paradox: addressing nanotoxicity for sustainable agriculture, circular 
+ 6 | 1971 | Tucker                                     | Matrix characterizations of circular-arc graphs
+ 6 | 2017 | Ayad; Pissis                               | MARS: improving multiple circular sequence alignment using refined sequences
+ 6 | 1973 | Bayley                                     | The analysis of circular dichroism of biomolecules
+ 6 | 1970 | Tucker                                     | Characterizing circular-arc graphs
+ 6 | 2025 | Ugras; Carson; Lynch; Li; Yao; Cupellini   | Transforming achiral semiconductors into chiral domains with exceptional circula
+ 6 | 2018 | Patty; Luo; Snik; Ariese; Buma; ten Kate   | Imaging linear and circular polarization features in leaves with complete Muelle
+ 5 | 2022 | Neureiter; Ranacher; Efrat-Kowalsky; Kaipi | Detecting Contact In Language Trees: A Bayesian Phylogenetic Model With Horizont
+ 5 | 2009 | Evans; Levinson                            | The myth of language universals: Language diversity and its importance for cogni
+ 5 | 2014 | Piantadosi; Gibson                         | Quantitative Standards for Absolute Linguistic Universals
+ 5 | 2020 | Bjerva; Salesky; Mielke; Chaudhary; Celano | SIGTYP 2020 Shared Task: Prediction of Typological Features
+--- zero-score OK count: 74

@@ -1,0 +1,27 @@
+[LOCAL] data/raw/pins.json: {"annagraff/crossling-curated": ["255632bc62ce05674f1af195b88efea5aef7afce", "2025-08-04T14:36:56Z"], "cldf-datasets/wals": ["f97440d6edbaed0097d1bd307a5a20ea3f09e271", "2026-07-16T07:01:52Z"], "glottolog/glottolog-cldf": ["072ca0d0410039fb8b779be8fc165bac575d2cda", "2026-03-02T1
+[LOCAL] data\raw\glottolog\cldf-metadata.json: dc:bibliographicCitation=Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian. 2025. Glottolog 5.2.1. Leipzig: Max Planck Institute for Evolutionary Anthropology. (Available online at https://glottolog.org); dc:conformsTo=http://cldf.clld.org/v1.0/terms.rdf#StructureDataset; dc:description=Comprehensive reference information for the world's languages, especially the lesser known languages; dc:identifier=https://glottolog.org; dc:license=https://creativecommons.org/licenses/by/4.0/; dc:source=sources.bib
+[LOCAL] data\raw\wals\metadata.json: url=https://wals.info; citation=Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. (Available online at https://wals.info); license=CC-BY-4.0; id=wals; title=The World Atlas of Language Structures Online
+[LOCAL] data\raw\crossling\StructureDataset-metadata.json: dc:conformsTo=http://cldf.clld.org/v1.0/terms.rdf#StructureDataset; dc:source=sources.bib
+[CSVHEAD] data\raw\crossling\statisticalTLI_full_densified_small.csv: ncols=323 first14=['', 'glottocode', 'TLI0005', 'TLI0035', 'TLI0044', 'TLI0081', 'TLI0096', 'TLI0102', 'TLI0107', 'TLI0120', 'TLI0140', 'TLI0155', 'TLI0164', 'TLI0179']
+[CSVHEAD] data\raw\crossling\statisticalTLI_full_densified_large.csv: ncols=330 first14=['', 'glottocode', 'TLI0005', 'TLI0035', 'TLI0044', 'TLI0081', 'TLI0096', 'TLI0102', 'TLI0107', 'TLI0120', 'TLI0140', 'TLI0155', 'TLI0164', 'TLI0179']
+[CSVHEAD] data\raw\crossling\logicalTLI_full_densified_small.csv: ncols=337 first14=['', 'glottocode', 'TLI0005', 'TLI0008', 'TLI0044', 'TLI0081', 'TLI0096', 'TLI0102', 'TLI0107', 'TLI0120', 'TLI0140', 'TLI0155', 'TLI0164', 'TLI0175']
+[CSVHEAD] data\raw\crossling\statisticalGBI_densified.csv: ncols=183 first14=['', 'glottocode', 'GB020c', 'GB021c', 'GB022c', 'GB023c', 'GB024e', 'GB026', 'GB027', 'GB028', 'GB030', 'GB031', 'GB035', 'GB036']
+[CSVHEAD] data\raw\crossling\logicalGBI_densified.csv: ncols=192 first14=['', 'glottocode', 'GB020c', 'GB021c', 'GB022c', 'GB023c', 'GB024e', 'GB025e', 'GB026', 'GB027', 'GB028', 'GB030', 'GB031', 'GB035']
+[CSVHEAD] data\raw\wals\values.csv: ncols=8 first14=['ID', 'Language_ID', 'Parameter_ID', 'Value', 'Code_ID', 'Comment', 'Source', 'Example_ID']
+[CSVHEAD] data\raw\glottolog\languages.csv: ncols=15 first14=['ID', 'Name', 'Macroarea', 'Latitude', 'Longitude', 'Glottocode', 'ISO639P3code', 'Level', 'Countries', 'Family_ID', 'Language_ID', 'Closest_ISO369P3code', 'First_Year_Of_Documentation', 'Last_Year_Of_Documentation']
+[CRF gower-rossman-1969] got 3
+  2002 |  | Seriation II | Seriation, Stratigraphy, and Index Fossils | doi=10.1007/0-306-47168-x_4
+  2002 |  | Seriation I | Seriation, Stratigraphy, and Index Fossils | doi=10.1007/0-306-47168-x_3
+  None |  | Seriation—Multiobjective Seriation | Statistics and Computing | doi=10.1007/0-387-28810-4_11
+[CRF wals-book] got 3
+  2009 | Hoffmann | The World Atlas of Language Structures. Ed. by M. HASPELMATH, M. S. DRYER, D. GIL, and B | Kratylos | doi=10.29091/kratylos/2009/1/4
+  2007 | Schulze | Haspelmath, Martin &amp; Matthew S. Dryer &amp; Davil Gil &amp; Bernard Comrie. 2005. <i | Studies in Language | doi=10.1075/sl.31.2.08sch
+  2007 | Bright | <i>The World Atlas of Language Structures</i>. Edited by Martin Haspelmath, Matthew S. D | International Journal of American Linguistics | doi=10.1086/519060
+[CRF glottolog] got 3
+  2018 | Forkel;List;Greenhill | Cross-Linguistic Data Formats, advancing data sharing and re-use in comparative linguist | Scientific Data | doi=10.1038/sdata.2018.205
+  2017 | Haspelmath | An interview on linguistic variation with Martin Haspelmath | Isogloss. Open Journal of Romance Linguistics | doi=10.5565/rev/isogloss.70
+  2020 |  | Referee comment | ? | doi=10.5194/bg-2020-319-rc2
+[CRF crossling-dataset] got 3
+  2002 | O'Neill | Language Use Inventory | PsycTESTS Dataset | doi=10.1037/t74347-000
+  2001 | Theriault;Holmberg | Pragmatic Language Inventory | PsycTESTS Dataset | doi=10.1037/t25052-000
+  2017 | Lou;Noels | Language Mindsets Inventory | PsycTESTS Dataset | doi=10.1037/t65360-000

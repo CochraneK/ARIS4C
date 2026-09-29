@@ -1,0 +1,87 @@
+[PROBE] glottolog cols: ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Level,Countries,Family_ID,Language_ID,Closest_ISO369P3code
+[PROBE] glottolog rows: 27177
+[PROBE] sample rows (ID,Name,Glottocode,Family_ID):
+   abkh1242 | Abkhaz-Adyge | abkh1242 | 
+   surm1244 | Surmic | surm1244 | 
+   tama1329 | Tamaic | tama1329 | 
+   yare1250 | Yareban | yare1250 | 
+[PROBE] Family_ID glottocode-pattern rate: 0.984
+[PROBE] TLI_stat_small first col name: 'Unnamed: 0'
+[PROBE] TLI_stat_small first col values: ['1', '5', '8', '9', '10']
+[TLI_stat_small] n_rows: mine=644 ref=644 [MATCH]
+[TLI_stat_small_uniq] n_uniq_glottocode: mine=644 ref=644 [MATCH]
+[TLI_stat_small_cols] n_cols_total: mine=323 ref=None [DIFF]
+[TLI_stat_small] fam_known: mine=555 ref=644 [DIFF]
+[TLI_stat_small] n_fams: mine=193 ref=283 [DIFF]
+[TLI_stat_small] fams_ge3: mine=82 ref=82 [MATCH]
+[TLI_stat_small] n_feats_conv(含首列): mine=322 ref=322 [MATCH]
+[TLI_stat_small] 真特征列数(去首列)=321  首列样例='1'
+[TLI_stat_small] bin_conv: mine=0 ref=261 [DIFF]
+[TLI_stat_small] poly_conv: mine=322 ref=61 [DIFF]
+[TLI_stat_small] bin/poly 去首列: bin=0 poly=321
+[TLI_stat_small] miss_conv(≈): mine=0.0 ref=0.689 [DIFF]
+[TLI_stat_small] eligible_langs=402 tot_cells=129444 nonmiss=129444
+[TLI_stat_large] n_rows: mine=1696 ref=1696 [MATCH]
+[TLI_stat_large_uniq] n_uniq_glottocode: mine=1696 ref=1696 [MATCH]
+[TLI_stat_large_cols] n_cols_total: mine=330 ref=None [DIFF]
+[TLI_stat_large] fam_known: mine=1590 ref=1696 [DIFF]
+[TLI_stat_large] n_fams: mine=219 ref=337 [DIFF]
+[TLI_stat_large] fams_ge3: mine=107 ref=108 [DIFF]
+[TLI_stat_large] n_feats_conv(含首列): mine=329 ref=329 [MATCH]
+[TLI_stat_large] 真特征列数(去首列)=328  首列样例='1'
+[TLI_stat_large] bin_conv: mine=0 ref=266 [DIFF]
+[TLI_stat_large] poly_conv: mine=329 ref=63 [DIFF]
+[TLI_stat_large] bin/poly 去首列: bin=0 poly=328
+[TLI_stat_large] miss_conv(≈): mine=0.0 ref=0.778 [DIFF]
+[TLI_stat_large] eligible_langs=1431 tot_cells=470799 nonmiss=470799
+[TLI_log_small] n_rows: mine=555 ref=555 [MATCH]
+[TLI_log_small_uniq] n_uniq_glottocode: mine=555 ref=555 [MATCH]
+[TLI_log_small_cols] n_cols_total: mine=337 ref=None [DIFF]
+[TLI_log_small] fam_known: mine=467 ref=555 [DIFF]
+[TLI_log_small] n_fams: mine=192 ref=281 [DIFF]
+[TLI_log_small] fams_ge3: mine=65 ref=65 [MATCH]
+[TLI_log_small] n_feats_conv(含首列): mine=336 ref=336 [MATCH]
+[TLI_log_small] 真特征列数(去首列)=335  首列样例='1'
+[TLI_log_small] bin_conv: mine=0 ref=274 [DIFF]
+[TLI_log_small] poly_conv: mine=336 ref=62 [DIFF]
+[TLI_log_small] bin/poly 去首列: bin=0 poly=335
+[TLI_log_small] miss_conv(≈): mine=0.0 ref=0.662 [DIFF]
+[TLI_log_small] eligible_langs=292 tot_cells=98112 nonmiss=98112
+[GBI_stat] n_rows: mine=1140 ref=1140 [MATCH]
+[GBI_stat_uniq] n_uniq_glottocode: mine=1140 ref=1140 [MATCH]
+[GBI_stat_cols] n_cols_total: mine=183 ref=None [DIFF]
+[GBI_stat] fam_known: mine=1040 ref=1140 [DIFF]
+[GBI_stat] n_fams: mine=217 ref=318 [DIFF]
+[GBI_stat] fams_ge3: mine=75 ref=75 [MATCH]
+[GBI_stat] n_feats_conv(含首列): mine=182 ref=182 [MATCH]
+[GBI_stat] 真特征列数(去首列)=181  首列样例='6'
+[GBI_stat] bin_conv: mine=0 ref=178 [DIFF]
+[GBI_stat] poly_conv: mine=182 ref=4 [DIFF]
+[GBI_stat] bin/poly 去首列: bin=0 poly=181
+[GBI_stat] miss_conv(≈): mine=0.0 ref=0.292 [DIFF]
+[GBI_stat] eligible_langs=845 tot_cells=153790 nonmiss=153790
+[GBI_log] n_rows: mine=1223 ref=1223 [MATCH]
+[GBI_log_uniq] n_uniq_glottocode: mine=1223 ref=1223 [MATCH]
+[GBI_log_cols] n_cols_total: mine=192 ref=None [DIFF]
+[GBI_log] fam_known: mine=1123 ref=1223 [DIFF]
+[GBI_log] n_fams: mine=217 ref=318 [DIFF]
+[GBI_log] fams_ge3: mine=75 ref=75 [MATCH]
+[GBI_log] n_feats_conv(含首列): mine=191 ref=191 [MATCH]
+[GBI_log] 真特征列数(去首列)=190  首列样例='2'
+[GBI_log] bin_conv: mine=0 ref=190 [DIFF]
+[GBI_log] poly_conv: mine=191 ref=1 [DIFF]
+[GBI_log] bin/poly 去首列: bin=0 poly=190
+[GBI_log] miss_conv(≈): mine=0.0 ref=0.261 [DIFF]
+[GBI_log] eligible_langs=928 tot_cells=177248 nonmiss=177248
+[WALS] n_langs: mine=2660 ref=3573 [DIFF]
+[WALS] n_feats: mine=192 ref=192 [MATCH]
+[WALS] fam_rate(≈): mine=0 ref=0.74 [DIFF]
+[WALS] n_fams: mine=0 ref=350 [DIFF]
+[WALS] fams_ge3: mine=0 ref=109 [DIFF]
+[WALS] bin(按Code_ID distinct≤2)=18  bin(按Value distinct≤2)=18  ref bin=17 bin_from_matrix=18
+[WALS] eligible_langs=0 tot_cells=0 nonmiss=0
+[CRF gower2] 2021 | Kumar | Measuring Abundance | Journal of the Royal Statistical Society Ser | doi=10.1111/rssa.12760
+[CRF gower2] 1935 |  | The Royal Statistical Society | Journal of the Royal Statistical Society | doi=10.2307/2342441
+[CRF gower2] 1943 |  | The Library of the Royal Statistical Society | Journal of the Royal Statistical Society | doi=10.2307/2979970
+[CRF gower2] 2005 | Kendall | Seriation | Encyclopedia of Statistical Sciences | doi=10.1002/0471667196.ess2410.pub2
+[CRF gower2] 2004 | Kendall | Seriation | Encyclopedia of Statistical Sciences | doi=10.1002/0471667196.ess2410

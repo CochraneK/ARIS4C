@@ -1,0 +1,2 @@
+xcheck m3 compare (逐字串全等; folds 表除 elapsed_sec)
+SUMMARY diffs=0

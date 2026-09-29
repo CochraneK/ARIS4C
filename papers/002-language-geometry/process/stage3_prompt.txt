@@ -1,0 +1,42 @@
+# 段3 任务 — 002-language-geometry（语言几何：元素周期表假设的预测检验）· M3 模型族比较（圆形 vs 层次/树感知、潜因子/低维）+ M4 跨层聚合 + 稳健性（留一数据层 / leakage 敏感性 / M5 先验解释）
+## 角色与环境
+- 你是 ARIS executor。工作目录 = `D:\Software\ARIS4C-local\002-language-geometry`（下称「本目录」），全部产物写在本目录下。
+- Python venv：`C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe`（pandas/numpy/scipy 可用）。无 GPU。全部随机 seed=42。
+- 段2 门控已过（2026-09-27 18:20，accept_m2_check.txt 八项 PASS），冻结产物在盘（段1 五件 + `m1_results.json`/`m2_results.json`/`m2_folds_<table>.tsv`×6/`leakage_check.tsv`/`stage2_summary.md`，残标=0）。**勿重读冻结件全文**（确需查某句时只读目标节，单次 ≤60 行）。`scripts/common.py`（186 行）/`scripts/m2_lofo.py`（405 行）可读作接口参照（load_table/_dist_from_bin/_family_map/投影 kNN/逐 fold 检查点模式）；分析脚本一律新写于 `scripts/`。
+- 开工先做：对将用到的 8 件 CSV（crossling 5 件 + wals/values.csv + wals/languages.csv + glottolog 的 languages.csv，路径按 `data/raw/MANIFEST.tsv` 查）按 MANIFEST 逐件 sha256 核验（python hashlib，每件 1 行输出），结果记入 `stage3_summary.md`。
+## 红线（违反=段失败）
+- 禁读/复用旧仓库 `D:\Software\ARIS4C\papers\002-language-geometry\` 任何 code/data/results；旧 run 数值一律不得入任何交付物。
+- 数据=在盘钉版 CSV（MANIFEST sha256）；**不重新下载**；不改段2 冻结规格（距离口径/split/leakage 阈值 |r|>0.9/H2 margin=0.02/seed=42 一律沿用，段3 不得调整）。
+- 禁止编造假设填坑：实现点卡住（API 无法解决/超时上限击穿）→ 停该项，把具体缺口+已完成部分写入 `stage3_summary.md`；不得改动预注册 split/阈值。
+- 引用纪律：本段产物只可引用 REGISTRY 29 条 + 数据层钉版本地文件（E1–E5）；**不 cat REGISTRY**（段4 稿件才引用）；新增须 Crossref 核并追加「段3 增补」小节。
+## 数据口径（段1 DATA_PROFILE §5 / 段2 已裁定，照抄，勿重新裁定）
+- 6 表、分表分析、不合并：TLI_stat_small=`data/raw/crossling/statisticalTLI_full_densified_small.csv`；TLI_stat_large=`..._large.csv`；TLI_log_small=`...logicalTLI_full_densified_small.csv`；GBI_stat=`...statisticalGBI_densified.csv`；GBI_log=`...logicalGBI_densified.csv`；WALS=`data/raw/wals/values.csv`+`languages.csv`。
+- 宽表口径（首行行号剔除/第 2 行 glottocode/缺失=`?`）、二值化（distinct≤2，字典序小→0）、WALS pivot（同语言同参数取首行）、主指标=留出平均 log-loss（nats/cell，对非缺失留出 cell）、次指标=top-1：与段2 逐字一致（见 `stage2_summary.md` 冻结表）。
+- 留出单位=Glottolog 顶级语系（≥3 语言），清单 `results/holdout_families.tsv`（514 行，**用 python 读，不 cat**；fams_ge3=82/108/65/75/75/109）；isolate/unknown 恒在训练集。
+- **段2 冻结逐 fold 产物 = M3 的圆形/边际基线（直接转写，不重算）**：`results/m2_folds_<table>.tsv`×6（有效 fold：82/108/65/75/75/104；WALS 5 族 n_held<3 SKIPPED：basq1248/band1339/sena1264/sout2772/yoku1255；WALS 16 fold logloss 非有限，段2 已剔出均值与检验）。M3 各表 fold 集合与 m2_folds tsv 对齐（不在 tsv 中的族=M3 同 skip 并记账 n_families_skipped）。
+## 预注册规格（RESEARCH_PLAN §1–§6 逐字 + 操作化澄清，本段不得调整）
+- 距离 d̂ 共用口径：二值特征不匹配率（pairwise complete；共同非缺失<10 的对 row-mean 填补；impute_rate 入产物；impute_rate>30% 的表 verdict 标注「高填补率·解释需谨慎」，预期触发 WALS=0.9983）。
+- **M3（H2，逐表 × LOFO）两个新非圆形比较器**（圆形/边际=段2 fold tsv 转写）：
+  1. **UPGMA + cophenetic 加权 kNN（层次/树感知，§2.2）**：每 fold 在训练集 d̂ 上 UPGMA 建树（scipy linkage method='average'，确定性）；对每个留出语言 x：附着点 a=argmin_{t∈训练} d̂(x,t)（并列取文件序最小）；x 到训练语言 t 的距离 = d̂(x,a)+cophenetic(a,t)（scipy cophenetic；a=t 时 cophenetic=0）；预测=该距离加权 kNN 投票（k=10，w=1/d，距离=0 的邻居剔出投票）；p̂(class)=归一化加权票数占比（log-loss 用），top-1=argmax。树仅用于距离与加权，**不假设单棵 universal 树**（claims §8.1）。
+  2. **MDS-2D + Euclidean kNN（潜因子/低维，§2.3）**：每 fold 在训练集 d̂ 上 classical MDS（scipy，2D，metric，确定性 v0 约定同 M1）；留出语言先按「最近邻加权投影」定位（k=10 最近训练语言按 d̂，2D 坐标加权平均 w=1/d̂ 归一化；全 0 时回退取最近 1 个训练语言坐标）；预测=以投影点为中心 2D Euclidean 距离加权 kNN 投票（k=10，w=1/d_E，d_E=0 邻居剔出）。
+  3. 几何每 fold 只算一次、不依赖目标特征（与段2 同：几何用全二值特征；**逐目标投影向量剔除 f + 近义列（leakage_check.tsv，|r|>0.9）**，目标 f 值仅用于留出侧评估）。
+  4. **H2 判定（非劣性，§1 预注册）**：逐 fold×比较器 Δ_f=logloss_circular−logloss_comparator（仅有效 fold，WALS 非有限 fold 同段2 剔除）；95% CI=族级 Δ_f 的经验分位数（2.5/97.5 百分位，确定性、无重抽样——操作化记入 summary）；**仅当 CI 下界 > margin=0.02 nats/cell 才拒绝该比较器下的 H2**（=圆形显著劣）；否则 H2 不被拒绝，报告 Δ 均值/CI 全值。
+  5. **随机 2-D 布局 null（§2.5，可选稳健项，非判定项）**：每表若在跑完 M3 主体时 elapsed<2.4h（留 20% 预算余量）则执行：逐 fold 1000× 随机 2D 布局（rng42，同坐标尺度，仅换 MDS 比较器的布局）→ p=P(Δ_null≥Δ_obs)；未触发则 summary 标注「未执行（预算）」，不影响判定。
+- **M4（H3，跨层聚合，只用段2/段3 fold 产物离线计算，不重跑模型）**：层结论=层内各表方向多数（TLI ≥2/3、GBI 2/2、WALS 其单表），H1 线（圆形 vs 边际）与 H2 线（圆形 vs 各非圆形比较器）分别聚合；**H3 成立 = 三层方向一致且无一层被非圆形全面占优；任一层方向分裂（如 GBI 1:1）或某层非圆形全面占优 → H3 拒绝/降级（逐层报告依据）**。
+- **稳健性三项（均标注「探索性、非判定项」）**：
+  1. 留一数据层：对 TLI/GBI/WALS 每层，剔除该层后重算跨层方向一致性结论（M2/M3 产物离线），报告 3 条。
+  2. leakage 敏感性：仅 GBI_stat 一表（段2 对圆形最不利），近义列剔除阈值由 |r|>0.9 放宽为 |r|>0.95，同 fold 集合重跑圆形/UPGMA/MDS 三模型（新脚本参数化阈值，不改冻结产物）→ 报告方向是否变化。
+  3. M5 先验解释（§3.4）：(a) 地理先验比较器=Glottolog Macroarea 基率（留出语言的 Macroarea → 训练集该 macroarea 的逐特征 base rate；**若盘上钉版 glottolog languages.csv 无 Macroarea 列 → 降级仅做 (b) 并标注**）；圆形 vs macroarea 先验逐 fold 配对报告；(b) 族级 Δ_f 与留出族规模（n_held_langs）的 Spearman 相关。残余增益≈0 → 标注「增益可被先验解释」（H1/H2 降级信号，非确认性）。
+- **运行上限（预注册）**：M3 单表上限 ≤3h（含全部比较器 + M5 逐表部分）；leakage 敏感性 GBI_stat 单表另计（预期 <1h）。超限→停该表、保留已完成 folds、summary 记原因（不改 split、不编造 p 值）。
+- **长任务模式（必须，段2 同款）**：预计单条命令 >5 分钟 → 后台化 `nohup python scripts/<name>.py > results/<name>_run.log 2>&1 &`，之后 `sleep 480; tail -n 40 results/<name>_run.log` 轮询（每条 bash 命令预期 ≤8 分钟）；m3 脚本必须**逐 fold 追加检查点** `results/m3_folds_<table>.tsv`，重跑跳过已完成 fold（幂等续跑）；脚本打印 "fold i/N elapsed" 进度行。
+## 交付物（D1–D4）
+1. `scripts/m3_comparators.py`（新写）→ `results/m3_folds_<table>.tsv`×6（family, n_held_langs, n_cells_valid, logloss_circular, logloss_marginal, logloss_upgma, logloss_mds, top1_circular, top1_marginal, top1_upgma, top1_mds, elapsed_sec；**circular/marginal 8 列自段2 tsv 逐字转写，不重算**）+ `results/m3_<table>.json`×6（每比较器：mean logloss、top1、Δ vs circular、95% CI、H2 verdict、n_families_valid、n_families_skipped、impute_rate、wals_note）+ `results/m3_results.json`（6 表汇总 + 各表 H2 方向）
+2. `scripts/m4_robust.py`（新写，离线）→ `results/m4_aggregation.json`（层结论×2 线 + H3 verdict + 逐层依据）+ `results/robustness_leaveout_layer.json` / `robustness_leakage_sens.json` / `robustness_m5_priors.json`（含 Macroarea 可得性标注）
+3. 自检双跑：全表完成后重跑 TLI_stat_small（82 folds），要求与首跑逐 fold 一致（除 elapsed_sec）→ `results/xcheck_m3_compare.txt`（SUMMARY diffs=0 预期）
+4. `stage3_summary.md`：门控状态（全部产物落盘+残标=0）、sha256 核验、各表 M3 关键数字（**逐字取自 JSON，勿重算**）、H2 各表×比较器 verdict、M4/H3 verdict、稳健性三项+随机 2D null 状态、leakage 对数复核、运行时长统计+逐 fold 完成度、缺口报告（若有）、段4 建议（稿件叙述要点：M1/M2/M3 分歧裁定、TLI_large 诊断 ns 但 H1/H2 方向、WALS 双标注、claims 纪律 §8 逐字入稿）。**与最后产物同会话写完即停（一周期一件收官纪律）；不做额外工作。**
+## 纪律（001/002 全量沉淀）
+- 分块写：代码文件单块 ≤60 行，文本单块 ≤60 行（heredoc `>>` 追加）。
+- 禁读大 CSV 全文（python 读）；python stdout ≤40 行；不 cat holdout_families.tsv / leakage_check.tsv / openalex_raw.json / 任何 stage 日志 / 数据文件全文 / 冻结件全文（只读目标节）。
+- bash：禁复合命令/禁 cmd 语法（`cd /d`、`for %f`）、禁全盘递归 find；只允许 python 脚本 + ls/wc/head/tail/cat + 唯一 head/tail 管道；长输出先写盘。
+- 不传 bash timeout 参数；失败重试 ≤2 次后记录继续。
+- 总工具调用 ≤45（长任务轮询不计入 45）；推理 1–2 句，不复述本 prompt。

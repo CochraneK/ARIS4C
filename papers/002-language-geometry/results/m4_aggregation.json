@@ -1,0 +1,456 @@
+{
+ "tables": {
+  "H1_marginal": {
+   "TLI_stat_small": {
+    "delta_mean": -0.0736335889754578,
+    "ci95": [
+     -0.19797175001981962,
+     0.10900312175757615
+    ],
+    "n_valid": 82,
+    "fold_pos_share": 0.18292682926829268,
+    "direction": "circular_better"
+   },
+   "TLI_stat_large": {
+    "delta_mean": -0.04569713846623181,
+    "ci95": [
+     -0.17393620922261102,
+     0.16912213827882652
+    ],
+    "n_valid": 108,
+    "fold_pos_share": 0.23148148148148148,
+    "direction": "circular_better"
+   },
+   "TLI_log_small": {
+    "delta_mean": -0.04931088135030235,
+    "ci95": [
+     -0.14756825396923245,
+     0.142755968203197
+    ],
+    "n_valid": 65,
+    "fold_pos_share": 0.2,
+    "direction": "circular_better"
+   },
+   "GBI_stat": {
+    "delta_mean": 0.12806968180346945,
+    "ci95": [
+     0.02469189043170756,
+     0.23670931847947088
+    ],
+    "n_valid": 75,
+    "fold_pos_share": 1.0,
+    "direction": "marginal_better"
+   },
+   "GBI_log": {
+    "delta_mean": 0.14773972542037034,
+    "ci95": [
+     0.049533638220936364,
+     0.25608157058382613
+    ],
+    "n_valid": 75,
+    "fold_pos_share": 0.9866666666666667,
+    "direction": "marginal_better"
+   },
+   "WALS": {
+    "delta_mean": -0.07074787439302108,
+    "ci95": [
+     -0.8284979396423761,
+     0.8620089667643234
+    ],
+    "n_valid": 88,
+    "fold_pos_share": 0.3409090909090909,
+    "direction": "circular_better"
+   }
+  },
+  "H2_upgma": {
+   "TLI_stat_small": {
+    "delta_mean": 0.1721387200961701,
+    "ci95": [
+     0.05672952583770871,
+     0.36745613157407814
+    ],
+    "n_valid": 82,
+    "fold_pos_share": 1.0,
+    "direction": "upgma_better"
+   },
+   "TLI_stat_large": {
+    "delta_mean": 0.25584262422185433,
+    "ci95": [
+     0.10079888488359529,
+     0.4585080232419573
+    ],
+    "n_valid": 108,
+    "fold_pos_share": 1.0,
+    "direction": "upgma_better"
+   },
+   "TLI_log_small": {
+    "delta_mean": 0.17964204609406967,
+    "ci95": [
+     0.0464988785014972,
+     0.3610425420964417
+    ],
+    "n_valid": 65,
+    "fold_pos_share": 0.9846153846153847,
+    "direction": "upgma_better"
+   },
+   "GBI_stat": {
+    "delta_mean": 0.2274294630612014,
+    "ci95": [
+     0.11437239602694357,
+     0.35188947995575537
+    ],
+    "n_valid": 75,
+    "fold_pos_share": 1.0,
+    "direction": "upgma_better"
+   },
+   "GBI_log": {
+    "delta_mean": 0.20915550801328936,
+    "ci95": [
+     0.11184268797037789,
+     0.29688171588489665
+    ],
+    "n_valid": 75,
+    "fold_pos_share": 1.0,
+    "direction": "upgma_better"
+   },
+   "WALS": {
+    "delta_mean": 0.5154113614035749,
+    "ci95": [
+     -0.26760759137578527,
+     1.8394173098241693
+    ],
+    "n_valid": 84,
+    "fold_pos_share": 0.9047619047619048,
+    "direction": "upgma_better"
+   }
+  },
+  "H2_mds": {
+   "TLI_stat_small": {
+    "delta_mean": 0.061439420076044006,
+    "ci95": [
+     -0.1281043339039451,
+     0.22765075610962462
+    ],
+    "n_valid": 82,
+    "fold_pos_share": 0.8292682926829268,
+    "direction": "mds_better"
+   },
+   "TLI_stat_large": {
+    "delta_mean": 0.18972934401346964,
+    "ci95": [
+     0.034734639052493556,
+     0.45865241296249026
+    ],
+    "n_valid": 108,
+    "fold_pos_share": 0.9814814814814815,
+    "direction": "mds_better"
+   },
+   "TLI_log_small": {
+    "delta_mean": 0.09990455070516588,
+    "ci95": [
+     -0.05196836558137247,
+     0.2606542385508518
+    ],
+    "n_valid": 65,
+    "fold_pos_share": 0.9538461538461539,
+    "direction": "mds_better"
+   },
+   "GBI_stat": {
+    "delta_mean": 0.16945992445168429,
+    "ci95": [
+     0.056601518708417724,
+     0.2809345990146889
+    ],
+    "n_valid": 75,
+    "fold_pos_share": 1.0,
+    "direction": "mds_better"
+   },
+   "GBI_log": {
+    "delta_mean": 0.1810227046374732,
+    "ci95": [
+     0.05932316493210508,
+     0.2764157475540817
+    ],
+    "n_valid": 75,
+    "fold_pos_share": 0.9866666666666667,
+    "direction": "mds_better"
+   },
+   "WALS": {
+    "delta_mean": 0.06695530145899414,
+    "ci95": [
+     -0.7308947384132571,
+     0.8948399907730591
+    ],
+    "n_valid": 81,
+    "fold_pos_share": 0.49382716049382713,
+    "direction": "mds_better"
+   }
+  }
+ },
+ "lines": {
+  "H1_marginal": {
+   "per_layer": {
+    "TLI": {
+     "per_table": {
+      "TLI_stat_small": "circular_better",
+      "TLI_stat_large": "circular_better",
+      "TLI_log_small": "circular_better"
+     },
+     "n_valid_tables": 3,
+     "counts": {
+      "circular_better": 3,
+      "marginal_better": 0
+     },
+     "conclusion": "circular_better",
+     "note": "3 个有效表，同向 3:0",
+     "comprehensive_dominance_by_noncircular": false
+    },
+    "GBI": {
+     "per_table": {
+      "GBI_stat": "marginal_better",
+      "GBI_log": "marginal_better"
+     },
+     "n_valid_tables": 2,
+     "counts": {
+      "circular_better": 0,
+      "marginal_better": 2
+     },
+     "conclusion": "marginal_better",
+     "note": "2 个有效表，同向 2:0",
+     "comprehensive_dominance_by_noncircular": true
+    },
+    "WALS": {
+     "per_table": {
+      "WALS": "circular_better"
+     },
+     "n_valid_tables": 1,
+     "counts": {
+      "circular_better": 1,
+      "marginal_better": 0
+     },
+     "conclusion": "circular_better",
+     "note": "1 个有效表，同向 1:0",
+     "comprehensive_dominance_by_noncircular": false
+    }
+   },
+   "layer_conclusions": [
+    "circular_better",
+    "marginal_better",
+    "circular_better"
+   ],
+   "three_layer_agreement": false
+  },
+  "H2_upgma": {
+   "per_layer": {
+    "TLI": {
+     "per_table": {
+      "TLI_stat_small": "upgma_better",
+      "TLI_stat_large": "upgma_better",
+      "TLI_log_small": "upgma_better"
+     },
+     "n_valid_tables": 3,
+     "counts": {
+      "circular_better": 0,
+      "upgma_better": 3
+     },
+     "conclusion": "upgma_better",
+     "note": "3 个有效表，同向 3:0",
+     "comprehensive_dominance_by_noncircular": true
+    },
+    "GBI": {
+     "per_table": {
+      "GBI_stat": "upgma_better",
+      "GBI_log": "upgma_better"
+     },
+     "n_valid_tables": 2,
+     "counts": {
+      "circular_better": 0,
+      "upgma_better": 2
+     },
+     "conclusion": "upgma_better",
+     "note": "2 个有效表，同向 2:0",
+     "comprehensive_dominance_by_noncircular": true
+    },
+    "WALS": {
+     "per_table": {
+      "WALS": "upgma_better"
+     },
+     "n_valid_tables": 1,
+     "counts": {
+      "circular_better": 0,
+      "upgma_better": 1
+     },
+     "conclusion": "upgma_better",
+     "note": "1 个有效表，同向 1:0",
+     "comprehensive_dominance_by_noncircular": true
+    }
+   },
+   "layer_conclusions": [
+    "upgma_better",
+    "upgma_better",
+    "upgma_better"
+   ],
+   "three_layer_agreement": true
+  },
+  "H2_mds": {
+   "per_layer": {
+    "TLI": {
+     "per_table": {
+      "TLI_stat_small": "mds_better",
+      "TLI_stat_large": "mds_better",
+      "TLI_log_small": "mds_better"
+     },
+     "n_valid_tables": 3,
+     "counts": {
+      "circular_better": 0,
+      "mds_better": 3
+     },
+     "conclusion": "mds_better",
+     "note": "3 个有效表，同向 3:0",
+     "comprehensive_dominance_by_noncircular": true
+    },
+    "GBI": {
+     "per_table": {
+      "GBI_stat": "mds_better",
+      "GBI_log": "mds_better"
+     },
+     "n_valid_tables": 2,
+     "counts": {
+      "circular_better": 0,
+      "mds_better": 2
+     },
+     "conclusion": "mds_better",
+     "note": "2 个有效表，同向 2:0",
+     "comprehensive_dominance_by_noncircular": true
+    },
+    "WALS": {
+     "per_table": {
+      "WALS": "mds_better"
+     },
+     "n_valid_tables": 1,
+     "counts": {
+      "circular_better": 0,
+      "mds_better": 1
+     },
+     "conclusion": "mds_better",
+     "note": "1 个有效表，同向 1:0",
+     "comprehensive_dominance_by_noncircular": true
+    }
+   },
+   "layer_conclusions": [
+    "mds_better",
+    "mds_better",
+    "mds_better"
+   ],
+   "three_layer_agreement": true
+  }
+ },
+ "h3": {
+  "per_line_agreement": {
+   "H1_marginal": false,
+   "H2_upgma": true,
+   "H2_mds": true
+  },
+  "comprehensive_dominance": {
+   "H1_marginal": [
+    "GBI"
+   ],
+   "H2_upgma": [
+    "TLI",
+    "GBI",
+    "WALS"
+   ],
+   "H2_mds": [
+    "TLI",
+    "GBI",
+    "WALS"
+   ]
+  },
+  "verdict": "H3 拒绝/降级（逐层依据见 basis；探索性聚合、非新增假设）",
+  "basis": [
+   "H1_marginal: 三层方向不一致 TLI=circular_better, GBI=marginal_better, WALS=circular_better",
+   "H1_marginal × GBI: 层内 2 表全部被非圆形占优（marginal_better）",
+   "H2_upgma × TLI: 层内 3 表全部被非圆形占优（upgma_better）",
+   "H2_upgma × GBI: 层内 2 表全部被非圆形占优（upgma_better）",
+   "H2_upgma × WALS: 层内 1 表全部被非圆形占优（upgma_better）",
+   "H2_mds × TLI: 层内 3 表全部被非圆形占优（mds_better）",
+   "H2_mds × GBI: 层内 2 表全部被非圆形占优（mds_better）",
+   "H2_mds × WALS: 层内 1 表全部被非圆形占优（mds_better）"
+  ]
+ },
+ "spec": "stage3_prompt §M4（冻结）：层结论=层内各表方向多数（TLI≥2/3、GBI 2/2、WALS 单表）；H3 成立=三层方向一致且无一层被非圆形全面占优；H1/H2 线分别聚合",
+ "sign_convention": {
+  "H1_marginal": "Δ=ll_marginal−ll_circular，族级均值>0→circular_better",
+  "H2_upgma": "Δ=ll_circular−ll_upgma（冻结 Δ_f），族级均值>0→upgma_better",
+  "H2_mds": "Δ=ll_circular−ll_mds（冻结 Δ_f），族级均值>0→mds_better",
+  "direction_rule": "方向=族级 Δ 均值符号（n<2 或 nan→insufficient；恰 0→tie，不计多数）"
+ },
+ "inputs": {
+  "TLI_stat_small": {
+   "n_m2_folds": 82,
+   "n_m3_folds": 82,
+   "n_common_folds": 82,
+   "families_in_m2_missing_from_m3": [],
+   "n_cell_mismatches": 0,
+   "mismatch_detail_head": [],
+   "n_families_done_in_m3_json": 82,
+   "matches_m2_mean_circular": true,
+   "matches_m2_mean_marginal": true
+  },
+  "TLI_stat_large": {
+   "n_m2_folds": 108,
+   "n_m3_folds": 108,
+   "n_common_folds": 108,
+   "families_in_m2_missing_from_m3": [],
+   "n_cell_mismatches": 0,
+   "mismatch_detail_head": [],
+   "n_families_done_in_m3_json": 108,
+   "matches_m2_mean_circular": true,
+   "matches_m2_mean_marginal": true
+  },
+  "TLI_log_small": {
+   "n_m2_folds": 65,
+   "n_m3_folds": 65,
+   "n_common_folds": 65,
+   "families_in_m2_missing_from_m3": [],
+   "n_cell_mismatches": 0,
+   "mismatch_detail_head": [],
+   "n_families_done_in_m3_json": 65,
+   "matches_m2_mean_circular": true,
+   "matches_m2_mean_marginal": true
+  },
+  "GBI_stat": {
+   "n_m2_folds": 75,
+   "n_m3_folds": 75,
+   "n_common_folds": 75,
+   "families_in_m2_missing_from_m3": [],
+   "n_cell_mismatches": 0,
+   "mismatch_detail_head": [],
+   "n_families_done_in_m3_json": 75,
+   "matches_m2_mean_circular": true,
+   "matches_m2_mean_marginal": true
+  },
+  "GBI_log": {
+   "n_m2_folds": 75,
+   "n_m3_folds": 75,
+   "n_common_folds": 75,
+   "families_in_m2_missing_from_m3": [],
+   "n_cell_mismatches": 0,
+   "mismatch_detail_head": [],
+   "n_families_done_in_m3_json": 75,
+   "matches_m2_mean_circular": true,
+   "matches_m2_mean_marginal": true
+  },
+  "WALS": {
+   "n_m2_folds": 104,
+   "n_m3_folds": 104,
+   "n_common_folds": 104,
+   "families_in_m2_missing_from_m3": [],
+   "n_cell_mismatches": 0,
+   "mismatch_detail_head": [],
+   "n_families_done_in_m3_json": 104,
+   "matches_m2_mean_circular": true,
+   "matches_m2_mean_marginal": true
+  }
+ }
+}

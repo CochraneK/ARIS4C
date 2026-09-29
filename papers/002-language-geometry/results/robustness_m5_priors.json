@@ -1,0 +1,175 @@
+{
+ "m5a_macroarea": {
+  "TLI_stat_small": {
+   "status": "Macroarea 可用（钉版 glottolog languages.csv Macroarea 列）",
+   "delta_vs_circular_mean": 0.018272345376294116,
+   "ci95": [
+    -0.18901376567390407,
+    0.27390558765886663
+   ],
+   "n_delta_folds": 82,
+   "circular_significantly_worse_than_macroarea": false,
+   "note": "探索性、非判定项；residual 增益≈0（下界未超 margin）→ 增益可被地理先验解释（降级信号）"
+  },
+  "TLI_stat_large": {
+   "status": "Macroarea 可用（钉版 glottolog languages.csv Macroarea 列）",
+   "delta_vs_circular_mean": 0.03294187616186463,
+   "ci95": [
+    -0.1158893867699287,
+    0.27114487296999223
+   ],
+   "n_delta_folds": 108,
+   "circular_significantly_worse_than_macroarea": false,
+   "note": "探索性、非判定项；residual 增益≈0（下界未超 margin）→ 增益可被地理先验解释（降级信号）"
+  },
+  "TLI_log_small": {
+   "status": "Macroarea 可用（钉版 glottolog languages.csv Macroarea 列）",
+   "delta_vs_circular_mean": 0.02720493072318598,
+   "ci95": [
+    -0.15470326605781654,
+    0.22812625149569002
+   ],
+   "n_delta_folds": 65,
+   "circular_significantly_worse_than_macroarea": false,
+   "note": "探索性、非判定项；residual 增益≈0（下界未超 margin）→ 增益可被地理先验解释（降级信号）"
+  },
+  "GBI_stat": {
+   "status": "Macroarea 可用（钉版 glottolog languages.csv Macroarea 列）",
+   "delta_vs_circular_mean": 0.15748002865395194,
+   "ci95": [
+    0.021623599986282327,
+    0.3051912158412761
+   ],
+   "n_delta_folds": 75,
+   "circular_significantly_worse_than_macroarea": true,
+   "note": "探索性、非判定项；圆形显著劣于 Macroarea 先验（CI 下界超 margin）→ 圆形几何不可完全由地理先验还原"
+  },
+  "GBI_log": {
+   "status": "Macroarea 可用（钉版 glottolog languages.csv Macroarea 列）",
+   "delta_vs_circular_mean": 0.18060472541544145,
+   "ci95": [
+    0.055753246940047706,
+    0.30615435396064267
+   ],
+   "n_delta_folds": 75,
+   "circular_significantly_worse_than_macroarea": true,
+   "note": "探索性、非判定项；圆形显著劣于 Macroarea 先验（CI 下界超 margin）→ 圆形几何不可完全由地理先验还原"
+  },
+  "WALS": {
+   "status": "Macroarea 可用（钉版 glottolog languages.csv Macroarea 列）",
+   "delta_vs_circular_mean": 0.051384867101879665,
+   "ci95": [
+    -0.7693391331323989,
+    1.0440470491608473
+   ],
+   "n_delta_folds": 88,
+   "circular_significantly_worse_than_macroarea": false,
+   "note": "探索性、非判定项；residual 增益≈0（下界未超 margin）→ 增益可被地理先验解释（降级信号）"
+  }
+ },
+ "m5b_spearman_n_held": {
+  "TLI_stat_small": {
+   "H1_marginal": {
+    "rho": 0.05315178249715381,
+    "p": 0.6353171502646331,
+    "n": 82
+   },
+   "H2_upgma": {
+    "rho": 0.2579806028520392,
+    "p": 0.01928327390355501,
+    "n": 82
+   },
+   "H2_mds": {
+    "rho": 0.23232345397324344,
+    "p": 0.03570148362199148,
+    "n": 82
+   }
+  },
+  "TLI_stat_large": {
+   "H1_marginal": {
+    "rho": -0.046000738229894055,
+    "p": 0.6363977123338062,
+    "n": 108
+   },
+   "H2_upgma": {
+    "rho": -0.12225905719864999,
+    "p": 0.20748775960758017,
+    "n": 108
+   },
+   "H2_mds": {
+    "rho": -0.19239770366708087,
+    "p": 0.046057237472302295,
+    "n": 108
+   }
+  },
+  "TLI_log_small": {
+   "H1_marginal": {
+    "rho": -0.21800578970055204,
+    "p": 0.08106047675716505,
+    "n": 65
+   },
+   "H2_upgma": {
+    "rho": -0.15451638427898778,
+    "p": 0.21908082416809394,
+    "n": 65
+   },
+   "H2_mds": {
+    "rho": 0.07338716961105239,
+    "p": 0.5612604672157272,
+    "n": 65
+   }
+  },
+  "GBI_stat": {
+   "H1_marginal": {
+    "rho": 0.18649650072988103,
+    "p": 0.10914015294784059,
+    "n": 75
+   },
+   "H2_upgma": {
+    "rho": 0.01857945782676516,
+    "p": 0.8742882238685035,
+    "n": 75
+   },
+   "H2_mds": {
+    "rho": 0.05904743651651966,
+    "p": 0.6148121618568227,
+    "n": 75
+   }
+  },
+  "GBI_log": {
+   "H1_marginal": {
+    "rho": -0.056853233670295995,
+    "p": 0.6280410570149099,
+    "n": 75
+   },
+   "H2_upgma": {
+    "rho": 0.08258755631652318,
+    "p": 0.48117062788241066,
+    "n": 75
+   },
+   "H2_mds": {
+    "rho": -0.1253348869225266,
+    "p": 0.28397485639020886,
+    "n": 75
+   }
+  },
+  "WALS": {
+   "H1_marginal": {
+    "rho": -0.09763872270735678,
+    "p": 0.3654648394240576,
+    "n": 88
+   },
+   "H2_upgma": {
+    "rho": -0.05504187532594522,
+    "p": 0.6189877314670071,
+    "n": 84
+   },
+   "H2_mds": {
+    "rho": -0.07497108710477421,
+    "p": 0.5059293002023771,
+    "n": 81
+   }
+  }
+ },
+ "note": "探索性、非判定项；M5a 自 m3 逐字转写（fold 级配对，含 Macroarea 可得性标注与「残余增益≈0→增益可被先验解释」降级信号判定）；M5b=Spearman(n_held_langs, Δ_f)，Δ 符号约定同 m4_aggregation.json"
+}
