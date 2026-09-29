@@ -11,7 +11,7 @@
   "merged_from": {
     "date": "2026-09-30",
     "source_dir": "papers/018-drosophila-open-simulation",
-    "note": "Consolidated the 018 open-simulation concept scaffold into this canonical neural-simulation directory. Founding charter (2 goals: simulation atlas + research-question generation) and RESEARCH_PLAN.md (P1-P5 discovery ladder) folded in; see MERGE_NOTE.md. The open directory is deleted."
+    "note": "Consolidated the 018 open-simulation concept scaffold into this canonical neural-simulation directory. Founding charter (2 goals: simulation atlas + research-question generation) and RESEARCH_PLAN.md (P1-P5 discovery ladder) folded in; see MERGE_NOTE.md. The open directory is retained on disk and flagged superseded (portfolio_visible=false); its physical deletion is DEFERRED because `git rm -r` on it reliably triggered a papers/ working-tree wipe (2 incidents in this session, recovered via git restore)."
   },
   "authors": [
     "Cochrane Kang"
