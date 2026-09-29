@@ -1,6 +1,6 @@
 # COORDINATION.md — ARIS4C-001 · 跨会话协调
 
-> 最后更新：2026-09-26 16:07 · 窗口A（段4 双语稿直写收官：EN 7 块 ~245 行 + ZH 7 块镜像 + EN_notes 数字溯源表全落盘；32 条引用逐条核（Crossref 复核补全 8 条 DOI 完整书目）；段5 收官窗口A 认领待启动）。**任何会话在启动新 ARIS 段前必读本文件。**
+> 最后更新：2026-09-26 16:15 · 窗口A（段5 收官：paper.json stage5_final + final_FROZEN.txt + git 增量 commit 4640e77；**001-gca-bees 重跑五段全完成，本篇闭环**）。**任何会话在启动新 ARIS 段前必读本文件。**
 > 本篇为 017→001 重跑队列第 2 篇（017 已闭环）。沙盒仅 `RESEARCH_BRIEF.md` + 本文件 + `stage1_prompt.txt`。
 
 ## 自动驱动体系（2026-09-26 13:23 部署，用户要求全自动跑完 23 篇）
@@ -28,7 +28,10 @@
   - 交付物：`paper/paper_EN.md`（7 块：标题+摘要+§1–§8+参考文献 32 条，~245 行）+ `paper/paper_ZH.md`（7 块中文镜像）+ `paper/paper_EN_notes.md`（数字→源 JSON 字段映射 + run provenance）
   - 稿件纪律：全部数字取自段2/3 冻结产物（s2_precision.json / s3_trial_model.json / s3_robustness.json / corr_pairs.csv）；RL2-NP 临界在摘要、§3.1、§5 行3、§7 共 4 处如实呈现；claims policy 逐字落实 §6.3 三条边界；只引冻结 32 条
   - 引用补全：写前 Crossref 复核 8 条书目不全的冻结 DOI（4/14/26–32，补全作者全名/完整题名，如 Hammer & Menzel 1995 实为双作者、Benatar 1995 完整题名、Qu 2023 完整题名）；未新增任何引用
-- **段5（收官）= 窗口A 认领，待启动**（paper.json stage5_final + final_FROZEN.txt + git 同步交付物）
+- **段5（收官）= 完成（窗口A 直写收官 16:15，未跑 LLM，001 本篇闭环）**
+  - 交付物：`paper/paper.json`（stage5_final 元数据+关键数字+provenance，同步至仓库根替换旧版）+ `results/final_FROZEN.txt`（冻结声明：产物清单/关键数字/claims policy/引用冻结/重开流程）
+  - git 增量 commit **4640e77**（56 文件/9464 行：paper/ 3 件+paper.json+results/ 25 件+lit/ 2 件+code/ 17 件+process/ 8 件；data/ 未同步（13MB>5MB，公开源已引）；不 force）
+  - **001-gca-bees 五段全完成 → 队列下一步 = 002-language-geometry**
 
 ## 本篇关键设定（来自 RESEARCH_BRIEF.md，唯一 idea 输入）
 - 蜜蜂 *Apis mellifera* 学习/决策个体差异 → 哪个潜变量 + 试次级模型最能解释变异
@@ -96,3 +99,4 @@ cd <001夹> && \
 | 15:31 | 窗口A（本会话） | 段3 run#1 死亡分诊 + 处置认领 | run#1（executor PID 9356，15:21 启动）15:30:30 死于 **128K 溢出（第 6 例，log 1756-1757：131073>131072）**：读 6 件冻结输入 + 写脚本累积撑爆（与段2 run#2 同款死法）；死前已写完 `code/s3_trial_model.py`（233 行，尾部完整无残标，未运行）；results/ 无 s3 产物 → 剩余=确定性（跑脚本+稳健性+summary）→ **窗口A 按 aris-128k-takeover 接管（第 8 次），驱动器 17232 勿动段3** |
 | 15:44 | 窗口A（本会话） | 段3接管收官 + 段4认领 | 第 8 次接管收官（未重跑 LLM）：① executor 遗留 `s3_trial_model.py` 修 2 处 statsmodels 新版 API bug 后跑通（bug1：formula API 的 m.params 含 "ID Var" 随机效应方差参数→只取列名参数；bug2：m.random_effects 是 dict→isinstance 分支）→ `s3_trial_model.json` 完整；② 新写 `s3_robust.py`（~130 行；exclude_single_event 需 legacy `groups=` API 回退——新版 from_formula 报 "'groups' is a required keyword argument"）→ `s3_robustness.json` 完整（fitted=true）；③ `stage3_summary.md` 落盘。**主结果**：n=536/213 蜂/325 trial；is_liar β=0.2346 [0.126,0.344] p=2.5e-05；focal β=0.0106 [0.008,0.013] p<.001；stage p=.207 ns；R2m=.112；precision 调制仅探索性（Welch p=.23/交互 p=.39，符号检验 hi p=.023）；稳健性 RL2-NP 临界（drop_Expt3 后 ns）须如实呈现。**段3 完成；窗口A 认领段4（双语稿直写，不跑 LLM），驱动器见本行勿动段4**。驱动器状态：3460 看门狗存活；17232（15:21:04 起）15:43:59 PowerShell 核对仍存活，看门狗 15:46:04 按 25min 预算 KILL；Bash tasklist 对隐藏会话 aris 进程有假阴性（15:40 误报无 aris），进程核对一律用 PowerShell Get-Process 落盘再读 |
 | 16:07 | 窗口A（本会话） | 段4收官 + 段5认领 | 段4 双语稿窗口A 直写收官（未跑 LLM）：`paper/paper_EN.md`（7 块 ~245 行：标题+摘要（2462 字符完整，Read 工具 2000 字符行截断≠文件截断）+§1 引言 5 小节/§2 数据+表1 全 16 行/§3 跨任务协方差（M4 拒绝表+M1 部分支持+M2/M3 不可估+M5 两阶段+段2 三层表）/§4 试次级（表2+随机斜率+47 蜂分层+近期代理）/§5 稳健性表3（RL2-NP 临界行3）/§6 讨论+claims policy 三边界/§7 局限 10 条/§8 provenance+参考文献 32 条）+ `paper/paper_ZH.md`（7 块中文镜像，数字与 EN 逐项一致）+ `paper/paper_EN_notes.md`（数字→源字段映射 + run provenance，含 8 次接管记录）；写前 Crossref 复核 8 条书目不全冻结 DOI（4/14/26–32，未新增引用）。**段5 收官由窗口A 认领（paper.json stage5_final + final_FROZEN.txt + git 同步），驱动器勿动段5** |
+| 16:15 | 窗口A（本会话） | 段5收官（001 闭环） | 未跑 LLM 直写收官：`paper/paper.json`（stage5_final+关键数字+provenance，仓库根替换旧版）+ `results/final_FROZEN.txt`（冻结声明：产物清单+关键冻结数字+claims policy+引用冻结）落盘；git 增量 commit **4640e77**（56 文件/9464 行：paper/3+paper.json+results/25+lit/2+code/17+process/8；data/ 未同步（13MB>5MB，公开源已引 Zenodo 10.5281/zenodo.17771502）；不 force）。**001-gca-bees 五段全完成、本篇闭环；队列下一步=002-language-geometry 启动（驱动器 2952 周期若读到本行按 DRIVER_SPEC 队列纪律推进 002，窗口A 同步准备 002 沙盒，以先落账者为准）** |
