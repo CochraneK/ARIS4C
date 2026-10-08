@@ -1,0 +1,48 @@
+# ARIS4C-005 段1（stage 1）executor 任务
+
+## 身份与纪律
+- 你是 ARIS4C-005-hidden-burden-bad-science 重跑的 stage 1 executor。唯一 idea 输入 = 本目录 RESEARCH_BRIEF.md。
+- **禁止**读取/复制 D:\Software\ARIS4C\papers\ 旧仓库任何代码/数据/结果。公开数据源可重取，代码本 run 新写。
+- 工具调用总数 ≤35；单次推理 ≤2 句；禁 read 大 CSV（>200 行取 head）；python 输出 ≤40 行；中间结果写盘，不重复下载。
+- 落盘产物分块短写（heredoc 追加，单块 ≤60 行）。
+- 所有外部 API 带 backoff (0,30,60,120,240)——本机与其他任务共享出口，429 会成簇。
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## S1 冻结设计确认（先读 RESEARCH_BRIEF.md 全文）
+复述并确认（写入 stage1_summary.md 头部）：
+- E1/E2/E3 三层范围不得混用；主时间宇宙 2000–2025
+- 七条禁令（撤稿≠造假 等）
+- 冻结损失本体 5 类；冻结新概念 11 个（先校准再使用）
+- 六模块 A–F 架构；Gate 1–5；人工审计 6 级裁决；模块 B 主模型=分层贝叶斯二元潜类
+- Non-Goals：不做国家排名、不追求单一总账、不生成具名清单
+**不得新增假设或模块。**
+
+## S2 文献（OpenAlex + Crossref）
+检索 5 方向（每方向 ≥5 篇）：
+1. research integrity failure 患病率/检出研究（misconduct prevalence, retraction cause analyses）
+2. 撤稿动力学（retraction delay、原因编码、RW 数据研究）
+3. 引用下游传播/污染（citation context classification、contamination propagation、VITALITY 类研究）
+4. 潜变量患病率方法（分层贝叶斯 latent class、capture-recapture）
+5. bad science 成本/浪费/创新延迟估计（research waste、NIH cost、career consequences）
+lit/REGISTRY.md 字段：citekey,title,year,authors(first3),venue,doi,status(VERIFIED=Crossref DOI 核对/UNVERIFIED+原因),relevance(1-3)。总数 ≥25，VERIFIED ≥15。
+
+## S3 DATA_PROFILE.md
+可行性核查（只测可行性，不执行主分析）：
+1. OpenAlex core 快照：文章宇宙分母（2000–2025）量级 + 快照日期记录（1 个 test query，per-page=200，禁 group_by>per-page）
+2. RW CSV 公开源：URL/commit/日期、记录量级、E1 计数口径（confirmed severe integrity failure 对应哪些原因码——只列映射，不计算率）
+3. 模块 B pilot 数据侧：自动表征 5000–10000 篇 + 人工裁决 750–1500 篇所需字段的 OpenAlex 覆盖（reason/retraction 字段、DOI 完整度）
+4. 模块 D：NIH RePORTER 归属字段可得性（test query 1 个）
+5. 模块 C：引用上下文分类所需 OpenAlex 引用字段覆盖（test query 1 个）
+6. Gate 1–5 在段1 阶段的可判性说明（哪些 gate 现在可初判、哪些需段2 数据）
+每项：来源 URL/commit、快照日期、量级、局限。
+
+## S4 LIT_NOTES.md
+按 5 检索方向分节，每节 ≤15 行，只记与冻结设计直接相关的点（尤其：谁用过哪种患病率方法、七条禁令在文献中的对应教训）。
+
+## S5 stage1_summary.md
+≤40 行：设计确认（S1）+ 文献概况（VERIFIED 数/关键发现 ≤5 条）+ 数据可行性（6 项 verdict）+ gate 初判 + 总体 verdict（GO / GO-with-caution / NO-GO + 理由）。
+
+## 完成标准
+- 四件落盘：lit/REGISTRY.md, data/DATA_PROFILE.md, lit/LIT_NOTES.md, stage1_summary.md
+- 零 outcome 计算：不跑患病率模型、不物化模块 A 计数、不算任何率
+- 全部完成后只输出一行：DONE stage1 005

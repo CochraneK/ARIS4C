@@ -1,0 +1,25 @@
+你是 005 段1 修复 executor（stage1_fix）。上一轮 stage1 死于「单次响应过长被截断」，且 S3 的 OpenAlex 探测当时撞上配额耗尽。本段只补缺失件，不重做已完成件。
+
+## 已完成（勿重做）
+- lit/REGISTRY.md 已存在：35 条目、Crossref VERIFIED（满足 ≥25 总数 / ≥15 VERIFIED）。只读核对，不改不重建。
+- data/s3_feasibility.py 与 data/_raw/s3_results.json 已存在：rw.csv_probes 两次 200；失败项 = rw-api（ProxyError）、nih-legacy（HTTP500）、oa_denominator/oa_retracted_fields/oa_citation_fields（当时 OpenAlex 配额耗尽，响应无 results 键）。
+
+## 背景（宿主机侧已核实）
+- OpenAlex 免费额度 = 每 IP 每天 1000 次查询（每次 $0.0001），UTC 午夜（北京 08:00）重置；现在（08:2x）已恢复。全机多任务共享，**本段 OpenAlex 查询总数 ≤10**，per-page=200，禁 group_by>per-page，带 backoff (0,30,60)。
+- 本机有代理环境；RW API 走代理曾 ProxyError，RW 的 **CSV 公开源可用**（csv_probes 已 200）。
+
+## 任务（按序，工具 ≤25）
+F1 修 OpenAlex 探测（改 data/s3_feasibility.py 的失败分支或写新的小脚本 s3_fix.py）：探测 3 项——① 2000–2025 文章宇宙分母量级（1 query，用 meta.count，勿翻页）；② retracted/reason 字段覆盖（1 query 抽样 200 条看字段非空率）；③ 引用上下文所需字段覆盖（1 query 抽样）。响应处理必须先判 status 与键存在再取数，错误时记录 HTTP 码 + body 前 200 字符，禁止 KeyError 裸抛。
+F2 RW 侧：用已验证可用的 CSV 公开源核实记录量级 + E1（confirmed severe integrity failure）对应原因码映射（只列映射，不计算率）。RW API 最多再试 1 次，失败即弃。
+F3 NIH：legacy 已 500、new API 需 key——**不重试**，直接记为「需 developer.nih.gov API key / legacy 不可用」的局限项。
+F4 写 data/DATA_PROFILE.md：6 项可行性 verdict（每项：来源 URL/commit、快照日期、量级、局限）+ Gate 1–5 段1 可判性说明。≤70 行，分块写（单块 ≤30 行）。
+F5 写 lit/LIT_NOTES.md：按 5 检索方向分节、每节 ≤15 行，只记与冻结设计直接相关点（谁用过哪种患病率方法、七条禁令对应教训）。条目从 lit/REGISTRY.md 取，不重新检索。分块写。
+F6 写 stage1_summary.md：≤40 行——S1 设计确认复述（E1/E2/E3 不混用、主宇宙 2000–2025、七条禁令、冻结 5 类损失/11 新概念、A–F 六模块、Gate 1–5、模块 B=分层贝叶斯二元潜类、Non-Goals 三条）+ 文献概况（35 条目、VERIFIED 数、关键发现 ≤5 条）+ 6 项可行性 verdict + gate 初判 + 总体 verdict（GO / GO-with-caution / NO-GO + 理由）。
+F7 末行只输出：DONE stage1fix 005
+
+## 纪律（硬性，违反即失败）
+- 任何单次响应输出 ≤25 行；写文件一律分块 heredoc 追加，单块 ≤30 行；推理每步 1–2 句。
+- python 输出 ≤20 行；不 read 大文件全文（>100 行取 head/取列）。
+- 禁止重复下载已存在文件；中间结果写盘。
+- 网络同一 URL 最多 2 次；失败记录后走降级路径，禁止死循环。
+- 进度：每完成一个 F 追加一行到 stage1fix_progress.md（时间戳+一行结果）。

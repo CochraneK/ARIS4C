@@ -1,0 +1,53 @@
+{
+ "dataset": "crossref/retraction-watch-data (official RW CSV)",
+ "url_csv": "https://gitlab.com/crossref/retraction-watch-data/-/raw/main/retraction_watch.csv",
+ "url_readme": "https://gitlab.com/crossref/retraction-watch-data/-/raw/main/README.md",
+ "url_commits_api": "https://gitlab.com/api/v4/projects/crossref%2Fretraction-watch-data/repository/commits?per_page=1",
+ "fetched_at": "2026-09-30T03:34:44.178485+00:00",
+ "bytes": 67038098,
+ "sha256": "69477e2e1c1a6c12e2ba22b753f4158e03ef57e98a8daca807b246a0b3fdb7f4",
+ "header_check": "first line is CSV header, no <!DOCTYPE>",
+ "rows": 72758,
+ "columns": [
+  "Record ID",
+  "Title",
+  "Subject",
+  "Institution",
+  "Journal",
+  "Publisher",
+  "Country",
+  "Author",
+  "URLS",
+  "ArticleType",
+  "RetractionDate",
+  "RetractionDOI",
+  "RetractionPubMedID",
+  "OriginalPaperDate",
+  "OriginalPaperDOI",
+  "OriginalPaperPubMedID",
+  "RetractionNature",
+  "Reason",
+  "Paywalled",
+  "Notes",
+  ""
+ ],
+ "doi_column": "OriginalPaperDOI",
+ "doi_nonempty_pct": 96.53,
+ "date_column_used": "RetractionDate",
+ "date_min": "1756-06-24",
+ "date_max": "2026-09-19",
+ "distinct_reason_values": 112,
+ "reason_list_split": ";",
+ "mapping_file": "data/rw_e1_mapping.csv",
+ "provenance": {
+  "commit": "690e78d4857ea3e62daa0c10b70f2b66381976b0",
+  "committed_date": "2026-09-29T23:00:05.000+00:00",
+  "author_name": "build-retractionwatch-csv",
+  "readme_keylines": [
+   "This repository contains the latest dataset from Retraction Watch, generated on 2026-09-29.",
+   "In September 2023, Crossref acquired the Retraction Watch database from the Center of Scientific Integrity and have made it publicly available. The database contains retractions gathered from publisher websites and is updated every working day by Retraction Watch. Some other update types, such as expressions of concern and corrections, are also included in the data, but these are not as comprehensive as retractions. Various methods are used to find retractions, including searching scholarly databases, checking publisher websites, web searches, and reports from the community. For further details, see [this document](https://retractionwatch.com/wp-content/uploads/2023/12/Building-The-Database.pdf).",
+   "- _Title_: The title of the retracted or updated content."
+  ]
+ },
+ "date_format_note": "RetractionDate raw = MM/DD/YYYY H:MM (US); ISO-normalized here; 2-digit year <70 -> 20xx else 19xx"
+}

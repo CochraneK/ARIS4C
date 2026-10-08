@@ -1,0 +1,9 @@
+{
+ "url": "https://api.reporter.nih.gov/v2/awards?api_key=FIX3_PROBE_NO_KEY&per_page=1",
+ "client": "urllib, verify=False (unverified ssl context)",
+ "ts": "2026-10-08T02:41:13Z",
+ "http": 404,
+ "verdict": "CAUTION",
+ "note": "HTTP 404（需查）",
+ "evidence": ""
+}

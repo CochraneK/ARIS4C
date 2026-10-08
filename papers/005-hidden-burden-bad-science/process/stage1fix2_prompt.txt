@@ -1,0 +1,33 @@
+# ARIS4C-005 · 段1 修复第二次（stage1fix2）
+
+背景：段1 run 与 stage1fix 均死于流输出超限（reason='length'，单条响应超长）。现状：
+- `lit/REGISTRY.md` 已存在且达标（35 条目，VERIFIED 37 处）——**不要改动**。
+- `data/_raw/s3_results.json` 有旧错误：rw-api ProxyError、nih-legacy HTTP500、OpenAlex 3 探测 'results' KeyError（根因已查明：2026 API 语法变更，见下）。
+- 你的任务：补三件交付物（DATA_PROFILE / LIT_NOTES / summary）+ 重做 S3 探测。
+
+## 2026 OpenAlex API 实测事实（宿主机已验证，直接使用，勿再试错）
+- 计量计费：免费 $0.10/天 = 1000 次查询，北京 08:00 重置；带 `cost_usd` 字段与 `X-RateLimit-*-USD` 头。
+- `per-page` 必须 1–200（0 已非法）。
+- `.gte:`/`.lte:` 运算符**已移除** → 连字符区间：`publication_year:2000-2025`、`works_count:100-`。
+- 宿主已测：**2000–2025 works 宇宙 = 220,028,794**（`/works?filter=publication_year:2000-2025` 的 meta.count，2026-09-30 08:20 北京时间）——S3.1 可直接引用此数 + 补 1 个 per-page=200 的字段覆盖探测（一箭双雕，兼 S3.3 用）。
+
+## 输出纪律（违反 = 会话再次死亡，强制）
+1. 每条响应最多 1 个工具调用。
+2. 单个工具调用的参数（含 here-string/内容）≤ 20 行。
+3. 每条响应的伴随文本 ≤ 2 句；禁止在响应文本中复述、预览或展示任何文件内容。
+4. 长文件分多次追加写，每次追加 ≤ 15 行；优先 python 生成内容（模型只写代码，不直接输出数据文本）。
+5. 总工具调用 ≤ 25 次；OpenAlex 新查询 ≤ 5 次；RW API 最多重试 1 次；NIH 不重试。
+6. 进度写 `stage1fix2_progress.md`（每次工具调用后追加 1 行，≤2 句）。
+
+## 任务（顺序执行）
+F1. 重写 `data/s3_feasibility.py`（或 `data/s3_fix.py`）用上述 2026 语法重做探测：
+   - S3.1：引用宿主分母 220,028,794 + 1 次 per-page=200 探测（顺带记快照日期）。
+   - S3.3：同一响应对象里检查 retraction 相关字段（`primary_location.source.display_name`、`retracted` 布尔、`retraction_date`、`locations[].biblio`）与引用字段（`cited_by_count`、`abstract_inverted_index` 可得性）覆盖 → 模块 B（5000–10000 篇自动 + 750–1500 篇人工）字段需求判定。
+   - S3.5：引用上下文分类所需字段（`concepts`、`abstract_inverted_index`、`cites` 需二次查询的判定）→ 模块 C 判定。
+   结果写 `data/_raw/s3_fix_results.json`（含每次请求的 HTTP status + 响应前 200 字符，便于区分 400 语法错 vs 429 配额）。
+F2. RW CSV 公开源（S3.2）：GitLab retractionwatch 仓库 raw 下载，最多重试 1 次（换 URL 形态：raw 路径 / 分支名 main/master 变体）；记录 URL/commit/日期、记录量级、E1 口径映射（confirmed severe integrity failure 对应原因码，只列映射不计算率）。失败则记 blocked + 原因码。
+F3. NIH RePORTER（S3.4）：不重试，直接记「上轮 HTTP500，本 run 不重试，列为段2 前置输入」+ 局限。
+F4. `data/DATA_PROFILE.md`（≤70 行，分 5 次追加，每次 ≤15 行）：S3 六项各给来源/快照日期/量级/局限 + Gate 1–5 在段1 阶段的可判性说明。
+F5. `lit/LIT_NOTES.md`（≤75 行，分 5 次追加）：按 5 检索方向分节（REGISTRY 的 citekey 已可参考），每节 ≤15 行，只记与冻结设计直接相关的点（谁用过哪种患病率方法、七条禁令在文献中的对应教训）。
+F6. `stage1_summary.md`（≤40 行，2 次追加）：设计确认 + 文献概况（VERIFIED 数 + 关键发现 ≤5 条）+ 6 项 verdict + gate 初判 + 总体 verdict（GO / GO-with-caution / NO-GO + 理由）。
+F7. 末行输出：`DONE stage1fix2 005`

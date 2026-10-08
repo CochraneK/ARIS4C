@@ -1,0 +1,34 @@
+# ARIS4C-005 段1 fix3（第三次尝试，最小修复）executor 任务
+
+## 背景（宿主判定，勿读旧日志）
+- 段1 原始 run + fix + fix2 共三次：fix2 死于规划响应超长（上下文膨胀），F1/F2 数据已在盘，三文档（DATA_PROFILE / LIT_NOTES / stage1_summary）缺失。
+- 本 run = 最小修复：只写三文档 + DONE。全部基于在盘数据 + ≤2 个新查询。不重新下载、不重新检索。
+- 禁止读 results/ 下任何 run 日志（都很大，会爆上下文）。
+
+## 在盘指针（均存在；只读小文件）
+- stage1_prompt.txt（49 行）——S3/S4/S5 的唯一规格，先全文读。
+- lit/REGISTRY.md（~43 行）——25 条 VERIFIED 文献（5 方向×5），LIT_NOTES 的唯一素材。
+- data/_raw/s3_fix_results.json（~60 行）——fix2 探测结果：s31（per-page=200 有效；meta.count=220,028,794=OpenAlex 全库未过滤总量）；s33（retracted:true filter 400 非法=2026 schema；200 样本字段覆盖 doi 192 / pl_source_display_name 169 / cited_by_count 200 / abstract 155 / concepts 200 / retracted* 0 / cites 0）；s35（cites 需按 ids 第二批量查询）。
+- data/_raw/rw_retractions.csv（~166KB）——Retraction Watch 撤稿通知 CSV；只本地解析。
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## 允许的新查询（≤2；429 用 backoff(0,30,60,120,240)）
+- Q1 OpenAlex count：works + from_publication_date=2000-01-01&until_publication_date=2025-12-31（S3-1 精确分母）。
+- Q2 NIH RePORTER probe：1 次 test query 确认机构归属字段可得性（S3-4）。
+- Q1/Q2 结果以 s31b/s34 条目 append 进 data/_raw/s3_fix_results.json（小 json 编辑，与查询同命令完成）。
+
+## 纪律（防溢出，必须遵守）
+- 工具调用 ≤17；单响应 ≤1 调用；参数 ≤25 行；文本 ≤2 句；禁正文复述文件内容。
+- 写入用 heredoc/python 分块，单块 ≤25 行；进度行与任务同命令 append 进 data/progress_fix3.txt（不单独调用）；python 输出 ≤15 行。
+
+## 任务
+- T1 读 stage1_prompt.txt + data/_raw/s3_fix_results.json + lit/REGISTRY.md（3 次读）。
+- T2 本地解析 rw_retractions.csv → data/_raw/rw_csv_profile.json（行数/字段名/日期范围/top10 原因码/E1 映射候选——只列映射不算率）。
+- T3 跑 Q1 + Q2，结果 append 进 s3_fix_results.json。
+- T4 写 data/DATA_PROFILE.md ≤70 行（按 S3 六项：#1=Q1+s31（分母+快照日期）；#2=rw_csv_profile（URL/日期/量级/E1 映射）；#3=s33 字段覆盖（retraction 字段 list-query 缺失→CAUTION）；#4=Q2；#5=s33/s35（cites 需 ids 批量第二查询→CAUTION，段2 绕行方案一行）；#6=Gate 1–5 可判性逐条）。
+- T5 写 lit/LIT_NOTES.md ≤75 行（按 S4：5 方向分节、每节 ≤15 行，基于 REGISTRY 条目+relevance 字段；文件头注：fix3 依 REGISTRY 元数据重建，逐篇深读笔记延至段2）。
+- T6 写 stage1_summary.md ≤40 行（按 S5：设计确认复述 + 文献概况 + 6 项 verdict + gate 初判 + 总体 verdict）+ 末行 DONE stage1fix3 005。
+  - 总体 verdict 预期 = GO-with-caution：retracted 字段 list-query 缺失（filter 400/覆盖 0）与 cites 需二次查询需段2 绕行，其余有在盘证据。
+
+## 禁止
+- 新文献检索/Crossref；超出 Q1/Q2 的 OpenAlex 调用；跑任何模型/算任何率；改 REGISTRY.md；读旧 run 日志。

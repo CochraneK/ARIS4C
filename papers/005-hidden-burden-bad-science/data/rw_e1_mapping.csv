@@ -1,0 +1,116 @@
+# T2 E1 mapping (stage2): official RW CSV, reason split on ";" then lowercased; mapping only, NO rates; row_count = rows containing that value
+# E1_CANDIDATE contains fabricat|falsif|plagiaris|tamper|fraud|misconduct|manipulation|duplication|forgery|splicing|doctored; NON_E1 = editorial/administrative/errors (error|mistake|duplicate|clerical|typo|administrative|editorial|copyright|permission|withdraw); else UNDECIDED
+# notice-level reason != adjudicated conclusion (ban1: retraction != fabrication); E1_CANDIDATE is a screening candidate only, final ruling deferred to module B manual audit
+reason_value,row_count,category
+investigation by journal/publisher,32355,UNDECIDED
+unreliable results and/or conclusions,22083,UNDECIDED
+investigation by third party,18067,UNDECIDED
+concerns/issues about data,15969,UNDECIDED
+concerns/issues about referencing/attributions,15358,UNDECIDED
+notice - limited or no information,12118,UNDECIDED
+compromised peer review,11947,UNDECIDED
+paper mill,11798,UNDECIDED
+concerns/issues about peer review,11736,UNDECIDED
+concerns/issues about results and/or conclusions,10068,UNDECIDED
+computer-aided content or computer-generated content,9336,UNDECIDED
+date of article and/or notice unknown,7027,UNDECIDED
+duplication of/in image,5733,E1_CANDIDATE
+breach of policy by author,4792,UNDECIDED
+removed,4075,UNDECIDED
+objections by author(s),3967,UNDECIDED
+investigation by company/institution,3839,UNDECIDED
+euphemisms for plagiarism,3831,E1_CANDIDATE
+duplication of/in article,3725,E1_CANDIDATE
+concerns/issues about image,3662,UNDECIDED
+rogue editor,3587,UNDECIDED
+author unresponsive,3405,UNDECIDED
+concerns/issues about authorship/affiliation,3180,UNDECIDED
+plagiarism of/in article,2901,E1_CANDIDATE
+lack of irb/iacuc approval and/or compliance,2664,UNDECIDED
+original data and/or images not provided and/or not available,2625,UNDECIDED
+upgrade/update of prior notice(s),2452,UNDECIDED
+unreliable data,2408,UNDECIDED
+euphemisms for duplication,2369,E1_CANDIDATE
+plagiarism of text,2226,E1_CANDIDATE
+error in data,2153,NON_E1
+updated to retraction,2134,UNDECIDED
+concerns/issues about third party involvement,1962,UNDECIDED
+misconduct by author,1948,E1_CANDIDATE
+concerns/issues about article,1934,UNDECIDED
+falsification/fabrication of data,1741,E1_CANDIDATE
+misconduct - official investigation(s) and/or finding(s),1670,E1_CANDIDATE
+informed/patient consent - none/withdrawn,1611,NON_E1
+error in image,1570,NON_E1
+error in results and/or conclusions,1499,NON_E1
+error in analyses,1494,NON_E1
+manipulation of images,1442,E1_CANDIDATE
+error in text,1321,NON_E1
+error in methods,1316,NON_E1
+error by journal/publisher,1197,NON_E1
+duplication of data,1140,E1_CANDIDATE
+retract and replace,1059,UNDECIDED
+results not reproducible,958,UNDECIDED
+conflict of interest,948,UNDECIDED
+false/forged authorship,922,UNDECIDED
+duplication of content through error by journal/publisher,890,E1_CANDIDATE
+plagiarism of image,881,E1_CANDIDATE
+objections by third party,837,UNDECIDED
+concerns/issues about human subject welfare,805,UNDECIDED
+copyright claims,715,NON_E1
+ethical violations by author,696,UNDECIDED
+plagiarism of data,656,E1_CANDIDATE
+lack of approval from author,593,UNDECIDED
+falsification/fabrication of image,562,E1_CANDIDATE
+duplication of text,502,E1_CANDIDATE
+withdrawn to publish in different journal,495,NON_E1
+lack of approval from third party,461,UNDECIDED
+legal reasons and/or threats,453,UNDECIDED
+taken from dissertation/thesis,374,UNDECIDED
+withdrawn as out of date,363,NON_E1
+notice - lack of,362,UNDECIDED
+civil proceedings,345,UNDECIDED
+investigation by ori,305,UNDECIDED
+lack of approval from company/institution,304,UNDECIDED
+unreliable image,283,UNDECIDED
+concerns/issues about methods,250,UNDECIDED
+cites retracted work,238,UNDECIDED
+notice - unable to access via current resources,208,UNDECIDED
+error in materials,206,NON_E1
+false/forged affiliation,201,UNDECIDED
+temporary removal,193,UNDECIDED
+contamination of cell lines/tissues,175,UNDECIDED
+doing the right thing,142,UNDECIDED
+falsification/fabrication of results,119,E1_CANDIDATE
+complaints about author,112,UNDECIDED
+bias issues or lack of balance,107,UNDECIDED
+miscommunication with/by author,106,UNDECIDED
+error in cell lines/tissues,98,NON_E1
+contamination of materials,84,UNDECIDED
+publishing ban,82,UNDECIDED
+criminal proceedings,78,UNDECIDED
+concerns/issues about animal welfare,59,UNDECIDED
+misconduct by third party,51,E1_CANDIDATE
+error by third party,49,NON_E1
+updated to correction,48,UNDECIDED
+manipulation of results,48,E1_CANDIDATE
+transfer of copyright and/or ownership,43,NON_E1
+not presented at conference,39,UNDECIDED
+salami slicing,33,UNDECIDED
+manipulation of data,30,E1_CANDIDATE
+objections by company/institution,29,UNDECIDED
+ethical violations by company/institution/third party,29,UNDECIDED
+no further action,26,UNDECIDED
+taken via peer review,23,UNDECIDED
+miscommunication with/by journal/publisher,20,UNDECIDED
+hoax paper,16,UNDECIDED
+miscommunication with/by third party,13,UNDECIDED
+nonpayment of fees and/or refusal to pay,12,UNDECIDED
+miscommunication with/by company/institution,12,UNDECIDED
+taken via translation,11,UNDECIDED
+euphemisms for misconduct,11,E1_CANDIDATE
+complaints about third party,10,UNDECIDED
+updated to expression of concern,9,UNDECIDED
+misconduct by company/institution,8,E1_CANDIDATE
+complaints about company/institution,5,UNDECIDED
+eoc lifted,5,UNDECIDED
+sabotage of materials/methods,1,UNDECIDED
