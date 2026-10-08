@@ -1,0 +1,70 @@
+# 004 Stage 4 — Gate E: N/precision 设计（单段执行，零网络）
+
+## 身份
+你是 ARIS4C-004 本地重跑的 executor。本篇为门控推进（Gate A→G）：段1=A，段2=B/C，段3=D（已闭环，Gate D PASS）。本段=Gate E：用 pilot 方差/依赖结构确定扩展 N，并预注册主要结局与稳健性家族。
+
+## 铁律
+- 工作目录=沙盒根（启动时已在）。文件操作全部用相对路径。
+- 解释器固定：`C:/Users/SCZ_2207/.workbuddy/binaries/python/envs/aris4c/Scripts/python.exe`（已有 pandas/numpy/networkx；scipy 可能缺，缺则用正态近似并在产出中注明，不得中途装包）。
+- 零网络：只用盘上产物。禁止任何 OpenAlex/HTTP 请求；不得在 data/raw 或任何 queries 日志产生新条目。
+- 防溢出纪律（强制，9 例 131073 实证）：
+  1. 单响应 ≤1 个工具调用。
+  2. 工具参数 ≤20 行；自然语言回复 ≤2 句。
+  3. 禁止在自然语言中展示文件内容；长文件分块 ≤15 行读。
+  4. 大 CSV/JSON 的统计一律先落盘 python 脚本再运行；禁 python -c 内联复杂引号（唯一例外：T0 的简单 import 探测）。
+  5. >100KB 文件（graph_cache.pkl 114MB）只许 python 脚本解析，脚本 stdout ≤15 行。
+  6. 禁读 results/ 下任何日志。
+- 413 防壳：只相对路径；禁 cd /d；禁 dir（用 ls）；禁从 / 或 C:\ 起 find；输出 >1000 行必 | head -50；bash 禁反斜杠。
+- 反编造纪律：任何 summary 数字必须可被 data/stage4 文件复现；DONE 前必须 ls+wc 逐项核验交付物在盘。日志 DONE 行≠完成，宿主会逐项核盘。
+- 既有产物只读：data/stage3、data/network、code/ 下已有文件不得修改；本段只新增 data/stage4/（新建）、code/gateE_*.py、stage4_summary.md。
+
+## 盘上指针
+- RESEARCH_BRIEF.md（estimand/CPE 定义 §8；模型族）
+- stage3b_summary.md（段3 定稿，含 2026-10-08 宿主侧验收修正节——以此为准）
+- data/exposure_protocol.md（冻结 4-stratum 抽样协议）
+- data/exposure_queue.csv（190 候选：author_id,display_name,stratum,works_count,cited_by_count,first_pub,last_pub,orcid,institution,name_matches_in_sample,identity_status,rule_fired；identity_status 分布 verified_triple=41/verified_orcid=32/unresolved=117）
+- data/queue_summary.json（stratum 漏斗 math75/cs33/physics48/biology34）
+- data/stage3/pilot_focals.csv（16 focal：author_id,name,stratum,betweenness,source；source=stratum:<field>，结构性选择非 MH 证据）
+- data/stage3/cpe_results.csv（768 行=16 focal×4 a{0.25,0.5,0.75,1.0}×4 model{M0,M1,M1s,M2}×3 metric{deg,lcc,reach}；列 focal,a,model,metric,V_obs,V_cf,cpe,sign,significant）
+- data/stage3/m0_results.csv、m1_results.csv、m1s_results.csv、m2_results.csv、m3_results.csv（各模型明细；m3 含 n_pairs/frac_missing/frac_alt_within_5/10/20/median_delay_years）
+- data/stage3/benchmark_results.csv + benchmark_report.md（Benchmark A/B 对照 pilot；结构自行 head 探测）
+- data/stage3/graph_cache.pkl（114MB，python pickle，networkx 图+缓存；3a 生成）
+- code/sim_m1s.py、sim_m3.py、cpe_pilot.py（本 run 代码；cpe_pilot.py 的 true_sign/is_significant 为规范语义；可 import 复用，禁改原文件）
+- 仓侧参考（只读，勿改）：../../ARIS4C/papers/004-counterfactual-cost-of-exclusion/process/RESEARCH_PLAN.md §15（N/precision 方法）§16（分析框架）§18（sensitivity 清单）§22（Gate E 定义）
+
+## 冻结结论（段3 已闭环，不得重估）
+- CPE 四模型：M0/M2 确定性图测量；M1/M1s 线性恢复分解（显式假设）；M3 发现延迟/替代（13.06% 缺失）。
+- M1 饱和：60/64 行 recovery_frac=1.0，CPE 幅度≤0.7%×M0 → 主分析依赖 M0/M2/M3 族，M1 族为弱判别力敏感性（如实写，不隐藏）。
+- M1s：饱和 7/64；a=1.0 min recovery_frac=0.9236。
+- M3：总缺失 28629/219142=13.06%；focal 中位再中位 missing≈0.091、within_5/10/20≈0.828/0.871/0.898、median_delay=0.00；lookup 年份 1914–2026。
+- CPE 符号（真实符号列）：neg=0；M0 全 64pos×3；M1 各 4pos/60zero；M1s 各 57pos/7zero；M2 deg 64pos、lcc/reach 各 56pos/8zero。
+- 单调性（a↑⇒CPE↑）违反 6/144，全在 M1s（deg4/lcc1/reach1，幅度极小）。
+- **MH 证据编码本 run 未做**：exposure_queue 是候选池非暴露集；16 pilot focal 为 stratum/betweenness 结构性选择。Gate E 必须显式处理：N 以 realized exposed yield 为条件（见 T3）。
+
+## 任务（T0–T6，顺序执行）
+T0 环境核验：落盘 code/gateE_probe.py 探测解释器 import（pandas/numpy/networkx/scipy，scipy 允许缺）；ls 核验上述指针存在。stdout ≤15 行。
+T1 方差与依赖估计（写 code/gateE_variance.py）：
+  (a) focal 级 CPE：a=0.75（主）与 a=1.0（敏），每 model×metric 的 focal 间 mean/SD/median；
+  (b) 分层聚类：按 stratum 的 focal 间方差分解（between-stratum vs within-stratum，单因素 ANOVA 或 ICC），4 stratum；
+  (c) focal 子网络依赖：从 graph_cache.pkl 算 16 focal 两两共享（共享 work 数/共享合作者数），依赖矩阵摘要（均值/最大/非零对占比）；
+  (d) 缺失：m3 逐 focal 与总体；(e) 匹配质量：benchmark_results.csv 每 focal 可用对照数（min/median）。
+  产出 data/stage4/gateE_variance.json + stdout 摘要 ≤15 行。
+T2 模拟 MC 方差（写 code/gateE_mcv.py，复用 sim_m1s.py 逻辑、禁改原文件）：16 focal×a=0.75 以 K=10 个新 seed 重跑 M1s 恢复 → CPE 的 MC mean/SD/95%CI，与 3b 单 seed（seed=20260918）值对比量化 MC 噪声。若 >20min 降至 K=5 并如实注明。产出 data/stage4/gateE_mcv.csv。
+T3 决策规则预冻结（**必须在跑 grid 前**落盘 data/stage4/gateE_decision_rule.json，落盘后不得改）：
+  - 标准化：standardized CPE = cpe / max(V_obs)（该 metric 跨 16 focal）；
+  - grid：N∈{20,30,50,75,100,150} × yield 情景 r∈{0.10,0.20,0.40}（realized exposed = round(r×73)：7/15/29；N>available 标 infeasible）× model 族 {M0,M2,M3,M1s}；
+  - 判据：(i) 主模型 M0 mean standardized CPE 的 95% CI 宽度 ≤ 0.5×（模型间 median CPE 差，即 M0 vs {M2,M3,M1s} 中位差）——"CI 须显著窄于合理反事实模型间差异才允许承诺主效应"；(ii) comparison-vs-null 对比 power≥0.80（α=0.05，效应尺度取 benchmark 对比的 focal 中位效应/SD），不可达则显式说明。
+T4 跑 grid（写 code/gateE_grid.py，只读 T1/T2 产出+决策规则）：对每组合用 focal 级 CPE 非参 bootstrap（B=2000，按依赖结构以整 focal 为单位重采样）+ design effect（T1c 依赖矩阵换算 ESS）估 CI 宽度；sign_agreement=该 N 下 M0/M2/M1s/M3 族 CPE>0 一致率。产出 data/stage4/gateE_grid.csv（长表：N,r,n_exposed,feasible,model,ci_width_mean,ci_width_median,contrast_power,sign_agreement,note）。
+T5 决策（data/stage4/gateE_decision.json）：selected target N（可含条件式表述，如"yield≥20% 时 N=30，否则扩展队列/补编码"）+ 依据 + 敏感性 + 局限。
+T6 预注册+summary（stage4_summary.md）：
+  - 预注册主要结局集（RESEARCH_PLAN §11 五主结局 → 冻结到本 run CPE 指标映射 deg/lcc/reach + M3 delay/frac_alt；说明哪些可算、哪些被数据阻塞）；
+  - 稳健性家族（§18 清单逐条标 executable/blocked+原因）；
+  - Gate E 判定（PASS/CONDITIONAL PASS/FAIL+理由；如实报告 MH 编码缺口 → N 条件于 realized yield）；
+  - T0–T5 关键数字表（全部可复现自 data/stage4）；
+  - 末两行：先 `ls data/stage4/` 与 `wc -l stage4_summary.md`（验产物），再写 `DONE stage4 004`。
+
+## 自检（宿主验收点）
+- data/stage4/ 共 5 文件：gateE_variance.json、gateE_mcv.csv、gateE_decision_rule.json、gateE_grid.csv、gateE_decision.json；另有 stage4_summary.md。
+- gateE_decision_rule.json mtime 早于 gateE_grid.csv mtime（先冻结后计算）。
+- 零网络：data/raw 无新文件、无新 query 日志。
+- 时间预算：软目标 60min；T2 硬上限 20min（超限降 K 并注记）。

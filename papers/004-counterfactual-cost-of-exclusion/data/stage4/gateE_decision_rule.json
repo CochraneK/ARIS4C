@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "frozen_utc": "2026-10-08T06:15:36Z",
+    "status": "FROZEN - written before any grid computation; do not modify",
+    "inputs": [
+      "cpe_results.csv",
+      "m3_results.csv",
+      "pilot_focals.csv",
+      "gateE_variance.json (rho for design effect)"
+    ],
+    "script": "code/gateE_predecision.py"
+  },
+  "standardization": {
+    "formula": "stdCPE = cpe / max_focal(V_obs) per metric (max over 16 pilot focals)",
+    "vobs_max_deg": 6797.0,
+    "a_primary": 0.75,
+    "metric_primary": "deg",
+    "m3_mapping": "M3 has no graph-metric CPE; its standardized cost := frac_missing at a=0.75 (fraction of work-concept pairs with no observed non-focal alternative; 0-1 scale, commensurable with fractional standardized deg CPE)."
+  },
+  "grid": {
+    "N": [
+      20,
+      30,
+      50,
+      75,
+      100,
+      150
+    ],
+    "r": [
+      0.1,
+      0.2,
+      0.4
+    ],
+    "available_pool": 73,
+    "available_pool_def": "identity-verified candidates in exposure_queue.csv (verified_triple=41 + verified_orcid=32)",
+    "n_exposed_formula": "n_exposed = min(N, round(r * 73))",
+    "feasible_rule": "feasible iff N <= 73 (else infeasible: target exceeds pool)",
+    "interpretation": "N = target number of exposed focals; r = realized exposed yield from MH evidence encoding (not yet executed); the verified pool of 73 caps both. Achieving target N requires yield >= N/73 (N=20: >=0.27; N=30: >=0.41; N=50: >=0.69).",
+    "model_families": [
+      "M0",
+      "M2",
+      "M3",
+      "M1s"
+    ],
+    "m1_note": "M1 excluded from grid (saturated 60/64 rows, weak discrimination per stage3b); retained only as documented limitation."
+  },
+  "ci_method": {
+    "bootstrap": "nonparametric, B=2000, resample n_exposed WHOLE focals with replacement from the 16 pilot focals; statistic = focal-level mean (and median) of stdCPE",
+    "design_effect": "deff(n) = 1 + (n-1)*rho, rho = mean pairwise Jaccard of focal coauth neighborhoods (gateE_variance.json c_dependency.jaccard_coauth.mean); se_adj = se_boot*sqrt(deff(n)); ci_width = 3.92 * se_adj",
+    "ci_width_mean": "3.92 * sd(bootstrap means) * sqrt(deff(n))",
+    "ci_width_median": "3.92 * sd(bootstrap medians) * sqrt(deff(n)) (robust to right tail)",
+    "skew_caveat": "M0 deg stdCPE is right-skewed (one or two hub focals); normal-approx width is a lower bound vs percentile width; reported as frozen, both estimators (mean/median) shown."
+  },
+  "criteria": {
+    "i_ci_width": {
+      "rule": "ci_width_mean(M0; n) <= 0.5 * D_med",
+      "D_med_def": "median over alt in {M2,M3,M1s} of median_focal(stdCPE_M0 - stdCPE_alt) at a=0.75, deg",
+      "D_alt_median_focal": {
+        "M2": 0.0,
+        "M3": -0.02092,
+        "M1s": 0.04745
+      },
+      "D_med": 0.0,
+      "threshold": 0.0
+    },
+    "ii_power": {
+      "rule": "power >= 0.80 for all pre-registered tests (two-sided alpha=0.05)",
+      "tests": [
+        "cpe_vs_null_M0",
+        "contrast_M0_vs_M2",
+        "contrast_M0_vs_M3",
+        "contrast_M0_vs_M1s"
+      ],
+      "effect_scale_source": "focal median effect / focal SD from REAL pilot focal data (a=0.75, deg). benchmark_results.csv is synthetic with no focal dimension (gateE_variance.json e_benchmark): it validates contrast direction, not focal variance.",
+      "power_formula": "paired focal difference d_f; ncp = sqrt(n)*mean(d)/sd(d); power = P(reject H0 | ncp) via scipy.stats.nct, df=n-1",
+      "effect_scales": {
+        "cpe_vs_null_M0": {
+          "focal_median": 0.05002,
+          "focal_sd": 0.19066,
+          "d_ratio": 0.26236
+        },
+        "contrast_M0_vs_M2": {
+          "focal_median": 0.0,
+          "focal_sd": 0.0,
+          "d_ratio": null
+        },
+        "contrast_M0_vs_M3": {
+          "focal_median": -0.02092,
+          "focal_sd": 0.17154,
+          "d_ratio": -0.12197
+        },
+        "contrast_M0_vs_M1s": {
+          "focal_median": 0.04745,
+          "focal_sd": 0.19066,
+          "d_ratio": 0.24888
+        }
+      },
+      "structural_null_note": "M0 vs M2 on deg is a structural null (M2 deg_delta == M0 deg_delta by construction, frozen stage3b): its power is alpha by design and is flagged, not counted as a failure of criterion ii; the operative contrasts are M0 vs M1s and M0 vs M3 plus cpe_vs_null."
+    }
+  },
+  "sign_agreement_def": "per (N,r): median over B bootstrap replicates of the fraction of (focal, family) pairs with stdCPE > 0 across the 4 families at a=0.75, deg",
+  "consistency_checks": {
+    "frozen_m3_overall_missing": "28629/219142=0.1306 (stage3b)",
+    "median_of_median_missing_all_a": 0.0908,
+    "note": "frozen 0.091 = median over focals of per-focal median frac_missing across a (this script reports it); a=1.0-only per-focal median is 0.105 (gateE_variance.json d_missing) - definitions differ, both on disk."
+  }
+}

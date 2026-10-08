@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "task": "GateE-T5 decision",
+    "written_by": "host takeover (aris aCbb4t died at T2, 128K overflow 131073>131072; T0/T1/T3 executor, T2/T4/T5 host)",
+    "inputs": [
+      "data/stage4/gateE_decision_rule.json (frozen 2026-10-08T06:15:36Z, pre-grid)",
+      "data/stage4/gateE_grid.csv (72 cells, host T4)"
+    ],
+    "cross_check": "grid contrast_power re-derived from frozen effect_scales; max abs diff < 1e-6 (assert)",
+    "deterministic": true,
+    "network": false
+  },
+  "target": {
+    "N_primary": 50,
+    "N_rationale": "largest feasible N (pool=73; N=75/100/150 infeasible per frozen rule); n=min(N,round(r*73)) so N=50 weakly dominates N=30 in achievable n at every r (equal at the n=29 cap for r<=0.4, strictly better for r>0.41)",
+    "yield_to_achieve_full_target": {
+      "N_30": 0.411,
+      "N_50": 0.685
+    },
+    "min_acceptable_n": 29,
+    "min_acceptable_yield": 0.4,
+    "degradation_rule": "if realized yield < 0.40 (n < 29), gate re-opens before stage 5; no main-effect claim at any n below pool exhaustion anyway"
+  },
+  "criteria_evaluation": {
+    "i_ci_width_le_half_Dmed": {
+      "threshold": 0.0,
+      "met": false,
+      "reason": "D_med=0.0 (frozen) -> threshold 0.0; ci_width_mean(M0) is strictly positive at every feasible cell (min 0.13924 at n=29); structurally infeasible"
+    },
+    "ii_power_ge_0.80": {
+      "met": false,
+      "max_power_any_feasible_cell": 0.276225,
+      "power_cpe_vs_null_M0_by_n": {
+        "7": 0.090721,
+        "15": 0.157511,
+        "20": 0.200003,
+        "29": 0.276225
+      },
+      "power_cpe_vs_null_at_full_pool_n73": 0.599341,
+      "reason": "max power 0.2762 (null test, n=29) < 0.80; even pool exhaustion (n=73) gives 0.5993 -> structurally unreachable at the frozen effect scale (d_ratio=0.26236)",
+      "M2_contrast": "structural null (M2 deg_delta == M0 deg_delta by frozen stage3b construction); flagged, not counted as failure"
+    }
+  },
+  "best_case": {
+    "n": 29,
+    "ci_width_mean_M0": 0.139244,
+    "ci_width_median_M0": 0.033563,
+    "ci_vs_model_spread": "w_mean 0.13924 > 2*max|model alt delta| 0.10004 -> CI not narrower than counterfactual model spread",
+    "power_operative_at_best_n": {
+      "M0": 0.276225,
+      "M3": 0.097242,
+      "M1s": 0.253436
+    },
+    "sign_agreement_M0": 0.982759
+  },
+  "sensitivity": {
+    "rho": 0.002,
+    "deff_at_best_n": 1.056,
+    "rho_note": "rho=0.002 from frozen gateE_variance.json c_dependency (jaccard_coauth mean); 10x rho -> CI width x~1.13 at n=29, verdict unchanged",
+    "skew": "M0 deg stdCPE right-skewed (mean 670 vs median 340 at a=0.75): median-CI is the robust view; both estimators in gateE_grid.csv"
+  },
+  "limitations": [
+    "yield r unknown pre-coding: MH evidence encoding not yet executed; n is scenario-bounded (7/15/29), not observed",
+    "16-focal pilot vectors drive CI/power estimates; extrapolation to the 73 pool is untested",
+    "M3 standardized cost := frac_missing@0.75 (frozen proxy; M3 has no graph metric)",
+    "main effect NOT promised (RESEARCH_PLAN s15 language): stage 5 reports descriptives + CIs with design effect, not a confirmatory main effect"
+  ],
+  "verdict": "PASS_WITH_LIMITATIONS",
+  "verdict_basis": "gate charter = fix N + preregister design: done (N_primary=50, min n=29, full grid on disk). Criteria i/ii infeasible at every feasible cell - recorded honestly, not waived. Consequence: pilot-scale framing, no main-effect promise; paper proceeds to stage 5 with descriptive-CI framing.",
+  "grid_cells": [
+    {
+      "N": 20,
+      "r": 0.1,
+      "n_exposed": 7,
+      "feasible": true,
+      "ci_width_mean_M0": 0.276403,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.090721,
+        "M3": 0.058686,
+        "M1s": 0.08659
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 1.0
+    },
+    {
+      "N": 20,
+      "r": 0.2,
+      "n_exposed": 15,
+      "feasible": true,
+      "ci_width_mean_M0": 0.189628,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.157511,
+        "M3": 0.072539,
+        "M1s": 0.14648
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.983333
+    },
+    {
+      "N": 20,
+      "r": 0.4,
+      "n_exposed": 20,
+      "feasible": true,
+      "ci_width_mean_M0": 0.167868,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.200003,
+        "M3": 0.081304,
+        "M1s": 0.184644
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.9875
+    },
+    {
+      "N": 30,
+      "r": 0.1,
+      "n_exposed": 7,
+      "feasible": true,
+      "ci_width_mean_M0": 0.273946,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.090721,
+        "M3": 0.058686,
+        "M1s": 0.08659
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 1.0
+    },
+    {
+      "N": 30,
+      "r": 0.2,
+      "n_exposed": 15,
+      "feasible": true,
+      "ci_width_mean_M0": 0.193257,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.157511,
+        "M3": 0.072539,
+        "M1s": 0.14648
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.983333
+    },
+    {
+      "N": 30,
+      "r": 0.4,
+      "n_exposed": 29,
+      "feasible": true,
+      "ci_width_mean_M0": 0.139244,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.276225,
+        "M3": 0.097242,
+        "M1s": 0.253436
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.982759
+    },
+    {
+      "N": 50,
+      "r": 0.1,
+      "n_exposed": 7,
+      "feasible": true,
+      "ci_width_mean_M0": 0.27786,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.090721,
+        "M3": 0.058686,
+        "M1s": 0.08659
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 1.0
+    },
+    {
+      "N": 50,
+      "r": 0.2,
+      "n_exposed": 15,
+      "feasible": true,
+      "ci_width_mean_M0": 0.192193,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.157511,
+        "M3": 0.072539,
+        "M1s": 0.14648
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.983333
+    },
+    {
+      "N": 50,
+      "r": 0.4,
+      "n_exposed": 29,
+      "feasible": true,
+      "ci_width_mean_M0": 0.14013,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.276225,
+        "M3": 0.097242,
+        "M1s": 0.253436
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.982759
+    },
+    {
+      "N": 75,
+      "r": 0.1,
+      "n_exposed": 7,
+      "feasible": false,
+      "ci_width_mean_M0": 0.273407,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.090721,
+        "M3": 0.058686,
+        "M1s": 0.08659
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 1.0
+    },
+    {
+      "N": 75,
+      "r": 0.2,
+      "n_exposed": 15,
+      "feasible": false,
+      "ci_width_mean_M0": 0.188833,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.157511,
+        "M3": 0.072539,
+        "M1s": 0.14648
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.983333
+    },
+    {
+      "N": 75,
+      "r": 0.4,
+      "n_exposed": 29,
+      "feasible": false,
+      "ci_width_mean_M0": 0.140468,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.276225,
+        "M3": 0.097242,
+        "M1s": 0.253436
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.982759
+    },
+    {
+      "N": 100,
+      "r": 0.1,
+      "n_exposed": 7,
+      "feasible": false,
+      "ci_width_mean_M0": 0.278982,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.090721,
+        "M3": 0.058686,
+        "M1s": 0.08659
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 1.0
+    },
+    {
+      "N": 100,
+      "r": 0.2,
+      "n_exposed": 15,
+      "feasible": false,
+      "ci_width_mean_M0": 0.187316,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.157511,
+        "M3": 0.072539,
+        "M1s": 0.14648
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.983333
+    },
+    {
+      "N": 100,
+      "r": 0.4,
+      "n_exposed": 29,
+      "feasible": false,
+      "ci_width_mean_M0": 0.138683,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.276225,
+        "M3": 0.097242,
+        "M1s": 0.253436
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.982759
+    },
+    {
+      "N": 150,
+      "r": 0.1,
+      "n_exposed": 7,
+      "feasible": false,
+      "ci_width_mean_M0": 0.280805,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.090721,
+        "M3": 0.058686,
+        "M1s": 0.08659
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 1.0
+    },
+    {
+      "N": 150,
+      "r": 0.2,
+      "n_exposed": 15,
+      "feasible": false,
+      "ci_width_mean_M0": 0.186079,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.157511,
+        "M3": 0.072539,
+        "M1s": 0.14648
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.983333
+    },
+    {
+      "N": 150,
+      "r": 0.4,
+      "n_exposed": 29,
+      "feasible": false,
+      "ci_width_mean_M0": 0.138473,
+      "crit_i_ci_le_half_Dmed": false,
+      "power": {
+        "M0": 0.276225,
+        "M3": 0.097242,
+        "M1s": 0.253436
+      },
+      "power_M2_structural_null_flagged": "alpha by design (frozen note)",
+      "crit_ii_power_ge_0.80": false,
+      "sign_agreement_M0": 0.982759
+    }
+  ]
+}
