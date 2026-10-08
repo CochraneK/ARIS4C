@@ -1,0 +1,466 @@
+{
+  "https://openalex.org/A5000945647": {
+    "year_min": 1980,
+    "year_max": 2026,
+    "n_used": 11222,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1980,
+        "year_max": 2026,
+        "n_used": 1368
+      },
+      "0.5": {
+        "year_min": 1980,
+        "year_max": 2026,
+        "n_used": 2334
+      },
+      "0.75": {
+        "year_min": 1980,
+        "year_max": 2026,
+        "n_used": 3295
+      },
+      "1.0": {
+        "year_min": 1980,
+        "year_max": 2026,
+        "n_used": 4225
+      }
+    }
+  },
+  "https://openalex.org/A5001390698": {
+    "year_min": 1967,
+    "year_max": 2026,
+    "n_used": 15495,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1967,
+        "year_max": 2026,
+        "n_used": 1762
+      },
+      "0.5": {
+        "year_min": 1967,
+        "year_max": 2026,
+        "n_used": 3320
+      },
+      "0.75": {
+        "year_min": 1967,
+        "year_max": 2026,
+        "n_used": 4548
+      },
+      "1.0": {
+        "year_min": 1967,
+        "year_max": 2026,
+        "n_used": 5865
+      }
+    }
+  },
+  "https://openalex.org/A5020224649": {
+    "year_min": 1959,
+    "year_max": 2026,
+    "n_used": 12692,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1973,
+        "year_max": 2026,
+        "n_used": 1339
+      },
+      "0.5": {
+        "year_min": 1973,
+        "year_max": 2026,
+        "n_used": 2658
+      },
+      "0.75": {
+        "year_min": 1973,
+        "year_max": 2026,
+        "n_used": 3832
+      },
+      "1.0": {
+        "year_min": 1959,
+        "year_max": 2026,
+        "n_used": 4863
+      }
+    }
+  },
+  "https://openalex.org/A5021973169": {
+    "year_min": 1952,
+    "year_max": 2026,
+    "n_used": 7224,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1971,
+        "year_max": 2023,
+        "n_used": 820
+      },
+      "0.5": {
+        "year_min": 1971,
+        "year_max": 2026,
+        "n_used": 1561
+      },
+      "0.75": {
+        "year_min": 1971,
+        "year_max": 2026,
+        "n_used": 2205
+      },
+      "1.0": {
+        "year_min": 1952,
+        "year_max": 2026,
+        "n_used": 2638
+      }
+    }
+  },
+  "https://openalex.org/A5023706141": {
+    "year_min": 1939,
+    "year_max": 2026,
+    "n_used": 9364,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1940,
+        "year_max": 2025,
+        "n_used": 1126
+      },
+      "0.5": {
+        "year_min": 1939,
+        "year_max": 2025,
+        "n_used": 2093
+      },
+      "0.75": {
+        "year_min": 1939,
+        "year_max": 2026,
+        "n_used": 2719
+      },
+      "1.0": {
+        "year_min": 1939,
+        "year_max": 2026,
+        "n_used": 3426
+      }
+    }
+  },
+  "https://openalex.org/A5024145662": {
+    "year_min": 1927,
+    "year_max": 2021,
+    "n_used": 4511,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1927,
+        "year_max": 2016,
+        "n_used": 470
+      },
+      "0.5": {
+        "year_min": 1927,
+        "year_max": 2019,
+        "n_used": 970
+      },
+      "0.75": {
+        "year_min": 1927,
+        "year_max": 2021,
+        "n_used": 1393
+      },
+      "1.0": {
+        "year_min": 1927,
+        "year_max": 2021,
+        "n_used": 1678
+      }
+    }
+  },
+  "https://openalex.org/A5031530236": {
+    "year_min": 1981,
+    "year_max": 2026,
+    "n_used": 26457,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1983,
+        "year_max": 2026,
+        "n_used": 2525
+      },
+      "0.5": {
+        "year_min": 1981,
+        "year_max": 2026,
+        "n_used": 5209
+      },
+      "0.75": {
+        "year_min": 1981,
+        "year_max": 2026,
+        "n_used": 8151
+      },
+      "1.0": {
+        "year_min": 1981,
+        "year_max": 2026,
+        "n_used": 10572
+      }
+    }
+  },
+  "https://openalex.org/A5032489073": {
+    "year_min": 1933,
+    "year_max": 2026,
+    "n_used": 13775,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1933,
+        "year_max": 2024,
+        "n_used": 1575
+      },
+      "0.5": {
+        "year_min": 1933,
+        "year_max": 2025,
+        "n_used": 3092
+      },
+      "0.75": {
+        "year_min": 1933,
+        "year_max": 2026,
+        "n_used": 4131
+      },
+      "1.0": {
+        "year_min": 1933,
+        "year_max": 2026,
+        "n_used": 4977
+      }
+    }
+  },
+  "https://openalex.org/A5042885999": {
+    "year_min": 1935,
+    "year_max": 2025,
+    "n_used": 21781,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1935,
+        "year_max": 2025,
+        "n_used": 2270
+      },
+      "0.5": {
+        "year_min": 1935,
+        "year_max": 2025,
+        "n_used": 4610
+      },
+      "0.75": {
+        "year_min": 1935,
+        "year_max": 2025,
+        "n_used": 6617
+      },
+      "1.0": {
+        "year_min": 1935,
+        "year_max": 2025,
+        "n_used": 8284
+      }
+    }
+  },
+  "https://openalex.org/A5068520992": {
+    "year_min": 1921,
+    "year_max": 2026,
+    "n_used": 8621,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1936,
+        "year_max": 2026,
+        "n_used": 950
+      },
+      "0.5": {
+        "year_min": 1921,
+        "year_max": 2026,
+        "n_used": 1949
+      },
+      "0.75": {
+        "year_min": 1921,
+        "year_max": 2026,
+        "n_used": 2585
+      },
+      "1.0": {
+        "year_min": 1921,
+        "year_max": 2026,
+        "n_used": 3137
+      }
+    }
+  },
+  "https://openalex.org/A5075738642": {
+    "year_min": 1927,
+    "year_max": 2026,
+    "n_used": 10393,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1932,
+        "year_max": 2026,
+        "n_used": 1105
+      },
+      "0.5": {
+        "year_min": 1927,
+        "year_max": 2026,
+        "n_used": 2379
+      },
+      "0.75": {
+        "year_min": 1927,
+        "year_max": 2026,
+        "n_used": 3096
+      },
+      "1.0": {
+        "year_min": 1927,
+        "year_max": 2026,
+        "n_used": 3813
+      }
+    }
+  },
+  "https://openalex.org/A5087680980": {
+    "year_min": 1916,
+    "year_max": 2026,
+    "n_used": 12671,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1917,
+        "year_max": 2026,
+        "n_used": 1326
+      },
+      "0.5": {
+        "year_min": 1917,
+        "year_max": 2026,
+        "n_used": 2692
+      },
+      "0.75": {
+        "year_min": 1916,
+        "year_max": 2026,
+        "n_used": 3893
+      },
+      "1.0": {
+        "year_min": 1916,
+        "year_max": 2026,
+        "n_used": 4760
+      }
+    }
+  },
+  "https://openalex.org/A5108631265": {
+    "year_min": 1928,
+    "year_max": 2018,
+    "n_used": 4154,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1929,
+        "year_max": 1998,
+        "n_used": 432
+      },
+      "0.5": {
+        "year_min": 1928,
+        "year_max": 2018,
+        "n_used": 859
+      },
+      "0.75": {
+        "year_min": 1928,
+        "year_max": 2018,
+        "n_used": 1226
+      },
+      "1.0": {
+        "year_min": 1928,
+        "year_max": 2018,
+        "n_used": 1637
+      }
+    }
+  },
+  "https://openalex.org/A5112523816": {
+    "year_min": 1914,
+    "year_max": 2025,
+    "n_used": 11168,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1915,
+        "year_max": 2025,
+        "n_used": 1649
+      },
+      "0.5": {
+        "year_min": 1915,
+        "year_max": 2025,
+        "n_used": 2226
+      },
+      "0.75": {
+        "year_min": 1914,
+        "year_max": 2025,
+        "n_used": 3197
+      },
+      "1.0": {
+        "year_min": 1914,
+        "year_max": 2025,
+        "n_used": 4096
+      }
+    }
+  },
+  "https://openalex.org/A5112784443": {
+    "year_min": 1936,
+    "year_max": 2026,
+    "n_used": 8109,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1937,
+        "year_max": 2025,
+        "n_used": 816
+      },
+      "0.5": {
+        "year_min": 1936,
+        "year_max": 2025,
+        "n_used": 1726
+      },
+      "0.75": {
+        "year_min": 1936,
+        "year_max": 2026,
+        "n_used": 2393
+      },
+      "1.0": {
+        "year_min": 1936,
+        "year_max": 2026,
+        "n_used": 3174
+      }
+    }
+  },
+  "https://openalex.org/A5113599985": {
+    "year_min": 1964,
+    "year_max": 2026,
+    "n_used": 12876,
+    "observed_alternative": true,
+    "note": "delay proxy measured on realized non-focal history, not oracle; focal presence may bias delays; seed=20260918",
+    "by_a": {
+      "0.25": {
+        "year_min": 1967,
+        "year_max": 2025,
+        "n_used": 1249
+      },
+      "0.5": {
+        "year_min": 1964,
+        "year_max": 2025,
+        "n_used": 2675
+      },
+      "0.75": {
+        "year_min": 1964,
+        "year_max": 2025,
+        "n_used": 4042
+      },
+      "1.0": {
+        "year_min": 1964,
+        "year_max": 2026,
+        "n_used": 4910
+      }
+    }
+  }
+}

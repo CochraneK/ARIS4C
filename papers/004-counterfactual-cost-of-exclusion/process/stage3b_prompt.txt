@@ -1,0 +1,69 @@
+004 段3b：真实 focal pilot CPE + M1-strict 敏感性 + M3 发现延迟探索 + Gate D 判定
+
+背景（必读）：
+- 段1–2 已完成（Gate C PASS，入仓 f2f2da2）。段3a（主 run + fix run）已完成并验收、入仓 4a2bd0b：M0/M1/M2 真实数据结果、合成 star-loss 基准（4 断言全 PASS）、no-look-ahead 审计（PASS）全部在盘。
+- 本段是 Gate D（模拟器验证）的收尾段：把全套模拟器落到 16 个真实 pilot focal 上、用 strict 变体处理 M1 饱和问题、探索 M3、出具 Gate D 判定。
+- 全本地计算，零 OpenAlex、零网络查询、不重算 betweenness。
+
+在盘指针（已验收为真，直接引用，勿重新推导）：
+- code/simcore_3.py（共享核心：select_deleted/compute_metrics/m1_recovery/m2_pre_t0_state/m2_reconnect 等）、code/sim_m0.py、sim_m1.py、sim_m2.py、load_graph_3.py、sim_benchmark.py、audit_lookahead.py
+- data/stage3/graph_manifest.json（integrity=OK：31,733 作者/164 active/848,052 CoAuth/37,636 works/50 concepts/6,380 AC 边）
+- data/stage3/graph_cache.pkl（114MB，只许 python pickle 加载）、betweenness_full.json（k=200 近似，只许 python 解析 ≤15 行）
+- data/stage3/pilot_focals.csv（16 focal：name/field/betweenness）、m0/m1/m2_results.csv（各 16 focal × a∈{0.25,0.5,0.75,1.0}）、m1/m2_lookahead_log.json
+- data/network/works_index.jsonl（19MB，work 级 year+concepts，只许 python 流式解析）、edges_author_concept.csv（6,380 行）、nodes_authors.csv（164 active）
+- RESEARCH_BRIEF.md（沙盒根）— M0–M3 定义、CPE estimand、Gate D
+
+冻结定义（摘自 RESEARCH_PLAN，仓库 process/RESEARCH_PLAN.md，勿修改）：
+- CPE_i(a,t0) = V(G_observed) − E[V(G_cf | i, a, t0, adaptation model)]；sign-neutral：CPE>0=参与提升了指标（排除会降低）；CPE=0=替代完全；CPE<0=反事实适应反而提升
+- M3（替代前置/发现延迟）：移除一个前置改变后续出现的 hazard/时机，而非永久删除；"delay to first alternative path/source" 是 §10 认可的结构依赖度量
+- Gate D 检查单（§22）：(1) 实现 M0+M1 (2) 实现 bounded M2 (3) 在已知 star-loss 类案例或合成基准上测试恢复行为 (4) 保证无 look-ahead 替代
+- 时间规则（§6）：t 时刻的反事实决策不得用 t 之后才可用的信息选替代者（显式标注的 oracle/敏感性分析除外）
+
+继承 limitation（不修改，只处理/记录）：
+- M1（共享 ≥1 个 top-50 concept）饱和：60/64 行 recovery_frac≥0.999 → 本段加 M1-strict 变体，原 M1 结果不动
+- 3a 合成基准三网结果完全相同（star-local 指标只依赖 star 局部结构）→ 记录为 limitation，本段不重做基准
+
+T1 — M1-strict 敏感性（code/sim_m1s.py，运行）：
+1. 先用 python 看 works_index.jsonl 中 2 个样例 work 的 concepts 字段结构（打印 ≤15 行），确认概念是否有 level/深度信息。
+2. 判据（预注册，二选一，用哪个在 summary 记录理由）：
+   - 主判据：替代 work 的 year<y、非 focal，且与删除 work 共享其在**最深概念层级**上的 ≥1 个概念（若 concepts 带 level 字段）
+   - 回退判据（仅当盘上概念只有单层宽泛概念且无 level 信息）：替代 work 的 year<y、非 focal、共享 ≥1 概念，且该共享概念在全图 37,636 works 中出现率 ≤30%（稀有性约束，避免超宽泛概念平凡恢复）
+3. 同 16 focal × 4 a、同 seed=20260918，复用 simcore_3 同一代码路径；落 data/stage3/m1s_results.csv（列结构与 m1_results.csv 一致）+ data/stage3/m1s_lookahead_log.json（结构同 m1：每条 worst_gap 必须 <0）。
+4. 对比原 M1：饱和率（recovery_frac≥0.999 的行占比）变化，写入 summary。
+
+T2 — M3 发现延迟探索（code/sim_m3.py，运行）：
+- 有界可观察实现：对每个删除的 focal work w（year=y，概念集 C_w）：对每个 c∈C_w，在观察图中找 year≥y 且覆盖 c 的**第一个非 focal work w'**；delay=year(w')−y；找不到记 missing。
+- **显式标注（必须写入产物与 summary）**：这是 observed-alternative（用实际发生的非 focal 历史作延迟代理），非 oracle；局限：focal 在场可能加速/改变了这些非 focal 替代，延迟估计有偏。
+- 落 data/stage3/m3_results.csv（每 focal|a 一行）：n_deleted、median_delay_years（非 missing 的中位）、frac_alt_within_5、frac_alt_within_10、frac_alt_within_20、frac_missing
+- 落 data/stage3/m3_lookahead_log.json：每 focal 记录 used w' 的 year min/max、n_used、"observed_alternative": true
+- M3 不并入 T3 的 CPE 表（延迟语义不同），以 frac_alt_within_* 序列独立报告。
+
+T3 — CPE pilot 表（code/cpe_pilot.py，运行）：
+- 对 {M0, M1, M1s, M2} × 16 focal × 4 a，在指标 V∈{deg, lcc, reach} 上计算 CPE = −(3a 各模型 delta)（复用 m0/m1/m2_results.csv + m1s_results.csv，不重跑模拟）
+- 落 data/stage3/cpe_results.csv：focal, a, model, metric, V_obs, V_cf, cpe, sign（pos/zero/neg，zero 带=|cpe|≤5%×V_obs）
+- 汇总统计（写入 summary）：每 model×metric 的 pos/zero/neg 行占比；每 focal 内 CPE 随 a 单调不减的违反数（每 model×metric 各报）。
+
+T4 — Gate D 判定（写入 summary，不出单独文件）：
+- 逐条对 Gate D 检查单出 verdict：
+  (1) M0+M1 实现：3a 产物在盘（引用文件）
+  (2) bounded M2：3a 产物在盘
+  (3) 恢复行为测试：3a 合成基准 4 断言 PASS + 本段真实 focal pilot（T1 M1s 饱和缓解程度 + T3 CPE 单调性）
+  (4) 无 look-ahead：3a T6 审计 PASS + 本段 m1s/m3 lookahead 日志全部合规
+- 判定规则：(1)(2)(4) 全 PASS 且 (3) 真实数据行为合理（M1s 饱和率显著低于原 M1；CPE 随 a 单调违反数少且可解释；无符号异常）→ Gate D PASS。任何一条 FAIL → Gate D FAIL + 列缺口。
+- 若 M1s 仍饱和（≥99% 行≥0.999）：Gate D 可 PASS 但必须把 M1 族标记"低判别力"、声明主分析将依赖 M0/M2/M3 族——如实写明，不静默。
+
+T5 — stage3b_summary.md（沙盒根，≤45 行，简体中文+英文术语）：
+- 只写真实数字，每个数字可溯源到盘上文件。
+- 内容：M1 vs M1s 饱和对比（含用的判据及理由）；M3 延迟统计（中位延迟/5/10/20 年内恢复率/missing 率）+ observed-alternative 标注；CPE 符号分布与单调性；Gate D 逐条 verdict + 总判定；limitations（M3 标注、基准同值、betweenness 近似）。
+- 末行 `DONE stage3b 004` 只有在先跑过 ls 确认 6 件产物齐备且非空后才能打印：
+  ls data/stage3/m1s_results.csv data/stage3/m1s_lookahead_log.json data/stage3/m3_results.csv data/stage3/m3_lookahead_log.json data/stage3/cpe_results.csv stage3b_summary.md
+  缺任何一件：先补齐，绝不允许打印 DONE。
+
+硬性纪律：
+- 总工具调用 ≤30；每响应 ≤1 个工具调用；响应文本 ≤2 句；禁止在文本里展示文件内容。
+- >100KB 文件只许 python 解析且打印 ≤15 行。
+- 零 OpenAlex/零网络查询。
+- 任何产物禁占位符（X/Y/N）。
+- 失败/异常如实报告，不改结果迁就预期。
+- 禁改任何 3a 产物（m0/m1/m2_results.csv、m1/m2_lookahead_log.json、pilot_focals.csv、graph_manifest.json、benchmark/audit 产物）与任何 stage2b 文件。
+- python -c 内复杂引号：先落盘成 .py 再运行。

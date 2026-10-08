@@ -1,0 +1,386 @@
+{
+  "https://openalex.org/A5000945647|0.25": {
+    "max_cited_year": 2014,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5000945647|0.5": {
+    "max_cited_year": 2019,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5000945647|0.75": {
+    "max_cited_year": 2019,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5000945647|1.0": {
+    "max_cited_year": 2025,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5001390698|0.25": {
+    "max_cited_year": 2014,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5001390698|0.5": {
+    "max_cited_year": 2018,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5001390698|0.75": {
+    "max_cited_year": 2021,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5001390698|1.0": {
+    "max_cited_year": 2025,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5020224649|0.25": {
+    "max_cited_year": 2017,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5020224649|0.5": {
+    "max_cited_year": 2017,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5020224649|0.75": {
+    "max_cited_year": 2021,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5020224649|1.0": {
+    "max_cited_year": 2024,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5021973169|0.25": {
+    "max_cited_year": 2015,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5021973169|0.5": {
+    "max_cited_year": 2016,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5021973169|0.75": {
+    "max_cited_year": 2021,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5021973169|1.0": {
+    "max_cited_year": 2024,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5023706141|0.25": {
+    "max_cited_year": 2011,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5023706141|0.5": {
+    "max_cited_year": 2012,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5023706141|0.75": {
+    "max_cited_year": 2019,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5023706141|1.0": {
+    "max_cited_year": 2022,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5024145662|0.25": {
+    "max_cited_year": 1988,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5024145662|0.5": {
+    "max_cited_year": 1988,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5024145662|0.75": {
+    "max_cited_year": 2002,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5024145662|1.0": {
+    "max_cited_year": 2002,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5031530236|0.25": {
+    "max_cited_year": 2014,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5031530236|0.5": {
+    "max_cited_year": 2014,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5031530236|0.75": {
+    "max_cited_year": 2014,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5031530236|1.0": {
+    "max_cited_year": 2014,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5032489073|0.25": {
+    "max_cited_year": 2016,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5032489073|0.5": {
+    "max_cited_year": 2016,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5032489073|0.75": {
+    "max_cited_year": 2019,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5032489073|1.0": {
+    "max_cited_year": 2025,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5042885999|0.25": {
+    "max_cited_year": 1991,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5042885999|0.5": {
+    "max_cited_year": 1992,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5042885999|0.75": {
+    "max_cited_year": 1992,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5042885999|1.0": {
+    "max_cited_year": 1992,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5068520992|0.25": {
+    "max_cited_year": 2013,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5068520992|0.5": {
+    "max_cited_year": 2013,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5068520992|0.75": {
+    "max_cited_year": 2018,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5068520992|1.0": {
+    "max_cited_year": 2022,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5075738642|0.25": {
+    "max_cited_year": 2012,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5075738642|0.5": {
+    "max_cited_year": 2012,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5075738642|0.75": {
+    "max_cited_year": 2018,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5075738642|1.0": {
+    "max_cited_year": 2019,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5087680980|0.25": {
+    "max_cited_year": 1998,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5087680980|0.5": {
+    "max_cited_year": 2009,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5087680980|0.75": {
+    "max_cited_year": 2010,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5087680980|1.0": {
+    "max_cited_year": 2021,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5108631265|0.25": {
+    "max_cited_year": 1977,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5108631265|0.5": {
+    "max_cited_year": 2015,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5108631265|0.75": {
+    "max_cited_year": 2015,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5108631265|1.0": {
+    "max_cited_year": 2015,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5112523816|0.25": {
+    "max_cited_year": 2010,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5112523816|0.5": {
+    "max_cited_year": 2010,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5112523816|0.75": {
+    "max_cited_year": 2010,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5112523816|1.0": {
+    "max_cited_year": 2020,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5112784443|0.25": {
+    "max_cited_year": 2015,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5112784443|0.5": {
+    "max_cited_year": 2015,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5112784443|0.75": {
+    "max_cited_year": 2020,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5112784443|1.0": {
+    "max_cited_year": 2023,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5113599985|0.25": {
+    "max_cited_year": 2014,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5113599985|0.5": {
+    "max_cited_year": 2014,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5113599985|0.75": {
+    "max_cited_year": 2014,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  },
+  "https://openalex.org/A5113599985|1.0": {
+    "max_cited_year": 2025,
+    "worst_gap": -1,
+    "criterion": "fallback_rarity<=0.30",
+    "seed": 20260918
+  }
+}
