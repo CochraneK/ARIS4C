@@ -1,0 +1,50 @@
+# ARIS4C-005 段3a（模块 A 物化）executor 任务
+
+## 身份与纪律
+- 你是 ARIS4C-005-hidden-burden-bad-science 重跑的 stage 3a executor。唯一 idea 输入 = 本目录 RESEARCH_BRIEF.md（冻结设计：E1/E2/E3、七禁令、六模块、Gate 1–5）。本段只物化模块 A（核心描述性，可独立发表）：检出 E1 计数 + 原因分类 + 校正延迟分布 + 检出率（带检测偏倚警示）+ 领域/时间变化。不做模块 B/C/D、不建模、不新增假设/模块/概念。
+- 禁：读/复制旧仓库 D:\Software\ARIS4C\papers\ 任何代码/数据/结果；读 results/ 下任何 run 日志；read_file/head 大文件（retraction_watch.csv 67MB——只许 python 解析且 stdout ≤15 行；任何 >100KB 文件同规）。
+- 工具调用总数 ≤20；单响应 ≤1 工具调用；调用参数 ≤20 行；响应文本 ≤2 句；禁止在文本中展示文件内容；长文档分块写（单块 ≤15 行）；大结构化产物（numerators 表/counts json/rates json）用 python 脚本生成（模型只写代码、不输出数据）。
+- Shell 纪律（防 413）：cwd 已是篇根，只用相对路径；禁 cd /d、禁反斜杠路径；禁 dir（用 ls）；禁从 / 或 C:\ 起 find；可能 >1000 行的命令必 | head -50。
+- 零网络：本段禁一切网络请求（禁 curl/requests/OpenAlex——DOI 匹配是段3b 工作）。
+- python：C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe（pandas 可用）；禁 python -c 复杂引号（先 write_file 落盘 data/code/ 再执行）。
+- 完成判据 = 五件落盘 + 日志末行 DONE stage3a 005；"✔ ● Done" 不是完成；DONE 前必 ls 验证五件在盘非空。
+
+## 在盘指针（均存在）
+- RESEARCH_BRIEF.md — 冻结设计，先全文读（模块 A 规格 = "版本化全球文章宇宙 + 检出 E1 计数/率 + 原因分类 + 校正延迟分布 + 领域/时间变化（带检测偏倚警示）"）。
+- stage2_summary.md — 段2 移交节（分母固定、主线 A/B/C 可物化）。
+- data/DATA_PROFILE.md — 7 节；#1 RW CSV 口径（多类 notice 膨胀、Retraction 为真撤稿类）、#3 分母、#7 gate 判定。
+- data/manifests/rw_csv_manifest.json — 列名 22 列（含末尾空列 ""，须 drop）、72,758 行、SHA256、DOI 非空 96.53%、日期格式注记（raw=MM/DD/YYYY H:MM 美区；2 位年 <70→20xx 否则 19xx）。
+- data/rw_e1_mapping.csv — 112 个 reason 值 → 三桶（E1_CANDIDATE/NON_E1/UNDECIDED），头部 3 行注释载明正则规则；read 时 skiprows=3。
+- data/raw/rw_official/retraction_watch.csv — 67MB，只许 python 解析。
+
+## 冻结结论（违反即 scope 失控）
+- 正典分母 = 222,714,158（2000–2025，publication_year 口径，段2 P4 实测；秒级漂移只注记、不重查——重查是段3b 的事）。
+- 主时间宇宙 = OriginalPaperDate 年 ∈ [2000,2025]；单位 = unique original paper（按 OriginalPaperDOI 去重）；无 DOI 行单独计数（no-doi 桶），不静默丢弃。
+- 仅 RetractionNature=Retraction 类（大小写不敏感）为真撤稿；correction/EOC/revision 等其他 notice 不计入。
+- 率 = notice 检出率（必带检测偏倚警示：检出≠患病、notice 级 reason≠裁定、覆盖随时空异质），不是患病率、不是造假认定（禁令1）；E1_CANDIDATE 仅为筛查候选，终裁留模块 B 人工审计。
+- 日期质量：按 manifest 注记规则解析；不可解析 → NA 并报告 NA 率，不插补。
+
+## 任务
+- T0 环境与完整性：venv pandas import OK；python 核 RW CSV SHA256 == manifest（stdout ≤3 行 ok/mismatch）；ls 在盘指针存在。mismatch 即停并报宿主。
+- T1 物化 E1 分子（写 data/code/s3a_numerators.py 并执行）：
+  ① 读 CSV（drop 末尾空列）；
+  ② 解析 OriginalPaperDate / RetractionDate（US 格式、2 位年规则、NA 容忍）；
+  ③ 过滤 RetractionNature==Retraction；
+  ④ 按 OriginalPaperDOI 去重（同 DOI 多 notice 保留 RetractionDate 最晚行；报告 unique papers vs notice 行数、多 notice 数）；
+  ⑤ 宇宙 = orig 年 ∈ [2000,2025]；报告排除计数（pre-2000 / post-2025 / NA 年）；
+  ⑥ 三桶赋值：Reason 按 ";" split → lower → 查段2 映射（112 值全映射；未映射值 → 计入 UNDECIDED 并报告计数，禁自造映射）；行级桶优先级 E1_CANDIDATE > NON_E1 > UNDECIDED（任一 reason 为 E1 即 E1_CANDIDATE）；
+  ⑦ 落盘 data/stage3/e1_numerators.csv（每 unique paper 一行：doi, orig_year, subject, country, bucket, n_reasons, retraction_year, delay_years）+ data/stage3/e1_counts.json（total / by_bucket / by_orig_year / by_subject 全值 / country top20 / with-doi vs no-doi / 日期 NA 率 / 输入 SHA256 + 脚本行）。
+- T2 校正延迟（写 data/code/s3a_delay.py 并执行）：delay_years = (RetractionDate − OriginalPaperDate).days/365.25；报告 median/p25/p75/p90、CDF@{1,3,5,10,20} 年、by_bucket（median + CDF@5y）、delay<0 计数（日期质量问题，只报告）、同年内（0≤delay<1）占比 → data/stage3/correction_delay.json。
+- T3 检出率（写 data/code/s3a_rates.py 并执行）：分母 = 222,714,158（冻结值写入 json 并注明段2 P4 时点）；每 100,000：all retractions 总量、E1_CANDIDATE 总量、by_orig_year E1_CANDIDATE（2000–2025 逐年）、by_subject E1_CANDIDATE（全 subject 降序）；每个 json 顶层带 detection_bias_warning 字段（检出≠患病；notice reason≠裁定；覆盖随时空异质）→ data/stage3/detection_rates.json。
+- T4 收官：stage3a_summary.md ≤60 行（T0–T3 逐项 verdict + 关键数字表 + 七禁令自检 + 段3b 移交：Gate 1 审计子集设计 n=300、按 orig 5 年分层、seed=20261008、DOI batch ≤100/query、title 抽查 10、分母重钉 1 次、OpenAlex 预算 ≤13 查询 + 已知局限）；末两行 = ls data/stage3/ + wc -l e1_numerators.csv；最后行 DONE stage3a 005。
+
+## 禁止
+- 任何网络请求；per-id OpenAlex 匹配（段3b 工作）；跑任何模型；任何患病率/隐藏案例数；国家 misconduct 排名（Non-Goal）；新增模块/假设/概念；改段1/2 交付物（REGISTRY/LIT_NOTES/DATA_PROFILE/映射/manifest）。
+
+## 完成标准（五件落盘）
+1. data/stage3/e1_numerators.csv（每 unique paper 一行）
+2. data/stage3/e1_counts.json
+3. data/stage3/correction_delay.json
+4. data/stage3/detection_rates.json
+5. stage3a_summary.md（末行 DONE stage3a 005）
+（code 另落盘 data/code/s3a_*.py）
