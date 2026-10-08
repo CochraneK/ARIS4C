@@ -1,0 +1,245 @@
+role	cow_code	cow_name	iso	note
+mp	2	USA	US	COW acronym
+mp	200	UKG	GB	COW acronym: United Kingdom of Great Britain and Ireland
+mp	230	SPN	ES	COW acronym: Spain
+mp	235	POR	PT	COW acronym: Portugal
+mp	255	Germany/Prussia	DE	predecessor state -> modern Germany
+mp	325	Italy/Sardinia	IT	Sardinian state -> modern Italy
+mp	365	Union of Soviet Socialist Republics / Russia	RU	predecessor state -> modern Russia
+mp	380	SWD	SE	COW code 380 = Sweden (entities_full.txt: Norway 1816-1905 Became part of 380 = Swedish-Norwegian union; Aland 1918 Occupied by 380); task example SWD->DE corrected per raw evidence
+mp	563	Transvaal	ZA	internal South-African entity -> South Africa
+mp	670	Saudi Arabia (Nejd Wahabbid Empire)	SA	full name -> Saudi Arabia
+mp	710	People's Republic of China (China)	CN	full name -> China
+mp	1070	Viceroyalty of New Spain	MX	colonial predecessor -> Mexico (name contains Spain; explicit override)
+col	100	Colombia (Gran Colombia)	CO	full name -> Colombia
+col	1019	Rupert's Land	CA	-> Canada
+col	1021	Cape Breton I.	CA	-> Canada (Nova Scotia island)
+col	1022	Nova Scotia	CA	-> Canada
+col	1023	New Brunswick	CA	-> Canada
+col	1024	Prince Edward Is.	CA	-> Canada
+col	1025	Quebec (Lower Canada)	CA	-> Canada
+col	1026	Ontario (Upper Canada)	CA	-> Canada
+col	1027	British Columbia	CA	-> Canada
+col	1028	Vancouver	CA	-> Canada
+col	1032	Turks and Caicos Is.	TC	COW acronym
+col	1033	Cayman Is.	KY	COW acronym
+col	1044	Navassa I.	NA	EXCLUDE: no OA country entry (uninhabited disputed islet)
+col	1049	Tobago	TT	-> Trinidad and Tobago
+col	1055	Windward Is.	NA	EXCLUDE: multi-state island region, no unique successor
+col	1061	British Virgin Is.	VG	COW acronym
+col	1063	Leeward Is.	NA	EXCLUDE: multi-state island region, no unique successor
+col	1064	St. Barthelemy	BL	COW acronym -> Saint Barthelemy
+col	1066	Bonaire	BQ	-> Caribbean Netherlands
+col	1067	Saba	BQ	-> Caribbean Netherlands
+col	1068	Sint Eustatius	BQ	-> Caribbean Netherlands
+col	1070	Viceroyalty of New Spain	MX	colonial predecessor -> Mexico
+col	1073	Sint Martin	SX	mp=Netherlands row -> Dutch side of island = Sint Maarten
+col	1074	Dutch Windward Is.	NA	EXCLUDE: multi-state island region, no unique successor
+col	1075	St.Kitts	KN	-> St. Kitts & Nevis
+col	1076	Nevis	KN	-> St. Kitts & Nevis
+col	1081	Mosquito Coast	NI	Nicaraguan coast -> Nicaragua
+col	1082	Bay Is.	HN	Honduras Bay Islands -> Honduras
+col	1087	Swan Is.	NA	EXCLUDE: under USA 1863-1971, identity unclear, no unique OA target
+col	1088	Corn Is.	NA	EXCLUDE: under USA 1916-1970, identity unclear, no unique OA target
+col	11	Faeroe Is.	FO	COW acronym -> Faroe Islands
+col	110	Guyana (Br. Guiana)	GY	full name
+col	1113	Demerara and Essequibo	GY	-> Guyana
+col	1114	Berbice	GY	-> Guyana
+col	1135	Viceroyalty of Peru	PE	colonial predecessor -> modern Peru
+col	115	Surinam	SR	old spelling -> Suriname
+col	1151	Easter I.	CL	Easter Island -> Chile
+col	1160	Viceroyalty of La Plata	NA	EXCLUDE: dissolved multi-state (successors AR/BO/PY/UY)
+col	1163	Falkland Is.	FK	COW acronym
+col	120	French Guyana	GF	full name -> French Guiana
+col	1201	Inini	GF	French Guiana district
+col	21	Newfoundland	CA	-> Canada (Newfoundland and Labrador)
+col	2249	Heligoland	DE	-> Germany
+col	3349	Ionian Is.	GR	-> Greece
+col	3353	Dodecanese Is. (Aegean Is.)	GR	-> Greece
+col	3386	Svalbard Is.	SJ	-> Svalbard and Jan Mayen
+col	3387	Jan Mayan Is.	SJ	-> Svalbard and Jan Mayen
+col	3	Alaska	US	-> United States
+col	4	Hawaii	US	-> United States
+col	400	Azores (Western Isles)	PT	-> Portugal
+col	401	Madeira Isles	PT	-> Portugal
+col	402	Cape Verde	CV	old spelling -> Cabo Verde
+col	403	Sao Tome-Principe	ST	old spelling -> Sao Tome & Principe
+col	404	Guinea-Bissau (Portuguese Guinea)	GW	full name
+col	4042	Bissau	GW	-> Guinea-Bissau
+col	4050	St. Helena	SH	COW acronym -> Saint Helena
+col	410	Canary Is.	PT	-> Portugal
+col	411	Equatorial Guinea (Spanish Guinea)	GQ	full name
+col	412	Rio Muni	GQ	-> Equatorial Guinea
+col	413	Fernando Po (Bioko)	GQ	-> Equatorial Guinea
+col	42	Dominican Republic (Santo Domingo)	DO	full name
+col	430	French West Africa	NA	EXCLUDE: dissolved federation (successors SN/ML/GN/CI/BF/NE)
+col	431	Mali Federation	ML	predecessor of modern Mali
+col	432	MLI	ML	COW acronym -> Mali
+col	434	Benin (Dahomey)	BJ	full name
+col	4345	Ouidah	BJ	-> Benin
+col	438	Guinea (French Guinea) (Rivieres du Sud)	GN	full name -> Guinea
+col	439	Burkina Faso (Upper Volta)	BF	full name
+col	452	Ghana (Gold Coast)	GH	full name
+col	4534	Danish Posts (Gold Gold Coast)	GH	Danish Gold Coast -> Ghana (Accra)
+col	4535	Dutch Posts (Gold Coast)	GH	Dutch Gold Coast -> Ghana (Elmina)
+col	460	German Togoland	TG	-> Togo
+col	461	Togo (French Togoland)	TG	full name
+col	462	British Togoland	GH	British Togoland -> Ghana (1960)
+col	470	Kamerun	CM	German name -> Cameroon
+col	471	Cameroun (French Cameroons)	CM	full name
+col	472	British Cameroons	CM	-> Cameroon (1961)
+col	4781	Lagos	NG	-> Nigeria
+col	4782	Oil Rivers Protectorate	NG	-> Nigeria
+col	4783	Southern Nigeria	NG	-> Nigeria
+col	4784	Northern Nigeria	NG	-> Nigeria
+col	480	French Equatorial Africa	NA	EXCLUDE: dissolved federation (successors GA/CG/CF/TD)
+col	484	CON	CG	COW acronym -> Congo
+col	490	Zaire (Kinshasa) (Belgian Congo)	CD	old country name -> DR Congo
+col	5	Virgin Islands	VI	rows under USA/Denmark = US Virgin Islands (Danish West Indies 1816-1917 -> USA 1917)
+col	50	West Indies Federation	NA	EXCLUDE: dissolved federation (successors TT/JM etc.)
+col	501	Kenya (British East Africa Protectorate)	KE	full name
+col	510	TAZ	TZ	COW acronym -> Tanzania
+col	511	Zanzibar	TZ	-> Tanzania
+col	515	Rwanda-Urundi	NA	EXCLUDE: dissolved federation (successors RW/BI)
+col	5200	Italian Somaliland	SO	-> Somalia
+col	5201	Italian East Africa	NA	EXCLUDE: dissolved multi-state (successors ET/ER/SO)
+col	5202	Oltre Giuba	ET	Italian-occupied Ethiopia
+col	521	British Somaliland (Somaliland Republic)	SO	-> Somalia
+col	522	?	NA	EXCLUDE: unresolved entity name (?)
+col	550	Federation of Rhodesia and Nyasaland	NA	EXCLUDE: dissolved federation (successors ZW/ZM/MW)
+col	551	Zambia (Northern Rhodesia)	ZM	full name
+col	5518	Northeastern Rhodesia	ZM	-> Zambia
+col	5519	Northwestern Rhodesia	ZM	-> Zambia
+col	552	Zimbabwe (Rhodesia) (Southern Rhodesia)	ZW	full name
+col	553	Malawi (Nyasaland)	MW	full name
+col	56	St. Lucia	LC	COW acronym -> Saint Lucia
+col	561	Cape Colony	ZA	-> South Africa
+col	5611	Griqualand, West	ZA	-> South Africa
+col	5612	British Bechuanaland	BW	-> Botswana
+col	5614	British Kaffraria	ZA	-> South Africa
+col	562	Natal	ZA	-> South Africa
+col	5621	Zululand	ZA	-> South Africa
+col	563	Transvaal	ZA	-> South Africa
+col	564	Orange Free State (Orange River Colony)	ZA	-> South Africa
+col	565	?	NA	EXCLUDE: unresolved entity name (?)
+col	57	St. Vincent and the Grenadines	VC	full name
+col	570	Lesotho (Basutoland)	LS	full name
+col	571	Botswana (Bechuanaland)	BW	full name
+col	572	Swaziland	SZ	old country name -> Eswatini
+col	5796	Ambohimanga (Merina)	MG	Merina kingdom -> Madagascar
+col	580	Malagasy Republic (Madagascar)	MG	full name
+col	5801	Nossi Be	MG	-> Madagascar
+col	5802	Diego Suarez	MG	-> Madagascar
+col	5803	St. Marie de Madagascar	MG	-> Madagascar
+col	5811	Grand Comoro	KM	-> Comoros
+col	5813	Anjouan	KM	-> Comoros
+col	5814	Moheli	KM	-> Comoros
+col	60	St. Kitts-Nevis	KN	full name
+col	602	Spanish Morocco	MA	-> Morocco
+col	6030	Tetuan	MA	-> Morocco
+col	605	Ifni	MA	-> Morocco
+col	6062	Ceuta	MA	-> Morocco
+col	6064	Melilla	MA	-> Morocco
+col	6067	Captaincy-general of north Africa	MA	-> Morocco
+col	609	Spanish Sahara	NA	EXCLUDE: territory = Western Sahara, not in OA country table (disputed)
+col	610	Spanish West Africa	NA	EXCLUDE: territory = Western Sahara, not in OA country table (disputed)
+col	620	Libya (Tripolitania, Cyrenaica, Fezzan)	LY	full name
+col	6202	Cyrenaica	LY	-> Libya
+col	6203	Tripolitania	LY	-> Libya
+col	625	Sudan (Anglo-Egyptian)	SD	full name
+col	6403	Hatay (Alexandretta)	TR	-> Turkey
+col	645	Iraq (Mesopotamia)	IQ	full name
+col	651	Egypt/United Arab Republic	EG	-> Egypt
+col	6524	Damascus	SY	-> Syria
+col	6525	Aleppo	SY	-> Syria
+col	6526	Latakia (Alaouites)	SY	-> Syria
+col	6527	Jebel Druze	SY	-> Syria
+col	663	Jordan (Transjordan)	JO	full name
+col	672	Asir	SA	-> Saudi Arabia
+col	68	Netherlands Antilles	NA	EXCLUDE: dissolved 2010, successors CW/SX/BQ
+col	6801	Federation of South Arabia	NA	EXCLUDE: dissolved federation (successors YE/OM etc.)
+col	681	Aden	YE	-> Yemen
+col	692	?	NA	EXCLUDE: unresolved entity name (?)
+col	696	United Arab Emirates (Trucail Oman)	AE	full name
+col	713	Republic of China (Taiwan) (Formosa)	TW	full name -> Taiwan
+col	730	Korea (Chosen)	NA	EXCLUDE: divided peninsula (successors KR/KP), no unique target
+col	7351	Southern Sakhalin I.	RU	-> Russia
+col	741	Ryukyu Is.	JP	-> Japan
+col	7411	Bonin Is.	JP	-> Japan
+col	7503	Coromandel Coast Posts	IN	-> India
+col	7504	Tranquebar and Serampore	IN	-> India
+col	751	French India	IN	-> India
+col	752	Portuguese India (incl. Goa, Diu, Daman)	IN	-> India
+col	761	Sikkim	IN	-> India (state since 1975)
+col	775	Burma (Myanmar)	MM	full name
+col	780	Sri Lanka (Ceylon)	LK	full name
+col	781	Maldive Islands	MV	old spelling -> Maldives
+col	80	Belize (British Honduras)	BZ	full name
+col	810	French Indochina	NA	EXCLUDE: dissolved multi-state (successors VN/KH/LA)
+col	811	Kampuchea (Cambodia)	KH	full name
+col	8151	Cochin China	VN	-> Vietnam
+col	8152	Annam	VN	-> Vietnam
+col	8153	Tonkin	VN	-> Vietnam
+col	816	Vietnam, Democratic Rep.	VN	-> Vietnam
+col	817	Vietnam, Republic of	VN	-> Vietnam
+col	820	Malaysia (Malaya)	MY	full name
+col	8201	Perak	MY	-> Malaysia
+col	8202	Selangor	MY	-> Malaysia
+col	8203	Pahang	MY	-> Malaysia
+col	821	Federated Malay States	MY	-> Malaysia
+col	8210	Negri Sembilan	MY	-> Malaysia
+col	8221	Johore	MY	-> Malaysia
+col	8222	Kedah	MY	-> Malaysia
+col	8223	Kelantan	MY	-> Malaysia
+col	8224	Perlis	MY	-> Malaysia
+col	8225	Trengganu	MY	-> Malaysia
+col	823	Sabah (North Borneo)	MY	-> Malaysia
+col	8231	Labuan I.	MY	-> Malaysia
+col	824	Sarawak	MY	-> Malaysia
+col	827	Straits Settlements	NA	EXCLUDE: split (successors MY/SG)
+col	8271	Malacca	MY	-> Malaysia
+col	850	Indonesia (Dutch East Indies)	ID	full name
+col	851	West Irian (Dutch New Guinea)	ID	-> Indonesia (West Papua)
+col	860	Portuguese Timor	TL	-> Timor-Leste
+col	89	United States of Central America	NA	EXCLUDE: dissolved federation (successors CR/SV/GT/HN/NI)
+col	9001	Christmas I.	CX	COW acronym -> Christmas Island
+col	9003	Coral Sea Is.	AU	-> Australia
+col	9004	Norfolk I.	NF	COW acronym -> Norfolk Island
+col	9005	Heard and McDonald Is.	HM	COW acronym -> Heard & McDonald Islands
+col	9008	Ashmore and Cartier Is	AU	-> Australia
+col	901	New South Wales	AU	-> Australia
+col	902	Western Australia	AU	-> Australia
+col	903	South Australia	AU	-> Australia
+col	904	Victoria	AU	-> Australia
+col	905	Queensland	AU	-> Australia
+col	906	Tasmania	AU	-> Australia
+col	911	Papua	PG	-> Papua New Guinea
+col	912	?	NA	EXCLUDE: unresolved entity name (?)
+col	9201	Tokelau Is.	TK	COW acronym
+col	925	Cook Is.	CK	COW acronym
+col	9253	Niue I.	NU	COW acronym
+col	930	New Caledonia and Dependencies	NC	full name
+col	9321	Wallis and Futuna Is.	WF	COW acronym
+col	935	Vanuatu (New Hebrides)	VU	full name
+col	9401	German Solomon Is.	SB	-> Solomon Islands
+col	945	Gilbert and Ellice Is.	NA	EXCLUDE: split (successors KI/TV)
+col	96	Panama Canal Zone	PA	-> Panama
+col	9601	Society Is.	PF	-> French Polynesia
+col	9602	Marquesas Is.	PF	-> French Polynesia
+col	9603	Tuamotu Is.	PF	-> French Polynesia
+col	9604	Gambier Is.	PF	-> French Polynesia
+col	9605	Tubuai Is. (Austral Is.)	PF	-> French Polynesia
+col	9620	Pitcairn Is.	PN	COW acronym
+col	9720	Wake I.	NA	EXCLUDE: not in OA country table
+col	9730	Midway Is.	NA	EXCLUDE: not in OA country table
+col	9740	Palmyra Is.	NA	EXCLUDE: not in OA country table
+col	9770	Howland I.	NA	EXCLUDE: not in OA country table
+col	980	U. S. Pacific Trust Territories	NA	EXCLUDE: dissolved trust territory, no unique successor
+col	9810	Caroline Is.	FM	-> Micronesia
+col	9820	Mariana Is.	NA	EXCLUDE: split (successors GU/MP)
+col	983	Marshall Is.	MH	COW acronym
+col	984	Northern Marianas Is.	MP	COW acronym
+col	987	Federated States of Micronesia	FM	full name
+col	990	Western Samoa	WS	-> Samoa
+col	9970	?	NA	EXCLUDE: unresolved entity name (?)
+col	9973	Kerguelen Is.	NA	EXCLUDE: not in OA country table (Fr. Southern & Antarctic Lands absent)

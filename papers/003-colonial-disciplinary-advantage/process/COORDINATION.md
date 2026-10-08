@@ -66,3 +66,28 @@
 3. 宗主国指派单源（COW）；缓解 = 双路径内部交叉验证（both 207 对 = 61% 高置信核心）
 4. 1 个未解析宗主国 code（'?'）→ 段3 排除并记录
 5. D 层 display_name.search 匿名限流 ×3 = UNVERIFIED（不阻塞，D 层不依赖）
+
+## 段3a 时间线（2026-09-30）
+
+| 时间 | 事件 |
+|---|---|
+| 09-30 凌晨 | executor 段3a 运行 → 死亡（131073/length）；初抓 per-page=1 缺陷坐实（group_by 返回组数 ≤ per-page，只落 1 个年度组） |
+| 09-30 10:17 | **宿主接管**：panel_a2.py（per-page=200）topup 收官 **2958/2958，fails=0**；v2 为正典，v1 留存 |
+| 09-30 10:40 | 漂移报告（v1 vs v2）+ b_smoke（PT-BR Mining count=58）+ stage3a_summary.md 落盘 |
+| 09-30 10:47 | stage3bfix_prompt.txt 冻结（panel_b_full.py：287 跨境 dyad × 17 学科 = 4879 格）→ 3b 启动 |
+| 09-30 12:03 | 3b 撞日配额墙（28×429，450/4879 后停等） |
+| 10-08 | 8 天空窗；宿主修 panel_b_full.py（backoff 0,30,60,120,240 + 连续 10 格 FAIL 断路器 sleep 1800s）→ **3b 恢复**（幂等补抓轮） |
+
+## 段3a 验收数字
+
+- A 层：174 国 × 17 学科 = **2958 格全抓，fails=0**；v2（per-page=200）正典，v1（per-page=1）留存对照
+- 漂移：n_compared=2547，max_drift=0.3333（CF Philosophy 3→4），mean=0.00109；gt_1pct=65、gt_10pct=3 → 可接受
+- B 层冒烟：PT-BR Mining count=58（b_smoke.md）
+- 配额实证：09-30 单日 2958 查询 0×429 → 日配额 ≫ 1000（10-08 header 实测 X-RateLimit-Limit=1000，规划取保守 1000/天）
+- 零 outcome 纪律：保持（无 country×discipline 产出物化）
+
+## 段3a 已知缺陷/备注
+
+1. per-page=1 缺陷（group_by 组数 ≤ per-page）→ 3b 以 per-page=200 修正并冻结于 panel_b_full.py
+2. 配额信号矛盾：09-30 单日 2958 查询零失败 vs 10-08 header Limit=1000 → 规划保守按 1000/天；断路器骑配额耗尽窗口
+3. 3b 已抓 450/4879 幂等跳过；28×429 失败格由恢复轮补齐

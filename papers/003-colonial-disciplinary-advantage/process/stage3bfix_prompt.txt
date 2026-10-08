@@ -1,0 +1,31 @@
+# ARIS4C-003 段3b 重启（413 崩溃后最小重启）executor 任务
+
+## 背景（宿主判定，勿读旧日志）
+- 首 3b run（CYCFQd）死于第 2 次 API 调用：第 1 条 bash 用了 `cd /d D:\...`（cmd 语法）→ 混合 shell（cmd/Git Bash 混杂）解析破坏 → dir/find 从文件系统根全盘遍历，~93 万行输出 → **413 Payload Too Large（请求体过大）**，run 秒崩。
+- 盘上无任何 3b 产物、无进度（3a 交付物完好）。本 run = 3b 任务全量重做。
+- 413 是新死法：ARIS_TOOL_OUTPUT_LINES 只截断日志显示，**不阻止完整输出进 API 请求**→ 防护只能靠禁掉会产巨量输出的命令。
+
+## 先读（各 1 次）
+- stage3b_prompt.txt（38 行）——权威规格，S1/S2/S3 照它执行
+- stage3a_summary.md（30 行）——段3a 收官与移交
+- process/COORDINATION.md 只读尾 20 行（`tail -20 process/COORDINATION.md`，禁全读）
+
+## Shell 纪律（宿主实测，首 run 死于违反，必须遵守）
+- cwd 已是沙盒目录：**只用相对路径**（stage3b_prompt.txt、process/、code/、data/、results/）
+- **禁 `cd /d <Windows路径>`**（cmd 语法，混合 shell 会解析破坏成全盘遍历）；全程不需要 cd
+- **禁 `dir`**（用 `ls` / `ls -la`）
+- **禁从文件系统根（`/`、`C:\`、`/c/`）起 find**；find 只准用于沙盒子目录
+- **任何可能输出 >1000 行的命令必须 `| head -50`**；ls 大目录加 `| head -20`
+- bash 内禁 Windows 反斜杠路径（会破坏引号）
+- python 脚本 write_file 落盘后执行；python 输出 ≤40 行
+
+## 任务（按 stage3b_prompt.txt 规格）
+- S1：venv python 后台启动 code/panel_b_full.py（4879 格 B 层抓取，per-page=200，raw→data/raw/panel_b/，完成写 data/panel/b_fetch_manifest.csv）→ 60 秒验证（日志首行应为 `start: dyads=287 discs=17 total_cells=4879 ...`；日志缺失则 `mkdir -p results` 后重启，不得带病放行）→ 每 30 分钟 `tail -1 results/panel_b_full_run.log` 轮询，每轮只报 1 行；FAIL 格记清单、整体完成后统一补抓一次
+- S2：抓取 DONE 后前台跑 code/panel_b_derive.py（输出 ≤40 行）→ b_layer_cell.csv（4879+1 行）+ b_layer_dyd_year.csv + DONE 行 + drift 格清单（2 个 3 段命名冒烟文件自动忽略）
+- S3：stage3b_summary.md ≤40 行（完成率/total_works/top10 格/drift/`du -sh data/raw/panel_b` 一行/路径与行数/风险/移交段4 清单）+ **末行 `DONE stage3b 003`** + process/COORDINATION.md 追加段3b 节（严格时序）
+- 进度行与任务同命令 append 进 process/progress_s3b.txt
+
+## 纪律
+- 工具调用 ≤40；单响应 ≤1 调用；参数 ≤20 行；文本 ≤2 句
+- 禁读 results/*.log（大日志爆上下文）；禁改冻结脚本；禁重抓 A 层；不做 H 检验、不写论文
+- venv python: C:/Users/SCZ_2207/.workbuddy/binaries/python/envs/default/Scripts/python.exe

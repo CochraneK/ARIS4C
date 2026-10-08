@@ -1,0 +1,14 @@
+v1 (per-page=1, 2026-09-29/30) vs v2 (per-page=200, 2026-09-30) meta.count drift
+n_compared=2547 max_drift=0.33333 (CF Philosophy 3 -> 4) mean_drift=0.00109
+cells_drift_gt_1pct=65 gt_10pct=3
+top10:
+  0.33333 CF Philosophy 3 -> 4
+  0.11111 FM Physics and Astronomy 9 -> 8
+  0.10204 GF Philosophy 49 -> 54
+  0.08955 FJ Law 67 -> 61
+  0.05882 GF Law 17 -> 18
+  0.04167 FO Materials Science 24 -> 23
+  0.04167 AG Computer Science 24 -> 23
+  0.04000 FM Archaeology 25 -> 24
+  0.04000 BF Law 25 -> 26
+  0.03922 BJ Law 51 -> 53

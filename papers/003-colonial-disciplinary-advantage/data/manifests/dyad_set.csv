@@ -1,0 +1,299 @@
+mp_code,mp_name,mp_iso,mp_oa_id,col_code,col_name,col_iso,col_oa_id,first,last,dur,src,occ_dur,mp_match,col_match,self_dyad
+220,France,FR,https://openalex.org/countries/FR,65,Guadeloupe,GP,https://openalex.org/countries/GP,1816,1993,178,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,66,Martinique,MQ,https://openalex.org/countries/MQ,1816,1993,178,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,585,Reunion,RE,https://openalex.org/countries/RE,1816,1993,178,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,1029,St. Pierre and Miquelon,PM,https://openalex.org/countries/PM,1816,1993,178,both,0,exact,exact,0
+235,POR,PT,https://openalex.org/countries/PT,721,Macao,MO,https://openalex.org/countries/MO,1816,1993,178,both,0,alias: COW acronym: Portugal,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,30,Bermuda,BM,https://openalex.org/countries/BM,1816,1993,178,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,231,Gibraltar,GI,https://openalex.org/countries/GI,1816,1993,178,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+220,France,FR,https://openalex.org/countries/FR,120,French Guyana,GF,https://openalex.org/countries/GF,1817,1993,177,both,0,exact,alias: full name -> French Guiana,0
+200,UKG,GB,https://openalex.org/countries/GB,4050,St. Helena,SH,https://openalex.org/countries/SH,1816,1992,177,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym -> Saint Helena,0
+200,UKG,GB,https://openalex.org/countries/GB,1163,Falkland Is.,FK,https://openalex.org/countries/FK,1833,1993,161,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym,0
+235,POR,PT,https://openalex.org/countries/PT,540,Angola,AO,https://openalex.org/countries/AO,1816,1975,160,both,0,alias: COW acronym: Portugal,exact,0
+235,POR,PT,https://openalex.org/countries/PT,402,Cape Verde,CV,https://openalex.org/countries/CV,1816,1975,160,both,0,alias: COW acronym: Portugal,alias: old spelling -> Cabo Verde,0
+235,POR,PT,https://openalex.org/countries/PT,541,Mozambique,MZ,https://openalex.org/countries/MZ,1816,1975,160,both,0,alias: COW acronym: Portugal,exact,0
+235,POR,PT,https://openalex.org/countries/PT,403,Sao Tome-Principe,ST,https://openalex.org/countries/ST,1816,1975,160,both,0,alias: COW acronym: Portugal,alias: old spelling -> Sao Tome & Principe,0
+200,UKG,GB,https://openalex.org/countries/GB,4042,Bissau,GW,https://openalex.org/countries/GW,1834,1993,160,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Guinea-Bissau,0
+235,POR,PT,https://openalex.org/countries/PT,860,Portuguese Timor,TL,https://openalex.org/countries/TL,1816,1975,158,both,0,alias: COW acronym: Portugal,alias: -> Timor-Leste,0
+200,UKG,GB,https://openalex.org/countries/GB,31,Bahamas,BS,https://openalex.org/countries/BS,1816,1973,158,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,9620,Pitcairn Is.,PN,https://openalex.org/countries/PN,1839,1993,155,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym,0
+200,UKG,GB,https://openalex.org/countries/GB,720,Hong Kong,HK,https://openalex.org/countries/HK,1841,1996,154,both,3,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,590,Mauritius,MU,https://openalex.org/countries/MU,1816,1968,153,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,338,Malta,MT,https://openalex.org/countries/MT,1816,1964,149,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,53,Barbados,BB,https://openalex.org/countries/BB,1816,1966,148,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+235,POR,PT,https://openalex.org/countries/PT,752,"Portuguese India (incl. Goa, Diu, Daman)",IN,https://openalex.org/countries/IN,1816,1961,146,both,0,alias: COW acronym: Portugal,alias: -> India,0
+200,UKG,GB,https://openalex.org/countries/GB,451,Sierra Leone,SL,https://openalex.org/countries/SL,1816,1961,146,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,80,Belize (British Honduras),BZ,https://openalex.org/countries/BZ,1816,1981,145,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+220,France,FR,https://openalex.org/countries/FR,433,Senegal,SN,https://openalex.org/countries/SN,1817,1959,143,both,0,exact,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,51,Jamaica,JM,https://openalex.org/countries/JM,1816,1958,143,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,52,Trinidad and Tobago,TT,https://openalex.org/countries/TT,1816,1958,143,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+220,France,FR,https://openalex.org/countries/FR,930,New Caledonia and Dependencies,NC,https://openalex.org/countries/NC,1853,1993,141,both,0,exact,alias: full name,0
+220,France,FR,https://openalex.org/countries/FR,751,French India,IN,https://openalex.org/countries/IN,1816,1954,139,both,0,exact,alias: -> India,0
+210,Netherlands,NL,https://openalex.org/countries/NL,115,Surinam,SR,https://openalex.org/countries/SR,1816,1954,139,both,0,exact,alias: old spelling -> Suriname,0
+390,Denmark,DK,https://openalex.org/countries/DK,10,Greenland,GL,https://openalex.org/countries/GL,1816,1953,138,both,0,exact,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,110,Guyana (Br. Guiana),GY,https://openalex.org/countries/GY,1831,1966,136,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+210,Netherlands,NL,https://openalex.org/countries/NL,850,Indonesia (Dutch East Indies),ID,https://openalex.org/countries/ID,1816,1949,134,both,0,exact,alias: full name,0
+390,Denmark,DK,https://openalex.org/countries/DK,11,Faeroe Is.,FO,https://openalex.org/countries/FO,1816,1947,132,both,0,exact,alias: COW acronym -> Faroe Islands,0
+220,France,FR,https://openalex.org/countries/FR,615,Algeria,DZ,https://openalex.org/countries/DZ,1831,1962,132,both,0,exact,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,750,India,IN,https://openalex.org/countries/IN,1816,1947,132,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,21,Newfoundland,CA,https://openalex.org/countries/CA,1816,1949,122,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada (Newfoundland and Labrador),0
+200,UKG,GB,https://openalex.org/countries/GB,780,Sri Lanka (Ceylon),LK,https://openalex.org/countries/LK,1833,1948,116,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,452,Ghana (Gold Coast),GH,https://openalex.org/countries/GH,1816,1957,114,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,420,Gambia,GM,https://openalex.org/countries/GM,1816,1965,108,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,9004,Norfolk I.,NF,https://openalex.org/countries/NF,1816,1920,105,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym -> Norfolk Island,0
+390,Denmark,DK,https://openalex.org/countries/DK,395,Iceland,IS,https://openalex.org/countries/IS,1816,1919,104,both,0,exact,exact,0
+230,SPN,ES,https://openalex.org/countries/ES,411,Equatorial Guinea (Spanish Guinea),GQ,https://openalex.org/countries/GQ,1858,1960,103,both,0,alias: COW acronym: Spain,alias: full name,0
+390,Denmark,DK,https://openalex.org/countries/DK,5,Virgin Islands,VI,https://openalex.org/countries/VI,1816,1917,102,both,0,exact,alias: rows under USA/Denmark = US Virgin Islands (Danish West Indies 1816-1917 -> USA 1917),0
+200,UKG,GB,https://openalex.org/countries/GB,950,Fiji,FJ,https://openalex.org/countries/FJ,1874,1970,97,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+235,POR,PT,https://openalex.org/countries/PT,404,Guinea-Bissau (Portuguese Guinea),GW,https://openalex.org/countries/GW,1879,1974,96,both,0,alias: COW acronym: Portugal,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,561,Cape Colony,ZA,https://openalex.org/countries/ZA,1816,1910,95,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> South Africa,0
+2,USA,US,https://openalex.org/countries/US,991,American Samoa,AS,https://openalex.org/countries/AS,1900,1993,94,both,0,alias: COW acronym,exact,0
+2,USA,US,https://openalex.org/countries/US,985,Guam,GU,https://openalex.org/countries/GU,1898,1993,94,both,0,alias: COW acronym,exact,0
+920,New Zealand,NZ,https://openalex.org/countries/NZ,925,Cook Is.,CK,https://openalex.org/countries/CK,1901,1993,93,both,0,exact,alias: COW acronym,0
+2,USA,US,https://openalex.org/countries/US,3,Alaska,US,https://openalex.org/countries/US,1867,1959,93,both,0,alias: COW acronym,alias: -> United States,1
+220,France,FR,https://openalex.org/countries/FR,5812,Mayotte,YT,https://openalex.org/countries/YT,1843,1993,92,both,0,exact,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,1062,Anguilla,AI,https://openalex.org/countries/AI,1816,1993,92,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,835,Brunei,BN,https://openalex.org/countries/BN,1888,1983,92,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+220,France,FR,https://openalex.org/countries/FR,960,French Polynesia,PF,https://openalex.org/countries/PF,1903,1993,91,both,0,exact,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,59,Montserrat,MS,https://openalex.org/countries/MS,1816,1993,91,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+920,New Zealand,NZ,https://openalex.org/countries/NZ,9253,Niue I.,NU,https://openalex.org/countries/NU,1904,1993,90,both,0,exact,alias: COW acronym,0
+200,UKG,GB,https://openalex.org/countries/GB,901,New South Wales,AU,https://openalex.org/countries/AU,1816,1901,86,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Australia,0
+385,Norway,NO,https://openalex.org/countries/NO,3387,Jan Mayan Is.,SJ,https://openalex.org/countries/SJ,1929,2016,84,B,,exact,alias: -> Svalbard and Jan Mayen,0
+230,SPN,ES,https://openalex.org/countries/ES,9810,Caroline Is.,FM,https://openalex.org/countries/FM,1816,1899,84,both,0,alias: COW acronym: Spain,alias: -> Micronesia,0
+900,Australia,AU,https://openalex.org/countries/AU,9008,Ashmore and Cartier Is,AU,https://openalex.org/countries/AU,1931,2016,83,B,,exact,alias: -> Australia,1
+230,SPN,ES,https://openalex.org/countries/ES,40,Cuba,CU,https://openalex.org/countries/CU,1816,1898,83,both,0,alias: COW acronym: Spain,exact,0
+230,SPN,ES,https://openalex.org/countries/ES,840,Philippines,PH,https://openalex.org/countries/PH,1816,1898,83,both,0,alias: COW acronym: Spain,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,570,Lesotho (Basutoland),LS,https://openalex.org/countries/LS,1884,1966,83,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,1049,Tobago,TT,https://openalex.org/countries/TT,1816,1898,83,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Trinidad and Tobago,0
+200,UKG,GB,https://openalex.org/countries/GB,920,New Zealand,NZ,https://openalex.org/countries/NZ,1840,1920,81,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,20,Canada,CA,https://openalex.org/countries/CA,1841,1919,79,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,940,Solomon Islands,SB,https://openalex.org/countries/SB,1893,1977,79,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,696,United Arab Emirates (Trucail Oman),AE,https://openalex.org/countries/AE,1892,1970,79,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+155,Chile,CL,https://openalex.org/countries/CL,1151,Easter I.,CL,https://openalex.org/countries/CL,1888,1965,78,A,0,exact,alias: Easter Island -> Chile,1
+230,SPN,ES,https://openalex.org/countries/ES,6,Puerto Rico,PR,https://openalex.org/countries/PR,1821,1898,78,both,0,alias: COW acronym: Spain,exact,0
+220,France,FR,https://openalex.org/countries/FR,484,CON,CG,https://openalex.org/countries/CG,1882,1959,77,B,,exact,alias: COW acronym -> Congo,0
+200,UKG,GB,https://openalex.org/countries/GB,906,Tasmania,AU,https://openalex.org/countries/AU,1825,1901,77,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Australia,0
+2,USA,US,https://openalex.org/countries/US,5,Virgin Islands,VI,https://openalex.org/countries/VI,1917,1993,77,both,0,alias: COW acronym,alias: rows under USA/Denmark = US Virgin Islands (Danish West Indies 1816-1917 -> USA 1917),0
+211,Belgium,BE,https://openalex.org/countries/BE,490,Zaire (Kinshasa) (Belgian Congo),CD,https://openalex.org/countries/CD,1885,1960,76,both,0,exact,alias: old country name -> DR Congo,0
+200,UKG,GB,https://openalex.org/countries/GB,571,Botswana (Bechuanaland),BW,https://openalex.org/countries/BW,1885,1965,76,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+2,USA,US,https://openalex.org/countries/US,96,Panama Canal Zone,PA,https://openalex.org/countries/PA,1903,1978,76,B,,alias: COW acronym,alias: -> Panama,0
+200,UKG,GB,https://openalex.org/countries/GB,2249,Heligoland,DE,https://openalex.org/countries/DE,1816,1890,75,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Germany,0
+200,UKG,GB,https://openalex.org/countries/GB,935,Vanuatu (New Hebrides),VU,https://openalex.org/countries/VU,1906,1980,75,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+900,Australia,AU,https://openalex.org/countries/AU,9004,Norfolk I.,NF,https://openalex.org/countries/NF,1920,1993,74,A,0,exact,alias: COW acronym -> Norfolk Island,0
+220,France,FR,https://openalex.org/countries/FR,616,Tunisia,TN,https://openalex.org/countries/TN,1881,1955,74,B,,exact,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,591,Seychelles,SC,https://openalex.org/countries/SC,1903,1976,74,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,902,Western Australia,AU,https://openalex.org/countries/AU,1829,1901,73,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Australia,0
+200,UKG,GB,https://openalex.org/countries/GB,8202,Selangore,MY,https://openalex.org/countries/MY,1875,1946,70,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,955,Tonga,TO,https://openalex.org/countries/TO,1900,1969,70,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+920,New Zealand,NZ,https://openalex.org/countries/NZ,9201,Tokelau Is.,TK,https://openalex.org/countries/TK,1925,1993,69,both,0,exact,alias: COW acronym,0
+385,Norway,NO,https://openalex.org/countries/NO,3386,Svalbard Is.,SJ,https://openalex.org/countries/SJ,1925,1993,69,both,0,exact,alias: -> Svalbard and Jan Mayen,0
+200,UKG,GB,https://openalex.org/countries/GB,501,Kenya (British East Africa Protectorate),KE,https://openalex.org/countries/KE,1895,1963,69,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,8201,Perak,MY,https://openalex.org/countries/MY,1874,1942,69,both,2,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,552,Zimbabwe (Rhodesia) (Southern Rhodesia),ZW,https://openalex.org/countries/ZW,1889,1980,69,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+220,France,FR,https://openalex.org/countries/FR,437,Ivory Coast,CI,https://openalex.org/countries/CI,1893,1960,68,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,434,Benin (Dahomey),BJ,https://openalex.org/countries/BJ,1894,1960,67,both,0,exact,alias: full name,0
+230,SPN,ES,https://openalex.org/countries/ES,6067,Captaincy-general of north Africa,MA,https://openalex.org/countries/MA,1847,1913,67,A,0,alias: COW acronym: Spain,alias: -> Morocco,0
+200,UKG,GB,https://openalex.org/countries/GB,1076,Nevis,KN,https://openalex.org/countries/KN,1816,1882,67,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> St. Kitts & Nevis,0
+200,UKG,GB,https://openalex.org/countries/GB,1075,St.Kitts,KN,https://openalex.org/countries/KN,1816,1882,67,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> St. Kitts & Nevis,0
+200,UKG,GB,https://openalex.org/countries/GB,572,Swaziland,SZ,https://openalex.org/countries/SZ,1902,1968,67,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: old country name -> Eswatini,0
+200,UKG,GB,https://openalex.org/countries/GB,511,Zanzibar,TZ,https://openalex.org/countries/TZ,1895,1962,67,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Tanzania,0
+220,France,FR,https://openalex.org/countries/FR,438,Guinea (French Guinea) (Rivieres du Sud),GN,https://openalex.org/countries/GN,1893,1958,66,both,0,exact,alias: full name -> Guinea,0
+200,UKG,GB,https://openalex.org/countries/GB,903,South Australia,AU,https://openalex.org/countries/AU,1836,1901,66,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Australia,0
+220,France,FR,https://openalex.org/countries/FR,5796,Ambohimanga (Merina),MG,https://openalex.org/countries/MG,1896,1960,65,A,0,exact,alias: Merina kingdom -> Madagascar,0
+220,France,FR,https://openalex.org/countries/FR,580,Malagasy Republic (Madagascar),MG,https://openalex.org/countries/MG,1896,1960,65,both,0,exact,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,58,Antigua & Barbuda,AG,https://openalex.org/countries/AG,1816,1967,65,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,500,Uganda,UG,https://openalex.org/countries/UG,1894,1961,64,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+380,SWD,SE,https://openalex.org/countries/SE,1064,St. Barthelemy,BL,https://openalex.org/countries/BL,1816,1878,63,both,0,alias: COW code 380 = Sweden (entities_full.txt: Norway 1816-1905 Became part of 380 = Swedish-Norwegian union; Aland 1918 Occupied by 380); task example SWD->DE corrected per raw evidence,alias: COW acronym -> Saint Barthelemy,0
+2,USA,US,https://openalex.org/countries/US,4,Hawaii,US,https://openalex.org/countries/US,1898,1960,63,both,0,alias: COW acronym,alias: -> United States,1
+200,UKG,GB,https://openalex.org/countries/GB,54,Dominica,DM,https://openalex.org/countries/DM,1816,1967,62,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,553,Malawi (Nyasaland),MW,https://openalex.org/countries/MW,1891,1952,62,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,8203,Pahang,MY,https://openalex.org/countries/MY,1888,1946,59,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,625,Sudan (Anglo-Egyptian),SD,https://openalex.org/countries/SD,1898,1956,59,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+220,France,FR,https://openalex.org/countries/FR,481,Gabon,GA,https://openalex.org/countries/GA,1903,1960,58,both,0,exact,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,1024,Prince Edward Is.,CA,https://openalex.org/countries/CA,1816,1873,58,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada,0
+220,France,FR,https://openalex.org/countries/FR,436,Niger,NE,https://openalex.org/countries/NE,1904,1960,57,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,5801,Nossi Be,MG,https://openalex.org/countries/MG,1840,1896,57,both,0,exact,alias: -> Madagascar,0
+200,UKG,GB,https://openalex.org/countries/GB,562,Natal,ZA,https://openalex.org/countries/ZA,1843,1910,57,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> South Africa,0
+220,France,FR,https://openalex.org/countries/FR,482,Central African Republic,CF,https://openalex.org/countries/CF,1906,1960,55,both,0,exact,exact,0
+325,Italy/Sardinia,IT,https://openalex.org/countries/IT,531,Eritrea,ER,https://openalex.org/countries/ER,1882,1936,55,both,0,alias: Sardinian state -> modern Italy,exact,0
+210,Netherlands,NL,https://openalex.org/countries/NL,4535,Dutch Posts (Gold Coast),GH,https://openalex.org/countries/GH,1816,1870,55,B,,exact,alias: Dutch Gold Coast -> Ghana (Elmina),0
+200,UKG,GB,https://openalex.org/countries/GB,694,Qatar,QA,https://openalex.org/countries/QA,1916,1970,55,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+2,USA,US,https://openalex.org/countries/US,6,Puerto Rico,PR,https://openalex.org/countries/PR,1898,1952,55,both,0,alias: COW acronym,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,9008,Ashmore and Cartier Is,AU,https://openalex.org/countries/AU,1878,1930,53,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Australia,0
+200,UKG,GB,https://openalex.org/countries/GB,8210,Negri Sembilan,MY,https://openalex.org/countries/MY,1895,1946,52,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,1023,New Brunswick,CA,https://openalex.org/countries/CA,1816,1867,52,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada,0
+200,UKG,GB,https://openalex.org/countries/GB,1022,Nova Scotia,CA,https://openalex.org/countries/CA,1816,1867,52,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada,0
+365,Union of Soviet Socialist Republics / Russia,RU,https://openalex.org/countries/RU,3,Alaska,US,https://openalex.org/countries/US,1816,1867,52,both,0,alias: predecessor state -> modern Russia,alias: -> United States,0
+220,France,FR,https://openalex.org/countries/FR,4345,Ouidah,BJ,https://openalex.org/countries/BJ,1843,1893,51,B,,exact,alias: -> Benin,0
+740,Japan,JP,https://openalex.org/countries/JP,713,Republic of China (Taiwan) (Formosa),TW,https://openalex.org/countries/TW,1895,1945,51,both,0,exact,alias: full name -> Taiwan,0
+200,UKG,GB,https://openalex.org/countries/GB,904,Victoria,AU,https://openalex.org/countries/AU,1851,1901,51,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Australia,0
+200,UKG,GB,https://openalex.org/countries/GB,821,Federated Malay States,MY,https://openalex.org/countries/MY,1896,1946,49,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,1019,Rupert's Land,CA,https://openalex.org/countries/CA,1820,1868,49,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada,0
+200,UKG,GB,https://openalex.org/countries/GB,3349,Ionian Is.,GR,https://openalex.org/countries/GR,1816,1863,48,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Greece,0
+900,Australia,AU,https://openalex.org/countries/AU,9005,Heard and McDonald Is.,HM,https://openalex.org/countries/HM,1947,1993,47,both,0,exact,alias: COW acronym -> Heard & McDonald Islands,0
+200,UKG,GB,https://openalex.org/countries/GB,352,Cyprus,CY,https://openalex.org/countries/CY,1914,1960,47,both,37,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,690,Kuwait,KW,https://openalex.org/countries/KW,1914,1960,47,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,475,Nigeria,NG,https://openalex.org/countries/NG,1914,1960,47,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+2,USA,US,https://openalex.org/countries/US,840,Philippines,PH,https://openalex.org/countries/PH,1898,1946,47,both,0,alias: COW acronym,exact,0
+230,SPN,ES,https://openalex.org/countries/ES,602,Spanish Morocco,MA,https://openalex.org/countries/MA,1912,1957,46,B,,alias: COW acronym: Spain,alias: -> Morocco,0
+900,Australia,AU,https://openalex.org/countries/AU,970,Nauru,NR,https://openalex.org/countries/NR,1920,1967,45,B,,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,600,Morocco,MA,https://openalex.org/countries/MA,1911,1955,44,B,,exact,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,8231,Labuan I.,MY,https://openalex.org/countries/MY,1846,1889,44,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,905,Queensland,AU,https://openalex.org/countries/AU,1859,1901,43,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Australia,0
+200,UKG,GB,https://openalex.org/countries/GB,551,Zambia (Northern Rhodesia),ZM,https://openalex.org/countries/ZM,1911,1953,43,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+740,Japan,JP,https://openalex.org/countries/JP,7351,Southern Sakhalin I.,RU,https://openalex.org/countries/RU,1905,1946,42,both,0,exact,alias: -> Russia,0
+920,New Zealand,NZ,https://openalex.org/countries/NZ,990,Western Samoa,WS,https://openalex.org/countries/WS,1920,1961,42,B,,exact,alias: -> Samoa,0
+220,France,FR,https://openalex.org/countries/FR,483,Chad,TD,https://openalex.org/countries/TD,1920,1960,41,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,435,Mauritania,MR,https://openalex.org/countries/MR,1921,1960,40,both,0,exact,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,472,British Cameroons,CM,https://openalex.org/countries/CM,1922,1960,39,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Cameroon (1961),0
+200,UKG,GB,https://openalex.org/countries/GB,510,TAZ,TZ,https://openalex.org/countries/TZ,1922,1960,39,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym -> Tanzania,0
+200,UKG,GB,https://openalex.org/countries/GB,9201,Tokelau Is.,TK,https://openalex.org/countries/TK,1877,1915,39,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym,0
+200,UKG,GB,https://openalex.org/countries/GB,1061,British Virgin Is.,VG,https://openalex.org/countries/VG,1956,1993,38,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym,0
+220,France,FR,https://openalex.org/countries/FR,471,Cameroun (French Cameroons),CM,https://openalex.org/countries/CM,1922,1959,37,B,,exact,alias: full name,0
+220,France,FR,https://openalex.org/countries/FR,461,Togo (French Togoland),TG,https://openalex.org/countries/TG,1922,1959,37,B,,exact,alias: full name,0
+900,Australia,AU,https://openalex.org/countries/AU,9001,Christmas I.,CX,https://openalex.org/countries/CX,1958,1993,36,both,0,exact,alias: COW acronym -> Christmas Island,0
+220,France,FR,https://openalex.org/countries/FR,9321,Wallis and Futuna Is.,WF,https://openalex.org/countries/WF,1959,1993,35,both,0,exact,alias: COW acronym,0
+390,Denmark,DK,https://openalex.org/countries/DK,4534,Danish Posts (Gold Gold Coast),GH,https://openalex.org/countries/GH,1816,1849,34,B,,exact,alias: Danish Gold Coast -> Ghana (Accra),0
+255,Germany/Prussia,DE,https://openalex.org/countries/DE,460,German Togoland,TG,https://openalex.org/countries/TG,1884,1916,33,both,0,alias: predecessor state -> modern Germany,alias: -> Togo,0
+255,Germany/Prussia,DE,https://openalex.org/countries/DE,470,Kamerun,CM,https://openalex.org/countries/CM,1884,1916,33,both,0,alias: predecessor state -> modern Germany,alias: German name -> Cameroon,0
+200,UKG,GB,https://openalex.org/countries/GB,462,British Togoland,GH,https://openalex.org/countries/GH,1922,1955,33,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: British Togoland -> Ghana (1960),0
+200,UKG,GB,https://openalex.org/countries/GB,651,Egypt/United Arab Republic,EG,https://openalex.org/countries/EG,1882,1914,33,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Egypt,0
+200,UKG,GB,https://openalex.org/countries/GB,911,Papua,PG,https://openalex.org/countries/PG,1888,1920,33,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Papua New Guinea,0
+325,Italy/Sardinia,IT,https://openalex.org/countries/IT,5200,Italian Somaliland,SO,https://openalex.org/countries/SO,1905,1936,32,both,0,alias: Sardinian state -> modern Italy,alias: -> Somalia,0
+230,SPN,ES,https://openalex.org/countries/ES,6062,Ceuta,MA,https://openalex.org/countries/MA,1816,1847,32,both,0,alias: COW acronym: Spain,alias: -> Morocco,0
+230,SPN,ES,https://openalex.org/countries/ES,6064,Melilla,MA,https://openalex.org/countries/MA,1816,1847,32,both,0,alias: COW acronym: Spain,alias: -> Morocco,0
+200,UKG,GB,https://openalex.org/countries/GB,1033,Cayman Is.,KY,https://openalex.org/countries/KY,1962,1993,32,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym,0
+200,UKG,GB,https://openalex.org/countries/GB,925,Cook Is.,CK,https://openalex.org/countries/CK,1888,1919,32,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym,0
+200,UKG,GB,https://openalex.org/countries/GB,1081,Mosquito Coast,NI,https://openalex.org/countries/NI,1816,1859,32,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: Nicaraguan coast -> Nicaragua,0
+230,SPN,ES,https://openalex.org/countries/ES,605,Ifni,MA,https://openalex.org/countries/MA,1934,1969,31,both,0,alias: COW acronym: Spain,alias: -> Morocco,0
+2,USA,US,https://openalex.org/countries/US,984,Northern Marianas Is.,MP,https://openalex.org/countries/MP,1986,2016,31,B,,alias: COW acronym,alias: COW acronym,0
+900,Australia,AU,https://openalex.org/countries/AU,911,Papua,PG,https://openalex.org/countries/PG,1920,1949,30,both,0,exact,alias: -> Papua New Guinea,0
+390,Denmark,DK,https://openalex.org/countries/DK,7504,Tranquebar and Serampore,IN,https://openalex.org/countries/IN,1816,1845,30,both,0,exact,alias: -> India,0
+220,France,FR,https://openalex.org/countries/FR,432,MLI,ML,https://openalex.org/countries/ML,1904,1958,30,B,,exact,alias: COW acronym -> Mali,0
+255,Germany/Prussia,DE,https://openalex.org/countries/DE,983,Marshall Is.,MH,https://openalex.org/countries/MH,1885,1914,30,both,0,alias: predecessor state -> modern Germany,alias: COW acronym,0
+210,Netherlands,NL,https://openalex.org/countries/NL,1069,Aruba,AW,https://openalex.org/countries/AW,1816,1845,30,both,0,exact,exact,0
+210,Netherlands,NL,https://openalex.org/countries/NL,1066,Bonaire,BQ,https://openalex.org/countries/BQ,1816,1845,30,both,0,exact,alias: -> Caribbean Netherlands,0
+210,Netherlands,NL,https://openalex.org/countries/NL,1065,Curacao,CW,https://openalex.org/countries/CW,1816,1845,30,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,5813,Anjouan,KM,https://openalex.org/countries/KM,1886,1914,29,both,0,exact,alias: -> Comoros,0
+220,France,FR,https://openalex.org/countries/FR,581,Comoros,KM,https://openalex.org/countries/KM,1947,1975,29,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,5811,Grand Comoro,KM,https://openalex.org/countries/KM,1886,1914,29,both,0,exact,alias: -> Comoros,0
+220,France,FR,https://openalex.org/countries/FR,5814,Moheli,KM,https://openalex.org/countries/KM,1886,1914,29,both,0,exact,alias: -> Comoros,0
+200,UKG,GB,https://openalex.org/countries/GB,5920,British Indian Ocean Territory,IO,https://openalex.org/countries/IO,1965,1993,29,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,761,Sikkim,IN,https://openalex.org/countries/IN,1920,1948,29,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> India (state since 1975),0
+200,UKG,GB,https://openalex.org/countries/GB,56,St. Lucia,LC,https://openalex.org/countries/LC,1816,1967,29,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym -> Saint Lucia,0
+220,France,FR,https://openalex.org/countries/FR,439,Burkina Faso (Upper Volta),BF,https://openalex.org/countries/BF,1919,1960,28,both,0,exact,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,665,Palestine,PS,https://openalex.org/countries/PS,1920,1947,28,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,681,Aden,YE,https://openalex.org/countries/YE,1937,1963,27,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Yemen,0
+200,UKG,GB,https://openalex.org/countries/GB,4781,Lagos,NG,https://openalex.org/countries/NG,1861,1906,27,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Nigeria,0
+900,Australia,AU,https://openalex.org/countries/AU,910,Papua New Guinea,PG,https://openalex.org/countries/PG,1949,1974,26,B,,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,5803,St. Marie de Madagascar,MG,https://openalex.org/countries/MG,1853,1878,26,A,0,exact,alias: -> Madagascar,0
+750,India,IN,https://openalex.org/countries/IN,761,Sikkim,IN,https://openalex.org/countries/IN,1949,1974,26,B,,exact,alias: -> India (state since 1975),1
+200,UKG,GB,https://openalex.org/countries/GB,1026,Ontario (Upper Canada),CA,https://openalex.org/countries/CA,1816,1841,26,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada,0
+200,UKG,GB,https://openalex.org/countries/GB,1025,Quebec (Lower Canada),CA,https://openalex.org/countries/CA,1816,1841,26,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada,0
+200,UKG,GB,https://openalex.org/countries/GB,57,St. Vincent and the Grenadines,VC,https://openalex.org/countries/VC,1816,1969,26,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+900,Australia,AU,https://openalex.org/countries/AU,9003,Coral Sea Is.,AU,https://openalex.org/countries/AU,1969,1993,25,A,0,exact,alias: -> Australia,1
+220,France,FR,https://openalex.org/countries/FR,652,Syria,SY,https://openalex.org/countries/SY,1920,1945,25,B,,exact,exact,0
+255,Germany/Prussia,DE,https://openalex.org/countries/DE,510,TAZ,TZ,https://openalex.org/countries/TZ,1891,1915,25,B,,alias: predecessor state -> modern Germany,alias: COW acronym -> Tanzania,0
+220,France,FR,https://openalex.org/countries/FR,9601,Society Is.,PF,https://openalex.org/countries/PF,1880,1903,24,both,0,exact,alias: -> French Polynesia,0
+220,France,FR,https://openalex.org/countries/FR,9605,Tubuai Is. (Austral Is.),PF,https://openalex.org/countries/PF,1880,1903,24,both,0,exact,alias: -> French Polynesia,0
+200,UKG,GB,https://openalex.org/countries/GB,55,Grenada,GD,https://openalex.org/countries/GD,1816,1967,24,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+220,France,FR,https://openalex.org/countries/FR,9604,Gambier Is.,PF,https://openalex.org/countries/PF,1881,1903,23,both,0,exact,alias: -> French Polynesia,0
+220,France,FR,https://openalex.org/countries/FR,9602,Marquesas Is.,PF,https://openalex.org/countries/PF,1881,1903,23,A,0,exact,alias: -> French Polynesia,0
+220,France,FR,https://openalex.org/countries/FR,9603,Tuamotu Is.,PF,https://openalex.org/countries/PF,1881,1903,23,both,0,exact,alias: -> French Polynesia,0
+325,Italy/Sardinia,IT,https://openalex.org/countries/IT,620,"Libya (Tripolitania, Cyrenaica, Fezzan)",LY,https://openalex.org/countries/LY,1912,1942,23,both,0,alias: Sardinian state -> modern Italy,alias: full name,0
+230,SPN,ES,https://openalex.org/countries/ES,413,Fernando Po (Bioko),GQ,https://openalex.org/countries/GQ,1816,1968,23,both,0,alias: COW acronym: Spain,alias: -> Equatorial Guinea,0
+200,UKG,GB,https://openalex.org/countries/GB,663,Jordan (Transjordan),JO,https://openalex.org/countries/JO,1923,1945,23,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+220,France,FR,https://openalex.org/countries/FR,660,Lebanon,LB,https://openalex.org/countries/LB,1923,1945,22,B,,exact,exact,0
+2,USA,US,https://openalex.org/countries/US,741,Ryukyu Is.,JP,https://openalex.org/countries/JP,1951,1972,22,both,7,alias: COW acronym,alias: -> Japan,0
+220,France,FR,https://openalex.org/countries/FR,8151,Cochin China,VN,https://openalex.org/countries/VN,1867,1887,21,both,0,exact,alias: -> Vietnam,0
+325,Italy/Sardinia,IT,https://openalex.org/countries/IT,3353,Dodecanese Is. (Aegean Is.),GR,https://openalex.org/countries/GR,1923,1943,21,both,12,alias: Sardinian state -> modern Italy,alias: -> Greece,0
+200,UKG,GB,https://openalex.org/countries/GB,1032,Turks and Caicos Is.,TC,https://openalex.org/countries/TC,1973,1993,21,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: COW acronym,0
+750,India,IN,https://openalex.org/countries/IN,760,Bhutan,BT,https://openalex.org/countries/BT,1951,1970,20,B,,exact,exact,0
+740,Japan,JP,https://openalex.org/countries/JP,741,Ryukyu Is.,JP,https://openalex.org/countries/JP,1860,1879,20,B,,exact,alias: -> Japan,1
+200,UKG,GB,https://openalex.org/countries/GB,5614,British Kaffraria,ZA,https://openalex.org/countries/ZA,1847,1866,20,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> South Africa,0
+200,UKG,GB,https://openalex.org/countries/GB,521,British Somaliland (Somaliland Republic),SO,https://openalex.org/countries/SO,1941,1960,20,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Somalia,0
+235,POR,PT,https://openalex.org/countries/PT,401,Madeira Isles,PT,https://openalex.org/countries/PT,1816,1834,19,both,0,alias: COW acronym: Portugal,alias: -> Portugal,1
+200,UKG,GB,https://openalex.org/countries/GB,900,Australia,AU,https://openalex.org/countries/AU,1901,1919,19,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,823,Sabah (North Borneo),MY,https://openalex.org/countries/MY,1945,1963,19,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,824,Sarawak,MY,https://openalex.org/countries/MY,1945,1963,19,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,781,Maldive Islands,MV,https://openalex.org/countries/MV,1947,1964,18,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: old spelling -> Maldives,0
+200,UKG,GB,https://openalex.org/countries/GB,564,Orange Free State (Orange River Colony),ZA,https://openalex.org/countries/ZA,1848,1910,18,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> South Africa,0
+200,UKG,GB,https://openalex.org/countries/GB,830,Singapore,SG,https://openalex.org/countries/SG,1946,1963,18,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,1028,Vancouver,CA,https://openalex.org/countries/CA,1849,1866,18,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada,0
+220,France,FR,https://openalex.org/countries/FR,1201,Inini,GF,https://openalex.org/countries/GF,1930,1946,17,A,0,exact,alias: French Guiana district,0
+220,France,FR,https://openalex.org/countries/FR,6527,Jebel Druze,SY,https://openalex.org/countries/SY,1921,1936,16,A,0,exact,alias: -> Syria,0
+255,Germany/Prussia,DE,https://openalex.org/countries/DE,9810,Caroline Is.,FM,https://openalex.org/countries/FM,1899,1914,16,both,0,alias: predecessor state -> modern Germany,alias: -> Micronesia,0
+235,POR,PT,https://openalex.org/countries/PT,400,Azores (Western Isles),PT,https://openalex.org/countries/PT,1816,1831,16,A,0,alias: COW acronym: Portugal,alias: -> Portugal,1
+200,UKG,GB,https://openalex.org/countries/GB,1114,Berbice,GY,https://openalex.org/countries/GY,1816,1831,16,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Guyana,0
+200,UKG,GB,https://openalex.org/countries/GB,1113,Demerara and Essequibo,GY,https://openalex.org/countries/GY,1816,1831,16,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Guyana,0
+200,UKG,GB,https://openalex.org/countries/GB,563,Transvaal,ZA,https://openalex.org/countries/ZA,1877,1910,16,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> South Africa,0
+2,USA,US,https://openalex.org/countries/US,7411,Bonin Is.,JP,https://openalex.org/countries/JP,1952,1967,16,B,,alias: COW acronym,alias: -> Japan,0
+220,France,FR,https://openalex.org/countries/FR,6526,Latakia (Alaouites),SY,https://openalex.org/countries/SY,1922,1936,15,A,0,exact,alias: -> Syria,0
+255,Germany/Prussia,DE,https://openalex.org/countries/DE,990,Western Samoa,WS,https://openalex.org/countries/WS,1900,1914,15,both,0,alias: predecessor state -> modern Germany,alias: -> Samoa,0
+200,UKG,GB,https://openalex.org/countries/GB,4784,Northern Nigeria,NG,https://openalex.org/countries/NG,1899,1913,15,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Nigeria,0
+200,UKG,GB,https://openalex.org/countries/GB,4783,Southern Nigeria,NG,https://openalex.org/countries/NG,1899,1913,15,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Nigeria,0
+220,France,FR,https://openalex.org/countries/FR,6403,Hatay (Alexandretta),TR,https://openalex.org/countries/TR,1923,1936,14,A,0,exact,alias: -> Turkey,0
+255,Germany/Prussia,DE,https://openalex.org/countries/DE,9401,German Solomon Is.,SB,https://openalex.org/countries/SB,1885,1898,14,B,,alias: predecessor state -> modern Germany,alias: -> Solomon Islands,0
+210,Netherlands,NL,https://openalex.org/countries/NL,851,West Irian (Dutch New Guinea),ID,https://openalex.org/countries/ID,1949,1962,14,both,0,exact,alias: -> Indonesia (West Papua),0
+200,UKG,GB,https://openalex.org/countries/GB,1027,British Columbia,CA,https://openalex.org/countries/CA,1858,1871,14,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada,0
+200,UKG,GB,https://openalex.org/countries/GB,413,Fernando Po (Bioko),GQ,https://openalex.org/countries/GQ,1829,1842,14,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Equatorial Guinea,0
+200,UKG,GB,https://openalex.org/countries/GB,4782,Oil Rivers Protectorate,NG,https://openalex.org/countries/NG,1885,1898,14,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Nigeria,0
+210,Netherlands,NL,https://openalex.org/countries/NL,1067,Saba,BQ,https://openalex.org/countries/BQ,1816,1828,13,both,0,exact,alias: -> Caribbean Netherlands,0
+210,Netherlands,NL,https://openalex.org/countries/NL,1068,Sint Eustatius,BQ,https://openalex.org/countries/BQ,1816,1828,13,both,0,exact,alias: -> Caribbean Netherlands,0
+210,Netherlands,NL,https://openalex.org/countries/NL,1073,Sint Martin,SX,https://openalex.org/countries/SX,1816,1828,13,both,0,exact,alias: mp=Netherlands row -> Dutch side of island = Sint Maarten,0
+200,UKG,GB,https://openalex.org/countries/GB,5518,Northeastern Rhodesia,ZM,https://openalex.org/countries/ZM,1899,1911,13,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Zambia,0
+200,UKG,GB,https://openalex.org/countries/GB,5519,Northwestern Rhodesia,ZM,https://openalex.org/countries/ZM,1899,1911,13,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Zambia,0
+220,France,FR,https://openalex.org/countries/FR,5802,Diego Suarez,MG,https://openalex.org/countries/MG,1885,1896,12,both,0,exact,alias: -> Madagascar,0
+200,UKG,GB,https://openalex.org/countries/GB,645,Iraq (Mesopotamia),IQ,https://openalex.org/countries/IQ,1920,1931,12,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,820,Malaysia (Malaya),MY,https://openalex.org/countries/MY,1946,1957,12,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+230,SPN,ES,https://openalex.org/countries/ES,42,Dominican Republic (Santo Domingo),DO,https://openalex.org/countries/DO,1816,1865,11,both,0,alias: COW acronym: Spain,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,5612,British Bechuanaland,BW,https://openalex.org/countries/BW,1885,1895,11,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Botswana,0
+200,UKG,GB,https://openalex.org/countries/GB,560,South Africa,ZA,https://openalex.org/countries/ZA,1910,1920,11,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,5621,Zululand,ZA,https://openalex.org/countries/ZA,1887,1897,11,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> South Africa,0
+325,Italy/Sardinia,IT,https://openalex.org/countries/IT,6202,Cyrenaica,LY,https://openalex.org/countries/LY,1919,1928,10,A,0,alias: Sardinian state -> modern Italy,alias: -> Libya,0
+325,Italy/Sardinia,IT,https://openalex.org/countries/IT,6203,Tripolitania,LY,https://openalex.org/countries/LY,1919,1928,10,A,0,alias: Sardinian state -> modern Italy,alias: -> Libya,0
+230,SPN,ES,https://openalex.org/countries/ES,145,Bolivia,BO,https://openalex.org/countries/BO,1816,1825,10,both,0,alias: COW acronym: Spain,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,775,Burma (Myanmar),MM,https://openalex.org/countries/MM,1937,1948,10,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+200,UKG,GB,https://openalex.org/countries/GB,5611,"Griqualand, West",ZA,https://openalex.org/countries/ZA,1871,1880,10,A,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> South Africa,0
+220,France,FR,https://openalex.org/countries/FR,811,Kampuchea (Cambodia),KH,https://openalex.org/countries/KH,1884,1953,9,both,0,exact,alias: full name,0
+230,SPN,ES,https://openalex.org/countries/ES,412,Rio Muni,GQ,https://openalex.org/countries/GQ,1960,1968,9,both,0,alias: COW acronym: Spain,alias: -> Equatorial Guinea,0
+563,Transvaal,ZA,https://openalex.org/countries/ZA,572,Swaziland,SZ,https://openalex.org/countries/SZ,1894,1902,9,A,0,alias: internal South-African entity -> South Africa,alias: old country name -> Eswatini,0
+200,UKG,GB,https://openalex.org/countries/GB,1082,Bay Is.,HN,https://openalex.org/countries/HN,1852,1860,9,both,1,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: Honduras Bay Islands -> Honduras,0
+200,UKG,GB,https://openalex.org/countries/GB,60,St. Kitts-Nevis,KN,https://openalex.org/countries/KN,1956,1967,9,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: full name,0
+210,Netherlands,NL,https://openalex.org/countries/NL,7503,Coromandel Coast Posts,IN,https://openalex.org/countries/IN,1818,1825,8,both,0,exact,alias: -> India,0
+210,Netherlands,NL,https://openalex.org/countries/NL,8271,Malacca,MY,https://openalex.org/countries/MY,1818,1825,8,A,0,exact,alias: -> Malaysia,0
+235,POR,PT,https://openalex.org/countries/PT,140,Brazil,BR,https://openalex.org/countries/BR,1816,1822,7,both,0,alias: COW acronym: Portugal,exact,0
+220,France,FR,https://openalex.org/countries/FR,6525,Aleppo,SY,https://openalex.org/countries/SY,1920,1925,6,A,0,exact,alias: -> Syria,0
+220,France,FR,https://openalex.org/countries/FR,6524,Damascus,SY,https://openalex.org/countries/SY,1920,1925,6,A,0,exact,alias: -> Syria,0
+220,France,FR,https://openalex.org/countries/FR,812,Laos,LA,https://openalex.org/countries/LA,1949,1954,6,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,815,Vietnam,VN,https://openalex.org/countries/VN,1949,1954,6,both,0,exact,exact,0
+220,France,FR,https://openalex.org/countries/FR,816,"Vietnam, Democratic Rep.",VN,https://openalex.org/countries/VN,1949,1954,6,A,0,exact,alias: -> Vietnam,0
+220,France,FR,https://openalex.org/countries/FR,817,"Vietnam, Republic of",VN,https://openalex.org/countries/VN,1949,1954,6,A,0,exact,alias: -> Vietnam,0
+230,SPN,ES,https://openalex.org/countries/ES,410,Canary Is.,PT,https://openalex.org/countries/PT,1816,1821,6,both,0,alias: COW acronym: Spain,alias: -> Portugal,0
+230,SPN,ES,https://openalex.org/countries/ES,1070,Viceroyalty of New Spain,MX,https://openalex.org/countries/MX,1816,1821,6,both,0,alias: COW acronym: Spain,alias: colonial predecessor -> Mexico,0
+1070,Viceroyalty of New Spain,MX,https://openalex.org/countries/MX,70,Mexico,MX,https://openalex.org/countries/MX,1816,1821,6,A,0,alias: colonial predecessor -> Mexico (name contains Spain; explicit override),exact,1
+230,SPN,ES,https://openalex.org/countries/ES,135,Peru,PE,https://openalex.org/countries/PE,1817,1821,5,A,0,alias: COW acronym: Spain,exact,0
+670,Saudi Arabia (Nejd Wahabbid Empire),SA,https://openalex.org/countries/SA,672,Asir,SA,https://openalex.org/countries/SA,1926,1930,5,A,0,alias: full name -> Saudi Arabia,alias: -> Saudi Arabia,1
+200,UKG,GB,https://openalex.org/countries/GB,1021,Cape Breton I.,CA,https://openalex.org/countries/CA,1816,1820,5,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Canada (Nova Scotia island),0
+200,UKG,GB,https://openalex.org/countries/GB,946,Kiribati,KI,https://openalex.org/countries/KI,1975,1979,5,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,947,Tuvalu,TV,https://openalex.org/countries/TV,1975,1979,5,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+2,USA,US,https://openalex.org/countries/US,987,Federated States of Micronesia,FM,https://openalex.org/countries/FM,1986,1990,5,B,,alias: COW acronym,alias: full name,0
+220,France,FR,https://openalex.org/countries/FR,8152,Annam,VN,https://openalex.org/countries/VN,1883,1886,4,B,,exact,alias: -> Vietnam,0
+220,France,FR,https://openalex.org/countries/FR,8153,Tonkin,VN,https://openalex.org/countries/VN,1883,1886,4,B,,exact,alias: -> Vietnam,0
+230,SPN,ES,https://openalex.org/countries/ES,100,Colombia (Gran Colombia),CO,https://openalex.org/countries/CO,1816,1819,4,both,0,alias: COW acronym: Spain,alias: full name -> Colombia,0
+230,SPN,ES,https://openalex.org/countries/ES,130,Ecuador,EC,https://openalex.org/countries/EC,1816,1819,4,A,0,alias: COW acronym: Spain,exact,0
+230,SPN,ES,https://openalex.org/countries/ES,95,Panama,PA,https://openalex.org/countries/PA,1816,1819,4,A,0,alias: COW acronym: Spain,exact,0
+230,SPN,ES,https://openalex.org/countries/ES,101,Venezuela,VE,https://openalex.org/countries/VE,1816,1819,4,A,0,alias: COW acronym: Spain,exact,0
+220,France,FR,https://openalex.org/countries/FR,935,Vanuatu (New Hebrides),VU,https://openalex.org/countries/VU,1978,1980,3,B,,exact,alias: full name,0
+710,People's Republic of China (China),CN,https://openalex.org/countries/CN,720,Hong Kong,HK,https://openalex.org/countries/HK,1997,1999,3,B,,alias: full name -> China,exact,0
+230,SPN,ES,https://openalex.org/countries/ES,6030,Tetuan,MA,https://openalex.org/countries/MA,1860,1862,3,both,0,alias: COW acronym: Spain,alias: -> Morocco,0
+220,France,FR,https://openalex.org/countries/FR,431,Mali Federation,ML,https://openalex.org/countries/ML,1959,1960,2,both,0,exact,alias: predecessor of modern Mali,0
+325,Italy/Sardinia,IT,https://openalex.org/countries/IT,5202,Oltre Giuba,ET,https://openalex.org/countries/ET,1925,1926,2,A,0,alias: Sardinian state -> modern Italy,alias: Italian-occupied Ethiopia,0
+230,SPN,ES,https://openalex.org/countries/ES,1135,Viceroyalty of Peru,PE,https://openalex.org/countries/PE,1816,1817,2,both,0,alias: COW acronym: Spain,alias: colonial predecessor -> modern Peru,0
+200,UKG,GB,https://openalex.org/countries/GB,760,Bhutan,BT,https://openalex.org/countries/BT,1947,1948,2,B,,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,8221,Johore,MY,https://openalex.org/countries/MY,1945,1946,2,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,8222,Kedah,MY,https://openalex.org/countries/MY,1945,1946,2,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,8223,Kelantan,MY,https://openalex.org/countries/MY,1945,1946,2,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,8224,Perlis,MY,https://openalex.org/countries/MY,1945,1946,2,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0
+200,UKG,GB,https://openalex.org/countries/GB,433,Senegal,SN,https://openalex.org/countries/SN,1816,1817,2,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,exact,0
+200,UKG,GB,https://openalex.org/countries/GB,8225,Trengganu,MY,https://openalex.org/countries/MY,1945,1946,2,both,0,alias: COW acronym: United Kingdom of Great Britain and Ireland,alias: -> Malaysia,0

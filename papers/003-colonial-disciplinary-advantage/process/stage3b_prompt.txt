@@ -1,0 +1,37 @@
+# ARIS4C-003 重跑 · 分段执行 · 段3b（B 层全量 works 抓取 + 派生 + 收官）
+
+你是 ARIS4C-003（殖民遗产与学科优势的全球地理）重跑的执行器。本次为分段执行的第 3b 段。段3a 已收官（主 dyad 集 298 对 / 174 国 / A 层 2958 格 count 面板 + B 层冒烟，见 stage3a_summary.md）。**本段的两个抓取/派生脚本已由编排器写好并冻结在 code/ 下——你的职责是启动、监控、运行派生、收官，不要重写脚本逻辑**。不做 H 检验、不写论文（那是段4 的事）。
+
+## 上下文纪律（硬性，防 128K 溢出——前两段 executor 均死于此处）
+- 禁止打印大文件全文。读大文件只读表头 + 前 3–5 行 + 行数，结果写盘。
+- 中间结果一律写文件、用路径引用；对话只汇报路径 + 关键数字。
+- 幂等：写盘/请求前先查存在；已抓的绝不重抓（脚本内置）。
+- 总工具调用 ≤40 次。推理 1–2 句。bash 调用不传 timeout 参数。
+- 写文件分块（单块 ≤60 行，heredoc `>>` 追加），禁止单次响应写大文件。
+- 轮询节奏：每 30 分钟一次 `tail -1 results/panel_b_full_run.log`（只看最后 1 行），不要更密。
+
+## 现状（已冻结，勿改）
+- 工作目录即本 run 目录。先读：stage3a_summary.md、process/COORDINATION.md 尾部 20 行。
+- `code/panel_b_full.py`（B 层全量抓取，stdlib-only，已 py_compile 通过）：287 跨境 dyad（dyad_set.csv 中 self_dyad≠1）× 17 学科 = **4879 格**；filter = `authorships.countries:<mp>,authorships.countries:<col>,<学科filter>,from_publication_date:1990-01-01`（两个 authorships.countries 键 = AND，即作者同时来自两国；冒烟已验证 PT-BR Mining count=58）；per-page=200 按 meta.count 分页；raw 落 `data/raw/panel_b/<mp>__<col>__<disc>__p<N>.json`（4 段命名；段3a 冒烟的 3 段命名文件 PT__BR__mining__p1/p2.json 保留不动，派生脚本会自动忽略）；完成后写 `data/panel/b_fetch_manifest.csv`（mp_iso,col_iso,discipline,meta_count,pages）。
+- `code/panel_b_derive.py`（派生，确定性、无网络、**按格流式**防内存爆，已 py_compile 通过）：raw → `data/panel/b_layer_cell.csv`（mp_iso,col_iso,discipline,n_works,n_authors,n_institutions,n_with_doi,n_retracted,years_json）+ `data/panel/b_layer_dyd_year.csv`（mp_iso,col_iso,discipline,year,n_works,n_authors,n_institutions）；输出 DONE 行 + 与 manifest 的 drift 格清单。
+- 已证 API 事实（勿复探）：per-page 上限 200；限流政策 ≥2s + backoff(3,6,12,24) + UA 头（脚本内置）；**`group_by` 返回组数 ≤ per-page 值**（段3a 教训：per-page=1 只得 1 个年度组——A 层已用 per-page=200 重抓修复，勿在 B 层重犯）。
+- 禁读旧仓库 `D:\Software\ARIS4C\papers\`。
+
+## 本段任务
+
+S1 启动 B 层全量抓取（后台）
+- 用 venv python 后台启动：`"C:/Users/SCZ_2207/.workbuddy/binaries/python/envs/default/Scripts/python.exe" code/panel_b_full.py > results/panel_b_full_run.log 2>&1 &`
+- 启动后 60 秒内验证：`results/panel_b_full_run.log` 存在且非空，首行应为 `start: dyads=287 discs=17 total_cells=4879 ...`。若日志缺失（重定向失败），先 `mkdir -p results` 再重启，不得带病放行。
+- 之后按轮询节奏监控；每轮只在对话报 1 行（done/total、ETA、fails）。若出现 FAIL 行：记入清单继续监控，脚本对失败格幂等可补抓——**抓取整体完成后**对 fails 格统一重跑一次（脚本自动跳过已完成格，只补失败格）。
+
+S2 派生（抓取 DONE 之后，前台运行）
+- `"C:/Users/SCZ_2207/.workbuddy/binaries/python/envs/default/Scripts/python.exe" code/panel_b_derive.py`（输出 ≤40 行，直接看）。
+- 验收：DONE 行 `cells=4879`（或 = 4879 − 补抓后仍失败的格数，需标注）；`data/panel/b_layer_cell.csv` 行数 = 4879+1；`b_layer_dyd_year.csv` 首行表头正确；drift 格数（抓取期间 API 计数漂移）单独记录。
+
+S3 收官
+- `stage3b_summary.md`（≤40 行）：抓取完成率（cells/4879、补抓情况、fails 清单）、total_works、top10 格（mp-col disc works）、manifest 与派生 drift 格数、raw 总大小（`du -sh data/raw/panel_b` 一行）、b_layer_cell.csv / b_layer_dyd_year.csv 路径与行数、风险、移交段4 清单。
+- `process/COORDINATION.md` 追加段3b 节（严格时序：启动/完成）。
+- 对话只报路径 + 关键数字（≤15 行）。
+
+## 完成标准
+b_fetch_manifest.csv（4879 行或失败格已标注）+ b_layer_cell.csv + b_layer_dyd_year.csv + stage3b_summary.md + COORDINATION 追加 全部落盘。不做 H 检验、不写论文、不读旧仓库、不改冻结脚本。

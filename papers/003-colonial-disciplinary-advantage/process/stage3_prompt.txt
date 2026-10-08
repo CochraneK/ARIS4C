@@ -1,0 +1,44 @@
+# ARIS4C-003 重跑 · 分段执行 · 段3a（主 dyad 集导出 + A 层 count 面板 + B 层冒烟）
+
+你是 ARIS4C-003（殖民遗产与学科优势的全球地理）重跑的执行器。本次为分段执行的第 3a 段。**pre-outcome gate 已过（DESIGN_LOCKED 8/8，见 data/DESIGN_LOCKED.md）——本段起允许物化并记录 country×discipline 计数**。不做 H 检验、不写论文（那是段4 的事）。
+
+## 上下文纪律（硬性，防 128K 溢出——前两段 executor 均死于此处）
+- 禁止打印大文件全文。读大文件只读表头 + 前 3–5 行 + 行数，结果写盘。
+- 中间结果一律写文件、用路径引用；对话只汇报路径 + 关键数字。
+- 幂等：写盘/请求前先查存在；已抓的绝不重抓。
+- 总工具调用 ≤40 次。推理 1–2 句。bash 调用不传 timeout 参数。
+- 写文件分块（单块 ≤60 行，heredoc `>>` 追加），禁止单次响应写大文件。
+- 长跑抓取脚本一律**后台运行**（`python ... > log 2>&1 &`）再轮询日志，禁止前台阻塞等待。
+
+## 现状
+- 工作目录即本 run 目录。先读：RESEARCH_BRIEF.md、data/DESIGN_LOCKED.md（8 项冻结）、data/subject_freeze.md（17 学科主 filter 表）、data/exposure_manifest.md。
+- 可用 raw：`data/raw/exposure/exposure_pair_merged.csv`（339 对，列 mp_code,mp_name,col_code,col_name,first,last,dur,src,occ_dur；23 宗主国 + 1 未解析 '?'）；`data/raw/countries_oa.json`（247 OpenAlex 国家，含 id/display_name/ISO）。
+- 已证 API 事实（勿复探）：同键多值 = pipe `|` OR；`authorships.countries:XX`、`topics.subfield.id:...`、`concepts.id:C...`、`topics.id:T...`、`topics.field.id:...` 均有效；**per-page 上限 200**；限流政策 ≥2s + backoff(3,6,12,24) + UA 头；`group_by=publication_year` 与 `meta.count` 可同单页返回（**A 层每格 1 个请求，无需 works 分页**）；`per-page=1` 省每日配额。
+- 禁读旧仓库 `D:\Software\ARIS4C\papers\`。
+
+## 本段任务
+
+S1 主 dyad 集导出（机械，零主观筛选）
+- 脚本 `code/export_dyad.py`：exposure_pair_merged.csv × countries_oa.json 名称匹配（COW 缩写别名由你定并**全数记录**于映射表，如 UKG/UK→GB、SPN→ES、SWD→DE、POR→PT、Germany/Prussia→DE、Italy/Sardinia→IT、USSR/Russia→RU 等；以 countries_oa.json 内 display_name 为准）。
+- 输出 3 件：`data/manifests/dyad_set.csv`（dyad 级：mp_name,mp_iso,mp_oa_id,col_name,col_iso,col_oa_id,first,last,src,mp_match,col_match）；`data/manifests/dyad_exclusions.md`（未映射清单逐条 + 原因：'?' / 实体不在 OpenAlex 国家表 / 等）；`data/manifests/country_panel.csv`（A 层国家集去重：country_name,iso,oa_id,role∈{mp,col,both},n_dyad）。
+- '?' 行一律排除并记录，不得臆造映射。
+
+S2 A 层 count 面板（每格 1 请求、单页、无 works 分页）
+- 脚本 `code/panel_a.py`：country_panel.csv 每国 × subject_freeze.md 的 17 学科（主 filter **逐字**）× `from_publication_date:1990-01-01`：
+  `GET /works?filter=authorships.countries:<ISO>,<学科filter>&group_by=publication_year&per-page=1`
+  → 记 meta.count + 年度分布 → `data/panel/a_layer_count.csv`（iso,country,discipline,filter_path,from_year,count,years_json）。
+- 幂等：每格 raw JSON 落 `data/raw/panel_a/<ISO>__<disc>.json`，存在即跳过；≥2s 间隔 + backoff + UA。
+- 先估总请求数（国家数×17）与 ETA 再启动；后台运行，每 3–5 轮轮询汇报完成率（done/total、ETA）。若判定超每日 100k results 配额，先跑确认性 11 科、对照 6 科移交 3b 并在 summary 标注。
+
+S3 B 层 works 抓取冒烟（只验 schema，不全量）
+- 脚本 `code/panel_b_fetch.py`（幂等、per-page=200、backoff、raw 落 `data/raw/panel_b/<ISO>__<disc>__p<N>.json`）。
+- 冒烟：1 dyad（取 PT–BR，以 dyad_set.csv 实际映射为准）× 1 学科（Mining）× 仅 3 页 → 验证 authorships/topics/publication_year/doi 字段存在可解析 → 结果写 `data/panel/b_smoke.md`（字段清单 + 1 例 work id）。
+- **不启动 B 层全量**（段3b 的事）。
+
+S4 收官
+- `stage3a_summary.md`（≤40 行）：dyad 集统计（映射对数/排除数/国家集规模）、A 层完成率 + 总请求数 + raw 路径、B 层冒烟结论、风险、移交 3b 清单。
+- `process/COORDINATION.md` 追加段3a 节（严格时序：启动/死亡或完成）。
+- 对话只报路径 + 关键数字（≤15 行）。
+
+## 完成标准
+dyad_set.csv + dyad_exclusions.md + country_panel.csv + a_layer_count.csv（全量或 11 科分批并标注余下）+ b_smoke.md + stage3a_summary.md + COORDINATION 追加 全部落盘。不做 H 检验、不写论文、不读旧仓库。
