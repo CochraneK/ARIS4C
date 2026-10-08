@@ -1,0 +1,50 @@
+# ARIS4C-007 段1（stage 1）executor 任务
+
+## 身份与纪律
+- 你是 ARIS4C-007-cross-species-age-equivalence 重跑的 stage 1 executor。唯一 idea 输入 = 本目录 RESEARCH_BRIEF.md。
+- **禁止**读取/复制 D:\Software\ARIS4C\papers\ 旧仓库任何代码/数据/结果。已发表方法（Animal-Age、Translating Time）作为**复现对象**，其原始数据从公开源重取。
+- 工具调用总数 ≤35；单次推理 ≤2 句；禁 read 大 CSV（>200 行取 head）；python 输出 ≤40 行；中间结果写盘，不重复下载。
+- 落盘产物分块短写（heredoc 追加，单块 ≤60 行）。
+- 所有外部 API/下载带 backoff (0,30,60,120,240)——本机与其他任务共享出口，429 会成簇。
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## S1 冻结设计确认（先读 RESEARCH_BRIEF.md 全文）
+复述并确认（写入 stage1_summary.md 头部）：
+- 年龄等价本体 A0–A6（A0 朴素寿命比 / A1 最大寿命相对 / A2 生活史锚点（Animal-Age 为基线）/ A3 log-linear（Lu et al.）/ A4 Translating Time 事件尺度 / A5 生存等价 / A6 分子-表观遗传时钟）
+- **主假设方向=跨阶段非一致性（H1），不预设哪种映射更好**；H1–H5 全冻结
+- A6 关键区分：时间年龄时钟 vs 生物年龄时钟，不得混用
+- 验证 Tier 1–4（无单一金标准，报告层间一致性不压成单一分数）
+- 数据架构 5 张表 A–E；输出=区间/分布，不是单一数字
+- 稳健性/证伪最小集 12 项（含 1.3× 校正、圈养 vs 野生、leave-one-order-out）
+- Non-Goals：不在结果感知参数拟合后再报告 A0–A3
+**不得新增假设。**
+
+## S2 文献（OpenAlex + Crossref）
+检索 5 方向（每方向 ≥5 篇）：
+1. 生活史理论与寿命标度（pace-of-life、最大寿命决定、allometric scaling）
+2. Translating Time / 事件尺度映射（方法原文 + 后续批评/扩展）
+3. 跨物种/泛哺乳动物表观遗传时钟（published pan-mammalian clocks；时间年龄时钟 vs 生物年龄时钟的区分文献）
+4. 生存等价/人口学年龄对齐（actuarial equivalence、survival-based age matching）
+5. universal scaling / universal clock 类方法（Lu et al. 原文、1.3× 校正、后续检验）
+lit/REGISTRY.md 字段：citekey,title,year,authors(first3),venue,doi,status(VERIFIED=Crossref DOI 核对/UNVERIFIED+原因),relevance(1-3)。总数 ≥25，VERIFIED ≥15。
+
+## S3 DATA_PROFILE.md
+可行性核查（只测可得性/量级，不复现任何映射）：
+1. AnAge：公开快照 URL/版本、物种数、最大寿命证据质量/样本量类字段结构（test 1–2 物种）
+2. Translating Time（A4）：数据集公开可得性、覆盖物种、事件数（复现子集可行性）
+3. 已发表 A6 时钟：列出候选时钟（≥3 个，含双物种/泛哺乳动物）、权重/参数公开性、输入数据（甲基化平台）可得性
+4. 表 C 人口学曲线：哪些物种有公开生存/风险曲线（列候选源，不下载全量）
+5. 表 A/B/E 构造量级：合格物种数估计、事件数估计、评估点数（预指定标准化年龄分位数 × 物种）
+6. Step 1–5 顺序在数据侧的阻塞点（哪步最可能卡、卡在哪）
+每项：来源 URL、快照日期、量级、局限。
+
+## S4 LIT_NOTES.md
+按 5 检索方向分节，每节 ≤15 行，只记与冻结设计直接相关的点（尤其：各 A 方法的原始出处与可复现性证据、已有分歧性结论）。
+
+## S5 stage1_summary.md
+≤40 行：设计确认（S1）+ 文献概况（VERIFIED 数/关键发现 ≤5 条）+ 数据可行性（6 项 verdict）+ Step 1–5 阻塞点初判 + 总体 verdict（GO / GO-with-caution / NO-GO + 理由）。
+
+## 完成标准
+- 四件落盘：lit/REGISTRY.md, data/DATA_PROFILE.md, lit/LIT_NOTES.md, stage1_summary.md
+- 零 outcome 计算：不复现 A0–A6 任何映射、不拟合任何参数、不生成分歧矩阵
+- 全部完成后只输出一行：DONE stage1 007

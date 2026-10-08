@@ -1,0 +1,325 @@
+species,species_id,q,a_years,method,out_low,out_high,out_mid,out_unit,input_note
+Domestic pig,1701,0.25,6.75,A0,30.625,39.375,35.0,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Domestic pig,1701,0.25,6.75,A1,0.25,0.321429,0.285714,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Domestic pig,1701,0.25,6.75,A2,106.99771,245.126994,176.062352,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Domestic pig,1701,0.25,6.75,A3,0.692777,1.108046,0.900412,std_loglinear_y,"G=115.0d anAge(shared, no PT gestation row in tableB); ASM=167.292d anAge / 350.76d PT"
+Domestic pig,1701,0.5,13.5,A0,61.25,78.75,70.0,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Domestic pig,1701,0.5,13.5,A1,0.5,0.642857,0.571429,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Domestic pig,1701,0.5,13.5,A2,216.597125,494.161066,355.379096,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Domestic pig,1701,0.5,13.5,A3,2.310114,3.122145,2.71613,std_loglinear_y,"G=115.0d anAge(shared, no PT gestation row in tableB); ASM=167.292d anAge / 350.76d PT"
+Domestic pig,1701,0.75,20.25,A0,91.875,118.125,105.0,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Domestic pig,1701,0.75,20.25,A1,0.75,0.964286,0.857143,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Domestic pig,1701,0.75,20.25,A2,326.196539,743.195139,534.695839,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Domestic pig,1701,0.75,20.25,A3,3.927451,5.136244,4.531847,std_loglinear_y,"G=115.0d anAge(shared, no PT gestation row in tableB); ASM=167.292d anAge / 350.76d PT"
+Domestic pig,1701,0.9,24.3,A0,110.25,141.75,126.0,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Domestic pig,1701,0.9,24.3,A1,0.9,1.157143,1.028571,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Domestic pig,1701,0.9,24.3,A2,391.956188,892.615583,642.285885,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Domestic pig,1701,0.9,24.3,A3,4.897853,6.344704,5.621278,std_loglinear_y,"G=115.0d anAge(shared, no PT gestation row in tableB); ASM=167.292d anAge / 350.76d PT"
+Domestic pig,1701,0.95,25.65,A0,116.375,149.625,133.0,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Domestic pig,1701,0.95,25.65,A1,0.95,1.221429,1.085714,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Domestic pig,1701,0.95,25.65,A2,413.876071,942.422397,678.149234,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Domestic pig,1701,0.95,25.65,A3,5.22132,6.747523,5.984422,std_loglinear_y,"G=115.0d anAge(shared, no PT gestation row in tableB); ASM=167.292d anAge / 350.76d PT"
+Domestic pig,1701,0.99,26.73,A0,121.275,155.925,138.6,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Domestic pig,1701,0.99,26.73,A1,0.99,1.272857,1.131429,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Domestic pig,1701,0.99,26.73,A2,431.411978,982.267849,706.839913,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Domestic pig,1701,0.99,26.73,A3,5.480094,7.069779,6.274937,std_loglinear_y,"G=115.0d anAge(shared, no PT gestation row in tableB); ASM=167.292d anAge / 350.76d PT"
+Dog,1717,0.25,5.15,A0,21.385593,30.625,26.005297,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Dog,1717,0.25,5.15,A1,0.174576,0.25,0.212288,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Dog,1717,0.25,5.15,A2,34.279706,34.896664,34.588185,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Dog,1717,0.25,5.15,A3,0.30187,0.312644,0.307257,std_loglinear_y,"G=62.0d anAge(shared, no PT gestation row in tableB); ASM=669.0d anAge / 679.37d PT"
+Dog,1717,0.5,10.3,A0,42.771186,61.25,52.010593,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Dog,1717,0.5,10.3,A1,0.349153,0.5,0.424576,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Dog,1717,0.5,10.3,A2,67.603952,68.893287,68.24862,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Dog,1717,0.5,10.3,A3,1.5622,1.583403,1.572801,std_loglinear_y,"G=62.0d anAge(shared, no PT gestation row in tableB); ASM=669.0d anAge / 679.37d PT"
+Dog,1717,0.75,15.45,A0,64.15678,91.875,78.01589,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Dog,1717,0.75,15.45,A1,0.523729,0.75,0.636864,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Dog,1717,0.75,15.45,A2,100.928197,102.889911,101.909054,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Dog,1717,0.75,15.45,A3,2.822529,2.854162,2.838345,std_loglinear_y,"G=62.0d anAge(shared, no PT gestation row in tableB); ASM=669.0d anAge / 679.37d PT"
+Dog,1717,0.9,18.54,A0,76.988136,110.25,93.619068,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Dog,1717,0.9,18.54,A1,0.628475,0.9,0.764237,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Dog,1717,0.9,18.54,A2,120.922745,123.287885,122.105315,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Dog,1717,0.9,18.54,A3,3.578726,3.616617,3.597672,std_loglinear_y,"G=62.0d anAge(shared, no PT gestation row in tableB); ASM=669.0d anAge / 679.37d PT"
+Dog,1717,0.95,19.57,A0,81.265254,116.375,98.820127,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Dog,1717,0.95,19.57,A1,0.66339,0.95,0.806695,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Dog,1717,0.95,19.57,A2,127.587594,130.08721,128.837402,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Dog,1717,0.95,19.57,A3,3.830792,3.870769,3.85078,std_loglinear_y,"G=62.0d anAge(shared, no PT gestation row in tableB); ASM=669.0d anAge / 679.37d PT"
+Dog,1717,0.99,20.394,A0,84.686949,121.275,102.980975,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Dog,1717,0.99,20.394,A1,0.691322,0.99,0.840661,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Dog,1717,0.99,20.394,A2,132.919473,135.52667,134.223072,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Dog,1717,0.99,20.394,A3,4.032445,4.07409,4.053268,std_loglinear_y,"G=62.0d anAge(shared, no PT gestation row in tableB); ASM=669.0d anAge / 679.37d PT"
+Cat / Domestic cat,1751,0.25,7.5,A0,27.022059,30.625,28.823529,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Cat / Domestic cat,1751,0.25,7.5,A1,0.220588,0.25,0.235294,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Cat / Domestic cat,1751,0.25,7.5,A2,119.831302,131.215021,125.523161,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,sexual_maturity"
+Cat / Domestic cat,1751,0.25,7.5,A3,1.760011,1.793167,1.776589,std_loglinear_y,"G=65.0d anAge(shared, no PT gestation row in tableB); ASM=289.0d anAge / 296.98d PT"
+Cat / Domestic cat,1751,0.5,15.0,A0,54.044118,61.25,57.647059,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Cat / Domestic cat,1751,0.5,15.0,A1,0.441176,0.5,0.470588,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Cat / Domestic cat,1751,0.5,15.0,A2,239.662604,263.382403,251.522503,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,sexual_maturity"
+Cat / Domestic cat,1751,0.5,15.0,A3,4.45605,4.521594,4.488822,std_loglinear_y,"G=65.0d anAge(shared, no PT gestation row in tableB); ASM=289.0d anAge / 296.98d PT"
+Cat / Domestic cat,1751,0.75,22.5,A0,81.066176,91.875,86.470588,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Cat / Domestic cat,1751,0.75,22.5,A1,0.661765,0.75,0.705882,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Cat / Domestic cat,1751,0.75,22.5,A2,359.493905,395.549785,377.521845,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,sexual_maturity"
+Cat / Domestic cat,1751,0.75,22.5,A3,7.152089,7.250021,7.201055,std_loglinear_y,"G=65.0d anAge(shared, no PT gestation row in tableB); ASM=289.0d anAge / 296.98d PT"
+Cat / Domestic cat,1751,0.9,27.0,A0,97.279412,110.25,103.764706,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Cat / Domestic cat,1751,0.9,27.0,A1,0.794118,0.9,0.847059,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Cat / Domestic cat,1751,0.9,27.0,A2,431.392686,474.850214,453.12145,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,sexual_maturity"
+Cat / Domestic cat,1751,0.9,27.0,A3,8.769712,8.887077,8.828395,std_loglinear_y,"G=65.0d anAge(shared, no PT gestation row in tableB); ASM=289.0d anAge / 296.98d PT"
+Cat / Domestic cat,1751,0.95,28.5,A0,102.683824,116.375,109.529412,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Cat / Domestic cat,1751,0.95,28.5,A1,0.838235,0.95,0.894118,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Cat / Domestic cat,1751,0.95,28.5,A2,455.358947,501.283691,478.321319,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,sexual_maturity"
+Cat / Domestic cat,1751,0.95,28.5,A3,9.30892,9.432763,9.370841,std_loglinear_y,"G=65.0d anAge(shared, no PT gestation row in tableB); ASM=289.0d anAge / 296.98d PT"
+Cat / Domestic cat,1751,0.99,29.7,A0,107.007353,121.275,114.141176,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Cat / Domestic cat,1751,0.99,29.7,A1,0.873529,0.99,0.931765,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Cat / Domestic cat,1751,0.99,29.7,A2,474.531955,522.430472,498.481213,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,sexual_maturity"
+Cat / Domestic cat,1751,0.99,29.7,A3,9.740286,9.869311,9.804798,std_loglinear_y,"G=65.0d anAge(shared, no PT gestation row in tableB); ASM=289.0d anAge / 296.98d PT"
+Meerkat,1799,0.25,5.15,A0,30.625,50.47,40.5475,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Meerkat,1799,0.25,5.15,A1,0.25,0.412,0.331,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Meerkat,1799,0.25,5.15,A2,65.537503,66.083658,65.81058,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Meerkat,1799,0.25,5.15,A3,0.576691,0.600418,0.588555,std_loglinear_y,"G=77.0d anAge(shared, no PT gestation row in tableB); ASM=365.0d anAge / 377.37d PT"
+Meerkat,1799,0.5,10.3,A0,61.25,100.94,81.095,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Meerkat,1799,0.5,10.3,A1,0.5,0.824,0.662,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Meerkat,1799,0.5,10.3,A2,131.271284,131.958736,131.61501,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Meerkat,1799,0.5,10.3,A3,2.091378,2.1379,2.114639,std_loglinear_y,"G=77.0d anAge(shared, no PT gestation row in tableB); ASM=365.0d anAge / 377.37d PT"
+Meerkat,1799,0.75,15.45,A0,91.875,151.41,121.6425,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Meerkat,1799,0.75,15.45,A1,0.75,1.236,0.993,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Meerkat,1799,0.75,15.45,A2,197.005065,197.833814,197.419439,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Meerkat,1799,0.75,15.45,A3,3.606065,3.675382,3.640723,std_loglinear_y,"G=77.0d anAge(shared, no PT gestation row in tableB); ASM=365.0d anAge / 377.37d PT"
+Meerkat,1799,0.9,18.54,A0,110.25,181.692,145.971,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Meerkat,1799,0.9,18.54,A1,0.9,1.4832,1.1916,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Meerkat,1799,0.9,18.54,A2,236.445333,237.35886,236.902097,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Meerkat,1799,0.9,18.54,A3,4.514877,4.597871,4.556374,std_loglinear_y,"G=77.0d anAge(shared, no PT gestation row in tableB); ASM=365.0d anAge / 377.37d PT"
+Meerkat,1799,0.95,19.57,A0,116.375,191.786,154.0805,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Meerkat,1799,0.95,19.57,A1,0.95,1.5656,1.2578,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Meerkat,1799,0.95,19.57,A2,249.592089,250.533876,250.062983,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Meerkat,1799,0.95,19.57,A3,4.817814,4.905368,4.861591,std_loglinear_y,"G=77.0d anAge(shared, no PT gestation row in tableB); ASM=365.0d anAge / 377.37d PT"
+Meerkat,1799,0.99,20.394,A0,121.275,199.8612,160.5681,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Meerkat,1799,0.99,20.394,A1,0.99,1.63152,1.31076,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Meerkat,1799,0.99,20.394,A2,260.109494,261.073888,260.591691,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Meerkat,1799,0.99,20.394,A3,5.060164,5.151365,5.105765,std_loglinear_y,"G=77.0d anAge(shared, no PT gestation row in tableB); ASM=365.0d anAge / 377.37d PT"
+European rabbit,2224,0.25,2.25,A0,15.3125,30.625,22.96875,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+European rabbit,2224,0.25,2.25,A1,0.125,0.25,0.1875,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+European rabbit,2224,0.25,2.25,A2,14.457183,57.884353,36.170768,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+European rabbit,2224,0.25,2.25,A3,-0.282488,0.579311,0.148411,std_loglinear_y,"G=30.0d anAge(shared, no PT gestation row in tableB); ASM=730.0d anAge / 185.61d PT"
+European rabbit,2224,0.5,4.5,A0,30.625,61.25,45.9375,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+European rabbit,2224,0.5,4.5,A1,0.25,0.5,0.375,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+European rabbit,2224,0.5,4.5,A2,27.580052,115.875063,71.727557,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+European rabbit,2224,0.5,4.5,A3,0.48126,2.102999,1.292129,std_loglinear_y,"G=30.0d anAge(shared, no PT gestation row in tableB); ASM=730.0d anAge / 185.61d PT"
+European rabbit,2224,0.75,6.75,A0,45.9375,91.875,68.90625,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+European rabbit,2224,0.75,6.75,A1,0.375,0.75,0.5625,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+European rabbit,2224,0.75,6.75,A2,40.702921,173.865773,107.284347,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+European rabbit,2224,0.75,6.75,A3,1.208613,3.626688,2.417651,std_loglinear_y,"G=30.0d anAge(shared, no PT gestation row in tableB); ASM=730.0d anAge / 185.61d PT"
+European rabbit,2224,0.9,8.1,A0,55.125,110.25,82.6875,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+European rabbit,2224,0.9,8.1,A1,0.45,0.9,0.675,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+European rabbit,2224,0.9,8.1,A2,48.576643,208.660199,128.618421,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+European rabbit,2224,0.9,8.1,A3,1.645026,4.540902,3.092964,std_loglinear_y,"G=30.0d anAge(shared, no PT gestation row in tableB); ASM=730.0d anAge / 185.61d PT"
+European rabbit,2224,0.95,8.55,A0,58.1875,116.375,87.28125,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+European rabbit,2224,0.95,8.55,A1,0.475,0.95,0.7125,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+European rabbit,2224,0.95,8.55,A2,51.201217,220.258341,135.729779,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+European rabbit,2224,0.95,8.55,A3,1.790497,4.845639,3.318068,std_loglinear_y,"G=30.0d anAge(shared, no PT gestation row in tableB); ASM=730.0d anAge / 185.61d PT"
+European rabbit,2224,0.99,8.91,A0,60.6375,121.275,90.95625,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+European rabbit,2224,0.99,8.91,A1,0.495,0.99,0.7425,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+European rabbit,2224,0.99,8.91,A2,53.300876,229.536854,141.418865,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+European rabbit,2224,0.99,8.91,A3,1.906873,5.08943,3.498151,std_loglinear_y,"G=30.0d anAge(shared, no PT gestation row in tableB); ASM=730.0d anAge / 185.61d PT"
+Horse,2260,0.25,14.25,A0,28.155242,30.625,29.390121,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Horse,2260,0.25,14.25,A1,0.229839,0.25,0.239919,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Horse,2260,0.25,14.25,A2,88.359326,112.64807,100.503698,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Horse,2260,0.25,14.25,A3,0.294448,0.335193,0.314821,std_loglinear_y,"G=337.0d anAge(shared, no PT gestation row in tableB); ASM=914.0d anAge / 834.72d PT"
+Horse,2260,0.5,28.5,A0,56.310484,61.25,58.780242,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Horse,2260,0.5,28.5,A1,0.459677,0.5,0.479839,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Horse,2260,0.5,28.5,A2,179.781983,231.340256,205.561119,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Horse,2260,0.5,28.5,A3,1.510181,1.589193,1.549687,std_loglinear_y,"G=337.0d anAge(shared, no PT gestation row in tableB); ASM=914.0d anAge / 834.72d PT"
+Horse,2260,0.75,42.75,A0,84.465726,91.875,88.170363,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Horse,2260,0.75,42.75,A1,0.689516,0.75,0.719758,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Horse,2260,0.75,42.75,A2,271.204639,350.032442,310.61854,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Horse,2260,0.75,42.75,A3,2.725913,2.843192,2.784553,std_loglinear_y,"G=337.0d anAge(shared, no PT gestation row in tableB); ASM=914.0d anAge / 834.72d PT"
+Horse,2260,0.9,51.3,A0,101.358871,110.25,105.804435,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Horse,2260,0.9,51.3,A1,0.827419,0.9,0.86371,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Horse,2260,0.9,51.3,A2,326.058233,421.247753,373.652993,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Horse,2260,0.9,51.3,A3,3.455352,3.595592,3.525472,std_loglinear_y,"G=337.0d anAge(shared, no PT gestation row in tableB); ASM=914.0d anAge / 834.72d PT"
+Horse,2260,0.95,54.15,A0,106.989919,116.375,111.68246,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Horse,2260,0.95,54.15,A1,0.873387,0.95,0.911694,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Horse,2260,0.95,54.15,A2,344.342764,444.986191,394.664477,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Horse,2260,0.95,54.15,A3,3.698499,3.846392,3.772445,std_loglinear_y,"G=337.0d anAge(shared, no PT gestation row in tableB); ASM=914.0d anAge / 834.72d PT"
+Horse,2260,0.99,56.43,A0,111.494758,121.275,116.384879,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Horse,2260,0.99,56.43,A1,0.910161,0.99,0.950081,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Horse,2260,0.99,56.43,A2,358.970389,463.97694,411.473665,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Horse,2260,0.99,56.43,A3,3.893016,4.047032,3.970024,std_loglinear_y,"G=337.0d anAge(shared, no PT gestation row in tableB); ASM=914.0d anAge / 834.72d PT"
+Human,2410,0.25,30.625,A0,30.625,30.625,30.625,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Human,2410,0.25,30.625,A1,0.25,0.25,0.25,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Human,2410,0.25,30.625,A2,25.958817,30.625,28.291908,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Human,2410,0.25,30.625,A3,0.219569,0.337665,0.278617,std_loglinear_y,"G=280.0d anAge(shared, no PT gestation row in tableB); ASM=4745.0d anAge / 5582.93d PT"
+Human,2410,0.5,61.25,A0,61.25,61.25,61.25,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Human,2410,0.5,61.25,A1,0.5,0.5,0.5,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Human,2410,0.5,61.25,A2,51.848139,61.25,56.549069,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Human,2410,0.5,61.25,A3,1.409356,1.642663,1.52601,std_loglinear_y,"G=280.0d anAge(shared, no PT gestation row in tableB); ASM=4745.0d anAge / 5582.93d PT"
+Human,2410,0.75,91.875,A0,91.875,91.875,91.875,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Human,2410,0.75,91.875,A1,0.75,0.75,0.75,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Human,2410,0.75,91.875,A2,77.737461,91.875,84.806231,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Human,2410,0.75,91.875,A3,2.599143,2.947661,2.773402,std_loglinear_y,"G=280.0d anAge(shared, no PT gestation row in tableB); ASM=4745.0d anAge / 5582.93d PT"
+Human,2410,0.9,110.25,A0,110.25,110.25,110.25,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Human,2410,0.9,110.25,A1,0.9,0.9,0.9,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Human,2410,0.9,110.25,A2,93.271054,110.25,101.760527,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Human,2410,0.9,110.25,A3,3.313015,3.73066,3.521838,std_loglinear_y,"G=280.0d anAge(shared, no PT gestation row in tableB); ASM=4745.0d anAge / 5582.93d PT"
+Human,2410,0.95,116.375,A0,116.375,116.375,116.375,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Human,2410,0.95,116.375,A1,0.95,0.95,0.95,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Human,2410,0.95,116.375,A2,98.448919,116.375,107.411959,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Human,2410,0.95,116.375,A3,3.550973,3.99166,3.771316,std_loglinear_y,"G=280.0d anAge(shared, no PT gestation row in tableB); ASM=4745.0d anAge / 5582.93d PT"
+Human,2410,0.99,121.275,A0,121.275,121.275,121.275,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Human,2410,0.99,121.275,A1,0.99,0.99,0.99,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Human,2410,0.99,121.275,A2,102.59121,121.275,111.933105,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Human,2410,0.99,121.275,A3,3.741339,4.20046,3.970899,std_loglinear_y,"G=280.0d anAge(shared, no PT gestation row in tableB); ASM=4745.0d anAge / 5582.93d PT"
+Chimpanzee,2412,0.25,14.85,A0,30.31875,30.625,30.471875,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Chimpanzee,2412,0.25,14.85,A1,0.2475,0.25,0.24875,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Chimpanzee,2412,0.25,14.85,A2,19.496129,23.15552,21.325825,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Chimpanzee,2412,0.25,14.85,A3,-0.217694,-0.137104,-0.177399,std_loglinear_y,"G=229.0d anAge(shared, no PT gestation row in tableB); ASM=3376.0d anAge / 3897.96d PT"
+Chimpanzee,2412,0.5,29.7,A0,60.6375,61.25,60.94375,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Chimpanzee,2412,0.5,29.7,A1,0.495,0.5,0.4975,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Chimpanzee,2412,0.5,29.7,A2,42.61734,50.075652,46.346496,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Chimpanzee,2412,0.5,29.7,A3,0.576158,0.708439,0.642298,std_loglinear_y,"G=229.0d anAge(shared, no PT gestation row in tableB); ASM=3376.0d anAge / 3897.96d PT"
+Chimpanzee,2412,0.75,44.55,A0,90.95625,91.875,91.415625,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Chimpanzee,2412,0.75,44.55,A1,0.7425,0.75,0.74625,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Chimpanzee,2412,0.75,44.55,A2,65.73855,76.995785,71.367168,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Chimpanzee,2412,0.75,44.55,A3,1.347944,1.544998,1.446471,std_loglinear_y,"G=229.0d anAge(shared, no PT gestation row in tableB); ASM=3376.0d anAge / 3897.96d PT"
+Chimpanzee,2412,0.9,53.46,A0,109.1475,110.25,109.69875,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Chimpanzee,2412,0.9,53.46,A1,0.891,0.9,0.8955,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Chimpanzee,2412,0.9,53.46,A2,79.611276,93.147864,86.37957,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Chimpanzee,2412,0.9,53.46,A3,1.811016,2.046934,1.928975,std_loglinear_y,"G=229.0d anAge(shared, no PT gestation row in tableB); ASM=3376.0d anAge / 3897.96d PT"
+Chimpanzee,2412,0.95,56.43,A0,115.21125,116.375,115.793125,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Chimpanzee,2412,0.95,56.43,A1,0.9405,0.95,0.94525,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Chimpanzee,2412,0.95,56.43,A2,84.235519,98.531891,91.383705,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Chimpanzee,2412,0.95,56.43,A3,1.965373,2.214246,2.08981,std_loglinear_y,"G=229.0d anAge(shared, no PT gestation row in tableB); ASM=3376.0d anAge / 3897.96d PT"
+Chimpanzee,2412,0.99,58.806,A0,120.06225,121.275,120.668625,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Chimpanzee,2412,0.99,58.806,A1,0.9801,0.99,0.98505,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Chimpanzee,2412,0.99,58.806,A2,87.934912,102.839112,95.387012,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Chimpanzee,2412,0.99,58.806,A3,2.088859,2.348095,2.218477,std_loglinear_y,"G=229.0d anAge(shared, no PT gestation row in tableB); ASM=3376.0d anAge / 3897.96d PT"
+Mouse / Mouse  / Wild mouse,2683,0.25,1.0,A0,20.416667,30.625,25.520833,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.25,1.0,A1,0.166667,0.25,0.208333,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.25,1.0,A2,91.180296,194.68371,142.932003,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Mouse / Mouse  / Wild mouse,2683,0.25,1.0,A3,0.462545,0.70303,0.582788,std_loglinear_y,"G=19.0d anAge(shared, no PT gestation row in tableB); ASM=42.0d anAge / 64.71d PT"
+Mouse / Mouse  / Wild mouse,2683,0.5,2.0,A0,40.833333,61.25,51.041667,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.5,2.0,A1,0.333333,0.5,0.416667,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.5,2.0,A2,186.204596,399.98371,293.094153,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Mouse / Mouse  / Wild mouse,2683,0.5,2.0,A3,1.852772,2.321851,2.087312,std_loglinear_y,"G=19.0d anAge(shared, no PT gestation row in tableB); ASM=42.0d anAge / 64.71d PT"
+Mouse / Mouse  / Wild mouse,2683,0.75,3.0,A0,61.25,91.875,76.5625,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.75,3.0,A1,0.5,0.75,0.625,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.75,3.0,A2,281.228896,605.28371,443.256303,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Mouse / Mouse  / Wild mouse,2683,0.75,3.0,A3,3.242999,3.940672,3.591835,std_loglinear_y,"G=19.0d anAge(shared, no PT gestation row in tableB); ASM=42.0d anAge / 64.71d PT"
+Mouse / Mouse  / Wild mouse,2683,0.9,3.6,A0,73.5,110.25,91.875,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.9,3.6,A1,0.6,0.9,0.75,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.9,3.6,A2,338.243476,728.46371,533.353593,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Mouse / Mouse  / Wild mouse,2683,0.9,3.6,A3,4.077135,4.911964,4.494549,std_loglinear_y,"G=19.0d anAge(shared, no PT gestation row in tableB); ASM=42.0d anAge / 64.71d PT"
+Mouse / Mouse  / Wild mouse,2683,0.95,3.8,A0,77.583333,116.375,96.979167,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.95,3.8,A1,0.633333,0.95,0.791667,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.95,3.8,A2,357.248336,769.52371,563.386023,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Mouse / Mouse  / Wild mouse,2683,0.95,3.8,A3,4.35518,5.235728,4.795454,std_loglinear_y,"G=19.0d anAge(shared, no PT gestation row in tableB); ASM=42.0d anAge / 64.71d PT"
+Mouse / Mouse  / Wild mouse,2683,0.99,3.96,A0,80.85,121.275,101.0625,human_eq_years,L_typ proxy = anAge max_age (no typical-lifespan col in snapshot); PT crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.99,3.96,A1,0.66,0.99,0.825,relative_age_0_1,R = a/Lmax; Lmax anAge primary + PanTHERIA crosscheck
+Mouse / Mouse  / Wild mouse,2683,0.99,3.96,A2,372.452224,802.37171,587.411967,human_eq_years,"an:conception,birth,weaning,sexual_maturity; pt:conception,birth,weaning,sexual_maturity"
+Mouse / Mouse  / Wild mouse,2683,0.99,3.96,A3,4.577616,5.49474,5.036178,std_loglinear_y,"G=19.0d anAge(shared, no PT gestation row in tableB); ASM=42.0d anAge / 64.71d PT"
+Domestic pig,1701,0.25,6.75,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Domestic pig,1701,0.5,13.5,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Domestic pig,1701,0.75,20.25,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Domestic pig,1701,0.9,24.3,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Domestic pig,1701,0.95,25.65,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Domestic pig,1701,0.99,26.73,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Dog,1717,0.25,5.15,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Dog,1717,0.5,10.3,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Dog,1717,0.75,15.45,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Dog,1717,0.9,18.54,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Dog,1717,0.95,19.57,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Dog,1717,0.99,20.394,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Cat / Domestic cat,1751,0.25,7.5,A4,26.7403,26.4722,26.6063,human_eq_years,"out_of_domain=true; TT 11-event domain [14.1,61.7] d PC"
+Cat / Domestic cat,1751,0.5,15.0,A4,53.0101,52.3788,52.6944,human_eq_years,"out_of_domain=true; TT 11-event domain [14.1,61.7] d PC"
+Cat / Domestic cat,1751,0.75,22.5,A4,79.2798,78.2853,78.7826,human_eq_years,"out_of_domain=true; TT 11-event domain [14.1,61.7] d PC"
+Cat / Domestic cat,1751,0.9,27.0,A4,95.0416,93.8293,94.4354,human_eq_years,"out_of_domain=true; TT 11-event domain [14.1,61.7] d PC"
+Cat / Domestic cat,1751,0.95,28.5,A4,100.2956,99.0106,99.6531,human_eq_years,"out_of_domain=true; TT 11-event domain [14.1,61.7] d PC"
+Cat / Domestic cat,1751,0.99,29.7,A4,104.4987,103.1556,103.8272,human_eq_years,"out_of_domain=true; TT 11-event domain [14.1,61.7] d PC"
+Meerkat,1799,0.25,5.15,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Meerkat,1799,0.5,10.3,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Meerkat,1799,0.75,15.45,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Meerkat,1799,0.9,18.54,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Meerkat,1799,0.95,19.57,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Meerkat,1799,0.99,20.394,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+European rabbit,2224,0.25,2.25,A4,18.7674,18.2258,18.4966,human_eq_years,"out_of_domain=true; TT 11-event domain [9.5,34.7] d PC"
+European rabbit,2224,0.5,4.5,A4,37.1361,35.9241,36.5301,human_eq_years,"out_of_domain=true; TT 11-event domain [9.5,34.7] d PC"
+European rabbit,2224,0.75,6.75,A4,55.5048,53.6224,54.5636,human_eq_years,"out_of_domain=true; TT 11-event domain [9.5,34.7] d PC"
+European rabbit,2224,0.9,8.1,A4,66.526,64.2414,65.3837,human_eq_years,"out_of_domain=true; TT 11-event domain [9.5,34.7] d PC"
+European rabbit,2224,0.95,8.55,A4,70.1998,67.781,68.9904,human_eq_years,"out_of_domain=true; TT 11-event domain [9.5,34.7] d PC"
+European rabbit,2224,0.99,8.91,A4,73.1388,70.6128,71.8758,human_eq_years,"out_of_domain=true; TT 11-event domain [9.5,34.7] d PC"
+Horse,2260,0.25,14.25,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Horse,2260,0.5,28.5,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Horse,2260,0.75,42.75,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Horse,2260,0.9,51.3,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Horse,2260,0.95,54.15,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Horse,2260,0.99,56.43,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Human,2410,0.25,30.625,A4,28.9758,33.8074,31.3916,human_eq_years,"out_of_domain=true; TT 11-event domain [19.1,209.2] d PC"
+Human,2410,0.5,61.25,A4,57.2745,66.7587,62.0166,human_eq_years,"out_of_domain=true; TT 11-event domain [19.1,209.2] d PC"
+Human,2410,0.75,91.875,A4,85.5732,99.71,92.6416,human_eq_years,"out_of_domain=true; TT 11-event domain [19.1,209.2] d PC"
+Human,2410,0.9,110.25,A4,102.5524,119.4808,111.0166,human_eq_years,"out_of_domain=true; TT 11-event domain [19.1,209.2] d PC"
+Human,2410,0.95,116.375,A4,108.2121,126.0711,117.1416,human_eq_years,"out_of_domain=true; TT 11-event domain [19.1,209.2] d PC"
+Human,2410,0.99,121.275,A4,112.7399,131.3433,122.0416,human_eq_years,"out_of_domain=true; TT 11-event domain [19.1,209.2] d PC"
+Chimpanzee,2412,0.25,14.85,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Chimpanzee,2412,0.5,29.7,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Chimpanzee,2412,0.75,44.55,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Chimpanzee,2412,0.9,53.46,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Chimpanzee,2412,0.95,56.43,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Chimpanzee,2412,0.99,58.806,A4,,,,human_eq_years,species not in Translating Time 11-event subset
+Mouse / Mouse  / Wild mouse,2683,0.25,1.0,A4,11.53,10.5801,11.0551,human_eq_years,"out_of_domain=true; TT 11-event domain [7.7,26.0] d PC"
+Mouse / Mouse  / Wild mouse,2683,0.5,2.0,A4,22.7719,20.7514,21.7616,human_eq_years,"out_of_domain=true; TT 11-event domain [7.7,26.0] d PC"
+Mouse / Mouse  / Wild mouse,2683,0.75,3.0,A4,34.0138,30.9226,32.4682,human_eq_years,"out_of_domain=true; TT 11-event domain [7.7,26.0] d PC"
+Mouse / Mouse  / Wild mouse,2683,0.9,3.6,A4,40.7589,37.0253,38.8921,human_eq_years,"out_of_domain=true; TT 11-event domain [7.7,26.0] d PC"
+Mouse / Mouse  / Wild mouse,2683,0.95,3.8,A4,43.0073,39.0595,41.0334,human_eq_years,"out_of_domain=true; TT 11-event domain [7.7,26.0] d PC"
+Mouse / Mouse  / Wild mouse,2683,0.99,3.96,A4,44.806,40.6869,42.7464,human_eq_years,"out_of_domain=true; TT 11-event domain [7.7,26.0] d PC"
+Cat / Domestic cat,1751,0.25,7.5,A5,49.71734122858684,49.71734122858684,49.71734122858684,human_eq_years,"A5 Tier2; m=15(13.5-16.5); domestic cat ~15y indoor, host prior (DEV-3); amax=30 anAge"
+Cat / Domestic cat,1751,0.5,15.0,A5,76.39829159882072,76.39829159882072,76.39829159882072,human_eq_years,"A5 Tier2; m=15(13.5-16.5); domestic cat ~15y indoor, host prior (DEV-3); amax=30 anAge"
+Cat / Domestic cat,1751,0.75,22.5,A5,99.89529772659772,99.89529772659772,99.89529772659772,human_eq_years,"A5 Tier2; m=15(13.5-16.5); domestic cat ~15y indoor, host prior (DEV-3); amax=30 anAge"
+Cat / Domestic cat,1751,0.9,27.0,A5,113.53062962770866,113.53062962770866,113.53062962770866,human_eq_years,"A5 Tier2; m=15(13.5-16.5); domestic cat ~15y indoor, host prior (DEV-3); amax=30 anAge"
+Cat / Domestic cat,1751,0.95,28.5,A5,118.01232226456804,118.01232226456804,118.01232226456804,human_eq_years,"A5 Tier2; m=15(13.5-16.5); domestic cat ~15y indoor, host prior (DEV-3); amax=30 anAge"
+Cat / Domestic cat,1751,0.99,29.7,A5,121.63584410717318,121.63584410717318,121.63584410717318,human_eq_years,"A5 Tier2; m=15(13.5-16.5); domestic cat ~15y indoor, host prior (DEV-3); amax=30 anAge"
+Chimpanzee,2412,0.25,14.85,A5,4.925675942648355,4.925675942648355,4.925675942648355,human_eq_years,"A5 Tier2; m=45(40-50); captive chimp 40-50y, host prior (DEV-3); amax=59 anAge"
+Chimpanzee,2412,0.5,29.7,A5,30.1290572419611,30.1290572419611,30.1290572419611,human_eq_years,"A5 Tier2; m=45(40-50); captive chimp 40-50y, host prior (DEV-3); amax=59 anAge"
+Chimpanzee,2412,0.75,44.55,A5,74.93912763064117,74.93912763064117,74.93912763064117,human_eq_years,"A5 Tier2; m=45(40-50); captive chimp 40-50y, host prior (DEV-3); amax=59 anAge"
+Chimpanzee,2412,0.9,53.46,A5,104.16995477356687,104.16995477356687,104.16995477356687,human_eq_years,"A5 Tier2; m=45(40-50); captive chimp 40-50y, host prior (DEV-3); amax=59 anAge"
+Chimpanzee,2412,0.95,56.43,A5,113.98743159493534,113.98743159493534,113.98743159493534,human_eq_years,"A5 Tier2; m=45(40-50); captive chimp 40-50y, host prior (DEV-3); amax=59 anAge"
+Chimpanzee,2412,0.99,58.806,A5,121.8734620106608,121.8734620106608,121.8734620106608,human_eq_years,"A5 Tier2; m=45(40-50); captive chimp 40-50y, host prior (DEV-3); amax=59 anAge"
+Dog,1717,0.25,5.15,A5,26.529065936905987,26.529065936905987,26.529065936905987,human_eq_years,"A5 Tier2; m=13(11.7-14.3); domestic dog ~13y, host prior (DEV-3); amax=20 anAge"
+Dog,1717,0.5,10.3,A5,58.80262094564008,58.80262094564008,58.80262094564008,human_eq_years,"A5 Tier2; m=13(11.7-14.3); domestic dog ~13y, host prior (DEV-3); amax=20 anAge"
+Dog,1717,0.75,15.45,A5,92.49682266426196,92.49682266426196,92.49682266426196,human_eq_years,"A5 Tier2; m=13(11.7-14.3); domestic dog ~13y, host prior (DEV-3); amax=20 anAge"
+Dog,1717,0.9,18.54,A5,112.8720321181084,112.8720321181084,112.8720321181084,human_eq_years,"A5 Tier2; m=13(11.7-14.3); domestic dog ~13y, host prior (DEV-3); amax=20 anAge"
+Dog,1717,0.95,19.57,A5,119.68829449786563,119.68829449786563,119.68829449786563,human_eq_years,"A5 Tier2; m=13(11.7-14.3); domestic dog ~13y, host prior (DEV-3); amax=20 anAge"
+Dog,1717,0.99,20.394,A5,122.0,122.0,122.0,human_eq_years,"A5 Tier2; m=13(11.7-14.3); domestic dog ~13y, host prior (DEV-3); amax=20 anAge; capped@amax"
+Domestic pig,1701,0.25,6.75,A5,71.80300864695478,71.80300864695478,71.80300864695478,human_eq_years,"A5 Tier2; m=8(6-10); farm pig 6-10y farm-caliber, host prior (DEV-3/5); amax=27 anAge"
+Domestic pig,1701,0.5,13.5,A5,92.60797249404497,92.60797249404497,92.60797249404497,human_eq_years,"A5 Tier2; m=8(6-10); farm pig 6-10y farm-caliber, host prior (DEV-3/5); amax=27 anAge"
+Domestic pig,1701,0.75,20.25,A5,108.45563253013842,108.45563253013842,108.45563253013842,human_eq_years,"A5 Tier2; m=8(6-10); farm pig 6-10y farm-caliber, host prior (DEV-3/5); amax=27 anAge"
+Domestic pig,1701,0.9,24.3,A5,117.00803384853782,117.00803384853782,117.00803384853782,human_eq_years,"A5 Tier2; m=8(6-10); farm pig 6-10y farm-caliber, host prior (DEV-3/5); amax=27 anAge"
+Domestic pig,1701,0.95,25.65,A5,119.7925122704714,119.7925122704714,119.7925122704714,human_eq_years,"A5 Tier2; m=8(6-10); farm pig 6-10y farm-caliber, host prior (DEV-3/5); amax=27 anAge"
+Domestic pig,1701,0.99,26.73,A5,121.96233469531965,121.96233469531965,121.96233469531965,human_eq_years,"A5 Tier2; m=8(6-10); farm pig 6-10y farm-caliber, host prior (DEV-3/5); amax=27 anAge"
+European rabbit,2224,0.25,2.25,A5,0.0015181478373592627,0.0015181478373592627,0.0015181478373592627,human_eq_years,A5 Tier2; m=8(7-8.9); captive rabbit 8-10y host prior; m clamped below amax 9.0 (DEV-6); amax=9 anAge
+European rabbit,2224,0.5,4.5,A5,0.2693836112754413,0.2693836112754413,0.2693836112754413,human_eq_years,A5 Tier2; m=8(7-8.9); captive rabbit 8-10y host prior; m clamped below amax 9.0 (DEV-6); amax=9 anAge
+European rabbit,2224,0.75,6.75,A5,24.80399314202166,24.80399314202166,24.80399314202166,human_eq_years,A5 Tier2; m=8(7-8.9); captive rabbit 8-10y host prior; m clamped below amax 9.0 (DEV-6); amax=9 anAge
+European rabbit,2224,0.9,8.1,A5,80.95655138771502,80.95655138771502,80.95655138771502,human_eq_years,A5 Tier2; m=8(7-8.9); captive rabbit 8-10y host prior; m clamped below amax 9.0 (DEV-6); amax=9 anAge
+European rabbit,2224,0.95,8.55,A5,101.65945543139753,101.65945543139753,101.65945543139753,human_eq_years,A5 Tier2; m=8(7-8.9); captive rabbit 8-10y host prior; m clamped below amax 9.0 (DEV-6); amax=9 anAge
+European rabbit,2224,0.99,8.91,A5,118.34953900246025,118.34953900246025,118.34953900246025,human_eq_years,A5 Tier2; m=8(7-8.9); captive rabbit 8-10y host prior; m clamped below amax 9.0 (DEV-6); amax=9 anAge
+Horse,2260,0.25,14.25,A5,48.56851675500404,48.56851675500404,48.56851675500404,human_eq_years,"A5 Tier2; m=29(28-30); domestic horse 28-30y, host prior (DEV-3); amax=57 anAge"
+Horse,2260,0.5,28.5,A5,75.5303598670634,75.5303598670634,75.5303598670634,human_eq_years,"A5 Tier2; m=29(28-30); domestic horse 28-30y, host prior (DEV-3); amax=57 anAge"
+Horse,2260,0.75,42.75,A5,99.44197994492185,99.44197994492185,99.44197994492185,human_eq_years,"A5 Tier2; m=29(28-30); domestic horse 28-30y, host prior (DEV-3); amax=57 anAge"
+Horse,2260,0.9,51.3,A5,113.34147855353862,113.34147855353862,113.34147855353862,human_eq_years,"A5 Tier2; m=29(28-30); domestic horse 28-30y, host prior (DEV-3); amax=57 anAge"
+Horse,2260,0.95,54.15,A5,117.92533786121591,117.92533786121591,117.92533786121591,human_eq_years,"A5 Tier2; m=29(28-30); domestic horse 28-30y, host prior (DEV-3); amax=57 anAge"
+Horse,2260,0.99,56.43,A5,121.61755265037542,121.61755265037542,121.61755265037542,human_eq_years,"A5 Tier2; m=29(28-30); domestic horse 28-30y, host prior (DEV-3); amax=57 anAge"
+Human,2410,0.25,30.625,A5,30.625,30.625,30.625,human_eq_years,"A5 Tier2-dev1; m=76.4(68.8-84); US LEAB 2021 ~76.4y, host prior (DEV-3); amax=122 anAge"
+Human,2410,0.5,61.25,A5,61.25,61.25,61.25,human_eq_years,"A5 Tier2-dev1; m=76.4(68.8-84); US LEAB 2021 ~76.4y, host prior (DEV-3); amax=122 anAge"
+Human,2410,0.75,91.875,A5,91.875,91.875,91.875,human_eq_years,"A5 Tier2-dev1; m=76.4(68.8-84); US LEAB 2021 ~76.4y, host prior (DEV-3); amax=122 anAge"
+Human,2410,0.9,110.25,A5,110.25,110.25,110.25,human_eq_years,"A5 Tier2-dev1; m=76.4(68.8-84); US LEAB 2021 ~76.4y, host prior (DEV-3); amax=122 anAge"
+Human,2410,0.95,116.375,A5,116.375,116.375,116.375,human_eq_years,"A5 Tier2-dev1; m=76.4(68.8-84); US LEAB 2021 ~76.4y, host prior (DEV-3); amax=122 anAge"
+Human,2410,0.99,121.275,A5,121.275,121.275,121.275,human_eq_years,"A5 Tier2-dev1; m=76.4(68.8-84); US LEAB 2021 ~76.4y, host prior (DEV-3); amax=122 anAge"
+Meerkat,1799,0.25,5.15,A5,26.529065936905987,26.529065936905987,26.529065936905987,human_eq_years,"A5 Tier2; m=13(12-14); captive meerkat 12-14y, host prior (DEV-3); amax=20 anAge"
+Meerkat,1799,0.5,10.3,A5,58.80262094564008,58.80262094564008,58.80262094564008,human_eq_years,"A5 Tier2; m=13(12-14); captive meerkat 12-14y, host prior (DEV-3); amax=20 anAge"
+Meerkat,1799,0.75,15.45,A5,92.49682266426196,92.49682266426196,92.49682266426196,human_eq_years,"A5 Tier2; m=13(12-14); captive meerkat 12-14y, host prior (DEV-3); amax=20 anAge"
+Meerkat,1799,0.9,18.54,A5,112.8720321181084,112.8720321181084,112.8720321181084,human_eq_years,"A5 Tier2; m=13(12-14); captive meerkat 12-14y, host prior (DEV-3); amax=20 anAge"
+Meerkat,1799,0.95,19.57,A5,119.68829449786563,119.68829449786563,119.68829449786563,human_eq_years,"A5 Tier2; m=13(12-14); captive meerkat 12-14y, host prior (DEV-3); amax=20 anAge"
+Meerkat,1799,0.99,20.394,A5,122.0,122.0,122.0,human_eq_years,"A5 Tier2; m=13(12-14); captive meerkat 12-14y, host prior (DEV-3); amax=20 anAge; capped@amax"
+Mouse / Mouse  / Wild mouse,2683,0.25,1.0,A5,6.617244757495187,6.617244757495187,6.617244757495187,human_eq_years,"A5 Tier2-dev2; m=3(2.7-3.3); lab mouse median ~3.0y, host prior (DEV-2/3); amax=4 anAge"
+Mouse / Mouse  / Wild mouse,2683,0.5,2.0,A5,33.51963137305884,33.51963137305884,33.51963137305884,human_eq_years,"A5 Tier2-dev2; m=3(2.7-3.3); lab mouse median ~3.0y, host prior (DEV-2/3); amax=4 anAge"
+Mouse / Mouse  / Wild mouse,2683,0.75,3.0,A5,76.39829159882072,76.39829159882072,76.39829159882072,human_eq_years,"A5 Tier2-dev2; m=3(2.7-3.3); lab mouse median ~3.0y, host prior (DEV-2/3); amax=4 anAge"
+Mouse / Mouse  / Wild mouse,2683,0.9,3.6,A5,103.96850415166891,103.96850415166891,103.96850415166891,human_eq_years,"A5 Tier2-dev2; m=3(2.7-3.3); lab mouse median ~3.0y, host prior (DEV-2/3); amax=4 anAge"
+Mouse / Mouse  / Wild mouse,2683,0.95,3.8,A5,113.24087209722285,113.24087209722285,113.24087209722285,human_eq_years,"A5 Tier2-dev2; m=3(2.7-3.3); lab mouse median ~3.0y, host prior (DEV-2/3); amax=4 anAge"
+Mouse / Mouse  / Wild mouse,2683,0.99,3.96,A5,120.67377401151649,120.67377401151649,120.67377401151649,human_eq_years,"A5 Tier2-dev2; m=3(2.7-3.3); lab mouse median ~3.0y, host prior (DEV-2/3); amax=4 anAge"

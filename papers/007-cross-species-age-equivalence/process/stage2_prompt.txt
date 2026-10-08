@@ -1,0 +1,35 @@
+# ARIS4C-007 段2（stage 2）executor 任务
+
+## 身份与纪律
+- 你是 ARIS4C-007-cross-species-age-equivalence 重跑的 stage 2 executor。输入：本目录 RESEARCH_BRIEF.md + stage1_summary.md + lit/REGISTRY.md + data/DATA_PROFILE.md（段1 已验收，verdict=GO-with-caution，4 条 caution 见下）。
+- **禁止**读取/复制 D:\Software\ARIS4C\papers\ 旧仓库任何代码/数据/结果。已发表方法（Animal-Age、Translating Time、Lu et al.）是复现对象，数据从公开源重取。
+- 工具调用总数 ≤40；单次推理 ≤2 句；禁 read 大 CSV（>200 行取 head）；python 输出 ≤40 行；中间结果写盘，不重复下载。
+- **禁 grep_search / read 任何 .xml / .html 文件**（lu2023.xml 334KB、crofts2023.xml 86KB、biorxiv_cat_full.html 338KB、panmam2023_page.html 241KB 均为 minified 单行文件，一次命中=整文件入上下文，上一轮段2 因此崩溃于 131073 tokens，超 128K 硬顶 1 token）。需要其中内容时用已预提取的 lit/lu2023_key_extracts.txt（69 行）/ lit/crofts2023_key_extracts.txt（28 行），或自己写 python 正则小提取（stdout ≤40 行）。
+- 落盘产物分块短写（heredoc 追加，单块 ≤60 行）。
+- **OpenAlex 注意**：免费配额（10 万 results/天）今日已耗尽（另一任务占用，08:00 北京时间重置）。段2 不依赖 OpenAlex：文献走 Crossref/EPMC/bioRxiv，数据走出版方补充材料/Zenodo/GEO/DOI 直链；如必须用 OpenAlex，等到 08:00 后再试并记入日志。
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## S1 方法图谱（A0–A6）
+7 张冻结主图之 #1：年龄轴概念图（markdown 图或 SVG 均可，figures/ 落盘）：A0 朴素寿命比 / A1 最大寿命相对 / A2 生活史锚点 / A3 log-linear（Lu）/ A4 事件尺度（TT）/ A5 生存等价 / A6 分子时钟。标注每方法的输入、输出坐标、已知局限。
+
+## S2 数据表 A/B（Step 1 核心）
+- **先解决 AnAge**（段1 caution a：主站自本网络 502）：优先级 ① lu2023/crofts2023 补充材料内嵌的 clock-era AnAge 表（恰是分子时钟逆变换需要的版本）② Zenodo/GitHub 镜像 ③ 都失败则把物种集收窄到补充材料有数据的物种并在 stage2_summary 声明局限。
+- 预提取文件已备好（**先读这两个小文件，别再碰原始 XML**）：lit/lu2023_key_extracts.txt 含补充材料链接（MOESM1–4_ESM）、GEO 编号（GSE147002 等 20+）、Clock 3 定义与 1.3× 校正原文、ASM 年龄分组定义（young <1.5×ASM / middle 1.5–3.5×ASM / old ≥3.5×ASM）；lit/crofts2023_key_extracts.txt 含 AnAge 官网 URL、GitHub 代码链接（elc08/meth_scaling 系）、方法细节。
+- 表 A（物种特征，每物种一行）：分类、妊娠期、成熟、断奶、体质量、中位寿命（若有辩护）、最大寿命+证据质量+样本量类、圈养/野生、数据源出处。目标 4–10 物种（含人/小鼠/猫/黑猩猩/犬 + 2–4 其他哺乳类）。
+- 表 B（事件，每物种×事件一行）：事件 id、自受孕年龄/时间、测量定义、来源、不确定度区间、质量。预期 100–300 行。
+- 数据源清单（快照 URL/版本/日期）落 data/manifests/sources.csv。
+
+## S3 A0–A3 复现（不拟合结果感知参数）
+- 四映射各一脚本（code/ 下）；**不拟合任何结果感知参数**（冻结纪律：A0–A3 不得结果感知）。
+- A2 基线：Animal-Age 若 stage 2 内找到原始代码/参数（GitHub/Zenodo）则作基线；找不到（段1 结论）则自建 A2 分段单调映射（同锚点：受孕/出生/断奶/性成熟），在 stage2_summary 声明替代。
+- A3 用 Lu et al. 已发表公式：Clock 3 = 通用 log-linear 年龄钟，对应 Methods formula (5)（不含 L_max 的 log-linear 年龄变换）；非人/非鼠 L_max ×1.3 校正仅作稳健性变体，不作默认（已确认 lu2023 原文含此 1.3× 语句）。公式若需精确系数：优先从 MOESM 补充数据/Methods 全文文本提取；取不到则按预提取上下文描述重建，并在 stage2_summary 声明。
+- 输出表 E（部分）：各方法在评估网格（物种 × 标准化年龄分位数 {0.25, 0.5, 0.75, 0.90, 0.95, 0.99} × 人类年龄轴）的预测；输出区间/分布，不压成单点。
+- 验收：四方法均可一键复现（脚本+读表 A/B → 写表 E 片段）；2 物种 × 2 方法抽查手算一致。
+
+## S4 stage2_summary.md
+≤40 行：S1/S2/S3 完成度 + AnAge 快照来源（哪条路、日期）+ Animal-Age 基线（找到/未找到、是否替代）+ 表 A 物种清单 + 表 B 行数 + 表 E 行数 + 已知问题 + 段3 预估（A4 复现/A5 构造/A6 时钟的阻塞点）。
+
+## 完成标准
+- 落盘：figures/（方法图谱）、data/（表 A/B/E + manifests/sources.csv）、code/（A0–A3 脚本）、stage2_summary.md
+- 零 outcome 计算：不做 Tier 1–4 任何验证、不跑 A4/A5/A6、不算分歧度量（H1 检验属段3）
+- 全部完成后只输出一行：DONE stage2 007

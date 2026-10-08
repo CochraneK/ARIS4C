@@ -1,0 +1,69 @@
+# key extracts from lu2023.xml
+
+[article-title] Universal DNA methylation age across mammalian tissues
+
+[abstract] AbstractAging, often considered a result of random cellular damage, can be accurately estimated using DNA methylation profiles, the foundation of pan-tissue epigenetic clocks. Here, we demonstrate the development of universal pan-mammalian clocks, using 11,754 methylation arrays from our Mammalian Methylation Consortium, which encompass 59 tissue types across 185 mammalian species. These predictive models estimate mammalian tissue age with high accuracy (r > 0.96). Age deviations correlate with human mortality risk, mouse somatotropic axis mutations and caloric restriction. We identified speci
+
+[abstract] This study identifies and characterizes evolutionarily conserved cytosine methylation patterns related to age across mammals and establishes pan-mammalian epigenetic clocks.
+
+[supplementary/data links in raw XML]
+GSE147002
+GSE147003
+GSE147004
+GSE162662
+GSE164127
+GSE173330
+GSE174544
+GSE174758
+GSE174767
+GSE174777
+GSE174778
+GSE184211
+GSE184213
+GSE184215
+GSE184216
+GSE184218
+GSE184220
+GSE184221
+GSE184222
+GSE184223
+GSE184224
+GSE190660
+GSE190661
+GSE190662
+GSE190663
+GSE190664
+GSE190665
+GSE194122
+GSE223748
+GSE223943
+GSE223944
+GSE54848
+MOESM1_ESM
+MOESM2_ESM
+MOESM3_ESM
+MOESM4_ESM
+
+[keyword contexts]
+--- clock 3: 3 shown ---
+over 69% of maximum lifespan variation on the log scale (Supplementary Data ). This third clock is referred to as the universal log–linear age clock (clock 3). The non-linear mathematical function underlying the age transformation of clock 3 reflects the fact that epigenetic clocks tick faster during development, an observation that led to the establishment of the first pan-tissue clock for humans The pl
+third clock is referred to as the universal log–linear age clock (clock 3). The non-linear mathematical function underlying the age transformation of clock 3 reflects the fact that epigenetic clocks tick faster during development, an observation that led to the establishment of the first pan-tissue clock for humans The plot displays transformed age in universal Clock 2 ( ) Loglog transformation of Relati
+lock 2 ( ) Loglog transformation of Relative Age (y-axis) versus age in universal Clock 2 and ( ) log-linear age (y-axis) versus age in our universal Clock 3. Of the 969 mammalian species with available gestation time, age at sexual maturity and maximum lifespan in AnAge database, 339 species are available in our collection. We multiplied the reported maximum lifespan of non-human or non-mouse species by
+--- log-linear: 3 shown ---
+ans The plot displays transformed age in universal Clock 2 ( ) Loglog transformation of Relative Age (y-axis) versus age in universal Clock 2 and ( ) log-linear age (y-axis) versus age in our universal Clock 3. Of the 969 mammalian species with available gestation time, age at sexual maturity and maximum lifespan in AnAge database, 339 species are available in our collection. We multiplied the reported maxi
+estation time through the modified maximum lifespan. The columns ( ) display all the 969 species with the simulated ages. In panel d, we proposed the log-linear age with the parameter formulated with maximum lifespan as the information is available for all species ( in Methods). Of the 339 species, 185 species with age information of high confidence and known tissue types were used in training universal clo
+185 species with the age variable (x-axis) based on the observed ages from all the samples in our collection (N = 11,754). In panel e, we applied the log-linear age formulated without knowing maximum lifespan to train Clock 3 (formula (5) in Methods). Each line represents a species marked by gray for non-profiled and marked by black or pink for profiled species in our collection, as listed in the legend. So
+--- log linear: 0 shown ---
+(no match)
+--- AnAge: 3 shown ---
+ Surgery, University of Wisconsin School of Medicine and Public Health, Madison, WI USA Shobhaben Pratapbhai Patel School of Pharmacy and Technology Management, SVKM’S NMIMS University, Mumbai, India Species Preservation Laboratory, SeaWorld San Diego, San Diego, CA USA Biology Department, Acadia University, Wolfville, Nova Scotia Canada Department of Pathobiology and Population Sciences, Royal Veterin
+axis) versus age in our universal Clock 3. Of the 969 mammalian species with available gestation time, age at sexual maturity and maximum lifespan in AnAge database, 339 species are available in our collection. We multiplied the reported maximum lifespan of non-human or non-mouse species by 1.3. Transformed ages were calculated for all the 969 species with simulated age ranging from gestation time thro
+rent age groups. For each species, the age groups were defined with respect to the average ASM obtained from the Animal Aging and Longevity Database (AnAge) (de Magalhaes et al. ). We defined the three age groups using intervals defined by multiples of ASM: young age is defined as age <1.5 × ASM, middle age is defined as age between 1.5ASM and 3.5ASM, and old age is defined by age ≥3.5ASM. Each axis re
+--- median: 3 shown ---
+ 3 (Supplementary Data ). LOFO cross-validation reveals the universal clocks as highly accurate estimators of chronological age ( ≈ 0.96–0.98) with a median absolute error (MAE) of <1 year between chronological age and DNA methylation (DNAm)-based age estimate (DNAmAge) and a relative error of <3.3% (Figs. ). Despite the mammalian array mapping fewer CpG sites to marsupials , clocks 2 and 3 maintain the
+an array mapping fewer CpG sites to marsupials , clocks 2 and 3 maintain their accuracy when analysis is confined to marsupials (for example, = 0.91, median MAE < 0.80 year for clock 2; Fig. = 15) produced encouraging results (for example, = 0.85 for clock 2; Supplementary Data Universal clocks for transformed age across mammals. The figure displays relative age estimates of universal clock 2 (clock 2) 
+s a Pearson correlation (Cor) coefficient. The gray and black dashed lines correspond to the diagonal line ( ) and the regression line, respectively. Median correlation (med.Cor) and median of MAE (med.MAE) are calculated across species ( ). Each sample is labeled by mammalian species index and indicated by tissue color (Supplementary Data values reported are unadjusted and two sided. Accuracy of univer
+--- formula: 3 shown ---
+ast to first- and second-generation clocks that measure human age , respectively. However, it is not yet known whether one can develop a mathematical formula to estimate age in all mammalian species. Here we present three such pan-mammalian age estimators. The first, basic clock (clock 1), regresses log-transformed chronological age on DNA methylation levels of all available mammals. Although such a cloc
+ maximum lifespan. The columns ( ) display all the 969 species with the simulated ages. In panel d, we proposed the log-linear age with the parameter formulated with maximum lifespan as the information is available for all species ( in Methods). Of the 339 species, 185 species with age information of high confidence and known tissue types were used in training universal clocks. The columns ( ) empiricall
+h the age variable (x-axis) based on the observed ages from all the samples in our collection (N = 11,754). In panel e, we applied the log-linear age formulated without knowing maximum lifespan to train Clock 3 (formula (5) in Methods). Each line represents a species marked by gray for non-profiled and marked by black or pink for profiled species in our collection, as listed in the legend. Some species s

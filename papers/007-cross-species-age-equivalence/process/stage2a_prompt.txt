@@ -1,0 +1,39 @@
+# ARIS4C-007 段2a（数据表）executor 任务
+
+## 背景（务必先读，避免重蹈覆辙）
+本目录段2 前两次运行均死于 128K 上下文溢出（131073 tokens）。原因是任务范围过大 + 工具输出累积。现拆为 2a/2b：**本会话只做 S2 数据表**。段2b（方法图谱 + A0–A3 复现 + 表 E + summary）另行运行，从磁盘读你的产物。
+
+## 身份与纪律
+- 你是 ARIS4C-007-cross-species-age-equivalence 重跑的 stage 2a executor。
+- 禁止读取/复制 D:\Software\ARIS4C\papers\ 旧仓库任何代码/数据/结果。
+- **工具调用总数 ≤30**；单次推理 ≤2 句；python 输出 ≤20 行；中间结果写盘，**不重复下载、不重复读同一文件**。
+- **禁 grep/read 任何 .xml / .html 文件**（minified 单行，一次命中=整文件入上下文，两次崩溃的根因之一）。
+- 落盘产物分块短写（heredoc 追加，单块 ≤60 行）。
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+- 进度随时追加到 stage2a_progress.md（每完成一步一行，崩溃后可从磁盘续做）。
+
+## 已确立事实（不要重新验证/下载）
+- 补充材料已落盘（前次运行成果）：`data/suppl/` 下
+  - `anage_lu2023_snapshot.csv`（5475 行，Table S1.13 = lu2023 时钟时代的 AnAge 更新版，列含 Female/Male.maturity.days、Gestation.days、Weaning.days、最大寿命等）→ **段1 caution a（AnAge 主站 502）已解决**
+  - `s3_clock1/2/3.csv`（ElasticNet 权重）→ caution c 部分解决（lu2023 权重公开性=已公开）
+  - `s1_samples.csv`（185 物种：174 真兽+9 有袋+2 单孔）、`s1_speciesnames.csv`、`s1_orders.csv`、`s2_predict_logMaximumAge.csv`（log 最大寿命回归，adj R²=0.69）
+- Animal-Age 基线：GitHub 搜索 0 结果（前次已查）→ A2 兜底自建属**段2b** 工作，本会话不管。
+- 预提取文献要点：lit/lu2023_key_extracts.txt、lit/crofts2023_key_extracts.txt（已含 MOESM 链接/GSE 编号/ASM 分组定义）。
+- OpenAlex 今日配额耗尽，本会话不需要它。
+
+## 任务（只做这些）
+### T1 冻结物种集（4–10 物种）
+必含：人/小鼠/猫/黑猩猩/犬；另加 2–4 个其他哺乳类（从 anage 快照选，优先 profiled=True 且寿命跨度大的，如兔/猪/牛/狐獴，executor 自选并记理由）。每物种核对：anage_lu2023_snapshot.csv 中该行存在（profiled 值如实记录）。
+### T2 表 A 物种特征 → data/tableA_species.csv
+每物种一行：拉丁名/俗名/分类（目科属种）/妊娠期/成熟（雌雄）/断奶/体质量/最大寿命（证据质量+来源）/圈养野生/data_source。体质量等快照缺的列可查 1–2 个公开源（Crossref 文献/出版社页面），来源如实写入 data_source 列。
+### T3 表 B 事件 → data/tableB_events.csv
+每物种×事件一行（预期 60–150 行）：event_id、species、event（受孕/出生/断奶/性成熟/其他生活史事件）、age_days、age_source（=anage snapshot 行 / 外部源+URL）、uncertainty、quality（H/M/L）。**优先从 anage 快照列机械导出**；快照缺的事件才补外部源。
+### T4 快照清单 → data/manifests/sources.csv
+每条数据源：source_id、描述、URL/DOI、版本/日期（快照日期=2026-09-30 或源标注日期）、获取方式（MOESM 直链/Zenodo/...）。必含 anage 快照（MOESM3_ESM.xlsx 来源 URL，见 lit/lu2023_key_extracts.txt）与表 A/B 用到的外部源。
+### T5 stage2a_note.md（≤30 行）
+物种集+选择理由、表 A 行数、表 B 行数、anage 快照列覆盖情况、缺的数据与补源方式、给段2b 的注意事项（A2 自建所需锚点已齐/未齐）。
+
+## 完成标准
+- 四件落盘：data/tableA_species.csv、data/tableB_events.csv、data/manifests/sources.csv、stage2a_note.md（progress 文件另计）
+- 零 outcome 计算、不写任何方法脚本（code/A0–A3 属段2b）、不画方法图谱（figures/ 属段2b）
+- 全部完成后只输出一行：DONE stage2a 007

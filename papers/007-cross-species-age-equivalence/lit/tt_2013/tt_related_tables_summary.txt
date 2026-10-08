@@ -1,0 +1,22 @@
+# tt /related-tables/ parse summary
+
+T01 |  11 rows x  9 cols | ctx=Upper - Lower Percentiles (Brush-tailed Opossum) | hdr=wdt_ID | Event | Location | Quoll Lower 95 | Quoll Upper 95 | Brush-tailed Opossum Lower 95 | Brush-tailed Opossum Upper
+T02 |  11 rows x  5 cols | ctx=Upper-Lower Percentiles (Cat) | hdr=wdt_ID | Event | Location | Cat Lower 95 | Cat Upper 95
+T03 |  11 rows x 13 cols | ctx=Upper - Lower Percentiles (Dunnart) | hdr=wdt_ID | Event | Location | Macaque Lower 95 | Macaque Upper 95 | Human Lower 95 | Human Upper 95 | Short-tailed Opossum
+T04 |  11 rows x  5 cols | ctx=Upper - Lower Percentiles (Ferret) | hdr=wdt_ID | Event | Location | Ferret Lower 95 | Ferret Upper 95
+T05 |  11 rows x 13 cols | ctx=Upper - Lower 95 Percentiles (Gerbil) | hdr=wdt_ID | Event | Location | Rat Lower 95 | Rat Upper 95 | Mouse Lower 95 | Mouse Upper 95 | Hamster Lower 95 | Hamster U
+T06 |  11 rows x  5 cols | ctx=Upper - Lower Percentiles (Guinea Pig) | hdr=wdt_ID | Event | Location | Guinea Pig Lower 95 | Guinea Pig Upper 95
+T07 |  11 rows x 13 cols | ctx=Upper - Lower 95 Percentiles (Hamster) | hdr=wdt_ID | Event | Location | Rat Lower 95 | Rat Upper 95 | Mouse Lower 95 | Mouse Upper 95 | Hamster Lower 95 | Hamster U
+T08 |  11 rows x 13 cols | ctx=Upper - Lower Percentiles (Human) | hdr=wdt_ID | Event | Location | Macaque Lower 95 | Macaque Upper 95 | Human Lower 95 | Human Upper 95 | Short-tailed Opossum
+T09 |  11 rows x 13 cols | ctx=Upper - Lower 95 Percentiles (Mouse) | hdr=wdt_ID | Event | Location | Rat Lower 95 | Rat Upper 95 | Mouse Lower 95 | Mouse Upper 95 | Hamster Lower 95 | Hamster U
+T10 |  11 rows x  9 cols | ctx=Upper - Lower Percentiles (Quokka) | hdr=wdt_ID | Event | Location | Quoll Lower 95 | Quoll Upper 95 | Brush-tailed Opossum Lower 95 | Brush-tailed Opossum Upper
+T11 |  11 rows x  9 cols | ctx=Upper - Lower Percentiles (Quoll) | hdr=wdt_ID | Event | Location | Quoll Lower 95 | Quoll Upper 95 | Brush-tailed Opossum Lower 95 | Brush-tailed Opossum Upper
+T12 |  11 rows x  5 cols | ctx=Upper - Lower Percentiles (Rabbit) | hdr=wdt_ID | Event | Location | Rabbit Lower 95 | Rabbit Upper 95
+T13 |  11 rows x 13 cols | ctx=Upper - Lower 95 Percentiles (Rat) | hdr=wdt_ID | Event | Location | Rat Lower 95 | Rat Upper 95 | Mouse Lower 95 | Mouse Upper 95 | Hamster Lower 95 | Hamster U
+T14 |  11 rows x 13 cols | ctx=Upper - Lower Percentiles (Rhesus Macaque) | hdr=wdt_ID | Event | Location | Macaque Lower 95 | Macaque Upper 95 | Human Lower 95 | Human Upper 95 | Short-tailed Opossum
+T15 |  11 rows x  5 cols | ctx=Upper - Lower Percentiles (Sheep) | hdr=wdt_ID | Event | Location | Sheep Lower 95 | Sheep Upper 95
+T16 |  11 rows x 13 cols | ctx=Upper - Lower Percentiles (Short-tailed Opossum) | hdr=wdt_ID | Event | Location | Macaque Lower 95 | Macaque Upper 95 | Human Lower 95 | Human Upper 95 | Short-tailed Opossum
+T17 |  11 rows x 13 cols | ctx=Upper - Lower 95 Percentiles (Spiny Mouse) | hdr=wdt_ID | Event | Location | Rat Lower 95 | Rat Upper 95 | Mouse Lower 95 | Mouse Upper 95 | Hamster Lower 95 | Hamster U
+T18 |  11 rows x  7 cols | ctx=Upper - Lower Percentiles (Wallaby) | hdr=wdt_ID | Event | Location | Dunnart Lower 95 | Dunnart Upper 95 | Wallaby Lower 95 | Wallaby Upper 95
+
+total data rows: 198

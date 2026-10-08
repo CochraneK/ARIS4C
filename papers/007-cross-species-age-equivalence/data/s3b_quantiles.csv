@@ -1,0 +1,55 @@
+species,q,a_years
+Cat / Domestic cat,0.25,7.5
+Cat / Domestic cat,0.5,15.0
+Cat / Domestic cat,0.75,22.5
+Cat / Domestic cat,0.9,27.0
+Cat / Domestic cat,0.95,28.5
+Cat / Domestic cat,0.99,29.7
+Chimpanzee,0.25,14.85
+Chimpanzee,0.5,29.7
+Chimpanzee,0.75,44.55
+Chimpanzee,0.9,53.46
+Chimpanzee,0.95,56.43
+Chimpanzee,0.99,58.806
+Dog,0.25,5.15
+Dog,0.5,10.3
+Dog,0.75,15.45
+Dog,0.9,18.54
+Dog,0.95,19.57
+Dog,0.99,20.394
+Domestic pig,0.25,6.75
+Domestic pig,0.5,13.5
+Domestic pig,0.75,20.25
+Domestic pig,0.9,24.3
+Domestic pig,0.95,25.65
+Domestic pig,0.99,26.73
+European rabbit,0.25,2.25
+European rabbit,0.5,4.5
+European rabbit,0.75,6.75
+European rabbit,0.9,8.1
+European rabbit,0.95,8.55
+European rabbit,0.99,8.91
+Horse,0.25,14.25
+Horse,0.5,28.5
+Horse,0.75,42.75
+Horse,0.9,51.3
+Horse,0.95,54.15
+Horse,0.99,56.43
+Human,0.25,30.625
+Human,0.5,61.25
+Human,0.75,91.875
+Human,0.9,110.25
+Human,0.95,116.375
+Human,0.99,121.275
+Meerkat,0.25,5.15
+Meerkat,0.5,10.3
+Meerkat,0.75,15.45
+Meerkat,0.9,18.54
+Meerkat,0.95,19.57
+Meerkat,0.99,20.394
+Mouse / Mouse  / Wild mouse,0.25,1.0
+Mouse / Mouse  / Wild mouse,0.5,2.0
+Mouse / Mouse  / Wild mouse,0.75,3.0
+Mouse / Mouse  / Wild mouse,0.9,3.6
+Mouse / Mouse  / Wild mouse,0.95,3.8
+Mouse / Mouse  / Wild mouse,0.99,3.96

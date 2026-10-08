@@ -1,0 +1,45 @@
+# ARIS4C-007 段2b（图谱+复现+表E+summary）executor 任务
+
+## 背景
+段2 前两次运行死于 128K 上下文溢出（任务太大）。现拆段：**2a 已完成并验收**（数据表全在盘上），本会话只做图谱+复现。
+
+## 身份与纪律
+- 你是 ARIS4C-007-cross-species-age-equivalence 重跑的 stage 2b executor。
+- 禁止读取/复制 D:\Software\ARIS4C\papers\ 旧仓库任何代码/数据/结果。
+- **工具调用总数 ≤30**；单次推理 ≤2 句；python 输出 ≤20 行；中间结果写盘，**不重复下载、不重复读同一文件**。
+- **禁 grep/read 任何 .xml / .html 文件**（minified 单行，一次命中=整文件入上下文，两次崩溃的根因）。
+- 落盘产物分块短写（heredoc 追加，单块 ≤60 行）。
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+- 进度随时追加到 stage2b_progress.md（每完成一步一行）。
+- OpenAlex 今日配额耗尽，本会话不需要它（数据全在盘上）。
+
+## 已在盘上（直接用，勿重取）
+- 段2a 交付：data/tableA_species.csv（9 物种：人/小鼠/黑猩猩/猫/犬/兔/猪/马/狐獴，寿命 4.0–122.5y）、data/tableB_events.csv（75 行，day0=出生, conception=负值, 每事件 anAge/PanTHERIA 双估计）、data/manifests/sources.csv、stage2a_note.md（含双估计选择建议：主用 anAge 列, PT 作敏感性）
+- 补充材料解析：data/suppl/（anage_lu2023_snapshot.csv 5475 行、s3_clock1/2/3.csv 权重、s1_samples 185 物种、s2 回归系数）
+- **A3 精确公式（已验证, 勿再碰 XML）：lit/clock3_formulas.txt**（formula 4–10 + 1.3× 稳健性变体 + 6 个手算参考值, 容差 1e-6）
+- 文献要点：lit/lu2023_key_extracts.txt、lit/crofts2023_key_extracts.txt、lit/REGISTRY.md、data/DATA_PROFILE.md、stage1_summary.md（verdict=GO-with-caution）
+- 段1 冻结设计：RESEARCH_BRIEF.md 行 32–37（A0–A3 定义）
+
+## 冻结定义（照此实现，不得结果感知拟合）
+- **A0 朴素寿命比**：典型/预期寿命的线性映射（"狗年"级弱基线）。tableA 无典型寿命列 → 用 anage 快照中可用的寿命列或 max_age_yrs 作代理，选择与理由写入脚本 docstring + stage2_summary。
+- **A1 最大寿命相对年龄**：R_max(s,a) = a / L_max,s（冻结公式）。
+- **A2 生活史锚点映射**：经同源生活史事件（受孕/出生、断奶、性成熟）的逐段单调映射。Animal-Age 基线 GitHub 0 结果（前次已查, 勿再查）→ **自建**：逐段线性（或单调）连接锚点, 把物种锚点龄映射到参照系（人类锚点龄）, 锚点取 tableB 中 anAge 主估计, 设计写入脚本 docstring。
+- **A3 log-linear 生活史变换**：lu2023 formula (4)(5)(8)(9), m̂ = 5·(G/ASM)^0.38（不依赖 L_max 的默认版）；1.3× L_max 校正的 oracle m* 变体（formula 6）仅作稳健性, 不作默认。实现后必须对上 clock3_formulas.txt 的 6 个参考值。
+
+## 任务
+### S1 方法图谱（7 主图 #1）→ figures/
+A0–A6 概念图（markdown 图或 SVG 均可）：每方法标注输入、输出坐标、已知局限。A4 事件尺度(Translating Time)/A5 生存等价/A6 分子时钟只画概念（属段3, 本会话不实现）。
+### S3 四映射脚本 → code/
+A0/A1/A2/A3 各一脚本；每个脚本：读 tableA（+ tableB 供 A2 锚点）→ 写自己的输出片段（csv）；顶部 docstring 写清公式/设计/代理选择/换算常数（365.25 d/y）。不拟合任何结果感知参数。
+### 表 E（部分）→ data/tableE_partial.csv
+评估网格：9 物种 × 标准化年龄分位数 {0.25, 0.5, 0.75, 0.90, 0.95, 0.99}（标准化=该物种 0→L_max 的相对位置, 分位数对应物种年龄 a_q = q·L_max）× 四方法输出。每格输出区间/分布（如 anAge 与 PanTHERIA 双输入下的 y 范围）, 不压成单点。
+### 验收
+- 四方法一键复现（脚本+读表 A/B → 写表 E 片段）
+- 2 物种 × 2 方法抽查手算一致（A3 必须用 clock3_formulas.txt 参考值）
+### S4 stage2_summary.md（≤40 行）
+合并 2a+2b：S1/S2/S3 完成度 + AnAge 快照来源（MOESM3, 日期）+ Animal-Age 基线（未找到→自建 A2）+ 表 A/B/E 行数 + A3 参考值核对结果 + 已知问题（含 stage2a_note 遗留：PT 双估计、References 列 float 损坏、PanTHERIA DOI 未验证）+ 段3 预估（A4 复现/A5 构造/A6 时钟应用 的阻塞点）。
+
+## 完成标准
+- 落盘：figures/ 方法图谱、code/ 四脚本、data/tableE_partial.csv、stage2_summary.md（progress 另计）
+- 零 outcome 计算：不做 Tier 1–4 任何验证、不跑 A4/A5/A6、不算分歧度量（H1 检验属段3）
+- 全部完成后只输出一行：DONE stage2b 007

@@ -1,0 +1,31 @@
+你是 007 跨物种年龄等价项目的段3a executor。本段唯一任务：复现 A4 = Translating Time 映射（RESEARCH_BRIEF.md 行 32–40 的 A4 定义；brief 全文可读）。
+
+## 目标对象（宿主机侧已核实，勿再检索身份）
+- A4 正确出处 = Workman AD, Charvet CJ, Clancy B, Darlington RB, Finlay BL. 2013. "Modeling transformations of neurodevelopmental sequences across mammalian species." J Neurosci 33:7368-7383. DOI 10.1523/jneurosci.5746-12.2013。官网 www.translatingtime.org。
+- 重要纠错：crofts2023（lit/crofts2023_protocol.txt）是「甲基化速率×最大寿命标度律」，**不是** Translating Time，禁止把 A4 配对到它。
+- 模型形式（/the-model/ 页，已提取至 lit/tt_2013/tt_the_model_text.txt）：每物种 Y = onset + slope × eventscale（+ 交互项），quasi-Newton 拟合，预测 PC 日 vs 实证 r=0.993；PC0=物种典型受孕日；出生=PN0；官方声明超出实证事件范围的日期不准。
+
+## 宿主机侧已预提取资产（只读这些小文件）
+- lit/tt_2013/tt_related_tables.csv —— 18 物种 × 11 事件的 PC 日龄 + 95% CI（Lower/Upper 列）。11 事件全部是早胚胎神经事件；域：mouse PC 9.1–27.4d、human 22.9–108.4d、cat 14.1–61.7d、rabbit 9.5–34.7d。
+- lit/tt_2013/tt_species_info_text.txt —— 19 物种（含 chimpanzee）脑重/体重/妊娠日参数。
+- lit/tt_2013/tt_the_model_text.txt —— 模型方程与域声明。
+- lit/tt_2013/calculation.js —— 官网黑盒 AJAX 协议（仅供可选探针，不作硬依赖）。
+- data/tableA_species.csv（9 冻结物种）、data/tableB_events.csv（75 事件）、data/tableE_partial.csv（当前 216 数据行，9×6 分位×4 方法 A0–A3，**不得改动既有行**）。
+
+## 任务（按序）
+T1 尝试获取 Workman 2013 全文/补充数据（完整 ~1000 事件集，域=产前→人产后 3 年）：最多 2 次网络尝试（出版商页面/PMC/官方数据仓库）。拿到完整事件表 → 用完整集重拟合；付费墙或拿不到 → 立即停，转 T2（不要反复重试）。
+T2（T1 失败的 fallback，或 T1 成功后的补充）：用 tt_related_tables.csv 的 11 事件子集，为每个可用物种拟合 Y = onset + slope × rank（事件规模=事件在 11 事件中的共同秩 1–11，跨物种同一事件同秩），最小二乘即可；记录 per-species onset/slope/r²/n。
+T3 验证：(a) 拟合值回代 11 事件点，应落在发表 95% CI 内（或报告偏离数）；(b) 可选：按 calculation.js 协议 POST https://www.translatingtime.org/wp-admin/admin-ajax.php（action=calculation_days_sepcies_action）做 ≤5 次探针交叉对照——已知 calculate_day_pet 常报 "Please don't change min day!"、calculate_day_humans 语义近恒等，**均不作硬依赖**，探针失败直接跳过并在小结注明。
+T4 生成 A4 映射（code/a4_translating_time.py）：对 human/mouse/cat/rabbit（子集覆盖的 4 个冻结物种；chimpanzee 在完整模型但不在 11 事件子集 → 按未覆盖处理并注明），把 tableE 的 6 个分位年龄点（a_years×365.25=天，按 tableA 的出生参照）映射为人等价年龄（人日/365.25），用 per-species 拟合 + 事件点 CI 传播出 [out_low, out_high, out_mid]；对超出该物种 11 事件域的点，input_note 标 out_of_domain=true（并给出域），域内标 in_domain。未覆盖物种（dog/pig/horse/meerkat 等，含 chimpanzee）：A4 行 out_low/out_high/out_mid 留空，input_note="species not in Translating Time 11-event subset"。
+T5 输出：
+  - data/tt_fit.csv（per-species 拟合参数）
+  - tableE_partial.csv 追加 A4 行（9 物种×6 分位=54 行，结构保持 9×6×5=270 数据行）
+  - results/stage3a_summary.md ≤30 行：T1 结果、拟合质量、验证、域限制、对 Step5 的建议（A4 应在 tableB 发育事件龄评估）
+  - 末行写 DONE stage3a 007
+
+## 纪律（硬性，违反即失败）
+- 总工具调用 ≤30；每个 python 输出 ≤20 行；推理每步 1–2 句。
+- 禁止 grep/read 任何 .xml/.html 文件（lit/tt_site_*.html、crofts2023.xml 等）；禁止读 data/suppl/ 大 CSV 全文（可用 python 按需取列，输出 ≤20 行）。
+- 不重复下载已存在文件；中间结果一律写盘；写大文件分块（heredoc 追加，单块 ≤80 行）。
+- 进度：每完成一个 T 追加一行到 stage3a_progress.md（时间戳+一行结果）。
+- 网络失败/配额报错：记录并走 fallback，禁止死循环重试（同一 URL 最多 2 次）。

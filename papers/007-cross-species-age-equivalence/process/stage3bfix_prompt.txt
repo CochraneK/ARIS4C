@@ -1,0 +1,36 @@
+# ARIS4C-007 段3b 修复（最小修复，T1 已在盘，续 T2'）executor 任务
+
+## 背景（宿主判定，勿读旧日志）
+- 前 run 死于第 29 次调用（超 1 次）末次响应 reason='length' 截断 + python -c 引号被 shell 破坏（SyntaxError ×3）。
+- 盘上实况：仅 T1 产物存在；T2–T7 全缺；日志中 "DONE stage3b 007" 是截断响应文本，非真实写入（宿主已逐项核盘）。
+- 本 run = 从 T2' 续跑。T1 已完成，勿重做。
+
+## 先读（各 1 次）
+- stage3b_prompt.txt（49 行）——A5 冻结设计 + 物种映射 + 在盘指针（权威规格，照它执行）
+- data/raw/s3b_anchors.json（691B）——T1 初版：9 物种 {latin, maxanAge}
+- data/s3b_quantiles.csv head 5 行——T1 已完成（54 数据行 = 9 物种 × 6 q）
+
+## 宿主已验证事实（注入，勿再验证）
+- anAge maxAnAge **单位=年**（Human 122.5 / Mouse 4.0 / Cat 30.0 / Chimp 59.4 / Dog 20.6 / Pig 27.0 / Rabbit 9.0 / Horse 57.0 / Meerkat 20.6）
+- 前 run SSA 人表三路全败（搜索引擎 403 / archive.org wayback FAIL / mortality.org FAIL）
+- 前 run 未落盘任何可引用鼠 Gompertz 参数（mouse_gompertz.json 不存在）
+- 7 物种中位寿命先验参考值（仅参考，必须重新检索并给可引用来源）：Cat ~15、Rabbit ~10、Dog ~13、Horse ~28-30、Pig 6-10（农场/宠物歧义，选一并注明口径）、Chimp ~40-50、Meerkat ~12-14
+- tableE.csv 现 270 数据行（A0–A4 完好，**禁动**）；A5=0 行
+
+## 任务
+- T2' SSA 人表：直连 https://www.ssa.gov/oact/STATS/t4c6data.csv（python urllib+UA；列 Age,rx,lx,dx,Tx,Lx,ex,e0；S=lx/l0；整岁 0–120+）→ data/raw/ssa_life_table.csv。403 → 换 CDC NCHS / WHO；全败 → Human 降级 Tier 2（两锚点：m 可引用 + 122.5）+ 记 deviation。
+- T3' 鼠 Gompertz：WebSearch 1 次（lab mouse C57BL/6 Gompertz mortality parameters mu0 delta per day）。找到可引用 (μ0, δ) → data/raw/mouse_gompertz.json（含 source）；找不到 → 鼠走 Tier 2（两锚点：m + 4.0 年）。
+- T4' 7 物种中位寿命 m：WebSearch ≤2 次（圈养/可引用优先；每个 m 带 source）→ 更新 s3b_anchors.json（每物种补 m, m_low, m_high, m_source；maxanAge/latin 已在盘勿覆盖丢）。
+- T5 s3b_tableC.py（write_file 写脚本再执行）→ data/tableC.csv（列 species,age_years,S,hazard_discrete,tier,source；mouse 30 天箱 0–4 年，其余 7 物种 1 岁箱至 cap；Human S=lx/l0，S_sp 低于人表末值 → out 端 capped 注记）+ data/tableC_summary.json。
+- T6 s3b_a5.py（write_file）→ 幂等追加 54 A5 行至 tableE.csv（9 物种 × 6 q；method="A5"，out_unit="human_eq_years"；out_low/out_high = m 区间两端重算；Human sanity |out_mid−a_years|≤1 岁；先查已有 A5 行防重复）→ 合计 324 数据行。
+- T7 results/stage3b_summary.md ≤30 行（可 2 次 append 写入）+ 末行 DONE stage3b 007。
+
+## 纪律（必须遵守，前 run 死于违反）
+- 工具调用 ≤26；单响应 ≤1 调用；参数 ≤20 行；文本 ≤2 句
+- **脚本一律 write_file 落盘后执行；禁 python -c 内嵌复杂引号**
+- **禁 read results/*.log（前 run 日志 968KB，读入直接爆上下文）**
+- python 输出 ≤15 行；进度行与任务同命令 append 进 stage3b_progress.md
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## 禁止
+- 重取 anAge/TT/文献（T3'/T4' 检索除外）；改 A0–A4 行；任何 OpenAlex 调用；重做 T1

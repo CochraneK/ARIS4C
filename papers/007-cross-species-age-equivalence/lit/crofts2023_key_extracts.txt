@@ -1,0 +1,28 @@
+# key extracts from crofts2023.xml
+
+[article-title] DNA methylation rates scale with maximum lifespan across mammals
+
+[article-title] The origin of allometric scaling laws in biology from genomes to ecosystems: towards a quantitative unifying theory of biological structure and organization
+
+[abstract] DNA methylation rates have previously been found to broadly correlate with maximum lifespan in mammals, yet no precise relationship has been observed. We developed a statistically robust framework to compare methylation rates at conserved age-related sites across mammals. We found that methylation rates negatively scale with maximum lifespan in both blood and skin. The emergence of explicit scaling suggests that methylation rates are, or are linked to, an evolutionary constraint on maximum lifespan acting across diverse mammalian lineages.
+
+[supplementary/data links in raw XML]
+GSE136296
+GSE223748
+
+[keyword contexts]
+--- AnAge: 2 shown ---
+itionally, we removed samples below the age of sexual maturity known to exhibit non-linear dynamics ). The age of sexual maturity, as reported in the AnAge database , was then subtracted from all ages so that 0 represented the age of sexual maturity. To develop a statistically robust framework, we ordered the datasets by maximum observed age and compared each mammal with its neighbors in a sequential p
+n Consortium and is publicly available on the Gene Expression Omnibus under accession number ). Data on maximum lifespan and mass were taken from the AnAge database ( https://genomics.senescence.info/species/index.html . Results of the primary analysis in blood and skin samples can be found in All code used for the analysis (conducted in Python 3.11.4) is available at https://github.com/elc08/meth_scal
+--- dataset: 3 shown ---
+ge ranges results in an artificial negative association with maximum lifespan ( To develop a statistically robust framework, we therefore ordered the datasets by maximum observed age and compared each mammal with its neighbors in a sequential pairwise manner (step 3 in ). We started from the mammal with the shortest observed age, which we refer to as the baseline species. For each comparison, we restrict
+ 3 in ). We started from the mammal with the shortest observed age, which we refer to as the baseline species. For each comparison, we restricted the datasets of both mammals to be as close as possible to each other (step 4 in For each pairwise comparison, we selected the common set of age-related CpG sites passing an threshold and sharing the same directionality. For each CpG in this set, we calculated 
+o validate that our methodology removes any biases resulting in artificial scaling, we applied it to simulated data that use the ages observed in our dataset but with rates randomly drawn for each site from all the observed rates across all mammals. The absence of any scaling law observed in this simulation emphasizes the robustness of our approach in contrast to previous methods ( To explore the existen
+--- aging marker: 0 shown ---
+(no match)
+--- clock: 3 shown ---
+lls. Methylation proportions of some CpG sites change in a predictable way with age. This observation led to the development of the first ‘epigenetic clocks’ in the early 2010s (refs. ), which used methylation proportions of selected CpG sites to predict chronological age in humans. Since then, epigenetic clocks have been extended to numerous other organisms, including the development of clocks that me
+ in the early 2010s (refs. ), which used methylation proportions of selected CpG sites to predict chronological age in humans. Since then, epigenetic clocks have been extended to numerous other organisms, including the development of clocks that measure age across mammalian species Recently, in mammals, DNA methylation rates have been shown to generally correlate with a species’ maximum lifespan, altho
+es to predict chronological age in humans. Since then, epigenetic clocks have been extended to numerous other organisms, including the development of clocks that measure age across mammalian species Recently, in mammals, DNA methylation rates have been shown to generally correlate with a species’ maximum lifespan, although no scaling has been observed and the biological mechanisms behind the correlatio
+--- supplementary: 0 shown ---
+(no match)

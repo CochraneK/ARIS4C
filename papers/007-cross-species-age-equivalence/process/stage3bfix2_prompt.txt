@@ -1,0 +1,41 @@
+# ARIS4C-007 段3b fix2（末段：仅 T6+T7）executor 任务
+
+## 背景（宿主判定，勿读旧日志）
+- 前 run（rI5lTe）死于末次响应 reason='length'（假完成：无 DONE 行、T6/T7 产物缺失，宿主已核盘）。
+- 盘上实况（宿主已逐项验证）：
+  - T1 ✓ data/s3b_quantiles.csv（54 数据行）+ data/raw/s3b_anchors.json 初版
+  - T3'/T4' ✓ data/raw/s3b_anchors.json（2102B @11:17，9 物种均含 m/m_low/m_high/m_source，全 Tier2，host-prior DEV-3 定案，最终）
+  - T5 ✓ data/tableC.csv（402 数据行）+ data/tableC_summary.json（@11:17，每物种 Gompertz lambda/delta）
+  - tableE.csv 仍 270 数据行（A0–A4 完好，A5=0 行）
+  - 无 stage3b_summary.md、无 DONE stage3b 007
+- 本 run = 仅 T6+T7。T1/T3'/T4'/T5 已完成，勿重做。
+
+## 先读（各 1 次）
+- stage3b_prompt.txt（49 行）—— A5 冻结规格（method/out_unit/sanity 口径，照它执行）
+- data/tableC.csv head 10 行（确认列名与箱宽）
+
+## 宿主已验证事实（注入，勿再验证）
+- anAge maxAnAge 单位=年；9 物种 S 曲线已在 tableC（Tier2 Gompertz，S_at_maxanAge=0.001）
+- anchors 9 物种 m：Cat 15.0(13.5-16.5) / Chimp 45.0(40-50) / Dog 13.0(11.7-14.3) / Pig 8.0(6-10 farm 口径) / Rabbit 8.0(7-8.9) / Horse 29.0(28-30) / Human 76.4(68.8-84, US LEAB 2021) / Meerkat 13.0(12-14) / Mouse 3.0(2.7-3.3)
+- SSA/CDC/WHO 人表本环境 WAF 全拦（2 run × 3 路 403/FAIL）→ Human 维持 Tier2-dev1，勿再重试
+- 鼠 Gompertz 无可引用来源 → Mouse 维持 Tier2-dev2，勿再重试
+
+## 任务
+- T6 s3b_a5.py（write_file 落盘后执行）：
+  - 读 data/tableC.csv + data/raw/s3b_anchors.json，幂等追加 54 行 A5 至 data/tableE.csv（9 物种 × 6 q；method="A5"；out_unit="human_eq_years"）
+  - out_mid/out_low/out_high 按 stage3b_prompt.txt 的 A5 规格重算（m 与 m_low/m_high 区间两端；Human 行 out_mid=a_years）
+  - Human sanity：|out_mid − a_years| ≤ 1 岁，记录最大偏差
+  - 先查 tableE 已有 A5 行防重复（当前 A5=0 行）
+  - → tableE.csv 合计 324 数据行
+- T7 results/stage3b_summary.md ≤30 行（2 次 append 写入）+ 末行 DONE stage3b 007
+  - 内容：9 物种 tier 表 + DEV 清单（DEV-2/3/5/6 host-prior 定案及理由）、tableC 402 行、A5 追加 54 行、Human sanity 结果、局限（全物种 Tier2：无可引用完整人表/鼠 Gompertz 参数）
+
+## 纪律（必须遵守，前 run 死于违反）
+- 工具调用 ≤12；单响应 ≤1 调用；参数 ≤20 行；文本 ≤2 句
+- 脚本一律 write_file 落盘后执行；禁 python -c 内嵌复杂引号（shell 引号破坏，3 次实证）
+- 禁 read results/*.log（前 run 日志 343KB，读入直接爆上下文）
+- python 输出 ≤15 行；进度行与任务同命令 append 进 stage3b_progress.md
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## 禁止
+- 重做 T1/T3'/T4'/T5；改 tableC.csv 或 tableE 的 A0–A4 行；任何 WebSearch/OpenAlex/网络抓取；重试 SSA/CDC/WHO

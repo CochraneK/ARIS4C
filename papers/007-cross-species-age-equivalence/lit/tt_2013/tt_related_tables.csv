@@ -1,0 +1,199 @@
+table_id,table_context,col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10,col_11,col_12,col_13
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),1,SC segregation,Mesencephalon,55.6,69.9,58.2,71.4,73.2,91.4,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),2,Occulomotor nucleus cell generation onset,Mesencephalon,13.7,22.3,14.1,23.1,17.9,29.4,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),3,Cranial motor nuclei peak,Mesencephalon,13.5,22.3,14,23,17.8,29.2,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),4,Medial cuneate nucleus peak,Mesencephalon,18.1,27.1,18.4,28.5,23.3,36.2,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),5,medial cuneate nucleus offset,Mesencephalon,24.2,36,24.7,37.7,31.1,48.1,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),6,Lateral cuneate nucleus onset,Mesencephalon,17.4,26.1,17.7,27.3,22.4,34.8,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),7,Lateral cuneate nucleus peak,Mesencephalon,20.6,30.9,21,32.4,26.4,41.3,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),8,Lateral cuneate nucleus offset,Mesencephalon,24.8,37.4,25.3,39.2,31.9,50.1,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),9,Primary somatosensory cortex layer VI offset,Cortex,28.3,39.3,29,41,36.6,52.3,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),10,Primary somatosensory cortex layer V offset,Cortex,30.3,41.9,31.2,43.4,39.2,55.6,,,,
+T01,Upper - Lower Percentiles (Brush-tailed Opossum),,,Location,,,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),1,SC segregation,Mesencephalon,51.6,61.7,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),2,Occulomotor nucleus cell generation onset,Mesencephalon,14.3,22,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),3,Cranial motor nuclei peak,Mesencephalon,14.1,22.2,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),4,Medial cuneate nucleus peak,Mesencephalon,18.1,26.8,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),5,medial cuneate nucleus offset,Mesencephalon,23.6,34.6,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),6,Lateral cuneate nucleus onset,Mesencephalon,17.5,25.8,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),7,Lateral cuneate nucleus peak,Mesencephalon,20.4,30,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),8,Lateral cuneate nucleus offset,Mesencephalon,24.2,35.8,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),9,Primary somatosensory cortex layer VI offset,Cortex,28.1,38.1,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),10,Primary somatosensory cortex layer V offset,Cortex,29.9,40.3,,,,,,,,
+T02,Upper-Lower Percentiles (Cat),,,Location,,,,,,,,,,
+T03,Upper - Lower Percentiles (Dunnart),1,SC segregation,Mesencephalon,89.7,108.4,158.4,209.2,33.6,42.7,45.7,59,82.5,101.1
+T03,Upper - Lower Percentiles (Dunnart),2,Occulomotor nucleus cell generation onset,Mesencephalon,23.2,36.4,19.3,39.5,8.2,13.8,11.2,19,20.1,32.7
+T03,Upper - Lower Percentiles (Dunnart),3,Cranial motor nuclei peak,Mesencephalon,22.9,36.3,19.1,39.3,8.2,13.6,11.1,18.8,20,32.4
+T03,Upper - Lower Percentiles (Dunnart),4,Medial cuneate nucleus peak,Mesencephalon,29.7,44.8,28.5,54,10.7,16.9,14.5,23.4,26.2,40.2
+T03,Upper - Lower Percentiles (Dunnart),5,medial cuneate nucleus offset,Mesencephalon,39.3,58.6,43.7,82.1,14.3,22.4,19.4,31.1,34.9,53.5
+T03,Upper - Lower Percentiles (Dunnart),6,Lateral cuneate nucleus onset,Mesencephalon,28.6,42.9,26.9,50.8,10.3,16.2,13.9,22.5,25.1,38.8
+T03,Upper - Lower Percentiles (Dunnart),7,Lateral cuneate nucleus peak,Mesencephalon,33.7,50.5,34.6,65.1,12.2,19.2,16.5,26.7,29.9,45.6
+T03,Upper - Lower Percentiles (Dunnart),8,Lateral cuneate nucleus offset,Mesencephalon,40.3,60.8,45.8,86.4,14.7,23.3,20,32.1,35.9,55.6
+T03,Upper - Lower Percentiles (Dunnart),9,Primary somatosensory cortex layer VI offset,Cortex,46.5,64.1,49.4,81.5,16.8,24.5,22.7,33.9,41.3,57.9
+T03,Upper - Lower Percentiles (Dunnart),10,Primary somatosensory cortex layer V offset,Cortex,49.7,67.9,55,88.8,18.1,25.8,24.5,35.9,44.2,61.5
+T03,Upper - Lower Percentiles (Dunnart),,,Location,,,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),1,SC segregation,Mesencephalon,44.7,54.2,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),2,Occulomotor nucleus cell generation onset,Mesencephalon,13.1,20.4,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),3,Cranial motor nuclei peak,Mesencephalon,13,20.3,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),4,Medial cuneate nucleus peak,Mesencephalon,16.6,24.3,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),5,medial cuneate nucleus offset,Mesencephalon,21.4,31,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),6,Lateral cuneate nucleus onset,Mesencephalon,16,23.5,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),7,Lateral cuneate nucleus peak,Mesencephalon,18.5,27.2,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),8,Lateral cuneate nucleus offset,Mesencephalon,21.9,32,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),9,Primary somatosensory cortex layer VI offset,Cortex,25.8,34.1,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),10,Primary somatosensory cortex layer V offset,Cortex,27.3,36,,,,,,,,
+T04,Upper - Lower Percentiles (Ferret),,,Location,,,,,,,,,,
+T05,Upper - Lower 95 Percentiles (Gerbil),1,SC segregation,Mesencephalon,23.9,27.4,22.4,26,20.4,23.7,28.8,35.9,20.6,27
+T05,Upper - Lower 95 Percentiles (Gerbil),2,Occulomotor nucleus cell generation onset,Mesencephalon,9.2,12.6,7.7,11,8.1,11.3,10.1,18,15.3,19.3
+T05,Upper - Lower 95 Percentiles (Gerbil),3,Cranial motor nuclei peak,Mesencephalon,9.1,12.6,7.7,11,8,11.3,10,18.1,15.3,19.3
+T05,Upper - Lower 95 Percentiles (Gerbil),4,Medial cuneate nucleus peak,Mesencephalon,11,14.6,9.4,13,9.6,12.9,12.3,20.5,16.8,19.8
+T05,Upper - Lower 95 Percentiles (Gerbil),5,medial cuneate nucleus offset,Mesencephalon,13.4,17.7,11.7,16,11.6,15.5,15.4,24.1,18.3,21
+T05,Upper - Lower 95 Percentiles (Gerbil),6,Lateral cuneate nucleus onset,Mesencephalon,10.7,14.2,9.1,12.5,9.4,12.6,12,19.9,16.6,19.7
+T05,Upper - Lower 95 Percentiles (Gerbil),7,Lateral cuneate nucleus peak,Mesencephalon,12,15.9,10.4,14.2,10.5,14,13.6,22.1,17.5,20.3
+T05,Upper - Lower 95 Percentiles (Gerbil),8,Lateral cuneate nucleus offset,Mesencephalon,13.6,18.2,11.9,16.5,11.9,15.9,15.8,24.6,18.4,21.2
+T05,Upper - Lower 95 Percentiles (Gerbil),9,Primary somatosensory cortex layer VI offset,Cortex,12.5,15.7,10.9,14,10.9,13.8,14.1,21.8,17.8,20.2
+T05,Upper - Lower 95 Percentiles (Gerbil),10,Primary somatosensory cortex layer V offset,Cortex,13.1,16.4,11.5,14.6,11.5,14.3,14.8,22.6,18.1,20.4
+T05,Upper - Lower 95 Percentiles (Gerbil),,,Location,,,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),1,SC segregation,Mesencephalon,39.7,47,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),2,Occulomotor nucleus cell generation onset,Mesencephalon,15.1,25.1,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),3,Cranial motor nuclei peak,Mesencephalon,15,25,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),4,Medial cuneate nucleus peak,Mesencephalon,18.2,28.1,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),5,medial cuneate nucleus offset,Mesencephalon,22.4,32.5,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),6,Lateral cuneate nucleus onset,Mesencephalon,17.7,27.3,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),7,Lateral cuneate nucleus peak,Mesencephalon,20,29.9,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),8,Lateral cuneate nucleus offset,Mesencephalon,22.9,33.1,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),9,Primary somatosensory cortex layer VI offset,Cortex,20.6,29.8,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),10,Primary somatosensory cortex layer V offset,Cortex,21.6,30.8,,,,,,,,
+T06,Upper - Lower Percentiles (Guinea Pig),,,Location,,,,,,,,,,
+T07,Upper - Lower 95 Percentiles (Hamster),1,SC segregation,Mesencephalon,23.9,27.4,22.4,26,20.4,23.7,28.8,35.9,20.6,27
+T07,Upper - Lower 95 Percentiles (Hamster),2,Occulomotor nucleus cell generation onset,Mesencephalon,9.2,12.6,7.7,11,8.1,11.3,10.1,18,15.3,19.3
+T07,Upper - Lower 95 Percentiles (Hamster),3,Cranial motor nuclei peak,Mesencephalon,9.1,12.6,7.7,11,8,11.3,10,18.1,15.3,19.3
+T07,Upper - Lower 95 Percentiles (Hamster),4,Medial cuneate nucleus peak,Mesencephalon,11,14.6,9.4,13,9.6,12.9,12.3,20.5,16.8,19.8
+T07,Upper - Lower 95 Percentiles (Hamster),5,medial cuneate nucleus offset,Mesencephalon,13.4,17.7,11.7,16,11.6,15.5,15.4,24.1,18.3,21
+T07,Upper - Lower 95 Percentiles (Hamster),6,Lateral cuneate nucleus onset,Mesencephalon,10.7,14.2,9.1,12.5,9.4,12.6,12,19.9,16.6,19.7
+T07,Upper - Lower 95 Percentiles (Hamster),7,Lateral cuneate nucleus peak,Mesencephalon,12,15.9,10.4,14.2,10.5,14,13.6,22.1,17.5,20.3
+T07,Upper - Lower 95 Percentiles (Hamster),8,Lateral cuneate nucleus offset,Mesencephalon,13.6,18.2,11.9,16.5,11.9,15.9,15.8,24.6,18.4,21.2
+T07,Upper - Lower 95 Percentiles (Hamster),9,Primary somatosensory cortex layer VI offset,Cortex,12.5,15.7,10.9,14,10.9,13.8,14.1,21.8,17.8,20.2
+T07,Upper - Lower 95 Percentiles (Hamster),10,Primary somatosensory cortex layer V offset,Cortex,13.1,16.4,11.5,14.6,11.5,14.3,14.8,22.6,18.1,20.4
+T07,Upper - Lower 95 Percentiles (Hamster),,,Location,,,,,,,,,,
+T08,Upper - Lower Percentiles (Human),1,SC segregation,Mesencephalon,89.7,108.4,158.4,209.2,33.6,42.7,45.7,59,82.5,101.1
+T08,Upper - Lower Percentiles (Human),2,Occulomotor nucleus cell generation onset,Mesencephalon,23.2,36.4,19.3,39.5,8.2,13.8,11.2,19,20.1,32.7
+T08,Upper - Lower Percentiles (Human),3,Cranial motor nuclei peak,Mesencephalon,22.9,36.3,19.1,39.3,8.2,13.6,11.1,18.8,20,32.4
+T08,Upper - Lower Percentiles (Human),4,Medial cuneate nucleus peak,Mesencephalon,29.7,44.8,28.5,54,10.7,16.9,14.5,23.4,26.2,40.2
+T08,Upper - Lower Percentiles (Human),5,medial cuneate nucleus offset,Mesencephalon,39.3,58.6,43.7,82.1,14.3,22.4,19.4,31.1,34.9,53.5
+T08,Upper - Lower Percentiles (Human),6,Lateral cuneate nucleus onset,Mesencephalon,28.6,42.9,26.9,50.8,10.3,16.2,13.9,22.5,25.1,38.8
+T08,Upper - Lower Percentiles (Human),7,Lateral cuneate nucleus peak,Mesencephalon,33.7,50.5,34.6,65.1,12.2,19.2,16.5,26.7,29.9,45.6
+T08,Upper - Lower Percentiles (Human),8,Lateral cuneate nucleus offset,Mesencephalon,40.3,60.8,45.8,86.4,14.7,23.3,20,32.1,35.9,55.6
+T08,Upper - Lower Percentiles (Human),9,Primary somatosensory cortex layer VI offset,Cortex,46.5,64.1,49.4,81.5,16.8,24.5,22.7,33.9,41.3,57.9
+T08,Upper - Lower Percentiles (Human),10,Primary somatosensory cortex layer V offset,Cortex,49.7,67.9,55,88.8,18.1,25.8,24.5,35.9,44.2,61.5
+T08,Upper - Lower Percentiles (Human),,,Location,,,,,,,,,,
+T09,Upper - Lower 95 Percentiles (Mouse),1,SC segregation,Mesencephalon,23.9,27.4,22.4,26,20.4,23.7,28.8,35.9,20.6,27
+T09,Upper - Lower 95 Percentiles (Mouse),2,Occulomotor nucleus cell generation onset,Mesencephalon,9.2,12.6,7.7,11,8.1,11.3,10.1,18,15.3,19.3
+T09,Upper - Lower 95 Percentiles (Mouse),3,Cranial motor nuclei peak,Mesencephalon,9.1,12.6,7.7,11,8,11.3,10,18.1,15.3,19.3
+T09,Upper - Lower 95 Percentiles (Mouse),4,Medial cuneate nucleus peak,Mesencephalon,11,14.6,9.4,13,9.6,12.9,12.3,20.5,16.8,19.8
+T09,Upper - Lower 95 Percentiles (Mouse),5,medial cuneate nucleus offset,Mesencephalon,13.4,17.7,11.7,16,11.6,15.5,15.4,24.1,18.3,21
+T09,Upper - Lower 95 Percentiles (Mouse),6,Lateral cuneate nucleus onset,Mesencephalon,10.7,14.2,9.1,12.5,9.4,12.6,12,19.9,16.6,19.7
+T09,Upper - Lower 95 Percentiles (Mouse),7,Lateral cuneate nucleus peak,Mesencephalon,12,15.9,10.4,14.2,10.5,14,13.6,22.1,17.5,20.3
+T09,Upper - Lower 95 Percentiles (Mouse),8,Lateral cuneate nucleus offset,Mesencephalon,13.6,18.2,11.9,16.5,11.9,15.9,15.8,24.6,18.4,21.2
+T09,Upper - Lower 95 Percentiles (Mouse),9,Primary somatosensory cortex layer VI offset,Cortex,12.5,15.7,10.9,14,10.9,13.8,14.1,21.8,17.8,20.2
+T09,Upper - Lower 95 Percentiles (Mouse),10,Primary somatosensory cortex layer V offset,Cortex,13.1,16.4,11.5,14.6,11.5,14.3,14.8,22.6,18.1,20.4
+T09,Upper - Lower 95 Percentiles (Mouse),,,Location,,,,,,,,,,
+T10,Upper - Lower Percentiles (Quokka),1,SC segregation,Mesencephalon,55.6,69.9,58.2,71.4,73.2,91.4,,,,
+T10,Upper - Lower Percentiles (Quokka),2,Occulomotor nucleus cell generation onset,Mesencephalon,13.7,22.3,14.1,23.1,17.9,29.4,,,,
+T10,Upper - Lower Percentiles (Quokka),3,Cranial motor nuclei peak,Mesencephalon,13.5,22.3,14,23,17.8,29.2,,,,
+T10,Upper - Lower Percentiles (Quokka),4,Medial cuneate nucleus peak,Mesencephalon,18.1,27.1,18.4,28.5,23.3,36.2,,,,
+T10,Upper - Lower Percentiles (Quokka),5,medial cuneate nucleus offset,Mesencephalon,24.2,36,24.7,37.7,31.1,48.1,,,,
+T10,Upper - Lower Percentiles (Quokka),6,Lateral cuneate nucleus onset,Mesencephalon,17.4,26.1,17.7,27.3,22.4,34.8,,,,
+T10,Upper - Lower Percentiles (Quokka),7,Lateral cuneate nucleus peak,Mesencephalon,20.6,30.9,21,32.4,26.4,41.3,,,,
+T10,Upper - Lower Percentiles (Quokka),8,Lateral cuneate nucleus offset,Mesencephalon,24.8,37.4,25.3,39.2,31.9,50.1,,,,
+T10,Upper - Lower Percentiles (Quokka),9,Primary somatosensory cortex layer VI offset,Cortex,28.3,39.3,29,41,36.6,52.3,,,,
+T10,Upper - Lower Percentiles (Quokka),10,Primary somatosensory cortex layer V offset,Cortex,30.3,41.9,31.2,43.4,39.2,55.6,,,,
+T10,Upper - Lower Percentiles (Quokka),,,Location,,,,,,,,,,
+T11,Upper - Lower Percentiles (Quoll),1,SC segregation,Mesencephalon,55.6,69.9,58.2,71.4,73.2,91.4,,,,
+T11,Upper - Lower Percentiles (Quoll),2,Occulomotor nucleus cell generation onset,Mesencephalon,13.7,22.3,14.1,23.1,17.9,29.4,,,,
+T11,Upper - Lower Percentiles (Quoll),3,Cranial motor nuclei peak,Mesencephalon,13.5,22.3,14,23,17.8,29.2,,,,
+T11,Upper - Lower Percentiles (Quoll),4,Medial cuneate nucleus peak,Mesencephalon,18.1,27.1,18.4,28.5,23.3,36.2,,,,
+T11,Upper - Lower Percentiles (Quoll),5,medial cuneate nucleus offset,Mesencephalon,24.2,36,24.7,37.7,31.1,48.1,,,,
+T11,Upper - Lower Percentiles (Quoll),6,Lateral cuneate nucleus onset,Mesencephalon,17.4,26.1,17.7,27.3,22.4,34.8,,,,
+T11,Upper - Lower Percentiles (Quoll),7,Lateral cuneate nucleus peak,Mesencephalon,20.6,30.9,21,32.4,26.4,41.3,,,,
+T11,Upper - Lower Percentiles (Quoll),8,Lateral cuneate nucleus offset,Mesencephalon,24.8,37.4,25.3,39.2,31.9,50.1,,,,
+T11,Upper - Lower Percentiles (Quoll),9,Primary somatosensory cortex layer VI offset,Cortex,28.3,39.3,29,41,36.6,52.3,,,,
+T11,Upper - Lower Percentiles (Quoll),10,Primary somatosensory cortex layer V offset,Cortex,30.3,41.9,31.2,43.4,39.2,55.6,,,,
+T11,Upper - Lower Percentiles (Quoll),,,Location,,,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),1,SC segregation,Mesencephalon,28.9,34.7,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),2,Occulomotor nucleus cell generation onset,Mesencephalon,9.8,14,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),3,Cranial motor nuclei peak,Mesencephalon,9.5,14.3,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),4,Medial cuneate nucleus peak,Mesencephalon,11.8,16.9,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),5,medial cuneate nucleus offset,Mesencephalon,14.9,20.9,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),6,Lateral cuneate nucleus onset,Mesencephalon,11.4,16.3,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),7,Lateral cuneate nucleus peak,Mesencephalon,13.1,18.5,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),8,Lateral cuneate nucleus offset,Mesencephalon,15.2,21.5,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),9,Primary somatosensory cortex layer VI offset,Cortex,13.8,18.2,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),10,Primary somatosensory cortex layer V offset,Cortex,14.5,19.1,,,,,,,,
+T12,Upper - Lower Percentiles (Rabbit),,,Location,,,,,,,,,,
+T13,Upper - Lower 95 Percentiles (Rat),1,SC segregation,Mesencephalon,23.9,27.4,22.4,26,20.4,23.7,28.8,35.9,20.6,27
+T13,Upper - Lower 95 Percentiles (Rat),2,Occulomotor nucleus cell generation onset,Mesencephalon,9.2,12.6,7.7,11,8.1,11.3,10.1,18,15.3,19.3
+T13,Upper - Lower 95 Percentiles (Rat),3,Cranial motor nuclei peak,Mesencephalon,9.1,12.6,7.7,11,8,11.3,10,18.1,15.3,19.3
+T13,Upper - Lower 95 Percentiles (Rat),4,Medial cuneate nucleus peak,Mesencephalon,11,14.6,9.4,13,9.6,12.9,12.3,20.5,16.8,19.8
+T13,Upper - Lower 95 Percentiles (Rat),5,medial cuneate nucleus offset,Mesencephalon,13.4,17.7,11.7,16,11.6,15.5,15.4,24.1,18.3,21
+T13,Upper - Lower 95 Percentiles (Rat),6,Lateral cuneate nucleus onset,Mesencephalon,10.7,14.2,9.1,12.5,9.4,12.6,12,19.9,16.6,19.7
+T13,Upper - Lower 95 Percentiles (Rat),7,Lateral cuneate nucleus peak,Mesencephalon,12,15.9,10.4,14.2,10.5,14,13.6,22.1,17.5,20.3
+T13,Upper - Lower 95 Percentiles (Rat),8,Lateral cuneate nucleus offset,Mesencephalon,13.6,18.2,11.9,16.5,11.9,15.9,15.8,24.6,18.4,21.2
+T13,Upper - Lower 95 Percentiles (Rat),9,Primary somatosensory cortex layer VI offset,Cortex,12.5,15.7,10.9,14,10.9,13.8,14.1,21.8,17.8,20.2
+T13,Upper - Lower 95 Percentiles (Rat),10,Primary somatosensory cortex layer V offset,Cortex,13.1,16.4,11.5,14.6,11.5,14.3,14.8,22.6,18.1,20.4
+T13,Upper - Lower 95 Percentiles (Rat),,,Location,,,,,,,,,,
+T14,Upper - Lower Percentiles (Rhesus Macaque),1,SC segregation,Mesencephalon,89.7,108.4,158.4,209.2,33.6,42.7,45.7,59,82.5,101.1
+T14,Upper - Lower Percentiles (Rhesus Macaque),2,Occulomotor nucleus cell generation onset,Mesencephalon,23.2,36.4,19.3,39.5,8.2,13.8,11.2,19,20.1,32.7
+T14,Upper - Lower Percentiles (Rhesus Macaque),3,Cranial motor nuclei peak,Mesencephalon,22.9,36.3,19.1,39.3,8.2,13.6,11.1,18.8,20,32.4
+T14,Upper - Lower Percentiles (Rhesus Macaque),4,Medial cuneate nucleus peak,Mesencephalon,29.7,44.8,28.5,54,10.7,16.9,14.5,23.4,26.2,40.2
+T14,Upper - Lower Percentiles (Rhesus Macaque),5,medial cuneate nucleus offset,Mesencephalon,39.3,58.6,43.7,82.1,14.3,22.4,19.4,31.1,34.9,53.5
+T14,Upper - Lower Percentiles (Rhesus Macaque),6,Lateral cuneate nucleus onset,Mesencephalon,28.6,42.9,26.9,50.8,10.3,16.2,13.9,22.5,25.1,38.8
+T14,Upper - Lower Percentiles (Rhesus Macaque),7,Lateral cuneate nucleus peak,Mesencephalon,33.7,50.5,34.6,65.1,12.2,19.2,16.5,26.7,29.9,45.6
+T14,Upper - Lower Percentiles (Rhesus Macaque),8,Lateral cuneate nucleus offset,Mesencephalon,40.3,60.8,45.8,86.4,14.7,23.3,20,32.1,35.9,55.6
+T14,Upper - Lower Percentiles (Rhesus Macaque),9,Primary somatosensory cortex layer VI offset,Cortex,46.5,64.1,49.4,81.5,16.8,24.5,22.7,33.9,41.3,57.9
+T14,Upper - Lower Percentiles (Rhesus Macaque),10,Primary somatosensory cortex layer V offset,Cortex,49.7,67.9,55,88.8,18.1,25.8,24.5,35.9,44.2,61.5
+T14,Upper - Lower Percentiles (Rhesus Macaque),,,Location,,,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),1,SC segregation,Mesencephalon,66.1,81.7,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),2,Occulomotor nucleus cell generation onset,Mesencephalon,15.8,26.2,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),3,Cranial motor nuclei peak,Mesencephalon,15.7,26.1,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),4,Medial cuneate nucleus peak,Mesencephalon,20.5,32.5,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),5,medial cuneate nucleus offset,Mesencephalon,27.7,42.8,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),6,Lateral cuneate nucleus onset,Mesencephalon,19.7,31.2,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),7,Lateral cuneate nucleus peak,Mesencephalon,23.6,36.7,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),8,Lateral cuneate nucleus offset,Mesencephalon,28.5,44.6,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),9,Primary somatosensory cortex layer VI offset,Cortex,32.7,46.4,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),10,Primary somatosensory cortex layer V offset,Cortex,35,49.5,,,,,,,,
+T15,Upper - Lower Percentiles (Sheep),,,Location,,,,,,,,,,
+T16,Upper - Lower Percentiles (Short-tailed Opossum),1,SC segregation,Mesencephalon,89.7,108.4,158.4,209.2,33.6,42.7,45.7,59,82.5,101.1
+T16,Upper - Lower Percentiles (Short-tailed Opossum),2,Occulomotor nucleus cell generation onset,Mesencephalon,23.2,36.4,19.3,39.5,8.2,13.8,11.2,19,20.1,32.7
+T16,Upper - Lower Percentiles (Short-tailed Opossum),3,Cranial motor nuclei peak,Mesencephalon,22.9,36.3,19.1,39.3,8.2,13.6,11.1,18.8,20,32.4
+T16,Upper - Lower Percentiles (Short-tailed Opossum),4,Medial cuneate nucleus peak,Mesencephalon,29.7,44.8,28.5,54,10.7,16.9,14.5,23.4,26.2,40.2
+T16,Upper - Lower Percentiles (Short-tailed Opossum),5,medial cuneate nucleus offset,Mesencephalon,39.3,58.6,43.7,82.1,14.3,22.4,19.4,31.1,34.9,53.5
+T16,Upper - Lower Percentiles (Short-tailed Opossum),6,Lateral cuneate nucleus onset,Mesencephalon,28.6,42.9,26.9,50.8,10.3,16.2,13.9,22.5,25.1,38.8
+T16,Upper - Lower Percentiles (Short-tailed Opossum),7,Lateral cuneate nucleus peak,Mesencephalon,33.7,50.5,34.6,65.1,12.2,19.2,16.5,26.7,29.9,45.6
+T16,Upper - Lower Percentiles (Short-tailed Opossum),8,Lateral cuneate nucleus offset,Mesencephalon,40.3,60.8,45.8,86.4,14.7,23.3,20,32.1,35.9,55.6
+T16,Upper - Lower Percentiles (Short-tailed Opossum),9,Primary somatosensory cortex layer VI offset,Cortex,46.5,64.1,49.4,81.5,16.8,24.5,22.7,33.9,41.3,57.9
+T16,Upper - Lower Percentiles (Short-tailed Opossum),10,Primary somatosensory cortex layer V offset,Cortex,49.7,67.9,55,88.8,18.1,25.8,24.5,35.9,44.2,61.5
+T16,Upper - Lower Percentiles (Short-tailed Opossum),,,Location,,,,,,,,,,
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),1,SC segregation,Mesencephalon,23.9,27.4,22.4,26,20.4,23.7,28.8,35.9,20.6,27
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),2,Occulomotor nucleus cell generation onset,Mesencephalon,9.2,12.6,7.7,11,8.1,11.3,10.1,18,15.3,19.3
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),3,Cranial motor nuclei peak,Mesencephalon,9.1,12.6,7.7,11,8,11.3,10,18.1,15.3,19.3
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),4,Medial cuneate nucleus peak,Mesencephalon,11,14.6,9.4,13,9.6,12.9,12.3,20.5,16.8,19.8
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),5,medial cuneate nucleus offset,Mesencephalon,13.4,17.7,11.7,16,11.6,15.5,15.4,24.1,18.3,21
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),6,Lateral cuneate nucleus onset,Mesencephalon,10.7,14.2,9.1,12.5,9.4,12.6,12,19.9,16.6,19.7
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),7,Lateral cuneate nucleus peak,Mesencephalon,12,15.9,10.4,14.2,10.5,14,13.6,22.1,17.5,20.3
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),8,Lateral cuneate nucleus offset,Mesencephalon,13.6,18.2,11.9,16.5,11.9,15.9,15.8,24.6,18.4,21.2
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),9,Primary somatosensory cortex layer VI offset,Cortex,12.5,15.7,10.9,14,10.9,13.8,14.1,21.8,17.8,20.2
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),10,Primary somatosensory cortex layer V offset,Cortex,13.1,16.4,11.5,14.6,11.5,14.3,14.8,22.6,18.1,20.4
+T17,Upper - Lower 95 Percentiles (Spiny Mouse),,,Location,,,,,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),1,SC segregation,Mesencephalon,45.7,59,82.5,101.1,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),2,Occulomotor nucleus cell generation onset,Mesencephalon,11.2,19,20.1,32.7,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),3,Cranial motor nuclei peak,Mesencephalon,11.1,18.8,20,32.4,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),4,Medial cuneate nucleus peak,Mesencephalon,14.5,23.4,26.2,40.2,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),5,medial cuneate nucleus offset,Mesencephalon,19.4,31.1,34.9,53.5,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),6,Lateral cuneate nucleus onset,Mesencephalon,13.9,22.5,25.1,38.8,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),7,Lateral cuneate nucleus peak,Mesencephalon,16.5,26.7,29.9,45.6,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),8,Lateral cuneate nucleus offset,Mesencephalon,20,32.1,35.9,55.6,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),9,Primary somatosensory cortex layer VI offset,Cortex,22.7,33.9,41.3,57.9,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),10,Primary somatosensory cortex layer V offset,Cortex,24.5,35.9,44.2,61.5,,,,,,
+T18,Upper - Lower Percentiles (Wallaby),,,Location,,,,,,,,,,

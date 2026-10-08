@@ -1,0 +1,533 @@
+{
+ "d1_life_history": [
+  {
+   "doi": "10.1017/s009483730001647x",
+   "year": 1996,
+   "first3": [
+    "Bales G"
+   ],
+   "title": "Heterochrony in brontothere horn evolution: allometric interpretations and the effect of life history scaling",
+   "venue": "Paleobiology",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1142/9781848162556_0008",
+   "year": 2008,
+   "first3": [
+    "Demetrius L"
+   ],
+   "title": "Quantum Metabolism and Allometric Scaling Relations in Biology",
+   "venue": "Quantum Aspects of Life",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.37911/9781947864559.83",
+   "year": 2024,
+   "first3": [
+    "Marquet P"
+   ],
+   "title": "Quarter-Power Allometric Scaling and Life Dynamics",
+   "venue": "Foundational Papers in Complexity Science: Volume 4",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1016/j.jtbi.2014.05.022",
+   "year": 2014,
+   "first3": [
+    "Boukal D",
+    "Dieckmann U",
+    "Enberg K"
+   ],
+   "title": "Life-history implications of the allometric scaling of growth",
+   "venue": "Journal of Theoretical Biology",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1016/j.plrev.2006.08.001",
+   "year": 2006,
+   "first3": [
+    "da Silva J",
+    "Garcia G",
+    "Barbosa L"
+   ],
+   "title": "Allometric scaling laws of metabolism",
+   "venue": "Physics of Life Reviews",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1073/pnas.0703476104",
+   "year": 2007,
+   "first3": [
+    "Marbà N",
+    "Duarte C",
+    "Agustí S"
+   ],
+   "title": "Allometric scaling of plant life history",
+   "venue": "Proceedings of the National Academy of Sciences",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1038/44819",
+   "year": 1999,
+   "first3": [
+    "Enquist B",
+    "West G",
+    "Charnov E"
+   ],
+   "title": "Allometric scaling of production and life-history variation in vascular plants",
+   "venue": "Nature",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.3390/ani16152323",
+   "year": 2026,
+   "first3": [
+    "Sîrbu I",
+    "Benedek A",
+    "Falniowski A"
+   ],
+   "title": "Statistical Models Validate Environmental Stability, Body Size and Life History Strategies as Predictors of Maximum Lifespan",
+   "venue": "Animals",
+   "type": "journal-article"
+  }
+ ],
+ "d2_event_scale": [
+  {
+   "doi": "10.5040/9798216000280.ch-002",
+   "year": 2009,
+   "first3": [],
+   "title": "Play Across History and Into Cyberspace",
+   "venue": "The Praeger Handbook of Play across the Life Cycle",
+   "type": "other"
+  },
+  {
+   "doi": "10.7717/peerj.18653/fig-1",
+   "year": null,
+   "first3": [],
+   "title": "Figure 1: Date of phenological events across the species between 2008–2018.",
+   "venue": "",
+   "type": "component"
+  },
+  {
+   "doi": "10.2139/ssrn.1884786",
+   "year": 2011,
+   "first3": [
+    "Specht J",
+    "Egloff B",
+    "Schmukle S"
+   ],
+   "title": "Stability and Change of Personality Across the Life Course: The Impact of Age and Major Life Events on Mean-Level and Rank-Order Stability of the Big Five",
+   "venue": "",
+   "type": "posted-content"
+  },
+  {
+   "doi": "10.1101/404202",
+   "year": 2018,
+   "first3": [
+    "Charvet C",
+    "Finlay B"
+   ],
+   "title": "Comparing adult hippocampal neurogenesis across species: translating time to predict the tempo in humans",
+   "venue": "",
+   "type": "posted-content"
+  },
+  {
+   "doi": "10.1016/s0306-4522(01)00171-3",
+   "year": 2001,
+   "first3": [
+    "Clancy B",
+    "Darlington R",
+    "Finlay B"
+   ],
+   "title": "Translating developmental time across mammalian species",
+   "venue": "Neuroscience",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.7208/chicago/9780226038155.003.0010",
+   "year": null,
+   "first3": [],
+   "title": "Salvation Through Science? The First Life-History Studies of Endangered Species",
+   "venue": "Nature's Ghosts",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1787/888933839791",
+   "year": null,
+   "first3": [],
+   "title": "Figure 7.1. Life evaluations and people's age across the world",
+   "venue": "",
+   "type": "component"
+  },
+  {
+   "doi": "10.1007/s40656-018-0197-y",
+   "year": 2018,
+   "first3": [
+    "Mason Dentinger R",
+    "Woods A"
+   ],
+   "title": "Introduction to “Working Across Species”",
+   "venue": "History and Philosophy of the Life Sciences",
+   "type": "journal-article"
+  }
+ ],
+ "d3_pan_mam_clocks": [
+  {
+   "doi": "10.1038/s41514-022-00085-y",
+   "year": 2022,
+   "first3": [
+    "de Lima Camillo L",
+    "Lapierre L",
+    "Singh R"
+   ],
+   "title": "A pan-tissue DNA-methylation epigenetic clock based on deep learning",
+   "venue": "npj Aging",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.32614/cran.package.rplec",
+   "year": 2025,
+   "first3": [
+    "Sufriyana H",
+    "Su E"
+   ],
+   "title": "rplec: Placental Epigenetic Clock to Estimate Aging by DNA Methylation",
+   "venue": "CRAN: Contributed Packages",
+   "type": "dataset"
+  },
+  {
+   "doi": "10.1101/2021.06.01.446559",
+   "year": 2021,
+   "first3": [
+    "de Lima Camillo L",
+    "Lapierre L",
+    "Singh R"
+   ],
+   "title": "AltumAge: A Pan-Tissue DNA-Methylation Epigenetic Clock Based on Deep Learning",
+   "venue": "",
+   "type": "posted-content"
+  },
+  {
+   "doi": "10.1101/2025.02.04.636367",
+   "year": 2025,
+   "first3": [
+    "Sufriyana H",
+    "Su E"
+   ],
+   "title": "rplec: An R package of placental epigenetic clock to estimate aging by DNA-methylation-based gestational age",
+   "venue": "",
+   "type": "posted-content"
+  },
+  {
+   "doi": "10.1155/2020/1047896",
+   "year": 2020,
+   "first3": [
+    "Jiang S",
+    "Guo Y"
+   ],
+   "title": "Epigenetic Clock: DNA Methylation in Aging",
+   "venue": "Stem Cells International",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1109/bibm66473.2025.11356186",
+   "year": 2025,
+   "first3": [
+    "Kuang Z",
+    "Geng K",
+    "Zhao J"
+   ],
+   "title": "A Pan-Tissue Epigenetic Aging Clock Across the Human Lifespan: Robust Age Prediction from DNA Methylation Profiles",
+   "venue": "2025 IEEE International Conference on Bioinformatics and Bio",
+   "type": "proceedings-article"
+  },
+  {
+   "doi": "10.1038/s41514-026-00476-5",
+   "year": 2026,
+   "first3": [
+    "Mandal R",
+    "Xie N",
+    "Alterovitz G"
+   ],
+   "title": "Interpretable epigenetic clock links aging pathways and disease-specific methylation profiles",
+   "venue": "npj Aging",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1002/jav.03498/v1/review2",
+   "year": 2025,
+   "first3": [],
+   "title": "Review for \"Sequencing method matters: differential performance of DNA methylation data acquisition in epigenetic clock calibration\"",
+   "venue": "",
+   "type": "peer-review"
+  }
+ ],
+ "d4_survival_equiv": [
+  {
+   "doi": "10.32614/cran.package.equisurv",
+   "year": 2020,
+   "first3": [
+    "? ?"
+   ],
+   "title": "EquiSurv: Modeling, Confidence Intervals and Equivalence of Survival Curves",
+   "venue": "CRAN: Contributed Packages",
+   "type": "dataset"
+  },
+  {
+   "doi": "10.1080/10920277.2005.10596210",
+   "year": 2005,
+   "first3": [
+    "Petertil J"
+   ],
+   "title": "Aging Curves for Health Care Costs in Retirement",
+   "venue": "North American Actuarial Journal",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1159/000099421",
+   "year": 2007,
+   "first3": [
+    "Matthews D",
+    "Farewell V"
+   ],
+   "title": "6 Kaplan-Meier or ‘Actuarial’ Survival Curves",
+   "venue": "Using and Understanding Medical Statistics",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1007/978-3-319-70658-0_69-1",
+   "year": 2019,
+   "first3": [
+    "Brockett P",
+    "Zhang Y"
+   ],
+   "title": "Actuarial (Mathematical) Modeling of Mortality and Survival Curves",
+   "venue": "Handbook of the Mathematics of the Arts and Sciences",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1007/978-3-319-57072-3_69",
+   "year": 2021,
+   "first3": [
+    "Brockett P",
+    "Zhang Y"
+   ],
+   "title": "Actuarial (Mathematical) Modeling of Mortality and Survival Curves",
+   "venue": "Handbook of the Mathematics of the Arts and Sciences",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1007/978-1-4899-2218-2_21",
+   "year": 1985,
+   "first3": [
+    "Witten M"
+   ],
+   "title": "Reliability Theoretic Methods and Aging: Critical Elements, Hierarchies and Longevity—Interpreting Survival Curves",
+   "venue": "Molecular Biology of Aging",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1177/009286150203600314",
+   "year": 2002,
+   "first3": [
+    "Chernick M",
+    "Poulsen E",
+    "Wang Y"
+   ],
+   "title": "Effects of Bias Adjustment on Actuarial Survival Curves",
+   "venue": "Drug Information Journal",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1016/b978-0-32-390172-7.00006-3",
+   "year": 2022,
+   "first3": [
+    "Leung A"
+   ],
+   "title": "Lifetables and the principle of equivalence",
+   "venue": "Actuarial Principles",
+   "type": "book-chapter"
+  }
+ ],
+ "d5_universal_clock": [
+  {
+   "doi": "10.7717/peerj.9214/fig-1",
+   "year": null,
+   "first3": [],
+   "title": "Figure 1: The relationship between log\n                      <sub>e</sub>\n                      adult body mass and log\n                      <sub>e</sub>\n               ",
+   "venue": "",
+   "type": "component"
+  },
+  {
+   "doi": "10.1007/0-387-22624-9_12",
+   "year": null,
+   "first3": [],
+   "title": "Maximum Likelihood Theory for Log-Linear Models",
+   "venue": "Springer Texts in Statistics Log-Linear Models and Logistic ",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1038/s43587-022-00240-w",
+   "year": 2022,
+   "first3": [
+    "Kriebs A"
+   ],
+   "title": "Circadian clock and pluripotency factors linked to lifespan",
+   "venue": "Nature Aging",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1007/978-3-030-22009-9_301488",
+   "year": 2021,
+   "first3": [],
+   "title": "Maximum Human Lifespan",
+   "venue": "Encyclopedia of Gerontology and Population Aging",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1007/978-3-030-22009-9_301683",
+   "year": 2021,
+   "first3": [],
+   "title": "Observed Maximum Lifespan",
+   "venue": "Encyclopedia of Gerontology and Population Aging",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1007/978-1-4757-4111-7_11",
+   "year": 1990,
+   "first3": [
+    "Christensen R"
+   ],
+   "title": "Maximum Likelihood Theory for Log-Linear Models",
+   "venue": "Springer Texts in Statistics Log-Linear Models",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1007/978-3-030-22009-9_799",
+   "year": 2021,
+   "first3": [
+    "Young R"
+   ],
+   "title": "Maximum Lifespan",
+   "venue": "Encyclopedia of Gerontology and Population Aging",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1016/j.ijar.2023.109043",
+   "year": 2024,
+   "first3": [
+    "Coons J",
+    "Langer C",
+    "Ruddy M"
+   ],
+   "title": "Classical iterative proportional scaling of log-linear models with rational maximum likelihood estimator",
+   "venue": "International Journal of Approximate Reasoning",
+   "type": "journal-article"
+  }
+ ],
+ "t2_title": [
+  {
+   "doi": "10.1007/springerreference_27361",
+   "year": null,
+   "first3": [],
+   "title": "translating time",
+   "venue": "SpringerReference",
+   "type": "reference-entry"
+  },
+  {
+   "doi": "10.1007/1-4020-0613-6_19957",
+   "year": 2000,
+   "first3": [
+    "Weik M"
+   ],
+   "title": "translating time",
+   "venue": "Computer Science and Communications Dictionary",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.2307/j.ctt1df4gp3.6",
+   "year": null,
+   "first3": [
+    "Colwell-Chanthaphonh C",
+    "Koyiyumptewa S"
+   ],
+   "title": "Translating Time:",
+   "venue": "Born in the Blood",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1215/9780822390992",
+   "year": 2009,
+   "first3": [
+    "Lim B"
+   ],
+   "title": "Translating Time",
+   "venue": "",
+   "type": "edited-book"
+  },
+  {
+   "doi": "10.1038/nrn3535",
+   "year": 2013,
+   "first3": [
+    "Yates D"
+   ],
+   "title": "Translating time-keeping",
+   "venue": "Nature Reviews Neuroscience",
+   "type": "journal-article"
+  }
+ ],
+ "t5_title": [
+  {
+   "doi": "10.1101/2022.06.03.494609",
+   "year": 2022,
+   "first3": [
+    "Moqri M",
+    "Cipriano A",
+    "Nachun D"
+   ],
+   "title": "PRC2 clock: a universal epigenetic biomarker of aging and rejuvenation",
+   "venue": "",
+   "type": "posted-content"
+  },
+  {
+   "doi": "10.1007/978-981-97-8514-8_12",
+   "year": 2024,
+   "first3": [
+    "Yamada H"
+   ],
+   "title": "Biological Age and Aging Clock: Aging Clock",
+   "venue": "Anti-Aging Medicine",
+   "type": "book-chapter"
+  },
+  {
+   "doi": "10.1164/ajrccm-conference.2024.209.1_meetingabstracts.a5030",
+   "year": 2024,
+   "first3": [
+    "Hernandez Cordero A",
+    "Li X",
+    "Yang J"
+   ],
+   "title": "The Epigenetic Clock Grimage Captures a Universal Signature of Lung Aging",
+   "venue": "C20. HAVING A GROWTH MINDSET: REPROGRAMMING CELLULAR PATHWAY",
+   "type": "proceedings-article"
+  },
+  {
+   "doi": "10.1038/scientificamerican12151894-15810asupp",
+   "year": 1894,
+   "first3": [],
+   "title": "Universal Astronomical Clock",
+   "venue": "Scientific American",
+   "type": "journal-article"
+  },
+  {
+   "doi": "10.1093/geroni/igaf122.4305",
+   "year": 2025,
+   "first3": [
+    "Sehgal R"
+   ],
+   "title": "Universal Single-Cell Transcriptomic Aging Clock powered by LLMs reveals targets to slow cellular aging",
+   "venue": "Innovation in Aging",
+   "type": "journal-article"
+  }
+ ]
+}

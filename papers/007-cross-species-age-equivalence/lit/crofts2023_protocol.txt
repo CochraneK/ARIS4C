@@ -1,0 +1,62 @@
+# crofts2023 protocol/formula extract (host-side, for stage3a A4)
+
+[title] DNA methylation rates scale with maximum lifespan across mammals
+
+[abstract] DNA methylation rates have previously been found to broadly correlate with maximum lifespan in mammals, yet no precise relationship has been observed. We developed a statistically robust framework to compare methylation rates at conserved age-related sites across mammals. We found that methylation rates negatively scale with maximum lifespan in both blood and skin. The emergence of explicit scaling suggests that methylation rates are, or are linked to, an evolutionary constraint on maximum lifespan acting across diverse mammalian lineages.
+
+[section titles, in order]
+Considerations in the calculation of methylation rates
+Primary analysis
+Mathematical description of scaling and power laws
+Stability of the scaling law
+Biases and statistical robustness
+Extended Data
+PCA-based outlier removal.
+Potential statistical issues arising when comparing methylation rates across different timespans.
+Scaling relationships across varying R2 thresholds used to define an age-related site.
+Scaling relationships using simulated null data.
+Scaling relationships stratified into hyper- and hypomethylating sites.
+Scaling relationships without initial trimming of ages below sexual maturity.
+Scaling relationship between methylation rate and body mass.
+Potential remaining bias, leading to an underestimation of methylation rates of faster-methylating species.
+ELOVL2 CpG.
+Supplementary Material
+Acknowledgements
+Data availability
+Code availability
+DNA methylation rates scale with maximum lifespan.
+
+[data/supplement links]
+GSE136296
+GSE223748
+
+[keyword contexts]
+--- translating time: 0 shown ---
+(no match)
+--- age-dependent equivalent: 0 shown ---
+(no match)
+--- equivalent: 2 shown ---
+on rates of species across different age ranges. In our study, there were two main considerations. First, use of an threshold (or equivalent) to select age-related sites may bias results toward slower rates in longer-lived animals. This is because slowly methylating sites may not be detected in shorter-lived animals due to smaller timespans and the fact that methylation data are often noisy. In ot
+(see ). Regression line from simple linear regressions of the form y ˜ x. Shaded region represents the 95% confidence interval. , Equivalent analysis as in a-c, but in skin samples. Scaling relationships stratified into hyper- and hypomethylating sites. , Log methylation rate ratio, compared to baseline species, versus log maximum lifespan in blood samples in hypermethylating (that is, increasing)
+--- spline: 0 shown ---
+(no match)
+--- monotone: 0 shown ---
+(no match)
+--- monotonic: 0 shown ---
+(no match)
+--- gestation: 0 shown ---
+(no match)
+--- weaning: 0 shown ---
+(no match)
+--- maturity: 2 shown ---
+sing density-based clustering on principal components (PCs; step 1 in ). Additionally, we removed samples below the age of sexual maturity known to exhibit non-linear dynamics Next, we aimed to avoid any biases arising from the calculation of rates across different lifespans. First, as methylation levels are constrained between 0 and 1, they are more likely to reach these boundaries in age-relat
+ hypomethylating sites ( ) and in a sensitivity analysis in which we omitted the initial trimming of ages up to the age of sexual maturity ( ). Notably, the three largest outliers in blood samples were livestock species (pigs, sheep and cattle). Overall, our analysis of DNA methylation data in mammals reveals scaling between maximum lifespan and DNA methylation rate over approximately two orders
+--- quantile: 0 shown ---
+(no match)
+--- human age: 1 shown ---
+ methylation-based biomarkers and the epigenetic clock theory of ageing Somatic mutation rates scale with lifespan across mammals Human ageing genomic resources: new and updated databases DNA methylation networks underlying mammalian traits Age-associated epigenetic change in chimpanzees and humans DNA methylation rates scale with maximum lifespan. , Workflow overview. M, methylation proportion. 
+--- log: 2 shown ---
+ion rates scale with maximum lifespan across mammals MRC Human Genetics Unit, University of Edinburgh, Edinburgh, UK School of Biological Sciences, University of Edinburgh, Edinburgh, UK Correspondence and requests for materials should be addressed to Eric Latorre-Crespo or Tamir Chandra. https://creativecommons.org/licenses/by/4.0/ https://creativecommons.org/licenses/by/4.0/ This article 
+n characteristics such as size, energy requirements and lifespan. Despite this remarkable diversity, it has been observed that biological traits often share underlying mechanisms and constraints . These fundamental connections between organisms can be reflected in scaling laws, which mathematically describe an association between two physical quantities over several orders of magnitude. A n
+--- curve: 0 shown ---
+(no match)

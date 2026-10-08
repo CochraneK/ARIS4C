@@ -1,0 +1,403 @@
+species,age_years,S,hazard_discrete,tier,source
+Cat / Domestic cat,0.0,1.0,0.013608007991606108,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,1.0,0.9863919920083939,0.01573378155967864,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,2.0,0.9708723158739175,0.01818855938968844,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,3.0,0.9532135470968405,0.02102222267545284,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,4.0,0.9331748796525124,0.024291863891832688,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,5.0,0.9105063224887162,0.028062709573375755,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,6.0,0.884955047995993,0.03240911923709344,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,7.0,0.8562744343260231,0.037415650614916696,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,8.0,0.8242363692607952,0.04317817328713269,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,9.0,0.7886473484792955,0.04980500171069402,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,10.0,0.7493687659391499,0.05741800368210448,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,11.0,0.7063415073772017,0.0661536204940617,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,12.0,0.6596144593589668,0.07616370936322248,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,13.0,0.6093757753845713,0.08761608601812632,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,14.0,0.5559846550311143,0.1006946046523195,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,15.0,0.5,0.11559856315074724,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,16.0,0.4422007184246264,0.1325411637578826,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,17.0,0.3835909205900546,0.1517466947711269,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,18.0,0.3253822662463,0.17344603136995163,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,19.0,0.2689460034877183,0.19786999093704927,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,20.0,0.21572966021504786,0.22524003311889995,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,21.0,0.16713870440348144,0.25575578762859796,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,22.0,0.12439201341554564,0.28957895292510283,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,23.0,0.08837070441842658,0.326813276609496,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,24.0,0.05948998495115133,0.36748065415152464,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,25.0,0.03762856636583788,0.41149392302681864,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,26.0,0.02214463997408425,0.4586277364878397,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,27.0,0.011988493867431857,0.5084900013573641,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,28.0,0.005892464604508681,0.5604977236260857,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,29.0,0.002589751607134282,0.6138625815521498,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Cat / Domestic cat,30.0,0.0010000000000000028,0.0,Tier2,2-anchor Gompertz m=15.00 amax=30.00; m host-prior DEV-3
+Chimpanzee,0.0,1.0,9.118288481035908e-05,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,1.0,0.9999088171151896,0.00010696220803141365,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,2.0,0.9998018646602809,0.00012547199343915239,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,3.0,0.9996764175272778,0.00014718465718166485,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,4.0,0.9995292804964714,0.00017265432716306872,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,5.0,0.9993567074410675,0.00020253096725664221,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,6.0,0.9991543067604751,0.00023757693951920178,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,7.0,0.9989169307381676,0.00027868642394335286,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,8.0,0.9986385461509236,0.0003269081869954338,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,9.0,0.9983120830343377,0.000383472273966734,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,10.0,0.9979292580297281,0.0004498212979894278,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,11.0,0.9974803681955795,0.0005276471126745008,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,12.0,0.9969540505593516,0.0006189337883187873,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,13.0,0.9963370020120591,0.0007260079664229702,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,14.0,0.9956136534113563,0.0008515978471888008,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,15.0,0.9947657909674794,0.0009989022734709918,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,16.0,0.9937721171573108,0.0011716716164561491,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,17.0,0.9926077425744121,0.0013743024477200771,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,18.0,0.9912435993241662,0.0016119483041305838,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,19.0,0.9896457658852553,0.001890649221497176,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,20.0,0.9877746928884263,0.0022174831351501334,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,21.0,0.9855843191656182,0.002600742725753724,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,22.0,0.9830210679169312,0.0030501418310483475,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,23.0,0.9800227142368759,0.003577056151879532,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,24.0,0.9765171179579333,0.004194803654632873,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,25.0,0.9724208203827118,0.004918970809102863,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,26.0,0.9676375107530855,0.005767791592282467,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,27.0,0.9620563792541866,0.006762587017480448,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,28.0,0.955550389273758,0.007928273785024698,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,29.0,0.9479745241722087,0.009293951448359095,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,30.0,0.9391640949702709,0.010893578175250052,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,31.0,0.9289332374823243,0.012766745650855338,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,32.0,0.9170737831127618,0.014959563762320771,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,33.0,0.9033547593795337,0.017525665202805296,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,34.0,0.8875228663072873,0.020527338728234423,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,35.0,0.8693043838015441,0.02403679706838746,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,36.0,0.8484090907374467,0.028137580859667444,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,37.0,0.8245369113447449,0.032926092660995554,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,38.0,0.7973881325993968,0.03851324412595547,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,39.0,0.7666781287854565,0.04502618343019327,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,40.0,0.7321575387268452,0.052610047451222,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,41.0,0.6936386958726559,0.06142965196094696,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,42.0,0.6510287121985535,0.07167099086441342,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,43.0,0.6043688393141001,0.08354235970282531,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,44.0,0.5538784403469426,0.09727484664901165,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,45.0,0.5,0.11312184399557978,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,46.0,0.4434390780022101,0.1313571240324236,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,47.0,0.38519019603225024,0.15227089750828426,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,48.0,0.32653693917102755,0.17616313806341688,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,49.0,0.26901316727303626,0.20333332815472305,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,50.0,0.21431382465396656,0.23406569017489276,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,51.0,0.16415031137231492,0.2686089583335537,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,52.0,0.12005806722446892,0.3071498941944977,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,53.0,0.0831822445792774,0.34978015104128446,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,54.0,0.05408674650638469,0.3964568740654876,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,55.0,0.03264368405809098,0.446958718504593,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,56.0,0.018053304864217825,0.5008408797225318,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,57.0,0.009011471774123907,0.5573952558348331,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,58.0,0.003988520159137735,0.6156247788228225,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Chimpanzee,59.0,0.001533088318338198,0.3477218578744652,Tier2,2-anchor Gompertz m=45.00 amax=59.40; m host-prior DEV-3
+Dog,0.0,1.0,0.004992658733983246,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,1.0,0.9950073412660168,0.006734202494722341,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,2.0,0.9883067603461961,0.009080455332970971,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,3.0,0.9793324849535993,0.012239111731113916,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,4.0,0.9673463252483427,0.016487337966836657,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,5.0,0.9513973594529959,0.022193482699613964,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,6.0,0.9302825386155174,0.02984430906745117,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,7.0,0.9025188990130227,0.04007806552041082,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,8.0,0.8663476874449698,0.053722626919646466,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,9.0,0.8198052138496652,0.07183567035569771,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,10.0,0.7609139567516784,0.09573957465679583,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,11.0,0.6880643781818532,0.1270363034981783,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,12.0,0.600655223008858,0.16757570591769178,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,13.0,0.5,0.21933398861617914,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,14.0,0.39033300569191043,0.2841402696551487,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,15.0,0.2794236801993063,0.36317887670143745,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,16.0,0.17794290190074055,0.4562199925671876,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,17.0,0.0967617925182009,0.5606395945569425,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,18.0,0.04251330039219376,0.6705362586647422,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,19.0,0.01400659100372184,0.7766224774549418,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Dog,20.0,0.0031287575977132836,0.680384315892394,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Domestic pig,0.0,1.0,0.05979438264343695,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,1.0,0.940205617356563,0.06530217723615139,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,2.0,0.8788081434935197,0.07129779618616072,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,3.0,0.8161510595919804,0.07782061939258833,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,4.0,0.7526376786166152,0.08491244780395413,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,5.0,0.6887293710157927,0.09261749455031443,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,6.0,0.624940982249096,0.10098233518460009,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,7.0,0.5618329825090246,0.11005580739117848,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,8.0,0.5,0.11988884907918296,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,9.0,0.4400555754604085,0.13053426225955622,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,10.0,0.3826132455644796,0.14204638855051432,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,11.0,0.3282644158204542,0.15448068062972065,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,12.0,0.2775539054379928,0.1678931525430012,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,13.0,0.23095450525338615,0.1823396906122795,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,14.0,0.18884233221997163,0.1978752059232839,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,15.0,0.15147511684491155,0.2145526092279838,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,16.0,0.11897573529272205,0.2324215898338522,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,17.0,0.09132320574433604,0.2515271819982039,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,18.0,0.06835293715242101,0.27190810589008085,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,19.0,0.049767219479282476,0.29359487577299437,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,20.0,0.03515581885869519,0.3166076761967205,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,21.0,0.024025216745050863,0.3409540181882349,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,22.0,0.015833722557982505,0.3666262022095149,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,23.0,0.010028664989710254,0.39359863343658563,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,24.0,0.006081396154566968,0.42182505797807357,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,25.0,0.0035161108690791227,0.45123581597546214,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,26.0,0.0019295157120100136,0.4817352386530823,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+Domestic pig,27.0,0.0009999999999999976,0.0,Tier2,2-anchor Gompertz m=8.00 amax=27.00; m host-prior DEV-3
+European rabbit,0.0,1.0,6.38736752378577e-08,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+European rabbit,1.0,0.9999999361263248,6.365510808459263e-07,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+European rabbit,2.0,0.9999992995752846,6.343712597112194e-06,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+European rabbit,3.0,0.9999929558671308,6.321827288813253e-05,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+European rabbit,4.0,0.9999297380395605,0.0006298411465832654,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+European rabbit,5.0,0.999299941146851,0.006259167770379048,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+European rabbit,6.0,0.9930451551622829,0.06065602784308177,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+European rabbit,7.0,0.932810980581322,0.46398572657409853,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+European rabbit,8.0,0.5,0.998,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+European rabbit,9.0,0.001000000000000001,0.0,Tier2,2-anchor Gompertz m=8.00 amax=9.00; m host-prior DEV-3
+Horse,0.0,1.0,0.006432858463400581,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,1.0,0.9935671415365994,0.006957536982634904,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,2.0,0.9866543614046277,0.007524847187286299,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,3.0,0.9792299381083883,0.00813822542428555,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,4.0,0.9712607441298531,0.00880138032957778,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,5.0,0.9627123089215776,0.00951831360097588,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,6.0,0.9535489112577424,0.01029334221724787,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,7.0,0.9437337059932823,0.011131122179567798,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,8.0,0.9332288908068948,0.012036673850750579,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,9.0,0.9219959190201544,0.013015408965839748,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,10.0,0.9099957650692718,0.014073159384313305,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,11.0,0.8971892496284019,0.015216207649136448,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,12.0,0.8835374317054832,0.016451319410736853,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,13.0,0.8690020752051542,0.017785777764300237,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,14.0,0.8535461974188395,0.019227419536065993,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,15.0,0.8371347065876537,0.02078467353800173,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,16.0,0.8197351350038984,0.02246660078966478,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,17.0,0.8013184729725038,0.024282936680494083,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,18.0,0.7818601072324023,0.02624413501432299,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,19.0,0.761340865015882,0.028361413839615546,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,20.0,0.7397481616701558,0.030646802922658867,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,21.0,0.7170772455470513,0.03311319266547963,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,22.0,0.6933325285592203,0.03577438420415202,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,23.0,0.6685289843013066,0.03864514034491073,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,24.0,0.642693587878342,0.04174123690333198,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,25.0,0.6158667625704597,0.04507951390392784,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,26.0,0.5881037882841976,0.04867792597181042,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,27.0,0.5594761156143582,0.05255559110241281,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,28.0,0.5300725176505637,0.05673283682740993,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,29.0,0.49999999999999994,0.06123124260257318,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,30.0,0.46938437869871336,0.06607367702403777,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,31.0,0.4383704268604459,0.07128432823117137,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,32.0,0.4071214854652872,0.07688872557488502,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,33.0,0.3758184332937072,0.08291375031825732,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,34.0,0.3446579175505941,0.08938763279084239,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,35.0,0.31384976217812516,0.09633993303889166,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,36.0,0.2836134971056125,0.10380150160217838,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,37.0,0.25417399023140486,0.11180441660717366,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,38.0,0.22575621553686517,0.12038189290107537,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,39.0,0.19857925497635417,0.12956815846981318,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,40.0,0.17284970659876048,0.13939829289750993,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,41.0,0.1487547525710578,0.14990802215130716,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,42.0,0.12645522182752345,0.16113346353619284,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,43.0,0.10607905395221702,0.1731108142883102,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,44.0,0.08771562254361515,0.18587597699934666,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,45.0,0.07141139550521476,0.19946411493530303,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,46.0,0.057167384704472225,0.21390913038720183,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,47.0,0.04493875915582795,0.22924305953816204,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,48.0,0.03463686051509736,0.24549537803167387,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,49.0,0.026133671349113173,0.2626922125740223,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,50.0,0.0192685593997323,0.28085545560561875,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,51.0,0.013856879370656557,0.30000178244725884,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,52.0,0.00969979086030294,0.3201415734901093,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,53.0,0.006594484551760576,0.3412777480748149,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,54.0,0.004343933714221571,0.3634045218075954,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,55.0,0.0027653285600409893,0.3865061052801593,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,56.0,0.0016965121884795554,0.41055536954543304,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Horse,57.0,0.0010000000000000002,0.0,Tier2,2-anchor Gompertz m=29.00 amax=57.00; m host-prior DEV-3
+Human,0.0,1.0,0.000823383205232453,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,1.0,0.9991766167947675,0.0008650801569616284,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,2.0,0.9983122489302784,0.0009088877236248516,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,3.0,0.9974048951828813,0.0009549126404847508,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,4.0,0.9964524606407898,0.0010032670301159952,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,5.0,0.995452752739951,0.0010540686732436466,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,6.0,0.9944034771775937,0.0011074412930878186,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,7.0,0.9933022337049772,0.0011635148538724494,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,8.0,0.9921465118016768,0.0012224258741926342,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,9.0,0.9909336862346605,0.001284317755967379,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,10.0,0.9896610125064431,0.0013493411297329505,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,11.0,0.988325622197775,0.0014176542170750706,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,12.0,0.986924518211623,0.001489423211030183,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,13.0,0.9854545699266638,0.0015648226753246508,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,14.0,0.9839125082701402,0.0016440359633629331,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,15.0,0.9822949207217415,0.001727255657913207,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,16.0,0.9805982462621855,0.0018146840324889668,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,17.0,0.9788187702824068,0.0019065335354592206,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,18.0,0.9769526194717265,0.0020030272979786323,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,19.0,0.974995756706093,0.0021043996668660414,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,20.0,0.9729439759604849,0.0022108967636178534,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,21.0,0.9707928972728523,0.002322777070788651,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,22.0,0.9685379617905825,0.002440312047028881,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,23.0,0.9661744269344201,0.0025637867721214347,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,24.0,0.9636973617190836,0.0026935006234192205,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,25.0,0.9611016422745058,0.002829767985138343,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,26.0,0.9583819476167335,0.0029729189920324472,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,27.0,0.9555327557230426,0.003123300309021193,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,28.0,0.952548339971813,0.0032812759484248666,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,29.0,0.9494227660141514,0.0034472281265094384,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,30.0,0.946149889151199,0.003621558161121863,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,31.0,0.9427233522984989,0.003804687412256369,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,32.0,0.9391365846267686,0.003997058267468434,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,33.0,0.9353828009769042,0.00419913517411763,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,34.0,0.9314550021560574,0.0044114057204933665,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,35.0,0.927345976231164,0.004634381767950613,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,36.0,0.9230483009463359,0.004868600636252607,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,37.0,0.9185543474010567,0.005114626344388418,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,38.0,0.9138562851370867,0.005373050909209698,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,39.0,0.9089460887933439,0.00564449570429415,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,40.0,0.903815546499715,0.00592961288152094,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,41.0,0.8984562701926714,0.006229086857902355,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,42.0,0.8928597080476143,0.006543635870290498,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,43.0,0.8870171592348968,0.0068740136006310015,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,44.0,0.880919791218323,0.0072210108745017765,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,45.0,0.8745586598263716,0.007585457435722365,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,46.0,0.8679247323372162,0.007968223799870833,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,47.0,0.8610089138285103,0.008370223189586246,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,48.0,0.8538020770515424,0.008792413554562173,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,49.0,0.8462950960963611,0.009235799679169432,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,50.0,0.8384788841193517,0.009701435380648493,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,51.0,0.8303444354070295,0.010190425800816971,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,52.0,0.8218828720488929,0.010703929794222744,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,53.0,0.8130854954874074,0.0112431624156345,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,54.0,0.8039438432038458,0.011809397509719433,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,55.0,0.7944497507839601,0.012403970405676756,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,56.0,0.7845954195864385,0.0130282807194958,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,57.0,0.7743734902088358,0.013683795266393295,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,58.0,0.7637771219090957,0.014372051085809523,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,59.0,0.7528000780948456,0.015094658581162212,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,60.0,0.7414368179361317,0.015853304776317856,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,61.0,0.7296825940890069,0.016649756690465423,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,62.0,0.7175335564361573,0.01748586483274417,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,63.0,0.7049868616553565,0.018363566817605648,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,64.0,0.6920407883158143,0.019284891101428947,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,65.0,0.6786948570753968,0.020251960840416916,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,66.0,0.6649499554073135,0.021266997869192727,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,67.0,0.6508084661225464,0.022332326798855662,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,68.0,0.6362743987736357,0.0234503792324946,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,69.0,0.6213535228264664,0.024623698095277757,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,70.0,0.6060535012699502,0.025854942075275056,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,71.0,0.590384023100098,0.027146890170064886,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,72.0,0.5743569328668385,0.028502446332929532,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,73.0,0.5579863552118555,0.029924644211088425,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,74.0,0.5412888120574987,0.03141665196684662,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,75.0,0.5242833298355404,0.03298177717083017,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,76.0,0.5069915338765237,0.03462347175457903,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,77.0,0.4894377268235392,0.03634533700762954,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,78.0,0.47164894769788956,0.03815112860188641,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,79.0,0.45365500803932296,0.04004476162351167,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,80.0,0.435488501383076,0.042030315589667855,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,81.0,0.4171847822342738,0.04411203942437425,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,82.0,0.39878191067310653,0.04629435636424051,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,83.0,0.380320558788793,0.04858186876113468,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,84.0,0.3618438753145545,0.05097936274467496,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,85.0,0.34339730513795486,0.05349181270299974,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,86.0,0.32502836080880054,0.05612438553538146,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,87.0,0.30678634377683434,0.058882444624928976,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,88.0,0.28872201387771046,0.061771553473950136,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,89.0,0.2708872065583569,0.06479747893833365,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,90.0,0.25333439849672773,0.0679661939906332,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,91.0,0.23611622362399876,0.07128387993442675,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,92.0,0.21928494308861537,0.07475692798483824,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,93.0,0.2028918743899804,0.07839194012196482,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,94.0,0.18698678672156785,0.08219572911521866,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,95.0,0.1716172714520767,0.08617531760744834,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,96.0,0.1568280985777703,0.09033793613798424,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,97.0,0.1426605718238102,0.09469101997350093,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,98.0,0.12915189676781072,0.09924220460504596,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,99.0,0.11633457780364988,0.10399931975847565,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,100.0,0.10423586084768083,0.10897038175412144,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,101.0,0.09287723929863957,0.11416358403991167,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,102.0,0.08227404078457434,0.11958728571034172,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,103.0,0.07243511156272514,0.12524999781173363,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,104.0,0.06336261399800114,0.1311603672226399,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,105.0,0.05505195027783692,0.13732715788667404,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,106.0,0.047491822410063084,0.14375922916428863,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,107.0,0.04066443462878513,0.15046551105977513,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,108.0,0.034545839690408156,0.15745497607094172,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,109.0,0.02910642532860435,0.16473660740136553,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,110.0,0.024311531566388895,0.17231936326946828,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,111.0,0.020122183926763182,0.18021213704558214,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,112.0,0.016495922159296926,0.18842371294785842,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,113.0,0.013387699257543345,0.1969627170310797,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,114.0,0.01075082163698264,0.20583756321012303,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,115.0,0.008537898708719467,0.2150563940722957,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,116.0,0.0067017689994677485,0.22462701625112835,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,117.0,0.005196370625512999,0.2345568301595382,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,118.0,0.003977526403258533,0.24485275391324934,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,119.0,0.0030036181096580196,0.25552114131705184,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,120.0,0.0022361301821976366,0.26656769383854584,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,121.0,0.0016400501164064451,0.2779973665568892,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Human,122.0,0.0011841205030241337,0.1554913562884035,Tier2-dev1,2-anchor Gompertz m=76.40 amax=122.50; m host-prior DEV-3
+Meerkat,0.0,1.0,0.004992658733983246,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,1.0,0.9950073412660168,0.006734202494722341,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,2.0,0.9883067603461961,0.009080455332970971,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,3.0,0.9793324849535993,0.012239111731113916,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,4.0,0.9673463252483427,0.016487337966836657,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,5.0,0.9513973594529959,0.022193482699613964,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,6.0,0.9302825386155174,0.02984430906745117,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,7.0,0.9025188990130227,0.04007806552041082,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,8.0,0.8663476874449698,0.053722626919646466,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,9.0,0.8198052138496652,0.07183567035569771,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,10.0,0.7609139567516784,0.09573957465679583,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,11.0,0.6880643781818532,0.1270363034981783,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,12.0,0.600655223008858,0.16757570591769178,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,13.0,0.5,0.21933398861617914,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,14.0,0.39033300569191043,0.2841402696551487,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,15.0,0.2794236801993063,0.36317887670143745,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,16.0,0.17794290190074055,0.4562199925671876,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,17.0,0.0967617925182009,0.5606395945569425,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,18.0,0.04251330039219376,0.6705362586647422,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,19.0,0.01400659100372184,0.7766224774549418,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Meerkat,20.0,0.0031287575977132836,0.680384315892394,Tier2,2-anchor Gompertz m=13.00 amax=20.60; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.0,1.0,0.00014603267577084633,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.082136,0.9998539673242292,0.0001763697871789427,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.164271,0.9996776232928022,0.0002130085176238472,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.246407,0.9994646834441628,0.00025725753030203524,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.328542,0.9992075636280758,0.00031069711850806314,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.410678,0.9988971127172651,0.000375235521223094,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.492813,0.9985222910385264,0.00045317688458557104,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.574949,0.9980697838174843,0.0005473032639340403,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.657084,0.9975235369671671,0.0006609735472404843,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.73922,0.996864200296482,0.0007982427626768152,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.821355,0.9960684606632237,0.0009640059282830515,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.903491,0.9951082447621686,0.0011641714303307626,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,0.985626,0.99394976817353,0.0014058699016412657,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.067762,0.9925524041107116,0.0016977057369489401,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.149897,0.9908673422000304,0.002050059756366962,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.232033,0.9888360049378878,0.0024754531378895495,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.314168,0.9863881877466062,0.002988984612254386,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.396304,0.983439888631722,0.00360885507041675,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.478439,0.9798907966031835,0.00435699618746288,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.560575,0.9756214161382534,0.005259822410770276,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.64271,0.970489820749222,0.006349128657070713,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.724846,0.9643280560169076,0.00766315922477967,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.806982,0.9569382565787278,0.00924787658729842,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.889117,0.9480886096802232,0.011158461602174485,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,1.971253,0.9375093993336475,0.013461078781757174,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.053388,0.9248895114505794,0.01623494089026667,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.135524,0.9098739849021517,0.019574705144688953,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.217659,0.8920634699288689,0.023593227045013654,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.299795,0.8710168139442743,0.02842468493087924,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.38193,0.84625843543841,0.034228065318129164,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.464066,0.8172926464342063,0.0411909611148763,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.546201,0.7836275768154606,0.049533575432678,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.628337,0.7448117011281453,0.05951273430417503,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.710472,0.7004859202522652,0.07142558134362786,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.792608,0.650453306175221,0.08561244335723861,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.874743,0.5947664093437663,0.1024581043250341,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,2.956879,0.5338277705261968,0.12239039411620489,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.039014,0.4684923793013202,0.14587458345633886,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.12115,0.400151248618271,0.17340159178384917,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.203285,0.33076438515356804,0.20546750892141463,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.285421,0.2628030508961411,0.24254151611728048,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.367556,0.19906240049154383,0.2850191761186823,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.449692,0.14232579910723683,0.33315859324782415,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.531828,0.09490873609379738,0.38699863771092313,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.613963,0.05817918451863227,0.446261942905366,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.696099,0.03221602859869744,0.5102513792376667,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.778234,0.015777755572651955,0.5777574684257663,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.86037,0.0066620394555560345,0.6470049343128339,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,3.942505,0.002351667055224495,0.5747697371622447,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3
+Mouse / Mouse  / Wild mouse,4.0,0.001000000000000002,0.0,Tier2-dev2,2-anchor Gompertz m=3.00 amax=4.00; m host-prior DEV-3

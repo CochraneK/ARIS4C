@@ -1,0 +1,27 @@
+# ARIS4C-007 · 段3a 重启（stage3a2）
+
+背景：上一次 3a run 死于上下文溢出（131073 tokens）。`code/fit_tt.py` 已由该 run 完整写出并经宿主机运行验证（确定性脚本）。`data/tt_fit.csv`（18 物种拟合）与 `data/tt_events.csv`（每物种 10 事件 rank/pc_median/lower95/upper95）已在盘。**不要再读 lit/tt_2013/tt_related_tables.csv（198 行）与旧 stage3a_run.log**——所需数据全在小文件里。
+
+## 已冻结结论（宿主验证，直接使用，勿重推）
+- 列映射已裁决：13 列共享表 pair1=Rat(rodent)/Rhesus Macaque(primate)、pair2=Mouse/Human（跨表值同 T03p4==T18p1 + 方向性 sanity：rat 比 mouse 晚 ~1.5d、human 晚于 macaque）。brief 原「mouse 9.1–27.4 / human 22.9–108.4」实为 Rat/Macaque 域（宿主预提取误标）——本 run 以 fit 输出为准。
+- 4 目标物种拟合（onset, slope, r², 域[pc_min_l, pc_max_u]）：Human 0.22/11.57/0.608/[19.1,209.2]；Mouse 7.13/1.08/0.591/[7.7,26.0]；Cat 10.66/3.33/0.783/[14.1,61.7]；Rabbit 8.92/1.44/0.587/[9.5,34.7]。
+- 验证：180 拟合点中 54 在发表 95% CI 外（30%）；rank-OLS 是 quasi-Newton 官方模型（r=0.993）的文档化简化形式，30% 违反属简化预期，须在小结中如实报告。
+- 跨表不一致 = 0。
+
+## 输出纪律（违反 = 会话死亡，强制）
+1. 每条响应最多 1 个工具调用；单个工具调用参数 ≤ 20 行。
+2. 每条响应伴随文本 ≤ 2 句；禁止在文本中复述/预览文件内容。
+3. python 输出 ≤ 15 行；长文件分次追加（每次 ≤15 行）。总工具调用 ≤ 18 次。
+
+## 任务（顺序执行）
+T1. 读 `data/tt_fit.csv`（≤20 行）与 `data/tt_events.csv` 表头 + 4 目标物种行，确认与冻结结论一致；不一致则停并汇报。
+T2. 写 `code/a4_translating_time.py` 并运行，生成 A4 行：
+   - 物种名映射（tableE 名 → TT 名）：`{"Human":"Human", "Mouse / Mouse  / Wild mouse":"Mouse", "European rabbit":"Rabbit", "Cat / Domestic cat":"Cat"}`；未覆盖 5 物种（Meerkat, Horse, Domestic pig, Dog, Chimpanzee）→ out_low/out_high/out_mid 留空，input_note="species not in Translating Time 11-event subset"。
+   - PC 轴：t_pc = a_years×365.25 + gestation_days（gestation 从 `data/tableA_species.csv` 按 species_id join；tableE 与 tableA 的 species_id 同键）。
+   - 映射（线性反演）：r = (t_pc − onset_sp)/slope_sp；t_hum = onset_hum + slope_hum×r；out_mid = t_hum/365.25。
+   - CI 传播：用 `data/tt_events.csv` 该物种 (pc_median, lower95, upper95) 对 pc_median 线性插值（端点外线性外推）得 [t_low, t_high]，两端同法映射 → [out_low, out_high]。
+   - out_of_domain：t_pc ∉ [pc_min_l, pc_max_u]（tt_fit.csv）→ input_note="out_of_domain=true; TT 11-event domain [L,U] d PC"；域内 → "in_domain"。
+   - 新行：method="A4"，out_unit="human_eq_years"，其余列沿用 tableE 对应 (species, species_id, q, a_years)。
+   - 输出 `data/tableE.csv` = `data/tableE_partial.csv` 216 数据行 + 54 个 A4 行（共 270 数据行）；打印 ≤10 行验证摘要（4 物种 × in/out 计数 + 1 例数值）。
+T3. 写 `results/stage3a_summary.md`（≤30 行，2 次追加）：4 物种拟合参数与 r²、验证 54/180 与简化说明、域纠正（brief 误标）、A4 行 24 算值 + 30 留空、in/out_of_domain 计数、局限（rank-OLS 简化、外推性质）。
+T4. 末行输出：`DONE stage3a 007`

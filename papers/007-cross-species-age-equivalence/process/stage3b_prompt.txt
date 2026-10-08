@@ -1,0 +1,48 @@
+# ARIS4C-007 Stage 3b — A5 生存等价：表 C 人口学曲线 + tableE A5 行
+
+## 背景（上段结论，勿重复验证）
+Stage 3a 已验收（DONE stage3a 007）：A4 完成，data/tableE.csv 现有 270 数据行
+（216 = A0–A3 × 9 物种 × 6 分位 + 54 A4）。6 分位网格 q = 0.25/0.5/0.75/0.9/0.95/0.99，
+a_years 列可直接读。4 物种 A4 全算出（全 out_of_domain，预期：TT 是产前发育模型）。
+**勿重读旧日志**（stage3a_run.log 205KB 等大文件），本 prompt 已含全部所需结论。
+
+## 冻结 A5 设计（预注册，实现即可，只可记 deviation）
+**定义**：a_hum = S_hum^{-1}( S_sp(a_sp) )，即等生存概率映射。S_sp 按物种建：
+- **Human（Tier 1）**：真实人口学曲线——公开 2021 US period life table（SSA，
+  https://www.ssa.gov/oact/STATS/table4c6.html ，找 CSV 下载链；失败换 CDC/WHO 公开 l_x 表，记来源）。
+  取 S(a)=l_x/l_0，整岁 0–120+，1 岁箱。
+- **Mouse（Tier 1 优先）**：文献已发表的实验室品系 Gompertz 死亡率参数（μ0, δ 每天；
+  ≤2 次检索，记参数+来源到 data/raw/mouse_gompertz.json）。找不到可引用参数 → 降级 Tier 2 两锚点法。
+- **其余 7 物种（Tier 2）**：两锚点 Gompertz。S(a)=exp(−(λ/δ)(e^{δa}−1))；
+  锚点1 = 中位寿命 m（公开文献/兽医记录，必须可引用，圈养优先；多来源取中位+留区间），
+  锚点2 = 最大寿命 = anAge 快照 maxanAge（在盘，0 次请求）。
+  解 (λ,δ)：S(m)=0.5 且 S(a_max)=0.001 → (e^{δa_max}−1)/(e^{δm}−1)=ln1000/ln2≈13.2877，
+  一维二分求 δ 再求 λ（确定性）。
+- **资格规则**：m 有可引用来源 + maxanAge 非空 才合格；不合格 → 54 行中该物种 6 行留空 +
+  input_note="not qualified for A5: <原因>"（预计 Meerkat 边缘，以检索结果为准）。
+- **CI 传播**：out_low/out_high = 用 m 的区间两端（无区间则 m±10%）重算映射取 min/max；
+  Human 恒等 sanity 行应 ≈ a_years（±1 岁内）。
+- **cap**：S_sp 低于人表末值时 out_mid 封顶人表最大年龄，input_note 记 "capped"。
+
+## 在盘数据指针
+- data/tableE.csv（270 行；a_years/q/species 列直接读；A0–A4 行**勿改**，A5 行幂等追加：先删已有 A5 再写）
+- data/suppl/anage_lu2023_snapshot.csv（**header=1** 行，105 列；maxanAge=第 83 列；SpeciesLatinName=第 2 列；pandas read_csv header=1）
+- data/tableA_species.csv（species_id/gestation 等 join 用）
+- 物种名映射（tableE 名 → anAge 拉丁名）：Human→Homo sapiens；Mouse / Mouse  / Wild mouse→Mus musculus；Cat / Domestic cat→Felis catus；European rabbit→Oryctolagus cuniculus；Dog→Canis lupus familiaris；Horse→Equus caballus；Domestic pig→Sus scrofa domesticus；Chimpanzee→Pan troglodytes；Meerkat→Suricata suricatta
+
+## 纪律（违反必崩，007 已用 4 次死亡证明）
+每响应 ≤1 工具调用；工具参数 ≤20 行；正文 ≤2 句；禁正文复述文件内容；
+python 输出 ≤15 行；长文件分次追加每次 ≤15 行；**总工具调用 ≤28 次**；
+进度实时写 stage3b_progress.md（每完成 1 个 T 追加 1 行）。
+
+## 任务
+- T1 本地：从 tableE.csv 抽 9 物种 × 6 分位 a_years → data/s3b_quantiles.csv；从 anAge 快照抽 9 物种 maxanAge → 记入 data/raw/s3b_anchors.json 初版
+- T2 人表：SSA 2021 period life table（1 次下载，≤1 次重试）→ data/raw/ssa_life_table.csv（age,S 两列 + 来源注释行）
+- T3 鼠 Gompertz：≤2 次检索 → data/raw/mouse_gompertz.json（mu0, delta, source, tier）
+- T4 七物种中位寿命：每物种 ≤1 次检索（圈养记录优先，取可引用数值；多来源记区间）→ 补全 s3b_anchors.json（median, range, source, tier, qualified）
+- T5 写 code/s3b_tableC.py（本地）→ data/tableC.csv（species,age_years,S,hazard_discrete,tier,source；箱宽：mouse 30 天，其余 1 岁）+ data/tableC_summary.json（各物种锚点+tier+参数）
+- T6 写 code/s3b_a5.py（本地）：A5 映射 + CI 传播 → 幂等追加 54 行到 tableE.csv（method="A5"，out_unit="human_eq_years"，input_note 含 tier+锚点+来源/cap/不合格原因）→ 最终 324 数据行
+- T7 写 results/stage3b_summary.md（≤30 行，2 次追加）：锚点表（物种×m/max/tier/来源）、合格/排除、A5 行计数、人恒等 sanity、局限（两锚点近似 vs 真生存表；period vs cohort 人表；圈养偏差）→ 最后一行 `DONE stage3b 007`
+
+## 禁止
+- 重取 TT/文献数据、读大日志、改 A0–A4 行、任何 OpenAlex 请求

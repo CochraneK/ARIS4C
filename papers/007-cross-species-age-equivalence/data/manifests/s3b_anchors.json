@@ -1,0 +1,92 @@
+{
+ "Cat / Domestic cat": {
+  "latin": "Felis catus",
+  "maxanAge": 30.0,
+  "m": 15.0,
+  "m_low": 13.5,
+  "m_high": 16.5,
+  "m_source": "domestic cat ~15y indoor, host prior (DEV-3)",
+  "tier": "Tier2",
+  "qualified": true
+ },
+ "Chimpanzee": {
+  "latin": "Pan troglodytes",
+  "maxanAge": 59.4,
+  "m": 45.0,
+  "m_low": 40.0,
+  "m_high": 50.0,
+  "m_source": "captive chimp 40-50y, host prior (DEV-3)",
+  "tier": "Tier2",
+  "qualified": true
+ },
+ "Dog": {
+  "latin": "Canis lupus familiaris",
+  "maxanAge": 20.6,
+  "m": 13.0,
+  "m_low": 11.7,
+  "m_high": 14.3,
+  "m_source": "domestic dog ~13y, host prior (DEV-3)",
+  "tier": "Tier2",
+  "qualified": true
+ },
+ "Domestic pig": {
+  "latin": "Sus scrofa domesticus",
+  "maxanAge": 27.0,
+  "m": 8.0,
+  "m_low": 6.0,
+  "m_high": 10.0,
+  "m_source": "farm pig 6-10y farm-caliber, host prior (DEV-3/5)",
+  "tier": "Tier2",
+  "qualified": true
+ },
+ "European rabbit": {
+  "latin": "Oryctolagus cuniculus",
+  "maxanAge": 9.0,
+  "m": 8.0,
+  "m_low": 7.0,
+  "m_high": 8.9,
+  "m_source": "captive rabbit 8-10y host prior; m clamped below amax 9.0 (DEV-6)",
+  "tier": "Tier2",
+  "qualified": true
+ },
+ "Horse": {
+  "latin": "Equus caballus",
+  "maxanAge": 57.0,
+  "m": 29.0,
+  "m_low": 28.0,
+  "m_high": 30.0,
+  "m_source": "domestic horse 28-30y, host prior (DEV-3)",
+  "tier": "Tier2",
+  "qualified": true
+ },
+ "Human": {
+  "latin": "Homo sapiens",
+  "maxanAge": 122.5,
+  "m": 76.4,
+  "m_low": 68.8,
+  "m_high": 84.0,
+  "m_source": "US LEAB 2021 ~76.4y, host prior (DEV-3)",
+  "tier": "Tier2-dev1",
+  "qualified": true
+ },
+ "Meerkat": {
+  "latin": "Suricata suricatta",
+  "maxanAge": 20.6,
+  "m": 13.0,
+  "m_low": 12.0,
+  "m_high": 14.0,
+  "m_source": "captive meerkat 12-14y, host prior (DEV-3)",
+  "tier": "Tier2",
+  "qualified": true
+ },
+ "Mouse / Mouse  / Wild mouse": {
+  "latin": "Mus musculus",
+  "maxanAge": 4.0,
+  "m": 3.0,
+  "m_low": 2.7,
+  "m_high": 3.3,
+  "m_source": "lab mouse median ~3.0y, host prior (DEV-2/3)",
+  "tier": "Tier2-dev2",
+  "qualified": true
+ }
+}

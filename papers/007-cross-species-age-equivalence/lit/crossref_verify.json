@@ -1,0 +1,274 @@
+{
+ "west1999": {
+  "status": "VERIFIED",
+  "doi": "10.1126/science.276.5309.122",
+  "year": 1997,
+  "first3": [
+   "West G",
+   "Brown J",
+   "Enquist B"
+  ],
+  "title": "A General Model for the Origin of Allometric Scaling Laws in Biology",
+  "venue": "Science"
+ },
+ "brown2004": {
+  "status": "CHECK",
+  "cands": [
+   [
+    "10.1073/pnas.1907702116",
+    2019,
+    "Burger J; Hou C; Brown J",
+    "Toward a metabolic theory of life history",
+    "Proceedings of the National Academy of Sciences"
+   ],
+   [
+    "10.32942/osf.io/7gfbv",
+    2019,
+    "Burger J; Hou C; Brown J",
+    "Toward a metabolic theory of life history",
+    ""
+   ],
+   [
+    "10.1111/ele.13213",
+    2019,
+    "Pettersen A; White C; Bryson‐Richardson R",
+    "Linking life‐history theory and metabolic theory explains the offspring size‐temperature r",
+    "Ecology Letters"
+   ]
+  ]
+ },
+ "austad1984": {
+  "status": "CHECK",
+  "cands": [
+   [
+    "10.1007/978-1-4684-6270-8_8",
+    1982,
+    "King C",
+    "The Evolution of Life Span",
+    "Proceedings in Life Sciences Evolution and Genetics of Life Histories"
+   ],
+   [
+    "10.1007/978-3-662-25812-5_8",
+    1982,
+    "King C",
+    "The Evolution of Life Span",
+    "Proceedings in Life Sciences Evolution and Genetics of Life Histories"
+   ],
+   [
+    "10.1016/j.cub.2012.09.029",
+    2012,
+    "Dowling D",
+    "Aging: Evolution of Life Span Revisited",
+    "Current Biology"
+   ]
+  ]
+ },
+ "stamps2005": {
+  "status": "CHECK",
+  "cands": [
+   [
+    "10.1016/s0160-9327(97)85661-x",
+    1997,
+    "Cronin T",
+    "Evolution and ecology: The pace of life",
+    "Endeavour"
+   ],
+   [
+    "10.1016/s0169-5347(97)85756-4",
+    1997,
+    "Elias S",
+    "Evolution and ecology: The pace of life",
+    "Trends in Ecology &amp; Evolution"
+   ],
+   [
+    "10.2307/2960591",
+    1997,
+    "Tallis J; Bennett K",
+    "Evolution and Ecology: The Pace of Life.",
+    "The Journal of Ecology"
+   ]
+  ]
+ },
+ "pfenning2015": {
+  "status": "CHECK",
+  "cands": [
+   [
+    "10.1016/s0531-5565(03)00098-6",
+    2003,
+    "Perls T; Terry D",
+    "Genetics of exceptional longevity",
+    "Experimental Gerontology"
+   ],
+   [
+    "10.1046/j.1532-5415.2002.49283.x",
+    2002,
+    "Perls T; Kunkel L; Puca A",
+    "The Genetics of Exceptional Human Longevity",
+    "Journal of the American Geriatrics Society"
+   ],
+   [
+    "10.1007/s12031-002-0039-x",
+    2002,
+    "Perls T; Kunkel L; Puca A",
+    "The genetics of exceptional human longevity",
+    "Journal of Molecular Neuroscience"
+   ]
+  ]
+ },
+ "bercovitch_anage": {
+  "status": "CHECK",
+  "cands": [
+   [
+    "10.1007/978-3-030-22009-9_301427",
+    2021,
+    "",
+    "Longevity Database",
+    "Encyclopedia of Gerontology and Population Aging"
+   ],
+   [
+    "10.1093/oxfordjournals.jhered.a104995",
+    1941,
+    "",
+    "Animal Longevity",
+    "Journal of Heredity"
+   ],
+   [
+    "10.1177/002205741007200412",
+    1910,
+    "",
+    "Longevity in the Animal World",
+    "Journal of Education"
+   ]
+  ]
+ },
+ "williams1957": {
+  "status": "VERIFIED",
+  "doi": "10.2307/2406060",
+  "year": 1957,
+  "first3": [
+   "Williams G"
+  ],
+  "title": "Pleiotropy, Natural Selection, and the Evolution of Senescence",
+  "venue": "Evolution"
+ },
+ "medawar1952": {
+  "status": "VERIFIED",
+  "doi": "10.5694/j.1326-5377.1953.tb84985.x",
+  "year": 1953,
+  "first3": [
+   ""
+  ],
+  "title": "AN UNSOLVED PROBLEM OF BIOLOGY",
+  "venue": "Medical Journal of Australia"
+ },
+ "kirkwood1977": {
+  "status": "CHECK",
+  "cands": [
+   [
+    "10.1108/aeat.2004.12776eaf.003",
+    2004,
+    "",
+    "Ageing structures programme",
+    "Aircraft Engineering and Aerospace Technology"
+   ],
+   [
+    "10.1038/386320a0",
+    1997,
+    "Azzi A",
+    "Worldwide ageing programme needed",
+    "Nature"
+   ],
+   [
+    "10.1159/000061442",
+    1999,
+    "Kalache A",
+    "WHO Ageing and Health Programme",
+    "Interdisciplinary Topics in Gerontology Management of Aging"
+   ]
+  ]
+ },
+ "currie1995": {
+  "status": "CHECK",
+  "cands": [
+   [
+    "10.3390/cells11050917",
+    2022,
+    "Walker R",
+    "A Mechanistic Theory of Development-Aging Continuity in Humans and Other Mammals",
+    "Cells"
+   ],
+   [
+    "10.1098/rstb.2019.0007",
+    2019,
+    "Mattison S; Shenk M; Thompson M",
+    "The evolution of female-biased kinship in humans and other mammals",
+    "Philosophical Transactions of the Royal Society B: Biological Sciences"
+   ],
+   [
+    "10.3138/9781487510053-006",
+    2016,
+    "",
+    "3. Animals, Humans, and Other Mammals",
+    "Why the Porcupine is Not a Bird"
+   ]
+  ]
+ },
+ "horvath2013": {
+  "status": "VERIFIED",
+  "doi": "10.1186/gb-2013-14-10-r115",
+  "year": 2013,
+  "first3": [
+   "Horvath S"
+  ],
+  "title": "DNA methylation age of human tissues and cell types",
+  "venue": "Genome Biology"
+ },
+ "belsky2015": {
+  "status": "CHECK",
+  "cands": [
+   [
+    "10.1007/s11357-025-01930-0",
+    2025,
+    "Kawamura T; Nakamura N; Tabata H",
+    "Revisiting the relationship between cardiorespiratory fitness and biological aging: insigh",
+    "GeroScience"
+   ],
+   [
+    "10.1038/s41591-025-03550-9",
+    2025,
+    "Ferrucci L; Barzilai N; Belsky D",
+    "How to measure biological aging in humans",
+    "Nature Medicine"
+   ],
+   [
+    "10.1093/gerona/59.7.b692",
+    2004,
+    "Warner H",
+    "The Future of Aging Interventions: Current Status of Efforts to Measure and Modulate the B",
+    "The Journals of Gerontology Series A: Biological Sciences and Medical Sciences"
+   ]
+  ]
+ },
+ "levine2018": {
+  "status": "VERIFIED",
+  "doi": "10.1101/276162",
+  "year": 2018,
+  "first3": [
+   "Levine M",
+   "Lu A",
+   "Quach A"
+  ],
+  "title": "An epigenetic biomarker of aging for lifespan and healthspan",
+  "venue": ""
+ },
+ "caswell2001": {
+  "status": "VERIFIED",
+  "doi": "10.1002/9781118445112.stat07481",
+  "year": 2014,
+  "first3": [
+   "Caswell H"
+  ],
+  "title": "Matrix Population Models",
+  "venue": "Wiley StatsRef: Statistics Reference Online"
+ }
+}

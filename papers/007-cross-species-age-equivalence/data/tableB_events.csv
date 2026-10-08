@@ -1,0 +1,76 @@
+event_id,species,species_id,event,age_days,age_source,uncertainty,quality
+HSA-001,Homo sapiens,2410,conception,-280.0,"derived: -280.0 d (anAge gestation, row 2410); day 0 = birth",not stated (derived from point estimate),H
+HSA-002,Homo sapiens,2410,birth,0,anAge convention: birth = day 0 (row 2410),none (definitional),H
+HSA-003,Homo sapiens,2410,weaning,639.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2410",not stated (point estimate),H
+HSA-004,Homo sapiens,2410,weaning_PanTHERIA,725.86,"PanTHERIA 2023 column embedded in anAge snapshot, row 2410",not stated (PanTHERIA compilation),M
+HSA-005,Homo sapiens,2410,sexual_maturity_female,4745.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2410",not stated (point estimate),H
+HSA-006,Homo sapiens,2410,sexual_maturity_male,5110.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2410",not stated (point estimate),H
+HSA-007,Homo sapiens,2410,sexual_maturity_PanTHERIA,5582.93,"PanTHERIA 2023 column embedded in anAge snapshot, row 2410",not stated (PanTHERIA compilation),M
+HSA-008,Homo sapiens,2410,first_birth,5292.5,"PanTHERIA 2023 column embedded in anAge snapshot, row 2410",not stated (PanTHERIA compilation),M
+MMM-001,Mus musculus,2683,conception,-19.0,"derived: -19.0 d (anAge gestation, row 2683); day 0 = birth",not stated (derived from point estimate),H
+MMM-002,Mus musculus,2683,birth,0,anAge convention: birth = day 0 (row 2683),none (definitional),H
+MMM-003,Mus musculus,2683,weaning,22.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2683",not stated (point estimate),H
+MMM-004,Mus musculus,2683,weaning_PanTHERIA,21.5,"PanTHERIA 2023 column embedded in anAge snapshot, row 2683",not stated (PanTHERIA compilation),M
+MMM-005,Mus musculus,2683,sexual_maturity_female,42.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2683",not stated (point estimate),H
+MMM-006,Mus musculus,2683,sexual_maturity_male,42.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2683",not stated (point estimate),H
+MMM-007,Mus musculus,2683,sexual_maturity_PanTHERIA,64.71,"PanTHERIA 2023 column embedded in anAge snapshot, row 2683",not stated (PanTHERIA compilation),M
+MMM-008,Mus musculus,2683,first_birth,139.5,"PanTHERIA 2023 column embedded in anAge snapshot, row 2683",not stated (PanTHERIA compilation),M
+PNT-001,Pan troglodytes,2412,conception,-229.0,"derived: -229.0 d (anAge gestation, row 2412); day 0 = birth",not stated (derived from point estimate),M
+PNT-002,Pan troglodytes,2412,birth,0,anAge convention: birth = day 0 (row 2412),none (definitional),H
+PNT-003,Pan troglodytes,2412,weaning,1111.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2412",not stated (point estimate),M
+PNT-004,Pan troglodytes,2412,weaning_PanTHERIA,1260.81,"PanTHERIA 2023 column embedded in anAge snapshot, row 2412",not stated (PanTHERIA compilation),M
+PNT-005,Pan troglodytes,2412,sexual_maturity_female,3376.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2412",not stated (point estimate),M
+PNT-006,Pan troglodytes,2412,sexual_maturity_male,2920.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2412",not stated (point estimate),M
+PNT-007,Pan troglodytes,2412,sexual_maturity_PanTHERIA,3897.96,"PanTHERIA 2023 column embedded in anAge snapshot, row 2412",not stated (PanTHERIA compilation),M
+PNT-008,Pan troglodytes,2412,eye_opening,0.0,"PanTHERIA 2023 column embedded in anAge snapshot, row 2412",not stated (PanTHERIA compilation); 0.0 = precocial (open at birth),M
+PNT-009,Pan troglodytes,2412,first_birth,5073.5,"PanTHERIA 2023 column embedded in anAge snapshot, row 2412",not stated (PanTHERIA compilation),M
+FCA-001,Felis catus,1751,conception,-65.0,"derived: -65.0 d (anAge gestation, row 1751); day 0 = birth",not stated (derived from point estimate),L
+FCA-002,Felis catus,1751,birth,0,anAge convention: birth = day 0 (row 1751),none (definitional),H
+FCA-003,Felis catus,1751,weaning,56.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1751",not stated (point estimate),L
+FCA-004,Felis catus,1751,sexual_maturity_female,289.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1751",not stated (point estimate),L
+FCA-005,Felis catus,1751,sexual_maturity_PanTHERIA,296.98,"PanTHERIA 2023 column embedded in anAge snapshot, row 1751",not stated (PanTHERIA compilation),M
+CFA-001,Canis lupus familiaris,1717,conception,-62.0,"derived: -62.0 d (anAge gestation, row 1717); day 0 = birth",not stated (derived from point estimate),H
+CFA-002,Canis lupus familiaris,1717,birth,0,anAge convention: birth = day 0 (row 1717),none (definitional),H
+CFA-003,Canis lupus familiaris,1717,weaning,47.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1717",not stated (point estimate),H
+CFA-004,Canis lupus familiaris,1717,weaning_PanTHERIA,44.82,"PanTHERIA 2023 column embedded in anAge snapshot, row 1717",not stated (PanTHERIA compilation),M
+CFA-005,Canis lupus familiaris,1717,sexual_maturity_female,669.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1717",not stated (point estimate),H
+CFA-006,Canis lupus familiaris,1717,sexual_maturity_male,669.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1717",not stated (point estimate),H
+CFA-007,Canis lupus familiaris,1717,sexual_maturity_PanTHERIA,679.37,"PanTHERIA 2023 column embedded in anAge snapshot, row 1717",not stated (PanTHERIA compilation),M
+CFA-008,Canis lupus familiaris,1717,eye_opening,14.01,"PanTHERIA 2023 column embedded in anAge snapshot, row 1717",not stated (PanTHERIA compilation); 0.0 = precocial (open at birth),M
+CFA-009,Canis lupus familiaris,1717,first_birth,547.5,"PanTHERIA 2023 column embedded in anAge snapshot, row 1717",not stated (PanTHERIA compilation),M
+CFA-010,Canis lupus familiaris,1717,dispersal,180.0,"PanTHERIA 2023 column embedded in anAge snapshot, row 1717",not stated (PanTHERIA compilation),M
+OCY-001,Oryctolagus cuniculus,2224,conception,-30.0,"derived: -30.0 d (anAge gestation, row 2224); day 0 = birth",not stated (derived from point estimate),L
+OCY-002,Oryctolagus cuniculus,2224,birth,0,anAge convention: birth = day 0 (row 2224),none (definitional),H
+OCY-003,Oryctolagus cuniculus,2224,weaning,26.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2224",not stated (point estimate),L
+OCY-004,Oryctolagus cuniculus,2224,weaning_PanTHERIA,26.3,"PanTHERIA 2023 column embedded in anAge snapshot, row 2224",not stated (PanTHERIA compilation),M
+OCY-005,Oryctolagus cuniculus,2224,sexual_maturity_female,730.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2224",not stated (point estimate),L
+OCY-006,Oryctolagus cuniculus,2224,sexual_maturity_PanTHERIA,185.61,"PanTHERIA 2023 column embedded in anAge snapshot, row 2224",not stated (PanTHERIA compilation),M
+OCY-007,Oryctolagus cuniculus,2224,eye_opening,10.0,"PanTHERIA 2023 column embedded in anAge snapshot, row 2224",not stated (PanTHERIA compilation); 0.0 = precocial (open at birth),M
+OCY-008,Oryctolagus cuniculus,2224,first_birth,121.66,"PanTHERIA 2023 column embedded in anAge snapshot, row 2224",not stated (PanTHERIA compilation),M
+SCD-001,Sus scrofa domesticus,1701,conception,-115.0,"derived: -115.0 d (anAge gestation, row 1701); day 0 = birth",not stated (derived from point estimate),H
+SCD-002,Sus scrofa domesticus,1701,birth,0,anAge convention: birth = day 0 (row 1701),none (definitional),H
+SCD-003,Sus scrofa domesticus,1701,weaning,56.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1701",not stated (point estimate),H
+SCD-004,Sus scrofa domesticus,1701,weaning_PanTHERIA,97.88,"PanTHERIA 2023 column embedded in anAge snapshot, row 1701",not stated (PanTHERIA compilation),M
+SCD-005,Sus scrofa domesticus,1701,sexual_maturity_female,167.292,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1701",not stated (point estimate),H
+SCD-006,Sus scrofa domesticus,1701,sexual_maturity_male,167.292,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1701",not stated (point estimate),H
+SCD-007,Sus scrofa domesticus,1701,sexual_maturity_PanTHERIA,350.76,"PanTHERIA 2023 column embedded in anAge snapshot, row 1701",not stated (PanTHERIA compilation),M
+SCD-008,Sus scrofa domesticus,1701,first_birth,312.0,"PanTHERIA 2023 column embedded in anAge snapshot, row 1701",not stated (PanTHERIA compilation),M
+ECA-001,Equus caballus,2260,conception,-337.0,"derived: -337.0 d (anAge gestation, row 2260); day 0 = birth",not stated (derived from point estimate),H
+ECA-002,Equus caballus,2260,birth,0,anAge convention: birth = day 0 (row 2260),none (definitional),H
+ECA-003,Equus caballus,2260,weaning,274.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2260",not stated (point estimate),H
+ECA-004,Equus caballus,2260,weaning_PanTHERIA,341.76,"PanTHERIA 2023 column embedded in anAge snapshot, row 2260",not stated (PanTHERIA compilation),M
+ECA-005,Equus caballus,2260,sexual_maturity_female,914.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2260",not stated (point estimate),H
+ECA-006,Equus caballus,2260,sexual_maturity_male,973.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 2260",not stated (point estimate),H
+ECA-007,Equus caballus,2260,sexual_maturity_PanTHERIA,834.72,"PanTHERIA 2023 column embedded in anAge snapshot, row 2260",not stated (PanTHERIA compilation),M
+ECA-008,Equus caballus,2260,eye_opening,0.0,"PanTHERIA 2023 column embedded in anAge snapshot, row 2260",not stated (PanTHERIA compilation); 0.0 = precocial (open at birth),M
+ECA-009,Equus caballus,2260,first_birth,912.5,"PanTHERIA 2023 column embedded in anAge snapshot, row 2260",not stated (PanTHERIA compilation),M
+ECA-010,Equus caballus,2260,dispersal,742.31,"PanTHERIA 2023 column embedded in anAge snapshot, row 2260",not stated (PanTHERIA compilation),M
+SSU-001,Suricata suricatta,1799,conception,-77.0,"derived: -77.0 d (anAge gestation, row 1799); day 0 = birth",not stated (derived from point estimate),H
+SSU-002,Suricata suricatta,1799,birth,0,anAge convention: birth = day 0 (row 1799),none (definitional),H
+SSU-003,Suricata suricatta,1799,weaning,44.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1799",not stated (point estimate),H
+SSU-004,Suricata suricatta,1799,weaning_PanTHERIA,55.68,"PanTHERIA 2023 column embedded in anAge snapshot, row 1799",not stated (PanTHERIA compilation),M
+SSU-005,Suricata suricatta,1799,sexual_maturity_female,365.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1799",not stated (point estimate),H
+SSU-006,Suricata suricatta,1799,sexual_maturity_male,365.0,"anAge Table S1.13 snapshot (lu2023 MOESM3_ESM.xlsx), row 1799",not stated (point estimate),H
+SSU-007,Suricata suricatta,1799,sexual_maturity_PanTHERIA,377.37,"PanTHERIA 2023 column embedded in anAge snapshot, row 1799",not stated (PanTHERIA compilation),M
+SSU-008,Suricata suricatta,1799,eye_opening,11.97,"PanTHERIA 2023 column embedded in anAge snapshot, row 1799",not stated (PanTHERIA compilation); 0.0 = precocial (open at birth),M
+SSU-009,Suricata suricatta,1799,first_birth,365.0,"PanTHERIA 2023 column embedded in anAge snapshot, row 1799",not stated (PanTHERIA compilation),M
