@@ -1,0 +1,47 @@
+# ARIS4C-006 段2（Stage 2 冻结）executor 任务
+
+## 背景（宿主判定，勿读旧日志）
+- 段1 已验收（verdict GO-with-caution；#7 closest_prior PASS）。两个外部阻塞已解除：
+  1. data/feasibility_v2.json（08:38 落盘）：CN 机构关联 works = 16,404,738（以文件为准）；field_ids：mathematics=26 / physics and astronomy=31 / nursing=29 / medicine=27；有效 filter 形态=authorships.institutions.country_code:CN。
+  2. ChineseNames 2025.8 已冻结解析：data/chinenames_dist.json（23 个首字母占比，unknown=0）+ data/chinenames_pkg/familyname.csv（1806 姓：surname,compound,initial,initial.rank,n.1930_2008,ppm.1930_2008,surname.uniqueness）+ givenname.csv（2614 字含 pinyin）。pilot #5 = PASS（宿主已复现）。
+- 本 run = 完成待决 pilot（机制/语境层，**不得拟合任何职业结果模型**）+ 写冻结文档。
+- 禁止读 results/ 下任何旧 run 日志。
+
+## 在盘指针（只读小文件）
+- RESEARCH_BRIEF.md（114 行，全文读 1 次）——冻结设计权威。
+- stage1_summary.md（33 行）+ data/DATA_PROFILE.md（41 行）——段1 结论。
+- data/feasibility_v2.json、data/chinenames_dist.json、data/chinenames_pkg/familyname.csv（head 20 行即可）。
+- data/surnames.py（SURNAMES ~170 姓含完整拼音/多音字）；data/s3_openalex.py（段1 估计器代码：Obs/Exp/Excess+并列 chance；**注意其 ExpectedChance 可能还是均匀占位，本 run 须接入人口频率**）。
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## 冻结设计（本 run 执行并写入 STAGE2_FREEZE.md；宿主已定，勿改方向）
+- 主人群：CN 机构关联 authorships（authorships.institutions.country_code:CN），4 领域 field_id 26/31/29/27。
+- 时间窗：主窗 2010–2024（作品发表年）；敏感性 2000–2009（子集）；pilot 窗口 2019–2024。
+- 语境 Level C：journal×field×year，cell n<30 退化 field×year。
+- 暴露估计器：ObservedAlphaRate / ExpectedChance（团队规模加权+并列调整，**基础概率用 chinenames_dist.json 首字母占比或 familyname.csv 姓氏级 n，禁止均匀 A–Z**）；ExcessAlpha cross-fitted / leave-one-work-out。
+- 主结果（Tier 1 ①）：Y(i,t)=作者 t 年多作者作品中 (pos−1)/(n_auth−1) 均值（0=第一，1=末位）；次级 Tier 1 ② P(first)、③ 通讯占比（覆盖 ≥30% 才启用）。
+- 主模型（冻结，本 run 不拟合）：Y(i,t)=β1·Rank(i)+β2·AlphaExp(i,t−1)+β3·交互+controls+FE；Rank 与 AlphaExp 标准化；FE=领域×年+作者（≥2 年者）；controls=姓氏人口份额(log)/团队规模/职业年龄/前期产出 lag。
+- 排除规则：单作者→出估计器+主 Y（留作负对照集）；两作者→出主惯例估计（敏感性保留）；无机构国码→出 CN 面板；tier-3 解析→出确证模型；ORCID 优先消歧。
+- 多重性：主检验=1 个（主模型 β3，不校正）；Tier 1 次级 3×β3→Holm；8 负对照=只报告；Tier 2 探索性→FDR q=0.1 显式标注。
+- 解析阈值（5D 预注册）：blind 验证样本 100 条 CN 署名（先取后看），tier1+2 精度 ≥0.90 且姓氏覆盖 ≥50% 才过闸。
+- 面板抽取预算（Stage 3 用，写入冻结）：≤5000 查询（5 天配额）；按 P1 实测 count 定每领域页数（count/200）；总和超限则确定性子采样（published 升序每 k 页取 1 页，k 显式记录）。
+
+## 2026 OpenAlex API 硬事实
+- 今日剩余 ~550+（1000/天）；本 run 硬上限 14 次；剩余 <30 立即停写 partial。
+- per-page 1–200；连字符区间；429 用 backoff(0,30,60,120,240)；自诊断 zzz.gte:1。
+- 领域 filter 形态待探测：优先 primary_topic.field.id:<fid>（1 次探测，400 则改 topics 形态并记 deviation）。
+
+## 纪律（防溢出，必须遵守）
+- 工具调用 ≤26；单响应 ≤1 调用；参数 ≤25 行；文本 ≤2 句；禁正文复述文件内容；进度行与任务同命令写入 data/progress_s2.txt（不单独调用）；python 输出 ≤20 行。
+
+## 任务
+- T1 读 RESEARCH_BRIEF + stage1_summary + feasibility_v2 + chinenames_dist + s3_openalex.py + surnames.py（head 30 行）（≤6 次小读）。
+- T2 P1 覆盖 pilot：领域 filter 形态探测 1 次 + 4 领域 count（2010–2024，CN）→ s2_pilot_results.json §1（面板规模+抽取预算数字）。
+- T3 P2 excess 变异 pilot：4 领域 × 100 篇（2019–2024，sort 偏倚记为 pilot 局限）→ 接入人口频率重算 Obs/Exp/Excess（语境=field×year，退化规则）→ §2（语境间 ExcessAlpha 方差/极差/分布摘要）。
+- T4 P3 解析 pilot：T3 样本上跑 5A/5B 解析（familyname+surnames.py+givenname）→ §3（tier 分布、覆盖、精度抽查 ≤50 条）。
+- T5 P6 稳定性：排除两作者重算 ExcessAlpha → §4（相关/delta）。P4 消歧诊断=Stage 3 入口闸（冻结文档写明：全面板构建后、主拟合前执行，失败则收窄/停止）。
+- T6 写 STAGE2_FREEZE.md ≤90 行：8 冻结项 + pilot 证据表 + P4 闸 + 抽取预算 + deviations。
+- T7 写 stage2_summary.md ≤30 行（pilot 7 条最新状态：#1/#2/#3/#5/#6 本 run 结论、#4 延至 Stage 3 闸、#7 已 PASS）+ 末行 DONE stage2 006。
+
+## 禁止
+- 拟合任何模型/计算任何率（冻结前零确证结果）；新文献/Crossref；改段1 四件；读旧日志；超出 14 次查询。

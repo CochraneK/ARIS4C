@@ -1,0 +1,6 @@
+[2026-09-30] T2/T3/T4/T5 local analysis run rc=2
+[2026-09-30] write_file tool silently failed to persist (file absent on real FS after success); wrote s2_analysis.py via PowerShell here-string instead (deviation logged)
+[2026-09-30] T2/T3/T4/T5 analysis executed rc=1
+[2026-09-30] diag run rc=0
+[2026-09-30] s2_analysis.py v2 (5B romanized parse) executed rc=0
+[2026-09-30] T6 STAGE2_FREEZE.md (70 lines, moved to root) + T7 stage2_summary.md written; stage2 fix run complete, 0 queries used

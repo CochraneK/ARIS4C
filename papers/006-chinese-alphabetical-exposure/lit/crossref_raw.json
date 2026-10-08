@@ -1,0 +1,672 @@
+{
+ "D1_alpha_convention": [
+  {
+   "doi": "10.36866/pn.101.6",
+   "title": "Alphabetical author order",
+   "year": 2016,
+   "authors": [
+    "Cain Mark"
+   ],
+   "venue": "Physiology News",
+   "status": "VERIFIED(doi.org)"
+  },
+  {
+   "doi": "10.5040/9781472584465.40000005",
+   "title": "Alphabetical Order",
+   "year": 1400,
+   "authors": [],
+   "venue": "Alphabetical Order",
+   "status": "VERIFIED(doi.org)"
+  },
+  {
+   "doi": "10.7717/peerj.5407/table-1",
+   "title": "Table 1: Study characteristics of papers using the 2009 IOM guidelines listed in alphabetical order, by author.",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "VERIFIED(doi.org,http403)"
+  },
+  {
+   "doi": "10.7717/peerj.5407/table-2",
+   "title": "Table 2: Main findings from articles using the 2009 IOM guidelines listed in alphabetical order, by author.",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "VERIFIED(doi.org,http403)"
+  },
+  {
+   "doi": "10.7717/peerj.14532/table-2",
+   "title": "Table 2: Research papers (in alphabetical order according to first author) analyzing dog bites in various countries.",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "VERIFIED(doi.org,http403)"
+  },
+  {
+   "doi": "10.1017/9781108608893.010",
+   "title": "Bibliography (in alphabetical order by author)",
+   "year": 2019,
+   "authors": [],
+   "venue": "Maritime Delimitation as a Judicial Process",
+   "status": "UNVERIFIED (doi.org 500)"
+  },
+  {
+   "doi": "10.1007/s11192-025-05369-0",
+   "title": "Alphabetical author order and co-author contributions in mathematics",
+   "year": 2025,
+   "authors": [
+    "Donner Paul",
+    "Korytkowski Przemysław"
+   ],
+   "venue": "Scientometrics",
+   "status": "VERIFIED(doi.org)"
+  },
+  {
+   "doi": "10.7717/peerj-cs.670/table-5",
+   "title": "Table 5: Studies that use ML algorithms on COVID-19 hemogram data (in alphabetical order by the surname of the first author).",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "VERIFIED(doi.org,http403)"
+  },
+  {
+   "doi": "10.1111/1747-0080.12035",
+   "title": "Posters (in alphabetical order by author)",
+   "year": 2013,
+   "authors": [],
+   "venue": "Nutrition &amp; Dietetics",
+   "status": "VERIFIED(doi.org,http403)"
+  },
+  {
+   "doi": "10.1080/14768320600901313",
+   "title": "In alphabetical order by first author",
+   "year": 2006,
+   "authors": [],
+   "venue": "Psychology &amp; Health",
+   "status": "VERIFIED(doi.org,http403)"
+  },
+  {
+   "doi": "10.1016/j.joi.2013.03.002",
+   "title": "Alphabetization and the skewing of first authorship towards last names early in the alphabet",
+   "year": 2013,
+   "authors": [
+    "Levitt Jonathan M.",
+    "Thelwall Mike"
+   ],
+   "venue": "Journal of Informetrics",
+   "status": "VERIFIED(doi.org)"
+  },
+  {
+   "doi": "10.1093/oed/7677660778",
+   "title": "alphabetization, n.",
+   "year": 2023,
+   "authors": [],
+   "venue": "Oxford English Dictionary",
+   "status": "VERIFIED(doi.org)"
+  }
+ ],
+ "D2_position_outcomes": [
+  {
+   "doi": "10.7717/peerj-cs.421/supp-11",
+   "title": "Supplemental Information 11: Step 4.3: Loading author citation network and save author citation network as binary.",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "VERIFIED(doi.org,http403)"
+  },
+  {
+   "doi": "10.1007/s11192-007-2019-y",
+   "title": "A comparative study of first and all-author co-citation counting, and two different matrix generation approaches applied for author co-citation analyses",
+   "year": 2009,
+   "authors": [
+    "Schneider Jesper W.",
+    "Larsen Birger",
+    "Ingwersen Peter"
+   ],
+   "venue": "Scientometrics",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.70744/metaror.187.1.ar",
+   "title": "Author Response: Citation accuracy, citation noise, and citation bias: A foundation of citation analysis (Round 1)",
+   "year": 2026,
+   "authors": [
+    "Bornmann Lutz",
+    "Leibel Christian"
+   ],
+   "venue": "",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.70744/metaror.356.2.ar",
+   "title": "Author Response: Citation accuracy, citation noise, and citation bias: A foundation of citation analysis (Round 2)",
+   "year": 2026,
+   "authors": [
+    "Bornmann Lutz",
+    "Leibel Christian"
+   ],
+   "venue": "",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1016/j.joi.2008.05.004",
+   "title": "Comparing all-author and first-author co-citation analyses of information science",
+   "year": 2008,
+   "authors": [
+    "Zhao Dangzhi",
+    "Strotmann Andreas"
+   ],
+   "venue": "Journal of Informetrics",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.7717/peerj.5664/table-3",
+   "title": "Table 3: Summary of regression model output for the effect of Author Number and Maximum Affiliation on average citation counts.",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.7717/peerj-cs.313/fig-13",
+   "title": "Figure 13: Author citation by institution.",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.7717/peerj-cs.313/fig-14",
+   "title": "Figure 14: Author citation by journal source.",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.5040/9798216415817.0010",
+   "title": "About the Author",
+   "year": 2009,
+   "authors": [],
+   "venue": "Bibliometrics and Citation Analysis",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1007/s11192-010-0310-9",
+   "title": "Is correspondence reflected in the author position? A bibliometric study of the relation between corresponding author and byline position",
+   "year": 2010,
+   "authors": [
+    "Mattsson Pauline",
+    "Sundberg Carl Johan",
+    "Laget Patrice"
+   ],
+   "venue": "Scientometrics",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.24318/cope.2019.2.10",
+   "title": "Corresponding author requests removal of author before publication",
+   "year": 2006,
+   "authors": [
+    "Wager Elizabeth"
+   ],
+   "venue": "",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.24318/cope.2019.2.9",
+   "title": "Corresponding author requests removal of author before publication",
+   "year": 2006,
+   "authors": [
+    "Wager Elizabeth"
+   ],
+   "venue": "",
+   "status": "UNVERIFIED (deadline)"
+  }
+ ],
+ "D3_egotism": [
+  {
+   "doi": "10.2139/ssrn.1714599",
+   "title": "Spurious Also? Name Similarity Effects (Implicit Egotism) in Employer Decisions",
+   "year": 2010,
+   "authors": [
+    "Simonsohn Uri"
+   ],
+   "venue": "",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1037/e722992011-059",
+   "title": "Spurious? Name Similarity Effects (Implicit Egotism) in Marriage, Job and Moving Decisions",
+   "year": 2010,
+   "authors": [
+    "Simonsohn Uri"
+   ],
+   "venue": "PsycEXTRA Dataset",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.31234/osf.io/q9kp4_v1",
+   "title": "Correspondence Is Not Mechanism: A Construct-Validity Audit of Implicit Egotism",
+   "year": 2026,
+   "authors": [
+    "Bibby Simon"
+   ],
+   "venue": "",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1007/978-3-319-24612-3_1134",
+   "title": "Implicit Egotism",
+   "year": 2020,
+   "authors": [
+    "Pelham Brett"
+   ],
+   "venue": "Encyclopedia of Personality and Individual Differences",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1037/e518442013-377",
+   "title": "Implicit egotism in selection",
+   "year": 2008,
+   "authors": [
+    "Boyd Brittany",
+    "Blanshteyn Victoria",
+    "Sommer Kristin"
+   ],
+   "venue": "PsycEXTRA Dataset",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1007/978-3-319-28099-8_1134-1",
+   "title": "Implicit Egotism",
+   "year": 2017,
+   "authors": [
+    "Pelham Brett"
+   ],
+   "venue": "Encyclopedia of Personality and Individual Differences",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1037/e633942013-937",
+   "title": "Implicit egotism: An experimental study on the role of implicit self-esteem and self-relevance",
+   "year": 2005,
+   "authors": [
+    "Smeets Raymond C.",
+    "Holland Rob W.",
+    "Van Knippenberg Ad"
+   ],
+   "venue": "PsycEXTRA Dataset",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1037/e722292011-060",
+   "title": "Moderators of choice preference: An archival test of implicit egotism",
+   "year": 2007,
+   "authors": [
+    "Kleyman Kerry S.",
+    "Kemmelmeier Markus"
+   ],
+   "venue": "PsycEXTRA Dataset",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1037/e633912013-189",
+   "title": "Implicit egotism: Implications for interpersonal attraction",
+   "year": 2004,
+   "authors": [
+    "Jones John T.",
+    "Pelham Brett W.",
+    "Carvallo Mauricio"
+   ],
+   "venue": "PsycEXTRA Dataset",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1037/e527772014-358",
+   "title": "Harnessing implicit egotism and value systems to motivate prosocial behavior",
+   "year": 2011,
+   "authors": [
+    "Eadeh Fade",
+    "Neal David T."
+   ],
+   "venue": "PsycEXTRA Dataset",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.4135/9781412956253.n360",
+   "title": "Name Letter Effect",
+   "year": 2007,
+   "authors": [],
+   "venue": "Encyclopedia of Social Psychology",
+   "status": "UNVERIFIED (deadline)"
+  },
+  {
+   "doi": "10.1080/10463283.2014.980085",
+   "title": "What’s really in a Name-Letter Effect? Name-letter preferences as indirect measures of self-esteem",
+   "year": 2014,
+   "authors": [
+    "Hoorens Vera"
+   ],
+   "venue": "European Review of Social Psychology",
+   "status": "UNVERIFIED (skip)"
+  }
+ ],
+ "D4_chinese_names": [
+  {
+   "doi": "10.1515/9780691227757-014",
+   "title": "Appendix A PINYIN ROMANIZATION",
+   "year": 1994,
+   "authors": [],
+   "venue": "Chinese Primer",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.1515/9780691229485-062",
+   "title": "Appendix A PINYIN ROMANIZATION",
+   "year": 1994,
+   "authors": [],
+   "venue": "Chinese Primer, Volumes 1-3 (GR)",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.2307/j.ctv9hvs6k.4",
+   "title": "Comparison of Yale and Pinyin Romanizations",
+   "year": 2019,
+   "authors": [],
+   "venue": "Chinese Romanization Self-Study Guide",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.2307/j.ctv9hvs6k.5",
+   "title": "Comparison of Pinyin and Wade-Giles Romanizations",
+   "year": 2019,
+   "authors": [],
+   "venue": "Chinese Romanization Self-Study Guide",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.4324/9780203503645-6",
+   "title": "Overview of pronunciation and Pinyin romanization",
+   "year": 2006,
+   "authors": [],
+   "venue": "Modern Mandarin Chinese Grammar Workbook",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.4324/9781315764351-8",
+   "title": "Overview of pronunciation and Pinyin romanization",
+   "year": 2014,
+   "authors": [],
+   "venue": "Modern Mandarin Chinese Grammar Workbook",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.4324/9781315814759-11",
+   "title": "Overview of pronunciation and Pinyin romanization",
+   "year": 2017,
+   "authors": [],
+   "venue": "Modern Mandarin Chinese Grammar",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.1525/9780520912304-012",
+   "title": "Romanization Conversion Table: Wade-Giles/Pinyin",
+   "year": 1993,
+   "authors": [],
+   "venue": "Diffusion of Distances",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.1109/eei67650.2025.11334750",
+   "title": "Chinese Author Name Disambiguation Based on Graph Structure Reconstruction",
+   "year": 2025,
+   "authors": [
+    "Sun Xiaotong",
+    "E Xinhua"
+   ],
+   "venue": "2025 7th International Conference on Electronic Engineering and Informatics (EEI)",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.1109/ccsb63463.2024.10735509",
+   "title": "Research on Chinese-English Author Name Disambiguation Based on Semantic Fingerprint",
+   "year": 2024,
+   "authors": [
+    "Li Yifei"
+   ],
+   "venue": "2024 4th International Conference on Computer Science and Blockchain (CCSB)",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.53106/199115992023083404004",
+   "title": "Author Name Disambiguation Based on Heterogeneous Graph",
+   "year": 2023,
+   "authors": [
+    "Chuang Ma Chuang Ma",
+    "Chuang Ma Helong Xia"
+   ],
+   "venue": "電腦學刊",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.1145/3833541.3833560",
+   "title": "Author Name Disambiguation via Integrating Semantic and Relational Information--Name Disambiguation",
+   "year": 2026,
+   "authors": [
+    "Yuan Hai",
+    "Liu Shenghui",
+    "Yuan chao"
+   ],
+   "venue": "Proceedings of the 2026 3rd International Conference on Digital Society and Artificial Intelligence",
+   "status": "UNVERIFIED (skip)"
+  }
+ ],
+ "D5_name_bias": [
+  {
+   "doi": "10.31235/osf.io/43frs",
+   "title": "Racial/Ethnic Perceptions from Hispanic Names: Selecting Names to Test for Discrimination",
+   "year": 2017,
+   "authors": [
+    "Gaddis S. Michael"
+   ],
+   "venue": "",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.2139/ssrn.4206225",
+   "title": "Selecting Names for Experiments on Ethnic Discrimination",
+   "year": 2022,
+   "authors": [
+    "Baert Stijn",
+    "Lippens Louis",
+    "Van Borm Hannah"
+   ],
+   "venue": "",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.2139/ssrn.2975829",
+   "title": "Racial/Ethnic Perceptions from Hispanic Names: Selecting Names to Test for Discrimination",
+   "year": 2017,
+   "authors": [
+    "Gaddis S. Michael"
+   ],
+   "venue": "SSRN Electronic Journal",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.32614/cran.package.callback",
+   "title": "callback: Computes Statistics from Discrimination Experimental Data",
+   "year": 2024,
+   "authors": [
+    "Duguet Emmanuel"
+   ],
+   "venue": "CRAN: Contributed Packages",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.4324/9781003463863-5",
+   "title": "Reducing ethnic discrimination in resume-screening: a test of two training interventions",
+   "year": 2024,
+   "authors": [
+    "Derous Eva",
+    "Nguyen Hannah-Hanh D.",
+    "Ryan Ann Marie"
+   ],
+   "venue": "Recent Developments in Recruitment and Selection",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.1093/oxfordhb/9780199764921.013.017",
+   "title": "By Any Other Name: Discrimination in Resume Screening",
+   "year": 2014,
+   "authors": [
+    "Derous Eva",
+    "Ryan Ann Marie"
+   ],
+   "venue": "Oxford Handbooks Online",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.2139/ssrn.3022217",
+   "title": "Assessing Immigrant Generational Status from Names: Evidence for Experiments Examining Racial/Ethnic and Immigrant Discrimination",
+   "year": 2019,
+   "authors": [
+    "Gaddis S. Michael"
+   ],
+   "venue": "SSRN Electronic Journal",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.1177/2378023117737193",
+   "title": "Racial/Ethnic Perceptions from Hispanic Names: Selecting Names to Test for Discrimination",
+   "year": 2017,
+   "authors": [
+    "Gaddis S. Michael"
+   ],
+   "venue": "Socius: Sociological Research for a Dynamic World",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.1016/j.hrmr.2021.100832",
+   "title": "When ethnic discrimination in recruitment is likely to occur and how to reduce it: Applying a contingency perspective to review resume studies",
+   "year": 2022,
+   "authors": [
+    "Adamovic Mladen"
+   ],
+   "venue": "Human Resource Management Review",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.1037/e578192014-853",
+   "title": "Name bias in competence judgments, hiring decisions, and juror sentencing",
+   "year": 2014,
+   "authors": [
+    "Kenthirarajah Dushiyanthini (Toni",
+    "Walton Gregory M.",
+    "Cohen Geoffrey L."
+   ],
+   "venue": "PsycEXTRA Dataset",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "doi": "10.31274/cc-20251215-20",
+   "title": "Automated Resume Screening: Bias in AI Hiring Algorithms",
+   "year": 2025,
+   "authors": [
+    "Deenadayalan Raveenaa"
+   ],
+   "venue": "",
+   "status": "UNVERIFIED (skip)"
+  }
+ ],
+ "closest_prior": [
+  {
+   "q": "alphabetical author order surname career",
+   "doi": "10.7717/peerj-cs.670/table-5",
+   "title": "Table 5: Studies that use ML algorithms on COVID-19 hemogram data (in alphabetical order by the surname of the first author).",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "q": "alphabetical author order surname career",
+   "doi": "10.7717/peerj.20539/table-1",
+   "title": "Table 1: Characteristics and main findings of the selected articles (organized according to neuroimaging technique and in alphabetical order of first author’s surname).",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "q": "alphabetical author order surname career",
+   "doi": "10.36866/pn.101.6",
+   "title": "Alphabetical author order",
+   "year": 2016,
+   "authors": [
+    "Cain Mark"
+   ],
+   "venue": "Physiology News",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "q": "alphabetical author order surname career",
+   "doi": "10.7717/peerj.5407/table-1",
+   "title": "Table 1: Study characteristics of papers using the 2009 IOM guidelines listed in alphabetical order, by author.",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "q": "alphabetical author order surname career",
+   "doi": "10.7717/peerj.5407/table-2",
+   "title": "Table 2: Main findings from articles using the 2009 IOM guidelines listed in alphabetical order, by author.",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "q": "alphabetical order authorship China",
+   "doi": "10.1007/s11192-013-1219-x",
+   "title": "The impact of publications from mainland China on the trends in alphabetical authorship",
+   "year": 2013,
+   "authors": [
+    "Liu Xuan Zhen",
+    "Fang Hui"
+   ],
+   "venue": "Scientometrics",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "q": "alphabetical order authorship China",
+   "doi": "10.17234/9789531758314.11",
+   "title": "List of authors (in alphabetical order); List of reviewers (in alphabetical order)",
+   "year": 2019,
+   "authors": [],
+   "venue": "Interdisciplinary Linguistic and Psychiatric Research on Language Disorders",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "q": "surname order academic career",
+   "doi": "10.7717/peerj-cs.670/table-5",
+   "title": "Table 5: Studies that use ML algorithms on COVID-19 hemogram data (in alphabetical order by the surname of the first author).",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "UNVERIFIED (skip)"
+  },
+  {
+   "q": "surname order academic career",
+   "doi": "10.7717/peerj.20539/table-1",
+   "title": "Table 1: Characteristics and main findings of the selected articles (organized according to neuroimaging technique and in alphabetical order of first author’s surname).",
+   "year": null,
+   "authors": [],
+   "venue": "",
+   "status": "UNVERIFIED (skip)"
+  }
+ ]
+}

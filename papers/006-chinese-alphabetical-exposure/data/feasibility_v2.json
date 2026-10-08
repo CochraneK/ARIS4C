@@ -1,0 +1,30 @@
+{
+ "snapshot": "2026-09-29",
+ "items": {
+  "filter_discovery": {
+   "authorships.country_code:CN": {
+    "ok": false,
+    "err": "GET fail https://api.openalex.org/works?filter=authorships.country_code%3ACN&per"
+   },
+   "authorships.institutions.country_code:CN": {
+    "ok": true,
+    "count": 16404738
+   },
+   "institutions.country_code:CN": {
+    "ok": true,
+    "count": 16404738
+   }
+  },
+  "item5_panel_estimate": {
+   "filter": "authorships.institutions.country_code:CN",
+   "works_count": 16404738,
+   "note": "author-yr rows ~= works x avg CN authorships/work (avg from item1 sample)"
+  },
+  "field_ids": {
+   "mathematics": "https://openalex.org/fields/26",
+   "physics and astronomy": "https://openalex.org/fields/31",
+   "nursing": "https://openalex.org/fields/29",
+   "medicine": "https://openalex.org/fields/27"
+  }
+ }
+}

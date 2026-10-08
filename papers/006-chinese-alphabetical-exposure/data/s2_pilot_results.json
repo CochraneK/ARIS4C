@@ -1,0 +1,2787 @@
+{
+ "snapshot": "2026-09-30",
+ "source": "data/s2_pilot_works.json (prior-run fetch; 0 new queries this run)",
+ "estimator": "Obs=1 if all author surnames parsed t1/t2 and pinyin surname keys non-decreasing in listed order; Exp=h_n(pop surname dist, familyname n.1930_2008 normalized)=P(i.i.d. population surnames come out sorted), tie-adjusted by construction, team-size dependent; Excess=(Obs-Exp)/(1-Exp); context=journal x field x year, cell n<30 degraded to field-year",
+ "parse_rule": "5A: CJK name, longest match vs ChineseNames (2-char compound in fam_comp|SURN else 1-char in fam_single) -> tier1, key=surname pinyin (SURN duoyin override else per-char givenname); 5B: romanized, 2 tokens, token in surname-pinyin set -> tier2 (both tokens match -> surname=token0, flagged); 3 tokens -> 2-token compound surname else tier3; else tier3",
+ "s1_panel_and_budget": {
+  "counts_2010_2024": {
+   "math": 142544,
+   "physics": 340328,
+   "nursing": 42464,
+   "medicine": 1610478
+  },
+  "pages_count_over_200": {
+   "math": 713,
+   "physics": 1702,
+   "nursing": 213,
+   "medicine": 8053
+  },
+  "sum_pages": 10681,
+  "cap_queries": 5000,
+  "subsamp_rule": "published asc, take 1 of every k pages (deterministic)",
+  "k": 3,
+  "est_queries_k3": 3562,
+  "host_precompute": "math713 physics1702 nursing213 medicine8053 sum10681",
+  "field_filter_form": "primary_topic.field.id:<fid> (probe ok; probe-key cosmetic typo only)"
+ },
+ "s3_parsing": {
+  "n_names": 2603,
+  "tier_dist": {
+   "t0_empty": 0,
+   "tier1_5A_cjk": 0,
+   "tier2_5B_rom": 2071,
+   "tier3_excluded": 532
+  },
+  "cjk_names": 0,
+  "romanized_names": 2603,
+  "both_token_match_flagged": 613,
+  "t12_coverage_all": 0.7956,
+  "t1_pinyin_initial_matches_famcsv": 0,
+  "surnames_in_famcsv": 1806,
+  "surn_pinyin_set": 391,
+  "char_pinyin": 2614,
+  "spot_check_le50": [
+   {
+    "f": "math",
+    "name": "Li Yanpeng",
+    "tier": 2,
+    "key": "li",
+    "cjk_top": "李",
+    "n_cands": 17,
+    "both": false
+   },
+   {
+    "f": "math",
+    "name": "Xie Jiahui",
+    "tier": 2,
+    "key": "xie",
+    "cjk_top": "谢",
+    "n_cands": 3,
+    "both": false
+   },
+   {
+    "f": "math",
+    "name": "Zhou Guoliang",
+    "tier": 2,
+    "key": "zhou",
+    "cjk_top": "周",
+    "n_cands": 3,
+    "both": false
+   },
+   {
+    "f": "math",
+    "name": "Zhou Wang",
+    "tier": 2,
+    "key": "zhou",
+    "cjk_top": "周",
+    "n_cands": 3,
+    "both": true
+   },
+   {
+    "f": "math",
+    "name": "Yan-Jiao Liu",
+    "tier": 2,
+    "key": "liu",
+    "cjk_top": "刘",
+    "n_cands": 5,
+    "both": false
+   },
+   {
+    "f": "math",
+    "name": "Jian-Hua Yin",
+    "tier": 2,
+    "key": "yin",
+    "cjk_top": "尹",
+    "n_cands": 10,
+    "both": false
+   },
+   {
+    "f": "math",
+    "name": "Junzhe Zhao",
+    "tier": 2,
+    "key": "zhao",
+    "cjk_top": "赵",
+    "n_cands": 8,
+    "both": false
+   },
+   {
+    "f": "math",
+    "name": "Huimin Wang",
+    "tier": 2,
+    "key": "wang",
+    "cjk_top": "王",
+    "n_cands": 5,
+    "both": false
+   },
+   {
+    "f": "math",
+    "name": "Qi Wang",
+    "tier": 2,
+    "key": "qi",
+    "cjk_top": "齐",
+    "n_cands": 23,
+    "both": true
+   },
+   {
+    "f": "math",
+    "name": "Renji Han",
+    "tier": 2,
+    "key": "han",
+    "cjk_top": "韩",
+    "n_cands": 10,
+    "both": false
+   },
+   {
+    "f": "math",
+    "name": "Kuo Yu",
+    "tier": 2,
+    "key": "kuo",
+    "cjk_top": "阔",
+    "n_cands": 1,
+    "both": true
+   },
+   {
+    "f": "math",
+    "name": "Haoyue Xiang",
+    "tier": 2,
+    "key": "xiang",
+    "cjk_top": "向",
+    "n_cands": 12,
+    "both": false
+   },
+   {
+    "f": "math",
+    "name": "Weichen Xiong",
+    "tier": 2,
+    "key": "xiong",
+    "cjk_top": "熊",
+    "n_cands": 2,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "A. Li",
+    "tier": 2,
+    "key": "li",
+    "cjk_top": "李",
+    "n_cands": 17,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Y. Hong",
+    "tier": 2,
+    "key": "hong",
+    "cjk_top": "洪",
+    "n_cands": 5,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Jiayu Deng",
+    "tier": 2,
+    "key": "deng",
+    "cjk_top": "邓",
+    "n_cands": 3,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Jianhua Liu",
+    "tier": 2,
+    "key": "liu",
+    "cjk_top": "刘",
+    "n_cands": 5,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Shuguan Ji",
+    "tier": 2,
+    "key": "ji",
+    "cjk_top": "纪",
+    "n_cands": 16,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Sida Kang",
+    "tier": 2,
+    "key": "kang",
+    "cjk_top": "康",
+    "n_cands": 3,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Xiaolin Ma",
+    "tier": 2,
+    "key": "ma",
+    "cjk_top": "马",
+    "n_cands": 3,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Yuhan Hu",
+    "tier": 2,
+    "key": "hu",
+    "cjk_top": "胡",
+    "n_cands": 5,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Hao‐Tian Li",
+    "tier": 2,
+    "key": "li",
+    "cjk_top": "李",
+    "n_cands": 17,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Zhi‐Yuan Fan",
+    "tier": 2,
+    "key": "fan",
+    "cjk_top": "范",
+    "n_cands": 8,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Huai‐Bing Zhu",
+    "tier": 2,
+    "key": "zhu",
+    "cjk_top": "朱",
+    "n_cands": 8,
+    "both": false
+   },
+   {
+    "f": "physics",
+    "name": "Jie Li",
+    "tier": 2,
+    "key": "jie",
+    "cjk_top": "揭",
+    "n_cands": 11,
+    "both": true
+   },
+   {
+    "f": "physics",
+    "name": "Jianping Wu",
+    "tier": 2,
+    "key": "wu",
+    "cjk_top": "吴",
+    "n_cands": 13,
+    "both": false
+   },
+   {
+    "f": "nursing",
+    "name": "Wenliang Zhao",
+    "tier": 2,
+    "key": "zhao",
+    "cjk_top": "赵",
+    "n_cands": 8,
+    "both": false
+   },
+   {
+    "f": "nursing",
+    "name": "Yi Lyu",
+    "tier": 2,
+    "key": "yi",
+    "cjk_top": "易",
+    "n_cands": 28,
+    "both": false
+   },
+   {
+    "f": "nursing",
+    "name": "Ling Xiong",
+    "tier": 2,
+    "key": "ling",
+    "cjk_top": "凌",
+    "n_cands": 8,
+    "both": true
+   },
+   {
+    "f": "nursing",
+    "name": "Luanfeng Wang",
+    "tier": 2,
+    "key": "wang",
+    "cjk_top": "王",
+    "n_cands": 5,
+    "both": false
+   },
+   {
+    "f": "nursing",
+    "name": "Fang Wang",
+    "tier": 2,
+    "key": "fang",
+    "cjk_top": "方",
+    "n_cands": 5,
+    "both": true
+   },
+   {
+    "f": "nursing",
+    "name": "Haizhao Song",
+    "tier": 2,
+    "key": "song",
+    "cjk_top": "宋",
+    "n_cands": 2,
+    "both": false
+   },
+   {
+    "f": "nursing",
+    "name": "Xinchun Shen",
+    "tier": 2,
+    "key": "shen",
+    "cjk_top": "沈",
+    "n_cands": 7,
+    "both": false
+   },
+   {
+    "f": "nursing",
+    "name": "Tongtong Wang",
+    "tier": 2,
+    "key": "wang",
+    "cjk_top": "王",
+    "n_cands": 5,
+    "both": false
+   },
+   {
+    "f": "nursing",
+    "name": "Gang Chen",
+    "tier": 2,
+    "key": "gang",
+    "cjk_top": "刚",
+    "n_cands": 3,
+    "both": true
+   },
+   {
+    "f": "nursing",
+    "name": "Sijia Tan",
+    "tier": 2,
+    "key": "tan",
+    "cjk_top": "谭",
+    "n_cands": 7,
+    "both": false
+   },
+   {
+    "f": "nursing",
+    "name": "Liang Li",
+    "tier": 2,
+    "key": "liang",
+    "cjk_top": "梁",
+    "n_cands": 4,
+    "both": true
+   },
+   {
+    "f": "nursing",
+    "name": "Bin Jiang",
+    "tier": 2,
+    "key": "bin",
+    "cjk_top": "宾",
+    "n_cands": 4,
+    "both": true
+   },
+   {
+    "f": "nursing",
+    "name": "Dan Wang",
+    "tier": 2,
+    "key": "dan",
+    "cjk_top": "丹",
+    "n_cands": 4,
+    "both": true
+   },
+   {
+    "f": "medicine",
+    "name": "Qian Chen",
+    "tier": 2,
+    "key": "qian",
+    "cjk_top": "钱",
+    "n_cands": 12,
+    "both": true
+   },
+   {
+    "f": "medicine",
+    "name": "Zihang Lin",
+    "tier": 2,
+    "key": "lin",
+    "cjk_top": "林",
+    "n_cands": 5,
+    "both": false
+   },
+   {
+    "f": "medicine",
+    "name": "Xudong Li",
+    "tier": 2,
+    "key": "li",
+    "cjk_top": "李",
+    "n_cands": 17,
+    "both": false
+   },
+   {
+    "f": "medicine",
+    "name": "Jingyuan Zheng",
+    "tier": 2,
+    "key": "zheng",
+    "cjk_top": "郑",
+    "n_cands": 6,
+    "both": false
+   },
+   {
+    "f": "medicine",
+    "name": "Yan Zhang",
+    "tier": 2,
+    "key": "yan",
+    "cjk_top": "闫",
+    "n_cands": 22,
+    "both": true
+   },
+   {
+    "f": "medicine",
+    "name": "Rongrong Ji",
+    "tier": 2,
+    "key": "ji",
+    "cjk_top": "纪",
+    "n_cands": 16,
+    "both": false
+   },
+   {
+    "f": "medicine",
+    "name": "Haifang Hao",
+    "tier": 2,
+    "key": "hao",
+    "cjk_top": "郝",
+    "n_cands": 7,
+    "both": false
+   },
+   {
+    "f": "medicine",
+    "name": "Yuan Bian",
+    "tier": 2,
+    "key": "yuan",
+    "cjk_top": "袁",
+    "n_cands": 12,
+    "both": true
+   },
+   {
+    "f": "medicine",
+    "name": "Na Yang",
+    "tier": 2,
+    "key": "na",
+    "cjk_top": "那",
+    "n_cands": 3,
+    "both": true
+   },
+   {
+    "f": "medicine",
+    "name": "Xingzhao Ji",
+    "tier": 2,
+    "key": "ji",
+    "cjk_top": "纪",
+    "n_cands": 16,
+    "both": false
+   },
+   {
+    "f": "medicine",
+    "name": "Jie Bao",
+    "tier": 2,
+    "key": "jie",
+    "cjk_top": "揭",
+    "n_cands": 11,
+    "both": true
+   }
+  ]
+ },
+ "s2_excess": {
+  "n_cells": 220,
+  "n_journal_cells": 216,
+  "cells": [
+   {
+    "field": "math",
+    "journal": "Acadlore Transactions on AI and Machine Learning",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Acadlore Transactions on Applied Mathematics and Statistics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Advances in Engineering Technology Research",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Aerospace Science and Technology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Applied Mathematics and Computation",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Ars Combinatoria",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Biostatistics",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.3202,
+    "excess": -0.471,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Bulletin of the Iranian Mathematical Society.",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.5,
+    "exp": 0.4866,
+    "excess": 0.0261,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Chaos Solitons & Fractals",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.5,
+    "exp": 0.0801,
+    "excess": 0.4565,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Communication in Statistics- Theory and Methods",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.5,
+    "exp": 0.2611,
+    "excess": 0.3233,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Communications on Applied Mathematics and Computation",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Communications on Pure &amp Applied Analysis",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Discrete Applied Mathematics",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Discrete Mathematics Algorithms and Applications",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": null,
+    "year": 2024,
+    "n": 63,
+    "obs": 0.381,
+    "exp": 0.2616,
+    "excess": 0.1616,
+    "level": "field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Frontiers of Mathematics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Graphs and Combinatorics",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.3202,
+    "excess": -0.471,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "IEEE Transactions on Automatic Control",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "IEEE Transactions on Circuits and Systems I Regular Papers",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "IEEE Transactions on Information Theory",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "IEEE Transactions on Network Science and Engineering",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "International Journal of Bifurcation and Chaos",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.1538,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "International Journal of Circuit Theory and Applications",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Journal of Applied Statistics",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Journal of Computational Physics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Journal of Computational and Applied Mathematics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Journal of Fixed Point Theory and Applications",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Journal of Geometric Analysis",
+    "year": 2024,
+    "n": 5,
+    "obs": 1.0,
+    "exp": 0.42,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Journal of Mathematical Analysis and Applications",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.5,
+    "exp": 0.4866,
+    "excess": 0.0261,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Journal of Multivariate Analysis",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.0355,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Journal of Optimization Theory and Applications",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.021,
+    "excess": -0.0214,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Knowledge-Based Systems",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Mathematical Methods in the Applied Sciences",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Mathematics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Monatshefte für Mathematik",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "NA",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.021,
+    "excess": -0.0214,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Neurocomputing",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Proceedings of the London Mathematical Society",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.1538,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Qualitative Theory of Dynamical Systems",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Science and Technology of Engineering Chemistry and Environmental Protection",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.1538,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Scientific Reports",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Sustainability",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "The Journal of Chemical Physics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "The Physics Teacher",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Topology and its Applications",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Transportation Research Part A Policy and Practice",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Ukrains’kyi Matematychnyi Zhurnal",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Utilitas Mathematica",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "WSEAS TRANSACTIONS ON MATHEMATICS",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "Zeitschrift für angewandte Mathematik und Physik",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "math",
+    "journal": "medRxiv",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Advanced Science",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Annals of Medicine",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Archives of Biochemistry and Biophysics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "BMC Biology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "BMC Cancer",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "BMC Medicine",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "BMC Neurology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "BMC Pregnancy and Childbirth",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "BMC Psychiatry",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Biochemical Pharmacology",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0032,
+    "excess": -0.0032,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Biomarker Research",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0032,
+    "excess": -0.0032,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Biomaterials",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Biomolecules and Biomedicine",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Brain Research Bulletin",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Cancer Cell International",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Cell Biochemistry and Biophysics",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Cell Reports Medicine",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Clinical & Translational Oncology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Clinical Case Reports",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Clinical Gastroenterology and Hepatology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Critical Care",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Discover Oncology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Displays",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Epilepsy & Behavior",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "European Journal of Medicinal Chemistry",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "European Journal of Obstetrics & Gynecology and Reproductive Biology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "European journal of medical research",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Experimental Cell Research",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Experimental and Therapeutic Medicine",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": null,
+    "year": 2024,
+    "n": 79,
+    "obs": 0.0253,
+    "exp": 0.04,
+    "excess": -0.0153,
+    "level": "field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Food Bioscience",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Food Research International",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Frontiers in Medicine",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Frontiers in Neurology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Heliyon",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Infectious Microbes & Diseases",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Journal of Agricultural and Food Chemistry",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Journal of Assisted Reproduction and Genetics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Journal of Cardiothoracic Surgery",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Journal of Hematology & Oncology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Journal of Immunological Methods",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Journal of Ophthalmic Inflammation and Infection",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Journal of Orthopaedic Surgery and Research",
+    "year": 2024,
+    "n": 5,
+    "obs": 0.0,
+    "exp": 0.0013,
+    "excess": -0.0013,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Journal of Pain Research",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Journal of Translational Medicine",
+    "year": 2024,
+    "n": 3,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Microbial Cell Factories",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Molecular & cellular biomechanics",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Nature Machine Intelligence",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Neurological Research",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Nonlinear Analysis Real World Applications",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Nutrients",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Oncology Letters",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Osteoporosis International",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Poultry Science",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Qualitative Theory of Dynamical Systems",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Quantitative Imaging in Medicine and Surgery",
+    "year": 2024,
+    "n": 4,
+    "obs": 0.0,
+    "exp": 0.0033,
+    "excess": -0.0033,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Redox Biology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Scientific Reports",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Sleep Medicine",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Stem Cell Research & Therapy",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Supportive Care in Cancer",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "The American Journal of Gastroenterology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "Toxicology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "bioRxiv (Cold Spring Harbor Laboratory)",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "medicine",
+    "journal": "癌症：英文版",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Acta Scientiarum Polonorum Technologia Alimentaria",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Advanced Healthcare Materials",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Agronomy",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Animal nutrition",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Animals",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "BMC Pediatrics",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0178,
+    "excess": -0.0181,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "BMC Surgery",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Biochemical and Biophysical Research Communications",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Biological Trace Element Research",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Biomaterials",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Carbohydrate Polymers",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0032,
+    "excess": -0.0032,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Chemico-Biological Interactions",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "FASEB BioAdvances",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": null,
+    "year": 2024,
+    "n": 74,
+    "obs": 0.0405,
+    "exp": 0.0399,
+    "excess": 0.0006,
+    "level": "field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Food Bioscience",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Food Chemistry",
+    "year": 2024,
+    "n": 6,
+    "obs": 0.1667,
+    "exp": 0.0816,
+    "excess": 0.0926,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Food Chemistry Advances",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Food Chemistry X",
+    "year": 2024,
+    "n": 3,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Food Hydrocolloids",
+    "year": 2024,
+    "n": 3,
+    "obs": 0.0,
+    "exp": 0.0003,
+    "excess": -0.0003,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Food Research International",
+    "year": 2024,
+    "n": 3,
+    "obs": 0.3333,
+    "exp": 0.0631,
+    "excess": 0.2884,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Food Science and Human Wellness",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Foods",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0032,
+    "excess": -0.0032,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Inorganic Chemistry",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Intensive and Critical Care Nursing",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "International Healthcare Review (online)",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "International Journal of Biological Macromolecules",
+    "year": 2024,
+    "n": 4,
+    "obs": 0.0,
+    "exp": 0.0091,
+    "excess": -0.0092,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "International Journal of Biology and Life Sciences",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Journal of Advanced Research",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Journal of Agricultural and Food Chemistry",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Journal of Cereal Science",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Journal of Food Science",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Journal of Functional Foods",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Journal of Molecular Histology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Journal of Renal Nutrition",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Journal of clinical technology and theory.",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "LWT",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Microorganisms",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.1538,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Molecules",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "NA",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Nanoscale",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Nutrients",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "ONCOLOGIE",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "PLoS ONE",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0801,
+    "excess": -0.0871,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Plant Foods for Human Nutrition",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Plant Physiology and Biochemistry",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "PubMed",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Rice Science",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Scientific Reports",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0178,
+    "excess": -0.0181,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "The ISME Journal",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "The Journal of Steroid Biochemistry and Molecular Biology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "Toxicology Research",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "nursing",
+    "journal": "npj Genomic Medicine",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "ACS Applied Materials & Interfaces",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "ACS Photonics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Acta Mechanica",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Advanced Functional Materials",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.0355,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Advanced Quantum Technologies",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Applied Mathematics Letters",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Astronomy and Computing",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Chinese Journal of Chemistry",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Chinese Optics Letters",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Chinese Science Bulletin (Chinese Version)",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Communications Physics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Communications in Nonlinear Science and Numerical Simulation",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Complex & Intelligent Systems",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Electric Power Systems Research",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Entropy",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Experimental Astronomy",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": null,
+    "year": 2024,
+    "n": 60,
+    "obs": 0.0833,
+    "exp": 0.1024,
+    "excess": -0.0212,
+    "level": "field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "IEEE Electron Device Letters",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "IEEE Transactions on Aerospace and Electronic Systems",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "IEEE Transactions on Electron Devices",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Information Processing & Management",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Információs Társadalom",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.1538,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "International Journal of Modern Physics B",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "International Journal of Theoretical Physics",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.4866,
+    "excess": -0.9478,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Journal of Computational Science",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Journal of Rock Mechanics and Geotechnical Engineering",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Laser & Photonics Review",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Materials Letters",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Measurement Science and Technology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Micromachines",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0033,
+    "excess": -0.0033,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "NA",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0947,
+    "excess": -0.1046,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Nano Letters",
+    "year": 2024,
+    "n": 2,
+    "obs": 0.0,
+    "exp": 0.0032,
+    "excess": -0.0032,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Optics & Laser Technology",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Optics and Lasers in Engineering",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Peking Mathematical Journal",
+    "year": 2024,
+    "n": 1,
+    "obs": 1.0,
+    "exp": 0.4866,
+    "excess": 1.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "PhotoniX",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Physica Scripta",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Physical Review Applied",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Physical Review X",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Physical review. B./Physical review. B",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0001,
+    "excess": -0.0001,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Physical review. D/Physical review. D.",
+    "year": 2024,
+    "n": 5,
+    "obs": 0.2,
+    "exp": 0.1083,
+    "excess": 0.1029,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Physics Letters A",
+    "year": 2024,
+    "n": 3,
+    "obs": 0.3333,
+    "exp": 0.4866,
+    "excess": -0.2986,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Physics Letters B",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Quantitative Imaging in Medicine and Surgery",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0,
+    "excess": -0.0,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Science China Chemistry",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Science China Technological Sciences",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0009,
+    "excess": -0.0009,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Science and Technology of Engineering Chemistry and Environmental Protection",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Scientific Reports",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.1538,
+    "excess": -0.1817,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Scientific and Social Research",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0064,
+    "excess": -0.0065,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "The Astrophysical Journal",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   },
+   {
+    "field": "physics",
+    "journal": "Universe",
+    "year": 2024,
+    "n": 1,
+    "obs": 0.0,
+    "exp": 0.0355,
+    "excess": -0.0368,
+    "level": "degraded-to-field-year"
+   }
+  ],
+  "across_contexts": {
+   "n": 220,
+   "var": 0.17252,
+   "min": -0.9478,
+   "max": 1.0,
+   "range": 1.9478,
+   "p10": -0.1817,
+   "p50": -0.0002,
+   "p90": 0.9456
+  },
+  "work_level_assigned": {
+   "n": 276,
+   "p10": -0.0212,
+   "p50": -0.0153,
+   "p90": 0.1616,
+   "min": -0.0212,
+   "max": 0.1616
+  },
+  "loo_largest_cell": {
+   "cell": [
+    "nursing",
+    "Food Chemistry",
+    2024
+   ],
+   "n": 6,
+   "max_abs_delta": 0.0932
+  }
+ },
+ "s4_stability": {
+  "per_field": {
+   "math": {
+    "works": 100,
+    "single": 15,
+    "multi": 85,
+    "n_two_auth": 35,
+    "valid": 63,
+    "valid_ex2": 34,
+    "obs_alpha": 0.381,
+    "exp_chance": 0.2616,
+    "excess_alpha": 0.1616,
+    "obs_alpha_ex2": 0.1765,
+    "excess_alpha_ex2": 0.1147
+   },
+   "physics": {
+    "works": 100,
+    "single": 10,
+    "multi": 90,
+    "n_two_auth": 14,
+    "valid": 60,
+    "valid_ex2": 51,
+    "obs_alpha": 0.0833,
+    "exp_chance": 0.1024,
+    "excess_alpha": -0.0212,
+    "obs_alpha_ex2": 0.0392,
+    "excess_alpha_ex2": 0.0048
+   },
+   "nursing": {
+    "works": 100,
+    "single": 14,
+    "multi": 86,
+    "n_two_auth": 4,
+    "valid": 74,
+    "valid_ex2": 70,
+    "obs_alpha": 0.0405,
+    "exp_chance": 0.0399,
+    "excess_alpha": 0.0006,
+    "obs_alpha_ex2": 0.0286,
+    "excess_alpha_ex2": 0.0144
+   },
+   "medicine": {
+    "works": 100,
+    "single": 1,
+    "multi": 99,
+    "n_two_auth": 5,
+    "valid": 79,
+    "valid_ex2": 74,
+    "obs_alpha": 0.0253,
+    "exp_chance": 0.04,
+    "excess_alpha": -0.0153,
+    "obs_alpha_ex2": 0.0,
+    "excess_alpha_ex2": -0.0099
+   }
+  },
+  "pearson_r_excess_all_vs_ex2": 0.9903,
+  "max_abs_delta": 0.0469
+ }
+}

@@ -1,0 +1,42 @@
+# ARIS4C-006 段2 修复（最小修复，T2/T3 抓取已在盘，续 T3 分析）executor 任务
+
+## 背景（宿主判定，勿读旧日志）
+- 前 run 死于 131073 上下文溢出：直接原因 = read_file 把 3.5MB 的 data/_s2_probe.json 整文件读入上下文。
+- 盘上实况：T1 读完成；T2 probe+counts 完成；T3 4×100 works 抓取完成；T3 分析 / T4 / T5 / T6 / T7 均未做。
+- 本 run = 本地计算 + 写文档，**预期 0 次查询**。
+
+## 先读（各 1 次）
+- stage2_prompt.txt（48 行）——任务与冻结设计权威规格（T3–T7 定义照它）
+- data/s2_ab.py（38 行）——前 run 抓取脚本（已执行完，勿重跑）
+- data/s3_openalex.py——段1 估计器（Obs/Exp/Excess + 并列 chance；ExpectedChance 可能仍是均匀占位 → 本 run 必须接入人口频率）
+- data/chinenames_dist.json（23 首字母占比）；data/chinenames_pkg/familyname.csv（head 20 行）；data/surnames.py（head 30 行）
+
+## 盘上大文件（只准 python 访问，输出 ≤20 行）
+- data/_s2_probe.json 与 data/s2_pilot_works.json（均 3.5MB，内容相同）
+  - 结构：{api_calls:[11], probe, counts, window_main:"2010-2024", window_pilot:"2019-2024", fields:{math,physics,nursing,medicine → {meta_count, results[~100 works]}}}
+  - work 字段：id, display_name, publication_year, authorships, primary_location
+  - **禁 read_file 整读（前 run 死因）**；任何摘要/计算走 python 脚本
+
+## 宿主已验证事实（注入，勿再验证）
+- counts（2010–2024，CN）：math=142544，physics=340328，nursing=42464，medicine=1610478
+- 领域 filter 形态 = primary_topic.field.id:<fid>（probe OK，无需 fallback）；probe 记录 key 'primary_topic.field.id:%s' 为 cosmetic 显示 bug，无数据影响
+- 抽取预算预计算（Stage 3 用）：每领域页数 = count/200 → math 713 / physics 1702 / nursing 213 / medicine 8053，合计 10681 > 5000 上限 → 需确定性子采样（published 升序每 k 页取 1 页，k=3 → ≈3560 查询；k 与规则写入冻结文档）
+
+## 任务（续）
+- T2' 写 data/s2_pilot_results.json §1：4 领域面板规模（在盘 counts）+ 抽取预算（验算宿主预计算并落数字）
+- T3' P2：4×100 works 重算 Obs/Exp/Excess（基础概率 = chinenames_dist 首字母占比或 familyname 级 n，**禁均匀 A–Z**；语境 = journal×field×year，cell n<30 退化 field×year）→ §2（语境间 ExcessAlpha 方差/极差/分布摘要）
+- T4 P3：T3 样本跑 5A/5B 解析（familyname.csv + surnames.py + givenname.csv）→ §3（tier 分布、覆盖、精度抽查 ≤50 条）
+- T5 P6：排除两作者重算 ExcessAlpha → §4（相关/delta）；P4 消歧诊断 = 冻结文档写明为 Stage 3 入口闸（全面板构建后、主拟合前执行，失败则收窄/停止）
+- T6 写 STAGE2_FREEZE.md ≤90 行：8 冻结项 + pilot 证据表 + P4 闸 + 抽取预算 + deviations
+- T7 写 stage2_summary.md ≤30 行（pilot 7 条最新状态：#1/#2/#3/#5/#6 本 run 结论、#4 延至 Stage 3 闸、#7 已 PASS）+ 末行 DONE stage2 006
+
+## 纪律（必须遵守）
+- 工具调用 ≤20；单响应 ≤1 调用；参数 ≤20 行；文本 ≤2 句
+- **脚本一律 write_file 落盘后执行；禁 python -c 内嵌复杂引号**
+- **禁 read_file 3.5MB json（只准 python 提取）**；禁读 results/*.log
+- python 输出 ≤20 行；进度行与任务同命令 append 进 data/progress_s2fix.txt
+- 0 查询：若确需查询 → 立即停并记 progress（总预算剩 3 次，宿主拍板）
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## 禁止
+- 拟合任何模型（主模型）/计算任何确证率（pilot §2–§4 统计在规格内，不外推）；新文献/Crossref；改段1 四件
