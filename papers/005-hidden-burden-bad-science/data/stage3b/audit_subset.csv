@@ -1,0 +1,301 @@
+doi,orig_year,stratum,subject,country,bucket,n_reasons
+10.1002/14651858.CD003022,2001,2000-04,(HSC) Medicine - General;(HSC) Medicine - Rehabilitation/Therapy;(SOC) Psychology;,Thailand,NON_E1,1
+10.1016/S0925-4927(00)00073-1,2000,2000-04,(BLS) Neuroscience;(HSC) Medicine - Neurology;(HSC) Medicine - Psychiatry;,Australia,NON_E1,2
+10.1177/014616720026200,2000,2000-04,(SOC) Education;(SOC) Psychology;,United States,E1_CANDIDATE,4
+10.1007/BF03018364,2003,2000-04,(BLS) Biology - Molecular;(HSC) Medicine - Anesthesia/Anaesthesia;(HSC) Medicine - Cardiovascular;(HSC) Medicine - Internal;(HSC) Medicine - Surgery;,Germany,E1_CANDIDATE,6
+10.1042/CS20030389,2004,2000-04,(BLS) Biology - Cellular;(HSC) Medicine - Cardiology;,China,UNDECIDED,2
+10.1113/jphysiol.2004.064816,2004,2000-04,(BLS) Biochemistry;(BLS) Biology - Molecular;(BLS) Neuroscience;,United States,E1_CANDIDATE,5
+10.4049/jimmunol.170.3.1566,2003,2000-04,(BLS) Biology - Cellular;(HSC) Medicine - Immunology;,United States,NON_E1,2
+10.1111/j.1471-4159.2008.05353.x,2008,2005-09,(BLS) Anatomy/Physiology;(BLS) Biology - Cellular;(BLS) Biology - General;(BLS) Biology - Molecular;(BLS) Neuroscience;,Japan,E1_CANDIDATE,4
+10.1117/12.836820,2009,2005-09,(B/T) Technology;,China,UNDECIDED,2
+10.1016/j.autcon.2009.03.002,2009,2005-09,(PHY) Engineering - General;,South Korea;United States,NON_E1,2
+10.1016/j.jhazmat.2005.08.036,2005,2005-09,(PHY) Materials Science;(PHY) Physics;,China,E1_CANDIDATE,2
+10.1524/9783486834062.xii,2005,2005-09,(B/T) Business - General;,Unknown,NON_E1,3
+10.1109/APPEEC.2009.4918828,2009,2005-09,(B/T) Business - Economics;(B/T) Technology;(PHY) Engineering - Electrical;,China,UNDECIDED,3
+10.1109/ICMSS.2009.5303294,2009,2005-09,(B/T) Business - Economics;(PHY) Statistics;,China,UNDECIDED,3
+10.1016/S1016-3190(08)60019-1,2008,2005-09,(HSC) Medicine - Urology/Nephrology;,Taiwan;United States,E1_CANDIDATE,1
+10.1109/CAMP.2005.45,2005,2005-09,(B/T) Computer Science;(B/T) Technology;,Italy,E1_CANDIDATE,5
+10.1109/IFITA.2009.362,2009,2005-09,(B/T) Computer Science;(B/T) Technology;(HSC) Public Health and Safety;,China,UNDECIDED,3
+10.1107/S1600536807051008,2007,2005-09,(PHY) Chemistry;(PHY) Crystallography/Spectroscopy;,China,E1_CANDIDATE,3
+10.1016/j.spl.2007.10.005,2007,2005-09,(PHY) Statistics;,Greece,UNDECIDED,2
+10.1109/ICIECS.2009.5364392,2009,2005-09,(B/T) Business - General;(PHY) Engineering - Structural;,China,UNDECIDED,3
+10.1007/s10517-007-0058-2,2006,2005-09,(BLS) Biology - Cellular;(BLS) Biology - Molecular;(BLS) Genetics;,Russia,UNDECIDED,1
+10.1002/cncr.20924,2005,2005-09,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,Italy,E1_CANDIDATE,3
+10.1002/14651858.CD005054.pub2,2006,2005-09,(HSC) Medicine - Gastroenterology;(HSC) Medicine - Otorhinolaryngology;,Denmark;United Kingdom,NON_E1,1
+10.1371/journal.ppat.1000210,2008,2005-09,(BLS) Biology - Molecular;(BLS) Microbiology;(HSC) Medicine - Pathology;,United States,NON_E1,2
+10.1016/j.colsurfa.2006.09.041,2007,2005-09,(PHY) Chemistry;(PHY) Engineering - Chemical;,China,E1_CANDIDATE,3
+10.1109/IFITA.2009.213,2009,2005-09,(B/T) Business - Economics;(SOC) Communications;,China,UNDECIDED,3
+10.1107/S1600536807039050,2007,2005-09,(PHY) Chemistry;(PHY) Crystallography/Spectroscopy;,China,E1_CANDIDATE,3
+10.1055/s-0029-1214408,2008,2005-09,(BLS) Biology - General;(HSC) Medicine - Pediatrics;(HSC) Medicine - Surgery;(HSC) Medicine - Urology/Nephrology;,Egypt;Saudi Arabia,E1_CANDIDATE,2
+10.1186/1758-5996-5-49,2013,2010-14,(BLS) Biology - General;(HSC) Medicine - Diabetes;(HSC) Medicine - Obstetrics/Gynecology;,Brazil,E1_CANDIDATE,2
+10.1109/ICEBEG.2011.5884478,2011,2010-14,(B/T) Business - Accounting;(B/T) Business - Management;,China,UNDECIDED,3
+10.1109/ESIAT.2010.5567403,2010,2010-14,(ENV) Environmental Sciences;(ENV) Ground/Surface Water;(PHY) Chemistry;,China,UNDECIDED,3
+10.1016/j.energy.2013.06.056,2013,2010-14,(PHY) Energy;(PHY) Engineering - Electrical;,United Kingdom,E1_CANDIDATE,1
+10.1016/j.neucom.2012.06.051,2013,2010-14,(B/T) Computer Science;,China,E1_CANDIDATE,2
+10.1109/icbbe.2011.5781657,2011,2010-14,(BLS) Agriculture;(ENV) Environmental Sciences;,China,UNDECIDED,3
+10.1109/ICNC.2010.5583350,2010,2010-14,(B/T) Computer Science;(PHY) Materials Science;,China,UNDECIDED,3
+10.1109/icbbe.2011.5781328,2011,2010-14,(PHY) Chemistry;,China,UNDECIDED,3
+10.1186/1471-2202-12-31,2011,2010-14,(BLS) Biochemistry;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Neurology;,Italy,E1_CANDIDATE,5
+10.1109/AIMSEC.2011.6011380,2011,2010-14,(SOC) Education;,China,UNDECIDED,2
+10.1109/icbbe.2011.5781610,2011,2010-14,(B/T) Urban Planning;,China,UNDECIDED,3
+10.1021/ac502705n,2014,2010-14,(BLS) Biochemistry;(BLS) Genetics;(PHY) Materials Science;,France;Spain,UNDECIDED,4
+10.1109/ICEBEG.2011.5881882,2011,2010-14,(B/T) Business - Economics;(B/T) Technology;,China,UNDECIDED,3
+10.1371/journal.pntd.0001696,2012,2010-14,(BLS) Biology - Cellular;(BLS) Microbiology;(BLS) Parasitology;,Brazil;France,E1_CANDIDATE,6
+10.1287/orsc.1090.0499,2010,2010-14,(B/T) Business - Marketing;(SOC) Psychology;,Germany,E1_CANDIDATE,3
+10.1109/icbbe.2011.5781233,2011,2010-14,(BLS) Microbiology;(ENV) Climate Change;(ENV) Ecology;(ENV) Environmental Sciences;,China,UNDECIDED,1
+10.1109/ICPIM.2011.5983648,2011,2010-14,(B/T) Business - Management;(B/T) Technology;(PHY) Engineering - Structural;,China,UNDECIDED,3
+10.1074/jbc.M110.101055,2010,2010-14,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Biology - General;(BLS) Biology - Molecular;(BLS) Genetics;,United States,E1_CANDIDATE,6
+10.1109/ICEBEG.2011.5877034,2011,2010-14,(B/T) Business - General;(B/T) Technology;,China,UNDECIDED,3
+10.1007/978-3-319-01857-7_40,2014,2010-14,(B/T) Computer Science;(B/T) Technology;(BLS) Biochemistry;,Germany;Slovakia,E1_CANDIDATE,1
+10.1016/j.jsbmb.2010.03.045,2010,2010-14,(BLS) Biochemistry;(BLS) Biology - Cellular;(BLS) Biology - Molecular;(BLS) Genetics;,Japan,E1_CANDIDATE,6
+10.1103/PhysRevD.84.084020,2011,2010-14,(PHY) Physics;,Greece;United Kingdom,NON_E1,5
+10.1109/ICMSS.2010.5576209,2010,2010-14,(B/T) Business - Management;,China,UNDECIDED,3
+10.1016/j.yexcr.2014.09.015,2014,2010-14,(BLS) Biology - Cellular;(HSC) Medicine - Dentistry;,Japan,UNDECIDED,3
+10.1109/icbbe.2011.5780828,2011,2010-14,(ENV) Environmental Sciences;(ENV) Ground/Surface Water;(PHY) Hydrology;,China,UNDECIDED,1
+10.1002/14651858.CD001398.pub2,2010,2010-14,(HSC) Medicine - Obstetrics/Gynecology;(HSC) Medicine - Surgery;,Australia;Belgium;New Zealand;Qatar;United Kingdom;United States,UNDECIDED,1
+10.1061/(ASCE)PS.1949-1204.0000138,2013,2010-14,(PHY) Engineering - General;(PHY) Mathematics;,Jordan;United States,UNDECIDED,1
+10.1109/APPEEC.2010.5449169,2010,2010-14,(B/T) Technology;(PHY) Materials Science;(PHY) Mathematics;,China,UNDECIDED,3
+10.1111/j.1526-4610.2010.01795.x,2010,2010-14,(BLS) Anatomy/Physiology;(BLS) Biology - General;(HSC) Medicine - General;,China,UNDECIDED,1
+10.1109/APPEEC.2010.5448280,2010,2010-14,(B/T) Technology;(PHY) Engineering - Electrical;,China,UNDECIDED,3
+10.1109/AIMSEC.2011.6009707,2011,2010-14,(B/T) Business - Economics;(B/T) Business - General;,China,UNDECIDED,2
+10.1021/am402415g,2013,2010-14,(PHY) Chemistry;(PHY) Materials Science;(PHY) Nanotechnology;,Germany;India,E1_CANDIDATE,1
+10.1371/journal.pone.0087222,2014,2010-14,(HSC) Medicine - Gastroenterology;(HSC) Medicine - Surgery;(HSC) Medicine - Transplantation;,China,NON_E1,4
+10.1109/ICCASM.2010.5620500,2010,2010-14,(PHY) Engineering - Structural;,China,UNDECIDED,2
+10.1109/ICETCE.2011.5776426,2011,2010-14,(HUM) Architecture;(HUM) Arts - General;(SOC) Sociology;,China,UNDECIDED,1
+10.1109/MACE.2011.5987554,2011,2010-14,(B/T) Transportation;(B/T) Urban Planning;,China,UNDECIDED,3
+10.1109/ICEBEG.2011.5881924,2011,2010-14,(B/T) Business - Economics;(B/T) Business - Management;(SOC) Law/Legal Issues;,China,UNDECIDED,3
+10.1007/s13277-014-2309-y,2014,2010-14,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Biology - Molecular;,China,UNDECIDED,2
+10.1109/ETCS.2010.115,2010,2010-14,(B/T) Technology;(B/T) Transportation;(PHY) Engineering - General;(PHY) Statistics;,China,UNDECIDED,1
+10.1109/QR2MSE.2013.6625669,2013,2010-14,(B/T) Business - Management;,China,UNDECIDED,1
+10.1109/AIMSEC.2011.6009694,2011,2010-14,(BLS) Agriculture;(PHY) Chemistry;,China,UNDECIDED,2
+10.1109/ICEBEG.2011.5882063,2011,2010-14,(B/T) Business - Economics;(B/T) Government;(B/T) Technology;,China,UNDECIDED,3
+10.1109/ICCET.2010.5485375,2010,2010-14,(B/T) Computer Science;(PHY) Engineering - General;,China,UNDECIDED,3
+10.1109/AIMSEC.2011.6009793,2011,2010-14,(B/T) Business - Economics;(B/T) Business - Management;(ENV) Ground/Surface Water;(PHY) Mathematics;(SOC) Education;,China,UNDECIDED,2
+10.1109/PACCS.2011.5990110,2011,2010-14,(B/T) Computer Science;(B/T) Technology;(SOC) Education;,China,UNDECIDED,3
+10.1109/icbbe.2011.5781158,2011,2010-14,(BLS) Biochemistry;(BLS) Biology - Cellular;(BLS) Biology - General;(BLS) Biology - Molecular;,China;Germany,UNDECIDED,1
+10.1016/j.cej.2011.06.043,2011,2010-14,(ENV) Environmental Sciences;(ENV) Ground/Surface Water;(PHY) Chemistry;(PHY) Engineering - Chemical;,Portugal,E1_CANDIDATE,2
+10.1016/j.bmcl.2012.07.016,2012,2010-14,(BLS) Biology - Molecular;(BLS) Plant Biology/Botany;,South Korea,NON_E1,4
+10.1016/j.canlet.2011.03.012,2011,2010-14,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Biology - Molecular;(BLS) Genetics;,United States,E1_CANDIDATE,4
+10.3923/pjbs.2010.906.910,2010,2010-14,(BLS) Genetics;(HSC) Medicine - Cardiovascular;,Iran,UNDECIDED,1
+10.1158/0008-5472.CAN-09-2938,2010,2010-14,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,United States,E1_CANDIDATE,3
+10.4103/2141-9248.139321,2014,2010-14,(HSC) Medicine - Orthopedics;(HSC) Medicine - Otorhinolaryngology;(HSC) Public Health and Safety;,India,E1_CANDIDATE,1
+10.1109/ICEBEG.2011.5877043,2011,2010-14,(B/T) Government;(B/T) Technology;,China,UNDECIDED,3
+10.1016/j.watres.2011.07.032,2011,2010-14,(B/T) Computer Science;(ENV) Ground/Surface Water;(PHY) Engineering - General;(PHY) Hydrology;,China,E1_CANDIDATE,3
+10.1109/AIMSEC.2011.6009700,2011,2010-14,(B/T) Business - General;(SOC) Sociology;,China,UNDECIDED,2
+10.1371/journal.pone.0062235,2013,2010-14,(BLS) Biology - Cellular;(BLS) Genetics;(BLS) Neuroscience;(ENV) Environmental Sciences;(HSC) Medicine - Neurology;,India,E1_CANDIDATE,13
+10.1515/9783486852769-034,2010,2010-14,(HUM) History - Europe;,Unknown,NON_E1,3
+10.1136/bmjspcare-2013-000491.157,2013,2010-14,(HSC) Medicine - Geriatric;(HSC) Medicine - Neurology;(HSC) Medicine - Pharmacology;(HSC) Medicine - Rehabilitation/Therapy;,Singapore,UNDECIDED,1
+10.1109/ICEBEG.2011.5881452,2011,2010-14,(B/T) Business - Economics;(HUM) Arts - General;,China,UNDECIDED,3
+10.1109/CCTAE.2010.5545254,2010,2010-14,(B/T) Business - General;(B/T) Technology;(SOC) Communications;,China,UNDECIDED,3
+10.1109/ICEBEG.2011.5881931,2011,2010-14,(B/T) Business - Economics;(PHY) Mathematics;,China,UNDECIDED,3
+10.1109/APPEEC.2010.5448716,2010,2010-14,(B/T) Technology;(PHY) Engineering - Electrical;,China,UNDECIDED,3
+10.1007/s12013-014-9880-0,2014,2010-14,(BLS) Biology - Cellular;(HSC) Medicine - Orthopedics;,China,NON_E1,2
+10.1007/978-3-7091-0388-3_20,2011,2010-14,(SOC) Criminology;(SOC) Law/Legal Issues;(SOC) Military/Naval Studies;,Denmark;Greece;United States,E1_CANDIDATE,4
+10.1109/CMCE.2010.5609789,2010,2010-14,(PHY) Engineering - Mechanical;,China,UNDECIDED,2
+10.1159/000490473,2018,2015-19,(BLS) Biochemistry;(BLS) Biology - Cellular;(BLS) Genetics;,China,E1_CANDIDATE,9
+10.1371/journal.ppat.1004779,2015,2015-19,(BLS) Genetics;(BLS) Microbiology;,United States,E1_CANDIDATE,9
+10.2147/OTT.S143084,2017,2015-19,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,China,E1_CANDIDATE,2
+10.20529/IJME.2018.037,2018,2015-19,(HSC) Biostatistics/Epidemiology;(HSC) Medicine - Immunology;(HSC) Public Health and Safety;,Unknown,UNDECIDED,5
+10.24926/iip.v11i1.1662,2019,2015-19,(HSC) Medicine - General;,Bangladesh,E1_CANDIDATE,3
+10.1002/2211-5463.12649,2019,2015-19,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Gastroenterology;(HSC) Medicine - Oncology;,China,E1_CANDIDATE,6
+10.1039/C9RA04735B,2019,2015-19,(PHY) Materials Science;,China,E1_CANDIDATE,4
+10.1109/ICCPEIC.2016.7557275,2016,2015-19,(PHY) Engineering - Electrical;,India,E1_CANDIDATE,5
+10.1128/AAC.02722-15,2016,2015-19,(BLS) Genetics;(BLS) Microbiology;,South Korea,NON_E1,4
+10.1080/14767058.2017.1408069,2017,2015-19,(HSC) Medicine - Obstetrics/Gynecology;(HSC) Medicine - Surgery;(HSC) Medicine - Urology/Nephrology;,Egypt,E1_CANDIDATE,6
+10.1016/j.mtcomm.2019.100544,2019,2015-19,(BLS) Plant Biology/Botany;(PHY) Chemistry;(PHY) Nanotechnology;,Pakistan,E1_CANDIDATE,3
+10.1002/jcb.26451,2017,2015-19,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Biology - Molecular;(BLS) Genetics;,China,E1_CANDIDATE,4
+10.1186/s40478-019-0709-3,2019,2015-19,(BLS) Biology - Cellular;(BLS) Genetics;(BLS) Neuroscience;(HSC) Medicine - Neurology;,Denmark;Germany;United States,NON_E1,3
+10.1038/srep21891,2016,2015-19,(BLS) Biochemistry;(BLS) Biology - Cellular;(BLS) Genetics;,Australia;China,NON_E1,7
+10.24833/2071-8160-2015-2-41-45-54,2015,2015-19,(HUM) History - Europe;(SOC) Military/Naval Studies;,Russia,E1_CANDIDATE,1
+10.1002/jbt.21962,2017,2015-19,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;,India,UNDECIDED,5
+10.1186/s13287-018-1028-5,2018,2015-19,(BLS) Biochemistry;(BLS) Biology - Cellular;(BLS) Genetics;,China,E1_CANDIDATE,6
+10.1159/000488821,2018,2015-19,(BLS) Biochemistry;(BLS) Biology - Cellular;(BLS) Genetics;(BLS) Neuroscience;,China,NON_E1,5
+10.3892/ijmm.2018.3701,2018,2015-19,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Obstetrics/Gynecology;(HSC) Medicine - Pathology;,China,E1_CANDIDATE,6
+10.1177/2049936118811208,2019,2015-19,(HSC) Medicine - Infectious Disease;(HSC) Medicine - Pharmacology;(HSC) Medicine - Rehabilitation/Therapy;,Bulgaria,UNDECIDED,2
+10.1371/journal.pone.0218283,2019,2015-19,(B/T) Computer Science;(B/T) Data Science;(HSC) Biostatistics/Epidemiology;(HSC) Medicine - Oncology;(HSC) Medicine - Surgery;,South Korea;Spain,UNDECIDED,3
+10.1089/cbr.2015.1952,2016,2015-19,(BLS) Biology - Cellular;(BLS) Neuroscience;,China,UNDECIDED,7
+10.1155/2019/5949485,2019,2015-19,(BLS) Genetics;(HSC) Medicine - Rehabilitation/Therapy;(HSC) Medicine - Urology/Nephrology;,China,UNDECIDED,9
+10.1177/0020720919894194,2019,2015-19,(B/T) Computer Science;(B/T) Data Science;(PHY) Mathematics;(SOC) Education;,China,UNDECIDED,7
+10.1002/jcb.26399,2017,2015-19,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Biology - Molecular;(BLS) Genetics;,China,E1_CANDIDATE,3
+10.1002/jez.2158,2018,2015-19,(BLS) Biochemistry;(BLS) Genetics;(BLS) Toxicology;(BLS) Zoology;,India,E1_CANDIDATE,6
+10.26355/eurrev_201806_15265,2018,2015-19,(BLS) Biology - Cancer;(BLS) Biology - Cellular;,China,UNDECIDED,1
+10.1016/j.biortech.2017.12.040,2017,2015-19,(BLS) Biochemistry;(BLS) Microbiology;(ENV) Environmental Sciences;,China;India,UNDECIDED,7
+10.1016/j.cjph.2017.01.004,2017,2015-19,(BLS) Biochemistry;(PHY) Chemistry;(PHY) Crystallography/Spectroscopy;(PHY) Nanotechnology;,Iraq;Malaysia,E1_CANDIDATE,1
+10.1097/INF.0000000000002277,2019,2015-19,(HSC) Biostatistics/Epidemiology;(HSC) Medicine - Infectious Disease;(HSC) Medicine - Pediatrics;(HSC) Public Health and Safety;,Netherlands,NON_E1,4
+10.26355/eurrev_201708_13284,2017,2015-19,(BLS) Biochemistry;(BLS) Biology - Cellular;(HSC) Medicine - Gastroenterology;,China,UNDECIDED,7
+10.1177/0020720919894195,2019,2015-19,(SOC) Education;,China,UNDECIDED,3
+10.1109/BSB.2018.8770674,2018,2015-19,(B/T) Data Science;(BLS) Genetics;(HSC) Medicine - Pharmacology;,India,E1_CANDIDATE,5
+10.1007/s11661-019-05566-6,2019,2015-19,(PHY) Engineering - Chemical;,Iran,UNDECIDED,3
+10.3892/etm.2015.2773,2015,2015-19,(BLS) Genetics;(HSC) Medicine - Alternative;(HSC) Medicine - Gastroenterology;(HSC) Medicine - Neurology;(HSC) Medicine - Pathology;(HSC) Medicine - Pharmacology;,China,E1_CANDIDATE,11
+10.1016/j.micpath.2017.09.027,2017,2015-19,(BLS) Biology - Cellular;(BLS) Microbiology;,China,UNDECIDED,2
+10.1186/s40842-015-0011-7,2015,2015-19,(HSC) Medicine - Endocrinology;,United States,E1_CANDIDATE,2
+10.1620/tjem.241.55,2017,2015-19,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,China,NON_E1,2
+10.1007/s10586-018-2046-x,2018,2015-19,(B/T) Technology;(B/T) Urban Planning;,China,UNDECIDED,4
+10.1016/j.intimp.2019.106076,2019,2015-19,(BLS) Biology - Cellular;(BLS) Genetics;(BLS) Neuroscience;,China,E1_CANDIDATE,5
+10.1038/s41598-019-38519-5,2019,2015-19,(PHY) Physics;,China;Italy,NON_E1,2
+10.1016/j.micpath.2017.06.002,2017,2015-19,(BLS) Biochemistry;(BLS) Microbiology;(BLS) Plant Biology/Botany;(PHY) Nanotechnology;,Bangladesh,UNDECIDED,2
+10.1063/1.5086218,2019,2015-19,(PHY) Physics;,Germany,NON_E1,2
+10.3233/CBM-170249,2017,2015-19,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;,China,E1_CANDIDATE,5
+10.1038/nchembio.2409,2017,2015-19,(BLS) Biochemistry;,United States,E1_CANDIDATE,7
+10.1080/21691401.2019.1596935,2019,2015-19,(BLS) Biochemistry;(HSC) Medicine - Drug Design;(HSC) Medicine - Infectious Disease;,China,UNDECIDED,3
+10.1016/j.omtn.2019.08.024,2019,2015-19,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,China,E1_CANDIDATE,5
+10.1109/TEMC.2017.2780518,2017,2015-19,(PHY) Engineering - Electrical;,Italy,UNDECIDED,1
+10.1109/ICECA.2017.8212728,2017,2015-19,(B/T) Computer Science;(B/T) Data Science;,India,E1_CANDIDATE,8
+10.1002/14651858.CD003498.pub3,2018,2015-19,(HSC) Medicine - Alternative;,United Kingdom,NON_E1,1
+10.1002/1878-0261.12527,2019,2015-19,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,China,E1_CANDIDATE,2
+10.3892/ol.2017.5585,2017,2015-19,(HSC) Medicine - Neurology;(HSC) Medicine - Pharmacology;(HSC) Medicine - Rehabilitation/Therapy;,China,E1_CANDIDATE,3
+10.1038/srep26948,2016,2015-19,(HSC) Medicine - Pulmonology;(PHY) Mathematics;,Iran;Singapore,UNDECIDED,3
+10.3389/fphar.2018.01248,2018,2015-19,(BLS) Biology - Molecular;(BLS) Genetics;(HSC) Medicine - Oncology;,China,UNDECIDED,5
+10.1016/j.materresbull.2018.06.033,2018,2015-19,(PHY) Chemistry;(PHY) Materials Science;(PHY) Physics;,Japan,NON_E1,4
+10.1042/BSR20182476,2019,2015-19,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,China,E1_CANDIDATE,7
+10.5815/ijisa.2016.05.03,2016,2015-19,(B/T) Computer Science;(ENV) Climatology;(ENV) Environmental Sciences;(PHY) Energy;,Unknown,UNDECIDED,2
+10.1007/s40735-018-0172-x,2018,2015-19,(PHY) Materials Science;,India,E1_CANDIDATE,2
+10.26355/eurrev_201912_19661,2019,2015-19,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Obstetrics/Gynecology;(HSC) Medicine - Oncology;(HSC) Medicine - Urology/Nephrology;,China,UNDECIDED,7
+10.1007/s10911-019-09440-4,2019,2015-19,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Obstetrics/Gynecology;(HSC) Medicine - Oncology;,China;Germany,UNDECIDED,2
+10.1016/j.jstrokecerebrovasdis.2021.105639,2021,2020-24,(HSC) Biostatistics/Epidemiology;(HSC) Medicine - Cardiovascular;(HSC) Medicine - Infectious Disease;(HSC) Medicine - Neurology;,United States,UNDECIDED,1
+10.1155/2022/3111581,2022,2020-24,(B/T) Data Science;(SOC) Education;,China,UNDECIDED,9
+10.1155/2022/2832400,2022,2020-24,(B/T) Data Science;(B/T) Technology;(HSC) Medicine - Pulmonology;(HSC) Radiology/Imaging;,Bangladesh;India;Saudi Arabia,UNDECIDED,5
+10.1155/2021/2223344,2021,2020-24,(B/T) Data Science;(HSC) Medicine - Cardiovascular;(HSC) Radiology/Imaging;,China,NON_E1,11
+10.3390/foods9091182,2020,2020-24,(BLS) Biochemistry;(BLS) Microbiology;(BLS) Plant Biology/Botany;(ENV) Food Science;,Denmark,NON_E1,2
+10.1002/smll.202002733,2020,2020-24,(HSC) Medicine - Drug Design;(HSC) Medicine - Obstetrics/Gynecology;(HSC) Medicine - Oncology;(PHY) Nanotechnology;,Canada;China;Iran,E1_CANDIDATE,8
+10.1155/2020/9028303,2020,2020-24,(B/T) Data Science;(SOC) Education;(SOC) Linguistics;,China,UNDECIDED,9
+10.1016/j.micpro.2020.103598,2020,2020-24,(B/T) Computer Science;(B/T) Technology;(HUM) Arts - General;,China;South Korea,NON_E1,8
+10.1007/s00500-023-08207-8,2023,2020-24,(B/T) Computer Science;(B/T) Data Science;(B/T) Technology;(B/T) Urban Planning;(SOC) Sports and Recreation;,China,UNDECIDED,7
+10.1155/2021/3908677,2021,2020-24,(BLS) Biochemistry;(BLS) Biology - Molecular;(BLS) Genetics;(HSC) Medicine - Cardiovascular;(HSC) Medicine - Neurology;(HSC) Medicine - Rehabilitation/Therapy;,China,UNDECIDED,5
+10.3233/JIFS-219173,2021,2020-24,(B/T) Computer Science;(PHY) Engineering - General;,Turkey,UNDECIDED,3
+10.1016/j.jmccpl.2022.100010,2022,2020-24,(BLS) Biology - Cellular;(HSC) Medicine - Cardiovascular;,Poland,UNDECIDED,3
+10.1155/2022/5447509,2022,2020-24,(HSC) Medicine - Nursing;(HSC) Medicine - Rehabilitation/Therapy;(HSC) Medicine - Sports;,China,UNDECIDED,8
+10.1155/2022/6422841,2022,2020-24,(B/T) Technology;(PHY) Engineering - General;,China,UNDECIDED,9
+10.1007/s00500-021-06574-8,2021,2020-24,(B/T) Data Science;(HSC) Radiology/Imaging;,China,UNDECIDED,6
+10.1007/s11042-022-14205-z,2022,2020-24,(B/T) Computer Science;,India,UNDECIDED,1
+10.1080/09064710.2021.1954684,2021,2020-24,(B/T) Data Science;(B/T) Technology;(BLS) Agriculture;,China,UNDECIDED,4
+10.1155/2022/7596426,2022,2020-24,(BLS) Biochemistry;(BLS) Biology - Molecular;(HSC) Medicine - Cardiovascular;(HSC) Medicine - Neurology;,China,UNDECIDED,5
+10.1051/bioconf/202413804011,2024,2020-24,(B/T) Technology;(BLS) Agriculture;(BLS) Biology - General;,Russia,UNDECIDED,3
+10.1186/s12935-020-1154-x,2020,2020-24,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,China,E1_CANDIDATE,7
+10.1007/s00500-023-09271-w,2023,2020-24,(B/T) Computer Science;,China,UNDECIDED,5
+10.1155/2022/3269692,2022,2020-24,(B/T) Data Science;(HSC) Medicine - Obstetrics/Gynecology;,China,NON_E1,11
+10.1155/2022/4268982,2022,2020-24,(B/T) Business - Economics;(B/T) Business - Marketing;(B/T) Technology;,China,UNDECIDED,8
+10.1108/BPMJ-10-2020-0465,2020,2020-24,(B/T) Business - Management;(SOC) Education;,Bangladesh;Malaysia,UNDECIDED,4
+10.1155/2022/1443823,2022,2020-24,(B/T) Business - Accounting;(B/T) Data Science;(PHY) Engineering - General;,China,UNDECIDED,8
+10.1155/2021/1964054,2021,2020-24,(B/T) Data Science;(B/T) Technology;(HSC) Medicine - General;(SOC) Communications;,Iran,UNDECIDED,9
+10.1155/2022/7040441,2022,2020-24,(B/T) Technology;(SOC) Education;,China,UNDECIDED,8
+10.1111/exsy.13265,2023,2020-24,(B/T) Business - General;(B/T) Computer Science;(HUM) Arts - Music;(PHY) Mathematics;(SOC) Psychology;,China,UNDECIDED,7
+10.1155/2022/2773492,2022,2020-24,(B/T) Computer Science;(B/T) Data Science;,China,UNDECIDED,6
+10.1155/2022/6916212,2022,2020-24,(HSC) Medicine - General;(HSC) Occupational Health and Safety;(HSC) Public Health and Safety;,China,UNDECIDED,6
+10.1155/2022/7749029,2022,2020-24,(PHY) Engineering - Mechanical;,China,UNDECIDED,9
+10.1155/2022/8017375,2022,2020-24,(B/T) Technology;(PHY) Engineering - General;(PHY) Materials Science;,India;Iraq;Saudi Arabia;Sudan,UNDECIDED,5
+10.1155/2022/1926661,2022,2020-24,(BLS) Biochemistry;(BLS) Biology - Cellular;,China,UNDECIDED,9
+10.1155/2022/7781177,2022,2020-24,(B/T) Computer Science;(B/T) Technology;(SOC) Education;(SOC) Sports and Recreation;,China,UNDECIDED,8
+10.3233/jifs-238575,2024,2020-24,(B/T) Data Science;(B/T) Technology;,China,UNDECIDED,3
+10.1155/2021/5365915,2021,2020-24,(B/T) Computer Science;(B/T) Technology;(SOC) Linguistics;,China,UNDECIDED,5
+10.1007/s12652-020-01940-0,2020,2020-24,(B/T) Computer Science;(B/T) Technology;,India;Oman,UNDECIDED,3
+10.1155/2022/3302700,2022,2020-24,(B/T) Business - Marketing;(B/T) Business - Public Relations;(B/T) Technology;,China,UNDECIDED,6
+10.1016/j.intimp.2020.106225,2020,2020-24,(BLS) Biology - Cellular;(BLS) Genetics;,China,E1_CANDIDATE,4
+10.1177/0020720920929659,2020,2020-24,(B/T) Business - Management;(B/T) Technology;(SOC) Education;,China,UNDECIDED,3
+10.1007/s00779-021-01634-0,2021,2020-24,(B/T) Computer Science;(B/T) Transportation;,China,UNDECIDED,7
+10.1007/s00335-021-09900-5,2021,2020-24,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,China,UNDECIDED,2
+10.1155/2021/9981815,2021,2020-24,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Gastroenterology;(HSC) Medicine - Oncology;,China,UNDECIDED,9
+10.3233/jifs-239687,2024,2020-24,(B/T) Data Science;(ENV) Ecology;(ENV) Environmental Sciences;(HUM) Arts - General;,China,UNDECIDED,3
+10.1371/journal.pone.0267499,2022,2020-24,(BLS) Agriculture;(BLS) Biology - Cellular;(BLS) Biology - General;,Saudi Arabia,UNDECIDED,4
+10.1155/2022/8980234,2022,2020-24,(B/T) International Relations;(ENV) Environmental Sciences;(SOC) Law/Legal Issues;,China,UNDECIDED,9
+10.1155/2022/8272371,2022,2020-24,(BLS) Microbiology;(HSC) Biostatistics/Epidemiology;(HSC) Medicine - Gastroenterology;,China,UNDECIDED,5
+10.1016/j.ceramint.2024.05.113,2024,2020-24,(PHY) Engineering - Chemical;(PHY) Materials Science;,China;Pakistan,E1_CANDIDATE,6
+10.1371/journal.pone.0229035,2020,2020-24,(HSC) Medicine - Rehabilitation/Therapy;(HSC) Medicine - Sports;,United States,NON_E1,5
+10.1155/2022/9405082,2022,2020-24,(B/T) Technology;(PHY) Mathematics;,China,UNDECIDED,9
+10.3390/su14148889,2022,2020-24,(BLS) Biochemistry;(BLS) Microbiology;(ENV) Environmental Sciences;,Argentina;Ecuador,E1_CANDIDATE,3
+10.1002/pen.26407,2023,2020-24,(B/T) Transportation;(PHY) Engineering - General;(PHY) Materials Science;(PHY) Nanotechnology;,India,UNDECIDED,4
+10.1155/2020/8811273,2020,2020-24,(B/T) Business - Economics;(B/T) Technology;,China,UNDECIDED,9
+10.7759/cureus.72872,2024,2020-24,(BLS) Microbiology;(BLS) Toxicology;,Pakistan,UNDECIDED,2
+10.1155/2022/1184198,2022,2020-24,(B/T) Technology;(B/T) Urban Planning;(PHY) Mathematics;,China,UNDECIDED,9
+10.1177/0020720920931067,2020,2020-24,(B/T) Computer Science;(PHY) Engineering - General;,China,UNDECIDED,7
+10.1145/3465631.3465848,2021,2020-24,(B/T) Business - General;(B/T) Technology;,China,UNDECIDED,2
+10.1371/journal.pone.0236340,2020,2020-24,(BLS) Agriculture;,India;Pakistan;Saudi Arabia;Turkey,UNDECIDED,3
+10.1155/2022/4475087,2022,2020-24,(HSC) Medicine - Geriatric;(HSC) Medicine - Orthopedics;(HSC) Medicine - Surgery;,China,UNDECIDED,9
+10.1213/ANE.0000000000005343,2021,2020-24,(HSC) Medicine - Anesthesia/Anaesthesia;(HSC) Medicine - Pharmacology;,Australia;China;New Zealand,NON_E1,2
+10.1155/2022/4218342,2022,2020-24,(B/T) Technology;(HSC) Medicine - Infectious Disease;,United States,UNDECIDED,5
+10.1007/s10644-024-09597-x,2024,2020-24,(B/T) Business - Economics;(ENV) Environmental Sciences;,China,UNDECIDED,8
+10.1007/s00500-023-09032-9,2023,2020-24,(B/T) Data Science;(B/T) Technology;(SOC) Linguistics;,China,UNDECIDED,5
+10.1155/2022/8483632,2022,2020-24,(PHY) Mathematics;,Afghanistan;Pakistan,UNDECIDED,9
+10.7759/cureus.22690,2022,2020-24,(HSC) Medicine - Pediatrics;(HSC) Medicine - Surgery;(HSC) Medicine - Urology/Nephrology;,Grenada;India;Pakistan;United States,UNDECIDED,5
+10.1155/2022/7084969,2022,2020-24,(B/T) Business - Economics;(B/T) Computer Science;(B/T) Data Science;,China,UNDECIDED,6
+10.1155/2022/1120491,2022,2020-24,(B/T) Data Science;(B/T) Transportation;(B/T) Urban Planning;,China,UNDECIDED,8
+10.1155/2022/1294416,2022,2020-24,(HSC) Medicine - Diabetes;(HSC) Medicine - Orthopedics;(HSC) Medicine - Surgery;,China,UNDECIDED,7
+10.1155/2022/9223321,2022,2020-24,(PHY) Statistics;(SOC) Communications;(SOC) Education;(SOC) Psychology;,China,NON_E1,11
+10.1155/2022/1289221,2022,2020-24,(B/T) Data Science;(HSC) Medicine - Infectious Disease;(HSC) Medicine - Pulmonology;(HSC) Radiology/Imaging;,Ethiopia;India;Saudi Arabia;United States,UNDECIDED,5
+10.1186/s12951-020-00626-1,2020,2020-24,(BLS) Biochemistry;(BLS) Toxicology;(HSC) Medicine - Neurology;(PHY) Nanotechnology;,China,E1_CANDIDATE,5
+10.3892/etm.2021.10783,2021,2020-24,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Gastroenterology;(HSC) Medicine - Pathology;,China,E1_CANDIDATE,6
+10.1155/2022/4881775,2022,2020-24,(B/T) Business - Management;(SOC) Education;(SOC) Sociology;,China,UNDECIDED,7
+10.1007/s12517-021-07935-1,2021,2020-24,(BLS) Agriculture;,China,UNDECIDED,5
+10.1155/2022/4299919,2022,2020-24,(HSC) Medicine - Nursing;(HSC) Medicine - Oncology;(HSC) Medicine - Surgery;(HSC) Medicine - Urology/Nephrology;,China,UNDECIDED,9
+10.1155/2022/7873226,2022,2020-24,(B/T) Technology;(SOC) Communications;(SOC) Political Science;,China,UNDECIDED,9
+10.1002/tox.24105,2024,2020-24,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,China,UNDECIDED,2
+10.1155/2022/1193586,2022,2020-24,(B/T) Computer Science;(B/T) Data Science;(B/T) Technology;,China,UNDECIDED,9
+10.1016/j.molliq.2021.118267,2021,2020-24,(B/T) Technology;(PHY) Chemistry;(PHY) Engineering - General;,Algeria;China;Iran;Iraq;Russia;Thailand,UNDECIDED,3
+10.1155/2022/3029528,2022,2020-24,(B/T) Business - Economics;(B/T) Technology;(SOC) Sports and Recreation;,China,UNDECIDED,9
+10.1051/e3sconf/202345601006,2023,2020-24,(B/T) Business - General;(ENV) Environmental Sciences;,Ukraine,UNDECIDED,3
+10.1155/2021/4868399,2021,2020-24,(B/T) Data Science;(BLS) Anatomy/Physiology;(HSC) Sports Science;,China,UNDECIDED,9
+10.1177/0020720920940595,2020,2020-24,(SOC) Education;(SOC) Philosophy;,China,UNDECIDED,3
+10.1016/j.heliyon.2022.e10490,2022,2020-24,(BLS) Agriculture;(BLS) Biochemistry;(BLS) Microbiology;(ENV) Environmental Sciences;,Jordan,E1_CANDIDATE,3
+10.1016/j.micpro.2020.103752,2020,2020-24,(B/T) Technology;(SOC) Sports and Recreation;,China,NON_E1,7
+10.1155/2020/2032679,2022,2020-24,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Gastroenterology;,China,UNDECIDED,8
+10.1016/j.heliyon.2022.e10071,2022,2020-24,(BLS) Biochemistry;(BLS) Biology - Cellular;(BLS) Plant Biology/Botany;(BLS) Toxicology;(HSC) Medicine - Diabetes;,Jordan,E1_CANDIDATE,5
+10.1007/s10854-020-04089-w,2020,2020-24,(PHY) Chemistry;(PHY) Materials Science;(PHY) Nanotechnology;,Egypt;Saudi Arabia,E1_CANDIDATE,11
+10.1155/2022/2373580,2022,2020-24,(BLS) Biology - Cancer;(BLS) Genetics;,China,UNDECIDED,9
+10.1155/2022/6286833,2022,2020-24,(B/T) Business - Economics;(B/T) Technology;(ENV) Ecology;(ENV) Environmental Sciences;,China,UNDECIDED,6
+10.1007/s11356-023-29822-w,2023,2020-24,(B/T) Business - Economics;(PHY) Energy;,China,UNDECIDED,5
+10.1007/s00500-023-08129-5,2023,2020-24,(B/T) Computer Science;(B/T) Data Science;(B/T) Technology;,China,UNDECIDED,7
+10.1155/2022/7784851,2022,2020-24,(B/T) Computer Science;(B/T) Data Science;(SOC) Education;(SOC) Linguistics;,China,UNDECIDED,9
+10.1155/2022/7723634,2022,2020-24,(B/T) Computer Science;(B/T) Data Science;,China,UNDECIDED,9
+10.1145/3465631.3465891,2021,2020-24,(B/T) Computer Science;(B/T) Technology;(SOC) Education;,China,UNDECIDED,2
+10.1186/s13638-023-02278-9,2023,2020-24,(B/T) Computer Science;(B/T) Data Science;(B/T) Technology;,China,UNDECIDED,8
+10.3126/jps.v21i0.35259,2021,2020-24,(B/T) Government;(SOC) Political Science;,Nepal,E1_CANDIDATE,2
+10.1016/j.crphar.2022,2023,2020-24,(HSC) Medicine - Diabetes;(HSC) Medicine - Obstetrics/Gynecology;(HSC) Medicine - Pharmacology;,France,UNDECIDED,2
+10.1155/2022/3556372,2022,2020-24,(BLS) Biology - Cellular;(BLS) Biology - Molecular;(HSC) Medicine - Immunology;(HSC) Medicine - Orthopedics;,China,UNDECIDED,8
+10.1080/07853890.2022.2153163,2022,2020-24,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Genetics;,China,UNDECIDED,4
+10.1109/CCDC52312.2021.9602398,2021,2020-24,(PHY) Engineering - Electrical;,Australia;China;Germany,E1_CANDIDATE,6
+10.3233/jifs-237056,2024,2020-24,(B/T) Computer Science;(B/T) Data Science;(B/T) Technology;(HSC) Medicine - General;,India;Iraq,UNDECIDED,9
+10.1155/2022/7796809,2022,2020-24,(BLS) Biochemistry;(BLS) Genetics;(HSC) Medicine - Cardiology;(HSC) Medicine - Cardiovascular;(HSC) Medicine - Diabetes;,China,UNDECIDED,3
+10.1007/s13132-023-01439-x,2023,2020-24,(B/T) Business - Economics;(B/T) Government;,China;Greece,UNDECIDED,5
+10.1016/j.apacoust.2021.108267,2021,2020-24,(PHY) Engineering - Electrical;,China,NON_E1,2
+10.1155/2022/2568162,2022,2020-24,(B/T) Business - Management;(B/T) Computer Science;,United States,UNDECIDED,6
+10.1155/2022/6299435,2022,2020-24,(HSC) Medicine - Nursing;(PHY) Materials Science;,China,UNDECIDED,6
+10.1155/2022/3909276,2022,2020-24,(B/T) Data Science;(HUM) History - Europe;(HUM) Religion;(SOC) Education;,China,UNDECIDED,6
+10.1016/j.scitotenv.2022.156709,2022,2020-24,(BLS) Toxicology;(BLS) Zoology;(ENV) Environmental Sciences;,Brazil,UNDECIDED,3
+10.1016/j.avb.2020.101540,2020,2020-24,(SOC) Education;(SOC) Psychology;(SOC) Sports and Recreation;,China,NON_E1,5
+10.1155/2021/2488947,2021,2020-24,(B/T) Data Science;(B/T) Technology;(ENV) Environmental Sciences;(PHY) Engineering - General;(PHY) Materials Science;,China,UNDECIDED,5
+10.1111/srt.13717,2024,2020-24,(BLS) Genetics;(HSC) Biostatistics/Epidemiology;(HSC) Medicine - Endocrinology;(HSC) Medicine - Geriatric;,China,UNDECIDED,4
+10.1155/2022/8155038,2022,2020-24,(ENV) Environmental Sciences;(PHY) Engineering - Structural;(PHY) Geology;(PHY) Materials Science;,China,UNDECIDED,9
+10.1155/2022/6206315,2022,2020-24,(HSC) Biostatistics/Epidemiology;(HSC) Medicine - Cardiovascular;(HSC) Medicine - Internal;(HSC) Medicine - Neurology;,China,NON_E1,11
+10.3892/etm.2021.10440,2021,2020-24,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Otorhinolaryngology;(HSC) Medicine - Pathology;,China,E1_CANDIDATE,8
+10.1007/s10854-021-07683-8,2022,2020-24,(PHY) Energy;(PHY) Engineering - Chemical;(PHY) Engineering - Electrical;(PHY) Nanotechnology;,India,UNDECIDED,2
+10.1186/s40001-020-00467-6,2020,2020-24,(HSC) Medicine - Orthopedics;(HSC) Medicine - Surgery;,Morocco,E1_CANDIDATE,2
+10.1007/s00500-020-05503-5,2021,2020-24,(B/T) Data Science;(HSC) Biostatistics/Epidemiology;(HSC) Medicine - Infectious Disease;,Brazil;China,UNDECIDED,5
+10.1145/3465631.3465692,2021,2020-24,(B/T) Business - General;(B/T) International Relations;(BLS) Agriculture;,China,UNDECIDED,2
+10.1088/1742-6596/2386/1/012026,2022,2020-24,(B/T) Computer Science;(B/T) Technology;,United States,UNDECIDED,3
+10.1051/bioconf/202413804006,2024,2020-24,(B/T) Urban Planning;,Russia,UNDECIDED,3
+10.1155/2022/6574042,2022,2020-24,(B/T) Business - Management;(B/T) Data Science;(B/T) Technology;,China,UNDECIDED,8
+10.1155/2022/5459779,2022,2020-24,(HSC) Medicine - Gastroenterology;(HSC) Medicine - Oncology;(HSC) Radiology/Imaging;,China,UNDECIDED,6
+10.21037/tcr.2020.01.02,2020,2020-24,(BLS) Biology - Cellular;(HSC) Medicine - Internal;(HSC) Medicine - Oncology;,China,UNDECIDED,1
+10.1145/3465631.3465931,2021,2020-24,(B/T) Computer Science;(HSC) Biostatistics/Epidemiology;(HSC) Medicine - Pediatrics;(HSC) Medicine - Pulmonology;,China,UNDECIDED,2
+10.1007/s10878-023-01060-3,2023,2020-24,(B/T) Computer Science;(PHY) Mathematics;,China,UNDECIDED,9
+10.1007/s10878-022-00904-8,2022,2020-24,(B/T) Computer Science;(B/T) Technology;,China,UNDECIDED,7
+10.1186/s13058-021-01412-z,2021,2020-24,(BLS) Biochemistry;(BLS) Biology - Cancer;(BLS) Biology - Cellular;(HSC) Medicine - Pharmacology;,United States,E1_CANDIDATE,8
+10.1155/2021/6734345,2021,2020-24,(B/T) Business - Economics;(B/T) Computer Science;(B/T) Data Science;,China,UNDECIDED,8
+10.3233/WOR-205349,2021,2020-24,(HSC) Medicine - Geriatric;(HSC) Medicine - Sports;,China;Eswatini (formerly Swaziland),UNDECIDED,8
+10.1080/15384101.2020.1834301,2022,2020-24,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;,China,UNDECIDED,2
+10.1002/mawe.201900071,2020,2020-24,(PHY) Materials Science;(PHY) Nanotechnology;,Nigeria;South Africa,E1_CANDIDATE,5
+10.1007/s12517-021-08127-7,2021,2020-24,(ENV) Ecology;(HUM) Architecture;,China,UNDECIDED,5
+10.1097/MPA.0000000000001697,2020,2020-24,(BLS) Biochemistry;(HSC) Medicine - Diabetes;(HSC) Medicine - General;(HSC) Public Health and Safety;,China,UNDECIDED,2
+10.1088/1742-6596/1648/4/042042,2020,2020-24,(B/T) Technology;(SOC) Education;,China,UNDECIDED,3
+10.3233/jifs-222986,2023,2020-24,(B/T) Data Science;,China,UNDECIDED,8
+10.1520/JTE20230077,2024,2020-24,(ENV) Ground/Surface Water;(PHY) Energy;,China,UNDECIDED,2
+10.3233/jifs-233557,2023,2020-24,(B/T) Computer Science;(B/T) Data Science;(B/T) Technology;,India,UNDECIDED,8
+10.1007/s10784-021-09555-2,2021,2020-24,(B/T) Business - General;(B/T) Urban Planning;(ENV) Environmental Sciences;,China;Russia;United Arab Emirates,UNDECIDED,5
+10.1063/5.0182173,2023,2020-24,(B/T) Technology;(SOC) Communications;,Iraq,UNDECIDED,6
+10.1155/2022/1727507,2022,2020-24,(HSC) Medicine - Rehabilitation/Therapy;(HUM) Arts - General;(SOC) Psychology;,China,UNDECIDED,9
+10.1155/2022/1941412,2022,2020-24,(BLS) Biology - Cancer;(BLS) Biology - Cellular;(BLS) Genetics;(HSC) Medicine - Oncology;(HSC) Medicine - Otorhinolaryngology;,China,UNDECIDED,6
+10.1080/24701556.2021.1952252,2021,2020-24,(BLS) Biochemistry;(BLS) Biology - Molecular;(HSC) Medicine - Diabetes;,Unknown,UNDECIDED,5
+10.1155/2022/1726948,2022,2020-24,(B/T) Technology;(PHY) Materials Science;(PHY) Nanotechnology;,China,UNDECIDED,9
+10.1037/xge0001823,2025,2025,(SOC) Psychology;,United States,NON_E1,5
+10.1371/journal.pone.0336241,2025,2025,(B/T) Computer Science;(ENV) Environmental Sciences;(HSC) Public Health and Safety;,China;Jordan;Malaysia;Oman;Pakistan;Saudi Arabia,UNDECIDED,9
+10.1001/jamapediatrics.2025.3636,2025,2025,(HSC) Medicine - Nursing;(HSC) Public Health and Safety;,United States,UNDECIDED,2

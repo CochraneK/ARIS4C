@@ -1,0 +1,14 @@
+{
+ "subset_n": 300,
+ "bucket_dist": {
+  "NON_E1": 34,
+  "E1_CANDIDATE": 73,
+  "UNDECIDED": 193
+ },
+ "distinct_reasons_in_subset": 73,
+ "reason_mentions": 1347,
+ "mapping_reasons_total": 112,
+ "unmapped_reasons": [],
+ "unmapped_count": 0,
+ "mapping_file": "data/rw_e1_mapping.csv (header line 4, skiprows=3)"
+}

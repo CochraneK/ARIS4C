@@ -1,0 +1,9 @@
+{
+ "frozen": 222714158,
+ "new_count": 222714158,
+ "drift_pct": 0.0,
+ "query": "GET /works?filter=publication_year:2000-2025&per-page=1&mailto=aris4c005@example.org",
+ "timestamp": "2026-10-08T08:12:51Z",
+ "mailto": "aris4c005@example.org",
+ "evidence": "data/stage3b/_evidence/denominator.json"
+}

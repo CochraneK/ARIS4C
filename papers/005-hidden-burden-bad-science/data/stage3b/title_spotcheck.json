@@ -1,0 +1,62 @@
+{
+ "seed": "20261008",
+ "unmatched_total": 3,
+ "cases_queried": 3,
+ "skipped_no_rw_title": 0,
+ "http400": 1,
+ "found_exact": 1,
+ "found_rate": 0.333,
+ "any_rate": 0.667,
+ "cases": [
+  {
+   "doi": "10.1177/014616720026200",
+   "orig_year": "2000",
+   "stratum": "2000-04",
+   "rw_title": "Why did I get a 'D'? The effects of social comparisons on women's attributions to discrimination",
+   "query": "https://api.openalex.org/works?filter=title.search:Why%20did%20I%20get%20a%20%27D%27%3F%20The%20effects%20of%20social%20comparisons%20on%20women%27s%20attributions%20to%20discrimination&per-page=3&mailto=aris4c005@example.org",
+   "error": true,
+   "found": false,
+   "any_result": false,
+   "top3": []
+  },
+  {
+   "doi": "10.26355/eurrev_201708_13284",
+   "orig_year": "2017",
+   "stratum": "2015-19",
+   "rw_title": "Mitochondrial protein UCP1 mediates liver injury induced by LPS through EKR signaling pathway",
+   "query": "https://api.openalex.org/works?filter=title.search:Mitochondrial%20protein%20UCP1%20mediates%20liver%20injury%20induced%20by%20LPS%20through%20EKR%20signaling%20pathway&per-page=3&mailto=aris4c005@example.org",
+   "error": false,
+   "found": true,
+   "any_result": true,
+   "top3": [
+    {
+     "id": "https://openalex.org/W4365601034",
+     "title": "Mitochondrial protein UCP1 mediates liver injury induced by LPS through EKR signaling pathway",
+     "year": 2020
+    },
+    {
+     "id": "https://openalex.org/W2999488452",
+     "title": "Mitochondrial protein UCP1 mediates liver injury induced by LPS through EKR signaling pathway.",
+     "year": 2017
+    }
+   ]
+  },
+  {
+   "doi": "10.1016/j.crphar.2022",
+   "orig_year": "2023",
+   "stratum": "2020-24",
+   "rw_title": "Myoinositol supplementation for the prevention of gestational diabetes in at-risk patients. Systemativ review and meta-analysis",
+   "query": "https://api.openalex.org/works?filter=title.search:Myoinositol%20supplementation%20for%20the%20prevention%20of%20gestational%20diabetes%20in%20at-risk%20patients.%20Systemativ%20review%20and%20meta-analysis&per-page=3&mailto=aris4c005@example.org",
+   "error": false,
+   "found": false,
+   "any_result": true,
+   "top3": [
+    {
+     "id": "https://openalex.org/W4379054664",
+     "title": "Retraction notice to “Myoinositol supplementation for the prevention of gestational diabetes in at-risk patients. Systemativ review and meta-analysis” [Curr. Res. Pharmacol. Drug Discov. 4C (2023) 100140]",
+     "year": 2023
+    }
+   ]
+  }
+ ]
+}

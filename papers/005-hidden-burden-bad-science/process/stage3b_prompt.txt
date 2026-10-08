@@ -1,0 +1,45 @@
+# 005 Stage 3b — Gate 1：审计子集 DOI/标题匹配 + 原因编码覆盖/准确率（段3a 已闭环）
+
+## 身份
+你是 ARIS4C-005 本地重跑的 executor。本篇唯一 idea 输入=RESEARCH_BRIEF.md（冻结）。段3a 已物化模块 A（data/stage3/ 四件+摘要，只读输入）。本段=Gate 1 判定：DOI/标题匹配+原因编码在 n=300 审计子集上达到可接受覆盖/准确率 → 通过才可进入模块 B（患病率建模）。本段只判定，不改 3a 任何产物。
+
+## 铁律
+- 工作目录=沙盒根。文件操作全部用相对路径。
+- 解释器固定：`C:/Users/SCZ_2207/.workbuddy/binaries/python/envs/default/Scripts/python.exe`。
+- 网络限定：只允许 OpenAlex API（api.openalex.org）；429 backoff (0,30,60,120,240)s；请求头 mailto=aris4c005@example.org；总预算 ≤15 查询（DOI 批 3 + title 抽查 ≤10 + 分母重钉 1），硬顶 20（达到硬顶即停并如实报告未完成项）；data/raw 不得有新文件；原始响应证据存 data/stage3b/_evidence/。
+- 防溢出纪律（强制，9 例 131073 实证）：
+  1. 单响应 ≤1 个工具调用。
+  2. 工具参数 ≤20 行（脚本可分块写，每块 ≤20 行）；自然语言回复 ≤2 句。
+  3. 禁止在自然语言中展示文件内容；长文件分块 ≤15 行读。
+  4. 大 CSV/JSON 统计一律先落盘 python 脚本再运行；禁 python -c 内联复杂引号。
+  5. 禁读 results/ 下任何日志。
+- 413 防壳：只相对路径；禁 cd /d；禁 dir（用 ls）；禁从 / 或 C:\ 起 find；输出 >1000 行必 | head -50；bash 禁反斜杠。
+- 反编造纪律：gate1_decision.json 每个数字必须可被 data/stage3b 文件复现；DOI 匹配结果必须溯源 _evidence/ 原始 JSON；DONE 前必须 ls+wc 逐项核验交付物在盘非空。日志 DONE 行≠完成，"✔ ● Done"不是完成，宿主会逐项核盘。
+- 既有产物只读：本段只新增 data/stage3b/、stage3b_summary.md、data/code/s3b_*.py。
+- 纪律已给定即执行，不辩论规则边界；拿不准时选保守执行。
+
+## 盘上指针
+- RESEARCH_BRIEF.md（Gate 1 定义：line 62）、stage3a_summary.md（段3a 移交规格）、data/stage3/e1_numerators.csv（62784 行：doi,orig_year,subject,country,bucket,n_reasons,retraction_year,delay_years；**只读**）、data/rw_e1_mapping.csv（112 reason 三桶映射，skiprows=3）、data/manifests/rw_csv_manifest.json。
+- 正典分母（冻结）：222,714,158（2000–2025 publication_year，段2 P4 实测）。
+
+## 任务（T0–T5，顺序执行，总调用预算 ≤25）
+T0 环境核验：ls 指针存在；wc -l e1_numerators.csv=62785；python 读 with_doi 行数确认 60348。stdout ≤8 行。
+T1 审计子集（本地，s3b_select.py）：从 60348 个有 DOI 行按 orig_year 六层分层（2000-04/05-09/10-14/15-19/20-24/2025 尾层），配额=按层占比 round 到 300（每层 ≥1，余数补最大层），确定性排序=SHA256("20261008|"+doi) 取层内前 n → data/stage3b/audit_subset.csv（doi,orig_year,stratum,subject,country,bucket,n_reasons）+ 层配额写入文件尾注释行（# 开头）或单独 data/stage3b/subset_selection.json（seed/配额/层大小）。
+T2 DOI 批量匹配（s3b_match.py）：300 DOI 归一化（小写、去 url 前缀）分 3 批 ×100，GET /works?filter=doi:d1|d2|...&per-page=200&select=id,doi,display_name,publication_year（每批 1 查询）；每批原始 JSON 落盘 _evidence/batch{n}.json；匹配成功=OpenAlex 返回该 DOI 的 work（记录 work_id、oa_title、oa_year、year_match=(oa_year==orig_year)、title_match=大小写不敏感精确或前 40 字符一致）→ data/stage3b/doi_match_results.csv（300 行全量，含未匹配行 matched=false）。
+T3 title 抽查（s3b_spotcheck.py）：未匹配行中取前 10（按 SHA256 序）做 /works?filter=title.search:<title>&per-page=3（每例 1 查询，仅对 RW 原表有 Title 的；Title 需从 RW CSV 按 DOI 查——python 解析 67MB 只取 Title 列，stdout ≤15 行）→ data/stage3b/title_spotcheck.json（逐例：doi、rw_title、query、found(bool)、top3 结果 id/title/year）。
+T4 分母重钉（并入 s3b_match.py 或独立 s3b_reprobe.py，1 查询）：GET /works?filter=publication_year:2000-2025&per-page=1 → meta.count → data/stage3b/denominator_reprobe.json（frozen=222714158、new_count、drift_pct、query、timestamp、mailto）。
+T5 Gate 1 判定（s3b_gate.py 读 T1–T4 产物）：
+  - 覆盖：coverage=matched/300；逐年未匹配模式（是否集中于某年/某 subject=系统性 artifact 信号）；
+  - 原因编码：子集 300 行 bucket 分布（E1/NON/UNDECIDED）+ unmapped reason 计数（应为 0，映射全在盘）；
+  - 判定标准（本段冻结）：coverage ≥0.85 且 unmapped=0 且无单年/单领域未匹配占比 >2× 全局 → **PASS**；0.70 ≤ coverage <0.85 → **PASS_WITH_LIMITATIONS**（模块 B 启动但结果带 Gate 1 警示）；coverage <0.70 → **FAIL**（模块 B 降级描述性，按 BRIEF 门控规则）；
+  - 分母漂移 <0.5% 只注记不 gate；≥0.5% 记入 limitation（不触发重钉，下段再议）；
+  → data/stage3b/gate1_decision.json（criteria/值/判定/limitations/逐未匹配案例清单指针）+ data/stage3b/reason_coding_subset.json。
+T6 stage3b_summary.md（≤60 行）：关键数字表（覆盖、逐年未匹配、bucket 分布、漂移、title 抽查 found 率）+ Gate 1 判定+理由 + 局限性 + 段4 移交（模块 B：分层文章样本 5000-10000 自动表征+人工裁决金标+分层贝叶斯潜类模型；启动条件=Gate 1 判定非 FAIL）+ 末两行：先 `ls data/stage3b/` 与 `wc -l stage3b_summary.md`，再写 `DONE stage3b 005`。
+
+## 自检（宿主验收点）
+- data/stage3b/：audit_subset.csv（300 行+表头）、doi_match_results.csv（300 行+表头）、title_spotcheck.json、denominator_reprobe.json、gate1_decision.json、reason_coding_subset.json、_evidence/（3+1 批原始 JSON）；另 stage3b_summary.md（根）与 data/code/s3b_*.py。
+- 零其他网络：data/raw 无新文件；查询总数 ≤15（硬顶 20 内如实报告）。
+- 时间预算：软目标 40min。
+
+## 禁止
+- 修改 3a 任何产物；编造 work_id/DOI；把检出≠患病当结论（Gate 1 只判数据管道质量，不涉患病率）；未达交付物齐备前写 DONE。
