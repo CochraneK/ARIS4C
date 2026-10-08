@@ -1,0 +1,57 @@
+004 段3a FIX 续跑：只做 T5 合成基准 + T6 no-look-ahead 审计 + 真实 stage3a_summary.md
+
+背景（必读）：
+- 段3a 主 run 已完成 T0–T4，真实产物已在盘。该 run 未执行 T5/T6，却把日志报成 DONE+PASS（假完成）。本 fix run 只补 T5/T6/真实 summary，其余一律不动。
+- 禁止重跑 T0–T4；禁止任何 OpenAlex/网络查询；禁止重算 betweenness（betweenness_full.json 已在盘，k=200, seed=42）。
+- 主 run 日志 results/stage3a_run.log 中的 "Benchmark (a)–(d) PASS / audit verdict: PASS" 及 summary 模板（含 X/Y/N 占位符）均为未执行的假声称。忽略它们，禁止照抄。
+
+在盘指针（已验收为真，直接引用，勿重新推导）：
+- code/simcore_3.py — 共享核心函数：to_full, to_short, build_indices, select_deleted, work_coauth_pairs, work_ac_pairs, compute_metrics, m1_recovery, m2_pre_t0_state, m2_reconnect
+- code/load_graph_3.py, code/sim_m0.py, code/sim_m1.py, code/sim_m2.py
+- data/stage3/graph_manifest.json — n_authors=31733, n_active=164, n_coauth_edges=848052, n_works=37636, n_concepts=50, n_ac_edges=6380, integrity=OK
+- data/stage3/betweenness_full.json（660KB，只许 python 解析，打印 ≤15 行）
+- data/stage3/pilot_focals.csv — 16 个 pilot focal（如 Geoffrey C. Clayton physics / John W. Tukey math）
+- data/stage3/m0_results.csv / m1_results.csv / m2_results.csv — 16 focal × a∈{0.25,0.5,0.75,1.0} 的真实 M0/M1/M2 结果
+- data/stage3/m1_lookahead_log.json — 每 focal|a：max_cited_year、worst_gap（现值 -1）
+- data/stage3/m2_lookahead_log.json — 每 focal|a：n_candidates、max_year_used、t0、n_replaced、n_edges_added（现值 max_year_used=1924=t0）
+- data/stage3/graph_cache.pkl（114MB）— 本 run 的 T5 用合成网，无需加载真实图，禁止读它
+- RESEARCH_BRIEF.md、process/RESEARCH_PLAN.md — M0–M3 定义（只读参考）
+
+T5 — 合成 star-loss 基准：写 code/sim_benchmark.py 并运行
+1. 构造 3 个合成网络（每个都植入一个高星度 hub "star" + 背景），数据结构与 simcore_3 一致（作者/work/year/concept）：
+   (i)   Erdős–Rényi 背景（平均度 ≈10）
+   (ii)  SBM 3-block 背景（块大小约 1000/800/600，块内 p > 块间 p）
+   (iii) star+background：1 个 hub 连 200 节点 + ER 背景
+   年份范围 1900–2020，concept 从 top-50 池抽。seed=20260918。
+2. 对植入 star 跑 M0/M1/M2（复用 simcore_3 函数，与真实数据同一代码路径），a∈{0.25,0.5,0.75,1.0}。
+3. 四个断言（逐条报 verdict，禁止改结果迁就断言）：
+   (a) M0 的指标降幅（degree/LCC/reach）最大
+   (b) M1 与 M2 均部分恢复（降幅严格小于 M0）
+   (c) 降幅随 a 单调不减
+   (d) no-look-ahead canary：
+       - M2：works_full 与 works_pre_only 两种视图下的重连决策必须完全一致
+       - M1：抽一批已恢复边，在受限视图（仅可见 year<y 的 works）下重算恢复，结果必须一致
+4. 产物：
+   - data/stage3/benchmark_results.csv — 每 network × model × a 一行，含各指标
+   - data/stage3/benchmark_report.md — ≤15 行：逐断言 verdict + 关键数字；断言失败就写 FAIL + 观测值（FAIL 是合法结果，不是要藏起来的错误）
+
+T6 — no-look-ahead 审计：写 code/audit_lookahead.py 并运行
+1. 静态扫描 code/simcore_3.py、sim_m1.py、sim_m2.py：确认 M1 恢复候选集按 year<y 过滤、M2 重连候选集只用 pre-t0 信息；引用证据行号。
+2. 校验真实运行时日志：m1_lookahead_log.json 每条 worst_gap<0（worst_gap=max_cited_year-y，-1 表示全部恢复引用 work 年份严格早于对应 y）；m2_lookahead_log.json 每条 max_year_used≤t0。
+3. 产物 data/stage3/lookahead_audit.json：{"static_scan":{每文件: 证据行号}, "runtime_logs":{"m1":"OK/VIOLATION:…","m2":"OK/VIOLATION:…"}, "verdict":"PASS/FAIL"}
+
+T7 — 真实 summary：沙盒根写 stage3a_summary.md（≤40 行，简体中文+英文术语）
+- 只写真实数字，每个数字必须能溯源到盘上文件（graph_manifest.json / m0、m1、m2_results.csv / benchmark_results.csv / lookahead_audit.json / pilot_focals.csv）。
+- 内容：T1 图清单关键数；M0 示例（Clayton a=0.25: n_deleted=143, deg_delta=-368, lcc_delta=-108）；M1 饱和 limitation（recovery_frac≈1.0 于 60/64 行，top-50 concept ≥1 共享判据过松；如实记 limitation，判据收紧留给段3b，本 run 禁止修改 M1）；M2 保守重连（n_replaced 5–14）；T5 逐断言 verdict（引 benchmark_report.md）；T6 verdict（引 lookahead_audit.json）。
+- 末行 `DONE stage3a 004` 只有在先跑过 ls 确认四件产物齐备且非空后才能打印：
+  ls data/stage3/benchmark_results.csv data/stage3/benchmark_report.md data/stage3/lookahead_audit.json stage3a_summary.md
+  缺任何一件：先补齐，绝不允许打印 DONE。
+
+硬性纪律：
+- 总工具调用 ≤25；每响应 ≤1 个工具调用；响应文本 ≤2 句；禁止在文本里展示文件内容。
+- >100KB 文件只许 python 解析且打印 ≤15 行。
+- 零 OpenAlex/网络查询。
+- 任何产物禁占位符（X/Y/N）。
+- 断言/校验失败：如实报 FAIL。
+- 禁改 m0/m1/m2_results.csv、pilot_focals.csv、graph_manifest.json、任何 stage2b 文件。
+- python -c 内复杂引号：先落盘成 .py 再运行。

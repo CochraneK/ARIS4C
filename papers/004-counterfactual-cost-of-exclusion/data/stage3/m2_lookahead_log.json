@@ -1,0 +1,450 @@
+{
+  "https://openalex.org/A5000945647|0.25": {
+    "n_candidates": 2,
+    "max_year_used": 1924,
+    "n_replaced": 5,
+    "n_edges_added": 51,
+    "t0": 1924
+  },
+  "https://openalex.org/A5000945647|0.5": {
+    "n_candidates": 2,
+    "max_year_used": 1924,
+    "n_replaced": 8,
+    "n_edges_added": 120,
+    "t0": 1924
+  },
+  "https://openalex.org/A5000945647|0.75": {
+    "n_candidates": 2,
+    "max_year_used": 1924,
+    "n_replaced": 13,
+    "n_edges_added": 38,
+    "t0": 1924
+  },
+  "https://openalex.org/A5000945647|1.0": {
+    "n_candidates": 2,
+    "max_year_used": 1924,
+    "n_replaced": 14,
+    "n_edges_added": 42,
+    "t0": 1924
+  },
+  "https://openalex.org/A5001390698|0.25": {
+    "n_candidates": 0,
+    "max_year_used": 1896,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1896
+  },
+  "https://openalex.org/A5001390698|0.5": {
+    "n_candidates": 0,
+    "max_year_used": 1896,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1896
+  },
+  "https://openalex.org/A5001390698|0.75": {
+    "n_candidates": 0,
+    "max_year_used": 1896,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1896
+  },
+  "https://openalex.org/A5001390698|1.0": {
+    "n_candidates": 0,
+    "max_year_used": 1896,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1896
+  },
+  "https://openalex.org/A5020224649|0.25": {
+    "n_candidates": 0,
+    "max_year_used": 1863,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1863
+  },
+  "https://openalex.org/A5020224649|0.5": {
+    "n_candidates": 0,
+    "max_year_used": 1863,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1863
+  },
+  "https://openalex.org/A5020224649|0.75": {
+    "n_candidates": 0,
+    "max_year_used": 1863,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1863
+  },
+  "https://openalex.org/A5020224649|1.0": {
+    "n_candidates": 0,
+    "max_year_used": 1863,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1863
+  },
+  "https://openalex.org/A5021973169|0.25": {
+    "n_candidates": 0,
+    "max_year_used": 1903,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1903
+  },
+  "https://openalex.org/A5021973169|0.5": {
+    "n_candidates": 0,
+    "max_year_used": 1903,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1903
+  },
+  "https://openalex.org/A5021973169|0.75": {
+    "n_candidates": 0,
+    "max_year_used": 1903,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1903
+  },
+  "https://openalex.org/A5021973169|1.0": {
+    "n_candidates": 0,
+    "max_year_used": 1903,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1903
+  },
+  "https://openalex.org/A5023706141|0.25": {
+    "n_candidates": 4,
+    "max_year_used": 1938,
+    "n_replaced": 107,
+    "n_edges_added": 133,
+    "t0": 1938
+  },
+  "https://openalex.org/A5023706141|0.5": {
+    "n_candidates": 4,
+    "max_year_used": 1938,
+    "n_replaced": 214,
+    "n_edges_added": 490,
+    "t0": 1938
+  },
+  "https://openalex.org/A5023706141|0.75": {
+    "n_candidates": 4,
+    "max_year_used": 1938,
+    "n_replaced": 320,
+    "n_edges_added": 106,
+    "t0": 1938
+  },
+  "https://openalex.org/A5023706141|1.0": {
+    "n_candidates": 4,
+    "max_year_used": 1938,
+    "n_replaced": 427,
+    "n_edges_added": 166,
+    "t0": 1938
+  },
+  "https://openalex.org/A5024145662|0.25": {
+    "n_candidates": 1,
+    "max_year_used": 1926,
+    "n_replaced": 41,
+    "n_edges_added": 39,
+    "t0": 1926
+  },
+  "https://openalex.org/A5024145662|0.5": {
+    "n_candidates": 1,
+    "max_year_used": 1926,
+    "n_replaced": 84,
+    "n_edges_added": 36,
+    "t0": 1926
+  },
+  "https://openalex.org/A5024145662|0.75": {
+    "n_candidates": 1,
+    "max_year_used": 1926,
+    "n_replaced": 131,
+    "n_edges_added": 73,
+    "t0": 1926
+  },
+  "https://openalex.org/A5024145662|1.0": {
+    "n_candidates": 1,
+    "max_year_used": 1926,
+    "n_replaced": 176,
+    "n_edges_added": 120,
+    "t0": 1926
+  },
+  "https://openalex.org/A5031530236|0.25": {
+    "n_candidates": 2,
+    "max_year_used": 1933,
+    "n_replaced": 174,
+    "n_edges_added": 73651,
+    "t0": 1933
+  },
+  "https://openalex.org/A5031530236|0.5": {
+    "n_candidates": 2,
+    "max_year_used": 1933,
+    "n_replaced": 367,
+    "n_edges_added": 95581,
+    "t0": 1933
+  },
+  "https://openalex.org/A5031530236|0.75": {
+    "n_candidates": 2,
+    "max_year_used": 1933,
+    "n_replaced": 574,
+    "n_edges_added": 190681,
+    "t0": 1933
+  },
+  "https://openalex.org/A5031530236|1.0": {
+    "n_candidates": 2,
+    "max_year_used": 1933,
+    "n_replaced": 759,
+    "n_edges_added": 163591,
+    "t0": 1933
+  },
+  "https://openalex.org/A5032489073|0.25": {
+    "n_candidates": 0,
+    "max_year_used": 1931,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1931
+  },
+  "https://openalex.org/A5032489073|0.5": {
+    "n_candidates": 0,
+    "max_year_used": 1931,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1931
+  },
+  "https://openalex.org/A5032489073|0.75": {
+    "n_candidates": 0,
+    "max_year_used": 1931,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1931
+  },
+  "https://openalex.org/A5032489073|1.0": {
+    "n_candidates": 0,
+    "max_year_used": 1931,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1931
+  },
+  "https://openalex.org/A5042885999|0.25": {
+    "n_candidates": 2,
+    "max_year_used": 1934,
+    "n_replaced": 236,
+    "n_edges_added": 1198,
+    "t0": 1934
+  },
+  "https://openalex.org/A5042885999|0.5": {
+    "n_candidates": 2,
+    "max_year_used": 1934,
+    "n_replaced": 472,
+    "n_edges_added": 1042,
+    "t0": 1934
+  },
+  "https://openalex.org/A5042885999|0.75": {
+    "n_candidates": 2,
+    "max_year_used": 1934,
+    "n_replaced": 709,
+    "n_edges_added": 1018,
+    "t0": 1934
+  },
+  "https://openalex.org/A5042885999|1.0": {
+    "n_candidates": 2,
+    "max_year_used": 1934,
+    "n_replaced": 930,
+    "n_edges_added": 1169,
+    "t0": 1934
+  },
+  "https://openalex.org/A5068520992|0.25": {
+    "n_candidates": 0,
+    "max_year_used": 1913,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1913
+  },
+  "https://openalex.org/A5068520992|0.5": {
+    "n_candidates": 0,
+    "max_year_used": 1913,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1913
+  },
+  "https://openalex.org/A5068520992|0.75": {
+    "n_candidates": 0,
+    "max_year_used": 1913,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1913
+  },
+  "https://openalex.org/A5068520992|1.0": {
+    "n_candidates": 0,
+    "max_year_used": 1913,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1913
+  },
+  "https://openalex.org/A5075738642|0.25": {
+    "n_candidates": 2,
+    "max_year_used": 1924,
+    "n_replaced": 20,
+    "n_edges_added": 20,
+    "t0": 1924
+  },
+  "https://openalex.org/A5075738642|0.5": {
+    "n_candidates": 2,
+    "max_year_used": 1924,
+    "n_replaced": 28,
+    "n_edges_added": 5,
+    "t0": 1924
+  },
+  "https://openalex.org/A5075738642|0.75": {
+    "n_candidates": 2,
+    "max_year_used": 1924,
+    "n_replaced": 45,
+    "n_edges_added": 27,
+    "t0": 1924
+  },
+  "https://openalex.org/A5075738642|1.0": {
+    "n_candidates": 2,
+    "max_year_used": 1924,
+    "n_replaced": 57,
+    "n_edges_added": 21,
+    "t0": 1924
+  },
+  "https://openalex.org/A5087680980|0.25": {
+    "n_candidates": 0,
+    "max_year_used": 1915,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1915
+  },
+  "https://openalex.org/A5087680980|0.5": {
+    "n_candidates": 0,
+    "max_year_used": 1915,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1915
+  },
+  "https://openalex.org/A5087680980|0.75": {
+    "n_candidates": 0,
+    "max_year_used": 1915,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1915
+  },
+  "https://openalex.org/A5087680980|1.0": {
+    "n_candidates": 0,
+    "max_year_used": 1915,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1915
+  },
+  "https://openalex.org/A5108631265|0.25": {
+    "n_candidates": 6,
+    "max_year_used": 1924,
+    "n_replaced": 58,
+    "n_edges_added": 42,
+    "t0": 1924
+  },
+  "https://openalex.org/A5108631265|0.5": {
+    "n_candidates": 6,
+    "max_year_used": 1924,
+    "n_replaced": 116,
+    "n_edges_added": 196,
+    "t0": 1924
+  },
+  "https://openalex.org/A5108631265|0.75": {
+    "n_candidates": 6,
+    "max_year_used": 1924,
+    "n_replaced": 174,
+    "n_edges_added": 46,
+    "t0": 1924
+  },
+  "https://openalex.org/A5108631265|1.0": {
+    "n_candidates": 6,
+    "max_year_used": 1924,
+    "n_replaced": 233,
+    "n_edges_added": 29,
+    "t0": 1924
+  },
+  "https://openalex.org/A5112523816|0.25": {
+    "n_candidates": 0,
+    "max_year_used": 1912,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1912
+  },
+  "https://openalex.org/A5112523816|0.5": {
+    "n_candidates": 0,
+    "max_year_used": 1912,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1912
+  },
+  "https://openalex.org/A5112523816|0.75": {
+    "n_candidates": 0,
+    "max_year_used": 1912,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1912
+  },
+  "https://openalex.org/A5112523816|1.0": {
+    "n_candidates": 0,
+    "max_year_used": 1912,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1912
+  },
+  "https://openalex.org/A5112784443|0.25": {
+    "n_candidates": 0,
+    "max_year_used": 1935,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1935
+  },
+  "https://openalex.org/A5112784443|0.5": {
+    "n_candidates": 0,
+    "max_year_used": 1935,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1935
+  },
+  "https://openalex.org/A5112784443|0.75": {
+    "n_candidates": 0,
+    "max_year_used": 1935,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1935
+  },
+  "https://openalex.org/A5112784443|1.0": {
+    "n_candidates": 0,
+    "max_year_used": 1935,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1935
+  },
+  "https://openalex.org/A5113599985|0.25": {
+    "n_candidates": 0,
+    "max_year_used": 1914,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1914
+  },
+  "https://openalex.org/A5113599985|0.5": {
+    "n_candidates": 0,
+    "max_year_used": 1914,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1914
+  },
+  "https://openalex.org/A5113599985|0.75": {
+    "n_candidates": 0,
+    "max_year_used": 1914,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1914
+  },
+  "https://openalex.org/A5113599985|1.0": {
+    "n_candidates": 0,
+    "max_year_used": 1914,
+    "n_replaced": 0,
+    "n_edges_added": 0,
+    "t0": 1914
+  }
+}

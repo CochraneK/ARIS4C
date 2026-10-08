@@ -1,0 +1,80 @@
+# ARIS4C-004 段3a（Gate D 模拟器核心 + 验证）executor 任务
+
+## 背景（宿主判定，勿读旧日志）
+- 段2b 已验收（Gate C PASS）：science core pilot 网络足够支撑 stage-3 M0–M3；**stage 3 必须用全图**（active-internal 子图按采样设计偏稀疏）
+- 本段 = 图加载器 + 完整性门 + M0 朴素删除 + M1 观察替代路径恢复 + M2 有界动态重连 + 合成 star-loss 基准 + no-look-ahead 审计
+- 本段**不**跑真实 focal pilot CPE（段3b）、**不**做暴露编码（P5）、**零 OpenAlex 查询**（全本地）；M3 为 3b 探索项，本段不强求
+
+## 先读（各 1 次，勿超）
+- RESEARCH_BRIEF.md（CPE estimand / M0–M3 模型族 / Gate D 定义——只取模型族 + sign-neutral CPE）
+- data/network/network_spec.md（14 行：3 类节点 / 2 类边 / 时间规则 / ID 归一化）
+- stage2b_summary.md（33 行：网络形状 / Gate C verdict / deviations）
+
+## 在盘指针（勿改，冻结）
+- data/exposure_queue.csv — 190 行（author_id 完整 URL, display_name, stratum, …）
+- data/network/nodes_authors.csv — 164 active（author_id 完整 URL, name, stratum, n_works, first_work_year, last_work_year）
+- data/network/edges_coauthor.csv — 848,052 行（a1,a2,weight,first_year,last_year；短 A 形 ID；31MB 仅 python）
+- data/network/edges_author_concept.csv — 6,380 行（author,concept,weight）
+- data/network/works_index.jsonl — 37,636 行（id,doi,year,cited,authors[],concepts[]；19MB 仅 python）
+- data/network/metrics.json + metrics_top20.csv — 基线结构指标 / betweenness top20（完整 URL）
+- ID 归一化：edges/works_index 用短 A 形，queue & nodes_authors 用完整 URL → loader 统一以完整 URL 为 canonical key（补前缀 https://openalex.org/）
+
+## 任务
+### T0 环境（1 调用）
+- 验证 venv 可 import pandas/numpy/networkx（缺则 pip install -q networkx）→ 同调用验证 import 成功；已装则跳过
+
+### T1 图加载器 + 完整性门（核心）
+- code/load_graph_3.py（write_file 落盘后执行）：
+  - 载入 nodes_authors.csv / edges_coauthor.csv / works_index.jsonl（CoAuth → networkx Graph；works → list[dict]）
+  - 完整性门：n_coauth_edges==network_manifest.json 的 coauth_edges(848052)、n_works==works_total(37636)、164 active ⊆ CoAuth 节点 → 不符即 print FAIL 退出（不继续）
+  - 预计算全图 betweenness **一次**（nx.betweenness_centrality(G, k=200, seed=42) 近似，勿精确 O(VE)）→ data/stage3/betweenness_full.json（短 ID→值）
+  - → data/stage3/graph_manifest.json（n_authors, n_coauth_edges, n_works, n_concepts, betweenness_k, mem_mb, load_secs, integrity=OK/FAIL）
+  - 注意：edges_coauthor.csv 31MB / works_index.jsonl 19MB 禁直读，只许 python 解析
+
+### T2 M0 朴素删除（上界压力测试，非首选模型）
+- code/sim_m0.py（write_file → 执行）：
+  - pilot focal 集（确定性）：metrics_top20.csv 前 5 ∪ 各 stratum 内 betweenness 前 3 → 去重，seed=20260918 → 预期 13–20 个；写 data/stage3/pilot_focals.csv（author_id,name,stratum,betweenness,source）
+  - 每 focal i、每 a∈{0.25,0.5,0.75,1.0}：t0=focal 的 first_work_year（早期职业门）；按 year 升序确定性删 a 比例 focal 的 year>t0 works（seed 固定）+ 这些 works 的全部 CoAuth/AuthorConcept 关联边
+  - 指标（基线 T1 已算，删后重测，**禁重算全图 betweenness**）：focal degree Δ、LCC size Δ（connected_components 快）、focal reachability Δ（BFS）、affected_nodes Δ（失去与 focal 连通性的节点数）
+  - → data/stage3/m0_results.csv（focal,a,t0,n_works_deleted,deg_delta,lcc_delta,reach_delta,affected_nodes）
+
+### T3 M1 观察替代路径恢复（保守，仅已观测图）
+- code/sim_m1.py（write_file → 执行）：
+  - 对 M0 删的每个 W（year y）：判是否存在非 focal work W' 满足 W'.year<y（时序前）**且** W' 与 W 共享 ≥1 concept（主题邻近）**且** W' 非 focal → W 记「可恢复」
+  - 严格只用图上已存在 works（不虚构新 work）；W'.year<y 天然无 look-ahead
+  - → data/stage3/m1_results.csv（focal,a,n_deleted,n_recoverable,recovery_frac）
+
+### T4 M2 有界动态重连
+- code/sim_m2.py（write_file → 执行）：
+  - 对每个被删 W（year y）：替代者=满足 (1) CoAuth 距 focal ≤2、(2) 其 pre-t0 works 与 W 共享 ≥1 concept、(3) pre-t0 产出>0 的 pre-t0 作者；存在则生成 K=1 替换 work（year=y，delay=0）
+  - 替代决策**只用 pre-t0 信息**（禁引用 year>t0 的 works/edges）
+  - 测重连后指标（同 M0 指标集）
+  - → data/stage3/m2_results.csv（focal,a,n_deleted,n_replaced,deg_delta,lcc_delta,reach_delta）
+
+### T5 合成 star-loss 基准（验证核心）
+- code/sim_benchmark.py（write_file → 执行）：
+  - 造 3 个合成网（ER / SBM 3-block / star+background），各植入 1 个 hub star（degree≈10×背景）
+  - 对 star 在 t0=其进入时刻跑 M0/M1/M2，a∈{0.25,0.5,0.75,1.0}
+  - 断言：(a) M0 指标降幅最大（sanity）；(b) M1/M2 部分恢复（降幅<M0）；(c) 恢复随 a 单调不减（降幅单调）；(d) no-look-ahead：替代决策仅用 pre-t0（代码内 assert，禁引用 post-t0 works）
+  - → data/stage3/benchmark_results.csv（net_type,model,a,metric_drop,recovered_frac）+ data/stage3/benchmark_report.md（≤15 行，逐断言 verdict）
+
+### T6 no-look-ahead 审计 + 3a summary
+- code/audit_lookahead.py（write_file → 执行）：扫 M1/M2 源码 + 运行日志，assert 替代决策从不引用 year>t0 的 works/edges（grep+assert），输出 verdict
+- stage3a_summary.md ≤40 行（loader integrity / focal 集 / M0-M2 关键数 / 基准断言 verdict / no-look-ahead verdict / deviations / limitations）
+- 末行：DONE stage3a 004
+
+## 纪律（必须遵守，前 run 死于违反）
+- 工具调用 ≤35；单响应 ≤1 调用；参数 ≤20 行；文本 ≤2 句；禁文本展示文件内容
+- 长文件分块 append（单块 ≤15 行）或 python 生成（模型只写代码不输出数据）
+- shell：只用相对路径；禁 cd /d；禁 dir（用 ls）；禁从 / 或 C:\ 起 find；可能 >1000 行输出的命令必 | head -50；bash 内禁反斜杠路径
+- 禁 read results/*.log；>1MB 文件（edges_coauthor.csv / works_index.jsonl）禁直读（python 解析，输出 ≤15 行）
+- 禁逐场景重算全图精确 betweenness（T1 预计算近似一次，复用）
+- 禁 python -c 内嵌复杂引号；脚本一律 write_file 落盘后执行
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## 禁止
+- 任何新 OpenAlex 查询（本段零查询，全本地）
+- 改 queue/protocol/brief/段2b network 产物（冻结件）
+- 暴露编码 / P5 / 读旧仓库代码与数据
+- M3（3b 探索项）；真实 focal pilot CPE（3b）
+- 把 M0 朴素删除当主结论（仅上界压力测试）

@@ -1,0 +1,57 @@
+{
+  "static_scan": {
+    "code/simcore_3.py": {
+      "M1_CONTRACT_year_lt_y": [
+        4
+      ],
+      "M1_BISECT_FIRST_GE_y": [
+        92
+      ],
+      "M1_SCAN_STARTS_BEFOR_y": [
+        93
+      ],
+      "M1_SKIP_FOCAL_WORKS": [
+        94
+      ],
+      "M2_CONTRACT_pre_t0": [
+        5
+      ],
+      "M2_PRE_T0_FILTER": [
+        117
+      ],
+      "M2_MAX_YEAR_LEDGER": [
+        120
+      ]
+    },
+    "code/sim_m1.py": {
+      "M1_DOC_no_lookahead": [
+        5
+      ],
+      "M1_CALL_same_path": [
+        29
+      ],
+      "M1_LEDGER_WRITTEN": [
+        33
+      ],
+      "M1_RUNTIME_CHECK": [
+        44
+      ]
+    },
+    "code/sim_m2.py": {
+      "M2_DOC_pre_t0_only": [
+        7
+      ],
+      "M2_CALL_same_path": [
+        47
+      ],
+      "M2_RUNTIME_GUARD": [
+        68
+      ]
+    }
+  },
+  "runtime_logs": {
+    "m1": "OK: 64/64 entries worst_gap<0 (min=-1 max=-1, none=0)",
+    "m2": "OK: 64/64 entries max_year_used<=t0 (min=1863 max=1938, none=0)"
+  },
+  "verdict": "PASS"
+}

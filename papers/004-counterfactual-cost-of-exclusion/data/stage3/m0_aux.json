@@ -1,0 +1,23 @@
+{
+  "ac_violations": 0,
+  "aux_by_a": {
+    "0.25": {
+      "n_works_deleted": 2097,
+      "n_ac_pairs_removed_cum_max": 60
+    },
+    "0.5": {
+      "n_works_deleted": 4203,
+      "n_ac_pairs_removed_cum_max": 67
+    },
+    "0.75": {
+      "n_works_deleted": 6305,
+      "n_ac_pairs_removed_cum_max": 82
+    },
+    "1.0": {
+      "n_works_deleted": 8415,
+      "n_ac_pairs_removed_cum_max": 87
+    }
+  },
+  "seed": 20260918,
+  "lcc_base": 30718
+}

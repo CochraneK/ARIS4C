@@ -1,0 +1,17 @@
+{
+  "n_authors": 31733,
+  "n_active": 164,
+  "n_coauth_edges": 848052,
+  "n_works": 37636,
+  "n_concepts": 50,
+  "n_ac_edges": 6380,
+  "coauth_rows_raw": 848052,
+  "betweenness_k": 200,
+  "betweenness_seed": 42,
+  "mem_mb": 825.8,
+  "load_secs": 77.4,
+  "edges_secs": 6.0,
+  "works_secs": 0.3,
+  "betweenness_secs": 69.0,
+  "integrity": "OK"
+}

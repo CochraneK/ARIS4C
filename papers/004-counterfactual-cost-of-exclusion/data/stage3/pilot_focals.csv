@@ -1,0 +1,17 @@
+author_id,name,stratum,betweenness,source
+https://openalex.org/A5000945647,Geoffrey C. Clayton,physics,0.075497,stratum:physics
+https://openalex.org/A5001390698,Richard M. Ryan,cs,0.03015096,stratum:cs
+https://openalex.org/A5020224649,James L. McClelland,biology,0.07324688,stratum:biology
+https://openalex.org/A5021973169,William H. Press,cs,0.03763657,stratum:cs
+https://openalex.org/A5023706141,John W. Tukey,math,0.06917594,stratum:math
+https://openalex.org/A5024145662,Philip Μ. Morse,physics,0.01080327,top20
+https://openalex.org/A5031530236,André Gerardus Uitterlinden,biology,0.12645392,stratum:biology
+https://openalex.org/A5032489073,JOHN ARCHIBALD WHEELER,physics,0.06650185,stratum:physics
+https://openalex.org/A5042885999,George M. Sheldrick,physics,0.05887364,stratum:physics
+https://openalex.org/A5068520992,Steven J. Plimpton,cs,0.0364648,stratum:cs
+https://openalex.org/A5075738642,Hans Albrecht Bethe,math,0.06400029,top20
+https://openalex.org/A5087680980,Harold Jeffreys,math,0.01098488,top20
+https://openalex.org/A5108631265,E. S. Pearson,math,0.07635132,stratum:math
+https://openalex.org/A5112523816,Ronald Aylmer Fisher,math,0.06578026,stratum:math;top20
+https://openalex.org/A5112784443,Milton R. Friedman,math,0.02050684,top20
+https://openalex.org/A5113599985,Charles R. Cantor,biology,0.11638867,stratum:biology
