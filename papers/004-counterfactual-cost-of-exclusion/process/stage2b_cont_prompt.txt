@@ -1,0 +1,39 @@
+# ARIS4C-004 stage2b 续跑（2026-10-08）——只做 T2–T5；T1 已收官验收，禁重抓
+
+你是 ARIS4C-004（反事实排除成本）的 stage2b executor。工作目录=本沙盒（只许相对路径）。
+
+## 盘上现状（宿主 2026-10-08 核验，直接信任，勿重复核验，勿重抓）
+- T1 per-author works 抓取 ✅ 已收官：data/raw/works/ 190 文件，total_works=41,549，truncated=2，max_pages=5；manifest data/_raw/fetch_manifest_2b.json（queries_total=312, http429=0, stop_reason=null）
+- data/exposure_queue.csv 190 行（header: author_id,display_name,stratum,works_count,cited_by_count,first_pub,last_pub,orcid,institution,name_matches_in_sample,identity_status,rule_fired）；author_id 为完整 URL → 过滤/匹配时截取 A 开头短 ID
+- 本 run 只做 T2–T5，均为本地计算；OpenAlex 查询预算=0（R4 消歧用盘上 works，不发查询）
+
+## 先读（各 1 次，勿超）
+- stage2b_prompt.txt（T2–T5 规格 + 纪律，以其为准）
+- data/exposure_protocol.md（F1-F5 / R1-R4 / S6 冻结）
+- RESEARCH_BRIEF.md（只取 Gate C 判据）
+
+## 任务（严格按序，≤20 次工具调用）
+T2 F2 复核 + R4 消歧（本地，按 stage2b_prompt T2 规格）：
+  code/verify_2b.py（write_file 落盘后执行）
+  → data/network/f2_reverify.csv + data/network/excluded_2b.csv + data/network/r4_disambiguation.csv
+T3 网络构建（本地，按 stage2b_prompt T3 规格）：
+  code/build_network_2b.py（write_file 落盘后执行）
+  → data/network/nodes_authors.csv + edges_coauthor.csv + edges_author_concept.csv + works_index.jsonl + network_manifest.json + network_spec.md（≤30 行）
+T4 结构指标（本地，networkx；未装则先 python -m pip install -q networkx）：
+  code/metrics_2b.py（write_file 落盘后执行）
+  → data/network/metrics.json + data/network/metrics_top20.csv
+T5 Gate C 判定 + 收官：
+  Gate C（active 集合规模 / CoAuth 边数 / 最大连通分量占比 / n_works>0 作者覆盖率）→ verdict（PASS/CONDITIONAL/FAIL + 理由）
+  stage2b_summary.md ≤40 行（抓取统计 / F2 结果 / R4 flags / 排除数 / 网络形状 / Gate C verdict / deviations / limitations）
+  末行：DONE stage2b 004
+
+## 纪律（强制；前 run 死于违反）
+- 每响应 ≤1 次工具调用；参数 ≤20 行；文本响应 ≤2 句；禁文本展示文件内容
+- data/raw/works/*.json >1MB 禁直读（python 解析，输出 ≤15 行）
+- shell 只用相对路径；禁 cd /d；禁 dir（用 ls）；禁从 / 或 C:\ 起 find；>1000 行输出必 | head -50；bash 路径禁反斜杠
+- 禁 read results/*.log；禁 python -c 内嵌复杂引号（先 write_file 落 .py 再执行）
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## 禁止
+- M0–M3 或任何反事实模拟（段3）；改 queue/protocol/brief（冻结件）
+- 重抓 works（T1 已收官）；新文献检索；其他数据源

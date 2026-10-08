@@ -1,0 +1,211 @@
+{
+  "scope": "CoAuth graphs; active subgraph = induced on queue-active authors; full graph = all authors in works union",
+  "active_graph": {
+    "n_nodes": 163,
+    "n_edges": 121,
+    "n_components": 79,
+    "lcc_size": 69,
+    "lcc_fraction": 0.423313,
+    "density": 0.00916458,
+    "top_component_sizes": [
+      69,
+      4,
+      4,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "degree": {
+      "min": 0,
+      "median": 1,
+      "max": 11
+    },
+    "avg_clustering": 0.10635
+  },
+  "full_graph": {
+    "n_nodes": 31732,
+    "n_edges": 848052,
+    "n_components": 18,
+    "lcc_size": 30718,
+    "lcc_fraction": 0.968045,
+    "density": 0.0016845,
+    "top_component_sizes": [
+      30718,
+      465,
+      89,
+      88,
+      79,
+      70,
+      60,
+      39,
+      38,
+      32
+    ],
+    "degree": {
+      "min": 1,
+      "median": 11.0,
+      "max": 6797
+    },
+    "avg_clustering": 0.790166
+  },
+  "betweenness_top20": [
+    {
+      "author_id": "A5112523816",
+      "name": "Ronald Aylmer Fisher",
+      "stratum": "math",
+      "betweenness": 0.066288
+    },
+    {
+      "author_id": "A5087680980",
+      "name": "Harold Jeffreys",
+      "stratum": "math",
+      "betweenness": 0.062362
+    },
+    {
+      "author_id": "A5024145662",
+      "name": "Philip Μ. Morse",
+      "stratum": "physics",
+      "betweenness": 0.057747
+    },
+    {
+      "author_id": "A5112784443",
+      "name": "Milton R. Friedman",
+      "stratum": "math",
+      "betweenness": 0.050326
+    },
+    {
+      "author_id": "A5075738642",
+      "name": "Hans Albrecht Bethe",
+      "stratum": "math",
+      "betweenness": 0.041275
+    },
+    {
+      "author_id": "A5066565862",
+      "name": "Alan Mathison Turing",
+      "stratum": "math",
+      "betweenness": 0.040297
+    },
+    {
+      "author_id": "A5006868097",
+      "name": "Eugene Paul Wigner",
+      "stratum": "math",
+      "betweenness": 0.033665
+    },
+    {
+      "author_id": "A5003623607",
+      "name": "Clarence M. Zener",
+      "stratum": "math",
+      "betweenness": 0.02941
+    },
+    {
+      "author_id": "A5034295195",
+      "name": "Edward Teller",
+      "stratum": "math",
+      "betweenness": 0.025069
+    },
+    {
+      "author_id": "A5069449163",
+      "name": "Herman Feshbach",
+      "stratum": "physics",
+      "betweenness": 0.024428
+    },
+    {
+      "author_id": "A5110518065",
+      "name": "Joseph O. Hirschfelder",
+      "stratum": "physics",
+      "betweenness": 0.022667
+    },
+    {
+      "author_id": "A5110106506",
+      "name": "N. Rosen",
+      "stratum": "math",
+      "betweenness": 0.019386
+    },
+    {
+      "author_id": "A5064999142",
+      "name": "Paul Anthony Samuelson",
+      "stratum": "math",
+      "betweenness": 0.015106
+    },
+    {
+      "author_id": "A5108520736",
+      "name": "Claude E. Shannon",
+      "stratum": "math",
+      "betweenness": 0.014587
+    },
+    {
+      "author_id": "A5111514681",
+      "name": "Leonard J. Savage",
+      "stratum": "math",
+      "betweenness": 0.013944
+    },
+    {
+      "author_id": "A5077097325",
+      "name": "Norbert Wiener",
+      "stratum": "math",
+      "betweenness": 0.013006
+    },
+    {
+      "author_id": "A5111445595",
+      "name": "CHARLES KITTEL",
+      "stratum": "cs",
+      "betweenness": 0.010965
+    },
+    {
+      "author_id": "A5032489073",
+      "name": "JOHN ARCHIBALD WHEELER",
+      "stratum": "physics",
+      "betweenness": 0.010122
+    },
+    {
+      "author_id": "A5032828770",
+      "name": "Wilhelm Magnus",
+      "stratum": "math",
+      "betweenness": 0.010122
+    },
+    {
+      "author_id": "A5023706141",
+      "name": "John W. Tukey",
+      "stratum": "math",
+      "betweenness": 0.009799
+    }
+  ],
+  "by_stratum": {
+    "biology": {
+      "n_active": 23,
+      "mean_degree_in_active_graph": 0.391,
+      "in_lcc": 1
+    },
+    "cs": {
+      "n_active": 28,
+      "mean_degree_in_active_graph": 0.429,
+      "in_lcc": 5
+    },
+    "math": {
+      "n_active": 74,
+      "mean_degree_in_active_graph": 2.419,
+      "in_lcc": 50
+    },
+    "physics": {
+      "n_active": 39,
+      "mean_degree_in_active_graph": 1.105,
+      "in_lcc": 13
+    }
+  },
+  "gate_c": {
+    "active_set_size": 164,
+    "queue_size": 190,
+    "coauth_edges_active": 121,
+    "coauth_edges_full": 848052,
+    "lcc_fraction_active": 0.423313,
+    "lcc_fraction_full": 0.968045,
+    "n_works_gt0_coverage": 1.0
+  },
+  "verdict": "PASS",
+  "reason": "active=164/190, active-internal CoAuth edges=121, full-graph LCC fraction=0.968, works coverage=1.000 — pilot network sufficient for stage-3 M0-M3",
+  "ts": "2026-10-08T03:27:03+00:00"
+}

@@ -1,0 +1,165 @@
+author_id,name,stratum,n_works,first_work_year,last_work_year
+https://openalex.org/A5108357701,Herbert A. Simon,math,870,1899,2025
+https://openalex.org/A5108520736,Claude E. Shannon,math,96,1935,2024
+https://openalex.org/A5004558610,Joseph Alois Schumpeter,math,340,1907,2025
+https://openalex.org/A5112523816,Ronald Aylmer Fisher,math,849,1912,2021
+https://openalex.org/A5024894593,Lee J. Cronbach,math,253,1939,2017
+https://openalex.org/A5034295195,Edward Teller,math,336,1931,2021
+https://openalex.org/A5023706141,John W. Tukey,math,431,1938,2023
+https://openalex.org/A5112784443,Milton R. Friedman,math,522,1935,2024
+https://openalex.org/A5108249230,Maurice G. Kendall,math,383,1937,2013
+https://openalex.org/A5006868097,Eugene Paul Wigner,math,614,1925,2024
+https://openalex.org/A5064999142,Paul Anthony Samuelson,math,688,1874,2025
+https://openalex.org/A5082331920,Émile Durkheim,math,632,1887,2025
+https://openalex.org/A5024744620,George J. Stigler,math,390,1937,2021
+https://openalex.org/A5030452986,Alan Lloyd Hodgkin,math,106,1937,2007
+https://openalex.org/A5110138757,J. H. Torrie,math,64,1934,1998
+https://openalex.org/A5109045060,John Maynard Keynes,math,634,1908,2026
+https://openalex.org/A5070348120,Kurt Lewin,math,220,1916,2019
+https://openalex.org/A5048382598,Ronald H. Coase,math,160,1935,2025
+https://openalex.org/A5112001494,Stephen P. Timoshenko,math,143,1921,2015
+https://openalex.org/A5007322687,N. Metropolis,math,146,1939,2023
+https://openalex.org/A5113678219,A. F. Huxley,math,78,1939,2007
+https://openalex.org/A5109036612,L.D. LANDAU,math,289,1911,2018
+https://openalex.org/A5077097325,Norbert Wiener,math,265,1914,2024
+https://openalex.org/A5060039934,Lars Onsager,math,73,1927,2018
+https://openalex.org/A5066565862,Alan Mathison Turing,math,81,1935,2026
+https://openalex.org/A5075738642,Hans Albrecht Bethe,math,450,1924,2024
+https://openalex.org/A5077031398,Harold Hotelling,math,142,1925,2024
+https://openalex.org/A5042614574,Henri Guitton,math,386,1938,1991
+https://openalex.org/A5034196416,N. Bloembergen,math,411,1940,2025
+https://openalex.org/A5110710145,Karl Pearson,math,640,1883,2023
+https://openalex.org/A5070727013,Edward M. Purcell,math,240,1935,2013
+https://openalex.org/A5070947764,George B. Dantzig,math,316,1938,2021
+https://openalex.org/A5068389137,R. D. Mindlin,math,218,1934,2006
+https://openalex.org/A5090012606,Joseph C. Slater,math,190,1924,2018
+https://openalex.org/A5003623607,Clarence M. Zener,math,149,1929,2012
+https://openalex.org/A5059624154,E. Dijkstra,math,53,1899,2022
+https://openalex.org/A5110509669,Warren S. McCulloch,math,166,1929,2021
+https://openalex.org/A5031504392,Willard Van Orman Quine,math,430,1932,2023
+https://openalex.org/A5110883277,Herbert E. Robbins,math,288,1937,2023
+https://openalex.org/A5035029853,Frank Wilcoxon,math,30,1927,1992
+https://openalex.org/A5028584551,Irving John Good,math,664,1940,2018
+https://openalex.org/A5022679847,Melvin Avrami,math,9,1938,1942
+https://openalex.org/A5013968489,MILTON S. PLESSET,math,133,1930,2016
+https://openalex.org/A5069849313,Solomon Kullback,math,114,1930,2014
+https://openalex.org/A5111558429,George Neville Watson,math,173,1903,2021
+https://openalex.org/A5076112588,Richard Courant,math,353,1911,2023
+https://openalex.org/A5109393586,W. J. Dixon,math,115,1940,2024
+https://openalex.org/A5005678705,William M. Haenszel,math,130,1930,2023
+https://openalex.org/A5112089062,Archibald Vivian Hill,math,257,1909,1975
+https://openalex.org/A5074999609,Francis S. Birch,math,107,1928,2011
+https://openalex.org/A5033576787,Frederick Charles Frank,math,137,1935,2011
+https://openalex.org/A5111514681,Leonard J. Savage,math,82,1940,2016
+https://openalex.org/A5110106506,N. Rosen,math,78,1930,2025
+https://openalex.org/A5065683612,H. Bateman,math,174,1904,2015
+https://openalex.org/A5108262021,Charles Duncan Michener,math,495,1893,2026
+https://openalex.org/A5108631265,E. S. Pearson,math,234,1924,2016
+https://openalex.org/A5111775925,R. A. Fisher,math,80,1915,2018
+https://openalex.org/A5083138872,Albert Einstein,math,2,1982,2003
+https://openalex.org/A5103505833,Edwin B. Wilson,math,328,1900,2011
+https://openalex.org/A5087680980,Harold Jeffreys,math,503,1915,2022
+https://openalex.org/A5014849573,Robert H. Cole,math,131,1932,1992
+https://openalex.org/A5030737890,Dorwin Cartwright,math,83,1938,2026
+https://openalex.org/A5043043561,Theodore D. Holstein,math,78,1939,2008
+https://openalex.org/A5038683975,Harold William Kuhn,math,95,1936,2020
+https://openalex.org/A5084379194,Boris Podolsky,math,41,1927,2025
+https://openalex.org/A5111372929,Kenneth S. Cole,math,95,1925,2023
+https://openalex.org/A5032828770,Wilhelm Magnus,math,148,1930,2017
+https://openalex.org/A5111719561,G. E. Uhlenbeck,math,123,1924,1989
+https://openalex.org/A5049818143,W. Allen Wallis,math,80,1935,2011
+https://openalex.org/A5111805874,William Prager,math,247,1931,2024
+https://openalex.org/A5109468491,Arthur Erdélyi,math,17,1938,2005
+https://openalex.org/A5044944912,Деннис Габор,math,145,1926,2016
+https://openalex.org/A5007578324,H. A. Kramers,math,52,1919,2013
+https://openalex.org/A5111913130,CHR. KN. MØLLER,math,6,1932,1963
+https://openalex.org/A5001390698,Richard M. Ryan,cs,677,1896,2026
+https://openalex.org/A5021973169,William H. Press,cs,315,1903,2026
+https://openalex.org/A5079071970,L. A. Zadeh,cs,71,1899,2015
+https://openalex.org/A5027610285,L. S. Vygotsky,cs,121,1929,2026
+https://openalex.org/A5014796220,Folke Skoog,cs,196,1933,2019
+https://openalex.org/A5071875770,John H. Holland,cs,133,1899,2022
+https://openalex.org/A5068520992,Steven J. Plimpton,cs,301,1913,2024
+https://openalex.org/A5001584643,J. J. Hopfield,cs,292,1918,2025
+https://openalex.org/A5111445595,CHARLES KITTEL,cs,213,1939,2011
+https://openalex.org/A5112358123,Irving Langmuir,cs,234,1906,2024
+https://openalex.org/A5109983911,F. Smith,cs,138,1939,2019
+https://openalex.org/A5091275445,Peter E. Hart,cs,100,1899,2021
+https://openalex.org/A5049187779,Daniel I. Arnon,cs,224,1937,2023
+https://openalex.org/A5082651430,John A. Jr. Montgomery,cs,724,1913,2024
+https://openalex.org/A5103383453,Julian B. Rotter,cs,120,1939,2026
+https://openalex.org/A5109052943,Shiing-Shen Chern,cs,346,1935,2020
+https://openalex.org/A5074378485,Stephen Brunauer,cs,81,1930,1985
+https://openalex.org/A5088282668,Sidney P. Colowick,cs,130,1937,1988
+https://openalex.org/A5036797016,Paul H. Emmett,cs,155,1924,1987
+https://openalex.org/A5112135752,Gail Lorenz Miller,cs,59,1936,1971
+https://openalex.org/A5021166281,George W. Snedecor,cs,142,1925,2011
+https://openalex.org/A5089121489,George Scatchard,cs,160,1916,1976
+https://openalex.org/A5007897986,Samuel Francis Boys,cs,42,1934,2017
+https://openalex.org/A5009424444,James J. Gibson,cs,20,1939,2014
+https://openalex.org/A5108411636,Marcel J. E. Golay,cs,79,1931,1990
+https://openalex.org/A5088428969,David J. Ellis,cs,292,1906,2026
+https://openalex.org/A5032767751,Hugo Muench,cs,68,1923,2015
+https://openalex.org/A5064411709,J. Ridley Stroop,cs,13,1935,2018
+https://openalex.org/A5042885999,George M. Sheldrick,physics,1000,1934,1993
+https://openalex.org/A5109004846,William White Cooper,physics,363,1843,2025
+https://openalex.org/A5032047957,W. J. Dyer,physics,93,1938,1979
+https://openalex.org/A5028194420,Frank Weinhold,physics,325,1877,2026
+https://openalex.org/A5110168523,Subrahmanyan Chandrasekhar,physics,472,1929,2025
+https://openalex.org/A5032489073,JOHN ARCHIBALD WHEELER,physics,570,1931,2026
+https://openalex.org/A5043077347,W. Shockley,physics,328,1936,2026
+https://openalex.org/A5109871396,J. Bardeen,physics,102,1935,2020
+https://openalex.org/A5053868357,Philip J. Holmes,physics,478,1895,2026
+https://openalex.org/A5049036967,G. Herzberg,physics,307,1927,2014
+https://openalex.org/A5071003992,Lars Peter Hansen,physics,343,1937,2026
+https://openalex.org/A5073258256,William Graham Hoover,physics,265,1936,2025
+https://openalex.org/A5024145662,Philip Μ. Morse,physics,194,1926,2003
+https://openalex.org/A5091544334,U. Fano,physics,275,1934,2019
+https://openalex.org/A5069449163,Herman Feshbach,physics,289,1939,2014
+https://openalex.org/A5111864596,John Douglass Ferry,physics,371,1844,2020
+https://openalex.org/A5055584786,George Ellis,physics,837,1840,2026
+https://openalex.org/A5023755434,C. F. Quate,physics,267,1870,2016
+https://openalex.org/A5110518065,Joseph O. Hirschfelder,physics,321,1879,2015
+https://openalex.org/A5029605479,John Conrad Jaeger,physics,119,1935,2012
+https://openalex.org/A5062850123,Joseph Gillis,physics,104,1934,1991
+https://openalex.org/A5111543476,George Libman Engel,physics,160,1935,2023
+https://openalex.org/A5000945647,Geoffrey C. Clayton,physics,576,1924,2026
+https://openalex.org/A5104357209,Max Born,physics,331,1900,2020
+https://openalex.org/A5005199063,Horatio Scott Carslaw,physics,69,1896,2008
+https://openalex.org/A5080667017,Robert Bierstedt,physics,130,1937,2017
+https://openalex.org/A5080716647,C. J. Tranter,physics,48,1939,1975
+https://openalex.org/A5046922782,THOMAS K. SHERWOOD,physics,88,1925,2018
+https://openalex.org/A5034381312,Charles F. Curtiss,physics,175,1924,2015
+https://openalex.org/A5044337523,Joseph Smagorinsky,physics,31,1899,2011
+https://openalex.org/A5038013656,Robert N. Wenzel,physics,8,1933,1962
+https://openalex.org/A5111906093,Edward L. Hill,physics,89,1928,1991
+https://openalex.org/A5042383262,James Norman Goodier,physics,3,1934,1966
+https://openalex.org/A5029968225,Elliott Pierce Barrett,physics,12,1933,1953
+https://openalex.org/A5023676828,Gustav Mie,physics,33,1892,2007
+https://openalex.org/A5046395124,Waloddi Weibull,physics,37,1939,2011
+https://openalex.org/A5056600540,Norton Nelson,physics,113,1938,2013
+https://openalex.org/A5062811429,Radu Grigorovici,physics,58,1939,1989
+https://openalex.org/A5017995448,Sidney C. Sufrin,physics,71,1938,1989
+https://openalex.org/A5031530236,André Gerardus Uitterlinden,biology,1000,1933,2015
+https://openalex.org/A5114007683,Frederick Sanger,biology,108,1903,2012
+https://openalex.org/A5020224649,James L. McClelland,biology,444,1863,2026
+https://openalex.org/A5060503589,Jordi Folch,biology,34,1939,1964
+https://openalex.org/A5072009257,Léon Festinger,biology,143,1940,2026
+https://openalex.org/A5113599985,Charles R. Cantor,biology,460,1914,2026
+https://openalex.org/A5111437337,John Seely Brown,biology,234,1925,2025
+https://openalex.org/A5111631801,George Armitage Miller,biology,218,1895,2024
+https://openalex.org/A5081458871,Otto Heinrich Warburg,biology,333,1883,2015
+https://openalex.org/A5114376371,James B. Robertson,biology,106,1936,2023
+https://openalex.org/A5010310471,Robert F. Furchgott,biology,127,1939,2015
+https://openalex.org/A5077500767,Viktor Hamburger,biology,241,1925,2017
+https://openalex.org/A5108370000,Thomas H. Jukes,biology,623,1930,2020
+https://openalex.org/A5102150038,Sture Holm,biology,46,1930,2022
+https://openalex.org/A5109238934,John Garnett Williams,biology,199,1932,2020
+https://openalex.org/A5110937608,J. T. Curtis,biology,35,1937,2016
+https://openalex.org/A5081960116,W. S. Abbott,biology,14,1918,1949
+https://openalex.org/A5069618685,Howard L. Hamilton,biology,22,1939,1992
+https://openalex.org/A5109233611,N. E. Gibbons,biology,87,1929,1981
+https://openalex.org/A5058780249,Lee Raymond Dice,biology,141,1910,2017
+https://openalex.org/A5109920036,William Whitney Ballard,biology,35,1939,2001
+https://openalex.org/A5111705521,Robert Earle Buchanan,biology,128,1905,2017
+https://openalex.org/A5096894678,ダーウィン チャールス,biology,3,1907,1907

@@ -1,0 +1,191 @@
+author_id,display_name,stratum,works_count,cited_by_count,first_pub,last_pub,orcid,institution,name_matches_in_sample,identity_status,rule_fired
+https://openalex.org/A5108357701,Herbert A. Simon,math,873,181809,1899,2025,,Carnegie Mellon University,1,verified_triple,R2
+https://openalex.org/A5108520736,Claude E. Shannon,math,100,178565,1935,2024,,Massachusetts Institute of Technology,1,verified_triple,R2
+https://openalex.org/A5004558610,Joseph Alois Schumpeter,math,340,106969,1907,2025,,,1,unresolved,R4
+https://openalex.org/A5103404782,Paul Meier,math,138,101413,1940,2022,,University of Chicago,1,verified_triple,R2
+https://openalex.org/A5112523816,Ronald Aylmer Fisher,math,840,95104,1912,2021,,,1,unresolved,R4
+https://openalex.org/A5024894593,Lee J. Cronbach,math,253,92833,1939,2017,,,1,unresolved,R4
+https://openalex.org/A5034295195,Edward Teller,math,336,91598,1931,2021,,,1,unresolved,R4
+https://openalex.org/A5023706141,John W. Tukey,math,433,89159,1938,2023,,,1,unresolved,R4
+https://openalex.org/A5112784443,Milton R. Friedman,math,526,85592,1935,2024,,,1,unresolved,R4
+https://openalex.org/A5108249230,Maurice G. Kendall,math,383,72381,1937,2013,,,1,unresolved,R4
+https://openalex.org/A5006868097,Eugene Paul Wigner,math,615,69767,1925,2024,,Oak Ridge National Laboratory,1,verified_triple,R2
+https://openalex.org/A5064999142,Paul Anthony Samuelson,math,692,65512,1874,2025,,,1,unresolved,R4
+https://openalex.org/A5082331920,Émile Durkheim,math,651,64913,1887,2025,,,1,unresolved,R4
+https://openalex.org/A5024744620,George J. Stigler,math,391,62136,1937,2021,,University of Chicago,1,verified_triple,R2
+https://openalex.org/A5030452986,Alan Lloyd Hodgkin,math,106,59923,1937,2007,,,1,unresolved,R4
+https://openalex.org/A5110138757,J. H. Torrie,math,64,55997,1934,1998,,,1,unresolved,R4
+https://openalex.org/A5109045060,John Maynard Keynes,math,633,55345,1908,2026,,,1,unresolved,R4
+https://openalex.org/A5070348120,Kurt Lewin,math,220,54276,1916,2019,,,1,unresolved,R4
+https://openalex.org/A5048382598,Ronald H. Coase,math,160,51906,1935,2025,,University of Chicago,1,verified_triple,R2
+https://openalex.org/A5112001494,Stephen P. Timoshenko,math,146,51215,1921,2015,,,1,unresolved,R4
+https://openalex.org/A5007322687,N. Metropolis,math,146,51037,1939,2023,,,1,unresolved,R4
+https://openalex.org/A5113678219,A. F. Huxley,math,78,50519,1939,2007,,,1,unresolved,R4
+https://openalex.org/A5109036612,L.D. LANDAU,math,291,50496,1911,2018,,,1,unresolved,R4
+https://openalex.org/A5077097325,Norbert Wiener,math,266,46816,1914,2024,,Massachusetts Institute of Technology,1,verified_triple,R2
+https://openalex.org/A5060039934,Lars Onsager,math,74,46783,1927,2018,,,1,unresolved,R4
+https://openalex.org/A5066565862,Alan Mathison Turing,math,82,45738,1935,2026,,University of Warwick,1,verified_triple,R2
+https://openalex.org/A5075738642,Hans Albrecht Bethe,math,452,43914,1924,2024,,,1,unresolved,R4
+https://openalex.org/A5077031398,Harold Hotelling,math,142,42991,1925,2024,,,1,unresolved,R4
+https://openalex.org/A5042614574,Henri Guitton,math,388,41418,1938,1991,,,1,unresolved,R4
+https://openalex.org/A5034196416,N. Bloembergen,math,411,40220,1940,2025,,University of Arizona,1,verified_triple,R2
+https://openalex.org/A5110710145,Karl Pearson,math,641,38568,1883,2023,,,1,unresolved,R4
+https://openalex.org/A5070727013,Edward M. Purcell,math,244,37719,1935,2013,,Harvard University,1,verified_triple,R2
+https://openalex.org/A5070947764,George B. Dantzig,math,315,37311,1938,2021,,,1,unresolved,R4
+https://openalex.org/A5068389137,R. D. Mindlin,math,218,33441,1934,2006,,Columbia University,1,verified_triple,R2
+https://openalex.org/A5090012606,Joseph C. Slater,math,226,33229,1924,2024,https://orcid.org/0000-0002-1923-9279,Central Michigan University;University of Madras;Tennessee Technological University,1,verified_orcid,R1
+https://openalex.org/A5003623607,Clarence M. Zener,math,149,31088,1929,2012,,,1,unresolved,R4
+https://openalex.org/A5059624154,E. Dijkstra,math,106,30926,1899,2024,https://orcid.org/0000-0002-8839-1880,,1,verified_orcid,R1
+https://openalex.org/A5110509669,Warren S. McCulloch,math,171,30883,1929,2021,,,1,unresolved,R4
+https://openalex.org/A5031504392,Willard Van Orman Quine,math,430,29921,1932,2023,,,1,unresolved,R4
+https://openalex.org/A5110883277,Herbert E. Robbins,math,298,29384,1937,2023,,,1,unresolved,R4
+https://openalex.org/A5035029853,Frank Wilcoxon,math,30,28855,1927,1992,,,1,unresolved,R4
+https://openalex.org/A5028584551,Irving John Good,math,664,28601,1940,2018,,,1,unresolved,R4
+https://openalex.org/A5022679847,Melvin Avrami,math,9,27899,1938,1942,,Columbia University,1,verified_triple,R2
+https://openalex.org/A5013968489,MILTON S. PLESSET,math,133,26478,1930,2016,,,1,unresolved,R4
+https://openalex.org/A5069849313,Solomon Kullback,math,114,26445,1930,2014,,George Washington University,1,verified_triple,R2
+https://openalex.org/A5111558429,George Neville Watson,math,176,26239,1903,2021,,,1,unresolved,R4
+https://openalex.org/A5076112588,Richard Courant,math,353,25165,1911,2023,,New York University,1,verified_triple,R2
+https://openalex.org/A5109393586,W. J. Dixon,math,123,24607,1940,2024,,,1,unresolved,R4
+https://openalex.org/A5005678705,William M. Haenszel,math,130,24311,1930,2023,,National Cancer Institute,1,verified_triple,R2
+https://openalex.org/A5112089062,Archibald Vivian Hill,math,261,22815,1909,1990,,,1,unresolved,R4
+https://openalex.org/A5074999609,Francis S. Birch,math,107,22343,1928,2011,,Harvard University,1,verified_triple,R2
+https://openalex.org/A5033576787,Frederick Charles Frank,math,145,22285,1935,2013,https://orcid.org/0000-0003-2999-6393,,1,verified_orcid,R1
+https://openalex.org/A5111514681,Leonard J. Savage,math,86,22090,1940,2016,,Princeton University,1,verified_triple,R2
+https://openalex.org/A5110106506,N. Rosen,math,81,22042,1930,2025,,,1,unresolved,R4
+https://openalex.org/A5065683612,H. Bateman,math,179,22009,1904,2021,,,1,unresolved,R4
+https://openalex.org/A5108262021,Charles Duncan Michener,math,495,21794,1893,2026,,American Museum of Natural History;University of Kansas,1,unresolved,R4
+https://openalex.org/A5108631265,E. S. Pearson,math,234,21590,1924,2016,,,1,unresolved,R4
+https://openalex.org/A5111775925,R. A. Fisher,math,83,21303,1915,2018,,,1,unresolved,R4
+https://openalex.org/A5083138872,Albert Einstein,math,46,21241,1931,2025,,,1,unresolved,R4
+https://openalex.org/A5103505833,Edwin B. Wilson,math,328,21069,1900,2011,,,1,unresolved,R4
+https://openalex.org/A5087680980,Harold Jeffreys,math,503,21052,1915,2022,,University of Tübingen,1,verified_triple,R2
+https://openalex.org/A5014849573,Robert H. Cole,math,198,21034,1866,2020,,,1,unresolved,R4
+https://openalex.org/A5030737890,Dorwin Cartwright,math,108,21013,1938,2013,,,1,unresolved,R4
+https://openalex.org/A5043043561,Theodore D. Holstein,math,78,19469,1939,2008,,"University of California, Los Angeles",1,verified_triple,R2
+https://openalex.org/A5038683975,Harold William Kuhn,math,96,19201,1936,2020,,,1,unresolved,R4
+https://openalex.org/A5084379194,Boris Podolsky,math,43,18928,1927,2025,,,1,unresolved,R4
+https://openalex.org/A5111372929,Kenneth S. Cole,math,107,18309,1925,2023,,,1,unresolved,R4
+https://openalex.org/A5032828770,Wilhelm Magnus,math,150,18249,1930,2017,,,1,unresolved,R4
+https://openalex.org/A5111719561,G. E. Uhlenbeck,math,123,17808,1924,1989,,,1,unresolved,R4
+https://openalex.org/A5049818143,W. Allen Wallis,math,80,17389,1935,2011,,,1,unresolved,R4
+https://openalex.org/A5111805874,William Prager,math,249,16986,1931,2024,,,1,unresolved,R4
+https://openalex.org/A5109468491,Arthur Erdélyi,math,17,16315,1938,2005,,,1,unresolved,R4
+https://openalex.org/A5044944912,Деннис Габор,math,147,16278,1926,2016,,,1,unresolved,R4
+https://openalex.org/A5007578324,H. A. Kramers,math,52,16273,1919,2013,,,1,unresolved,R4
+https://openalex.org/A5111913130,CHR. KN. MØLLER,math,6,16156,1932,1963,,,1,unresolved,R4
+https://openalex.org/A5001390698,Richard M. Ryan,cs,679,394872,1896,2026,https://orcid.org/0000-0002-2355-6154,Ewha Womans University;Australian Catholic University,1,verified_orcid,R1
+https://openalex.org/A5021973169,William H. Press,cs,315,119002,1903,2026,https://orcid.org/0000-0003-0771-0841,,1,verified_orcid,R1
+https://openalex.org/A5079071970,L. A. Zadeh,cs,71,94872,1899,2015,,,1,unresolved,R4
+https://openalex.org/A5027610285,L. S. Vygotsky,cs,121,86856,1929,2026,,,1,unresolved,R4
+https://openalex.org/A5014796220,Folke Skoog,cs,196,84316,1933,2019,,,1,unresolved,R4
+https://openalex.org/A5071875770,John H. Holland,cs,140,79155,1899,2022,,,1,unresolved,R4
+https://openalex.org/A5068520992,Steven J. Plimpton,cs,301,75544,1913,2024,https://orcid.org/0000-0003-2446-8209,Temple University,1,verified_orcid,R1
+https://openalex.org/A5109956792,A. P. Dempster,cs,106,69387,1937,2016,,,1,unresolved,R4
+https://openalex.org/A5001584643,J. J. Hopfield,cs,294,67875,1918,2025,,Princeton University,1,verified_triple,R2
+https://openalex.org/A5111445595,CHARLES KITTEL,cs,213,66097,1939,2011,,,1,unresolved,R4
+https://openalex.org/A5114113233,Manuel Arellano,cs,140,63605,1912,2026,https://orcid.org/0009-0006-9601-6251,Centro de Estudios Monetarios y Financieros,1,verified_orcid,R1
+https://openalex.org/A5112358123,Irving Langmuir,cs,234,63457,1906,2024,,,1,unresolved,R4
+https://openalex.org/A5109983911,F. Smith,cs,185,60358,1918,2020,,,1,unresolved,R4
+https://openalex.org/A5091275445,Peter E. Hart,cs,109,57627,1899,2021,https://orcid.org/0000-0002-0128-168X,Stanford University,1,verified_orcid,R1
+https://openalex.org/A5112615448,Morris E. Rosenberg,cs,114,51426,1924,2017,,,1,unresolved,R4
+https://openalex.org/A5043473326,C. D. Gelatt,cs,32,48959,1939,1988,,,1,unresolved,R4
+https://openalex.org/A5049187779,Daniel I. Arnon,cs,257,48628,1937,2026,https://orcid.org/0000-0001-7998-6316,University of Arizona,1,verified_orcid,R1
+https://openalex.org/A5082059084,Mario P. Vecchi,cs,61,47285,1915,2024,,,1,unresolved,R4
+https://openalex.org/A5082651430,John A. Jr. Montgomery,cs,726,43986,1913,2024,https://orcid.org/0000-0002-2627-2317,University of Connecticut,1,verified_orcid,R1
+https://openalex.org/A5103383453,Julian B. Rotter,cs,120,42177,1939,2026,,,1,unresolved,R4
+https://openalex.org/A5109052943,Shiing-Shen Chern,cs,349,39603,1935,2020,,,1,unresolved,R4
+https://openalex.org/A5074378485,Stephen Brunauer,cs,81,38277,1930,1985,,,1,unresolved,R4
+https://openalex.org/A5088282668,Sidney P. Colowick,cs,130,34082,1937,1988,,Vanderbilt University;Vanderbilt University Medical Center,1,unresolved,R4
+https://openalex.org/A5036797016,Paul H. Emmett,cs,155,33853,1924,1987,,University of Toronto,1,verified_triple,R2
+https://openalex.org/A5112135752,Gail Lorenz Miller,cs,69,33188,1936,2000,,,1,unresolved,R4
+https://openalex.org/A5021166281,George W. Snedecor,cs,142,30540,1925,2011,,,1,unresolved,R4
+https://openalex.org/A5089121489,George Scatchard,cs,160,29255,1916,1976,,,1,unresolved,R4
+https://openalex.org/A5007897986,Samuel Francis Boys,cs,42,29077,1934,2017,,,1,unresolved,R4
+https://openalex.org/A5009424444,James J. Gibson,cs,25,27982,1939,2014,,,1,unresolved,R4
+https://openalex.org/A5108411636,Marcel J. E. Golay,cs,80,25280,1931,1990,,,1,unresolved,R4
+https://openalex.org/A5088428969,David J. Ellis,cs,293,23988,1906,2026,https://orcid.org/0000-0001-6438-4021,International Potato Center,1,verified_orcid,R1
+https://openalex.org/A5032767751,Hugo Muench,cs,69,21682,1893,2015,,,1,unresolved,R4
+https://openalex.org/A5064411709,J. Ridley Stroop,cs,14,20255,1935,2018,,,1,unresolved,R4
+https://openalex.org/A5042885999,George M. Sheldrick,physics,1382,220453,1934,2023,https://orcid.org/0000-0001-6956-4822,University of Göttingen,1,verified_orcid,R1
+https://openalex.org/A5109004846,William White Cooper,physics,364,95790,1843,2025,,Boeing (United States),1,verified_triple,R2
+https://openalex.org/A5032047957,W. J. Dyer,physics,93,74482,1938,1979,,,1,unresolved,R4
+https://openalex.org/A5028194420,Frank Weinhold,physics,326,66017,1877,2026,https://orcid.org/0000-0002-9580-054X,University of Wisconsin–Madison,1,verified_orcid,R1
+https://openalex.org/A5110168523,Subrahmanyan Chandrasekhar,physics,472,62986,1929,2025,,Stanley Medical College,1,verified_triple,R2
+https://openalex.org/A5032489073,JOHN ARCHIBALD WHEELER,physics,570,58520,1931,2026,https://orcid.org/0000-0002-7576-4465,University of Liverpool,1,verified_orcid,R1
+https://openalex.org/A5043077347,W. Shockley,physics,328,54871,1936,2026,https://orcid.org/0000-0002-9504-7156,University of North Carolina at Chapel Hill,1,verified_orcid,R1
+https://openalex.org/A5109871396,J. Bardeen,physics,167,50786,1935,2020,,University of Washington,1,verified_triple,R2
+https://openalex.org/A5053868357,Philip J. Holmes,physics,478,50624,1895,2026,https://orcid.org/0000-0002-1459-7157,University of Leeds,1,verified_orcid,R1
+https://openalex.org/A5112802956,Richard F. W. Bader,physics,122,49982,1890,2012,,McMaster University,1,verified_triple,R2
+https://openalex.org/A5049036967,G. Herzberg,physics,307,49734,1927,2014,,,1,unresolved,R4
+https://openalex.org/A5071003992,Lars Peter Hansen,physics,351,46427,1937,2026,https://orcid.org/0000-0003-0035-8558,University of Chicago,1,verified_orcid,R1
+https://openalex.org/A5073258256,William Graham Hoover,physics,268,40830,1936,2025,https://orcid.org/0000-0002-1717-052X,,1,verified_orcid,R1
+https://openalex.org/A5024145662,Philip Μ. Morse,physics,201,36333,1926,2016,,,1,unresolved,R4
+https://openalex.org/A5091544334,U. Fano,physics,276,35762,1934,2019,,,1,unresolved,R4
+https://openalex.org/A5069449163,Herman Feshbach,physics,292,34907,1939,2014,,,1,unresolved,R4
+https://openalex.org/A5111864596,John Douglass Ferry,physics,371,34636,1844,2020,,University of South Carolina,1,verified_triple,R2
+https://openalex.org/A5055584786,George Ellis,physics,840,32904,1840,2026,https://orcid.org/0000-0001-8484-0629,University of Cape Town;Monash University,1,verified_orcid,R1
+https://openalex.org/A5023755434,C. F. Quate,physics,267,32710,1870,2016,,,1,unresolved,R4
+https://openalex.org/A5109158438,Edward S. Reynolds,physics,110,28746,1898,1987,,The University of Texas Medical Branch at Galveston,1,verified_triple,R2
+https://openalex.org/A5084336057,R. Byron Bird,physics,233,28571,1885,2019,https://orcid.org/0000-0002-6863-3379,University of Wisconsin–Madison,1,verified_orcid,R1
+https://openalex.org/A5110518065,Joseph O. Hirschfelder,physics,321,28282,1879,2015,,,1,unresolved,R4
+https://openalex.org/A5029605479,John Conrad Jaeger,physics,126,27362,1935,2022,,Johnson University,1,verified_triple,R2
+https://openalex.org/A5090554217,James S. Bell,physics,202,24709,1905,2025,https://orcid.org/0000-0001-8371-9851,Cardiff University,1,verified_orcid,R1
+https://openalex.org/A5062850123,Joseph Gillis,physics,107,24092,1934,2022,,Tufts Medical Center,1,verified_triple,R2
+https://openalex.org/A5111543476,George Libman Engel,physics,175,23941,1935,2024,,Southern Illinois University Edwardsville,1,verified_triple,R2
+https://openalex.org/A5000945647,Geoffrey C. Clayton,physics,588,23399,1924,2026,https://orcid.org/0000-0002-0141-7436,Louisiana State University;Space Science Institute;University of Arizona,1,verified_orcid,R1
+https://openalex.org/A5104357209,Max Born,physics,331,23146,1900,2020,,,1,unresolved,R4
+https://openalex.org/A5064048921,Thomas L. Carroll,physics,185,21522,1861,2026,https://orcid.org/0000-0002-2371-2049,United States Naval Research Laboratory;University of Wisconsin–Madison,1,verified_orcid,R1
+https://openalex.org/A5005199063,Horatio Scott Carslaw,physics,69,20640,1896,2008,,,1,unresolved,R4
+https://openalex.org/A5080667017,Robert Bierstedt,physics,130,20340,1937,2017,,University of Virginia,1,verified_triple,R2
+https://openalex.org/A5080716647,C. J. Tranter,physics,48,19767,1939,1975,,,1,unresolved,R4
+https://openalex.org/A5046922782,THOMAS K. SHERWOOD,physics,94,18641,1925,2018,,,1,unresolved,R4
+https://openalex.org/A5034381312,Charles F. Curtiss,physics,187,17657,1904,2025,https://orcid.org/0009-0007-7754-489X,University of Utah,1,verified_orcid,R1
+https://openalex.org/A5044337523,Joseph Smagorinsky,physics,31,16740,1899,2011,,United States Weather Bureau,1,verified_triple,R2
+https://openalex.org/A5038013656,Robert N. Wenzel,physics,8,15645,1933,1962,,,1,unresolved,R4
+https://openalex.org/A5111906093,Edward L. Hill,physics,97,15538,1928,2025,https://orcid.org/0009-0002-5661-9198,Laboratory for Laser Energetics;University of Rochester,1,verified_orcid,R1
+https://openalex.org/A5042383262,James Norman Goodier,physics,3,13762,1934,1966,,,1,unresolved,R4
+https://openalex.org/A5029968225,Elliott Pierce Barrett,physics,13,13590,1933,1990,,Brunel University of London,1,verified_triple,R2
+https://openalex.org/A5114000301,E A Roberts,physics,46,13381,1936,2023,,Alder Hey Children's NHS Foundation Trust;Alder Hey Children's Hospital,1,unresolved,R4
+https://openalex.org/A5018709073,Laura C. Green,physics,37,13161,1918,2025,,,1,unresolved,R4
+https://openalex.org/A5112787216,James D. Patterson,physics,90,13020,1871,2018,,,1,unresolved,R4
+https://openalex.org/A5023676828,Gustav Mie,physics,33,12818,1892,2007,,,1,unresolved,R4
+https://openalex.org/A5046395124,Waloddi Weibull,physics,37,12396,1939,2011,,,1,unresolved,R4
+https://openalex.org/A5056600540,Norton Nelson,physics,115,12272,1938,2013,,NYU Langone Health;New York University,1,unresolved,R4
+https://openalex.org/A5062811429,Radu Grigorovici,physics,58,11876,1939,1989,,National Institute of Materials Physics,1,verified_triple,R2
+https://openalex.org/A5017995448,Sidney C. Sufrin,physics,71,11852,1938,1989,,,1,unresolved,R4
+https://openalex.org/A5017262993,W H Hall,physics,13,11250,1902,1987,,,1,unresolved,R4
+https://openalex.org/A5031530236,André Gerardus Uitterlinden,biology,1955,257715,1933,10000,https://orcid.org/0000-0002-7276-3387,,1,verified_orcid,R1
+https://openalex.org/A5114007683,Frederick Sanger,biology,108,107391,1903,2012,,,1,unresolved,R4
+https://openalex.org/A5020224649,James L. McClelland,biology,445,84395,1863,2026,https://orcid.org/0000-0002-8217-405X,Stanford University,1,verified_orcid,R1
+https://openalex.org/A5060503589,Jordi Folch,biology,59,70227,1939,2024,,Hospital Plató,1,verified_triple,R2
+https://openalex.org/A5056199248,Richard M. J. Palmer,biology,273,70075,1926,2024,https://orcid.org/0000-0002-3177-1313,,1,verified_orcid,R1
+https://openalex.org/A5053114801,Wayne Arthur Fuller,biology,258,69032,1879,2025,https://orcid.org/0000-0002-5744-6674,Iowa State University,1,verified_orcid,R1
+https://openalex.org/A5072009257,Léon Festinger,biology,144,67490,1940,2026,,,1,unresolved,R4
+https://openalex.org/A5113599985,Charles R. Cantor,biology,460,56664,1914,2026,,Strand Life Sciences (India),1,verified_triple,R2
+https://openalex.org/A5111437337,John Seely Brown,biology,234,54183,1925,2025,,Curtin University,1,verified_triple,R2
+https://openalex.org/A5109731978,R. C. Turner,biology,264,51537,1871,2025,https://orcid.org/0009-0003-6037-3933,University of London;Royal Veterinary College,1,verified_orcid,R1
+https://openalex.org/A5111631801,George Armitage Miller,biology,251,48910,1895,2024,,,1,unresolved,R4
+https://openalex.org/A5109558515,Russell F. Doolittle,biology,293,48718,1925,2025,,,1,unresolved,R4
+https://openalex.org/A5109394371,David Stewart Jenkinson,biology,199,48441,1934,2019,,,1,unresolved,R4
+https://openalex.org/A5109114095,Gail Jefferson,biology,109,43399,1915,2025,,,1,unresolved,R4
+https://openalex.org/A5111378637,C. A. Knox Lovell,biology,286,42868,1940,2025,,,1,unresolved,R4
+https://openalex.org/A5103364748,EJ Wood,biology,235,33600,1937,2012,,,1,unresolved,R4
+https://openalex.org/A5081458871,Otto Heinrich Warburg,biology,333,31781,1883,2015,,,1,unresolved,R4
+https://openalex.org/A5114376371,James B. Robertson,biology,106,30458,1936,2023,https://orcid.org/0000-0003-2348-635X,Middle Tennessee State University,1,verified_orcid,R1
+https://openalex.org/A5010310471,Robert F. Furchgott,biology,127,28832,1939,2015,,State University of New York;SUNY Downstate Health Sciences University,1,unresolved,R4
+https://openalex.org/A5077500767,Viktor Hamburger,biology,242,27630,1925,2017,,,1,unresolved,R4
+https://openalex.org/A5108370000,Thomas H. Jukes,biology,623,23513,1930,2020,,Utah State University,1,verified_triple,R2
+https://openalex.org/A5102150038,Sture Holm,biology,47,22926,1930,2022,,Chalmers University of Technology,1,verified_triple,R2
+https://openalex.org/A5052317694,Louis M. Sherwood,biology,141,22256,1913,2019,,University of Washington;Harborview Medical Center,1,unresolved,R4
+https://openalex.org/A5109238934,John Garnett Williams,biology,199,20448,1932,2020,,,1,unresolved,R4
+https://openalex.org/A5063760406,Pieter Vos,biology,75,18864,1921,2016,,,1,unresolved,R4
+https://openalex.org/A5073324286,Marcus Grant,biology,257,17681,1931,2026,https://orcid.org/0000-0002-7838-8725,,1,verified_orcid,R1
+https://openalex.org/A5110937608,J. T. Curtis,biology,38,17318,1937,2025,,,1,unresolved,R4
+https://openalex.org/A5081960116,W. S. Abbott,biology,19,16421,1918,2025,,,1,unresolved,R4
+https://openalex.org/A5069618685,Howard L. Hamilton,biology,23,15632,1939,1992,,Iowa State University,1,verified_triple,R2
+https://openalex.org/A5109233611,N. E. Gibbons,biology,90,14271,1929,2017,,,1,unresolved,R4
+https://openalex.org/A5058780249,Lee Raymond Dice,biology,143,14057,1910,2017,,,1,unresolved,R4
+https://openalex.org/A5109920036,William Whitney Ballard,biology,36,13877,1939,2001,,Dartmouth College,1,verified_triple,R2
+https://openalex.org/A5111705521,Robert Earle Buchanan,biology,135,13516,1850,2017,,,1,unresolved,R4
+https://openalex.org/A5096894678,ダーウィン チャールス,biology,3,10993,1907,1907,,,1,unresolved,R4

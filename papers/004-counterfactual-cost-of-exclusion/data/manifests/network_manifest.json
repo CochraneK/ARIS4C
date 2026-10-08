@@ -1,0 +1,17 @@
+{
+  "queries_total": 312,
+  "works_total": 37636,
+  "truncated_count": 2,
+  "http429": 0,
+  "stop_reason": null,
+  "queue_authors": 190,
+  "active_authors": 164,
+  "excluded_authors": 26,
+  "author_nodes_full": 31733,
+  "works_nodes": 37636,
+  "concept_nodes": 50,
+  "coauth_edges": 848052,
+  "author_concept_edges": 6380,
+  "ts": "2026-10-08T03:23:18+00:00",
+  "coauth_edges_active_only": 121
+}

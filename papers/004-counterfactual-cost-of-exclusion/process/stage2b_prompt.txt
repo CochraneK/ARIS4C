@@ -1,0 +1,73 @@
+# ARIS4C-004 段2b（science core 知识网络构建）executor 任务
+
+## 背景（宿主判定，勿读旧日志）
+- 段2a 已验收：data/exposure_queue.csv 190 行（math 75 / cs 33 / physics 48 / biology 34；first_pub≤1940 D-6 定案；identity R1=32 / R2=41 / R4=117）
+- 本段 = per-author works 抓取 + F2 复核 + R4 消歧 + 网络构建 + 结构指标 + Gate C 判定
+- 2b 不跑 M0–M3（段3 工作）、不重跑 2a 采样
+
+## 先读（各 1 次，勿超）
+- RESEARCH_BRIEF.md（CPE estimand / Gate C 定义 / M0-M3 族——只取 Gate C 判据）
+- data/exposure_protocol.md（冻结：F1-F5 / R1-R4 / S6）
+- stage2a_summary.md（36 行）
+
+## 在盘指针（勿改）
+- data/exposure_queue.csv —— 190 行，header: author_id,display_name,stratum,works_count,cited_by_count,first_pub,last_pub,orcid,institution,name_matches_in_sample,identity_status,rule_fired
+- data/queue_summary.json（只许 python 取 keys，勿打印全文）
+- 队列 author_id 为完整 URL（https://openalex.org/A...）→ 过滤时截取 A 开头 ID
+
+## OpenAlex 2026 语法（实证，强制遵守）
+- 区间用连字符 field:low-high（.gte/.lte 已移除 → 400）；per-page 1-200（0 非法）
+- authors 端点不内联 works → 一律 /works?filter=author.id:A... 取
+- 429 backoff (0,30,60,120,240)s；mailto=aris4c004@example.org
+- 本 run 总查询 ≤600；每条查询 append 一行到 data/_raw/queries_2b.log（ts,author_id,page,http_status,returned）
+
+## 任务
+### T0 环境（1 调用）
+- venv pip install -q networkx（python -m pip）→ 同调用验证 import 成功；已装则跳过
+
+### T1 per-author works 抓取（核心）
+- code/fetch_works_2b.py（write_file 落盘后执行）：
+  - 遍历队列 190 作者：GET https://api.openalex.org/works?filter=author.id:{ID}&per-page=200&select=id,doi,title,publication_year,cited_by_count,authorships.author.id,concepts.id&sort=publication_year:asc&cursor=*（带 mailto）
+  - cursor 分页，每作者硬上限 5 页（1000 works），触顶 truncated=1
+  - raw 落盘 data/raw/works/{作者短ID}.json；进度逐作者 append data/_raw/fetch_progress_2b.txt（author_id,pages,n_works,truncated,status；行缓冲 flush）
+  - 429 按 backoff；累计 600 查询即停，stop_reason=budget，以盘上数据继续
+- 脚本经 Start-Process 或 nohup 脱离 shell 后台运行；每 ~5 分钟轮询一次（wc -l fetch_progress_2b.txt）；预计总时长 10–40 分钟
+
+### T2 F2 复核 + R4 消歧（本地）
+- code/verify_2b.py（write_file → 执行）：
+  - F2：first_pub_works=min(该作者 works 的 publication_year)；n_works=0 → EXCLUDE noworks；first_pub_works>1940 且 n_works≥5 → EXCLUDE post1940；>1940 且 n_works<5 → 保留 + flag DIGIT_GAP（数字化缺口，非硬 fail）
+  - R4（identity_status 含 unresolved/R4 的 117 行）：cited_by_count 前 5 works 的 title 与 display_name 做 token 匹配；共享 token <50% → flag NAME_MISMATCH（方法注明 simple token check）
+  - → data/network/f2_reverify.csv（author_id,name,stratum,first_pub_queue,first_pub_works,n_works,truncated,f2_status）+ data/network/excluded_2b.csv（author_id,reason）+ data/network/r4_disambiguation.csv（author_id,top5_titles,mismatch_flag）
+
+### T3 网络构建（本地）
+- code/build_network_2b.py（write_file → 执行）：
+  - 节点：active authors（队列 − excluded）、works（抓取并集）、concepts（按 works 频次 top 50）
+  - 边：CoAuth(a1,a2,weight=共同 works 数,first_year,last_year) 由 works 的 authorships.author.id 共现导出；AuthorConcept(author,concept)
+  - 时间规则：每节点 first/last work year；每边 year span
+  - → data/network/nodes_authors.csv（author_id,name,stratum,n_works,first_work_year,last_work_year）
+  - → data/network/edges_coauthor.csv、data/network/edges_author_concept.csv
+  - → data/network/works_index.jsonl（id,doi,year,cited,authors[],concepts[]）
+  - → data/network/network_manifest.json（queries_total,works_total,truncated_count,429 次数,节点/边计数,ts）
+- data/network/network_spec.md ≤30 行：节点/边/时间规则冻结（3 类节点、2 类边）；RESEARCH_BRIEF 的 Gate C 若有附加要求照 brief 并注明
+
+### T4 结构指标（本地）
+- code/metrics_2b.py（write_file → 执行；networkx 于作者 CoAuth 图）：
+  - degree（min/median/max）、betweenness top 20、avg clustering、连通分量 sizes、整体 density、分 stratum 拆解
+  - → data/network/metrics.json + data/network/metrics_top20.csv
+
+### T5 Gate C 判定 + 收官
+- Gate C（science core 数据试点）：按 RESEARCH_BRIEF 的 Gate C 定义判定；测量基础 = active 集合规模、CoAuth 边数、最大连通分量占比、n_works>0 作者覆盖率；verdict（PASS/CONDITIONAL/FAIL + 理由）写入 summary
+- stage2b_summary.md ≤40 行（抓取统计 / F2 结果 / R4 flags / 排除数 / 网络形状 / Gate C verdict / deviations / limitations）
+- 末行：DONE stage2b 004
+
+## 纪律（必须遵守，前 run 死于违反）
+- 工具调用 ≤30；单响应 ≤1 调用；参数 ≤20 行；文本 ≤2 句；禁文本展示文件内容
+- 长文件分块 append（单块 ≤15 行）或 python 生成（模型只写代码不输出数据）
+- shell：只用相对路径；禁 cd /d；禁 dir（用 ls）；禁从 / 或 C:\ 起 find；可能 >1000 行输出的命令必 | head -50；bash 内禁反斜杠路径
+- 禁 read results/*.log；data/raw/*.json >1MB 禁直读（python 解析，输出 ≤15 行）
+- 禁 python -c 内嵌复杂引号；脚本一律 write_file 落盘后执行
+- venv python: C:\Users\SCZ_2207\.workbuddy\binaries\python\envs\default\Scripts\python.exe
+
+## 禁止
+- M0–M3 或任何反事实模拟（段3）；改 queue/protocol/brief（冻结件）
+- /works 之外的 OpenAlex 端点（作者 spot-check ≤10 次允许，计入 600 预算）；新文献检索；其他数据源
